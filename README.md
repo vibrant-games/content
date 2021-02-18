@@ -1,50 +1,28 @@
 # content
 NPCs, artwork, factions, etc.
 
+## Directories
 Directory structure is as follows:
 
-## npcs
+### npcs
 NPC YAML files to go here.
-
-### npcs/template
-For the template NPC, showing how to lay out an NPC YAML file.
-
-### npcs/sandbox
-For unfinished NPCs, works in progress, collaborating on NPCs.
-
-Currently only a 0 byte DUMMY.yaml file is here, which we'll remove.
-
-### npcs/review
-NPCs to be reviewed before pushing to production.
-
-Currently only a 0 byte DUMMY.yaml file is here, which we'll remove.
-
-(Eventually we'll probably need more directories for submission-related stuff, but this will do for now.)
-
-### npcs/production
-What the world sees, the live NPCs.
-
-Currently only a 0 byte DUMMY.yaml file is here, which we'll remove.
 
 ## images
 Artwork for the NPCs etc.
 
-### images/template
-Template sizing for artwork image files.
+### templates
+For the template NPC, showing how to lay out an NPC YAML file, and template images for artwork, to show dimensions for NPC art, and so on.
 
-Currently only a 0 byte DUMMY.jpg file is here, which we'll remove.
+## branches
+Branch structure is as follows:
 
-### images/sandbox
-Incomplete artwork.
+### sandbox
+For unfinished NPCs and artwork, works in progress, collaborating on NPCs, and so on.
 
-Currently only a 0 byte DUMMY.jpg file is here, which we'll remove.
+### main
+NPCs to be reviewed before pushing to production.
 
-### images/review
-Artwork that we'll review before pushing to production.
+(Eventually we'll probably need more branches for submission-related stuff, but this will do for now.)
 
-Currently only a 0 byte DUMMY.jpg file is here, which we'll remove.
-
-### images/production
-The live artwork that the world sees.
-
-Currently only a 0 byte DUMMY.jpg file is here, which we'll remove.
+### production
+What the world sees, the live NPCs and so on.
