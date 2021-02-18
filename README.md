@@ -1,19 +1,23 @@
 # content
 NPCs, artwork, factions, etc.
 
+---
+
 ## Directories
 Directory structure is as follows:
 
 ### npcs
 NPC YAML files to go here.
 
-## images
+### images
 Artwork for the NPCs etc.
 
 ### templates
 For the template NPC, showing how to lay out an NPC YAML file, and template images for artwork, to show dimensions for NPC art, and so on.
 
-## branches
+---
+
+## Branches
 Branch structure is as follows:
 
 ### sandbox
@@ -26,3 +30,5 @@ NPCs to be reviewed before pushing to production.
 
 ### production
 What the world sees, the live NPCs and so on.
+
+---
