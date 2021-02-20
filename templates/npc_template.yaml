@@ -300,16 +300,28 @@ npc:
     # For example:
     #
     # factions:
-    # - thieves_guild_of_poliwood
-    # - union_of_seamstresses
-    # - cult_of_sky_anthologies
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
     factions:
-    - TEMPLATE 1
-    - TEMPLATE 2
-    - TEMPLATE 3
+    - id: template_1
+      name: TEMPLATE 1
+      role: TEMPLATE ROLE 1
+    - id: template_2
+      name: TEMPLATE 2
+      role: TEMPLATE ROLE 2
+    - id: template_3
+      name: TEMPLATE 3
+      role: TEMPLATE ROLE 3
 
     #
     # Adjectives or other tags that can be used for searching.
