@@ -311,6 +311,16 @@ npc:
     - TEMPLATE 2
     - TEMPLATE 3
 
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - TEMPLATE 1
+    - TEMPLATE 2
+    - TEMPLATE 3
+
   improv:
 
     #
