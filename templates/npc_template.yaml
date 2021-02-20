@@ -452,6 +452,10 @@ npc:
   # ???Max length???
   #
   specialties:
+    skills:
+    - TEMPLATE 1
+    - TEMPLATE 2
+    - TEMPLATE 3
     special-abilities: |
       TEMPLATE
       MORE TEMPLATE
