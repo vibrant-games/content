@@ -71,7 +71,7 @@
 # Preliminary fields that describe this overall file:
 #
 kind: vibrantgames.ca/npc
-version: 0.0.1
+version: 0.0.2
 
 #
 # Information about who submitted the data, when, how, etc.:
@@ -80,8 +80,8 @@ metadata:
   #
   # A unique identified for this submission.
   # Eventually auto-generated.
-  # For now, I suggest: convert the character's name to lower case,
-  # and replace all spaces and punctuation with underscores ("_")
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
   #
   id: template_mctemplateson
 
@@ -100,10 +100,22 @@ metadata:
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31T23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-15
+  date: "2021-02-15"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -125,13 +137,13 @@ npc:
   name: TEMPLATE McTEMPLATESON
 
   #
-  # The NPC's artwork.
+  # The NPC artwork.
   # Comment out this field if it does not yet exist.
   # The filename can include a RELATIVE path:
   #     path/to/my/image.jpg
   # But it CANNOT be an absolute path:
   #     C:\path\to\my\image.jpg
-  # For now let's keep all images in one directory,
+  # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
   image: TEMPLATE_McTEMPLATESON.jpg
@@ -179,7 +191,7 @@ npc:
 
     #
     # The sub-race can be anything.
-    # For example, "swamp gnome" or "red elf" etc.
+    # For example, swamp gnome or red elf etc.
     #
     # Optional.  Can be commented out.
     # Max length: ...
@@ -304,7 +316,7 @@ npc:
     #
     # Introduction:
     # A block of text the DM can read out to the party.
-    # "A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing."
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
     #
     # Required.
     # Max 120 characters.
@@ -315,7 +327,7 @@ npc:
     introduction: TEMPLATE
 
     #
-    # Appearance: a brief description of the character's skin, clothes, hair, eyes, etc.
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
     #
     # Required.
     # Max 120 characters.
@@ -327,7 +339,11 @@ npc:
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
-    # "Like, oh my gods!" "Detritus!" "Whoah" "Silly goose" etc.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
     #
     # Required.
     # Max 120 characters.
@@ -453,9 +469,23 @@ npc:
     personality: |
       TEMPLATE
       MORE TEMPLATE
+
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
 ---
 
 #
 # ...Multiple NPCs can be included in one file,
-# separated by "---" dividers...
+# separated by --- dividers...
 #
