@@ -1,4 +1,4 @@
-#
+﻿#
 # Vibrant Games NPC file format.
 #
 # For long fields, we should be able to embed <html-tag>...</html-tag>s,
@@ -243,6 +243,29 @@ npc:
     class: TEMPLATE
 
     #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: TEMPLATE
+
+    #
     # Class level.
     # 0 for civilian.
     #
@@ -398,7 +421,6 @@ npc:
     motivations: |
       TEMPLATE
       MORE TEMPLATE
-
     #
     # Passions:
     #
@@ -408,7 +430,6 @@ npc:
     passions: |
       TEMPLATE
       MORE TEMPLATE
-
     #
     # Vulnerabilities:
     #
@@ -418,7 +439,6 @@ npc:
     vulnerabilities: |
       TEMPLATE
       MORE TEMPLATE
-
     #
     # Secrets:
     #
@@ -428,7 +448,6 @@ npc:
     secrets: |
       TEMPLATE
       MORE TEMPLATE
-
   #
   # The D & D stats block:
   # All integers.
@@ -483,7 +502,6 @@ npc:
       TEMPLATE
       MORE TEMPLATE
       EVEN MORE TEMPLATE
-
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -495,7 +513,6 @@ npc:
     personality: |
       TEMPLATE
       MORE TEMPLATE
-
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -515,3 +532,13 @@ npc:
 # ...Multiple NPCs can be included in one file,
 # separated by --- dividers...
 #
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
