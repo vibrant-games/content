@@ -1,0 +1,413 @@
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: gleadric_to_cujulo
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: vibrantgames
+
+  #
+  # Email address of the submitter.
+  #
+  # WordPress to YAML conversion:
+  # Unfortunately I do not see the author email
+  # addresses anywhere in the export file.  :(
+  # I guess we decided it was not an important field.
+  # This was a pretty bad oversigh.  :(
+  #
+  email: UNKNOWN@example.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. 2021-12-31
+  #      2021-12-31 23:59:59
+  #
+  date: 2021-02-05 17:27:12
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - wordpress_id: 1361
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Gleadric &amp; Cujunoa
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: older adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: firbolg
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    # sub-race: NONE.
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: they/them
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Fur and Skins Trader
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - bloodhunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: shaman
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 5
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: neutral good
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Firbolg
+    - Common
+    - Elvish
+    - Giant
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction: A stall displays numerous quality tanned hides and furs from iron racks. "Lovely, huh?" A Firbolg asks, chewing on jerky
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Tall &amp; stocky. Grey fur. Long wild deep blue hair and beard. Patched hides &amp; leathers. Tiny bones and flora tied to hair
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "Eek. Da dreamers be frownin"; "Long days make good pay"; "Right, right, right. Think it through";
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Taps head and body in various places in various sequences. Points out overly formal things. Refers to self in 3rd person
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      To resist the industrial and technological innovations and cultural change and thus rebel against political structures.
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Nature. Protecting Lycanthropes. Equality. Socialism. 
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      His Shamanic Calling of Dreams attacks his psyche with demands to tear down royal lineages.
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 16
+    hit-points: 54
+    speed: 30
+    str: 13
+    dex: 15
+    con: 9
+    int: 9
+    wis: 16
+    cha: 15
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+    - Survival; Nature; Athletics; Perception; Insight; Tanning; Skinning; Fabrics &amp; Textiles; Stealth
+    special-abilities: |
+      Detect Magic; Disguise Self
+      |
+      Hidden Step; Shamanic Calling; Spirit Magic; Shamanic Invocations; Blessings of Dream; Dreamrender; Fauna Shaman; Gift of Sight;  Glimpse the Path
+      |
+      Silent Image; Sleep; Phantasmal Force; Suggestion; Major Image; Sending
+      |
+      Spells: 0 - 2; 1 - 3; 2 - 2
+    attacks: |
+      Quarterstaff
+    combat-tactics: |
+      Gleadric will retract from conflict. Cujoloa will ferciously use his magicks and invocations to down combatants.
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      <p>Gleadric was raised in a Firbolg stronghold in the remote forests of Yyl on the outskirts of known civilization. The pivoting day in his youth, when his shamanic calling took control of his dreams and appended them to his woken life, was nearly crippling at first; changing him from the day-to-day gentle tenderer to flora into a seemingly secretive tanner and collector of furs.</p><p><i>"You've changed."</i> One of his closest friends imparted, <i>"but...change is life."</i> He patted Gleandric on the back while Cujuloa continued stripping a large Bison of it's hide.</p><p>Gleadric became two spirits inhabiting one physical body. Cujuloa was largely in charge of his daily productive activities - invoking dreams in his waking life and providing soft, warm dreams to his peoples - while Gleadric remained in control of his interactions with his community. However, Cujuloa demanded that they take their firm beliefs in equality and profound spirituality to the civilized communities and that they find new means and ways to bring peoples back to the basic love of for flora and fauna. They believe that by building room in the market for impressive hide and fur trade - a return to more primitive and anarchic ways - while impressing the importance of adhering to dreams over the purported reality of the waking world; that this will bring peoples back to their essential being.</p><p>Their goals, along with their split psyche, make social appearances, well, a challenge in situations relying on a finely detailed social contract. They come across to most as wild or 'crazy', but upon closer inspection and interactions, their distilled spirituality leaves a mark of genuine good.</p><p>Depending on which spirit is taking charge, they refer to themselves in 3rd person - either Gleadric or Cujuloa.
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - wp:status: publish
+  - subclass: Speaker of Dreams
+  - _yoast_wpseo_focuskeywords: []
+  - _yoast_wpseo_keywordsynonyms: [""]

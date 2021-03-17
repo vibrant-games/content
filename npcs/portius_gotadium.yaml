@@ -1,0 +1,458 @@
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: portius_gotadium
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: vibrantgames
+
+  #
+  # Email address of the submitter.
+  #
+  # WordPress to YAML conversion:
+  # Unfortunately I do not see the author email
+  # addresses anywhere in the export file.  :(
+  # I guess we decided it was not an important field.
+  # This was a pretty bad oversigh.  :(
+  #
+  email: UNKNOWN@example.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. 2021-12-31
+  #      2021-12-31 23:59:59
+  #
+  date: 2021-02-14 18:44:39
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - wordpress_id: 1608
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Portius Gotadium
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: middle aged adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: half-dwarf/half-gnome
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    # sub-race: NONE.
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: they/them
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Rectifier; Barber; Physician, Counsellor
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - bloodhunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: doctor
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 7
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: neutral good
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Dwarven
+    - Gnomish
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: doctor_s_guild
+      name: Doctor's Guild
+      role: Journeyman
+    - id: rectifier_s_guild
+      name: Rectifier's Guild
+      role: Founder or Some Head Role
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction: A short androgynous figure in colorful patchwork robes bustles towards an elderly woman with a cane. "One moment dear!"
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Partly male and partly female in appearance. Long, confusingly colorful robes. Short cropped blu-ish hair. 
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "Here goes nothin!"; "Divine healing does the trick, I s'pose. Doesn't get to the bottom of things."
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Refined and composed. Steady hands, gaze, and stance. Will identify a person's aspect like Sherlock Holmes.
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      To help others in need. Portius seeks to push the Doctors' guild to dismantle the mercantile churches.
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Passionate about biology. Desires to create perfected brand of Spirits.
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 17
+    hit-points: 53
+    speed: 30
+    str: 14
+    dex: 9
+    con: 19
+    int: 10
+    wis: 17
+    cha: 14
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+    - Medicine
+    - Persuasion
+    - Doctors' Tools
+    - Barbers' Tools
+    - Rectifiers' Tools. History
+    - Sleight of Hand
+    - Investigation
+    special-abilities: |
+      Patch up, Diagnosis, Second Opinion, Medical Training, First Aid, Expert Practice
+    attacks: |
+      Dagger
+    combat-tactics: |
+      They abhor violence and will avoid it at all costs.
+    special-equipment:
+    - <p><b>KEOGHTOM'S OINTMENT</b></p>
+<p><i>
+Wondrous item
+    - uncommon</i></p><p>
+This glass jar
+    - 3 inches in diameter
+    - contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action
+    - one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points
+    - ceases to be poisoned
+    - and is cured of any disease.</p><p>They carry one at all times and have many at their shack.</p><p>
+<b>Robe of useful items</b></p><p><i>adventuring gear (wondrous item
+    - robe)</i></p>
+<p>This robe has cloth patches of various shapes and colors covering it. While wearing the robe. you can use an action to detach one of the patches
+    - causing it to become the object or creature it represents. Once the last patch is removed
+    - the robe becomes an ordinary garment.
+
+The robe has two of each of the following patches: Dagger
+    - Bullseye lantern (filled and lit)
+    - Steel mirror
+    - 10-foot pole
+    - 
+ Hempen rope (50 feet
+    - coiled)
+    - Sack.</p><p>In addition
+    - their robe has 10 patches as follows: 2 Iron doors
+    - 2 Riding Horses
+    - 2 Windows
+    - 2 Spell Scrolls of 1st to 3rd level
+    - and 2 Superior Potions of Healing.</p>
+<p><b>Dr. Gotadium's Headband of De-Obfuscation</b></p>
+<p>This headband is made of flexible metals with various arms tucked and folded into themselves. It aids a surgeon and rectifier in their tasks. It's multiple folding arms can extend to: provide light
+    - a magnification lens
+    - a small beam of heat (to help with incisions or cauterization)
+    - a surgeon's mask
+    - a tiny hand that can grasp or hold a small tool (like a scalpel or needle or suture)
+    - and a small vial of iodine.</p><p>
+<b>Doctors' Bag<b></p>
+
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      <p>For more info on the Doctor Class see <a href="https://www.gmbinder.com/share/-LkHeate-75getALqBBg">GM Binder's Doctor Class</a>.</p>
+      |
+      <p>Life in the gnomish city of Aberash Caandu is always lively - filled with tinkerer products wobbling about and wondrous inventions that would amaze even the most experienced traveler. The gnomes of this city have always been accepting of all other races and inter-racial marriage and offspring are not uncommon. Portius is a product of this accepting community and raised in their meticulously productive and innovative cultural practices.</p><p>Knowing from their youth that they were not only a mixed-race person but also gender fluid, Portius presents powerful qualities of both masculinity and femininity. With close-cut cropped hair and a muscular, broad build, they seem tomboyish. Yet their graceful hands and attention to details - in their work, appearance, and environment - reflect a feminine edge.</p><p>As they matured, they took on the best of each race. They chose not to tinker, per se, at least not with 'inventions' but instead with the biology of peoples. They took to the role of a doctor easily and quickly became the community's go-to for anything that would ail them. They also picked up on the talents of the local Dwarven community and learned the sophisticated methods of rectification - distilling and producing fine spirits. In addition, their skills with a sharp edge and attention to detail leant themselves well to barbering. Portius was and is seen as something of a pragmatic polymath. The wonderful outcome of the mixing of Gnomish and Dwarven genetics and culture.</p><p>Portius has since set out on their own to pursue a greater good among the regions. She has settled in the city of Tyrwind [any large city] where they have set up a sturdy shack on the outskirts of the market. Their small shop operates as an underclass clinic. Here she also distills and bottles fine spirits for sale to taverns, inns, and the public. She has a brand called, "Moorehouse', made up of various rums and whiskeys.</p><p>Portius has since joined the regional Doctors' Guild, which has a small population of members. They have also been a founding member of the Rectifiers' guild. Both to protect practitioners of little-known and rarely practiced professions.</p><p>They seek to use their membership to these guilds to push them to dismantle - through strategically intellectual and political means - the mercantile churches. Because of these goals, she is currently a target of <a href="https://getvibrantgames.com/npc2/morion-defaye/">Morion DeFaye</a> and his clergy. Although these mercantile abbots would never outright assassinate anyone, they keep close watch over her operations.</p> <p>Although very gender fluid in their performance of gender, Portius' biological sex is female and her sexual preference oscillates frequently.</p>
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - wp:status: publish
+  - subclass: Surgeon
+  - _yoast_wpseo_focuskeywords: []
+  - _yoast_wpseo_keywordsynonyms: [""]

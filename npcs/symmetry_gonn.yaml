@@ -1,0 +1,420 @@
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: symmetry_gonn
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: vibrantgames
+
+  #
+  # Email address of the submitter.
+  #
+  # WordPress to YAML conversion:
+  # Unfortunately I do not see the author email
+  # addresses anywhere in the export file.  :(
+  # I guess we decided it was not an important field.
+  # This was a pretty bad oversigh.  :(
+  #
+  email: UNKNOWN@example.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. 2021-12-31
+  #      2021-12-31 23:59:59
+  #
+  date: 2021-02-04 22:02:28
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - wordpress_id: 1352
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Symmetry Gonn
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: young adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: kobold
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    # sub-race: NONE.
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: she/her
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Informer
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - bloodhunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: bard
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 10
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: chaotic neutral
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Goblinoid
+    - Common
+    - Draconic
+    - Elven
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: the_windrunners
+      name: The Windrunners
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction: A flash of rusty scales and bright clothes darts from a dark alley across the street. "Cause a distraction!!"
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Rusty red scales. Roughly 2'5". Bright orange eyes. Loose bootcut puffy pants. Loose jerkin. Dual-ribbon cloak.
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "They be lookin fer me, yknow. Gotta go.", "They want that damned group, they can get em themselves"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Bouncy and nervous but regains composure. Hums different notes to check her vocal tone. 
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Escaping a regional watch hoping to disband a crew of kobolds believed sent by a dragon to stir and steal valuables
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Self-Preservation. Wealth. 
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 16
+    hit-points: 51
+    speed: 40
+    str: 13
+    dex: 17
+    con: 10
+    int: 14
+    wis: 17
+    cha: 18
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+    - Performance; Stealth; Disguise; History; Persuasion; Thieves' Tools
+    special-abilities: |
+      Ambush; Darkvision
+      |
+      Bardic Inspiration; Countercharm; Expertise; Song of Rest; Jack of All Trades
+      |
+      Psychic Blades; Words of Terror; Mantle of Whispers
+      |
+      Spellcasting: 0 - 4; 1 - 4; 2 - 3; 3 - 3; 4 - 3; 5 - 2;
+    attacks: |
+      Dagger - Dual Wield
+      |
+      Sling
+    combat-tactics: |
+      Symmetry will parkour about the area - off walls, fences, people, places, things - like a pinball in song. When the very first combatant falls, She will use Mantle of Whispers to adopt the identity and flee.
+    special-equipment:
+    - A small singing bowl that she can play almost like a drum
+    - lucimeter
+    - and bells at the same time.
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      <p>Kobolds are kobolds. Well, not always.</p><p>Symmetry (not her birth name) was raised in a cavern den of the hundreds of kobolds making up the clan of Kut-Kut.  They were dedicated to serving the Red Dragon, Vys, who lived deeper in the mountain. Vys would task the clan with securing the cavern tunnels and with raiding nearby trading routes for treasures to pile atop his horde. One evening, Vys heard her singing and demanded she sit atop his horde for the rest of her life to entertain him.</p><p>Not a great deal in the mind of anybody, really, even a kobold, and Symmetry (again, not her birth name, but she won't tell) grew disenfranchised with her life with Vys and her clan's unwillingness to stand up to the tyrant dragon. Vys would sleep often and would wake easily. He abhorred her silence and would punish her for it. She found a cunning solution.</p><p><i>"Vys, you want newer songs? You must be getting bored of the ones I know"</i>, she whispered in his ear in draconic.</p><p><i>"Yes,"</i> the dragon's deep growl trembled the piles of gold and treasures, <i>"I am."</i> The dragon chuckled sardonically.</p><p><i>"Well, I must read to learn new songs. And to read I must be quiet."</i></p><p><i>"Ay. Then silence for an hour." </i>The great red dragon purred.</p><p>Symmetry (again, I insist <i>not her birth name</i>) took an hour each day to learn more songs, more spells, and more knowledge from the tomes and treasures that littered Vys' lair.</p><p>When a commanding officer of the Kut-Kut tribe rushed in one day to alert Vys that a small party of heroes had breached the cave depths, chaos ensued. Little did Vys know, this was a ruse created by a small group of rebels who sought to escape the caverns. In the ensuing chaos, Symmetry was able to distract Vys with songs and aid in their escape.</p><p>The small kobold crew bonded over the weeks of travel that followed and set their sites on using their abilities to gain their own wealth. Upon arriving in a nearby city, they set forth to 'relieve' the population of their wealth. On a night of rest in a removed alleyway, Symmetry's song of her groups' exploits was overheard by a beggarly human who knew the value of being able to aid in disbanding this group of bandits and, perhaps even more so, the value of informing the watch as to the location of Vys' lair. He turned the information over for a handsome reward.</p><p>The Regional Watch found the band of kobolds with haste. Symmetry was a primary target with her bright clothes and distinct appearance. However, using the secrets found in Vys' lair, Symmetry was able to terrify the Watchman and escape. The rest of her band scattered.</p><p>Symmetry has been in flight ever since and makes a good living from selling her secrets - via letter - to the Regional Watch; sending them on wild goose chases.</p>
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - wp:status: publish
+  - subclass: College of Whispers
+  - _yoast_wpseo_focuskeywords: []
+  - _yoast_wpseo_keywordsynonyms: [""]

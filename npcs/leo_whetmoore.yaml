@@ -1,0 +1,432 @@
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: leo_whetmoore
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: vibrantgames
+
+  #
+  # Email address of the submitter.
+  #
+  # WordPress to YAML conversion:
+  # Unfortunately I do not see the author email
+  # addresses anywhere in the export file.  :(
+  # I guess we decided it was not an important field.
+  # This was a pretty bad oversigh.  :(
+  #
+  email: UNKNOWN@example.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. 2021-12-31
+  #      2021-12-31 23:59:59
+  #
+  date: 2021-02-06 19:50:11
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - wordpress_id: 1394
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Leo Whetmoore
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: young adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: dwarf
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    # sub-race: NONE.
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: he/him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Tavern Keeper
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - bloodhunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: rogue
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 10
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: neutral evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Dwarven; Elven
+    - Undercommon
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: the_lythiad_assembly
+      name: The Lythiad Assembly
+      role: Seanair (Leader)
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction: Polishing a tankard &amp; leaning against the frame of the kitchen entrance, a mysterious figure says, "what can I git ye?"
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Lithe hill dwarf. Bald head &amp; braided orange beard. Waxed moustache. White long undershirt, suspenders, baggy jerkins.
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "Ye know yer own business, even?"; "Oy, grub n ale and a few curiosities for ya?"; "Time'll do ya no favors, friend";
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Slow and deliberate movement. Nonchalant. Intermittent glances to corners of room. Flips broken pocket watch gently.
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      To grow his underground organized crime syndicate beyond the current city. Murder of royals. Accrual of wealth.
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Wealth and power. Leo is ruthless in his pursuit of these things.
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      Leo's Tavern, "The Lion's Mane", is a front for his organized crime syndicate.
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 10
+    hit-points: 74
+    speed: 30
+    str: 10
+    dex: 18
+    con: 12
+    int: 15
+    wis: 13
+    cha: 17
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+    - Acrobatics; Athletics; Persuasion; Thieves' tools; Disguise kit; Forgery kit
+    special-abilities: |
+      Master of Intrigue; Help; Insightful Manipulator; 
+      |
+      Cunning Action, Uncanny Dodge, Evasion, Sneak Attack; Reliable Talent
+    attacks: |
+      Dagger
+    combat-tactics: |
+      Leo is no coward. He will, however, try to avoid or escape combat because of his belief that his worth as leader of the Lythiad assembly is more important than proving his mettle in a single battle.
+    special-equipment:
+    - <p><b>Broken Pocket Watch</b> - <i>
+Wondrous item
+    - very rare
+    - requires attunement</i>
+It’s rare to find a pocket watch at all outside of gnomish settlements. This one seems to be broken
+    - as it sometimes skips back a few seconds. It holds great power for the one who attunes it
+    - though. The broken pocket watch has 3 charges. On your turn
+    - you can spend 1 charge to take an additional bonus action
+    - as the pocket watch ticks back by two seconds to give you another moment for something quick. The pocket watch regains 1 expended charge at dawn
+Alternately
+    - you can force it to turn backward as far as it can go. This does not require an action and takes 3 charges. You can’t do this if you are incapacitated. You teleport to any location you have been earlier in this turn
+    - you regain any hit points you have lost since the beginning of your turn
+    - and you can immediately take another turn. The pocket watch falls apart after that
+    - and require 1 week of specialized repairs. If this last ability is chosen
+    - after 1 minute
+    - you suffer one level of exhaustion.</p><p><b>Dagger of Warning</b> - Most rogues shouldn't really need help with their perception
+    - but this dagger helps both the rogue and everyone around them. While attuned
+    - the rogue can't be surprised and are magically awoken from their sleep when danger approaches—along with all allies within 30 feet of them. Not to mention the dagger gives the rogue advantage on initiative rolls
+    - which is a valuable thing for them to have.</p>
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      <p>The <i>Lion's Mane Tavern</i> is a charming local destination location. Well-kept with superb staff, it has a firm grip on the business of the community and its proprietor, Leo, has their respect.</p><p>Leo's tavern is more than a reputable destination location, it is also the center for his organized crime syndicate, the Lythiad Assembly. Composed primarily of Leo's extended family but including myriad community officials and mercants, the Assembly doesn't perform what Leo calls, 'Brutish Outlaw' work, but instead is highly surgical in their activities. Kidnapping, smuggling, and political terrorism are the Assembly's professional province.</p><p>Leo and his two brothers and one sister are carrying on the business of their father and uncles. Just how long the Assembly has been operating remains lore lost in history. Leo claims they've operated for centuries and span well-beyond the region. While there are some facts to corroborate this (and the local militia are certainly investigating), the evidence for this is lacking.</p>
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - wp:status: publish
+  - subclass: Mastermind
+  - _yoast_wpseo_focuskeywords: []
+  - _yoast_wpseo_keywordsynonyms: [""]

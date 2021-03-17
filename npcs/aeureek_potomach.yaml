@@ -1,0 +1,425 @@
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: aeureek_potomach
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: vibrantgames
+
+  #
+  # Email address of the submitter.
+  #
+  # WordPress to YAML conversion:
+  # Unfortunately I do not see the author email
+  # addresses anywhere in the export file.  :(
+  # I guess we decided it was not an important field.
+  # This was a pretty bad oversigh.  :(
+  #
+  email: UNKNOWN@example.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. 2021-12-31
+  #      2021-12-31 23:59:59
+  #
+  date: 2021-01-28 00:54:42
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - wordpress_id: 973
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Aeureek Potomach
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: middle-aged
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: aarakocra
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    # sub-race: NONE.
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: she/her
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Diplomat; magistrate; Prison Warden; Political Advisor;
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - bloodhunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: wizard
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 5
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: neutral good
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Aarakocra
+    - Elvish
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: militia_of_hula_krah
+      name: Militia of Hula-krah
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Regal
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction: Aeureek can be a first point of contact for those adventurers who may have met with the wrong side of the law. She may also commission hardy looking adventurers to escort a prisoner or capture an outlaw.
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Insanely proper posture at all times; Gowns of a magistrate; Bird features are akin to a falcon - whites, browns and greys; She has died various feathers bright reds and purples;
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "'click' 'click' 'shreeeee' ...I assume you cannot comprehend our mother tongue or that I just demanded your commitment to keeping peace"; "Law and Order matter not compared to a good heart and striving for the greater good for all"; "Politics are tangled and corrupted by gold and platinum - only by abandoning currency as a means of bringing order shall we ever achieve true brotherhood"; "Abandon riches, brothers and sisters. Embrace the collective"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Bursts proudly into Aarakocra often and expects others to learn her language as the language of diplomacy and true freedom; Rushes into conversations short-sightedly; Often measuring and adjusting her posture and appearance in any mirror, including her hand mirror; Grooms her feathers regularly
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      This regal avian humanoid seeks to eradicate tradeable currency, believing it is the source of all conflict. Urges others to trade in goods over coins. Constantly driven to improve her appearance to the detriment of respect from the common people.
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Peace and security; Oppositional politics; Eschewing gold and platinum and anyone with a passion for riches.
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 12
+    hit-points: 27
+    speed: 25 (fly 50)
+    str: 11
+    dex: 14
+    con: 14
+    int: 18
+    wis: 16
+    cha: 15
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+    - History; Law; Persuasion; Athletics
+    special-abilities: |
+      Spells: 0 - 4; 1 - 4; 2 - 3; 3 - 2
+      |
+      Arcane Ward
+    attacks: |
+      Quarterstaff
+      |
+      Claws
+    combat-tactics: |
+      She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. Then she will use AoE spells if safe to do so.
+    special-equipment:
+    - <b>Protective Verses (Spellbook) </b>- Contains the following spells: arcane lock
+    - dispel magic
+    - globe of invulnerability
+    - glyph of warding
+    - Mordenkainen's private sanctum
+    - protection from evil
+    - and symbol. It functions as a spellbook.While holding the book
+    - can be used as a spellcasting focus. The book has 3 charges
+    - and it regains 1d3 expended charges daily at dawn. Can be use the charges in the following ways while holding it: spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book. The new spell must be of the abjuration school.
+When casting an abjuration spell
+    - expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      <p>After years in the city of Hula-krah [Any sky city in the Plane of Air] as a Peacekeeper and high-ranking military official, overlooking the material planes in all their woes, Aeureek decided it was the duty of her people to bring justice to the ground. She conferred with officals and family about her decision and they were all in agreeance; it was time for the people of the sky to bring the freedom of true justice to the greedy land-dwellers. Aeureek and numerous other worthy and authorized members of the community were sent on their way to aid the ground-dwellers.</p><p>Aeureek settled into the crime-ridden town of Helmsloft [Any major city that could suffer from heavy crime] and confidently approached the town's magistrates. She provided a convincing speech as to how the city required changes to their policing and corrections training and the corresponding structures. With her regal appearance and voice supporting a well-thought out and honest speech, which included numerous accurate observations Aeureek had gathered from his observations in the clouds, the magistrates were convinced to make such changes. Aeureek was offered a position among the magistrates but firmly declined, asserting that her abilities would best suit a position among the officers and within the confines of the slums and markets. Since then, Aeureek has been a well-respected and often feared officer and an advisor to the magistrates.</p>
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - wp:status: publish
+  - ful-picture: 1368
+  - _yoast_wpseo_focuskeywords: []
+  - _yoast_wpseo_keywordsynonyms: [""]
