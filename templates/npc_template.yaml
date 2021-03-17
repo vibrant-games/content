@@ -71,7 +71,7 @@
 # Preliminary fields that describe this overall file:
 #
 kind: vibrantgames.ca/npc
-version: 0.0.2
+version: 0.0.3
 
 #
 # Information about who submitted the data, when, how, etc.:
@@ -250,7 +250,7 @@ npc:
     # - College of Lore
     # - Order of the Profane Soul
     # - Grave Domain
-    # - Cirlce of the Moon
+    # - Circle of the Moon
     # - Battle Master
     # - Way of Shadow
     # - Oath of Redemption
@@ -261,7 +261,7 @@ npc:
     # - Hexblade
     # - School of Abjuration
     #
-    # Required.
+    # Optional.
     #
     subclass: TEMPLATE
 
@@ -532,13 +532,3 @@ npc:
 # ...Multiple NPCs can be included in one file,
 # separated by --- dividers...
 #
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
