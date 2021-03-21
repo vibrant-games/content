@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: Nicodeamus_Dumas
+  id: Jedediah_Dumas
 
   #
   # The name of the submitter (your name).
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Nicodeamus Dumas
+  name: Jedediah Dumas
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Young Adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -215,8 +215,8 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Gambler
-    - Cult Leader
+    - Politician
+    
 
     #
     # D & D classes (case insensitive):
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Fighter/Warlock
+    class: civilian
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    class: Gunslinger/Hexblade
+    subclass: N/A
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 18/14
+    level: 0
 
     #
     # Alignments (case insensitive):
@@ -287,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic evil
+    alignment: Lawful Evil
 
     #
     # Alignment tendencies:
@@ -312,8 +312,6 @@ npc:
     #
     languages:
     - Common
-    - Undercommon
-    - Thieve's Cant
     - Infernal
     - Abyssal
 
@@ -338,7 +336,7 @@ npc:
     factions:
     - id: Dumas_Family
       name: Dumas Family
-      role: Head of the Table
+      role: Public Relations, Politician
 
 
     #
@@ -347,9 +345,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Charasmatic
-    - Creepy
-    - Intense
+    - Devoted
+    - Severe
+    - Rigid
 
   improv:
 
@@ -364,7 +362,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A slender man whistling a jaunty tune pulls up a chair at your table "Would anyone care for a game of cards?" 
+    introduction: A tall, barrel-chested, distinguished man sits behind the council desk "We have a job for you while you're in town" 
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -375,7 +373,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Tall and thin with a shock of red hair peeking out from under his wide-brimmed hat. Fine clothes, impeccibly clean.
+    appearance:   Tall and broad, short gray hair and beard. Except for violet eyes, he bares no resemblence to other members of the family
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -391,7 +389,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Feelin' lucky?", "You think this is somethings, you should see our family dinners", "Are you a draw or a stud?"
+    expressions:  "This city bends to the will of our family", "I don't give you leave to adventure in my city", "Guards!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -404,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Whistles happy tunes incessantly. regularly shuffles the deck of cards he always carries with him. does card tricks
+    mannerisms:   cracks his knuckles. has a persistant cough
 
   acting:
     #
@@ -414,7 +412,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Growing his "family", furthering the goals of his patron
+      Power
       
     #
     # Passions:
@@ -423,7 +421,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Gambling, card tricks, his "studies"
+      Power
       
     #
     # Vulnerabilities:
@@ -432,7 +430,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      His ego has been known to get the better of him
+      Has a chronic resperatory issue
       
     #
     # Secrets:
@@ -441,22 +439,22 @@ npc:
     # ???Maximum length???
     #
     secrets: |
-      The Dumas Family, while having some actual familial ties, is definitely more of a cult than a family. He is also married to his half-sister
+      He doesn't like that Nicodeamus has been given the reighns of the family
       
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 20
-    hit-points: 213
-    speed: 40
-    str: 15
-    dex: 24
-    con: 19
+    armour-class: 15
+    hit-points: 87
+    speed: 30
+    str: 20
+    dex: 13
+    con: 11
     int: 17
-    wis: 19
-    cha: 22
+    wis: 16
+    cha: 19
 
   #
   # Special characteristics.
@@ -467,36 +465,22 @@ npc:
   #
   specialties:
     skills:
-    - Fighter Traits: Two Weapon Fighting, Second Wind, Action Surge, 3 Attacks, Indomitable, 
-    - Gunslinger Traits: Firearm Proficiency, Gunsmith, Adept Marksman, 4 Grit, Quickdraw, Rapid Repair, Lightning Reload, Vicious Intent, Hemorrhaging Critical
-      - Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot, Winging Shot
-    - Warlock Traits: Pact of the Hexblade: 
-      - Cantrips: Eldritch Blast, Mage Hand, Toll The Dead, Thunderclap. 
-      - Spells: Contact Other Plane, Danse Macabre, Hold Monster, Infernal Calling, Modify Memory, Sickening Radiance, 
-                Summon Greater Demon, Dimension Door, Blight, Counterspell, Dispel Magic, Summon Lesser Demon, Vampiric Touch, Summon Undead, Crown of Madness, Hold Person, Armor of Agathys, Charm Person, Hex, Hellish Rebuke, 
-    - Hexblade Traits: Hexblade's Curse, Hex Warriors, Accursed Specter, Armor of Hexes, Master of Hexes, 
-      - Hexblade Spells: Shield, Wrathful Smite, Blur, Branding Smite, Blink, Elemental Weapon, Phantasmal Killer, 
-                         Staggering Smite, Banashing Smite, Cone of Cold
-    - Feats: Inspiring Leader, Lucky, Sharpshooter, War Caster, Skulker, 
-    special-abilities: |
-      Proficient in Sleight of Hand, Stealth, Religion, Insight, Perception, Deception, Performance & Persuasion
-      He is an adept gambler, card player and showman
-    - Legendary Resistance: (3/Day), If Nicodeamus Dumas fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: Nicodeamus Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Nicodeamus Dumas regains spent Legendary Actions at the start of his turn
-      - Devils Portal: Nicodeamus can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of his master for 1 minute
-      - Cantrip: Nicodeamus Dumas casts a cantrip
-      - Family Reserve: Nicodeamus Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight 
+    - He is a brilliant orator with a steel will and a keen eye for human nature. 
+    - He is proficient in persuasion, deception and perception 
+    - He is profiecient in Martial Weapons 
+
+    special-abilities: 
+    Feats: Actor, Athlete, Crusher, Keen Mind, Ritual Caster, Inspiring Leader, Tavern Brawler   
     attacks: |
-      Dual Pistol Sidearms
-      Throws playing cards that turn into Eldritch Blasts
+      He'll fight with a club or blade, or is also a decent hand with improvised weapons
     combat-tactics: |
-      He'll do his best to get the jump on his opponents with his quickdraw Firebrand pistols or his Eldritch cards
-      Failing that, he'll resort to more traditional spellcasting using his card deck as an arcane focus so he does not need other spell components and use his Legendary Actions to bring in backup
+      He is a brawler
     special-equipment:
-    - Arcane Playing Cards - Can be used to read Tarot and when thrown they take on the traits of the Eldrich Blast spell at the level of the caster
-    - 2 Firebrand Revolvers - Never needs to be reloaded, +3 to attack and damage, May be used as a bonus action
-    - Ring of Evasion - 3 charges, regains charges daily at dawn, allows the wearer to spend a charge to succeed on a fail dexterity saving throw
+    - Ritual Book including Gate, Message and Scrye
+    - Ring of Protection
+    - Ring of Spell Turning
+    - Ring of Mind Sheilding    
+    
   profile:
 
     #
@@ -507,16 +491,13 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Nicodeamus Dumas is the eldest grandson of Anastasia Dumas and the defacto leader of the Dumas Family cult. Pretty much since birth, Nicodeamus was raised by his grandmother Anastasia, and grew in her twisted image.
-      As a child, his only friends were the lesser devils that serve his grandmothers patrons. They taught him their ways, their magic, their bargains, their deceptions, and they taught him well. He grew to become a consumate 
-      grifter, conman and liar. They taught him to play their games and to gamble. When he came of age, his grandmother introduced him to her benefactor, to whom he took an oath, brokered a deal and was rewarded with a 
-      sizeable amount of power upon completion of his given task. At a very early age he also became fascinated with a new technology slowly appearing across the realm, firearms. His doting grandmother encouraged his new hobby 
-      and acquired him the best pieces that could be found. He mastered handling them, repairing them, shooting them and eventually even building his own. He is one of the formost masters of firearms in existence, and when he 
-      took on his patron, he was gifted a pair of very special revolvers. He used his gifted weapons to carry out his side of the bargain he made, the murder of his own wayward father and retreive his mother. His father had 
-      taken his mother away from the family and turned her against their patron. Nicodeamus was charged with hunting him down, ending his life and returning his mother to his grandmother.  He did so with glee and with flourish. 
-      Gunning the man down in cold blood, almost as an afterthought, after securing his mother and burning their home to the ground. Completing his assigned task, he granted significant power from his patron and has been 
-      practicing his gifts ever since. As he reached his late 20's, his grandmothers growing frailty required him to step up and take over the day to day leadership of the family. With the help of his wife/sister Irini, he has 
-      been a very successful leader, growing the family in size, power and influence.   
+      Jedediah Dumas is the second son of Anastasia and the public face of the family. While his nephew, Nicodeamus, is the leader behind the scenes and Anastasia's favourite, Jedediah is the public face of the the family. 
+      He handles all political dealings and negotiations between the family and any outside institution, be they governments, businesses or other organizations. Jedediah sits on the city council as well as the boards 
+      and committees of several other institutions including the City Watch. He will always negotiate to the benefit of the family and attempt to influence any organization he is apart of to do his family's work for them. 
+      Jedediah has also been charged as the primary caregiver for his beloved sister Delores and dotes on her as often as his other responsibilties allow. He is not happy with the horrors that have been wrought on his dear 
+      sister, but he understands that they needed to happen for the good of the family. He is, however, very unhappy with how Nicodeamus abuses and tortures his mother. He, in fact, does not like much of what Nicodeamus does, 
+      who he is or the decisions he has made for the family and believes that Anastasia should have put him in charge instead of his demented nephew. While he would never make an outright play for leadership, especially while 
+      Anastasia is still alive, he has been building his own power base in case the day should ever come. Above all else, he will do anything in his power to protect Delores.
       
     #
     # Personality (or something like that):
@@ -527,14 +508,11 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Nicodeamus Dumas is almost a caricature of a man. Tall and bone-thin with pale, freckled skin and wild curls of flaming red hair that he keeps tucked under a wide brimmed hat. He dresses like a dandy, with fine travelling 
-      clothes, impeccibly pressed, usually in a purple or burgundy with white gloves. He almost always has a sly, almost quizzical smile plastered across his face and entrancing violet-colored eyes. He is perpetually whistling 
-      a jaunty little tune but makes no effort to hide the sidearm on each hip under his long black coat, openly demonstrating to all that encounter him that he is always a threat. While coming off as jovial and cartoonish, 
-      Nicodeamus is sharp as a tack and thoroughly vicious. His happy demeanor is primarily for the purposes of recruitment, but also partially because he's a little on the mad side. He is endearing and charming while things 
-      are going his way, but like a true sociopath, can turn hard and cold at a moments notice. He is ruthless in persuit of his goals, but generally finds it easier to use the carrot rather than the stick to achieve his 
-      aims. He likes to use either gambling or card tricks to break the ice with potential recruits and can be very persuasive when he wants to be. With the exception of his patron and his granmother, he will tolerate absolutley 
-      no disrespect or disobedience from the other members of "The Family" and will not hesitate to sacrifice anyone who invokes his ire.
-      MORE TEMPLATE
+      Jedediah Dumas is an aging man with a large powerful build. A bear of a man, he is always impeccably dressed in fine clothing and takes pride in his appearance. His graying hair is close-cropped and his short beard is 
+      well maintained. He is a severe, no nonsense kind of individual with a unique ability to get his goals accomplished. He is an accomplished and convincing orator and proud of his skill.  He is devoted to his family and 
+      escpecially devoted to his beloved, long-suffering sister, Delores. He is bitter and jealous of the favor that his mother Anastasia, has shown to his nephew Nicodeamus, and believes that he is the rightful heir 
+      to the leadership of the Dumas clan. He is not bold enough to attempt a coup, but could possibly be persuaded to sneakily aid a plot that would see his nephew brought low or humiliated, as long as it wasn't to the 
+      detriment of the family as a whole       
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
