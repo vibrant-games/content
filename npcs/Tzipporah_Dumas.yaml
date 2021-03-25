@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: Nicodeamus_Dumas
+  id: Tzipporah_Dumas
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-03-03"
+  date: "2021-03-24"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Nicodeamus Dumas
+  name: Tzipporah Dumas
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Young Adult
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: he/him
+    pronouns: she/her
 
     #
     # Occupation(s).
@@ -215,8 +215,8 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Gambler
-    - Cult Leader
+    - Freeloader
+    
 
     #
     # D & D classes (case insensitive):
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Fighter/Warlock
+    class: Fighter/Rogue
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    class: Gunslinger/Hexblade
+    subclass: Gunslinger/Assassin
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 18/14
+    level: 10/9
 
     #
     # Alignments (case insensitive):
@@ -287,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic evil
+    alignment: Chaotic Evil
 
     #
     # Alignment tendencies:
@@ -312,7 +312,6 @@ npc:
     #
     languages:
     - Common
-    - Undercommon
     - Thieve's Cant
     - Infernal
     - Abyssal
@@ -338,7 +337,7 @@ npc:
     factions:
     - id: Dumas_Family
       name: Dumas Family
-      role: Head of the Table
+      role: Freeloader
 
 
     #
@@ -347,9 +346,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Charasmatic
-    - Creepy
-    - Intense
+    - Fearless
+    - Wild
+    - Ambitious
 
   improv:
 
@@ -364,7 +363,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A slender man whistling a jaunty tune pulls up a chair at your table "Would anyone care for a game of cards?" 
+    introduction:  A tiny, pretty, young brunette sitting across the bar smiles and twirls her hair... then draws and points her guns
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -375,7 +374,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Tall and thin with a shock of red hair peeking out from under his wide-brimmed hat. Fine clothes, impeccibly clean.
+    appearance:   A slight, short, beautiful teenage girl with long, dark, brown hair, violet eyes and dressed in fine men's clothing
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -391,7 +390,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Feelin' lucky?", "You think this is somethings, you should see our family dinners", "Are you a draw or a stud?"
+    expressions:  "Buy a girl a drink?", "My cousin says that all the time!", "My cousin taught me how to play that card game!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -404,7 +403,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Whistles happy tunes incessantly. regularly shuffles the deck of cards he always carries with him. does card tricks
+    mannerisms:   A crooked smile and a twirl of the hair
 
   acting:
     #
@@ -414,7 +413,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Growing his "family", furthering the goals of his patron
+      Fun, Excitment, Impressing her cousin
       
     #
     # Passions:
@@ -423,7 +422,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Gambling, card tricks, his "studies"
+      Her cousin
       
     #
     # Vulnerabilities:
@@ -432,7 +431,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      His ego has been known to get the better of him
+      Impulsive and Naive
       
     #
     # Secrets:
@@ -441,22 +440,22 @@ npc:
     # ???Maximum length???
     #
     secrets: |
-      The Dumas Family, while having some actual familial ties, is definitely more of a cult than a family. He is also married to his half-sister
+      She is obsessed with her cousin Nicodeamus, hoping someday to replace or join Irini as his wife
       
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 20
-    hit-points: 213
-    speed: 40
-    str: 15
-    dex: 24
-    con: 19
-    int: 17
-    wis: 19
-    cha: 22
+    armour-class: 16
+    hit-points: 81
+    speed: 30
+    str: 16
+    dex: 19
+    con: 15
+    int: 11
+    wis: 17
+    cha: 17
 
   #
   # Special characteristics.
@@ -467,36 +466,38 @@ npc:
   #
   specialties:
     skills:
-    - Fighter Traits: Two Weapon Fighting, Second Wind, Action Surge, 3 Attacks, Indomitable, 
-    - Gunslinger Traits: Firearm Proficiency, Gunsmith, Adept Marksman, 4 Grit, Quickdraw, Rapid Repair, Lightning Reload, Vicious Intent, Hemorrhaging Critical
-      - Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot, Winging Shot
-    - Warlock Traits: Pact of the Hexblade: 
-      - Cantrips: Eldritch Blast, Mage Hand, Toll The Dead, Thunderclap. 
-      - Spells: Contact Other Plane, Danse Macabre, Hold Monster, Infernal Calling, Modify Memory, Sickening Radiance, 
-                Summon Greater Demon, Dimension Door, Blight, Counterspell, Dispel Magic, Summon Lesser Demon, Vampiric Touch, Summon Undead, Crown of Madness, Hold Person, Armor of Agathys, Charm Person, Hex, Hellish Rebuke, 
-    - Hexblade Traits: Hexblade's Curse, Hex Warriors, Accursed Specter, Armor of Hexes, Master of Hexes, 
-      - Hexblade Spells: Shield, Wrathful Smite, Blur, Branding Smite, Blink, Elemental Weapon, Phantasmal Killer, 
-                         Staggering Smite, Banashing Smite, Cone of Cold
-    - Feats: Inspiring Leader, Lucky, Sharpshooter, War Caster, Skulker, Gunner 
-    special-abilities: |
-      Proficient in Sleight of Hand, Stealth, Religion, Insight, Perception, Deception, Performance & Persuasion
-      He is an adept gambler, card player and showman
-    - Legendary Resistance: (3/Day), If Nicodeamus Dumas fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: Nicodeamus Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Nicodeamus Dumas regains spent Legendary Actions at the start of his turn
-      - Devils Portal: Nicodeamus can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of his master for 1 minute
-      - Cantrip: Nicodeamus Dumas casts a cantrip
-      - Family Reserve: Nicodeamus Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight 
+ - Fighter Abilities:
+    - Fighting Style: Two-Weapon Fighting
+    - Second Wind: Bonus Action to regain 1d10 + Fighter Level
+    - Action Surge: Once every short/long rest can take an extra action
+    - Extra Attack: Can attack twice each turn
+    - Indomitable: Can reroll 1 saving throw per long rest
+ 
+     - Gunslinger Traits: Firearm Proficiency, Gunsmith, Adept Marksman, 3 Grit, Quickdraw, Rapid Repair
+      - Trick Shots: Deadeye Shot, Forceful Shot, Piercing Shot, Violent Shot   
+
+- Rogue Abilities: 
+    - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
+    - Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
+    - Uncanny Dodge: Can use her reaction to halve an attack's damage
+    - Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage
+
+    - Assassin Traits: Assassinate, Infiltration Expertise    
+
+    special-abilities: 
+Feats: Dual Weilder, Gunner, Sharpshooter, Shadow Touched: Invisibility and Darkness, Skulker
+Legendary Resistance: (1/Day), If Tzipporah Dumas fails a saving throw she can choose to succeed instead. She is Immune to fear
+  
     attacks: |
-      Dual Pistol Sidearms
-      Throws playing cards that turn into Eldritch Blasts
+      Two pistol attacks 
     combat-tactics: |
-      He'll do his best to get the jump on his opponents with his quickdraw Firebrand pistols or his Eldritch cards
-      Failing that, he'll resort to more traditional spellcasting using his card deck as an arcane focus so he does not need other spell components and use his Legendary Actions to bring in backup
+      She will duck for cover and fire from hidden
     special-equipment:
-    - Arcane Playing Cards - Can be used to read Tarot and when thrown they take on the traits of the Eldrich Blast spell at the level of the caster
-    - 2 Firebrand Revolvers - Never needs to be reloaded, +3 to attack and damage, May be used as a bonus action
-    - Ring of Evasion - 3 charges, regains charges daily at dawn, allows the wearer to spend a charge to succeed on a fail dexterity saving throw
+    - 2 6-Shot Pistols
+    - Single-Shot Holdout Palm Gun
+    - Cloak of Elvinkind
+    - Ring of Protection    
+    
   profile:
 
     #
@@ -507,16 +508,10 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Nicodeamus Dumas is the eldest grandson of Anastasia Dumas and the defacto leader of the Dumas Family cult. Pretty much since birth, Nicodeamus was raised by his grandmother Anastasia, and grew in her twisted image.
-      As a child, his only friends were the lesser devils that serve his grandmothers patrons. They taught him their ways, their magic, their bargains, their deceptions, and they taught him well. He grew to become a consumate 
-      grifter, conman and liar. They taught him to play their games and to gamble. When he came of age, his grandmother introduced him to her benefactor, to whom he took an oath, brokered a deal and was rewarded with a 
-      sizeable amount of power upon completion of his given task. At a very early age he also became fascinated with a new technology slowly appearing across the realm, firearms. His doting grandmother encouraged his new hobby 
-      and acquired him the best pieces that could be found. He mastered handling them, repairing them, shooting them and eventually even building his own. He is one of the formost masters of firearms in existence, and when he 
-      took on his patron, he was gifted a pair of very special revolvers. He used his gifted weapons to carry out his side of the bargain he made, the murder of his own wayward father and retreive his mother. His father had 
-      taken his mother away from the family and turned her against their patron. Nicodeamus was charged with hunting him down, ending his life and returning his mother to his grandmother.  He did so with glee and with flourish. 
-      Gunning the man down in cold blood, almost as an afterthought, after securing his mother and burning their home to the ground. Completing his assigned task, he granted significant power from his patron and has been 
-      practicing his gifts ever since. As he reached his late 20's, his grandmothers growing frailty required him to step up and take over the day to day leadership of the family. With the help of his wife/sister Irini, he has 
-      been a very successful leader, growing the family in size, power and influence.   
+      Tzipporah Dumas or Zippy to her friends (she doesn't have any friends), is the only daughter of Basil Dumas. She is the youngest blood member of the Dumas Family and as a result, has grown up without 
+      the benefit of much in the way of rules or order. Her cousin Nicodeamus has taken special interest in raising her and has taught her all that he knows of his favorite hobby, Firearms! She's a quick study and has 
+      become a mean gunfighter in her own right, she however, doesn't yet have access to the magic that her cousin has. When she comes of age (should she survive that long) she will take the same pact that her cousin 
+      took and become the family's next Hexslinger.
       
     #
     # Personality (or something like that):
@@ -527,14 +522,9 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Nicodeamus Dumas is almost a caricature of a man. Tall and bone-thin with pale, freckled skin and wild curls of flaming red hair that he keeps tucked under a wide brimmed hat. He dresses like a dandy, with fine travelling 
-      clothes, impeccibly pressed, usually in a purple or burgundy with white gloves. He almost always has a sly, almost quizzical smile plastered across his face and entrancing violet-colored eyes. He is perpetually whistling 
-      a jaunty little tune but makes no effort to hide the sidearm on each hip under his long black coat, openly demonstrating to all that encounter him that he is always a threat. While coming off as jovial and cartoonish, 
-      Nicodeamus is sharp as a tack and thoroughly vicious. His happy demeanor is primarily for the purposes of recruitment, but also partially because he's a little on the mad side. He is endearing and charming while things 
-      are going his way, but like a true sociopath, can turn hard and cold at a moments notice. He is ruthless in persuit of his goals, but generally finds it easier to use the carrot rather than the stick to achieve his 
-      aims. He likes to use either gambling or card tricks to break the ice with potential recruits and can be very persuasive when he wants to be. With the exception of his patron and his granmother, he will tolerate absolutley 
-      no disrespect or disobedience from the other members of "The Family" and will not hesitate to sacrifice anyone who invokes his ire.
-      MORE TEMPLATE
+      Tzipporah Dumas is a slight, little, slip of a girl with hip-length, dark brown hair and big violet eyes. She is so enamored with her cousin, she has even taken up dressing like him. She is wild and carefree with 
+      very little respect for authority, especially that of her "stuffy" father Basil. The only authority figure she seems to respond to at all is Nicodeamus. She is obsessed with her cousin and hopes to one day either 
+      replace or join Irini as his wife. Though not the sharpest knife in the drawer, Tzipporah is completely fearless and will have a go at pretty much anyone or anything at anytime. 
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
