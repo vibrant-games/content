@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: Anastasia_Dumas
+  id: Crusible_Firepeak
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-03-04"
+  date: "2021-04-25"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Anastasia Dumas
+  name: Crusible Firepeak
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Elderly
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Human
+    race: Bugbear
 
     #
     # The sub-race can be anything.
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: she/her
+    pronouns: he/him
 
     #
     # Occupation(s).
@@ -215,7 +215,8 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Matriach
+    - Smith
+    
 
     #
     # D & D classes (case insensitive):
@@ -223,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -238,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Sorcerer
+    class: Cleric
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Shadow Magic
+    subclass: Forge Domain
 
     #
     # Class level.
@@ -270,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 20
+    level: 17
 
     #
     # Alignments (case insensitive):
@@ -286,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic evil
+    alignment: Chaotic Good
 
     #
     # Alignment tendencies:
@@ -295,9 +296,8 @@ npc:
     # Optional.
     #
     tendencies:
-    - TEMPLATE
-    - TEMPLATE
-    - TEMPLATE
+    - N/A
+
 
     #
     # Languages the character speaks
@@ -312,8 +312,9 @@ npc:
     #
     languages:
     - Common
-    - Abyssal
-    - Draconic
+    - Dwarf
+    - Goblin
+
 
     #
     # Factions:
@@ -326,27 +327,27 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
     factions:
-    - id: Dumas_Family
-      name: The Dumas Family
-      role: Matriach
-      
+    - id: The_Dead_Hunters
+      name: The Dead Hunters
+      role: Blacksmith/Weaponsmith/Armorer
+
+
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
     adjectives:
-    - Wicked
-    - Wrathful
-    - Vengeful
+    - Solemn
+    - Industrious
+    - Stalwart
 
   improv:
 
@@ -361,7 +362,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A withered elderly woman glares across the courtyard, "Have you decided to join our little family, dearies?"
+    introduction:  The Huge Bugbear in his smith's apron slams his hammer down onto the anvil one last time before looking up to repond 
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +373,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Ancient with sharp, angular features. Tiny, feeble and gray but with deep piercing eyes. Dressed like a rich old lady
+    appearance:    7'5" and rippling with muscles. Ursine features with short cropped hair full of singed patches and a leather apron 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +389,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Come my dearies, Feast!", "Join our family, the Master will love you!", "Burnnnn!!!"
+    expressions:  "Yor new weapon's bout ready, Phantom", "hmph", "leave m'alone, got work ta do"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Eerily calm and still except for a chronic cough
+    mannerisms:   avoids eye contact
 
   acting:
     #
@@ -411,7 +412,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Serving her master and growing her "family"
+      ridding the world of fiends, undead and abominations. redemption 
       
     #
     # Passions:
@@ -420,8 +421,8 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Dark Magic
-     
+      Perfecting his craft
+      
     #
     # Vulnerabilities:
     #
@@ -429,7 +430,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      Frail and ancient, prone to fits of madness
+      Not the brightest, quick to anger
       
     #
     # Secrets:
@@ -438,22 +439,22 @@ npc:
     # ???Maximum length???
     #
     secrets: |
-      She is the matriarch of the Dumas Family Cult. She is actually over 200 years old due to her pact with a powerful devil who is the family's patron
+      Did many terrible things with his clan 
       
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 21
-    hit-points: 236
-    speed: 15ft walking and 30ft flying
-    str: 8
-    dex: 10
-    con: 20
-    int: 18
-    wis: 19
-    cha: 24
+    armour-class: 22
+    hit-points: 178
+    speed: 35
+    str: 26
+    dex: 18
+    con: 21
+    int: 11 
+    wis: 20
+    cha: 10
 
   #
   # Special characteristics.
@@ -464,39 +465,63 @@ npc:
   #
   specialties:
     skills:
-    - Sorcerer Spellcasting: 20 Sorcery Points
-        Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Minor Illusion, Message, Chill Touch
-        1st Level: Charm Person, Magic Missle, Shield, Mage Armor
-        2nd Level: Detect Thoughts, Hold Person, Scorching Ray, Shatter, Darkness
-        3rd Level: Fireball, Counterspell, Lightning Bolt, Slow, Fly, Dispel Magic, Blink
-        4th Level: Banishment, Dimension Door, Polymorph, Wall of Fire
-        5th Level: Cloudkill, Cone of Cold, Dominate Person, Teleportation Circle
-        6th Level: Chain Lightning, Disintegrate, Circle of Death, Mass Suggestion
-        7th Level: Finger of Death, Fire Storm, Plane Shift
-        8th Level: Incendiary Cloud, Earthquake, Power Word Stun
-        9th Level: Gate, Power Word Kill, Time Stop
-    - Shadow Magic: Eyes of the Dark, Hound of Ill Omen, Shadow Walk, Umbral Form
-    - Shadow Sorcerer Quirks
+  - - Bugbear Traits:
+       - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
+       - Long Limbed: when making a melee attack his reach is extended by 5 extra feet
+       - Powerfuk Build: Counts as one size larger for carrying capacity and amount he can lift, push or drag
+       - Sneaky: Proficient in Stealth
+       - Surprise Attack: If he surprises a creature and hit ti on the first turn of combat, he may add 2d6 to the damage
     
-    special-abilities: |
-      Legendary Resistance (3/Day), If Anastasia Dumas fails a saving throw she can choose to succeed instead 
-      Legendary Actions: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn
-    Devils Portal: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-    Cantrip: Anastasia Dumas casts a cantrip
-    Family Reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
+   - - Cleric Abilities:
+       - Spellcasting: DC19
+         Cantrips: Guidance, Thaumaturgy, Resistance, Sacred Flame, Mending
+         1st Level: Detect Magic, Bane, Bless, Cure Wounds
+         2nd Level: Hold Person, Spiritual Weapon, Continual Flame
+         3rd Level: Dispel Magic, Create Food and Water, Spirit Guardians
+         4th Level: Banishment, Control Water, Stone Shape
+         5th Level: Flame Strike, Greater Restoration, 
+         6th Level: Blade Barrier 
+         7th Level: Fire Storm 
+         8th Level: Earthquake
+         9th Level: Mass Heal
+       - Channel Divinity: Turn Undead, Destroy Undead, Artisan's Blessing 
+       - Divine Intervention: Can call her patron to intervene on her behalf
+
+   - - Forge Domain Abilities:
+       - Bonus Proficiencies: Proficiency with Heavy Armor and Smith's Tools
+       - Artisans Blessing: Conducts an hour-long ritual that creates a nonmagical item that must include some metal; weapons, armor, ammunition, tools, etc. Can duplicate and metal item in his posession
+       - Soul of the Forge: While wearing heavy armor, he gains +1 to his AC
+       - Divine Strike: Once per turn can cause an attack the hits to add 2d8 Fire damage 
+       - Saint of Forge and Fire: Immune to fire damage, When wearing heavy armor has resistance to bludgeoning, piercing and slashing damage from nonmagical attacks       
+       - Spellcasting:
+         Cantrips: Fire Bolt
+         1st Level: Identify, Searing Smite
+         3rd Level: Heat Metal, Magic Weapon
+         5th Level: Elemental Weapon, Protection from Energy
+         7th Level: Fabricate, Wall of Fire
+         9th Level: Animate Object, Creation      
+
+    special-abilities:
+    - Proficiencies: Smith's Tools, Heavy Armor, Shields, Athletics, Perception, Intimidation, Stealth, Religion    
+    - Feats: Crusher, Durable, Grappler, Great Weapon Master, Mobile, Savage Attacker, Sentinel, War Caster 
+    - Legendary Resistance: (3/Day), If Crusible Firepeak fails a saving throw he can choose to succeed instead 
+    - Legendary Actions: Crusible Firepeak can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                         Crusible Firepeak regains spent Legendary Actions at the start of his turn
+      - Forge Bane: Crusible Firepeak can cause one magical metal item within 30 feet to become nonmagical until the end of his next turn
+      - Forge Restoration: Crusible Firepeak can gain HP equal to the total amount of fire damage done in combat this round
+      - Fires Rage: Crusible Firepeak can cast Fire Storm without using a Spell Slot 
     
     attacks: |
-      Spellcasting
-      Legendary Actions
+      has 2 attacks
     combat-tactics: |
-      Prefers to let her family do her fighting for her but is an exceedingly powerful spellcaster if it comes to it 
-      
+      Loves to fight up close and personal, but tries hard to control his temper unless it's against fiends or undead
     special-equipment:
-    - Ring of Evasion
-    - Ring of Spell Turning
-    - Ring of Regeneration
-    - Amulet of the Planes
+    - +3 Plate Armor
+    - Forge Breaker Great Maul
+    - Forge Ringer Great WarHammer
+    - Smith's Tools
 
+    
   profile:
 
     #
@@ -507,19 +532,13 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Many years ago, after the murder of her wealthy husband, Anastasia made a deal with a powerful devil for the power to seek revenge on her husbands 
-      killers. This deal gave her immense power in return for sending souls to the devil to feast upon. The deal has greatly extended Anastasia's life span, 
-      but has not stopped her from aging. As a result, she has become a frail, withered old raisin of a woman. This has in no way diminished her powers 
-      at all, on the contrary her magics are more powerful than ever. In the service of her devil master, she has built the cult known as the "Dumas Family", 
-      some of which are actual blood relatives and descendants, but most of which are cultists , followers and hangers-on. Her cultists cultivate the follwers 
-      and the best of them get innitiated into the family and the rest become sacrifices to their patron. The Family has developed an evergrowing following 
-      and because of Anastasia's power, keen mind and ruthlessness has made deep inroads into many local institutions including guilds, noble houses, city hall, 
-      the city watch and possibly even further. Because of her growing infirmity, she has predominantly become reclusive in the family home and passed all of 
-      the more public duties of leadership to her grandson Nickodeamus, a cocky and vicious litlle cur. However, she still performs most of the communion and
-      sacrificial rites to her patron herself. She spends more and more time in a fugue state communing with her patron and less and less time in lucidity. 
-      She is capable of great feats of magic but will almost never engage in extended combat. If she can't immediately dispatch her eneies within or before the 
-      first round of combat, she will summon and allow her family to do her fighting for her and use her magic to make her escape as quickly as possible. It is
-      unclear what her or her patron's endgame is beyond the accumulation of power and the devouring of souls, but theres no way it's good for anyone.
+      Crusible Firepeak grew up as a typical Bugbear; rough, angry, violent and viscious. A clan of savages who raided, warred and murdered without remorse. Unfortunately his clan raided someone they shouldn't have, a powerful
+      demon hiding in human form ruling over a wealthy keep. It proved to be the last raid they ever went on. The demon's forces annihilated his clan except for a few members that were kept for torturing at the demon's leasure. 
+      Crusible, who then went by the name Torog, was one such unlucky individual. After long months of torture, Torog was slated to be burned at the stake as one final retribution for the clan's insolence in daring to attack. 
+      But the fire refused to take Torog. Surrounded by flames, a higher purpose was revealed to Torog by the Gods of the Forge, and Crusible Firepeak was born. Surviving the flames Crucible fled from the demon, and found a 
+      forge where he could learn the trade to honour his saviours and embark on his new path. Swearing revenge against all those that inhabit the Abyss, he pursued his new calling with furvor, until he caught the eye of The 
+      Phantom and became the smith and weaponer for the Dead Hunters 
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -529,14 +548,9 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Anastasia was once a fairly regular woman, perhaps a little bit rude, snobby and condescending, but nothing too exceptional. Her husband's murder at the
-      hands of his business rivals, left her a broken, vengeful and angry woman. Feeling helpless to get revenge on her own, she sought out ancient rites and 
-      made a pact with a greater devil to give herself the powers she needed. Cold, calculating and shrewed, one by one she sent her enemies souls to her patron. 
-      By the time she had exacted her revenge the kust for power had overcome her. As the years went by and she grew her family, she became more and more cruel
-      vicious and wrathful. The more time she spent communing with her patron, the less of a grip she continued to hold on reality and is now quite mad. 
-      Despite her madnees and her infirmity, she is still very capable, cunning and intelligent. She rules her family with an iron fist and will tolerate no
-      failure from her descendants or followers. She is manuipulative, and will often play members of her family against each other to get the outcome she wants.
-     
+      Crusible Firepeak is a massive specimen. What little hair he has is short cropped and shaved close, a very odd choice for a bugbear, but mostly due to his baptism in fire. What's left of the hair on his ursine face, is 
+      patchy and singed. He wears full plate armor underneath the long leather apron covered in grease and scorth marks. Crusible isn't the brightest of fellows, but has become quite adept at his chosen calling of the forge. 
+      What he lacks in intelligence he makes up for in passion, industry and devotion to the Gods that saved him. He's not very personable, but he has proven himself to The Phantom as a stalwart ally.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
