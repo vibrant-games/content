@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: albrecht_mukht
+  id: amera
 
   #
   # The name of the submitter (your name).
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Albrecht Mukht
+  name: Amera
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: young adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Half-Orc/Half-Dwarf
+    race: Siren
 
     #
     # The sub-race can be anything.
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: he/him
+    pronouns: they/them
 
     #
     # Occupation(s).
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - General Contractor
+    - Sailor
     
 
     #
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Barbarian
+    class: Bard
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Path of the Berserk
+    subclass: College of Heartbreakers
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 5
+    level: 6
 
     #
     # Alignments (case insensitive):
@@ -287,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: Neutral Evil
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -312,8 +312,8 @@ npc:
     #
     languages:
     - Common
-    - Orcish
-    - Dwarvish
+    - Primordial
+    - Aquan
 
 
     #
@@ -334,9 +334,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: Masons_Guild
-      name: Mason's Guild
-      role: General Contractor
+    - id: ships_crew
+      name: Ship's Crew
+      role: Sailor, Courtisan
 
 
     #
@@ -345,9 +345,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Angry
-    - Skilled
-    - Racist
+    - Beautiful
+    - Seductive
+    - Talented
 
   improv:
 
@@ -362,7 +362,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Often encountered while working a contracting job on a home or business, such as a tavern or inn.  
+    introduction:  Sliding down from the boats rigging, a beautiful androgynous humanoid greets you "Ho! Welcome aboard handsome!" 
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -373,7 +373,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Stout and muscular - barrel shaped; 5'5"; Tanned reddish brown skin; Deep brown dreadlocks with blonde highlights 
+    appearance:   Tall, lithe, beautiful and androgynous, with gills on their neck and slight fins protruding up the backs of their arms
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -389,7 +389,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "If you gots a need, I do the deed"; "Poor craftsmanship. Damned elves/humans couldn't build quality if they tried"
+    expressions:  "Aren't you the handsome one", "The captain doesn't like me to fraternize with the passengers. it causes problems"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -402,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Always pointing out the differences between the races yet can't tell the difference between members of the same race.
+    mannerisms:   moves like silk with a constant slight grin and seductive eyes
 
   acting:
     #
@@ -412,7 +412,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      A paradoxically deeply racist multi-racial individual, Albrecht experiences his greatest joy when human or elven populations are diminished in numbers. He is also highly driven to have a hand in as many building projects in his current town or city so he can brag about his renown.
+      Adventure, finding mates
       
     #
     # Passions:
@@ -421,7 +421,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Woodworking; puzzles; racism
+      Travelling
       
     #
     # Vulnerabilities:
@@ -430,7 +430,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      Can be drawn into fights with racist or anti-racist epithets
+      Extremely vain. Easily becomes obsessed with people affecting their decision making
       
     #
     # Secrets:
@@ -438,7 +438,7 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: He's pretty upfront about everything
+    secrets: Most of their mates end up dead. Is much older than they appears
        
       
   #
@@ -446,15 +446,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 13
-    hit-points: 48
-    speed: 35
-    str: 18
+    armour-class: 11
+    hit-points: 61
+    speed: 30 walking with legs or 5 walking and 40 Swimming with tail
+    str: 11
     dex: 12
     con: 16
-    int: 9 
-    wis: 10
-    cha: 8
+    int: 13 
+    wis: 18
+    cha: 20
 
   #
   # Special characteristics.
@@ -465,42 +465,46 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Orc Abilities:
+   - - Siren Abilities:
        - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-       - Menacing: gain proficiency in the Intimidation skill 
-       - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-       - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-
-   - - Half-Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                       instead of his normal Proficiency Bonus       
+       - Amphibious: You can breathe both air and water 
+       - Sirens Body: As a bonus action, they turn into an amphibious form, their legs becoming a single powerful tail. Their walking speed is reduced to 5 feet and they gain a swimming speed of 40 feet. While in this form, 
+                     they can use their bonus action to return to normal..
+       - Sirens Call: Whenever they make a Charisma (Performance) check to sing, they are considered proficient in the Performance skill and add double their proficiency bonus to the check, instead of their normal proficiency 
+                      bonus. In addition, they know the friends cantrip. They can cast the charm person spell once and need to finish a long rest before they can cast it again. They can also cast the suggestion spell once 
+                      and need to finish a long rest before they can cast it again. Charisma is their spellcasting ability for these spells. 
+       - Charm Resistant: Has advantage against being charmed       
     
-   - - Barbarian Abilities:
-       - Rage: Can enter a rage as a Bonus Action. 
-          - have advantage on Strength Checks and Strength Saving Throws.
-          - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-          - Resistance to bludgeoning, piercing, and slashing damage          
-       - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-       - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                          but Attack Rolls against him have advantage until his next turn
-       - Extra Attack: Can attack twice each turn
+   - - Bard Abilities:
+       - Bard Spellcasting: Spell DC15 
+          - Cantrip: Vicious Mockery, Dancing Lights, Minor Illusion
+          - 1st Level: Disguise Self, Faerie Fire, Hideous Laughter, Sleep 
+          - 2nd Level: Enthrall, Suggestion, Heat Metal
+          - 3rd Level: Nondetection, Major Image, Dispel Magic         
+       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
+                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                       being Frightened or Charmed
+       - Expertise: gets double proficiency bonus in Persuasion and Deception                
  
-   - - Path of the Berserk Abilities:
-       - Fenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
-                he suffer one level of Exhaustion    
+   - - College of Heartbreakers Abilities:
+       - Promise of Sweet Nothings: Once per short rest, after speaking to a humanoid for 1 minute, the target must make a Wisdom saving throw of DC15 or be charmed for 1 hour. On a successful save there is no hint that 
+                                    they have attempted to charm them
+       - Heartbreak: As a bonus action they can spend a Bardic Inspiration Point to end a charm or enchantment effect the are concentrating on to do 1d8+10 Psychic damage. They gain HP equal to the damage done 
+       - Seductive Glance: As a bonus action, 1 humanoid with 60 feet gets disadvantage on attack rolls against them and saving throws againts enchamntment spells they cast       
 
     special-abilities:
-    - Proficiencies: Intimidation, Persuasion, Mason's Tools, Woodcrafter's Tools    
+    - Proficiencies: Persuasion, Deception, Performance, Insight, Intimidation, Perception    
     
     attacks: |
-      2 Attacks with his Maul or Javelins
+      2 Attacks with their Call or their Claws
     combat-tactics: |
-      Albrecht has worked to control his anger and will likely only rage if vehemently provoked. After this point, however, better duck and run
+      She will rarely fight. She will use her call to charm her opponents. If that doesn't work, she will try to escape
     special-equipment:
-          - Mason's Tools
-          - Woodcrafter's Tools
+          N/A
                                                                    
   profile:
 
@@ -512,14 +516,10 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Brushing his dreadlocks from his eyes, Albrecht stares down the elves approaching his work site. "Oy, git yer dirty feet off this site! Yer gonna taint the beauty of my work!" He snarls, spitting in their 
-      direction. The two elves remark to each other about the rarity they see nailing shingles to the roof of the new tavern. A half-orc? A feral dwarf? They cannot be certain. His muscular body and scars tell a story 
-      of a man who is not civilized, per se. A man who would unleash rage upon them. The elves depart. The progeny of a Dwarven slave woman who answered to Orcish slavers in a barbaric tribe, Albrecht had no true connection 
-      to family, as one might know it, except to hate others and unleash rage upon those who challenge him. Tired of the poor and sloppy indulgences of his tribe, Albrecht sought greater wealth and power. He followed a 
-      trading caravan he saw passing in the distance of the plains, offering to help them with any repairs or services they might need. He continued on with this 'hired-hand' type business upon arriving in the town of 
-      Meership Downs, a small sailing port and bustling sea-side community. Here he grew his talents, but also his hatred for other races as the village was frequented by many types of people carousing, drinking, fighting, 
-      and all-around ne'er-do-wells. Now, Albrecht focuses on having his 'stamp' on as many buildings, ships, wagons, and so forth, as he possibly can. He puts his anger and hatred into his work knowing that unleashing his 
-      rage would not only be dangerous for others, but most certainly for himself.
+      Amera is considerably older than she appears to be. Around 200 years old, though in appearance they are around 25. Urban sprawl forced them from their cliff-side home. As a result they took up a job as a sailor allowing 
+      them to travel and be constantly on the move. They also regularly change ships and crews as often as possible to prevent people from learning the truth about what they are. They will usually serve as both a lookout and 
+      entertainment on the ships, they will also occasionally function as a companion for the ships captain if the mood takes them. If they need to, they can transform and escape from a situation underwater. They're main goal 
+      is their own continued survival as well as mating and perpetuating it's species
 
       
     #
@@ -531,11 +531,8 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Stout and muscular - barrel shaped; 5'5"; Tanned reddish brown skin; Deep brown dreadlocks with blonde highlights; various scars on his body and one across his right eye. While in the process of performing some roofing 
-      or general repairs he may shout out to ask a party to pitch-in for some gold in return. May also approach sinister looking adventurers with an offer to 'free the land' from the vile clutches of humans or some other race 
-      and ask him/her to 'off' a few members of said race. Easily distracted; Will forego tasks to complete a puzzle; carries small wooden sliding puzzles he built wherever he goes and uses them to answer to problems he's 
-      facing; always pointing out the differences between the races yet can't tell the difference between members of the same race. A paradoxically deeply racist multi-racial individual, Albrecht experiences his greatest joy 
-      when human or elven populations are diminished in numbers. He is also highly driven to have a hand in as many building projects in his current town or city so he can brag about his renown.
+      Tall, lithe, beautiful and androgynous, with gills on their neck and slight fins protruding up the backs of their arms. Mid-length back hair and slightly blue-tinged skin. They are smooth and flirtatious, passionate and 
+      brutal
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
