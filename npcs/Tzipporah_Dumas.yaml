@@ -466,27 +466,38 @@ npc:
   #
   specialties:
     skills:
- - Fighter Abilities:
-    - Fighting Style: Two-Weapon Fighting
-    - Second Wind: Bonus Action to regain 1d10 + Fighter Level
-    - Action Surge: Once every short/long rest can take an extra action
-    - Extra Attack: Can attack twice each turn
-    - Indomitable: Can reroll 1 saving throw per long rest
+   - - Fighter Abilities:
+       - Fighting Style: Two-Weapon Fighting
+       - Second Wind: Bonus Action to regain 1d10 + Fighter Level
+       - Action Surge: Once every short/long rest can take an extra action
+       - Extra Attack: Can attack twice each turn
+       - Indomitable: Can reroll 1 saving throw per long rest
  
-     - Gunslinger Traits: Firearm Proficiency, Gunsmith, Adept Marksman, 3 Grit, Quickdraw, Rapid Repair
-      - Trick Shots: Deadeye Shot, Forceful Shot, Piercing Shot, Violent Shot   
+   - - Gunslinger Traits:
+       - Firearm Proficiency: you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.
+       - Gunsmith: you gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and 
+                   intricate firearms are only available through crafting.
+       - Adept Marksman: you learn to perform powerful trick shots to disable or damage your opponents using your firearms. Grit 3, Saving Throw DC 16
+       - Quickdraw: you add your proficiency bonus to your initiative. You can also stow a firearm, then draw another firearm as a single object interaction on your turn
+       - Rapid Repair: you learn how to quickly attempt to fix a jammed gun. You can spend a grit point to attempt to repair a misfired (but not broken) firearm as a bonus action
+       - Trick Shots: Deadeye Shot, Forceful Shot, Piercing Shot, Violent Shot  
 
-- Rogue Abilities: 
-    - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
-    - Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
-    - Uncanny Dodge: Can use her reaction to halve an attack's damage
-    - Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage
-
-    - Assassin Traits: Assassinate, Infiltration Expertise    
+   - - Rogue Abilities: 
+       - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
+       - Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
+       - Uncanny Dodge: Can use her reaction to halve an attack's damage
+       - Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage
+       
+   - - Assassin Abilities:
+       - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
+       - Infiltration: you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an identity that 
+                       belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a trading house from a remote
+                       city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious
+                       reason not to.       
 
     special-abilities: 
-Feats: Dual Weilder, Gunner, Sharpshooter, Shadow Touched: Invisibility and Darkness, Skulker
-Legendary Resistance: (1/Day), If Tzipporah Dumas fails a saving throw she can choose to succeed instead. She is Immune to fear
+       - Feats: Dual Weilder, Gunner, Sharpshooter, Shadow Touched: Invisibility and Darkness, Skulker
+       - Legendary Resistance: (1/Day), If Tzipporah Dumas fails a saving throw she can choose to succeed instead. She is Immune to fear
   
     attacks: |
       Two pistol attacks 

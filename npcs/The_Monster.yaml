@@ -474,7 +474,7 @@ npc:
         cha: 12
           - The Monster cannot us any Artificer or Alchemist or Legendary abilities unless Roderick has regained control
           
-  - - Reborn Abilities:
+   - - Reborn Abilities:
        - Faded Memories: Has no memory of their previous life other than random flashes
        - Darkvision: can see in dim light within 60ft.
        - Deathless Nature: 
@@ -484,48 +484,47 @@ npc:
          - Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
        - Knowledge from a Past Life: When making a an ability check that uses a skill, roll a d6 and add it to the check roll. Can use this a number of times equal to proficiency bonus each long rest 
       
-  - - Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 19
-        Cantrip: Acid Splash, Mage Hand, Fire Bolt, Mending
-        1st Level: Absorb Elements, Detect Magic, Identify, Catapult
-        2nd Level: Continual Flame, Heat Metal, Levitate
-        3rd Level: Dispel Magic, Protection from Energy, Tiny Servant
-        4th Level: Fabricate, Elemental Bane, Summon Construct
-        5th Level: Animate Object, Transmute Rock
-        
-      - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 12 Infusions and can Infuse 6 Items at a time 
-      - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-      - Tool Expertise: Smith's Tool proficiency bonus is doubled
-      - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-      - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-      - Spell Storing Item: Can store a spell in and object once per long rest
-      - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 6 magic items       
+   - - Artificer Abilities:
+       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 19
+         Cantrip: Acid Splash, Mage Hand, Fire Bolt, Mending
+         1st Level: Absorb Elements, Detect Magic, Identify, Catapult
+         2nd Level: Continual Flame, Heat Metal, Levitate
+         3rd Level: Dispel Magic, Protection from Energy, Tiny Servant
+         4th Level: Fabricate, Elemental Bane, Summon Construct
+         5th Level: Animate Object, Transmute Rock
+       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 12 Infusions and can Infuse 6 Items at a time 
+       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+       - Tool Expertise: Smith's Tool proficiency bonus is doubled
+       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+       - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+       - Spell Storing Item: Can store a spell in and object once per long rest
+       - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 6 magic items       
       
-  - - Alchemist Abilities:
-      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
-      - Spellcasting: Requires Alchemist Supplies as Spellcasting focus, Spell DC 19
-        3rd Level: Healing Word, Ray of Sickness
-        5th Level: Flaming Sphere, Melf's Acid Arrow
-        9th Level: Gaseous Form, Mass Healing Word
-        13th Level: Blight, Death Ward
-        17th Level: Cloudkill, Raise Dead
-      - Experimental Elixir: Can produce 4 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
-      - Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
-      - Restorative Reagents: Experimantal Elixirs also give 2d6+8 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
-      - Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
+   - - Alchemist Abilities:
+       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
+       - Spellcasting: Requires Alchemist Supplies as Spellcasting focus, Spell DC 19
+         3rd Level: Healing Word, Ray of Sickness
+         5th Level: Flaming Sphere, Melf's Acid Arrow
+         9th Level: Gaseous Form, Mass Healing Word
+         13th Level: Blight, Death Ward
+         17th Level: Cloudkill, Raise Dead
+       - Experimental Elixir: Can produce 4 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
+       - Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
+       - Restorative Reagents: Experimantal Elixirs also give 2d6+8 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
+       - Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
  
     special-abilities:
-    - Proficiencies as The Monster: Athletics, Stealth and Intimidation
-    - Proficiencies as Roderick Holmestar: Arcana, History, Investigation, Insight, Medicine, Perception    
-    - Feats as The Monster: Grappler, Crusher, Slasher, Piercer
-    - Feats as Roderick Holmestar: Keen Mind, War Caster, Skill Expert - Alchemists Supplies, Observant, Elemental Adept - Poison, Healer. Poisoner
-    - Legendary Resistance: (3/Day), If Roderick Holmestar fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: Roderick Holmestar can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Roderick Holmestar regains spent Legendary Actions at the start of his turn
-      - Offensive Alchemy: Roderick Holmestar can create and throw offensive experimental elixirs of his choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
-      - Selfcare: Roderick Holmestar can heal himself for 3d6 HP
-      - Refreshing Infusion: Roderick Holmestar can use his Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.     
+      - Proficiencies as The Monster: Athletics, Stealth and Intimidation
+      - Proficiencies as Roderick Holmestar: Arcana, History, Investigation, Insight, Medicine, Perception    
+      - Feats as The Monster: Grappler, Crusher, Slasher, Piercer
+      - Feats as Roderick Holmestar: Keen Mind, War Caster, Skill Expert - Alchemists Supplies, Observant, Elemental Adept - Poison, Healer. Poisoner
+      - Legendary Resistance: (3/Day), If Roderick Holmestar fails a saving throw he can choose to succeed instead 
+      - Legendary Actions: Roderick Holmestar can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                           Roderick Holmestar regains spent Legendary Actions at the start of his turn
+        - Offensive Alchemy: Roderick Holmestar can create and throw offensive experimental elixirs of his choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
+        - Selfcare: Roderick Holmestar can heal himself for 3d6 HP
+        - Refreshing Infusion: Roderick Holmestar can use his Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.     
     
     attacks: |
       The Monster: has 2 attacks. Will attack with daggers or fists in melee range

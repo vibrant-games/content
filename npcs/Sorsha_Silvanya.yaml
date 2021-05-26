@@ -471,55 +471,54 @@ npc:
   #
   specialties:
     skills:
- - - High Elf Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-      - Keen Senses: Proficiency in Perception
-      - Fey Ancestry: Advantage on saving throws against being charmed and immune to sleep magic   
-      - Trance: Doesn't need to sleep. Meditating for 4 hours couts as a long rest
-      - Elf Weapons Training: Proficiency with the longsword, shortsword, longbow and shortbow
-      - Cantrip: Minor Illusion 
+   - - High Elf Abilities:
+        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        - Keen Senses: Proficiency in Perception
+        - Fey Ancestry: Advantage on saving throws against being charmed and immune to sleep magic   
+        - Trance: Doesn't need to sleep. Meditating for 4 hours couts as a long rest
+        - Elf Weapons Training: Proficiency with the longsword, shortsword, longbow and shortbow
+        - Cantrip: Minor Illusion 
       
-  - - Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: Requires Powered Armor as Spellcasting focus, Spell DC 17
-        Cantrip: Mage Hand, Mending, Message
-        1st Level: Alarm, Detect Magic, Disguise Self, Identify
-        2nd Level: Alter Self, See Invisibility, Invisibility
-        3rd Level: Dispel Magic, Tiny Servant
-        
-      - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items at a time  
-      - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-      - Tool Expertise: Smith's Tool proficiency bonus is doubled
-      - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws     
+   - - Artificer Abilities:
+       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+       - Spellcasting: Requires Powered Armor as Spellcasting focus, Spell DC 17
+         Cantrip: Mage Hand, Mending, Message
+         1st Level: Alarm, Detect Magic, Disguise Self, Identify
+         2nd Level: Alter Self, See Invisibility, Invisibility
+         3rd Level: Dispel Magic, Tiny Servant       
+       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items at a time  
+       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+       - Tool Expertise: Smith's Tool proficiency bonus is doubled
+       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws     
       
-  - - Armorer Abilities:
-      - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
-      - Spellcasting: Requires Powered Armor as Spellcasting focus, Spell DC 17
-        3rd Level: Magic Missle, Shield
-        5th Level: Mirror Image, Shatter
-        9th Level: Hypnotic Patetrn, Lightning Bolt
-      - Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
-      - Infiltrator Armor: Powered armor has the Lightning Launcher, Powered Steps & Second Skin abilities  
-      - Extra Attack: Can take a second attack action each turn
-      - Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
+   - - Armorer Abilities:
+       - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
+       - Spellcasting: Requires Powered Armor as Spellcasting focus, Spell DC 17
+         3rd Level: Magic Missle, Shield
+         5th Level: Mirror Image, Shatter
+         9th Level: Hypnotic Patetrn, Lightning Bolt
+       - Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
+       - Infiltrator Armor: Powered armor has the Lightning Launcher, Powered Steps & Second Skin abilities  
+       - Extra Attack: Can take a second attack action each turn
+       - Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
       
-    - Rogue Abilities: 
-      - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
-      - Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
-      - Uncanny Dodge: Can use her reaction to halve an attack's damage
-      - Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage            
+   - - Rogue Abilities: 
+       - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
+       - Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
+       - Uncanny Dodge: Can use her reaction to halve an attack's damage
+       - Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage            
       
-  - - Spy Abilities:
-      - Tricks of the Trade: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools, Disguise, Forgery and Poison Kits and Gadget Box
-      - Imposter: Has the ability to unerringly mimic another person's speech, writing and behavior after spending 3 hours studying those things and gains advantage on deception rolls to avoid detection
+   - - Spy Abilities:
+       - Tricks of the Trade: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools, Disguise, Forgery and Poison Kits and Gadget Box
+       - Imposter: Has the ability to unerringly mimic another person's speech, writing and behavior after spending 3 hours studying those things and gains advantage on deception rolls to avoid detection
       
-    - Gadget Box:
-        Spellcasting: DC of 16
-        Cantrip: Prestidigitation, Produce Flame
-        1st Level: Knock, Warding Bond
-        2nd Level: Locate, Sending, Scrying
-      - Self Destruct Mode: Can choose a delay between 1 second and 24 hours. During this time the box cannot be opened by any means. At the end of the chosen duration the box detonates requiring all creatures within 60' 
-                            to make a Con savings throw DC15 or take 7d6 force damage and be knocked prone. Successful throws recieve half damage and arent knocked prone. It takes one week to build a new one
+   - - Gadget Box:
+         Spellcasting: DC of 16
+         Cantrip: Prestidigitation, Produce Flame
+         1st Level: Knock, Warding Bond
+         2nd Level: Locate, Sending, Scrying
+       - Self Destruct Mode: Can choose a delay between 1 second and 24 hours. During this time the box cannot be opened by any means. At the end of the chosen duration the box detonates requiring all creatures within 60' 
+                             to make a Con savings throw DC15 or take 7d6 force damage and be knocked prone. Successful throws recieve half damage and arent knocked prone. It takes one week to build a new one
  
     special-abilities:
     - Proficiencies: Proficient in Stealth, Perception, Insight, Sleight of Hand, Theive's Tools, Tinker's Tools, Smith's Tools, Firearms, Forgery, Disguise and Poison Kits and Gadget Box     

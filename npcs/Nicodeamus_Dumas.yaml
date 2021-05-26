@@ -467,18 +467,68 @@ npc:
   #
   specialties:
     skills:
-    - Fighter Traits: Two Weapon Fighting, Second Wind, Action Surge, 3 Attacks, Indomitable, 
-    - Gunslinger Traits: Firearm Proficiency, Gunsmith, Adept Marksman, 4 Grit, Quickdraw, Rapid Repair, Lightning Reload, Vicious Intent, Hemorrhaging Critical
-      - Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot, Winging Shot
-    - Warlock Traits: Pact of the Hexblade: 
-      - Cantrips: Eldritch Blast, Mage Hand, Toll The Dead, Thunderclap. 
-      - Spells: Contact Other Plane, Danse Macabre, Hold Monster, Infernal Calling, Modify Memory, Sickening Radiance, 
-                Summon Greater Demon, Dimension Door, Blight, Counterspell, Dispel Magic, Summon Lesser Demon, Vampiric Touch, Summon Undead, Crown of Madness, Hold Person, Armor of Agathys, Charm Person, Hex, Hellish Rebuke, 
-    - Hexblade Traits: Hexblade's Curse, Hex Warriors, Accursed Specter, Armor of Hexes, Master of Hexes, 
-      - Hexblade Spells: Shield, Wrathful Smite, Blur, Branding Smite, Blink, Elemental Weapon, Phantasmal Killer, 
-                         Staggering Smite, Banashing Smite, Cone of Cold
-    - Feats: Inspiring Leader, Lucky, Sharpshooter, War Caster, Skulker, Gunner 
-    special-abilities: |
+   - - Fighter Abilities:
+         - Fighting Style:
+         - Second Wind: Bonus Action to regain 1d10 + 
+         - Action Surge: Once every short/long rest can take an extra action
+         - Extra Attack: Can attack twice each turn
+         - Indomiable: you can reroll a saving throw that you fail. If you do so, you must use the new roll
+         
+   - - Gunslinger Traits:
+       - Firearm Proficiency: you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.
+       - Gunsmith: you gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and 
+                   intricate firearms are only available through crafting.
+       - Adept Marksman: you learn to perform powerful trick shots to disable or damage your opponents using your firearms. Grit 4, Saving Throw DC 20
+       - Quickdraw: you add your proficiency bonus to your initiative. You can also stow a firearm, then draw another firearm as a single object interaction on your turn
+       - Rapid Repair: you learn how to quickly attempt to fix a jammed gun. You can spend a grit point to attempt to repair a misfired (but not broken) firearm as a bonus action
+       - Lightning Reload: you can reload any firearm as a bonus action
+       - Vicious Intent: your firearm attacks score a critical hit on a roll of 19-20, and you regain a grit point on a roll of 19 or 20 on a d20 attack roll.
+       - Hemorrhaging Critical: whenever you score a critical hit on an attack with a firearm, the target additionally suffers half of the damage from the attack at the end of its next turn.
+       - Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot, Winging Shot
+
+   - - Warlock Traits: 
+       - Pact Magic: DC 19
+          Cantrips: Eldritch Blast, Mage Hand, Toll The Dead, Thunderclap. 
+          Spells: Contact Other Plane, Danse Macabre, Hold Monster, Infernal Calling, Modify Memory, Sickening Radiance, 
+                Summon Greater Demon, Dimension Door, Blight, Counterspell, Dispel Magic, Summon Lesser Demon, Vampiric Touch, Summon Undead, Crown of Madness, Hold Person, Armor of Agathys, Charm Person, Hex, Hellish Rebuke,
+        - Eldritch Invocations:
+            1: Agonizing Blast
+            2: Eldrich Spear
+            3: Ascendant Step
+            4: Life Drinker
+            5: Thirsting Blade
+            6: Mask of Many Faces
+        - Pact of the Blade: can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This 
+                             weapon counts as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage. Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or 
+                             more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.
+        - Mystic Arcanum: You can cast your Circle of Death once without expending a spell slot. You must finish a Long Rest before you can do so again.
+
+   - - Hexblade Traits:
+        - Hexblades Curse: you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target
+                           dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits - 
+                           - You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.
+                           - Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.
+                           - If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier
+        - Hex Warriors: You gain proficiency with medium armor, shields, and martial weapons. The influence of your patron also allows you to mystically channel your will through a particular weapon. Whenever you finish a long 
+                        rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity,
+                        for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature,
+                        no matter the weapon's type.
+        - Accursed Specter:  you can curse the soul of a person you slay, temporarily binding it in your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a specter. When the specter appears,
+                             it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack 
+                             rolls equal to your Charisma modifier (minimum of +0). The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife
+        - Armor of Hexes: your hex grows more powerful. If the target cursed by your Hexblade’s Curse hits you with an attack roll, you can use your reaction to roll a d6. On a 4 or higher, the attack instead misses you, 
+                          regardless of its roll
+        - Master of Hexes: you can spread your Hexblade's Curse from a slain creature to another creature. When the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see 
+                           within 30 feet of you, provided you aren't incapacitated. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature
+        - Hexblade Spells:
+            1st Level: Shield, Wrathful Smite 
+            2nd Level: Blur, Branding Smite
+            3rd Level: Blink, Elemental Weapon
+            4th Level: Phantasmal Killer, Staggering Smite
+            5th Level: Banishing Smite, Cone of Cold
+ 
+    special-abilities:
+    - Feats: Inspiring Leader, Lucky, Sharpshooter, War Caster, Skulker, Gunner
       Proficient in Sleight of Hand, Stealth, Religion, Insight, Perception, Deception, Performance & Persuasion
       He is an adept gambler, card player and showman
     - Legendary Resistance: (3/Day), If Nicodeamus Dumas fails a saving throw he can choose to succeed instead 
@@ -494,9 +544,9 @@ npc:
       He'll do his best to get the jump on his opponents with his quickdraw Firebrand pistols or his Eldritch cards
       Failing that, he'll resort to more traditional spellcasting using his card deck as an arcane focus so he does not need other spell components and use his Legendary Actions to bring in backup
     special-equipment:
-    - Arcane Playing Cards - Can be used to read Tarot and when thrown they take on the traits of the Eldrich Blast spell at the level of the caster
-    - 2 Firebrand Revolvers - Never needs to be reloaded, +3 to attack and damage, May be used as a bonus action
-    - Ring of Evasion - 3 charges, regains charges daily at dawn, allows the wearer to spend a charge to succeed on a fail dexterity saving throw
+    - Arcane Playing Cards: Can be used to read Tarot and when thrown they take on the traits of the Eldrich Blast spell at the level of the caster
+    - Pact Weapons: 2 Firebrand Revolvers - Never needs to be reloaded, +3 to attack and damage, May be used as a bonus action
+    - Ring of Evasion: 3 charges, regains charges daily at dawn, allows the wearer to spend a charge to succeed on a fail dexterity saving throw
   profile:
 
     #

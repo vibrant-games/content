@@ -467,42 +467,41 @@ npc:
   #
   specialties:
     skills:
- - - Vedalken Abilities:
-      - Vedalken Dispassion: Advantage on all Intelligence, Wisdom and Charisma saving throws
-      - Tireless Precision: Proficient in Arcana and with Tinker's Tool and add 1d4 to any checks with those skills
-      - Partially Amphibious: Can breathe underwater for up to 1hr per long rest 
-      - Aether Lore: When making an intelligence (history) check related to magic items or technological devices, adds twice his proficiency bonus
+   - - Vedalken Abilities:
+        - Vedalken Dispassion: Advantage on all Intelligence, Wisdom and Charisma saving throws
+        - Tireless Precision: Proficient in Arcana and with Tinker's Tool and add 1d4 to any checks with those skills
+        - Partially Amphibious: Can breathe underwater for up to 1hr per long rest 
+        - Aether Lore: When making an intelligence (history) check related to magic items or technological devices, adds twice his proficiency bonus
  
-  - - Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 23
-        Cantrip: Shocking Grasp, Mage Hand, Mending, Create Bonfire, Fire Bolt
-        1st Level: Arcane Weapon, Detect Magic, Identify, Expedition Retreat, Grease
-        2nd Level: Arcane Lock, Continual Flame, Levitate, Magic Weapon
-        3rd Level: Dispel Magic, Haste, Tiny Servant, Fly
-        4th Level: Fabricate, Stone Shape, Summon Construct
-        
-      - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
-      - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-      - Tool Expertise: Smith's Tool proficiency bonus is doubled
-      - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-      - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-      - Spell Storing Item: Can store a spell in and object once per long rest
-      - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
+   - - Artificer Abilities: 
+       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 23
+         Cantrip: Shocking Grasp, Mage Hand, Mending, Create Bonfire, Fire Bolt
+         1st Level: Arcane Weapon, Detect Magic, Identify, Expedition Retreat, Grease
+         2nd Level: Arcane Lock, Continual Flame, Levitate, Magic Weapon
+         3rd Level: Dispel Magic, Haste, Tiny Servant, Fly
+         4th Level: Fabricate, Stone Shape, Summon Construct    
+       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
+       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+       - Tool Expertise: Smith's Tool proficiency bonus is doubled
+       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+       - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+       - Spell Storing Item: Can store a spell in and object once per long rest
+       - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
       
       
-  - - Armorer Abilities:
-      - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
-      - Spellcasting: Requires Smith's Tools as Spellcasting focus, Spell DC 23
-        3rd Level: Magic Missle, Shield
-        5th Level: Mirror Image, Shatter
-        9th Level: Hypnotic Patetrn, Fire Ball
-        13th Level: Fire Sheild, Greater Invisibility
-      - Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
-      - Infiltrator Armor: His powered armor has the Fire Launcher, Powered Steps & Second Skin abilities  
-      - Extra Attack: Can take a second attack action each turn
-      - Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
-      - Perfected Armor: Successful Fire Launcher attacks he makes cause targets to glimmer with light giving the next attack roll against it by another creature advantage and does an extra 1d6 Fire Damage
+   - - Armorer Abilities:
+       - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
+       - Spellcasting: Requires Smith's Tools as Spellcasting focus, Spell DC 23
+         3rd Level: Magic Missle, Shield
+         5th Level: Mirror Image, Shatter
+         9th Level: Hypnotic Patetrn, Fire Ball
+         13th Level: Fire Sheild, Greater Invisibility
+       - Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
+       - Infiltrator Armor: His powered armor has the Fire Launcher, Powered Steps & Second Skin abilities  
+       - Extra Attack: Can take a second attack action each turn
+       - Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
+       - Perfected Armor: Successful Fire Launcher attacks he makes cause targets to glimmer with light giving the next attack roll against it by another creature advantage and does an extra 1d6 Fire Damage
 
     special-abilities: 
     - Feats: Keen Mind, Mounted Combatant, War Caster, Skill Expert - Smith's Tools, Observant, Heavy Armor Master

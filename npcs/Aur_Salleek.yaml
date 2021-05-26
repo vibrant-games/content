@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: Uha_Boomer_Bannock
+  id: aur_salleek
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-04-24"
+  date: "2021-05-15"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Uha "Boomer" Bannock
+  name: Aur Salleek
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Young Adult
+    age: elderly
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Viashino
+    race: Aarakocra
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Littlebird
 
     #
     # Pronouns (case insensitive):
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Dead Hunter
+    - Scholar/Librarian
     
 
     #
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Fighter/Artificer
+    class: Monk
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Gunslinger/Alchemist
+    subclass: Way of Mercy
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 15/15
+    level: 5
 
     #
     # Alignments (case insensitive):
@@ -311,9 +311,14 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
+    - Auran
     - Common
-    - Goblin
+    - Celestial
     - Draconic
+    - Sylvan
+    - Elvish
+    - Dwarvish
+
 
     #
     # Factions:
@@ -333,9 +338,11 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: The_Dead_Hunters
-      name: The Dead Hunters
-      role: Munitions Expert
+    - id: N/A
+      name: N/A
+    - id: N/A
+      name: N/A
+      role: N/A
 
 
     #
@@ -344,9 +351,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Excitable
-    - Bold
-    - Hot-Tempered
+    - Wise
+    - Knowledgeable
+    - Learned
 
   improv:
 
@@ -361,7 +368,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The raptilian man barrels forward, diving to ground as he shouts "Fire in the Hole!" as the building behind explodes  
+    introduction:  He flaps down from the sky high archive shelves of the university library
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +379,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Large and reptilian in a tailored vest and pants covered in pockets and bowler hat. Green scaled with a thick long tail 
+    appearance:   A wise old bird man with entirely gray mottled feathers, tiny hands, and bright intelligent eyes
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +395,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "This one's gonna be big, boys", "Light em up!", "You're gonna want to move... like nowish, fella"
+    expressions:  I remember that book, I'll check the stacks", "SHHHHHH!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +408,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   cracks his knuckles and chews on match sticks
+    mannerisms:   Rarely without an open book in his hands. His eyes dart about, seemingly searching the sky for 'signs' or incoming knowledges. Really he's simply insecure.
 
   acting:
     #
@@ -411,7 +418,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      exterminating the undead, blownig things up 
+      The pursuit of knowledge
       
     #
     # Passions:
@@ -420,7 +427,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Fire
+      He's old, weak and arrogant
       
     #
     # Vulnerabilities:
@@ -429,7 +436,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      quick to anger
+      Tired and Insecure
       
     #
     # Secrets:
@@ -437,23 +444,23 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: |
-      Accidently killed his family when beginning his alchemy and is now trying to make up for it 
+    secrets: Many Many secrets of the library
+       
       
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 17
-    hit-points: 169
-    speed: 40
-    str: 18
-    dex: 22
-    con: 16
-    int: 23 
-    wis: 18
-    cha: 14
+    armour-class: 15
+    hit-points: 36
+    speed: 20 walking, 70 flying
+    str: 8
+    dex: 13
+    con: 11
+    int: 20 
+    wis: 19
+    cha: 12
 
   #
   # Special characteristics.
@@ -464,90 +471,48 @@ npc:
   #
   specialties:
     skills:
-   - - Viashino Traits:
-        - Bite: can make an unarmed strike for 1d4+4 piercing damage
-        - Lashing Tail: Prehensile tail tipped with a bony blade. As a reaction, when a creature within 5 feet deals damage to him, he can make a melee attack dealing 1d6+4 slashing damage on a hit
-        - Wiry Frame: Proficient in Acrobatics and Stealth
-       
-   - - Fighter Abilities:
-        - Fighting Style: Archery
-        - Second Wind: Bonus Action to regain 1d10 + Fighter Level
-        - Action Surge: Once every short/long rest can take an extra action
-        - Extra Attack: Can attack twice each turn
-        - Indomitable: Can reroll 1 saving throw per long rest
- 
-   - - Gunslinger Traits: 
-        - Firearm Proficiency: Add proficiency to firearm attacks
-        - Gunsmith: Proficent with tinker's toolsand can use them to craft ammunition at half price, repair damaged firearms and design and craft new firearms
-        - Adept Marksman: 3 Grit, Trick Shot DC19
-        - Quickdraw: Adds proficiancy bonus to initiative. can stow and draw a firearm as a single object interaction
-        - Rapid Repair: Can spend one Grit Point to attempt to repair a misfired firearm as a bonus action
-        - Lightning Reload: Can reload a firearm as a bonus action
-        - Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot    
+   - - Aarakocra Abilities:
+       - Flight:  flying speed of 50 feet. To use this speed, you can’t be wearing medium or heavy armor           
+       - Talons: proficient with your unarmed strikes, which deal 1d6 slashing damage on a hit  
 
-   - - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 19
-         Cantrip: Create Bonfire, Mage Hand, Fire Bolt, Message
-         1st Level: Absorb Elements, Faerie Fire, Identify, Disguise Self
-         2nd Level: Continual Flame, Heat Metal, Pyrotechnics
-         3rd Level: Haste, Flame Arrows, Flame Stride
-         4th Level: Elemental Bane
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-       - Tool Expertise: Smith's Tool proficiency bonus is doubled
-       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-       - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-       - Spell Storing Item: Can store a spell in and object once per long rest
-       - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 5 magic items       
-      
-   - - Alchemist Abilities:
-       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
-       - Spellcasting: Requires Alchemist Supplies as Spellcasting focus, Spell DC 19
-         3rd Level: Healing Word, Ray of Sickness
-         5th Level: Flaming Sphere, Melf's Acid Arrow
-         9th Level: Gaseous Form, Mass Healing Word
-         13th Level: Blight, Death Ward
-         15th Level: Cloudkill, Raise Dead
-       - Experimental Elixir: Can produce 3 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
-       - Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
-       - Restorative Reagents: Experimantal Elixirs also give 2d6+7 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
-       - Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
+   - - Littlebird Abilities:
+       - Flitter: His small size prevents attacks of opportunity against you when you are in flight
+       - Natural Acrobat: proficient in Dexterity (Acrobatics) checks       
+    
+   - - Monk Abilities:
+       - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
+       - Martial Arts:
+          - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+          - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+          - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+       - Ki: 5 Ki Points, Ki DC=15
+          - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+          - Step of the Wind:Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
+       - Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+                          free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+       - Slow Fall: Can us a Reaction to falling damage by by 85hp
+       - Extra Attack: Can Attack twice per turn
+       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn    
+ 
+   - - Way of Mercy Abilities:
+       - Hands of Healing:   As an action, he can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of his Martial Arts die + his Wisdom modifier. When using Flurry of Blows, he can 
+                             replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.
+       - Hands of Harm:  When hitting a creature with an unarmed strike, he can spend 1 ki point to deal extra necrotic damage equal to one roll of his Martial Arts die + his Wisdom modifier. He can use this feature 
+                         only once per turn 
+        
 
     special-abilities:
-    - Proficiencies: Athletics, Perception, Survival, Intimidation, Investigation,    
-    - Feats: Alert, Crossbow Expert, Dual Weilder, Gunner, Keen Mind, Lucky, Mobile, Sharpshooter, War Caster 
-    - Legendary Resistance: (3/Day), If Uha "Boomer" Bannock fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: Uha "Boomer" Bannock can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Uha "Boomer" Bannock regains spent Legendary Actions at the start of his turn
-      - Explosive Alchemy: Uha "Boomer" Bannock can create and throw various explosive devices and elixirs
-      - Tail Grapple: Uha "Boomer" Bannock can make a grappling attack with his prehensile tail. Opponents must make a DC16 Strength Saving Throw or be grappled and restrained
-      - Alcemical Escape: Uha "Boomer" Bannock can ignite smoke grenades that an opaque cloud of smoke in a 30 foot radius that acts as a Fog Cloud spell for a 1 minute duration 
+    - Proficiencies: Persuasion, Performance, Insight, Perception, Medicine     
     
     attacks: |
-      has 2 attacks
+      2 Unarmed Attacks
     combat-tactics: |
-      Loves a good fight, but he's more of a sneak in, do his job and sneak out kind of guy
+      Will not fight unless his life is in danger
     special-equipment:
-    - +2 Leather Armor
-    - Bag of Holding
-    - Tinker's Tools
-    - Alchemist's Supplies
-    - 2x Revolvers
-    - 50x Bullets
-    - 20x Explosive Bullets
-    - Grenade Launcher
-    - 5x Smoke Bombs - Works as a Fog Cloud spell with a 30 foot radius, plus 1d8 force damage to any creature with 5 feet of the detonation failing a Dex Save of DC15
-    - 5x Grenades - Works as a Fireball spell with DC15  
-    - 5x Timed Explosives - Works as a Delayed Blast Fireball spell with DC15 but can be set to go off at a specific time 
-    - 5x Shrapnel Grenades - Works as Conjure Barrage spell using fire damage DC15
-    - 5x Poison Gas Grenades - Works as Cloudkill Spell cast at 5th Level DC15, plus 1d8 force damage to any creature with 5 feet of the detonation failing a Dex Save of DC15
-    - 5x Flash Bang Grenades - Works as Blindness/Deafness spell but causes both blindness and deafness DC15, plus 1d8 force damage to any creature with 5 feet of the detonation failing a Dex Save of DC15
-    - 5x Oil Bomb - works as the Grease spell, plus 1d8 force damage to any creature with 5 feet of the detonation failing a Dex Save of DC15
-    - 5x Concussion Grenade - works as the Force Blast spell cast at 8th level. Creature who fail their Strength Savce are knocked prone
-
-    
+          - Tome of Understanding
+                                                                   
   profile:
 
     #
@@ -558,11 +523,8 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Uha "Boomer" Bannock was enamored with fire at a very early age. Not an unusual thing for Viashino, but him moreso than most. Very early he began experimenting with combustibles and heading down the path of an alchemist. 
-      At the age of 12 one of his experiments went awry and burned down his house, killing his entire family, yet he managed to escape without a scratch. In an effort to atone for his fatal mistake he began to use his skills 
-      against beings that he considered evil. Monsters, fiends, undead. As an extension of his alchemical pursuits, he stumbled his was into discovering and mastering firearms. During a failed attempt to take out a den of 
-      ghouls, Boomer was found, being overwhelmed, by The Phantom, who saved his life and invited him to join his fledgling organization. Finding a new focus for his guilt, he happily joined The Dead Hunters and devoted his 
-      life to the gods of good and building towards his redemption.   
+      He left his home on the Elemental Planes of Air in order to enter the material world in the pursuit of knowledge. He learned common and enrolled in largest most prestigious school in the realm and has been here ever since.
+
       
     #
     # Personality (or something like that):
@@ -573,10 +535,7 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Uha "Boomer" Bannock is a large, scaly reptilian man with a protruding snout full of sharp teeth, yellow eyes, a long, thick prehensile tail with sharp scales and a serrated bone protrusion at the end.  He wears a tailored 
-      leather armored vest and pants full of pockets and pouches. He is as excitable and fiery as his weapon of choice. He's quick to anger, often to his detriment. He generally manages to keep his composure in the heat of 
-      battle against the Dead Hunter's quarries of choice, but dealing with regular people tends to brnig out the worst of him, and quickly. When it comes to his alchemical work and his explosives he is cool as a cucmber, 
-      attentive and diligent. Exceptionally detail oriented in his work, but there is still nothing he enjoys more than a good explosion. 
+      Tiny and grey, about 4 feet tall with tiny hands and sparrow-like features. He is wise and learned and knows the library like the back of his hand.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
