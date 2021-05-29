@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Wotcha!"; "How ya goin'?"; "That's hot!"; "Like"; "Totally"; swears like a trucker.
+    expressions: $characters$ "Wotcha!"; "How ya goin'?"; "That's hot!"; "Like"; "Totally"; swears like a trucker.
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

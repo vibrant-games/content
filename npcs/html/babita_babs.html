@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA" xml:lang="en-CA">
-{{!
-<!-- This HTML template contains embedded Mustache template variables:
-     https://mustache.github.io/mustache.1.html
-     https://mustache.github.io/mustache.5.html
-     -->
-}}
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Vibrant Games" />
   <meta name="keywords" content="dungeons and dragons, TODO bla bla bla" />
-  <title>{{npc.name}}</title>
+  <title>Babita (&quot;Babs&quot;)</title>
   <!-- !!!
   <style type="text/css">
       code{white-space: pre-wrap;}
@@ -25,7 +19,7 @@
   <link rel="stylesheet" href="stylesheet.css"/>
 </head>
 <body>
-  <h1 class="title">{{npc.name}}</h1>
+  <h1 class="title">Babita (&quot;Babs&quot;)</h1>
   <!-- !!! TODO <p class="subtitle">!!!</p> -->
 
   <hr class="section_divider"/>
@@ -41,112 +35,75 @@
 
       <div>
         <span class="field_name"> Age: </span>
-        <span class="field_value"> {{npc.traits.age}} </span>
+        <span class="field_value"> tween </span>
       </div>
 
       <div>
         <span class="field_name"> Race: </span>
-        <span class="field_value"> {{npc.traits.race}} </span>
+        <span class="field_value"> dwarf </span>
       </div>
 
-      {{#npc.traits.subrace.length}}
-        <div>
-          <span class="field_name"> Sub-race: </span>
-        </div>
-        <ul>
-      {{/npc.traits.subrace.length}}
-      {{#npc.traits.subrace}}
-          <li>
-            <span class="field_value"> {{.}} </span>
-          </li>
-      {{/npc.traits.subrace}}
-      {{#npc.traits.subrace.length}}
-        </ul>
-      {{/npc.traits.subrace.length}}
 
       <div>
         <span class="field_name"> Pronouns: </span>
-        <span class="field_value"> {{npc.traits.pronouns}} </span>
+        <span class="field_value"> she/her </span>
       </div>
 
       <div>
         <span class="field_name"> Occupation: </span>
       </div>
       <ul>
-        {{#npc.traits.occupation}}
           <li>
-            <span class="field_value"> {{.}} </span>
+            <span class="field_value"> Chainmail fashion model </span>
           </li>
-        {{/npc.traits.occupation}}
       </ul>
 
       <div>
         <span class="field_name"> Class: </span>
-        <span class="field_value"> {{npc.traits.class}} </span>
+        <span class="field_value"> civilian </span>
       </div>
 
       <div>
         <span class="field_name"> Level: </span>
-        <span class="field_value"> {{npc.traits.level}} </span>
+        <span class="field_value"> 0 </span>
       </div>
 
       <div>
         <span class="field_name"> Alignment: </span>
-        <span class="field_value"> {{npc.traits.alignment}} </span>
+        <span class="field_value"> neutral good </span>
       </div>
 
-      {{#npc.traits.alignment_tendencies.length}}
-        <div>
-          <span class="field_name"> Tendencies: </span>
-        </div>
-        <ul>
-      {{/npc.traits.alignment_tendencies.length}}
-      {{#npc.traits.alignment_tendencies}}
-          <li>
-            <span class="field_value"> {{.}} </span>
-          </li>
-      {{/npc.traits.alignment_tendencies}}
-      {{#npc.traits.alignment_tendencies.length}}
-        </ul>
-      {{/npc.traits.alignment_tendencies.length}}
 
-      {{#npc.traits.languages.length}}
         <div>
           <span class="field_name"> Languages: </span>
         </div>
         <ul>
-      {{/npc.traits.languages.length}}
-      {{#npc.traits.languages}}
           <li>
-            <span class="field_value"> {{.}} </span>
+            <span class="field_value"> Human </span>
           </li>
-      {{/npc.traits.languages}}
-      {{#npc.traits.languages.length}}
+          <li>
+            <span class="field_value"> dwarvish </span>
+          </li>
         </ul>
-      {{/npc.traits.languages.length}}
 
       <div>
         <span class="field_name"> Factions: </span>
       </div>
       <ul>
-        {{#npc.traits.factions}}
           <li>
-            <a href="../../factions/html/{{id}}.html">
-              <span class="field_value"> {{name}} </span>
+            <a href="../../factions/html/fan_of_uthamapalayam_academicals_united_lacrosse_team_.html">
+              <span class="field_value"> Fan of Uthamapalayam Academicals United (lacrosse team) </span>
             </a>
           </li>
-        {{/npc.traits.factions}}
       </ul>
 
       <div>
         <span class="field_name"> Adjectives: </span>
       </div>
       <ul>
-        {{#npc.traits.adjectives}}
           <li>
-            <span class="field_value"> {{.}} </span>
+            <span class="field_value"> Sexy </span>
           </li>
-        {{/npc.traits.adjectives}}
       </ul>
 
     </div> <!-- column -->
@@ -163,7 +120,7 @@
 
       <div>
         <span class="field_name"> Introduction: </span>
-        <span class="field_value"> {{npc.improv.introduction}} </span>
+        <span class="field_value"> A curvy young starlet flounces up to the party. &quot;What&#39;s your names?  I&#39;m Babs. What do you think of UAU? Are you new?&quot; </span>
       </div>
 
     </div> <!-- column -->
