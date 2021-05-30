@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Well, there's a thing!"; "Go and chill out until supper time"; "What a load of old squit"; "Toodles!"
+    expressions: $characters$ "Well, there's a thing!"; "Go and chill out until supper time"; "What a load of old squit"; "Toodles!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -365,13 +365,8 @@ npc:
   #
   specialties:
     special-equipment:
-    - - Numerous masks on slender sticks (swan masks
-    - frogs
-    - bears
-    - fish
-    - and so on)
-- Several pairs of long
-    - gold-laced two-thumbed gloves
+    - Numerous masks on slender sticks (swan masks, frogs, bears, fish and so on)
+    - Several pairs of long, gold-laced two-thumbed gloves
 
   profile:
 

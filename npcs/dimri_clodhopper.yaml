@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Come! You must join the Revel!", "Ooooh I'll take a piece of that!", "Aren't you the prettiest thing I ever did see!"
+    expressions: $characters$ "Come! You must join the Revel!", "Ooooh I'll take a piece of that!", "Aren't you the prettiest thing I ever did see!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -289,7 +289,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Want to arm wrestle?", "Let me show you my trophy collection [of swords]."
+    expressions: $characters$ "Want to arm wrestle?", "Let me show you my trophy collection [of swords]."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

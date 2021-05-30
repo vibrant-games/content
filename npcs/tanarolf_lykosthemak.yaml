@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Quiet scrag! I'm in charge here", "Shut up and eat your gruel" , "Don't even bother thinking about escape from here"
+    expressions: $characters$ "Quiet scrag! I'm in charge here", "Shut up and eat your gruel" , "Don't even bother thinking about escape from here"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

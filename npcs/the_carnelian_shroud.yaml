@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "l thank you for your contributions to my cause, fine stranger", "Please don't try to put up a fight, I hate that!"
+    expressions: $characters$ "l thank you for your contributions to my cause, fine stranger", "Please don't try to put up a fight, I hate that!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

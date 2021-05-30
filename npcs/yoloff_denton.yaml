@@ -265,7 +265,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: "Move along folks, Nothing to see here" shouts the graying dwarf standing at the perimeter of the crime scene
+    introduction: $characters$ "Move along folks, Nothing to see here" shouts the graying dwarf standing at the perimeter of the crime scene
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Just another day keeping the city safe", "I'm too old for this %@#&amp;". "You'll learn rookie, it's just the way it goes"
+    expressions: $characters$ "Just another day keeping the city safe", "I'm too old for this %@#&amp;". "You'll learn rookie, it's just the way it goes"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

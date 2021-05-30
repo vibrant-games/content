@@ -264,7 +264,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: "Excuse me ma'am, can you please move along" asks the young-looking Half-Orc guarding the perimeter of the crime scene
+    introduction: $characters$ "Excuse me ma'am, can you please move along" asks the young-looking Half-Orc guarding the perimeter of the crime scene
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Umm... sir... Umm... I don't think you're allowed to do that sir", "Please stop resisting" "Please move along ma'am"
+    expressions: $characters$ "Umm... sir... Umm... I don't think you're allowed to do that sir", "Please stop resisting" "Please move along ma'am"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

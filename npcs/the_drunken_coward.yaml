@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The ale and mouths are pouring!"; "Need not know what's next. Rest. Begin anew tomorrow"; "The mind makes the troubles"
+    expressions: $characters$ "The ale and mouths are pouring!"; "Need not know what's next. Rest. Begin anew tomorrow"; "The mind makes the troubles"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

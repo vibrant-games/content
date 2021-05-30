@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Do you have a reservation?", "I'm sorry, we don't serve your kind here"
+    expressions: $characters$ "Do you have a reservation?", "I'm sorry, we don't serve your kind here"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -296,7 +296,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "There's no such thing as lost", "The Eye in P.I. is me" "I can find anyone anywhere"
+    expressions: $characters$ "There's no such thing as lost", "The Eye in P.I. is me" "I can find anyone anywhere"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "A-Hoy Hoy!", "Better a witty Fool than a foolish wit.", "After you M'lady!"
+    expressions: $characters$ "A-Hoy Hoy!", "Better a witty Fool than a foolish wit.", "After you M'lady!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

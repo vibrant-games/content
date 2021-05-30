@@ -266,7 +266,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: "Are you a giraffe?"  A young lady wrapped in swirls of black stands before you, hands on hips, head cocked to one side.
+    introduction: $characters$ "Are you a giraffe?"  A young lady wrapped in swirls of black stands before you, hands on hips, head cocked to one side.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Phony"; (derogatory) "that's very clever"; "Show me a story"; "Let's paint pebbles together"; "I hate everything."
+    expressions: $characters$ "Phony"; (derogatory) "that's very clever"; "Show me a story"; "Let's paint pebbles together"; "I hate everything."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

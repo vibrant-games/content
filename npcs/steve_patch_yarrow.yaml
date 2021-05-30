@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We've got one kinda ale, take it or leave it", "Nah we don't serve food here", Finish yer drink and kindly leave"
+    expressions: $characters$ "We've got one kinda ale, take it or leave it", "Nah we don't serve food here", Finish yer drink and kindly leave"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

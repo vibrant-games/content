@@ -298,7 +298,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Allow nature to heal what man has harmed:, "May the stars guide your soul home"
+    expressions: $characters$ "Allow nature to heal what man has harmed:, "May the stars guide your soul home"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -384,12 +384,7 @@ npc:
       |
       Wild Shape Attack
     special-equipment:
-    - Potions For Sale:
-Animal Friendship
-Healing
-Resistance
-Speed
-Water Breathing
+    - Potions For Sale: Animal Friendship, Healing, Resistance, Speed, Water Breathing
 
   profile:
 

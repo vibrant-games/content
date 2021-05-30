@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Does sir/madam have an appointment with His Grace?"; "Scones with your libation, master/madam?"; "Graciouse me!"
+    expressions: $characters$ "Does sir/madam have an appointment with His Grace?"; "Scones with your libation, master/madam?"; "Graciouse me!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

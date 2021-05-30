@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I learned this ditty from back home". "Enjoy our hospitality, and tip your servers well"
+    expressions: $characters$ "I learned this ditty from back home". "Enjoy our hospitality, and tip your servers well"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

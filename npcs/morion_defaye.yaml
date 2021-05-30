@@ -297,7 +297,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Coin demands Order and thus trade rules our way forward", "We are only divided by our ability to create wealth"
+    expressions: $characters$ "Coin demands Order and thus trade rules our way forward", "We are only divided by our ability to create wealth"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -381,20 +381,8 @@ npc:
     combat-tactics: |
       Morion is a very dangerous opponent. Particularly because he is rarely alone and usually accompanied by a number of warforged warrior priests. As a combatant he will often use divine abilities to manipulate the situation before charging forward with his Compelling Maul.
     special-equipment:
-    - <p><b>Belt of the Sacred Mount</b></p>
-<p><i>Wondrous Item (waist)
-    - Rare
-    - requires attunement by a paladin</i></p>
-<p>A leather belt with plates of steel every few inches. The belt buckle depicts a golden horse’s head. When the wearer summons a creature with the Find Steed spell
-    - the creature gains a bonus to attacks
-    - damage
-    - and AC equal to the wearer’s proficiency modifier.</p>
-<p><b>Compelling Maul</b></p>
-<p><i>Magic Weapon
-    - Uncommon
-    - requires attunement by a paladin</i></p>
-<p>A compelling weapon is gaudy and covered in fine metals and gems and is slightly larger than an average weapon of its type. It deals a bonus 2 psychic damage with each hit. When the weapon scores a critical hit
-    - the weapon casts Compelled Duel on the creature hit. Creatures immune to the charmed condition are immune to this effect.</p>
+    - Belt of the Sacred Mount.  Wondrous Item (waist).  Rare, requires attunement by a paladin.  A leather belt with plates of steel every few inches. The belt buckle depicts a golden horse’s head. When the wearer summons a creature with the Find Steed spell, the creature gains a bonus to attacks, damage, and AC equal to the wearer’s proficiency modifier.
+    - Compelling Maul.  Magic Weapon.  Uncommon, requires attunement by a paladin.  A compelling weapon is gaudy and covered in fine metals and gems and is slightly larger than an average weapon of its type. It deals a bonus 2 psychic damage with each hit. When the weapon scores a critical hit, the weapon casts Compelled Duel on the creature hit. Creatures immune to the charmed condition are immune to this effect.
 
   profile:
 

@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I don't know what you mean, I've had this for years", "You wouldn't hurt poor Kraark, would you?"
+    expressions: $characters$ "I don't know what you mean, I've had this for years", "You wouldn't hurt poor Kraark, would you?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -288,7 +288,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Seen me other eye?" laughs; "The seas are generally unkind; to me especially"; "Piracy is a consuming art"
+    expressions: $characters$ "Seen me other eye?" laughs; "The seas are generally unkind; to me especially"; "Piracy is a consuming art"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

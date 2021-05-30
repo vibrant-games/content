@@ -289,7 +289,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You've got the smell of battle. I've got what you need", "Seal those wounds. Let old Grien bring more than respite."
+    expressions: $characters$ "You've got the smell of battle. I've got what you need", "Seal those wounds. Let old Grien bring more than respite."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We offer the sharpest steel in the land". "We do do custom work, but it'll cost ya"
+    expressions: $characters$ "We offer the sharpest steel in the land". "We do do custom work, but it'll cost ya"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

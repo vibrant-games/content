@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "'click' 'click' 'shreeeee' ...I assume you cannot comprehend our mother tongue or that I just demanded your commitment to keeping peace"; "Law and Order matter not compared to a good heart and striving for the greater good for all"; "Politics are tangled and corrupted by gold and platinum - only by abandoning currency as a means of bringing order shall we ever achieve true brotherhood"; "Abandon riches, brothers and sisters. Embrace the collective"
+    expressions: $characters$ "'click' 'click' 'shreeeee' ...I assume you cannot comprehend our mother tongue or that I just demanded your commitment to keeping peace"; "Law and Order matter not compared to a good heart and striving for the greater good for all"; "Politics are tangled and corrupted by gold and platinum - only by abandoning currency as a means of bringing order shall we ever achieve true brotherhood"; "Abandon riches, brothers and sisters. Embrace the collective"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -387,8 +387,7 @@ npc:
     - and symbol. It functions as a spellbook.While holding the book
     - can be used as a spellcasting focus. The book has 3 charges
     - and it regains 1d3 expended charges daily at dawn. Can be use the charges in the following ways while holding it: spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book. The new spell must be of the abjuration school.
-When casting an abjuration spell
-    - expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
+    - When casting an abjuration spell, expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
 
   profile:
 

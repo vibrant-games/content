@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "How many chops do you want?", "Oi, that's a fine cut of mutton right there". "Time to make the sausage"
+    expressions: $characters$ "How many chops do you want?", "Oi, that's a fine cut of mutton right there". "Time to make the sausage"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

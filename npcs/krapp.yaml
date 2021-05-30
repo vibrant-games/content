@@ -288,7 +288,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Perhaps my best years are gone. But I wouldn't want them back. Not with the fire in me now."; "What does viduity mean?"
+    expressions: $characters$ "Perhaps my best years are gone. But I wouldn't want them back. Not with the fire in me now."; "What does viduity mean?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -362,10 +362,8 @@ npc:
   #
   specialties:
     special-equipment:
-    - - The Ansible of Time
-    - which he often rewinds and replays. Contains all local history from the past three decades.
-- Krapp's Last Parchment
-    - a half-written play about a disappointed gnome in a pub on his birthday. Very hairy parchment.
+    - The Ansible of Time, which he often rewinds and replays. Contains all local history from the past three decades.
+    - Krapp's Last Parchment, a half-written play about a disappointed gnome in a pub on his birthday. Very hairy parchment.
 
   profile:
 

@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "It is what it is"; "Love", "Dear", "Honey", "Sweetie".
+    expressions: $characters$ "It is what it is"; "Love", "Dear", "Honey", "Sweetie".
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

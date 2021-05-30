@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Go get good at stuff"; "Bodius says Migrug does good"; "I can break stuff and break it again"
+    expressions: $characters$ "Go get good at stuff"; "Bodius says Migrug does good"; "I can break stuff and break it again"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

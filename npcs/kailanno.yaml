@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I'll get ya there", "Best guide on the river!"
+    expressions: $characters$ "I'll get ya there", "Best guide on the river!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Honk!"; "Are you my new gaggle?"; "Shift security left"; "Anyone can learn to be a goose."
+    expressions: $characters$ "Honk!"; "Are you my new gaggle?"; "Shift security left"; "Anyone can learn to be a goose."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

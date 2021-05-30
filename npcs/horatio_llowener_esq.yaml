@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "What did you do this time?", "I see you're in need of representation", "Have you been hurt in an accident?"
+    expressions: $characters$ "What did you do this time?", "I see you're in need of representation", "Have you been hurt in an accident?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

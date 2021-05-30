@@ -290,7 +290,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You Like buy?" "What me get for you" "I show you how"
+    expressions: $characters$ "You Like buy?" "What me get for you" "I show you how"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

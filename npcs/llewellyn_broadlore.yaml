@@ -296,7 +296,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I'm sorry, we don't carry dirty books here", "We may have some tombs to your liking, but they re definitely not cheap"
+    expressions: $characters$ "I'm sorry, we don't carry dirty books here", "We may have some tombs to your liking, but they re definitely not cheap"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

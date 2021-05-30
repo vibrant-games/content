@@ -297,7 +297,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "He wouldn't survive a day where I come from", "His death is no loss to anyone", "How much do you want to bet?"
+    expressions: $characters$ "He wouldn't survive a day where I come from", "His death is no loss to anyone", "How much do you want to bet?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

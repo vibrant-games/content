@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Aye, don't you be trying anythin funny", "Just hand o'er yer loot and we'll be on our way, no need to get yerself hurt"
+    expressions: $characters$ "Aye, don't you be trying anythin funny", "Just hand o'er yer loot and we'll be on our way, no need to get yerself hurt"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -289,7 +289,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "That's cosmic"; (derogatory) "That's pants"; "Oh my gods I'm so stoned"; (to her lover) "I love you so hard!"
+    expressions: $characters$ "That's cosmic"; (derogatory) "That's pants"; "Oh my gods I'm so stoned"; (to her lover) "I love you so hard!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -363,8 +363,8 @@ npc:
   #
   specialties:
     special-equipment:
-    - - Lute inlaid with an Ansible of Reverberation near the soundhole
-- A baggy full of dried cabbage leaves
+    - Lute inlaid with an Ansible of Reverberation near the soundhole
+    - A baggy full of dried cabbage leaves
 
   profile:
 

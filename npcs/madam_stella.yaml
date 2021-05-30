@@ -265,7 +265,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: Stamping her wooden leg for emphasis, the madam shouts: "Grafters! Thieves!" The constable rolls his eyes and sighs.
+    introduction: Stamping her wooden leg for emphasis, the madam shouts, "Grafters! Thieves!" The constable rolls his eyes and sighs.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Hon"; "Darlin'"; "Don't be shy. Unless you're a tax-man"; "Woman's oldest professions: gardeners... and seamstresses."
+    expressions: $characters$ "Hon"; "Darlin'"; "Don't be shy. Unless you're a tax-man"; "Woman's oldest professions - gardeners... and seamstresses."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -305,7 +305,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   In brothel: touches men's chests, squeezes biceps, ruffles hair; in court: defends herself by yelling, banging peg leg.
+    mannerisms: In brothel - touches men's chests, squeezes biceps, ruffles hair; in court - defends herself by yelling, banging peg leg.
 
   acting:
     #

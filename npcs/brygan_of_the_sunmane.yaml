@@ -264,7 +264,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: "Get down! you're surrounded!" comes the hushed voice from somewhere in the long golden grass of the open plains
+    introduction: $characters$ "Get down! you're surrounded!" comes the hushed voice from somewhere in the long golden grass of the open plains
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The hunt is on!",
+    expressions: $characters$ "The hunt is on!",
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Oy, you got some menacing talents to back up that (battle-axe, sword, etc.)?"; "I can fill ya up with some goodness if your feelin ragged from the trail, eh?"; "Whateva ya lookin fo, I can promise I got at least a facsimile of it in libational form, eh?"
+    expressions: $characters$ "Oy, you got some menacing talents to back up that (battle-axe, sword, etc.)?"; "I can fill ya up with some goodness if your feelin ragged from the trail, eh?"; "Whateva ya lookin fo, I can promise I got at least a facsimile of it in libational form, eh?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

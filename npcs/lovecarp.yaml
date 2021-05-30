@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I mean"; "Like I say"; "Low dwarves"; "I'm not a racist, but some of them bottomdarks will make any man racist".
+    expressions: $characters$ "I mean"; "Like I say"; "Low dwarves"; "I'm not a racist, but some of them bottomdarks will make any man racist".
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

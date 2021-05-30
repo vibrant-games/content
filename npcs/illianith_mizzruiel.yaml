@@ -296,7 +296,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "How may I please you?" "What are your tastes?", "My client sends his regards"
+    expressions: $characters$ "How may I please you?" "What are your tastes?", "My client sends his regards"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

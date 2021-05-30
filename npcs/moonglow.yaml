@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You look lonely handsome". "Hands off for that price", "Don't be pushy"
+    expressions: $characters$ "You look lonely handsome". "Hands off for that price", "Don't be pushy"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

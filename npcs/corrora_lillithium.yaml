@@ -274,7 +274,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: "Corrora Lillitium at your service." Corrora can be found exploring the South East frontier of Yakahe surrounding towns
+    introduction: $characters$ "Corrora Lillitium at your service." Corrora can be found exploring the South East frontier of Yakahe surrounding towns
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -301,7 +301,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "May Lenterra give me patience, because if she gives me strength, I will bash your skull in"
+    expressions: $characters$ "May Lenterra give me patience, because if she gives me strength, I will bash your skull in"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

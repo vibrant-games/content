@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Let's have a round on the bar!", "It was such a glorious party!", "Have you heard the latest gossip?"
+    expressions: $characters$ "Let's have a round on the bar!", "It was such a glorious party!", "Have you heard the latest gossip?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

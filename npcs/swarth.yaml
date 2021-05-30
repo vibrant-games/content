@@ -288,7 +288,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Aaaaaaaah ha"; "My little doves"; "My chicadees"; "A pint of Swarth's and a pound of flesh, and you'll never grow old."
+    expressions: $characters$ "Aaaaaaaah ha"; "My little doves"; "My chicadees"; "A pint of Swarth's and a pound of flesh, and you'll never grow old."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -368,8 +368,8 @@ npc:
     combat-tactics: |
       Full frontal assault, either with his cleaver, or the squishy smother-hug of doom
     special-equipment:
-    - - A cleaver bearing an inscription in ancient dwarvish: "For my little chicadee"
-- A well-used whetstone
+    - A cleaver bearing an inscription in ancient dwarvish: "For my little chicadee"
+    - A well-used whetstone
 
   profile:
 

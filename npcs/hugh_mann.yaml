@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We... I mean I, am very happy to meet you", "Please don't hurt us... I mean Me".
+    expressions: $characters$ "We... I mean I, am very happy to meet you", "Please don't hurt us... I mean Me".
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

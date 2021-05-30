@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Ah little one, what's your favorite animal", "Go, run ask your mother if she'll buy you one today"
+    expressions: $characters$ "Ah little one, what's your favorite animal", "Go, run ask your mother if she'll buy you one today"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -265,7 +265,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A flash of muscular orange fur swings down from the shelves. The ape stands on the checkout desk and says: "Ook?"
+    introduction: A flash of muscular orange fur swings down from the shelves. The ape stands on the checkout desk and says, "Ook?"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Ook!"; "Ook?"; "Ook."
+    expressions: $characters$ "Ook!"; "Ook?"; "Ook."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

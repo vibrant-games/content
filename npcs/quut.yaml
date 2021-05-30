@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Mmmmmm"; "Mmmmm hmmmm"; "Mmmmm-mmmmm". Quut rarely says anything, preferring to roll her eyes or blink twice for "yes".
+    expressions: $characters$ "Mmmmmm"; "Mmmmm hmmmm"; "Mmmmm-mmmmm". Quut rarely says anything, preferring to roll her eyes or blink twice for "yes".
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -369,8 +369,8 @@ npc:
     attacks: |
       Foot-stab
     special-equipment:
-    - - Sharp stiletto-heeled boots
-- Silver-clawed cigarillo holder
+    - Sharp stiletto-heeled boots
+    - Silver-clawed cigarillo holder
 
   profile:
 

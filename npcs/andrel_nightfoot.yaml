@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Shhhhh!", "Something big has come this way recently", "I'll guide ya where ya need to go, maybe even in one piece"
+    expressions: $characters$ "Shhhhh!", "Something big has come this way recently", "I'll guide ya where ya need to go, maybe even in one piece"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

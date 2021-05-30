@@ -289,7 +289,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Welcome! All are welcome!"; "Best heed tradition, or meet fate."
+    expressions: $characters$ "Welcome! All are welcome!"; "Best heed tradition, or meet fate."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

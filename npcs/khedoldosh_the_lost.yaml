@@ -293,7 +293,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You've always got time to see the future, lad/lass. Take a minute to hear what Khedoldosh can offer"; "What can you see? I promise it cannot compare to my eye"; "How often are you offered a glimpse of your fate?"; "Only those who choose blindness over clarity of vision are truly lost..."
+    expressions: $characters$ "You've always got time to see the future, lad/lass. Take a minute to hear what Khedoldosh can offer"; "What can you see? I promise it cannot compare to my eye"; "How often are you offered a glimpse of your fate?"; "Only those who choose blindness over clarity of vision are truly lost..."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

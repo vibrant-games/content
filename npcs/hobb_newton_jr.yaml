@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Howdy". "That's a damn fine filly you got there"
+    expressions: $characters$ "Howdy". "That's a damn fine filly you got there"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

@@ -296,7 +296,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You are weak!", "The money pays for food and weapons, but I fight because those who don't are weak and pathetic"
+    expressions: $characters$ "You are weak!", "The money pays for food and weapons, but I fight because those who don't are weak and pathetic"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

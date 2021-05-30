@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "5 copper, best I can do", "This is a very fine specimen, just came in yesterday. It'll cost ya though"
+    expressions: $characters$ "5 copper, best I can do", "This is a very fine specimen, just came in yesterday. It'll cost ya though"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

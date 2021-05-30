@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "My little friends don't like you", "Death is the natural progression of life", "Death feeds the world"
+    expressions: $characters$ "My little friends don't like you", "Death is the natural progression of life", "Death feeds the world"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

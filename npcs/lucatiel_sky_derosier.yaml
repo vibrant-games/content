@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Be careful"/ "What don't you understand?"
+    expressions: $characters$ "Be careful"/ "What don't you understand?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

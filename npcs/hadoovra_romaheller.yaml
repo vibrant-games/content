@@ -268,7 +268,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: "No no no!" she yells, storming through the work site. "That's not how it is in my drawings, Do you have orc brains?!?"
+    introduction: $characters$ "No no no!" she yells, storming through the work site. "That's not how it is in my drawings, Do you have orc brains?!?"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -295,7 +295,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Idiots!", "Doesn't anyone know how to follow a plan?", "My schematics are inscrutable!"
+    expressions: $characters$ "Idiots!", "Doesn't anyone know how to follow a plan?", "My schematics are inscrutable!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

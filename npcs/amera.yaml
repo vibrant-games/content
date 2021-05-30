@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Aren't you the handsome one", "The captain doesn't like me to fraternize with the passengers. it causes problems"
+    expressions: $characters$ "Aren't you the handsome one", "The captain doesn't like me to fraternize with the passengers. it causes problems"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

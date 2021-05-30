@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "How many beds will you need this evening?", "Are you interested in some companionship during your stay"
+    expressions: $characters$ "How many beds will you need this evening?", "Are you interested in some companionship during your stay"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

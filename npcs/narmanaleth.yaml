@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The Spirits have spoken", "Your path is clear to me", "Il-Yannah surrounds you with its light"
+    expressions: $characters$ "The Spirits have spoken", "Your path is clear to me", "Il-Yannah surrounds you with its light"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,9 +412,8 @@ npc:
     combat-tactics: |
       Due to his frailty, he will mostly use magic and psionics if he's forced to fight, but he mostly only fights on the astral plane
     special-equipment:
-    - Staff of the Woodlands
-Statue of Wondrous Power: Silver Crow
-Holy Symbol of Ravenkind
+    - Staff of the Woodlands.
+    - Statue of Wondrous Power: Silver Crow, Holy Symbol of Ravenkind.
 
   profile:
 

@@ -291,7 +291,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Lets get in there then folks" "Come on twinkle toes"
+    expressions: $characters$ "Lets get in there then folks" "Come on twinkle toes"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -388,11 +388,11 @@ npc:
       Ball bearings
     special-equipment:
     - Short bow Blesk Blade
-Short Sword Astorian Sword
-Short Sword Blesk Blade
-Leather armor Armor of the Darkest Night
-Gauntlets of Flaming Fury
-Amulet of Health
+    - Short Sword Astorian Sword
+    - Short Sword Blesk Blade
+    - Leather armor Armor of the Darkest Night
+    - Gauntlets of Flaming Fury
+    - Amulet of Health
 
   profile:
 

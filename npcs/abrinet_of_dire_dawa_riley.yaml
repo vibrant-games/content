@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Hey you!"; (seizing clothes) "I LOVE this!"; "Crew love!"; (rolling eyes) "Oh my gods"; "Right?"
+    expressions: $characters$ "Hey you!"; (seizing clothes) "I LOVE this!"; "Crew love!"; (rolling eyes) "Oh my gods"; "Right?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

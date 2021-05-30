@@ -296,7 +296,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Here goes nothin!"; "Divine healing does the trick, I s'pose. Doesn't get to the bottom of things."
+    expressions: $characters$ "Here goes nothin!"; "Divine healing does the trick, I s'pose. Doesn't get to the bottom of things."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -382,44 +382,10 @@ npc:
     combat-tactics: |
       They abhor violence and will avoid it at all costs.
     special-equipment:
-    - <p><b>KEOGHTOM'S OINTMENT</b></p>
-<p><i>
-Wondrous item
-    - uncommon</i></p><p>
-This glass jar
-    - 3 inches in diameter
-    - contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action
-    - one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points
-    - ceases to be poisoned
-    - and is cured of any disease.</p><p>They carry one at all times and have many at their shack.</p><p>
-<b>Robe of useful items</b></p><p><i>adventuring gear (wondrous item
-    - robe)</i></p>
-<p>This robe has cloth patches of various shapes and colors covering it. While wearing the robe. you can use an action to detach one of the patches
-    - causing it to become the object or creature it represents. Once the last patch is removed
-    - the robe becomes an ordinary garment.
-
-The robe has two of each of the following patches: Dagger
-    - Bullseye lantern (filled and lit)
-    - Steel mirror
-    - 10-foot pole
-    - 
- Hempen rope (50 feet
-    - coiled)
-    - Sack.</p><p>In addition
-    - their robe has 10 patches as follows: 2 Iron doors
-    - 2 Riding Horses
-    - 2 Windows
-    - 2 Spell Scrolls of 1st to 3rd level
-    - and 2 Superior Potions of Healing.</p>
-<p><b>Dr. Gotadium's Headband of De-Obfuscation</b></p>
-<p>This headband is made of flexible metals with various arms tucked and folded into themselves. It aids a surgeon and rectifier in their tasks. It's multiple folding arms can extend to: provide light
-    - a magnification lens
-    - a small beam of heat (to help with incisions or cauterization)
-    - a surgeon's mask
-    - a tiny hand that can grasp or hold a small tool (like a scalpel or needle or suture)
-    - and a small vial of iodine.</p><p>
-<b>Doctors' Bag<b></p>
-
+    - KEOGHTOM'S OINTMENT.  Wondrous item, uncommon.  This glass jar, 3 inches in diameter, contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh 1/2 pound. As an action, one dose of the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points, ceases to be poisoned, and is cured of any disease.</p><p>They carry one at all times and have many at their shack.
+    - Robe of useful items, adventuring gear (wondrous item, robe).  This robe has cloth patches of various shapes and colors covering it. While wearing the robe. you can use an action to detach one of the patches, causing it to become the object or creature it represents. Once the last patch is removed, the robe becomes an ordinary garment.  The robe has two of each of the following patches - Dagger, Bullseye lantern (filled and lit), Steel mirror, 10-foot pole, Hempen rope (50 feet, coiled), Sack.  In addition, their robe has 10 patches as follows - 2 Iron doors, 2 Riding Horses, 2 Windows, 2 Spell Scrolls of 1st to 3rd level, and 2 Superior Potions of Healing.
+    - Dr. Gotadium's Headband of De-Obfuscation.  This headband is made of flexible metals with various arms tucked and folded into themselves. It aids a surgeon and rectifier in their tasks. It's multiple folding arms can extend to - provide light, a magnification lens, a small beam of heat (to help with incisions or cauterization), a surgeon's mask, a tiny hand that can grasp or hold a small tool (like a scalpel or needle or suture), and a small vial of iodine.
+    - Doctors' Bag.
 
   profile:
 

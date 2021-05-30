@@ -290,7 +290,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You may bow to the queen, but I run these streets"; "I know what it's like to be poor and hungry. Rich is better."
+    expressions: $characters$ "You may bow to the queen, but I run these streets"; "I know what it's like to be poor and hungry. Rich is better."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -380,10 +380,7 @@ npc:
       |
       N/A
     special-equipment:
-    - Varun's great club
-    - "Widowmaker" is never far from his grasp. It was imbued with a strong magic that makes it easier and faster to wield by the Lich whom he secretly serves. Mechanically
-    - it is a +3 magic weapon. Varun has had this club since he was a teenager
-    - living on the streets of Underboot [or any slum in the major city who's criminal underworld he now runs]. He could barely wield it then
+    - Varun's great club, "Widowmaker", is never far from his grasp. It was imbued with a strong magic that makes it easier and faster to wield by the Lich whom he secretly serves. Mechanically, it is a +3 magic weapon. Varun has had this club since he was a teenager, living on the streets of Underboot [or any slum in the major city who's criminal underworld he now runs]. He could barely wield it then.
 
   profile:
 

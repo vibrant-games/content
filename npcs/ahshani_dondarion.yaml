@@ -288,7 +288,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You bring honor to your house", "It is as my master would have approved"
+    expressions: $characters$ "You bring honor to your house", "It is as my master would have approved"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

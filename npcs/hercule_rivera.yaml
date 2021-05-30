@@ -292,7 +292,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We can meet all of your magical needs!", "It's difficult to procure, but I may have some of that left in the back"
+    expressions: $characters$ "We can meet all of your magical needs!", "It's difficult to procure, but I may have some of that left in the back"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

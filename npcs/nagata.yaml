@@ -290,7 +290,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Howdy"; "Y'all"; "Ah reckon"; "Ain't no thang"; "Pitchin' woo"; "By golly"; "Here's a florin for your troubles."
+    expressions: $characters$ "Howdy"; "Y'all"; "Ah reckon"; "Ain't no thang"; "Pitchin' woo"; "By golly"; "Here's a florin for your troubles."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.

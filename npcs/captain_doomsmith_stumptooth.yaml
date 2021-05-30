@@ -294,7 +294,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Prepare to be boarded". "Well what kind of treats have we here mateys?", "Feed them to the sharks!"
+    expressions: $characters$ "Prepare to be boarded". "Well what kind of treats have we here mateys?", "Feed them to the sharks!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
