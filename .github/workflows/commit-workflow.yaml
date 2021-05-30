@@ -15,7 +15,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: vibrantgames/source
-          branch: main
+          # The main branch:
+          ref: refs/heads/main
 
       #
       # Install pre-requisite commands and libraries:
