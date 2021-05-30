@@ -1,0 +1,38 @@
+name: commit-workflow
+on: [push]
+jobs:
+  convert-yaml-to-html:
+    runs-on: ubuntu-20.04
+    steps:
+      #
+      # Checkout the content repository:
+      #
+      - uses: actions/checkout@v2
+
+      #
+      # Checkout the source repository:
+      #
+      - uses: actions/checkout@main
+        with:
+          name: vibrantgames/source
+
+      #
+      # Install pre-requisite commands and libraries:
+      #
+      - run: ./source/applications/install/install_tools_requirements.sh
+
+      #
+      # Convert all NPCs from YAML to HTML:
+      #
+      - run: ./source/applications/tools/npcs_yaml_to_html.sh .
+
+      #
+      # Commit the NPC HTML files to the content repository:
+      #
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: 'npcs/html'
+          author_name: GitHub Actions NPCs YAML-to-HTML
+          author_email: jtienhaara@yahoo.com
+          message: 'GitHub Actions NPCs YAML-to-HTML conversion'
+          push: true
