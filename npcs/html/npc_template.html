@@ -33,7 +33,7 @@
   <div class="row">
     <div class="column">
 
-      <div class="section_title">
+      <div class="article_title">
         <a name="traits">
           Traits
         </a>
@@ -149,13 +149,79 @@
         {{/npc.traits.adjectives}}
       </ul>
 
+
+      <hr class="article_divider"/>
+
+
+      <div class="article_title">
+        <a name="stats">
+          Stats
+        </a>
+      </div>
+
+      <div>
+        <span class="field_name"> Armour Class: </span>
+        <span class="field_value"> {{npc.stats.armour-class}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Hit Points: </span>
+        <span class="field_value"> {{npc.stats.hit-points}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Speed: </span>
+        <span class="field_value"> {{npc.stats.speed}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Strength: </span>
+        <span class="field_value"> {{npc.stats.str}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Dexterity: </span>
+        <span class="field_value"> {{npc.stats.dex}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Constitution: </span>
+        <span class="field_value"> {{npc.stats.con}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Intelligence: </span>
+        <span class="field_value"> {{npc.stats.int}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Wisdom: </span>
+        <span class="field_value"> {{npc.stats.wis}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Charisma: </span>
+        <span class="field_value"> {{npc.stats.cha}} </span>
+      </div>
+
     </div> <!-- column -->
 
 
 
     <div class="column">
 
-      <div class="section_title">
+      {{#npc.image.length}}
+      <!-- Portraits should be 2500 x 3235, scaled to fit: -->
+      <div class="portrait">
+        <img src="{{npc.image}}"/>
+      </div>
+
+
+      <hr class="article_divider"/>
+      {{/npc.image.length}}
+
+
+      <div class="article_title">
         <a name="improv">
           Improv
         </a>
@@ -166,8 +232,147 @@
         <span class="field_value"> {{npc.improv.introduction}} </span>
       </div>
 
+      <div>
+        <span class="field_name"> Appearance: </span>
+        <span class="field_value"> {{npc.improv.appearance}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Expressions: </span>
+        <span class="field_value"> {{npc.improv.expressions}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Mannerisms: </span>
+        <span class="field_value"> {{npc.improv.mannerisms}} </span>
+      </div>
+
+
+      <hr class="article_divider"/>
+
+
+      <div class="article_title">
+        <a name="acting">
+          Acting
+        </a>
+      </div>
+
+      <div>
+        <span class="field_name"> Motivations: </span>
+        <span class="field_value"> {{npc.acting.motivations}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Passions: </span>
+        <span class="field_value"> {{npc.acting.passions}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Secrets: </span>
+        <span class="field_value"> {{npc.acting.secrets}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Vulnerabilities: </span>
+        <span class="field_value"> {{npc.acting.vulnerabilities}} </span>
+      </div>
+
+
+      <hr class="article_divider"/>
+
+
+      <div class="article_title">
+        <a name="specialties">
+          Specialties
+        </a>
+      </div>
+
+      {{#npc.specialties.skills.length}}
+      <div>
+        <span class="field_name"> Skills: </span>
+      </div>
+      <ul>
+      {{/npc.specialties.skills.length}}
+        {{#npc.specialties.skills}}
+          <li>
+            <span class="field_value"> {{.}} </span>
+          </li>
+        {{/npc.specialties.skills}}
+      {{#npc.specialties.skills.length}}
+      </ul>
+      {{/npc.specialties.skills.length}}
+
+      <div>
+        <span class="field_name"> Special Abilities: </span>
+        <span class="field_value"> {{npc.specialties.special-abilities}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Attacks: </span>
+        <span class="field_value"> {{npc.specialties.attacks}} </span>
+      </div>
+
+      <div>
+        <span class="field_name"> Combat Tactics: </span>
+        <span class="field_value"> {{npc.specialties.combat-tactics}} </span>
+      </div>
+
+      {{#npc.specialties.special-equipment.length}}
+      <div>
+        <span class="field_name"> Special Equipment: </span>
+      </div>
+      <ul>
+      {{/npc.specialties.special-equipment.length}}
+        {{#npc.specialties.special-equipment}}
+          <li>
+            <span class="field_value"> {{.}} </span>
+          </li>
+        {{/npc.specialties.special-equipment}}
+      {{#npc.specialties.special-equipment.length}}
+      </ul>
+      {{/npc.specialties.special-equipment.length}}
+
     </div> <!-- column -->
 
   </div> <!-- row -->
+
+
+  <hr class="article_divider"/>
+
+
+  <div class="profile">
+
+    <div class="article_title">
+      <a name="story">
+        Story
+      </a>
+    </div>
+
+    <div class="background-story">
+      {{npc.profile.background-story}}
+    </div>
+
+  </div> <!-- profile -->
+
+
+  {{#npc.profile.personality.length}}
+  <hr class="article_divider"/>
+
+
+  <div class="profile">
+
+    <div class="article_title">
+      <a name="personality">
+        Personality
+      </a>
+    </div>
+
+    <div class="personality">
+      {{npc.profile.personality}}
+    </div>
+
+  </div> <!-- profile -->
+  {{/npc.profile.personality.length}}
+
 </body>
 </html>
