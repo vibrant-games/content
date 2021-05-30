@@ -12,9 +12,10 @@ jobs:
       #
       # Checkout the source repository:
       #
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v2
         with:
           repository: vibrantgames/source
+          branch: main
 
       #
       # Install pre-requisite commands and libraries:
