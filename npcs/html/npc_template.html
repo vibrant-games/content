@@ -326,7 +326,7 @@ function elementClass(contentNode) {
    
 		  <script>
 		  	
-var skills = '{{#npc.specialties.skills}}';
+var skills = '{{npc.specialties.skills}}';
 var skillsArr = skills.split(';');
 console.log(skillsArr);
 
@@ -347,7 +347,7 @@ document.getElementById('skillsList').innerHTML = skillsArr;
    
 		  <script>
 		  	
-var immunities = '{{#npc.specialties.immunities}}';
+var immunities = '{{npc.specialties.immunities}}';
 var immunitiesArr = immunities.split(';');
 console.log(immunitiesArr);
 
@@ -365,7 +365,7 @@ document.getElementById('immunitiesList').innerHTML = immunitiesArr;
    
 		  <script>
 		  	
-var lang = '{{#npc.traits.languages.length}}';
+var lang = '{{npc.traits.languages}}';
 
 
 document.getElementById('langList').innerHTML = langArr;

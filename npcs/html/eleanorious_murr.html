@@ -1,317 +1,454 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-CA" xml:lang="en-CA">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Vibrant Games" />
-  <meta name="keywords" content="dungeons and dragons, TODO bla bla bla" />
-  <title>Eleanorious Murr</title>
-  <!-- !!!
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
-      q { quotes: "“" "”" "‘" "’"; }
-  </style>
-  -->
-  <link rel="stylesheet" href="stylesheet.css"/>
-</head>
-<body>
-  <h1 class="title">Eleanorious Murr</h1>
+<html><head><meta charset="utf-8"/><title>Two-column statblock example</title><link href="//fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet" type="text/css"/><link href="//fonts.googleapis.com/css?family=Libre+Baskerville:700" rel="stylesheet" type="text/css"/><style>
+    body {
+      margin: 0;
+    }
+
+    stat-block {
+      /* A bit of margin for presentation purposes, to show off the drop
+      shadow. */
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+  </style><script>function createCustomElement(name, contentNode, elementClass = null) {
+  if(elementClass === null) {
+    customElements.define(name,
+      class extends HTMLElement {
+        constructor() {
+          super();
+          this.attachShadow({mode: 'open'})
+            .appendChild(contentNode.cloneNode(true));
+        }
+      }
+    )
+  } else {
+    customElements.define(name, elementClass(contentNode));
+  }
+}
+</script>
+	
+	
+
+	
+	
+	
+	</head><body><template id="stat-block"><style>
+  .bar {
+    height: 5px;
+    background: #E69A28;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 1;
+  }
+
+  :host {
+    display: inline-block;
+  }
+
+  #content-wrap {
+    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial,
+                  sans-serif;
+    font-size: 13.5px;
+    background: #FDF1DC;
+    padding: 0.6em;
+    padding-bottom: 0.5em;
+    border: 1px #DDD solid;
+    box-shadow: 0 0 1.5em #867453;
+
+    /* We don't want the box-shadow in front of the bar divs. */
+    position: relative;
+    z-index: 0;
+
+    /* Leaving room for the two bars to protrude outwards */
+    margin-left: 2px;
+    margin-right: 2px;
+
+    /* This is possibly overriden by next CSS rule. */
+    width: 400px;
+
+    -webkit-columns: 400px;
+       -moz-columns: 400px;
+            columns: 400px;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+
+    /* We can't use CSS3 attr() here because no browser currently supports it,
+       but we can use a CSS custom property instead. */
+    height: var(--data-content-height);
+
+    /* When height is constrained, we want sequential filling of columns. */
+    -webkit-column-fill: auto;
+       -moz-column-fill: auto;
+            column-fill: auto;
+  }
+
+  :host([data-two-column]) #content-wrap {
+    /* One column is 400px and the gap between them is 40px. */
+    width: 840px;
+  }
+
+  ::slotted(h3) {
+    border-bottom: 1px solid #7A200D;
+    color: #7A200D;
+    font-size: 21px;
+    font-variant: small-caps;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 0.3em;
+
+    break-inside: avoid-column;
+    break-after: avoid-column;
+  }
+
+  /* For user-level p elems. */
+  ::slotted(p) {
+    margin-top: 0.3em;
+    margin-bottom: 0.9em;
+    line-height: 1.5;
+  }
+
+  /* Last child shouldn't have bottom margin, too much white space. */
+  ::slotted(*:last-child) {
+    margin-bottom: 0;
+  }
+</style><div class="bar"></div><div id="content-wrap">
+  <slot></slot>
+</div><div class="bar"></div></template><script>{
+  let templateElement = document.getElementById('stat-block');
+  createCustomElement('stat-block', templateElement.content);
+}</script><template id="creature-heading"><style>
+  ::slotted(h1) {
+    font-family: 'Libre Baskerville', 'Lora', 'Calisto MT',
+                 'Bookman Old Style', Bookman, 'Goudy Old Style',
+                 Garamond, 'Hoefler Text', 'Bitstream Charter',
+                 Georgia, serif;
+    color: #7A200D;
+    font-weight: 700;
+    margin: 0px;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+  }
+
+  ::slotted(h2) {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 12px;
+    margin: 0;
+  }
+</style><slot></slot></template><script>{
+  let templateElement = document.getElementById('creature-heading');
+  createCustomElement('creature-heading', templateElement.content);
+}</script><template id="tapered-rule"><style>
+  svg {
+    fill: #922610;
+    /* Stroke is necessary for good antialiasing in Chrome. */
+    stroke: #922610;
+    margin-top: 0.6em;
+    margin-bottom: 0.35em;
+  }
+</style><svg height="5" width="400">
+  <polyline points="0,0 400,2.5 0,5"></polyline>
+</svg></template><script>{
+  let templateElement = document.getElementById('tapered-rule');
+  createCustomElement('tapered-rule', templateElement.content);
+}</script><template id="top-stats"><style>
+  ::slotted(*) {
+    color: #7A200D;
+  }
+</style><tapered-rule></tapered-rule><slot></slot><tapered-rule></tapered-rule></template><script>{
+  let templateElement = document.getElementById('top-stats');
+  createCustomElement('top-stats', templateElement.content);
+}</script><template id="abilities-block"><style>
+  table {
+    width: 100%;
+    border: 0px;
+    border-collapse: collapse;
+  }
+  th, td {
+    width: 50px;
+    text-align: center;
+  }
+</style><tapered-rule></tapered-rule><table>
+  <tbody><tr>
+    <th>STR</th>
+    <th>DEX</th>
+    <th>CON</th>
+    <th>INT</th>
+    <th>WIS</th>
+    <th>CHA</th>
+  </tr>
+  <tr>
+    <td id="str"></td>
+    <td id="dex"></td>
+    <td id="con"></td>
+    <td id="int"></td>
+    <td id="wis"></td>
+    <td id="cha"></td>
+  </tr>
+</tbody></table><tapered-rule></tapered-rule></template><script>{
+  function abilityModifier(abilityScore) {
+  let score = parseInt(abilityScore, 10);
+  return Math.floor((score - 10) / 2);
+}
+
+function formattedModifier(abilityModifier) {
+  if (abilityModifier >= 0) {
+    return '+' + abilityModifier;
+  }
+  // This is an en dash, NOT a "normal" dash. The minus sign needs to be more
+  // visible.
+  return '–' + Math.abs(abilityModifier);
+}
+
+function abilityText(abilityScore) {
+  return [String(abilityScore),
+          ' (',
+          formattedModifier(abilityModifier(abilityScore)),
+          ')'].join('');
+}
+
+function elementClass(contentNode) {
+  return class extends HTMLElement {
+    constructor() {
+      super();
+      this.attachShadow({mode: 'open'})
+        .appendChild(contentNode.cloneNode(true));
+    }
+    connectedCallback() {
+      let root = this.shadowRoot;
+      for (let i = 0; i < this.attributes.length; i++) {
+        let attribute = this.attributes[i];
+        let abilityShortName = attribute.name.split('-')[1];
+        root.getElementById(abilityShortName).textContent =
+           abilityText(attribute.value);
+      }
+    }
+  }
+}
+
+  let templateElement = document.getElementById('abilities-block');
+  createCustomElement('abilities-block', templateElement.content, elementClass);
+}</script><template id="property-line"><style>
+  :host {
+    line-height: 1.4;
+    display: block;
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+
+  ::slotted(h4) {
+    margin: 0;
+    display: inline;
+    font-weight: bold;
+  }
+
+  ::slotted(p:first-of-type) {
+    display: inline;
+    text-indent: 0;
+  }
+
+  ::slotted(p) {
+    text-indent: 1em;
+    margin: 0;
+  }
+</style><slot></slot></template><script>{
+  let templateElement = document.getElementById('property-line');
+  createCustomElement('property-line', templateElement.content);
+}</script><template id="property-block"><style>
+  :host {
+    margin-top: 0.3em;
+    margin-bottom: 0.9em;
+    line-height: 1.5;
+    display: block;
+  }
+
+  ::slotted(h4) {
+    margin: 0;
+    display: inline;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  ::slotted(p:first-of-type) {
+    display: inline;
+    text-indent: 0;
+  }
+
+  ::slotted(p) {
+    text-indent: 1em;
+    margin: 0;
+  }
+</style><slot></slot></template><script>{
+  let templateElement = document.getElementById('property-block');
+  createCustomElement('property-block', templateElement.content);
+}
+	
+	
+	
+	
+	</script>
+	
+	
+	
+	
+	<stat-block data-two-column="" style="--data-content-height: 672px;">
+    <creature-heading>
+      <h1>Eleanorious Murr</h1>
   <!-- !!! TODO <p class="subtitle">!!!</p> -->
-
-  <hr class="section_divider"/>
-
-  <div class="row">
-    <div class="column">
-
-      <div class="article_title">
-        <a name="traits">
-          Traits
-        </a>
-      </div>
-
-      <div>
-        <span class="field_name"> Age: </span>
-        <span class="field_value"> young </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Race: </span>
-        <span class="field_value"> dragonborn </span>
-      </div>
-
-
-      <div>
-        <span class="field_name"> Pronouns: </span>
-        <span class="field_value"> she/her </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Occupation: </span>
-      </div>
-      <ul>
-          <li>
-            <span class="field_value"> Alchemist/Prophylactary Proprietor </span>
-          </li>
-      </ul>
-
-      <div>
-        <span class="field_name"> Class: </span>
-        <span class="field_value"> sorcerer </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Level: </span>
-        <span class="field_value"> 5 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Alignment: </span>
-        <span class="field_value"> neutral good </span>
-      </div>
-
-
-        <div>
-          <span class="field_name"> Languages: </span>
-        </div>
-        <ul>
-          <li>
-            <span class="field_value"> Draconic </span>
-          </li>
-          <li>
-            <span class="field_value"> Common </span>
-          </li>
-          <li>
-            <span class="field_value"> Gnomish </span>
-          </li>
-          <li>
-            <span class="field_value"> Dwarvish </span>
-          </li>
-        </ul>
-
-      <div>
-        <span class="field_name"> Factions: </span>
-      </div>
-      <ul>
-          <li>
-            <a href="../../factions/html/alchemists_guild.html">
-              <span class="field_value"> Alchemists&#39; guild </span>
-            </a>
-          </li>
-          <li>
-            <a href="../../factions/html/diplomats_of_daron_garr.html">
-              <span class="field_value"> Diplomats of Daron-Garr </span>
-            </a>
-          </li>
-      </ul>
-
-      <div>
-        <span class="field_name"> Adjectives: </span>
-      </div>
-      <ul>
-          <li>
-            <span class="field_value"> Bubbly </span>
-          </li>
-      </ul>
-
-
-      <hr class="article_divider"/>
-
-
-      <div class="article_title">
-        <a name="stats">
-          Stats
-        </a>
-      </div>
-
-      <div>
-        <span class="field_name"> Armour Class: </span>
-        <span class="field_value"> 10 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Hit Points: </span>
-        <span class="field_value"> 28 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Speed: </span>
-        <span class="field_value"> 30 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Strength: </span>
-        <span class="field_value"> 9 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Dexterity: </span>
-        <span class="field_value"> 10 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Constitution: </span>
-        <span class="field_value"> 15 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Intelligence: </span>
-        <span class="field_value"> 17 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Wisdom: </span>
-        <span class="field_value"> 13 </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Charisma: </span>
-        <span class="field_value"> 15 </span>
-      </div>
-
-    </div> <!-- column -->
-
-
-
-    <div class="column">
-
-
-
-      <div class="article_title">
-        <a name="improv">
-          Improv
-        </a>
-      </div>
-
-      <div>
-        <span class="field_name"> Introduction: </span>
-        <span class="field_value"> With her fervent work ethic, Eleanorious will set up a stand in the market or even outside of an inn or tavern. She lugs a small cart with her alchemy set and sales stand everywhere she goes. A party can run into her just about anywhere trying to sell her tinctures, lotions, potions, and ointments. </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Appearance: </span>
-        <span class="field_value"> A small feminine copper dragonborn with unusual horns and scales that glitter; dresses very flambouyantly, with tapestry-like cloaks and capes that flow over her limbs and tumble to the floor </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Expressions: </span>
-        <span class="field_value">  &quot;Mix and match, there&#39;s a good batch!&quot;; &quot;Tinctures and solvents beat diplomacy every time&quot; </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Mannerisms: </span>
-        <span class="field_value"> Flamboyant and dramatic gestures; Smiles and laughs often; Likes to spit small globules of her acid breath into the air and catch it in her mouth with a smile, a &quot;ta-da&quot;, and a dramatic gesture; </span>
-      </div>
-
-
-      <hr class="article_divider"/>
-
-
-      <div class="article_title">
-        <a name="acting">
-          Acting
-        </a>
-      </div>
-
-      <div>
-        <span class="field_name"> Motivations: </span>
-        <span class="field_value"> To promote the power and instrumentality of alchemy as a solution to everything from poverty and hunger to disease and even death itself.
- </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Passions: </span>
-        <span class="field_value"> Alchemy; Draconic origins; Languages of all kinds;
- </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Secrets: </span>
-        <span class="field_value">  </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Vulnerabilities: </span>
-        <span class="field_value">  </span>
-      </div>
-
-
-      <hr class="article_divider"/>
-
-
-      <div class="article_title">
-        <a name="specialties">
-          Specialties
-        </a>
-      </div>
-
-      <div>
-        <span class="field_name"> Skills: </span>
-      </div>
-      <ul>
-          <li>
-            <span class="field_value"> Alchemy; Nature; Medecine; </span>
-          </li>
-      </ul>
-
-      <div>
-        <span class="field_name"> Special Abilities: </span>
-        <span class="field_value"> Twinned Spell
-|
-Acid Breath - 5x30&#39; (2d6 Damage)
-|
-Sorcerer Spells: 0 - 5; 1 - 4; 2 - 3; 3 - 2;
- </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Attacks: </span>
-        <span class="field_value"> Sickle
- </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Combat Tactics: </span>
-        <span class="field_value"> She will keep distance as best as she can and use any kinds of binding or charm spells to tie up her opponents.
- </span>
-      </div>
-
-      <div>
-        <span class="field_name"> Special Equipment: </span>
-      </div>
-      <ul>
-          <li>
-            <span class="field_value"> Alchemical Compendium </span>
-          </li>
-      </ul>
-
-    </div> <!-- column -->
-
-  </div> <!-- row -->
-
-
-  <hr class="article_divider"/>
-
-
-  <div class="profile">
-
-    <div class="article_title">
-      <a name="story">
-        Story
-      </a>
-    </div>
-
-    <div class="background-story">
-      &lt;p&gt;Eleanorious hails from a regal clan of golden Dragonborn who have integrated themselves well into the ruling population of the region. The Murr family, especially, have developed meaningful emotional and economic relationships within Xhontapys [Major Trade City] and positioned themselves well as purveyors of finer goods within its trade nexus.&lt;/p&gt;&lt;p&gt;With a knack for measuring volumes by eye and comprehending chemical reactions prior to mixing ingredients, Eleanorious trained with various local phylacteries and alchemists to learn this remarkable trade. She has become well-known for her expertise as well as her pleasant personality, fine work-ethic, and her good fashion sense.&lt;/p&gt;
-
-    </div>
-
-  </div> <!-- profile -->
-
-
-
-</body>
-</html>
+</creature-heading>
+
+    <top-stats>
+      <property-line>
+        <h4>
+			Armor Class</h4>
+        <p>10</p>
+      </property-line>
+      <property-line>
+        <h4>Hit Points</h4>
+        <p>28 (14d8 + 56)</p>
+      </property-line>
+      <property-line>
+        <h4>Speed</h4>
+        <p>30</p>
+      </property-line>
+
+      <abilities-block data-cha="15" data-con="15" data-dex="10" data-int="17" data-str="9" data-wis="13"></abilities-block>
+      <property-line>
+        <h4>Saving Throws</h4>
+        <p>Str +9, Con +8, Wis +6</p>
+      </property-line>
+      <property-line>
+        <h4>Skills</h4>
+        <p id="skillsList"></p>
+   
+		  <script>
+		  	
+var skills = '[&quot;Alchemy; Nature; Medecine;&quot;]';
+var skillsArr = skills.split(';');
+console.log(skillsArr);
+
+document.getElementById('skillsList').innerHTML = skillsArr;
+		  
+		  </script>
+	      
+			
+
+
+		  
+      </property-line>
+      
+		
+	<property-line>
+        <h4>Damage Immunities</h4>
+        <p id="immunitiesList"></p>
+   
+		  <script>
+		  	
+var immunities = '';
+var immunitiesArr = immunities.split(';');
+console.log(immunitiesArr);
+
+document.getElementById('immunitiesList').innerHTML = immunitiesArr;
+		  
+		  </script>
+      </property-line>
+      <property-line>
+        <h4>Senses</h4>
+        <p></p>
+      </property-line>
+      <property-line>
+        <h4>Languages</h4>
+        <p id="langList"></p>
+   
+		  <script>
+		  	
+var lang = '[&quot;Draconic&quot;, &quot;Common&quot;, &quot;Gnomish&quot;, &quot;Dwarvish&quot;]';
+
+
+document.getElementById('langList').innerHTML = langArr;
+		  
+		  </script>
+      </property-line>
+      <property-line>
+        <h4>Challenge</h4>
+        <p>9 (5,000 XP)</p>
+      </property-line>
+    </top-stats>
+
+
+    <property-block>
+      <h4>Legendary Resistance (3/Day).</h4>
+      <p>If the werewolf fails a saving throw, it can choose to succeed
+        instead.</p>
+    </property-block>
+
+    <property-block>
+      <h4>Keen Hearing and Smell.</h4>
+      <p>The werewolf has advantage on Wisdom (Perception) checks that rely on
+        hearing or smell.</p>
+    </property-block>
+
+    <property-block>
+      <h4>Pack Leader.</h4>
+      <p>The werewolf's allies have advantage on melee attack rolls against
+        any hostile creature within 5 feet of the werewolf.</p>
+    </property-block>
+
+    <property-block>
+      <h4>Shapechanger.</h4>
+      <p>The werewolf can use its action to polymorph into a wolf-humanoid
+        hybrid or into a wolf, or back into its true form, which is humanoid.
+        Its statistics, other than its AC, are the same in each form. Any
+        equipment it is wearing or carrying isn't transformed. It reverts to
+        its true form if it dies.</p>
+    </property-block>
+    <h3>Actions</h3>
+
+    <property-block>
+      <h4>Multiattack (Hybrid Form Only).</h4>
+      <p>The werewolf makes three attacks: one with its bite and two with its
+        claws.</p>
+    </property-block>
+
+    <property-block>
+      <h4>Bite (Wolf or Hybrid Form Only).</h4>
+      <p><i>Melee Weapon Attack:</i> +9 to hit, reach 5 ft., one target.
+        <i>Hit:</i> 14 (2d8 + 5) piercing damage. If the target is a humanoid,
+        it must succeed on a DC 14 Constitution saving throw or be cursed with
+        werewolf lycanthropy.</p>
+    </property-block>
+
+    <property-block>
+      <h4>Claws (Hybrid Form Only).</h4>
+      <p><i>Melee Weapon Attack:</i> +9 to hit, reach 5 ft., one target.
+        <i>Hit:</i> 16 (2d10 + 5) slashing damage.</p>
+    </property-block>
+
+    <h3>Legendary Actions</h3>
+    <p>The werewolf can take 3 legendary actions, choosing from the
+    options below. Only one legendary action option can be used at a
+    time and only at the end of another creature's turn. The werewolf
+    regains spent legendary actions at the start of its turn.</p>
+
+    <property-line>
+      <h4>Leap.</h4>
+      <p>The werewolf moves up to its speed without provoking
+        opportunity attacks.</p>
+    </property-line>
+
+    <property-line>
+      <h4>Bark Orders.</h4>
+      <p>The werewolf chooses a friendly creature who can
+        see or hear it. That creature can use its reaction to move up to its
+        speed without provoking opportunity attacks.</p>
+    </property-line>
+
+    <property-line>
+      <h4>Frenzy (Costs 2 Actions).</h4>
+      <p>The werewolf can make one claw attack against each creature within 5
+        feet of it.</p>
+    </property-line>
+  </stat-block></body></html>
