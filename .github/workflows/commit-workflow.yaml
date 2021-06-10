@@ -17,6 +17,7 @@ jobs:
           repository: vibrant-games/source
           # The main branch:
           ref: refs/heads/main
+          persist-credentials: false
 
       #
       # Install pre-requisite commands and libraries:
