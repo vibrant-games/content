@@ -28,12 +28,12 @@ jobs:
       #
       # Install pre-requisite commands and libraries:
       #
-      - run: ./source/applications/install/install_tools_requirements.sh
+      - run: vibrant-games/source/applications/install/install_tools_requirements.sh
 
       #
       # Convert all NPCs from YAML to HTML:
       #
-      - run: ./source/applications/tools/npcs_yaml_to_html.sh ./content
+      - run: vibrant-games/source/applications/tools/npcs_yaml_to_html.sh vibrant-games/content
 
       #
       # Commit the NPC HTML files to the content repository:
