@@ -33,7 +33,7 @@ jobs:
       #
       # Convert all NPCs from YAML to HTML:
       #
-      - run: ./source/applications/tools/npcs_yaml_to_html.sh .
+      - run: ./source/applications/tools/npcs_yaml_to_html.sh ./content
 
       #
       # Commit the NPC HTML files to the content repository:
