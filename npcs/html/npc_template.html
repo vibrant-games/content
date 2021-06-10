@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"/><title>{{Npc.name}}</title>
-
-
+<link rel=shortcut icon href="favicon.png">
 
 
 <link href="stylesheet.css">
@@ -103,7 +102,11 @@
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Languages</h4>
-				<p>&mdash;</p>
+				{{#npc.traits.languages.length}}
+        
+        
+      {{/npc.traits.languages.length}}
+      {{#npc.traits.languages}}
 			</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Challenge</h4>
