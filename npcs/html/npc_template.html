@@ -101,11 +101,10 @@
 				<p>blindsight 60ft. (blind beyond this radius), passive Perception 6</p>
 			</div> <!-- property line -->
 			<div class="property-line">
-				<h4>Languages</h4>
+				<h4>{{#npc.traits.languages}}</h4>
 				
-				<p>
-      {{#npc.traits.languages}}
-			{{/npc.traits.languages}}	{{.}}</p>	</div> <!-- property line -->
+				<p>{{.}} {{/npc.traits.languages}}	</p>	
+			</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Challenge</h4>
 				<p>1 (200 XP)</p>
