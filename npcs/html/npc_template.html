@@ -35,7 +35,7 @@
 	
 		<div class="creature-heading">
 		  <h1>{{npc.name}}</h1>
-			<h2>{{npc.traits.aged}} {{npc.traits.race}} {{#npcs.traits.subrace}}{{.}}{{/npcs.traits.subrace}}<br>
+			<h2>{{npc.traits.age}} {{npc.traits.race}} {{#npcs.traits.subrace}}{{.}}{{/npcs.traits.subrace}}<br>
 {{npc.traits.alignment}}<br>
 Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		
@@ -198,8 +198,7 @@ Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		<div class="actions">
 			<h3>Roleplaying Tips</h3>
 			<h4>Introduction</h4>
-			
-			<p>{{npc.improv.introduction}}</p>
+			{{npc.improv.introduction}}
 		</div> 
 		
 		<div class="actions">
