@@ -157,20 +157,19 @@ Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		<div class="property-block">
 			<h4>Special Equipment</h4>
 			
-		</div> 
-		<ul>
+		 
+		
       {{/npc.specialties.special-equipment.length}}
         {{#npc.specialties.special-equipment}}
-          <li>
-            <span class="field_value"> {{.}} </span>
-          </li>
+          
         {{/npc.specialties.special-equipment}}
       {{#npc.specialties.special-equipment.length}}
-      </ul>
+      
       <p> {{/npc.specialties.special-equipment.length}}
           <!-- property block -->
           <!-- property block -->
       </p>
+			</div>
        <div class="actions">
 			<h3>Combat Tactics</h3>
 			<p>{{npc.specialties.combat-tactics}}</p>
