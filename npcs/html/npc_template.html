@@ -35,10 +35,10 @@
 	
 		<div class="creature-heading">
 			<h1>{{npc.name}}</h1>
-			<h2>{{npc.traits.race}} {{#npcs.traits.subrace.length}}{{.}}{{/npcs.traits.subrace.length}} {{npc.traits.alignment}}
+			<h2>{{npc.traits.race}} <!--{{#npcs.traits.subrace.length}}{{.}}{{/npcs.traits.subrace.length}} {{npc.traits.alignment}}-->
 			
 			
-	<!--		
+			
 			</h2>
 			
 			
@@ -50,15 +50,15 @@
 	    <polyline points="0,0 400,2.5 0,5"></polyline>
 	  </svg>
 		<div class="top-stats">
-			<div class="property-line first">
+	<!-- 		<div class="property-line first">
 			
 				
 					
-	<!--  <h4>Pronouns: </h4>{{npc.traits.pronouns}}
+	 <h4>Pronouns: </h4>{{npc.traits.pronouns}}
 				</div> <!-- property line -->
-			<div class="property-line last">
+	<!--			<div class="property-line last">
 				
-	<!--<h4>Occupations: </h4>{{#npc.traits.occupation.length}}{{.}}{{/npc.traits.occupation.length}
+<h4>Occupations: </h4>{{#npc.traits.occupation.length}}{{.}}{{/npc.traits.occupation.length}
 			</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Armor Class</h4>
@@ -111,10 +111,10 @@
 				<p>TODO Saving Throws</p>
 			</div> <!-- property line -->
 			
-			<div class="property-line first">
+		<!--	<div class="property-line first">
 				<h4>Skills</h4>
 			
-	<!--
+	
 
 <p>{{#npc.specialties.skills.length}}{{.}}{{/npc.specialties.skills.length}}</p>
 			</div> <!-- property line -->
@@ -138,11 +138,11 @@
 				<p>{{#npc.traits.languages}}{{.}} {{/npc.traits.languages}}	,</p>	
 			</div> <!-- property line -->
 			
-			<div class="property-line">
+	<!--		<div class="property-line">
 				<h4>Adjectives</h4>
 				
 		
-	<!--			<p>{{#npc.traits.adjectives}}{{.}} {{/npc.traits.adjectives}}	,</p>	
+				<p>{{#npc.traits.adjectives}}{{.}} {{/npc.traits.adjectives}}	,</p>	
 			</div> <!-- property line -->
 			
 		</div> <!-- top stats -->
