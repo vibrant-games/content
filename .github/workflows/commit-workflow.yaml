@@ -8,6 +8,8 @@ jobs:
       # Checkout the content repository:
       #
       - uses: actions/checkout@v2
+        with:
+          path: content
 
       #
       # Checkout the source repository:
@@ -17,7 +19,11 @@ jobs:
           repository: vibrant-games/source
           # The main branch:
           ref: refs/heads/main
-          persist-credentials: false
+          path: source
+          # Private repos:
+          # https://github.com/actions/checkout#Checkout-multiple-repos-private
+          # https://github.com/vibrant-games/content/settings/secrets/actions
+          token: ${{ secrets.REPO_SOURCE_READONLY }}
 
       #
       # Install pre-requisite commands and libraries:
