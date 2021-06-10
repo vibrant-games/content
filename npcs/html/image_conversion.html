@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+    </script>
+  
+    <script src=
+"https://files.codepedia.info/files/uploads/iScripts/html2canvas.js">
+    </script>
+  
+    <title>
+        How to render HTML to an image?
+    </title>
+</head>
+  
+<body>
+    <div id="html-content-holder"
+        style="background-color: #F0F0F1;color: 
+                #00cc65; width: 500px;
+                padding-left: 25px;
+                padding-top: 10px;">
+  
+        <strong>GEEKS FOR GEEKS</strong>
+  
+        <p style="color: #3e4b51;">
+            A Computer Science portal for geeks. 
+            It contains well written, well thought
+            and well explained computer science 
+            and programming articles, quizzes and ...
+        </p>
+  
+        <p style="color: #3e4b51;">
+            A Computer Science portal for geeks. 
+            It contains well written, well thought 
+            and well explained computer science and
+            programming articles, quizzes and ...
+        </p>
+    </div>
+  
+    <input id="btn-Preview-Image" 
+        type="button" value="Preview" />
+  
+    <a id="btn-Convert-Html2Image" href="#">
+        Download
+    </a>
+      
+    <br />
+      
+    <h3>Preview :</h3>
+    <div id="previewImage"></div>
+  
+    <script>
+        $(document).ready(function () {
+  
+            // Global variable
+            var element = $("#html-content-holder");
+            var getCanvas; // Global variable
+  
+            $("#btn-Preview-Image").on('click', function () {
+                html2canvas(element, {
+                    onrendered: function (canvas) {
+                        $("#previewImage").append(canvas);
+                        getCanvas = canvas;
+                    }
+                });
+            });
+  
+            $("#btn-Convert-Html2Image").
+                        on('click', function () {
+                var imgageData = getCanvas.toDataURL("image/png");
+  
+                // Now browser starts downloading it 
+                // instead of just showing it
+                var newData = imgageData.replace(
+                    /^data:image\/png/, 
+                    "data:application/octet-stream");
+  
+                $("#btn-Convert-Html2Image")
+                    .attr("download", "gfg.png")
+                    .attr("href", newData);
+            });
+        });
+    </script>
+</body>
+  
+</html>
