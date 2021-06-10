@@ -44,10 +44,10 @@
 	  </svg>
 		<div class="top-stats">
 			<div class="property-line first">
-				<h4>Pronouns: </h4>{{#npc.traits.pronouns}}{{.}}{{/npc.traits.pronouns}}
+				<h4>Pronouns: </h4>{{npc.traits.pronouns}}
 				</div> <!-- property line -->
 			<div class="property-line last">
-			<h4>Occupations: </h4>{{#npc.traits.occupation.length}}{{.}}{{/npc.traits.occupation.lenth}
+			<h4>Occupations: </h4>{{#npc.traits.occupation.length}}{{.}}{{/npc.traits.occupation.length}
 			</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Armor Class</h4>
@@ -55,7 +55,7 @@
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Hit Points</h4>
-				<p>{{npc.stats.hit-points}} {{npc.stats.hit-dice}}</p>
+				<p>TODO Hitdice</p>
 			</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Speed</h4>
@@ -97,7 +97,7 @@
 	  </svg>
 			<div class="property-line first">
 				<h4>Saving Throws</h4>
-				<p>{{#npc.traits.savingthrows}}{{.}}{{/npc.traits.savingthrows}}</p>
+				<p>TODO Saving Throws</p>
 			</div> <!-- property line -->
 			
 			<div class="property-line first">
@@ -108,40 +108,54 @@
 			
 			<div class="property-line first">
 				<h4>Damage Immunities</h4>
-				<p>{{#npc.traits.damageimmunities.length}}{{.}}{{/npc.traits.damageimmunities.lenth}}</p>
+				<p>TODO Damage Immunities</p>
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Condition Immunities</h4>
-				<p>{{#npc.traits.conditionimmunities.length}}{{.}}{{/npc.traits.conditionimmunities.length}}</p>
+				<p>TODO Condition Immunities</p>
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Senses</h4>
-				<p>{{#npc.traits.senses.length}}{{.}}{{/npcs.traits.senses.length}}</p>
+				<p>TODO Senses</p>
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Languages</h4>
 				
 				<p>{{#npc.traits.languages}}{{.}} {{/npc.traits.languages}}	,</p>	
 			</div> <!-- property line -->
-			<div class="property-line last">
-				<h4>Challenge</h4>
-				<p>1 (200 XP)</p>
+			
+			<div class="property-line">
+				<h4>Adjectives</h4>
+				
+				<p>{{#npc.traits.adjectives.length}}{{.}} {{/npc.traits.adjectives}.length}	,</p>	
 			</div> <!-- property line -->
+			
 		</div> <!-- top stats -->
 		<svg height="5" width="100%" class="tapered-rule">
 	    <polyline points="0,0 400,2.5 0,5"></polyline>
 	  </svg>
 		<div class="property-block">
-			<h4>Antimagic Suceptibility.</h4>
-			<p>The armor is incapacitated while in the area of an <i>antimagic
-	        field</i>.  If targeted by <i>dispel magic</i>, the armor must succeed
-	        on a Constitution saving throw against the caster’s spell save DC or
-	        fall unconscious for 1 minute.</p>
+			<h4>Special Abilities</h4>
+			<p>{{npc.specialies.special-abilities}}</p>
 		</div> <!-- property block -->
+		
 		<div class="property-block">
-			<h4>False Appearance.</h4>
-			<p>While the armor remains motionless, it is indistinguishable from a
-	        normal suit of armor.</p>
+			<h4>Attacks</h4>
+			<p>{{npc.specialties.attacks}}</p>
+		</div> <!-- property block -->
+		
+		
+		{{#npc.specialties.special-equipment.length}}
+		<div class="property-block">
+			<h4>Spacial Equipment</h4>
+			<p>{{/npc.specialties.special-equipment.length}}
+        {{#npc.specialties.special-equipment}}</p>
+		</div> <!-- property block -->
+		
+		
+		<div class="property-block">
+			<h4>Combat Tactics</h4>
+			<p>{{npc.specialties.combat-tactics}}</p>
 		</div> <!-- property block -->
 	</div> <!-- section left -->
 	<div class="section-right">
