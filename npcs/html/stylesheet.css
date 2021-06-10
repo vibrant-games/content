@@ -21,6 +21,15 @@ body *{
   padding: 5px 10px 20px;
   box-shadow: 0 0 1.5em #867453;
 }
+
+.portrait {
+
+  width: 300px;
+  height: auto;
+  border: solid 2px red;
+}
+
+
 .stat-block.wide{
   width: 46.5%;
   min-width: 560px;
