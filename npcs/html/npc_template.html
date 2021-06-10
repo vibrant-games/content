@@ -35,13 +35,21 @@
 	
 		<div class="creature-heading">
 			<h1>{{npc.name}}</h1>
-			<h2>Check, {{npc.traits.alignment}}</h2>
+			<h2>{{npc.traits.race}} {{#npcs.traits.subrace.length}}{{.}}{{npcs.traits.subrace.length}} {{npc.traits.alignment}}</h2>
+			<h2>Level {{npctraits.level}} {{npc.traits.class}}</h2>
+		
 		</div> <!-- creature heading -->
 		<svg height="5" width="100%" class="tapered-rule">
 	    <polyline points="0,0 400,2.5 0,5"></polyline>
 	  </svg>
 		<div class="top-stats">
 			<div class="property-line first">
+				<h4>Pronouns: </h4>{{#npc.traits.pronouns}}{{.}}{{/npc.traits.pronouns}}
+				</div> <!-- property line -->
+			<div class="property-line last">
+			<h4>Occupations: </h4>{{#npc.traits.occupation.length}}{{.}}{{/npc.traits.occupation.lenth}
+			</div> <!-- property line -->
+			<div class="property-line last">
 				<h4>Armor Class</h4>
 				<p>{{npc.stats.armour-class}}</p>
 			</div> <!-- property line -->
@@ -88,17 +96,27 @@
 	    <polyline points="0,0 400,2.5 0,5"></polyline>
 	  </svg>
 			<div class="property-line first">
+				<h4>Saving Throws</h4>
+				<p>{{#npc.traits.savingthrows}}{{.}}{{/npc.traits.savingthrows}}</p>
+			</div> <!-- property line -->
+			
+			<div class="property-line first">
+				<h4>Skills</h4>
+				<p>{{#npc.specialties.skills.length}}{{.}}{{/npc.specialties.skills.length}}</p>
+			</div> <!-- property line -->
+			
+			
+			<div class="property-line first">
 				<h4>Damage Immunities</h4>
-				<p>poison, psychic</p>
+				<p>{{#npc.traits.damageimmunities.length}}{{.}}{{/npc.traits.damageimmunities.lenth}}</p>
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Condition Immunities</h4>
-				<p>blinded, charmed, deafened, exhaustion, frightened,
-						petrified, poisoned</p>
+				<p>{{#npc.traits.conditionimmunities.length}}{{.}}{{/npc.traits.conditionimmunities.length}}</p>
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Senses</h4>
-				<p>blindsight 60ft. (blind beyond this radius), passive Perception 6</p>
+				<p>{{#npc.traits.senses.length}}{{.}}{{/npcs.traits.senses.length}}</p>
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Languages</h4>
