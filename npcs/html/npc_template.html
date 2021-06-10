@@ -35,7 +35,7 @@
 	
 		<div class="creature-heading">
 			<h1>{{npc.name}}</h1>
-			<h2>Medium humanoid, {{npc.traits.alignment}}</h2>
+			<h2>Check, {{npc.traits.alignment}}</h2>
 		</div> <!-- creature heading -->
 		<svg height="5" width="100%" class="tapered-rule">
 	    <polyline points="0,0 400,2.5 0,5"></polyline>
@@ -102,12 +102,10 @@
 			</div> <!-- property line -->
 			<div class="property-line">
 				<h4>Languages</h4>
-				{{#npc.traits.languages.length}}
-        
-        
-      {{/npc.traits.languages.length}}
+				
+				<p>
       {{#npc.traits.languages}}
-			</div> <!-- property line -->
+			{{/npc.traits.languages}}	{{.}}</p>	</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Challenge</h4>
 				<p>1 (200 XP)</p>
