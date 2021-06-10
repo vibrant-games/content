@@ -1,370 +1,204 @@
-/* TODO I just nabbed my stylesheet from nihilistweekly.
-   TODO Most of these styles are useless to vibrantgames and should be
-   TODO removed.  All of the ones left behind should be made to
-   TODO suit out style. */
 
-.column {
-    float: left;
-    width: 45%;
-    margin-left: 1em;
-    margin-right: 1em;
+body {
+  text-align: center;
+  font-size: 13.5px;
+  line-height: 1.2em;
+}
+body *{
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica,
+    Arial, sans-serif;
+}
+.stat-block {
+  text-align: left;
+  margin: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 17%;
+  min-width:280px;
+  background: #FDF1DC;
+  padding: 5px 10px 20px;
+  box-shadow: 0 0 1.5em #867453;
+}
+.stat-block.wide{
+  width: 46.5%;
+  min-width: 560px;
+  text-align: center;
+}
+.stat-block.wide .section-left,
+.stat-block.wide .section-right{
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  text-align: left;
+}
+.stat-block.wide .section-left{
+  margin-right: 1.5%;
+}
+.stat-block.wide .section-right{
+  margin-left: 1.5%;
+}
+@media screen and (max-width: 675px){
+	.stat-block.wide{
+		min-width: 280px;
+	}
+	.stat-block.wide .section-left,
+	.stat-block.wide .section-right{
+	  display: block;
+	  width: 100%;
+	}
+	.stat-block.wide .section-left{
+	  margin: 0;
+	}
+	.stat-block.wide .section-right{
+		margin: 0;
+	}
+}
+.orange-border{
+  display: block;
+  background: #E69A28;
+  border: 1px solid #000;
+  height: 5px;
+  padding: 0 10px 0;
+  margin: -10px -10px 0;
+  box-sizing: initial;
+}
+.orange-border.bottom{
+  margin: 15px -10px -20px;
+}
+.tapered-rule{
+  display: block;
+  width: 100%;
+  height: 5px;
+  border: none;
+  color: #922610;
+  fill: #922610;
+  stroke: #922610;
+}
+.creature-heading h1{
+  font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+  color: #922610;
+  font-size: 23px;
+  line-height: 1.2em;
+  margin: 10px 0 0;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+.creature-heading h2{
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12px;
+  line-height: 1.2em;
+  margin: 0 0 10px;
+}
+.property-line h4,
+.property-line p{
+  display: inline;
+  margin: 0;
+  color: #922610;
+  font-size: 13.5px;
+  line-height: 1.2em;
+}
+.property-line h4{
+  color: #7A200D;
+}
+.property-line{
+  text-indent: -1em;
+  padding-left: 1.1em;
+  line-height: 1.4em;
+}
+.property-line.first{
+  margin: 8px 0 0
+}
+.property-line.last{
+  margin: 0 0 10px;
+}
+.abilities{
+  text-align: center;
+  color: #922610;
+}
+.abilities > div{
+  display: inline-block;
+  vertical-align: middle;
+  width: 15.5%;
+  min-width: 40px; 
+  font-size: 12px;
+  line-height: 1em;
+}
+.abilities h4{
+  margin: 10px 0 2px;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #7A200D;
+}
+.abilities p{
+  margin: 0 0 10px;
+  line-height: 1.2em;
+}
+.property-block h4,
+.property-block p{
+  font-size: 13.5px;
+  line-height: 1.2em;
+  display: inline;
+  margin: 0;
+}
+.property-block h4{
+  font-style: italic;
+}
+.property-block{
+  padding: 10px 2px 0;
+}
+.actions h3{
+  border-bottom: 1px solid #7A200D;
+  color: #7A200D;
+  font-size: 21px;
+  font-variant: small-caps;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 20px 0 0;
+  padding: 0 0 10px;
+  text-indent: 5px;
+}
+.actions{
+  margin: 0 0 20px;
+}
+.actions:last-child{
+  margin: 0;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+@media print{
+	.orange-border{
+		display: none;
+	}
+	.stat-block,
+	.stat-block.wide, 
+	.stat-block.wide .section-left,
+	.stat-block.wide .section-right,
+	.property-line,
+	.property-block{
+		width: 100%;
+		display: block;
+	}
+	.stat-block.wide .section-left{
+	  margin: 0;
+	}
+	.stat-block.wide .section-right{
+	  margin: 0;
+	}
+	.stat-block{
+		width: 40%;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.stat-block.wide{
+		page-break-after: always;
+	}
 }
-
- /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-.nihilist_weekly {
-    font-size: 30pt;
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-}
-
-.issue_number {
-    font-size: 48pt;
-    font-weight: bold
-    text-align: left;
-    width: 100%;
-}
-
-hr.section_divider {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-width: 10px;
-}
-
-.section_title {
-    font-size: 48pt;
-    font-weight: bold;
-    text-align: center;
-}
-
-.photo_link {
-}
-
-.photo {
-    padding: 0px;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-    text-align: center;
-    width: 100%;
-}
-
-.photo_caption {
-    font-size: 14pt;
-    margin-top: 1em;
-    text-align: left;
-    width: 100%;
-}
-
-.article_title {
-    font-size: 32pt;
-    font-weight: bold;
-    margin-top: 1em;
-    text-align: left;
-}
-
-.article_subtitle {
-    font-size: 18pt;
-    font-weight: bold;
-    text-align: left;
-}
-
-.article_credit {
-    font-size: 14pt;
-}
-
-.correction {
-    font-size: 12pt;
-    font-style: italic;
-}
-
-.footnote {
-    font-size: 12pt;
-    font-style: italic;
-}
-
-.biography {
-    font-size: 12pt;
-    font-style: italic;
-}
-
-.paragraph {
-    font-size: 14pt;
-}
-
-.no_paragraph {
-    font-size: 14pt;
-}
-
-.paragraph_quotation {
-    font-size: 14pt;
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-.continued {
-    font-size: 12pt;
-    font-style: italic;
-}
-
-.list {
-    font-size: 14pt;
-}
-
-.list_item {
-    font-size: 14pt;
-}
-
-.letter {
-    margin-bottom: 1em;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-}
-
-hr.letter_divider {
-    border: 1px dotted;
-    text-align: center;
-    width: 80%;
-}
-
-.whether {
-    margin-top: 4em;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-}
-
-hr.article_divider {
-    border: 1px dotted;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    text-align: center;
-    width: 80%;
-}
-
-.dialogue {
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-    margin-left: 2em;
-    margin-right: 2em;
-    padding: 0.5em;
-}
-
-.dialogue_character {
-    font-family: fixed;
-    font-weight: bold;
-}
-
-.poem {
-    font-family: monospace;
-    font-size: 16;
-    white-space: pre;
-}
-
-.quotation {
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 0.5em;
-}
-
-.sports_stats_column_1 {
-    float: left;
-    font-size: 8pt;
-    width: 30%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: left;
-}
-
-.sports_stats_column_2 {
-    float: left;
-    font-size: 8pt;
-    width: 8%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: center;
-}
-
-.sports_stats_column_3 {
-    float: left;
-    font-size: 8pt;
-    width: 8%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: center;
-}
-
-.sports_stats_column_4 {
-    float: left;
-    font-size: 8pt;
-    width: 8%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: center;
-}
-
-.sports_stats_column_5 {
-    float: left;
-    font-size: 8pt;
-    width: 8%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: center;
-}
-
-.sports_stats_column_6 {
-    float: left;
-    font-size: 8pt;
-    width: 8%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: center;
-}
-
-.sports_stats_column_7 {
-    float: left;
-    font-size: 8pt;
-    width: 8%;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    text-align: center;
-}
-
-.sports_stats_title {
-    font-weight: bold;
-}
-/* Clear floats after the columns */
-.sports_stats_title:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Clear floats after the columns */
-.sports_stats_row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.nwa_link {
-}
-
-.nwa {
-    margin: 2em;
-    padding: 1em;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-}
-
-.nwa_image {
-    padding: 0px;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-    text-align: center;
-    width: 100%;
-}
-
-.nwa_caption {
-    font-size: 14pt;
-    margin-top: 1em;
-    text-align: left;
-    width: 100%;
-}
-
-.event {
-    margin-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-    white-space: pre;
-}
-
-.classified {
-    margin-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-    white-space: pre;
-}
-
-.large {
-    font-size: 18pt;
-}
-
-.small {
-    font-size: 12pt;
-}
-
-.black_background {
-    background-color: black;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 5px;
-    display: inline-block;
-}
-
-.bold_italic {
-    font-style: italic;
-    font-weight: bold;
-}
-
-.reference {
-    font-style: italic;
-}
-
-.math {
-    font-family: fixed;
-    font-style: italic;
-}
-
-.emphasis {
-    font-style: italic;
-}
-
-.field_name {
-    font-weight: bold;
-}
-
-.field_value {
-}
-
-.portrait {
-    padding: 0px;
-    border-radius: 0.5em;
-    border-style: solid;
-    border-width: 1px;
-    text-align: center;
-    /* 2500 x 3235 */
-    width: 100%;
-}
-
-.profile {
+@media screen and (max-width: 575px){
+	.stat-block{
+		margin: 20px 0;
+	}
 }
