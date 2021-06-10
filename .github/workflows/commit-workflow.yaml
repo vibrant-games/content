@@ -9,7 +9,7 @@ jobs:
       #
       - uses: actions/checkout@v2
         with:
-          path: content
+          path: '/vibrant-games/content'
 
       #
       # Checkout the source repository:
@@ -19,7 +19,7 @@ jobs:
           repository: vibrant-games/source
           # The main branch:
           ref: refs/heads/main
-          path: source
+          path: '/vibrant-games/source'
           # Private repos:
           # https://github.com/actions/checkout#Checkout-multiple-repos-private
           # https://github.com/vibrant-games/content/settings/secrets/actions
@@ -40,6 +40,8 @@ jobs:
       #
       - uses: EndBug/add-and-commit@v7
         with:
+          cwd: '/vibrant-games/content'
+          add: 'npcs/html'
           author_name: GitHub Actions NPCs YAML-to-HTML
           author_email: jtienhaara@yahoo.com
           message: 'GitHub Actions NPCs YAML-to-HTML conversion'
