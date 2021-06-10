@@ -35,7 +35,14 @@
 	
 		<div class="creature-heading">
 			<h1>{{npc.name}}</h1>
-			<h2>{{npc.traits.race}} {{#npcs.traits.subrace.length}}{{.}}{{/npcs.traits.subrace.length}} {{npc.traits.alignment}}</h2>
+			<h2>{{npc.traits.race}} {{#npcs.traits.subrace.length}}{{.}}{{/npcs.traits.subrace.length}} {{npc.traits.alignment}}
+			
+			
+	<!--		
+			</h2>
+			
+			
+			
 			<h2>Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		
 		</div> <!-- creature heading -->
@@ -44,10 +51,14 @@
 	  </svg>
 		<div class="top-stats">
 			<div class="property-line first">
-				<h4>Pronouns: </h4>{{npc.traits.pronouns}}
+			
+				
+					
+	<!--  <h4>Pronouns: </h4>{{npc.traits.pronouns}}
 				</div> <!-- property line -->
 			<div class="property-line last">
-			<h4>Occupations: </h4>{{#npc.traits.occupation.length}}{{.}}{{/npc.traits.occupation.length}
+				
+	<!--<h4>Occupations: </h4>{{#npc.traits.occupation.length}}{{.}}{{/npc.traits.occupation.length}
 			</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Armor Class</h4>
@@ -102,7 +113,10 @@
 			
 			<div class="property-line first">
 				<h4>Skills</h4>
-				<p>{{#npc.specialties.skills.length}}{{.}}{{/npc.specialties.skills.length}}</p>
+			
+	<!--
+
+<p>{{#npc.specialties.skills.length}}{{.}}{{/npc.specialties.skills.length}}</p>
 			</div> <!-- property line -->
 			
 			
@@ -127,25 +141,29 @@
 			<div class="property-line">
 				<h4>Adjectives</h4>
 				
-				<p>{{#npc.traits.adjectives.length}}{{.}} {{/npc.traits.adjectives}.length}	,</p>	
+		
+	<!--			<p>{{#npc.traits.adjectives}}{{.}} {{/npc.traits.adjectives}}	,</p>	
 			</div> <!-- property line -->
 			
 		</div> <!-- top stats -->
 		<svg height="5" width="100%" class="tapered-rule">
 	    <polyline points="0,0 400,2.5 0,5"></polyline>
 	  </svg>
-		<div class="property-block">
+	
+	<!--		<div class="property-block">
 			<h4>Special Abilities</h4>
 			<p>{{npc.specialies.special-abilities}}</p>
 		</div> <!-- property block -->
 		
-		<div class="property-block">
+	
+	<!--		<div class="property-block">
 			<h4>Attacks</h4>
 			<p>{{npc.specialties.attacks}}</p>
 		</div> <!-- property block -->
 		
 		
-		{{#npc.specialties.special-equipment.length}}
+	
+	<!--		{{#npc.specialties.special-equipment.length}}
 		<div class="property-block">
 			<h4>Spacial Equipment</h4>
 			<p>{{/npc.specialties.special-equipment.length}}
@@ -153,7 +171,8 @@
 		</div> <!-- property block -->
 		
 		
-		<div class="property-block">
+		
+	<!--	<div class="property-block">
 			<h4>Combat Tactics</h4>
 			<p>{{npc.specialties.combat-tactics}}</p>
 		</div> <!-- property block -->
