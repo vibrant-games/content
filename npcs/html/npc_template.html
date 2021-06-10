@@ -34,16 +34,10 @@
 	<div class="section-left">
 	
 		<div class="creature-heading">
-			<h1>{{npc.name}}</h1>
-			<h2>{{npc.traits.race}} {{#npcs.traits.subrace.length}}{{.}}{{/npcs.traits.subrace.length}} {{npc.traits.alignment}}
-			
-			
-			
-			</h2>
-			
-			
-			
-			<h2>Level {{npc.traits.level}} {{npc.traits.class}}</h2>
+		  <h1>{{npc.name}}</h1>
+			<h2>{{npc.traits.aged}} {{npc.traits.race}} {{#npcs.traits.subrace}}{{.}}{{/npcs.traits.subrace}}<br>
+{{npc.traits.alignment}}<br>
+Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		
 		</div> <!-- creature heading -->
 		<svg height="5" width="100%" class="tapered-rule">
@@ -182,6 +176,41 @@
 		<!-- property block -->
 	</div> <!-- section left -->
 	<div class="section-right">
+		<div class="actions">
+			<h3>Roleplaying Tips</h3>
+			<h4>Introduction</h4>
+			
+			<p>{{npc.improv.introduction}}</p>
+		</div> 
+		
+		<div class="actions">
+			<h4>Appearance</h4>
+			<p>{{npc.improv.appearance}}</p>
+		</div> 
+		
+		<div class="actions">
+			<h4>Expressions</h4>
+			<p>{{npc.improv.expressions}}</p>
+		</div> 
+		
+		<div class="actions">
+			<h4>Motivations</h4>
+			<p>{{npc.acting.motivations}}</p>
+		</div> 
+		
+			
+			<div class="actions">
+			<h4>Passions</h4>
+			<p>{{npc.acting.passions}}</p>
+		</div> 
+		
+		<div class="actions">
+<h4>Secrets</h4>
+			<p>{{npc.acting.secrets}}</p>
+		</div> 
+			
+			
+			
 		<div class="actions">
 			<h3>Combat Tactics</h3>
 			<p>{{npc.specialties.combat-tactics}}</p>
