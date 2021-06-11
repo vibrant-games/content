@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><meta charset="utf-8"/><title>{{Npc.name}}</title>
+<html><head><meta charset="utf-8"/><title>{{npc.name}}</title>
 <link rel="shortcut icon" href="favicon.png">
 
 
@@ -37,7 +37,7 @@
 		  <h1>{{npc.name}}</h1>
 			<h2>{{npc.traits.age}} {{npc.traits.race}} {{#npcs.traits.subrace}}{{.}}{{/npcs.traits.subrace}}<br>
 {{npc.traits.alignment}}<br>
-Level {{npc.traits.level}} {{npc.traits.class}}</h2>
+Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 		
 		</div> <!-- creature heading -->
 		<svg height="5" width="100%" class="tapered-rule">
@@ -113,6 +113,14 @@ Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 <p>{{#npc.specialties.skills}}{{.}}{{/npc.specialties.skills}}</p>
 			</div> <!-- property line -->
 			
+			<div class="property-line last">
+				<h4>Proficiencies</h4>
+			
+	
+
+<p>{{#npc.specialties.special-abilities-proficiences}}{{.}}{{#npc.specialties.special-abilities-proficiences}}</p>
+			</div> <!-- property line -->
+			
 			
 			<div class="property-line first">
 				<h4>Damage Immunities</h4>
@@ -177,10 +185,20 @@ Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		
 		<div class="actions">
 			<h3>Actions</h3>
-			<div class="property-block">
+			
 			
 			<p>{{#npc.specialties.attacks}}{{.}}{{/npc.specialties.attacks}}</p>
-		</div> <!-- property block -->
+		</div>
+			
+			<div class="actions">
+			<h3>Factions</h3>
+			<div class="property-block">
+			
+			<p><b>{{#npc.traits.factions.id}}</b></p><p><i>{{npcs.traits.factions.role}}</i></p>
+				{{/npc.traits.factions.id}}
+		</div>
+			
+			<!-- property block -->
 		
 			
 		</div> <!-- actions -->
@@ -211,6 +229,11 @@ Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		</div> 
 		
 		<div class="actions">
+			<h4>Mannerisms</h4>
+			<p>{{npc.improv.mannerisms}}</p>
+		</div> 
+		
+		<div class="actions">
 			<h4>Motivations</h4>
 			<p>{{npc.acting.motivations}}</p>
 		</div> 
@@ -224,6 +247,12 @@ Level {{npc.traits.level}} {{npc.traits.class}}</h2>
 		<div class="actions">
 <h4>Secrets</h4>
 			<p>{{npc.acting.secrets}}</p>
+		</div> 
+			
+			<div class="actions">
+<h3>Background</h3>
+			<p>{{npc.profile.background-story}</p>
+				<p>{{npc.profile.personality}}</p>
 		</div> 
 			
 			
