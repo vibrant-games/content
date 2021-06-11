@@ -10,6 +10,10 @@ body *{
   font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica,
     Arial, sans-serif;
 }
+
+.notbold {
+	font-weight: normal;
+}
 .stat-block {
   text-align: left;
   margin: 20px;
