@@ -48,11 +48,11 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 			
 				
 					
-	 <h4>Pronouns: </h4>{{npc.traits.pronouns}}
+	 <h4>Pronouns: </h4><p>{{npc.traits.pronouns}}</p>
 				</div> <!-- property line -->
 				<div class="property-line last">
 				
-<h4>Occupations: </h4>{{#npc.traits.occupation}}{{.}}{{/npc.traits.occupation}}
+<h4>Occupations: </h4><p>{{#npc.traits.occupation}}{{.}}{{/npc.traits.occupation}}</p>
 			</div> <!-- property line -->
 			<div class="property-line last">
 				<h4>Armor Class</h4>
@@ -167,13 +167,13 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 			
 		 
 		
-      {{/npc.specialties.special-equipment.length}}
+    <p>  {{/npc.specialties.special-equipment.length}}
         {{#npc.specialties.special-equipment}}
           
         {{/npc.specialties.special-equipment}}
       {{#npc.specialties.special-equipment.length}}
       
-      <p> {{/npc.specialties.special-equipment.length}}
+       {{/npc.specialties.special-equipment.length}}
           <!-- property block -->
           <!-- property block -->
       </p>
