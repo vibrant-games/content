@@ -10,10 +10,6 @@ body *{
   font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica,
     Arial, sans-serif;
 }
-
-.notbold {
-	font-weight: normal;
-}
 .stat-block {
   text-align: left;
   margin: 20px;
@@ -26,26 +22,7 @@ body *{
   box-shadow: 0 0 1.5em #867453;
 }
 
-.strmod {
-	function strmod({{str}}) {
-  let score = parseInt(strmod, 10);
-  return Math.floor((score - 10) / 2);
-		function formattedModifier(strmod) {
-  if (strmod >= 0) {
-    return '+' + strmod;
-  }
-  // This is an en dash, NOT a "normal" dash. The minus sign needs to be more
-  // visible.
-  return '–' + Math.abs(strmod);
-}
 
-function abilityText(abilityScore) {
-  return [String(abilityScore),
-          ' (',
-          formattedModifier(abilityModifier(abilityScore)),
-          ')'].join('');
-}
-}
 
 
 .stat-block.wide{
