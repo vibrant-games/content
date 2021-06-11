@@ -206,6 +206,9 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
     </div> <!-- section left -->
 	<div class="section-right">
 	
+	<img id="portrait" src="npc_imgs/{{npc.name}}.png" onerror="this.onerror=null; this.src='npcimgs/dummy.png'" alt="" width="100" height="120">
+		
+		
 	<img src="npc_imgs/{{npc.name}}.png" alt="Not Found"  
 	 style="object-fit:contain;
             min-width: 280px;
@@ -215,7 +218,7 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 		<div class="actions">
 			<h3>Roleplaying Tips</h3>
 			<h4>Introduction</h4>
-			<p>{{npc.improv.introduction}}</p>
+			<span>{{npc.improv.introduction}}</span>
 		</div> 
 		
 		<div class="actions">
