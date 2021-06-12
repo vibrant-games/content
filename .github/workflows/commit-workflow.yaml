@@ -28,7 +28,7 @@ jobs:
       #
       # Install pre-requisite commands and libraries:
       #
-      - run: vibrant-games/source/applications/install/install_tools_requirements.sh
+      - run: vibrant-games/source/applications/tools/setup.sh
 
       #
       # Convert all NPCs from YAML to HTML:
