@@ -34,7 +34,7 @@
 	<div class="section-left">
 	
 		<div class="creature-heading">
-		  <h1>Motherfuckin {{npc.name}}</h1>
+		  <h1>{{npc.name}}</h1>
 			<h2>{{npc.traits.age}} {{npc.traits.race}} {{#npcs.traits.subrace}}{{.}}{{/npcs.traits.subrace}}<br>
 {{npc.traits.alignment}}<br>
 Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
@@ -208,10 +208,10 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 	
 	
 		
-		
-	<img id="portrait" src="npc_imgs/{{npc.name}}.png" alt="" width= 300px height=auto>			
+
+	  <img id="portrait" src="../../images/DUMMY.jpg" alt="" width="300px" height="auto">
 		<div class="actions">
-			<h3>Roleplaying Tips</h3>
+			<h3>Roleplaying</h3>
 			<h4>Introduction</h4>
 			<span><p>{{npc.improv.introduction}}</p></span>
 		</div> 
@@ -242,6 +242,9 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 			<span><p>{{npc.acting.passions}}</p></span>
 		</div> 
 		
+	</div> <!-- section right -->
+
+	<div class="section-left">
 		<div class="actions">
 <h4>Secrets</h4>
 	<span><p>{{npc.acting.secrets}}</p></span>		
@@ -256,9 +259,28 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 			
 			
 		
-	</div> <!-- section right -->
+	</div> <!-- section left -->
 	
 	<hr class="orange-border bottom" />
-</div> <!-- stat block -->
+
+
+
+
+  {{#metadata.author-notes.length}}
+  <div class="section-left">
+    <div class="actions">
+      <h3> Author notes for the artist: </h3
+      <ul>
+        {{/metadata.author-notes.length}}
+        {{#metadata.author-notes}}
+        <li>
+          <span class="field_value"> {{.}} </span>
+        </li>
+        {{/metadata.author-notes}}
+        {{#metadata.author-notes.length}}
+      </ul>
+    </div>
+  </div> <!-- section-left -->
+  {{/metadata.author-notes.length}}
 
 </html>

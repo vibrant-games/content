@@ -201,8 +201,13 @@ span{
 		vertical-align: top;
 	}
 	.stat-block.wide{
-		page-break-after: always;
+            // Page breaks seem to break pandoc / wkhtmltopdf.  :(
+            // The rendering is just bleccch.
+// 		page-break-after: always;
 	}
+//     .section-left { page-break-after: always; }
+//     .section-right { page-break-before: always; }
+}
 }
 @media screen and (max-width: 575px){
 	.stat-block{
