@@ -3,7 +3,7 @@
 # Preliminary fields that describe this overall file:
 #
 kind: vibrantgames.ca/npc
-version: 0.0.2
+version: 0.0.4
 
 #
 # Information about who submitted the data, when, how, etc.:
@@ -52,6 +52,16 @@ metadata:
   #
   labels:
   - wordpress_id: 987
+
+  #
+  # Notes from the author(s) about what the seed for the
+  # character was, or whatever.  For internal use only.
+  #
+  # Optional.  0 or more.
+  #
+  author-notes:
+  - Abrinet is an Ethiopian girl's name meaning "she emanates light."
+  - Dire Dawa is a city in Ethiopia.
 
   #
   # In future more metadata will likely be needed.
