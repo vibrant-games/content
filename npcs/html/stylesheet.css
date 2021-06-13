@@ -1,132 +1,185 @@
+/* TODO I just nabbed my stylesheet from nihilistweekly.
+   TODO Most of these styles are useless to vibrantgames and should be
+   TODO removed.  All of the ones left behind should be made to
+   TODO suit out style. */
 
 body {
-  text-align: center;
-  font-size: 13.5px;
-  line-height: 1.2em;
+    text-align: center;
+    font-size: 13.5px;
+    line-height: 1.2em;
 }
 body *{
-  box-sizing: border-box;
-  max-width: 100%;
-  font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica,
-    Arial, sans-serif;
-}
-.stat-block {
-  text-align: left;
-  margin: 20px;
-  display: inline-block;
-  vertical-align: top;
-  width: 17%;
-  min-width:280px;
-  background: #FDF1DC;
-  padding: 5px 10px 20px;
-  box-shadow: 0 0 1.5em #867453;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica,
+      Arial, sans-serif;
 }
 
+.column {
+    float: left;
+    // width: 45%;
+    margin-left: 1em;
+    margin-right: 1em;
 
-span{
-   font-weight: normal;
+    text-align: left;
+    // margin: 20px;
+    // display: inline-block;
+    display: block;
+    vertical-align: top;
+    // width: 17%;
+    // min-width:280px;
+    background: #FDF1DC;
+    padding: 5px 10px 20px;
+    box-shadow: 0 0 1.5em #867453;
+
+    width: 46.5%;
+    min-width: 560px;
+    // text-align: center;
 }
 
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-.stat-block.wide{
-  width: 46.5%;
-  min-width: 560px;
-  text-align: center;
+ /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
-.stat-block.wide .section-left,
-.stat-block.wide .section-right{
-  display: inline-block;
-  vertical-align: top;
-  width: 48%;
-  text-align: left;
+
+span {
+    font-weight: normal;
 }
-.stat-block.wide .section-left{
-  margin-right: 1.5%;
+
+.section-divider {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 10px;
 }
-.stat-block.wide .section-right{
-  margin-left: 1.5%;
+
+.title {
+    font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+    color: #922610;
+    font-size: 23px;
+    line-height: 1.2em;
+    margin: 10px 0 0;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
 }
-@media screen and (max-width: 675px){
-	.stat-block.wide{
-		min-width: 280px;
-	}
-	.stat-block.wide .section-left,
-	.stat-block.wide .section-right{
-	  display: block;
-	  width: 100%;
-	}
-	.stat-block.wide .section-left{
-	  margin: 0;
-	}
-	.stat-block.wide .section-right{
-		margin: 0;
-	}
+
+.block-title {
+    font-size: 32pt;
+    font-weight: bold;
+    margin-top: 1em;
+    text-align: left;
 }
-.orange-border{
-  display: block;
-  background: #E69A28;
-  border: 1px solid #000;
-  height: 5px;
-  padding: 0 10px 0;
-  margin: -10px -10px 0;
-  box-sizing: initial;
+
+.block-sub-title {
+    font-size: 24pt;
+    font-weight: bold;
+    margin-top: 1em;
+    text-align: left;
 }
-.orange-border.bottom{
-  margin: 15px -10px -20px;
+
+.block-divider {
+    // border: 1px dotted;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    width: 80%;
+
+    display: block;
+    background: #E69A28;
+    border: 1px solid #000;
+    height: 5px;
+    padding: 0 10px 0;
+    margin: -10px -10px 0;
+    box-sizing: initial;
 }
-.tapered-rule{
-  display: block;
-  width: 100%;
-  height: 5px;
-  border: none;
-  color: #922610;
-  fill: #922610;
-  stroke: #922610;
+
+.tapered-rule {
+    display: block;
+    width: 100%;
+    height: 5px;
+    border: none;
+    color: #922610;
+    fill: #922610;
+    stroke: #922610;
 }
-.creature-heading h1{
-  font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
-  color: #922610;
-  font-size: 23px;
-  line-height: 1.2em;
-  margin: 10px 0 0;
-  letter-spacing: 1px;
-  font-variant: small-caps;
-  font-weight: bold;
+
+.property-line {
+    text-indent: -1em;
+    padding-left: 1.1em;
+    line-height: 1.4em;
 }
-.creature-heading h2{
-  font-weight: normal;
-  font-style: italic;
-  font-size: 12px;
-  line-height: 1.2em;
-  margin: 0 0 10px;
+
+.property-gap {
+    margin: 0 0 10px
 }
-.property-line h4,
-.property-line p{
-  display: inline;
-  margin: 0;
-  color: #922610;
+
+.property-block {
   font-size: 13.5px;
   line-height: 1.2em;
+  padding: 10px 2px 0;
 }
-.property-line h4{
-  color: #7A200D;
+
+.property-block.field-name {
+  font-style: italic;
 }
-.property-line{
-  text-indent: -1em;
-  padding-left: 1.1em;
-  line-height: 1.4em;
+
+.field-name {
+    display: inline;
+    margin: 0;
+    color: #922610;
+    font-size: 13.5px;
+    line-height: 1.2em;
+    color: #7A200D;
 }
-.property-line.first{
-  margin: 8px 0 0
+
+.field-value {
+    display: inline;
+    margin: 0;
+    color: #922610;
+    font-size: 13.5px;
+    line-height: 1.2em;
 }
-.property-line.last{
-  margin: 0 0 10px;
+
+//
+// From https://stackoverflow.com/questions/6114435/in-mustache-templating-is-there-an-elegant-way-of-expressing-a-comma-separated-l/11867983#11867983
+// Insert "," separators in horizontal <ul> <li> ... </li> </ul> list.
+//
+.field-value-list li
+{
+    display: inline;
 }
+.field-value-list li:before
+{
+    content: ", "
+}
+.field-value-list li:first-child:before
+{
+    content: ""
+}
+
 .abilities{
   text-align: center;
   color: #922610;
 }
-.abilities > div{
+
+.abilities {
+}
+
+.ability {
   display: inline-block;
   vertical-align: middle;
   width: 15.5%;
@@ -134,31 +187,36 @@ span{
   font-size: 16px;
   line-height: 1em;
 }
-.abilities h4{
-  margin: 12px 0 2px;
-  font-size: 14px;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  color: #7A200D;
+
+.ability-name {
+    margin: 12px 0 2px;
+    font-size: 14px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: #7A200D;
 }
-.abilities p{
-  margin: 0 0 10px;
-  line-height: 1.2em;
+
+.ability-value {
+    margin: 0 0 10px;
+    line-height: 1.2em;
 }
-.property-block h4,
-.property-block p{
-  font-size: 13.5px;
-  line-height: 1.2em;
-  display: inline;
-  margin: 0;
+
+.ability-modifier {
+    margin: 0 0 10px;
+    line-height: 1.2em;
 }
-.property-block h4{
-  font-style: italic;
+
+.portrait {
+    padding: 0px;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    /* 2500 x 3235 */
+    width: 100%;
 }
-.property-block{
-  padding: 10px 2px 0;
-}
-.actions h3{
+
+.role-playing.field-name {
   border-bottom: 1px solid #7A200D;
   color: #7A200D;
   font-size: 21px;
@@ -169,48 +227,10 @@ span{
   padding: 0 0 10px;
   text-indent: 5px;
 }
-.actions{
+
+.role-playing {
   margin: 0 0 20px;
 }
-.actions:last-child{
-  margin: 0;
-}
 
-@media print{
-	.orange-border{
-		display: none;
-	}
-	.stat-block,
-	.stat-block.wide, 
-	.stat-block.wide .section-left,
-	.stat-block.wide .section-right,
-	.property-line,
-	.property-block{
-		width: 100%;
-		display: block;
-	}
-	.stat-block.wide .section-left{
-	  margin: 0;
-	}
-	.stat-block.wide .section-right{
-	  margin: 0;
-	}
-	.stat-block{
-		width: 40%;
-		display: inline-block;
-		vertical-align: top;
-	}
-	.stat-block.wide{
-            // Page breaks seem to break pandoc / wkhtmltopdf.  :(
-            // The rendering is just bleccch.
-// 		page-break-after: always;
-	}
-//     .section-left { page-break-after: always; }
-//     .section-right { page-break-before: always; }
-}
-}
-@media screen and (max-width: 575px){
-	.stat-block{
-		margin: 20px 0;
-	}
+.profile {
 }
