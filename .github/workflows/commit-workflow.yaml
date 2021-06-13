@@ -41,9 +41,7 @@ jobs:
       - uses: EndBug/add-and-commit@v7
         with:
           cwd: 'vibrant-games/content'
-          add:
-	  - 'npcs/html'
-	  - 'npcs/pdf'
+          add: '["npcs/html","npcs/pdf"]'
           author_name: GitHub Actions NPCs YAML-to-HTML
           author_email: jtienhaara@yahoo.com
           message: 'GitHub Actions NPCs YAML-to-HTML conversion'
