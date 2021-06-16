@@ -210,14 +210,17 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 
 	 <img id="portrait" src="./npc_imgs/{{npc.name}}.png" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.jpg';" />
 	<div class="actions">
-			<h3>Roleplaying</h3>
-			<br><h31>Introduction</h31>
-			<br><span><p>{{npc.improv.introduction}}</p></span>
+			<h1>Roleplaying</h1>
+		<svg height="5" width="100%" class="tapered-rule">
+	    <polyline points="0,0 400,2.5 0,5"></polyline>
+	  </svg>
+			<h5>Introduction</h5>
+			<span>{{npc.improv.introduction}}</span>
 		</div> 
 		
 		<div class="actions">
-			<h31>Appearance</h31>
-		<br><span>	<p>{{npc.improv.appearance}}</p></span>
+			<h5>Appearance</h5>
+		<span>	<p>{{npc.improv.appearance}}</p></span>
 		</div> 
 		
 		<div class="actions">
