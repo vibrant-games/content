@@ -244,7 +244,7 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 		
 	</div> <!-- section right -->
 
-	<div class="section-left">
+	
 		<div class="actions">
 <h4>Secrets</h4>
 	<span><p>{{npc.acting.secrets}}</p></span>		
@@ -255,11 +255,11 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 		<span>	<p>{{{npc.profile.background-story}}}</p></span>
 		<span>	<p>{{npc.profile.personality}}</p></span>	
 		</div> 
-			
+				
 			
 			
 		
-	</div> <!-- section left -->
+	 <!-- section left -->
 	
 	<hr class="orange-border bottom" />
 
@@ -267,9 +267,9 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 
 
   {{#metadata.author-notes.length}}
-  <div class="section-left">
+  <div class="stat-block.single">
     <div class="actions">
-      <h3> Author notes for the artist: </h3
+		<h3> Author notes for the artist: </h3>
       <ul>
         {{/metadata.author-notes.length}}
         {{#metadata.author-notes}}
@@ -282,5 +282,5 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
     </div>
   </div> <!-- section-left -->
   {{/metadata.author-notes.length}}
-
+</div>
 </html>
