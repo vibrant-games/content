@@ -27,6 +27,11 @@ span{
    font-weight: normal;
 }
 
+div.nospaces {
+      margin: 0;
+      display: inline-block;
+      float: left;
+  }
 
 .stat-block.wide{
   width: 46.5%;
