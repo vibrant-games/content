@@ -165,6 +165,16 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 		<div class="property-block">
 			<h4>Special Equipment</h4>
 			
+      {{/npc.specialties.special-equipment.length}}
+        {{#npc.specialties.special-equipment}}
+          <li>
+            <span class="field_value"> {{.}} </span>
+          </li>
+        {{/npc.specialties.special-equipment}}
+      {{#npc.specialties.special-equipment.length}}
+      </ul>
+      {{/npc.specialties.special-equipment.length}}
+
 		 
 		
     <p>  {{/npc.specialties.special-equipment.length}}
@@ -208,7 +218,7 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 	
 		
 
-	 <img id="portrait" src="./npc_imgs/{{npc.name}}.png" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.jpg';" />
+	 <img id="portrait" src="./npc_imgs/{{npc.name}}.png" width=300 height=auto onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.jpg';" />
 	<div class="creature-heading">
 			<h1>Roleplaying</h1>
 		<svg height="5" width="100%" class="tapered-rule">
@@ -256,6 +266,7 @@ Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
 			<div class="property-block">
 <h3>Background</h3>
 		<span>	<p>{{{npc.profile.background-story}}}</p></span>
+		<span>	<p>{{npc.profile.personality}}</p></span>	
 		</div> 
 				
 			
