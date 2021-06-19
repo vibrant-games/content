@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+div {
+  box-sizing: border-box;
+  max-width: 900px;
+	
+}
+
+.parent {
+	
+	justify-content: center;
+}
+
+.container {
+  display: flex;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+	
+}
+
+.cell {
+  display: flex;
+  flex: 50%;
+  padding: 10px;
+  border: 1px solid blue;
+  height: 100px;
+}
+
+.data {
+  width: 100%;
+  justify-content: middle;
+  flex: 1;
+  border: 1px solid green;
+}
+
+@media only screen and (max-width: 640px) {
+  
+  #cellpic {
+    flex-direction: column;
+    position:relative;
+	 
+    height: 100px;
+  }
+  
+  
+  
+  .container { 
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  .cell { 
+    flex: 100%; 
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 2900px) {
+  .container {
+    position: relative;
+  }
+  
+#cellblock {
+    
+    right: 10px;
+    position: relative;
+    width: 33%;
+    height: calc(100% - 20px);
+  }	
+	
+	
+  #cellpic { 
+	flex-direction: row-reverse;
+    flex: 0 0 66%; 
+  }
+  
+  
+  
+  
+  
+  
+}

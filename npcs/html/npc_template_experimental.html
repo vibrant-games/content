@@ -7,12 +7,13 @@
      -->
 }}
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="Vibrant Games" />
-  <meta name="keywords" content="dungeons and dragons, TODO bla bla bla" />
-  <title>{{npc.name}}</title>
+	<meta charset="utf-8" />
+	<meta name="generator" content="pandoc" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<meta name="author" content="Vibrant Games" />
+	<meta name="Description" content="The Vibrant Non-Player Character Compendium">
+	<meta name="keywords" content="dungeons and dragons, TODO bla bla bla" />
+	<title>{{npc.name}}</title>
   <!-- !!!
   <style type="text/css">
       code{white-space: pre-wrap;}
@@ -22,10 +23,19 @@
       q { quotes: "“" "”" "‘" "’"; }
   </style>
   -->
-  <link rel="stylesheet" href="stylesheet.css"/>
+	<link rel="stylesheet" href="stylesheet_experimental.css"/>
 </head>
 <body>
-  <h1 class="title">{{npc.name}}</h1>
+	
+	<!-- Character Portrait
+		Still working on having it move to the right -->
+	
+	<img id="portrait" alt="" src="./npc_imgs/{{npc.name}}.png" width="300" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+	
+	<hr class="border before" />
+	<div class="stat-block wide">
+		
+		<h1 class="title">{{npc.name}}</h1>
   <!-- !!! TODO <p class="subtitle">!!!</p> -->
 
   <hr class="section_divider"/>
@@ -213,7 +223,7 @@
       {{#npc.image.length}}
       <!-- Portraits should be 2500 x 3235, scaled to fit: -->
       <div class="portrait">
-        <img src="{{npc.image}}"/>
+        <img src="{{npc.image}}" alt=""/>
       </div>
 
 
@@ -373,6 +383,6 @@
 
   </div> <!-- profile -->
   {{/npc.profile.personality.length}}
-
+</div>
 </body>
 </html>
