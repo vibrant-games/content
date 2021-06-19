@@ -43,7 +43,6 @@ div.nospaces {
 .stat-block.single{
 	display: inline-block;
   vertical-align: top;
- vertical-align: top;
 	width: 99%;
   text-align: left;
 	
@@ -228,14 +227,13 @@ div.nospaces {
 		vertical-align: top;
 	}
 	.stat-block.wide{
-            // Page breaks seem to break pandoc / wkhtmltopdf.  :(
-            // The rendering is just bleccch.
-// 		page-break-after: always;
+            
+		page-break-after: always;
 	}
-//     .section-left { page-break-after: always; }
-//     .section-right { page-break-before: always; }
+     .section-left { page-break-after: always; }
+     .section-right { page-break-before: always; }
 }
-}
+
 @media screen and (max-width: 575px){
 	.stat-block{
 		margin: 20px 0;
