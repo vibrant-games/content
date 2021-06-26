@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: katerina_sacinite
+  id: kaz_lamosatzi
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-06-20"
+  date: "2021-06-25"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Katerina Sacinite
+  name: Kaz Lamosatzi
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Half-Elf
+    race: Gnome
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Hill
 
     #
     # Pronouns (case insensitive):
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: she/her
+    pronouns: he/him
 
     #
     # Occupation(s).
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Tavernkeeper
+    - Wandering Tinkerer; Wanderer; Repairman; Contractor
     
 
     #
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Druid
+    class: Artificer
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Circle of the Moon
+    subclass: Artillerist
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 10
+    level: 5
 
     #
     # Alignments (case insensitive):
@@ -287,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: Lawful Neutral
+    alignment: Chaotic Good
 
     #
     # Alignment tendencies:
@@ -310,9 +310,9 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
+    - Gnomish
     - Common
-    - Elven
-    - Druidic
+    - Dwarvish
 
 
     #
@@ -332,8 +332,8 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: N/A
-      name: N/A
+    - id: hill_gnome_inventors_guild
+      name: Hill Gnome Inventors Guild
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -341,9 +341,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Calm
-    - Straight-Forward
-    - Haunted
+    - Lively
+    - Inquisitive
+    - Wanderlust
 
   improv:
 
@@ -358,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The chaos of the bustling tavern is contrasted by the composed keep behind the bar. She pushes a tankard towards you.
+    introduction:  Kaz loves to shop and will often be found in the market browsing for oddities; He has intense wanderlust and travels place to place riding his Tibetan Mastiff to sell his goods and spread the words of steam technology
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -369,7 +369,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   A beautiful but clearly weathered half-elf with noticeable battle scars. Sleek blond mylar hair. Deep brown eyes.
+    appearance:   Disturbingly large head; Bald scalp surrounded by curly rusty hair; curly rusty orange beard; Doubled up and tripled up spectacles that fold in and out.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -385,7 +385,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The wild ain't so wild; depending on who you are"; "The traditions of the trees tell us where we mortals truly belong"
+    expressions:  "Gimme a minute, I'll make something to fix this"; "Ain't got a chance against my chicken"; "Wanna watch me make sumthin outta notihin?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -398,7 +398,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Calm and composed in movement. Light but commanding nods and gestures. Drums fingers on the bar with calm impatience.
+    mannerisms:   Rubbing his hands together while deep in thought; Fidgets with artificer tools; nail-biter; Constantly solving small puzzles of gnomish design
 
   acting:
     #
@@ -408,7 +408,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Katerina has resigned herself to a common life of tradition. Desires reigning in expanding technologies and magicks
+      To bring technology to the fore of civilization. Kaz seeks to create the greatest and most useful inventions the worlds have ever seen.
       
     #
     # Passions:
@@ -417,7 +417,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Nature. Trees. Any usable product of nature as revered.
+      Building and creating new things; Loves doing puzzles;
       
     #
     # Vulnerabilities:
@@ -426,7 +426,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      Shes tired and has seen more horrors than any one person should
+      If he sees something in disrepair, Kaz can rarely help himself from fixing it
       
     #
     # Secrets:
@@ -435,7 +435,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      N/A
+      He can't read
        
       
   #
@@ -443,15 +443,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 16
-    hit-points: 64
-    speed: 30
-    str: 12
-    dex: 17
+    armour-class: 12
+    hit-points: 33
+    speed: 25
+    str: 9
+    dex: 14
     con: 14
-    int: 16
-    wis: 18
-    cha: 14
+    int: 17
+    wis: 17
+    cha: 15
 
   #
   # Special characteristics.
@@ -462,46 +462,46 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+   - - Rock Gnome Abilities:
+        - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
         - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
-        - Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC
+        - Artificers Lore: Whenever making an History check related to magic items, alchemical objects and technological devices, add twice your proficiency bonus 
+        - Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
         
-   - - Druid Abilities:
-       - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
-                  message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
-       - Spellcasting: Spell DC 16
-         Cantrips: Guidance, Produce Flame, Shillelagh, Shape Water 
-         1st Level: Beast Bond, Goodberry, Ice Knife, Thunderwave
-         2nd Level: Barkskin, Heat Metal, Lesser Restoration
-         3rd Level: Call Lightning, Dispell Magic, Speak with Plants
-         4th Level: Dominate Beast, Wall of Fire, Divination
-         5th Level:  Maelstrom, Scrying
-       - Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
-                     determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
-                     flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
-                     You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+   - - Artificer Abilities:
+       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
+         Cantrip: Mage Hand, Mending
+         1st Level: Absorb Elements, Detect Magic, Grease, Disguise Self
+         2nd Level: Heat Metal, Continuous Flame
+       - Infuse Item: Imbue 2 mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+       - Infusions Known: 4 -  Homunculus Servant, Replicate Magic Weapon, Mind Sharpener, Enhanced Arcane Focus      
+       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
        
-   - - Circle of the Moon Abilities:
-       - Combat Wild Shape: you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell
-                            slot to regain 1d8 hit points per level of the spell slot expended.
-       - Circle Forms: The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a beast with a challenge rating as high as
-                       1. You ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there. Starting at 6th level, you can transform into a beast with a challenge rating as high as your
-                       druid level divided by 3, rounded down
-       - Primal Strike:  your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
-       - Elemental Wild Shape:  you can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental
+   - - Artillerist Abilities:
+       - Tool Proficiency: Proficient in Woodcarver's Tools
+       - Artillerist Spells:
+         3rd Level: Shield, Thunderwave
+         5th Level: Scortching Ray, Shatter
+       - Eldritch Cannon: Force Ballista - Steam Gun - Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature,
+                                           it is pushed up to 5 feet away from the cannon
+       - Arcane Firearm: You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand,
+                         staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely. You can use your
+                         arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell's damage rolls equal to the
+                         number rolled
            
     special-abilities:
-       - Proficiecies: Nature, Medicine, Insight, Herbalist's Kit
-       - Feats: Warcaster 
+       - Proficiecies: Persuasion, History, Investigation, Survival, Woodcarver's Tools
+       - Feats: N/A 
        
     attacks: |
-      1 attacks with bat, spell or wild shape
+      1 attacks with Steam Gun or Chain Whip
     combat-tactics: |
-      Katerina is a combat veteran and it shows. She confronts opponents first with the bat under her bar. If things escalate, she transforms into a Wild Shape.
+      Kaz will dance about at distance using his steam gun or dart in and out of range attacking with his Chain Whip. He's giddy and his glee frustrating to opponents
     special-equipment:
-    - A pouch of painted twigs gifted from Treants. Each twig can be used to ask a favor of a small animal like a raven or racoon. If used to stir a drink it can also charm the person who drinks it.
+    - Steam Gun: Artillerist Force Ballista
+    - Chain Whip: 1d6 Slashing
+    - Spring wired steam chicken & Spring wired steam squirre
                                                                    
   profile:
 
@@ -513,13 +513,14 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      The great battles of the Duplicity [any significant historical war] witnessed the warring of races over the sovereignty of nations. While the elves and humans were on tenuous grounds with regards to alliances and the
-      mixing of races largely frowned upon, the increasing lack of militia led to ranked officers looking the other way when enlisting half-bloods. The Sylvan elves, each tribe aligned with different unique aspects of their
-      natural environment, drew from various natural forces. Katerina's tribe allied with Treants and their ilk. Raised by Druids of the Circle of the Moon, her tribe stood fanatically against the
-      forces sweeping across the wildlands. Katerina enlisted in the army of allied humans and elves and fought valiantly in the long war. When various treaties were eventually reached and a modicum of peace blanketed the
-      region, her people were less isolated and had folded themselves into the broader cultures of the region. Her experiences in the war sill resonated and her distaste for other races lingered. Still heavily traumatized,
-      her psyche remains conflicted between the traditions deeply embedded into her being and the desire to achieve her own imagined goals of establishing a Sylvan Kingdom that celebrates the trees and creations of nature. while
-      abandoning the tinkering with technologies and dark magicks.
+      In the town of Barrelheist [Seaside town or city] people are always astir because of the constant influx of supply and trade ships and the endless queue of traders and merchants hoping to be the first to acquire exotic
+      goods. When the diaspora of hill Gnomes of Aznmott [Distant and Disappeared Gnomish City] were driven from their home by a string of massive experiments gone awry, they arrived to settle among the hills and valleys
+      surrounding Barrelheist. These gnomes were instinctively drawn to the tradeport and quickly began to make up a large proportion of the population. Among this growing frontier shanty marketplace grew a remarkably talented
+      gnome who shows great promise with steam technology, Kaz Lamosatzi. Kaz' family was unorthodox in all possible ways. They rarely had a stable home and instead would simply have meeting spaces where they would
+      reconvene after hard-working days of scavenging for materials to develop their steam inventions. What's more, the family unit was not traditional and instead consisted of non-hierarchical extended family and friends.
+      Family structure is so diffuse among these Hill Gnomes that it's rare a member can identify a proper 'mother' or 'father'. Instead they are most drawn to whatever individual inspires invention! Kaz cultivated his capacity
+      for invention and steam technology and his gadgets gained popularity among the sailors and merchants of Barrelheist. Always chipper and looking for the good in things, Kaz successfully disguises a certain disdain for
+      wealthy people that he acquired living much like an urchin in a shanty town frequented by the noble and affluent.
       
     #
     # Personality (or something like that):
@@ -530,8 +531,7 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Katerina is a combat veteran, with nerves of steel and the calm demeanor to match. She is tough but is haunted by the things shes seen in her cambat days. She mostly just wants to be left alone to do her job, a job which
-      she carries out with almost clinical efficiency. She longs to return to the wilds and be done with civilization as whole. 
+      Kaz is an inquisitive fellow. He likes to travel, and wander from place to place. He's always looking for new oddities and curiousities that he can dissect and learn from. He is a happy fellow and very good natured 
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
