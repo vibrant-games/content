@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: khedoldosh_the_lost
+  id: king_leon_goldmane
 
   #
   # The name of the submitter (your name).
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Khedoldosh The Lost
+  name: King Leon Goldmane
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: older adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Beholder
+    race: human
 
     #
     # The sub-race can be anything.
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: it/them
+    pronouns: he/him
 
     #
     # Occupation(s).
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Oracle; Fortune-teller;
+    - King
     
 
     #
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Civilian
+    class: Fighter
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Monstrosity
+    subclass: Battle Master
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 0
+    level: 20
 
     #
     # Alignments (case insensitive):
@@ -287,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: Chaotic Neutral
+    alignment: Lawful Good
 
     #
     # Alignment tendencies:
@@ -310,11 +310,9 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - Deep speech
-    - Undercommon
     - Common
-    - Infernal
-    - Dwarvish
+    - Leonin
+    - Celestial
 
 
     #
@@ -334,7 +332,8 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - N/A
+    - id: _the_country_
+      name: (The country)
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -342,9 +341,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Spooky
-    - Unnerving
-    - Cowardly
+    - Bold
+    - Regal
+    - Commanding
 
   improv:
 
@@ -359,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Khedoldosh maintains a tent/hut at the outskirts of a market or tavern district with a sign above the entrance that glows with faint magical energy and reads, "TELLINGS". It can also be found slowly and carefully wandering from alleyway entrance to alley entrance. It may approach a group to ask for their help to obtain glyphs or sigils of farsight and offer to divulge important information in return.
+    introduction:  If the party attracts attention of royalty or politicians through their efforts, or if they meet at a high-profile event
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -370,7 +369,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   A tiny, beholder - the runt of the litter that was summoned that day, you could say - that never developed properly; drapes a cloak over itself and uses well-crafted fake arms and its innate magical capacity to operate them as though real; Perception check (DC 22) allows a person to notice this is not a humanoid; They lean they're body to one side, they're right, showing them one gleaming working eye while they have a prosthetic that remains closed to represent their left eye; their remaining eyes are all underdeveloped or dead and stay limp, tied into a ponytail along with their prosthetic hair
+    appearance:   A 7-foot tall, well-built man, with a long purple and gold cape over one shoulder, and a glorious flowing golden mane.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -386,7 +385,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You've always got time to see the future, lad/lass. Take a minute to hear what Khedoldosh can offer"; "What can you see? I promise it cannot compare to my eye"; "How often are you offered a glimpse of your fate?"; "Only those who choose blindness over clarity of vision are truly lost..."
+    expressions:  If meeting him in a social setting, he will refer to them as "new friends". If its because of their reputaion, "heroes"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -399,7 +398,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Quietly dramatic poses - pointing, fist in hand, wide-open glaring eye - etc.; walks (floats) very deliberately as not to draw notice to its true form;
+    mannerisms:   If particularly annoyed, the king will go to grip his sword, even if he doesn't currently have it on his back.
 
   acting:
     #
@@ -409,7 +408,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      It desires knowing more. About anything. Yet is trapped in the paradox of already believing it knows more than others. Hoping for a revelation to free it from this cognitive prison, Khedolosh remains eternally frustrated. It is driven to uncover the unknown yet knows that revealing the unknown destroys mystery.
+      He mustn't damage his reputation or dishonour his country. He lives for glory within the bounds of the law
       
     #
     # Passions:
@@ -418,7 +417,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Knowledge; History; Magicks
+      He is very protective of his kings-blade, and he enjoys any chamce he gets to prove his strength on a battlefield.
       
     #
     # Vulnerabilities:
@@ -427,7 +426,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      Small for its species and a massive ego
+      He can get carried away if he is under the premise that he is doing whats "right", and he is hard to stop when he fights
       
     #
     # Secrets:
@@ -436,7 +435,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      Ummmm... It's a Beholder
+      He's King, he's knows all the secrets
        
       
   #
@@ -444,15 +443,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 16
-    hit-points: 104
-    speed: 20 Flying
-    str: 5
-    dex: 8
-    con: 15
-    int: 19
-    wis: 16
-    cha: 19
+    armour-class: 21
+    hit-points: 210
+    speed: 35
+    str: 20
+    dex: 14
+    con: 20
+    int: 16
+    wis: 13
+    cha: 18
 
   #
   # Special characteristics.
@@ -463,38 +462,41 @@ npc:
   #
   specialties:
     skills:
-   - - Beholder Abilities:
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-       - Bite: Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 8 (2d6) piercing damage.
-       - Antimagic Cone: Khedoldosh's central eye creates an area of antimagic, as in the antimagic field spell, in a 50-foot cone. At the start of each of its turns, Khedoldosh decides which way the cone faces and whether
-                         the cone is active. The area works against Khedoldosh's own eye rays.
-       - Eye Rays:
-         - Fear Ray: The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a 
-                     success.
-         - Telekinetic Ray: If the target is a creature, it must succeed on a DC 12 Strength saving throw or Khedoldosh moves it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of
-                            Khedoldosh's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 ft. in any direction.
-                            Khedoldosh can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.  
-         - Charm Ray: The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by Khedoldosh for 1 hour, or until Khedoldosh harms the creature.
+   - - Fighter Abilities:
+         - Fighting Style: Defense
+         - Second Wind: Bonus Action to regain 1d10 + 20
+         - Action Surge: Twice every short/long rest can take an extra action
+         - Extra Attack: Can attack 4 times each turn
+         - Indomitable: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.
+         
+   - - Battle Master Abilities:
+         - Combat Superiority:
+           - Maneuvers: Knows any 9 Maneuvers 
+           - Superiority Dice: You have 6 superiority dice, which are d12s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
+           - Saving Throws: Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC 19
+         - Student of War: Proficeint with Mason's Tools
+         - Know Your Enemy: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the
+                            creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points,
+                            Total class levels, if any, Fighter class levels, if any.
+         - Relentless: when you roll initiative and have no superiority dice remaining, you regain 1 superiority die 
         
            
     special-abilities:
-       - Proficiecies: Insight, History, Arcana, Persuasion, Perception
-       - Feats: Keen Mind, Observant, Telekinetic 
-       - Legendary Resistance: (2/Day), If Khedoldosh The Lost fails a saving throw they can choose to succeed instead 
-       - Legendary Actions: Khedoldosh The Lost can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Khedoldosh The
-                            Lost regains spent Legendary Actions at the start of they're turn
-         - Eye Rays: Khedoldosh The Lost uses one random eye ray.
+       - Proficiecies: Peersuasion, Intimidation, Performance, Survival
+       - Feats: Great Weapons Master, Inspiring Leader, Mounted Combatant, Athlete 
+       - Legendary Resistance: (3/Day), If Leon Goldmane fails a saving throw they can choose to succeed instead 
+       - Legendary Actions: Leon Goldmane can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Leon Goldmane regains
+                            spent Legendary Actions at the start of they're turn
+         - Maneuver: Leon Goldmane attacks once with the Kingsblade and uses one maneuver.
        
     attacks: |
-      2 attacks with Eye Rays
+      4 attacks with The Kingsblade
     combat-tactics: |
-      Kedoldosh will largely avoid combat unless pressed. If pressed, it will doff it's disguise and take to flight. If cornered, it will use its eye rays.
+      King leon is merciful on the battlefield, choosing to rather incapacitate and imprison his humanoid enemies, rather than killing them. However, when encountering enemies who the king doesn't consider people, he is merciless and a killer.
     special-equipment:
-      - Tarokka deck: has fifty-four cards, each of which has its own name. Forty of them comprise the common deck, which is divided into four suits: swords, coins, stars, and glyphs. Each suit contains cards numbered one
-                      through nine, plus a tenth card that is called the master of that suit. A card can be referred to by its suit designation or by its name. For instance, the three of glyphs is also known as the healer, and
-                      the wizard card is also known as the master of stars. The remaining fourteen cards make up the high deck, which symbolizes the natural forces of the multiverse. These cards are represented by a crown symbol
-                      and are the most powerful cards in the deck
-                                                                   
+      - The Kingsblade: melee weapon attack: +14 to hit, reach 5ft., Hit: (2d6 + 1d8 + 8) - an heirloom passed from king to king. It is a +3 greatsword (technically whoever wields this blade is the king)
+      - +2 mithril plate that he wears underneath his clothes.
+      
   profile:
 
     #
@@ -505,11 +507,9 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      In the battle of Granite Water [any great historical battle in recent time], an old orcish warlock, Gryt Tooth of Mahl, was faced with certain death at the hands of an incoming legion of the Elves of ThistleCloud [Any
-      Major Elven City]. He turned to his last resort: an old summoning scroll that was tattered. In desperation facing the encroaching legion, the warlock uttered as many words as he could read from the scroll and performed
-      whatever gestures he could make out to cast the spell. Flashes of light and shadow burst from nowhere, colliding in mid air in a cloud of grainy black mist that congealed into the form of a beholder. However, the scroll
-      had been damaged badly and the verbal and somatic components thus distorted. The unfortunate result was an undeveloped creature, Khedoldosh, who glanced around with its only working eye, realized the imminent danger, and
-      darted off into the hills. Needless to say, Gryt Tooth didn't live much longer.
+      King Leon started out as a low-born soldier, however he quickly rose up the ranks with his natural talent and strength. He became known for his reputation as a powerful leader who commanded respect. After a while spent at
+      this high position in the military, he completed a truly amazing feat of martial prowess . He became known for this deed throughout the land, and eventually word reached the king at the time, who had no heir to pass the
+      crown to, so named Leon as his successor.
       
     #
     # Personality (or something like that):
@@ -520,9 +520,7 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Khedoldosh is a weak and malformed creature. However they use a combination of prostetics, magic and disquise in order to pass as a humanoid fortune teller. They don't really have any kind of precognative abilities, but
-      use their telepathic powers to read minds and feed their customers the kind of information that they want to hear. It is very intelligent and has the ego to prove it, but due to it's malformation, it's cowardess outwieghs
-      it's confidence when it comes to dealing with conflict. When it comes down to it, it's really just trying to survive in a world that it was never meant to be in
+      King Leon is a clever and stalwart King. An imposing figure with incomparable martial prowess, he is generally well regarded and revered among his people and demands respect from his foes.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
