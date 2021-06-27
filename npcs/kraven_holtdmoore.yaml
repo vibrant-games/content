@@ -1,0 +1,580 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: kraven_holtdmoore
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-06-26"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Kraven Holtdmoore
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: young adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Human
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Were-Tiger
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: he/him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Sailor; Tattoo Artist; Marksman; Musician
+    
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Rogue/Bard
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Swashbuckler/College of Ink
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 6/6
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Neutral
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Thieves' Cant
+    - Elvish
+
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    - id: thieves_guild
+      name: Thieve's Guild
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Cunning
+    - Artistic
+    - Sly
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  Will be found in archery competitions. He is also well-known for his tattoo art and can provide those passing through a city with mystical or magical tattoos. He rarely sets up within a busy market and prefers a corner in a tavern or inn where he can also perform and is often offered good sums of coins to remain a staple at well-known pubs and alehouses.
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Boy-next-door', boy-band look; Finely dressed; Messy-styled hair; piercing green eyes;
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "You know, not only do I sing like an Efreeti, I can also hit a Meeroskos from a hundred yards"; "I'll liven up this mundanity..."; "How long can you stare at the moon?"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Can never sit still - always a knee bouncing or fingers rapping; offers art or tattoos to anyone in a casual vicinity (tavern, market, etc.); Talks incessantly about his times on the 'High Seas';
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Friendship and emotional or sexual intimacy are Kraven's greatest desires. Not keen on morality or self-actualization, per se, he often tries to impress others at the cost of fulfilling his own desires.
+      
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Sailing; Visual art; Tattoos; Great Cats
+      
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      Magical and silvered weapons
+      
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: | 
+      Kraven is a weretiger.
+       
+      
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 13/15
+    hit-points: 55/122
+    speed: 30/40 in Tiger Form
+    str: 12/17
+    dex: 17/15
+    con: 14/16
+    int: 10/10
+    wis: 15/13
+    cha: 17/11
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+   - - Weretiger Abilities:
+       - Keen Hearing and Smell: Advantage on perception rolls that involve Hearing and Sight
+       - Tough Hide: +2 to AC in Tiger and Half-Tiger forms. 
+       - Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
+       - Heightened Prowess: +1 to Strength and Dexterity saving throws in Tiger or Half-Tiger
+       - Shapeshift: The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any
+                     equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies
+       - The Curse: Humanoid Creatures he bites must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
+       - Pounce: (Tiger or Hybrid Form Only). If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or
+                 be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action
+                 
+   - - Rogue Abilities:
+       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+       
+   - - Swashbuckler Abilities:
+       - Fancy Footwork: you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest
+                         of your turn
+       - Rakish Audacity: You can give yourself a bonus to your initiative rolls equal to your Charisma modifier. You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your
+                          Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still
+                          apply to you.
+       
+       - Bard Spellcasting: Spell DC 14
+           Cantrip: Mage Hand, Vicious Mockery, Minor Illusion
+           1st Level: Bane, Charm Person, Puppet, Hideous Laughter
+           2nd Level: Crown of Madness, Heat Metal, Detect Thoughts
+           3rd Level: Nondetection, Dispel Magic, Fear        
+       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d8. Once within the next 
+                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                       being Frightened or Charmed
+                       
+   - - College of Ink Abilities:
+       - Connoisseur of Symbols: you have advantage on any ability check that you make using Arcana, History, Nature, Religion or your Tattooist’s Supplies or Calligrapher’s Supplies proficiencies to determine the nature of a
+                                 tattoo, sigil, or symbol. This includes symbols using a language you do not understand, so long as the symbol is mostly comprised of other shapes and images. This allows you to identify magic
+                                 tattoos with a successful check as well as understand basic warnings and information communicated through markings
+       - Lasting Inspiration: you can imbue your Bardic Inspiration into a tattoo. When you are tattooing someone, you may expend all remaining uses of your Bardic Inspiration to imbue one Bardic Inspiration die into the tattoo.
+                              The tattoo receives your current Bardic Inspiration die and does not increase when you increase in level. Once the tattoo is complete, the bearer may use a bonus action to activate the tattoo, adding
+                              your Bardic Inspiration die to their next attack roll, saving throw, or ability check. Once the recipient has used the tattoo in this fashion, it cannot be used again until they complete a long rest.
+                              You may add Lasting Inspiration to any tattoo you craft, be it magical or not. Adding Lasting Inspiration to a magical tattoo does not impact or impede its other effects in any way. Once your Bardic
+                              Inspiration die has increased, you may spend one hour performing a touch up on a tattoo you have previously invested with Lasting Inspiration. At the end of the hour, you expend one use of your
+                              Bardic Inspiration. Once this is complete, the Lasting Inspiration die increases to your current Bardic Inspiration die. You cannot perform touch ups in this way on another artist’s tattoos. In
+                              addition, you are now considered to have achieved the necessary tattoo artist notoriety required to study under an established tattoo adept, even if you have never maintained a shop
+               
+    special-abilities:
+       - Proficiencies: Performance; Persuasion; Perception; Survival
+       - Feats: Lucky 
+       
+    attacks: |
+      2 attacks with scimitar, longbow or spell
+    combat-tactics: |
+      Kraven is a crafty combatant. He will rarely take his weretiger form. When in human form he will keep distance at first, using his longbow and magic. Otherwise, he engages with his scimitars. When pressed he will retreat to a secluded area and transform to slay his opponents.
+    special-equipment:
+    - Horn of Blasting
+      
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Kraven is not infected. He is what one would call a 'true' weretiger born of the breed in the jungles of Khuile [Any isolated vilage of Weretigers]. Set upon a collection of river mouths draining into the sea, he and his
+      brood were also skilled sea-men. His clan claim to be descendents of the original weretigers and remain staunchly noble in their dealings with others with the hopes of changing public opinion towards lycanthropes.
+      Kraven set forth on such an information campaign but was met with rebukes and violence. His lycanthropic form was incredibly dangerous in defence of many violent altercations, many of which unfortunately resulted in
+      murders. Kraven thus turned his hand to what was in his heart: sailing, artwork, shadows, magic, mystery, and music. Combining these passions, Kraven is one of the first and only tattoo artists in the region who can
+      offer magic tattoos - at a costly price.
+      
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Kraven is a sly and cunning individual, but hides it under a facade of jovial pleasantness. He loves a good chat, or a rousing song, but he's definitely not afraid to fight if hes pressed to it. He's smooth and charasmatic
+      and has no problem expressing his pansexuality
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
