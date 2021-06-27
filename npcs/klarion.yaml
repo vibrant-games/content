@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: king_leon_goldmane
+  id: klarion
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-06-25"
+  date: "2021-06-26"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: King Leon Goldmane
+  name: Klarion
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: human
+    race: Tiefling
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Bloodline of Asmodeus
 
     #
     # Pronouns (case insensitive):
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - King
+    - Gardener / Groundskeeper
     
 
     #
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Fighter
+    class: Druid
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Battle Master
+    subclass: Circle of Spores
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 20
+    level: 2
 
     #
     # Alignments (case insensitive):
@@ -311,8 +311,8 @@ npc:
     #
     languages:
     - Common
-    - Leonin
-    - Celestial
+    - Infernal
+    - Druidic
 
 
     #
@@ -332,8 +332,8 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: _the_country_
-      name: (The country)
+    - id: druid_circle
+      name: Druid Circle)
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -341,9 +341,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Bold
-    - Regal
-    - Commanding
+    - Solitary
+    - Hardworking
+    - Awkward
 
   improv:
 
@@ -358,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  If the party attracts attention of royalty or politicians through their efforts, or if they meet at a high-profile event
+    introduction:  A lavender-skinned Tiefling rakes the leaves at the back of the manor house's lawn. He casually waves as you pass
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -369,7 +369,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   A 7-foot tall, well-built man, with a long purple and gold cape over one shoulder, and a glorious flowing golden mane.
+    appearance:   Lavender skin, red hair and elk-like horns on his head. He wears dirty grass-stained work clothes and carries a staff
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -385,7 +385,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  If meeting him in a social setting, he will refer to them as "new friends". If its because of their reputaion, "heroes"
+    expressions:  "Plants are a precious as animals"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -398,7 +398,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   If particularly annoyed, the king will go to grip his sword, even if he doesn't currently have it on his back.
+    mannerisms:   Constantly seems to be rubbing dirt off of his hands
 
   acting:
     #
@@ -408,7 +408,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      He mustn't damage his reputation or dishonour his country. He lives for glory within the bounds of the law
+      Loves nature, making a living doing what he loves
       
     #
     # Passions:
@@ -417,7 +417,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      He is very protective of his kings-blade, and he enjoys any chamce he gets to prove his strength on a battlefield.
+      Horticulture
       
     #
     # Vulnerabilities:
@@ -426,7 +426,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      He can get carried away if he is under the premise that he is doing whats "right", and he is hard to stop when he fights
+      He's a simple man who prefers the company of plants to people. He's awkward around people
       
     #
     # Secrets:
@@ -435,7 +435,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      He's King, he's knows all the secrets
+      He enjoys his own "fancy" mushrooms
        
       
   #
@@ -443,15 +443,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 21
-    hit-points: 210
-    speed: 35
-    str: 20
-    dex: 14
-    con: 20
-    int: 16
-    wis: 13
-    cha: 18
+    armour-class: 11
+    hit-points: 44
+    speed: 30
+    str: 12
+    dex: 11
+    con: 14
+    int: 14
+    wis: 14
+    cha: 15
 
   #
   # Special characteristics.
@@ -462,40 +462,45 @@ npc:
   #
   specialties:
     skills:
-   - - Fighter Abilities:
-         - Fighting Style: Defense
-         - Second Wind: Bonus Action to regain 1d10 + 20
-         - Action Surge: Twice every short/long rest can take an extra action
-         - Extra Attack: Can attack 4 times each turn
-         - Indomitable: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.
+   - - Tiefling Abilities:
+       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+       - Hellish Resistance: You have Resistance to fire damage
+       - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
+                          When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells
          
-   - - Battle Master Abilities:
-         - Combat Superiority:
-           - Maneuvers: Knows any 9 Maneuvers 
-           - Superiority Dice: You have 6 superiority dice, which are d12s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
-           - Saving Throws: Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC 19
-         - Student of War: Proficeint with Mason's Tools
-         - Know Your Enemy: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the
-                            creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points,
-                            Total class levels, if any, Fighter class levels, if any.
-         - Relentless: when you roll initiative and have no superiority dice remaining, you regain 1 superiority die 
-        
+   - - Druid Abilities:
+       - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+                  message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
+       - Spellcasting: Spell DC 12
+         Cantrips: Mold Earth, Shape Water 
+         1st Level: Create Water, Speak with Animals, Goodberry
+       - Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+                     determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+                     flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+                     You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die 
+                     
+   - - Circle of Spores Abilities:
+       - Halo of Spores: you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn
+                         there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th
+                         level, 1d8 at 10th level, and 1d10 at 14th level  
+       - Spellcasting: Spell DC 12
+         2nd Level: Chill Touch
+       - Symbiotic Entity: you gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4
+                           temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits;
+                           - When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.
+                           - Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit.
+                           These benefits last for 10 minutes, until you lose all these temporary hit points. or until you use your Wild Shape again      
            
     special-abilities:
-       - Proficiecies: Persuasion, Intimidation, Performance, Survival
-       - Feats: Great Weapons Master, Inspiring Leader, Mounted Combatant, Athlete 
-       - Legendary Resistance: (3/Day), If Leon Goldmane fails a saving throw they can choose to succeed instead 
-       - Legendary Actions: Leon Goldmane can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Leon Goldmane regains
-                            spent Legendary Actions at the start of they're turn
-         - Maneuver: Leon Goldmane attacks once with the Kingsblade and uses one maneuver.
+       - Proficiecies: Nature, Medicine, Survival
+       - Feats: N/A 
        
     attacks: |
-      4 attacks with The Kingsblade
+      1 attack with garden implement or unaramed strike
     combat-tactics: |
-      King leon is merciful on the battlefield, choosing to rather incapacitate and imprison his humanoid enemies, rather than killing them. However, when encountering enemies who the king doesn't consider people, he is merciless and a killer.
+      Will wild shape into something small and fast and run away from any trouble
     special-equipment:
-      - The Kingsblade: melee weapon attack: +14 to hit, reach 5ft., Hit: (2d6 + 1d8 + 8) - an heirloom passed from king to king. It is a +3 greatsword (technically whoever wields this blade is the king)
-      - +2 mithril plate that he wears underneath his clothes.
+      - various gardening tools
       
   profile:
 
@@ -507,9 +512,9 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      King Leon started out as a low-born soldier, however he quickly rose up the ranks with his natural talent and strength. He became known for his reputation as a powerful leader who commanded respect. After a while spent at
-      this high position in the military, he completed a truly amazing feat of martial prowess . He became known for this deed throughout the land, and eventually word reached the king at the time, who had no heir to pass the
-      crown to, so named Leon as his successor.
+      Klarion is a simple man who grew up on his own, living off of the land. As his gifts with plants and fungi grew, he was able to secure work as the gardener and groundskeeper for the large estate at the edge of town. He's
+      good at his job and loves to work with the gardens. He's done a sufficient enough job that he gets very little interference from his boss and mostly does what he wants. He rarely goes into town proper and deals with other
+      people as little as possible
       
     #
     # Personality (or something like that):
@@ -520,7 +525,8 @@ npc:
     # No length limit for now.
     #
     personality: |
-      King Leon is a clever and stalwart King. An imposing figure with incomparable martial prowess, he is generally well regarded and revered among his people and demands respect from his foes.
+      Klarion likes his solitude. He prefers his plants and his garden to people and will generally go out of his way to avoid them. He is a pleasant fellow though and will do his best to try to be helpful if approached in a
+      non-aggressive manner. How helpful he can be is up for grabs however, because he is often high on his special supply of hallucinogenic mushrooms that he grows himself.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to

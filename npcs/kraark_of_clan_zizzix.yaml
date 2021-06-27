@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: king_leon_goldmane
+  id: kraark_of_clan_zizzix
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-06-25"
+  date: "2021-06-26"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: King Leon Goldmane
+  name: Kraark of Clan Zizzix
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: young adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: human
+    race: Goblin
 
     #
     # The sub-race can be anything.
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - King
+    - Thief
     
 
     #
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Fighter
+    class: Rogue
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Battle Master
+    subclass: Thief
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 20
+    level: 7
 
     #
     # Alignments (case insensitive):
@@ -287,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: Lawful Good
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -310,9 +310,10 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
+    - Goblin
     - Common
-    - Leonin
-    - Celestial
+    - Undercommon
+    - Thieve's Cant
 
 
     #
@@ -332,8 +333,10 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: _the_country_
-      name: (The country)
+    - id: clan_zizzix
+      name: Clan Zizzix
+    - id: thieve_s_guild
+      name: Thieve's Guild
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -341,9 +344,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Bold
-    - Regal
-    - Commanding
+    - Quick
+    - Cunning
+    - Cowardly
 
   improv:
 
@@ -358,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  If the party attracts attention of royalty or politicians through their efforts, or if they meet at a high-profile event
+    introduction:  Something gently bumps your leg in the market, your coin purse is gone, a short ugly goblin darts off through the crowd
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -369,7 +372,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   A 7-foot tall, well-built man, with a long purple and gold cape over one shoulder, and a glorious flowing golden mane.
+    appearance:   Short, 3' tall, green, dirty, unkempt in ratty leather armor and torn red cloak and a belt full of pouches
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -385,7 +388,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  If meeting him in a social setting, he will refer to them as "new friends". If its because of their reputaion, "heroes"
+    expressions:  "I don't know what you mean, I've had this for years", "You wouldn't hurt poor Kraark, would you?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -398,7 +401,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   If particularly annoyed, the king will go to grip his sword, even if he doesn't currently have it on his back.
+    mannerisms:   Picks his nose, scratches scabs
 
   acting:
     #
@@ -408,7 +411,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      He mustn't damage his reputation or dishonour his country. He lives for glory within the bounds of the law
+      Money, money and money
       
     #
     # Passions:
@@ -417,7 +420,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      He is very protective of his kings-blade, and he enjoys any chamce he gets to prove his strength on a battlefield.
+      Food. He fancies himself the greatest goblin chef ever.... he is very much not
       
     #
     # Vulnerabilities:
@@ -426,7 +429,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      He can get carried away if he is under the premise that he is doing whats "right", and he is hard to stop when he fights
+      He's a goblin, most people don't like goblins
       
     #
     # Secrets:
@@ -435,7 +438,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      He's King, he's knows all the secrets
+      He may know any manner of things going on in the city's underworld
        
       
   #
@@ -443,15 +446,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 21
-    hit-points: 210
+    armour-class: 16
+    hit-points: 43
     speed: 35
-    str: 20
-    dex: 14
-    con: 20
-    int: 16
-    wis: 13
-    cha: 18
+    str: 11
+    dex: 19
+    con: 14
+    int: 17
+    wis: 12
+    cha: 8
 
   #
   # Special characteristics.
@@ -462,40 +465,34 @@ npc:
   #
   specialties:
     skills:
-   - - Fighter Abilities:
-         - Fighting Style: Defense
-         - Second Wind: Bonus Action to regain 1d10 + 20
-         - Action Surge: Twice every short/long rest can take an extra action
-         - Extra Attack: Can attack 4 times each turn
-         - Indomitable: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.
+   - - Goblin Abilities:
+        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
+        - Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
+                             your level.
+        - Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
          
-   - - Battle Master Abilities:
-         - Combat Superiority:
-           - Maneuvers: Knows any 9 Maneuvers 
-           - Superiority Dice: You have 6 superiority dice, which are d12s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
-           - Saving Throws: Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC 19
-         - Student of War: Proficeint with Mason's Tools
-         - Know Your Enemy: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the
-                            creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points,
-                            Total class levels, if any, Fighter class levels, if any.
-         - Relentless: when you roll initiative and have no superiority dice remaining, you regain 1 superiority die 
-        
-           
+   - - Rogue Abilities:
+       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+                     
+   - - Thief Abilities:
+       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action 
+       - Second Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
+                            your Dexterity modifier
+               
     special-abilities:
-       - Proficiecies: Persuasion, Intimidation, Performance, Survival
-       - Feats: Great Weapons Master, Inspiring Leader, Mounted Combatant, Athlete 
-       - Legendary Resistance: (3/Day), If Leon Goldmane fails a saving throw they can choose to succeed instead 
-       - Legendary Actions: Leon Goldmane can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Leon Goldmane regains
-                            spent Legendary Actions at the start of they're turn
-         - Maneuver: Leon Goldmane attacks once with the Kingsblade and uses one maneuver.
+       - Proficiecies: Stealth, Sleight of Hand, Investigation, Thieve's Tools
+       - Feats: N/A 
        
     attacks: |
-      4 attacks with The Kingsblade
+      1 attack with dagger, 1 with bite or claw (1d4)
     combat-tactics: |
-      King leon is merciful on the battlefield, choosing to rather incapacitate and imprison his humanoid enemies, rather than killing them. However, when encountering enemies who the king doesn't consider people, he is merciless and a killer.
+      Will mostly try to run away or beg if possible, but will fight fiercely and savagely if cornered 
     special-equipment:
-      - The Kingsblade: melee weapon attack: +14 to hit, reach 5ft., Hit: (2d6 + 1d8 + 8) - an heirloom passed from king to king. It is a +3 greatsword (technically whoever wields this blade is the king)
-      - +2 mithril plate that he wears underneath his clothes.
+      - Dagger
       
   profile:
 
@@ -507,9 +504,8 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      King Leon started out as a low-born soldier, however he quickly rose up the ranks with his natural talent and strength. He became known for his reputation as a powerful leader who commanded respect. After a while spent at
-      this high position in the military, he completed a truly amazing feat of martial prowess . He became known for this deed throughout the land, and eventually word reached the king at the time, who had no heir to pass the
-      crown to, so named Leon as his successor.
+      Kraark was raised and still lives with a clan of goblins that has worked for the city's Thieve's Guild for generations. The guild has done well by his clan and they have been good steady earners for the guild. Small and
+      quick, he can easily get in and out of places unnoticed that others have trouble with so occasionally he gets called on for bigger robbery jobs, but most of the time hes just a street thief.
       
     #
     # Personality (or something like that):
@@ -520,7 +516,7 @@ npc:
     # No length limit for now.
     #
     personality: |
-      King Leon is a clever and stalwart King. An imposing figure with incomparable martial prowess, he is generally well regarded and revered among his people and demands respect from his foes.
+      Kraark is small and quick and cowardly. He'd much rather run than fight, and will beg for mercy if clearly caught and outmatched. He is very loyal to both his clan and his guild, but can probably be bribed for information 
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
