@@ -4,12 +4,16 @@ body {
   font-size: 13.5px;
   line-height: 1.2em;
 }
+
+
 body *{
   box-sizing: border-box;
   max-width: 100%;
   font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica,
     Arial, sans-serif;
 }
+
+
 .stat-block {
   text-align: left;
   margin: 20px;
@@ -60,6 +64,10 @@ div.nospaces {
 .stat-block.wide .section-right{
   margin-left: 1.5%;
 }
+
+
+
+
 @media screen and (max-width: 675px){
 	.stat-block.wide{
 		min-width: 280px;
@@ -76,6 +84,10 @@ div.nospaces {
 		margin: 0;
 	}
 }
+
+
+
+
 .orange-border{
   display: block;
   background: #E69A28;
@@ -97,6 +109,9 @@ div.nospaces {
   fill: #922610;
   stroke: #922610;
 }
+
+
+
 .creature-heading h1{
   font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
   color: #922610;
