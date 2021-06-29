@@ -363,20 +363,20 @@ div p {
   #cell2 {
     flex-direction: column-reverse;
     position: relative;
-    height: 100px;
-	min-width: 300;
+    
+	min-width: 620px;
 	  
   }
   
  
 	#cell3 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
-    height: 100px;
-	min-width: 300;
+   
+	min-width:620px;
   }
 	
-	.#cell4 {
+	#cell4 {
 		
 		display:none
 	}
@@ -408,7 +408,7 @@ div p {
     flex-direction: column-reverse;
     
     position: relative;
-    
+    min-width: 620px;
    
   }
   
@@ -419,7 +419,7 @@ div p {
     
   }
 	
-	.#cell4 {
+	#cell4 {
 		
 		display:none
 	}
@@ -453,7 +453,7 @@ div p {
     
   }
 	
-	.#cell4 {
+	#cell4 {
 		
 		display:none
 	}
