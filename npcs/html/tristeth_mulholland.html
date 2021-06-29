@@ -1,287 +1,840 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="utf-8"/>
-	<title>Tristeth Mulholland</title>
-	<meta name="Description" content="The Vibrant Non-Player Character Compendium">
-	<meta name="author" content="Vibrant Games">
-	
-	<link rel="shortcut icon" href="favicon.png">
-	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Untitled Document</title>
 
-
-	
-	<script>
-		function createCustomElement(name, contentNode, elementClass = null) {
-  if(elementClass === null) {
-    customElements.define(name,
-      class extends HTMLElement {
-        constructor() {
-          super();
-          this.attachShadow({mode: 'open'})
-            .appendChild(contentNode.cloneNode(true));
-        }
-      }
-    )
-  } else {
-    customElements.define(name, elementClass(contentNode));
-  }
-}
-</script>
+<link rel="stylesheet" href="stylesheet.css"/>
 	
 	</head>
-	
+
+
+	<body>
+
+
+		<div class="container">
+  		
+			<div class="cell" id="cell1">
+			CELL 1	
+			<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block wide">
 		
-<img id="portrait" alt="" src="./npc_imgs/Tristeth Mulholland.png" width="300" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
-<div class="stat-block wide">
-	<hr class="orange-border" />
-	<div class="section-left">
-	
-		<div class="creature-heading">
-		  <h1>Tristeth Mulholland</h1>
-			<h2>elderly human <br>
-neutral<br>
-Level 2/2 rogue; cleric </h2>
-		
-		</div> <!-- creature heading -->
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-		<div class="top-stats">
-	 		<div class="property-line first">
-			
-				
 					
-	 <h4>Pronouns: </h4><p>he/him</p>
-				</div> <!-- property line -->
-				<div class="property-line last">
-				
-<h4>Occupations: </h4><p>Gravekeeper</p>
-			</div> <!-- property line -->
-			<div class="property-line last">
-				<h4>Armor Class</h4>
-				<p>11</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Hit Points</h4>
-				<p>35 (TODO Hitdice)</p>
-			</div> <!-- property line -->
-			<div class="property-line last">
-				<h4>Speed</h4>
-				<p>30.</p>
-			</div> <!-- property line -->
-			<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-			
-			
-			<div class="abilities">
-				<div class="ability-strength">
-					<h4>STR</h4>
-					<p>13 </p>
-				</div> <!-- ability strength -->
-				<div class="ability-dexterity">
-					<h4>DEX</h4>
-					<p>9 </p>
-				</div> <!-- ability dexterity -->
-				<div class="ability-constitution">
-					<h4>CON</h4>
-					<p>9 </p>
-				</div> <!-- ability constitution -->
-				<div class="ability-intelligence">
-					<h4>INT</h4>
-					<p>14 </p>
-				</div> <!-- ability intelligence -->
-				<div class="ability-wisdom">
-					<h4>WIS</h4>
-					<p>11 </p>
-				</div> <!-- ability wisdom -->
-				<div class="ability-charisma">
-					<h4>CHA</h4>
-					<p>15 </p>
-				</div> <!-- ability charisma -->
-			</div> <!-- abilities -->
-			<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-			<div class="property-line first">
-				<h4>Saving Throws</h4>
-				<p>TODO Saving Throws</p>
-			</div> <!-- property line -->
-			
-			<div class="property-line last">
-				<h4>Skills</h4>
-			
+						<span class="section-left">
 	
-
-<p>Gravekeeping; Embalming;</p>
-			</div> <!-- property line -->
-			
-			<div class="property-line last">
-				<h4>Proficiencies</h4>
-			
-	
-
-<p>&nbsp;TODO </p>
-			</div> <!-- property line -->
-			
-			
-			<div class="property-line first">
-				<h4>Damage Immunities</h4>
-				<p>TODO Damage Immunities</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Condition Immunities</h4>
-				<p>TODO Condition Immunities</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Senses</h4>
-				<p>TODO Senses</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Languages</h4>
 				
-				<p>Common Dwarven 	,</p>	
-			</div> <!-- property line -->
-			
-			<div class="property-line">
-				<h4>Adjectives</h4>
-				
+							<span class="npc-heading">
+		  			
+								<h1>Tristeth Mulholland</h1>
+						
+								<h2>elderly human <br>
+						
+									neutral<br>
+						
+									Level 2/2 rogue; cleric </h2>
 		
-				<p>Dim 	,</p>	
-			</div> <!-- property line -->
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	    			
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	  			
+							</svg>
+				
+				
+				
+							
+	 				
+								<span class="property-line">
+						
+									<h4>Pronouns:</h4><p>he/him</p><br>
+					
+								</span> 
+					
+								<span class="property-line">		
+						
+									<h4>Occupations: </h4><p>Gravekeeper</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Armor Class</h4><p>11</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Hit Points</h4>	<p>35 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Speed</h4><p>30.</p>
 			
-		</div> <!-- top stats -->
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	 				
+								</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>13 </p>
+						
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>9 </p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>9 </p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>14 </p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>11 </p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>15 </p>
+						
+									</span> 
+					
+								</span> 
+					
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	  				
+								</svg>
+					
+				
+								<span class="property-line first">
+						
+									<h4>Saving Throws</h4>
+						
+									<p>TODO Saving Throws</p>
+					
+								</span> 
+					
+								<span class="property-line last">
+					
+									<h4>Skills</h4>
+						
+									<p>Gravekeeping; Embalming;</p>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Proficiencies</h4>
+						
+									<p>&nbsp;TODO </p>
+					
+								</span> 
+					
+								<span class="property-line first">
+						
+									<h4>Damage Immunities</h4>
+					
+									<p>TODO Damage Immunities</p>
+					
+								</span> 
+
+								<span class="property-line">
+						
+									<h4>Condition Immunities</h4>
+						
+									<p>TODO Condition Immunities</p>
+					
+								</span> 
+					
+								<span class="property-line">
+					
+									<h4>Senses</h4>
+					
+									<p>TODO Senses</p>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Languages</h4>
+						
+									<p>Common Dwarven 	,</p>	
+					
+								</span> 
+
+					
+								<span class="property-line">
+						
+									<h4>Adjectives</h4>
+						
+									<p>Dim 	,</p>	
+					
+								</span> 
+
+					
+							
+				
+
+
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	   				
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	 			
+							</svg>
 	
-			<div class="property-block">
-			<h4>Special Abilities</h4>
-			<p>Uncanny Evasion
+				
+							<span class="property-block">
+					
+								<h4>Special Abilities</h4>
+					
+								<ul>
+								
+									
+									<li>
+			
+										Uncanny Evasion
 |
 Cleric Spells: Healing Word, Guidance, Spare the Dying, Sacred Flame, Bane, Bless.
-</p>
-		</div> <!-- property block -->
-		
-	
-			
-		
 
-			
-		<div class="property-block">
-			<h4>Special Equipment</h4>
-			
-     <ul>
-      
-      </ul>
-      
+								
+									</li>
+									
+								
+								</ul>
+							</span>
 
-		 
-		
-          <!-- property block -->
-          <!-- property block -->
-     
-			</div>
-       <div class="actions">
-			<h3>Combat Tactics</h3>
-			<p>Tristeth will, more often than not, flee combat. Should that not be an option he will face-off with the weakest opponent possible.
+				
+							
+								<span class="property-block">
+					
+								<h4>Special Equipment</h4>
+					
+								<ul>
+ 				      
+      
+					
+								</ul>
+				
+							
+								</span>	
+				
+							<span class="actions">
+					
+								<h3>Combat Tactics</h3>
+					
+								<p>Tristeth will, more often than not, flee combat. Should that not be an option he will face-off with the weakest opponent possible.
 </p>
-		</div> 
-		
-		<div class="actions">
-			<h3>Actions</h3>
+				
+							</span> 
 			
-			
-			<p>Dagger
+				
+							<span class="actions">
+					
+								<h3>Actions</h3>
+					
+								<p>Dagger
 |
 Fist
 </p>
-		</div>
+				
+							</span>
 			
-			<div class="actions">
-			<h3>Factions</h3>
-			<div class="property-block">
+				
+							<span class="actions">
+					
+								<h3>Factions</h3>
+					
+								<span class="property-block">
+					
+									<p><b>				
+								
+								</span>
+
+								</span>
+							</span>
+						</span>
+						<span>
+						</span>
+				</span>
+				</span>
+				
+			<span class="data">
+				<hr class="steel-border" />			
+
+					
+						
+									<img id="pic" alt="" src="npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+							
+						
+								
+
+						<span class="stat-block wide">
+						
+							<span class="npc-heading">
+							
+						<h1>Roleplaying</h1></span>
+							
+							
+										<svg height="5" width="100%" class="tapered-rule">
+							
+											<polyline points="0,0 400,2.5 0,5"></polyline>
+							
+										</svg>
+							
+										<span class="actions">	
+								
+											<h3>Introduction</h3>
+							
+										</span>
+							
+										Leaves his post to find supplies at the nearest market; Often visits the alehouse for some grub and a good drunk<br />
+		
+		
+		
+										<span class="actions">
 			
-			<p><b>		</div>
+											<h3>Appearance</h3>
+										</span>
+		
+										<span class="property-line">	Lanky, with a curved spine and potbelly.
+		
+										</span>
+		
+		
+										<span class="actions">
+			
+											<h3>Expressions</h3>
+										</span>
+		
+										<span class="property-line">	
+											 &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Mannerisms</h3>
+										</span>
+		
+										<span class="property-line">	
+											Sucks breath when cogitating; overfeeds pets with treats.
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Motivations</h3>
+										</span>
+			
+										<span class="property-line">
+											To keep those departed in his graveyard safe from disturbances and their stones and cryptfaces well-kept and beautiful for visitors.
+
+										</span>
+		
+		
+			
+			
+										<span class="actions">
+			
+											<h3>Passions</h3>
+										</span>
+		
+										<span class="property-line">	
+											Pet otters and pet raven; bastard son; wandering The Chalk.
+
+		
+										</span> 
+		
+	
+		
+										<span class="actions">
+			
+											<h3>Secrets</h3>
+										</span>
+	
+										<span class="property-line">
+											Created the world&#39;s first Ansible, and named it, too. Tristeth has colluded with evil necromancers/warlocks to sacrifice the bodies at his gravesite to their deity.
+		
+		
+										</span> 
+	
+					</span> 
+
+				</span>
+			  </span>
+							
+				
+			
+				
+		
+		
+		  </div>
+		
+			<div class="cell" id="cell2">
+			CELL 2
+				<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block wide">
+		
+					
+						<span class="section-left">
+	
+				
+							<span class="npc-heading">
+		  			
+								<h1>Tristeth Mulholland</h1>
+						
+								<h2>elderly human <br>
+						
+									neutral<br>
+						
+									Level 2/2 rogue; cleric </h2>
+		
+						
+							
+						
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	    			
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	  			
+							</svg>
+				
+				
+				
+							
+	 				
+								<span class="property-line">
+						
+									<h4>Pronouns:</h4><p>he/him</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">		
+						
+									<h4>Occupations: </h4><p>Gravekeeper</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">
+						
+									<h4>Armor Class</h4><p>11</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">
+						
+									<h4>Hit Points</h4>	<p>35 (TODO Hitdice)</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line last">
+						
+									<h4>Speed</h4><p>30.</p>
+			
+								</span> 
+					
+					<!-- property line -->
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	 				
+								</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>13 </p>
+						
+									</span> <!-- ability strength -->
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>9 </p>
+						
+									</span> <!-- ability dexterity -->
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>9 </p>
+						
+									</span> <!-- ability constitution -->
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>14 </p>
+						
+									</span> <!-- ability intelligence -->
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>11 </p>
+						
+									</span> <!-- ability wisdom -->
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>15 </p>
+						
+									</span> <!-- ability charisma -->
+					
+								</span> 
+					
+					<!-- abilities -->
+					
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	  				
+								</svg>
+					
+				
+								<span class="property-line first">
+						
+									<h4>Saving Throws</h4>
+						
+									<p>TODO Saving Throws</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line last">
+					
+									<h4>Skills</h4>
+						
+									<p>Gravekeeping; Embalming;</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line last">
+						
+									<h4>Proficiencies</h4>
+						
+									<p>&nbsp;TODO </p>
+					
+								</span> <!-- property line -->
+			
+			
+					
+								<span class="property-line first">
+						
+									<h4>Damage Immunities</h4>
+					
+									<p>TODO Damage Immunities</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Condition Immunities</h4>
+						
+									<p>TODO Condition Immunities</p>
+					
+								</span> <!-- property line -->
+			
+					
+					
+								<span class="property-line">
+					
+									<h4>Senses</h4>
+					
+									<p>TODO Senses</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Languages</h4>
+						
+									<p>Common Dwarven 	,</p>	
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Adjectives</h4>
+						
+									<p>Dim 	,</p>	
+					
+								</span> <!-- property line -->
+			
+					
+							
+				
+				<!-- top stats -->
+				
+				
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	   				
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	 			
+							</svg>
+	
+				
+							<span class="property-block">
+					
+								<h4>Special Abilities</h4>
+					
+								<ul>
+								
+									
+									<li>
+			
+										Uncanny Evasion
+|
+Cleric Spells: Healing Word, Guidance, Spare the Dying, Sacred Flame, Bane, Bless.
+
+								
+									</li>
+									
+								
+								</ul>
+							</span> <!-- property block -->
+				
+				
+							<span class="property-block">
+					
+								<h4>Special Equipment</h4>
+					
+								<ul>
+ 				      
+      
+					
+								</ul>
+				
+							</span>
+       				
+				
+							<span class="actions">
+					
+								<h3>Combat Tactics</h3>
+					
+								<p>Tristeth will, more often than not, flee combat. Should that not be an option he will face-off with the weakest opponent possible.
+</p>
+				
+							</span> 
+			
+				
+							<span class="actions">
+					
+								<h3>Actions</h3>
+					
+								<p>Dagger
+|
+Fist
+</p>
+				
+							</span>
+			
+				
+							<span class="actions">
+					
+								<h3>Factions</h3>
+					
+								<span class="property-block">
+					
+									<p><b>				
+								</span>
 			
 			<!-- property block -->
 		
 			
-		</div> <!-- actions -->
-		
-    </div> <!-- section left -->
-	<div class="section-right">
-	
-		
-
-	 
-	<div class="creature-heading">
-		<h1>Roleplaying</h1></div>
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-			 </svg>
-		<div class="actions">	<h3>Introduction</h3></div>
+						</span>
+							</span>
+						</span>
+					</span>
+				  </span>
+					
+					<span class="pic">
 			
-			Leaves his post to find supplies at the nearest market; Often visits the alehouse for some grub and a good drunk<br />
-		
-		
-		<div class="actions">
-			<h3>Appearance</h3></div>
-		<div class="property-line">	Lanky, with a curved spine and potbelly.
-		</div>
-		
-		<div class="actions">
-			<h3>Expressions</h3></div>
-		<div class="property-line">	 &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.
-		</div> 
-		
-		<div class="actions">
-			<h3>Mannerisms</h3></div>
-		<div class="property-line">	Sucks breath when cogitating; overfeeds pets with treats.
-		</div> 
-		
-		<div class="actions">
-			<h3>Motivations</h3></div>
-			<div class="property-line">To keep those departed in his graveyard safe from disturbances and their stones and cryptfaces well-kept and beautiful for visitors.
-</div>
-		
-		
-			
-			<div class="actions">
-			<h3>Passions</h3></div>
-		<div class="property-line">	Pet otters and pet raven; bastard son; wandering The Chalk.
+						<img id="portrait2" alt="" src="npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+					</span>
+					
+					
 
-		</div> 
-		
-	
-		<div class="actions">
-			<h3>Secrets</h3></div>
-	<div class="property-line">Created the world&#39;s first Ansible, and named it, too. Tristeth has colluded with evil necromancers/warlocks to sacrifice the bodies at his gravesite to their deity.
-		
-		</div> 
-	</div> <!-- section right -->
-
-			
-	<div class="creature-heading" align="left">
-    <div class="actions">
-		<h3>Background</h3></div>
-		<span>	<p><p>Growing up as the son of a poor farmer can be hard as it is. Add alcoholism, abuse, and lecherous behaviors and you have the ingredients for an exploitative upbringing rife with imparted dysfunctional behaviors. Tristeth learned to put his focus on what he could control: whether or not small animals would live or die.</p><p>As this trope would suggest, Tristeth began with the family cat. He then began picking off birds with his slingshot. He would carefully examine these animals inside and out, learning their morphologies and organic composition. He would often bury the parts separately in what he, arbitrartily, deemed to be the "right spot".</p><p>Nobody ever really found out about his little hobby. He covered it up well by always having a variety of pets that he cared for. Eventually, Tristeth came of age where he had to choose between laboring on his father's farm or venturing out on his own to pursue a different trade. The choice wasn't hard. He hated living there, as much as he adored a few of his 7 brothers and sisters. He departed to a nearby village and volunteered for the coroner of the religious order of Selune [Any Moon or Good Goddess] and learned various respectful means of preparing bodies for burial or pyre. Because this religious Order preached the sanctity of bodies and spirits, he also began changing his overall attitude and strange hobbies. Eventually he worked his way into the position of gravekeeper for the Order and currently presides over their countryside sacred burial grounds. He and his one bastard son, abandoned by his mother, reside in the small townhouse next to the burial grounds.</p>[Optional] Tristeth is being exploited by Duergar Warlocks looking to sacrifice the bodies in the burial ground to an Evil Deity. Consequently, they have penetrated his mind and begun causing a sort of madness where Tristeth escapes to an astral realm that he calls, "the Chalk". The Warlocks essentially send his astral form to wander an endless expanse of near nothingness; only faint and fading chalk outlines of reality. In the chalk, he is faced with the spirits of those the Warlocks seek to sacrifice next. The victim convinces Tristeth to continue his supply of bodies. He then wakes, exhausted and wondering why sleep no longer provides him rest. He's begun talking to himself and exhibiting odd twitches and spasms due to exhaustion.</p>
-</p></span>
-		<span>	<p></p></span>	
-		</div> 
-</div>
 
 				
-			
-			
 		
-	 <!-- section left -->
+			</div>
+  
+			<div class="cell" id="cell3">
+    
+				<span class="data">
+					<span class="section-right">
 	
-	<hr class="orange-border bottom" />
 
+						<span class="stat-block wide">
+						
+							<span class="npc-heading">
+							
+						<h1>Roleplaying</h1></span>
+							
+							
+										<svg height="5" width="100%" class="tapered-rule">
+							
+											<polyline points="0,0 400,2.5 0,5"></polyline>
+							
+										</svg>
+							
+										<span class="actions">	
+								
+											<h3>Introduction</h3>
+							
+										</span>
+							
+										Leaves his post to find supplies at the nearest market; Often visits the alehouse for some grub and a good drunk<br />
+		
+		
+		
+										<span class="actions">
+			
+											<h3>Appearance</h3>
+										</span>
+		
+										<span class="property-line">	Lanky, with a curved spine and potbelly.
+		
+										</span>
+		
+		
+										<span class="actions">
+			
+											<h3>Expressions</h3>
+										</span>
+		
+										<span class="property-line">	
+											 &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Mannerisms</h3>
+										</span>
+		
+										<span class="property-line">	
+											Sucks breath when cogitating; overfeeds pets with treats.
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Motivations</h3>
+										</span>
+			
+										<span class="property-line">
+											To keep those departed in his graveyard safe from disturbances and their stones and cryptfaces well-kept and beautiful for visitors.
 
+										</span>
+		
+		
+			
+			
+										<span class="actions">
+			
+											<h3>Passions</h3>
+										</span>
+		
+										<span class="property-line">	
+											Pet otters and pet raven; bastard son; wandering The Chalk.
 
+		
+										</span> 
+		
+	
+		
+										<span class="actions">
+			
+											<h3>Secrets</h3>
+										</span>
+	
+										<span class="property-line">
+											Created the world&#39;s first Ansible, and named it, too. Tristeth has colluded with evil necromancers/warlocks to sacrifice the bodies at his gravesite to their deity.
+		
+		
+										</span> 
+	
+					</span> 
 
+				</span>
+			  </span>
+							
+				<span class="data">bottom stats 2</span>
+  
+		
+			</div>
+ 
+	
+		</div>
+	</body>
 
 </html>

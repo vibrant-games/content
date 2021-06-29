@@ -1,164 +1,241 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="utf-8"/>
-	<title>Varun Bakerfield</title>
-	<meta name="Description" content="The Vibrant Non-Player Character Compendium">
-	<meta name="author" content="Vibrant Games">
-	
-	<link rel="shortcut icon" href="favicon.png">
-	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Untitled Document</title>
 
-
-	
-	<script>
-		function createCustomElement(name, contentNode, elementClass = null) {
-  if(elementClass === null) {
-    customElements.define(name,
-      class extends HTMLElement {
-        constructor() {
-          super();
-          this.attachShadow({mode: 'open'})
-            .appendChild(contentNode.cloneNode(true));
-        }
-      }
-    )
-  } else {
-    customElements.define(name, elementClass(contentNode));
-  }
-}
-</script>
+<link rel="stylesheet" href="stylesheet.css"/>
 	
 	</head>
-	
+
+
+	<body>
+
+
+		<div class="container">
+  		
+			<div class="cell" id="cell1">
+			CELL 1	
+			<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block wide">
 		
-<img id="portrait" alt="" src="./npc_imgs/Varun Bakerfield.png" width="300" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
-<div class="stat-block wide">
-	<hr class="orange-border" />
-	<div class="section-left">
-	
-		<div class="creature-heading">
-		  <h1>Varun Bakerfield</h1>
-			<h2>older adult human <br>
-chaotic neutral<br>
-Level 8 rogue </h2>
-		
-		</div> <!-- creature heading -->
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-		<div class="top-stats">
-	 		<div class="property-line first">
-			
-				
 					
-	 <h4>Pronouns: </h4><p>he/him</p>
-				</div> <!-- property line -->
-				<div class="property-line last">
-				
-<h4>Occupations: </h4><p>Thieve&#39;s Guild Boss</p>
-			</div> <!-- property line -->
-			<div class="property-line last">
-				<h4>Armor Class</h4>
-				<p>10</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Hit Points</h4>
-				<p>46 (TODO Hitdice)</p>
-			</div> <!-- property line -->
-			<div class="property-line last">
-				<h4>Speed</h4>
-				<p>30.</p>
-			</div> <!-- property line -->
-			<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-			
-			
-			<div class="abilities">
-				<div class="ability-strength">
-					<h4>STR</h4>
-					<p>18 </p>
-				</div> <!-- ability strength -->
-				<div class="ability-dexterity">
-					<h4>DEX</h4>
-					<p>10 </p>
-				</div> <!-- ability dexterity -->
-				<div class="ability-constitution">
-					<h4>CON</h4>
-					<p>15 </p>
-				</div> <!-- ability constitution -->
-				<div class="ability-intelligence">
-					<h4>INT</h4>
-					<p>16 </p>
-				</div> <!-- ability intelligence -->
-				<div class="ability-wisdom">
-					<h4>WIS</h4>
-					<p>16 </p>
-				</div> <!-- ability wisdom -->
-				<div class="ability-charisma">
-					<h4>CHA</h4>
-					<p>15 </p>
-				</div> <!-- ability charisma -->
-			</div> <!-- abilities -->
-			<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-			<div class="property-line first">
-				<h4>Saving Throws</h4>
-				<p>TODO Saving Throws</p>
-			</div> <!-- property line -->
-			
-			<div class="property-line last">
-				<h4>Skills</h4>
-			
+						<span class="section-left">
 	
-
-<p></p>
-			</div> <!-- property line -->
-			
-			<div class="property-line last">
-				<h4>Proficiencies</h4>
-			
-	
-
-<p>&nbsp;TODO </p>
-			</div> <!-- property line -->
-			
-			
-			<div class="property-line first">
-				<h4>Damage Immunities</h4>
-				<p>TODO Damage Immunities</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Condition Immunities</h4>
-				<p>TODO Condition Immunities</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Senses</h4>
-				<p>TODO Senses</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Languages</h4>
 				
-				<p>Common under-common 	,</p>	
-			</div> <!-- property line -->
-			
-			<div class="property-line">
-				<h4>Adjectives</h4>
-				
+							<span class="npc-heading">
+		  			
+								<h1>Varun Bakerfield</h1>
+						
+								<h2>older adult human <br>
+						
+									chaotic neutral<br>
+						
+									Level 8 rogue </h2>
 		
-				<p>Relentless 	,</p>	
-			</div> <!-- property line -->
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	    			
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	  			
+							</svg>
+				
+				
+				
+							
+	 				
+								<span class="property-line">
+						
+									<h4>Pronouns:</h4><p>he/him</p><br>
+					
+								</span> 
+					
+								<span class="property-line">		
+						
+									<h4>Occupations: </h4><p>Thieve&#39;s Guild Boss</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Armor Class</h4><p>10</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Hit Points</h4>	<p>46 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Speed</h4><p>30.</p>
 			
-		</div> <!-- top stats -->
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	 				
+								</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>18 </p>
+						
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>10 </p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>15 </p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>16 </p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>16 </p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>15 </p>
+						
+									</span> 
+					
+								</span> 
+					
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	  				
+								</svg>
+					
+				
+								<span class="property-line first">
+						
+									<h4>Saving Throws</h4>
+						
+									<p>TODO Saving Throws</p>
+					
+								</span> 
+					
+								<span class="property-line last">
+					
+									<h4>Skills</h4>
+						
+									<p></p>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Proficiencies</h4>
+						
+									<p>&nbsp;TODO </p>
+					
+								</span> 
+					
+								<span class="property-line first">
+						
+									<h4>Damage Immunities</h4>
+					
+									<p>TODO Damage Immunities</p>
+					
+								</span> 
+
+								<span class="property-line">
+						
+									<h4>Condition Immunities</h4>
+						
+									<p>TODO Condition Immunities</p>
+					
+								</span> 
+					
+								<span class="property-line">
+					
+									<h4>Senses</h4>
+					
+									<p>TODO Senses</p>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Languages</h4>
+						
+									<p>Common under-common 	,</p>	
+					
+								</span> 
+
+					
+								<span class="property-line">
+						
+									<h4>Adjectives</h4>
+						
+									<p>Relentless 	,</p>	
+					
+								</span> 
+
+					
+							
+				
+
+
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	   				
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	 			
+							</svg>
 	
-			<div class="property-block">
-			<h4>Special Abilities</h4>
-			<p>N/A
+				
+							<span class="property-block">
+					
+								<h4>Special Abilities</h4>
+					
+								<ul>
+								
+									
+									<li>
+			
+										N/A
 |
 N/A
 |
@@ -167,135 +244,621 @@ N/A
 N/A
 |
 Innately cast charm person as a 4th level spell slot without using components or verbal commands twice per day. The effects of the charm spell last 3 times as long as normal
-</p>
-		</div> <!-- property block -->
-		
-	
-			
-		
 
-			
-		<div class="property-block">
-			<h4>Special Equipment</h4>
-			
-     <ul>
-          <li>
-            <span > Varun&#39;s great club, &quot;Widowmaker&quot;, is never far from his grasp. It was imbued with a strong magic that makes it easier and faster to wield by the Lich whom he secretly serves. Mechanically, it is a +3 magic weapon. Varun has had this club since he was a teenager, living on the streets of Underboot [or any slum in the major city who&#39;s criminal underworld he now runs]. He could barely wield it then. </span>
-          </li>
-      
-      </ul>
-      
+								
+									</li>
+									
+								
+								</ul>
+							</span>
 
-		 
-		
-          <!-- property block -->
-          <!-- property block -->
-     
-			</div>
-       <div class="actions">
-			<h3>Combat Tactics</h3>
-			<p></p>
-		</div> 
-		
-		<div class="actions">
-			<h3>Actions</h3>
+				
+							
+								<span class="property-block">
+					
+								<h4>Special Equipment</h4>
+					
+								<ul>
+ 				      
+          				
+									<li>
+            				
+										Varun&#39;s great club, &quot;Widowmaker&quot;, is never far from his grasp. It was imbued with a strong magic that makes it easier and faster to wield by the Lich whom he secretly serves. Mechanically, it is a +3 magic weapon. Varun has had this club since he was a teenager, living on the streets of Underboot [or any slum in the major city who&#39;s criminal underworld he now runs]. He could barely wield it then. 
+         				
+									</li>
+       					
+      
+					
+								</ul>
+				
+							
+								</span>	
+				
+							<span class="actions">
+					
+								<h3>Combat Tactics</h3>
+					
+								<p></p>
+				
+							</span> 
 			
-			
-			<p>#ERROR!
+				
+							<span class="actions">
+					
+								<h3>Actions</h3>
+					
+								<p>#ERROR!
 |
 N/A
 </p>
-		</div>
+				
+							</span>
 			
-			<div class="actions">
-			<h3>Factions</h3>
-			<div class="property-block">
+				
+							<span class="actions">
+					
+								<h3>Factions</h3>
+					
+								<span class="property-block">
+					
+									<p><b>				
+								
+								</span>
+
+								</span>
+							</span>
+						</span>
+						<span>
+						</span>
+				</span>
+				</span>
+				
+			<span class="data">
+				<hr class="steel-border" />			
+
+					
+						
+									<img id="pic" alt="" src="npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+							
+						
+								
+
+						<span class="stat-block wide">
+						
+							<span class="npc-heading">
+							
+						<h1>Roleplaying</h1></span>
+							
+							
+										<svg height="5" width="100%" class="tapered-rule">
+							
+											<polyline points="0,0 400,2.5 0,5"></polyline>
+							
+										</svg>
+							
+										<span class="actions">	
+								
+											<h3>Introduction</h3>
+							
+										</span>
+							
+										Either through introduction from one of his lieutenants, by infiltrating his manor, or by committing a big enough crime<br />
+		
+		
+		
+										<span class="actions">
 			
-			<p><b>		</div>
+											<h3>Appearance</h3>
+										</span>
+		
+										<span class="property-line">	Broad shoulders, no neck. Big, powerful. Huge hands. Acne scars, dark, thinning hair, olive skin
+		
+										</span>
+		
+		
+										<span class="actions">
+			
+											<h3>Expressions</h3>
+										</span>
+		
+										<span class="property-line">	
+											 &quot;You may bow to the queen, but I run these streets&quot;; &quot;I know what it&#39;s like to be poor and hungry. Rich is better.&quot;
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Mannerisms</h3>
+										</span>
+		
+										<span class="property-line">	
+											Constantly looking to physically dominate those in his presence. iron like handshakes, hard slaps on the back, etc
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Motivations</h3>
+										</span>
+			
+										<span class="property-line">
+											Amassing wealth to validate his intellect to the city&#39;s elite  and getting out of his deal with the Lich Ryxiltan
+
+										</span>
+		
+		
+			
+			
+										<span class="actions">
+			
+											<h3>Passions</h3>
+										</span>
+		
+										<span class="property-line">	
+											Varun collects rare art, books and other symbols of culture and locks them away simply so aristocrats can&#39;t use them
+
+		
+										</span> 
+		
+	
+		
+										<span class="actions">
+			
+											<h3>Secrets</h3>
+										</span>
+	
+										<span class="property-line">
+											Varun is one of very few who know that the Bakerfield family is now run by a Lich who lives across the continent using the family&#39;s resources to further his quest to become a god. Varun also knows where all of the bodies are buried (metaphorically because he has his finger on the pulse of the city, and literally because he put a lot of the bodies there.)
+		
+		
+										</span> 
+	
+					</span> 
+
+				</span>
+			  </span>
+							
+				
+			
+				
+		
+		
+		  </div>
+		
+			<div class="cell" id="cell2">
+			CELL 2
+				<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block wide">
+		
+					
+						<span class="section-left">
+	
+				
+							<span class="npc-heading">
+		  			
+								<h1>Varun Bakerfield</h1>
+						
+								<h2>older adult human <br>
+						
+									chaotic neutral<br>
+						
+									Level 8 rogue </h2>
+		
+						
+							
+						
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	    			
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	  			
+							</svg>
+				
+				
+				
+							
+	 				
+								<span class="property-line">
+						
+									<h4>Pronouns:</h4><p>he/him</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">		
+						
+									<h4>Occupations: </h4><p>Thieve&#39;s Guild Boss</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">
+						
+									<h4>Armor Class</h4><p>10</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">
+						
+									<h4>Hit Points</h4>	<p>46 (TODO Hitdice)</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line last">
+						
+									<h4>Speed</h4><p>30.</p>
+			
+								</span> 
+					
+					<!-- property line -->
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	 				
+								</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>18 </p>
+						
+									</span> <!-- ability strength -->
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>10 </p>
+						
+									</span> <!-- ability dexterity -->
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>15 </p>
+						
+									</span> <!-- ability constitution -->
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>16 </p>
+						
+									</span> <!-- ability intelligence -->
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>16 </p>
+						
+									</span> <!-- ability wisdom -->
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>15 </p>
+						
+									</span> <!-- ability charisma -->
+					
+								</span> 
+					
+					<!-- abilities -->
+					
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	  				
+								</svg>
+					
+				
+								<span class="property-line first">
+						
+									<h4>Saving Throws</h4>
+						
+									<p>TODO Saving Throws</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line last">
+					
+									<h4>Skills</h4>
+						
+									<p></p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line last">
+						
+									<h4>Proficiencies</h4>
+						
+									<p>&nbsp;TODO </p>
+					
+								</span> <!-- property line -->
+			
+			
+					
+								<span class="property-line first">
+						
+									<h4>Damage Immunities</h4>
+					
+									<p>TODO Damage Immunities</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Condition Immunities</h4>
+						
+									<p>TODO Condition Immunities</p>
+					
+								</span> <!-- property line -->
+			
+					
+					
+								<span class="property-line">
+					
+									<h4>Senses</h4>
+					
+									<p>TODO Senses</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Languages</h4>
+						
+									<p>Common under-common 	,</p>	
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Adjectives</h4>
+						
+									<p>Relentless 	,</p>	
+					
+								</span> <!-- property line -->
+			
+					
+							
+				
+				<!-- top stats -->
+				
+				
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	   				
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	 			
+							</svg>
+	
+				
+							<span class="property-block">
+					
+								<h4>Special Abilities</h4>
+					
+								<ul>
+								
+									
+									<li>
+			
+										N/A
+|
+N/A
+|
+N/A
+|
+N/A
+|
+Innately cast charm person as a 4th level spell slot without using components or verbal commands twice per day. The effects of the charm spell last 3 times as long as normal
+
+								
+									</li>
+									
+								
+								</ul>
+							</span> <!-- property block -->
+				
+				
+							<span class="property-block">
+					
+								<h4>Special Equipment</h4>
+					
+								<ul>
+ 				      
+          				
+									<li>
+            				
+										Varun&#39;s great club, &quot;Widowmaker&quot;, is never far from his grasp. It was imbued with a strong magic that makes it easier and faster to wield by the Lich whom he secretly serves. Mechanically, it is a +3 magic weapon. Varun has had this club since he was a teenager, living on the streets of Underboot [or any slum in the major city who&#39;s criminal underworld he now runs]. He could barely wield it then. 
+         				
+									</li>
+       					
+      
+					
+								</ul>
+				
+							</span>
+       				
+				
+							<span class="actions">
+					
+								<h3>Combat Tactics</h3>
+					
+								<p></p>
+				
+							</span> 
+			
+				
+							<span class="actions">
+					
+								<h3>Actions</h3>
+					
+								<p>#ERROR!
+|
+N/A
+</p>
+				
+							</span>
+			
+				
+							<span class="actions">
+					
+								<h3>Factions</h3>
+					
+								<span class="property-block">
+					
+									<p><b>				
+								</span>
 			
 			<!-- property block -->
 		
 			
-		</div> <!-- actions -->
-		
-    </div> <!-- section left -->
-	<div class="section-right">
-	
-		
-
-	 
-	<div class="creature-heading">
-		<h1>Roleplaying</h1></div>
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-			 </svg>
-		<div class="actions">	<h3>Introduction</h3></div>
+						</span>
+							</span>
+						</span>
+					</span>
+				  </span>
+					
+					<span class="pic">
 			
-			Either through introduction from one of his lieutenants, by infiltrating his manor, or by committing a big enough crime<br />
-		
-		
-		<div class="actions">
-			<h3>Appearance</h3></div>
-		<div class="property-line">	Broad shoulders, no neck. Big, powerful. Huge hands. Acne scars, dark, thinning hair, olive skin
-		</div>
-		
-		<div class="actions">
-			<h3>Expressions</h3></div>
-		<div class="property-line">	 &quot;You may bow to the queen, but I run these streets&quot;; &quot;I know what it&#39;s like to be poor and hungry. Rich is better.&quot;
-		</div> 
-		
-		<div class="actions">
-			<h3>Mannerisms</h3></div>
-		<div class="property-line">	Constantly looking to physically dominate those in his presence. iron like handshakes, hard slaps on the back, etc
-		</div> 
-		
-		<div class="actions">
-			<h3>Motivations</h3></div>
-			<div class="property-line">Amassing wealth to validate his intellect to the city&#39;s elite  and getting out of his deal with the Lich Ryxiltan
-</div>
-		
-		
-			
-			<div class="actions">
-			<h3>Passions</h3></div>
-		<div class="property-line">	Varun collects rare art, books and other symbols of culture and locks them away simply so aristocrats can&#39;t use them
+						<img id="portrait2" alt="" src="npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+					</span>
+					
+					
 
-		</div> 
-		
-	
-		<div class="actions">
-			<h3>Secrets</h3></div>
-	<div class="property-line">Varun is one of very few who know that the Bakerfield family is now run by a Lich who lives across the continent using the family&#39;s resources to further his quest to become a god. Varun also knows where all of the bodies are buried (metaphorically because he has his finger on the pulse of the city, and literally because he put a lot of the bodies there.)
-		
-		</div> 
-	</div> <!-- section right -->
-
-			
-	<div class="creature-heading" align="left">
-    <div class="actions">
-		<h3>Background</h3></div>
-		<span>	<p><p>Varun Bakerfield developed his dog-eat-dog attitude growing up on the streets of Underboot [or another slum in a major city] in the shadows of the cosmopolitan city of Invasaad [or another major, advanced city.] To this day, he despises those born with a silver spoon in their mouths and the culture that they enjoy. </p><p>Supremely confident, he believes that what he lacks in book learning, he more than makes up for in raw intellect and street-smarts. Furthermore, he knows that if he can’t win an argument with words, he can settle one with his fists, or his club “Widowmaker” just as easily.</p>
-|
-As a natural leader, people have always naturally been drawn to him. It is this natural charisma combined with utter ruthlessness that allowed Varun to rise through the ranks of the criminal underworld until he was ready to start his own thieves guild, the Bakerfield Family. From there, he waged a war on the other guilds, winning turf wars with violence and cunning until he and his guild were the only street level gang standing.
-|
-During his rise, to help assure victory, Varun made a deal with a Lich named Ryxiltan. In exchange for a large portion of his guild’s earnings, Ryxiltan used his magic to permanently increase Varun’s strength and leadership presence going as far as giving him the ability to bend weak-minded criminals to his will whenever he pleased.
-|
-Being the servant of a powerful Lich is no easy task. Despite his success, Varun regrets the deal he made and is looking for ways to get himself out of it.
-</p></span>
-		<span>	<p></p></span>	
-		</div> 
-</div>
 
 				
-			
-			
 		
-	 <!-- section left -->
+			</div>
+  
+			<div class="cell" id="cell3">
+    
+				<span class="data">
+					<span class="section-right">
 	
-	<hr class="orange-border bottom" />
 
+						<span class="stat-block wide">
+						
+							<span class="npc-heading">
+							
+						<h1>Roleplaying</h1></span>
+							
+							
+										<svg height="5" width="100%" class="tapered-rule">
+							
+											<polyline points="0,0 400,2.5 0,5"></polyline>
+							
+										</svg>
+							
+										<span class="actions">	
+								
+											<h3>Introduction</h3>
+							
+										</span>
+							
+										Either through introduction from one of his lieutenants, by infiltrating his manor, or by committing a big enough crime<br />
+		
+		
+		
+										<span class="actions">
+			
+											<h3>Appearance</h3>
+										</span>
+		
+										<span class="property-line">	Broad shoulders, no neck. Big, powerful. Huge hands. Acne scars, dark, thinning hair, olive skin
+		
+										</span>
+		
+		
+										<span class="actions">
+			
+											<h3>Expressions</h3>
+										</span>
+		
+										<span class="property-line">	
+											 &quot;You may bow to the queen, but I run these streets&quot;; &quot;I know what it&#39;s like to be poor and hungry. Rich is better.&quot;
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Mannerisms</h3>
+										</span>
+		
+										<span class="property-line">	
+											Constantly looking to physically dominate those in his presence. iron like handshakes, hard slaps on the back, etc
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Motivations</h3>
+										</span>
+			
+										<span class="property-line">
+											Amassing wealth to validate his intellect to the city&#39;s elite  and getting out of his deal with the Lich Ryxiltan
 
+										</span>
+		
+		
+			
+			
+										<span class="actions">
+			
+											<h3>Passions</h3>
+										</span>
+		
+										<span class="property-line">	
+											Varun collects rare art, books and other symbols of culture and locks them away simply so aristocrats can&#39;t use them
 
+		
+										</span> 
+		
+	
+		
+										<span class="actions">
+			
+											<h3>Secrets</h3>
+										</span>
+	
+										<span class="property-line">
+											Varun is one of very few who know that the Bakerfield family is now run by a Lich who lives across the continent using the family&#39;s resources to further his quest to become a god. Varun also knows where all of the bodies are buried (metaphorically because he has his finger on the pulse of the city, and literally because he put a lot of the bodies there.)
+		
+		
+										</span> 
+	
+					</span> 
 
+				</span>
+			  </span>
+							
+				<span class="data">bottom stats 2</span>
+  
+		
+			</div>
+ 
+	
+		</div>
+	</body>
 
 </html>

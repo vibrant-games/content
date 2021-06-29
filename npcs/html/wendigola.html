@@ -1,294 +1,828 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="utf-8"/>
-	<title>Wendigola</title>
-	<meta name="Description" content="The Vibrant Non-Player Character Compendium">
-	<meta name="author" content="Vibrant Games">
-	
-	<link rel="shortcut icon" href="favicon.png">
-	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>Untitled Document</title>
 
-
-	
-	<script>
-		function createCustomElement(name, contentNode, elementClass = null) {
-  if(elementClass === null) {
-    customElements.define(name,
-      class extends HTMLElement {
-        constructor() {
-          super();
-          this.attachShadow({mode: 'open'})
-            .appendChild(contentNode.cloneNode(true));
-        }
-      }
-    )
-  } else {
-    customElements.define(name, elementClass(contentNode));
-  }
-}
-</script>
+<link rel="stylesheet" href="stylesheet.css"/>
 	
 	</head>
-	
+
+
+	<body>
+
+
+		<div class="container">
+  		
+			<div class="cell" id="cell1">
+			CELL 1	
+			<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block wide">
 		
-<img id="portrait" alt="" src="./npc_imgs/Wendigola.png" width="300" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
-<div class="stat-block wide">
-	<hr class="orange-border" />
-	<div class="section-left">
-	
-		<div class="creature-heading">
-		  <h1>Wendigola</h1>
-			<h2>elderly human <br>
-neutral<br>
-Level 0 civilian </h2>
-		
-		</div> <!-- creature heading -->
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-		<div class="top-stats">
-	 		<div class="property-line first">
-			
-				
 					
-	 <h4>Pronouns: </h4><p>she/her</p>
-				</div> <!-- property line -->
-				<div class="property-line last">
+						<span class="section-left">
+	
 				
-<h4>Occupations: </h4><p>Widow, hermitess, suspected witch</p>
-			</div> <!-- property line -->
-			<div class="property-line last">
-				<h4>Armor Class</h4>
-				<p>10</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Hit Points</h4>
-				<p>10 (TODO Hitdice)</p>
-			</div> <!-- property line -->
-			<div class="property-line last">
-				<h4>Speed</h4>
-				<p>30.</p>
-			</div> <!-- property line -->
-			<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-			
-			
-			<div class="abilities">
-				<div class="ability-strength">
-					<h4>STR</h4>
-					<p>7 </p>
-				</div> <!-- ability strength -->
-				<div class="ability-dexterity">
-					<h4>DEX</h4>
-					<p>12 </p>
-				</div> <!-- ability dexterity -->
-				<div class="ability-constitution">
-					<h4>CON</h4>
-					<p>14 </p>
-				</div> <!-- ability constitution -->
-				<div class="ability-intelligence">
-					<h4>INT</h4>
-					<p>9 </p>
-				</div> <!-- ability intelligence -->
-				<div class="ability-wisdom">
-					<h4>WIS</h4>
-					<p>9 </p>
-				</div> <!-- ability wisdom -->
-				<div class="ability-charisma">
-					<h4>CHA</h4>
-					<p>4 </p>
-				</div> <!-- ability charisma -->
-			</div> <!-- abilities -->
-			<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-			<div class="property-line first">
-				<h4>Saving Throws</h4>
-				<p>TODO Saving Throws</p>
-			</div> <!-- property line -->
-			
-			<div class="property-line last">
-				<h4>Skills</h4>
-			
-	
-
-<p>Alchemy</p>
-			</div> <!-- property line -->
-			
-			<div class="property-line last">
-				<h4>Proficiencies</h4>
-			
-	
-
-<p>&nbsp;TODO </p>
-			</div> <!-- property line -->
-			
-			
-			<div class="property-line first">
-				<h4>Damage Immunities</h4>
-				<p>TODO Damage Immunities</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Condition Immunities</h4>
-				<p>TODO Condition Immunities</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Senses</h4>
-				<p>TODO Senses</p>
-			</div> <!-- property line -->
-			<div class="property-line">
-				<h4>Languages</h4>
+							<span class="npc-heading">
+		  			
+								<h1>Wendigola</h1>
+						
+								<h2>elderly human <br>
+						
+									neutral<br>
+						
+									Level 0 civilian </h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	    			
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	  			
+							</svg>
 				
-				<p>Human 	,</p>	
-			</div> <!-- property line -->
-			
-			<div class="property-line">
-				<h4>Adjectives</h4>
 				
-		
-				<p>Creepy 	,</p>	
-			</div> <!-- property line -->
+				
+							
+	 				
+								<span class="property-line">
+						
+									<h4>Pronouns:</h4><p>she/her</p><br>
+					
+								</span> 
+					
+								<span class="property-line">		
+						
+									<h4>Occupations: </h4><p>Widow, hermitess, suspected witch</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Armor Class</h4><p>10</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Hit Points</h4>	<p>10 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Speed</h4><p>30.</p>
 			
-		</div> <!-- top stats -->
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
-	
-			<div class="property-block">
-			<h4>Special Abilities</h4>
-			<p></p>
-		</div> <!-- property block -->
-		
-	
+								</span> 
+					
+					
+					
 			
-		
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	 				
+								</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>7 </p>
+						
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>12 </p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>14 </p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>9 </p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>9 </p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>4 </p>
+						
+									</span> 
+					
+								</span> 
+					
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	  				
+								</svg>
+					
+				
+								<span class="property-line first">
+						
+									<h4>Saving Throws</h4>
+						
+									<p>TODO Saving Throws</p>
+					
+								</span> 
+					
+								<span class="property-line last">
+					
+									<h4>Skills</h4>
+						
+									<p>Alchemy</p>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Proficiencies</h4>
+						
+									<p>&nbsp;TODO </p>
+					
+								</span> 
+					
+								<span class="property-line first">
+						
+									<h4>Damage Immunities</h4>
+					
+									<p>TODO Damage Immunities</p>
+					
+								</span> 
 
-			
-		<div class="property-block">
-			<h4>Special Equipment</h4>
-			
-     <ul>
-          <li>
-            <span > The egg is not cursed...  Or is it? </span>
-          </li>
+								<span class="property-line">
+						
+									<h4>Condition Immunities</h4>
+						
+									<p>TODO Condition Immunities</p>
+					
+								</span> 
+					
+								<span class="property-line">
+					
+									<h4>Senses</h4>
+					
+									<p>TODO Senses</p>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Languages</h4>
+						
+									<p>Human 	,</p>	
+					
+								</span> 
+
+					
+								<span class="property-line">
+						
+									<h4>Adjectives</h4>
+						
+									<p>Creepy 	,</p>	
+					
+								</span> 
+
+					
+							
+				
+
+
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	   				
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	 			
+							</svg>
+	
+				
+							<span class="property-block">
+					
+								<h4>Special Abilities</h4>
+					
+								<ul>
+								
+								
+								</ul>
+							</span>
+
+				
+							
+								<span class="property-block">
+					
+								<h4>Special Equipment</h4>
+					
+								<ul>
+ 				      
+          				
+									<li>
+            				
+										The egg is not cursed...  Or is it? 
+         				
+									</li>
+       					
       
-      </ul>
-      
-
-		 
-		
-          <!-- property block -->
-          <!-- property block -->
-     
-			</div>
-       <div class="actions">
-			<h3>Combat Tactics</h3>
-			<p>Wendigola will avoid combat at all costs due to her frail frame
+					
+								</ul>
+				
+							
+								</span>	
+				
+							<span class="actions">
+					
+								<h3>Combat Tactics</h3>
+					
+								<p>Wendigola will avoid combat at all costs due to her frail frame
 </p>
-		</div> 
+				
+							</span> 
+			
+				
+							<span class="actions">
+					
+								<h3>Actions</h3>
+					
+								<p></p>
+				
+							</span>
+			
+				
+							<span class="actions">
+					
+								<h3>Factions</h3>
+					
+								<span class="property-block">
+					
+									<p><b>				
+								
+								</span>
+
+								</span>
+							</span>
+						</span>
+						<span>
+						</span>
+				</span>
+				</span>
+				
+			<span class="data">
+				<hr class="steel-border" />			
+
+					
+						
+									<img id="pic" alt="" src="npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+							
+						
+								
+
+						<span class="stat-block wide">
+						
+							<span class="npc-heading">
+							
+						<h1>Roleplaying</h1></span>
+							
+							
+										<svg height="5" width="100%" class="tapered-rule">
+							
+											<polyline points="0,0 400,2.5 0,5"></polyline>
+							
+										</svg>
+							
+										<span class="actions">	
+								
+											<h3>Introduction</h3>
+							
+										</span>
+							
+										An objectively ugly old woman leaps before you. &quot;Curse of the Fowl Unbegotten be upon thee!&quot; She hurls an egg at you.<br />
 		
-		<div class="actions">
-			<h3>Actions</h3>
+		
+		
+										<span class="actions">
+			
+											<h3>Appearance</h3>
+										</span>
+		
+										<span class="property-line">	Cowled; jangling bracelets; rings. Bee sting welts. Her teeth have been systematically filed into sharp fangs.
+		
+										</span>
+		
+		
+										<span class="actions">
+			
+											<h3>Expressions</h3>
+										</span>
+		
+										<span class="property-line">	
+											 &quot;Bzzz bzzz&quot;; &quot;Nobody lishens&quot;; &quot;Sho thatsh how it ish&quot;; &quot;I shaysh to them - century foot and trout. Shee if they caresh.&quot;
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Mannerisms</h3>
+										</span>
+		
+										<span class="property-line">	
+											One eyelid opens only halfway. Mumbles to herself. Kisses to call her half-feral, inbred cats. Clicks and smacks tongue.
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Motivations</h3>
+										</span>
+			
+										<span class="property-line">
+											Wendigola seeks to become a real witch but subconsciously knows she doesn&#39;t yet have what it takes.
+
+										</span>
+		
+		
 			
 			
-			<p></p>
-		</div>
+										<span class="actions">
 			
-			<div class="actions">
-			<h3>Factions</h3>
-			<div class="property-block">
+											<h3>Passions</h3>
+										</span>
+		
+										<span class="property-line">	
+											Spends her days studying Arcane Lore, potion- and bread-making, beekeeping, and trying to keep her cats off Arcane Lore.
+
+		
+										</span> 
+		
+	
+		
+										<span class="actions">
 			
-			<p><b>		</div>
+											<h3>Secrets</h3>
+										</span>
+	
+										<span class="property-line">
+											In her younger years, Wendigola murdered and consumed her husband with a coven of witches under the false pretense it would enable her to become one of them. Instead, she almost immediately laid an egg and the coven all laughed, pronouncing this as her curse for such a foul deed. She secretly lays a few dozen eggs at random per year.
+		
+		
+										</span> 
+	
+					</span> 
+
+				</span>
+			  </span>
+							
+				
+			
+				
+		
+		
+		  </div>
+		
+			<div class="cell" id="cell2">
+			CELL 2
+				<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block wide">
+		
+					
+						<span class="section-left">
+	
+				
+							<span class="npc-heading">
+		  			
+								<h1>Wendigola</h1>
+						
+								<h2>elderly human <br>
+						
+									neutral<br>
+						
+									Level 0 civilian </h2>
+		
+						
+							
+						
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	    			
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	  			
+							</svg>
+				
+				
+				
+							
+	 				
+								<span class="property-line">
+						
+									<h4>Pronouns:</h4><p>she/her</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">		
+						
+									<h4>Occupations: </h4><p>Widow, hermitess, suspected witch</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">
+						
+									<h4>Armor Class</h4><p>10</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line">
+						
+									<h4>Hit Points</h4>	<p>10 (TODO Hitdice)</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="property-line last">
+						
+									<h4>Speed</h4><p>30.</p>
+			
+								</span> 
+					
+					<!-- property line -->
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	 				
+								</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>7 </p>
+						
+									</span> <!-- ability strength -->
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>12 </p>
+						
+									</span> <!-- ability dexterity -->
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>14 </p>
+						
+									</span> <!-- ability constitution -->
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>9 </p>
+						
+									</span> <!-- ability intelligence -->
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>9 </p>
+						
+									</span> <!-- ability wisdom -->
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>4 </p>
+						
+									</span> <!-- ability charisma -->
+					
+								</span> 
+					
+					<!-- abilities -->
+					
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	  				
+								</svg>
+					
+				
+								<span class="property-line first">
+						
+									<h4>Saving Throws</h4>
+						
+									<p>TODO Saving Throws</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line last">
+					
+									<h4>Skills</h4>
+						
+									<p>Alchemy</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line last">
+						
+									<h4>Proficiencies</h4>
+						
+									<p>&nbsp;TODO </p>
+					
+								</span> <!-- property line -->
+			
+			
+					
+								<span class="property-line first">
+						
+									<h4>Damage Immunities</h4>
+					
+									<p>TODO Damage Immunities</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Condition Immunities</h4>
+						
+									<p>TODO Condition Immunities</p>
+					
+								</span> <!-- property line -->
+			
+					
+					
+								<span class="property-line">
+					
+									<h4>Senses</h4>
+					
+									<p>TODO Senses</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Languages</h4>
+						
+									<p>Human 	,</p>	
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="property-line">
+						
+									<h4>Adjectives</h4>
+						
+									<p>Creepy 	,</p>	
+					
+								</span> <!-- property line -->
+			
+					
+							
+				
+				<!-- top stats -->
+				
+				
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	   				
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	 			
+							</svg>
+	
+				
+							<span class="property-block">
+					
+								<h4>Special Abilities</h4>
+					
+								<ul>
+								
+								
+								</ul>
+							</span> <!-- property block -->
+				
+				
+							<span class="property-block">
+					
+								<h4>Special Equipment</h4>
+					
+								<ul>
+ 				      
+          				
+									<li>
+            				
+										The egg is not cursed...  Or is it? 
+         				
+									</li>
+       					
+      
+					
+								</ul>
+				
+							</span>
+       				
+				
+							<span class="actions">
+					
+								<h3>Combat Tactics</h3>
+					
+								<p>Wendigola will avoid combat at all costs due to her frail frame
+</p>
+				
+							</span> 
+			
+				
+							<span class="actions">
+					
+								<h3>Actions</h3>
+					
+								<p></p>
+				
+							</span>
+			
+				
+							<span class="actions">
+					
+								<h3>Factions</h3>
+					
+								<span class="property-block">
+					
+									<p><b>				
+								</span>
 			
 			<!-- property block -->
 		
 			
-		</div> <!-- actions -->
-		
-    </div> <!-- section left -->
-	<div class="section-right">
-	
-		
-
-	 
-	<div class="creature-heading">
-		<h1>Roleplaying</h1></div>
-		<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-			 </svg>
-		<div class="actions">	<h3>Introduction</h3></div>
+						</span>
+							</span>
+						</span>
+					</span>
+				  </span>
+					
+					<span class="pic">
 			
-			An objectively ugly old woman leaps before you. &quot;Curse of the Fowl Unbegotten be upon thee!&quot; She hurls an egg at you.<br />
-		
-		
-		<div class="actions">
-			<h3>Appearance</h3></div>
-		<div class="property-line">	Cowled; jangling bracelets; rings. Bee sting welts. Her teeth have been systematically filed into sharp fangs.
-		</div>
-		
-		<div class="actions">
-			<h3>Expressions</h3></div>
-		<div class="property-line">	 &quot;Bzzz bzzz&quot;; &quot;Nobody lishens&quot;; &quot;Sho thatsh how it ish&quot;; &quot;I shaysh to them - century foot and trout. Shee if they caresh.&quot;
-		</div> 
-		
-		<div class="actions">
-			<h3>Mannerisms</h3></div>
-		<div class="property-line">	One eyelid opens only halfway. Mumbles to herself. Kisses to call her half-feral, inbred cats. Clicks and smacks tongue.
-		</div> 
-		
-		<div class="actions">
-			<h3>Motivations</h3></div>
-			<div class="property-line">Wendigola seeks to become a real witch but subconsciously knows she doesn&#39;t yet have what it takes.
-</div>
-		
-		
-			
-			<div class="actions">
-			<h3>Passions</h3></div>
-		<div class="property-line">	Spends her days studying Arcane Lore, potion- and bread-making, beekeeping, and trying to keep her cats off Arcane Lore.
+						<img id="portrait2" alt="" src="npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+					</span>
+					
+					
 
-		</div> 
-		
-	
-		<div class="actions">
-			<h3>Secrets</h3></div>
-	<div class="property-line">In her younger years, Wendigola murdered and consumed her husband with a coven of witches under the false pretense it would enable her to become one of them. Instead, she almost immediately laid an egg and the coven all laughed, pronouncing this as her curse for such a foul deed. She secretly lays a few dozen eggs at random per year.
-		
-		</div> 
-	</div> <!-- section right -->
-
-			
-	<div class="creature-heading" align="left">
-    <div class="actions">
-		<h3>Background</h3></div>
-		<span>	<p><p>Wendy Gol was born to farmers in the village of Eldwynn [A small Human settlement] in the plans of Overmarsh Gale [Any broad plain of rich, fertile soil]. Having a humble and challenging upbringing as the youngest of 3 brothers and 4 sisters, Wendy sought the recognition of both parents, even when she married a well-respected farmer's son from an adjacent farm. Her longing for love and attention was never fulfilled and, as might be expected, Wendy was treated much like an employee of the farm and as a child by her husband. This lack of recognition and attention was so profound that Wendy would often wander towards the sparse woods nearby which she heard from her siblings contained caves and steppes that were home to covens of witches who were known to wield great magicks. Her mundane life drove her to the excitement of trying to uncover where this coven was hiding.</p><p>Upon her 21st birthday, recieving no celebrations, Wendy made her usual trip to the woods nearby. Upon entering the shade of the canopies she heard a whisper in the back of her mind. <i>"We are here. We have been watching. You are welcome, sister."</i>Shocked and elated, Wendy drove deeper into the woods until she came upon a chipped and cracked carving out of the steppe wall surrounded by entageled roots and vines.</p><p>A beautiful elven face slowly advanced from the darkness of the cave and into the light. Smiling, the Elven woman said, <i>"Welcome, sister. We have been waiting"</i> and she gently beckoned Wendy to enter the cave.</p><p>Wendy cautiously entered the cave which was populated by 4 beautiful elven women dressed in wondrous garments standing around a fire. The four held hands to form a circle, yet leaving one spot open. <i>"Come girl"</i>, one said, <i>"find your true place in this world".</i> Wendy joined the circle and was suddenly filled with a surge of disgust, hatred, and bilious discontent. <i>"We pledge to thee, dear Wendy, that you will never be ignored again!"</i>At this moment, Wendy's husband, who had been following her into the woods for sometime to investigate what his wife was up to, burst into the cave. <i>"You vile creatures, leave her be!"</i>He shouted. Cackling, the coven charmed the young man and demanded that Wendy consume him with them if she were to truly become something more than a farmer's daughter. Having been charmed herself, Wendy followed their demands. Cackling as Wendy's once beautful appearance withered into that of an old, wicked had, the coven surged in a circle of blue and green electrical ethereal energy that concluded with a blast of light centered upon Wendy who promptly squatted and laid an egg. The coven cackled in concert yet again as the egg hatched and a chick stumbled forth with a head that was an exact replica of her husband. One member of the coven snatched the fleeing chick and forced it down Wendy's throat, crying in a crackled voice, <i>"henceforth you will be Wendigola, she who lost her beauty to her longing..."</i></p><p>Reluctantly reborn and recognizing she hadn't gained the power and comradery she had expected, Wendigola fled the cave as the coven's cackling slowly faded away among the interstices of the steppes and trees.</p>
-</p></span>
-		<span>	<p></p></span>	
-		</div> 
-</div>
 
 				
-			
-			
 		
-	 <!-- section left -->
+			</div>
+  
+			<div class="cell" id="cell3">
+    
+				<span class="data">
+					<span class="section-right">
 	
-	<hr class="orange-border bottom" />
 
+						<span class="stat-block wide">
+						
+							<span class="npc-heading">
+							
+						<h1>Roleplaying</h1></span>
+							
+							
+										<svg height="5" width="100%" class="tapered-rule">
+							
+											<polyline points="0,0 400,2.5 0,5"></polyline>
+							
+										</svg>
+							
+										<span class="actions">	
+								
+											<h3>Introduction</h3>
+							
+										</span>
+							
+										An objectively ugly old woman leaps before you. &quot;Curse of the Fowl Unbegotten be upon thee!&quot; She hurls an egg at you.<br />
+		
+		
+		
+										<span class="actions">
+			
+											<h3>Appearance</h3>
+										</span>
+		
+										<span class="property-line">	Cowled; jangling bracelets; rings. Bee sting welts. Her teeth have been systematically filed into sharp fangs.
+		
+										</span>
+		
+		
+										<span class="actions">
+			
+											<h3>Expressions</h3>
+										</span>
+		
+										<span class="property-line">	
+											 &quot;Bzzz bzzz&quot;; &quot;Nobody lishens&quot;; &quot;Sho thatsh how it ish&quot;; &quot;I shaysh to them - century foot and trout. Shee if they caresh.&quot;
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Mannerisms</h3>
+										</span>
+		
+										<span class="property-line">	
+											One eyelid opens only halfway. Mumbles to herself. Kisses to call her half-feral, inbred cats. Clicks and smacks tongue.
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Motivations</h3>
+										</span>
+			
+										<span class="property-line">
+											Wendigola seeks to become a real witch but subconsciously knows she doesn&#39;t yet have what it takes.
 
+										</span>
+		
+		
+			
+			
+										<span class="actions">
+			
+											<h3>Passions</h3>
+										</span>
+		
+										<span class="property-line">	
+											Spends her days studying Arcane Lore, potion- and bread-making, beekeeping, and trying to keep her cats off Arcane Lore.
 
+		
+										</span> 
+		
+	
+		
+										<span class="actions">
+			
+											<h3>Secrets</h3>
+										</span>
+	
+										<span class="property-line">
+											In her younger years, Wendigola murdered and consumed her husband with a coven of witches under the false pretense it would enable her to become one of them. Instead, she almost immediately laid an egg and the coven all laughed, pronouncing this as her curse for such a foul deed. She secretly lays a few dozen eggs at random per year.
+		
+		
+										</span> 
+	
+					</span> 
 
-  <div class="stat-block single">
-    <div class="actions">
-		<h3> Author notes for the artist: </h3>
-      <ul>
-        <li>
-          <span class="field_value"> Wendigo is an &quot;evil spirit&quot; or &quot;cannibal&quot; in various Algonquin mythologies. </span>
-        </li>
-      </ul>
-    </div>
-  </div> <!-- section-left -->
+				</span>
+			  </span>
+							
+				<span class="data">bottom stats 2</span>
+  
+		
+			</div>
+ 
+	
+		</div>
+	</body>
 
 </html>
