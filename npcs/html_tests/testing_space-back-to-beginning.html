@@ -14,10 +14,421 @@
 
 		<div class="container">
   		
+			<div class="cell" id="cell1">
+			CELL 1	
+			<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block wide">
+		
+					
+						<span class="section-left">
+	
+				
+							<span class="npc-heading">
+		  			
+								<h1>{{npc.name}}</h1>
+						
+								<h2>{{npc.traits.age}} {{npc.traits.race}} <br>
+						
+									{{npc.traits.alignment}}<br>
+						
+									Level {{npc.traits.level}} {{npc.traits.class}} {{npc.traits.subclass}}</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	    			
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	  			
+							</svg>
+				
+				
+				
+							
+	 				
+								<span class="property-line">
+						
+									<h4>Pronouns:</h4><p>{{npc.traits.pronouns}}</p><br>
+					
+								</span> 
+					
+								<span class="property-line">		
+						
+									<h4>Occupations: </h4><p>{{#npc.traits.occupation}}{{.}}{{/npc.traits.occupation}}</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Armor Class</h4><p>{{npc.stats.armour-class}}</p><br>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Hit Points</h4>	<p>{{npc.stats.hit-points}} (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Speed</h4><p>{{npc.stats.speed}}.</p>
 			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	 				
+								</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>{{npc.stats.str}} {{npc.stats.strmod}}</p>
+						
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>{{npc.stats.dex}} {{npc.stats.dexmod}}</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>{{npc.stats.con}} {{npc.stats.conmod}}</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>{{npc.stats.int}} {{npc.stats.intmod}}</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>{{npc.stats.wis}} {{npc.stats.wismod}}</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>{{npc.stats.cha}} {{npc.stats.chamod}}</p>
+						
+									</span> 
+					
+								</span> 
+					
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    				
+									<polyline points="0,0 400,2.5 0,5"></polyline>
+	  				
+								</svg>
+					
+				
+								<span class="property-line first">
+						
+									<h4>Saving Throws</h4>
+						
+									<p>TODO Saving Throws</p>
+					
+								</span> 
+					
+								<span class="property-line last">
+					
+									<h4>Skills</h4>
+						
+									<p>{{#npc.specialties.skills}}{{.}}{{/npc.specialties.skills}}</p>
+					
+								</span> 
+					
+								<span class="property-line last">
+						
+									<h4>Proficiencies</h4>
+						
+									<p>&nbsp;TODO {{#npc.specialties.special-abilities-proficiences}}{{.}}{{/npc.specialties.special-abilities-proficiences}}</p>
+					
+								</span> 
+					
+								<span class="property-line first">
+						
+									<h4>Damage Immunities</h4>
+					
+									<p>TODO Damage Immunities</p>
+					
+								</span> 
+
+								<span class="property-line">
+						
+									<h4>Condition Immunities</h4>
+						
+									<p>TODO Condition Immunities</p>
+					
+								</span> 
+					
+								<span class="property-line">
+					
+									<h4>Senses</h4>
+					
+									<p>TODO Senses</p>
+					
+								</span> 
+					
+								<span class="property-line">
+						
+									<h4>Languages</h4>
+						
+									<p>{{#npc.traits.languages}}{{.}} {{/npc.traits.languages}}	,</p>	
+					
+								</span> 
+
+					
+								<span class="property-line">
+						
+									<h4>Adjectives</h4>
+						
+									<p>{{#npc.traits.adjectives}}{{.}} {{/npc.traits.adjectives}}	,</p>	
+					
+								</span> 
+
+					
+							
+				
+
+
+				
+							<svg height="5" width="100%" class="tapered-rule">
+	   				
+								<polyline points="0,0 400,2.5 0,5"></polyline>
+	 			
+							</svg>
+	
+				
+							<span class="property-block">
+					
+								<h4>Special Abilities</h4>
+					
+								<ul>
+								
+									{{#npc.specialties.special-abilities}}
+									
+									<li>
+			
+										{{.}}
+								
+									</li>
+									
+									{{/npc.specialties.special-abilities}}
+								
+								</ul>
+							</span>
+
+				
+							
+								<span class="property-block">
+					
+								<h4>Special Equipment</h4>
+					
+								<ul>
+ 				      
+									{{#npc.specialties.special-equipment}}
+          				
+									<li>
+            				
+										{{.}} 
+         				
+									</li>
+       					
+									{{/npc.specialties.special-equipment}}
+      
+					
+								</ul>
+				
+							
+								</span>	
+				
+							<span class="actions">
+					
+								<h3>Combat Tactics</h3>
+					
+								<p>{{npc.specialties.combat-tactics}}</p>
+				
+							</span> 
+			
+				
+							<span class="actions">
+					
+								<h3>Actions</h3>
+					
+								<p>{{#npc.specialties.attacks}}{{.}}{{/npc.specialties.attacks}}</p>
+				
+							</span>
+			
+				
+							<span class="actions">
+					
+								<h3>Factions</h3>
+					
+								<span class="property-block">
+					
+									<p><b>{{#npc.traits.factions.id}}</b></p>
+					
+									<p><i>{{npcs.traits.factions.role}}</i></p>
+					
+									{{/npc.traits.factions.id}}
+				
+								
+								</span>
+
+								</span>
+							</span>
+						</span>
+						<span>
+						</span>
+				</span>
+				</span>
+				</span>
+				
+			<span class="data">
+							<hr class="steel-border" />
+
+					
+						
+									<img id="pic" alt="" src="../html/npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+							
+						
+								
+					<span class="section-right">
+	
+
+						<span class="stat-block wide">
+						
+							<span class="npc-heading">
+							
+						<h1>Roleplaying</h1></span>
+							
+							
+										<svg height="5" width="100%" class="tapered-rule">
+							
+											<polyline points="0,0 400,2.5 0,5"></polyline>
+							
+										</svg>
+							
+										<span class="actions">	
+								
+											<h3>Introduction</h3>
+							
+										</span>
+							
+										{{npc.improv.introduction}}<br />
+		
+		
+		
+										<span class="actions">
+			
+											<h3>Appearance</h3>
+										</span>
+		
+										<span class="property-line">	{{npc.improv.appearance}}
+		
+										</span>
+		
+		
+										<span class="actions">
+			
+											<h3>Expressions</h3>
+										</span>
+		
+										<span class="property-line">	
+											{{npc.improv.expressions}}
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Mannerisms</h3>
+										</span>
+		
+										<span class="property-line">	
+											{{npc.improv.mannerisms}}
+		
+										</span> 
+		
+		
+										<span class="actions">
+			
+											<h3>Motivations</h3>
+										</span>
+			
+										<span class="property-line">
+											{{npc.acting.motivations}}
+										</span>
+		
+		
+			
+			
+										<span class="actions">
+			
+											<h3>Passions</h3>
+										</span>
+		
+										<span class="property-line">	
+											{{npc.acting.passions}}
+		
+										</span> 
+		
+	
+		
+										<span class="actions">
+			
+											<h3>Secrets</h3>
+										</span>
+	
+										<span class="property-line">
+											{{npc.acting.secrets}}		
+		
+										</span> 
+	
+					</span> 
+
+				</span>
+			  </span>
+							</span>
+						</span>
+				</span>
+				
+				</span>
+			
+				
+		
+		
+		  </div>
 		
 			<div class="cell" id="cell2">
-			
+			CELL 2
 				<span class="data">
 				<hr class="steel-border" />
 					<span class="stat-block wide">
@@ -38,7 +449,7 @@
 		
 						
 							
-						<!-- creature heading -->
+						
 				
 							<svg height="5" width="100%" class="tapered-rule">
 	    			
@@ -317,32 +728,21 @@
 			<!-- property block -->
 		
 			
-							</span> <!-- actions -->
-		
-						</span> 
-	 
+						</span>
+							</span>
+						</span>
 					</span>
-			
-				</span>
-				</span>
-
-	
-				<div class="rightside" id="rightside">
-		
+				  </span>
+					
 					<span class="pic">
 			
-						<img id="portrait" alt="" src="../html/npc_imgs/DUMMY.png" width="200" height="200" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
+						<img id="portrait2" alt="" src="../html/npc_imgs/DUMMY.png" width="300" height="auto" onerror="this.onerror=null;this.src='../html/npc_imgs/DUMMY.png';" />
 					</span>
 					
-					<span class="bottom-right">
-					TEST
-					</span>
+					
 
-				</div>
 
 				
-				
-		
 		
 			</div>
   
@@ -357,7 +757,6 @@
  
 	
 		</div>
-	
 	</body>
 
 </html>

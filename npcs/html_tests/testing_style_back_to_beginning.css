@@ -1,4 +1,3 @@
-
 @charset "utf-8";
 /* CSS Document */
 
@@ -20,7 +19,6 @@ div {
 	margin: auto;
   	box-sizing: border-box;
  	width:100%;
-	min-width: 640px;
 	display: flex;
 	justify-content: center;
 	
@@ -44,22 +42,11 @@ div p {
   border: 1px solid red;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 10px;	
-
-}
-
-
-
-.container2 {
-  display: flex;
-  border: 1px solid red;
-  flex-wrap: wrap;
-  flex-direction: column;
   padding: 10px;
-	max-width: 618px;
 	
-	
+
 }
+
 
 
 
@@ -67,32 +54,18 @@ div p {
 .cell {
   display: flex;
 
-	justify-content: center;
-  
+	align-content:center;
+	align-items:center;
   
   border: 1px solid blue;
   
-	vertical-align: top;
+	
 	
 	flex-direction: row;
 
 }
 
 
-
-.cell2 {
-  display: flex;
-
-	justify-content: center;
-  
-  
-  border: 1px solid blue;
-  
-	vertical-align: top;
-	
-	flex-direction: row-reverse;
-
-}
 
 .data1 {
   width: 100%;
@@ -101,25 +74,21 @@ div p {
   border: 1px solid green;
 }
 
+
+
+
 .data {
-		max-width: 620px;
+  max-width: 620px;
   min-width: 500px;
-  text-align: left;
-  
-	
   border: 1px solid green;
   
-	flex-wrap: wrap;	
 	
-  flex: 1;
-	flex-grow: 1;
-  vertical-align: top;
   
-  
-	
-  padding: 0px 0px 20px 0px;
+  vertical-align: top;	
+  padding: 0px 0px 10px 0px;
   box-shadow: 0 1.5px 1.5em #867453;
-	background-image: url("../../images/bg-testt.png");
+  background-image: url("../../images/bg-testt.png");
+	
 }
 
 
@@ -153,14 +122,12 @@ div p {
 
 .pic {
   
-  justify-content: middle;
-  flex-grow:2 ;
-  border: 1px solid green;
-  text-align: left;
-	margin: 10px;
+  
 	min-width: 200px;
-	max-width: 300;
-	flex: none;
+	max-width: 618;
+	display: flex;
+	
+	
 }
 
 
@@ -219,8 +186,10 @@ div p {
 
 .property-line{
 	
-	display: inline-block;
+	display: block;
 	align-content: flex-start;
+	text-align: left;
+	
 }
 
 
@@ -228,7 +197,7 @@ div p {
 .property-line h4,
 .property-line p{
   display: inline-block;
-  margin: 0;
+  margin: 0 0 0 10px;
   color: #922610;
   font-size: 13.5px;
   line-height: 1.2em;
@@ -237,17 +206,16 @@ div p {
   color: #7A200D;
 }
 .property-line{
-  text-indent: -1em;
+  text-indent: -0.25em;
   padding: 0 0 0 15px;
   line-height: 1.4em;
 }
 .property-line.first{
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0;
 }
 .property-line.last{
   margin: 0 0 10px;
 }
-
 
 
 
@@ -296,6 +264,12 @@ div p {
   stroke: #922610;
 }
 
+.npc-heading {
+	
+	min-width: 500px;
+	max-width: 640px;
+	
+}
 
 .npc-heading h1{
   font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
@@ -379,11 +353,16 @@ div p {
 
 @media only screen and (max-width: 640px) {
   
+	#cell1{
+		display: none;
+	}	
+	
   #cell2 {
     flex-direction: column-reverse;
     position: relative;
     height: 100px;
 	min-width: 300;
+	  
   }
   
  
@@ -393,6 +372,13 @@ div p {
     height: 100px;
 	min-width: 300;
   }
+	
+	.#cell4 {
+		
+		display:none
+	}
+	
+	
   .container { 
     flex-direction: column;
     flex-wrap: wrap;
@@ -411,16 +397,16 @@ div p {
     position: relative;
   }
   
-  #cell1 { 
-    flex: 0 0 66%; 
-  }
+  #cell1 {
+		display: none;
+	}	
   
   #cell2 {
     flex-direction: column-reverse;
     
     position: relative;
     
-    
+   
   }
   
 	
@@ -430,4 +416,43 @@ div p {
     
   }
 	
+	.#cell4 {
+		
+		display:none
+	}
 	
+	
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1920px) {
+  .container {
+	  flex-direction: column;
+    position: relative;
+  }
+  
+  #cell2 {
+		display: none;
+	}	
+  
+  #cell1 {
+    flex-direction: row;
+    
+    position: relative;
+     
+    align-content:space-around;
+	  align-items: flex-start;
+  }
+  
+	
+#cell3 {
+    display: none;
+    
+  }
+	
+	.#cell4 {
+		
+		display:none
+	}
+	
+}
