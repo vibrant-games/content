@@ -179,11 +179,14 @@ div p {
   color: #7A200D;
 }
 .abilities p{
-  margin: 0 0 10px;
+  margin: 0 0 10px 0;
   line-height: 1.2em;
 }
 
-
+.ability {
+	
+	display: block;
+}
 .property-line{
 	
 	display: block;
