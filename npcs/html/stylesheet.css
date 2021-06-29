@@ -335,7 +335,7 @@ div p {
 }
 
 .bottom-right{
-		max-width: 620px;
+max-width: 620px;
   min-width: 500px;
   text-align: left;
   
@@ -361,7 +361,7 @@ div p {
 	}	
 	
   #cell2 {
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: relative;
     
 	min-width: 620px;
@@ -405,7 +405,7 @@ div p {
 	}	
   
   #cell2 {
-    flex-direction: column;
+    flex-direction: column-reverse;
     
     position: relative;
     min-width: 620px;
