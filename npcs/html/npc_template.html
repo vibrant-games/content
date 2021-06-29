@@ -227,7 +227,7 @@
 				
 							<span class="property-line">
 					
-								<h4>Special Abilities</h4>
+								<h3>Special Abilities</h3>
 					
 								<ul>
 								
@@ -242,13 +242,14 @@
 									{{/npc.specialties.special-abilities}}
 								
 								</ul>
+								
 							</span>
 
 				
 							
 								<span class="property-line">
 					
-								<h4>Special Equipment</h4>
+								<h3>Special Equipment</h3>
 					
 								<ul>
  				      
@@ -272,7 +273,7 @@
 					
 								<h3>Combat Tactics</h3>
 					
-								<p>{{npc.specialties.combat-tactics}}</p>
+								{{npc.specialties.combat-tactics}}
 				
 							</span> 
 			
@@ -281,7 +282,7 @@
 					
 								<h3>Actions</h3>
 					
-								<p>{{#npc.specialties.attacks}}{{.}}{{/npc.specialties.attacks}}</p>
+								{{#npc.specialties.attacks}}{{.}}{{/npc.specialties.attacks}}
 				
 							</span>
 			
@@ -292,11 +293,11 @@
 					
 								
 					
-									<p><b>{{#npc.traits.factions.id}}</b></p><br>
+									<b>{{#npc.traits.factions.id}}</b><br>
 					
-									<p><i>{{npcs.traits.factions.role}}</i></p><br>
+									<i>{{npcs.traits.factions.role}}</i><br>
 					
-									<p>{{/npc.traits.factions.id}}</p>
+									{{/npc.traits.factions.id}}
 				
 								
 
