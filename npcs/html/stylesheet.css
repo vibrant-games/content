@@ -18,7 +18,7 @@ body {
 div {
 	margin: auto;
   	box-sizing: border-box;
- 	width:100%;
+ 	width:auto;
 	display: flex;
 	justify-content: center;
 	
@@ -84,7 +84,7 @@ div p {
   
 	
   
-  vertical-align: top;	
+  display: inline-block;	
   padding: 0px 0px 10px 0px;
   box-shadow: 0 1.5px 1.5em #867453;
   background-image: url("../../images/bg-testt.png");
