@@ -38,10 +38,9 @@ div p {
 
 
 .container {
-  display: flex;
+  margin: 0 auto;
   border: 1px solid red;
-  flex-wrap: wrap;
-  flex-direction: row;
+  
   padding: 10px;
 	
 
@@ -54,61 +53,81 @@ div p {
 .cell {
   display: flex;
 
-	align-content:center;
+	align-content:space-between;
+	align-items:center;
+  
+  border: 1px solid blue;
+  
+	
+	flex-wrap:wrap;
+	flex-direction: row;
+	
+
+}
+
+
+.cell1{
+	display: flex;
+	flex: 1;
+	align-content:flex-start;
 	align-items:center;
   
   border: 1px solid blue;
   
 	
 	flex-wrap: wrap;
-	flex-direction: row;
-
-}
-
-
-
-.data1 {
-  width: 100%;
-  justify-content: middle;
-  flex: 1;
-  border: 1px solid green;
+	flex-direction: column;
 }
 
 
 
 
 .data {
-  max-width: 620px;
-  min-width: 500px;
-  border: 1px solid green;
-  
-	
-  
-  display: inline-block;	
-  padding: 0px 0px 10px 0px;
-  box-shadow: 0 1.5px 1.5em #867453;
-  background-image: url("../../images/bg-testt.png");
-	
+	flex-grow: 1;
+    flex-basis: 0;
+	max-width: 620px;
+	min-width: 300px;
+	border: 1px solid green;
+	flex-wrap: wrap;
+	display: inline-flex;
+	flex-direction: column;
+	vertical-align: top;
+	padding: 0px 0px 10px 0px;
+	box-shadow: 0 1.5px 1.5em #867453;
+	background-image: url("../../images/bg-testt.png");
+	justify-content: center;
 }
 
 
 .data1 {
-		
-  border: 1px solid green;
-  
+	max-width: 620px;
+	min-width: 300px;
+	display:inline-flex;
+	align-content:space-around;
+	align-items: center;
+  	flex: 1;
+  	border: 1px solid green;
 	flex-wrap: wrap;	
-	
-  flex: 1;
-	flex-grow: 1;
-  vertical-align: top;
-  
-  
-	
-  padding: 0px 0px 20px 0px;
-  box-shadow: 0 1.5px 1.5em #867453;
+	vertical-align: top;
+	padding: 0px 0px 20px 0px;
+	box-shadow: 0 1.5px 1.5em #867453;
 	
 }
 
+.data2 {
+  
+  border: 1px solid green;
+  
+	align-content: space-around;
+	 
+  display: flex;	
+  flex-direction: column;
+	
+	padding: 0px 0px 10px 0px;
+  box-shadow: 0 1.5px 1.5em #867453;
+  background-image: url("../../images/bg-testt.png");
+	
+}
 
 
 
@@ -122,17 +141,25 @@ div p {
 
 .pic {
   
+	display: flex;  
+	min-width: 350px;
+	max-width: 618px;
+	justify-content: center;
+	
+	border: 1px solid green;
   
-	min-width: 200px;
-	max-width: 618;
-	display: flex;
 	
 	
 }
 
 
 
+.npc-heading{
+	
+	min-width: 400px;
+	display: flex;
 
+}
 
 
 
@@ -142,7 +169,7 @@ div p {
   color: #922610;
   font-size: 23px;
   line-height: 1.2em;
-  margin: 10px 0 0;
+  margin: 0 10px 0 0;
   letter-spacing: 1px;
   font-variant: small-caps;
   font-weight: bold;
@@ -155,7 +182,7 @@ div p {
   font-style: italic;
   font-size: 12px;
   line-height: 1.2em;
-  margin: 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
 
@@ -187,10 +214,10 @@ div p {
 	
 	display: block;
 }
+
 .property-line{
 	
 	display: block;
-	align-content: flex-start;
 	text-align: left;
 	
 }
@@ -227,15 +254,19 @@ div p {
 
 
 .stat-block.wide{
-  width: 46.5%;
-  min-width: 560px;
+  display: flex;
+	flex-direction: column;
+	
+	flex-wrap: wrap;
+	width: 46.5%;
+  
   text-align: left;
 	padding: 0 0 0 10px;
 	
 }
 
 .stat-block.single{
-	display: inline-flex;
+	display: flex;
   vertical-align: top;
 	width: 99%;
   text-align: left;
@@ -243,10 +274,11 @@ div p {
 }
 .stat-block.wide .section-left,
 .stat-block.wide .section-right{
-  display: inline-flex;
+  
   vertical-align: top;
   width: 48%;
   text-align: left;
+	
 }
 .stat-block.wide .section-left{
   margin-right: 1.5%;
@@ -269,8 +301,10 @@ div p {
 
 .npc-heading {
 	
-	min-width: 500px;
-	max-width: 640px;
+	display: inline-block;
+	
+	min-width: 250px;
+	margin: 10px 0 0 10px;
 	
 }
 
@@ -279,7 +313,7 @@ div p {
   color: #922610;
   font-size: 23px;
   line-height: 1.2em;
-  margin: 10px 0 0;
+  margin: 10px 0 0 10px;
   letter-spacing: 1px;
   font-variant: small-caps;
   font-weight: bold;
@@ -287,7 +321,7 @@ div p {
 
 
 .steel-border{
-  display: block;
+  display: flex;
   background-image: url("../../images/steel.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -311,7 +345,7 @@ div p {
 
 .cell1 {
 	
-	min-width: 300px;
+	
 }
 
 .rightside{
@@ -367,7 +401,7 @@ max-width: 620px;
   #cell2 {
     flex-direction: column-reverse;
     position: relative;
-    
+   
 	min-width: 620px;
 	  
   }
@@ -398,7 +432,7 @@ max-width: 620px;
 }
 
 
-@media only screen and (min-width: 720px) and (max-width: 1280px) {
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
   .container {
 	  flex-direction: column;
     position: relative;
@@ -432,7 +466,7 @@ max-width: 620px;
 }
 
 
-@media only screen and (min-width: 1280px) and (max-width: 2160px) {
+@media only screen and (min-width: 1080px) and (max-width: 2160px) {
   .container {
 	  flex-direction: column;
     position: relative;
@@ -444,10 +478,10 @@ max-width: 620px;
   
   #cell1 {
     flex-direction: row;
-    
+    flex: 1;
     position: relative;
      
-    align-content:space-around;
+    align-content:flex-start;
 	  align-items: flex-start;
   }
   
