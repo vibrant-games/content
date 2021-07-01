@@ -58,7 +58,7 @@ div p {
 	align-content:center;
 	align-items:center;
   
-	border: 1px solid blue;
+  border: 1px solid blue;
   
 	flex-basis: 500px;
 	flex-grow:1;
@@ -76,7 +76,7 @@ div p {
 	align-content:flex-start;
 	align-items:center;
   
-	border: 1px solid blue;
+  border: 1px solid blue;
   
 	
 	flex-wrap: wrap;
@@ -84,20 +84,19 @@ div p {
 }
 
 .cell2{
-	display: block;
+	display: flex;
 	flex-basis:auto;
 	flex-grow:1;
-	
-	align-content:center;
+	flex: 1;
+	align-content:flex-start;
 	align-items:center;
   
-	border: 1px solid blue;
+  border: 1px solid blue;
   
 	
 	flex-wrap: wrap;
-	flex-direction: column-reverse;
+	flex-direction: column;
 }
-
 .cell3{
 	display: flex;
 	flex-basis:auto;
@@ -106,7 +105,7 @@ div p {
 	align-content:flex-start;
 	align-items:center;
   
-	border: 1px solid blue;
+  border: 1px solid blue;
   
 	
 	flex-wrap: wrap;
@@ -315,12 +314,13 @@ div p {
   vertical-align: top;
   width: 48%;
   text-align: left;
+	display: inline-flex;
 	
 	
 }
 .stat-block.wide .section-left{
   margin-right: 1.5%;
-	
+	flex-grow: 1;
 }
 .stat-block.wide .section-right{
   margin-left: 1.5%;
@@ -383,7 +383,10 @@ div p {
   stroke: #922610;
 }
 
-
+.cell2 {
+	flex-grow:1;
+	
+}
 
 .rightside{
 	max-width: 620px;
@@ -450,6 +453,7 @@ max-width: 620px;
 		flex-direction: column;
     position: relative;
   
+	min-width:620px;
   }
 	
 	#cell4 {
@@ -480,7 +484,7 @@ max-width: 620px;
     flex-direction: column-reverse;
     
     position: relative;
-   
+    
    
   }
   
