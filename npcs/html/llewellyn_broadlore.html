@@ -405,7 +405,7 @@ Elf Weapon Training
 						
 						<span class="npc-heading">
 										
-						<h1>Roleplaying</h1>
+						<h1 class="glow">Roleplaying</h1>
 						
 														<hr class="divider">
 
@@ -500,7 +500,7 @@ Elf Weapon Training
 				
 							<span class="npc-heading">
 		  			
-								<h1>Llewellyn BroadLore</h1>
+								<h1 class="glow">Llewellyn BroadLore</h1>
 						
 								<h2>elderly elf <br>
 						
@@ -512,11 +512,8 @@ Elf Weapon Training
 							
 						
 				
-							<svg height="5" width="100%" class="tapered-rule">
-	    			
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-	  			
-							</svg>
+															<hr class="divider">
+
 				
 				
 				
@@ -555,11 +552,8 @@ Elf Weapon Training
 					<!-- property line -->
 					
 			
-								<svg height="5" width="100%" class="tapered-rule">
-	    				
-									<polyline points="0,0 400,2.5 0,5"></polyline>
-	 				
-								</svg>
+																<hr class="divider">
+
 			
 			
 					
@@ -569,60 +563,119 @@ Elf Weapon Training
 							
 										<h4>STR</h4>
 							
-										<p>7 </p>
+										<p>7 (<span id="strmodi2"></span><span id="strmod2"></span>)</p>
 						
-									</span> <!-- ability strength -->
+										
+									</span> 
 						
 									<span class="ability-dexterity">
 							
 										<h4>DEX</h4>
 							
-										<p>10 </p>
+										<p>10 (<span id="dexmodi2"></span><span id="dexmod2"></span>)</p>
 						
-									</span> <!-- ability dexterity -->
+									</span> 
 						
 									<span class="ability-constitution">
 							
 										<h4>CON</h4>
 							
-										<p>9 </p>
+										<p>9 (<span id="conmodi2"></span><span id="conmod2"></span>)</p>
 						
-									</span> <!-- ability constitution -->
+									</span> 
 						
 									<span class="ability-intelligence">
 							
 										<h4>INT</h4>
 							
-										<p>19 </p>
+										<p>19 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
 						
-									</span> <!-- ability intelligence -->
+									</span> 
 						
 									<span class="ability-wisdom">
 							
 										<h4>WIS</h4>
 							
-										<p>19 </p>
+										<p>19 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
-									</span> <!-- ability wisdom -->
+									</span> 
 						
 									<span class="ability-charisma">
 							
 										<h4>CHA</h4>
 							
-										<p>12 </p>
+										<p>12 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
 						
-									</span> <!-- ability charisma -->
-					
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod2").innerHTML = myMod(7);
+											document.getElementById("strmodi2").innerHTML = myModi(7);
+											
+											
+						
+											document.getElementById("dexmod2").innerHTML = myMod(10);
+											document.getElementById("dexmodi2").innerHTML = myModi(10);
+						
+						
+											
+											document.getElementById("conmod2").innerHTML = myMod(9);
+											document.getElementById("conmodi2").innerHTML = myModi(9);
+						
+						
+						
+											document.getElementById("intmod2").innerHTML = myMod(19);
+											document.getElementById("intmodi2").innerHTML = myModi(19);
+						
+											
+											document.getElementById("wismod2").innerHTML = myMod(19);
+											document.getElementById("wismodi2").innerHTML = myModi(19);
+						
+						
+											
+											document.getElementById("chamod2").innerHTML = myMod(12);
+											document.getElementById("chamodi2").innerHTML = myModi(12);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
 								</span> 
+					
 					
 					<!-- abilities -->
 					
-					
-								<svg height="5" width="100%" class="tapered-rule">
-	    				
-									<polyline points="0,0 400,2.5 0,5"></polyline>
-	  				
-								</svg>
+													<hr class="divider">
+
 					
 				
 								<span class="property-line first">
@@ -704,15 +757,11 @@ Elf Weapon Training
 				<!-- top stats -->
 				
 				
-				
-							<svg height="5" width="100%" class="tapered-rule">
-	   				
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-	 			
-							</svg>
+												<hr class="divider">
+
 	
 				
-							<span class="property-block">
+							<span class="property-line">
 					
 								<h4>Special Abilities</h4>
 					
@@ -744,7 +793,7 @@ Elf Weapon Training
 							</span> <!-- property block -->
 				
 				
-							<span class="property-block">
+							<span class="property-line">
 					
 								<h4>Special Equipment</h4>
 					
@@ -771,7 +820,7 @@ Elf Weapon Training
 							</span>
        				
 				
-							<span class="actions">
+							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
 					
@@ -781,7 +830,7 @@ Elf Weapon Training
 							</span> 
 			
 				
-							<span class="actions">
+							<span class="property-line">
 					
 								<h3>Actions</h3>
 					
@@ -791,11 +840,11 @@ Elf Weapon Training
 							</span>
 			
 				
-							<span class="actions">
+							<span class="property-line">
 					
 								<h3>Factions</h3>
 					
-								<span class="property-block">
+								<span class="property-line">
 					
 									<p><b>				
 								</span>
@@ -826,14 +875,8 @@ Elf Weapon Training
 						
 							<h1>Roleplaying</h1>
 
-						
-							<svg height="5" width="100%" class="tapered-rule">
+														<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
@@ -970,14 +1013,8 @@ Elf Weapon Training
 						
 							<h1>Background Story</h1>
 
-						
-							<svg height="5" width="100%" class="tapered-rule">
+														<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
@@ -1009,13 +1046,8 @@ and even then, they would be very expensive.&lt;/p&gt;
 				
 					
 						
-							<svg height="5" width="100%" class="tapered-rule">
+															<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	

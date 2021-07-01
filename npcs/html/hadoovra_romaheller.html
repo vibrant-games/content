@@ -387,7 +387,7 @@ Proficient in engineering, architectural and masonry history
 						
 						<span class="npc-heading">
 										
-						<h1>Roleplaying</h1>
+						<h1 class="glow">Roleplaying</h1>
 						
 														<hr class="divider">
 
@@ -482,7 +482,7 @@ Proficient in engineering, architectural and masonry history
 				
 							<span class="npc-heading">
 		  			
-								<h1>Hadoovra Romaheller</h1>
+								<h1 class="glow">Hadoovra Romaheller</h1>
 						
 								<h2>middle aged adult dwarf <br>
 						
@@ -494,11 +494,8 @@ Proficient in engineering, architectural and masonry history
 							
 						
 				
-							<svg height="5" width="100%" class="tapered-rule">
-	    			
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-	  			
-							</svg>
+															<hr class="divider">
+
 				
 				
 				
@@ -537,11 +534,8 @@ Proficient in engineering, architectural and masonry history
 					<!-- property line -->
 					
 			
-								<svg height="5" width="100%" class="tapered-rule">
-	    				
-									<polyline points="0,0 400,2.5 0,5"></polyline>
-	 				
-								</svg>
+																<hr class="divider">
+
 			
 			
 					
@@ -551,60 +545,119 @@ Proficient in engineering, architectural and masonry history
 							
 										<h4>STR</h4>
 							
-										<p>13 </p>
+										<p>13 (<span id="strmodi2"></span><span id="strmod2"></span>)</p>
 						
-									</span> <!-- ability strength -->
+										
+									</span> 
 						
 									<span class="ability-dexterity">
 							
 										<h4>DEX</h4>
 							
-										<p>14 </p>
+										<p>14 (<span id="dexmodi2"></span><span id="dexmod2"></span>)</p>
 						
-									</span> <!-- ability dexterity -->
+									</span> 
 						
 									<span class="ability-constitution">
 							
 										<h4>CON</h4>
 							
-										<p>16 </p>
+										<p>16 (<span id="conmodi2"></span><span id="conmod2"></span>)</p>
 						
-									</span> <!-- ability constitution -->
+									</span> 
 						
 									<span class="ability-intelligence">
 							
 										<h4>INT</h4>
 							
-										<p>18 </p>
+										<p>18 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
 						
-									</span> <!-- ability intelligence -->
+									</span> 
 						
 									<span class="ability-wisdom">
 							
 										<h4>WIS</h4>
 							
-										<p>13 </p>
+										<p>13 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
-									</span> <!-- ability wisdom -->
+									</span> 
 						
 									<span class="ability-charisma">
 							
 										<h4>CHA</h4>
 							
-										<p>12 </p>
+										<p>12 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
 						
-									</span> <!-- ability charisma -->
-					
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod2").innerHTML = myMod(13);
+											document.getElementById("strmodi2").innerHTML = myModi(13);
+											
+											
+						
+											document.getElementById("dexmod2").innerHTML = myMod(14);
+											document.getElementById("dexmodi2").innerHTML = myModi(14);
+						
+						
+											
+											document.getElementById("conmod2").innerHTML = myMod(16);
+											document.getElementById("conmodi2").innerHTML = myModi(16);
+						
+						
+						
+											document.getElementById("intmod2").innerHTML = myMod(18);
+											document.getElementById("intmodi2").innerHTML = myModi(18);
+						
+											
+											document.getElementById("wismod2").innerHTML = myMod(13);
+											document.getElementById("wismodi2").innerHTML = myModi(13);
+						
+						
+											
+											document.getElementById("chamod2").innerHTML = myMod(12);
+											document.getElementById("chamodi2").innerHTML = myModi(12);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
 								</span> 
+					
 					
 					<!-- abilities -->
 					
-					
-								<svg height="5" width="100%" class="tapered-rule">
-	    				
-									<polyline points="0,0 400,2.5 0,5"></polyline>
-	  				
-								</svg>
+													<hr class="divider">
+
 					
 				
 								<span class="property-line first">
@@ -686,15 +739,11 @@ Proficient in engineering, architectural and masonry history
 				<!-- top stats -->
 				
 				
-				
-							<svg height="5" width="100%" class="tapered-rule">
-	   				
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-	 			
-							</svg>
+												<hr class="divider">
+
 	
 				
-							<span class="property-block">
+							<span class="property-line">
 					
 								<h4>Special Abilities</h4>
 					
@@ -717,7 +766,7 @@ Proficient in engineering, architectural and masonry history
 							</span> <!-- property block -->
 				
 				
-							<span class="property-block">
+							<span class="property-line">
 					
 								<h4>Special Equipment</h4>
 					
@@ -737,7 +786,7 @@ Proficient in engineering, architectural and masonry history
 							</span>
        				
 				
-							<span class="actions">
+							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
 					
@@ -746,7 +795,7 @@ Proficient in engineering, architectural and masonry history
 							</span> 
 			
 				
-							<span class="actions">
+							<span class="property-line">
 					
 								<h3>Actions</h3>
 					
@@ -755,11 +804,11 @@ Proficient in engineering, architectural and masonry history
 							</span>
 			
 				
-							<span class="actions">
+							<span class="property-line">
 					
 								<h3>Factions</h3>
 					
-								<span class="property-block">
+								<span class="property-line">
 					
 									<p><b>				
 								</span>
@@ -790,14 +839,8 @@ Proficient in engineering, architectural and masonry history
 						
 							<h1>Roleplaying</h1>
 
-						
-							<svg height="5" width="100%" class="tapered-rule">
+														<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
@@ -934,14 +977,8 @@ Proficient in engineering, architectural and masonry history
 						
 							<h1>Background Story</h1>
 
-						
-							<svg height="5" width="100%" class="tapered-rule">
+														<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
@@ -969,13 +1006,8 @@ Proficient in engineering, architectural and masonry history
 				
 					
 						
-							<svg height="5" width="100%" class="tapered-rule">
+															<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
