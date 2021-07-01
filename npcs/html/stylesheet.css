@@ -58,7 +58,7 @@ div p {
 	align-content:center;
 	align-items:center;
   
-  border: 1px solid blue;
+	border: 1px solid blue;
   
 	flex-basis: 500px;
 	flex-grow:1;
@@ -76,7 +76,7 @@ div p {
 	align-content:flex-start;
 	align-items:center;
   
-  border: 1px solid blue;
+	border: 1px solid blue;
   
 	
 	flex-wrap: wrap;
@@ -87,11 +87,11 @@ div p {
 	display: flex;
 	flex-basis:auto;
 	flex-grow:1;
-	flex: 1;
-	align-content:flex-start;
+	
+	align-content:center;
 	align-items:center;
   
-  border: 1px solid blue;
+	border: 1px solid blue;
   
 	
 	flex-wrap: wrap;
@@ -106,7 +106,7 @@ div p {
 	align-content:flex-start;
 	align-items:center;
   
-  border: 1px solid blue;
+	border: 1px solid blue;
   
 	
 	flex-wrap: wrap;
