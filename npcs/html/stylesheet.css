@@ -54,6 +54,7 @@ div p {
 
 .container {
   margin: 0 auto;
+	background-image: ("../../images/bg-testt2.png");
 
 }
 
@@ -120,7 +121,8 @@ div p {
 	vertical-align: top;
 	padding: 0px 0px 10px 0px;
 	box-shadow: 0 1.5px 1.5em #867453;
-	background-image: url("../../images/bg-testt2.png");
+	background-color: darkgreen;
+	opacity(0%);
 	
 }
 
@@ -181,6 +183,7 @@ div p {
   font-size: 16px;
   line-height: 1.2em;
   margin: 10 10 20 60px;
+	padding-left: 15px;
 	color: aliceblue;
 
 }
