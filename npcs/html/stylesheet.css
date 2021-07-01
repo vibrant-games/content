@@ -53,12 +53,8 @@ div p {
 
 
 .container {
- 
-	height:100%;
-	min-height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  margin: 0 auto;
+
 }
 
 
@@ -68,23 +64,52 @@ div p {
 .cell {
   
 	display: flex;
-	margin: 0 auto;
+
 	align-content:center;
 	align-items:center;
   
 	flex-basis: auto;
 	flex-grow:1;
-	height: 100%;
+	
 	flex-wrap: nowrap;
 	flex-direction: row;
 	
 
 }
 
+.bgcell {
+  
+	display: inline-block;
+	
+	margin: 0 auto;
+	
+	width: 100%;
+	
+	
+	padding: 15px 0 0 15px;
+	
+
+}
+
+.pers-cell {
+  
+	display: inline-block;
+	
+	margin: 0 auto;
+	
+	width: 100%;
+	
+  
+	padding: 15px 0 0 15px;
+	
+
+	
+
+}
 
 .data {
 	
-	
+	display: flex;
 	flex-grow: 1;
     flex-basis: 0;
 	max-width: 620px;
@@ -96,7 +121,6 @@ div p {
 	padding: 0px 0px 10px 0px;
 	box-shadow: 0 1.5px 1.5em #867453;
 	background-image: url("../../images/bg-testt2.png");
-	
 	
 }
 
@@ -157,7 +181,7 @@ div p {
   font-size: 16px;
   line-height: 1.2em;
   margin: 10 10 20 60px;
-	padding-left: 15px;
+	padding-left: 30px;
 	color: aliceblue;
 
 }
@@ -426,20 +450,6 @@ div p {
   .cell { 
     flex: 100%; 
   }
-
-	
-	#bgcell {
-		
-		
-		width: 100%;
-	}
-	
-	
-	#perscell {
-		
-		width:100%
-	}
-
 }
 
 
