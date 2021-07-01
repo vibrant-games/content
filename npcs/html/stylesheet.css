@@ -70,7 +70,48 @@ div p {
 }
 
 
+.cell1{
+	display: flex;
+	flex: 1;
+	align-content:flex-start;
+	align-items:center;
+  
+	border: 1px solid blue;
+  
+	
+	flex-wrap: wrap;
+	flex-direction: column;
+}
 
+.cell2{
+	display: block;
+	flex-basis:auto;
+	flex-grow:1;
+	
+	align-content:center;
+	align-items:center;
+  
+	border: 1px solid blue;
+  
+	
+	flex-wrap: wrap;
+	flex-direction: column-reverse;
+}
+
+.cell3{
+	display: flex;
+	flex-basis:auto;
+	flex-grow:1;
+	flex: 1;
+	align-content:flex-start;
+	align-items:center;
+  
+	border: 1px solid blue;
+  
+	
+	flex-wrap: wrap;
+	flex-direction: column;
+}
 
 
 
@@ -397,7 +438,7 @@ max-width: 620px;
 	
   #cell2 {
     flex-direction: column-reverse;
-    position: static;
+    position: relative;
    
 	  
   }
@@ -438,7 +479,7 @@ max-width: 620px;
   #cell2 {
     flex-direction: column-reverse;
     
-    position: absolute;
+    position: relative;
    
    
   }
