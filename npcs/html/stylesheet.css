@@ -53,9 +53,12 @@ div p {
 
 
 .container {
-  margin: 0 auto;
-	background-image: ("../../images/bg-testt2.png");
-
+ 
+	height:100%;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -65,52 +68,23 @@ div p {
 .cell {
   
 	display: flex;
-
+	margin: 0 auto;
 	align-content:center;
 	align-items:center;
   
 	flex-basis: auto;
 	flex-grow:1;
-	
+	height: 100%;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	
 
 }
 
-.bgcell {
-  
-	display: inline-block;
-	
-	margin: 0 auto;
-	
-	width: 100%;
-	
-	
-	padding: 15px 0 0 15px;
-	
-
-}
-
-.pers-cell {
-  
-	display: inline-block;
-	
-	margin: 0 auto;
-	
-	width: 100%;
-	
-  
-	padding: 15px 0 0 15px;
-	
-
-	
-
-}
 
 .data {
 	
-	display: flex;
+	
 	flex-grow: 1;
     flex-basis: 0;
 	max-width: 620px;
@@ -121,8 +95,8 @@ div p {
 	vertical-align: top;
 	padding: 0px 0px 10px 0px;
 	box-shadow: 0 1.5px 1.5em #867453;
-	background-color: darkgreen;
-	opacity(0%);
+	background-image: url("../../images/bg-testt2.png");
+	
 	
 }
 
@@ -452,6 +426,20 @@ div p {
   .cell { 
     flex: 100%; 
   }
+
+	
+	#bgcell {
+		
+		
+		width: 100%;
+	}
+	
+	
+	#perscell {
+		
+		width:100%
+	}
+
 }
 
 
