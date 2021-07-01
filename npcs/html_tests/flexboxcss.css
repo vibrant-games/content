@@ -37,7 +37,11 @@ div {
     height: 100px;
   }
   
-  #cell4 { display: none; }
+  #cell4 { 
+	  
+	  display: none; 
+	
+	}
   
   .container { 
     flex-direction: row;
@@ -45,8 +49,9 @@ div {
     display: flex;
   }
   
-  .cell { 
+.cell 3 { 
     flex: 100%; 
+	display: flex;
   }
 }
 
@@ -68,9 +73,13 @@ div {
   }
   
   #cell3 { 
-    flex:  0 0 66%; 
+    flex:  100%; 
   }
   
-  #cell4 { display: none;}
+  #cell4 { 
+	  
+	  display: none;
+	
+	}
 }
 

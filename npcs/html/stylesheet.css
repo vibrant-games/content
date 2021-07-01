@@ -218,6 +218,44 @@ div p {
 
 
 
+.right-line{
+	
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+	font-weight: normal;
+	
+}
+
+
+
+.right-line h4,
+.right-line p{
+  display: inline-block;
+  margin: 0 0 0 10px;
+  color: #922610;
+  font-size: 13.5px;
+  line-height: 1.2em;
+}
+.right-line h4{
+  color: #7A200D;
+}
+.right-line{
+  text-indent: -0.25em;
+  padding: 0 0 0 15px;
+  line-height: 1.4em;
+}
+.right-line.first{
+  margin: 0 0 0 0;
+}
+.right-line.last{
+  margin: 0 0 10px;
+}
+
+
+
+
+
 
 .stat-block.wide{
   display: inline-block;
