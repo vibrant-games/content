@@ -63,7 +63,21 @@ div p {
 
 }
 
+.bgcell {
+  
+	display: flex;
 
+	align-content:center;
+	align-items:center;
+  
+	flex-basis: auto;
+	flex-grow:1;
+	
+	flex-wrap: nowrap;
+	flex-direction: column;
+	
+
+}
 
 
 
@@ -420,7 +434,7 @@ div p {
 	
   }
 	
-	#cell4 {
+#cell4 {
 		
 		display:flex;
 	}
