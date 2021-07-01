@@ -40,9 +40,6 @@ div p {
 
 .container {
   margin: 0 auto;
-  border: 1px solid red;
-  
-	
 
 }
 
@@ -56,8 +53,6 @@ div p {
 
 	align-content:center;
 	align-items:center;
-  
- 	border: 1px solid blue;
   
 	flex-basis: auto;
 	flex-grow:1;
@@ -80,7 +75,6 @@ div p {
     flex-basis: 0;
 	max-width: 620px;
 	min-width: 200px;
-	border: 1px solid green;
 	flex-wrap: wrap;
 	
 	flex-direction: column;
@@ -177,6 +171,8 @@ div p {
 .abilities p{
   margin: 0 0 10px 0;
   line-height: 1.2em;
+	text-align: center;
+  vertical-align: middle;
 }
 
 .ability {
