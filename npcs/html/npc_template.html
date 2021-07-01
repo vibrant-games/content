@@ -391,7 +391,7 @@
 						
 						<span class="npc-heading">
 										
-						<h1>Roleplaying</h1>
+						<h1 class="glow">Roleplaying</h1>
 						
 														<hr class="divider">
 
@@ -483,7 +483,7 @@
 				
 							<span class="npc-heading">
 		  			
-								<h1>{{npc.name}}</h1>
+								<h1 class="glow">{{npc.name}}</h1>
 						
 								<h2>{{npc.traits.age}} {{npc.traits.race}} <br>
 						
@@ -538,11 +538,8 @@
 					<!-- property line -->
 					
 			
-								<svg height="5" width="100%" class="tapered-rule">
-	    				
-									<polyline points="0,0 400,2.5 0,5"></polyline>
-	 				
-								</svg>
+																<hr class="divider">
+
 			
 			
 					
@@ -552,60 +549,119 @@
 							
 										<h4>STR</h4>
 							
-										<p>{{npc.stats.str}} {{npc.stats.strmod}}</p>
+										<p>{{npc.stats.str}} (<span id="strmodi2"></span><span id="strmod2"></span>)</p>
 						
-									</span> <!-- ability strength -->
+										
+									</span> 
 						
 									<span class="ability-dexterity">
 							
 										<h4>DEX</h4>
 							
-										<p>{{npc.stats.dex}} {{npc.stats.dexmod}}</p>
+										<p>{{npc.stats.dex}} (<span id="dexmodi2"></span><span id="dexmod2"></span>)</p>
 						
-									</span> <!-- ability dexterity -->
+									</span> 
 						
 									<span class="ability-constitution">
 							
 										<h4>CON</h4>
 							
-										<p>{{npc.stats.con}} {{npc.stats.conmod}}</p>
+										<p>{{npc.stats.con}} (<span id="conmodi2"></span><span id="conmod2"></span>)</p>
 						
-									</span> <!-- ability constitution -->
+									</span> 
 						
 									<span class="ability-intelligence">
 							
 										<h4>INT</h4>
 							
-										<p>{{npc.stats.int}} {{npc.stats.intmod}}</p>
+										<p>{{npc.stats.int}} (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
 						
-									</span> <!-- ability intelligence -->
+									</span> 
 						
 									<span class="ability-wisdom">
 							
 										<h4>WIS</h4>
 							
-										<p>{{npc.stats.wis}} {{npc.stats.wismod}}</p>
+										<p>{{npc.stats.wis}} (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
-									</span> <!-- ability wisdom -->
+									</span> 
 						
 									<span class="ability-charisma">
 							
 										<h4>CHA</h4>
 							
-										<p>{{npc.stats.cha}} {{npc.stats.chamod}}</p>
+										<p>{{npc.stats.cha}} (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
 						
-									</span> <!-- ability charisma -->
-					
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod2").innerHTML = myMod({{npc.stats.str}});
+											document.getElementById("strmodi2").innerHTML = myModi({{npc.stats.str}});
+											
+											
+						
+											document.getElementById("dexmod2").innerHTML = myMod({{npc.stats.dex}});
+											document.getElementById("dexmodi2").innerHTML = myModi({{npc.stats.dex}});
+						
+						
+											
+											document.getElementById("conmod2").innerHTML = myMod({{npc.stats.con}});
+											document.getElementById("conmodi2").innerHTML = myModi({{npc.stats.con}});
+						
+						
+						
+											document.getElementById("intmod2").innerHTML = myMod({{npc.stats.int}});
+											document.getElementById("intmodi2").innerHTML = myModi({{npc.stats.int}});
+						
+											
+											document.getElementById("wismod2").innerHTML = myMod({{npc.stats.wis}});
+											document.getElementById("wismodi2").innerHTML = myModi({{npc.stats.wis}});
+						
+						
+											
+											document.getElementById("chamod2").innerHTML = myMod({{npc.stats.cha}});
+											document.getElementById("chamodi2").innerHTML = myModi({{npc.stats.cha}});
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
 								</span> 
+					
 					
 					<!-- abilities -->
 					
-					
-								<svg height="5" width="100%" class="tapered-rule">
-	    				
-									<polyline points="0,0 400,2.5 0,5"></polyline>
-	  				
-								</svg>
+													<hr class="divider">
+
 					
 				
 								<span class="property-line first">
@@ -687,12 +743,8 @@
 				<!-- top stats -->
 				
 				
-				
-							<svg height="5" width="100%" class="tapered-rule">
-	   				
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-	 			
-							</svg>
+												<hr class="divider">
+
 	
 				
 							<span class="property-block">
@@ -795,14 +847,8 @@
 						
 							<h1>Roleplaying</h1>
 
-						
-							<svg height="5" width="100%" class="tapered-rule">
+														<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
@@ -936,14 +982,8 @@
 						
 							<h1>Background Story</h1>
 
-						
-							<svg height="5" width="100%" class="tapered-rule">
+														<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
@@ -970,13 +1010,8 @@
 				
 					
 						
-							<svg height="5" width="100%" class="tapered-rule">
+															<hr class="divider">
 
-							
-								<polyline points="0,0 400,2.5 0,5"></polyline>
-
-						
-							</svg>
 							
 									
 							<span class="property-line first">	
