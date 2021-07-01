@@ -65,22 +65,33 @@ div p {
 
 .bgcell {
   
-	display: flex;
-
-	align-content:center;
-	align-items:center;
-  
-	flex-basis: auto;
-	flex-grow:1;
+	display: inline-block;
 	
-	flex-wrap: nowrap;
-	flex-direction: column;
+	margin: 0 auto;
+	
+	width: 100%;
+	
+	
+	padding: 15px 0 0 15px;
 	
 
 }
 
+.pers-cell {
+  
+	display: inline-block;
+	
+	margin: 0 auto;
+	
+	width: 100%;
+	
+  
+	padding: 15px 0 0 15px;
+	
 
+	
 
+}
 
 .data {
 	
@@ -174,17 +185,7 @@ div p {
   font-size: 16px;
   line-height: 1em;
 }
-.abilities h4{
-  margin: 12px 0 2px;
-  font-size: 14px;
-  line-height: 1.2em;
-  text-transform: uppercase;
-  color: #7A200D;
-}
-.abilities p{
-  margin: 0 0 10px 0;
-  line-height: 1.2em;
-}
+
 
 .ability {
 	
@@ -193,6 +194,20 @@ div p {
 	
 	display: block;
 }
+
+.ability h4{
+  margin: 12px 0 2px;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #7A200D;
+}
+.ability p{
+  margin: 0 0 10px 0;
+  line-height: 1.2em;
+}
+
+
 
 .property-line{
 	
