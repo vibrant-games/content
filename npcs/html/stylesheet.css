@@ -95,8 +95,9 @@ div p {
   
 	
 	flex-wrap: wrap;
-	flex-direction: column;
+	flex-direction: column-reverse;
 }
+
 .cell3{
 	display: flex;
 	flex-basis:auto;
@@ -382,10 +383,7 @@ div p {
   stroke: #922610;
 }
 
-.cell2 {
-	flex-grow:1;
-	
-}
+
 
 .rightside{
 	max-width: 620px;
