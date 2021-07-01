@@ -27,6 +27,7 @@ div {
 
 
 
+
 div p {
   text-align: left;
 }
@@ -184,6 +185,11 @@ div p {
   min-width: 40px; 
   font-size: 16px;
   line-height: 1em;
+}
+
+.abilities p{
+  margin: 0 0 10px 0;
+  line-height: 1.2em;
 }
 
 
