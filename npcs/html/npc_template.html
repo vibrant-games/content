@@ -6,6 +6,10 @@
 
 <link rel="stylesheet" href="stylesheet.css"/>
 	
+	
+	
+	
+	
 	</head>
 
 
@@ -106,15 +110,16 @@
 							
 										<h4>STR</h4>
 							
-										<p>{{npc.stats.str}} ({{npc.stats.strmod}})</p>
+										<p>{{npc.stats.str}} (<span id="strmodi"></span><span id="strmod"></span>)</p>
 						
+										
 									</span> 
 						
 									<span class="ability-dexterity">
 							
 										<h4>DEX</h4>
 							
-										<p>{{npc.stats.dex}} {{npc.stats.dexmod}}</p>
+										<p>{{npc.stats.dex}} (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
 						
 									</span> 
 						
@@ -122,7 +127,7 @@
 							
 										<h4>CON</h4>
 							
-										<p>{{npc.stats.con}} {{npc.stats.conmod}}</p>
+										<p>{{npc.stats.con}} (<span id="conmodi"></span><span id="conmod"></span>)</p>
 						
 									</span> 
 						
@@ -130,7 +135,7 @@
 							
 										<h4>INT</h4>
 							
-										<p>{{npc.stats.int}} {{npc.stats.intmod}}</p>
+										<p>{{npc.stats.int}} (<span id="intmodi"></span><span id="intmod"></span>)</p>
 						
 									</span> 
 						
@@ -138,7 +143,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>{{npc.stats.wis}} {{npc.stats.wismod}}</p>
+										<p>{{npc.stats.wis}} (<span id="wismodi"></span><span id="wismod"></span>)</p>
 						
 									</span> 
 						
@@ -146,10 +151,65 @@
 							
 										<h4>CHA</h4>
 							
-										<p>{{npc.stats.cha}} {{npc.stats.chamod}}</p>
+										<p>{{npc.stats.cha}} (<span id="chamodi"></span><span id="chamod"></span>)</p>
 						
 									</span> 
 					
+									<script>
+																				
+
+											document.getElementById("strmod").innerHTML = myMod({{npc.stats.str}});
+											document.getElementById("strmodi").innerHTML = myModi({{npc.stats.str}});
+											
+										
+											document.getElementById("dexmod").innerHTML = myMod({{npc.stats.dex}});
+											document.getElementById("dexmodi").innerHTML = myModi({{npc.stats.dex}});
+						
+						
+											document.getElementById("conmod").innerHTML = myMod({{npc.stats.con}});
+											document.getElementById("conmodi").innerHTML = myModi({{npc.stats.con}});
+						
+						
+											document.getElementById("intmod").innerHTML = myMod({{npc.stats.int}});
+											document.getElementById("intmodi").innerHTML = myModi({{npc.stats.int}});
+						
+											
+											document.getElementById("wismod").innerHTML = myMod({{npc.stats.wis}});
+											document.getElementById("wismodi").innerHTML = myModi({{npc.stats.wis}});
+						
+											
+											document.getElementById("chamod").innerHTML = myMod({{npc.stats.cha}});
+											document.getElementById("chamodi").innerHTML = myModi({{npc.stats.cha}});
+											
+											
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+												
+										</script>
+										
+									
+									
 								</span> 
 					
 					
