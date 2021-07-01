@@ -34,8 +34,21 @@ div p {
 
 
 
-
-
+.divider{
+	
+	display: inline-block;
+  background-color:#4000C8;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+	border: 0;
+  height: 2px;
+  padding: 0 0 0 0;
+  margin: 25 0 25 0;
+  box-sizing: initial;
+	width:95%;
+	
+			
+}
 
 
 
@@ -107,7 +120,7 @@ div p {
 	vertical-align: top;
 	padding: 0px 0px 10px 0px;
 	box-shadow: 0 1.5px 1.5em #867453;
-	background-image: url("../../images/bg-testt.png");
+	background-image: url("../../images/bg-testt2.png");
 	
 }
 
@@ -139,6 +152,7 @@ div p {
 	min-width: 200px;
 	display: inline-block;
 	flex-grow: 1;
+	margin: 0 0 15px 10px;
 
 }
 
@@ -147,9 +161,9 @@ div p {
 
 .npc-heading h1{
   font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
-  color: #922610;
+  color:aliceblue;
   font-size: 23px;
-  line-height: 1.2em;
+  line-height: 1.8em;
   margin: 0 10px 0 0;
   letter-spacing: 1px;
   font-variant: small-caps;
@@ -159,12 +173,15 @@ div p {
 }
 
 
+
+
 .npc-heading h2{
   font-weight: normal;
   font-style: italic;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.2em;
-  margin: 0 0 0 10px;
+  margin: 10 10 20 60px;
+	color: aliceblue;
 
 }
 
@@ -173,7 +190,7 @@ div p {
 	margin-left:0 auto;
     position:relative;
   text-align: center;
-  color: #922610;
+  color:aliceblue;
 }
 
 
@@ -222,6 +239,7 @@ div p {
 	display: inline-block;
 	text-align: left;
 	width: 100%;
+	color: aliceblue;
 	
 }
 
@@ -231,12 +249,12 @@ div p {
 .property-line p{
   display: inline-block;
   margin: 0 0 0 10px;
-  color: #922610;
+  color:aliceblue;
   font-size: 13.5px;
   line-height: 1.2em;
 }
 .property-line h4{
-  color: #7A200D;
+  color:aliceblue;
 }
 .property-line{
   text-indent: -0.25em;
@@ -261,6 +279,7 @@ div p {
 	text-align: left;
 	width: 100%;
 	font-weight: normal;
+	color: aliceblue;
 	
 }
 
@@ -273,9 +292,10 @@ div p {
   color: #922610;
   font-size: 13.5px;
   line-height: 1.2em;
+	color: aliceblue
 }
 .right-line h4{
-  color: #7A200D;
+  color:aliceblue;
 }
 .right-line{
   text-indent: -0.25em;
@@ -333,15 +353,6 @@ div p {
 
 
 
-.tapered-rule{
-  display: block;
-  width: 100%;
-  height: 5px;
-  border: none;
-  color: #922610;
-  fill: #922610;
-  stroke: #922610;
-}
 
 .npc-heading {
 	
@@ -355,8 +366,8 @@ div p {
 
 .npc-heading h1{
   font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
-  color: #922610;
-  font-size: 23px;
+  color:aliceblue;
+  font-size: 32px;
   line-height: 1.2em;
   margin: 10px 0 0 10px;
   letter-spacing: 1px;
@@ -365,9 +376,28 @@ div p {
 }
 
 
+
+
+.glow {
+  font-size: 32px;
+  color:aliceblue;
+  text-align: left;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ggg, 0 0 20px #ggg, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 .steel-border{
   display: flex;
-  background-image: url("../../images/steel.png");
+  background-image:url("images/steel.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 5px;
@@ -378,15 +408,6 @@ div p {
 
 
 
-.tapered-rule{
-  display: inline-block;
-  width: 100%;
-  height: 5px;
-  border: none;
-  color: #922610;
-  fill: #922610;
-  stroke: #922610;
-}
 
 
 
