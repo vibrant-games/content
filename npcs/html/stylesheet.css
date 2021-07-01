@@ -42,7 +42,6 @@ div p {
   margin: 0 auto;
   border: 1px solid red;
   
-  padding: 10px;
 	
 
 }
@@ -58,109 +57,40 @@ div p {
 	align-content:center;
 	align-items:center;
   
-  border: 1px solid blue;
+ 	border: 1px solid blue;
   
-	flex-basis: 500px;
+	flex-basis: auto;
 	flex-grow:1;
 	
-	flex-wrap:wrap;
+	flex-wrap: nowrap;
 	flex-direction: row;
 	
 
 }
 
 
-.cell1{
-	display: flex;
-	flex: 1;
-	align-content:flex-start;
-	align-items:center;
-  
-  border: 1px solid blue;
-  
-	
-	flex-wrap: wrap;
-	flex-direction: column;
-}
-
-.cell2{
-	display: flex;
-	flex-basis:auto;
-	flex-grow:1;
-	flex: 1;
-	align-content:flex-start;
-	align-items:center;
-  
-  border: 1px solid blue;
-  
-	
-	flex-wrap: wrap;
-	flex-direction: column;
-}
-.cell3{
-	display: flex;
-	flex-basis:auto;
-	flex-grow:1;
-	flex: 1;
-	align-content:flex-start;
-	align-items:center;
-  
-  border: 1px solid blue;
-  
-	
-	flex-wrap: wrap;
-	flex-direction: column;
-}
 
 
 
 
 .data {
+	
+	display: flex;
 	flex-grow: 1;
     flex-basis: 0;
 	max-width: 620px;
-	min-width: 300px;
+	min-width: 200px;
 	border: 1px solid green;
 	flex-wrap: wrap;
-	display: inline-flex;
+	
 	flex-direction: column;
 	vertical-align: top;
 	padding: 0px 0px 10px 0px;
 	box-shadow: 0 1.5px 1.5em #867453;
 	background-image: url("../../images/bg-testt.png");
-	justify-content: center;
-}
-
-
-.data1 {
-	max-width: 620px;
-	min-width: 300px;
-	display:inline-flex;
-	align-content:space-around;
-	align-items: center;
-  	flex: 1;
-  	border: 1px solid green;
-	flex-wrap: wrap;	
-	vertical-align: top;
-	padding: 0px 0px 20px 0px;
-	box-shadow: 0 1.5px 1.5em #867453;
 	
 }
 
-.data2 {
-  
-  border: 1px solid green;
-  
-	align-content: space-around;
-	 
-  display: flex;	
-  flex-direction: column;
-	
-	padding: 0px 0px 10px 0px;
-  box-shadow: 0 1.5px 1.5em #867453;
-  background-image: url("../../images/bg-testt.png");
-	
-}
 
 
 
@@ -175,8 +105,8 @@ div p {
 .pic {
   
 	display: flex;  
-	min-width: 350px;
-	max-width: 618px;
+	flex-basis: auto;
+	flex-grow: 1;
 	justify-content: center;
 	
 	border: 1px solid green;
@@ -189,8 +119,8 @@ div p {
 
 .npc-heading{
 	
-	min-width: 400px;
-	display: flex;
+	min-width: 200px;
+	display: inline-block;
 	flex-grow: 1;
 
 }
@@ -208,6 +138,7 @@ div p {
   font-variant: small-caps;
   font-weight: bold;
 	max-width: 620px;
+	min-width: 200px;
 }
 
 
@@ -225,6 +156,8 @@ div p {
   text-align: center;
   color: #922610;
 }
+
+
 .abilities > span{
   display: inline-block;
 	text-align: center;
@@ -383,15 +316,12 @@ div p {
   stroke: #922610;
 }
 
-.cell2 {
-	flex-grow:1;
-	
-}
+
 
 @media only screen and (min-width: 0) and (max-width: 720px) {
   .container {
 	  flex-direction: column;
-    position: relative;
+	  position: relative;
 	
   }
   
@@ -429,7 +359,7 @@ div p {
 }
 
 
-@media only screen and (min-width: 720px) and (max-width: 1080px) {
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
   .container {
 	  flex-direction: column;
     position: relative;
@@ -467,21 +397,23 @@ div p {
   .container {
 	  flex-direction: column;
     position: relative;
+	  flex-wrap:nowrap;
   }
   
-  #cell2 {
-		display: none;
-	}	
+  
   
   #cell1 {
     flex-direction: row;
-    flex: 1;
+    
     position: relative;
      
     align-content:flex-start;
 	  align-items: flex-start;
   }
   
+	#cell2 {
+		display: none;
+	}	
 	
 #cell3 {
     display: none;
