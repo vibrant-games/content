@@ -384,6 +384,7 @@ div p {
 
 .cell2 {
 	flex-grow:1;
+	flex-direction: column-reverse;
 	
 }
 
@@ -442,7 +443,6 @@ max-width: 620px;
     flex-direction: column-reverse;
     position: relative;
    
-	min-width: 620px;
 	  
   }
   
@@ -453,7 +453,6 @@ max-width: 620px;
 		flex-direction: column;
     position: relative;
   
-	min-width:620px;
   }
 	
 	#cell4 {
@@ -484,7 +483,7 @@ max-width: 620px;
     flex-direction: column-reverse;
     
     position: relative;
-    min-width: 620px;
+   
    
   }
   
@@ -492,7 +491,7 @@ max-width: 620px;
 #cell3 {
     flex-direction: column;
     position: relative;
-	flex-basis: auto;
+	
     
   }
 	
@@ -519,9 +518,7 @@ max-width: 620px;
     flex-direction: row;
     flex: 1;
     position: relative;
-     
-    align-content:flex-start;
-	  align-items: flex-start;
+    
   }
   
 	
