@@ -290,7 +290,7 @@ div p {
 
 
 .stat-block.wide{
-  display: flex;
+  display: inline-block;
 	flex-direction: column;
 	
 	flex-wrap: wrap;
@@ -302,7 +302,7 @@ div p {
 }
 
 .stat-block.single{
-	display: flex;
+	display: inline-block;
   vertical-align: top;
 	width: 99%;
   text-align: left;
@@ -314,13 +314,12 @@ div p {
   vertical-align: top;
   width: 48%;
   text-align: left;
-	display: flex;
 	
 	
 }
 .stat-block.wide .section-left{
   margin-right: 1.5%;
-	flex-grow: 1;
+	
 }
 .stat-block.wide .section-right{
   margin-left: 1.5%;
