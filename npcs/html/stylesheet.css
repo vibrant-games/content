@@ -186,8 +186,9 @@ div p {
 
 .property-line{
 	
-	display: block;
+	display: inline-block;
 	text-align: left;
+	width: 100%;
 	
 }
 
@@ -237,7 +238,7 @@ div p {
 .stat-block.single{
 	display: inline-block;
   vertical-align: top;
-	width: 99%;
+	width:inherit;
   text-align: left;
 	
 }
@@ -330,7 +331,7 @@ div p {
 	}	
 	
   #cell2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
    
 	  
@@ -340,14 +341,14 @@ div p {
 	#cell3 {
     
 		
-		flex-direction: column;
+	flex-direction: column;
     position: relative;
   
 	}
 	
 	#cell4 {
 		
-		display:none
+		display:flex;
 	}
 	
 	
@@ -359,9 +360,10 @@ div p {
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 1080px) {
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
   .container {
-	  flex-direction: column;
+
+	flex-direction: column;
     position: relative;
   }
   
@@ -370,7 +372,7 @@ div p {
 	}	
   
   #cell2 {
-    flex-direction: column-reverse;
+    flex-direction: column;
     
     position: relative;
     
@@ -381,12 +383,12 @@ div p {
 #cell3 {
     flex-direction: column;
     position: relative;
-    
+	
   }
 	
 	#cell4 {
 		
-		display:none
+		display:flex;
 	}
 	
 	
@@ -422,7 +424,7 @@ div p {
 	
 	#cell4 {
 		
-		display:none
+		display:none;
 	}
 	
 }
