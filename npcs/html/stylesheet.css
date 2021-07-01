@@ -81,7 +81,8 @@ div p {
   
 	display: inline-block;
 	
-	margin: 0 auto;
+	flex-direction: column;
+	
 	
 	width: 100%;
 	
@@ -95,7 +96,7 @@ div p {
   
 	display: inline-block;
 	
-	margin: 0 auto;
+	flex-direction: column
 	
 	width: 100%;
 	
