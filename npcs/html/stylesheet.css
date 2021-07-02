@@ -37,7 +37,7 @@ div p {
 .divider{
 	
 	display: inline-block;
-  background-color:greenyellow;
+  background-color:maroon;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 	border: 0;
@@ -60,6 +60,22 @@ div p {
 
 
 
+
+.cell {
+  
+	display: flex;
+
+	align-content:center;
+	align-items:center;
+  
+	flex-basis: auto;
+	flex-grow:1;
+	
+	flex-wrap: nowrap;
+	flex-direction: row;
+	
+
+}
 
 .cell {
   
@@ -132,7 +148,7 @@ div p {
 
 .npc-heading h1{
   font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
-  color:indigo;
+  color:maroon;
   font-size: 23px;
   line-height: 1.8em;
   margin: 0 10px 0 0;
@@ -210,7 +226,7 @@ div p {
 	
 	display: inline-block;
 	text-align: left;
-	width: 100%;
+	width: 80%;
 	color:indigo;
 	font-weight: normal;
 	
@@ -418,26 +434,16 @@ div p {
 		display:flex;
 	}
 	
-	#bgcell {
-    
+	#bgcell{
+		flex-direction: column;
+    	position: relative;
 		
-	flex-direction: column;
-    position: relative;
-  
 	}
-	
-  #pers-cell {
-    
-		
-	flex-direction: column;
-    position: relative;
   
-	}
-	
   
-  .cell { 
-    flex: 100%; 
-  }
+  	.cell { 
+   	 flex: 100%; 
+  	}
 }
 
 
@@ -472,11 +478,7 @@ div p {
 		display:flex;
 	}
 	
-	#bgcell {
-    flex-direction: column;
-    position: relative;
 	
-  }
 }
 
 

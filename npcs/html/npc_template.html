@@ -965,75 +965,168 @@
 			  </span>
 				</div>
 			
-				<div class="cell" id="bgcell">
-				<span class="data">
-					<span class="stat-block single">
-					
-						<span class="npc-heading">
-							
-						
-							<h1>Background Story</h1>
-
-														<hr class="divider">
-
-							
-									
-							<span class="property-line">	
-		
-							<p>{{npc.profile.background-story}}</p>
-    
+				<div class="bgcell">
 				
+					<span class="data">
+					
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+							
+								<h1>Background Story</h1>
+
+									<hr class="divider">
+		
+								<span class="property-line first">	
+								
+								
+								<h3>Introduction</h3>
+							
+								
+							</span>
+							
+							<span class="property-line">
+							
+							{{npc.improv.introduction}}<br />
+		
+							</span>
+		
+							
+							<span class="property-line">
+			
+							
+								<h3>Appearance</h3>
+							
+							</span>
+		
+							
+							<span class="property-line">	
+								{{npc.improv.appearance}}
+		
+										
+							</span>
+		
+		
+								
+							<span class="property-line">
+			
+								
+								<h3>Expressions</h3>
+									
+							</span>
+		
+							
+								
+							<span class="property-line">	
+											
+								{{npc.improv.expressions}}
+		
+								
+							</span> 
+		
+		
+								
+							<span class="property-line">
+			
+							
+								<h3>Mannerisms</h3>
+							
+							</span>
+		
+							
+							<span class="property-line">	
+								
+								{{npc.improv.mannerisms}}
+		
+								
+							</span> 
+		
+		
+								
+							<span class="property-line">
+			
+								
+								<h3>Motivations</h3>
+								
+							</span>
+			
+							
+							<span class="property-line">
+											
+								{{npc.acting.motivations}}
+							
+							</span>
+		
+		
+			
+			
+								
+							<span class="property-line">
+			
+								<h3>Passions</h3>
+								
+							</span>
+		
+										
+							<span class="property-line">	
+									
+								{{npc.acting.passions}}
+		
+									
+							</span> 
+		
+	
+		
+									
+							<span class="property-line">
+			
+									
+								<h3>Secrets</h3>
+									
+							</span>
+	
+									
+							<span class="property-line last">
+											{{npc.acting.secrets}}		
+		
+										
+							</span> 
+						
 						</span>
-</span>
-						</span>
+					
 					</span>
+			  
+			  </span>
 				</div>
 			
-			
-				
-				
-  					<div class="cell" id="pers-cell">
+				<div class="cell" id="pers-cell">
 					<span class="data">
-						
 						
 						<span class="stat-block single">
 					
-						<span class="npc-heading">
-					<h1>Personality</h1>
-
+							<span class="npc-heading">
 					
-				
-					
-						
-															<hr class="divider">
-
-							
-									
-							<span class="property-line first">	
-		
-								<p>{{npc.profile.personality}}</p>
-    
-				
-							</span>
-
-  
-							<span class="property-line">
-					
-								  
-							</span>
-
-						</span>	
-					</span>
-					</span>
-					</div>
-				
-			</div>	
-						
-
-		
-		
-			
+								<h1>Personality</h1>
+								
+								<hr class="divider">
 	
+								<span class="property-line first">	
+		
+									{{npc.profile.personality}}
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+				
+		</div>	
+
 </body>
 
 </html>
