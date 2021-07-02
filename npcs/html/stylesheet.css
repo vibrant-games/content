@@ -418,8 +418,22 @@ div p {
 		display:flex;
 	}
 	
-	
+	#bgcell {
+    
+		
+	flex-direction: column;
+    position: relative;
   
+	}
+	
+  #pers-cell {
+    
+		
+	flex-direction: column;
+    position: relative;
+  
+	}
+	
   
   .cell { 
     flex: 100%; 
@@ -458,7 +472,11 @@ div p {
 		display:flex;
 	}
 	
+	#bgcell {
+    flex-direction: column;
+    position: relative;
 	
+  }
 }
 
 
