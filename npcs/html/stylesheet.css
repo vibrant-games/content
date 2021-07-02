@@ -77,36 +77,6 @@ div p {
 
 }
 
-.bgcell {
-  
-	display: inline-block;
-	
-	flex-direction: column;
-	
-	
-	width: 100%;
-	
-	
-	padding: 15px 0 0 15px;
-	
-
-}
-
-.pers-cell {
-  
-	display: inline-block;
-	
-	flex-direction: column
-	
-	width: 100%;
-	
-  
-	padding: 15px 0 0 15px;
-	
-
-	
-
-}
 
 .data {
 	
@@ -242,6 +212,7 @@ div p {
 	text-align: left;
 	width: 100%;
 	color: aliceblue;
+	font-weight: normal;
 	
 }
 
@@ -259,7 +230,9 @@ div p {
   color:aliceblue;
 }
 .property-line{
-  text-indent: -0.25em;
+  font-weight: normal;
+	
+	text-indent: -0.25em;
   padding: 0 0 0 15px;
   line-height: 1.4em;
 }
