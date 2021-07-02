@@ -216,7 +216,7 @@ div p {
 
 
 .abilities{
-	
+	display: inline-block;
     position:relative;
   text-align: center;
   color:indigo;
@@ -235,7 +235,7 @@ div p {
 
 .abilities p{
 	text-align: center;
-  margin: 0 0 10px 0;
+  margin: 0 0 0px 0;
   line-height: 1.2em;
 }
 
