@@ -268,11 +268,12 @@
 									<p>TODO Senses</p>
 					
 								</span> 
-					
+					{{#npc.traits.languages.length}}
 								<span class="property-line">
 						
 									<h4>Languages</h4>
-						
+						<ul>
+							{{/npc.traits.languages.length}}
 									<p>{{#npc.traits.languages}}{{.}} {{/npc.traits.languages}}	,</p>	
 					
 								</span> 
@@ -360,12 +361,14 @@
 							<span class="property-line last">
 					
 								<h3>Factions</h3>
-					
-									<b>{{#npc.traits.factions.id}}</b><br>
+									<ul>
+       								{{#npc.traits.factions}}
+         							 <li>	
+									<b>{{name}}</b><br>
 					
 									<i>{{npcs.traits.factions.role}}</i><br>
 					
-									{{/npc.traits.factions.id}}
+									{{/npc.traits.factions}}
 			
 								</span>
 							
@@ -814,7 +817,14 @@
 					
 								<span class="property-line">
 					
-									<p><b>{{#npc.traits.factions.id}}</b></p>
+									<ul>
+       								{{#npc.traits.factions}}
+         							 <li>	
+									<b>{{name}}</b><br>
+					
+									<i>{{npcs.traits.factions.role}}</i><br>
+					
+									{{/npc.traits.factions}}
 					
 									<p><i>{{npcs.traits.factions.role}}</i></p>
 					
