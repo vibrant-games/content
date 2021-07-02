@@ -4,9 +4,8 @@
 <meta charset="utf-8">
 <title>{{npc.name}}</title>
 
-<link rel="stylesheet" href="stylesheet.css"/>
-	
-	
+<link rel="stylesheet" href="stylesheet {{npc.traits.alignment}}.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	
 	
@@ -14,15 +13,38 @@
 
 
 	<body>
+		
+		<div class="topnav" id="myTopnav">
+  <a href="#home" class="active"><img src="images/LOGO_TWO_FINAL_ON_BLACK.png" id="logo" alt=""></a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </a>
 
+		</div>
+		
+		<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
+		<div class="banner bottom"></div>
+		
 		<div class="container">
   		
 			<div class="cell" id="cell4">
 			
 			<span class="pic">
 
-				<img id="pic" alt="" src="./npc_imgs/{{npc.name}}.png" width="300" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				<img id="logobar" alt="" src="./npc_imgs/{{npc.name}}.png" width="300" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
 				
 			  </span>
 			</div>
@@ -977,126 +999,15 @@
 
 									<hr class="divider">
 		
-								<span class="property-line first">	
-								
-								
-								<h3>Introduction</h3>
-							
-								
+								<span class="property-line">	
+		
+							{{npc.profile.background-story}}
+    
+								</span>
+
 							</span>
-							
-							<span class="property-line">
-							
-							{{npc.improv.introduction}}<br />
-		
-							</span>
-		
-							
-							<span class="property-line">
-			
-							
-								<h3>Appearance</h3>
-							
-							</span>
-		
-							
-							<span class="property-line">	
-								{{npc.improv.appearance}}
-		
-										
-							</span>
-		
-		
-								
-							<span class="property-line">
-			
-								
-								<h3>Expressions</h3>
-									
-							</span>
-		
-							
-								
-							<span class="property-line">	
-											
-								{{npc.improv.expressions}}
-		
-								
-							</span> 
-		
-		
-								
-							<span class="property-line">
-			
-							
-								<h3>Mannerisms</h3>
-							
-							</span>
-		
-							
-							<span class="property-line">	
-								
-								{{npc.improv.mannerisms}}
-		
-								
-							</span> 
-		
-		
-								
-							<span class="property-line">
-			
-								
-								<h3>Motivations</h3>
-								
-							</span>
-			
-							
-							<span class="property-line">
-											
-								{{npc.acting.motivations}}
-							
-							</span>
-		
-		
-			
-			
-								
-							<span class="property-line">
-			
-								<h3>Passions</h3>
-								
-							</span>
-		
-										
-							<span class="property-line">	
-									
-								{{npc.acting.passions}}
-		
-									
-							</span> 
-		
-	
-		
-									
-							<span class="property-line">
-			
-									
-								<h3>Secrets</h3>
-									
-							</span>
-	
-									
-							<span class="property-line last">
-											{{npc.acting.secrets}}		
-		
-										
-							</span> 
-						
 						</span>
-					
 					</span>
-			  
-			  </span>
 				</div>
 			
 				<div class="cell" id="pers-cell">
