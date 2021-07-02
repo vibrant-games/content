@@ -221,12 +221,19 @@
 									<p>TODO Saving Throws</p>
 					
 								</span> 
-					
+					{{#npc.specialties.skills.length}}
 								<span class="property-line">
 					
 									<h4>Skills</h4>
-						
-									<p>{{#npc.specialties.skills}}{{.}}{{/npc.specialties.skills}}</p>
+						<ul>
+      {{/npc.specialties.skills.length}}
+        
+          <li>
+									<p>{{#npc.specialties.skills}}{{.}}{{/npc.specialties.skills</li>
+        {{/npc.specialties.skills}}
+      {{#npc.specialties.skills.length}}
+      </ul>
+      {{/npc.specialties.skills.length}}</p>
 					
 								</span> 
 					
