@@ -158,7 +158,7 @@ div p {
 	
 	flex-direction: column;
 	vertical-align: top;
-	padding: 0px 0px 10px 0px;
+	padding: 0px 0px 10px;
 	box-shadow: 0 1.5px 1.5em #867453;
 	background-image: url("../../images/bg-testt.png");
 	
@@ -243,8 +243,8 @@ div p {
   font-style: italic;
   font-size: 16px;
   line-height: 1.2em;
-  margin: 10 10 20 60px;
-	padding-left: 30px;
+  margin: 10 0 20 20px;
+	
 	color: indigo;
 
 }
@@ -319,14 +319,14 @@ div p {
   font-weight: normal;
 	
 	text-indent: -0.25em;
-  padding: 0 0 0 15px;
+  padding: 0 0 0 10px;
   line-height: 1.4em;
 }
 .property-line.first{
   margin: 0 0 0 0px;
 }
 .property-line.last{
-  margin: 0 0 10px o;
+  margin: 0 0 10px 0;
 }
 
 
@@ -336,7 +336,7 @@ div p {
 	display: inline-block;
 	text-align: left;
 	text-indent: -0.25em;
-  padding: 0 0 0 15px;
+  margin:0 0 0 15px;
   line-height: 1.4em;
 	line-height: 200%;
 }
@@ -408,8 +408,8 @@ div p {
 .stat-block.single{
 	display: inline-block;
   vertical-align: top;
-	width: 90%;
-  text-align: justify;
+	width: 100%;
+  text-align: left;
 	
 }
 .stat-block.wide .section-left,
