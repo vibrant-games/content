@@ -229,8 +229,8 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - Humam
-    - dwarvish
+    - Huma,
+    - dwarvish,
     - orcish
 
     #
@@ -268,7 +268,7 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Servile
+    - Servile,
 
   improv:
 
@@ -386,9 +386,9 @@ npc:
   #
   specialties:
     skills:
-    - Alchemy
-    - Cooking
-    - Poisoner's Kit
+    - Alchemy,
+    - Cooking,
+    - Poisoner's Kit,
     - Disguise Kit
     special-abilities:
     - title: Sneak Attack
