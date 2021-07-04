@@ -253,7 +253,14 @@ npc:
     #
     factions:
     - id: butler_to_the_police_chief_dabbling_member_of_white_gloves_black_arts_libertarian_alchemists_
-      name: Butler to the police chief; dabbling member of White Gloves, Black Arts libertarian alchemists.
+      name: Local Constabulary
+      role: Butler to the Chief
+    - id: dabbling_member_of_White_Gloves
+      name: The White Gloves
+      role: Dabbler
+    - id: Black Arts libertarian alchemists
+      name: black arts libertarian alchemists
+      role: Developer
 
     #
     # Adjectives or other tags that can be used for searching.
