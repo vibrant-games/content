@@ -320,11 +320,17 @@ div p {
 }
 .property-line.last{
   margin: 0 0 10px;
-	text-indent: 30px;
+	;
 }
 
 .property-line.first{
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0;
+	text-indent: 30px
+}
+
+.property-line.bg{
+  margin: 0 0 0 0;
+	text-indent: 30px
 }
 
 
