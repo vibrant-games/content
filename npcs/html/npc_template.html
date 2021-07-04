@@ -363,15 +363,16 @@
 								{{#npc.specialties.attacks}}
 								<b>{{title}}</b> - {{{description}}}
 								<br>
+								<br>
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
 				
-								<br>
+								
 								
 							</span>
 			
 				
-							<span class="property-line ">
+							<span class="property-line factions">
 					
 								<h3>Factions</h3>
 									
@@ -452,8 +453,9 @@
 											<i>{{.}}</i>
 											<br>
 											<br>
-											{{/npc.improv.expressions.length}}
 											{{/npc.improv.expressions}}
+											{{/npc.improv.expressions.length}}
+											
 										</span> 
 		
 		
@@ -929,7 +931,14 @@
 								
 							<span class="property-line">	
 											
-								{{npc.improv.expressions}}
+											{{#npc.improv.expressions.length}}
+											{{#npc.improv.expressions}}
+											<i>{{.}}</i>
+											<br>
+											<br>
+											{{/npc.improv.expressions}}
+											{{/npc.improv.expressions.length}}
+											
 		
 								
 							</span> 
