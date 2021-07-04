@@ -1,0 +1,591 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: nothuriel_oathbreaker
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-07-02"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Nothuriel Oathbreaker
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: middle aged adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Aasimar
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Fallen
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: she/her
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Dreadlord
+    
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Paladin
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Oathbreaker
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 20
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Undercommon
+    - Celestial
+    - Infernal
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    - N/A
+
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Grim
+    - Angry
+    - Vengeful
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  She would only seek out a party to destroy them and all that is good in the world
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   She is 7+' Tall and stunningly beautiful with long black hair, pupiless black eyes and silver skin. Dressed in full black plate with a flowing crimson cape and horned helmet
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  You have chosen Death!
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   She carries herself with regal poise but with the weariness and swagger of an experience fighter
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Pleasing her dark gods and extinguishing all that is good and light from the world
+      
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Fear and Destruction, that's it, that's all
+      
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      Lawful Good Holy Symbols, Certifiably Insane
+      
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: | 
+      The secrets of life after death. The goals of the lords of chaos
+       
+      
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 24
+    hit-points: 193
+    speed: 30
+    str: 22
+    dex: 19
+    con: 18
+    int: 21
+    wis: 16
+    cha: 25
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+   - - Aasimar Abilities:
+       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+       - Celestial Resistance: Resistance to Necrotic and Radiant Damage
+       - Hurting Hands: Once per longrest, can touch a creature and cause it to lose 5HP
+       - Dark Bearer: Can cast the Darkness spell using Charisma as spellcasting abaility
+       - Necrotic Shroud: you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant
+                          you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 21) or become frightened of you until the end of your next turn.
+                          - Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with
+                            an attack or a spell. The extra necrotic damage equals your level (20).
+                          - Once you use this trait, you can't use it again until you finish a long rest.
+
+   - - Paladin Abilities:
+       - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+                       within the same radius. Can use this ability 7 times per long rest
+       - Lay on Hands: Can touch another creature to heal up to 100HP per long rest. Or can 5HP to cure a disease or poison affecting it.
+       - Fighting Style: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an Attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The
+                         weapon must have the Two-Handed or Versatile property for you to gain this benefit 
+       - Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends 
+       - Divine Health: Immune to disease
+       - Extra Attack: Can take an extra attack action each turn
+       - Aura of Protection: you or friendly creatures within 30 feet must make a saving throw, they get a +7 bonus to their roll
+       - Aura of Courage: you and friendly creatures within 30 feet can't be frightened while he is conscious
+       - Cleansing Touch: 7 times per long rest can use an action to touch a creature to end one spell on himself or a willing creature he touches       
+       - Spellcasting: Spell DC 21
+         1st Level: Command, Searing Smite, Thunderous Smite, Wrathful Smite
+         2nd Level: Branding Smite, Find Steed, Locate Object
+         3rd Level: Blinding Smite, Dispel Magic, Elemental Weapon
+         4th Level: Banishment, Staggering Smite, Locate Creature
+         5th Level: Banishing Smite, Destructive Wave
+
+   - - Oathbreaker Abilities:
+       - Channel Divinity: you gain the following 2 Channel Divinity options
+                           - Control Undead: As an action, you target one undead creature you can see within 30 feet of you. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for
+                                             the next 24 hours, or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than your paladin level is immune to this effect.
+                           - Dreadful Aspect: As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it
+                                              can see you. On a failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt
+                                              another Wisdom saving throw to end the effect on it.
+       - Aura of Hate: you as well any fiends and undead within 30 feet of you, gain a bonus to melee weapon damage rolls equal to your Charisma modifier (+7). A creature can benefit from this feature from only one
+                       paladin at a time.
+       - Supernatural Resistance: you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons 
+       - Dread Lord: you can, as an action, surround yourself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around you to dim light. Whenever an enemy that is frightened by
+                     you starts its turn in the aura, it takes 4d10 psychic damage. Additionally, you and any creatures of your choosing in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on
+                     attack rolls against creatures draped in this shadow. While the aura lasts, you can use a bonus action on your turn to cause the shadows in the aura to attack one creature. Make a melee spell attack against
+                     the target. If the attack hits, the target takes necrotic damage equal to 3d10 + your Charisma modifier. After activating the aura, you can't do so again until you finish a long rest.        
+       - Spellcasting: Spell DC 21
+         3rd Level: Hellish Rebuke, Inflict Wounds
+         5th Level: Crown of Madness, Darkness
+         9th Level: Animate Dead, Bestow Curse
+         13th Level: Blight, Confusion 
+         17th Level: Contagion, Dominate Person       
+               
+    special-abilities:
+       - Proficiencies: Athletics, Intimidation, Heavy Armor, Perception, Survival
+       - Feats: Dual Weilder, Great Weapons Master, Heavy Armor Master, Mage Slayer, Savage Attacker, War Caster
+       - Truesight: within 60ft can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a
+                    shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.
+      - Legendary Resistance: (3/Day), If Nothuriel Oathbreaker fails a saving throw she can choose to succeed instead 
+      - Legendary Actions: Nothuriel Oathbreaker can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Nothuriel
+                           Oathbreaker regains spent Legendary Actions at the start of her turn
+        - Legion of the Damned: Nothuriel Oathbreaker can cast Summon Undead at 5th Level except she summons 1d12+3 undead instead of one
+        - Misty Step: Nothuriel Oathbreaker can cast Misty Step
+        - Trade Life: Nothuriel Oathbreaker can touch a creature to drain its life - Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving
+                      throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum
+                      to 0. Nothuriel gains HP equal to the damage done        
+       
+    attacks: |
+      3 attacks with Greatswords or 1 spell attack
+    combat-tactics: |
+      Nothuriel will march recklessly headlong into battle attacking with her greatsword and spell attacks while summoning her undead legions to fight along side her
+    special-equipment:
+    - Dual +2 Greatswords
+    - +2 Plate Armor
+    
+      
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Once a shining beacon of light and justice, Nothuriel stuck a deal with dark gods to bring her betrayed love back from the dead. Her lover was returned to her as a lich, driving her mad and causing her to embrace the
+      darkness and do the bidding of the dark gods forever. Now she leads legions of the damned and undead against the light.
+      
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Nothuriel Oathbreaker was once a beautiful, loving and righteous woman, but those days are long gone. There is nothing left of that woman. What is left is a mad, angry, bloodthirsty beast. All she has left is her devotion
+      to her undead lover and the dark gods who revived him. She serves destruction and doesn't know the meaning of mercy.
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
