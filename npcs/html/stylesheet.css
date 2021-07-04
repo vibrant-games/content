@@ -326,7 +326,7 @@ div p {
   margin: 0 0 0 0px;
 }
 .property-line.last{
-  margin: 0 0 10px;
+  margin: 0 0 10px o;
 }
 
 .property-line.first{
@@ -335,9 +335,15 @@ div p {
 }
 
 .property-line.bg{
-  margin: 0 0 0 0;
   text-indent: 30px;
+	line-height: 200%;
 }
+
+
+.property-line.factions{
+  line-height: 200%;
+}
+
 
 .bg-links {
 
