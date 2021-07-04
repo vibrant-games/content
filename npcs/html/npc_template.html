@@ -280,7 +280,7 @@
 						
 							{{#npc.traits.languages.length}}
 							{{#npc.traits.languages}}
-							{{.}}, 
+							{{.}}
 							{{/npc.traits.languages}}
 							{{/npc.traits.languages.length}}
 					
@@ -366,7 +366,8 @@
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
 				
-				
+								<br>
+								
 							</span>
 			
 				
@@ -380,10 +381,10 @@
 										<b>{{name}}</b><br>
 					
 										<i>{{role}}</i><br>
-									
+									<br>
 									{{/npc.traits.factions}}
 									{{/npc.traits.factions.length}}
-										<br>
+										
 								</span>
 							
 					</span>
@@ -446,8 +447,13 @@
 			
 											<h3>Expressions</h3>
 											
-											{{npc.improv.expressions}}
-		
+											{{#npc.improv.expressions.length}}
+											{{#npc.improv.expressions}}
+											<i>{{.}}</i>
+											<br>
+											<br>
+											{{/npc.improv.expressions.length}}
+											{{/npc.improv.expressions}}
 										</span> 
 		
 		
@@ -754,7 +760,7 @@
 						
 									{{#npc.traits.languages.length}}
 									{{#npc.traits.languages}}
-									{{.}}, 
+									{{.}} 
 									{{/npc.traits.languages}}
 									{{/npc.traits.languages.length}}
 					
@@ -832,7 +838,7 @@
 								<br>
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
-				
+								<br>
 				
 							</span>
 			
@@ -847,10 +853,10 @@
 										<b>{{name}}</b><br>
 					
 										<i>{{role}}</i><br>
-									
+									<br>
 									{{/npc.traits.factions}}
 									{{/npc.traits.factions.length}}
-										<br>
+										
 								</span>
 							
 					</span>
@@ -1031,7 +1037,7 @@
 						</span>
 					</span>
 				</div>
-			
+	<!--		
 				<div class="cell" id="pers-cell">
 					<span class="data">
 						
@@ -1057,7 +1063,7 @@
 					</span>
 				
 			</div>
-				
+			-->	
 		</div>	
 </div>
 
