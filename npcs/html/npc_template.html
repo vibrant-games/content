@@ -781,28 +781,29 @@
 								
 								
 								
-										{{.}}
-								
+										
 									
-									
-									
+									<b>{{title}}</b> - {{{description}}}
 								
 							</span> <!-- property block -->
-				{{/npc.specialties.special-abilities}}
-								{{/npc.specialties.special-abilities.length}}
-				
+							{{/npc.specialties.special-abilities}}
+							{{/npc.specialties.special-abilities.length}}
+								
+								
+							{{#npc.specialties.special-equipment.length}}
+							{{#npc.specialties.special-equipment}}
 							<span class="property-line">
 					
 								<h4>Special Equipment</h4>
 					
-								{{#npc.specialties.special-equipment.length}}
-								{{#npc.specialties.special-equipment}}
-          						{{.}}
-         						{{/npc.specialties.special-equipment}}
-								{{/npc.specialties.special-equipment.length}}
+								
+          						<b>{{title}}</b> - {{{description}}}
+         						
 								
 							</span>
        				
+								{{/npc.specialties.special-equipment}}
+								{{/npc.specialties.special-equipment.length}}
 				
 							<span class="property-line">
 					
@@ -1012,7 +1013,7 @@
 		
 								
 								
-								<span class="property-line">	
+								<span class="property-line bg">	
 		
 								
 									{{{npc.profile.background-story}}}

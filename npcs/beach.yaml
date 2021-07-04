@@ -392,14 +392,15 @@ npc:
     - Disguise Kit
     special-abilities:
     - title: Sneak Attack
-      description: A sneay attack
+      description: A sneaky attack
     - title: Assassinate
     - title: Uncanny Dodge
     - title: Cunning Action
     attacks:
     - title: Assassin's Dagger (+1)
-      Description: When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage.      |
-    - title: Hidden Blade (1d4 piercing, finesse)
+      description: When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage.      |
+    - title: Hidden Blade
+    - description: <i>(1d4 piercing, finesse)<i>
     combat-tactics: |
      If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike.
     special-equipment:

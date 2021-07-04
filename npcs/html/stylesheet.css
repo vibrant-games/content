@@ -316,13 +316,16 @@ div p {
   line-height: 1.4em;
 }
 .property-line.first{
-  margin: 0 0 0 0;
+  margin: 0 0 0 15px;
 }
 .property-line.last{
   margin: 0 0 10px;
+	text-indent: 30px;
 }
 
-
+.property-line.first{
+  margin: 0 0 0 15px;
+}
 
 
 
