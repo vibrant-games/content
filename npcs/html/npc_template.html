@@ -770,25 +770,25 @@
 				
 												<hr class="divider">
 
-	
+	{{#npc.specialties.special-abilities.length}}
+
+								{{#npc.specialties.special-abilities}}
 				
 							<span class="property-line">
 					
 								<h4>Special Abilities</h4>
 								
-								{{#npc.specialties.special-abilities.length}}
-
-								{{#npc.specialties.special-abilities}}
+								
 								
 										{{.}}
 								
 									
 									
-									{{/npc.specialties.special-abilities}}
-								{{/npc.specialties.special-abilities.length}}
+									
 								
 							</span> <!-- property block -->
-				
+				{{/npc.specialties.special-abilities}}
+								{{/npc.specialties.special-abilities.length}}
 				
 							<span class="property-line">
 					
@@ -1009,16 +1009,18 @@
 
 									<hr class="divider">
 		
-								<span class="property-line">	
-		
 								{{#npc.profile.background-story.length}}
 								{{#npc.profile.background-story}}
+								<span class="property-line">	
+		
+								
 									{{text}}
-								{{/npc.profile.background-story}}
-								{{/npc.profile.background-story.length}}
+								
     
 								</span>
 
+								{{/npc.profile.background-story}}
+								{{/npc.profile.background-story.length}}
 							</span>
 						</span>
 					</span>
