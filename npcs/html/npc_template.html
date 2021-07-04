@@ -319,7 +319,7 @@
 								
 								{{#npc.specialties.special-abilities.length}}
 								{{#npc.specialties.special-abilities}}
-								<b>{{title}}</b> - {{description}}<br>
+								<b>{{title}}</b> - {{{description}}}<br>
 								{{/npc.specialties.special-abilities}}
 								{{/npc.specialties.special-abilities.length}}	
 									
@@ -335,7 +335,7 @@
 								<h3>Special Equipment</h3>
 								{{#npc.specialties.special-equipment.length}}
 								{{#npc.specialties.special-equipment}}
-									<b>{{title}}</b> - {{description}}<br>
+									<b>{{title}}</b> - {{{description}}}<br>
 									
          						{{/npc.specialties.special-equipment}}
 								{{/npc.specialties.special-equipment.length}}
@@ -361,7 +361,7 @@
 					
 								{{#npc.specialties.attacks.length}}
 								{{#npc.specialties.attacks}}
-								<p><b>{{title}}</b> - {{{Description}}}</p>
+								<p><b>{{title}}</b> - {{{description}}}</p>
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
 				
@@ -375,11 +375,11 @@
 									
 									{{#npc.traits.factions.length}}
 									{{#npc.traits.factions}}
-									<span class="property-line">
+									
 										<b>{{name}}</b><br>
 					
 										<i>{{role}}</i><br>
-									</span>
+									
 									{{/npc.traits.factions}}
 									{{/npc.traits.factions.length}}
 			
@@ -411,7 +411,7 @@
 						
 						<span class="npc-heading">
 										
-						<h1>Roleplaying</h1>
+						<h1><a class="bg-links">Roleplaying</a></h1>
 						
 
 							<svg height="5" width="100%" class="tapered-rule">
