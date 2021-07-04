@@ -315,7 +315,7 @@
 								
 								{{#npc.specialties.special-abilities.length}}
 								{{#npc.specialties.special-abilities}}
-								{{.}}
+								<b>{{title}}</b> - {{description}}
 								{{/npc.specialties.special-abilities}}
 								{{/npc.specialties.special-abilities.length}}	
 									
@@ -331,7 +331,7 @@
 								<h3>Special Equipment</h3>
 								{{#npc.specialties.special-equipment.length}}
 								{{#npc.specialties.special-equipment}}
-          						{{.}}
+          						<b>{{title}}</b> - {{description}}
          						{{/npc.specialties.special-equipment}}
 								{{/npc.specialties.special-equipment.length}}
 								
@@ -356,7 +356,7 @@
 					
 								{{#npc.specialties.attacks.length}}
 								{{#npc.specialties.attacks}}
-								{{.}}
+								<b>{{title}}</b> - {{Description}}
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
 				
@@ -1011,7 +1011,11 @@
 		
 								<span class="property-line">	
 		
-							{{npc.profile.background-story}}
+								{{#npc.profile.background-story.length}}
+								{{#npc.profile.background-story}}
+									{{text}}
+								{{/npc.profile.background-story}}
+								{{/npc.profile.background-story.length}}
     
 								</span>
 
