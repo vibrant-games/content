@@ -329,13 +329,15 @@ div p {
   margin: 0 0 10px o;
 }
 
-.property-line.first{
-  margin: 0 0 0 0;
-	
-}
+
 
 .property-line.bg{
-   
+   font-weight: normal;
+	display: inline-block;
+	text-align: left;
+	text-indent: -0.25em;
+  padding: 0 0 0 15px;
+  line-height: 1.4em;
 	line-height: 200%;
 }
 
@@ -579,6 +581,15 @@ div p {
 	
 	
 }
+#bgcell{
+		flex-direction: column;
+    	position: relative;
+		width: 90%;
+		
+	}
+
+
+
 
 
 @media only screen and (min-width: 1080px) and (max-width: 2160px) {
@@ -619,3 +630,13 @@ div p {
 	}
 	
 }
+
+#bgcell{
+		flex-direction: column;
+    	position: relative;
+		width: 90%;
+		
+	}
+
+
+
