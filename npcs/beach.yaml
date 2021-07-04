@@ -252,7 +252,7 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: butler_to_the_police_chief_dabbling_member_of_white_gloves_black_arts_libertarian_alchemists_
+    - id: butler_to_the_police_chief
       name: Local Constabulary
       role: Butler to the Chief
     - id: dabbling_member_of_White_Gloves
@@ -391,18 +391,26 @@ npc:
      - Poisoner's Kit
      - Disguise Kit
     special-abilities:
-     - Sneak Attack
-     - Assassinate
-     - Uncanny Dodge
-     - Cunning Action
+     - id: ability_1
+       title: Sneak Attack
+       description: A sneay attack
+     - id: ability_2
+       title: Assassinate
+     - id: ability_3
+       title: Uncanny Dodge
+     - id: abillity_4
+       title: Cunning Action
     attacks:
-     - title: Assassin's Dagger (+1)
+     - id: attack_1
+       title: Assassin's Dagger (+1)
        Description: When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage.      |
-     - title: Hidden Blade (1d4 piercing, finesse)
+     - id: attack_2
+       title: Hidden Blade (1d4 piercing, finesse)
     combat-tactics: |
       If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike.
     special-equipment:
-     - title: Burleigh and Stronginthearm Number IX
+     - id: equipment_1
+       title: Burleigh and Stronginthearm Number IX
        description: A +3 precise crossbow; only 2 were ever made.
 
   profile:
