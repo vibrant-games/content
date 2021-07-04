@@ -131,21 +131,7 @@ div p {
 
 }
 
-.cell {
-  
-	display: flex;
 
-	align-content:center;
-	align-items:center;
-  
-	flex-basis: auto;
-	flex-grow:1;
-	
-	flex-wrap: nowrap;
-	flex-direction: row;
-	
-
-}
 
 
 .data {
@@ -154,6 +140,23 @@ div p {
 	flex-grow: 1;
     flex-basis: 0;
 	max-width: 620px;
+	min-width: 200px;
+	flex-wrap: wrap;
+	
+	flex-direction: column;
+	vertical-align: top;
+	padding: 0px 0px 10px;
+	box-shadow: 0 1.5px 1.5em #867453;
+	background-image: url("../../images/bg-testt.png");
+	
+}
+
+.data2 {
+	
+	display: flex;
+	flex-grow: 1;
+    flex-basis: 0;
+	max-width: 1240px;
 	min-width: 200px;
 	flex-wrap: wrap;
 	
