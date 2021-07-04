@@ -99,7 +99,10 @@ div p {
   margin: 0 auto;
 
 }
-
+.container2 {
+  margin: 0 auto;
+	
+}
 
 
 
@@ -285,6 +288,7 @@ div p {
 	display: inline-block;
 	flex-basis: 0;
 	text-align: left;
+	text-indent: 1.2em;
 	width: 80%;
 	color:indigo;
 	font-weight: normal;
@@ -467,6 +471,11 @@ div p {
 	
   }
   
+	.container2 {
+		
+		flex-direction: column;
+	}
+	
 	#cell1{
 		display: none;
 	}	
@@ -511,6 +520,13 @@ div p {
 	flex-direction: column;
     position: relative;
   }
+	
+	
+	.container2 {
+
+	flex-direction: column;
+    position: relative;
+  }
   
   #cell1 {
 		display: none;
@@ -547,6 +563,11 @@ div p {
 	  flex-wrap:nowrap;
   }
   
+	.container2 {
+
+	flex-direction: row;;
+    position: relative;
+  }
   
   
   #cell1 {
