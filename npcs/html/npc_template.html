@@ -779,50 +779,46 @@
 
 								
 				
-							<span class="property-line">
+							<span class="property-line first">
 					
-								<h4>Special Abilities</h4>
+								<h3>Special Abilities</h3>
+					
+								
 								{{#npc.specialties.special-abilities.length}}
 								{{#npc.specialties.special-abilities}}
-								
-																	
-									
-									<b>{{title}}</b> - {{{description}}}
-								
+								<b>{{title}}</b> - {{{description}}}<br>
 								{{/npc.specialties.special-abilities}}
-								{{/npc.specialties.special-abilities.length}}
-								
-							</span> <!-- property block -->
-							
+								{{/npc.specialties.special-abilities.length}}	
+									
 								
 								
-							
-							<span class="property-line">
-					
-								<h4>Special Equipment</h4>
-					
-								{{#npc.specialties.special-equipment.length}}
-								{{#npc.specialties.special-equipment}}
-								
-          						<b>{{title}}</b> - {{{description}}}
-         						
 								
 							</span>
-       				
-								{{/npc.specialties.special-equipment}}
+
+				
+							
+								<span class="property-line">
+					
+								<h3>Special Equipment</h3>
+								{{#npc.specialties.special-equipment.length}}
+								{{#npc.specialties.special-equipment}}
+									<b>{{title}}</b> - {{{description}}}<br>
+									
+         						{{/npc.specialties.special-equipment}}
 								{{/npc.specialties.special-equipment.length}}
+								
+							
+								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-					
 								{{#npc.specialties.combat-tactics.length}}
 								{{#npc.specialties.combat-tactics}}
 								{{.}}
 								
 								{{/npc.specialties.combat-tactics}}
 								{{/npc.specialties.combat-tactics.length}}
-				
 							</span> 
 			
 				
@@ -832,36 +828,38 @@
 					
 								{{#npc.specialties.attacks.length}}
 								{{#npc.specialties.attacks}}
-								{{.}}
+								<b>{{title}}</b> - {{{description}}}
+								<br>
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
+				
+				
 							</span>
 			
 				
-							<span class="property-line">
+							<span class="property-line ">
 					
 								<h3>Factions</h3>
-								{{#npc.traits.factions.length}}
-         						{{#npc.traits.factions}}
-								<span class="property-line">
 									
-									<b>{{name}}</b><br>
-					
-									<i>{{role}}</i><br>
-					
+									{{#npc.traits.factions.length}}
+									{{#npc.traits.factions}}
 									
-				
+										<b>{{name}}</b><br>
+					
+										<i>{{role}}</i><br>
+									
+									{{/npc.traits.factions}}
+									{{/npc.traits.factions.length}}
+										<br>
 								</span>
-								{{/npc.traits.factions}}
-								{{/npc.traits.factions.length}}
-			<!-- property block -->
+							
+					</span>
+						
+					</span>
+					
+			  </span>
 		
 			
-						</span>
-							</span>
-						</span>
-					</span>
-		
 			</div>
 			
 		  <div class="cell" id="cell3">
