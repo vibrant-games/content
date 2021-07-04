@@ -216,9 +216,9 @@
 										
 								</span> 
 					
-					<svg height="5" width="100%" class="tapered-rule">
-	    <polyline points="0,0 400,2.5 0,5"></polyline>
-	  </svg>
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
 								<span class="property-line first">
@@ -234,7 +234,7 @@
 									<h4>Skills</h4>
 									{{#npc.specialties.skills.length}}
       								{{#npc.specialties.skills}}
-									{{.}}<br>
+									<p>{{.}}<br></p>
         							{{/npc.specialties.skills}}
       								{{/npc.specialties.skills.length}}
      
@@ -291,7 +291,11 @@
 						
 									<h4>Adjectives</h4>
 						
-									{{#npc.traits.adjectives.length}}{{#npc.traits.adjectives}}{{.}}, {{/npc.traits.adjectives}}{{/npc.traits.adjectives.length}}	
+									{{#npc.traits.adjectives.length}}
+									{{#npc.traits.adjectives}}
+									{{.}}, 
+									{{/npc.traits.adjectives}}
+									{{/npc.traits.adjectives.length}}	
 					
 								</span> 
 
@@ -369,11 +373,12 @@
 					
 								<h3>Factions</h3>
 									
-       								{{#npc.traits.factions.length}}
-         							{{#npc.traits.factions}}
-									<p><b>{{name}}</b><br>
+									{{#npc.traits.factions.length}}
+									{{#npc.traits.factions}}
+								
+										<p><b>{{name}}</b></p>
 					
-									<i>{{role}}</i><br></p>
+										<p><i>{{role}}</i><br></p>
 					
 									{{/npc.traits.factions}}
 									{{/npc.traits.factions.length}}
@@ -771,31 +776,32 @@
 				
 												<hr class="divider">
 
-	{{#npc.specialties.special-abilities.length}}
-
-								{{#npc.specialties.special-abilities}}
+								
 				
 							<span class="property-line">
 					
 								<h4>Special Abilities</h4>
+								{{#npc.specialties.special-abilities.length}}
+								{{#npc.specialties.special-abilities}}
 								
-								
-								
-										
+																	
 									
 									<b>{{title}}</b> - {{{description}}}
 								
+								{{/npc.specialties.special-abilities}}
+								{{/npc.specialties.special-abilities.length}}
+								
 							</span> <!-- property block -->
-							{{/npc.specialties.special-abilities}}
-							{{/npc.specialties.special-abilities.length}}
+							
 								
 								
-							{{#npc.specialties.special-equipment.length}}
-							{{#npc.specialties.special-equipment}}
+							
 							<span class="property-line">
 					
 								<h4>Special Equipment</h4>
 					
+								{{#npc.specialties.special-equipment.length}}
+								{{#npc.specialties.special-equipment}}
 								
           						<b>{{title}}</b> - {{{description}}}
          						
@@ -834,19 +840,19 @@
 							<span class="property-line">
 					
 								<h3>Factions</h3>
-					
+								{{#npc.traits.factions.length}}
+         						{{#npc.traits.factions}}
 								<span class="property-line">
-									{{#npc.traits.factions.length}}
-         							{{#npc.traits.factions}}
+									
 									<b>{{name}}</b><br>
 					
 									<i>{{role}}</i><br>
 					
-									{{/npc.traits.factions}}
-									{{/npc.traits.factions.length}}
+									
 				
 								</span>
-			
+								{{/npc.traits.factions}}
+								{{/npc.traits.factions.length}}
 			<!-- property block -->
 		
 			
@@ -873,9 +879,8 @@
 						
 							<h1>Roleplaying</h1>
 
-														<hr class="divider">
-
-							
+								<hr class="divider">
+					
 									
 							<span class="property-line first">	
 								
