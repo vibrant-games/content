@@ -386,28 +386,28 @@ npc:
   #
   specialties:
     skills:
-     - Alchemy
-     - Cooking
-     - Poisoner's Kit
-     - Disguise Kit
+    - Alchemy
+    - Cooking
+    - Poisoner's Kit
+    - Disguise Kit
     special-abilities:
-     - id: ability_1
-       title: Sneak Attack
-       description: A sneay attack
-     - id: ability_2
-       title: Assassinate
-     - id: ability_3
-       title: Uncanny Dodge
-     - id: abillity_4
-       title: Cunning Action
+    - id: ability_1
+      title: Sneak Attack
+      description: A sneay attack
+    - id: ability_2
+      title: Assassinate
+    - id: ability_3
+      title: Uncanny Dodge
+    - id: abillity_4
+      title: Cunning Action
     attacks:
-     - id: attack_1
-       title: Assassin's Dagger (+1)
-       Description: When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage.      |
-     - id: attack_2
-       title: Hidden Blade (1d4 piercing, finesse)
+    - id: attack_1
+      title: Assassin's Dagger (+1)
+      Description: When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage.      |
+    - id: attack_2
+      title: Hidden Blade (1d4 piercing, finesse)
     combat-tactics: |
-      If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike.
+     If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike.
     special-equipment:
      - id: equipment_1
        title: Burleigh and Stronginthearm Number IX
@@ -423,16 +423,16 @@ npc:
     # No length limit for now.
     #
     background-story:
-     - id: bgpara_1
-       text: Spartan in nature (but without the honorable intent) Orcish culture is well-known for its celebration of brute strength and denunciation of the more feminine side of an individual's nature. From birth, Beach, born 'Ukhtor', was smaller than his cohort and more inclined towards cleanliness and grace. As a baby he would cry and whine if exposed to violence or filth of any kind.</p><p>Bullied and beaten often for what were perceived as less 'Orcish' features, even as an infant, Ukhtor's mother feared for her son growing up in such a horrible environment. What's more, she was embarrassed to have produced such a creature. During one of the war-party's treks between camps, she abandoned Ukhtor in a basket by a well-traveled road just outside of the party's planned travel path.
-     - id: bgpara_2
-       text: Local constables were escorting magistrates between nearby towns and cam across the basket. Peering inside, the head of the constabulary, Amin Carr, exclaimed, "cursed Orcs! They cannot even care for their own!"
-     - id: bgpara_3
-       text: "Do away with the filthy runt!" One of the constables sneered.
-     - id: bgpara_3
-       text: Amin peered into Ukhtor's deep blues eyes and saw a nimble, dedicated soul; much different from the ferocious hatred he'd seen in his battles against raid-parties. "No," Amin exclaimed, "this one is different. And we needn't fall victim to the same virulent hatred that afflicts the Orcs."
-     - id: bgpara_4
-       text: Amin brought Ukhtor with him for the journey. Staring into his sea-blue eyes he pronounced that the youngster be named 'Beach'. Raised within the Constabulary's ranks, Beach learned skills more akin to his natural abilities and became an agile killer. He was also imbued with their sense of noblility and respect.
+    - id: bgpara_1
+      text: Spartan in nature (but without the honorable intent) Orcish culture is well-known for its celebration of brute strength and denunciation of the more feminine side of an individual's nature. From birth, Beach, born 'Ukhtor', was smaller than his cohort and more inclined towards cleanliness and grace. As a baby he would cry and whine if exposed to violence or filth of any kind.</p><p>Bullied and beaten often for what were perceived as less 'Orcish' features, even as an infant, Ukhtor's mother feared for her son growing up in such a horrible environment. What's more, she was embarrassed to have produced such a creature. During one of the war-party's treks between camps, she abandoned Ukhtor in a basket by a well-traveled road just outside of the party's planned travel path.
+    - id: bgpara_2
+      text: Local constables were escorting magistrates between nearby towns and cam across the basket. Peering inside, the head of the constabulary, Amin Carr, exclaimed, "cursed Orcs! They cannot even care for their own!"
+    - id: bgpara_3
+      text: "Do away with the filthy runt!" One of the constables sneered.
+    - id: bgpara_3
+      text: Amin peered into Ukhtor's deep blues eyes and saw a nimble, dedicated soul; much different from the ferocious hatred he'd seen in his battles against raid-parties. "No," Amin exclaimed, "this one is different. And we needn't fall victim to the same virulent hatred that afflicts the Orcs."
+    - id: bgpara_4
+      text: Amin brought Ukhtor with him for the journey. Staring into his sea-blue eyes he pronounced that the youngster be named 'Beach'. Raised within the Constabulary's ranks, Beach learned skills more akin to his natural abilities and became an agile killer. He was also imbued with their sense of noblility and respect.
 
     #
     # Personality (or something like that):
