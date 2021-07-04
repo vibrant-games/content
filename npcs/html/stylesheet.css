@@ -334,9 +334,10 @@ div p {
 .property-line.bg{
    font-weight: normal;
 	display: inline-block;
+	vertical-align:top;
 	text-align: left;
-	text-indent: -0.25em;
   margin:0 0 0 15px;
+	text-indent: 30px;
   line-height: 1.4em;
 	line-height: 200%;
 }
