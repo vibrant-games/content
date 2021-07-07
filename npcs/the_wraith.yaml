@@ -490,7 +490,14 @@ npc:
        - Proficiencies: Stealth, Sleight-of-Hand, Survival, Disguise Kit, Poisoner's Kit
        - Feats: Skulker, Dual Weilder, Alert, Observant, Sharpshooter
        - Curse of the Forgotten: It requires a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to see her and a Wisdom (Perception) check of DC 19 to remember her if they aren't directly looking at her. 
-                                 This ability makes her immune to blindsight and truesight         
+                                 This ability makes her immune to blindsight and truesight
+      - Legendary Resistance: (3/Day), If The Wraith fails a saving throw she can choose to succeed instead 
+      - Legendary Actions: The Wraith can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. The Wraith
+                           regains spent Legendary Actions at the start of her turn
+        - Assassins Toss: The Wraith can throw one of her daggers at a target, accurately up to 60 feet without penalty
+        - Misty Step: The Wraith can cast Misty Step
+        - Poison Touch: The Wraith can touch a creature to poison it - Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d8) poison damage. The target must succeed on a DC 15 Constitution saving
+                        throw or it is poisoned                                 
        
     attacks: |
       2 attacks with daggers or hand crossbow
@@ -498,7 +505,7 @@ npc:
       Cold, brutal and efficient, she attacks from and returns to the shadows
     special-equipment:
     - 2 Assassins Daggers: +1 bonus to attack and damage rolls. On your first successful attack against an enemy they must make a DC 18 Constitution saving throw, if they fail it they take 2d6 poison damage and are poisoned for
-                           1 minute, however if they succeed the constitution saving throw they are immune to this effect for 24 hours. 
+                           1 minute, however if they succeed the constitution saving throw they are immune to this effect for 24 hours. If the dagger is thrown, she can summon it back to her hand as a bonus action. 
     
       
   profile:
