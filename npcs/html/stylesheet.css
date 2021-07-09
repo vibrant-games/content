@@ -58,12 +58,6 @@ div {
 
 
 
-div p {
-  text-align: left;
-}
-
-
-
 .divider{
 	
 	display: inline-block;
@@ -340,14 +334,12 @@ div p {
 	display: inline-block;
 	vertical-align:top;
 	text-align: left;
-  margin: 0 0 0 15px;
+  margin: 0 0 40 15px;
 	text-indent: 30px;
   
 	line-height: 200%;
 	width: 90%;
 }
-
-
 .property-line.factions{
   line-height: 200%;
 }
