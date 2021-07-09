@@ -340,6 +340,7 @@ div {
 	line-height: 200%;
 	width: 90%;
 }
+
 .property-line.factions{
   line-height: 200%;
 }
@@ -354,10 +355,12 @@ div {
 	
 	display: inline-block;
 	text-align: left;
-	width: 100%;
+	width: 85%;
 	font-weight: normal;
 	color: indigo;
-	
+	text-indent: -0.25em;
+  padding: 	0 20 0 15px;
+  line-height: 1.4em;
 }
 
 
@@ -365,7 +368,7 @@ div {
 .right-line h4,
 .right-line p{
   display: inline-block;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 0px;
   
   font-size: 13.5px;
   line-height: 1.2em;
@@ -374,11 +377,7 @@ div {
 .right-line h4{
   color:indigo;
 }
-.right-line{
-  text-indent: -0.25em;
-  padding: 0 0 0 15px;
-  line-height: 1.4em;
-}
+
 .right-line.first{
   margin: 0 0 0 0;
 }
@@ -406,10 +405,11 @@ div {
 .stat-block.single{
 	display: inline-block;
   vertical-align: top;
-	width: 100%;
+	width: 90%;
   text-align: left;
 	
 }
+
 .stat-block.wide .section-left,
 .stat-block.wide .section-right{
   
@@ -420,7 +420,8 @@ div {
 	
 	
 }
-.stat-block.wide .section-left{
+.stat-block.wide .section-left,
+.stat-block.single {
   margin-right: 1.5%;
 	flex-grow: 1;
 }
