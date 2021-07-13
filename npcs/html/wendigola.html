@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>she/her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Widow, hermitess, suspected witch</p><br>
+									<h4>Occupations - </h4><p>Widow, hermitess, suspected witch</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>10 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>10 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,71 +216,129 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Alchemy<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(0);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Human
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Creepy, 
 	
@@ -304,9 +362,9 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 	
-									
+								</p>	
 								
 								
 								
@@ -317,27 +375,32 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Wendigola will avoid combat at all costs due to her frail frame
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -345,8 +408,8 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
-										
+							<p>		
+								</p>		
 								</span>
 							
 					</span>
@@ -384,13 +447,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>An objectively ugly old woman leaps before you. &quot;Curse of the Fowl Unbegotten be upon thee!&quot; She hurls an egg at you.</p>
 		
 						
@@ -400,7 +462,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Cowled; jangling bracelets; rings. Bee sting welts. Her teeth have been systematically filed into sharp fangs.
+										<p>Cowled; jangling bracelets; rings. Bee sting welts. Her teeth have been systematically filed into sharp fangs.</p>
 		
 										</span>
 		
@@ -408,11 +470,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Bzzz bzzz&quot;; &quot;Nobody lishens&quot;; &quot;Sho thatsh how it ish&quot;; &quot;I shaysh to them - century foot and trout. Shee if they caresh.&quot;</i></p></li><br>
 											
-											<i> &quot;Bzzz bzzz&quot;; &quot;Nobody lishens&quot;; &quot;Sho thatsh how it ish&quot;; &quot;I shaysh to them - century foot and trout. Shee if they caresh.&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -420,7 +486,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											One eyelid opens only halfway. Mumbles to herself. Kisses to call her half-feral, inbred cats. Clicks and smacks tongue.
+											<p>One eyelid opens only halfway. Mumbles to herself. Kisses to call her half-feral, inbred cats. Clicks and smacks tongue.</p>
 		
 										</span> 
 		
@@ -429,8 +495,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Wendigola seeks to become a real witch but subconsciously knows she doesn&#39;t yet have what it takes.
-
+											<p>Wendigola seeks to become a real witch but subconsciously knows she doesn&#39;t yet have what it takes.
+</p>
 										</span>
 		
 		
@@ -440,8 +506,8 @@
 			
 											<h3>Passions</h3>
 											
-											Spends her days studying Arcane Lore, potion- and bread-making, beekeeping, and trying to keep her cats off Arcane Lore.
-
+											<p>Spends her days studying Arcane Lore, potion- and bread-making, beekeeping, and trying to keep her cats off Arcane Lore.
+</p>
 		
 										</span> 
 		
@@ -449,8 +515,8 @@
 			
 											<h3>Secrets</h3>
 										
-											In her younger years, Wendigola murdered and consumed her husband with a coven of witches under the false pretense it would enable her to become one of them. Instead, she almost immediately laid an egg and the coven all laughed, pronouncing this as her curse for such a foul deed. She secretly lays a few dozen eggs at random per year.
-		
+											<p>In her younger years, Wendigola murdered and consumed her husband with a coven of witches under the false pretense it would enable her to become one of them. Instead, she almost immediately laid an egg and the coven all laughed, pronouncing this as her curse for such a foul deed. She secretly lays a few dozen eggs at random per year.
+</p>	
 		
 										</span> 
 						
@@ -495,41 +561,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>she/her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Widow, hermitess, suspected witch</p><br>
+									<h4>Occupations - </h4><p>Widow, hermitess, suspected witch</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>10 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>10 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -650,33 +717,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Alchemy<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -684,18 +753,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -703,27 +772,28 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Human 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Creepy, </p>	
 					
@@ -735,17 +805,20 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 	
-									
+									</p>
+
 								
 								
 								
@@ -756,7 +829,7 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -765,8 +838,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Wendigola will avoid combat at all costs due to her frail frame
-
+								<p>Wendigola will avoid combat at all costs due to her frail frame
+</p>
 								
 							</span> 
 			
@@ -783,8 +856,8 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
-										
+									<p>
+									</p>	
 								</span>
 							
 					</span>
@@ -798,7 +871,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -812,8 +884,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -821,11 +896,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							An objectively ugly old woman leaps before you. &quot;Curse of the Fowl Unbegotten be upon thee!&quot; She hurls an egg at you.<br />
+							<p>An objectively ugly old woman leaps before you. &quot;Curse of the Fowl Unbegotten be upon thee!&quot; She hurls an egg at you.</p><br />
 		
 							</span>
 		
@@ -835,11 +908,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Cowled; jangling bracelets; rings. Bee sting welts. Her teeth have been systematically filed into sharp fangs.
+								
+								<p>Cowled; jangling bracelets; rings. Bee sting welts. Her teeth have been systematically filed into sharp fangs.</p>
 		
 										
 							</span>
@@ -851,15 +922,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;Bzzz bzzz&quot;; &quot;Nobody lishens&quot;; &quot;Sho thatsh how it ish&quot;; &quot;I shaysh to them - century foot and trout. Shee if they caresh.&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Bzzz bzzz&quot;; &quot;Nobody lishens&quot;; &quot;Sho thatsh how it ish&quot;; &quot;I shaysh to them - century foot and trout. Shee if they caresh.&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -872,12 +948,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								One eyelid opens only halfway. Mumbles to herself. Kisses to call her half-feral, inbred cats. Clicks and smacks tongue.
+								<p>One eyelid opens only halfway. Mumbles to herself. Kisses to call her half-feral, inbred cats. Clicks and smacks tongue.</p>
 		
 								
 							</span> 
@@ -889,13 +961,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Wendigola seeks to become a real witch but subconsciously knows she doesn&#39;t yet have what it takes.
-
+								<p>Wendigola seeks to become a real witch but subconsciously knows she doesn&#39;t yet have what it takes.
+</p>
 							
 							</span>
 		
@@ -907,13 +976,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Spends her days studying Arcane Lore, potion- and bread-making, beekeeping, and trying to keep her cats off Arcane Lore.
-
+								<p>Spends her days studying Arcane Lore, potion- and bread-making, beekeeping, and trying to keep her cats off Arcane Lore.
+</p>
 		
 									
 							</span> 
@@ -926,12 +992,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											In her younger years, Wendigola murdered and consumed her husband with a coven of witches under the false pretense it would enable her to become one of them. Instead, she almost immediately laid an egg and the coven all laughed, pronouncing this as her curse for such a foul deed. She secretly lays a few dozen eggs at random per year.
-		
+							
+									<p>In her younger years, Wendigola murdered and consumed her husband with a coven of witches under the false pretense it would enable her to become one of them. Instead, she almost immediately laid an egg and the coven all laughed, pronouncing this as her curse for such a foul deed. She secretly lays a few dozen eggs at random per year.
+</p>		
 		
 										
 							</span> 
@@ -953,7 +1016,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Messenger; Crier; Barker</p><br>
+									<h4>Occupations - </h4><p>Messenger; Crier; Barker</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>13</p><br>
+									<h4>Armor Class - </h4><p>13</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>32 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>32 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,74 +216,132 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Medecine; Persuasion<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(5);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Firbolg
 							Common
 							Giant
 							Elven
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Loud, 
 	
@@ -307,10 +365,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -321,28 +379,33 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Cal isn&#39;t a coward. His mental state ensures that he loses track of his well-being and launches himself into combat. He will bounce from opponent to opponent switching from his staff to fists in a blur of martial artistry.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -350,8 +413,8 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
-										
+							<p>		
+								</p>		
 								</span>
 							
 					</span>
@@ -389,13 +452,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Cal tends to stay in safer spaces where guards are in sight. With mild agoraphobia he prefers being at gates or roadways that permit travel or a quick escape. He will approach seemingly courageous adventurers to ask if they would help him regain control of his lands.</p>
 		
 						
@@ -405,7 +467,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Cal is a tall and gaunt firbolg with pale yellow-ish skin and wild bark colored hair; his bulbous nose radiates pink and reddish hues; he is covered in various scars; he wears clearly inauthentic royal garb that is dirty and torn
+										<p>Cal is a tall and gaunt firbolg with pale yellow-ish skin and wild bark colored hair; his bulbous nose radiates pink and reddish hues; he is covered in various scars; he wears clearly inauthentic royal garb that is dirty and torn</p>
 		
 										</span>
 		
@@ -413,11 +475,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Don&#39;t you know who I am??!&quot;; &quot;I ought to have you thrown into the dungeon of Carmite for that transgression!&quot;; &quot;The villainous scum of this region will feel my full wrath!&quot;; &quot;I must consult with the rest of my circle about these transpirations&quot;</i></p></li><br>
 											
-											<i> &quot;Don&#39;t you know who I am??!&quot;; &quot;I ought to have you thrown into the dungeon of Carmite for that transgression!&quot;; &quot;The villainous scum of this region will feel my full wrath!&quot;; &quot;I must consult with the rest of my circle about these transpirations&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -425,7 +491,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Gestures in what appears to be very offical and regal ways; Questions adventurers and passers-by on their bloodlines; Consistently making political speeches and promises and demanding the loyalty of those around him to the &#39;Order of Indontus&#39; (Does it exist???)
+											<p>Gestures in what appears to be very offical and regal ways; Questions adventurers and passers-by on their bloodlines; Consistently making political speeches and promises and demanding the loyalty of those around him to the &#39;Order of Indontus&#39; (Does it exist???)</p>
 		
 										</span> 
 		
@@ -434,8 +500,8 @@
 			
 											<h3>Motivations</h3>
 										
-											He seeks to trace his bloodline exclusively to a royal end, whether true or not. Cal will often spend hours barking and crying news of the activity of royalty or magistrates and spin it into something relating to his extended family and social circles; most of it true, but spun.
-
+											<p>He seeks to trace his bloodline exclusively to a royal end, whether true or not. Cal will often spend hours barking and crying news of the activity of royalty or magistrates and spin it into something relating to his extended family and social circles; most of it true, but spun.
+</p>
 										</span>
 		
 		
@@ -445,8 +511,8 @@
 			
 											<h3>Passions</h3>
 											
-											Politics; Himself; Bloodlines
-
+											<p>Politics; Himself; Bloodlines
+</p>
 		
 										</span> 
 		
@@ -454,8 +520,8 @@
 			
 											<h3>Secrets</h3>
 										
-											Cal is not royalty at all. Or is he?
-		
+											<p>Cal is not royalty at all. Or is he?
+</p>	
 		
 										</span> 
 						
@@ -500,41 +566,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Messenger; Crier; Barker</p><br>
+									<h4>Occupations - </h4><p>Messenger; Crier; Barker</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>13</p><br>
+									<h4>Armor Class - </h4><p>13</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>32 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>32 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -655,33 +722,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Medecine; Persuasion<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -689,18 +758,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -708,30 +777,31 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Firbolg 
 									Common 
 									Giant 
 									Elven 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Loud, </p>	
 					
@@ -743,18 +813,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -772,8 +845,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Cal isn&#39;t a coward. His mental state ensures that he loses track of his well-being and launches himself into combat. He will bounce from opponent to opponent switching from his staff to fists in a blur of martial artistry.
-
+								<p>Cal isn&#39;t a coward. His mental state ensures that he loses track of his well-being and launches himself into combat. He will bounce from opponent to opponent switching from his staff to fists in a blur of martial artistry.
+</p>
 								
 							</span> 
 			
@@ -782,8 +855,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -792,8 +865,8 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
-										
+									<p>
+									</p>	
 								</span>
 							
 					</span>
@@ -807,7 +880,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -821,8 +893,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -830,11 +905,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Cal tends to stay in safer spaces where guards are in sight. With mild agoraphobia he prefers being at gates or roadways that permit travel or a quick escape. He will approach seemingly courageous adventurers to ask if they would help him regain control of his lands.<br />
+							<p>Cal tends to stay in safer spaces where guards are in sight. With mild agoraphobia he prefers being at gates or roadways that permit travel or a quick escape. He will approach seemingly courageous adventurers to ask if they would help him regain control of his lands.</p><br />
 		
 							</span>
 		
@@ -844,11 +917,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Cal is a tall and gaunt firbolg with pale yellow-ish skin and wild bark colored hair; his bulbous nose radiates pink and reddish hues; he is covered in various scars; he wears clearly inauthentic royal garb that is dirty and torn
+								
+								<p>Cal is a tall and gaunt firbolg with pale yellow-ish skin and wild bark colored hair; his bulbous nose radiates pink and reddish hues; he is covered in various scars; he wears clearly inauthentic royal garb that is dirty and torn</p>
 		
 										
 							</span>
@@ -860,15 +931,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;Don&#39;t you know who I am??!&quot;; &quot;I ought to have you thrown into the dungeon of Carmite for that transgression!&quot;; &quot;The villainous scum of this region will feel my full wrath!&quot;; &quot;I must consult with the rest of my circle about these transpirations&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Don&#39;t you know who I am??!&quot;; &quot;I ought to have you thrown into the dungeon of Carmite for that transgression!&quot;; &quot;The villainous scum of this region will feel my full wrath!&quot;; &quot;I must consult with the rest of my circle about these transpirations&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -881,12 +957,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Gestures in what appears to be very offical and regal ways; Questions adventurers and passers-by on their bloodlines; Consistently making political speeches and promises and demanding the loyalty of those around him to the &#39;Order of Indontus&#39; (Does it exist???)
+								<p>Gestures in what appears to be very offical and regal ways; Questions adventurers and passers-by on their bloodlines; Consistently making political speeches and promises and demanding the loyalty of those around him to the &#39;Order of Indontus&#39; (Does it exist???)</p>
 		
 								
 							</span> 
@@ -898,13 +970,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								He seeks to trace his bloodline exclusively to a royal end, whether true or not. Cal will often spend hours barking and crying news of the activity of royalty or magistrates and spin it into something relating to his extended family and social circles; most of it true, but spun.
-
+								<p>He seeks to trace his bloodline exclusively to a royal end, whether true or not. Cal will often spend hours barking and crying news of the activity of royalty or magistrates and spin it into something relating to his extended family and social circles; most of it true, but spun.
+</p>
 							
 							</span>
 		
@@ -916,13 +985,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Politics; Himself; Bloodlines
-
+								<p>Politics; Himself; Bloodlines
+</p>
 		
 									
 							</span> 
@@ -935,12 +1001,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											Cal is not royalty at all. Or is he?
-		
+							
+									<p>Cal is not royalty at all. Or is he?
+</p>		
 		
 										
 							</span> 
@@ -962,7 +1025,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

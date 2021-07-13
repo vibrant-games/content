@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>she/her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Herbalist</p><br>
+									<h4>Occupations - </h4><p>Herbalist</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>12</p><br>
+									<h4>Armor Class - </h4><p>12</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>32 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>32 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>25 walking, 50 flying.</p>
+									<h4>Speed - </h4><p>25 walking, 50 flying.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,71 +216,129 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(3);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Common
 							Auran
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Fragile, 
 	
@@ -304,10 +362,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -318,24 +376,29 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -343,8 +406,8 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
-										
+							<p>		
+								</p>		
 								</span>
 							
 					</span>
@@ -382,13 +445,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Running a large roofless stall in an open air market selling herbal remedies and potions</p>
 		
 						
@@ -398,7 +460,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Tall and Thin with ruffled brown and gray feathers
+										<p>Tall and Thin with ruffled brown and gray feathers</p>
 		
 										</span>
 		
@@ -406,11 +468,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;You Like buy?&quot; &quot;What me get for you&quot; &quot;I show you how&quot;</i></p></li><br>
 											
-											<i> &quot;You Like buy?&quot; &quot;What me get for you&quot; &quot;I show you how&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -418,7 +484,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Often stands with her wings spread and crest puffed out, overly proud.
+											<p>Often stands with her wings spread and crest puffed out, overly proud.</p>
 		
 										</span> 
 		
@@ -427,8 +493,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Shiny bobbles and helping people
-
+											<p>Shiny bobbles and helping people
+</p>
 										</span>
 		
 		
@@ -438,8 +504,8 @@
 			
 											<h3>Passions</h3>
 											
-											Teaching. Herbalism.
-
+											<p>Teaching. Herbalism.
+</p>
 		
 										</span> 
 		
@@ -447,8 +513,8 @@
 			
 											<h3>Secrets</h3>
 										
-											How to make potions of various kinds
-		
+											<p>How to make potions of various kinds
+</p>	
 		
 										</span> 
 						
@@ -493,41 +559,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>she/her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Herbalist</p><br>
+									<h4>Occupations - </h4><p>Herbalist</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>12</p><br>
+									<h4>Armor Class - </h4><p>12</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>32 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>32 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>25 walking, 50 flying.</p>
+									<h4>Speed - </h4><p>25 walking, 50 flying.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -648,32 +715,34 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -681,18 +750,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -700,28 +769,29 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Common 
 									Auran 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Fragile, </p>	
 					
@@ -733,18 +803,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -755,7 +828,7 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -779,8 +852,8 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
-										
+									<p>
+									</p>	
 								</span>
 							
 					</span>
@@ -794,7 +867,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -808,8 +880,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -817,11 +892,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Running a large roofless stall in an open air market selling herbal remedies and potions<br />
+							<p>Running a large roofless stall in an open air market selling herbal remedies and potions</p><br />
 		
 							</span>
 		
@@ -831,11 +904,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Tall and Thin with ruffled brown and gray feathers
+								
+								<p>Tall and Thin with ruffled brown and gray feathers</p>
 		
 										
 							</span>
@@ -847,15 +918,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;You Like buy?&quot; &quot;What me get for you&quot; &quot;I show you how&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;You Like buy?&quot; &quot;What me get for you&quot; &quot;I show you how&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -868,12 +944,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Often stands with her wings spread and crest puffed out, overly proud.
+								<p>Often stands with her wings spread and crest puffed out, overly proud.</p>
 		
 								
 							</span> 
@@ -885,13 +957,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Shiny bobbles and helping people
-
+								<p>Shiny bobbles and helping people
+</p>
 							
 							</span>
 		
@@ -903,13 +972,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Teaching. Herbalism.
-
+								<p>Teaching. Herbalism.
+</p>
 		
 									
 							</span> 
@@ -922,12 +988,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											How to make potions of various kinds
-		
+							
+									<p>How to make potions of various kinds
+</p>		
 		
 										
 							</span> 
@@ -949,7 +1012,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

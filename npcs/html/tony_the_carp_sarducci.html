@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Pawn Shop Owner</p><br>
+									<h4>Occupations - </h4><p>Pawn Shop Owner</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>11</p><br>
+									<h4>Armor Class - </h4><p>11</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>46 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>46 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,75 +216,133 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>He&#39;s one hell of a haggler<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(3);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Common
 							Undercommon
 							Halfling
 							Dwarvish
 							Thieve&#39;s Cant
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 	
 					
@@ -307,10 +365,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -321,6 +379,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 									<b></b> - <br>
@@ -328,27 +388,30 @@
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Keeps his hand crossbow and club behind the counter at all times. The crossbow is his go to, but hes handy with a club too if needed
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -356,11 +419,11 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>A Thieve&#39;s/Assassin&#39;s Guild - </b><i></i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -398,13 +461,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>The short, fat man behind the caged in counter at the local pawn shop greets you with a curt &quot;Whatdyawant?&quot;</p>
 		
 						
@@ -414,7 +476,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										He&#39;s mostly bald with a thick unkempt mustache and a five o&#39;clock shadow, sloppily dressed and bags under his eyes
+										<p>He&#39;s mostly bald with a thick unkempt mustache and a five o&#39;clock shadow, sloppily dressed and bags under his eyes</p>
 		
 										</span>
 		
@@ -422,11 +484,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;5 copper, best I can do&quot;, &quot;This is a very fine specimen, just came in yesterday. It&#39;ll cost ya though&quot;</i></p></li><br>
 											
-											<i> &quot;5 copper, best I can do&quot;, &quot;This is a very fine specimen, just came in yesterday. It&#39;ll cost ya though&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -434,7 +500,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Talks with his hands, slightly wheezy, occasional eye twitch
+											<p>Talks with his hands, slightly wheezy, occasional eye twitch</p>
 		
 										</span> 
 		
@@ -443,8 +509,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Money, more money and a disdain for people in general
-
+											<p>Money, more money and a disdain for people in general
+</p>
 										</span>
 		
 		
@@ -454,8 +520,8 @@
 			
 											<h3>Passions</h3>
 											
-											He likes gold... a lot
-
+											<p>He likes gold... a lot
+</p>
 		
 										</span> 
 		
@@ -463,8 +529,8 @@
 			
 											<h3>Secrets</h3>
 										
-											He&#39;s a fence for the local thieve&#39;s guild and at least half of his inventory is stolen goods
-		
+											<p>He&#39;s a fence for the local thieve&#39;s guild and at least half of his inventory is stolen goods
+</p>	
 		
 										</span> 
 						
@@ -509,41 +575,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Pawn Shop Owner</p><br>
+									<h4>Occupations - </h4><p>Pawn Shop Owner</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>11</p><br>
+									<h4>Armor Class - </h4><p>11</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>46 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>46 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -664,33 +731,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									He&#39;s one hell of a haggler<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -698,18 +767,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -717,31 +786,32 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Common 
 									Undercommon 
 									Halfling 
 									Dwarvish 
 									Thieve&#39;s Cant 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p></p>	
 					
@@ -753,18 +823,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -775,11 +848,11 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -788,8 +861,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Keeps his hand crossbow and club behind the counter at all times. The crossbow is his go to, but hes handy with a club too if needed
-
+								<p>Keeps his hand crossbow and club behind the counter at all times. The crossbow is his go to, but hes handy with a club too if needed
+</p>
 								
 							</span> 
 			
@@ -798,8 +871,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -808,13 +881,13 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>A Thieve&#39;s/Assassin&#39;s Guild</b><br>
 					
 										<i></i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -828,7 +901,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -842,8 +914,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -851,11 +926,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							The short, fat man behind the caged in counter at the local pawn shop greets you with a curt &quot;Whatdyawant?&quot;<br />
+							<p>The short, fat man behind the caged in counter at the local pawn shop greets you with a curt &quot;Whatdyawant?&quot;</p><br />
 		
 							</span>
 		
@@ -865,11 +938,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								He&#39;s mostly bald with a thick unkempt mustache and a five o&#39;clock shadow, sloppily dressed and bags under his eyes
+								
+								<p>He&#39;s mostly bald with a thick unkempt mustache and a five o&#39;clock shadow, sloppily dressed and bags under his eyes</p>
 		
 										
 							</span>
@@ -881,15 +952,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;5 copper, best I can do&quot;, &quot;This is a very fine specimen, just came in yesterday. It&#39;ll cost ya though&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;5 copper, best I can do&quot;, &quot;This is a very fine specimen, just came in yesterday. It&#39;ll cost ya though&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -902,12 +978,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Talks with his hands, slightly wheezy, occasional eye twitch
+								<p>Talks with his hands, slightly wheezy, occasional eye twitch</p>
 		
 								
 							</span> 
@@ -919,13 +991,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Money, more money and a disdain for people in general
-
+								<p>Money, more money and a disdain for people in general
+</p>
 							
 							</span>
 		
@@ -937,13 +1006,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								He likes gold... a lot
-
+								<p>He likes gold... a lot
+</p>
 		
 									
 							</span> 
@@ -956,12 +1022,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											He&#39;s a fence for the local thieve&#39;s guild and at least half of his inventory is stolen goods
-		
+							
+									<p>He&#39;s a fence for the local thieve&#39;s guild and at least half of his inventory is stolen goods
+</p>		
 		
 										
 							</span> 
@@ -983,7 +1046,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

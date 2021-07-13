@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Thieves&#39; guild advisor; insurgent; diplomat</p><br>
+									<h4>Occupations - </h4><p>Thieves&#39; guild advisor; insurgent; diplomat</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>16</p><br>
+									<h4>Armor Class - </h4><p>16</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>83 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>83 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,62 +216,119 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(10);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Drow
 							Common
 							Underdark common
@@ -280,13 +337,14 @@
 							Thieves&#39; cant
 							Halfling
 							Gnomish
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Dark, 
 	
@@ -310,10 +368,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -324,27 +382,32 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -352,11 +415,11 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>Broken-off tribes of the Underdark - </b><i></i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -394,13 +457,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Ezio will approach those who seem they could help undercut a city&#39;s political factions; Often flits between political courts and mercantile guilds making deals; Commission adventurers to infiltrate a religious order with a misinformation campaign.</p>
 		
 						
@@ -410,7 +472,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										&lt;p&gt;Lithe and muscular&lt;/p&gt;light blue skin; deep silver eyes
+										<p>&lt;p&gt;Lithe and muscular&lt;/p&gt;light blue skin; deep silver eyes</p>
 		
 										</span>
 		
@@ -418,11 +480,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Diplomacy by blades as blades are the truest of diplomats&quot;; &quot;My people will mend the rift between the Upperworld and Underdark - be it in our own way&quot;;</i></p></li><br>
 											
-											<i> &quot;Diplomacy by blades as blades are the truest of diplomats&quot;; &quot;My people will mend the rift between the Upperworld and Underdark - be it in our own way&quot;;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -430,7 +496,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Grinds his teeth while evaluating a situation or answering questions. Bites his lip in thought. Almost exclusively furrows his brow. Typically clasps his hands behind his back beneath his cloak.
+											<p>Grinds his teeth while evaluating a situation or answering questions. Bites his lip in thought. Almost exclusively furrows his brow. Typically clasps his hands behind his back beneath his cloak.</p>
 		
 										</span> 
 		
@@ -439,8 +505,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Diffusing political diplomacy in the region to make space for his tribe of Drow who have departed from the main population. Generating as much misinformation as possible to undermine religious and political orders.
-
+											<p>Diffusing political diplomacy in the region to make space for his tribe of Drow who have departed from the main population. Generating as much misinformation as possible to undermine religious and political orders.
+</p>
 										</span>
 		
 		
@@ -450,8 +516,8 @@
 			
 											<h3>Passions</h3>
 											
-											Politics. Watching fire burn.
-
+											<p>Politics. Watching fire burn.
+</p>
 		
 										</span> 
 		
@@ -459,8 +525,8 @@
 			
 											<h3>Secrets</h3>
 										
-											Ezio keeps a multitude of secrets about his political connections and their intentions. He uses these like a commodity.
-		
+											<p>Ezio keeps a multitude of secrets about his political connections and their intentions. He uses these like a commodity.
+</p>	
 		
 										</span> 
 						
@@ -505,41 +571,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Thieves&#39; guild advisor; insurgent; diplomat</p><br>
+									<h4>Occupations - </h4><p>Thieves&#39; guild advisor; insurgent; diplomat</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>16</p><br>
+									<h4>Armor Class - </h4><p>16</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>83 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>83 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -660,32 +727,34 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -693,18 +762,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -712,19 +781,19 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Drow 
 									Common 
 									Underdark common 
@@ -733,13 +802,14 @@
 									Thieves&#39; cant 
 									Halfling 
 									Gnomish 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Dark, </p>	
 					
@@ -751,18 +821,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -773,7 +846,7 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -789,8 +862,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -799,13 +872,13 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>Broken-off tribes of the Underdark</b><br>
 					
 										<i></i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -819,7 +892,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -833,8 +905,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -842,11 +917,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Ezio will approach those who seem they could help undercut a city&#39;s political factions; Often flits between political courts and mercantile guilds making deals; Commission adventurers to infiltrate a religious order with a misinformation campaign.<br />
+							<p>Ezio will approach those who seem they could help undercut a city&#39;s political factions; Often flits between political courts and mercantile guilds making deals; Commission adventurers to infiltrate a religious order with a misinformation campaign.</p><br />
 		
 							</span>
 		
@@ -856,11 +929,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								&lt;p&gt;Lithe and muscular&lt;/p&gt;light blue skin; deep silver eyes
+								
+								<p>&lt;p&gt;Lithe and muscular&lt;/p&gt;light blue skin; deep silver eyes</p>
 		
 										
 							</span>
@@ -872,15 +943,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;Diplomacy by blades as blades are the truest of diplomats&quot;; &quot;My people will mend the rift between the Upperworld and Underdark - be it in our own way&quot;;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Diplomacy by blades as blades are the truest of diplomats&quot;; &quot;My people will mend the rift between the Upperworld and Underdark - be it in our own way&quot;;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -893,12 +969,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Grinds his teeth while evaluating a situation or answering questions. Bites his lip in thought. Almost exclusively furrows his brow. Typically clasps his hands behind his back beneath his cloak.
+								<p>Grinds his teeth while evaluating a situation or answering questions. Bites his lip in thought. Almost exclusively furrows his brow. Typically clasps his hands behind his back beneath his cloak.</p>
 		
 								
 							</span> 
@@ -910,13 +982,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Diffusing political diplomacy in the region to make space for his tribe of Drow who have departed from the main population. Generating as much misinformation as possible to undermine religious and political orders.
-
+								<p>Diffusing political diplomacy in the region to make space for his tribe of Drow who have departed from the main population. Generating as much misinformation as possible to undermine religious and political orders.
+</p>
 							
 							</span>
 		
@@ -928,13 +997,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Politics. Watching fire burn.
-
+								<p>Politics. Watching fire burn.
+</p>
 		
 									
 							</span> 
@@ -947,12 +1013,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											Ezio keeps a multitude of secrets about his political connections and their intentions. He uses these like a commodity.
-		
+							
+									<p>Ezio keeps a multitude of secrets about his political connections and their intentions. He uses these like a commodity.
+</p>		
 		
 										
 							</span> 
@@ -974,7 +1037,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

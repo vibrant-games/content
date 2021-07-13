@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Tavern and Innkeeper</p><br>
+									<h4>Occupations - </h4><p>Tavern and Innkeeper</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>15</p><br>
+									<h4>Armor Class - </h4><p>15</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>34 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>34 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,74 +216,132 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Stealth; Survival; Acrobatics; Forgery Kit; Thieve&#39;s tools<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(5);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Common
 							Auran
 							Kenku
 							Thieve&#39;s Cant
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 	
 					
@@ -306,10 +364,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -320,6 +378,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 									<b></b> - <br>
@@ -329,27 +389,30 @@
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Lrryk has learned the hard way and does whatever he can to diffuse conflict. If he has tried everything, he will turn to his Conspirator&#39;s Bolas to subdue the opponents and negotiate further.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -357,8 +420,8 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
-										
+							<p>		
+								</p>		
 								</span>
 							
 					</span>
@@ -396,13 +459,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>A black-feathered humanoid with a crooked beak adjusts its jacket while jotting in a notebook. &quot;Yes. A room or grub?&quot;</p>
 		
 						
@@ -412,7 +474,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Black Kenku. Well built and unassuming with an aura of mystery beneath his cap and eyes.
+										<p>Black Kenku. Well built and unassuming with an aura of mystery beneath his cap and eyes.</p>
 		
 										</span>
 		
@@ -420,11 +482,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;I&#39;ll serve ya what ya. need. Just don&#39;t cause any trouble.&quot;; &quot;Steer clear of sailors and cutthroats.&quot;</i></p></li><br>
 											
-											<i> &quot;I&#39;ll serve ya what ya. need. Just don&#39;t cause any trouble.&quot;; &quot;Steer clear of sailors and cutthroats.&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -432,7 +498,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Very deliberate but unassuming posturing. Diligently keeps accounting and business notes. Tea-totaller.
+											<p>Very deliberate but unassuming posturing. Diligently keeps accounting and business notes. Tea-totaller.</p>
 		
 										</span> 
 		
@@ -441,8 +507,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Lrryk seeks to maintain a calm and stable life. He hopes to keep the rep of his inn and tavern free of ne&#39;er do wells.
-
+											<p>Lrryk seeks to maintain a calm and stable life. He hopes to keep the rep of his inn and tavern free of ne&#39;er do wells.
+</p>
 										</span>
 		
 		
@@ -452,8 +518,8 @@
 			
 											<h3>Passions</h3>
 											
-											Stability. Saving for a better day.
-
+											<p>Stability. Saving for a better day.
+</p>
 		
 										</span> 
 		
@@ -461,8 +527,8 @@
 			
 											<h3>Secrets</h3>
 										
-											Lrryk was a former bandit leader and co-conspirator in organized criminal activity until he did serious time.
-		
+											<p>Lrryk was a former bandit leader and co-conspirator in organized criminal activity until he did serious time.
+</p>	
 		
 										</span> 
 						
@@ -507,41 +573,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Tavern and Innkeeper</p><br>
+									<h4>Occupations - </h4><p>Tavern and Innkeeper</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>15</p><br>
+									<h4>Armor Class - </h4><p>15</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>34 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>34 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -662,33 +729,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Stealth; Survival; Acrobatics; Forgery Kit; Thieve&#39;s tools<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -696,18 +765,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -715,30 +784,31 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Common 
 									Auran 
 									Kenku 
 									Thieve&#39;s Cant 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p></p>	
 					
@@ -750,18 +820,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -772,13 +845,13 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -787,8 +860,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Lrryk has learned the hard way and does whatever he can to diffuse conflict. If he has tried everything, he will turn to his Conspirator&#39;s Bolas to subdue the opponents and negotiate further.
-
+								<p>Lrryk has learned the hard way and does whatever he can to diffuse conflict. If he has tried everything, he will turn to his Conspirator&#39;s Bolas to subdue the opponents and negotiate further.
+</p>
 								
 							</span> 
 			
@@ -797,8 +870,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -807,8 +880,8 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
-										
+									<p>
+									</p>	
 								</span>
 							
 					</span>
@@ -822,7 +895,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -836,8 +908,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -845,11 +920,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							A black-feathered humanoid with a crooked beak adjusts its jacket while jotting in a notebook. &quot;Yes. A room or grub?&quot;<br />
+							<p>A black-feathered humanoid with a crooked beak adjusts its jacket while jotting in a notebook. &quot;Yes. A room or grub?&quot;</p><br />
 		
 							</span>
 		
@@ -859,11 +932,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Black Kenku. Well built and unassuming with an aura of mystery beneath his cap and eyes.
+								
+								<p>Black Kenku. Well built and unassuming with an aura of mystery beneath his cap and eyes.</p>
 		
 										
 							</span>
@@ -875,15 +946,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;I&#39;ll serve ya what ya. need. Just don&#39;t cause any trouble.&quot;; &quot;Steer clear of sailors and cutthroats.&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;I&#39;ll serve ya what ya. need. Just don&#39;t cause any trouble.&quot;; &quot;Steer clear of sailors and cutthroats.&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -896,12 +972,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Very deliberate but unassuming posturing. Diligently keeps accounting and business notes. Tea-totaller.
+								<p>Very deliberate but unassuming posturing. Diligently keeps accounting and business notes. Tea-totaller.</p>
 		
 								
 							</span> 
@@ -913,13 +985,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Lrryk seeks to maintain a calm and stable life. He hopes to keep the rep of his inn and tavern free of ne&#39;er do wells.
-
+								<p>Lrryk seeks to maintain a calm and stable life. He hopes to keep the rep of his inn and tavern free of ne&#39;er do wells.
+</p>
 							
 							</span>
 		
@@ -931,13 +1000,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Stability. Saving for a better day.
-
+								<p>Stability. Saving for a better day.
+</p>
 		
 									
 							</span> 
@@ -950,12 +1016,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											Lrryk was a former bandit leader and co-conspirator in organized criminal activity until he did serious time.
-		
+							
+									<p>Lrryk was a former bandit leader and co-conspirator in organized criminal activity until he did serious time.
+</p>		
 		
 										
 							</span> 
@@ -977,7 +1040,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

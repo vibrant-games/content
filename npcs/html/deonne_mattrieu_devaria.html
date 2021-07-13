@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Innkeeper</p><br>
+									<h4>Occupations - </h4><p>Innkeeper</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p> (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p> (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>.</p>
+									<h4>Speed - </h4><p>.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,74 +216,132 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Persuasion; Medicine; Nature; Religion; Insight<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(5);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Common
 							Orcish
 							Goblinoid
 							Dwarven
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Stoic, 
 									Survivor, 
@@ -308,10 +366,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -322,28 +380,33 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Deonne is not to be reckoned with. He attacks fiercely, head-on.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -351,11 +414,11 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>Church of Poetic Justice [Hoar] - </b><i></i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -393,13 +456,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Wearing a khopesh, the tall, well-polished half-orc innkeep claps twice. &quot;We&#39;ve new guests, people. To your duties.&quot;</p>
 		
 						
@@ -409,7 +471,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Very fit. Chain skirt and tunic. Half-cloak with two-faced head embroidered on back. Short black hair. Black felt gloves
+										<p>Very fit. Chain skirt and tunic. Half-cloak with two-faced head embroidered on back. Short black hair. Black felt gloves</p>
 		
 										</span>
 		
@@ -417,11 +479,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;We&#39;ve a few rules for the common room. Best ye follow em.&quot;; &quot;Eye for eye for eye&quot;;</i></p></li><br>
 											
-											<i> &quot;We&#39;ve a few rules for the common room. Best ye follow em.&quot;; &quot;Eye for eye for eye&quot;;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -429,7 +495,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Stands stoic with one hand on Khopesh at most times. Diligently delegates tasks to servants and employees. Cocks head.
+											<p>Stands stoic with one hand on Khopesh at most times. Diligently delegates tasks to servants and employees. Cocks head.</p>
 		
 										</span> 
 		
@@ -438,8 +504,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Seeks retribution for his years of torture under the Inquisitors in search of the Orcish King of the North.
-
+											<p>Seeks retribution for his years of torture under the Inquisitors in search of the Orcish King of the North.
+</p>
 										</span>
 		
 		
@@ -449,8 +515,8 @@
 			
 											<h3>Passions</h3>
 											
-											Revenge. Providing respite to others in spite of his tragic life.
-
+											<p>Revenge. Providing respite to others in spite of his tragic life.
+</p>
 		
 										</span> 
 		
@@ -458,8 +524,8 @@
 			
 											<h3>Secrets</h3>
 										
-											He seeks to murder the royals who created the Inquisitors; a group of paladins searching for the Orcish King of the North.
-		
+											<p>He seeks to murder the royals who created the Inquisitors; a group of paladins searching for the Orcish King of the North.
+</p>	
 		
 										</span> 
 						
@@ -504,41 +570,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Innkeeper</p><br>
+									<h4>Occupations - </h4><p>Innkeeper</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p> (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p> (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>.</p>
+									<h4>Speed - </h4><p>.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -659,33 +726,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Persuasion; Medicine; Nature; Religion; Insight<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -693,18 +762,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -712,30 +781,31 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Common 
 									Orcish 
 									Goblinoid 
 									Dwarven 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Stoic, Survivor, </p>	
 					
@@ -747,18 +817,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -776,8 +849,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Deonne is not to be reckoned with. He attacks fiercely, head-on.
-
+								<p>Deonne is not to be reckoned with. He attacks fiercely, head-on.
+</p>
 								
 							</span> 
 			
@@ -786,8 +859,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -796,13 +869,13 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>Church of Poetic Justice [Hoar]</b><br>
 					
 										<i></i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -816,7 +889,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -830,8 +902,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -839,11 +914,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Wearing a khopesh, the tall, well-polished half-orc innkeep claps twice. &quot;We&#39;ve new guests, people. To your duties.&quot;<br />
+							<p>Wearing a khopesh, the tall, well-polished half-orc innkeep claps twice. &quot;We&#39;ve new guests, people. To your duties.&quot;</p><br />
 		
 							</span>
 		
@@ -853,11 +926,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Very fit. Chain skirt and tunic. Half-cloak with two-faced head embroidered on back. Short black hair. Black felt gloves
+								
+								<p>Very fit. Chain skirt and tunic. Half-cloak with two-faced head embroidered on back. Short black hair. Black felt gloves</p>
 		
 										
 							</span>
@@ -869,15 +940,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;We&#39;ve a few rules for the common room. Best ye follow em.&quot;; &quot;Eye for eye for eye&quot;;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;We&#39;ve a few rules for the common room. Best ye follow em.&quot;; &quot;Eye for eye for eye&quot;;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -890,12 +966,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Stands stoic with one hand on Khopesh at most times. Diligently delegates tasks to servants and employees. Cocks head.
+								<p>Stands stoic with one hand on Khopesh at most times. Diligently delegates tasks to servants and employees. Cocks head.</p>
 		
 								
 							</span> 
@@ -907,13 +979,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Seeks retribution for his years of torture under the Inquisitors in search of the Orcish King of the North.
-
+								<p>Seeks retribution for his years of torture under the Inquisitors in search of the Orcish King of the North.
+</p>
 							
 							</span>
 		
@@ -925,13 +994,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Revenge. Providing respite to others in spite of his tragic life.
-
+								<p>Revenge. Providing respite to others in spite of his tragic life.
+</p>
 		
 									
 							</span> 
@@ -944,12 +1010,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											He seeks to murder the royals who created the Inquisitors; a group of paladins searching for the Orcish King of the North.
-		
+							
+									<p>He seeks to murder the royals who created the Inquisitors; a group of paladins searching for the Orcish King of the North.
+</p>		
 		
 										
 							</span> 
@@ -971,7 +1034,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

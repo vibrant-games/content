@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Bartender; Inkeeper</p><br>
+									<h4>Occupations - </h4><p>Bartender; Inkeeper</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>18</p><br>
+									<h4>Armor Class - </h4><p>18</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>57 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>57 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>90.</p>
+									<h4>Speed - </h4><p>90.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,72 +216,130 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Persuasion; Performance; Acrobatics; Athletics<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(6);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Common
 							Dwarven
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 	
 					
@@ -304,10 +362,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -318,28 +376,33 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								He is a notable combatant. Few know of this and when and if he ever engages in combat, look out. Occasionally this is apparent when he bounces patrons.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -347,11 +410,11 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>The Lost Reclusive Abbots of Iremore - </b><i>Marshall Abbot</i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -389,13 +452,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Bellying up to the bar, the bartender smiles, &quot;the drunken coward has all your libational and respite needs!&quot;</p>
 		
 						
@@ -405,7 +467,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										A surly human with smooth cacao skin and short dreadlocked hair.  Bright, patched clothes. Flambouyant scarves.
+										<p>A surly human with smooth cacao skin and short dreadlocked hair.  Bright, patched clothes. Flambouyant scarves.</p>
 		
 										</span>
 		
@@ -413,11 +475,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;The ale and mouths are pouring!&quot;; &quot;Need not know what&#39;s next. Rest. Begin anew tomorrow&quot;; &quot;The mind makes the troubles&quot;</i></p></li><br>
 											
-											<i> &quot;The ale and mouths are pouring!&quot;; &quot;Need not know what&#39;s next. Rest. Begin anew tomorrow&quot;; &quot;The mind makes the troubles&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -425,7 +491,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Busy-body who wavers in each movement. Tremors early in the day. Joyously but mistakenly spills drinks and foods.
+											<p>Busy-body who wavers in each movement. Tremors early in the day. Joyously but mistakenly spills drinks and foods.</p>
 		
 										</span> 
 		
@@ -434,8 +500,8 @@
 			
 											<h3>Motivations</h3>
 										
-											To provide balance through comfort and respite alongside the chaos and tumult of tavern-life.
-
+											<p>To provide balance through comfort and respite alongside the chaos and tumult of tavern-life.
+</p>
 										</span>
 		
 		
@@ -445,8 +511,8 @@
 			
 											<h3>Passions</h3>
 											
-											Ales. More Ales. Ornately carved tankards. Meditation and the balance of mind over balance of body.
-
+											<p>Ales. More Ales. Ornately carved tankards. Meditation and the balance of mind over balance of body.
+</p>
 		
 										</span> 
 		
@@ -454,7 +520,7 @@
 			
 											<h3>Secrets</h3>
 										
-													
+											<p></p>	
 		
 										</span> 
 						
@@ -499,41 +565,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Bartender; Inkeeper</p><br>
+									<h4>Occupations - </h4><p>Bartender; Inkeeper</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>18</p><br>
+									<h4>Armor Class - </h4><p>18</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>57 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>57 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>90.</p>
+									<h4>Speed - </h4><p>90.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -654,33 +721,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Persuasion; Performance; Acrobatics; Athletics<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -688,18 +757,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -707,28 +776,29 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Common 
 									Dwarven 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p></p>	
 					
@@ -740,18 +810,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -769,8 +842,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								He is a notable combatant. Few know of this and when and if he ever engages in combat, look out. Occasionally this is apparent when he bounces patrons.
-
+								<p>He is a notable combatant. Few know of this and when and if he ever engages in combat, look out. Occasionally this is apparent when he bounces patrons.
+</p>
 								
 							</span> 
 			
@@ -779,8 +852,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -789,13 +862,13 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>The Lost Reclusive Abbots of Iremore</b><br>
 					
 										<i>Marshall Abbot</i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -809,7 +882,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -823,8 +895,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -832,11 +907,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Bellying up to the bar, the bartender smiles, &quot;the drunken coward has all your libational and respite needs!&quot;<br />
+							<p>Bellying up to the bar, the bartender smiles, &quot;the drunken coward has all your libational and respite needs!&quot;</p><br />
 		
 							</span>
 		
@@ -846,11 +919,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								A surly human with smooth cacao skin and short dreadlocked hair.  Bright, patched clothes. Flambouyant scarves.
+								
+								<p>A surly human with smooth cacao skin and short dreadlocked hair.  Bright, patched clothes. Flambouyant scarves.</p>
 		
 										
 							</span>
@@ -862,15 +933,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;The ale and mouths are pouring!&quot;; &quot;Need not know what&#39;s next. Rest. Begin anew tomorrow&quot;; &quot;The mind makes the troubles&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;The ale and mouths are pouring!&quot;; &quot;Need not know what&#39;s next. Rest. Begin anew tomorrow&quot;; &quot;The mind makes the troubles&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -883,12 +959,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Busy-body who wavers in each movement. Tremors early in the day. Joyously but mistakenly spills drinks and foods.
+								<p>Busy-body who wavers in each movement. Tremors early in the day. Joyously but mistakenly spills drinks and foods.</p>
 		
 								
 							</span> 
@@ -900,13 +972,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								To provide balance through comfort and respite alongside the chaos and tumult of tavern-life.
-
+								<p>To provide balance through comfort and respite alongside the chaos and tumult of tavern-life.
+</p>
 							
 							</span>
 		
@@ -918,13 +987,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Ales. More Ales. Ornately carved tankards. Meditation and the balance of mind over balance of body.
-
+								<p>Ales. More Ales. Ornately carved tankards. Meditation and the balance of mind over balance of body.
+</p>
 		
 									
 							</span> 
@@ -937,11 +1003,8 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-													
+							
+									<p></p>		
 		
 										
 							</span> 
@@ -963,7 +1026,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

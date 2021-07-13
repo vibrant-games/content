@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>she/her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Guide</p><br>
+									<h4>Occupations - </h4><p>Guide</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>14</p><br>
+									<h4>Armor Class - </h4><p>14</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>75 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>75 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,74 +216,132 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Survival; Wilderness Kit;<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(10);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Human
 							elvish
 							otter
 							raven
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Gentle, 
 	
@@ -307,10 +365,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -321,32 +379,37 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Nokumi will choose the height advantages of the trees over direct combat, leaping from branch to branch and gaining distance whenever possible.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -354,11 +417,11 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>The Nation of Nac Mac - </b><i></i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -396,13 +459,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>A vintage creature, wrapped in thin bands of hemlock, gates your path. She smells of lemon, eyes twinkling. She smiles.</p>
 		
 						
@@ -412,7 +474,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Wood strips armour her body; her face is creased and folded like a discarded blanket; cropped silver hair.
+										<p>Wood strips armour her body; her face is creased and folded like a discarded blanket; cropped silver hair.</p>
 		
 										</span>
 		
@@ -420,11 +482,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.; &quot;Be grateful to the rock, the dew, and the sun.&quot;</i></p></li><br>
 											
-											<i> &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.; &quot;Be grateful to the rock, the dew, and the sun.&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -432,7 +498,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Sucks breath when cogitating; whistles to songbirds; clacks to ravens; chitters to otters; overfeeds pets with treats.
+											<p>Sucks breath when cogitating; whistles to songbirds; clacks to ravens; chitters to otters; overfeeds pets with treats.</p>
 		
 										</span> 
 		
@@ -441,8 +507,8 @@
 			
 											<h3>Motivations</h3>
 										
-											To aid people in traversing the wild while educating them on her peoples, the surroundings, and the inherent dichotomy of nature as calm/ferocious, growth/decay, etc.
-
+											<p>To aid people in traversing the wild while educating them on her peoples, the surroundings, and the inherent dichotomy of nature as calm/ferocious, growth/decay, etc.
+</p>
 										</span>
 		
 		
@@ -452,8 +518,8 @@
 			
 											<h3>Passions</h3>
 											
-											Nokumi&#39;s world spins around her pets and her grandson. She accepts food, tools and clothes in return for her guidance.
-
+											<p>Nokumi&#39;s world spins around her pets and her grandson. She accepts food, tools and clothes in return for her guidance.
+</p>
 		
 										</span> 
 		
@@ -461,7 +527,7 @@
 			
 											<h3>Secrets</h3>
 										
-													
+											<p></p>	
 		
 										</span> 
 						
@@ -506,41 +572,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>she/her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Guide</p><br>
+									<h4>Occupations - </h4><p>Guide</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>14</p><br>
+									<h4>Armor Class - </h4><p>14</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>75 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>75 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -661,33 +728,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Survival; Wilderness Kit;<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -695,18 +764,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -714,30 +783,31 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Human 
 									elvish 
 									otter 
 									raven 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Gentle, </p>	
 					
@@ -749,18 +819,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -771,9 +844,9 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -782,8 +855,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Nokumi will choose the height advantages of the trees over direct combat, leaping from branch to branch and gaining distance whenever possible.
-
+								<p>Nokumi will choose the height advantages of the trees over direct combat, leaping from branch to branch and gaining distance whenever possible.
+</p>
 								
 							</span> 
 			
@@ -792,8 +865,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -802,13 +875,13 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>The Nation of Nac Mac</b><br>
 					
 										<i></i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -822,7 +895,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -836,8 +908,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -845,11 +920,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							A vintage creature, wrapped in thin bands of hemlock, gates your path. She smells of lemon, eyes twinkling. She smiles.<br />
+							<p>A vintage creature, wrapped in thin bands of hemlock, gates your path. She smells of lemon, eyes twinkling. She smiles.</p><br />
 		
 							</span>
 		
@@ -859,11 +932,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Wood strips armour her body; her face is creased and folded like a discarded blanket; cropped silver hair.
+								
+								<p>Wood strips armour her body; her face is creased and folded like a discarded blanket; cropped silver hair.</p>
 		
 										
 							</span>
@@ -875,15 +946,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.; &quot;Be grateful to the rock, the dew, and the sun.&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.; &quot;Be grateful to the rock, the dew, and the sun.&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -896,12 +972,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Sucks breath when cogitating; whistles to songbirds; clacks to ravens; chitters to otters; overfeeds pets with treats.
+								<p>Sucks breath when cogitating; whistles to songbirds; clacks to ravens; chitters to otters; overfeeds pets with treats.</p>
 		
 								
 							</span> 
@@ -913,13 +985,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								To aid people in traversing the wild while educating them on her peoples, the surroundings, and the inherent dichotomy of nature as calm/ferocious, growth/decay, etc.
-
+								<p>To aid people in traversing the wild while educating them on her peoples, the surroundings, and the inherent dichotomy of nature as calm/ferocious, growth/decay, etc.
+</p>
 							
 							</span>
 		
@@ -931,13 +1000,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Nokumi&#39;s world spins around her pets and her grandson. She accepts food, tools and clothes in return for her guidance.
-
+								<p>Nokumi&#39;s world spins around her pets and her grandson. She accepts food, tools and clothes in return for her guidance.
+</p>
 		
 									
 							</span> 
@@ -950,11 +1016,8 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-													
+							
+									<p></p>		
 		
 										
 							</span> 
@@ -976,7 +1039,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	
