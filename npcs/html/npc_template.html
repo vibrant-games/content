@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>{{npc.traits.pronouns}}</p><br>
+									<h4>Pronouns - </h4><p>{{npc.traits.pronouns}}</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>{{#npc.traits.occupation}}{{.}}{{/npc.traits.occupation}}</p><br>
+									<h4>Occupations - </h4><p>{{#npc.traits.occupation}}{{.}}{{/npc.traits.occupation}}</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>{{npc.stats.armour-class}}</p><br>
+									<h4>Armor Class - </h4><p>{{npc.stats.armour-class}}</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>{{npc.stats.hit-points}} (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>{{npc.stats.hit-points}} (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>{{npc.stats.speed}}.</p>
+									<h4>Speed - </h4><p>{{npc.stats.speed}}.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,21 +216,29 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+									{{#npc.specialties.saving-throws.length}}
+									{{#npc.specialties.saving-throws}}
+									<p>{{.}}</p>
+									
+									{{/npc.specialties.saving-throws}}
+									{{/npc.specialties.saving-throws.length}}
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									{{#npc.specialties.skills.length}}
       								{{#npc.specialties.skills}}
 									<p>{{.}}<br></p>
@@ -241,54 +249,153 @@
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+										{{#npc.specialties.proficiencies.length}}
+      								
+										{{#npc.specialties.proficiencies}}
+									
+										{{.}}, 
+        							
+										{{/npc.specialties.proficiencies}}
+      								
+										{{/npc.specialties.proficiencies.length}}
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod({{npc.traits.level}});
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+									{{#npc.specialties.damage-immunities.length}}
+									{{#npc.specialties.damage-immunities}}
+									<h4>Damage Immunities - </h4>
 					
-									<p>TODO Damage Immunities</p>
+									<p>{{.}}</p>
 					
+									{{/npc.specialties.damage-immunities}}
+									{{/npc.specialties.damage-immunities.length}}
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									{{#npc.specialties.condition-immunities.length}}
+									{{#npc.specialties.condition-immunities}}
+									
+									<h4>Condition Immunities - </h4>
 						
-									<p>TODO Condition Immunities</p>
+									<p>{{.}}</p>
 					
+									{{/npc.specialties.condition-immunities}}
+									{{/npc.specialties.condition-immunities.length}}
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									{{#npc.specialties.resistances.length}}
+									{{#npc.specialties.resistances}}
+									<h4>Resistances - </h4>
 					
-									<h4>Senses</h4>
+									<p>{{.}}</p>
 					
-									<p>TODO Senses</p>
+									{{/npc.specialties.resistances}}
+									{{/npc.specialties.resistances.length}}
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
+									{{#npc.specialties.senses.length}}
+									{{#npc.specialties.senses}}
+									
+									<p><h4>Senses - </h4>
+					
+									<b>{{title}} - </b>{{description}}</p>
+					
+									{{/npc.specialties.senses}}
+									{{/npc.specialties.senses.length}}
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							{{#npc.traits.languages.length}}
 							{{#npc.traits.languages}}
 							{{.}}
 							{{/npc.traits.languages}}
 							{{/npc.traits.languages.length}}
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									{{#npc.traits.adjectives.length}}
 									{{#npc.traits.adjectives}}
@@ -315,13 +422,13 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								{{#npc.specialties.special-abilities.length}}
 								{{#npc.specialties.special-abilities}}
 								<b>{{title}}</b> - {{{description}}}<br>
 								{{/npc.specialties.special-abilities}}
 								{{/npc.specialties.special-abilities.length}}	
-									
+								</p>	
 								
 								
 								
@@ -332,6 +439,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 								{{#npc.specialties.special-equipment.length}}
 								{{#npc.specialties.special-equipment}}
 									<b>{{title}}</b> - {{{description}}}<br>
@@ -339,25 +448,28 @@
          						{{/npc.specialties.special-equipment}}
 								{{/npc.specialties.special-equipment.length}}
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								{{#npc.specialties.combat-tactics.length}}
+								<p>
+									{{#npc.specialties.combat-tactics.length}}
 								{{#npc.specialties.combat-tactics}}
 								{{.}}
 								
 								{{/npc.specialties.combat-tactics}}
 								{{/npc.specialties.combat-tactics.length}}
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								{{#npc.specialties.attacks.length}}
 								{{#npc.specialties.attacks}}
 								<b>{{title}}</b> - {{{description}}}
@@ -366,7 +478,7 @@
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
 				
-								
+								</p>
 								
 							</span>
 			
@@ -374,7 +486,7 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									{{#npc.traits.factions.length}}
 									{{#npc.traits.factions}}
 									
@@ -382,7 +494,7 @@
 								<br>
 									{{/npc.traits.factions}}
 									{{/npc.traits.factions.length}}
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -420,13 +532,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>{{npc.improv.introduction}}</p>
 		
 						
@@ -436,7 +547,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										{{npc.improv.appearance}}
+										<p>{{npc.improv.appearance}}</p>
 		
 										</span>
 		
@@ -444,15 +555,19 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
-											
+										
+											<ul style="list-style-type:none;">
+  
+ 	
 											{{#npc.improv.expressions.length}}
 											{{#npc.improv.expressions}}
-											<i>{{.}}</i>
-											<br>
-											<br>
+											<li><p><i>{{.}}</i></p></li><br>
+											
+											
 											{{/npc.improv.expressions}}
 											{{/npc.improv.expressions.length}}
 											
+											</ul>
 										</span> 
 		
 		
@@ -460,7 +575,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											{{npc.improv.mannerisms}}
+											<p>{{npc.improv.mannerisms}}</p>
 		
 										</span> 
 		
@@ -469,7 +584,7 @@
 			
 											<h3>Motivations</h3>
 										
-											{{npc.acting.motivations}}
+											<p>{{npc.acting.motivations}}</p>
 										</span>
 		
 		
@@ -479,7 +594,7 @@
 			
 											<h3>Passions</h3>
 											
-											{{npc.acting.passions}}
+											<p>{{npc.acting.passions}}</p>
 		
 										</span> 
 		
@@ -487,7 +602,7 @@
 			
 											<h3>Secrets</h3>
 										
-											{{npc.acting.secrets}}		
+											<p>{{npc.acting.secrets}}</p>	
 		
 										</span> 
 						
@@ -532,41 +647,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>{{npc.traits.pronouns}}</p><br>
+									<h4>Pronouns - </h4><p>{{npc.traits.pronouns}}</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>{{#npc.traits.occupation}}{{.}}{{/npc.traits.occupation}}</p><br>
+									<h4>Occupations - </h4><p>{{#npc.traits.occupation}}{{.}}{{/npc.traits.occupation}}</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>{{npc.stats.armour-class}}</p><br>
+									<h4>Armor Class - </h4><p>{{npc.stats.armour-class}}</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>{{npc.stats.hit-points}} (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>{{npc.stats.hit-points}} (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>{{npc.stats.speed}}.</p>
+									<h4>Speed - </h4><p>{{npc.stats.speed}}.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -687,37 +803,39 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									{{#npc.specialties.skills.length}}
       								{{#npc.specialties.skills}}
 									{{.}}<br>
         							{{/npc.specialties.skills}}
       								{{/npc.specialties.skills.length}}
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO {{#npc.specialties.special-abilities-proficiences}}{{.}}{{/npc.specialties.special-abilities-proficiences}}</p>
 					
@@ -725,18 +843,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -744,31 +862,31 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
-									{{#npc.traits.languages.length}}
+									<h4>Languages - </h4>
+						<p>		{{#npc.traits.languages.length}}
 									{{#npc.traits.languages}}
 									{{.}} 
 									{{/npc.traits.languages}}
 									{{/npc.traits.languages.length}}
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>{{#npc.traits.adjectives.length}}{{#npc.traits.adjectives}}{{.}}, {{/npc.traits.adjectives}}{{/npc.traits.adjectives.length}}</p>	
 					
@@ -780,21 +898,24 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
-								{{#npc.specialties.special-abilities.length}}
+								<p>
+									{{#npc.specialties.special-abilities.length}}
 								{{#npc.specialties.special-abilities}}
 								<b>{{title}}</b> - {{{description}}}<br>
 								{{/npc.specialties.special-abilities}}
 								{{/npc.specialties.special-abilities.length}}	
-									
+									</p>
+
 								
 								
 								
@@ -807,7 +928,7 @@
 								<h3>Special Equipment</h3>
 								{{#npc.specialties.special-equipment.length}}
 								{{#npc.specialties.special-equipment}}
-									<b>{{title}}</b> - {{{description}}}<br>
+								<p>	<b>{{title}}</b> - {{{description}}}<br></p>
 									
          						{{/npc.specialties.special-equipment}}
 								{{/npc.specialties.special-equipment.length}}
@@ -820,7 +941,7 @@
 								<h3>Combat Tactics</h3>
 								{{#npc.specialties.combat-tactics.length}}
 								{{#npc.specialties.combat-tactics}}
-								{{.}}
+								<p>{{.}}</p>
 								
 								{{/npc.specialties.combat-tactics}}
 								{{/npc.specialties.combat-tactics.length}}
@@ -833,8 +954,8 @@
 					
 								{{#npc.specialties.attacks.length}}
 								{{#npc.specialties.attacks}}
-								<b>{{title}}</b> - {{{description}}}
-								<br>
+								<p><b>{{title}}</b> - {{{description}}}
+								<br></p>
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
 								<br>
@@ -845,7 +966,7 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									{{#npc.traits.factions.length}}
 									{{#npc.traits.factions}}
 									
@@ -855,7 +976,7 @@
 									<br>
 									{{/npc.traits.factions}}
 									{{/npc.traits.factions.length}}
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -869,7 +990,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -883,8 +1003,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -892,11 +1015,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							{{npc.improv.introduction}}<br />
+							<p>{{npc.improv.introduction}}</p><br />
 		
 							</span>
 		
@@ -906,11 +1027,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								{{npc.improv.appearance}}
+								
+								<p>{{npc.improv.appearance}}</p>
 		
 										
 							</span>
@@ -922,19 +1041,24 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
+										<ul style="list-style-type:none;">
+  
+ 	
 											{{#npc.improv.expressions.length}}
 											{{#npc.improv.expressions}}
-											<i>{{.}}</i>
-											<br>
-											<br>
+											<li><p><i>{{.}}</i></p></li><br>
+											
+											
 											{{/npc.improv.expressions}}
 											{{/npc.improv.expressions.length}}
+											
+											</ul>
 											
 		
 								
@@ -947,12 +1071,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								{{npc.improv.mannerisms}}
+								<p>{{npc.improv.mannerisms}}</p>
 		
 								
 							</span> 
@@ -964,12 +1084,9 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								{{npc.acting.motivations}}
+								<p>{{npc.acting.motivations}}</p>
 							
 							</span>
 		
@@ -981,12 +1098,9 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								{{npc.acting.passions}}
+								<p>{{npc.acting.passions}}</p>
 		
 									
 							</span> 
@@ -999,11 +1113,8 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											{{npc.acting.secrets}}		
+							
+									<p>{{npc.acting.secrets}}</p>		
 		
 										
 							</span> 
@@ -1025,7 +1136,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

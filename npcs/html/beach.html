@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Butler</p><br>
+									<h4>Occupations - </h4><p>Butler</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>14</p><br>
+									<h4>Armor Class - </h4><p>14</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>23 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>23 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,21 +216,23 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Alchemy,<br></p>
 									<p>Cooking,<br></p>
 									<p>Poisoner&#39;s Kit,<br></p>
@@ -240,55 +242,111 @@
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(5);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Huma,
 							dwarvish,
 							orcish
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Servile,, 
-	
+										
 					
 								</span> 
 
@@ -309,13 +367,13 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b>Sneak Attack</b> - A sneaky attack<br>
 								<b>Assassinate</b> - <br>
 								<b>Uncanny Dodge</b> - <br>
 								<b>Cunning Action</b> - <br>
-	
 									
+								</p>	
 								
 								
 								
@@ -326,25 +384,30 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b>Burleigh and Stronginthearm Number IX</b> - A +3 precise crossbow; only 2 were ever made. On a successful hit, each bolt causes <i>1d8 piercing damage</i>.<br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b>Assassin&#39;s Dagger (+1)</b> - When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take <i>4d6 necrotic damage</i>.
 								<br>
 								<br>
@@ -352,7 +415,7 @@
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -360,17 +423,17 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>Local Constabulary - </b><i>Butler to the Chief</i><br>
-								<br></li>
+								<br>
 									
 										<b>The White Gloves - </b><i>Dabbler</i><br>
-								<br></li>
+								<br>
 									
 										<b>Black Arts Libertarian Alchemists - </b><i>Developer of libations</i><br>
-								<br></li>
-										
+								<br>
+								</p>		
 								</span>
 							
 					</span>
@@ -408,13 +471,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>A dignified gentleman orc with an upturned nose eyes the party from the gate of a well-to-do mansion.</p>
 		
 						
@@ -424,7 +486,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Black long-tailed tuxedo, white gloves and socks; brown skin, mottled with rust.
+										<p>Black long-tailed tuxedo, white gloves and socks; brown skin, mottled with rust.</p>
 		
 										</span>
 		
@@ -432,17 +494,21 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i>Does sir/madam have an appointment with His Grace?</i></p></li><br>
 											
-											<i>Does sir/madam have an appointment with His Grace?</i>
-											<br>
-											<br>
-											<i>Scones with your libation, master/madam?</i>
-											<br>
-											<br>
-											<i>Gracious me!</i>
-											<br>
-											<br>
 											
+											<li><p><i>Scones with your libation, master/madam?</i></p></li><br>
+											
+											
+											<li><p><i>Gracious me!</i></p></li><br>
+											
+											
+											
+											</ul>
 										</span> 
 		
 		
@@ -450,7 +516,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Strokes chin ponderously, eyes rolled back; wipes the ground with his handkerchief after people have stepped on it.
+											<p>Strokes chin ponderously, eyes rolled back; wipes the ground with his handkerchief after people have stepped on it.</p>
 		
 										</span> 
 		
@@ -459,8 +525,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Hierarchy, tradition, and literature are laced like marrow through his thoughts; martial arts; marksmanship.
-
+											<p>Hierarchy, tradition, and literature are laced like marrow through his thoughts; martial arts; marksmanship.
+</p>
 										</span>
 		
 		
@@ -470,8 +536,8 @@
 			
 											<h3>Passions</h3>
 											
-											Service; Peacekeeping; Libertarianism; Fine Foods; Fine clothes; The &#39;White Gloves&#39;; Alchemy;
-
+											<p>Service; Peacekeeping; Libertarianism; Fine Foods; Fine clothes; The &#39;White Gloves&#39;; Alchemy;
+</p>
 		
 										</span> 
 		
@@ -479,8 +545,8 @@
 			
 											<h3>Secrets</h3>
 										
-											Not so much a secret, Beach isn&#39;t fond of sharing his origins.
-		
+											<p>Not so much a secret, Beach isn&#39;t fond of sharing his origins.
+</p>	
 		
 										</span> 
 						
@@ -525,41 +591,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Butler</p><br>
+									<h4>Occupations - </h4><p>Butler</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>14</p><br>
+									<h4>Armor Class - </h4><p>14</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>23 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>23 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -680,36 +747,38 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Alchemy,<br>
 									Cooking,<br>
 									Poisoner&#39;s Kit,<br>
 									Disguise Kit<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -717,18 +786,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -736,29 +805,30 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Huma, 
 									dwarvish, 
 									orcish 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Servile,, </p>	
 					
@@ -770,21 +840,24 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b>Sneak Attack</b> - A sneaky attack<br>
 								<b>Assassinate</b> - <br>
 								<b>Uncanny Dodge</b> - <br>
 								<b>Cunning Action</b> - <br>
-	
 									
+									</p>
+
 								
 								
 								
@@ -795,7 +868,7 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b>Burleigh and Stronginthearm Number IX</b> - A +3 precise crossbow; only 2 were ever made. On a successful hit, each bolt causes <i>1d8 piercing damage</i>.<br>
+								<p>	<b>Burleigh and Stronginthearm Number IX</b> - A +3 precise crossbow; only 2 were ever made. On a successful hit, each bolt causes <i>1d8 piercing damage</i>.<br></p>
 									
 								
 							
@@ -804,8 +877,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike.
-
+								<p>If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike.
+</p>
 								
 							</span> 
 			
@@ -814,10 +887,10 @@
 					
 								<h3>Actions</h3>
 					
-								<b>Assassin&#39;s Dagger (+1)</b> - When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take <i>4d6 necrotic damage</i>.
-								<br>
-								<b>Hidden Blade</b> - <i>(1d4 piercing, finesse)</i>
-								<br>
+								<p><b>Assassin&#39;s Dagger (+1)</b> - When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take <i>4d6 necrotic damage</i>.
+								<br></p>
+								<p><b>Hidden Blade</b> - <i>(1d4 piercing, finesse)</i>
+								<br></p>
 								<br>
 				
 							</span>
@@ -826,7 +899,7 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>Local Constabulary</b><br>
 					
@@ -842,7 +915,7 @@
 					
 										<i>Developer of libations</i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -856,7 +929,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -870,8 +942,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -879,11 +954,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							A dignified gentleman orc with an upturned nose eyes the party from the gate of a well-to-do mansion.<br />
+							<p>A dignified gentleman orc with an upturned nose eyes the party from the gate of a well-to-do mansion.</p><br />
 		
 							</span>
 		
@@ -893,11 +966,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Black long-tailed tuxedo, white gloves and socks; brown skin, mottled with rust.
+								
+								<p>Black long-tailed tuxedo, white gloves and socks; brown skin, mottled with rust.</p>
 		
 										
 							</span>
@@ -909,21 +980,26 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i>Does sir/madam have an appointment with His Grace?</i>
-											<br>
-											<br>
-											<i>Scones with your libation, master/madam?</i>
-											<br>
-											<br>
-											<i>Gracious me!</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i>Does sir/madam have an appointment with His Grace?</i></p></li><br>
+											
+											
+											<li><p><i>Scones with your libation, master/madam?</i></p></li><br>
+											
+											
+											<li><p><i>Gracious me!</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -936,12 +1012,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Strokes chin ponderously, eyes rolled back; wipes the ground with his handkerchief after people have stepped on it.
+								<p>Strokes chin ponderously, eyes rolled back; wipes the ground with his handkerchief after people have stepped on it.</p>
 		
 								
 							</span> 
@@ -953,13 +1025,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Hierarchy, tradition, and literature are laced like marrow through his thoughts; martial arts; marksmanship.
-
+								<p>Hierarchy, tradition, and literature are laced like marrow through his thoughts; martial arts; marksmanship.
+</p>
 							
 							</span>
 		
@@ -971,13 +1040,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Service; Peacekeeping; Libertarianism; Fine Foods; Fine clothes; The &#39;White Gloves&#39;; Alchemy;
-
+								<p>Service; Peacekeeping; Libertarianism; Fine Foods; Fine clothes; The &#39;White Gloves&#39;; Alchemy;
+</p>
 		
 									
 							</span> 
@@ -990,12 +1056,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											Not so much a secret, Beach isn&#39;t fond of sharing his origins.
-		
+							
+									<p>Not so much a secret, Beach isn&#39;t fond of sharing his origins.
+</p>		
 		
 										
 							</span> 
@@ -1017,9 +1080,13 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
-							</span>
+							
 								<span class="property-line bg">	
 		
 								
@@ -1027,7 +1094,7 @@
 								
     
 								</span>
-
+</span>
 							</span>
 								
 					</span>

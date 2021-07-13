@@ -4,12 +4,11 @@
 body {
 	margin: 0 !important;
     padding: 0 !important;
-  font-size: 13.5px;
+  font-size: 15.5px;
   line-height: 1.2em;
   box-sizing: border-box;
   max-width: 100%;
-  font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica,
-    Arial, sans-serif;
+  font-family: Roboto,Helvetica,sans-serif;
 	text-align: left;
   
 }
@@ -241,7 +240,7 @@ div {
   font-style: italic;
   font-size: 16px;
   line-height: 1.2em;
-  margin: 10 0 20 40px;
+  margin: 10px 0 20px 20px;
 	
 	color: indigo;
 
@@ -288,15 +287,95 @@ div {
 
 
 
-.property-line{
+
+
+
+
+
+.top-property-line{
+	display: inline-block;
+	text-align: justify;
+	
+	width: 90%;
+	font-weight: normal;
+	color: indigo;
+  padding: 	0px 10px 0px 15px;
+  line-height: 1.4em;
+	
+}
+
+
+
+.top-property-line h4,
+.top-property-line p{
+  display: inline-block;
+  margin: 0px 0px 0px 2px;
+  font-size: 15.5px;
+  line-height: 150%;
+	color: indigo;
+}
+
+.top-property-line p {
+	
+	  text-indent: 4px;
+}
+.top-property-line h4{
+  color:indigo;
+}
+
+
+.top-property-line h3 {
 	
 	display: inline-block;
-	flex-basis: 0;
-	text-align: left;
-	text-indent: 1.2em;
-	width: 80%;
-	color:indigo;
+  margin: 10px 0px 0px 10px;
+  font-size: 15.5px;
+  line-height: 150%;
+	color: indigo;
+	
+}
+
+.top-property-line{
+  font-weight: normal;
+
+  padding: 0 0 0 10px;
+  line-height: 150%;
+}
+
+.top-property-line.first{
+  margin: 10px 0px 0px 0px;
+}
+
+
+
+.top-property-line.last{
+ margin: 30px 0px 10px 0px;
+}
+.top-property-line li{
+	
+	margin-left: 0px;
+	text-indent: -30px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+.property-line{
+	display: inline-block;
+	text-align: justify;
+	
+	width: 90%;
 	font-weight: normal;
+	color: indigo;
+  padding: 	0px 20px 0px 15px;
+  line-height: 1.4em;
 	
 }
 
@@ -305,26 +384,53 @@ div {
 .property-line h4,
 .property-line p{
   display: inline-block;
-  margin: 0 0 0 10px;
-  color:indigo;
-  font-size: 13.5px;
-  line-height: 1.2em;
+  margin: 0px 0px 0px 15px;
+  font-size: 15.5px;
+  line-height: 150%;
+	color: indigo;
+}
+
+.property-line p {
+	
+	  text-indent: 30px;
+
 }
 .property-line h4{
   color:indigo;
 }
+
+
+.property-line h3 {
+	
+	display: inline-block;
+  margin: 10px 0px 0px 10px;
+  font-size: 15.5px;
+  line-height: 150%;
+	color: indigo;
+	
+}
+
 .property-line{
   font-weight: normal;
-	
-	text-indent: -0.25em;
+
   padding: 0 0 0 10px;
-  line-height: 1.4em;
+  line-height: 150%;
 }
+
 .property-line.first{
-  margin: 0 0 0 0px;
+  margin: 10px 0px 0px 0px;
 }
+
+
+
 .property-line.last{
-  margin: 0 0 10px 0;
+ margin: 30px 0px 10px 0px;
+}
+.property-line li{
+	
+	margin-left: 0px;
+	text-indent: -30px;
+	
 }
 
 
@@ -333,13 +439,24 @@ div {
    font-weight: normal;
 	display: inline-block;
 	vertical-align:top;
-	text-align: left;
-  margin: 0 0 40 15px;
-	text-indent: 30px;
+  margin: 10px 20px 30px 20px;
+	text-indent: 0px;
   
 	line-height: 200%;
 	width: 90%;
 }
+
+.property-line.bg p{
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 150%;
+	font-size: 15.5px;
+  max-width: 100%;
+  font-family: Roboto,Helvetica,sans-serif;
+	text-align: left;
+}
+
+
 
 .property-line.factions{
   line-height: 200%;
@@ -354,11 +471,12 @@ div {
 .right-line{
 	
 	display: inline-block;
-	text-align: left;
-	width: 85%;
+	text-align: justify;
+	
+	width: 90%;
 	font-weight: normal;
 	color: indigo;
-	text-indent: -0.25em;
+	text-indent: 20px;
   padding: 	0 20 0 15px;
   line-height: 1.4em;
 }
@@ -368,21 +486,32 @@ div {
 .right-line h4,
 .right-line p{
   display: inline-block;
-  margin: 0 0 0 0px;
+  margin: 0 0 0 15px;
   
-  font-size: 13.5px;
-  line-height: 1.2em;
+  font-size: 15.5px;
+  line-height: 150%;
 	color: indigo;
+	text-indent: 30px;
+	
+}
+
+.right-line li {
+	
+	margin-left: 0px;
+	text-indent: -30px;
+	
 }
 .right-line h4{
   color:indigo;
+
 }
 
 .right-line.first{
   margin: 0 0 0 0;
 }
 .right-line.last{
-  margin: 0 0 10px;
+  margin: 0px 0px 10px 0px;
+	padding: 0px 0px 20px 0px
 }
 
 
@@ -405,8 +534,9 @@ div {
 .stat-block.single{
 	display: inline-block;
   vertical-align: top;
-	width: 90%;
+	width: 100%;
   text-align: left;
+	margin: 0px 0px 0px 0px;
 	
 }
 
@@ -420,8 +550,7 @@ div {
 	
 	
 }
-.stat-block.wide .section-left,
-.stat-block.single {
+.stat-block.wide .section-left {
   margin-right: 1.5%;
 	flex-grow: 1;
 }
@@ -529,7 +658,7 @@ div {
 	#bgcell{
 		flex-direction: column;
     	position: relative;
-		width: 100%;
+		width: 90%;
 		
 	}
   

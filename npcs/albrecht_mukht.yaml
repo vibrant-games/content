@@ -250,6 +250,7 @@ npc:
     #
     adjectives:
     - Racist
+    - Abrupt
 
   improv:
 
@@ -291,7 +292,12 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "If you gots a need, I do the deed"; "(Glancing around at the buildings) Poor craftsmanship. Damned (elves/humans) couldn't build quality if they tried"; "Each of you need to learn discipline. Take up a good trade. This ugly place needs better tradesmen"; "Those damned elves are full of pigshit. We'll get rid of 'em eventually"; "Petty humans and their politics. I say, kill 'em all. They're all the same";
+    expressions: 
+    - "If you gots a need, I do the deed"
+    - "(Glancing around at the buildings) Poor craftsmanship. Damned (elves/humans) couldn't build quality if they tried."
+    - "Each of you need to learn discipline. Take up a good trade. This ugly place needs better tradesmen."
+    - "Those damned elves are full of pigshit. We'll get rid of 'em eventually."
+    - "Petty humans and their politics. I say, kill 'em all. They're all the same."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -364,6 +370,27 @@ npc:
   # ???Max length???
   #
   specialties:
+    condition-immunities:
+    - none
+    damage-immunities:
+    - none
+    resistances:
+    - advantage on poison saves
+    senses:
+    - title: darkvision
+      description: Albrecht can see in dim light within 60 feet as if it were bright light and in darkness as if it were dim light. He cannot discern color in darkness, only shades of grey.
+    saving-throws:
+    - Constitution
+    - Strength
+    proficiencies:
+    - Cobbler's Tools
+    - Smith's Tools
+    - Tinker's Tools
+    - Woodcarver's Tools
+    - Simple Weapons
+    - Martial Weapons
+    - Survival
+    - Intimidation
     skills:
     - Roofing; Woodworking; Masonry; Intimidation
     special-abilities: |
