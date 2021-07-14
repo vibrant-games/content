@@ -474,7 +474,7 @@
 					
 								{{#npc.specialties.attacks.length}}
 								{{#npc.specialties.attacks}}
-								<p>{{{title}}} - {{{description}}}
+								<p><b>{{{title}}}</b> - {{{description}}}
 								<br></p>
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
@@ -606,7 +606,7 @@
 										<span class="right-line">
 			
 											<h3>Secrets</h3>
-										
+										<br>
 											<p>{{npc.acting.secrets}}</p>	
 		
 										</span> 
@@ -817,7 +817,13 @@
 						
 									<h4>Saving Throws - </h4>
 						
-									<p>TODO Saving Throws</p>
+									<h4>Saving Throws - </h4>
+									{{#npc.specialties.saving-throws.length}}
+									{{#npc.specialties.saving-throws}}
+									<p>{{.}}</p>
+									
+									{{/npc.specialties.saving-throws}}
+									{{/npc.specialties.saving-throws.length}}
 					
 								</span> <!-- property line -->
 			
@@ -842,7 +848,17 @@
 						
 									<h4>Proficiencies - </h4>
 						
-									<p>TODO {{#npc.specialties.special-abilities-proficiences}}{{.}}{{/npc.specialties.special-abilities-proficiences}}</p>
+									
+									
+										{{#npc.specialties.proficiencies.length}}
+      								
+										{{#npc.specialties.proficiencies}}
+									
+										{{.}}, 
+        							
+										{{/npc.specialties.proficiencies}}
+      								
+										{{/npc.specialties.proficiencies.length}}
 					
 								</span> <!-- property line -->
 			
@@ -850,18 +866,28 @@
 					
 								<span class="top-property-line">
 						
+									{{#npc.specialties.damage-immunities.length}}
+									{{#npc.specialties.damage-immunities}}
 									<h4>Damage Immunities - </h4>
 					
-									<p>TODO Damage Immunities</p>
+									<p>{{.}}</p>
 					
+									{{/npc.specialties.damage-immunities}}
+									{{/npc.specialties.damage-immunities.length}}
 								</span> <!-- property line -->
 			
 					
 								<span class="top-property-line">
 						
+									{{#npc.specialties.condition-immunities.length}}
+									{{#npc.specialties.condition-immunities}}
+									
 									<h4>Condition Immunities - </h4>
 						
-									<p>TODO Condition Immunities</p>
+									<p>{{.}}</p>
+					
+									{{/npc.specialties.condition-immunities}}
+									{{/npc.specialties.condition-immunities.length}}
 					
 								</span> <!-- property line -->
 			
@@ -869,9 +895,17 @@
 					
 								<span class="top-property-line">
 					
-									<h4>Senses - </h4>
+									
 					
-									<p>TODO Senses</p>
+									{{#npc.specialties.senses.length}}
+									{{#npc.specialties.senses}}
+									
+									<p><h4>Senses - </h4>
+					
+									<b>{{title}} - </b>{{description}}</p>
+					
+									{{/npc.specialties.senses}}
+									{{/npc.specialties.senses.length}}
 					
 								</span> <!-- property line -->
 			
@@ -959,7 +993,7 @@
 					
 								{{#npc.specialties.attacks.length}}
 								{{#npc.specialties.attacks}}
-								<p>{{{title}}} - {{{description}}}
+								<p><b>{{{title}}}</b> - {{{description}}}
 								<br></p>
 								{{/npc.specialties.attacks}}
 								{{/npc.specialties.attacks.length}}
@@ -1122,7 +1156,7 @@
 									
 								<h3>Secrets</h3>
 									
-							
+							<br>
 									<p>{{npc.acting.secrets}}</p>		
 		
 										

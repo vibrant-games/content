@@ -388,17 +388,39 @@ npc:
   # ???Max length???
   #
   specialties:
+    condition-immunities:
+    - none
+    damage-immunities:
+    - none
+    resistances:
+    - none
+    senses:
+    - title: Darkvision
+      description: Beach can see in dim light within 60 feet as if it were bright light and in darkness as if it were dim light. He cannot discern color in darkness, only shades of grey.
+    saving-throws:
+    - Constitution
+    - Strength
+    proficiencies:
+    - Persuasion
+    - Acrobatics
+    - Perception
+    - Sleight of Hand
+    - Simple Weapons
+    - Martial Weapons
+    - Diguise Kit
+    - Poisoner's Kit
+    - Thieve's Tools
     skills:
-    - Alchemy,
     - Cooking,
-    - Poisoner's Kit,
-    - Disguise Kit
     special-abilities:
     - title: Sneak Attack
-      description: A sneaky attack
+      description: Once per turn, Beach can deal an extra 3d6 damage to one creature he hits with an attack if he has advantage on the attack roll. The attack must use a finesse or a ranged weapon.
     - title: Assassinate
+      description: Beach gains advantage on attack rolls against any creature that has not taken a turn in combat yet. Additionally, any hit scored against a surprised creature is a critical hit.
     - title: Uncanny Dodge
+      description: When an attacker that Beach can see hits with an attack, he can use his reaction to halve the attack's damage against him.
     - title: Cunning Action
+      description: Beach can take a bonus action on each of his turns in combat. This can only be used to take the Dash, Disengage, or Hide action.
     attacks:
     - title: Assassin's Dagger (+1)
       description: When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take <i>4d6 necrotic damage</i>.

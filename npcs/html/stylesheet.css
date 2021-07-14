@@ -259,7 +259,10 @@ div {
 .abilities p{
 	text-align: center;
   margin: 0 0 10px 0;
-  line-height: 1.2em;
+  line-height: 200%;
+	font-weight: bold;
+	font-size: 18px;
+	color: midnightblue;
 }
 
 
@@ -351,7 +354,7 @@ div {
   margin: 10px 0px 0px 10px;
   font-size: 15.5px;
   line-height: 150%;
-	color: indigo;
+	color: crimson;
 	
 }
 
@@ -425,7 +428,7 @@ div {
 	
 	display: inline-block;
   margin: 10px 0px 0px 10px;
-  font-size: 15.5px;
+  font-size: 19px;
   line-height: 150%;
 	color: indigo;
 	
