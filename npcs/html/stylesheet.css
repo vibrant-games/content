@@ -211,10 +211,9 @@ div {
 	min-width: 200px;
 	display: inline-block;
 	flex-grow: 1;
-	margin: 0 25px 15px 10px;
+	margin: 0 25px 45px 10px;
 
 }
-
 
 
 
@@ -296,6 +295,23 @@ div {
 	
 }
 
+
+
+
+.factions-item {
+
+	
+	text-align: left;
+	text-indent: 30px;
+	margin: 0px 0px 30px 30px;
+	padding-bottom: 30px;
+
+}
+
+.factions-item p {
+	
+	text-indent: 30px;
+}
 
 .top-property-line{
 	display: inline-block;
@@ -458,7 +474,7 @@ div {
 	font-size: 15.5px;
   max-width: 100%;
   font-family: Roboto,Helvetica,sans-serif;
-	text-align: left;
+	
 }
 
 
@@ -642,6 +658,7 @@ div {
   #cell2 {
     flex-direction: column;
     position: relative;
+	  padding-bottom: 20px;
    
 	  
   }
@@ -696,7 +713,8 @@ div {
     flex-direction: column;
     
     position: relative;
-    
+    	  padding-bottom: 20px;
+
    
   }
   

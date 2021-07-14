@@ -228,11 +228,15 @@ npc:
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
     # For example:
-    #
-    # factions:
-    # - id: thieves_guild_of_poliwood
-    #   name: Thieves Guild of Poliwood
-    #   role: Associate Professor of Lockpicking
+    
+    factions:
+    - id: masons_guild_of_gullyore_coast
+      name: Masons' Guild of GullyOre Coast
+      role: Jahbulon - Master Stone Worker
+    - id: Joiners_Collaborative
+      name: the Joiners Collaborative
+      role: Master Woodworker
+      
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
     #   role: Window dressing
@@ -398,11 +402,14 @@ npc:
       description: If Albrecht is reduced to 0 hitpoints but not killed outright, he drops to 1 hitpoint instead. He can only use this feature once per long rest.
     - title: Savage Attacks
       description: If Albrecht scores a critical hit with a melee weapon attack, he can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.
-      
-    attacks: |
-      Maul
-      |
-      Javelin
+    special-equipment: 
+    - title: Chieftan's Fury (Maul +2)
+      description: This magical maul requires attunement. Albrecht uses it for work and for, well, working over combatants. Once per rage, Albrecht can slam the hammer into the ground in front of him, sundering the earth in two. Each creature in a 15 foot cube around him must make a Dex save. On a failure, creatures takes 2d8 bludgeoning damage and are knocked prone. On a success, the creature takes half damage and is not knocked prone. Small or tiny creatures automatically fail. If the terrain is breakable, it is destroyed. DC = 8 + Str Modifier + Proficiency.
+    attacks: 
+    - title: <b>Chieftan's Fury</b> - <i>(Maul +2) martial, heavy, two-handed</i>
+      description: On a successful hit, Chieftan's Fury deals <i>2d6+2 bludgeoning damage</i>.
+    - title: <b>Javelin</b> - <i>simple, javelin</i>
+      description: Range 30/120. On a successful hit, Albrecht deals <i>1d6 piercing damage</i>.
     combat-tactics: |
       Albrecht has worked to control his anger and will likely only rage if vehemently provoked. After this point, however, better duck and run.
 
