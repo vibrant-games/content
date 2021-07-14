@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Performer of Wonders; Mercenary; Farmhand; Chef</p><br>
+									<h4>Occupations - </h4><p>Performer of Wonders; Mercenary; Farmhand; Chef</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>43 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>43 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,74 +216,132 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Performance; Strength;<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(5);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Common
 							Giant
 							Elven
 							Orcish
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Brawny, 
 	
@@ -307,10 +365,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -321,6 +379,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 									<b></b> - <br>
@@ -328,27 +388,30 @@
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Irtano will often stand his ground and await whomever is foolish enough to attack first to do so.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -356,11 +419,11 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>Farmhands Guild - </b><i></i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -398,13 +461,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Irtano is a wanderer looking to display his talents. He often disrupts busy market places or taverns to show off his strength and abilities. In return he offers healing or blessings.</p>
 		
 						
@@ -414,7 +476,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Standing 8&#39; tall, Irtano is an imposing figure with gray skin and vertical curling patterns of red and orange over his entire body; he wears a long mohawk of deep ruddy red hair; he is never without his great-axe in hand; various pelts adorn his body like trophies
+										<p>Standing 8&#39; tall, Irtano is an imposing figure with gray skin and vertical curling patterns of red and orange over his entire body; he wears a long mohawk of deep ruddy red hair; he is never without his great-axe in hand; various pelts adorn his body like trophies</p>
 		
 										</span>
 		
@@ -422,11 +484,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;We always have better things to do and this situation would suggest so&quot;; &quot;I&#39;ve no time for petty squabbles - strength and courage absolves us of such frivolities&quot;; &quot;An age of enlightenment is upon us and it will require strength of body and character&quot;;</i></p></li><br>
 											
-											<i> &quot;We always have better things to do and this situation would suggest so&quot;; &quot;I&#39;ve no time for petty squabbles - strength and courage absolves us of such frivolities&quot;; &quot;An age of enlightenment is upon us and it will require strength of body and character&quot;;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -434,7 +500,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Unless in combat, Irtano moves slowly and deliberately; He uses his touch gently with most and often reaches out an imposing hand to reassure others;
+											<p>Unless in combat, Irtano moves slowly and deliberately; He uses his touch gently with most and often reaches out an imposing hand to reassure others;</p>
 		
 										</span> 
 		
@@ -443,8 +509,8 @@
 			
 											<h3>Motivations</h3>
 										
-											This talented giant is far from modest and is always seeking others&#39; celebrations of his strength and prowess. He is also inherently motivated to promote and support the talents and skills of others.
-
+											<p>This talented giant is far from modest and is always seeking others&#39; celebrations of his strength and prowess. He is also inherently motivated to promote and support the talents and skills of others.
+</p>
 										</span>
 		
 		
@@ -454,8 +520,8 @@
 			
 											<h3>Passions</h3>
 											
-											Justice; Feats of strength and courage; Irtano is a self-proclaimed chef and has a passion for finer foods; he enjoys helping struggling farmers with their farmwork
-
+											<p>Justice; Feats of strength and courage; Irtano is a self-proclaimed chef and has a passion for finer foods; he enjoys helping struggling farmers with their farmwork
+</p>
 		
 										</span> 
 		
@@ -463,7 +529,7 @@
 			
 											<h3>Secrets</h3>
 										
-													
+											<p></p>	
 		
 										</span> 
 						
@@ -508,41 +574,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Performer of Wonders; Mercenary; Farmhand; Chef</p><br>
+									<h4>Occupations - </h4><p>Performer of Wonders; Mercenary; Farmhand; Chef</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>43 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>43 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>30.</p>
+									<h4>Speed - </h4><p>30.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -663,33 +730,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Performance; Strength;<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -697,18 +766,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -716,30 +785,31 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Common 
 									Giant 
 									Elven 
 									Orcish 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Brawny, </p>	
 					
@@ -751,18 +821,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -773,11 +846,11 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -786,8 +859,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Irtano will often stand his ground and await whomever is foolish enough to attack first to do so.
-
+								<p>Irtano will often stand his ground and await whomever is foolish enough to attack first to do so.
+</p>
 								
 							</span> 
 			
@@ -796,8 +869,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -806,13 +879,13 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>Farmhands Guild</b><br>
 					
 										<i></i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -826,7 +899,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -840,8 +912,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -849,11 +924,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Irtano is a wanderer looking to display his talents. He often disrupts busy market places or taverns to show off his strength and abilities. In return he offers healing or blessings.<br />
+							<p>Irtano is a wanderer looking to display his talents. He often disrupts busy market places or taverns to show off his strength and abilities. In return he offers healing or blessings.</p><br />
 		
 							</span>
 		
@@ -863,11 +936,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Standing 8&#39; tall, Irtano is an imposing figure with gray skin and vertical curling patterns of red and orange over his entire body; he wears a long mohawk of deep ruddy red hair; he is never without his great-axe in hand; various pelts adorn his body like trophies
+								
+								<p>Standing 8&#39; tall, Irtano is an imposing figure with gray skin and vertical curling patterns of red and orange over his entire body; he wears a long mohawk of deep ruddy red hair; he is never without his great-axe in hand; various pelts adorn his body like trophies</p>
 		
 										
 							</span>
@@ -879,15 +950,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;We always have better things to do and this situation would suggest so&quot;; &quot;I&#39;ve no time for petty squabbles - strength and courage absolves us of such frivolities&quot;; &quot;An age of enlightenment is upon us and it will require strength of body and character&quot;;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;We always have better things to do and this situation would suggest so&quot;; &quot;I&#39;ve no time for petty squabbles - strength and courage absolves us of such frivolities&quot;; &quot;An age of enlightenment is upon us and it will require strength of body and character&quot;;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -900,12 +976,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Unless in combat, Irtano moves slowly and deliberately; He uses his touch gently with most and often reaches out an imposing hand to reassure others;
+								<p>Unless in combat, Irtano moves slowly and deliberately; He uses his touch gently with most and often reaches out an imposing hand to reassure others;</p>
 		
 								
 							</span> 
@@ -917,13 +989,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								This talented giant is far from modest and is always seeking others&#39; celebrations of his strength and prowess. He is also inherently motivated to promote and support the talents and skills of others.
-
+								<p>This talented giant is far from modest and is always seeking others&#39; celebrations of his strength and prowess. He is also inherently motivated to promote and support the talents and skills of others.
+</p>
 							
 							</span>
 		
@@ -935,13 +1004,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Justice; Feats of strength and courage; Irtano is a self-proclaimed chef and has a passion for finer foods; he enjoys helping struggling farmers with their farmwork
-
+								<p>Justice; Feats of strength and courage; Irtano is a self-proclaimed chef and has a passion for finer foods; he enjoys helping struggling farmers with their farmwork
+</p>
 		
 									
 							</span> 
@@ -954,11 +1020,8 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-													
+							
+									<p></p>		
 		
 										
 							</span> 
@@ -980,7 +1043,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Caravanserai proprietor</p><br>
+									<h4>Occupations - </h4><p>Caravanserai proprietor</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>3 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>3 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>25.</p>
+									<h4>Speed - </h4><p>25.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,74 +216,132 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Mercantile Connections<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(0);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Human
 							elvish
 							halfling
 							orcish
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Kind, 
 	
@@ -307,10 +365,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -321,6 +379,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 									<b></b> - <br>
@@ -328,21 +388,24 @@
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -350,11 +413,11 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>The Canvaserai of Mont Ire - </b><i></i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -392,13 +455,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>G-g-good d-d-day, muh-muh-my friends. Horses and c-c-camels around back, puh-puh-please. A d-d-drink?</p>
 		
 						
@@ -408,7 +470,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Rotund; pocked cheeks. Drab shalvar pants, a worn, faded kamarband belt, beige jameh shirt slightly untucked.
+										<p>Rotund; pocked cheeks. Drab shalvar pants, a worn, faded kamarband belt, beige jameh shirt slightly untucked.</p>
 		
 										</span>
 		
@@ -416,11 +478,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;An unmitigated disaster&quot;; (referencing lacrosse) &quot;Kluskap number one!&quot;</i></p></li><br>
 											
-											<i> &quot;An unmitigated disaster&quot;; (referencing lacrosse) &quot;Kluskap number one!&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -428,7 +494,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Stutters; squeezes eyes shut; guttural throat noises. Raises index finger when he wants to interrupt a speaker.
+											<p>Stutters; squeezes eyes shut; guttural throat noises. Raises index finger when he wants to interrupt a speaker.</p>
 		
 										</span> 
 		
@@ -437,8 +503,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Rahim aims to provide the kind of respite he believes the austere region demands.
-
+											<p>Rahim aims to provide the kind of respite he believes the austere region demands.
+</p>
 										</span>
 		
 		
@@ -448,8 +514,8 @@
 			
 											<h3>Passions</h3>
 											
-											Rahim&#39;s two daughters are his heart; he happily discusses fine wine, sweet ice, amateur astronomy, lacrosse.
-
+											<p>Rahim&#39;s two daughters are his heart; he happily discusses fine wine, sweet ice, amateur astronomy, lacrosse.
+</p>
 		
 										</span> 
 		
@@ -457,7 +523,7 @@
 			
 											<h3>Secrets</h3>
 										
-													
+											<p></p>	
 		
 										</span> 
 						
@@ -502,41 +568,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Caravanserai proprietor</p><br>
+									<h4>Occupations - </h4><p>Caravanserai proprietor</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>3 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>3 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>25.</p>
+									<h4>Speed - </h4><p>25.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -657,33 +724,35 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Mercantile Connections<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -691,18 +760,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -710,30 +779,31 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Human 
 									elvish 
 									halfling 
 									orcish 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Kind, </p>	
 					
@@ -745,18 +815,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -767,11 +840,11 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -795,13 +868,13 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>The Canvaserai of Mont Ire</b><br>
 					
 										<i></i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -815,7 +888,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -829,8 +901,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -838,11 +913,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							G-g-good d-d-day, muh-muh-my friends. Horses and c-c-camels around back, puh-puh-please. A d-d-drink?<br />
+							<p>G-g-good d-d-day, muh-muh-my friends. Horses and c-c-camels around back, puh-puh-please. A d-d-drink?</p><br />
 		
 							</span>
 		
@@ -852,11 +925,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Rotund; pocked cheeks. Drab shalvar pants, a worn, faded kamarband belt, beige jameh shirt slightly untucked.
+								
+								<p>Rotund; pocked cheeks. Drab shalvar pants, a worn, faded kamarband belt, beige jameh shirt slightly untucked.</p>
 		
 										
 							</span>
@@ -868,15 +939,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;An unmitigated disaster&quot;; (referencing lacrosse) &quot;Kluskap number one!&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;An unmitigated disaster&quot;; (referencing lacrosse) &quot;Kluskap number one!&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -889,12 +965,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Stutters; squeezes eyes shut; guttural throat noises. Raises index finger when he wants to interrupt a speaker.
+								<p>Stutters; squeezes eyes shut; guttural throat noises. Raises index finger when he wants to interrupt a speaker.</p>
 		
 								
 							</span> 
@@ -906,13 +978,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Rahim aims to provide the kind of respite he believes the austere region demands.
-
+								<p>Rahim aims to provide the kind of respite he believes the austere region demands.
+</p>
 							
 							</span>
 		
@@ -924,13 +993,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Rahim&#39;s two daughters are his heart; he happily discusses fine wine, sweet ice, amateur astronomy, lacrosse.
-
+								<p>Rahim&#39;s two daughters are his heart; he happily discusses fine wine, sweet ice, amateur astronomy, lacrosse.
+</p>
 		
 									
 							</span> 
@@ -943,11 +1009,8 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-													
+							
+									<p></p>		
 		
 										
 							</span> 
@@ -969,7 +1032,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

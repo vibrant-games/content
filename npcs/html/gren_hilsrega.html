@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Castellan</p><br>
+									<h4>Occupations - </h4><p>Castellan</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>44 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>44 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>20.</p>
+									<h4>Speed - </h4><p>20.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,21 +216,23 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Arcana<br></p>
 									<p>History<br></p>
 									<p>Politics<br></p>
@@ -242,54 +244,110 @@
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(10);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Draconic
 							Elven
 							Common
 							Dwarven
 							Gnome
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 	
 					
@@ -312,10 +370,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -326,32 +384,37 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Gren is not to be underestimated. He is a fierce combatant. He will almost exclusively slowly draw back from melee and allow his guards to fill in the ranks while he casts vicious spells from not far away.
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -359,14 +422,14 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>Regional Rebel Faction - </b><i>Leader</i><br>
 								<br>
 									
 										<b>Baron/Royals - </b><i>Castellan</i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -404,13 +467,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>A robed dragonborn, gnarled hound, and equipped militia stroll from the castle gates. &quot;What business have ye here?&quot;</p>
 		
 						
@@ -420,7 +482,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Green, polished scales. Tendril locks of grey hair. Cloudy yellow eyes. Fine magistrate robes.
+										<p>Green, polished scales. Tendril locks of grey hair. Cloudy yellow eyes. Fine magistrate robes.</p>
 		
 										</span>
 		
@@ -428,11 +490,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;The regals are on travel-time. If you have business, it is with me&quot;, &quot;Our time is valuable. Make it quick.&quot;</i></p></li><br>
 											
-											<i> &quot;The regals are on travel-time. If you have business, it is with me&quot;, &quot;Our time is valuable. Make it quick.&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -440,7 +506,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											Hands clasped. Cloudy eyes strain to see clearly.  Small but effective gestures. Slight limp in right leg.
+											<p>Hands clasped. Cloudy eyes strain to see clearly.  Small but effective gestures. Slight limp in right leg.</p>
 		
 										</span> 
 		
@@ -449,8 +515,8 @@
 			
 											<h3>Motivations</h3>
 										
-											To serve the noble family for whom he serves as castellan and deputy. Ensure all taxes and scutages are paid, always.
-
+											<p>To serve the noble family for whom he serves as castellan and deputy. Ensure all taxes and scutages are paid, always.
+</p>
 										</span>
 		
 		
@@ -460,8 +526,8 @@
 			
 											<h3>Passions</h3>
 											
-											Gold. Power. He seeks to replace his benefactors eventually.
-
+											<p>Gold. Power. He seeks to replace his benefactors eventually.
+</p>
 		
 										</span> 
 		
@@ -469,8 +535,8 @@
 			
 											<h3>Secrets</h3>
 										
-											Has begun an underground rebel faction to replace the royals of the region.
-		
+											<p>Has begun an underground rebel faction to replace the royals of the region.
+</p>	
 		
 										</span> 
 						
@@ -515,41 +581,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Castellan</p><br>
+									<h4>Occupations - </h4><p>Castellan</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>10</p><br>
+									<h4>Armor Class - </h4><p>10</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>44 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>44 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>20.</p>
+									<h4>Speed - </h4><p>20.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -670,24 +737,25 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Arcana<br>
 									History<br>
 									Politics<br>
@@ -695,13 +763,14 @@
 									Insight<br>
 									Persuasion<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -709,18 +778,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -728,31 +797,32 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Draconic 
 									Elven 
 									Common 
 									Dwarven 
 									Gnome 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p></p>	
 					
@@ -764,18 +834,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -786,9 +859,9 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -797,8 +870,8 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Gren is not to be underestimated. He is a fierce combatant. He will almost exclusively slowly draw back from melee and allow his guards to fill in the ranks while he casts vicious spells from not far away.
-
+								<p>Gren is not to be underestimated. He is a fierce combatant. He will almost exclusively slowly draw back from melee and allow his guards to fill in the ranks while he casts vicious spells from not far away.
+</p>
 								
 							</span> 
 			
@@ -807,8 +880,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -817,7 +890,7 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>Regional Rebel Faction</b><br>
 					
@@ -828,7 +901,7 @@
 					
 										<i>Castellan</i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -842,7 +915,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -856,8 +928,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -865,11 +940,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							A robed dragonborn, gnarled hound, and equipped militia stroll from the castle gates. &quot;What business have ye here?&quot;<br />
+							<p>A robed dragonborn, gnarled hound, and equipped militia stroll from the castle gates. &quot;What business have ye here?&quot;</p><br />
 		
 							</span>
 		
@@ -879,11 +952,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Green, polished scales. Tendril locks of grey hair. Cloudy yellow eyes. Fine magistrate robes.
+								
+								<p>Green, polished scales. Tendril locks of grey hair. Cloudy yellow eyes. Fine magistrate robes.</p>
 		
 										
 							</span>
@@ -895,15 +966,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;The regals are on travel-time. If you have business, it is with me&quot;, &quot;Our time is valuable. Make it quick.&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;The regals are on travel-time. If you have business, it is with me&quot;, &quot;Our time is valuable. Make it quick.&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -916,12 +992,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Hands clasped. Cloudy eyes strain to see clearly.  Small but effective gestures. Slight limp in right leg.
+								<p>Hands clasped. Cloudy eyes strain to see clearly.  Small but effective gestures. Slight limp in right leg.</p>
 		
 								
 							</span> 
@@ -933,13 +1005,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								To serve the noble family for whom he serves as castellan and deputy. Ensure all taxes and scutages are paid, always.
-
+								<p>To serve the noble family for whom he serves as castellan and deputy. Ensure all taxes and scutages are paid, always.
+</p>
 							
 							</span>
 		
@@ -951,13 +1020,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Gold. Power. He seeks to replace his benefactors eventually.
-
+								<p>Gold. Power. He seeks to replace his benefactors eventually.
+</p>
 		
 									
 							</span> 
@@ -970,12 +1036,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											Has begun an underground rebel faction to replace the royals of the region.
-		
+							
+									<p>Has begun an underground rebel faction to replace the royals of the region.
+</p>		
 		
 										
 							</span> 
@@ -997,7 +1060,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

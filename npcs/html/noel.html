@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>they/them</p><br>
+									<h4>Pronouns - </h4><p>they/them</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Lone wonderer / outcast / no use for money</p><br>
+									<h4>Occupations - </h4><p>Lone wonderer / outcast / no use for money</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>14</p><br>
+									<h4>Armor Class - </h4><p>14</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>30 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>30 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>35.</p>
+									<h4>Speed - </h4><p>35.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,70 +216,128 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(5);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Common and Elvish
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									Diligent, 
 	
@@ -303,10 +361,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -317,27 +375,32 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -345,8 +408,8 @@
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
-										
+							<p>		
+								</p>		
 								</span>
 							
 					</span>
@@ -384,13 +447,12 @@
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Mysterious figure in the bell tower causes rumors by locals. No memories and needs help figuring out their past.</p>
 		
 						
@@ -400,7 +462,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										A metal figure, rusted and dented. Well used metals and worn leather armor. looks like body was not well taken care of.
+										<p>A metal figure, rusted and dented. Well used metals and worn leather armor. looks like body was not well taken care of.</p>
 		
 										</span>
 		
@@ -408,11 +470,15 @@
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;My memories escape me.&quot;</i></p></li><br>
 											
-											<i> &quot;My memories escape me.&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -420,7 +486,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											When Noel can&#39;t remember something, they grind their metal mouth. They tap their head as they think.
+											<p>When Noel can&#39;t remember something, they grind their metal mouth. They tap their head as they think.</p>
 		
 										</span> 
 		
@@ -429,8 +495,8 @@
 			
 											<h3>Motivations</h3>
 										
-											Noel knows they use to be someone, but they cannot remember who. They search for answers.
-
+											<p>Noel knows they use to be someone, but they cannot remember who. They search for answers.
+</p>
 										</span>
 		
 		
@@ -440,8 +506,8 @@
 			
 											<h3>Passions</h3>
 											
-											Noel loves all animals. They have found nothing but love from forest creatures and will always give kindness in return.
-
+											<p>Noel loves all animals. They have found nothing but love from forest creatures and will always give kindness in return.
+</p>
 		
 										</span> 
 		
@@ -449,8 +515,8 @@
 			
 											<h3>Secrets</h3>
 										
-											They do not know much about their past, but they do know of one name, though not to whom it belongs to.
-		
+											<p>They do not know much about their past, but they do know of one name, though not to whom it belongs to.
+</p>	
 		
 										</span> 
 						
@@ -495,41 +561,42 @@
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>they/them</p><br>
+									<h4>Pronouns - </h4><p>they/them</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Lone wonderer / outcast / no use for money</p><br>
+									<h4>Occupations - </h4><p>Lone wonderer / outcast / no use for money</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p>14</p><br>
+									<h4>Armor Class - </h4><p>14</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>30 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>30 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>35.</p>
+									<h4>Speed - </h4><p>35.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -650,32 +717,34 @@
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -683,18 +752,18 @@
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -702,27 +771,28 @@
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Common and Elvish 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p>Diligent, </p>	
 					
@@ -734,18 +804,21 @@
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -756,7 +829,7 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -772,8 +845,8 @@
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -782,8 +855,8 @@
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
-										
+									<p>
+									</p>	
 								</span>
 							
 					</span>
@@ -797,7 +870,6 @@
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -811,8 +883,11 @@
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -820,11 +895,9 @@
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Mysterious figure in the bell tower causes rumors by locals. No memories and needs help figuring out their past.<br />
+							<p>Mysterious figure in the bell tower causes rumors by locals. No memories and needs help figuring out their past.</p><br />
 		
 							</span>
 		
@@ -834,11 +907,9 @@
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								A metal figure, rusted and dented. Well used metals and worn leather armor. looks like body was not well taken care of.
+								
+								<p>A metal figure, rusted and dented. Well used metals and worn leather armor. looks like body was not well taken care of.</p>
 		
 										
 							</span>
@@ -850,15 +921,20 @@
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;My memories escape me.&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;My memories escape me.&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -871,12 +947,8 @@
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								When Noel can&#39;t remember something, they grind their metal mouth. They tap their head as they think.
+								<p>When Noel can&#39;t remember something, they grind their metal mouth. They tap their head as they think.</p>
 		
 								
 							</span> 
@@ -888,13 +960,10 @@
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Noel knows they use to be someone, but they cannot remember who. They search for answers.
-
+								<p>Noel knows they use to be someone, but they cannot remember who. They search for answers.
+</p>
 							
 							</span>
 		
@@ -906,13 +975,10 @@
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Noel loves all animals. They have found nothing but love from forest creatures and will always give kindness in return.
-
+								<p>Noel loves all animals. They have found nothing but love from forest creatures and will always give kindness in return.
+</p>
 		
 									
 							</span> 
@@ -925,12 +991,9 @@
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											They do not know much about their past, but they do know of one name, though not to whom it belongs to.
-		
+							
+									<p>They do not know much about their past, but they do know of one name, though not to whom it belongs to.
+</p>		
 		
 										
 							</span> 
@@ -952,7 +1015,11 @@
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	

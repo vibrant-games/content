@@ -56,40 +56,40 @@
 							
 					
 							<svg height="5" width="100%" class="tapered-rule">
-	   				 <polyline points="0,0 400,2.5 0,5"></polyline>
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
 				
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line first">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> 
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Gardener</p><br>
+									<h4>Occupations - </h4><p>Gardener</p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p></p><br>
+									<h4>Armor Class - </h4><p></p><br>
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>34 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>34 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>28.</p>
+									<h4>Speed - </h4><p>28.</p>
 			
 								</span> 
 					
@@ -97,7 +97,7 @@
 					
 			
 								<svg height="5" width="100%" class="tapered-rule">
-	    						<polyline points="0,0 400,2.5 0,5"></polyline>
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
 	 							</svg>
 			
 					
@@ -216,72 +216,130 @@
 								</span> 
 					
 								<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 400,2.5 0,5"></polyline>
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
+								
+								
+								
+								
+								
 				
-								<span class="property-line first">
-						
-									<h4>Saving Throws</h4>
-						
-									<p>TODO Saving Throws</p>
-					
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
+									<h4>Skills - </h4>
 									<p>Sneak Attack<br></p>
      
       
 					
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
+								
 									
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
-					
-									<p>TODO Damage Immunities</p>
-					
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(5/6);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
 								</span> 
 
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
-						
-									<p>TODO Condition Immunities</p>
-					
 								</span> 
 					
-								<span class="property-line">
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
-					
-									<p>TODO Senses</p>
-					
+									
 								</span> 
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>
 							Hobbitish
 							Northern Manish and Elvish (Sarati &amp;amp; Tengwar)
-					
+					</p>
+							
 								</span> 
 
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 	
 					
@@ -304,10 +362,10 @@
 					
 								<h3>Special Abilities</h3>
 					
-								
+							<p>	
 								<b></b> - <br>
 	
-									
+								</p>	
 								
 								
 								
@@ -318,6 +376,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+							
+									<p>	
 									<b></b> - <br>
 									
 									<b></b> - <br>
@@ -331,29 +391,32 @@
 									<b></b> - <br>
 									
 								
+										</p>
 							
 								</span>	
 				
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>
 								Prepare the battlefield
 Caltrops
 Ball bearings
 
 								
+									</p>
 							</span> 
 			
 				
 							<span class="property-line">
 					
 								<h3>Actions</h3>
-					
+					<p>
 								<b></b> - 
 								<br>
 								<br>
 				
-								
+								</p>
 								
 							</span>
 			
@@ -361,11 +424,11 @@ Ball bearings
 							<span class="property-line factions">
 					
 								<h3>Factions</h3>
-									
+							<p>		
 									
 										<b>Order of the Gauntlet - </b><i></i><br>
 								<br>
-										
+								</p>		
 								</span>
 							
 					</span>
@@ -403,13 +466,12 @@ Ball bearings
 	  
 							</svg>
 							
-										<span class="right-line first">	
+										<span class="right-line">
 								
 											<h3>Introduction</h3>
 							
-							</span>
 										
-											<span class="right-line">
+											
 										<p>Ordo frequents the surrounding little villages selling his vegetables and meeting with old friends.</p>
 		
 						
@@ -419,7 +481,7 @@ Ball bearings
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										Ordo is 3ft 1 and very muscular for a halfling, he has shoulder length dark hair, goatee beard,  and bright blue eyes
+										<p>Ordo is 3ft 1 and very muscular for a halfling, he has shoulder length dark hair, goatee beard,  and bright blue eyes</p>
 		
 										</span>
 		
@@ -427,11 +489,15 @@ Ball bearings
 										<span class="right-line">
 			
 											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Lets get in there then folks&quot; &quot;Come on twinkle toes&quot;</i></p></li><br>
 											
-											<i> &quot;Lets get in there then folks&quot; &quot;Come on twinkle toes&quot;</i>
-											<br>
-											<br>
 											
+											
+											</ul>
 										</span> 
 		
 		
@@ -439,7 +505,7 @@ Ball bearings
 			
 											<h3>Mannerisms</h3>
 											
-											Facepalming when people say or do stupid things. Ordo chews tobacco when thinking up a plan of action or idea.
+											<p>Facepalming when people say or do stupid things. Ordo chews tobacco when thinking up a plan of action or idea.</p>
 		
 										</span> 
 		
@@ -448,8 +514,8 @@ Ball bearings
 			
 											<h3>Motivations</h3>
 										
-											Wants to make the world a better place, all for the greater good
-
+											<p>Wants to make the world a better place, all for the greater good
+</p>
 										</span>
 		
 		
@@ -459,8 +525,8 @@ Ball bearings
 			
 											<h3>Passions</h3>
 											
-											Family and friends
-
+											<p>Family and friends
+</p>
 		
 										</span> 
 		
@@ -468,8 +534,8 @@ Ball bearings
 			
 											<h3>Secrets</h3>
 										
-											Was trained as a scout by elves and is highly regarded as a master scout and an amazing shot with either bow or knives.
-		
+											<p>Was trained as a scout by elves and is highly regarded as a master scout and an amazing shot with either bow or knives.
+</p>	
 		
 										</span> 
 						
@@ -514,41 +580,42 @@ Ball bearings
 				
 							
 	 				
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Pronouns:</h4><p>he/him</p><br>
+									<h4>Pronouns - </h4><p>he/him</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">		
+								<span class="top-property-line">		
 						
-									<h4>Occupations: </h4><p>Gardener</p><br>
+									<h4>Occupations - </h4><p>Gardener</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Armor Class</h4><p></p><br>
+									<h4>Armor Class - </h4><p></p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Hit Points</h4>	<p>34 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>34 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Speed</h4><p>28.</p>
+									<h4>Speed - </h4><p>28.</p>
 			
 								</span> 
 					
 					<!-- property line -->
 					
 			
-																<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 			
 			
 					
@@ -669,33 +736,35 @@ Ball bearings
 					
 					<!-- abilities -->
 					
-													<hr class="divider">
-
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 					
 				
-								<span class="property-line first">
+								<span class="top-property-line first">
 						
-									<h4>Saving Throws</h4>
+									<h4>Saving Throws - </h4>
 						
 									<p>TODO Saving Throws</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 					
-									<h4>Skills</h4>
-						
-									<h4>Skills</h4>
+									
+									<h4>Skills - </h4>
+									<p>
 									Sneak Attack<br>
      
+									</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line last">
+								<span class="top-property-line">
 						
-									<h4>Proficiencies</h4>
+									<h4>Proficiencies - </h4>
 						
 									<p>TODO </p>
 					
@@ -703,18 +772,18 @@ Ball bearings
 			
 			
 					
-								<span class="property-line first">
+								<span class="top-property-line">
 						
-									<h4>Damage Immunities</h4>
+									<h4>Damage Immunities - </h4>
 					
 									<p>TODO Damage Immunities</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Condition Immunities</h4>
+									<h4>Condition Immunities - </h4>
 						
 									<p>TODO Condition Immunities</p>
 					
@@ -722,28 +791,29 @@ Ball bearings
 			
 					
 					
-								<span class="property-line">
+								<span class="top-property-line">
 					
-									<h4>Senses</h4>
+									<h4>Senses - </h4>
 					
 									<p>TODO Senses</p>
 					
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Languages</h4>
-						
+									<h4>Languages - </h4>
+						<p>		
 									Hobbitish 
 									Northern Manish and Elvish (Sarati &amp;amp; Tengwar) 
-					
+					</p>
+							
 								</span> <!-- property line -->
 			
 					
-								<span class="property-line">
+								<span class="top-property-line">
 						
-									<h4>Adjectives</h4>
+									<h4>Adjectives - </h4>
 						
 									<p></p>	
 					
@@ -755,18 +825,21 @@ Ball bearings
 				<!-- top stats -->
 				
 				
-												<hr class="divider">
 
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
 								
 				
 							<span class="property-line first">
 					
 								<h3>Special Abilities</h3>
 					
-								
+								<p>
 								<b></b> - <br>
 	
-									
+									</p>
+
 								
 								
 								
@@ -777,17 +850,17 @@ Ball bearings
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
-									<b></b> - <br>
+								<p>	<b></b> - <br></p>
 									
 								
 							
@@ -796,10 +869,10 @@ Ball bearings
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								Prepare the battlefield
+								<p>Prepare the battlefield
 Caltrops
 Ball bearings
-
+</p>
 								
 							</span> 
 			
@@ -808,8 +881,8 @@ Ball bearings
 					
 								<h3>Actions</h3>
 					
-								<b></b> - 
-								<br>
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -818,13 +891,13 @@ Ball bearings
 							<span class="property-line ">
 					
 								<h3>Factions</h3>
-									
+									<p>
 									
 										<b>Order of the Gauntlet</b><br>
 					
 										<i></i><br>
 									<br>
-										
+									</p>	
 								</span>
 							
 					</span>
@@ -838,7 +911,6 @@ Ball bearings
 			
 		  <div class="cell" id="cell3">
     
-				Cell3
 				<span class="data">
 				
 					
@@ -852,8 +924,11 @@ Ball bearings
 						
 							<h1>Roleplaying</h1>
 
-								<hr class="divider">
-					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
 									
 							<span class="property-line first">	
 								
@@ -861,11 +936,9 @@ Ball bearings
 								<h3>Introduction</h3>
 							
 								
-							</span>
 							
-							<span class="property-line">
 							
-							Ordo frequents the surrounding little villages selling his vegetables and meeting with old friends.<br />
+							<p>Ordo frequents the surrounding little villages selling his vegetables and meeting with old friends.</p><br />
 		
 							</span>
 		
@@ -875,11 +948,9 @@ Ball bearings
 							
 								<h3>Appearance</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								Ordo is 3ft 1 and very muscular for a halfling, he has shoulder length dark hair, goatee beard,  and bright blue eyes
+								
+								<p>Ordo is 3ft 1 and very muscular for a halfling, he has shoulder length dark hair, goatee beard,  and bright blue eyes</p>
 		
 										
 							</span>
@@ -891,15 +962,20 @@ Ball bearings
 								
 								<h3>Expressions</h3>
 									
-							</span>
+							
 		
 							
 								
-							<span class="property-line">	
+							
 											
-											<i> &quot;Lets get in there then folks&quot; &quot;Come on twinkle toes&quot;</i>
-											<br>
-											<br>
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i> &quot;Lets get in there then folks&quot; &quot;Come on twinkle toes&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
 											
 		
 								
@@ -912,12 +988,8 @@ Ball bearings
 							
 								<h3>Mannerisms</h3>
 							
-							</span>
-		
 							
-							<span class="property-line">	
-								
-								Facepalming when people say or do stupid things. Ordo chews tobacco when thinking up a plan of action or idea.
+								<p>Facepalming when people say or do stupid things. Ordo chews tobacco when thinking up a plan of action or idea.</p>
 		
 								
 							</span> 
@@ -929,13 +1001,10 @@ Ball bearings
 								
 								<h3>Motivations</h3>
 								
-							</span>
-			
 							
-							<span class="property-line">
 											
-								Wants to make the world a better place, all for the greater good
-
+								<p>Wants to make the world a better place, all for the greater good
+</p>
 							
 							</span>
 		
@@ -947,13 +1016,10 @@ Ball bearings
 			
 								<h3>Passions</h3>
 								
-							</span>
-		
-										
-							<span class="property-line">	
+								
 									
-								Family and friends
-
+								<p>Family and friends
+</p>
 		
 									
 							</span> 
@@ -966,12 +1032,9 @@ Ball bearings
 									
 								<h3>Secrets</h3>
 									
-							</span>
-	
-									
-							<span class="property-line last">
-											Was trained as a scout by elves and is highly regarded as a master scout and an amazing shot with either bow or knives.
-		
+							
+									<p>Was trained as a scout by elves and is highly regarded as a master scout and an amazing shot with either bow or knives.
+</p>		
 		
 										
 							</span> 
@@ -993,7 +1056,11 @@ Ball bearings
 							
 								<h1>Background Story</h1>
 
-									<hr class="divider">
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
 							
 							
 								<span class="property-line bg">	
