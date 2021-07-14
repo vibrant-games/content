@@ -377,7 +377,7 @@ npc:
     resistances:
     - advantage on poison saves
     senses:
-    - title: darkvision
+    - title: Darkvision
       description: Albrecht can see in dim light within 60 feet as if it were bright light and in darkness as if it were dim light. He cannot discern color in darkness, only shades of grey.
     saving-throws:
     - Constitution
@@ -393,16 +393,12 @@ npc:
     - Intimidation
     skills:
     - Roofing; Woodworking; Masonry; Intimidation
-    special-abilities: |
-      Unarmored Defense
-      |
-      Relentless Endurance
-      |
-      Savage Attacks
-      |
-      Reckless Attack
-      |
-      Rage
+    special-abilities: 
+    - title: Relentless Endurance
+      description: If Albrecht is reduced to 0 hitpoints but not killed outright, he drops to 1 hitpoint instead. He can only use this feature once per long rest.
+    - title: Savage Attacks
+      description: If Albrecht scores a critical hit with a melee weapon attack, he can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.
+      
     attacks: |
       Maul
       |
