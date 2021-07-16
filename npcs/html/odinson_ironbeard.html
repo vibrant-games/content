@@ -7,9 +7,6 @@
 <link rel="stylesheet" href="stylesheet.css"/>
 	
 	
-	
-	
-	
 	</head>
 
 
@@ -17,31 +14,14 @@
 		
 		<div class="banner"><a href="../../../docs-index/index.html"><img src="images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
 		<div class="banner bottom"></div>
-		<script>
-        function getNewUrl(addNum) {
-            var url = window.location.pathname;
-            var lastIndex = url.lastIndexOf('/');
-            var filename = url.substring(lastIndex + 1);
-            var newFileName = filename.substring(0, 2) +
-                pad(parseInt(filename.substring(2, 5), 10) + addNum, 3) +
-                filename.substring(5);
-            return url.substring(0, lastIndex) + newFileName;
-        }
+		
 
-        function pad(number, length) {
-            var str = '' + number;
-            while (str.length < length) {
-                str = '0' + str;
-            }
-            return str;
-        }
-
-    </script>
-
-    <button id="previous" onclick="window.location = getNewUrl(-1)">Previous</button>
-    <button id="next" onclick="window.location = getNewUrl(1)">Next</button>
-
-
+		
+	
+<ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul>
 		
 		<div class="container">
   		
@@ -1108,8 +1088,7 @@
 			</div>
 			-->	
 		</div>	
-</div>
-
+	</div>
 </body>
 
 </html>
