@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><!--  JQUERY  -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <title></title>
+</head>
+
+<body>
+    <div id="fileNames"></div>
+</body>
+<script src="js/jquery.js"></script>
+
+<script type="text/javascript">//<![CDATA[
+$(window).load(function(){
+   var fileExt = ".xml";
+
+        $(document).ready(function(){
+
+            $.ajax({
+                //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+                url: 'xml/',
+                success: function (data) {
+                    console.log(data);
+                   $("#fileNames").html('<ul>');
+                   //List all xml file names in the page
+
+                    //var filename = this.href.replace(window.location, "").replace("http:///", "");
+                   //$("#fileNames").append( '<li>'+filename+'</li>');
+
+                    $(data).find("a:contains(" + fileExt + ")").each(function () {
+                        $("#fileNames").append( '<li>'+$(this).text()+'</li>');
+                    });
+                    $("#fileNames").append('</ul>');
+                }
+            });
+
+        });
+});
+//]]>
+</script>
+</html>
