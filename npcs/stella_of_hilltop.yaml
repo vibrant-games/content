@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: slithkyrin
+  id: stella_of_hilltop
 
   #
   # The name of the submitter (your name).
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Slith'Kyrin
+  name: Stella of Hilltop
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: young adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Naga
+    race: Halfling
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: Jungle Heritage
+    sub-race: Lightfoot
 
     #
     # Pronouns (case insensitive):
@@ -214,7 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    - Priestess
+    - Merchant
     
 
     #
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Cleric
+    class: Rogue
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Death Domain
+    subclass: Scout
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 6
+    level: 5
 
     #
     # Alignments (case insensitive):
@@ -286,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: Neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -309,10 +309,10 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
+    - Orcish
+    - Goblin
     - Common
-    - Celestial
-    - Draconic
-    - Snake
+    - Halfling
 
 
     #
@@ -332,10 +332,8 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: naga_temple_of_bahamut
-      name: Naga Temple of Bahamut
-    - id: naga_clan
-      name: Naga Clan
+    - id: local_rebels
+      name: Local Rebels
 
 
     #
@@ -344,9 +342,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Artistic   
-    - Insecure
-    - Conflicted
+    - Cautious   
+    - Indignant
+    - Brave
 
   improv:
 
@@ -361,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Behind the altar the beautiful but terrifying Naga Priestess signs glowing sigils in the air, then stops...
+    introduction:  Recommended fence for acquired goods; Rebel faction may recommend her place as a hideout
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Reptilian but beautiful with slick black, green and purple scales. A tiara and gold jewelry around her slim shoulders
+    appearance:   Small, thin and waife-like. Curly red hair and leather armor. Pale, jaundice skin and sallow eyes. She looks ill
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Welcome, we are the divine-touched of Bahamut"
+    expressions:  "We shall replace the Queen with a figurehead of those with boots on the ground!"; "I will bring the best goods to the people so they can rise".
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +399,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Flicks her serpentine tongue
+    mannerisms:   Scratches her head in thought during transactions. Breathes very noisily, almost laboriously as though she has a lung condition.
 
   acting:
     #
@@ -411,7 +409,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Serving her divine purpose. Spreading the word of Bahamut
+      Residual income. Freeing township or city from tyranny. Keeping a secure hideout for rebels and antagonists.
       
     #
     # Passions:
@@ -420,7 +418,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Painting
+      Love and belonging (i.e., keeping a warm home or safe space for others with good grub and fine linens). Toppling dictators.
       
     #
     # Vulnerabilities:
@@ -429,7 +427,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      She is still young and unsure of herself, her abilities and her faith
+      Stella's breathing is hampered by an untreated lung condition. She isn't capable of long periods of physical activity without needing a short rest after. Otherwise, she falls prone.
       
     #
     # Secrets:
@@ -438,7 +436,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      She occasionally gets visited in her dreams by the voice of Zehir, the Naga's former god
+      Stella operates as a lieutenant for a local rebel faction
        
       
   #
@@ -446,15 +444,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 12
-    hit-points: 43
-    speed: 30
-    str: 17
-    dex: 12
-    con: 15
-    int: 13
-    wis: 16
-    cha: 15
+    armour-class: 14
+    hit-points: 32
+    speed: 25
+    str: 9
+    dex: 14
+    con: 8
+    int: 16
+    wis: 15
+    cha: 13
 
   #
   # Special characteristics.
@@ -466,49 +464,32 @@ npc:
   specialties:
     skills: 
 
-   - - Naga Abilities:
-        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-        - Keen Senses: You are proficient in the Perception skill
-        - Poison Resistance: You have resistance to poison damage, and you have advantage on saving throws against becoming poisoned.
-        - Herbalist: The foliage of the jungle has given you knowledge in herbs and their preparation. You are proficient in the Medicine skill.
+   - - Halfling Abilities:
+       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+       - Brave: Has advantage on Saving Throws against being Frightened 
+       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+       - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
         
-   - - Naga Feats:
-        - Python: your body has the power to grapple enemies that are your size. You have advantage on checks to grapple enemies that are equal to or smaller than you in size. As a bonus action, you may squeeze a creature you
-                  are grappling for 1d4 bludgeoning damage. This damage increases by 1d4 at levels 8 (2d4), 12 (3d4), 16 (4d4), and 20 (5d4). This feature can be used a number of times equal to your Strength modifier. You regain
-                  all uses after you finish a long rest.
-        - Venomous: your fangs allow you to inject it into your enemies with a fearsome bite. When you successfully attack a creature within 5 feet of you, you may use a bonus action to make a following strike on that creature,
-                    forcing them to make a Constitution saving throw or become poisoned for 1 minute. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. You regain use of this
-                    ability after you complete a short or long rest.
-        
-   - - Cleric Abilities:
-       - Spellcasting: Spell DC 14
-         Cantrips: Decompose, Guidance, Sacred Flame, Resistance 
-         1st Level: Inflict Wounds, Bane, Bless, Guiding Bolt
-         2nd Level: Gentle Repose, Spiritual Weapon, Hold Person
-         3rd Level: Spirit Shroud, Speak with Dead, Animate Dead 
-       - Channel Divinity: Turn Undead, Destroy Undead 
-
-   - - Death Domain Abilities:
-       - Spellcasting: Spell DC 14 
-         1st Level: False Life, Ray of Sickness
-         3rd Level: Blindness/Deafness, Ray of Enfeeblement
-         5th Level: Animate Dead, Vampiric Touch 
-       - Reaper: you learn one necromancy cantrip of your choice from any spell list - Toll the Dead. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within
-                 range and within 5 feet of each other. 
-       - Channel Divinity: Touch of Death - you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage
-                           to the target. The damage equals 5 + 12 
-       - Inescapable Destruction:  your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage.
+   - - Rogue Abilities:
+       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+       
+   - - Scout Abilities:
+       - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.
+       - Survivalist: you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
        
     special-abilities:
-       - Proficiencies: Perception, Medicine, Arcana, Deception
+       - Proficiencies: Persuasion, Stealth, Sleight-of-Hand, Nature, Survival
        - Feats: N/A
        
     attacks: |
-      1 attack with spell attach or venom or grapple
+      1 attacks with dagger
     combat-tactics: |
-      Not used to fighting, she will attempt to grapple and constrict her opponent with her tail coils and then claw and bite them with her venom
+      Stella is calculated about her tactics because of her lung condition and how it limits her endurance so she will mostly try to sneak attack
     special-equipment:
-    - Her tiara is her magical focus and holy symbol of office and contains a Gem of Seeing
+    - Dagger
     
     
   profile:
@@ -521,12 +502,17 @@ npc:
     # No length limit for now.
     #
     background-story: |
-     Slith'Kyrin has been trained since birth to be her people's next High Priestess of Bahamut. Still very young by her people's standards, she is full of self-doubt and questions, but is slowly coming into her own. She is
-     strong and beautiful and very intelligent and knows how to play her role well. However, she has a dark and terrible secret; her race's creator, former patron, and still current patron of their sister race the Yuan-Ti,
-     Zehir speaks to her. A dark reptilian old god, full of rage and hunger, Zehir wants his chosen people back from Bahamut. He fills her head with hunger and dark thoughts. She knows he is wrong and was a cruel master to her
-     people, but she struggles to keep his seductive words from her mind as her power grows.
-
-
+     Hilltop [Village; Town] is a quiet halfling town located on a well-used trade route. This has conditioned the population to become diverse in their skillsets and relatively wealthy overall - compared to other halfling
+     settlements. With all the coming and going of people and voluminous exchange of coins, goods, and services, people can get lost. When people get lost and nobody comes looking for you, well, then what do you do? A lecherous
+     and ornery halfling grain and feed merchant from the nearby economic centre of Invasaad [Major City] was traveling through Hilltop with his "best employees", his three young daughters. The girls would heave the sacks of
+     grain and feed on and off the cart or sometimes would be responsible for interacting with immediate buyers. In one transaction, the feed had been hauled onto the buyer's cart whilst Stella - the youngest of the 3 sisters -
+     was bargaining for the first time with a crotchety old woman who couldn't afford to feed her goats. "I'll give ya two silver, nothin more! My husband has passed and we 'ad no children. I'm left to me own devices!
+     'Ave pity on an old lady". Remembering how her father would deal abusively with her sisters whenever they returned with less than he expected, Stella continued to bargain. In the meanwhile, her father, who had grown
+     tired of feeding a third child and who had resigned himself to cutting down the weakest buffalo, had carried on in the cart out of town. Stella continued to barter, none the wiser, until the argumentative customer wouldn't
+     budge. She looked back for her father's approval and saw no cart, no father, no sisters. Stella ended the barter, panicked. She raced around town thinking that her father had other dealings. He was nowhere to be found.
+     Young Stella wept in the square. Eventually that evening a kind elderly halfling woman approached the weeping figure. She comforted her. Told her their were bigger problems. Bigger problems that needed solutions. The
+     kind elderly halfling lady told Stella, "you're from where you choose to be from. You can be Stella of Hilltop". The name stuck and Stella quickly became a surrogate child to the people of Hilltop. Her father never did
+     return.
 
       
     #
@@ -538,7 +524,8 @@ npc:
     # No length limit for now.
     #
     personality: |
-     Slith'Kyrin is young and insecure. She is working hard to come into her own as the next high priestess of here people but she is still full of self-doubt. The voices in her head are not helping the matter at all
+     Stella is a determined young lady. Being abandoned by her family has left her cautios to trust anyone, but her adopted family has made her strong and confident. She wears her heart on her sleeve and has turned her ire
+     towards those of wealth, like the father who abandoned her. Her indignance has led her to join the resistance against the ruling class though her health issues do limit her ability to participate in physical combat 
      
   #
   # Content that does not get displayed, but could be useful

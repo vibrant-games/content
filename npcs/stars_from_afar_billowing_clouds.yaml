@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: slithkyrin
+  id: stars_from_afar_billowing_clouds
 
   #
   # The name of the submitter (your name).
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Slith'Kyrin
+  name: Stars-from-Afar Billowing Clouds (Afar)
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: older adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Naga
+    race: Tabaxi
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: Jungle Heritage
+    sub-race: Puma
 
     #
     # Pronouns (case insensitive):
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: she/her
+    pronouns: he/him
 
     #
     # Occupation(s).
@@ -214,7 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    - Priestess
+    - Merchant
     
 
     #
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Cleric
+    class: Artificer
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Death Domain
+    subclass: Battle Smith
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 6
+    level: 5
 
     #
     # Alignments (case insensitive):
@@ -286,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: Neutral
+    alignment: Neutral Good
 
     #
     # Alignment tendencies:
@@ -310,9 +310,8 @@ npc:
     #
     languages:
     - Common
-    - Celestial
-    - Draconic
-    - Snake
+    - Tabaxi
+    - Elvish
 
 
     #
@@ -332,10 +331,7 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: naga_temple_of_bahamut
-      name: Naga Temple of Bahamut
-    - id: naga_clan
-      name: Naga Clan
+    - N/A
 
 
     #
@@ -344,9 +340,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Artistic   
-    - Insecure
-    - Conflicted
+    - Skilled   
+    - Quixotic
+    - Senile
 
   improv:
 
@@ -361,7 +357,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Behind the altar the beautiful but terrifying Naga Priestess signs glowing sigils in the air, then stops...
+    introduction:  The marketplace is rich with sight and sounds. A mastiff made of iron plates nudges your leg and nods for you to follow.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +368,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Reptilian but beautiful with slick black, green and purple scales. A tiara and gold jewelry around her slim shoulders
+    appearance:   Lithe and bony grey puma. Tabard. Bronze greaves, gauntlets, and morion. Pronounced white moustache &amp; chin beard.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +384,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Welcome, we are the divine-touched of Bahamut"
+    expressions:  "Kinna get bettah wit gidgets, innit?", "Iffin ya git yer rewards, what'll ya duu widdout em?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +397,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Flicks her serpentine tongue
+    mannerisms:   Wierd twitches with arms, hands, neck, and head, like muscle spasms. Adjusts his bronze armor as if it never fits right.
 
   acting:
     #
@@ -411,7 +407,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Serving her divine purpose. Spreading the word of Bahamut
+      Afar seeks to create greatness from garbage. This began with Hijack, his steel mastiff.
       
     #
     # Passions:
@@ -420,7 +416,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Painting
+      Recyclying. Inventions. Shiny balls (orbs, gems, etc.)
       
     #
     # Vulnerabilities:
@@ -429,7 +425,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      She is still young and unsure of herself, her abilities and her faith
+      He's not very smart
       
     #
     # Secrets:
@@ -438,7 +434,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      She occasionally gets visited in her dreams by the voice of Zehir, the Naga's former god
+      he occasionally helps smuggle goods passed port officials
        
       
   #
@@ -446,14 +442,14 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 12
-    hit-points: 43
+    armour-class: 16
+    hit-points: 62
     speed: 30
-    str: 17
-    dex: 12
-    con: 15
-    int: 13
-    wis: 16
+    str: 9
+    dex: 11
+    con: 17
+    int: 18
+    wis: 14
     cha: 15
 
   #
@@ -466,49 +462,67 @@ npc:
   specialties:
     skills: 
 
-   - - Naga Abilities:
-        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-        - Keen Senses: You are proficient in the Perception skill
-        - Poison Resistance: You have resistance to poison damage, and you have advantage on saving throws against becoming poisoned.
-        - Herbalist: The foliage of the jungle has given you knowledge in herbs and their preparation. You are proficient in the Medicine skill.
+   - - Tabaxi Abilities:
+       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+       - Feline Agility: Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again
+                         until you move 0 feet on one of your turns.
+       - Cats Claws: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 
+                     1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+       - Cats Talent: You have proficiency in the Perception and Stealth skills
         
-   - - Naga Feats:
-        - Python: your body has the power to grapple enemies that are your size. You have advantage on checks to grapple enemies that are equal to or smaller than you in size. As a bonus action, you may squeeze a creature you
-                  are grappling for 1d4 bludgeoning damage. This damage increases by 1d4 at levels 8 (2d4), 12 (3d4), 16 (4d4), and 20 (5d4). This feature can be used a number of times equal to your Strength modifier. You regain
-                  all uses after you finish a long rest.
-        - Venomous: your fangs allow you to inject it into your enemies with a fearsome bite. When you successfully attack a creature within 5 feet of you, you may use a bonus action to make a following strike on that creature,
-                    forcing them to make a Constitution saving throw or become poisoned for 1 minute. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. You regain use of this
-                    ability after you complete a short or long rest.
-        
-   - - Cleric Abilities:
-       - Spellcasting: Spell DC 14
-         Cantrips: Decompose, Guidance, Sacred Flame, Resistance 
-         1st Level: Inflict Wounds, Bane, Bless, Guiding Bolt
-         2nd Level: Gentle Repose, Spiritual Weapon, Hold Person
-         3rd Level: Spirit Shroud, Speak with Dead, Animate Dead 
-       - Channel Divinity: Turn Undead, Destroy Undead 
+   - - Artificer Abilities:
+       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 15
+         Cantrip: Mage Hand, Mending
+         1st Level: False Life, Grease, Detect Magic, Expiditious Retreat 
+         2nd Level: Heat Metal, Invisibility 
+       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+       - Infusions Known: 4     
+       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+       
+   - - Battle Smith Abilities:
+       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
+       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 15
+         3rd Level: Heroism, Shield
+         5th Level: Branding Smite, Warding Bond
+       - Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
+       - Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest  
+       - Extra Attack: Can take a second attack action each turn
+       
+   - - Steel Defender Abilities: Iron Mastiff
+        - Armor Class: 15
+        - Hit Points: 2+ your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
+        - Speed: 40
+        - str: 14
+        - dex: 12
+        - con: 14
+        - int: 4
+        - wis: 10
+        - cha: 6
+        - Proficiencies: Proficiency Bonus + - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
+        - Immunities: Immune to Poison and Psychic Damage. Immune to Poison, Charmed and Exhaustion. Resistant to Fire
+        - Darkvision: 60ft. Passive Perception 22
+        - Vigilant: Can't be surprised
+        - Force Empowered Rend: Using a + Spellcasting modifier to hit one target within 5ft. Deals 1d8+PB force damage.
+        - Repair: (3/Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
+        - Extra Attack: Can take a second attack action each turn
+        - Deflect Attack: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
+                          The attacker takes 1d4+8 force damage. 
+        - Intimidate: It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
 
-   - - Death Domain Abilities:
-       - Spellcasting: Spell DC 14 
-         1st Level: False Life, Ray of Sickness
-         3rd Level: Blindness/Deafness, Ray of Enfeeblement
-         5th Level: Animate Dead, Vampiric Touch 
-       - Reaper: you learn one necromancy cantrip of your choice from any spell list - Toll the Dead. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within
-                 range and within 5 feet of each other. 
-       - Channel Divinity: Touch of Death - you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage
-                           to the target. The damage equals 5 + 12 
-       - Inescapable Destruction:  your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage.
        
     special-abilities:
-       - Proficiencies: Perception, Medicine, Arcana, Deception
+       - Proficiencies: Alchemy, Persuasion, Athletics, Stealth, Athletics, Thieves' tools, Tinker Tools, History, Perception, Smith's tools
        - Feats: N/A
        
     attacks: |
-      1 attack with spell attach or venom or grapple
+      2 attacks with claws, x-wing crossbow or clockwork daggers
     combat-tactics: |
-      Not used to fighting, she will attempt to grapple and constrict her opponent with her tail coils and then claw and bite them with her venom
+      Darts about landing clockwork daggers and letting them unwind. Then backs off to fire his X-Wing Crossbow. Usually the noise is enough to disturb most people.
     special-equipment:
-    - Her tiara is her magical focus and holy symbol of office and contains a Gem of Seeing
+    - X-wing Multi-Arrow Crossbow: +2 - Shoots 4 bolts at once. One round to load. Afar is skilled with this and can move freely while reloading. (1d6 +2 dmg each)
+    - Clockwork Daggers: - If Afar has wound the hilt of this dagger and strikes an opponent he can let the dagger go to unwind inside the target's flesh causing 1d6 damage per round for 3 rounds or until the target removes it 
+                          from their flesh. He carries a 4 of these prize inventions.
     
     
   profile:
@@ -521,10 +535,14 @@ npc:
     # No length limit for now.
     #
     background-story: |
-     Slith'Kyrin has been trained since birth to be her people's next High Priestess of Bahamut. Still very young by her people's standards, she is full of self-doubt and questions, but is slowly coming into her own. She is
-     strong and beautiful and very intelligent and knows how to play her role well. However, she has a dark and terrible secret; her race's creator, former patron, and still current patron of their sister race the Yuan-Ti,
-     Zehir speaks to her. A dark reptilian old god, full of rage and hunger, Zehir wants his chosen people back from Bahamut. He fills her head with hunger and dark thoughts. She knows he is wrong and was a cruel master to her
-     people, but she struggles to keep his seductive words from her mind as her power grows.
+     Although still highly spiritual and loyal to his tribe at his core, Afar's time with the tinkering Hill Gnomes of Riddiruck Falls changed him. Always a bright Tabaxi, he was never given the chance to realize his true
+     calling until introduced to tinkering. When his nomadic tribe came upon the village and befriended the genius gnomes, it wasn't long before AFar bid farewell to his tribe in favor of studying the arts of technology and
+     artifice. He stayed in the village late into his life and was a collaborator on many of their greatest cityscape inventions. As old age set in, so did senility of sorts. Although still highly skilled and able to apply
+     himself to his processes of invention, he has become a sort of wandering Don Quixote figure. This inventor cat-man with scruffy beard, pronounced tabard, bronze morion, and iron mastiff, is looking to bring light to the
+     lives of others through his wild inventions. With his natural charm accented by his 'lost kitty' Quixotic creativity, he has established himself as a local merchant who incomprehensibly wheels and deals in his inventions
+     and other remarkable goods. He is always rummaging through the city garbage and will never turn down purchasing 'trade-in' oddities and 'another man's garbage'.
+
+
 
 
 
@@ -538,7 +556,8 @@ npc:
     # No length limit for now.
     #
     personality: |
-     Slith'Kyrin is young and insecure. She is working hard to come into her own as the next high priestess of here people but she is still full of self-doubt. The voices in her head are not helping the matter at all
+     Afar, as he is generally known, is a strange old cat-man. A talented and inventive artificer, he mostly uses found materials and traded garbage for his inventions. In his advanced age he is gradually going senile and has
+     more and more frequent bouts of delirium which make him quite the character.
      
   #
   # Content that does not get displayed, but could be useful

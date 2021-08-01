@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: slithkyrin
+  id: slizznek
 
   #
   # The name of the submitter (your name).
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Slith'Kyrin
+  name: Slizz'nek
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Naga
+    race: Lizardfolk
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: Jungle Heritage
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: she/her
+    pronouns: he/him
 
     #
     # Occupation(s).
@@ -214,7 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    - Priestess
+    - Dock Worker
     
 
     #
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Cleric
+    class: Civilian
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Death Domain
+    subclass: N/A
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 6
+    level: 0
 
     #
     # Alignments (case insensitive):
@@ -286,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: Neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -310,9 +310,8 @@ npc:
     #
     languages:
     - Common
-    - Celestial
     - Draconic
-    - Snake
+    - Aquan
 
 
     #
@@ -332,10 +331,10 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: naga_temple_of_bahamut
-      name: Naga Temple of Bahamut
-    - id: naga_clan
-      name: Naga Clan
+    - id: his_tribe
+      name: His Tribe
+    - id: thieve_s_guild
+      name: Thieve's Guil
 
 
     #
@@ -344,9 +343,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Artistic   
-    - Insecure
-    - Conflicted
+    - Dull-Witted   
+    - Hard-Working
+    - Unpleasant
 
   improv:
 
@@ -361,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Behind the altar the beautiful but terrifying Naga Priestess signs glowing sigils in the air, then stops...
+    introduction:  A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. "Outta da way, softskin!"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +371,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Reptilian but beautiful with slick black, green and purple scales. A tiara and gold jewelry around her slim shoulders
+    appearance:   Greenish-brown scaly hard skin, small beady eyes. Massive muscular build with claws and sharp jagged teeth
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +387,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Welcome, we are the divine-touched of Bahamut"
+    expressions:  "Y'all softskins don't know how to live", "Gotta get my work done, it's almost time to eat"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +400,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Flicks her serpentine tongue
+    mannerisms:   Clumsy and slow moving
 
   acting:
     #
@@ -411,7 +410,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Serving her divine purpose. Spreading the word of Bahamut
+      Food
       
     #
     # Passions:
@@ -420,7 +419,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Painting
+      also food
       
     #
     # Vulnerabilities:
@@ -429,7 +428,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      She is still young and unsure of herself, her abilities and her faith
+      He's not very smart
       
     #
     # Secrets:
@@ -438,7 +437,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      She occasionally gets visited in her dreams by the voice of Zehir, the Naga's former god
+      he occasionally helps smuggle goods passed port officials
        
       
   #
@@ -446,15 +445,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 12
+    armour-class: 14
     hit-points: 43
-    speed: 30
-    str: 17
-    dex: 12
-    con: 15
-    int: 13
-    wis: 16
-    cha: 15
+    speed: 30 walking, 30 swimming
+    str: 18
+    dex: 11
+    con: 17
+    int: 9
+    wis: 8
+    cha: 14
 
   #
   # Special characteristics.
@@ -466,49 +465,29 @@ npc:
   specialties:
     skills: 
 
-   - - Naga Abilities:
-        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-        - Keen Senses: You are proficient in the Perception skill
-        - Poison Resistance: You have resistance to poison damage, and you have advantage on saving throws against becoming poisoned.
-        - Herbalist: The foliage of the jungle has given you knowledge in herbs and their preparation. You are proficient in the Medicine skill.
+   - - Lizardfolk Abilities:
+        - Bite: Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an 
+                unarmed strike.
+        - Cunning Artisan: As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items: a shield, a 
+                           club, a javelin, or 1d4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools.
+        - Hold Breath: You can hold your breath for up to 15 minutes at a time.
+        - Hunters Lore: You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth, and Survival.
+        - Natural Armor: You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower
+                         AC. A shield's benefits apply as normal while you use your natural armor.
+        - Hungry Jaws: In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit
+                       points (minimum of 1) equal to your Constitution modifier, and you can't use this trait again until you finish a short or long rest.
         
-   - - Naga Feats:
-        - Python: your body has the power to grapple enemies that are your size. You have advantage on checks to grapple enemies that are equal to or smaller than you in size. As a bonus action, you may squeeze a creature you
-                  are grappling for 1d4 bludgeoning damage. This damage increases by 1d4 at levels 8 (2d4), 12 (3d4), 16 (4d4), and 20 (5d4). This feature can be used a number of times equal to your Strength modifier. You regain
-                  all uses after you finish a long rest.
-        - Venomous: your fangs allow you to inject it into your enemies with a fearsome bite. When you successfully attack a creature within 5 feet of you, you may use a bonus action to make a following strike on that creature,
-                    forcing them to make a Constitution saving throw or become poisoned for 1 minute. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. You regain use of this
-                    ability after you complete a short or long rest.
-        
-   - - Cleric Abilities:
-       - Spellcasting: Spell DC 14
-         Cantrips: Decompose, Guidance, Sacred Flame, Resistance 
-         1st Level: Inflict Wounds, Bane, Bless, Guiding Bolt
-         2nd Level: Gentle Repose, Spiritual Weapon, Hold Person
-         3rd Level: Spirit Shroud, Speak with Dead, Animate Dead 
-       - Channel Divinity: Turn Undead, Destroy Undead 
-
-   - - Death Domain Abilities:
-       - Spellcasting: Spell DC 14 
-         1st Level: False Life, Ray of Sickness
-         3rd Level: Blindness/Deafness, Ray of Enfeeblement
-         5th Level: Animate Dead, Vampiric Touch 
-       - Reaper: you learn one necromancy cantrip of your choice from any spell list - Toll the Dead. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within
-                 range and within 5 feet of each other. 
-       - Channel Divinity: Touch of Death - you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage
-                           to the target. The damage equals 5 + 12 
-       - Inescapable Destruction:  your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage.
        
     special-abilities:
-       - Proficiencies: Perception, Medicine, Arcana, Deception
+       - Proficiencies: Athletics, Survival, Intimidation, Deception
        - Feats: N/A
        
     attacks: |
-      1 attack with spell attach or venom or grapple
+      1 attack with bite, claw or club
     combat-tactics: |
-      Not used to fighting, she will attempt to grapple and constrict her opponent with her tail coils and then claw and bite them with her venom
+      He's not keen to fight, but he won't go out of his way to avoid one. He's not much on tactics, he'll claw, bite and slash with his tale until he wins or loses
     special-equipment:
-    - Her tiara is her magical focus and holy symbol of office and contains a Gem of Seeing
+    - A Lucky Rabbit's Foot from a rabbit he once ate. Lets him reroll 1 saving throw of his choice per long rest
     
     
   profile:
@@ -521,10 +500,10 @@ npc:
     # No length limit for now.
     #
     background-story: |
-     Slith'Kyrin has been trained since birth to be her people's next High Priestess of Bahamut. Still very young by her people's standards, she is full of self-doubt and questions, but is slowly coming into her own. She is
-     strong and beautiful and very intelligent and knows how to play her role well. However, she has a dark and terrible secret; her race's creator, former patron, and still current patron of their sister race the Yuan-Ti,
-     Zehir speaks to her. A dark reptilian old god, full of rage and hunger, Zehir wants his chosen people back from Bahamut. He fills her head with hunger and dark thoughts. She knows he is wrong and was a cruel master to her
-     people, but she struggles to keep his seductive words from her mind as her power grows.
+     The swamp community that Slizz'nek lives in has become an important port city at a river delta  bordering a large lake between nation-states, much to the chagrin of the local lizardfolk population. But as always, his tribe
+     adapts. Taking a job on the docks to show the "softskins" what a "real male" is.  He's gruff, uncultured and temperamental, but he works hard and makes enough to afford all of the food that he can eat. Not being terribly
+     bright and generally having a disrespect the government that has overtaken his lands, he can easily be bribed to help out with smuggling operations at the docks
+
 
 
 
@@ -538,7 +517,9 @@ npc:
     # No length limit for now.
     #
     personality: |
-     Slith'Kyrin is young and insecure. She is working hard to come into her own as the next high priestess of here people but she is still full of self-doubt. The voices in her head are not helping the matter at all
+     Slizz'nek isn't the smartest guy on the docks, but he's not afraid of a day's hard labor. He's gruf and hot-tempered and very much a traditionalist of lizardfolk culture. He doesn't like outsiders and thinks of other races
+     as softskins of fleshbags and sees them as a potential meal somewhere down the line. But in the meantime, he's a survivor, so he keeps his head down and does his job. Now and then, he'll make a little extra cash to turn a
+     blind eye to some of the illegal activities that go on down at the docks
      
   #
   # Content that does not get displayed, but could be useful

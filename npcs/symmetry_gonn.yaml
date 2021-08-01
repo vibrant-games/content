@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: slithkyrin
+  id: symmetry_gonn
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-07-30"
+  date: "2021-08-01"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Slith'Kyrin
+  name: Symmetry Gonn
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: young adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Naga
+    race: Kobold
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: Jungle Heritage
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -214,7 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    - Priestess
+    - Performer, Informer
     
 
     #
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Cleric
+    class: Bard
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Death Domain
+    subclass: College of Whispers
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 6
+    level: 10
 
     #
     # Alignments (case insensitive):
@@ -286,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: Neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -309,10 +309,10 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
+    - Goblin
     - Common
-    - Celestial
     - Draconic
-    - Snake
+    - Elvish
 
 
     #
@@ -332,10 +332,8 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: naga_temple_of_bahamut
-      name: Naga Temple of Bahamut
-    - id: naga_clan
-      name: Naga Clan
+    - id: the_windrunners
+      name: The Windrunners
 
 
     #
@@ -344,9 +342,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Artistic   
-    - Insecure
-    - Conflicted
+    - Clever   
+    - Nervous
+    - Talented
 
   improv:
 
@@ -361,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Behind the altar the beautiful but terrifying Naga Priestess signs glowing sigils in the air, then stops...
+    introduction:  A flash of rusty scales and bright clothes darts from a dark alley across the street. "Cause a distraction!!"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Reptilian but beautiful with slick black, green and purple scales. A tiara and gold jewelry around her slim shoulders
+    appearance:   Rusty red scales. Roughly 2'5". Bright orange eyes. Loose bootcut puffy pants. Loose jerkin. Dual-ribbon cloak.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Welcome, we are the divine-touched of Bahamut"
+    expressions:  "They be lookin fer me, yknow. Gotta go.", "They want that damned group, they can get em themselves"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +399,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Flicks her serpentine tongue
+    mannerisms:   Bouncy and nervous but regains composure. Hums different notes to check her vocal tone.
 
   acting:
     #
@@ -411,7 +409,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Serving her divine purpose. Spreading the word of Bahamut
+      Escaping a regional watch hoping to disband a crew of kobolds believed sent by a dragon to stir and steal valuables
       
     #
     # Passions:
@@ -420,7 +418,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Painting
+      Self-Preservation. Wealth.
       
     #
     # Vulnerabilities:
@@ -429,7 +427,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      She is still young and unsure of herself, her abilities and her faith
+      She is lonely now that her group has disbanded
       
     #
     # Secrets:
@@ -438,7 +436,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      She occasionally gets visited in her dreams by the voice of Zehir, the Naga's former god
+      Most of what she informs the authorities is lies
        
       
   #
@@ -446,15 +444,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 12
-    hit-points: 43
-    speed: 30
-    str: 17
-    dex: 12
-    con: 15
-    int: 13
-    wis: 16
-    cha: 15
+    armour-class: 16
+    hit-points: 51
+    speed: 40
+    str: 13
+    dex: 17
+    con: 10
+    int: 14
+    wis: 17
+    cha: 18
 
   #
   # Special characteristics.
@@ -466,49 +464,59 @@ npc:
   specialties:
     skills: 
 
-   - - Naga Abilities:
-        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-        - Keen Senses: You are proficient in the Perception skill
-        - Poison Resistance: You have resistance to poison damage, and you have advantage on saving throws against becoming poisoned.
-        - Herbalist: The foliage of the jungle has given you knowledge in herbs and their preparation. You are proficient in the Medicine skill.
-        
-   - - Naga Feats:
-        - Python: your body has the power to grapple enemies that are your size. You have advantage on checks to grapple enemies that are equal to or smaller than you in size. As a bonus action, you may squeeze a creature you
-                  are grappling for 1d4 bludgeoning damage. This damage increases by 1d4 at levels 8 (2d4), 12 (3d4), 16 (4d4), and 20 (5d4). This feature can be used a number of times equal to your Strength modifier. You regain
-                  all uses after you finish a long rest.
-        - Venomous: your fangs allow you to inject it into your enemies with a fearsome bite. When you successfully attack a creature within 5 feet of you, you may use a bonus action to make a following strike on that creature,
-                    forcing them to make a Constitution saving throw or become poisoned for 1 minute. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. You regain use of this
-                    ability after you complete a short or long rest.
-        
-   - - Cleric Abilities:
-       - Spellcasting: Spell DC 14
-         Cantrips: Decompose, Guidance, Sacred Flame, Resistance 
-         1st Level: Inflict Wounds, Bane, Bless, Guiding Bolt
-         2nd Level: Gentle Repose, Spiritual Weapon, Hold Person
-         3rd Level: Spirit Shroud, Speak with Dead, Animate Dead 
-       - Channel Divinity: Turn Undead, Destroy Undead 
+   - - Kobold Traits: 
+       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+       - Grovel, Cower & Beg: As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that
+                              can see you. Once you use this trait, you can't use it again until you finish a short or long rest.
+       - Pack Tactics: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
+       - Sunlight Sensitivity: You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.
 
-   - - Death Domain Abilities:
-       - Spellcasting: Spell DC 14 
-         1st Level: False Life, Ray of Sickness
-         3rd Level: Blindness/Deafness, Ray of Enfeeblement
-         5th Level: Animate Dead, Vampiric Touch 
-       - Reaper: you learn one necromancy cantrip of your choice from any spell list - Toll the Dead. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within
-                 range and within 5 feet of each other. 
-       - Channel Divinity: Touch of Death - you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage
-                           to the target. The damage equals 5 + 12 
-       - Inescapable Destruction:  your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage.
+   - - Bard Abilities:
+       - Bard Spellcasting: Spell DC 15 
+           Cantrip: Mage Hand, Vicious Mockery, Friends, Dancing Lights
+           1st Level: Charm Person, Dissonant Whispers, Hideous Laughter, Disguise Self  
+           2nd Level: Detect Thoughts, Magic Mouth, Zone of Truth
+           3rd Level: Dispel Magic, Tongues, Fear
+           4th Level: Charm Monster, Dimension Door, Greater Invisibility
+           5th Level: Mislead, Modify Memory
+       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d10. Once within the next 
+                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                       being Frightened or Charmed
+       - Expertise: gets double proficiency bonus in
+       - Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip: Sending, Scrying
+       
+   - - College of Whispers Abilities:
+       - Psychic Blades: you gain the ability to make your weapon attacks magically toxic to a creature's mind. When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an 
+                         additional 5d6 psychic damage to that target. You can do so only once per round on your turn.
+       - Words of Terror: you learn to infuse innocent-seeming words with an insidious magic that can inspire terror. If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear into its
+                          mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in
+                          this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. If the target succeeds on its saving throw, the target has no hint that you tried to
+                          frighten it. Once you use this feature, you can’t use it again until you finish a short rest or long rest.
+       - Mantle of Whispers: you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or
+                             you finish a long rest. You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy
+                             and alive. This disguise lasts for 1 hour or until you end it as a bonus action. While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual
+                             acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by
+                             drawing on its memories. Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.
+                             Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest.     
        
     special-abilities:
-       - Proficiencies: Perception, Medicine, Arcana, Deception
-       - Feats: N/A
+       - Proficiencies: Performance, Stealth, Disguise Kit, History, Persuasion, Acrobatics, Deception
+       - Feats: Dual Weilder, Actor
        
     attacks: |
-      1 attack with spell attach or venom or grapple
+      2 attacks with dagger, sling or spell attack
     combat-tactics: |
-      Not used to fighting, she will attempt to grapple and constrict her opponent with her tail coils and then claw and bite them with her venom
+      Symmetry will parkour about the area - off walls, fences, people, places, things - like a pinball in song. When the very first combatant falls, She will use Mantle of Whispers to adopt the identity and flee.
     special-equipment:
-    - Her tiara is her magical focus and holy symbol of office and contains a Gem of Seeing
+    - A small singing bowl that she can play almost like a drum
+    - lucimeter
+    - and bells at the same time.
+    - Sling and Stones
+    - 2x Daggers
     
     
   profile:
@@ -521,12 +529,19 @@ npc:
     # No length limit for now.
     #
     background-story: |
-     Slith'Kyrin has been trained since birth to be her people's next High Priestess of Bahamut. Still very young by her people's standards, she is full of self-doubt and questions, but is slowly coming into her own. She is
-     strong and beautiful and very intelligent and knows how to play her role well. However, she has a dark and terrible secret; her race's creator, former patron, and still current patron of their sister race the Yuan-Ti,
-     Zehir speaks to her. A dark reptilian old god, full of rage and hunger, Zehir wants his chosen people back from Bahamut. He fills her head with hunger and dark thoughts. She knows he is wrong and was a cruel master to her
-     people, but she struggles to keep his seductive words from her mind as her power grows.
-
-
+     Kobolds are kobolds. Well, not always. Symmetry (not her birth name) was raised in a cavern den of the hundreds of kobolds making up the clan of Kut-Kut.  They were dedicated to serving the Red Dragon, Vys, who lived deeper
+     in the mountain. Vys would task the clan with securing the cavern tunnels and with raiding nearby trading routes for treasures to pile atop his horde. One evening, Vys heard her singing and demanded she sit atop his horde
+     for the rest of her life to entertain him. Not a great deal in the mind of anybody, really, even a kobold, and Symmetry (again, not her birth name, but she won't tell) grew disenfranchised with her life with Vys and her
+     clan's unwillingness to stand up to the tyrant dragon. Vys would sleep often and would wake easily. He abhorred her silence and would punish her for it. She found a cunning solution. "Vys, you want newer songs? You must be
+     getting bored of the ones I know", she whispered in his ear in draconic. "Yes," the dragon's deep growl trembled the piles of gold and treasures, "I am." The dragon chuckled sardonically. "Well, I must read to learn new
+     songs. And to read I must be quiet." "Ay. Then silence for an hour." The great red dragon purred. Symmetry (again, I insist not her birth name) took an hour each day to learn more songs, more spells, and more knowledge
+     from the tomes and treasures that littered Vys' lair. When a commanding officer of the Kut-Kut tribe rushed in one day to alert Vys that a small party of heroes had breached the cave depths, chaos ensued. Little did Vys
+     know, this was a ruse created by a small group of rebels who sought to escape the caverns. In the ensuing chaos, Symmetry was able to distract Vys with songs and aid in their escape. The small kobold crew bonded over the
+     weeks of travel that followed and set their sites on using their abilities to gain their own wealth. Upon arriving in a nearby city, they set forth to 'relieve' the population of their wealth. On a night of rest in a
+     removed alleyway, Symmetry's song of her groups' exploits was overheard by a beggarly human who knew the value of being able to aid in disbanding this group of bandits and, perhaps even more so, the value of informing the
+     watch as to the location of Vys' lair. He turned the information over for a handsome reward. The Regional Watch found the band of kobolds with haste. Symmetry was a primary target with her bright clothes and distinct
+     appearance. However, using the secrets found in Vys' lair, Symmetry was able to terrify the Watchman and escape. The rest of her band scattered. Symmetry has been in flight ever since and makes a good living from selling
+     her secrets - via letter - to the Regional Watch; sending them on wild goose chases.
 
       
     #
@@ -538,7 +553,7 @@ npc:
     # No length limit for now.
     #
     personality: |
-     Slith'Kyrin is young and insecure. She is working hard to come into her own as the next high priestess of here people but she is still full of self-doubt. The voices in her head are not helping the matter at all
+     Symmetry, not her real name, is quick, clever and talented. She is happy to be free of her dragon captor, but misses her clan and especially her group of bandits. 
      
   #
   # Content that does not get displayed, but could be useful
