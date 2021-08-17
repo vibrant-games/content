@@ -1,0 +1,577 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: hamza
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-05-27"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Ham'za
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: middle aged adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Gith
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Githyanki
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: he/him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Raider
+    
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Fighter
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Psi Warrior
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 18
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Gith
+    - Undercommon
+    - Common
+    - Draconic
+    - Abyssal
+
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - N/A
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Vicious
+    - Terrifying
+    - Lazy
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  A strangely tall gaunt figure approaches through the mist of the battlefield. "Perfect! More pathetic creatures to kill"
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   6'9", gaunt and wiry. Yellow skin, black eyes and black hair in a topknot. Armored with jewels, feathers and bones
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  When he speaks, he mostly only speaks in Gith because other languages are beneath him
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Regal but aggressive posture
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Complete disdain for rules and society. Ambitious and fiercely individualistic
+      
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      He's not passionate about much other than killing. He's mostly bored and unenthusiastic about everything else
+      
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      Arrogant, Smug, Sadistic, Rude. Overconfident. Shallow and unwilling to finish what he starts do to loss of interest
+      
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: | 
+      He cannot return to his people after tiring of and rejecting their strong militaristic society
+       
+      
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 22
+    hit-points: 214
+    speed: 35
+    str: 20
+    dex: 18
+    con: 17
+    int: 20
+    wis: 14
+    cha: 19
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+   - - Githyanki Abilities:
+       - Decadent Mastery: Proficiency with all artisan's tools           
+       - Martial Prodigy: You are proficient with light and medium armor and with shortswords, longswords, and greatswords
+       - Githyanki Psionics: You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Jump spell once with this trait, and you regain the
+                             ability to do so when you finish a long rest. When you reach 5th level, you can cast the Misty Step spell once with this trait, and you regain the ability to do so when you finish a long rest.
+                             Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components
+                             
+   - - Fighter Abilities:
+         - Fighting Style: Great Weapon Fighting
+         - Second Wind: Bonus Action to regain 1d10 +18 
+         - Action Surge: Once every short/long rest can take an extra action
+         - Extra Attack: Can attack 4 times each turn
+         - Indomiable: you can reroll a saving throw that you fail. If you do so, you must use the new roll. 3x per long rest
+         
+   - - Psi Warrior Abilities:
+        - Psi Powers: This energy is represented by your Psionic Energy dice, which are each a d12. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are
+                      detailed below. Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended.
+                      You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a
+                      short or long rest. The powers below use your Psionic Energy dice.
+                      - Protective Field: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the
+                                          number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.
+                      - Psionic Strike: You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon,
+                                        you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier.
+                      - Telekinetic Movement: You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see
+                                              the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your
+                                              hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can't do so again until you finish a short or long rest, unless you expend
+                                              a Psionic Energy die to take it again.
+        - Telekinetic Adept: You have mastered new ways to use your telekinetic abilities, detailed below.
+                             - Psi-Powered Leap: As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus
+                                                 action, you can't do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.
+                             - Telekinetic Thrust: When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your
+                                                   Intelligence modifier. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally
+        - Guarded Mind:  the psionic energy flowing through you has bolstered your mind. You have resistance to psychic damage. Moreover, if you start your turn charmed or frightened, you can expend a Psionic Energy die and end
+                         every effect on yourself subjecting you to those conditions.
+        - Bulwark of Force: you can shield yourself and others with telekinetic force. As a bonus action, you can choose creatures, which can include you, that you can see within 30 feet of you, up to a number of creatures
+                            equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures is protected by half cover for 1 minute or until you're incapacitated. Once you take this bonus action, you
+                            can't do so again until you finish a long rest, unless you expend a Psionic Energy die to take it again
+        - Telekinetic Master: your ability to move creatures and objects with your mind is matched by few. You can cast the Telekinesis spell, requiring no components, and your spellcasting ability for the spell is Intelligence.
+                              On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action. Once you cast the spell with this feature,
+                              you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to cast it again
+
+    special-abilities:
+      - Proficiencies: Performance, Insight, Perception, Survival, Athletics,
+      - Legendary Resistance: (3/Day), If Ham'za fails a saving throw she can choose to succeed instead 
+      - Legendary Actions: Ham'za can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Ham'za regains spent Legendary Actions at the start of her turn
+        - Gith Portal: Ham'za can cast Teleport, travelling to anywhere he's been before regardless of distance
+        - Word of the Gith: Ham'za casts Power Word Kill. He may only do this once per long rest
+        - Psionic Reserve: Ham'za replenish all of his Psionic Energy Dice. He may only do this once per long rest    
+    attacks: |
+      4 attacks with Psionic attacks or his Great Sword
+    combat-tactics: |
+      He will fight anyone, anywhere, anytime
+    special-equipment:
+    - Silver GreatSword
+                                                                   
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Trained from birth as a Knight and a Gish, Ham'za is a warrior of the highest degree. The combination of his martial and psi abilities make him an unstoppable killing machine, unless he loses interest in the fight. He is
+      also a rebel among his people. After living hundreds of years in the Astral Plane, he grew tired of the rigid militaristic ways of his people and escaped to the material plane to find new sources of entertainment.
+      Arrogant, aggressive and cruel, his favorite source of entertainment is battle and torture. He may briefly align himself with a party if he thinks their goals might be fun and keep him entertained for a while, but
+      it's unlikely he'll remain on their side for long if there's not enough battle to keep his interest.  At which point, he'll probably just kill them and continue on his journey
+
+      
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      6'9", gaunt and wiry. Yellow skin, black eyes and black hair in a topknot. Armored with jewels, feathers and bones. He is basically evil incarnate
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
