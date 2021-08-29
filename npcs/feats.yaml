@@ -47,6 +47,12 @@
    - Magic Initiate: You learn two cantrips and one 1st-level spell from one class.
    - Martial Adept: You learn two maneuvers from Battle Master archetype and gain one superiority die (d6).
    - Medium Armor Master: Prerequisite - Proficiency with medium armor. No disadvantage to Stealth checks wearing medium armor and Dexterity bonus max to +3 instead of +2.
+   - Metabolic Control: Prerequisite: Psionic Talent feature or Wild Talent feat You have refined psionic control over your body’s functions. You gain the following benefits - 
+                        - Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.
+                        - If your Psionic Talent die is available, you can take an action to channel your psionic power to nourish yourself for the next 24 hours, as if you consumed sufficient food and water for a day. When you 
+                          take this action, your Psionic Talent die decreases by one die size.
+                        - If your Psionic Talent die is available, you can meditate for 1 minute, at the end of which you gain the benefits of finishing a short rest, and your Psionic Talent die decreases by one die size. You 
+                          can’t meditate in this way again until you finish a long rest.
    - Metamagic Adept: Prerequisite - Spellcasting or Pact Magic feature. You learn two metamagic options and gain 2 sorcery points.
    - Mobile: Your speed increase by 10 ft, you can Dash on difficult terrain without malus, and don't provoke opportunity attacks in melee.
    - Moderately Armored: Prerequisite - Proficiency with light armor. +1 in Str. or Dex. and you gain proficiency with medium armor and shields.
@@ -71,10 +77,28 @@
    - Slasher: +1 in Str. or Dex., reduce target's speed by 10 ft when you hit (slashing) and target has disadvantage on attacks rolls.
    - Spell Sniper: Prerequisite - The ability to cast at least one spell, Offensive spell's range doubled, these spells ignore some cover, and you learn one offensive cantrip.
    - Squat Nimbleness: Prerequisite - Dwarf or a Small race. +1 in Str. or Dex., your speed increases by 5 ft, and proficiency and advantage to escape with Acrobatics or Athletics checks.
+   - Tandem Tactics: You can use the Help action as a bonus action. When you use the Help action to aid an ally in attacking a creature, increase the range of the Help action by 10 feet. Additionally, you can help two allies 
+                     targeting the same creature within range when you use the Help action this way
    - Tavern Brawler: +1 in Str. or Con., proficiency with improvised weapons, d4 for unarmed strike, and grapple with a bonus action.
-   - Telekinetic: +1 in Int., Wis., or Cha., you learn mage hand and you can try to telekinetically shove one creature (5 ft).
-   - Telepathic: +1 in Int., Wis., or Cha., you can cast detect thoughts and you can speak telepathically to any creature within 60 ft.
+   - Telekinetic: Prerequisite: Psionic Talent feature or Wild Talent feat, +1 in Int., Wis., or Cha., You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand
+                  invisible. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat. As a bonus action, you can try to telekinetically 
+                  shove one creature you can see within 30 feet of you. When you do so, roll your Psionic Talent die, and the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier
+                  of the score increased by this feat) or be moved toward you or away from you a number of feet equal to 5 times the number you rolled. A creature can willingly fail this save.
+   - Telepathic: Prerequisite: Psionic Talent feature or Wild Talent feat, +1 in Int., Wis., or Cha., You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language 
+                 you know, and the creature understands you only if it knows that language. Your communication doesn’t give the creature the ability to respond to you telepathically. If your Psionic Talent die is available, you 
+                 can cast the detect thoughts spell, requiring no components. When you start casting the spell, your Psionic Talent die decreases by one die size. Your spellcasting ability for the spell is the ability increased 
+                 by this feat.
    - Tough: Your hit point maximum increases by an amount equal to twice your level then by +2 at each level.
+   - Tower of Iron Will: Prerequisite: Psionic Talent feature or Wild Talent feat. Your mind’s defenses are formidable. After you or another creature you can see within 30 feet of you fails a saving throw, you can use your 
+                         reaction to roll your Psionic Talent die and add the number rolled to the saving throw, potentially causing it to succeed.
+   - Tracker: Increase your Wisdom score by 1, to a maximum of 20. You learn the hunter’s mark spell. You can cast it once without expending a spell slot, and you must finish a long rest before you can cast it in this way again.
+              You can also cast the spell using any spell slots you have. Wisdom is your spellcasting ability for this spell. You have advantage on Wisdom (Survival) checks to track creatures
    - War Caster: Prerequisite - The ability to cast at least one spell. You have advantage on saving throws to maintain concentration and you can cast some spells as part of an OA with a reaction.
    - Weapon Master: +1 in Str. or Dex. and you gain proficiency with four weapons.
+   - Wild Talent: Increase one ability score of your choice by 1, to a maximum of 20, to represent this enhancement. You also harbor a wellspring of psionic power within yourself, an energy that ebbs and flows as you channel it 
+                  in various ways. This power is represented by your Psionic Talent die, the starting size of which is a d6. Psionic Talent Options. You can use your Psionic Talent die in the following ways;
+                  - Psi-Boosted Ability: When you make an ability check with the ability increased by this feat, you can roll your Psionic Talent die and add the number rolled to the check. You can choose to do so before or 
+                                         after rolling the d20, but before you know whether the check succeeded or failed.
+                  - Psi-Guided Strike: Once on each of your turns when you hit with an attack roll that uses the ability increased by this feat, you can roll your Psionic Talent die after you make the damage roll and then 
+                                       replace one of the damage dice with the number rolled on the Psionic Talent die.
    - Wood Elf Magic: Prerequisite - Elf (wood). You learn one druid cantrip and can cast the longstrider and pass without trace spells (1/long rest)
