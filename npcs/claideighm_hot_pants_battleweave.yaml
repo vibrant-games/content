@@ -466,36 +466,36 @@ npc:
   #
   specialties:
     skills:
-  - Duergar Abilities:
-    - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-    - Duergar Resilience: Advantage on saving throws against illusions and phantasms and against being charmed, paralyzed, and poisoned with alchemical poisons
-    - Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-    - Duergar Magic: Can cast Enlarge and Invisibility once per long rest with intelligence as spellcasting ability
-    - Duergar Weapons Training: Proficient with Battleaxe, Handaxe, Light Hammer and Warhammer
+   - - Duergar Abilities:
+       - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
+       - Duergar Resilience: Advantage on saving throws against illusions and phantasms and against being charmed, paralyzed, and poisoned with alchemical poisons
+       - Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
+       - Duergar Magic: Can cast Enlarge and Invisibility once per long rest with intelligence as spellcasting ability
+       - Duergar Weapons Training: Proficient with Battleaxe, Handaxe, Light Hammer and Warhammer
     
-    - Warlock Traits: Pact of the Hexblade: 
-      - Cantrips: Eldritch Blast, Toll The Dead 
-      - 1st Level: Charm Person, Hex
-      - 2nd Level: Crown of Madness, Enthrall
-      - Eldritch Invocations: 
-        - Rebuke of the Talisman: When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus 
+   - - Warlock Traits: Pact of the Hexblade: 
+       - Cantrips: Eldritch Blast, Toll The Dead 
+       - 1st Level: Charm Person, Hex
+       - 2nd Level: Crown of Madness, Enthrall
+       - Eldritch Invocations: 
+         - Rebuke of the Talisman: When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus 
                                   and push it up to 10 feet away from the talisman's wearer
-        - Maddening Hex: As a bonus action, you cause a psychic disturbance around the target cursed by your Hex spell or by a warlock feature of yours, such as Hexblade’s Curse and Sign of Ill Omen. When you do so, you deal 
+         - Maddening Hex: As a bonus action, you cause a psychic disturbance around the target cursed by your Hex spell or by a warlock feature of yours, such as Hexblade’s Curse and Sign of Ill Omen. When you do so, you deal 
                          psychic damage to the cursed target and each creature of your choice within 5 feet of it. The psychic damage equals your Charisma modifier (minimum of 1 damage). To use this invocation, you must be able 
                          to see the cursed target, and it must be within 30 feet of you                                  
     
-    - Raven Queen Traits: Hexblade's Curse, Hex Warriors, Accursed Specter, Armor of Hexes, Master of Hexes, 
-      - Hexblade Spells: DC14
-        - 1st Level: False Life, Sanctuary
-        - 2nd Level: Silence, Spiritual Weapon
-        - 3rd Level: Feign Death, Speak with Dead 
-      - Sentinel Raven: has the	service	of a spirit	sent by	the	Raven Queen	to	watch over you.	The	spirit assumes the form	and	game statistics	of a raven,	and	it always obeys	your commands, which you can give telepathically	
-                        while it is	within 100 feet	of you. While the raven	is perched on your shoulder, you gain darkvision with a	range of 30	feet and a bonus to	your passive Wisdom	(Perception) score and to Wisdom (Perception)
-                        checks.	The	bonus equals your Charisma modifier. While perched on your shoulder, the raven can’t be	targeted by	any	attack or other	harmful	effect;	only you can cast spells on	it;	it	can’t take damage;	
-                        and	it is incapacitated. You can see through the raven’s eyes and hear what	it hears while it is within	100	feet of	you. In combat,	you	roll initiative	for	the	raven and control how it acts. If it is	slain
-                        by a creature, you gain	advantage on all attack	rolls against the killer for the next 24 hours.	The	raven doesn’t require sleep. While it is within	100	feet of	you, it	can awaken you from	sleep as a bonus
-                        action. The	raven vanishes when	it dies, if	you	die, or	if the two of you are separated	by more	than 5 miles. At the end of	a short	or long	rest, you can call the raven back to you no	matter where it	is
-                        or whether it died and it reappears	within 5 feet of you        
+   - - The Raven Queen Abilities:
+       - Raven Queen Spells: Spell DC 14
+             1st Level: False Life, Sanctuary
+             2nd Level: Silence, Spiritual Weapon
+             3rd Level: Feign Death, Speak with Dead     
+       - Sentinel Raven: you gain the service of a spirit sent by the Raven Queen to watch over you. The spirit assumes the form and game statistics of a raven, and it always obeys your commands, which you can give 
+                         telepathically while it is within 100 feet of you. While the raven is perched on your shoulder, you gain darkvision with a range of 30 feet and a bonus to your passive Wisdom (Perception) score and to 
+                         Wisdom (Perception) checks. The bonus equals your Charisma modifier. While perched on your shoulder, the raven can’t be targeted by any attack or other harmful effect; only you can cast spells on it; it 
+                         can’t take damage; and it is incapacitated. You can see through the raven’s eyes and hear what it hears while it is within 100 feet of you. In combat, you roll initiative for the raven and control how it
+                         acts. If it is slain by a creature, you gain advantage on all attack rolls against the killer for the next 24 hours. The raven doesn’t require sleep. While it is within 100 feet of you, it can awaken you
+                         from sleep as a bonus action. The raven vanishes when it dies, if you die, or if the two of you are separated by more than 5 miles. At the end of a short or long rest, you can call the raven back to you,
+                         no matter where it is or whether it died—and it reappears within 5 feet of you.       
 
     special-abilities:
     - Proficiencies: Persuasion, Sleight of Hand    
@@ -504,9 +504,8 @@ npc:
     combat-tactics: |
       Claideighm will use enchantments to gain advantage in most situations, especially combat, charming others. Another way that she attracts such a high volume of customers.
     special-equipment:
-    - Pants of Charming< - Claideighm has numerous pairs of these paints etched with magical runes. They have 3 charges. While wearing them
-    - she can expend 1 charge as an action to cast the charm person spell (save DC 13) on a humanoid within 30 feet of her
-    - provided that her and the target can see each other. The pants regain all expended charges daily at dawn.
+    - Pants of Charming: Claideighm has numerous pairs of these paints etched with magical runes. They have 3 charges. While wearing them she can expend 1 charge as an action to cast the charm person spell (save DC 13) on a 
+                         humanoid within 30 feet of her provided that her and the target can see each other. The pants regain all expended charges daily at dawn.
                                                                    
   profile:
 
