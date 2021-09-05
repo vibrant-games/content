@@ -1,4 +1,4 @@
-   - - Unity Domain Abilities: DC
+   - - Unity Domain Abilities: Spell DC
        - Spellcasting:
          1st Level: Heroism, Shield of Faith
          3rd Level: Aid, Warding Bond
@@ -27,7 +27,7 @@
          
          
   - - Trickery Domain Abilities:
-        - Spellcasting: DC
+        - Spellcasting: Spell DC
            1st Level: Charm Person, Disguise Self
            3rd Level: Mirror Image, Pass Without Trace
            5th Level: Blink, Dispel Magic
@@ -48,7 +48,7 @@
            
            
    - - Arcana Domain Abilities:
-        - Spellcasting: DC
+        - Spellcasting: Spell DC
            1st Level: Detect Magic, Magic Missle
            3rd Level: Magic Weapon, Nystul's Magic Aura
            5th Level: Dispel Magic, Magic Circle
@@ -69,7 +69,7 @@
                           
                           
    - - Forge Domain Abilities:
-       - Spellcasting: DC
+       - Spellcasting: Spell DC
          1st Level: Identify, Searing Smite
          3rd Level: Heat Metal, Magic Weapon
          5th Level: Elemental Weapon, Protection from Energy
@@ -94,7 +94,7 @@
    
    
    - - Order Domain Abilities:
-       - Spellcasting: DC
+       - Spellcasting: Spell DC
          1st Level: Command, Heroism 
          3rd Level: Hold Person, Zone of Truth
          5th Level: Mass Healing Word, Slow
@@ -118,7 +118,7 @@
  
  
     - - Madness Domain Abilities: 
-       - Spellcasting: DC
+       - Spellcasting: Spell DC
           Cantrips: Vicious Mockery
           1st Level: Dissonant Whispers, Hideous Laughter
           3rd Level: Crown of Madness, Phantasmal Force
@@ -145,7 +145,7 @@
 
 
    - - Grave Domain Abilities:
-       - Spellcasting: DC
+       - Spellcasting: Spell DC
          1st Level: Bane, False Life
          3rd Level: Gentle Repose, Ray of Enfeeblement
          5th Level: Revivify, Vampiric Touch
@@ -171,7 +171,7 @@
 
 
    - - Life Domain Abilities:
-       - Spellcasting: DC
+       - Spellcasting: Spell DC
          1st Level: Bless, Cure Wounds
          3rd Level: Lesser Restoration, Spiritual Weapon
          5th Level: Beacon of Hope, Revivify
@@ -192,7 +192,7 @@
                           
                           
    - - Death Domain Abilities:
-       - Spellcasting: DC
+       - Spellcasting: Spell DC
           Cantrips: Toll The Dead
           1st Level: False Life, Ray of Sickness
           3rd Level: Blindness/Deafness, Ray of Enfeeblement
@@ -213,7 +213,7 @@
                           
                           
    - - Knowledge Domain Abilities: 
-       - Spellcasting: Spell DC 15
+       - Spellcasting: Spell DC
           1st Level: Command, Identify
           3rd Level: Augury, Suggestion
           5th Level: Nondetection, Speak with Dead
@@ -241,7 +241,7 @@
 
 
    - - Peace Domain Abilities:
-       - Spellcasting: Spell DC 13 
+       - Spellcasting: Spell DC 
          1st Level: Heroism, Sanctuary
          3rd Level: Aid, Warding Bond
          5th Level: Beacon of Hope, Sending
@@ -258,4 +258,112 @@
        - Protective Bond: the bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first
                           can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead. 
        - Potent Spellcasting: you add your Wisdom modifier to the damage you deal with any cleric cantrip.
-       - Expansive Bond: the benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 60 feet of each other. Moreover, when a creature uses Protective Bond to take someone else's damage, the creature has resistance to that damage.
+       - Expansive Bond: the benefits of your Emboldening Bond and Protective Bond features now work when the creatures are within 60 feet of each other. Moreover, when a creature uses Protective Bond to take someone else's 
+                         damage, the creature has resistance to that damage.
+                         
+                         
+                         
+   - - Twilight Domain Abilities:
+       - Spellcasting: Spell DC
+         1st Level: Faerie Fire, Sleep
+         3rd Level: Moonbeam, See Invisibility
+         5th Level: Aure of Vitality, Tiny Hut
+         7th Level: Aura of Life, Greater Invisibility
+         9th Level: Circle of Power, Mislead
+       - Bonus Proficiencies: you gain proficiency with martial weapons and heavy armor.
+       - Eyes of Night: You can see through the deepest gloom. You have darkvision out to a range of 300 feet. In that radius, you can see in dim light as if it were bright light and in darkness as if it were dim light. As an 
+                        action, you can magically share the darkvision of this feature with willing creatures you can see within 10 feet of you, up to a number of creatures equal to your Wisdom modifier (minimum of one creature).
+                        The shared darkvision lasts for 1 hour. Once you share it, you can't do so again until you finish a long rest, unless you expend a spell slot of any level to share it again.
+       - Vigilant Blessing: the night has taught you to be vigilant. As an action, you give one creature you touch (including possibly yourself) advantage on the next initiative roll the creature makes. This benefit ends 
+                            immediately after the roll or if you use this feature again.
+       - Channel Divinity - Twilight Sanctuary: you can use your Channel Divinity to refresh your allies with soothing twilight. As an action, you present your holy symbol, and a sphere of twilight emanates from you. The sphere 
+                                                is centered on you, has a 30-foot radius, and is filled with dim light. The sphere moves with you, and it lasts for 1 minute or until you are incapacitated or die. Whenever a 
+                                                creature (including you) ends its turn in the sphere, you can grant that creature one of these benefits;
+                                                - You grant it temporary hit points equal to 1d6 plus your cleric level.
+                                                - You end one effect on it causing it to be charmed or frightened.
+       - Steps of Night:  you can draw on the mystical power of night to rise into the air. As a bonus action when you are in dim light or darkness, you can magically give yourself a flying speed equal to your walking speed for 
+                          1 minute. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+       - Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage.
+                        When you reach 14th level, the extra damage increases to 2d8.
+       - Twilight Shroud: the twilight that you summon offers a protective embrace: you and your allies have half cover while in the sphere created by your Twilight Sanctuary. 
+       
+       
+       
+   - - Light Domain Abilities:
+       - Spellcasting: Spell DC
+         1st Level: Burning Hands, Faerie Fire
+         3rd Level: Flaming Sphere, Scorching Ray
+         5th Level: Daylight, Fireball
+         7th Level: Guardian of Faith, Wall of Fire
+         9th Level: Flame Strike, Scrying
+       - Bonus Cantrip: When you choose this domain at 1st level, you gain the Light cantrip if you don't already know it.
+       - Warding Flare: you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the 
+                        attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this feature. You can use this feature a number of times equal to your 
+                        Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.
+       - Channel Divinity - Radiance of the Dawn: you can use your Channel Divinity to harness sunlight, banishing darkness and dealing radiant damage to your foes. As an action, you present your holy symbol, and any magical 
+                                                  darkness within 30 feet of you is dispelled. Additionally, each hostile creature within 30 feet of you must make a Constitution saving throw. A creature takes radiant damage 
+                                                  equal to 2d10 + your cleric level on a failed saving throw, and half as much damage on a successful one. A creature that has total cover from you is not affected.
+       - Improved Flare: you can also use your Warding Flare feature when a creature that you can see within 30 feet of you attacks a creature other than you.
+       - Potent Spellcasting: you add your Wisdom modifier to the damage you deal with any cleric cantrip.
+       - Corona of Light: you can use your action to activate an aura of sunlight that lasts for 1 minute or until you dismiss it using another action. You emit bright light in a 60-foot radius and dim light 30 feet beyond that.
+                          Your enemies in the bright light have disadvantage on saving throws against any spell that deals fire or radiant damage.
+                          
+                          
+                          
+   - - Nature Domain Abilities:
+       - Spellcasting: Spell DC
+         1st Level: Animal Friendship, Speak with Animals
+         3rd Level: Barkskin, Spike Growth
+         5th Level: Plant Growth, Wind Wall
+         7th Level: Dominate Beast, Grasping Vine
+         9th Level: Insect Plague, Tree Stride
+       - Acolyte of Nature: you learn one cantrip of your choice from the druid spell list. You also gain proficiency in one of the following skills of your choice; Animal Handling, Nature, or Survival.
+       - Bonus Proficiency: you gain proficiency with heavy armor.
+       - Channel Divinity - Charm Animals and Plants: you can use your Channel Divinity to charm animals and plants. As an action, you present your holy symbol and invoke the name of your deity. Each beast or plant creature that
+                                                      can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is charmed by you for 1 minute or until it takes damage. While 
+                                                      it is charmed by you, it is friendly to you and other creatures you designate.
+       - Dampen Elements: when you or a creature within 30 feet of you takes acid, cold, fire, lightning, or thunder damage, you can use your reaction to grant resistance to the creature against that instance of the damage.
+       - Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or
+                        lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to 2d8.
+       - Master of Nature: you gain the ability to command animals and plant creatures. While creatures are charmed by your Charm Animals and Plants feature, you can take a bonus action on your turn to verbally command what each
+                           of those creatures will do on its next turn.
+                           
+                           
+                           
+   - - Tempest Domain Abilities:
+       - Spellcasting: Spell DC
+         1st Level: Fog Cloud, Thunderwave
+         3rd Level: Gust of Wind, Shatter
+         5th Level: Call Lightning, Sleet Storm
+         7th Level: Control Water, Ice Storm
+         9th Level: Destructive Wave, Insect Plague
+       - Bonus Proficiencies: you gain proficiency with martial weapons and heavy armor.
+       - Wrath of the Storm: you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw.
+                             The creature takes 2d8 lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one. You can use this feature a number of times equal to your Wisdom
+                             modifier (a minimum of once). You regain all expended uses when you finish a long rest.
+       - Channel Divinity - Destructive Wrath: you can use your Channel Divinity to wield the power of the storm with unchecked ferocity. When you roll lightning or thunder damage, you can use your Channel Divinity to deal 
+                                               maximum damage, instead of rolling.
+       - Thunderous Strike: when you deal lightning damage to a Large or smaller creature, you can also push it up to 10 feet away from you.
+       - Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage
+                        to the target. When you reach 14th level, the extra damage increases to 2d8.
+       - Stormborn: you have a flying speed equal to your current walking speed whenever you are not underground or indoors.
+       
+       
+       
+   - - War Domain Abilities:
+       - Spellcasting: Spell DC
+         1st Level: Divine Favor, Shield of Faith
+         3rd Level: Magic Weapon, Spiritual Weapon
+         5th Level: Crusader's Mantle, Spirit Guardians
+         7th Level: Freedom of Movement, Stoneskin
+         9th Level: Flame Strike, Hold Monster
+       - Bonus Proficiency: you gain proficiency with martial weapons and heavy armor.
+       - War Priest: your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one weapon attack as a bonus action. You can use this feature a number of times 
+                     equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.
+       - Channel Divinity - Guided Strike: you can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this 
+                                           choice after you see the roll, but before the DM says whether the attack hits or misses.
+       - Channel Divinity - War Gods Blessing: when a creature within 30 feet of you makes an attack roll, you can use your reaction to grant that creature a +10 bonus to the roll, using your Channel Divinity. You make this 
+                                               choice after you see the roll, but before the DM says whether the attack hits or misses.
+       - Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the 
+                        same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.
+       - Avatar of Battle: you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.
