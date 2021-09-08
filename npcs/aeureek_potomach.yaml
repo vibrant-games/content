@@ -476,12 +476,20 @@ npc:
             3rd Level: Counterspell, Dispel Magic, Glyph of Warding      
 
    - - School of Lore Mastery Abilities:
-       - Lore Master: Proficiency bonus is doubled for skill checks involving Arcana, History, Investigation and Religion. Can add Intelligence bonus to initiative rolls instead of Dexterity           
-       - Spell Secrets: your knowledge of the inner workings of magic is extensive enough to allow you to reshape and alter the nature of a spell to your whim. You have a pool of lore points equal to your intelligence modifier +1
-                       (Minimum of 1). You regain all lore points after a long rest. When you cast a spell that deals acid, cold, fire, lightning, necrotic, or thunder damage, you can expend a lore point as a bonus action and change 
-                       the damage type of that spell to any other from that list (You can change only one damage type per casting of a spell)
-       - Arcane Analyser: your mind is so quick at deciphering the inner workings of a spell, you can instantly know a spells effect as soon as you see it. If you see a spell being cast within 60ft of you, and it is part of the 
-                          wizard spell list, you can then copy down and transfer the spell to your spellbook during your next long rest.           
+       - Lore Master: you become an increasingly broader compendium of knowledge on a vast array of topics. Choose one skill from Arcana, History, Nature or Religion. Your proficiency bonus is doubled for any ability check that 
+                      uses the chosen skill if you are proficient in that skill. At levels 6, 10 and 14 you get to choose one more skill from the list. In addition, your initiative in combat can be driven by mental agility, 
+                      rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice). Your proficiency bonus is also doubled for any ability check that uses
+                      the Investigation skill if you are proficient in that skill. neither this feature nor the previous feature gives proficiency in any skill           
+       - Spell Secrets: you start to master your first in a series of arcane secrets uncovered by your extensive studies. Choose two damage types from acid, cold, fire, force, lightning, necrotic, radiant or thunder. When you 
+                        cast a wizard spell with a spell slot and the spell deals one of the chosen damage types you can substitute that damage type with another (previously) chosen damage type from the list. You can use this 
+                        feature a number of times equal to your Inteligence Modifier (minimum of once~ and only a single damage type may be substituted per spell You regain any expended uses when you finish a long rest. At 
+                        levels 6, 10 and 14 you get to choose two more damage types from the list. Additionally, when you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from
+                        one ability score to another of your choice. Once you change a saving throw in this way, you can't do so again until you finish a long rest.
+       - Arcane Analyser: you learn to augment spells in a variety of ways. When you cast a spell with a spell slot, you can expend one additional spell slot to augment its effects for this casting, mixing the raw stuff of magic
+                          into your spell to amplify it. The effect depends on the spell slot you expend. An additional 1st-level spell slot can increase the spell's raw force. If you roll damage for the spell when you cast it, 
+                          increase the damage against one target of your choice by 2dl0 force damage. lfthe spell can deal damage on more than one turn, it deals this extra force damage only on the turn you cast the spell. An 
+                          additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it's range is tripled, or it becomes 1/4 of a mile (whichever is greater) An additional 3rd-
+                          level spell slot can increase the spell's potency. Increase the spell's save DC by 2 for one turn against all targets.          
 
     special-abilities:
     - Proficiencies: Arcana, History, Investigation, Religion, Persuasion, Insight, Deception    
