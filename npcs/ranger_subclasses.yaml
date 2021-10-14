@@ -680,3 +680,47 @@
                              Scripture of Faith: You and your allies gain temporary hit points equal to your level +your Wisdom modifier when you use this scripture.
        - Call To Grim: when you roll initiative and are not surprised, you can demand the last rites of your foes. Each hostile creature that you can see or hear you within 30 feet of you must make a Wisdom saving throw. If a 
                        creature fails its saving throw, its speed is reduced to 0 and it is frightened until the end of its next turn.
+                       
+                       
+                       
+   - - Drakewarden Conclave Abilities:
+       - Draconic Gift: The bond you share with your drake creates a deeper connection to dragon kind, granting you understanding and empowering your presence. You gain the following benefits
+                        - If you can’t already, you learn to speak, read, and write Draconic.
+                        - You learn the thaumaturgy cantrip, which is a ranger spell for you.
+       - Drake Companion: You can magically summon the drake bound to you. As an action, you can summon the drake, which appears in an unoccupied space of your choice that you can see within 30 feet of you. The drake is friendly
+                          to you and your companions and obeys your commands. See its game statistics in the Drake Companion stat block, which uses your proficiency bonus (PB) in several places. When you summon the drake, choose
+                          a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake such as its color, scale texture, or any visible effect of its Draconic Essence; your 
+                          choice has no effect on its game statistics. In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only 
+                          action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you 
+                          are incapacitated, the drake can take any action of its choice, not just Dodge. Once you summon the drake, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level
+                          or higher to summon it. The drake remains for a number of hours equal to your proficiency bonus, until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you 
+                          die. Anything the drake was wearing or carrying is left behind when the drake vanishes.
+                          Drake Companion:
+                          Small Dragon
+                          Armor Class: 14 + PB (natural armor)
+                          Hit Points: 5 + five times your ranger level (the drake has a number of hit dice [d10s] equal to your ranger level)
+                          Speed: 40ft.
+                          STR 16(+3) DEX 12(+1) CON 15(+2) INT 8(−1) WIS 14(+2) CHA 8(−1)    
+                          Saving Throws: Dex +1 plus PB, Wis +2 plus PB
+                          Damage Immunities: determined by the drake’s Draconic Essence trait
+                          Senses: darkvision 60 ft., passive Perception 12
+                          Languages: Draconic
+                          Challenge: Proficiency Bonus (PB) equals your bonus
+                          Draconic Essence: When you summon the drake, choose a damage type; acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity, the damage of its bite, and the damage 
+                                            of its Infused Strikes trait.
+                          Actions:
+                          Bite: Melee Weapon Attack; +3 plus PB to hit, reach 5ft., one target. Hit: 1d6 piercing damage plus PB damage of a type determined by the drake’s Draconic Essence.
+                          Reactions:
+                          Infused Strikes: When another creature within 30 feet of the drake that it can see hits with a weapon attack, the drake infuses the strike with its essence, causing the attack to deal an extra 1d6 
+                                           damage of the type determined by its Draconic Essence.
+       - Bond of Fang and Scale: The bond you share with your drake intensifies, protecting you and stoking the drake’s fury. While your drake is summoned, you and the drake gain the following benefits
+                                 - You gain resistance to the damage type chosen for the drake’s Draconic Essence.
+                                 - Choose one of the following; the drake gains a swimming speed of 40 feet and can breathe both air and water, or the drake grows wings and gains a flying speed of 40 feet.
+                                 - The drake’s bite attack deals an extra 1d6 damage of the type chosen for its Draconic Essence.
+       - Drakes Breath: As an action, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage. Each creature in the cone must make a Dexterity 
+                        saving throw against your spell save DC, taking 6d6 damage on a failed save, or half as much damage on a successful one. This damage increases to 8d6 when you reach 15th level in this class. Once you use 
+                        this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use it again.
+       - Perfected Bond: Your bond to your drake reaches the pinnacle of its power. While your drake is summoned, you and the drake gain the following benefits
+                         - The drake grows to Large size.
+                         - The drake’s bite attack deals an extra 1d6 damage of the type chosen for its Draconic Essence (for a total of 2d6 extra damage).
+                         - When either you or the drake takes damage while you’re within 30 feet of each other, you can use your reaction to give yourself or the drake resistance to that instance of damage.
