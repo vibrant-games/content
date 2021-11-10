@@ -93,6 +93,12 @@ metadata:
   #
   # Email address of the submitter.
   #
+  # WordPress to YAML conversion:
+  # Unfortunately I do not see the author email
+  # addresses anywhere in the export file.  :(
+  # I guess we decided it was not an important field.
+  # This was a pretty bad oversigh.  :(
+  #
   email: rigbyma@hotmail.com
 
   #
@@ -113,9 +119,7 @@ metadata:
   # Optional.
   #
   labels:
-  - label_template_1: TEMPLATE
-  - label_template_2: TEMPLATE
-  - label_template_3: TEMPLATE
+  - wordpress_id: 1006
 
   #
   # In future more metadata will likely be needed.
@@ -146,7 +150,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  image: TEMPLATE_McTEMPLATESON.jpg
+  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
 
   #
   # Race, class, etc.
@@ -217,7 +221,6 @@ npc:
     occupation:
     - Pirate
     
-
     #
     # D & D classes (case insensitive):
     # - civilian
@@ -295,9 +298,6 @@ npc:
     #
     # Optional.
     #
-    tendencies:
-    - N/A
-
 
     #
     # Languages the character speaks
@@ -314,7 +314,6 @@ npc:
     - Common
     - Orcish
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -340,7 +339,6 @@ npc:
       name: Possibly a Thieve's Guild
       role: Captain
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -364,7 +362,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A ship crashes out of the fog into the side of your boat, A large Half-Orc at the helm shouting "Prepare to Board!"
+    introduction: A ship crashes out of the fog into the side of your boat, A large Half-Orc at the helm shouting "Prepare to Board!"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +389,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  Prepare to be boarded. Well what kind of treats have we here mateys?, Feed them to the sharks!
+    expressions:  "Prepare to be boarded." "Well what kind of treats have we here mateys?", "Feed them to the sharks!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -440,9 +438,9 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: His real name is Wendell Smitty and he was born in a wealthy suburb
-       
-      
+    secrets: | 
+      His real name is Wendell Smitty and he was born in a wealthy suburb
+             
   #
   # The D & D stats block:
   # All integers.
@@ -466,7 +464,7 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
+    skills: |
    - - Half-Orc Abilities:
        - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
        - Menacing: gain proficiency in the Intimidation skill 
@@ -490,13 +488,13 @@ npc:
                   minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart. If you succeed on the check and the creature isn't hostile to you, 
                   it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.       
 
-    special-abilities:
+    special-abilities: |
     - Proficiencies: Persuasion; Medecine; Insight; Perception    
     attacks: |
       2 Attacks with his Cutlass or Knife
     combat-tactics: |
       Sneak Attacks when possible, but will go headlong into melee if forced
-    special-equipment:
+    special-equipment: |
     - Sailor's Ear Stud
     - Sailor's Earring
                                                                    
@@ -513,7 +511,6 @@ npc:
       Growing up in a wealthy port-side community, Doomsmith heard many stories about the audacious raids of local pirates. He thus became fascinated with pirates at an early age. His parents paid for yachting lessons for him 
       and encouraged hobby and role playing. When his parents died in a tragic carriage accident, Doomsmith cracked, stole a ship, renamed it "The Skurge" and headed out to see. He used what was left of his parents' monies to 
       recruit a loyal crew and head off to emulate his childhood hero's.  In the time since, he has developed a reputation for ruthlessness if not necessarily efficiency. He is definitely not fond of anyone calling his bluff.
-
       
     #
     # Personality (or something like that):
@@ -533,13 +530,10 @@ npc:
   # Optional.
   #
   uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
+  - wp:status: publish
+  - _yoast_wpseo_focuskeywords: []
+  - _yoast_wpseo_keywordsynonyms: [""]
+  - _wp_page_template: default
 #
 # ...Multiple NPCs can be included in one file,
 # separated by --- dividers...
