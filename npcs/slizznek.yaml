@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-13 14:21:03
+  date: "2021-07-30"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1475
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: other (you will be asked to specify)
+    race: Lizardfolk
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -150,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    occupation:
-    - Dockworker
+    - Dock Worker
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: civilian / commoner
+    class: Civilian
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: N/A
 
     #
     # Class level.
@@ -183,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 
+    level: 0
 
     #
     # Alignments (case insensitive):
@@ -199,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -207,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -224,6 +313,7 @@ npc:
     - Draconic
     - Aquan
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -235,24 +325,27 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: his_tribe
       name: His Tribe
     - id: thieve_s_guild
-      name: Thieve's Guild
+      name: Thieve's Guil
+
 
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Dull-Witted   
+    - Hard-Working
+    - Unpleasant
 
   improv:
 
@@ -267,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. "Outta da way, softskin!"
+    introduction:  A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. "Outta da way, softskin!"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -294,7 +387,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "Y'all softskins don't know how to live", "Gotta get my work done, it's almost time to eat"
+    expressions:  "Y'all softskins don't know how to live", "Gotta get my work done, it's almost time to eat"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -318,7 +411,7 @@ npc:
     #
     motivations: |
       Food
-
+      
     #
     # Passions:
     #
@@ -327,7 +420,7 @@ npc:
     #
     passions: |
       also food
-
+      
     #
     # Vulnerabilities:
     #
@@ -336,16 +429,17 @@ npc:
     #
     vulnerabilities: |
       He's not very smart
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets: | 
       he occasionally helps smuggle goods passed port officials
-
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -358,8 +452,8 @@ npc:
     dex: 11
     con: 17
     int: 9
-    wis: 14
-    cha: 8
+    wis: 8
+    cha: 14
 
   #
   # Special characteristics.
@@ -369,22 +463,33 @@ npc:
   # ???Max length???
   #
   specialties:
-    special-abilities: |
-      Lizardfolk Traits:
-      Bite
-      Cunning Artisan
-      Hold Breath
-      Hunter's Lore
-      Natural Armor
-      Hungry Jaws
-      Tail
+    skills: 
+
+   - - Lizardfolk Abilities:
+        - Bite: Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an 
+                unarmed strike.
+        - Cunning Artisan: As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items: a shield, a 
+                           club, a javelin, or 1d4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools.
+        - Hold Breath: You can hold your breath for up to 15 minutes at a time.
+        - Hunters Lore: You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth, and Survival.
+        - Natural Armor: You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower
+                         AC. A shield's benefits apply as normal while you use your natural armor.
+        - Hungry Jaws: In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit
+                       points (minimum of 1) equal to your Constitution modifier, and you can't use this trait again until you finish a short or long rest.
+        
+       
+    special-abilities:
+       - Proficiencies: Athletics, Survival, Intimidation, Deception
+       - Feats: N/A
+       
     attacks: |
-      Bite and Claws
-      |
-      Club
+      1 attack with bite, claw or club
     combat-tactics: |
       He's not keen to fight, but he won't go out of his way to avoid one. He's not much on tactics, he'll claw, bite and slash with his tale until he wins or loses
-
+    special-equipment:
+    - A Lucky Rabbit's Foot from a rabbit he once ate. Lets him reroll 1 saving throw of his choice per long rest
+    
+    
   profile:
 
     #
@@ -395,8 +500,14 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      The swamp community that Slizz'nek lives in has become an important port city at a river delta  bordering a large lake between nation-states, much to the chagrin of the local lizardfolk population. But as always, his tribe adapts. Taking a job on the docks to show the "softskins" what a "real male" is.  He's gruff, uncultured and temperamental, but he works hard and makes enough to afford all of the food that he can eat. Not being terribly bright and generally having a disrespect the government that has overtaken his lands, he can easily be bribed to help out with smuggling operations at the docks
+     The swamp community that Slizz'nek lives in has become an important port city at a river delta  bordering a large lake between nation-states, much to the chagrin of the local lizardfolk population. But as always, his tribe
+     adapts. Taking a job on the docks to show the "softskins" what a "real male" is.  He's gruff, uncultured and temperamental, but he works hard and makes enough to afford all of the food that he can eat. Not being terribly
+     bright and generally having a disrespect the government that has overtaken his lands, he can easily be bribed to help out with smuggling operations at the docks
 
+
+
+
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -405,7 +516,11 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Slizz'nek isn't the smartest guy on the docks, but he's not afraid of a day's hard labor. He's gruf and hot-tempered and very much a traditionalist of lizardfolk culture. He doesn't like outsiders and thinks of other races
+     as softskins of fleshbags and sees them as a potential meal somewhere down the line. But in the meantime, he's a survivor, so he keeps his head down and does his job. Now and then, he'll make a little extra cash to turn a
+     blind eye to some of the illegal activities that go on down at the docks
+     
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -414,8 +529,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - other: Lizardfolk
-  - _wp_old_date: 2021-02-12
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

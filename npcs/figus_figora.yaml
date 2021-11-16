@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-28 00:54:47
+  date: "2021-05-25"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 995
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: triton
+    race: Triton
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -152,6 +216,7 @@ npc:
     #
     occupation:
     - Researcher
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +239,30 @@ npc:
     #
     # Required.
     #
-    class: wizard
+    class: Wizard
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: School of Evocation
 
     #
     # Class level.
@@ -183,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 
+    level: 5
 
     #
     # Alignments (case insensitive):
@@ -199,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful good
+    alignment: Lawful Good
 
     #
     # Alignment tendencies:
@@ -207,6 +295,9 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+    - N/A
+
 
     #
     # Languages the character speaks
@@ -219,10 +310,11 @@ npc:
     #
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
-    languages:
     - Aquan
     - Primordial
-    - Draconic and Celestial
+    - Draconic 
+    - Celestial
+
 
     #
     # Factions:
@@ -235,13 +327,14 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
+    factions:
+    - N/A
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -250,6 +343,8 @@ npc:
     #
     adjectives:
     - Foolhardy
+    - Pompous
+    - Kinetic    
 
   improv:
 
@@ -264,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: Wants some assistance in researching obscure lore. He approaches the party to ask them to visit a distant location or library.
+    introduction:  Wants some assistance in researching obscure lore. He approaches the party to ask them to visit a distant location or library.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -275,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   He is a bald triton with teal skin, he has a crab familiar.
+    appearance:   He is a bald triton with teal skin, he has a crab familiar
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -314,8 +409,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      He likes to research obscure knowledge and magics to help civilization grow.
-
+      He likes to research obscure knowledge and magics to help civilization grow
+      
     #
     # Passions:
     #
@@ -323,8 +418,8 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      He loves books, but also loves fire and is a pyromaniac Triton. He constantly tries to reconcile these.
-
+      He loves books, but also loves fire and is a pyromaniac Triton. He constantly tries to reconcile these
+      
     #
     # Vulnerabilities:
     #
@@ -332,17 +427,18 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      He is obsessed with knowledge and will put himself in danger to obtain it, without clearly thinking of the consequences.
-
+      He is obsessed with knowledge and will put himself in danger to obtain it, without clearly thinking of the consequences
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets: | 
       Obscure knowledge and magicks
-
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -350,7 +446,7 @@ npc:
   stats:
     armour-class: 10
     hit-points: 37
-    speed: 30
+    speed: 30 walking / 30 Swimming
     str: 8
     dex: 10
     con: 16
@@ -366,23 +462,38 @@ npc:
   # ???Max length???
   #
   specialties:
-    special-abilities: |
-      Evocation Wizard
-      |
-      N/A
-      |
-      N/A
-      |
-      N/A
-      |
-      Pyromaniac (elemental adept-fire)
-    attacks: |
-      Firebolt
-      |
-      Scorching Ray
-    special-equipment:
-    - None
+    skills:
+   - - Triton Abilities:
+       - Amphibious: You can breathe air and water           
+       - Control Air and Water: A child of the sea, you can call on the magic of elemental air and water. You can cast Fog Cloud with this trait. Starting at 3rd level, you can cast Gust of Wind with it
+       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray
+       - Emissary of the Sea:  Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though you have
+                               no special ability to understand them in return.
+       - Guardians of the Depths: Adapted to even the most extreme ocean depths, you have resistance to cold damage
 
+   - - Wizard Abilities:
+         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level			  
+         - Spellcasting: DC 15
+            Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
+            1st Level: Burning Hands, Magic Missle, Mage Armor, Sleep
+            2nd Level: Continual Flame, Scorching Ray, Hold Person
+            3rd Level: Counterspell, Fireball
+
+   - - School of Evocation Abilities:
+         - Evocation Savant: the gold and time you must spend to copy an Evocation spell into Your Spellbook is halved
+         - Sculpt Spells: you can create pockets of relative safety within the Effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them
+                          equal to 1 + the spell’s level. The chosen creatures automatically succeed on their Saving Throws against the spell, and they take no damage if they would normally take half damage on a successful
+                          save         
+       
+    special-abilities:
+    - Proficiencies: Investigation, Arcana, History   
+    attacks: |
+      1 spell attack
+    combat-tactics: |
+      Fire!!!
+    special-equipment:
+    - N/A 
+                                                                   
   profile:
 
     #
@@ -393,8 +504,11 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      He grew up in a Triton city and lived there until his early teens, when he accompanied a team to dry land for the first time. There he saw a firestorm and while the other Tritons avoided it, he felt irresistibly drawn to it and has loved fire since. However, he once accidentally burned a valuable book while playing with the fire and is constantly looking for ways to feed his pyromaniac self while not burning any books and avoiding the natural uncomfortable feeling that most Tritons have around fire.
+      He grew up in a Triton city and lived there until his early teens, when he accompanied a team to dry land for the first time. There he saw a firestorm and while the other Tritons avoided it, he felt irresistibly drawn to
+      it and has loved fire since. However, he once accidentally burned a valuable book while playing with the fire and is constantly looking for ways to feed his pyromaniac self while not burning any books and avoiding the
+      natural uncomfortable feeling that most Tritons have around fire.
 
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -403,7 +517,8 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+      He is a bald triton with teal skin, he has a crab familiar
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -412,6 +527,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

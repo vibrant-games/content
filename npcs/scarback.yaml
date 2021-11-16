@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-28 00:54:41
+  date: "2021-07-30"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 966
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -101,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle-aged
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: half-ogre
+    race: Half-Ogre
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -150,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    occupation:
     - Performer
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: barbarian
+    class: Barbarian
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Path of the Beast
 
     #
     # Class level.
@@ -183,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 5
+    level: 6
 
     #
     # Alignments (case insensitive):
@@ -199,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful neutral
+    alignment: Lawful Neutral
 
     #
     # Alignment tendencies:
@@ -207,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -222,8 +311,9 @@ npc:
     languages:
     - Orcish
     - Goblin
-    - Ogre
+    - Giant
     - Common
+
 
     #
     # Factions:
@@ -236,13 +326,14 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
+    - N/A
+
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -250,7 +341,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Looming
+    - Caring   
+    - Delusional
+    - Drunk
 
   improv:
 
@@ -265,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: Might be found wandering a town or city calling, "Bodius..? Ohhh, Bodius? Where have you gone dear friend?"; Scarback has a serious drinking problem and is renown at local pubs - having lots of good acquaintances;
+    introduction:  Might be found wandering a town or city calling, "Bodius..? Ohhh, Bodius? Where have you gone dear friend?"; Scarback has a serious drinking problem and is renown at local pubs - having lots of good acquaintances
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -292,7 +385,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "Go get good at stuff"; "Bodius says Migrug does good"; "I can break stuff and break it again"
+    expressions:  "Go get good at stuff"; "Bodius says Migrug does good"; "I can break stuff and break it again"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -316,7 +409,7 @@ npc:
     #
     motivations: |
       Almost a result of cognitive dissonance, Scarback ardently seeks to convince others that his old peformance partner, Bodius, is missing and that he needs help to find her.
-
+      
     #
     # Passions:
     #
@@ -325,33 +418,36 @@ npc:
     #
     passions: |
       Bodius, his elven performance colleague of the past - he is always referring to her even though she is supposedly long dead
-
+      
     #
     # Vulnerabilities:
     #
     # Required.
     # ???Maximum length???
     #
-
+    vulnerabilities: |
+      Is a raging drunk
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets: | 
       Keeps Bodius in a locked chest where he feeds her and keeps her alive - his most prized possession.
-
+       
+      
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 11
-    hit-points: 53
-    speed: 30
-    str: 19
-    dex: 9
+    armour-class: 16
+    hit-points: 68
+    speed: 40
+    str: 20
+    dex: 14
     con: 18
     int: 7
     wis: 8
@@ -365,21 +461,56 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Smithing; Strength; Survival; Athletics
-    special-abilities: |
-      Unarmored Defense
-      |
-      Stone's Endurance. Scarback can focus himself to occasionally shrug off injury. When he takes damage, he can use his reaction to roll a d12. Add hisConstitution modifier to the number rolled, and reduce the damage by that total. After he uses this trait, he can’t use it again until you finish a short or long rest.
-      |
-      Rage
+    skills: 
+
+   - - Half-Ogre Abilities:
+        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+        - Strong and Angry: Due to your giant size and insane strength, using great weapons tends to be really easy for you. You gain proficiency with the greataxe and the maul.
+        - Relentless Power: Nothing can stop your imense strength. When you roll a critical hit with a melee weapon, you can roll one of the weapon dice again and add it to the total.
+        - Unstoppable Destruction: Your size and strength are unmatched. If you hit an enemy with an attack with a two-handed melee weapon, you can use your bonus action to attack one adjacent enemy within 5ft from you and the
+                                   enemy you first hit with your two-handed melee weapon, though the second attack is rolled with disadvantage.
+        - Frightful Appearance: Due to your sheer size, you would put the braves to run. You gain proficiency in the Intimidation skill.
+        - Bloodrage: Your blood becomes filled with your anger. Once per long rest, with a bonus action, you may raise your Strength score by 4 for 1 minute. When the Bloodrage ceases, you get a minus 4 in your Intelligence
+                     score untill you finish a short or long rest.
+
+   - - Barbarian Abilities:
+         - Rage: Can enter a rage as a Bonus Action. 
+            - have advantage on Strength Checks and Strength Saving Throws.
+            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+            - Resistance to bludgeoning, piercing, and slashing damage          
+         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                            but Attack Rolls against him have advantage until his next turn
+         - Extra Attack: Can attack twice each turn	
+         - Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor. 
+
+   - - Path of the Beast Abilities:
+         - Form of the Beast: when you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your 
+                              Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon’s form each time you rage - 
+                              - Bite: Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you
+                                      regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
+                              - Claws: Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using
+                                       the Attack action, you can make one additional claw attack as part of the same action.
+                              - Tail: You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use
+                                      your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you
+         - Bestial Soul: the feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You
+                         can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest
+                         - You gain a swimming speed equal to your walking speed, and you can breathe underwater.
+                         - You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+                         - When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.        
+      
+    special-abilities:
+       - Proficiencies: Athletics, Intimidation, Survival
+       - Feats: Great Weapons Master
+       
     attacks: |
-      Great Axe
-      |
-      Javelin
+      1 attack with Great Axe or Javelins
     combat-tactics: |
       Scarback is fearless. He will almost always begin any combat by entering a rage and attacking the most powerful appearing foe.
-
+    special-equipment:
+    - Great Axe
+    - 3 Javelins
+      
   profile:
 
     #
@@ -390,8 +521,20 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      <p>When the village of Everskinnis [Any Elven village] was raided by Ogres and goblinoids, the inevitable results of the plunder and pillage was that the ravaged female escapees would birth half-breeds. Relima Haas, a young woman and former wife of a fine hunter who fell in the raids, was among these poor women. The gestation period was more than draining and the birth fatal. Scarback was born.</p><p>Scavenging for food and other sustenance and forced to reform their beliefs and direction, the camp of survivors raised Scarback in the wilderness. He learned to value the spirits of the wild beasts and flora. He also learned the value of connecting with the rage he felt over the abuses imparted upon his mother and her now scattered community of hunters.</p><p>A small portion of these survivors refused to live in survival-mode and instead departed together to seek a better life. Scarback followed. The 5 departees were the smarter and more talented of the group. One of these departees was a beautiful young elven woman named Bodius towards whom Scarback took a serious liking.</p><p>Traveling village to village, they would perform feats of strength and agility for coins to wrangle up food or drink. In time, they came to be known as an entertaining side-show. On one fateful night, the group encountered a particularly vicious pack of gnolls. Scarback fought valiantly while most of the group were slain. The gnolls plundered what they could and fled while Scarback was left tending to a seriously wounded Bodius with tears in his eyes.</p><p>"Scarback love pretty elf-lady", he lamented.</p><p>He tucked Bodius in the group's steamer chest and gently fed her, gave her water, and tended to her wounds as he made his way to the nearest township. Upon next opening the steamer, Bodius was somewhat recovered and attempted to get out.</p><p>"No. Elf lady not safe", Scarback proclaimed as he knocked her out with a back hand. He tied her up securely, stuffed cloth in her mouth, and closed the chest, determined to keep Bodius safe from harm. Yet, that same day, when he made his way through town his mind encountered a serious psychological schism; he couldn't accept what he'd done and immediately began searching for Bodius. At the same time he has an inexorable bond with his steamer trunk. Twice daily, in private, he will check on his belongings and only then recognize that Bodius remains in the chest. He will feed her and provide her water, only to Bind and gag her and lock the steamer back up.</p>
+     When the village of Everskinnis [Any Elven village] was raided by Ogres and goblinoids, the inevitable results of the plunder and pillage was that the ravaged female escapees would birth half-breeds. Relima Haas, a young
+     woman and former wife of a fine hunter who fell in the raids, was among these poor women. The gestation period was more than draining and the birth fatal. Scarback was born. Scavenging for food and other sustenance
+     and forced to reform their beliefs and direction, the camp of survivors raised Scarback in the wilderness. He learned to value the spirits of the wild beasts and flora. He also learned the value of connecting with the rage
+     he felt over the abuses imparted upon his mother and her now scattered community of hunters. A small portion of these survivors refused to live in survival-mode and instead departed together to seek a better life.
+     Scarback followed. The 5 departees were the smarter and more talented of the group. One of these departees was a beautiful young elven woman named Bodius towards whom Scarback took a serious liking. Traveling village to
+     village, they would perform feats of strength and agility for coins to wrangle up food or drink. In time, they came to be known as an entertaining side-show. On one fateful night, the group encountered a particularly
+     vicious pack of gnolls. Scarback fought valiantly while most of the group were slain. The gnolls plundered what they could and fled while Scarback was left tending to a seriously wounded Bodius with tears in his eyes.
+     "Scarback love pretty elf-lady", he lamented. He tucked Bodius in the group's steamer chest and gently fed her, gave her water, and tended to her wounds as he made his way to the nearest township. Upon next opening the
+     steamer, Bodius was somewhat recovered and attempted to get out. "No. Elf lady not safe", Scarback proclaimed as he knocked her out with a back hand. He tied her up securely, stuffed cloth in her mouth, and closed the
+     chest, determined to keep Bodius safe from harm. Yet, that same day, when he made his way through town his mind encountered a serious psychological schism; he couldn't accept what he'd done and immediately began searching
+     for Bodius. At the same time he has an inexorable bond with his steamer trunk. Twice daily, in private, he will check on his belongings and only then recognize that Bodius remains in the chest. He will feed her and provide
+     her water, only to Bind and gag her and lock the steamer back up.
 
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -400,7 +543,11 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Scarback is a conflicted being. A behemoth with deminished mental capacity, his poor fracured mind cannot deal with the reality of his situation. He loves and cares so deeply for Bodius that he does not want any more harm
+     to come to her. But in his zeal to protector her, he has denied her comfort and freedom. At the same time, a combination of massive amounts of alcohol and the power of self-denial, he mostly dissociates his mind from the
+     torture that he has actually perpetrated upon her. The drunker her gets, the more he wanders and laments his "lost" love despite her being, however unwillingly, by his side the whole time
+     
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -409,7 +556,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_keywordsynonyms: [""]
-  - _yoast_wpseo_focuskeywords: []
-  - ful-picture: 1272
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

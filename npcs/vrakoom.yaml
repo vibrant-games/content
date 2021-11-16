@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-13 14:21:28
+  date: "2021-08-11"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1511
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: other (you will be asked to specify)
+    race: Loxodon
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -149,9 +213,9 @@ npc:
     #
     # Required.
     # Max length per occupation: ...
-    #
     occupation:
     - Priest
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: cleric
+    class: Cleric
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Life Domain
 
     #
     # Class level.
@@ -199,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful good
+    alignment: Lawful Good
 
     #
     # Alignment tendencies:
@@ -207,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -222,6 +311,8 @@ npc:
     languages:
     - Common
     - Loxodon
+    - Elvish
+
 
     #
     # Factions:
@@ -234,8 +325,7 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
@@ -245,11 +335,16 @@ npc:
     - id: selesnya_conclave
       name: Selesnya Conclave
 
+
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Pious   
+    - Generous
+    - Caring
 
   improv:
 
@@ -264,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: The massive priest slowly approaches across the temple floor "Blessings be upon you my children, how mat I help?"
+    introduction:  The massive priest slowly approaches across the temple floor "Blessings be upon you my children, how mat I help?"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -291,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "Trostani's light be upon you", "May peace guide your way"
+    expressions:  "Trostani's light be upon you", "May peace guide your way"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -304,7 +399,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   regularly flaps his large ears
+    mannerisms:    regularly flaps his large ears
 
   acting:
     #
@@ -315,7 +410,7 @@ npc:
     #
     motivations: |
       Helping his community, Spreading the word of peace and light
-
+      
     #
     # Passions:
     #
@@ -324,7 +419,7 @@ npc:
     #
     passions: |
       Religious knowledge
-
+      
     #
     # Vulnerabilities:
     #
@@ -333,14 +428,17 @@ npc:
     #
     vulnerabilities: |
       Overthinks and can be slow to act
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-
+    secrets: | 
+      He some of the secrets of The Conclave
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -351,9 +449,9 @@ npc:
     speed: 30
     str: 18
     dex: 12
-    con: 19
+    con: 18
     int: 13
-    wis: 18
+    wis: 19
     cha: 11
 
   #
@@ -364,42 +462,55 @@ npc:
   # ???Max length???
   #
   specialties:
-    special-abilities: |
-      Loxodon Traits:
-      Powerful Build
-      Loxodon Bravery
-      Natural Armor
-      Mason's Proficiency
-      Stonecunning
-      Keen Smell
-      |
-      Cleric Traits:
-      Cleric Spellcasting
-      Domain of Life
-      Channel Divinity
-      Destroy Undead
-      |
-      Life Domain Traits:
-      Heavy Armor Proficiency
-      Disciple of Life
-      Preserve Life
-      Blessed Healer
-      Divine Strike
-      |
-      Great Weapon Master
-      Healer
-      Durable
-      Sentinel
-      Shield Master
+    skills: 
+
+   - - Loxodon Abilities:
+        - Loxodon Serenity: You have advantage on saving throws against being charmed or frightened.
+        - Natural Armor: You have thick, leathery skin. When you aren't wearing armor, your AC is 12 +your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a 
+                         lower AC. A shield's benefits apply as normal while you use your natural armor.
+        - Trunk: You can grasp things with your trunk, and you can use it as a snorkel. lt has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following 
+                 simple tasks - lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to 
+                 that list of options. Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.
+        - Keen Smell: Thanks to your sensitive trunk, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell
+
+   - - Cleric Abilities:
+       - Spellcasting: Spell DC 15
+         Cantrips: Decompose, Guidance, Light, Spare the Dying, 
+         1st Level: Create/Destroy Water, Detect Evil and Good, Detect Magic, Purify Food and Drink 
+         2nd Level: Calm Emotion, Gentle Repose, Prayer of Healing
+         3rd Level: Mass Healing Word, Dispel Magic, Spirit Guardians
+         4th Level: Arua of Life, Banishment
+       - Channel Divinity: Turn Undead, Destroy Undead
+       
+   - - Cleric Abilities:
+       - Spellcasting: Spell DC 15 
+         1st Level: Bless, Cure Wounds
+         3rd Level: Lesser Restoration, Spiritual Weapon
+         5th Level: Beacon of Hope, Revivify
+         7th Level: Death Ward, Guardian of Faith
+       - Disciple of Life: your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to Restore Hit Points to a creature, the creature regains additional Hit Points equal to 2 + the spell’s level
+       - Channel Divinity: Preserve Life - you can use your Channel Divinity to heal the badly injured. As an action, you present your holy Symbol and evoke Healing energy that can restore a number of Hit Points equal to five 
+                                           times your Cleric level. Choose any creatures within 30 feet of you, and divide those Hit Points among them. This feature can restore a creature to no more than half of its hit point 
+                                           maximum. You can’t use this feature on an Undead or a Construct.
+       - Blessed Healer: the Healing Spells you cast on others heal you as well. When you Cast a Spell of 1st level or higher that restores Hit Points to a creature other than you, you regain Hit Points equal to 2 + the spell’s
+                         level.
+       - Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon Attack, you can cause the Attack to deal an extra 1d8 radiant damage
+                        to the target. When you reach 14th level, the extra damage increases to 2d8.
+       
+    special-abilities:
+       - Proficiencies: Perception, Insight, Medicine, Arcana, Heavy Armor
+       - Feats: Great Weapons Master, Healer, Durable, Sentinal, Shield Master
+       
     attacks: |
-      Great Maul
-      |
-      Cleric Spells
+      1 attack with Siege Breaker Great Maul or spell attack
     combat-tactics: |
       He will fight with his maul, shield and trunk, but he is much more focused on supporting and healing those around him
-    special-equipment:
-    - Sentinel Shield
-
+    special-equipment:      
+    - Sentinel Shield: While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.
+    - Siege Breaker Maul: +1 bonus to attack and damage rolls made with this magic weapon. In addition, when you hit an object with a siege breaker, you deal an additional 2d4 bludgeoning damage. You also have advantage on 
+                          Strength checks made to break open doors while wielding this weapon    
+    
+    
   profile:
 
     #
@@ -410,9 +521,10 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Vrakoom's family has a long tradition of serving as clerics of the Selesnya Conclave and started his training at a young age. Growing up in the light of Trostani, he is a true believer and has strong faith in the teachings of the conclave. These teachings are where he derive's his power. 
-      Large, even for a loxodon, he was groomed as a front line healer and has seen his fair share of battles for his young age (about 70 years old), mostly against Gruul raids, but also during the War of the Spark. As a result, he is as competent with a a mace and shield as he is with a healing hand
-
+     Vrakoom's family has a long tradition of serving as clerics of the Selesnya Conclave and started his training at a young age. Growing up in the light of Trostani, he is a true believer and has strong faith in the teachings
+     of the conclave. These teachings are where he derive's his power. Large, even for a loxodon, he was groomed as a front line healer and has seen his fair share of battles for his young age (about 70 years old), mostly
+     against Gruul raids, but also during the War of the Spark. As a result, he is as competent with his maul and shield as he is with a healing hand
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -421,7 +533,11 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Vrakoom is a wise and pious young man. He has spent his life devoted to the conclave and their tenets. He prefers the peace of the conclave and studying history, medicine and arcana, but because of his skill and imposing
+     size, he's spent a fair amount of time in combat situations. He prefers to funstion as more of a combat medic in those situations but he can certainly do a lot of damage with his maul if he needs to. He is very laid back
+     and generous, but he's not the biggest people person, prefering his books to conversation.
+     
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -430,8 +546,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - other: Loxodon
-  - _wp_old_date: 2021-02-12
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

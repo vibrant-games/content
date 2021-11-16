@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-13 14:19:56
+  date: "2021-07-10"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1473
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -152,6 +216,7 @@ npc:
     #
     occupation:
     - Adventurer
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +239,30 @@ npc:
     #
     # Required.
     #
-    class: monk
+    class: Monk
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Way of the Shadow
 
     #
     # Class level.
@@ -199,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic good
+    alignment: Chaotic Good
 
     #
     # Alignment tendencies:
@@ -207,6 +295,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -223,6 +313,7 @@ npc:
     - Common
     - Kor
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -234,24 +325,27 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: seagate_adventurer_s_guild
       name: Seagate Adventurer's Guild
     - id: kor_clan
       name: Kor Clan
+
 
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Bold 
+    - Confident
+    - Haunted
 
   improv:
 
@@ -266,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A tall wiry woman crosses the Seagate Adventurer's Guild, "I understand you need a guide the Umara River Gorge
+    introduction:  A tall wiry woman crosses the Seagate Adventurer's Guild, "I understand you need a guide the Umara River Gorge
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -293,7 +387,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "You can stick to the hedrons, I'm taking the Red Route"
+    expressions:  "You can stick to the hedrons, I'm taking the Red Route"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -317,7 +411,7 @@ npc:
     #
     motivations: |
       Adventure and reward
-
+      
     #
     # Passions:
     #
@@ -326,7 +420,7 @@ npc:
     #
     passions: |
       Her family and clan
-
+      
     #
     # Vulnerabilities:
     #
@@ -335,16 +429,17 @@ npc:
     #
     vulnerabilities: |
       Her pride and ego. She's overly self-sufficient and has a difficult time trusting new people
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets: | 
       She knows many secret paths through regions that are otherwise impassable
-
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -352,7 +447,7 @@ npc:
   stats:
     armour-class: 18
     hit-points: 66
-    speed: 40
+    speed: 55
     str: 16
     dex: 19
     con: 13
@@ -368,41 +463,50 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - She is an expert in the skill/art of Kor Line-Slinging with a +6 to line-slinging Dex roles
-    special-abilities: |
-      Kor Traints:
-      Kor Climbing
-      Lucky
-      Brave
-      |
-      Monk Traits:
-      Unarmored Defense
-      Martial Arts
-      Ki - 6 points
-      Unarmored Movement
-      Dedicated Weapon
-      Deflect Missiles
-      Ki-Fueled Attack
-      Slow Fall
-      Quickened Healing
-      Extra Attack
-      Stunning Strike
-      Focused Aim
-      Ki-Empowered Strike
-      |
-      Way of the Shadow:
-      Shadow Arts
-      Shadow Step
-    attacks: |
-      Line-Slinging Hooks
-      |
-      Quarter Staff
-    combat-tactics: |
-      She will generally fight with her hook lines much like a whip to keep her distance. But she is also and exceptional hand-to-hand fighter as well
-    special-equipment:
-    - +2 Line-Slinging Hooks that give advantage on Line-slinging roles
+    skills:       
 
+   - - Kor Abilities:
+       - Kor Climbing: You are proficient in both the Athletics and Acrobatics skills.
+       - Lucky: When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
+       - Brave: You have advantage on saving throws against being frightened.
+
+   - - Monk Abilities:
+       - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
+       - Martial Arts:
+          - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+          - Can roll a 1d6 in place of normal damage for unarmed strikes and monk weapons
+          - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+       - Ki: 6 Ki Points, Ki DC = 15 
+          - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+          - Step of the Wind:Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
+       - Unarmored Movement: Speed is increased by 15. Can move along vertical surfaces and across liquids without falling during the move 
+       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+                          free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+       - Slow Fall: Can us a Reaction to falling damage by by 85hp
+       - Extra Attack: Can Attack twice per turn
+       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+       - Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+       
+   - - Way of the Shadows Abilities:
+       - Shadow Arts: you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast Darkness, Darkvision, Pass without Trace, or Silence, without providing material components.
+                      Additionally, you gain the Minor Illusion cantrip if you don't already know it
+       - Shadow Step: you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim
+                      light or darkness. You then have advantage on the first melee attack you make before the end of the turn
+   
+               
+    special-abilities:
+       - Proficiencies: Nature, Survival, Acrobatics, Athletics, Perception, Intimidation
+       - Feats: Athelete, Mobile       
+       - She is an expert in the skill/art of Kor Line-Slinging with a +6 to line-slinging Dex roles
+     
+    attacks: |
+      2 attack with Line-Slinging Hooks, Quaterstaff or Unarmed Strike
+    combat-tactics: |
+      She will generally fight with her hook lines much like a chain-blade to keep her distance. But she is also and exceptional hand-to-hand fighter as well
+    special-equipment:
+       - +2 Line-Slinging Hooks that give advantage on Line-slinging roles   
+      
   profile:
 
     #
@@ -413,8 +517,14 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      A well-traveled adventurer, guide and line-slinger, Nahkirin knows the canyons and mountains of Zendikar like the back of her hand. Like most Zendikari who lived through the Eldrazi war, she has been to hell and back and has the scars to prove it. Having lost so much and so many, she is reluctant let anyone new into her life. Between her adventuring and the war, she has found many passes through places that few have ever found their way through and marked the trails in her clan colors. She is an expert guide and always happy to get out of Seagate into the wilderness, even if it means guiding strangers to their destination. Before the war, she was a follower of the goddess Kamsa and a member of her order, but the likeness of her goddess now bares to much of a resemblance to the Eldrazi Titans for her to have any faith left. She has abandoned her order but still maintains the skills she has learned and has translated them into her daily life as a guide and adventurer
+     A well-traveled adventurer, guide and line-slinger, Nahkirin knows the canyons and mountains of Zendikar like the back of her hand. Like most Zendikari who lived through the Eldrazi war, she has been to hell and back and
+     has the scars to prove it. Having lost so much and so many, she is reluctant to let anyone new into her life. Between her adventuring and the war, she has found many passes through places that few have ever found their way
+     through and marked the trails in her clan colors. She is an expert guide and always happy to get out of Seagate into the wilderness, even if it means guiding strangers to their destination. Before the war, she was a
+     follower of the goddess Kamsa and a member of her order, but the likeness of her goddess now bares to much of a resemblance to the Eldrazi Titans for her to have any faith left. She has abandoned her order but still
+     maintains the skills she has learned and has translated them into her daily life as a guide and adventurer
 
+
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -423,7 +533,10 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+      Nahkirin lives a life of adventure. She much prefers the wildness of the wilderness to the confines of civilization. The more adventure the better, whatever it takes to keep her mind off of everything shes been through.
+      She is exceptionally skilled at climbing and the traditional Kor skill of Line-Slinging, is very proud of her skill and will not hesitate to brag about her prowess. She is generally not keen on people and will avoid making
+      attachments as much as possible. She has lost faith in her order. She does her best to hide it, but she is definitely haunted by the things she saw and did during the war
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -432,8 +545,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - other: Kor
-  - _wp_old_date: 2021-02-11
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

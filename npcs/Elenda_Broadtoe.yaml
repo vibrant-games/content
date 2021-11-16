@@ -1,0 +1,558 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: Elenda_Broadtoe
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-05-25"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Elenda Broadtoe
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: middle-aged adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Halfling
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Lightfoot
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: she/her
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Tavern Owner, Bartender, Entertainer
+    
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Bard
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: College of Eloquence
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 6
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Good
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Halfling
+
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: chamber_of_commerce
+      name: Chamber of Commerce
+    - id: thieve_s_guild
+      name: Thieve's Guild
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Congenial
+    - Shifty    
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  A pretty halfling takes the stage in the pub. "Welcome to my fine tavern. I'm gonna play a couple songs for you tonight
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Short and pretty with long brown hair tied in braided circle. Wearing a loose-fitting silk blouse and leather pants
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "I learned this ditty from back home". "Enjoy our hospitality, and tip your servers well"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Almost skips as she walks. Talks with her hands
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Enjoys entertaining and helping others enjoy themselves
+      
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Music, art and strong wine
+      
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      She's been known to have a few too many drinks and make bad decisions
+      
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: | 
+      She's pretty knowledgeable about everything going on around town
+       
+      
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 12
+    hit-points: 38
+    speed: 25
+    str: 12
+    dex: 12
+    con: 14
+    int: 13
+    wis: 14
+    cha: 18
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+   - - Halfling Abilities:
+       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+       - Brave: Has advantage on Saving Throws against being Frightened 
+       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+                       
+   - - Lightfoot Abilities:
+       - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
+                       
+   - - Bard Abilities:
+       - Bard Spellcasting: Spell DC 16
+           Cantrip: Mage Hand, Vicious Mockery, Minor Illusion, Dancing Lights
+           1st Level: Charm Person, Faerie Fire, Tasha's Hideous Laughter, Disguise Self 
+           2nd Level: Enthrall, Heat Metal, Invisibility
+           3rd Level: Hypnotic Pattern, Tongues, Major Image
+       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
+                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                       being Frightened or Charmed
+ 
+   - - College of Eloquence Abilities:
+       - Silver Tongue: you are a master at saying the right thing at the right time. When you make a Charisma (Persuasion) or Charisma (Deception) check, you can treat a d20 roll of 9 or lower as a 10 
+       - Unsettling Words: you can spin words laced with magic that unsettle a creature and cause it to doubt itself. As a bonus action, you can expend one use of your Bardic Inspiration and choose one creature you can see
+                           within 60 feet of you. Roll the Bardic Inspiration die. The creature must subtract the number rolled from the next saving throw it makes before the start of your next turn
+       - Unfailing Inspiration: your inspiring words are so persuasive that others feel driven to succeed. When a creature adds one of your Bardic Inspiration dice to its ability check, attack roll, or saving throw and the roll
+                                fails, the creature can keep the Bardic Inspiration die       
+       
+    special-abilities:
+    - Proficiencies: Persuasion, Deception, Insight   
+    attacks: |
+      1 attack with short sword
+    combat-tactics: |
+      She's a lover not a fights and will try to charm away situations before they start
+    special-equipment:
+     - Short Sword
+                                                                   
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Elenda owns the Elemental Blast Tavern tucked in a quieter corner of the city. She sings, she serves, she bartends, she runs all the business end and sometimes even cooks. She loves her job and takes pride in her
+      place. She loves putting smiles on peoples faces and it shows in her success. It's a small place, like her, but business is good. She has a beautiful singing voice and is a skilled musician in addition to her
+      business acumen. Her energy is contagious and her crowds swell with her joy.  She has however been known to enjoy a little too much wine from time to time and make unwise decisions.
+
+      
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Short and pretty with long brown hair tied in braided circle. Wearing a loose-fitting silk blouse and leather pants
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

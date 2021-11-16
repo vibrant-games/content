@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-02 20:33:14
+  date: "2021-06-25"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1244
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -70,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Leon Goldmane
+  name: King Leon Goldmane
 
   #
   # The NPC artwork.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -152,6 +216,7 @@ npc:
     #
     occupation:
     - King
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +239,30 @@ npc:
     #
     # Required.
     #
-    class: fighter
+    class: Fighter
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Battle Master
 
     #
     # Class level.
@@ -199,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful good
+    alignment: Lawful Good
 
     #
     # Alignment tendencies:
@@ -207,6 +295,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -224,6 +314,7 @@ npc:
     - Leonin
     - Celestial
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -235,14 +326,12 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: _the_country_
       name: (The country)
 
@@ -251,6 +340,10 @@ npc:
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Bold
+    - Regal
+    - Commanding
 
   improv:
 
@@ -265,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: If the party attracts attention of royalty or politicians through their efforts, or if they meet at a high-profile event
+    introduction:  If the party attracts attention of royalty or politicians through their efforts, or if they meet at a high-profile event
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -316,7 +409,7 @@ npc:
     #
     motivations: |
       He mustn't damage his reputation or dishonour his country. He lives for glory within the bounds of the law
-
+      
     #
     # Passions:
     #
@@ -325,7 +418,7 @@ npc:
     #
     passions: |
       He is very protective of his kings-blade, and he enjoys any chamce he gets to prove his strength on a battlefield.
-
+      
     #
     # Vulnerabilities:
     #
@@ -334,14 +427,17 @@ npc:
     #
     vulnerabilities: |
       He can get carried away if he is under the premise that he is doing whats "right", and he is hard to stop when he fights
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-
+    secrets: | 
+      He's King, he's knows all the secrets
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -351,10 +447,10 @@ npc:
     hit-points: 210
     speed: 35
     str: 20
-    dex: 13
+    dex: 14
     con: 20
-    int: 15
-    wis: 12
+    int: 16
+    wis: 13
     cha: 18
 
   #
@@ -366,24 +462,41 @@ npc:
   #
   specialties:
     skills:
-    - Athletics
-    - Intimidation
-    special-abilities: |
-      Second wind. (1/short rest). As a bonus action, king leon regains 1d10+20 Hitpoints.
-      |
-      Indomitable. (3/long rest). When the King fails a saving throw, he can choose to reroll it. He must take the higher roll
-      |
-      Action surge. (2/day). King leon takes an additional action on his turn
-      |
-      Battlemaster superiority. King Leon has superiority dice, which for simplicity, they are d8s added to the attacks damage already.
+   - - Fighter Abilities:
+         - Fighting Style: Defense
+         - Second Wind: Bonus Action to regain 1d10 + 20
+         - Action Surge: Twice every short/long rest can take an extra action
+         - Extra Attack: Can attack 4 times each turn
+         - Indomitable: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.
+         
+   - - Battle Master Abilities:
+         - Combat Superiority:
+           - Maneuvers: Knows any 9 Maneuvers 
+           - Superiority Dice: You have 6 superiority dice, which are d12s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
+           - Saving Throws: Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC 19
+         - Student of War: Proficeint with Mason's Tools
+         - Know Your Enemy: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the
+                            creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points,
+                            Total class levels, if any, Fighter class levels, if any.
+         - Relentless: when you roll initiative and have no superiority dice remaining, you regain 1 superiority die 
+        
+           
+    special-abilities:
+       - Proficiecies: Persuasion, Intimidation, Performance, Survival
+       - Feats: Great Weapons Master, Inspiring Leader, Mounted Combatant, Athlete 
+       - Legendary Resistance: (3/Day), If Leon Goldmane fails a saving throw they can choose to succeed instead 
+       - Legendary Actions: Leon Goldmane can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Leon Goldmane regains
+                            spent Legendary Actions at the start of they're turn
+         - Maneuver: Leon Goldmane attacks once with the Kingsblade and uses one maneuver.
+       
     attacks: |
-      The king can make 4 attacks. Kingsblade- melee weapon attack: +14 to hit, reach 5ft., Hit: (2d6 + 1d8 + 8)
+      4 attacks with The Kingsblade
     combat-tactics: |
       King leon is merciful on the battlefield, choosing to rather incapacitate and imprison his humanoid enemies, rather than killing them. However, when encountering enemies who the king doesn't consider people, he is merciless and a killer.
     special-equipment:
-    - The king's blade, an heirloom passed from king to king. It is a +3 greatsword (technically whoever wields this blade is the king).
-    - He wears +2 mithril plate underneath his clothes.
-
+      - The Kingsblade: melee weapon attack: +14 to hit, reach 5ft., Hit: (2d6 + 1d8 + 8) - an heirloom passed from king to king. It is a +3 greatsword (technically whoever wields this blade is the king)
+      - +2 mithril plate that he wears underneath his clothes.
+      
   profile:
 
     #
@@ -394,8 +507,10 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      King Leon started out as a low-born soldier, however he quickly rose up the ranks with his natural talent and strength. He became known for his reputation as a powerful leader who commanded respect. After a while spent at this high position in the military, he completed a truly amazing feat of martial prowess . He became known for this deed throughout the land, and eventually word reached the king at the time, who had no heir to pass the crown to, so named Leon as his successor.
-
+      King Leon started out as a low-born soldier, however he quickly rose up the ranks with his natural talent and strength. He became known for his reputation as a powerful leader who commanded respect. After a while spent at
+      this high position in the military, he completed a truly amazing feat of martial prowess . He became known for this deed throughout the land, and eventually word reached the king at the time, who had no heir to pass the
+      crown to, so named Leon as his successor.
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -404,7 +519,8 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+      King Leon is a clever and stalwart King. An imposing figure with incomparable martial prowess, he is generally well regarded and revered among his people and demands respect from his foes.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -413,7 +529,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
-  - other: Leonin
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

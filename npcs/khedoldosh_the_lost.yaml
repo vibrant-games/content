@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-28 00:54:42
+  date: "2021-06-25"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 972
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -70,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Khedoldosh the lost
+  name: Khedoldosh The Lost
 
   #
   # The NPC artwork.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -101,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young
+    age: young adult
 
     #
     # Races (case insensitive):
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: beholder
+    race: Beholder
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -142,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: it/they
+    pronouns: it/them
 
     #
     # Occupation(s).
@@ -152,6 +216,7 @@ npc:
     #
     occupation:
     - Oracle; Fortune-teller;
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +239,30 @@ npc:
     #
     # Required.
     #
-    class: civilian; monstrosity
+    class: Civilian
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Monstrosity
 
     #
     # Class level.
@@ -199,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -207,6 +295,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -226,6 +316,7 @@ npc:
     - Infernal
     - Dwarvish
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -237,13 +328,13 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
+    - N/A
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -252,6 +343,8 @@ npc:
     #
     adjectives:
     - Spooky
+    - Unnerving
+    - Cowardly
 
   improv:
 
@@ -266,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: Khedoldosh maintains a tent/hut at the outskirts of a market or tavern district with a sign above the entrance that glows with faint magical energy and reads, "TELLINGS". It can also be found slowly and carefully wandering from alleyway entrance to alley entrance. It may approach a group to ask for their help to obtain glyphs or sigils of farsight and offer to divulge important information in return.
+    introduction:  Khedoldosh maintains a tent/hut at the outskirts of a market or tavern district with a sign above the entrance that glows with faint magical energy and reads, "TELLINGS". It can also be found slowly and carefully wandering from alleyway entrance to alley entrance. It may approach a group to ask for their help to obtain glyphs or sigils of farsight and offer to divulge important information in return.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -277,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   A tiny, beholder - the runt of the litter that were summoned that day, you could say - that never developed properly; drapes a cloak over itself and uses well-crafted fake arms and its innate magical capacity to operate them as though real; Perception check (DC 22) allows a person to notice this is not a humanoid; She leans her body to one side, her right, showing her one gleaming working eye while she has a prosthetic that remains closed to represent her left eye; her remaining eyes are all underdeveloped or dead and stay limp, tied into a ponytail along with her prosthetic hair
+    appearance:   A tiny, beholder - the runt of the litter that was summoned that day, you could say - that never developed properly; drapes a cloak over itself and uses well-crafted fake arms and its innate magical capacity to operate them as though real; Perception check (DC 22) allows a person to notice this is not a humanoid; They lean they're body to one side, they're right, showing them one gleaming working eye while they have a prosthetic that remains closed to represent their left eye; their remaining eyes are all underdeveloped or dead and stay limp, tied into a ponytail along with their prosthetic hair
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -293,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "You've always got time to see the future, lad/lass. Take a minute to hear what Khedoldosh can offer"; "What can you see? I promise it cannot compare to my eye"; "How often are you offered a glimpse of your fate?"; "Only those who choose blindness over clarity of vision are truly lost..."
+    expressions:  "You've always got time to see the future, lad/lass. Take a minute to hear what Khedoldosh can offer"; "What can you see? I promise it cannot compare to my eye"; "How often are you offered a glimpse of your fate?"; "Only those who choose blindness over clarity of vision are truly lost..."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -317,7 +410,7 @@ npc:
     #
     motivations: |
       It desires knowing more. About anything. Yet is trapped in the paradox of already believing it knows more than others. Hoping for a revelation to free it from this cognitive prison, Khedolosh remains eternally frustrated. It is driven to uncover the unknown yet knows that revealing the unknown destroys mystery.
-
+      
     #
     # Passions:
     #
@@ -326,35 +419,40 @@ npc:
     #
     passions: |
       Knowledge; History; Magicks
-
+      
     #
     # Vulnerabilities:
     #
     # Required.
     # ???Maximum length???
     #
-
+    vulnerabilities: |
+      Small for its species and a massive ego
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-
+    secrets: | 
+      Ummmm... It's a Beholder
+       
+      
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 9
-    hit-points: 5
-    speed: 0 (20 fly)
+    armour-class: 16
+    hit-points: 104
+    speed: 20 Flying
     str: 5
     dex: 8
-    con: 14
+    con: 15
     int: 19
-    wis: 18
-    cha: 18
+    wis: 16
+    cha: 19
 
   #
   # Special characteristics.
@@ -365,16 +463,38 @@ npc:
   #
   specialties:
     skills:
-    - History; Arcane; Persuasion
-    special-abilities: |
-      <b>Fear Ray</b> - The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened until the start of the gazer's next turn.
-      |
-      <b>Telekinetic Ray</b> - If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer.
-      |
-      <b>Dazing Ray</b> - The targeted creature must succeed on a DC 12 Wisdom saving throw or be charmed until the start of the gazer's next turn. While the target is charmed in this way, its speed is halved, and it has disadvantage on attack rolls.
+   - - Beholder Abilities:
+       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+       - Bite: Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 8 (2d6) piercing damage.
+       - Antimagic Cone: Khedoldosh's central eye creates an area of antimagic, as in the antimagic field spell, in a 50-foot cone. At the start of each of its turns, Khedoldosh decides which way the cone faces and whether
+                         the cone is active. The area works against Khedoldosh's own eye rays.
+       - Eye Rays:
+         - Fear Ray: The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a 
+                     success.
+         - Telekinetic Ray: If the target is a creature, it must succeed on a DC 12 Strength saving throw or Khedoldosh moves it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of
+                            Khedoldosh's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 ft. in any direction.
+                            Khedoldosh can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.  
+         - Charm Ray: The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by Khedoldosh for 1 hour, or until Khedoldosh harms the creature.
+        
+           
+    special-abilities:
+       - Proficiecies: Insight, History, Arcana, Persuasion, Perception
+       - Feats: Keen Mind, Observant, Telekinetic 
+       - Legendary Resistance: (2/Day), If Khedoldosh The Lost fails a saving throw they can choose to succeed instead 
+       - Legendary Actions: Khedoldosh The Lost can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Khedoldosh The
+                            Lost regains spent Legendary Actions at the start of they're turn
+         - Eye Rays: Khedoldosh The Lost uses one random eye ray.
+       
+    attacks: |
+      2 attacks with Eye Rays
     combat-tactics: |
       Kedoldosh will largely avoid combat unless pressed. If pressed, it will doff it's disguise and take to flight. If cornered, it will use its eye rays.
-
+    special-equipment:
+      - Tarokka deck: has fifty-four cards, each of which has its own name. Forty of them comprise the common deck, which is divided into four suits: swords, coins, stars, and glyphs. Each suit contains cards numbered one
+                      through nine, plus a tenth card that is called the master of that suit. A card can be referred to by its suit designation or by its name. For instance, the three of glyphs is also known as the healer, and
+                      the wizard card is also known as the master of stars. The remaining fourteen cards make up the high deck, which symbolizes the natural forces of the multiverse. These cards are represented by a crown symbol
+                      and are the most powerful cards in the deck
+                                                                   
   profile:
 
     #
@@ -385,8 +505,12 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      <p>In the battle of Granite Water [any great historical battle in recent time], an old orcish warlock, Gryt Tooth of Mahl, was faced with certain death at the hands of an incoming legion of the Elves of ThistleCloud [Any Major Elven City]. He turned to his last resort: an old summoning scroll that was tattered. In desperation facing the encroaching legion, the warlock uttered as many words as he could read from the scroll and performed whatever gestures he could make out to cast the spell. Flashes of light and shadow burst from nowhere, colliding in mid air in a cloud of grainy black mist that congealed into the form of a beholder. However, the scroll had been damaged badly and the verbal and somatic components thus distorted. The unfortunate result was an undeveloped creature, Khedoldosh, who glanced around with its only working eye, realized the imminent danger, and darted off into the hills. Needless to say, Gryt Tooth didn't live much longer.</p>
-
+      In the battle of Granite Water [any great historical battle in recent time], an old orcish warlock, Gryt Tooth of Mahl, was faced with certain death at the hands of an incoming legion of the Elves of ThistleCloud [Any
+      Major Elven City]. He turned to his last resort: an old summoning scroll that was tattered. In desperation facing the encroaching legion, the warlock uttered as many words as he could read from the scroll and performed
+      whatever gestures he could make out to cast the spell. Flashes of light and shadow burst from nowhere, colliding in mid air in a cloud of grainy black mist that congealed into the form of a beholder. However, the scroll
+      had been damaged badly and the verbal and somatic components thus distorted. The unfortunate result was an undeveloped creature, Khedoldosh, who glanced around with its only working eye, realized the imminent danger, and
+      darted off into the hills. Needless to say, Gryt Tooth didn't live much longer.
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -395,7 +519,10 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+      Khedoldosh is a weak and malformed creature. However they use a combination of prostetics, magic and disquise in order to pass as a humanoid fortune teller. They don't really have any kind of precognative abilities, but
+      use their telepathic powers to read minds and feed their customers the kind of information that they want to hear. It is very intelligent and has the ego to prove it, but due to it's malformation, it's cowardess outwieghs
+      it's confidence when it comes to dealing with conflict. When it comes down to it, it's really just trying to survive in a world that it was never meant to be in
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -404,9 +531,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - ful-picture: 1573
-  - _yoast_wpseo_content_score: 30
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
-  - _yoast_wpseo_estimated-reading-time-minutes: 0
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

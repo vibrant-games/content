@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-28 00:54:42
+  date: "2021-05-09"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 973
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -101,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle-aged
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: aarakocra
+    race: Aarakocra
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -151,7 +215,8 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Diplomat; magistrate; Prison Warden; Political Advisor;
+    - Diplomat; Magistrate; Political Advisor;
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +239,30 @@ npc:
     #
     # Required.
     #
-    class: wizard
+    class: Wizard
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: School of Lore Mastery
 
     #
     # Class level.
@@ -183,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 5
+    level: 6
 
     #
     # Alignments (case insensitive):
@@ -199,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: neutral good
+    alignment: Neutral Good
 
     #
     # Alignment tendencies:
@@ -207,6 +295,9 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+    - N/A
+
 
     #
     # Languages the character speaks
@@ -224,6 +315,7 @@ npc:
     - Aarakocra
     - Elvish
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -235,8 +327,7 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
@@ -245,6 +336,8 @@ npc:
     factions:
     - id: militia_of_hula_krah
       name: Militia of Hula-krah
+      role: Diplomat
+
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -267,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: Aeureek can be a first point of contact for those adventurers who may have met with the wrong side of the law. She may also commission hardy looking adventurers to escort a prisoner or capture an outlaw.
+    introduction:  She may commission hardy looking adventurers to escort a prisoner or capture an outlaw.  
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -278,7 +371,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Insanely proper posture at all times; Gowns of a magistrate; Bird features are akin to a falcon - whites, browns and greys; She has died various feathers bright reds and purples;
+    appearance:   Insanely proper posture at all times; Gowns of a magistrate; Bird features are akin to a falcon 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -294,7 +387,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "'click' 'click' 'shreeeee' ...I assume you cannot comprehend our mother tongue or that I just demanded your commitment to keeping peace"; "Law and Order matter not compared to a good heart and striving for the greater good for all"; "Politics are tangled and corrupted by gold and platinum - only by abandoning currency as a means of bringing order shall we ever achieve true brotherhood"; "Abandon riches, brothers and sisters. Embrace the collective"
+    expressions:  "I assume you cannot comprehend our mother tongue or that I just demanded your commitment to keeping peace"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -307,7 +400,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Bursts proudly into Aarakocra often and expects others to learn her language as the language of diplomacy and true freedom; Rushes into conversations short-sightedly; Often measuring and adjusting her posture and appearance in any mirror, including her hand mirror; Grooms her feathers regularly
+    mannerisms:   Bursts proudly into Aarakocra often, measuring and adjusting her posture and appearance in any mirror
 
   acting:
     #
@@ -317,8 +410,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      This regal avian humanoid seeks to eradicate tradeable currency, believing it is the source of all conflict. Urges others to trade in goods over coins. Constantly driven to improve her appearance to the detriment of respect from the common people.
-
+      seeks to eradicate tradeable currency, believing it is the source of all conflict. Urges others to trade in goods over coins. Constantly driven to improve her appearance to the detriment of respect from the common people.
+      
     #
     # Passions:
     #
@@ -327,21 +420,25 @@ npc:
     #
     passions: |
       Peace and security; Oppositional politics; Eschewing gold and platinum and anyone with a passion for riches.
-
+      
     #
     # Vulnerabilities:
     #
     # Required.
     # ???Maximum length???
     #
-
+    vulnerabilities: |
+      her vanity and short-sitedness
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-
+    secrets: |
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -349,11 +446,11 @@ npc:
   stats:
     armour-class: 12
     hit-points: 27
-    speed: 25 (fly 50)
+    speed: 25 / 50 Flying
     str: 11
     dex: 14
     con: 14
-    int: 18
+    int: 18 
     wis: 16
     cha: 15
 
@@ -366,29 +463,56 @@ npc:
   #
   specialties:
     skills:
-    - History; Law; Persuasion; Athletics
-    special-abilities: |
-      Spells: 0 - 4; 1 - 4; 2 - 3; 3 - 2
-      |
-      Arcane Ward
-    attacks: |
-      Quarterstaff
-      |
-      Claws
-    combat-tactics: |
-      She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. Then she will use AoE spells if safe to do so.
-    special-equipment:
-    - <b>Protective Verses (Spellbook) </b>- Contains the following spells: arcane lock
-    - dispel magic
-    - globe of invulnerability
-    - glyph of warding
-    - Mordenkainen's private sanctum
-    - protection from evil
-    - and symbol. It functions as a spellbook.While holding the book
-    - can be used as a spellcasting focus. The book has 3 charges
-    - and it regains 1d3 expended charges daily at dawn. Can be use the charges in the following ways while holding it: spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book. The new spell must be of the abjuration school.
-    - When casting an abjuration spell, expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
+  - - Aarakocra Traits:
+      - Flight: Flying speed is 50 feet
+      - Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
 
+   - - Wizard Abilities:
+         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
+         - Spellcasting: DC 14
+            Cantrips: Message, Minor Illusion, Mage Hand, Prestidigitation
+            1st Level: Alarm, Comprehend Languages, Protection from Evil, Magic Missle
+            2nd Level: Arcane Lock, Hold Person, Detect Thoughts 
+            3rd Level: Counterspell, Dispel Magic, Glyph of Warding      
+
+   - - School of Lore Mastery Abilities:
+       - Lore Master: you become an increasingly broader compendium of knowledge on a vast array of topics. Choose one skill from Arcana, History, Nature or Religion. Your proficiency bonus is doubled for any ability check that 
+                      uses the chosen skill if you are proficient in that skill. At levels 6, 10 and 14 you get to choose one more skill from the list. In addition, your initiative in combat can be driven by mental agility, 
+                      rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice). Your proficiency bonus is also doubled for any ability check that uses
+                      the Investigation skill if you are proficient in that skill. neither this feature nor the previous feature gives proficiency in any skill           
+       - Spell Secrets: you start to master your first in a series of arcane secrets uncovered by your extensive studies. Choose two damage types from acid, cold, fire, force, lightning, necrotic, radiant or thunder. When you 
+                        cast a wizard spell with a spell slot and the spell deals one of the chosen damage types you can substitute that damage type with another (previously) chosen damage type from the list. You can use this 
+                        feature a number of times equal to your Inteligence Modifier (minimum of once~ and only a single damage type may be substituted per spell You regain any expended uses when you finish a long rest. At 
+                        levels 6, 10 and 14 you get to choose two more damage types from the list. Additionally, when you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from
+                        one ability score to another of your choice. Once you change a saving throw in this way, you can't do so again until you finish a long rest.
+       - Arcane Analyser: you learn to augment spells in a variety of ways. When you cast a spell with a spell slot, you can expend one additional spell slot to augment its effects for this casting, mixing the raw stuff of magic
+                          into your spell to amplify it. The effect depends on the spell slot you expend. An additional 1st-level spell slot can increase the spell's raw force. If you roll damage for the spell when you cast it, 
+                          increase the damage against one target of your choice by 2dl0 force damage. lfthe spell can deal damage on more than one turn, it deals this extra force damage only on the turn you cast the spell. An 
+                          additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it's range is tripled, or it becomes 1/4 of a mile (whichever is greater) An additional 3rd-
+                          level spell slot can increase the spell's potency. Increase the spell's save DC by 2 for one turn against all targets.          
+
+    special-abilities:
+    - Proficiencies: Arcana, History, Investigation, Religion, Persuasion, Insight, Deception    
+    
+    attacks: |
+      Claws and Quarterstaff
+    combat-tactics: |
+      She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. 
+      Then she will use AoE spells if safe to do so.
+    special-equipment:
+      - Protective Verses Spellbook: Contains the spells
+        - arcane lock
+        - dispel magic
+        - globe of invulnerability
+        - glyph of warding
+        - Mordenkainen's private sanctum
+        - protection from evil
+        - symbol. 
+        It functions as a spellbook. While holding the book it can be used as a spellcasting focus. The book has 3 charges. it regains 1d3 expended charges daily at dawn. 
+        Charges can be used in the following ways while holding it - Spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book. 
+                                                                     The new spell must be of the abjuration school.
+                                                                   - When casting an abjuration spell expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
+                                                                   
   profile:
 
     #
@@ -399,8 +523,16 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      <p>After years in the city of Hula-krah [Any sky city in the Plane of Air] as a Peacekeeper and high-ranking military official, overlooking the material planes in all their woes, Aeureek decided it was the duty of her people to bring justice to the ground. She conferred with officals and family about her decision and they were all in agreeance; it was time for the people of the sky to bring the freedom of true justice to the greedy land-dwellers. Aeureek and numerous other worthy and authorized members of the community were sent on their way to aid the ground-dwellers.</p><p>Aeureek settled into the crime-ridden town of Helmsloft [Any major city that could suffer from heavy crime] and confidently approached the town's magistrates. She provided a convincing speech as to how the city required changes to their policing and corrections training and the corresponding structures. With her regal appearance and voice supporting a well-thought out and honest speech, which included numerous accurate observations Aeureek had gathered from his observations in the clouds, the magistrates were convinced to make such changes. Aeureek was offered a position among the magistrates but firmly declined, asserting that her abilities would best suit a position among the officers and within the confines of the slums and markets. Since then, Aeureek has been a well-respected and often feared officer and an advisor to the magistrates.</p>
+      After years in the city of Hula-krah [Any sky city in the Plane of Air] as a Peacekeeper and high-ranking military official, overlooking the material planes in all their woes, Aeureek decided it was the duty of her 
+      people to bring justice to the ground. She conferred with officals and family about her decision and they were all in agreeance; it was time for the people of the sky to bring the freedom of true justice to the greedy 
+      land-dwellers. Aeureek and numerous other worthy and authorized members of the community were sent on their way to aid the ground-dwellers. Aeureek settled into the crime-ridden town of Helmsloft [Any major city that 
+      could suffer from heavy crime] and confidently approached the town's magistrates. She provided a convincing speech as to how the city required changes to their policing and corrections training and the corresponding 
+      structures. With her regal appearance and voice supporting a well-thought out and honest speech, which included numerous accurate observations Aeureek had gathered from his observations in the clouds, the magistrates 
+      were convinced to make such changes. Aeureek was offered a position among the magistrates but firmly declined, asserting that her abilities would best suit a position among the officers and within the confines of the 
+      slums and markets. Since then, Aeureek has been a well-respected and often feared officer and an advisor to the magistrates.
 
+
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -409,7 +541,9 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+      Aeureek's bird-like features are akin to that of a falcon with featehrs of whites, browns and greys; She has died various feathers bright reds and purples. She maintains exceptional posture at all times and is always 
+      dressed in formal white magistrate's gowns. She is all business in her role as an advisor to surface-dwelling magistrates, but is also exceptionally vain and constantly fusses over her appearance.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -418,7 +552,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - ful-picture: 1368
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

@@ -1,0 +1,582 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: Gerhardt_Klippstein
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-04-04"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Gerhardt Klippstein
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: middle aged adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Vedalken
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: N/A
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: he/him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Board of Directors of Collegium Imaginata
+    
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: artificer
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Armorer
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 16
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Lawful Neutral
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Vedalken
+    - Gnomish
+    - Elvish
+
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: Collegium_Imaginata
+      name: Collegium Imaginata
+      role: Director and Lead Designer
+
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Calculating
+    - Cold
+    - Intelligent
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  "Oswald! Zat ees not ze most efficient way to approach zat problem" says the blue-skinned man to the fat bald gnome
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Tall, rail-thin, bald and blue-skinned. Four arms and dressed in full plate armor under a lab coat and tall top hat 
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "Mine Fire ees most efficient, No?" "Mine steam engine ees the future of travel" "Artifice is the future now!"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   His movements are all very quick and efficient
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Knowledge  
+      
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Efficiency and Perfection
+      
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      he's cold and unfriendly and often rubs people the wrong way. He is a perfectionist which sometimes gets in his own and other peopls ways
+      
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      He thinks he deserves Oswald Vardklemp's position as leader
+      
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 18
+    hit-points: 138
+    speed: 35
+    str: 9
+    dex: 17
+    con: 13
+    int: 27
+    wis: 24
+    cha: 16
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+   - - Vedalken Abilities:
+        - Vedalken Dispassion: Advantage on all Intelligence, Wisdom and Charisma saving throws
+        - Tireless Precision: Proficient in Arcana and with Tinker's Tool and add 1d4 to any checks with those skills
+        - Partially Amphibious: Can breathe underwater for up to 1hr per long rest 
+        - Aether Lore: When making an intelligence (history) check related to magic items or technological devices, adds twice his proficiency bonus
+ 
+   - - Artificer Abilities: 
+       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 23
+         Cantrip: Shocking Grasp, Mage Hand, Mending, Create Bonfire, Fire Bolt
+         1st Level: Arcane Weapon, Detect Magic, Identify, Expedition Retreat, Grease
+         2nd Level: Arcane Lock, Continual Flame, Levitate, Magic Weapon
+         3rd Level: Dispel Magic, Haste, Tiny Servant, Fly
+         4th Level: Fabricate, Stone Shape, Summon Construct    
+       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
+       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+       - Tool Expertise: Smith's Tool proficiency bonus is doubled
+       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+       - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+       - Spell Storing Item: Can store a spell in and object once per long rest
+       - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
+      
+      
+   - - Armorer Abilities:
+       - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
+       - Spellcasting: Requires Smith's Tools as Spellcasting focus, Spell DC 23
+         3rd Level: Magic Missle, Shield
+         5th Level: Mirror Image, Shatter
+         9th Level: Hypnotic Patetrn, Fire Ball
+         13th Level: Fire Sheild, Greater Invisibility
+       - Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
+       - Infiltrator Armor: His powered armor has the Fire Launcher, Powered Steps & Second Skin abilities  
+       - Extra Attack: Can take a second attack action each turn
+       - Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
+       - Perfected Armor: Successful Fire Launcher attacks he makes cause targets to glimmer with light giving the next attack roll against it by another creature advantage and does an extra 1d6 Fire Damage
+
+    special-abilities: 
+    - Feats: Keen Mind, Mounted Combatant, War Caster, Skill Expert - Smith's Tools, Observant, Heavy Armor Master
+    - Legendary Resistance: (2/Day), If Gerhardt Klippstein fails a saving throw he can choose to succeed instead 
+    - Legendary Actions: Gerhardt Klippstein can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                         Gerhardt Klippstein regains spent Legendary Actions at the start of his turn
+      - Fire Upgrade: Gerhardt Klippstein cast the Fireball spell through his armor's Fire Launcher at 3rd Level with a Dex DC of 19
+      - Fancy Armor: Gerhardt Klippstein can Infuse one section of his Power Armor with one of his Artificer's Infusions
+      - Escape Velocity: Gerhardt Klippstein can cast the Summon Construct Spell to summon his Steam Wagon, mount it and dash up to 80 feet
+
+    attacks: |
+      Can make 2 attacks with his firearms and his Steel Defender can attack twice 
+    combat-tactics: |
+      He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run 
+    special-equipment:
+    - Full Plate Power Armor - See above for details, except his Power Armor has the ability to launch fire instead of lightning
+    - Random Artifact Devices - Can be carrying whatever he needs
+    - Steam Wagon - His Steam Wagon resembles a regular wagon but has a large steam-belching engine on the back powered by his Artificer's Infusion. It can move on it's own without horses and answers his call. 
+                    It has a speed of 80 feet and can take 150HP damage before it stops running.
+    
+    
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Gerhardt Klippstein is a brilliant and driven artificer and armorer. He had worked in the past throughout his career with Oswald Vardklemp on developing the propulsion engine for his patented Steam Wagon. 
+      So when he was approached by Oswald with an offer of unlimited funding, people to work with and a compound to continue his work, he jumped at the chance. Working with the Collegium Imaginata has been a 
+      dream come true for him. As an efficient researcher and administrator, Gerhardt was an easy choice for Oswald to make his second in command. Gerhardt likes Oswald, but has always believed that he is the 
+      smarter of the two men and that he should be in charge of the Collegium
+      
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Gerhardt Klippstein is a tall, thin, light blue-skinned, four-armed Vedalken man. He stands at about 6'6" tall. He is comepletely hairless with a broad, flat nose and light violet eyes. He is cold, severe 
+      and intense. He is deeply devoted to arcane science and to his work. He firmly believes that the world should be orderly and efficient and that his work will help it become that way. He does not particularly 
+      like people and rarely gets along with others but does appreciate scientific and arcane input from reputable sources. In typically dispassionate and detached Vedalken manner, he views the world through a 
+      sterile lens and does his best strive for what he views as perfections and limitless efficiency. 
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

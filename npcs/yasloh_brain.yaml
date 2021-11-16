@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-28 00:54:45
+  date: "2021-08-13"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 988
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -101,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: early middle age
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: swamp gnome
+    race: Gnome
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: Swamp
 
     #
     # Pronouns (case insensitive):
@@ -149,9 +213,9 @@ npc:
     #
     # Required.
     # Max length per occupation: ...
-    #
     occupation:
-    - Scrum wizard
+    - Scrum Wizard
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: mage
+    class: Wizard
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: School of Enchantment
 
     #
     # Class level.
@@ -199,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful evil
+    alignment: Lawful Evil
 
     #
     # Alignment tendencies:
@@ -207,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -220,8 +309,9 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - Human
-    - gnomish
+    - Common
+    - Gnomish
+
 
     #
     # Factions:
@@ -234,8 +324,7 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
@@ -245,13 +334,16 @@ npc:
     - id: scrum_wizards
       name: Scrum Wizards
 
+
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
     adjectives:
-    - Thoughtful
+    - Learned 
+    - Intense
+    - Manic
 
   improv:
 
@@ -266,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: $characters$ "You're carrying that wrong," declares a robed, trinketed gnome, walking youward.  "Let me share my learnings with you."
+    introduction:  "You're carrying that wrong," declares a robed, trinketed gnome, walking youward.  "Let me share my learnings with you."
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -306,7 +398,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Constantly rubbing knuckles, flexing his jaw and his triceps; sighs in disappointment whenever others speak.
+    mannerisms:    Constantly rubbing knuckles, flexing his jaw and his triceps; sighs in disappointment whenever others speak.
 
   acting:
     #
@@ -317,7 +409,7 @@ npc:
     #
     motivations: |
       Wants to lead other wizards in the building of new, never-before-invented magical devices; sees himself as a mentor.
-
+      
     #
     # Passions:
     #
@@ -326,7 +418,7 @@ npc:
     #
     passions: |
       Innovation and guiding others into a new and vibrant future.
-
+      
     #
     # Vulnerabilities:
     #
@@ -335,28 +427,31 @@ npc:
     #
     vulnerabilities: |
       Control freak; doesn't let others speak; flies into rage if anyone doubts him; why will nobody follow his leadership?
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-
+    secrets: | 
+      N/A
+       
+      
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
     armour-class: 14
-    hit-points: 55
+    hit-points: 68
     speed: 25
     str: 14
     dex: 10
     con: 11
     int: 19
-    wis: 3
-    cha: 5
+    wis: 5
+    cha: 3
 
   #
   # Special characteristics.
@@ -367,25 +462,60 @@ npc:
   #
   specialties:
     skills:
-    - Arcana; History; Religion; Nature
-    special-abilities: |
-      Malleable Illusion
-      |
-      Illusory Self
-      |
-      Illusory Reality
-      |
-      Spells: 0 -5; 1 - 4; 2 - 3; 3 - 3; 4 - 3; 5 - 2; 6 - 1; 7 - 1; 8 - 1;
-      |
-      Improved Minor Illusion
+
+   - - Swamp Gnome Abilities:
+       - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
+       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+       - Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
+       - Tinker:  You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
+                  after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
+                  to three such devices active at a time. When you create a device, choose one of the following options - 
+                  - Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+                                   a random direction. It makes noises as appropriate to the creature it represents.
+                  - Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+                  - Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.  
+                  
+   - - Wizard Abilities:
+         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
+         - Spell Mastery: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. 
+                          If you want to cast either spell at a higher level, you must expend a spell slot as normal
+         - Signature Spells: Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don't count against the number of Spells you have prepared, and you can 
+                             cast each of them once at 3rd Level without expending a spell slot.			  
+         - Spellcasting: Spell DC 17
+            Cantrips: Minor Illusion, Mage Hand, Message, Prestidigitation, Shocking Grasp, Thunderclap
+            1st Level: Disguise Self, Illusory Script, Silent Image, Charm Person
+            2nd Level: Invisibility, Mirror Image, Phantasmal Force 
+            3rd Level: Fear, Hypnotic Pattern, Major Image
+            4th Level: Greater Invisibility, Hallucinatory Terrain, Phantasmal Killer
+            5th Level: Dream, Mislead
+            6th Level: Programme Illusion
+            7th Level: Simulacrum
+            8th Level: Telepathy
+            
+   - - School of Enchantment Abilities:
+       - Illusion Savant: the gold and time you must spend to copy a Illusion spell into your spellbook is halved.
+       - Improved Minor Illusion: you learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice. The cantrip doesn't count against your number of cantrips known. 
+                                  When you cast Minor Illusion, you can create both a sound and an image with a single casting of the spell.           
+       - Malleable Illusion: when you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell's normal parameters for the illusion), 
+                             provided that you can see the illusion.
+       - Illusory Self: you can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory
+                        duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates. Once you use this feature, you can't use it again until you finish a short or long rest.
+       - Illusory Reality: you have learned the secret of weaving shadow magic into your illusions to give them a semi-reality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical 
+                           object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can 
+                           create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross. The object can't deal damage or otherwise directly harm anyone.
+       
+    special-abilities:
+       - Proficiencies: Arcana, History, Religion, Nature
+       - Feats: Keen Mind, War Caster, Spell Sniper
+       
     attacks: |
-      Quarterstaff
+      1 attack with spell attack or quarterstaff
     combat-tactics: |
       Yasloh will rarely engage in direct hand-to-hand combat and almost exclusively rely on his spells to create distance and eliminate hostiles.
-    special-equipment:
-    - Thaum gauge on a wristband
-    - a personal thaumometer used to detect concentrations of magical potential.
-
+    special-equipment:      
+    - Thaum Gauge Wristband: a personal thaumometer used to detect concentrations of magical potential.    
+    
+    
   profile:
 
     #
@@ -396,8 +526,20 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      <p>There really aren't any swamp Gnomes. Except for Yasloh. Emerging from a mountain cave on a dimly glimmering morning, the Gnome sputtered at the sun, "Yes, yes, I know that already", and coughed up a bit of flem in his hand. He slapped his hands together and rubbed them vigorously, laughing to himself. "What does this day have to offer?" He stepped forward out of the cave and his foot found no ground. The black swamps of Kol-oug had deceived yet another. Whoever Yasloh used to be was absorbed into the gritty sandy mire of Kol-oug. How could I have forgotten the bloody swamp? Was the last thought that crossed his mind before the Mind Flayer pit swamp consumed his identity.</p><p>Three days later a small humanoid limped his way towards a makeshift Halfling military camp. "Who goes there?", cried the lieutenant. The "Brain" began to reflect upon itself and found nothing. Well, who does go here? He asked himself. Nothing. "Who goes there?" The lieutenant asked again. Oh, well, I had better answer him. He seems important. "Brain!" Yasloh shouted the only thing he could think. "Brain" approached the militia party having all the smarts he had before but having no idea who he actually was. "Oy, innit a gnome...", the halfling lieutenant remarked, "covered in muck". "Yes", Yasloh replied, "a swamp gnome". "But there's no such..." Yasloh shot the soldier an intimidating glance. Silence. They gave "Brain" a place to clean up and change. </p><p>During this reflection time his mind filled with criss-crossing images of shimmering grids and incoherent numbers and languages. These hallucinations eventually began to congeal into gears, sigils, machinations, glyphs, and locations of great power. It appeared as though Yasloh had fallen asleep in the bath at the camp and he began muttering incomprehensibly in an increasing volume until he was nearly shouting. A young Halfling soldier approached to shake him awake. "Sir. Sir? Are you okay? Are you..." And Yasloh shot up in the bathtub screaming valorously, "I've got it mate!" He may have lost his past but now saw the many magical inventions that would define his future.</p>
+     There really aren't any Swamp Gnomes. Except for Yasloh. Emerging from a mountain cave on a dimly glimmering morning, the Gnome sputtered at the sun, "Yes, yes, I know that already", and coughed up a bit of flem in his hand.
+     He slapped his hands together and rubbed them vigorously, laughing to himself. "What does this day have to offer?" He stepped forward out of the cave and his foot found no ground. The black swamps of Kol-oug had deceived 
+     yet another. Whoever Yasloh used to be was absorbed into the gritty sandy mire of Kol-oug. How could I have forgotten the bloody swamp? Was the last thought that crossed his mind before the Mind Flayer pit swamp consumed 
+     his identity. Three days later a small humanoid limped his way towards a makeshift Halfling military camp. "Who goes there?", cried the lieutenant. The "Brain" began to reflect upon itself and found nothing. Well, who does 
+     go here? He asked himself. Nothing. "Who goes there?" The lieutenant asked again. Oh, well, I had better answer him. He seems important. "Brain!" Yasloh shouted the only thing he could think. "Brain" approached the militia 
+     party having all the smarts he had before but having no idea who he actually was. "Oy, innit a gnome...", the halfling lieutenant remarked, "covered in muck". "Yes", Yasloh replied, "a swamp gnome". "But there's no such..."
+     Yasloh shot the soldier an intimidating glance. Silence. They gave "Brain" a place to clean up and change.  During this reflection time his mind filled with criss-crossing images of shimmering grids and incoherent numbers 
+     and languages. These hallucinations eventually began to congeal into gears, sigils, machinations, glyphs, and locations of great power. It appeared as though Yasloh had fallen asleep in the bath at the camp and he began 
+     muttering incomprehensibly in an increasing volume until he was nearly shouting. A young Halfling soldier approached to shake him awake. "Sir. Sir? Are you okay? Are you..." And Yasloh shot up in the bathtub screaming 
+     valorously, "I've got it mate!" He may have lost his past but now saw the many magical inventions that would define his future.
 
+
+
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -406,7 +548,11 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Yasloh doesn't remember much of his life before waking up in the swamp, but it doesn't seem to bother him very much. He still maintains all of his arcane and historical knowledge, just none of his personal memories and as 
+     far as he's concerned, thats all that matters anyway. He is manic, intense and animated all the time, to a level that doesn't seem possible to maintain for any length, yet there he goes. He talks constantly to anyone who 
+     will listen, and even those who won't, giving advice, sharing his thoughts and finding, no matter how little they make sense.
+     
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -415,7 +561,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - ful-picture: 1577
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

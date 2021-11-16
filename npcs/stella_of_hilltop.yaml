@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-28 00:54:38
+  date: "2021-07-30"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 950
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -101,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adult
+    age: young adult
 
     #
     # Races (case insensitive):
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: halfling
+    race: Halfling
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: Lightfoot
 
     #
     # Pronouns (case insensitive):
@@ -150,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    occupation:
     - Merchant
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: rogue; scout
+    class: Rogue
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Scout
 
     #
     # Class level.
@@ -199,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -207,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -223,6 +312,8 @@ npc:
     - Orcish
     - Goblin
     - Common
+    - Halfling
+
 
     #
     # Factions:
@@ -235,16 +326,15 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: local_rebels
       name: Local Rebels
+
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -252,7 +342,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - suspecting
+    - Cautious   
+    - Indignant
+    - Brave
 
   improv:
 
@@ -267,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: Recommended fence for acquired goods; Rebel faction may recommend her place as a hideout
+    introduction:  Recommended fence for acquired goods; Rebel faction may recommend her place as a hideout
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -278,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Waif-like
+    appearance:   Small, thin and waife-like. Curly red hair and leather armor. Pale, jaundice skin and sallow eyes. She looks ill
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -294,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "We shall replace the Queen with a figurehead of those with boots on the ground!"; "I will bring the best goods to the people so they can rise".
+    expressions:  "We shall replace the Queen with a figurehead of those with boots on the ground!"; "I will bring the best goods to the people so they can rise".
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -318,7 +410,7 @@ npc:
     #
     motivations: |
       Residual income. Freeing township or city from tyranny. Keeping a secure hideout for rebels and antagonists.
-
+      
     #
     # Passions:
     #
@@ -327,7 +419,7 @@ npc:
     #
     passions: |
       Love and belonging (i.e., keeping a warm home or safe space for others with good grub and fine linens). Toppling dictators.
-
+      
     #
     # Vulnerabilities:
     #
@@ -336,16 +428,17 @@ npc:
     #
     vulnerabilities: |
       Stella's breathing is hampered by an untreated lung condition. She isn't capable of long periods of physical activity without needing a short rest after. Otherwise, she falls prone.
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets: | 
       Stella operates as a lieutenant for a local rebel faction
-
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -356,7 +449,7 @@ npc:
     speed: 25
     str: 9
     dex: 14
-    con: 14
+    con: 8
     int: 16
     wis: 15
     cha: 13
@@ -369,13 +462,36 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Persuasion; Stealth; Sleight of Hand
-    attacks: |
-      Dagger
-    combat-tactics: |
-      Stella is calculated about her tactics because of her lung condition and how it limits her endurance
+    skills: 
 
+   - - Halfling Abilities:
+       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+       - Brave: Has advantage on Saving Throws against being Frightened 
+       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+       - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
+        
+   - - Rogue Abilities:
+       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+       
+   - - Scout Abilities:
+       - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.
+       - Survivalist: you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
+       
+    special-abilities:
+       - Proficiencies: Persuasion, Stealth, Sleight-of-Hand, Nature, Survival
+       - Feats: N/A
+       
+    attacks: |
+      1 attacks with dagger
+    combat-tactics: |
+      Stella is calculated about her tactics because of her lung condition and how it limits her endurance so she will mostly try to sneak attack
+    special-equipment:
+    - Dagger
+    
+    
   profile:
 
     #
@@ -386,8 +502,19 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      <p> Hilltop [Village; Town] is a quiet halfling town located on a well-used trade route. This has conditioned the population to become diverse in their skillsets and relatively wealthy overall - compared to other halfling settlements. With all the coming and going of people and voluminous exchange of coins, goods, and services, people can get lost. When people get lost and nobody comes looking for you, well, then what do you do? A lecherous and ornery halfling grain and feed merchant from the nearby economic centre of Invasaad [Major City] was traveling through Hilltop with his "best employees", his three young daughters. The girls would heave the sacks of grain and feed on and off the cart or sometimes would be responsible for interacting with immediate buyers. In one transaction, the feed had been hauled onto the buyer's cart whilst Stella - the youngest of the 3 sisters - was bargaining for the first time with a crotchety old woman who couldn't afford to feed her goats. </p><p>"I'll give ya two silver, nothin more! My husband has passed and we 'ad no children. I'm left to me own devices! 'Ave pity on an old lady". </p><p>Remembering how her father would deal abusively with her sisters whenever they returned with less than he expected, Stella continued to bargain. In the meanwhile, her father, who had grown tired of feeding a third child and who had resigned himself to cutting down the weakest buffalo, had carried on in the cart out of town. Stella continued to barter, none the wiser, until the argumentative customer wouldn't budge. She looked back for her father's approval and saw no cart, no father, no sisters. Stella ended the barter, panicked. She raced around town thinking that her father had other dealings. He was nowhere to be found. Young Stella wept in the square.</p><p>Eventually that evening a kind elderly halfling woman approached the weeping figure. She comforted her. Told her their were bigger problems. Bigger problems that needed solutions. The kind elderly halfling lady told Stella, "you're from where you choose to be from. You can be Stella of Hilltop". The name stuck and Stella quickly became a surrogate child to the people of Hilltop. Her father never did return.</p>
+     Hilltop [Village; Town] is a quiet halfling town located on a well-used trade route. This has conditioned the population to become diverse in their skillsets and relatively wealthy overall - compared to other halfling
+     settlements. With all the coming and going of people and voluminous exchange of coins, goods, and services, people can get lost. When people get lost and nobody comes looking for you, well, then what do you do? A lecherous
+     and ornery halfling grain and feed merchant from the nearby economic centre of Invasaad [Major City] was traveling through Hilltop with his "best employees", his three young daughters. The girls would heave the sacks of
+     grain and feed on and off the cart or sometimes would be responsible for interacting with immediate buyers. In one transaction, the feed had been hauled onto the buyer's cart whilst Stella - the youngest of the 3 sisters -
+     was bargaining for the first time with a crotchety old woman who couldn't afford to feed her goats. "I'll give ya two silver, nothin more! My husband has passed and we 'ad no children. I'm left to me own devices!
+     'Ave pity on an old lady". Remembering how her father would deal abusively with her sisters whenever they returned with less than he expected, Stella continued to bargain. In the meanwhile, her father, who had grown
+     tired of feeding a third child and who had resigned himself to cutting down the weakest buffalo, had carried on in the cart out of town. Stella continued to barter, none the wiser, until the argumentative customer wouldn't
+     budge. She looked back for her father's approval and saw no cart, no father, no sisters. Stella ended the barter, panicked. She raced around town thinking that her father had other dealings. He was nowhere to be found.
+     Young Stella wept in the square. Eventually that evening a kind elderly halfling woman approached the weeping figure. She comforted her. Told her their were bigger problems. Bigger problems that needed solutions. The
+     kind elderly halfling lady told Stella, "you're from where you choose to be from. You can be Stella of Hilltop". The name stuck and Stella quickly became a surrogate child to the people of Hilltop. Her father never did
+     return.
 
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -396,7 +523,10 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Stella is a determined young lady. Being abandoned by her family has left her cautios to trust anyone, but her adopted family has made her strong and confident. She wears her heart on her sleeve and has turned her ire
+     towards those of wealth, like the father who abandoned her. Her indignance has led her to join the resistance against the ruling class though her health issues do limit her ability to participate in physical combat 
+     
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -405,4 +535,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

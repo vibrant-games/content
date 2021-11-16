@@ -1,0 +1,585 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: Ulther_Hapwath
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-04-10"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Ulther Hapwath
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: young adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Hybrid
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Human
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: they/them
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Experimental Biologist
+    
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Wizard
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: School of Transmutation
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 14
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Neutral
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Elven
+    - Vedalken
+
+
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: Collegium_Imaginata
+      name: Collegium Imaginata
+      role: Scientist and Researcher
+
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Reckless
+    - Curious
+    - Obsessive
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  A seemingly patchwork blue-skinned being, mostly hidden under a black coat walks through the market with several cages
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Tall, muscular, long white hair and what seems to be a few extra appendages under their long black leather coat
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "Each addition gets me closer to perfection", "Why would anyone want to remain normal, when they can be so much more?"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   has a slightly crazy look in their eyes, always looks like they're ready to pounce
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      the pursuit of perfection  
+      
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      body modification
+      
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      reckless, clearly willing to experiment on themself
+      
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      Is being fed secrets from an unknown entity helping along its research
+      
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 17
+    hit-points: 84
+    speed: 30
+    str: 19
+    dex: 16
+    con: 15
+    int: 20
+    wis: 11
+    cha: 16
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+   - - Hybrid Abilities:
+       - Truesight - Berbalang Eye: Can see in magical Darkness, can see Invisibe things, Automatically saves against Illusions, Can see shapeshifter's true form and can see the Ethereal Plane
+       - Darkvision - Owl Eye: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+       - Manta Glide - Manta Wings: Subtract up to 100 feet when calculating fall damage. Can glide 2 feet horizontally for evey 1 foot of vertical drop  
+       - Nimble Climb - Spider Skin: Climbing speed of 30 feet
+       - Underwater Adaptaion - Shark Gills: Can breathe air and water. Swim speed
+       - Grappling Appendages - Squid Tentacles: 2 tentacles which can use an action to grapple a creature or can unarmed strike for 1d6+4 and can attempt to grapple immediately after hitting as a bonus action
+       - Carapace - Giant Crab Shell: +1 to AC
+       - Acid Spit - Ankheg Acid Pouches: Twice per long rest, Targets one creature within 30 feet, Target must make a Dex Saving Throw against DC15 or takes 3d10 Damage. 
+       - Poison Sting - Giant Scorpion Tail: A hit does 1d10+2 piercing damage. Then the target must make a DC15 Con Saving Throw or take 4d10 poison damage or half that on a successful save       
+ 
+   - - Wizard Abilities:
+       - Spellcasting: 
+         Cantrips: Chill Touch, Fire Bolt, Ray of Frost, Mage Hand, Minor Illusion
+         1st Level: Burning Hands, Disguise Self, Fog Cloud, Magic Missle
+         2nd Level: Acid Arrow, Alter Self, Web
+         3rd Level: Counterspell, Fireball, Gaseous Form
+         4th Level: Banishment, Black Tentacles, Polymorph
+         5th Level: Cloudkill, Conjure Elemental
+         6th Level: Flesh to Stone
+         7th Level: Reverse Gravity
+        
+   - - Spellcasting Ability: 
+       - Ritual Casting: Can ritual cast and spell in spellbook with a ritual tag
+       - Arcane Recovery: After a short rest can recover combined spell slots up to 7
+
+   - - School of Transmutation Abilities: 
+       - Transmutation Savant: Gold and Time required to copy Transmutation spells is halved
+       - Minor Alchemy: For each 10 minutes spent performaing procedure, can transform 1 cubic foot of wood, stone, iron, copper or silver into a different one of those materials for 1 hour or concentration
+       - Transmuters Stone: Can spend 8hrs to create a transmuter's Stone which gives a creature: Darkvision, Increase speed of 10 feet, Proficiency on Constitution Saving Throws, or Resistance to acid, cold, 
+                            fire, lightning or thunder damage. The effect can be changed any time a transmutation spell is cast
+       - Shapechanger: Once per short rest can cast Polymorph on themselves changing into a beast with challenge rating 1 or lower
+       - Master Transmuter: Can use all enregy in a Transmuter's Stone to chose: Major Transformation, Panacea, Restore Life or Restore Youth      
+
+    special-abilities:
+    - Proficiencies: Proficient in Survival, Arcana, Animal Handling and Pecerption with expertise in Nature and Medicine     
+    - Feats: Keen Mind, War Caster, Observant, Grappler, Spell Sniper 
+    - Legendary Resistance: (3/Day), If Ulther Hapwath fails a saving throw they can choose to succeed instead 
+    - Legendary Actions: Ulther Hapwath can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                         Ulther Hapwath regains spent Legendary Actions at the start of their turn
+      - Scorpion Strike: Ulther Hapwath can make an attack with their scorpion sting
+      - Spell Sniper: Ulther Hapwath can cast a cantrip
+      - Slimy Hugs: Ulther Hapwath can use their squid tentacles to attempt to grapple a creature.                   
+    
+    attacks: |
+      Has 3 attacks which can be any of their natural attacks or a spell attack
+    combat-tactics: |
+      Won't go out of their way to pick fights, but is easy to anger and happy to show off their martial and magical prowess.
+    special-equipment:
+    - Transmuters Stone
+    - Medical Kit
+    - Spellbook
+    
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Ulther Hapwath was originally a human but has spent most of their adult life experimaneting on and augmenting his own body in search of some distorted view of human perfection. A skilled spell slinger and hunter, 
+      they hunt and capture many specimens of various creatures to study and experiment on. They are a brilliant biologist with an exceptional knowledge of many different creatures anatomy and the steady hands of a 
+      surgeon. Recruited by Gerhardt Klippstein to join the Collegium for their vast biological knowledge, their employers are slightly less than keen on the reckless abandon with which they are willing to experiment 
+      on themselves. Since they joined the Collegium, they have been contacted by a mysterious benefactor from beyond the veil. Ulther has no idea who this benefactor is, but they have been helping to guild their 
+      self-evolution and in the creation of a substance called Cytoplast, a sort of ooze that helps with the bonding of upgrades and grants temporary healing when applied to a living creature.  Ulther's benefactor is 
+      in fact, the disembodied spirit Momir Vig, disgraced and deceased former Guildmaster of the Simic Combine on the Plane of Ravnica. Somehow Momir has crossed into this world and is slowly using Ulther to create 
+      Cytoplast and use it to build him a new body.
+      
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Ulther Hapwath is tall and muscular and severe-looking with pale blue skin and long. hip length, silver/white hair. They wears dark glasses as their replaced eyes are somewhat sensative to bright lights, and a 
+      long, black leather trenchcoat that cover most of their bodily features. On closer inspection, its clear that Ulther has made significant modification to their body. Barbed skin on their hands and feet like a 
+      spider for climbing, the wings of a manta for gliding, sections of crab-like shell armoring portions of their body and a segmented scorpions tail with stinger are all faintly noticeable if someone spends enough 
+      time looking at them, although they are often using some kind of glamour (disguise self, polymorph, etc.) when in public so as not to stand out as much. Ulther is fanatical about his work and about chasing his 
+      personal concept of bodily perfection and finds it hard to comprehend why everyone isn't seeking to augment thier bodies. They are reckless and never think twice about experimenting on themselves and have little 
+      regard for the wellbeing of the other creatures that they experiment on. Thanks to the influence of their secret benefactor, they have gradually started to explore the commonly unknown arcane study of biomancy. 
+      While mostly keeping this information to themselves, they have shared some of their studies with their close friend and fellow body-modifying scientist and Collegium member Thadeus Periwinkle.   
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

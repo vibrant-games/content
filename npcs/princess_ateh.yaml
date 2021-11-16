@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-28 00:54:45
+  date: "2021-07-16"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,17 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 985
-
-  #
-  # Notes from the author(s) about what the seed for the
-  # character was, or whatever.  For internal use only.
-  #
-  # Optional.  0 or more.
-  #
-  author-notes:
-  - The Khazars were a real people who disappeared from Serbia / Croatia / the Balkans a thousand years ago.  If there is a "Yugoslavian appearance" (???), then it would suit her.
-  - Straight from the novel Dictionary of the Khazars (which is bizarre and amazing).
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -92,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -111,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: late tweens
+    age: adolescent
 
     #
     # Races (case insensitive):
@@ -133,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: khazar halfling
+    race: Halfling
 
     #
     # The sub-race can be anything.
@@ -142,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: Lightfoot
 
     #
     # Pronouns (case insensitive):
@@ -160,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    occupation:
-    - Poetess, philosopher, court advisor, conquered princess
+    - Poetess, Philosopher, Court Advisor, Conquered Princess
+    
 
     #
     # D & D classes (case insensitive):
@@ -169,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -184,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: civilian
+    class: Civilian
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: N/A
 
     #
     # Class level.
@@ -209,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: neutral
+    alignment: Neutral
 
     #
     # Alignment tendencies:
@@ -217,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -232,12 +311,12 @@ npc:
     languages:
     - Human
     - Draconic
-    - dwarvish
-    - elvish
-    - gnomish
-    - orcish
-    - troll (but not halfling
-    - except for one word)
+    - Dwarvish
+    - Elvish
+    - Gnomish
+    - Orcish
+    - Giant
+
 
     #
     # Factions:
@@ -250,16 +329,15 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: khazar_halflings
       name: Khazar halflings
+
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -267,7 +345,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Spacy
+    - Flaky  
+    - Devoted
+    - Worried
 
   improv:
 
@@ -282,7 +362,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A young halfling woman bars your path. "Between us, a captured puma on a rope.  How are we to approach each other?"
+    introduction:  A young halfling woman bars your path. "Between us, a captured puma on a rope.  How are we to approach each other?"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -309,7 +389,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "We are all ku"; "Your thoughts are like my dresses, the waistlines all identical"; "All dreams were dreamt long ago."
+    expressions:  "We are all ku"; "Your thoughts are like my dresses, the waistlines all identical"; "All dreams were dreamt long ago."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -332,8 +412,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Recovering her lost language, which she promptly forgot upon the khagan's decision to convert the Khazar halflings.
-
+      Recovering her lost language, which she promptly forgot upon the khagan's decision to convert the Khazar halflings
+      
     #
     # Passions:
     #
@@ -342,7 +422,7 @@ npc:
     #
     passions: |
       Languages; Dreams
-
+      
     #
     # Vulnerabilities:
     #
@@ -351,14 +431,17 @@ npc:
     #
     vulnerabilities: |
       Remembers none of her native halfling language but the word "ku" (a fish-scaled fruit with a pulsating stone at heart).
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-
+    secrets: | 
+      N/A
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -371,8 +454,8 @@ npc:
     dex: 13
     con: 13
     int: 16
-    wis: 18
-    cha: 11
+    wis: 14
+    cha: 18
 
   #
   # Special characteristics.
@@ -382,16 +465,24 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - History; Nature; Perception; Arcana; Religion
+    skills:       
+   - - Halfling Abilities:
+       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+       - Brave: Has advantage on Saving Throws against being Frightened 
+       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+       - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
+      
+    special-abilities:
+       - Proficiencies: Persuasion, Performance, Perception, Arcana, Religion
+       - Feats: N/A
+       
     attacks: |
-      Bat (Cudgel)
+      1 attack with club
     combat-tactics: |
       Princess Ateh will rarely engage in combat and instead call upon guards or surrounding civilians to intervene on her behalf.
     special-equipment:
-    - Cutout letters that will kill a would-be assassin on sight; she pastes these on her eyelids at night
-    - before sleep.
-
+       - Cutout letters that cast Power Word Kill on a would-be assassin on sight, she pastes these on her eyelids at night before sleep                                                   
+      
   profile:
 
     #
@@ -402,8 +493,13 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      <p>Princess Ateh may or may not be a princess anymore. Her peoples' kingdom of Jujubalanah [A halfling kingdom that has been lost (or maybe not!)] did not fair well in the Goblin and Hobgoblin raids of the Dark Reckoning of Rakosh Ghaal [Any Goblinoid or Orcish Deity]. Largely razed to the ground, Jujubalanah was once a bright kingdom populated by loving and generous halfings and their ilk. Ateh was among their best. Having been driven from her kingdom by war and subsequently hunted by the viscious dark forces of Rokash Ghaal, Ateh now remains in hiding yet continuesher well-skilled political performances for various factions within the realms to promote equality and abundance.</p><p>Her peoples believed in the beauty imparted by by Ku, her peoples concept of a central spiritual entity. The philosophy of Ku dictates that all things happen at the same time and that time is merely the gift of enjoying every moment that has or will exist. Her beliefs fuel her beauty and her beauty fuels her beliefs.</p>
-
+     Princess Ateh may or may not be a princess anymore. Her peoples' kingdom of Jujubalanah [A halfling kingdom that has been lost (or maybe not!)] did not fair well in the Goblin and Hobgoblin raids of the Dark Reckoning of
+     Rakosh Ghaal [Any Goblinoid or Orcish Deity]. Largely razed to the ground, Jujubalanah was once a bright kingdom populated by loving and generous halfings and their ilk. Ateh was among their best. Having been driven from
+     her kingdom by war and subsequently hunted by the viscious dark forces of Rokash Ghaal, Ateh now remains in hiding yet continues her well-skilled political performances for various factions within the realms to promote
+     equality and abundance. Her peoples believed in the beauty imparted by by Ku, her peoples concept of a central spiritual entity. The philosophy of Ku dictates that all things happen at the same time and that time is merely
+     the gift of enjoying every moment that has or will exist. Her beliefs fuel her beauty and her beauty fuels her beliefs
+ 
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -412,7 +508,9 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Ateh is sweet and bright and devoted to her people and their future. She can be slightly flaky in the way that artists can be. She knows that she is still being hunted and it worries her, but not as much as the plight of
+     her people worries her.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -421,7 +519,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
-  - ful-picture: 1256
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

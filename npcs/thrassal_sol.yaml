@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-01-29 06:44:15
+  date: "2021-08-08"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1073
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: elf
+    race: Elf
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: Devkarin
 
     #
     # Pronouns (case insensitive):
@@ -149,9 +213,9 @@ npc:
     #
     # Required.
     # Max length per occupation: ...
-    #
-    occupation:
+    
     - UnderCity Guide
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: druidrogue
+    class: Druid / Rogue
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Circle of Spores / Scout
 
     #
     # Class level.
@@ -183,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 6/5
+    level: 6 / 5
 
     #
     # Alignments (case insensitive):
@@ -199,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful evil
+    alignment: Lawful Evil
 
     #
     # Alignment tendencies:
@@ -207,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -225,6 +314,7 @@ npc:
     - Elvish
     - Druidic
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -236,24 +326,27 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: golgari_guild
       name: Golgari Guild
     - id: devkarin_tribe
       name: Devkarin Tribe
+
 
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Jealous   
+    - Sneaky
+    - Devout
 
   improv:
 
@@ -268,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: He would be assigned by his Guildmaster to escort the party through the spore farms of Ravnica's UnderCity
+    introduction:  He would be assigned by his Guildmaster to escort the party through the spore farms of Ravnica's UnderCity
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -279,7 +372,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Tall with grayish skin, black dreadlocks, dark black leather armor covered in moss &amp; fungi. One Orange eye &amp; One Green
+    appearance:   Tall with grayish skin, black dreadlocks, dark black leather armor covered in moss and fungi. One Orange eye and One Green
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -295,7 +388,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "My little friends don't like you", "Death is the natural progression of life", "Death feeds the world"
+    expressions:  "My little friends don't like you", "Death is the natural progression of life", "Death feeds the world"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -319,7 +412,7 @@ npc:
     #
     motivations: |
       He fills his role in the circle of life and death
-
+      
     #
     # Passions:
     #
@@ -327,8 +420,8 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Heloves his fungi. Rot and regrowth are his passion
-
+      He loves his fungi. Rot and regrowth are his passion
+      
     #
     # Vulnerabilities:
     #
@@ -337,16 +430,17 @@ npc:
     #
     vulnerabilities: |
       has a pariah complex. overinflated self-importance
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets: | 
       the secrets of life and death.
-
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -354,7 +448,7 @@ npc:
   stats:
     armour-class: 13
     hit-points: 56
-    speed: 30
+    speed: 25
     str: 12
     dex: 15
     con: 18
@@ -370,25 +464,75 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Druid and Elf Skills
-    special-abilities: |
-      Halo of Spores, Symbiotic Entity, Fungal Infestation
-      |
-      Wild Shape, Druid Spell Casting
-      |
-      Plagueborn, Undercity Dweller, 60' Darkvision,
-      |
-      Keen Sense, Fey Ancestry, Trance
-      |
-      Sneak Attack, Skirmisher, Survivalist, Cunning Action, Uncanny Dodge
-    attacks: |
-      Razor Bow
-      |
-      Scimitar
-    combat-tactics: |
-      Hide in the shadow and attack from a distance with his razor bow
+    skills: 
 
+   - - Elf Abilities:
+        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        - Darkvision: Can see 120 in dim light as though it was bright light and in darkness as if it was dim light
+        - Keen Senses: You have proficiency in the Perception skill 
+        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+                  
+   - - Devkarin Abilities:
+       - Undercity Dweller: Devkarin gain advantage on History and Survival checks made underground.
+       - Plagueborn: Resistant to Poison and Disease. Advantage on Constitution Saving Throws
+       - Weapon Proficiency: Devkarin are naturally proficient with the Longsword, Longbow, Composite longbow, shortbow, composite shortbow, and Razor bow       
+
+   - - Rogue Abilities:
+       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+                            
+   - - Scout Abilities:
+       - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks
+       - Survivalist:  you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
+       
+   - - Druid Abilities:
+       - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+                  message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
+       - Spellcasting: Spell DC 16
+         Cantrips: Infestation, Druidcraft, Produce Flame
+         1st Level: Goodberry, Detect Poison and Disease, Entangle, Charm Person
+         2nd Level: Pass Without Trace, Locate Animals or Plant, Locate Object
+         3rd Level: Speak with Plants, Wall of Water, Meld to Stone
+       - Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+                     determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+                     flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+                     You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+                     
+   - - Circle of Spores Abilities:
+       - Halo of Spores: you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn 
+                         there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th
+                         level, 1d8 at 10th level, and 1d10 at 14th level.
+       - Symbiotic Entity: you gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 
+                           temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits 
+                           - When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total. 
+                           - Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit. 
+                           These benefits last for 10 minutes, until you lose all these temporary hit points. or until you use your Wild Shape again.
+       - Fungal Infestation: your spores gain the ability to infest a corpse and animate it. If a beast or a humanoid that is Small or Medium dies within 10 feet of you, you can use your reaction to animate it, causing it to 
+                             stand up immediately with 1 hit point. The creature uses the Zombie stat block in the Monster Manual. It remains animate for 1 hour, after which time it collapses and dies. In combat, the zombie's 
+                             turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack. You can use this feature a number of times equal to 
+                             your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.     
+       - Spellcasting: Spell DC 16 
+         2nd Level: Chill Touch
+         3rd Level: Blindness/Deafness, Gentle Repose
+         5th Level: Animate Dead, Gaseous Form
+       
+    special-abilities:
+       - Proficiencies: Survival, Stealth, Perception, Animal Handling, Nature 
+       - Feats: Sharpshooter
+       
+    attacks: |
+      1 attacks with Razor Bow or Scimitar
+    combat-tactics: |
+      He'll always try to hide in the shadow and attack from a distance with his razor bow
+    special-equipment:
+    - Scimitar
+    - Razor Bow: This bow has 3 charges. You can use a bonus action to expend 1 charge. When you do, the bow forms an aura of razor sharp serrated blades that lasts for 1 minute. When you make a ranged attack roll with this 
+                 weapon while the aura is active, you do not get disadvantage on the attack roll if you are within 5 feet of a hostile creature. The bow regains 1d3 expended charges daily at dawn
+    
+    
   profile:
 
     #
@@ -399,8 +543,12 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Raise as a druid by his people and initiated into the Golgari Guild at a young age for training, he has an extensive knowledge of the routes and pathways through Ravnic's UnderCity. The UnderCity is a dangerous place filled with rot, decay and other not so nice things.  He was injured during his ascension trial to become a full Golgari Spore Priest, accounting for his limp, and still holds a grudge against the elf who caused the injury. One day he'll get his payback. In the meantime, He takes pride, probably too much pride, in getting the Golgari High Council's guests safely through the UnderCity unscathed.
+     Raise as a druid by his people and initiated into the Golgari Guild at a young age for training, he has an extensive knowledge of the routes and pathways through Ravnic's UnderCity. The UnderCity is a dangerous place filled
+     with rot, decay and other not so nice things.  He was injured during his ascension trial to become a full Golgari Spore Priest, accounting for his limp, and still holds a grudge against the elf who caused the injury. One 
+     day he'll get his payback. In the meantime, He takes pride, probably too much pride, in getting the Golgari High Council's guests safely through the UnderCity unscathed.
 
+
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -409,7 +557,11 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Thrassal is devout in his faith in the circle of life and death. He should have been a Spore Priest, but an injury kept him from completing his ascension. He has excepted his role and is proud to be one of the top guides 
+     in the Undercity, but he has never forgotten the slight. He is jealous of those who did become full priests, especially the one he blames for his injury. He will never for get that slight and plots to one day have his 
+     revenge
+     
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -418,7 +570,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
-  - _wp_page_template: default
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

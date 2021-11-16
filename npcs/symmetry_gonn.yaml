@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-04 22:02:28
+  date: "2021-08-01"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1352
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: kobold
+    race: Kobold
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -150,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
-    occupation:
-    - Informer
+    - Performer, Informer
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +223,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +238,30 @@ npc:
     #
     # Required.
     #
-    class: bard
+    class: Bard
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: College of Whispers
 
     #
     # Class level.
@@ -199,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -207,6 +294,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -220,10 +309,11 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - Goblinoid
+    - Goblin
     - Common
     - Draconic
-    - Elven
+    - Elvish
+
 
     #
     # Factions:
@@ -236,22 +326,25 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: the_windrunners
       name: The Windrunners
+
 
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Clever   
+    - Nervous
+    - Talented
 
   improv:
 
@@ -266,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A flash of rusty scales and bright clothes darts from a dark alley across the street. "Cause a distraction!!"
+    introduction:  A flash of rusty scales and bright clothes darts from a dark alley across the street. "Cause a distraction!!"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -293,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "They be lookin fer me, yknow. Gotta go.", "They want that damned group, they can get em themselves"
+    expressions:  "They be lookin fer me, yknow. Gotta go.", "They want that damned group, they can get em themselves"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -306,7 +399,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Bouncy and nervous but regains composure. Hums different notes to check her vocal tone. 
+    mannerisms:   Bouncy and nervous but regains composure. Hums different notes to check her vocal tone.
 
   acting:
     #
@@ -317,7 +410,7 @@ npc:
     #
     motivations: |
       Escaping a regional watch hoping to disband a crew of kobolds believed sent by a dragon to stir and steal valuables
-
+      
     #
     # Passions:
     #
@@ -325,22 +418,27 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Self-Preservation. Wealth. 
-
+      Self-Preservation. Wealth.
+      
     #
     # Vulnerabilities:
     #
     # Required.
     # ???Maximum length???
     #
-
+    vulnerabilities: |
+      She is lonely now that her group has disbanded
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-
+    secrets: | 
+      Most of what she informs the authorities is lies
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -364,27 +462,63 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Performance; Stealth; Disguise; History; Persuasion; Thieves' Tools
-    special-abilities: |
-      Ambush; Darkvision
-      |
-      Bardic Inspiration; Countercharm; Expertise; Song of Rest; Jack of All Trades
-      |
-      Psychic Blades; Words of Terror; Mantle of Whispers
-      |
-      Spellcasting: 0 - 4; 1 - 4; 2 - 3; 3 - 3; 4 - 3; 5 - 2;
+    skills: 
+
+   - - Kobold Traits: 
+       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+       - Grovel, Cower & Beg: As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that
+                              can see you. Once you use this trait, you can't use it again until you finish a short or long rest.
+       - Pack Tactics: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
+       - Sunlight Sensitivity: You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.
+
+   - - Bard Abilities:
+       - Bard Spellcasting: Spell DC 15 
+           Cantrip: Mage Hand, Vicious Mockery, Friends, Dancing Lights
+           1st Level: Charm Person, Dissonant Whispers, Hideous Laughter, Disguise Self  
+           2nd Level: Detect Thoughts, Magic Mouth, Zone of Truth
+           3rd Level: Dispel Magic, Tongues, Fear
+           4th Level: Charm Monster, Dimension Door, Greater Invisibility
+           5th Level: Mislead, Modify Memory
+       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d10. Once within the next 
+                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                       being Frightened or Charmed
+       - Expertise: gets double proficiency bonus in
+       - Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip: Sending, Scrying
+       
+   - - College of Whispers Abilities:
+       - Psychic Blades: you gain the ability to make your weapon attacks magically toxic to a creature's mind. When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an 
+                         additional 5d6 psychic damage to that target. You can do so only once per round on your turn.
+       - Words of Terror: you learn to infuse innocent-seeming words with an insidious magic that can inspire terror. If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear into its
+                          mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in
+                          this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. If the target succeeds on its saving throw, the target has no hint that you tried to
+                          frighten it. Once you use this feature, you can’t use it again until you finish a short rest or long rest.
+       - Mantle of Whispers: you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or
+                             you finish a long rest. You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy
+                             and alive. This disguise lasts for 1 hour or until you end it as a bonus action. While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual
+                             acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by
+                             drawing on its memories. Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.
+                             Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest.     
+       
+    special-abilities:
+       - Proficiencies: Performance, Stealth, Disguise Kit, History, Persuasion, Acrobatics, Deception
+       - Feats: Dual Weilder, Actor
+       
     attacks: |
-      Dagger - Dual Wield
-      |
-      Sling
+      2 attacks with dagger, sling or spell attack
     combat-tactics: |
       Symmetry will parkour about the area - off walls, fences, people, places, things - like a pinball in song. When the very first combatant falls, She will use Mantle of Whispers to adopt the identity and flee.
     special-equipment:
     - A small singing bowl that she can play almost like a drum
     - lucimeter
     - and bells at the same time.
-
+    - Sling and Stones
+    - 2x Daggers
+    
+    
   profile:
 
     #
@@ -395,8 +529,21 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      <p>Kobolds are kobolds. Well, not always.</p><p>Symmetry (not her birth name) was raised in a cavern den of the hundreds of kobolds making up the clan of Kut-Kut.  They were dedicated to serving the Red Dragon, Vys, who lived deeper in the mountain. Vys would task the clan with securing the cavern tunnels and with raiding nearby trading routes for treasures to pile atop his horde. One evening, Vys heard her singing and demanded she sit atop his horde for the rest of her life to entertain him.</p><p>Not a great deal in the mind of anybody, really, even a kobold, and Symmetry (again, not her birth name, but she won't tell) grew disenfranchised with her life with Vys and her clan's unwillingness to stand up to the tyrant dragon. Vys would sleep often and would wake easily. He abhorred her silence and would punish her for it. She found a cunning solution.</p><p><i>"Vys, you want newer songs? You must be getting bored of the ones I know"</i>, she whispered in his ear in draconic.</p><p><i>"Yes,"</i> the dragon's deep growl trembled the piles of gold and treasures, <i>"I am."</i> The dragon chuckled sardonically.</p><p><i>"Well, I must read to learn new songs. And to read I must be quiet."</i></p><p><i>"Ay. Then silence for an hour." </i>The great red dragon purred.</p><p>Symmetry (again, I insist <i>not her birth name</i>) took an hour each day to learn more songs, more spells, and more knowledge from the tomes and treasures that littered Vys' lair.</p><p>When a commanding officer of the Kut-Kut tribe rushed in one day to alert Vys that a small party of heroes had breached the cave depths, chaos ensued. Little did Vys know, this was a ruse created by a small group of rebels who sought to escape the caverns. In the ensuing chaos, Symmetry was able to distract Vys with songs and aid in their escape.</p><p>The small kobold crew bonded over the weeks of travel that followed and set their sites on using their abilities to gain their own wealth. Upon arriving in a nearby city, they set forth to 'relieve' the population of their wealth. On a night of rest in a removed alleyway, Symmetry's song of her groups' exploits was overheard by a beggarly human who knew the value of being able to aid in disbanding this group of bandits and, perhaps even more so, the value of informing the watch as to the location of Vys' lair. He turned the information over for a handsome reward.</p><p>The Regional Watch found the band of kobolds with haste. Symmetry was a primary target with her bright clothes and distinct appearance. However, using the secrets found in Vys' lair, Symmetry was able to terrify the Watchman and escape. The rest of her band scattered.</p><p>Symmetry has been in flight ever since and makes a good living from selling her secrets - via letter - to the Regional Watch; sending them on wild goose chases.</p>
+     Kobolds are kobolds. Well, not always. Symmetry (not her birth name) was raised in a cavern den of the hundreds of kobolds making up the clan of Kut-Kut.  They were dedicated to serving the Red Dragon, Vys, who lived deeper
+     in the mountain. Vys would task the clan with securing the cavern tunnels and with raiding nearby trading routes for treasures to pile atop his horde. One evening, Vys heard her singing and demanded she sit atop his horde
+     for the rest of her life to entertain him. Not a great deal in the mind of anybody, really, even a kobold, and Symmetry (again, not her birth name, but she won't tell) grew disenfranchised with her life with Vys and her
+     clan's unwillingness to stand up to the tyrant dragon. Vys would sleep often and would wake easily. He abhorred her silence and would punish her for it. She found a cunning solution. "Vys, you want newer songs? You must be
+     getting bored of the ones I know", she whispered in his ear in draconic. "Yes," the dragon's deep growl trembled the piles of gold and treasures, "I am." The dragon chuckled sardonically. "Well, I must read to learn new
+     songs. And to read I must be quiet." "Ay. Then silence for an hour." The great red dragon purred. Symmetry (again, I insist not her birth name) took an hour each day to learn more songs, more spells, and more knowledge
+     from the tomes and treasures that littered Vys' lair. When a commanding officer of the Kut-Kut tribe rushed in one day to alert Vys that a small party of heroes had breached the cave depths, chaos ensued. Little did Vys
+     know, this was a ruse created by a small group of rebels who sought to escape the caverns. In the ensuing chaos, Symmetry was able to distract Vys with songs and aid in their escape. The small kobold crew bonded over the
+     weeks of travel that followed and set their sites on using their abilities to gain their own wealth. Upon arriving in a nearby city, they set forth to 'relieve' the population of their wealth. On a night of rest in a
+     removed alleyway, Symmetry's song of her groups' exploits was overheard by a beggarly human who knew the value of being able to aid in disbanding this group of bandits and, perhaps even more so, the value of informing the
+     watch as to the location of Vys' lair. He turned the information over for a handsome reward. The Regional Watch found the band of kobolds with haste. Symmetry was a primary target with her bright clothes and distinct
+     appearance. However, using the secrets found in Vys' lair, Symmetry was able to terrify the Watchman and escape. The rest of her band scattered. Symmetry has been in flight ever since and makes a good living from selling
+     her secrets - via letter - to the Regional Watch; sending them on wild goose chases.
 
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -405,7 +552,9 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+     Symmetry, not her real name, is quick, clever and talented. She is happy to be free of her dragon captor, but misses her clan and especially her group of bandits. 
+     
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -414,7 +563,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - subclass: College of Whispers
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

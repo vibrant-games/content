@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-13 14:01:12
+  date: "2021-07-10"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1434
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: N/A
 
     #
     # Pronouns (case insensitive):
@@ -152,6 +216,7 @@ npc:
     #
     occupation:
     - Hermit
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +239,30 @@ npc:
     #
     # Required.
     #
-    class: shaman
+    class: Shaman
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Path of the Spirit
 
     #
     # Class level.
@@ -199,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful good
+    alignment: Chaotic Good
 
     #
     # Alignment tendencies:
@@ -207,6 +295,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -224,6 +314,7 @@ npc:
     - Quori
     - Celestial
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -235,22 +326,25 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: monks_of_adaran
       name: Monks of Adaran
+
 
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Wise 
+    - Tired
+    - Confused
 
   improv:
 
@@ -265,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: In small clearing, a leathery old man tends a small pot over a fire. "The Spirits said you would come. Please sit"
+    introduction:  In small clearing, a leathery old man tends a small pot over a fire. "The Spirits said you would come. Please sit"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -292,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "The Spirits have spoken", "Your path is clear to me", "Il-Yannah surrounds you with its light"
+    expressions:  "The Spirits have spoken", "Your path is clear to me", "Il-Yannah surrounds you with its light"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -316,14 +410,16 @@ npc:
     #
     motivations: |
       Helping the spirits carry out their wishes. Spreading the light of Il-Yannah. Fighting the Inspired
-
+      
     #
     # Passions:
     #
     # Required.
     # ???Maximum length???
     #
-
+    passions: |
+      Helping the spirits
+      
     #
     # Vulnerabilities:
     #
@@ -332,29 +428,30 @@ npc:
     #
     vulnerabilities: |
       He's a very old man. He occasionally experiences periods of madness due to his Quori soul
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
-      He speaks to the spirits through his spirit and knows what they want. He's been fleeing the Dreaming Dark his whole lif
-
+    secrets: | 
+      He speaks to the spirits through his spirit and knows what they want. He's been fleeing the Dreaming Dark his whole life
+       
+      
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 13
-    hit-points: 173
-    speed: 20
+    armour-class: 18
+    hit-points: 66
+    speed: 55
     str: 8
     dex: 11
     con: 14
     int: 18
-    wis: 20
+    wis: 23
     cha: 20
 
   #
@@ -365,56 +462,137 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Herbalism and Potion Making
-    special-abilities: |
-      Kalashtar Traits:
-      Dual Mind
-      Mental Discipline
-      Mind Link
-      Psychic Glamour
-      Severed from Dreams
-      |
-      Totem Spirit: Raven
-      Ironwood Skin
-      Natural Explorer
-      Spiritual Magic
-      Spirit Sight
-      Primal Protector
-      Spiritual Connection
-      Bounty of Life
-      Spiritual Whisper
-      Eternal Favor
-      Spiritual Warrior
-      |
-      Sixth Sense
-      Spiritual Possession
-      Bridge Between Worlds
-      Vengeful Spirits
-      Grand Shaman
-      Totem of Spirits
-      |
-      Path of the Spirit
-      Spiritual Guide
-      Ghost Touch
-      Spiritual Focus
-      Spirit Journey
-      |
-      Wild Talent
-      Tower of Iron Will
-      Metabolic Control
-      Telepathic
-      Telekinetic
+    skills:       
+
+   - - Kalashtar Abilities:
+       - Dual Mind: When you make a Wisdom saving throw, you can use your reaction to gain advantage on the roll. You can use this trait immediately before or after you roll, but before any of the roll's effects occur.
+       - Mental Discipline: You have resistance to psychic damage
+       - Mind Link: You can speak telepathically to any creature you can see within 60 feet of you. You don’t need to share a language with the creature for it to understand your telepathic messages, but the creature must be
+                    able to understand at least one language or be telepathic itself. As a bonus action when you’re speaking telepathically to a creature, you can give that creature the ability to speak telepathically to you
+                    until the start of your next turn. To use this ability, the creature must be within 60 feet of you and be able to see you.
+       - Psychic Glamour: Choose one of the following skills - Insight, Intimidation, Performance, or Persuasion. You have advantage on all ability checks you make with that skill
+       - Severed from Dreams: Kalashtar sleep, but they don’t connect to the plane of dreams as other creatures do. Instead, their minds draw from the memories of their otherworldly spirit while they sleep. As such, you are
+                              immune to magical spells and effects that require you to dream, like the Dream spell, but not to spells and effects that put you to sleep, like the Sleep spell
+
+   - - Shaman Abilities:
+       - Totem Spirit: Raven
+       - Ironwood Skin: While you are not wearing any armor, your Armor Class equals 10 + your Wisdom modifier + your Constitution modifier. You can use a shield and still gain this benefit
+       - Natural Explorer: Favored Terrain - Forest. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you are proficient.
+                           While traveling for an hour or more in your favored terrain, you gain the following benefits - 
+                           - Difficult terrain doesn’t slow your group’s travel.
+                           - Your group can’t become lost except by magical means.
+                           - Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
+                           - If you are traveling alone, you can move stealthily at a normal pace.
+                           - When you forage, you find twice as much food as you normally would.
+                           - While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+       - Spiritual Magic: Spell DC 20
+         Cantrips: Mage Hand, Mold Earth, Shape Water, Toll the Dead, Infestation
+         1st Level: Bane, Bless, Purify Food and Water, Speak With Animals
+         2nd Level: Augury, Shatter, Spiritual Weapon
+         3rd Level: Speak with Dead, Spiritual Guardians, Fireball
+         4th Level: Blight, Polymorph, Wall of Fire
+         5th Level: Awaken, Commune with Nature, Modify Memory, Insect Plague
+         6th Level: Chain Lightning, Disintegrate
+         7th Level: Plane Shift, Resurrection
+         8th Level: Control Weather
+         9th Level: Storm of Vengeance
+       - Spirit Sight: you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see,
+                       such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated
+       - Primal Protector: you can connect with animal spirits and improve the demeanor of a creature with the beast type that you can see. Using your totem, you can use your action to attempt to make a target creature
+                           indifferent about creatures of your choice that it is hostile toward. Each beast creature that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw,
+                           it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate. You are able to perform this twice per short or long rest
+       - Spiritual Connection: your spiritual connection with your Spirit World grows and it blesses you with mental fortitude. A spiritual aura surrounds you, and grants you and any allies within 10 feet advantage on
+                               Constitution and Wisdom saving throws 
+       - Bounty of Life: you can choose to drain the life force from a creature. When you hit a creature with a melee attack, the target must succeed on a Constitution saving throw versus your spell save DC; on a failed save, you
+                         gain temporary hit points equal to the damage caused to the creature. You can use this ability once per round
+       - Spiritual Whisper: Psychic Scream - you are bestowed a magical secret as if it were a whisper into your mind. Choose one 9th- level spell from the Shaman spell list as this whisper. You can cast your secret spell once
+                            without expending a spell slot. You must finish a long rest before you can do so again. You regain all uses of your Spiritual whisper when you finish a long rest. 
+       - Eternal Favor: the primal magic that you wield requires you to age very slowly. In order to complete tasks in the natural world, every 10 years that pass, your body ages only 1 year
+       - Vengeful Spirits: when targeting a creature with a spell that forces them to make a Wisdom saving throw you can choose to loose angry spirits along with the spell. Once per short rest, you can use this feature to make
+                           the target make their initial Wisdom saving throw at disadvantage. On a failed saving throw the spirits torment the target's mind, causing the spell to deal double damage, or last twice as long, your
+                           choice if the spell has a duration and causes damage. On a success, nothing happens
+       - Spiritual Warrior: you embody the spiritual power of the world and it infuses you with vigor and insight. Your Wisdom score increases by 4. Your maximum for this score is now 24
+       
+   - - Path of the Spirit Abilities:
+       - Spiritual Guide:  you are bestowed a spirit guide to help you progress further. The spirit guide takes on the incorporeal form of your totem spirit. Starting when you choose this path at 3rd level, your Spirit Guide
+                           appears by your side. The Spirit Guide is the embodiment of the Spirit World for you. It cannot be seen by anyone else by non-magical means, but it can see and hear others as you would. The Spirit
+                           guide communicates and interacts with the shaman as a conscious being. The spirit guide grants the shaman advantage to initiative rolls, can’t be surprised while conscious, and other creatures don’t
+                           gain advantage on attack rolls against you as a result of being hidden from you.
+       - Ghost Touch: any weapon that you touch deals damage normally against any incorporeal creature regardless of its resistance to that damage type. This feature lasts as long as the shaman holds the weapon. The shaman also
+                      gains resistance to melee attacks from incorporeal creatures e.g. ghosts, shadows, wraiths, will-o’-wisp, specters
+       - Spiritual Focus: you can give the spirit guide the task of concentrating on a spell or spell-like ability that is maintained through concentration. The shaman can act normally while his spirit guide concentrates on the
+                          spell. If the shaman casts another spell that requires concentration, then the first spell effect ends and the second spell begins. The shaman can choose the spirit guide to concentrate on any
+                          subsequent spells cast. A spirit guide can concentrate on only one spell at a time. A spirit guide does not have to make Concentration checks for circumstances such as the shaman taking damage. The
+                          spirit guide is not present for anyone to interrupt or otherwise interact. If the shaman falls unconscious or dies, then the spirit guide stops concentrating on the spell, and the spell’s effect ends.
+       - Spirit Journey: a spirit shaman knows how to vanish bodily into the Spirit World. As an Action, a shaman can become incorporeal and move through other creatures and objects as if they were difficult terrain. He takes
+                         1d10 force damage if he ends his turn inside an object. While incorporeal, the shaman does not invoke attacks of opportunity. Outside of combat, the shaman can spend time in prayer and meditation to
+                         commune directly with other spirits in the Spirit World to attempt receive information concerning their current quest. The shaman can ask three questions that can be answers with a yes or no. While in
+                         meditation, the shaman’s soul is in the Spirit World, and cannot communicate with others in the Natural world
+                         
+   - - Psionic Abiities:
+       - Wild Talent: You also harbor a wellspring of psionic power within yourself, an energy that ebbs and flows as you channel it in various ways. This power is represented by your Psionic Talent die
+                      Psionic Talent Die = d12
+                      - Psionic Talent Options:
+                        - Psi-Boosted Ability: When you make an ability check with the ability increased by this feat, you can roll your Psionic Talent die and add the number rolled to the check. You can choose to do so before
+                                               or after rolling the d20, but before you know whether the check succeeded or failed.
+                        - Psi-Guided Strike: Once on each of your turns when you hit with an attack roll that uses the ability increased by this feat, you can roll your Psionic Talent die after you make the damage roll and then
+                                             replace one of the damage dice with the number rolled on the Psionic Talent die.
+                        - Changing the Dies Size: If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example, if
+                                                  the die is a d6 and you roll a 6, it becomes a d4. If it’s a d4 and you roll a 4, it becomes unusable until you finish a long rest. Conversely, if you roll a 1 on your Psionic
+                                                  Talent die, it increases by one die size after the roll, up to its starting size. This represents you conserving psionic energy for later use. For example, if you roll a 1 on a
+                                                  d4, the die then becomes a d6. Whenever you finish a long rest, your Psionic Talent die resets to its starting size. When you reach certain levels, the starting size of your
+                                                  Psionic Talent die increases - at 5th level (d8), 11th level (d10), and 17th level (d12). If you have a Psionic Talent die from another source, such as a class feature, you
+                                                  don’t get more than one die; use only the one with the largest starting size
+                        - Psi Replenishment: As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long
+                                             rest.
+       - Metabolic Control: You have refined psionic control over your body’s functions. You gain the following benefits -
+         - If your Psionic Talent die is available, you can take an action to channel your psionic power to nourish yourself for the next 24 hours, as if you consumed sufficient food and water for a day. When you take this
+           action, your Psionic Talent die decreases by one die size.
+         - If your Psionic Talent die is available, you can meditate for 1 minute, at the end of which you gain the benefits of finishing a short rest, and your Psionic Talent die decreases by one die
+       - Telekinetic: You learn to move things with your mind. You gain the following benefits -
+         - You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. 
+           Its spellcasting ability is the ability increased by this feat.
+         - As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, roll your Psionic Talent die, and the target must succeed on a Strength saving throw (DC 8 + your
+           proficiency bonus + the ability modifier of the score increased by this feat) or be moved toward you or away from you a number of feet equal to 5 times the number you rolled. A creature can willingly fail this save
+       - Telepathic: You awaken the ability to mentally connect with others. You gain the following benefits -.
+         - You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your
+           communication doesn’t give the creature the ability to respond to you telepathically.
+         - If your Psionic Talent die is available, you can cast the detect thoughts spell, requiring no components. When you start casting the spell, your Psionic Talent die decreases by one die size. Your spellcasting ability
+           for the spell is the ability increased by this feat.
+       - Tower of Iron Will: Your mind’s defenses are formidable. After you or another creature you can see within 30 feet of you fails a saving throw, you can use your reaction to roll your Psionic Talent die and add the number
+                             rolled to the saving throw, potentially causing it to succeed.
+               
+    special-abilities:
+       - Proficiencies: Nature, Survival, Insight, Perception
+       - Feats: Psionic Wild Talent       
+       - Herbalism and Potion Making
+     
     attacks: |
-      Shaman Spellcasting or Psionics
-      |
-      Staff
+      1 attack with Quaterstaff, Spellcasting or Psionics
     combat-tactics: |
       Due to his frailty, he will mostly use magic and psionics if he's forced to fight, but he mostly only fights on the astral plane
     special-equipment:
-    - Staff of the Woodlands.
-    - Statue of Wondrous Power: Silver Crow, Holy Symbol of Ravenkind.
-
+       - Staff of the Woodlands: This staff can be wielded as a magic Quarterstaff that grants a +2 bonus to Attack and Damage Rolls made with it. While holding it, you have a +2 bonus to spell Attack Rolls. The staff has 10
+                                 Charges for the following Properties. It regains 1d6 + 4 expended Charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its Properties and becomes a nonmagical
+                                 Quarterstaff.
+                                 Spells: You can use an action to expend 1 or more of the staff's Charges to cast one of the following Spells from it, using your spell save DC: Animal Friendship (1 charge), Awaken (5 charges),
+                                         Barkskin (2 charges), Locate Animals or Plants (2 charges), Speak with Animals (1 charge), Speak with Plants (3 charges), or Wall of Thorns (6 charges).
+                                         You can also use an action to cast the Pass without Trace spell from the staff without using any Charges.
+                                 Tree Form: You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter
+                                            trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of Transmutation magic if targeted by Detect Magic. While
+                                            touching the tree and using another action to speak its Command, word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff. 
+       - Statue of Wondrous Power: Silver Crow - Transformed into a raven for 24 hours a week
+       - Holy Symbol of Ravenkind: The Holy Symbol of Ravenkind is a unique holy symbol sacred to the good-hearted faithful. It predates the establishment of any church. According to legend, it was delivered to a paladin named
+                                   Lugdana by a giant raven—or an angel in the form of a giant raven. Lugdana used the holy symbol to root out and destroy nests of vampires until her death. The high priests of Ravenloft kept
+                                   and wore the holy symbol after Lugdana's passing. The holy symbol is a platinum amulet shaped like the sun, with a large crystal embedded in its center. The holy symbol has 10 charges for the
+                                   following properties. It regains 1d6 + 4 charges daily at dawn.
+                                   Hold Vampires: As an action, you can expend 1 charge and present the holy symbol to make it flare with holy power. Vampires and vampire spawn within 30 feet of the holy symbol when it flares
+                                                  must make a DC 15 Wisdom saving throw. On a failed save, a target is paralyzed for 1 minute. It can repeat the saving throw at the end of its turns to end the effect on itself.
+                                   Turn Undead: If you have the Turn Undead or the Turn the Unholy feature, you can expend 3 charges when you present the holy symbol while using that feature. When you do so, undead have
+                                                disadvantage on their saving throws against the effect.
+                                   Sunlight: As an action, you can expend 5 charges while presenting the holy symbol to make it shed bright light in a 30-foot radius and dim light for an additional 30 feet. The light is sunlight
+                                             and lasts for 10 minutes or until you end the effect (no action required).       
+      
   profile:
 
     #
@@ -425,8 +603,13 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      After coming of age in Adar and seeing the threats posed by the Dreaming Dark and the Riedra, Narmanaleth fled out into the world to hide, fight back and follow the path of a shaman. Using his Quori spirit to help him connect with other spirits of other realms, he became very adept and after years of practicing, very powerful in his chosen path. He speaks with and for the spirits. In addition to using his power to combat the forces of the Dreaming Dark on the astral plane, he will also seek out heroes and adventurers to help them find their path at the spirit's behest. He is very old and very tired now, his battle is almost done and he's looking for those who would follow in his footsteps to impart his knowledge. Like most of his kind, he has bouts of madness caused by his twin spirit, but they are much fewer and further between as he's gotten older.
+     After coming of age in Adar and seeing the threats posed by the Dreaming Dark and the Riedra, Narmanaleth fled out into the world to hide, fight back and follow the path of a shaman. Using his Quori spirit to help him
+     connect with other spirits of other realms, he became very adept and after years of practicing, very powerful in his chosen path. He speaks with and for the spirits. In addition to using his power to combat the forces of
+     the Dreaming Dark on the astral plane, he will also seek out heroes and adventurers to help them find their path at the spirit's behest. He is very old and very tired now, his battle is almost done and he's looking for
+     those who would follow in his footsteps to impart his knowledge. Like most of his kind, he has bouts of madness caused by his twin spirit, but they are much fewer and further between as he's gotten older.
 
+
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -435,7 +618,10 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+      Narmanaleth is a wise and kind mentor. He has been a warrior for a long time and now he is tired and just wants to pass on his knowledge to the next generation of warriors. His twin spirit sometimes gives the appearance of
+      madness, but he is much better at maintining his composure then he was as a young man. He is still more than capable of defending himself, but mostly concentrates on battles in the astral plain, as his physical body is not
+      what it used to be.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -444,8 +630,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - other: Kalashtar
-  - _wp_old_date: 2021-02-10
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

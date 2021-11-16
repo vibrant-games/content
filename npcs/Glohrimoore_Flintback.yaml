@@ -1,0 +1,564 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: glohrimoore_flintback
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-05-25"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Glohrimoore Flintback
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: older adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Dwarf
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Mountain
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: he/him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Smith, Lanternmaker
+    
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Cleric
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Forge Domain
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 10
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Lawful Good
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Dwarvish
+
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - N/A
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Hardworking
+    - Skilled
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  You can feel intense heat emanating from within a nearby tent. The clank of a forge resonates. "Arr. Not quite right."
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Stout, weathered skin. Oily, singed, earth-colored garb. Tangled, braided dark brown hair
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  "Hail Herses! These metals aren't Dwarven!", "Light reveals Truth. Honesty, the light.", "Bring thee out the shadows!"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Total workaholic. Fiddles with lantern joints, frames, and wicks while conversing. Sneers, one eye squinting
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      To produce the best quality lanterns for travel and city use. To enlighten other races of discrimination Dwarves face
+      
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Fire. Smithing. Equality. Bringing more light into a world he feels is beleaguered by darkness
+      
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      N/A
+      
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: | 
+      N/A
+       
+      
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 16
+    hit-points: 75
+    speed: 25
+    str: 12
+    dex: 9
+    con: 17
+    int: 9
+    wis: 19
+    cha: 13
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    skills:
+   - - Dwarf Abilities:
+       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+                      instead of his normal Proficiency Bonus                      
+                                   
+   - - Cleric Abilities:
+       - Spellcasting: DC16
+         Cantrips: Guidance, Thaumaturgy, Resistance, Sacred Flame, Mending
+         1st Level: Detect Magic, Bane, Bless, Cure Wounds
+         2nd Level: Hold Person, Spiritual Weapon, Continual Flame
+         3rd Level: Dispel Magic, Create Food and Water, Spirit Guardians
+         4th Level: Banishment, Control Water, Stone Shape
+         5th Level: Flame Strike, Greater Restoration, 
+       - Channel Divinity: Turn Undead, Destroy Undead, Artisan's Blessing 
+       - Divine Intervention: Can call her patron to intervene on her behalf
+
+   - - Forge Domain Abilities:
+       - Spellcasting: DC 16
+         1st Level: Identify, Searing Smite
+         3rd Level: Heat Metal, Magic Weapon
+         5th Level: Elemental Weapon, Protection from Energy
+         7th Level: Fabricate, Wall of Fire
+         9th Level: Animate Object, Creation
+       - Bonus Proficiencies: Proficiency with Heavy Armor and Smith's Tools
+       - Blessing of the Forge: you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of 
+                                your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it’s armor or a +1 bonus to attack and damage rolls if it’s a weapon. Once you use this feature,
+                                you can’t use it again until you finish a long rest.
+       - Channel Divinity - Artisans Blessing: you can use your Channel Divinity to create simple items. You conduct an hour-long ritual that crafts a nonmagical item that must include some metal; a simple or martial weapon, a 
+                                               suit of armor, ten pieces of ammunition, a set of tools, or another metal object. The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice 
+                                               on a surface within 5 feet of you. The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, 
+                                               with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual’s end, magically forming even nonmetal parts of the creation. 
+                                               The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual.
+       - Soul of the Forge: your mastery of the forge grants you special abilities; You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC
+       - Divine Strike: you gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8
+                        fire damage to the target. When you reach 14th level, the extra damage increases to 2d8.
+
+
+    special-abilities:
+    - Proficiencies: Survival; Smithing Tools   
+    attacks: |
+      1 attack with WarHammer
+    combat-tactics: |
+      Glohrimoore is essentially fearless. Particularly if faced with what he perceives as an evil combatant. Of course, this has its pros - that he is a brave fighter - and its cons - that he is foolhardy in battle and takes short-sighted risks.
+    special-equipment:
+    - N/A
+                                                                   
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Glohrimoore is a smith, born and bred, but not what one might imagine from a hard-working Mountain Dwarf. While fully committed to his Deity, Moradin [Any central Dwarven Deity], he sees the forge more so in terms of its
+      dependence upon fire and light. As a youngster, he was always fascinated with the forging processes, but his attention was more focused on how fire and light were the central mechanism for the greatest creations. He
+      turned his attention away from weapon and armor crafting and instead towards the construction of the finest lanterns for travellers, city streets, and beyond.
+
+      
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Stout, weathered skin. Oily, singed, earth-colored garb. Tangled, braided dark brown hair
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training

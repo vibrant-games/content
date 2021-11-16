@@ -1,3 +1,71 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
 
 #
 # Preliminary fields that describe this overall file:
@@ -20,28 +88,22 @@ metadata:
   #
   # The name of the submitter (your name).
   #
-  author: vibrantgames
+  author: Mike Rigby
 
   #
   # Email address of the submitter.
   #
-  # WordPress to YAML conversion:
-  # Unfortunately I do not see the author email
-  # addresses anywhere in the export file.  :(
-  # I guess we decided it was not an important field.
-  # This was a pretty bad oversigh.  :(
-  #
-  email: UNKNOWN@example.com
+  email: rigbyma@hotmail.com
 
   #
   # Date the NPC was created.
   # Must be in ISO 8601 format.
   # You can include the time if you want.
   #
-  # E.g. 2021-12-31
-  #      2021-12-31 23:59:59
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
   #
-  date: 2021-02-14 15:14:25
+  date: "2021-06-26"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -51,7 +113,9 @@ metadata:
   # Optional.
   #
   labels:
-  - wordpress_id: 1590
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
 
   #
   # In future more metadata will likely be needed.
@@ -82,7 +146,7 @@ npc:
   # For now let us keep all images in one directory,
   # at least until that becomes a scaling nightmare.
   #
-  # image: NO_ARTWORK_AT_TIME_OF_CONVERSION
+  image: TEMPLATE_McTEMPLATESON.jpg
 
   #
   # Race, class, etc.
@@ -123,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: tiefling
+    race: Tiefling
 
     #
     # The sub-race can be anything.
@@ -132,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    # sub-race: NONE.
+    sub-race: Bloodline of Asmodeus
 
     #
     # Pronouns (case insensitive):
@@ -152,6 +216,7 @@ npc:
     #
     occupation:
     - Gardener / Groundskeeper
+    
 
     #
     # D & D classes (case insensitive):
@@ -159,7 +224,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - bloodhunter
+    # - blood hunter
     # - cleric
     # - druid
     # - fighter
@@ -174,7 +239,30 @@ npc:
     #
     # Required.
     #
-    class: druid
+    class: Druid
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Circle of Spores
 
     #
     # Class level.
@@ -199,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: lawful good
+    alignment: Lawful Good
 
     #
     # Alignment tendencies:
@@ -207,6 +295,8 @@ npc:
     #
     # Optional.
     #
+    tendencies:
+
 
     #
     # Languages the character speaks
@@ -224,6 +314,7 @@ npc:
     - Infernal
     - Druidic
 
+
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -235,22 +326,24 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing
-    # - id: cult_of_sky_anthologies
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
-    factions:
     - id: druid_circle
-      name: Druid Circle
+      name: Druid Circle)
 
     #
     # Adjectives or other tags that can be used for searching.
     #
     # Optional.  0 or more.
     #
+    adjectives:
+    - Solitary
+    - Hardworking
+    - Awkward
 
   improv:
 
@@ -265,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A lavender-skinned Tiefling rakes the leaves at the back of the manor house's lawn. He casually waves as you pass
+    introduction:  A lavender-skinned Tiefling rakes the leaves at the back of the manor house's lawn. He casually waves as you pass
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -292,7 +385,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "Plants are a precious as animals"
+    expressions:  "Plants are a precious as animals"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -316,7 +409,7 @@ npc:
     #
     motivations: |
       Loves nature, making a living doing what he loves
-
+      
     #
     # Passions:
     #
@@ -325,7 +418,7 @@ npc:
     #
     passions: |
       Horticulture
-
+      
     #
     # Vulnerabilities:
     #
@@ -334,16 +427,17 @@ npc:
     #
     vulnerabilities: |
       He's a simple man who prefers the company of plants to people. He's awkward around people
-
+      
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets: | 
       He enjoys his own "fancy" mushrooms
-
+       
+      
   #
   # The D & D stats block:
   # All integers.
@@ -368,23 +462,46 @@ npc:
   #
   specialties:
     skills:
-    - Gardening
-    special-abilities: |
-      Tiefling Traits:
-      Darkvision
-      Hellish Resistance
-      Infernal Legacy
-      |
-      Druid Traits:
-      Druid Spellcasting
-      Wildshape
-      |
-      Circle of Spores:
-      Halo of Spores
-      Symbiotic Entity
+   - - Tiefling Abilities:
+       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+       - Hellish Resistance: You have Resistance to fire damage
+       - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
+                          When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells
+         
+   - - Druid Abilities:
+       - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+                  message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
+       - Spellcasting: Spell DC 12
+         Cantrips: Mold Earth, Shape Water 
+         1st Level: Create Water, Speak with Animals, Goodberry
+       - Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+                     determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+                     flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+                     You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die 
+                     
+   - - Circle of Spores Abilities:
+       - Halo of Spores: you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn
+                         there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th
+                         level, 1d8 at 10th level, and 1d10 at 14th level  
+       - Spellcasting: Spell DC 12
+         2nd Level: Chill Touch
+       - Symbiotic Entity: you gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4
+                           temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits;
+                           - When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.
+                           - Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit.
+                           These benefits last for 10 minutes, until you lose all these temporary hit points. or until you use your Wild Shape again      
+           
+    special-abilities:
+       - Proficiecies: Nature, Medicine, Survival
+       - Feats: N/A 
+       
+    attacks: |
+      1 attack with garden implement or unaramed strike
     combat-tactics: |
       Will wild shape into something small and fast and run away from any trouble
-
+    special-equipment:
+      - various gardening tools
+      
   profile:
 
     #
@@ -395,8 +512,10 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Klarion is a simple man who grew up on his own, living off of the land. As his gifts with plants and fungi grew, he was able to secure work as the gardener and groundskeeper for the large estate at the edge of town. He's good at his job and loves to work with the gardens. He's done a sufficient enough job that he gets very little interference from his boss and mostly does what he wants. He rarely goes into town proper and deals with other people as little as possible
-
+      Klarion is a simple man who grew up on his own, living off of the land. As his gifts with plants and fungi grew, he was able to secure work as the gardener and groundskeeper for the large estate at the edge of town. He's
+      good at his job and loves to work with the gardens. He's done a sufficient enough job that he gets very little interference from his boss and mostly does what he wants. He rarely goes into town proper and deals with other
+      people as little as possible
+      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -405,7 +524,9 @@ npc:
     # Required.
     # No length limit for now.
     #
-
+    personality: |
+      Klarion likes his solitude. He prefers his plants and his garden to people and will generally go out of his way to avoid them. He is a pleasant fellow though and will do his best to try to be helpful if approached in a
+      non-aggressive manner. How helpful he can be is up for grabs however, because he is often high on his special supply of hallucinogenic mushrooms that he grows himself.
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
@@ -414,6 +535,24 @@ npc:
   # Optional.
   #
   uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
