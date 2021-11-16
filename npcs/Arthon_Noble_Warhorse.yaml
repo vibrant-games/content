@@ -468,21 +468,22 @@ npc:
   specialties:
     skills:
           
-  - - Horse Abilities:
+    - Horse Abilities:
        - Trampling Charge: If Arthon mvoes at least 20 feeet straight towards a creature and hits with a hoof attack, it must make a DC18 Strength Save or be knocked prone
-       - Hoof Attack: Reach 5 feet, two attacks doing 2d6+4 bludgeoning damage each 
-    - Speallcasting: Can cast Crusader's Mantle, Guiding Bolt, Sacred Flame and Sunburst at Level 5 with a DC16       
+         Hoof Attack: Reach 5 feet, two attacks doing 2d6+4 bludgeoning damage each 
+      Spellcasting: Can cast Crusader's Mantle, Guiding Bolt, Sacred Flame and Sunburst at Level 5 with a DC16       
 
 
     special-abilities:
     - Proficiencies: Athletics, Animal Handling, Insight, Perception, Survival, Intimidation   
-    - Feats: Charger, Crusher, Durable, Heavy Armor Master, Mobile, 
-    - Legendary Resistance: (3/Day), If Arthon, Noble Warhorse fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: Arthon, Noble Warhorse can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Arthon, Noble Warhorse regains spent Legendary Actions at the start of his turn
-      - Lords Roar: Arthon, Noble Warhorse can roar causing all creatures within 30 feet to make a DC16 Wisom Save or become firghtened, if those creatures are undead they count as Turned
-      - Lords Hand: Arthon, Noble Warhorse can heal himself for 1d10 HP
-      - Lords Back Kick: Arthon, Noble Warhorse can make a savage hoof attack with his hind legs dealing 2d12+6. If this attack deals damage to a creature, that creature must make a Strength Saving Throw DC25 or be 
+      Feats: Charger, Crusher, Durable, Heavy Armor Master, Mobile, 
+      Legendary Resistance: (3/Day), If Arthon, Noble Warhorse fails a saving throw he can choose to succeed instead 
+      Legendary Actions: 
+      - Description: Arthon, Noble Warhorse can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                     Arthon, Noble Warhorse regains spent Legendary Actions at the start of his turn
+        Lords Roar: Arthon, Noble Warhorse can roar causing all creatures within 30 feet to make a DC16 Wisom Save or become firghtened, if those creatures are undead they count as Turned
+        Lords Hand: Arthon, Noble Warhorse can heal himself for 1d10 HP
+        Lords Back Kick: Arthon, Noble Warhorse can make a savage hoof attack with his hind legs dealing 2d12+6. If this attack deals damage to a creature, that creature must make a Strength Saving Throw DC25 or be 
                          knocked prone    
     
     attacks: |
