@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: middle aged adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Half-Elf
+    race: Bugbear
 
     #
     # The sub-race can be anything.
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Lawyer
+    - Security/Enforcer
     
 
     #
@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Civilian
+    class: Barbarian
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: N/A
+    subclass: Path of the Ancestral Guardian
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 0
+    level: 3
 
     #
     # Alignments (case insensitive):
@@ -287,7 +287,7 @@ npc:
     #
     # Required.
     #
-    alignment: Lawful Neutral
+    alignment: Chaotic Neutral
 
     #
     # Alignment tendencies:
@@ -312,7 +312,8 @@ npc:
     #
     languages:
     - Common
-    - Elvish
+    - Goblin
+    - Thieve's Cant
 
 
     #
@@ -333,12 +334,7 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: law_association
-      name: Law Association
-    - id: possible_underworld_connections
-      name: Possible Underworld Connections
-    - id: trading_companies
-      name: Trading Companies
+    - N/A
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -349,8 +345,8 @@ npc:
     - N/A
 
   improv:
-    - Slimy
-    - Defeated
+    - Brash
+    - Stupid
 
     #
     # Introduction:
@@ -363,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  He can be found at either his law offices or the local courthouse
+    introduction:  The party discovers a secret entrance to the local thieve's guild, Hogarrk stands inside the door asking for a password
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -374,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Average height, thinning blonde hair pulled back in a ponytail. Well dressed though slightly disheveled
+    appearance:   He is a massive hulking beast standing almost 8 feet tall and 350lbs. He is wearing what looks like reclaimed pieces leather armor. His skin is a hair-covered dark tan brown and his hair dark brown and unkempt. He has large pointed ears and a bestial face. He carries a large, heavy, spiked mace with a handle made of bone
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -390,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "What did you do this time?", "I see you're in need of representation", "Have you been hurt in an accident?"
+    expressions:  "password?", "you should have had the password", "Hogarrk SMASH!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -403,7 +399,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Rubs his hands together and runs his hands through his hair
+    mannerisms:   He is large, unkempt and dumb as a brick. He regularly picks his nose and picks his teeth with the spikes on his mace
 
   acting:
     #
@@ -413,7 +409,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Money and a touch of justice
+      Food, Money, Fear
       
     #
     # Passions:
@@ -422,7 +418,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Loves his fine whiskeys
+      N/A
       
     #
     # Vulnerabilities:
@@ -431,7 +427,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      He's greedy and has a weakness for the drink
+      He is about as smart as paint and because of this he is easily confused or tricked
       
     #
     # Secrets:
@@ -440,7 +436,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      He knows that all of his clients are probably guilty
+      He knows the password
        
       
   #
@@ -448,15 +444,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 10
+    armour-class: 15
     hit-points: 38
     speed: 30
-    str: 9
-    dex: 11
-    con: 14
-    int: 16
-    wis: 15
-    cha: 18
+    str: 20
+    dex: 17
+    con: 16
+    int: 8
+    wis: 6
+    cha: 9
 
   #
   # Special characteristics.
@@ -467,20 +463,35 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
-        - Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 11
+   - - Bugbear Traits:
+        - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
+        - Long Limbed: when making a melee attack his reach is extended by 5 extra feet
+        - Powerfuk Build: Counts as one size larger for carrying capacity and amount he can lift, push or drag
+        - Sneaky: Proficient in Stealth
+        - Surprise Attack: If he surprises a creature and hit ti on the first turn of combat, he may add 2d6 to the damage
+
+   - - Barbarian Abilities:
+         - Rage: Can enter a rage as a Bonus Action. 
+            - have advantage on Strength Checks and Strength Saving Throws.
+            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+            - Resistance to bludgeoning, piercing, and slashing damage          
+         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                            but Attack Rolls against him have advantage until his next turn
+
+   - - Path of the Ancestral Guardian:
+         - Ancestral Protectors: spectral warriors appear when you enter your rage. While you’re raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until
+                                 the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has
+                                 resistance to the damage of the target’s attacks
 
     special-abilities:
-       Proficient in Perception, Persuasion, Performance and Deception         
+       - Animal Handling. Minor Veterinary Medicine. Horseback Riding         
     attacks: |
-      1 attack with unarmed strike
+      1 attack with his mace
     combat-tactics: |
-      Is a coward 
+      Goes out of his way to pick fights 
     special-equipment:
-    - N/A
+    - A huge bone-handled mace covered in spikes that counts as a +1 magical great club
                                                                    
   profile:
 
@@ -492,9 +503,8 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Horatio grew up in the poor part of the city and worked his way through law school. Because of his upbringing, he's a little on the sleazy side and more concerned with making himself rich than he is actually making sure
-      justice is done. He's good at his job, but will happily sell his clients down the river for his own benefit. He does have a little bit of internal struggle about the things he sometimes does for money and this has caused
-      him to have a bit of a drinking problem
+      Driven out of his clan when he was challenged by a younger, stronger Bugbear for the role of pack alpha, he went into exile rather than die fighting for leadership. He wandered for several years fending for himself before
+      he was captured by slavers and sold into servitude as an enforcer/security. He found that he relished his new role as it provided a steady meal, a frequent outlet for his aggression and as little thinking as possible
 
       
     #
@@ -506,7 +516,8 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Average height, thinning blonde hair pulled back in a ponytail. Well dressed though slightly disheveled
+      He is a massive hulking beast standing almost 8 feet tall and 350lbs. He is wearing what looks like reclaimed pieces leather armor. His skin is a hair-covered dark tan brown and his hair dark brown and unkempt. He has
+      large pointed ears and a bestial face. He carries a large, heavy, spiked mace with a handle made of bone
   #
   # Content that does not get displayed, but could be useful
   # to humans.  Includes review comments, notes about what to
