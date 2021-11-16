@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  #date: "2021-03-04"
+  date: "2021-03-04"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -372,7 +372,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:  Ancient with sharp, angular features. Tiny, feeble and gray but with deep piercing eyes. Dressed like a rich old lady
+    appearance:  Ancient with sharp, angular features. Tiny, feeble and gray but with deep piercing eyes. Dressed like a rich old lady.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +388,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  Come my dearies, Feast!, Join our family, the Master will love you!, Burnnnn!!!
+    expressions:  "Come my dearies, Feast!", "Join our family", "the Master will love you!, Burnnnn!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +401,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:  Eerily calm and still except for a chronic cough
+    mannerisms:  Eerily calm and still except for a chronic cough.
 
   acting:
     #
