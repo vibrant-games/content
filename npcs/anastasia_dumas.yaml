@@ -71,7 +71,7 @@
 # Preliminary fields that describe this overall file:
 #
 kind: vibrantgames.ca/npc
-version: 0.0.2
+version: 0.0.4
 
 #
 # Information about who submitted the data, when, how, etc.:
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: 2021-03-04
+  date: "2021-03-04"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -116,6 +116,17 @@ metadata:
   - label_template_1: TEMPLATE
   - label_template_2: TEMPLATE
   - label_template_3: TEMPLATE
+
+
+  #
+  # Notes from the author(s) about what the seed for the
+  # character was, or whatever.  For internal use only.
+  #
+  # Optional.  0 or more.
+  #
+  author-notes:
+  - This character was inspired by my last trip.
+  - I like soup.
 
   #
   # In future more metadata will likely be needed.
