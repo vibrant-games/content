@@ -477,8 +477,9 @@ npc:
             7th Level: Finger of Death, Fire Storm, Plane Shift
             8th Level: Incendiary Cloud, Earthquake, Power Word Stun
             9th Level: Gate, Power Word Kill, Time Stop
-          MetaMagic - (i)You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.(/i):
-          - Empowered Spell: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls. You can use Empowered 
+          MetaMagic:
+          - Decription: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
+            Empowered Spell: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls. You can use Empowered 
                              Spell even if you have already used a different Metamagic option during the casting of the spell.
             Heightened Speell: When you Cast a Spell that forces a creature to make a saving throw to resist its Effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made 
                                against the spell.
@@ -505,16 +506,16 @@ npc:
                      light or darkness.
         Umbral Form: you can spend 6 sorcery points as a bonus action to transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other 
                      creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. You remain in this form for 1 minute. It ends early if you are incapacitated, if you 
-                     die, or if you dismiss it as a bonus action
-        Shadow Sorcerer Quirks: When you are asleep, you don't appear to breathe (though you must still breathe to survive)
+                     die, or if you dismiss it as a bonus action.
+        Shadow Sorcerer Quirks: When you are asleep, you don't appear to breathe (though you must still breathe to survive).
     
-    special-abilities: 
-    - Legendary Resistance: (3/Day), If Anastasia Dumas fails a saving throw she can choose to succeed instead 
-      Legendary Actions:
-      - Description: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
-        Devils Portal: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-        Cantrip: Anastasia Dumas casts a cantrip
-        Family Reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
+      special-abilities: 
+      - Legendary Resistance: (3/Day), If Anastasia Dumas fails a saving throw she can choose to succeed instead 
+        Legendary Actions:
+        - Description: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
+          Devils Portal: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
+          Cantrip: Anastasia Dumas casts a cantrip
+          Family Reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
     
     attacks: |
       Spellcasting
