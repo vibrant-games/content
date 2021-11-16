@@ -471,35 +471,35 @@ npc:
   #
   specialties:
     skills:
-   - - Aarakocra Abilities:
+    - Aarakocra Abilities:
        - Flight:  flying speed of 50 feet. To use this speed, you can’t be wearing medium or heavy armor           
-       - Talons: proficient with your unarmed strikes, which deal 1d6 slashing damage on a hit  
+         Talons: proficient with your unarmed strikes, which deal 1d6 slashing damage on a hit  
 
-   - - Littlebird Abilities:
-       - Flitter: His small size prevents attacks of opportunity against you when you are in flight
-       - Natural Acrobat: proficient in Dexterity (Acrobatics) checks       
+         Littlebird Abilities:
+         - Flitter: His small size prevents attacks of opportunity against you when you are in flight
+           Natural Acrobat: proficient in Dexterity (Acrobatics) checks       
     
-   - - Monk Abilities:
+       Monk Abilities:
        - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-       - Martial Arts:
+         Martial Arts:
           - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
           - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
           - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-       - Ki: 5 Ki Points, Ki DC=15
+         Ki: 5 Ki Points, Ki DC=15
           - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          - Step of the Wind:Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
-       - Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
-       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+            Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+            Step of the Wind:Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
+         Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+         Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
                           free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-       - Slow Fall: Can us a Reaction to falling damage by by 85hp
-       - Extra Attack: Can Attack twice per turn
-       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn    
+         Slow Fall: Can us a Reaction to falling damage by by 85hp
+         Extra Attack: Can Attack twice per turn
+         Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn    
  
-   - - Way of Mercy Abilities:
+       Way of Mercy Abilities:
        - Hands of Healing:   As an action, he can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of his Martial Arts die + his Wisdom modifier. When using Flurry of Blows, he can 
                              replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.
-       - Hands of Harm:  When hitting a creature with an unarmed strike, he can spend 1 ki point to deal extra necrotic damage equal to one roll of his Martial Arts die + his Wisdom modifier. He can use this feature 
+         Hands of Harm:  When hitting a creature with an unarmed strike, he can spend 1 ki point to deal extra necrotic damage equal to one roll of his Martial Arts die + his Wisdom modifier. He can use this feature 
                          only once per turn 
         
 
@@ -536,32 +536,4 @@ npc:
     #
     personality: |
       Tiny and grey, about 4 feet tall with tiny hands and sparrow-like features. He is wise and learned and knows the library like the back of his hand.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+   
