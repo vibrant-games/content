@@ -361,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  With a whinny, the massive, armored horse rears up on its hind legs and smashes through the barred door  
+    introduction:  With a whinny, the massive, armored horse rears up on its hind legs and smashes through the barred door.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +372,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   A massive white warhorse in full horse plate armor 
+    appearance:  A massive white warhorse in full horse plate armor 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -516,32 +516,4 @@ npc:
       Arthon, Noble Warhorse is a massive, pure white warhorse in full horse plate armor. He is calm and patient even in the most treacherous of situations. He is thoroughly devoted to his master and his master's gods. 
       He knows that he is special and that he is blessed with abilities far beyond those of other horses. He also has a fairly robust sense of humor and has been known to play jokes on unwary people who are expecting a 
       regular hosre. 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 
