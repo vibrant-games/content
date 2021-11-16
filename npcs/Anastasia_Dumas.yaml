@@ -401,7 +401,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Eerily calm and still except for a chronic cough
+    mannerisms:  Eerily calm and still except for a chronic cough
 
   acting:
     #
@@ -464,7 +464,7 @@ npc:
   #
   specialties:
     skills:
-   - - Sorcerer Ability
+   - - Sorcerer Ability:
        - Sorcerer Spellcasting:  Sorcery Points 20, Spell DC 20
           Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Minor Illusion, Message, Chill Touch
           1st Level: Charm Person, Magic Missle, Shield, Mage Armor
