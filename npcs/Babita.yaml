@@ -361,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A curvy young starlet flounces up to the party. "What's your names?  I'm Babs. What do you think of UAU? Are you new?"
+    introduction:  A curvy young starlet flounces up to the party. "What's your names?  I'm Babs."
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -463,24 +463,23 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                       instead of his normal Proficiency Bonus  
+    - skills:
+      - Dwarf Abilities:
+        - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+          Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+          Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+                      instead of his normal Proficiency Bonus  
        
 
-    special-abilities:
-    - Proficiencies: Persuasion, Performance     
-    - Babs has latent psionic ability that allows her to win over the opinions of others quite easily - She gets advantage on all persuasion checks.    
-    attacks: |
-      1 Attacks
-    combat-tactics: |
-      Will typically breakdown at the site of combat out of fear that any damage would mar her beauty
-    special-equipment:
-    - Her chainmail is made from light metals forged into surprising strength; it hugs curves
-    - does not hinder movement.
+      special-abilities:
+      - Proficiencies: Persuasion, Performance. Babs has latent psionic ability that allows her to win over the opinions of others quite easily - She gets advantage on all persuasion checks.    
+      attacks: |
+        1 Attacks
+      combat-tactics: |
+        Will typically breakdown at the site of combat out of fear that any damage would mar her beauty
+      special-equipment:
+      - Her chainmail is made from light metals forged into surprising strength; it hugs curves
+      - does not hinder movement.
                                                                    
   profile:
 
