@@ -388,7 +388,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Wotcha!"; "How ya goin'?"; "That's hot!"; "Like"; "Totally"; swears like a trucker.
+    expressions:  Wotcha!; How ya goin?; That's hot!; Like; Totally; swears like a trucker.
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -463,11 +463,11 @@ npc:
   # ???Max length???
   #
   specialties:
-    - skills:
-      - Dwarf Abilities:
-        - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-          Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-          Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+    skills:
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
                       instead of his normal Proficiency Bonus  
        
 
@@ -508,19 +508,7 @@ npc:
     #
     personality: |
       Expressive eyebrows; long black lustrous hair; She somehow makes dwarvish chainmail slinky
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
+  
 ---
 
 #
