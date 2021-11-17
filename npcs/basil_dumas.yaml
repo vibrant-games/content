@@ -467,15 +467,15 @@ npc:
     skills:
     - Werewolf Abilities:
       - Keen Hearing and Smell: Advantage on perception rolls that involve Hearing and Sight
-      - Tough Hide: +2 to AC in Wolf and Half-Wolf forms. 
-      - Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
-      - Heightened Prowess: +1 to Strength and Dexterity saving throws in Wolf or Half-Wolf
-      - Shapeshift: Basil has mastered his curse and can shapeshift between forms at will except on the full moon, upon which he changes whether he wants to or not
-      - The Curse: Humanoid Creatures he bites must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
+        Tough Hide: +2 to AC in Wolf and Half-Wolf forms. 
+        Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
+        Heightened Prowess: +1 to Strength and Dexterity saving throws in Wolf or Half-Wolf
+        Shapeshift: Basil has mastered his curse and can shapeshift between forms at will except on the full moon, upon which he changes whether he wants to or not
+        The Curse: Humanoid Creatures he bites must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
 
     special-abilities: 
     - Feats: Keen Mind, Observant, Prodigy,  
-    - Legendary Resistance: (3/Day), If Basil Dumas fails a saving throw she can choose to succeed instead.
+      Legendary Resistance: (3/Day), If Basil Dumas fails a saving throw she can choose to succeed instead.
 
     attacks: |
       3 Attacks - 1 Bite (1D8+str) and 2 Claws (2D4+str)
@@ -513,32 +513,4 @@ npc:
       Basil Dumas is an aging human man. Short, thin and balding, with a whispy comb-over and pointy features. He is always impeccably dressed in fine business attire. He is brusque, impatient and overly self-important. He has a 
       cunning head for business and a cunning sense for the hunt. His wolf and half-wolf forms are still short for a lycanthrope, but heavily muscled and covered in a thick silver-gray coat fur. He wears glasses when in his 
       human form although he does not need them because of his lycanthropic senses.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 
