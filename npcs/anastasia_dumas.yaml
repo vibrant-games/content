@@ -105,35 +105,6 @@ metadata:
   #
   date: "2021-05-04"
 
-  #
-  # Arbitrary labels that are opaque to the system, only
-  # potentially useful to humans.  For example, the original
-  # WordPress id of a character (1234 etc).
-  #
-  # Optional.
-  #
-  labels:
-  - label_template_1: TEMPLATE
-  - label_template_2: TEMPLATE
-  - label_template_3: TEMPLATE
-
-  #
-  # Notes from the author(s) about what the seed for the
-  # character was, or whatever.  For internal use only.
-  #
-  # Optional.  0 or more.
-  #
-  author-notes:
-  - This character was inspired by my last trip.
-  - I like soup.
-
-  #
-  # In future more metadata will likely be needed.
-  # How the data was submitted, some kind of digital
-  # signature giving Vibrant Games license to basically
-  # use the content however it chooses, etc...
-  #
-
 #
 # The content:
 #
