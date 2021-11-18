@@ -465,21 +465,21 @@ npc:
   #
   specialties:
     skills:
-   - - Desert Orc Abilities:
+    - Desert Orc Abilities:
        - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
-       - Primal Intuition: Proficient in Insight and Survival
-       - Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-       - Heat Resistance: Gains Advantage on saving throws caused by extremely hot weather or dehydration           
+        Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
+        Primal Intuition: Proficient in Insight and Survival
+        Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+        Heat Resistance: Gains Advantage on saving throws caused by extremely hot weather or dehydration           
     
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage       
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+         Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+         Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+         Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage       
 
-   - - Assassin Abilities:
-       - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit       
+      Assassin Abilities:
+      - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit       
        
 
     special-abilities:
@@ -512,45 +512,4 @@ npc:
       And we needn't fall victim to the same virulent hatred that afflicts the Orcs." Amin brought Ukhtor with him for the journey. Staring into his sea-blue eyes he pronounced that the youngster be named 'Beach'. 
       Raised within the Constabulary's ranks, Beach learned skills more akin to his natural abilities and became an agile killer. He was also imbued with their sense of noblility and respect.
 
-      
-    #
-    # Personality (or something like that):
-    # Expand on the introduction, appearance, expressions, mannerisms, etc.
-    # without any length limits.
-    #
-    # Required.
-    # No length limit for now.
-    #
-    personality: |
-      Beach is on the smaller side for an orc, with rusty brown skin and short-cropped black hair. He is always impecably dressed in tailer tuxedo and white gloves. He is always at the height of manners and dutifully serves 
-      his master. He is also however, cunning and fierce. When a fight breaks out, he will always play the coward and run, but thats just a feint to give him time to assess the situation and find the best shadows from which
-      to attack
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+   
