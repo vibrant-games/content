@@ -486,18 +486,26 @@ npc:
     special-abilities:
     - Proficiencies: 
       - Cooking
-      - Mixology
-      - Disguise Kit
-      - Poisoner's Kit
-      - Stealth, Insight, Survival, Thieve's Tools, Sleight of Hand
+        Mixology
+        Disguise Kit
+        Poisoner's Kit
+        Stealth
+        Insight
+        Survival
+        Thieve's Tools
+        Sleight of Hand
+    
     attacks: |
       2 Attacks with Assassin's Dagger
     combat-tactics: |
       If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike
     special-equipment:
-    - Assassin's Dagger (+1) - When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage
-    - Hidden Blade (1d4 piercing, finesse)
-    - Burleigh and Stronginthearm Number IX - a +3 precise crossbow; only 2 were ever made
+    - Assassins Dagger (+1):
+      - Description:  When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage
+      Hidden Blade:
+      - Description: (1d4 piercing, finesse)
+      Burleigh and Stronginthearm Number IX:
+      - Description: a +3 precise crossbow; only 2 were ever made
                                                                    
   profile:
 
