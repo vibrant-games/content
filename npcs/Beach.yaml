@@ -467,7 +467,7 @@ npc:
     skills:
     - Desert Orc Abilities:
       - Darkvision: 
-        Description: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+        - Description: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
         Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
         Primal Intuition: Proficient in Insight and Survival
         Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
@@ -475,14 +475,14 @@ npc:
         
       Rogue Abilities:
       - Expertise: 
-        Description: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        - Description: Double proficiency bonus with Thieve's Tools and Sleight of Hand
         Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
         Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
         Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
 
       Assassin Abilities:
       - Assassinate: 
-        Description: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
+        - Description: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
 
     special-abilities:
     - Proficiencies: 
