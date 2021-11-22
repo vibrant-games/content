@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +313,6 @@ npc:
     - Common
     - Halfling
     - Orcish
-
 
     #
     # Factions:
@@ -339,7 +337,6 @@ npc:
     - id: adventurer_s_guild
       name: Adventurer's Guild
       role: Guide
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -391,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Shhhhh!", "Something big has come this way recently", "I'll guide ya where ya need to go, maybe even in one piece"
+    expressions:  
+    - "Shhhhh!"
+    - "Something big has come this way recently"
+    - "I'll guide ya where ya need to go, maybe even in one piece"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -440,9 +440,9 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: Knows where a den of forest Trolls live
-       
-      
+    secrets: |
+      Knows where a den of forest Trolls live
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,47 +467,48 @@ npc:
   #
   specialties:
     skills:
-   - - Halfling Abilities:
+     - Halfling Abilities:
        - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her 
-
-   - - Ghostwise Abilities:
+         Brave: Has advantage on Saving Throws against being Frightened 
+         Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+       Ghostwise Abilities:
        - Silent Speech: Can speak telepathically to any creature within 30 feet. The creature understands her only if they share a language. Can speak telepathically in this way to one creature at a time.       
-    
-   - - Ranger Abilities:
-       - Ranger Spellcasting: Spell DC14 
-          - 1st Level: Hunter's Mark, Speak with Animals, Goodberry, Detect Magic 
-          - 2nd Level: Locate Animals or Plants, Pass Without Trace, Summon Beast        
-       - Favored Enemy: Orc & Giant - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
-       - Natural Explorer: Favored Terrain - Forest & Swamp
-          - Difficult Terrain doesn't slow your group's Travel
-          - Your group can't become lost except by magical means
-          - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-          - If you are traveling alone, you can move stealthily at a normal pace
-          - When you Forage, you find twice as much food as you normally would
-          - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-       - Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-       - Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+       Ranger Abilities:
+       - Ranger Spellcasting: 
+         - Description: Spell DC14 
+           1st Level: Hunter's Mark, Speak with Animals, Goodberry, Detect Magic 
+           2nd Level: Locate Animals or Plants, Pass Without Trace, Summon Beast        
+         Favored Enemy: Orc & Giant - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+         Natural Explorer: 
+         - Description: Favored Terrain - Forest & Swamp
+           Additional Information:
+           - Difficult Terrain doesn't slow your group's Travel
+           - Your group can't become lost except by magical means
+           - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+           - If you are traveling alone, you can move stealthily at a normal pace
+           - When you Forage, you find twice as much food as you normally would
+           - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+         Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
+         Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
                              types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
                              reveal the creatures' location or number.
-       - Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-       - Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
+         Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+         Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
                      or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell       
- 
-   - - Gloom Stalker Abilities:
-       - Gloom Stalker Spellcasting: Spell DC14 
-          - 3rd Level: Disguise Self 
-          - 5th Level: Rope Trick
-       - Dread Ambusher:  can give yourself a bonus to her initiative rolls equal to her Wisdom modifier. At the start of her first turn of each combat, her walking speed increases by 10 feet, which lasts until the end of 
+       Gloom Stalker Abilities:
+       - Gloom Stalker Spellcasting: 
+         - Description: Spell DC14 
+           3rd Level: Disguise Self 
+           5th Level: Rope Trick
+         Dread Ambusher:  can give yourself a bonus to her initiative rolls equal to her Wisdom modifier. At the start of her first turn of each combat, her walking speed increases by 10 feet, which lasts until the end of 
                          that turn. If she takes the Attack action on that turn, she can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapon's 
                          damage type.
-       - Umbra Sight:  darkvision out to a range of 60 feet. While in darkness, she is invisible to any creature that relies on darkvision to see her in that darkness. 
-       - Iron Mind: Proficiency in Wisdom saving throws.        
+         Umbra Sight:  darkvision out to a range of 60 feet. While in darkness, she is invisible to any creature that relies on darkvision to see her in that darkness. 
+         Iron Mind: Proficiency in Wisdom saving throws.        
 
     special-abilities:
     - Proficiencies: Persuasion, Performance, Insight, Perception, Nature 
-    - Feats: Alert, Crossbow Expert, Sharpshooter    
+      Feats: Alert, Crossbow Expert, Sharpshooter    
     
     attacks: |
       2 Attacks with her light crossbow or short sword
@@ -542,32 +543,4 @@ npc:
     personality: |
       Small and Lithe with light brown hair tied back in a braid. Close fitting leather armor and a scar over her left eye. She is gruff and capable. She always seems on edge and alert. She loves nature and adventure but
       often feels homesick for her tribe. She is very superstitious and a big believer in luck
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

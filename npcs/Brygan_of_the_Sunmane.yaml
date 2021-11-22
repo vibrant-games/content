@@ -361,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Get down! you're surrounded!" comes the hushed voice from somewhere in the long golden grass of the open plains
+    introduction:  'Get down! you're surrounded!', comes the hushed voice from somewhere in the long golden grass of the open plains
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +372,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   7' Tall and lithe with golden fur, lion-like features, piercing blue eyes, a shining gold breastplate and a long spear
+    appearance:  7' Tall and lithe with golden fur, lion-like features, piercing blue eyes, a shining gold breastplate and a long spear
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +388,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The hunt is on!"
+    expressions:
+    - "The hunt is on!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Swift and cat-like
+    mannerisms:  Swift and cat-like
 
   acting:
     #
@@ -437,7 +438,8 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: N/A
+    secrets: |
+      N/A
        
       
   #
@@ -464,46 +466,50 @@ npc:
   #
   specialties:
     skills:
-   - - Leonin Abilities:
+     - Leonin Abilities:
        - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
-       - Primal Intuition: Proficient in Insight and Survival
-       - Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-       - Heat Resistance: Gains Advantage on saving throws caused by extremely hot weather or dehydration           
+         Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
+         Primal Intuition: Proficient in Insight and Survival
+         Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+         Heat Resistance: Gains Advantage on saving throws caused by extremely hot weather or dehydration
     
-   - - Ranger Abilities:
-       - Ranger Spellcasting: Spell DC11 
-          - 1st Level: Hunter's Mark, Searing Smite, Cure Wounds, Wild Cunning 
-          - 2nd Level: Locate Animals or Plants, Pass Without Trace, Cordon of Arrows        
-       - Favored Enemy: Demon & Hydra - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
-       - Natural Explorer: Favored Terrain - Grassland & Forest
-          - Difficult Terrain doesn't slow your group's Travel
-          - Your group can't become lost except by magical means
-          - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-          - If you are traveling alone, you can move stealthily at a normal pace
-          - When you Forage, you find twice as much food as you normally would
-          - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-       - Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-       - Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+       Ranger Abilities:
+       - Ranger Spellcasting:
+         - Description: Spell DC11 
+           1st Level: Hunter's Mark, Searing Smite, Cure Wounds, Wild Cunning 
+           2nd Level: Locate Animals or Plants, Pass Without Trace, Cordon of Arrows
+         Favored Enemy: Demon & Hydra - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+         Natural Explorer:
+         - Description: Grassland & Forest
+           Additional Information:
+           - Difficult Terrain doesn't slow your group's Travel
+           - Your group can't become lost except by magical means
+           - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+           - If you are traveling alone, you can move stealthily at a normal pace
+           - When you Forage, you find twice as much food as you normally would
+           - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+         Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
+         Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
                              types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
                              reveal the creatures' location or number.
-       - Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-       - Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
+         Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+         Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
                      or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell       
  
-   - - Monster Slayer Abilities:
-       - Monster Slayer Spellcasting: Spell DC14 
-          - 3rd Level: Protection from Evil and Good 
-          - 5th Level: Zone of Truth
-       - Hunters Sense:  As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the 
+       Monster Slayer Abilities:
+       - Monster Slayer Spellcasting:
+         - Description: Spell DC14
+           3rd Level: Protection from Evil and Good
+           5th Level: Zone of Truth
+         Hunters Sense:  As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the 
                          creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities
-       - Slayers Prey:  As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 
-                        1d6 damage from the weapon. 
-       - Supernatural Defense: Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to escape that target's grapple, add 1d6 to your roll       
+         Slayers Prey:  As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 
+                        1d6 damage from the weapon.
+         Supernatural Defense: Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to escape that target's grapple, add 1d6 to your roll       
        
 
     special-abilities:
-    - Proficiencies: Cooking, Mixology, Disguise Kit, Poisoner's Kit, Stealth, Insight, Survival, Thieve's Tools, Sleight of Hand    
+    - Proficiencies: Cooking, Mixology, Disguise Kit, Poisoner's Kit, Stealth, Insight, Survival, Thieve's Tools, Sleight of Hand 
     attacks: |
       2 Attacks with his Longbow or Spear
     combat-tactics: |
@@ -511,7 +517,7 @@ npc:
     special-equipment:
     - +2 Longbow
     - +1 Spear
-                                                                   
+
   profile:
 
     #
@@ -537,32 +543,4 @@ npc:
     #
     personality: |
       Brygan is broad and strong, 7' Tall and lithe with golden fur, lion-like features, piercing blue eyes, a shining gold breastplate and a long spear. he is brash and fearless which can get him into trouble at times 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

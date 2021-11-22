@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +313,6 @@ npc:
     - Common
     - Orcish
     - Dwarvish
-
 
     #
     # Factions:
@@ -337,7 +335,6 @@ npc:
     - id: Masons_Guild
       name: Mason's Guild
       role: General Contractor
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -373,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Stout and muscular - barrel shaped; 5'5"; Tanned reddish brown skin; Deep brown dreadlocks with blonde highlights 
+    appearance:  Stout and muscular - barrel shaped; 5'5"; Tanned reddish brown skin; Deep brown dreadlocks with blonde highlights 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -389,7 +386,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "If you gots a need, I do the deed"; "Poor craftsmanship. Damned elves/humans couldn't build quality if they tried"
+    expressions:  
+    - "If you gots a need, I do the deed"
+    - "Poor craftsmanship. Damned elves/humans couldn't build quality if they tried"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -402,7 +401,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Always pointing out the differences between the races yet can't tell the difference between members of the same race.
+    mannerisms:  Always pointing out the differences between the races yet can't tell the difference between members of the same race.
 
   acting:
     #
@@ -438,7 +437,8 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: He's pretty upfront about everything
+    secrets: |
+      He's pretty upfront about everything
        
       
   #
@@ -465,32 +465,29 @@ npc:
   #
   specialties:
     skills:
-     - Half-Orc Abilities:
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-         Menacing: gain proficiency in the Intimidation skill 
-         Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-         Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-
-       Half-Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-         Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-         Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                       instead of his normal Proficiency Bonus       
-    
-       Barbarian Abilities:
-         Rage: 
-         - Description: Can enter a rage as a Bonus Action. 
-           Additional Information:
-           - have advantage on Strength Checks and Strength Saving Throws.
-           - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-           - Resistance to bludgeoning, piercing, and slashing damage          
-         Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                          but Attack Rolls against him have advantage until his next turn
-         Extra Attack: Can attack twice each turn
- 
-   - - Path of the Berserk Abilities:
-       - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
+    - Half-Orc Abilities:
+      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+        Menacing: gain proficiency in the Intimidation skill 
+        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+      Half-Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+                      instead of his normal Proficiency Bonus       
+      Barbarian Abilities:
+      - Rage: 
+        - Description: Can enter a rage as a Bonus Action. 
+          Additional Information:
+          - have advantage on Strength Checks and Strength Saving Throws.
+          - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+          - Resistance to bludgeoning, piercing, and slashing damage          
+        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                         but Attack Rolls against him have advantage until his next turn
+        Extra Attack: Can attack twice each turn
+      Path of the Berserk Abilities:
+      - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
                 he suffer one level of Exhaustion    
 
     special-abilities:
@@ -522,5 +519,3 @@ npc:
       Meership Downs, a small sailing port and bustling sea-side community. Here he grew his talents, but also his hatred for other races as the village was frequented by many types of people carousing, drinking, fighting, 
       and all-around ne'er-do-wells. Now, Albrecht focuses on having his 'stamp' on as many buildings, ships, wagons, and so forth, as he possibly can. He puts his anger and hatred into his work knowing that unleashing his 
       rage would not only be dangerous for others, but most certainly for himself.
-
-      

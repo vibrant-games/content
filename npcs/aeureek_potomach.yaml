@@ -371,7 +371,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Insanely proper posture at all times; Gowns of a magistrate; Bird features are akin to a falcon 
+    appearance:  Insanely proper posture at all times; Gowns of a magistrate; Bird features are akin to a falcon 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -400,7 +400,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Bursts proudly into Aarakocra often, measuring and adjusting her posture and appearance in any mirror
+    mannerisms:  Bursts proudly into Aarakocra often, measuring and adjusting her posture and appearance in any mirror
 
   acting:
     #
@@ -450,7 +450,7 @@ npc:
     str: 11
     dex: 14
     con: 14
-    int: 18 
+    int: 18
     wis: 16
     cha: 15
 
@@ -463,33 +463,34 @@ npc:
   #
   specialties:
     skills:
-  - - Aarakocra Traits:
+    - Aarakocra Traits:
       - Flight: Flying speed is 50 feet
-      - Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+        Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
 
-   - - Wizard Abilities:
+      Wizard Abilities:
          - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-         - Spellcasting: DC 14
-            Cantrips: Message, Minor Illusion, Mage Hand, Prestidigitation
-            1st Level: Alarm, Comprehend Languages, Protection from Evil, Magic Missle
-            2nd Level: Arcane Lock, Hold Person, Detect Thoughts 
-            3rd Level: Counterspell, Dispel Magic, Glyph of Warding      
+           Spellcasting:
+           - Description: DC 14
+             Cantrips: Message, Minor Illusion, Mage Hand, Prestidigitation
+             1st Level: Alarm, Comprehend Languages, Protection from Evil, Magic Missle
+             2nd Level: Arcane Lock, Hold Person, Detect Thoughts 
+             3rd Level: Counterspell, Dispel Magic, Glyph of Warding      
 
-   - - School of Lore Mastery Abilities:
-       - Lore Master: you become an increasingly broader compendium of knowledge on a vast array of topics. Choose one skill from Arcana, History, Nature or Religion. Your proficiency bonus is doubled for any ability check that 
-                      uses the chosen skill if you are proficient in that skill. At levels 6, 10 and 14 you get to choose one more skill from the list. In addition, your initiative in combat can be driven by mental agility, 
-                      rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice). Your proficiency bonus is also doubled for any ability check that uses
-                      the Investigation skill if you are proficient in that skill. neither this feature nor the previous feature gives proficiency in any skill           
-       - Spell Secrets: you start to master your first in a series of arcane secrets uncovered by your extensive studies. Choose two damage types from acid, cold, fire, force, lightning, necrotic, radiant or thunder. When you 
-                        cast a wizard spell with a spell slot and the spell deals one of the chosen damage types you can substitute that damage type with another (previously) chosen damage type from the list. You can use this 
-                        feature a number of times equal to your Inteligence Modifier (minimum of once~ and only a single damage type may be substituted per spell You regain any expended uses when you finish a long rest. At 
-                        levels 6, 10 and 14 you get to choose two more damage types from the list. Additionally, when you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from
-                        one ability score to another of your choice. Once you change a saving throw in this way, you can't do so again until you finish a long rest.
-       - Arcane Analyser: you learn to augment spells in a variety of ways. When you cast a spell with a spell slot, you can expend one additional spell slot to augment its effects for this casting, mixing the raw stuff of magic
-                          into your spell to amplify it. The effect depends on the spell slot you expend. An additional 1st-level spell slot can increase the spell's raw force. If you roll damage for the spell when you cast it, 
-                          increase the damage against one target of your choice by 2dl0 force damage. lfthe spell can deal damage on more than one turn, it deals this extra force damage only on the turn you cast the spell. An 
-                          additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it's range is tripled, or it becomes 1/4 of a mile (whichever is greater) An additional 3rd-
-                          level spell slot can increase the spell's potency. Increase the spell's save DC by 2 for one turn against all targets.          
+      School of Lore Mastery Abilities:
+      - Lore Master: you become an increasingly broader compendium of knowledge on a vast array of topics. Choose one skill from Arcana, History, Nature or Religion. Your proficiency bonus is doubled for any ability check that 
+                     uses the chosen skill if you are proficient in that skill. At levels 6, 10 and 14 you get to choose one more skill from the list. In addition, your initiative in combat can be driven by mental agility, 
+                     rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice). Your proficiency bonus is also doubled for any ability check that uses
+                     the Investigation skill if you are proficient in that skill. neither this feature nor the previous feature gives proficiency in any skill           
+        Spell Secrets: you start to master your first in a series of arcane secrets uncovered by your extensive studies. Choose two damage types from acid, cold, fire, force, lightning, necrotic, radiant or thunder. When you 
+                       cast a wizard spell with a spell slot and the spell deals one of the chosen damage types you can substitute that damage type with another (previously) chosen damage type from the list. You can use this 
+                       feature a number of times equal to your Inteligence Modifier (minimum of once~ and only a single damage type may be substituted per spell You regain any expended uses when you finish a long rest. At 
+                       levels 6, 10 and 14 you get to choose two more damage types from the list. Additionally, when you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from
+                       one ability score to another of your choice. Once you change a saving throw in this way, you can't do so again until you finish a long rest.
+        Arcane Analyser: you learn to augment spells in a variety of ways. When you cast a spell with a spell slot, you can expend one additional spell slot to augment its effects for this casting, mixing the raw stuff of magic
+                         into your spell to amplify it. The effect depends on the spell slot you expend. An additional 1st-level spell slot can increase the spell's raw force. If you roll damage for the spell when you cast it, 
+                         increase the damage against one target of your choice by 2dl0 force damage. lfthe spell can deal damage on more than one turn, it deals this extra force damage only on the turn you cast the spell. An 
+                         additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it's range is tripled, or it becomes 1/4 of a mile (whichever is greater) An additional 3rd-
+                         level spell slot can increase the spell's potency. Increase the spell's save DC by 2 for one turn against all targets.          
 
     special-abilities:
     - Proficiencies: Arcana, History, Investigation, Religion, Persuasion, Insight, Deception    
@@ -500,18 +501,17 @@ npc:
       She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. 
       Then she will use AoE spells if safe to do so.
     special-equipment:
-      - Protective Verses Spellbook: Contains the spells
+      - Protective Verses Spellbook:
+        - Contains the spells
         - arcane lock
         - dispel magic
         - globe of invulnerability
         - glyph of warding
         - Mordenkainen's private sanctum
         - protection from evil
-        - symbol. 
-        It functions as a spellbook. While holding the book it can be used as a spellcasting focus. The book has 3 charges. it regains 1d3 expended charges daily at dawn. 
-        Charges can be used in the following ways while holding it - Spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book. 
-                                                                     The new spell must be of the abjuration school.
-                                                                   - When casting an abjuration spell expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
+        - symbol 
+        - It functions as a spellbook. While holding the book it can be used as a spellcasting focus. The book has 3 charges. It regains 1d3 expended charges daily at dawn. Charges can be used in the following ways while holding it - Spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book.  The new spell must be of the abjuration school.
+        - When casting an abjuration spell expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
                                                                    
   profile:
 
@@ -544,32 +544,4 @@ npc:
     personality: |
       Aeureek's bird-like features are akin to that of a falcon with featehrs of whites, browns and greys; She has died various feathers bright reds and purples. She maintains exceptional posture at all times and is always 
       dressed in formal white magistrate's gowns. She is all business in her role as an advisor to surface-dwelling magistrates, but is also exceptionally vain and constantly fusses over her appearance.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

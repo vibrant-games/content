@@ -401,7 +401,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Carries herself lightly. She frequently stops to almost nervously preen the feathers on her wings with he long bill
+    mannerisms:  Carries herself lightly. She frequently stops to almost nervously preen the feathers on her wings with he long bill
 
   acting:
     #
@@ -437,7 +437,8 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: That the God-Pharaoh is not what he seems
+    secrets: |
+      That the God-Pharaoh is not what he seems
        
       
   #
@@ -464,20 +465,19 @@ npc:
   #
   specialties:
     skills:
-   - - Ibis-Head Aven Traits:
+     - Ibis-Head Aven Traits:
          - Kefnets Blessing: Can add half her proficiency bonus, rounded down, to any Intelligence check she makes that doesn’t already include herr proficiency bonus            
-
-   - - Wizard Abilities:
+       Wizard Abilities:
          - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-         - Spellcasting: DC 15
-            Cantrips: Message, Minor Illusion, Mage Hand, Fire Bolt
-            1st Level: Charm Person, Comprehend Languages, Protection from Evil, Magic Missle
-            2nd Level: Mirror Image, Hold Person, Alter Self 
-            3rd Level: Counterspell, Dispel Magic, Fireball      
-
-   - - School of the Arcane Weave Abilities:
+           Spellcasting: 
+           - Description: DC 15
+             Cantrips: Message, Minor Illusion, Mage Hand, Fire Bolt
+             1st Level: Charm Person, Comprehend Languages, Protection from Evil, Magic Missle
+             2nd Level: Mirror Image, Hold Person, Alter Self 
+             3rd Level: Counterspell, Dispel Magic, Fireball      
+       School of the Arcane Weave Abilities:
        - Arcane Sight: Can see a faint glow on all magical sources within 10 feet, Can do this 3 times per short rest           
-       - Magical Weaving: Can attempt to change a spell that passes or happens within 15 feet. Using a reaction can attempt to change the spell being cast into a spell 1 level lower that she has prepared. 
+         Magical Weaving: Can attempt to change a spell that passes or happens within 15 feet. Using a reaction can attempt to change the spell being cast into a spell 1 level lower that she has prepared. 
                           The DC is 15 plus the Spell being changed's level and increases by 2 for each level she wants to lower the spell. She can also choose to empower an ally's spell as its being cast 
                           by raising its spell level by 1. The DC is 15+ the spells level.         
         
@@ -516,32 +516,3 @@ npc:
     #
     personality: |
       Ahktoma is a tall slender aven with the long pointed beak of the Ibis-Head line.She wears long white scholars robes and has mostly white but slightly greying featehrs
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

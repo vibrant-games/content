@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Adventurer
-    
 
     #
     # D & D classes (case insensitive):
@@ -239,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: warlock
+    class: Warlock
 
     #
     # D & D subclasses (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Celestial
     - Infernal
-
 
     #
     # Factions:
@@ -337,7 +334,6 @@ npc:
     - id: N/A
       name: N/A
       role: Demon Hunter
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -362,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  He would seek out a party for information on local monsters or for aid in hunting a monster  
+    introduction:  He would seek out a party for information on local monsters or for aid in hunting a monster
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -373,7 +369,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Tall with streaks of black and white hair, golden eyes and emerald skin.  He wears full leather armor a duster and hat 
+    appearance:  Tall with streaks of black and white hair, golden eyes and emerald skin.  He wears full leather armor a duster and hat
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -389,7 +385,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Ay, any of you would fall in the face of the horrors I seek to destroy."; "Wild magicks always beat confined books."
+    expressions:
+    - "Ay, any of you would fall in the face of the horrors I seek to destroy."
+    - "Wild magicks always beat confined books."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -402,7 +400,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Holds a hand up while speaking; Snorts and snarls during casting; Brushes his hair from his face like a tick.
+    mannerisms:  Holds a hand up while speaking; Snorts and snarls during casting; Brushes his hair from his face like a tick.
 
   acting:
     #
@@ -413,7 +411,7 @@ npc:
     #
     motivations: |
       The Pact of The Blade and serving his divine destiny
-      
+
     #
     # Passions:
     #
@@ -422,7 +420,7 @@ npc:
     #
     passions: |
       Power; Wild Magic; Demonology
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,16 +429,16 @@ npc:
     #
     vulnerabilities: |
       Untrusting and Overly Skeptical
-      
+
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: His Divine Destiny
-       
-      
+    secrets: |
+      His Divine Destiny
+
   #
   # The D & D stats block:
   # All integers.
@@ -452,7 +450,7 @@ npc:
     str: 12
     dex: 15
     con: 14
-    int: 13 
+    int: 13
     wis: 16
     cha: 19
 
@@ -465,47 +463,44 @@ npc:
   #
   specialties:
     skills:
-  - - Aasimar Traits:
+    - Aasimar Traits:
       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-      - Celestial Resistance: Resistance to Necrotic and Radiant Damage
-      - Healing Hands: Once per longrest, can touch a creature and cause it to gain 5HP
-      - Light Bearer: Can cast the Light cantrip using Charisma as spellcasting abaility
-      
-  - - Scourge Traits:
-      - Radiant Consumption: Can use his action to unleash the divine energy within himself, causing a searing light to radiate from him, pour out of his eyes and mouth, and threaten to char him.
-          - The transformation lasts for 1 minute or until he ends it as a bonus action. During it, he sheds bright light in a 10-foot radius and dim light for an additional 10 feet, and at the 
-            end of each of his turns, he and each creature within 10 feet of him take 3 radiant damage. In addition, once on each of his turns, he can deal an extra 5 radiant damage to one target when 
-            he deals damage to it with an attack or a spell.            
+        Celestial Resistance: Resistance to Necrotic and Radiant Damage
+        Healing Hands: Once per longrest, can touch a creature and cause it to gain 5HP
+        Light Bearer: Can cast the Light cantrip using Charisma as spellcasting abaility
+      Scourge Traits:
+      - Radiant Consumption: Can use his action to unleash the divine energy within himself, causing a searing light to radiate from him, pour out of his eyes and mouth, and threaten to char him.  The transformation lasts for 1 minute or until he ends it as a bonus action. During it, he sheds bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of his turns, he and each creature within 10 feet of him take 3 radiant damage. In addition, once on each of his turns, he can deal an extra 5 radiant damage to one target when he deals damage to it with an attack or a spell.            
 
-   - - Warlock Abilities:
-         - Pact of the Blade Magic: Spell DC 14
-             Cantrip: Eldritch Blast, Minor Illusion
-             1st Level: Hellish Rebuke, Charm Person
-             2nd Level: Hold Person, Misty Step
-             3rd Level: Counterspell, Dispel Magic
-         - Eldritch Invocations:
-            Agonizing Blast: Can add Charisma modifier to Eldritch Blast Damage
-            Mask of Many Faces: Can cast Disguise Self at will without using a spell slot
-            Eldritch Sight: Can cast Detect Magic at will without using a spell slot
-         - Pact Weapon: Can use his action to create a +2 Scimitar in his empty hand. He is proficient with it while he wields it.             
+      Warlock Abilities:
+      - Pact of the Blade Magic: 
+        - Description: Spell DC 14
+          Cantrips: Eldritch Blast, Minor Illusion
+          1st Level: Hellish Rebuke, Charm Person
+          2nd Level: Hold Person, Misty Step
+          3rd Level: Counterspell, Dispel Magic
+        Eldritch Invocations:
+        - Agonizing Blast: Can add Charisma modifier to Eldritch Blast Damage
+          Mask of Many Faces: Can cast Disguise Self at will without using a spell slot
+          Eldritch Sight: Can cast Detect Magic at will without using a spell slot
+        Pact Weapon: Can use his action to create a +2 Scimitar in his empty hand. He is proficient with it while he wields it.
 
-   - - Hexblade Abilities:
-       - Hsxblade Spells:
-             1st Level: Shield, Wrathful Smite
-             2nd Level: Blur, Branding Smite
-             3rd Level: Blink, Elemental Weapon
-             4th Level: Phantasmal Killer, Staggering Smite
-             5th Level: Banishing Smite, Cone of Cold      
-       - Hexblades Curse: Gain a bonus to damage rolls against the cursed target equal to his proficiency bonus. Any attack roll he makes against the cursed target is a critical hit on a roll of 19 or 20 on the d20.
-                          If the cursed target dies, he regains 6Hp
-       - Hex Warrior: When using his Pact Weapon, he can use Charisma for Attack and Damage rolls
-       - Accursed Specter: can curse the soul of a person he slays, temporarily binding it in his service. When he slays a humanoid, he can cause its spirit to rise from its corpse as a specter. When the specter appears, 
-                           it gains temporary hit points equal to half his warlock level. Roll initiative for the specter, which has its own turns. It obeys his verbal commands, and it gains a special bonus to its attack 
-                           rolls equal to his Charisma modifier          
+      Hexblade Abilities:
+      - Hexblade Spells:
+        - 1st Level: Shield, Wrathful Smite
+          2nd Level: Blur, Branding Smite
+          3rd Level: Blink, Elemental Weapon
+          4th Level: Phantasmal Killer, Staggering Smite
+          5th Level: Banishing Smite, Cone of Cold
+        Hexblades Curse: Gain a bonus to damage rolls against the cursed target equal to his proficiency bonus. Any attack roll he makes against the cursed target is a critical hit on a roll of 19 or 20 on the d20.
+                         If the cursed target dies, he regains 6Hp
+        Hex Warrior: When using his Pact Weapon, he can use Charisma for Attack and Damage rolls
+        Accursed Specter: can curse the soul of a person he slays, temporarily binding it in his service. When he slays a humanoid, he can cause its spirit to rise from its corpse as a specter. When the specter appears, 
+                          it gains temporary hit points equal to half his warlock level. Roll initiative for the specter, which has its own turns. It obeys his verbal commands, and it gains a special bonus to its attack 
+                          rolls equal to his Charisma modifier
 
     special-abilities:
     - Proficiencies: Arcana, Investigation, Persuasion, Intimidation, Deception    
-    
+
     attacks: |
       Hexblade an Eldritch Blasts
     combat-tactics: |
@@ -513,7 +508,7 @@ npc:
     special-equipment:
       - +2 Hexblade Scimitar
       - Leather Armor
-                                                                   
+
   profile:
 
     #
@@ -527,7 +522,6 @@ npc:
       He was charged whole cloth by his patron god to hunt down and slay a specific demon from the abyssal plane, Ghaal, and right any wrongs along his path.  He made the Pact of The Blade to give himself the power and the 
       tools to fulfill his destiny.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -538,32 +532,4 @@ npc:
     #
     personality: |
       Aezodel is tall and broad with long black hair with streaks of silver white. He has golden eyes and pale emerald skin.  He wears full leather armor,  a duster and a wide-brimmed hat
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
 
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
