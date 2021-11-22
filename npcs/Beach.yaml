@@ -335,7 +335,7 @@ npc:
     #
     factions:
     - id: butler_to_the_police_chief_dabbling_member_of_white_gloves_black_arts_libertarian_alchemists
-      name: Butler to the police chief;
+      name: Butler to the police chief
       role: Butler
 
 
@@ -389,7 +389,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Does sir/madam have an appointment with His Grace?"; "Scones with your libation, master/madam?"; "Graciouse me!"
+    expressions:  
+    - "Does sir/madam have an appointment with His Grace?"
+    - "Scones with your libation, master/madam?"
+    - "Graciouse me!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -438,7 +441,8 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: Not so much a secret, Beach isn't fond of sharing his origins
+    secrets: |
+      Not so much a secret, Beach isn't fond of sharing his origins
        
       
   #
@@ -452,7 +456,7 @@ npc:
     str: 14
     dex: 17
     con: 11
-    int: 13 
+    int: 13
     wis: 12
     cha: 13
 
@@ -484,7 +488,7 @@ npc:
       - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
 
     special-abilities:
-    - Proficiencies: 
+    - Proficiencies:
       - Cooking
       - Mixology
       - Disguise Kit
@@ -500,7 +504,7 @@ npc:
     combat-tactics: |
       If combat erupts, Beach appears to flee but instead is actually finding the best shadows from which to strike
     special-equipment:
-    - Assassins Dagger (+1):
+    - Assassins Dagger:
       - Description:  When Beach Hits a creature that is surprised with this dagger, target must make a DC 18 CON throw or take 4d6 necrotic damage
       Hidden Blade:
       - Description: (1d4 piercing, finesse)
@@ -525,4 +529,3 @@ npc:
       deep blues eyes and saw a nimble, dedicated soul; much different from the ferocious hatred he'd seen in his battles against raid-parties. "No," Amin exclaimed, "this one is different. 
       And we needn't fall victim to the same virulent hatred that afflicts the Orcs." Amin brought Ukhtor with him for the journey. Staring into his sea-blue eyes he pronounced that the youngster be named 'Beach'. 
       Raised within the Constabulary's ranks, Beach learned skills more akin to his natural abilities and became an agile killer. He was also imbued with their sense of noblility and respect.
-  

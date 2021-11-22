@@ -373,7 +373,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Expensive black silks wrapped tightly around her strong limbs; a short skirt of leather; mail bundles strapped to skirt. 
+    appearance:  Expensive black silks wrapped tightly around her strong limbs; a short skirt of leather; mail bundles strapped to skirt. 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -389,8 +389,12 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Hey you!"; (seizing clothes) "I LOVE this!"; "Crew love!"; (rolling eyes) "Oh my gods"; "Right?"
-
+    expressions:  
+    - "Hey you!" 
+    - (seizing clothes) "I LOVE this!"
+    - "Crew love!"
+    - (rolling eyes) "Oh my gods Right" 
+    
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
     # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
@@ -465,27 +469,27 @@ npc:
   #
   specialties:
     skills:
-  - - Drow Traits:
+    - Drow Traits:
       - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-      - Keen Senses: Proficiency in Perception
-      - Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
-      - Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
-      - Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-      - Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
-      - Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
+        Keen Senses: Proficiency in Perception
+        Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
+        Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
+        Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
+        Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
+        Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
 
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage       
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage       
 
-   - - Scout Abilities:
+      Scout Abilities:
        - Skirmisher: Can move half her speed as a reaction when an enemy ends a turn within 5 feet of her. this movement does not provoke an opportunity attack          
-       - Survivalist: Double proficiency bonus on Nature and Survival checks         
+         Survivalist: Double proficiency bonus on Nature and Survival checks         
 
     special-abilities:
-    - Proficiencies: Sleight of Hand; Stealth; Disguise; Perception; Deception; Persuasion; Survival; Nature; Thieve's Tools    
+    - Proficiencies: Sleight of Hand, Stealth; Disguise; Perception; Deception; Persuasion; Survival; Nature; Thieve's Tools    
     
     attacks: |
       Short Sword or Hand Crossbow
@@ -527,32 +531,4 @@ npc:
     personality: |
       Riley is a young and pretty Drow with long black hair with dyed pink tips, deep red eyes and dark gray skin. She has a lithe, muscular body that she wraps in silk tights and light, black, leather armor. She is perky 
       and plucky, is all about fashion and friends, but unlike many of her peers, has a strong work ethic and believes that he job is very important
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
 
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
