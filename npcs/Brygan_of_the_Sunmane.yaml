@@ -1,67 +1,7 @@
 ﻿#
 # Vibrant Games NPC file format.
 #
-# For long fields, we should be able to embed <html-tag>...</html-tag>s,
-# if everyone is cool with that approach.  OR we could use markdown instead.
-#
-# HTML requires more discipline -- we need to come up with a CSS stylesheet,
-# and stick to using the styles defined in our stylesheet.  Markdown is
-# simpler, because we can convert and automagically apply the stylesheet.
-#
-# Long fields are of the form:
-#
-#     field: |
-#       TEMPLATE
-#       MORE TEMPLATE
-#
-# For example, with HTML tags:
-#
-#     field: |
-#       <p> Gorbonzonger the goblin is a very bad goblin.
-#       He likes to beat up kobolds. </p>
-#       <p class="small"> Kobolds deserve it, anyway. </p>
-#       <p> Gorbonzonger has an amulet made of camphor
-#       and a very long shopping list that contains many
-#       items, some very few of which include: </p>
-#       <ul>
-#       <li> toilet paper </li>
-#       <li> broccoli </li>
-#       </ul>
-#
-# Or with Markdown:
-#
-#     field: |
-#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
-#       Kobolds deserve it, anyway.
-#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
-#       - toilet paper
-#       - broccoli
-#
-# (There might be other formatting systems worth considering, too!)
-#
-
-#
-# Currently there is no schema for this template.
-# It will take some time to create a validating schema, so that,
-# for example, many fields are optional, but some fields are
-# required; enumerated fields are only allowed to have certain
-# values; and so on.
-#
-# Once the validating schema is created (probably using
-# Open API syntax, unless anyone has any preferences), we'll
-# be able to validate submissions and accept / reject if we choose.
-#
-# Also the validating file format is the ONLY place we do
-# content validation.  The database and user interface remain
-# agnostic to the validation rules (although the submission
-# UI will be set up to make it easy to e.g. pull down enumerated
-# values).  This allows us to change the schema in ONE PLACE
-# ONLY, not have to modify multiple components (UI, database,
-# future mobile apps, etc).  The file format validator is
-# the arbiter of what's allowed and what isn't.
-#
-
-#
+# 
 # Template NPC:
 #
 
@@ -216,7 +156,6 @@ npc:
     #
     occupation:
     - Hunter
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +237,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +251,6 @@ npc:
     languages:
     - Common
     - Leonin
-
 
     #
     # Factions:
@@ -336,7 +273,6 @@ npc:
     - id: sunmane_pride
       name: Sunmane Pride
       role: Hunter
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -361,7 +297,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  'Get down! you're surrounded!', comes the hushed voice from somewhere in the long golden grass of the open plains
+    introduction:  \"Get down! you're surrounded!\", comes the hushed voice from somewhere in the long golden grass of the open plains
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -390,6 +326,7 @@ npc:
     #
     expressions:
     - "The hunt is on!"
+    - "grr"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +350,7 @@ npc:
     #
     motivations: |
       Honor for his pride. Protection of his home
-      
+
     #
     # Passions:
     #
@@ -422,7 +359,7 @@ npc:
     #
     passions: |
       His family, his pride and his nation
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +368,7 @@ npc:
     #
     vulnerabilities: |
       Sometimes overestimates his abilities out of pride
-      
+
     #
     # Secrets:
     #
@@ -440,8 +377,7 @@ npc:
     #
     secrets: |
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -453,7 +389,7 @@ npc:
     str: 16
     dex: 15
     con: 17
-    int: 13 
+    int: 13
     wis: 10
     cha: 15
 
@@ -467,16 +403,15 @@ npc:
   specialties:
     skills:
      - Leonin Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
          Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
          Primal Intuition: Proficient in Insight and Survival
          Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
          Heat Resistance: Gains Advantage on saving throws caused by extremely hot weather or dehydration
-    
        Ranger Abilities:
        - Ranger Spellcasting:
-         - Description: Spell DC11 
-           1st Level: Hunter's Mark, Searing Smite, Cure Wounds, Wild Cunning 
+         - Description: Spell DC11
+           1st Level: Hunter's Mark, Searing Smite, Cure Wounds, Wild Cunning
            2nd Level: Locate Animals or Plants, Pass Without Trace, Cordon of Arrows
          Favored Enemy: Demon & Hydra - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
          Natural Explorer:
@@ -489,27 +424,25 @@ npc:
            - When you Forage, you find twice as much food as you normally would
            - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
          Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-         Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
-                             types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+         Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following
+                             types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't
                              reveal the creatures' location or number.
          Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-         Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
-                     or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell       
- 
+         Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines,
+                     or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell
        Monster Slayer Abilities:
        - Monster Slayer Spellcasting:
          - Description: Spell DC14
            3rd Level: Protection from Evil and Good
            5th Level: Zone of Truth
-         Hunters Sense:  As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the 
+         Hunters Sense:  As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the
                          creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities
-         Slayers Prey:  As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra 
+         Slayers Prey:  As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra
                         1d6 damage from the weapon.
-         Supernatural Defense: Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to escape that target's grapple, add 1d6 to your roll       
-       
+         Supernatural Defense: Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to escape that target's grapple, add 1d6 to your roll
 
     special-abilities:
-    - Proficiencies: Cooking, Mixology, Disguise Kit, Poisoner's Kit, Stealth, Insight, Survival, Thieve's Tools, Sleight of Hand 
+    - Proficiencies: Cooking, Mixology, Disguise Kit, Poisoner's Kit, Stealth, Insight, Survival, Thieve's Tools, Sleight of Hand
     attacks: |
       2 Attacks with his Longbow or Spear
     combat-tactics: |
@@ -532,7 +465,6 @@ npc:
       abominations, affronts to his god and a threat to his pride. At home with his family, he is loving and gentle with his wife and cubs. He is a leader of his pride and heads up the scouting force. At times, especially while 
       on the hunt, he can be very arrogant and sometimes gets too far ahead of his squad, getting himself into trouble.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
