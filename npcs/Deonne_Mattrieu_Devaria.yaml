@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - innkeeper
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Orcish
     - Goblinoid
     - Dwarven
-
 
     #
     # Factions:
@@ -360,7 +357,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Wearing a khopesh, the tall, well-polished half-orc innkeep claps twice. "We've new guests, people. To your duties."
+    introduction:  Wearing a khopesh, the tall, well-polished half-orc innkeep claps twice. /"We've new guests, people. To your duties./"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -371,7 +368,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Very fit. Chain skirt and tunic. Half-cloak with two-faced head embroidered on back. Short black hair. Black felt gloves
+    appearance:  Very fit. Chain skirt and tunic. Half-cloak with two-faced head embroidered on back. Short black hair. Black felt gloves
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -387,7 +384,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We've a few rules for the common room. Best ye follow em."; "Eye for eye for eye";
+    expressions:
+    - "We've a few rules for the common room. Best ye follow em."
+    - "Eye for eye for eye"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -400,7 +399,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Stands stoic with one hand on Khopesh at most times. Diligently delegates tasks to servants and employees. Cocks head.
+    mannerisms:  Stands stoic with one hand on Khopesh at most times. Diligently delegates tasks to servants and employees. Cocks head.
 
   acting:
     #
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       Seeks retribution for his years of torture under the Inquisitors in search of the Orcish King of the North.
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       Revenge. Providing respite to others in spite of his tragic life
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,16 +428,16 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: He seeks to murder the royals who created the Inquisitors; a group of paladins searching for the Orcish King of the North
-       
-      
+    secrets: |
+      He seeks to murder the royals who created the Inquisitors; a group of paladins searching for the Orcish King of the North
+
   #
   # The D & D stats block:
   # All integers.
@@ -450,7 +449,7 @@ npc:
     str: 18
     dex: 10
     con: 14
-    int: 9 
+    int: 9
     wis: 16
     cha: 18
 
@@ -463,40 +462,38 @@ npc:
   #
   specialties:
     skills:
-  - - Half-Orc Abilities:
-      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-      - Menacing: gain proficiency in the Intimidation skill 
-      - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-      - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
- 
-   - - Paladin Abilities:
-       - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                       within the same radius. Can use this ability 4 per long rest
-       - Lay on Hands: Can touch another creature to heal up to 25HP per long rest. Or can 5HP to cure a disease or poison affecting it.
-       - Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet 
-       - Divine Smite: Melee weapon attacks deal an additional 2d8 radiant damage, or 3d8 versus undead or fiends 
-       - Divine Health: Immune to disease
-       - Extra Attack: Can take and extra attack action each turn       
-       - Spellcasting: DC 14
-         1st Level: Bless, Command, Purify Food and Drink, Shield of Faith
-         2nd Level: Branding Smite, Lesser Restoration
-         
-   - - Oath of free Commerce Abilities:
-       - Channel Divinty: 
-         - Objective Worth: As an action, you can improve the quality of a weapon you are holding for one minute, causing it to become a +3 Magical Weapon in addition to it's other attributes or inherently know the exact 
-                            monetary value of anything you see for one hour
-         - Turn the Craven: As an action you can cause each creature within 30 feet that is invisible, hiding or otherwise difficult to see, must make a wisdom save. If it fails, that creature is turned                            
-       
+    - Half-Orc Abilities:
+      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..
+        Menacing: gain proficiency in the Intimidation skill
+        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+      Paladin Abilities:
+      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated
+                      within the same radius. Can use this ability 4 per long rest
+        Lay on Hands: Can touch another creature to heal up to 25HP per long rest. Or can 5HP to cure a disease or poison affecting it.
+        Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet
+        Divine Smite: Melee weapon attacks deal an additional 2d8 radiant damage, or 3d8 versus undead or fiends
+        Divine Health: Immune to disease
+        Extra Attack: Can take and extra attack action each turn
+        Spellcasting:
+        - Description: DC 14
+          1st Level: Bless, Command, Purify Food and Drink, Shield of Faith
+          2nd Level: Branding Smite, Lesser Restoration
+      Oath of free Commerce Abilities:
+      - Channel Divinty:
+        - Objective Worth: As an action, you can improve the quality of a weapon you are holding for one minute, causing it to become a +3 Magical Weapon in addition to it's other attributes or inherently know the exact
+                           monetary value of anything you see for one hour
+          Turn the Craven: As an action you can cause each creature within 30 feet that is invisible, hiding or otherwise difficult to see, must make a wisdom save. If it fails, that creature is turned
 
     special-abilities:
-    - Proficiencies: Herbalsim, Nature, Medicine    
+    - Proficiencies: Herbalsim, Nature, Medicine
     attacks: |
       2 attacks
     combat-tactics: |
       Deonne is not to be reckoned with. He attacks fiercely, head-on
     special-equipment:
     - Khopesh
-                                                                   
+
   profile:
 
     #
@@ -507,17 +504,16 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Because of the imposing austerity of the Winterlands, the Orcs of the North, the Grimfang tribe, are known for being especially vicious. Lines of berserkers, polar bear cavalries, and powerful shamans have carved bloody 
-      paths of devastation into the surrounding kingdoms. Unknown to the broader public, the Grimfang tribe has derived their ruthlessness from a desire to protect themselves from the strategic and unethical assaults of 
-      the Northern Dwarven and Elven alliances. Separated from his tribe during a heavy skirmish, Deonne was held and tortured by the Inquisitors of the North seeking the hearth of the King of the Grimfang. Tortured over 
+      Because of the imposing austerity of the Winterlands, the Orcs of the North, the Grimfang tribe, are known for being especially vicious. Lines of berserkers, polar bear cavalries, and powerful shamans have carved bloody
+      paths of devastation into the surrounding kingdoms. Unknown to the broader public, the Grimfang tribe has derived their ruthlessness from a desire to protect themselves from the strategic and unethical assaults of
+      the Northern Dwarven and Elven alliances. Separated from his tribe during a heavy skirmish, Deonne was held and tortured by the Inquisitors of the North seeking the hearth of the King of the Grimfang. Tortured over
       and over without giving up any information, he was abandoned for dead. Trudging through the bitter winter landscape, he eventually found a family of traveling merchants who took pity on the cowering, shivering youth hidden
-      off the side of a trading route. They took him in as an adopted son. Eventually finding Solace in the Church of the Poet of Justice [Hoar or some similar God of Revenge], Deonne has since committed his life to 
-      gaining retribution for the little known evils of the allied nations. While this serves as his over arching life-goal, he has settled himself into a rewarding juxtapositional life of providing comfort and respite to 
-      travelers of the Realms, dwarves and elves alike, to offer the comfort and compassion that he and his peoples never received. Noble in presence, Deonne is committed to a life governed by natural law and the order 
+      off the side of a trading route. They took him in as an adopted son. Eventually finding Solace in the Church of the Poet of Justice [Hoar or some similar God of Revenge], Deonne has since committed his life to
+      gaining retribution for the little known evils of the allied nations. While this serves as his over arching life-goal, he has settled himself into a rewarding juxtapositional life of providing comfort and respite to
+      travelers of the Realms, dwarves and elves alike, to offer the comfort and compassion that he and his peoples never received. Noble in presence, Deonne is committed to a life governed by natural law and the order
       civilization brings to the masses. Although resentful of the factions responsible for the unethical treatment of his tribe, he recognizes that town and city officials must bring order for their people, and he believes that
       religious factions are more capable of this than politicians and magistrates.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -528,32 +524,4 @@ npc:
     #
     personality: |
       Very fit. Chain skirt and tunic. Half-cloak with two-faced head embroidered on back. Short black hair. Black felt gloves
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
 
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

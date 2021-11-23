@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     languages:
     - Common
     - Elven
-
 
     #
     # Factions:
@@ -340,7 +338,6 @@ npc:
       name: Merchants' Guild
       role: Journeyman
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -364,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The moneylenders' temple is quite a site. One of the warforged abbots raises a hand. "Hail. Currency? Borrow or Trade?"
+    introduction:  The moneylenders' temple is quite a site. One of the warforged abbots raises a hand. /"Hail. Currency? Borrow or Trade?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +388,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Some say prayers to money are sinful. What better way is there?"; "Waukeen watches over safe trade."
+    expressions:  
+    - "Some say prayers to money are sinful. What better way is there?"
+    - "Waukeen watches over safe trade."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +414,7 @@ npc:
     #
     motivations: |
       To expand the glory of venture capitalism as far as they can. Keep all merchants safe from harm
-      
+
     #
     # Passions:
     #
@@ -424,7 +423,7 @@ npc:
     #
     passions: |
       Coin. Trade. Waukeen [or similar deity of trade and commerce]. Venture capitalism
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -441,8 +440,7 @@ npc:
     # ???Maximum length???
     #
     secrets: N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -454,7 +452,7 @@ npc:
     str: 15
     dex: 11
     con: 17
-    int: 10 
+    int: 10
     wis: 19
     cha: 9
 
@@ -467,51 +465,50 @@ npc:
   #
   specialties:
     skills:
-  - - Warforged Traits:
-       - Constructed Resilience: 
-          - Advantage on saving throws against being poisoned and has resistance to poison damage
-          - Doesn't need to eat, drink or breathe
-          - Immune to disease
-          - Doesn't need sleep and cannot be magically put to sleep
-       - Sentrys Rest: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
-       - Specialized Design: Proficient in Stealth and Thieve's Tools
-       - Integrated Protection: Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table:
+    - Warforged Traits:
+      - Constructed Resilience: 
+        - Advantage on saving throws against being poisoned and has resistance to poison damage
+        - Doesn't need to eat, drink or breathe
+        - Immune to disease
+        - Doesn't need sleep and cannot be magically put to sleep
+        Sentrys Rest: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
+        Specialized Design: Proficient in Stealth and Thieve's Tools
+        Integrated Protection:
+        - Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table:
           - Darkwood Core - AC= 11 + Dexterity + Proficiency Bonus
           - Composite Plating - AC = 13 + Dexterity (Max 2) + Proficiency Bonus
           - Heavy Plating - AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks	
- 
-   - - Cleric Abilities:
-       - Spellcasting: DC 16
-         Cantrips: Guidance, Light, Sacred Flame, Mending, Resistsnce
-         1st Level: Bane, Bless, Detect Magic, Sanctuary
-         2nd Level: Augury, Calm Emotions, Locate Object
-         3rd Level: Animate Dead, Dispel Magic, Speak with Dead
-         4th Level: Banishment, Divination, Stone Shape
-         5th Level: Raise Dead, Dispel Evil and Good  
-       - Channel Divinity: Turn Undead, Destroy Undead, Artisan's Blessing 
-       - Divine Intervention: Can call her patron to intervene on her behalf 
-
-   - - Order Domain Abilities:
-       - Bonus Proficiencies: you gain proficiency with heavy armor. You also gain proficiency in the Intimidation and Persuasion skill
-       - Voice of Authority: you can invoke the power of law to embolden an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction 
-                             immediately after the spell to make one weapon attack against a creature of your choice that you can see. If the spell targets more than one ally, you choose the ally who can make the attack
-       - Orders Demand: you can use your Channel Divinity to exert an intimidating presence over others. As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of 
-                        you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what
-                        they are holding when they fail the saving throw
-       - Embodiment of the Law: If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting 
-                                time is normally 1 action. You can use this feature a number of times equal to your Wisdom modifier
-       - Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage
-                        to the target. When you reach 14th level, the extra damage increases to 2d8
-       - Spellcasting:
-         1st Level: Command, Heroism 
-         3rd Level: Hold Person, Zone of Truth
-         5th Level: Mass Healing Word, Slow
-         7th Level: Compulsion, Locate Creature
-         9th Level: Commune, Dominate Person      
-       
+      Cleric Abilities:
+      - Spellcasting:
+        - Description: DC 16
+          Cantrips: Guidance, Light, Sacred Flame, Mending, Resistsnce
+          1st Level: Bane, Bless, Detect Magic, Sanctuary
+          2nd Level: Augury, Calm Emotions, Locate Object
+          3rd Level: Animate Dead, Dispel Magic, Speak with Dead
+          4th Level: Banishment, Divination, Stone Shape
+          5th Level: Raise Dead, Dispel Evil and Good
+        Channel Divinity: Turn Undead, Destroy Undead, Artisan's Blessing 
+        Divine Intervention: Can call her patron to intervene on her behalf 
+        Order Domain Abilities:
+        - Bonus Proficiencies: you gain proficiency with heavy armor. You also gain proficiency in the Intimidation and Persuasion skill
+          Voice of Authority: you can invoke the power of law to embolden an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction 
+                              immediately after the spell to make one weapon attack against a creature of your choice that you can see. If the spell targets more than one ally, you choose the ally who can make the attack
+          Orders Demand: you can use your Channel Divinity to exert an intimidating presence over others. As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of
+                         you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what
+                         they are holding when they fail the saving throw
+          Embodiment of the Law: If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting 
+                                 time is normally 1 action. You can use this feature a number of times equal to your Wisdom modifier
+          Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage
+                         to the target. When you reach 14th level, the extra damage increases to 2d8
+          Spellcasting:
+          - 1st Level: Command, Heroism 
+            3rd Level: Hold Person, Zone of Truth
+            5th Level: Mass Healing Word, Slow
+            7th Level: Compulsion, Locate Creature
+            9th Level: Commune, Dominate Person
 
     special-abilities:
-    - Proficiencies: Investigation, Nature, History    
+    - Proficiencies: Investigation, Nature, History
     attacks: |
       2 Attacks with their War Maul
     combat-tactics: |
@@ -519,7 +516,7 @@ npc:
     special-equipment:
     - War Maul
     - Bag of Holding
-                                                                   
+
   profile:
 
     #
@@ -537,7 +534,6 @@ npc:
       call it. These abbots and priests and their followers can often be found in prayer to the Marketplace Eternal in the Outlands. Cure is a fanatical follower of High Priest Morion DeFaye and will almost always 
       accompany him, whether on a trip to guard a caravan or in a ritual and prayer to the Marketplace Eternal.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -548,32 +544,4 @@ npc:
     #
     personality: |
       colossal body of metal and stone. Gaudy black and blue, gold trimmed habit. Complex coif set with coins
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

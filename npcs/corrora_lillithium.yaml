@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +314,6 @@ npc:
     - Common
     - Infernal
     - Sylvan
-
 
     #
     # Factions:
@@ -342,7 +340,6 @@ npc:
       name: South East Exploration Kompany - guild
       role: Explorer
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -366,7 +363,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Corrora Lillitium at your service." Corrora can be found exploring the South East frontier of Yakahe surrounding towns
+    introduction:  /"Corrora Lillitium at your service./" Corrora can be found exploring the South East frontier of Yakahe surrounding towns
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -469,42 +466,42 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Elf Abilities:
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.   
-       - Fey Ancestry: Advantage on Saving Throws against being Charmed, and magic can’t put you to sleep.           
-
-   - - Cleric Abilities:
-           Spellcasting: 
-             Cantrips: Guidance, Sacred Flame, Mending, Sacred Flame
-             1st Level: Bane, Bless, Guiding Bolt, Healing Word
-             2nd Level: Hold Person, Spiritual Weapon, Prayer of Healing
-             3rd Level: Spirit Guardians, Speak with Dead, Sending
-             4th Level: Banishment, Death Ward
-             Channel Divinity: Turn Undead, Destroy Undead 
-             Divine Intervention: Can call her patron to intervene on her behalf
-
-   - - Arcana Domain Abilities:
-           Spellcasting:
-             Cantrips: Fire Bolt, Mage Hand
-             1st Level: Detect Magic, Magic Missle
-             3rd Level: Magic Weapon, Nystul's Magic Aura
-             5th Level: Dispel Magic, Magic Circle
-             7th Level: Arcane Eye, Leomund's Secret Chest
-             Channel Divinity: Arcane Abjuration - As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided 
-                                                   that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns 
-                                                   trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can only 
-                                                   use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. After you reach 5th level, 
-                                                   when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the Banishment spell, no concentration required) if 
-                                                   it isn't on its plane of origin and its challenge rating is at or below a certain threshold, as shown on the Arcane Banishment table.    
-             Spell Breaker: when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than 
-                            the level of the spell slot you use to cast the healing spell
-             Potent Spellcasting: add your Wisdom modifier to the damage you deal with any cleric cantrip.            
+    - Half-Elf Abilities:
+      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+        Fey Ancestry: Advantage on Saving Throws against being Charmed, and magic can’t put you to sleep.
+      Cleric Abilities:
+       - Spellcasting:
+         - Cantrips: Guidance, Sacred Flame, Mending, Sacred Flame
+           1st Level: Bane, Bless, Guiding Bolt, Healing Word
+           2nd Level: Hold Person, Spiritual Weapon, Prayer of Healing
+           3rd Level: Spirit Guardians, Speak with Dead, Sending
+           4th Level: Banishment, Death Ward
+         Channel Divinity: Turn Undead, Destroy Undead
+         Divine Intervention: Can call her patron to intervene on her behalf
+      Arcana Domain Abilities:
+      - Spellcasting:
+        - Cantrips: Fire Bolt, Mage Hand
+          1st Level: Detect Magic, Magic Missle
+          3rd Level: Magic Weapon, Nystul's Magic Aura
+          5th Level: Dispel Magic, Magic Circle
+          7th Level: Arcane Eye, Leomund's Secret Chest
+        Channel Divinity: 
+        - Description: Arcane Abjuration
+          Additional Information: As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provide
+                                  that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns
+                                  trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can only
+                                  use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. After you reach 5th level,
+                                  when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the Banishment spell, no concentration required) if
+                                  it isn't on its plane of origin and its challenge rating is at or below a certain threshold, as shown on the Arcane Banishment table.
+        Spell Breaker: when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than
+                       the level of the spell slot you use to cast the healing spell
+        Potent Spellcasting: add your Wisdom modifier to the damage you deal with any cleric cantrip.
 
     special-abilities:
-    Berserker Ancestors: When Corrora is reduced to half of his hitpoints in a battle, there is a 1 in 10 chance that his body will be taken over by the spirit of one of his ancestors, temporarily increasing his strength, 
-                         dexterity, and constitution to 18, adding 40 temporary hit points, entering a rage state, and removing his spellcasting capabilities. Corrora makes a Charisma saving throw at the end of each round. 
-                         A success allows him to regain control of his body 
-    - Proficiencies: Persuasion; Survival; Perception; Insight; Arcana; History;    
+    - Berserker Ancestors: When Corrora is reduced to half of his hitpoints in a battle, there is a 1 in 10 chance that his body will be taken over by the spirit of one of his ancestors, temporarily increasing his strength,
+                           dexterity, and constitution to 18, adding 40 temporary hit points, entering a rage state, and removing his spellcasting capabilities. Corrora makes a Charisma saving throw at the end of each round.
+                           A success allows him to regain control of his body 
+      Proficiencies: Persuasion; Survival; Perception; Insight; Arcana; History;
     attacks: |
       1 Attack with a spell or Dawnbringer
     combat-tactics: |
@@ -513,7 +510,7 @@ npc:
     special-equipment:
     - Sun Blade named Dawnbringer - +3 to attack, 1d8+2 damage, additional 2d4 damage to undead
     - Warhammer of Warning
-                                                                   
+
   profile:
 
     #
@@ -537,7 +534,6 @@ npc:
       spirits overcame his body when under too much stress from imminent danger. Corrora is constantly in search of a way to rid himself from his ancestor's curse. This search is what originally brought him to Eberston and the 
       Yakahe frontier far from his family.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -548,32 +544,4 @@ npc:
     #
     personality: |
       nearly 6 ft tall, muscular, brown skin and blonde cornrows. eyes that burn with pain
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
 
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
