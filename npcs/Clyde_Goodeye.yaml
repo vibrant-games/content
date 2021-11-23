@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     languages:
     - Common
     - Elven
-
 
     #
     # Factions:
@@ -336,7 +334,6 @@ npc:
     - id: N/A
       name: N/A
       role: Merchant
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -361,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A colorful figure mans a covered carriage adorned with patterns pulled slowly by a draft horse. "Feed yer curiosity!"
+    introduction:  A colorful figure mans a covered carriage adorned with patterns pulled slowly by a draft horse. /"Feed yer curiosity!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -388,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I've got it all. The good, the bad, and the not-so-bad!"; "Anything ya need? Ha! Wrong question."; "Take a goood look."
+    expressions:  
+    - "I've got it all. The good, the bad, and the not-so-bad!"
+    - "Anything ya need? Ha! Wrong question."
+    - "Take a goood look."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -421,7 +421,7 @@ npc:
     #
     passions: |
       Colors. Curios. Travel
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -438,8 +438,7 @@ npc:
     # ???Maximum length???
     #
     secrets: Clyde was once a purveyor of curiosities at a traveling circus. When the grounds were consumed by mysterious flash grass fires, Clyde was one of few escapees
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -451,7 +450,7 @@ npc:
     str: 9
     dex: 11
     con: 15
-    int: 12 
+    int: 12
     wis: 17
     cha: 17
 
@@ -492,7 +491,6 @@ npc:
       carriage; albeit badly burned, losing the use of an eye, and traumatized. Doing his best at covering up the damages to the carriage and at keeping alive the spirit of the traveling troupe, Clyde Goodeye travels the 
       countryside attempting to bring color and wonder to others while seeking more and more trinkets and curiosities for his stash.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -503,32 +501,3 @@ npc:
     #
     personality: |
       Scarred, gnarled visage. Long colorful robes. Stray eye. Curly hair beneath foppish red cap. Smokes long curved pipe. A little bit of a snake oil salesman.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
