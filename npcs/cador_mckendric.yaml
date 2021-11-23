@@ -370,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Short white hair rims a bald spot. Crisp, clean facial features. Monocle attached to collar. Bright tunic and pants.
+    appearance:  Short white hair rims a bald spot. Crisp, clean facial features. Monocle attached to collar. Bright tunic and pants.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -386,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We aim to please!"; "Ledgers and lists make a pleasured guest!"; "Have ya seen the deeper wilds, friend? Lets hear!"
+    expressions:  
+     - "We aim to please!"
+     - "Ledgers and lists make a pleasured guest!"
+     - "Have ya seen the deeper wilds, friend? Lets hear!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -492,7 +495,6 @@ npc:
       for a nominal fee.He has also created what he calls the 'barstop' for his common room. This complex of tubes and steel resembles a 'Hooka' and allows visitors to choose a particular beverage of their choice and have it 
       poured for them. All they need is the receptacle, which are offered in stacks beside the 'barstop'. Cador is currently working on something that will also clean his dish and glassware.Consistently showing off his 
       innovations he is also open to help and feedback on them and on any ideas others might have for providing even better hospitable service to his guests.
-
 
     #
     # Personality (or something like that):
