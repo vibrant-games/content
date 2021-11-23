@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Reveler / Musician
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Sylvan
-
 
     #
     # Factions:
@@ -361,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Through a break in the crowd dances an undersized satyr, Slapping a horn of wine into your hand, he cries "To Xenagos!"
+    introduction:  Through a break in the crowd dances an undersized satyr, Slapping a horn of wine into your hand, he cries /"To Xenagos!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +369,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Short and chubby with flaming red hair on both his head and legs. Short but sharp horns and rarely without a drink
+    appearance:  Short and chubby with flaming red hair on both his head and legs. Short but sharp horns and rarely without a drink
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Come! You must join the Revel!", "Ooooh I'll take a piece of that!", "Aren't you the prettiest thing I ever did see!"
+    expressions:  
+    - "Come! You must join the Revel!"
+    - "Ooooh I'll take a piece of that!"
+    - "Aren't you the prettiest thing I ever did see!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +412,7 @@ npc:
     #
     motivations: |
       Reveling, loving, relaxing
-      
+
     #
     # Passions:
     #
@@ -421,7 +421,7 @@ npc:
     #
     passions: |
       Wine, women (and men) and Song
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       Wine, women (and men) and Song
-      
+
     #
     # Secrets:
     #
@@ -439,8 +439,7 @@ npc:
     #
     secrets: | 
       none... that he remembers
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,35 +464,33 @@ npc:
   #
   specialties:
     skills:
-   - - Satyr Abilities:
-       - Fey: Your creature type is fey, rather than humanoid           
-       - Ram: You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d4 + your Strength modifier
-       - Magic Resistance: You have advantage on saving throws against spells and other magical effects
-       - Mirthful Leap: Whenever you make a long or high jump, you can roll a d8 and add the number to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal
-       - Reveler: You have proficiency in the Performance and Persuasion skills, and you have proficiency with a Pipe Flute
+    - Satyr Abilities:
+      - Fey: Your creature type is fey, rather than humanoid           
+        Ram: You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d4 + your Strength modifier
+        Magic Resistance: You have advantage on saving throws against spells and other magical effects
+        Mirthful Leap: Whenever you make a long or high jump, you can roll a d8 and add the number to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal
+        Reveler: You have proficiency in the Performance and Persuasion skills, and you have proficiency with a Pipe Flute
+      Bard Abilities:
+      - Bard Spellcasting:
+        - Description: Spell DC 14
+          Cantrip: Minor Illusion, Vicious Mockery
+          1st Level: Bane, Charm Person, Faerie Fire, Tasha's Hideous Laughter 
+          2nd Level: Heat Metal, Enthrall
+        Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
+                            10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+        Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+        Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+      College of Glamour Abilities:
+      - Mantle of Inspiration: As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and who can see you within 60
+                              feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its 
+                               reaction to move up to its speed, without provoking opportunity attacks. The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 
+                               10th level, and 14 at 15th level.   
+        Enthralling Performance: If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids 
+                                 within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell
+                                 save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who speaks to it, and it hinders anyone who opposes you, avoiding violence
+                                 unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of
+                                 its allies. If a target succeeds on its saving throw, the target has no hint that you tried to charm it.                         
 
-   - - Bard Abilities:
-       - Bard Spellcasting: Spell DC 14
-           Cantrip: Minor Illusion, Vicious Mockery
-           1st Level: Bane, Charm Person, Faerie Fire, Tasha's Hideous Laughter 
-           2nd Level: Heat Metal, Enthrall
-       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
-                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
-       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
-       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
-       
-   - - College of Glamour Abilities:
-       - Mantle of Inspiration: As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and who can see you within 60
-                                feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its 
-                                reaction to move up to its speed, without provoking opportunity attacks. The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 
-                                10th level, and 14 at 15th level.   
-       - Enthralling Performance: If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids 
-                                  within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell
-                                  save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who speaks to it, and it hinders anyone who opposes you, avoiding violence
-                                  unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of
-                                  its allies. If a target succeeds on its saving throw, the target has no hint that you tried to charm it.                         
-       
-       
     special-abilities:
     - Proficiencies: Mason's Tools, Master Mason    
     attacks: |
@@ -517,7 +514,6 @@ npc:
       wouldn't drink or a creature he wouldn't sleep with. He lives for the revels and despite being an accomplished musician, would rather lead the crowd in a traditional singalong, than pursue an actual career in it. If it's
       not part of the party, he's just not interested, though he will happily share his life's philosophy with anyone who will listen
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -528,32 +524,4 @@ npc:
     #
     personality: |
       Short and chubby with flaming red hair on both his head and legs. Short but sharp horns and rarely without a drink
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

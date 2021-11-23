@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Researcher
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Abyssal
-
 
     #
     # Factions:
@@ -333,7 +330,7 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    N/A
+    - N/A
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -341,7 +338,7 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Apathetic    
+    - Apathetic
 
   improv:
 
@@ -383,7 +380,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Well, this is quite the mess." "Wat? Oh dear." " Do you require assitance? Then disappear."
+    expressions:
+    - "Well, this is quite the mess."
+    - "Wat? Oh dear."
+    - "Do you require assitance? Then disappear."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -396,7 +396,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Politely dismisses others and what they have to say with a wave of his hand
+    mannerisms:  Politely dismisses others and what they have to say with a wave of his hand
 
   acting:
     #
@@ -407,7 +407,7 @@ npc:
     #
     motivations: |
       He wants to discover how to consistenly be reborn, how to retain that knowladge, and without breaking natural order
-      
+
     #
     # Passions:
     #
@@ -416,7 +416,7 @@ npc:
     #
     passions: |
       Coffee, really dark coffee
-      
+
     #
     # Vulnerabilities:
     #
@@ -425,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       His apathy, and reclusiveness
-      
+
     #
     # Secrets:
     #
@@ -434,8 +434,7 @@ npc:
     #
     secrets: | 
       The secrets of how to create life without breaking the natural or divine order
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -460,29 +459,29 @@ npc:
   #
   specialties:
     skills:
-   - - Wizard Abilities:
-         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level			  
-         - Spellcasting: DC 15 
-            Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights 
-            1st Level: Feather Fall, Magic Missle, Shield, Floating Disk
-            2nd Level: Levitate, Misty Step, Hold Person 
-            3rd Level: Counterspell, Fireball, Fly
- 
-       
-   - - Graviturgy Abilities:
-       - Spellcasting: DC 15
-         1st Level: Sapping Sting, Magnify Gravity
-         3rd Level: Fortune's Favor, Immovable Object, Wristpocket
-         5th Level: Pulse Wave
-       - Adjust Density: as an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for
-                         up to 1 minute or until your concentration ends (as if you were concentrating on a spell). While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump 
-                         twice as far as normal, and it has disadvantage on Strength checks and Strength saving throws. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it
-                         has advantage on Strength checks and Strength saving throws. Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller  
-       - Gravity Well: you've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target 5 feet to an unoccupied space of your choice if the target is willing to 
-                       move, the spell hits it with an attack, or it fails a saving throw against the spell.
-       
+    - Wizard Abilities:
+      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
+        Spellcasting:
+        - Description: DC 15
+          Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
+          1st Level: Feather Fall, Magic Missle, Shield, Floating Disk
+          2nd Level: Levitate, Misty Step, Hold Person
+          3rd Level: Counterspell, Fireball, Fly
+      Graviturgy Abilities:
+      - Spellcasting:
+        - Description: DC 15
+          1st Level: Sapping Sting, Magnify Gravity
+          3rd Level: Fortune's Favor, Immovable Object, Wristpocket
+          5th Level: Pulse Wave
+        Adjust Density: as an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for
+                        up to 1 minute or until your concentration ends (as if you were concentrating on a spell). While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump
+                        twice as far as normal, and it has disadvantage on Strength checks and Strength saving throws. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it
+                        has advantage on Strength checks and Strength saving throws. Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller
+        Gravity Well: you've learned how to manipulate gravity around a living being.Whenever you cast a spell on a creature, you can move the target 5 feet to an unoccupied space of your choice if the target is willing to
+                      move, the spell hits it with an attack, or it fails a saving throw against the spell.
+
     special-abilities:
-    - Proficiencies: He is exceptional at preparing bodies for funerals and burial    
+    - Proficiencies: He is exceptional at preparing bodies for funerals and burial
     attacks: |
       1 attacks
     combat-tactics: |
@@ -491,7 +490,7 @@ npc:
     - Three indestructible metalic balls each wieghing 10 pounds each.
     - +3 leather armor
     - A blind fold that magically rejects all charm or hypnosis.
-                                                                   
+
   profile:
 
     #
@@ -504,7 +503,6 @@ npc:
     background-story: |
       A noble that discovered just truly how small he was, he gave up on big dreams and decided he wants to out last everything, or at least to the point he could experience everything
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -515,32 +513,3 @@ npc:
     #
     personality: |
       He always looks like he just woke up. His skin is pale, blue eyes, slender bulid, hair hasn't been cut for 6 month. he dress in blue royal atire, or a very light blue lab coat
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

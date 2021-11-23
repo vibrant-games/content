@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Crusader
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Celestial
-
 
     #
     # Factions:
@@ -333,7 +330,7 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    N/A
+    - N/A
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -383,7 +380,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Hold Evil Doer!", "By the Lords of Light!"
+    expressions:  
+    - "Hold Evil Doer!"
+    - "By the Lords of Light!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -407,7 +406,7 @@ npc:
     #
     motivations: |
       To curry the favor of his lawful good patron gods and smite evil wherever it resides
-      
+
     #
     # Passions:
     #
@@ -416,7 +415,7 @@ npc:
     #
     passions: |
       Justice!!!
-      
+
     #
     # Vulnerabilities:
     #
@@ -425,7 +424,7 @@ npc:
     #
     vulnerabilities: |
       Pride and Ego
-      
+
     #
     # Secrets:
     #
@@ -434,8 +433,7 @@ npc:
     #
     secrets: | 
       The divine plan for his life.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -460,38 +458,35 @@ npc:
   #
   specialties:
     skills:
-   - - Aasimar Abilities: 
-       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-       - Celestial Resistance: You have resistance to necrotic damage and radiant damage
-       - Healing Hands: As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest
-       - Light Bearer: You know the Light cantrip. Charisma is your spellcasting ability for it.
+    - Aasimar Abilities: 
+      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Celestial Resistance: You have resistance to necrotic damage and radiant damage
+        Healing Hands: As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest
+        Light Bearer: You know the Light cantrip. Charisma is your spellcasting ability for it.
+      Protector Abilities:
+      - Radiant Soul: you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or
+                      until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack
+                      or a spell. The extra radiant damage equals your level
+      Paladin Abilities:
+      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated
+                      within the same radius. Can use this ability x per long rest
+        Lay on Hands: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+        Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet
+        Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends
+        Divine Health: Immune to disease
+        Extra Attack: Can take and extra attack action each turn
+        Aura of Protection: When he or friendly creatures within 30 feet must make a saving throw, they get a +5 bonus to their roll
+        Spellcasting:
+        - Description: DC 16
+          1st Level: Bless, Command, Divine Favor, Cure Wounds
+          2nd Level: Branding Smite, Lesser Restoration, Magic Weapon       
+      Oath of Devotion Abilities:
+      - Sacred Weapon: As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to Attack Rolls made with that weapon (with a
+                       minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the Duration
+        Turn the Unholy: As an action, you present your holy Symbol and speak a prayer censuring Fiends and Undead, using your Channel Divinity. Each fiend or Undead that can see or hear you within 30 feet of you must make a
+                         Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage
+        Aura of Devotion: you and friendly creatures within 10 feet of you can’t be Charmed while you are conscious
 
-   - - Protector Abilities:
-       - Radiant Soul: you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or
-                       until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack
-                       or a spell. The extra radiant damage equals your level
-                       
-   - - Paladin Abilities:
-       - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                       within the same radius. Can use this ability x per long rest
-       - Lay on Hands: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
-       - Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet 
-       - Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends 
-       - Divine Health: Immune to disease
-       - Extra Attack: Can take and extra attack action each turn
-       - Aura of Protection: When he or friendly creatures within 30 feet must make a saving throw, they get a +5 bonus to their roll       
-       - Spellcasting: DC
-         1st Level: Bless, Command, Divine Favor, Cure Wounds
-         2nd Level: Branding Smite, Lesser Restoration, Magic Weapon
- 
-       
-   - - Oath of Devotion Abilities:
-       - Sacred Weapon: As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to Attack Rolls made with that weapon (with a
-                        minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the Duration  
-       - Turn the Unholy: As an action, you present your holy Symbol and speak a prayer censuring Fiends and Undead, using your Channel Divinity. Each fiend or Undead that can see or hear you within 30 feet of you must make a
-                          Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage
-       - Aura of Devotion: you and friendly creatures within 10 feet of you can’t be Charmed while you are conscious
-       
     special-abilities:
     - Proficiencies: Insight, Medicine, Persuasion   
     attacks: |
@@ -501,7 +496,7 @@ npc:
     special-equipment:
     - +1 Great Sword
     - Full Plate
-                                                                   
+
   profile:
 
     #
@@ -514,7 +509,6 @@ npc:
     background-story: |
       Raised by clerics of the Temple of Mount Celestia, he was loosed on the world to smite evil, protect the weak, and mete out the justice of the gods.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -525,32 +519,4 @@ npc:
     #
     personality: |
       He stand over 7' tall with long golden hair, pupiless, azure eyes and opalescent skin. He wears full shining plate and carries a great sword
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

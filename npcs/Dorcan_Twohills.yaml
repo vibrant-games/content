@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Undertaker
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -316,7 +314,6 @@ npc:
     - Giant
     - Infernal
     - Celestial
-
 
     #
     # Factions:
@@ -393,7 +390,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Death is just another part of life", "Is your dearly departed among my flock?"
+    expressions:  
+    - "Death is just another part of life"
+    - "Is your dearly departed among my flock?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -417,7 +416,7 @@ npc:
     #
     motivations: |
       Tending to the circle of life as his god Lallanis. The Firbolg Code. Genuine care for the dead and their loved ones
-      
+
     #
     # Passions:
     #
@@ -426,7 +425,7 @@ npc:
     #
     passions: |
       He is passionate about mushrooms
-      
+
     #
     # Vulnerabilities:
     #
@@ -435,7 +434,7 @@ npc:
     #
     vulnerabilities: |
       Somewhat shy and slightly weary and untrusting of non-Firbolgs, Susceptible to Lycanthrope
-      
+
     #
     # Secrets:
     #
@@ -444,8 +443,7 @@ npc:
     #
     secrets: | 
       Mushrooms that grow on corpses are the tastiest ones
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -470,51 +468,50 @@ npc:
   #
   specialties:
     skills:
-   - - Firbolg Abilities:
-       - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
-                        short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
-       - Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
+    - Firbolg Abilities:
+      - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
+                       short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.
+        Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
                       use it again until you finish a short or long rest.
-       - Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-       - Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
-                                   You have advantage on all Charisma checks you make to influence them
+        Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+        Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
+      Cleric Abilities:
+      - Spellcasting:
+        - Description: DC 15
+          Cantrips: Guidance, Sacred Flame, Thaumaturgy, Resistance
+          1st Level: Bless, Sancturay, Purify Food and Water, Detect Poison and Disease
+          2nd Level: Calm Emotions, Prayer of Healing, Lesser Restoration
+          3rd Level: Create Food and Water, Remove Curse, Speak with Dead
+          4th Level: Banishment, Divination 
+        Channel Divinity: Turn Undead, Destroy Undead
+      Grave Domain Abilities:
+      - Circle of Mortality: you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use
+                             the highest number possible for each die. In addition, you learn the Spare the Dying cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet,
+                             and you can cast it as a bonus action
+        Eyes of the Grave: you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead.
+                           Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you
+                           anything about a creature's capabilities or identity. You can use this feature a number of times equal to your Wisdom modifier
+        Path to the Grave:  you can use your Channel Divinity to mark another creature’s life force for termination. As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your
+                            next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends.
+        Sentinel at Deaths Door: you gain the ability to impede death’s progress. As a reaction when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit.
+                                 Any effects triggered by a critical hit are canceled. You can use this feature a number of times equal to your Wisdom modifier
+        Potent Spellcasting: you add your Wisdom modifier to the damage you deal with any cleric cantrip
+        Spellcasting: 
+        - Description: DC 15
+          1st Level: Bane, False Life
+          3rd Level: Gentle Repose, Ray of Enfeeblement
+          5th Level: Revivify, Vampiric Touch
+          7th Level: Blight, Death Ward 
 
-   - - Cleric Abilities:
-       - Spellcasting: DC 15
-         Cantrips: Guidance, Sacred Flame, Thaumaturgy, Resistance
-         1st Level: Bless, Sancturay, Purify Food and Water, Detect Poison and Disease
-         2nd Level: Calm Emotions, Prayer of Healing, Lesser Restoration
-         3rd Level: Create Food and Water, Remove Curse, Speak with Dead
-         4th Level: Banishment, Divination 
-       - Channel Divinity: Turn Undead, Destroy Undead 
-       
-   - - Grave Domain Abilities:
-       - Circle of Mortality: you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use
-                              the highest number possible for each die. In addition, you learn the Spare the Dying cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet,
-                              and you can cast it as a bonus action   
-       - Eyes of the Grave: you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead.
-                            Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you
-                            anything about a creature's capabilities or identity. You can use this feature a number of times equal to your Wisdom modifier
-       - Path to the Grave:  you can use your Channel Divinity to mark another creature’s life force for termination. As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your
-                             next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends.
-       - Sentinel at Deaths Door: you gain the ability to impede death’s progress. As a reaction when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit.
-                                  Any effects triggered by a critical hit are canceled. You can use this feature a number of times equal to your Wisdom modifier
-       - Potent Spellcasting: you add your Wisdom modifier to the damage you deal with any cleric cantrip
-       - Spellcasting: DC 15
-         1st Level: Bane, False Life
-         3rd Level: Gentle Repose, Ray of Enfeeblement
-         5th Level: Revivify, Vampiric Touch
-         7th Level: Blight, Death Ward 
-       
     special-abilities:
-    - Proficiencies: He is exceptional at preparing bodies for funerals and burial    
+    - Proficiencies: He is exceptional at preparing bodies for funerals and burial
     attacks: |
       1 attacks
     combat-tactics: |
       He does not if at all even slightly possible
     special-equipment:
     - Shovel of Digging
-                                                                   
+
   profile:
 
     #
@@ -540,32 +537,4 @@ npc:
     #
     personality: |
       Roughly 9' tall with thick red hair, a bright red beard and pink skin. Earth-toned clothes and a garland of flowers
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

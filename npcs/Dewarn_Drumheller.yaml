@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Mason
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Dwarvish
-
 
     #
     # Factions:
@@ -388,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "&%$@*$%##^!!!!!", "These kid's these days don't know how to build a wall", "?#@$$@%%!!!!"
+    expressions:  
+    - "&%$@*$%##^!!!!!"
+    - "These kid's these days don't know how to build a wall"
+    - "?#@$$@%%!!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -465,12 +465,11 @@ npc:
   #
   specialties:
     skills:
-  - - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-      - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-      - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus                           
-       
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check,
+                      instead of his normal Proficiency Bonus
 
     special-abilities:
     - Proficiencies: Mason's Tools, Master Mason    
@@ -495,7 +494,6 @@ npc:
       heavy drinker and that has taken it's toll on his dexterity has slowly begun to fade as he's advanced in age. He is a true master of his craft, but these days he's better off teaching the youngsters than doing the work 
       himself.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -506,32 +504,4 @@ npc:
     #
     personality: |
       Broad and tanned from years working in the sun. His arms covered in scars from his job and he's missing several fingers
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

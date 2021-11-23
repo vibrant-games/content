@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Bandit Leader
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     #
     languages:
     - Common
-
 
     #
     # Factions:
@@ -332,7 +329,7 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    N/A
+    - N/A
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -340,7 +337,7 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Brutish    
+    - Brutish
 
   improv:
 
@@ -382,7 +379,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Want to arm wrestle?", "Let me show you my trophy collection [of swords]."
+    expressions:  
+    - "Want to arm wrestle?"
+    - "Let me show you my trophy collection [of swords]."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -406,7 +405,7 @@ npc:
     #
     motivations: |
       Draake leads a band of about 100 bandits. He commands his men and women fairly and they look up to him
-      
+
     #
     # Passions:
     #
@@ -415,7 +414,7 @@ npc:
     #
     passions: |
       Raids and banditry. War
-      
+
     #
     # Vulnerabilities:
     #
@@ -424,7 +423,7 @@ npc:
     #
     vulnerabilities: |
       He can't resist contests of strength and physical prowess and will take any challenge. He gambles away large sums of money.
-      
+
     #
     # Secrets:
     #
@@ -433,8 +432,7 @@ npc:
     #
     secrets: | 
       His brother is secretly the local lord. The two communicate via matching message rings. The lord tells him which caravans to raid.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -459,32 +457,32 @@ npc:
   #
   specialties:
     skills:
-   - - Barbarian Abilities:
-         - Rage: Can enter a rage as a Bonus Action. 
-            - have advantage on Strength Checks and Strength Saving Throws.
-            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-            - Resistance to bludgeoning, piercing, and slashing damage          
-         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                            but Attack Rolls against him have advantage until his next turn
-         - Extra Attack: Can attack twice each turn	
-         - Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
-         - Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
-                           before doing anything else on that turn.		
-         - Brutal Critical: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.
- 
-       
-   - - Path of the Berserker Abilities:
-       - Frenzy: you can go into a Frenzy when you rage. If you do so, for the Duration of your rage you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When your rage ends, you
-                 suffer one level of Exhaustion  
-       - Mindless Rage: you can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your rage, the Effect is suspended for the Duration of the rage
-       - Intimidating Presence: you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must
-                                succeed on a Wisdom saving throw (DC equal to 8 + your Proficiency Bonus + your Charisma modifier) or be Frightened of you until the end of your next turn. On subsequent turns, you can use your
-                                action to extend the Duration of this Effect on the Frightened creature until the end of your next turn. This Effect ends if the creature ends its turn out of Line of Sight or more than 60 feet
-                                away from you. If the creature succeeds on its saving throw, you can’t use this feature on that creature again for 24 hours
-       
+    - Barbarian Abilities:
+       - Rage:
+         - Description: Can enter a rage as a Bonus Action. 
+           Additonal Information: 
+           - have advantage on Strength Checks and Strength Saving Throws.
+           - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+           - Resistance to bludgeoning, piercing, and slashing damage
+         Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+         Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn,
+                          but Attack Rolls against him have advantage until his next turn
+         Extra Attack: Can attack twice each turn
+         Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+         Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage
+                         before doing anything else on that turn.
+         Brutal Critical: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.
+      Path of the Berserker Abilities:
+      - Frenzy: you can go into a Frenzy when you rage. If you do so, for the Duration of your rage you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When your rage ends, you
+                suffer one level of Exhaustion
+        Mindless Rage: you can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your rage, the Effect is suspended for the Duration of the rage
+        Intimidating Presence: you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must
+                               succeed on a Wisdom saving throw (DC equal to 8 + your Proficiency Bonus + your Charisma modifier) or be Frightened of you until the end of your next turn. On subsequent turns, you can use your
+                               action to extend the Duration of this Effect on the Frightened creature until the end of your next turn. This Effect ends if the creature ends its turn out of Line of Sight or more than 60 feet
+                               away from you. If the creature succeeds on its saving throw, you can’t use this feature on that creature again for 24 hours
+
     special-abilities:
-    - Proficiencies: Survival, Intimidation   
+    - Proficiencies: Survival, Intimidation
     attacks: |
       2 attacks
     combat-tactics: |
@@ -493,7 +491,7 @@ npc:
     - Hand Axe +2
     - Hand Axe +1
     - Boots of Speed
-                                                                   
+
   profile:
 
     #
@@ -511,7 +509,6 @@ npc:
       all other gangs and in return Trassel recieved a cut from every raid. Draake would keep the gang in line and would take new recruits (criminals from Oxlight) which helped lower expenses for Trassel and made him look better
       to the king. This arrangement has persisted for the last 26 years.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -523,32 +520,4 @@ npc:
     personality: |
       A tall, immensely broad shouldered human with salt and pepper medium length hair. Tanned skin show his years of wandering. Scars cover his body. His love of beer caused him to develop a slight pot-belly in more recent years,
       but he still exudes  dangerousness.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  
