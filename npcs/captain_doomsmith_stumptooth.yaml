@@ -315,7 +315,6 @@ npc:
     - Orcish
     - Thieve's Cant
 
-
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -339,7 +338,6 @@ npc:
     - id: possibly_a_thieve_s_guild
       name: Possibly a Thieve's Guild
       role: Captain
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -391,7 +389,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Prepare to be boarded". "Well what kind of treats have we here mateys?", "Feed them to the sharks!"
+    expressions:  
+    - "Prepare to be boarded"
+    - "Well what kind of treats have we here mateys?"
+    - "Feed them to the sharks!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +416,7 @@ npc:
     #
     motivations: |
       Booty and violence for the sake of booty and violence
-      
+
     #
     # Passions:
     #
@@ -424,7 +425,7 @@ npc:
     #
     passions: |
       Pirate history. He's a fanboy for famous the pirates that came before him and really wants to be them
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +434,7 @@ npc:
     #
     vulnerabilities: |
       His ego and his intelligence. He's not the brightest bulb and he fakes much of his confidence
-      
+
     #
     # Secrets:
     #
@@ -441,8 +442,7 @@ npc:
     # ???Maximum length???
     #
     secrets: His real name is Wendell Smitty and he was born in a wealthy suburb
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -454,7 +454,7 @@ npc:
     str: 18
     dex: 15
     con: 16
-    int: 9 
+    int: 9
     wis: 10
     cha: 17
 
@@ -467,31 +467,30 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Orc Abilities:
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-       - Menacing: gain proficiency in the Intimidation skill 
-       - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-       - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-       
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-       - Evasion: When subjected to an Effect that allows him to make a Dexterity saving throw to take only half damage, he instead take no damage if he succeeds on the saving throw, and only half damage if he fails       
+    - Half-Orc Abilities:
+      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+        Menacing: gain proficiency in the Intimidation skill 
+        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
 
-   - - Swashbuckler Abilities:
+      Rogue Abilities:
+       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+         Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+         Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+         Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+         Evasion: When subjected to an Effect that allows him to make a Dexterity saving throw to take only half damage, he instead take no damage if he succeeds on the saving throw, and only half damage if he fails
+      Swashbuckler Abilities:
        - Fancy Footwork: During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn
-       - Rakish Audacity: can give yourself a bonus to your initiative rolls equal to your Charisma modifier. You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use 
+         Rakish Audacity: can give yourself a bonus to your initiative rolls equal to your Charisma modifier. You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use 
                           your Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak 
                           Attack still apply to you.
-       - Panache: As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language. If you succeed on 
+         Panache: As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language. If you succeed on 
                   the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 
                   minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart. If you succeed on the check and the creature isn't hostile to you, 
-                  it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.       
+                  it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.
 
     special-abilities:
-    - Proficiencies: Persuasion; Medecine; Insight; Perception    
+    - Proficiencies: Persuasion; Medecine; Insight; Perception
     attacks: |
       2 Attacks with his Cutlass or Knife
     combat-tactics: |
@@ -499,7 +498,7 @@ npc:
     special-equipment:
     - Sailor's Ear Stud
     - Sailor's Earring
-                                                                   
+
   profile:
 
     #
@@ -525,32 +524,4 @@ npc:
     #
     personality: |
       A Massive Figure dressed in leathers and pirate robes with a big captain's hat with feathers and one long tusk protruding. He's full of bluster and bloodlust, embracing the role he's picked for himself
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 
