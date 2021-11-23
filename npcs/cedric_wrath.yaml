@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Manic Street Preacher
-    
 
     #
     # D & D classes (case insensitive):
@@ -360,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Git yee right wit yer Gods ya heathens!" shouts the fiery red-faced oddly preacher from his street side podium
+    introduction:  \"Git yee right wit yer Gods ya heathens!\" shouts the fiery red-faced oddly preacher from his street side podium
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -371,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Short and stocky with a fiery red beard and crazy mop of hair, chain armor and laden with holy symbols to random gods 
+    appearance:  Short and stocky with a fiery red beard and crazy mop of hair, chain armor and laden with holy symbols to random gods
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -387,7 +386,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  
+    expressions:
     - "Tha Old God's er a comin back and will wipe tha world o ya filthy heathen curs!"
     - "Git yee right wit yer Gods!"
 
@@ -402,7 +401,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   spits and gesticulates wildly when he sermonizes
+    mannerisms:  spits and gesticulates wildly when he sermonizes
 
   acting:
     #
@@ -466,39 +465,38 @@ npc:
   specialties:
     skills:
     - Cleric Abilities:
-        - Spellcasting: 
-           Cantrips: Guidance, Light, Sacred Flame, Spare the Dying, Shillelagh
-           1st Level: Bane, Command, Detect Magic, Inflict Wounds
-           2nd Level: Lesser Restoration, Hold Person, Spiritual Weapon
-           3rd Level: Animate Dead, Speak with Dead, Clairvoyance
-           4th Level: Banishment, Stone Shape
-          Channel Divinity: Turn Undead, Destroy Undead
-   - Trickery Domain Abilities:
-     - Blessing of the Trickster: Give another willing creature advantage on Stealth roles for an hour
-       Invoke Duplicity: you can use your Channel Divinity to create an illusory duplicate of yourself. As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration 
-                         (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet 
-                         to a space you can see, but it must remain within 120 feet of you. For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, 
-                         when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target
-       Cloak of Shadows: you can use your Channel Divinity to vanish. As an action, you become invisible until the end of your next turn. You become visible if you attack or cast a spell
-       Divine Strike: Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to
-                      2d8.
-       Spellcasting:
-       - 1st Level: Charm Person, Disguise Self
-         3rd Level: Mirror Image, Pass Without Trace
-         5th Level: Blink, Dispel Magic
-         7th Level: Dimension Door, Polymorph
+      - Spellcasting:
+        - Cantrips: Guidance, Light, Sacred Flame, Spare the Dying, Shillelagh
+          1st Level: Bane, Command, Detect Magic, Inflict Wounds
+          2nd Level: Lesser Restoration, Hold Person, Spiritual Weapon
+          3rd Level: Animate Dead, Speak with Dead, Clairvoyance
+          4th Level: Banishment, Stone Shape
+        Channel Divinity: Turn Undead, Destroy Undead
+    - Trickery Domain Abilities:
+      - Blessing of the Trickster: Give another willing creature advantage on Stealth roles for an hour
+        Invoke Duplicity: you can use your Channel Divinity to create an illusory duplicate of yourself. As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration 
+                          (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet
+                          to a space you can see, but it must remain within 120 feet of you. For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, 
+                          when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target
+        Cloak of Shadows: you can use your Channel Divinity to vanish. As an action, you become invisible until the end of your next turn. You become visible if you attack or cast a spell
+        Divine Strike: Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to
+                       2d8.
+        Spellcasting:
+        - 1st Level: Charm Person, Disguise Self
+          3rd Level: Mirror Image, Pass Without Trace
+          5th Level: Blink, Dispel Magic
+          7th Level: Dimension Door, Polymorph
 
-    - special-abilities:
-       - Feats: Actor, Inspiring Leader, Observant, Tavern Brawler, War Caster
-
-     attacks: |
+    special-abilities:
+    - Feats: Actor, Inspiring Leader, Observant, Tavern Brawler, War Caster
+    attacks: |
        His club using the Shillelagh cantrip 
-     combat-tactics: |
+    combat-tactics: |
        He will try to talk his way out of fights, but if provoked he's a brawler and will fight with his club, his fists and anything else at his disposal
-     special-equipment:
-     - +1 Greatclub
-     - Several different religious symbols
-    
+    special-equipment:
+    - +1 Greatclub
+    - Several different religious symbols
+
   profile:
 
     #
@@ -509,10 +507,10 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      The "Good" Reverend Cedic Wrath is fiery street preacher and cleric of Cyric, the Lord of Lies. He preaches on street corners and in town squares and is generally regarded by people that see him as a bit of a mad man. 
-      He preaches of the "End Times" and the return of the "Old Gods" and most people do their best to ignore him as they pass. This suits him perfectly well. He has in fact, been sent by his patron Cyric to seek out and 
-      work with the Dumas Family to help their patron devil achieve his goals. Cedric and his God's ultimate goal is sewing chaos as far and wide as possible. To that end, he acts as a recruiter and information gatherer 
-      for the family. Those who are interested enough to stop and listen to his rambling sermons are assumed to be open to recruitment to the cause. Otherwise he is an expert set of eyes and ears on the streets keeping an 
+      The "Good" Reverend Cedic Wrath is fiery street preacher and cleric of Cyric, the Lord of Lies. He preaches on street corners and in town squares and is generally regarded by people that see him as a bit of a mad man.
+      He preaches of the "End Times" and the return of the "Old Gods" and most people do their best to ignore him as they pass. This suits him perfectly well. He has in fact, been sent by his patron Cyric to seek out and
+      work with the Dumas Family to help their patron devil achieve his goals. Cedric and his God's ultimate goal is sewing chaos as far and wide as possible. To that end, he acts as a recruiter and information gatherer
+      for the family. Those who are interested enough to stop and listen to his rambling sermons are assumed to be open to recruitment to the cause. Otherwise he is an expert set of eyes and ears on the streets keeping an
       eye on the city's comings and goings.
 
     #
@@ -524,7 +522,7 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Cedric Wrath is an agent of chaos, plani and simple. He is a short broad human with flaming red messy hair and a flaming red beard. He wears chainmail armor underneath his clerics vestments which are painted with the 
-      symbols of a variety of different dieties. The only indication of which god he actually follows is the small symbol of Cyric carved into the head of his greatclub (jawless skull on a purple sunburst). He is a devout 
-      beleiver in chaos and will do whatever he can to stir up as much trouble as he can, whenever he can for whoever he can. His god's current plan involves him working with the Dumas Family and helping their patron achieve 
-      their goals, but he is in no way loyal to them in any way, and will have no problem screwing them over when the appropriate time inevitably comes 
+      Cedric Wrath is an agent of chaos, plani and simple. He is a short broad human with flaming red messy hair and a flaming red beard. He wears chainmail armor underneath his clerics vestments which are painted with the
+      symbols of a variety of different dieties. The only indication of which god he actually follows is the small symbol of Cyric carved into the head of his greatclub (jawless skull on a purple sunburst). He is a devout
+      beleiver in chaos and will do whatever he can to stir up as much trouble as he can, whenever he can for whoever he can. His god's current plan involves him working with the Dumas Family and helping their patron achieve
+      their goals, but he is in no way loyal to them in any way, and will have no problem screwing them over when the appropriate time inevitably comes
