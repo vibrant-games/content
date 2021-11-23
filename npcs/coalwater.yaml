@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +314,6 @@ npc:
     - elvish
     - dwarvish
     - orcish
-
 
     #
     # Factions:
@@ -338,7 +336,6 @@ npc:
     - id: local_thieves_guild
       name: Local Thieves' Guild
       role: Trainer and Consultant
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -374,7 +371,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Purple hair; rose-hued smock over tatami armour. Two dark flecks on each cheek. Soft, steady eyes.
+    appearance:  Purple hair; rose-hued smock over tatami armour. Two dark flecks on each cheek. Soft, steady eyes.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -390,7 +387,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Honk!"; "Are you my new gaggle?"; "Shift security left"; "Anyone can learn to be a goose."
+    expressions:  
+    - "Honk!"
+    - "Are you my new gaggle?"
+    - "Shift security left"
+    - "Anyone can learn to be a goose."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +415,7 @@ npc:
     #
     motivations: |
       Driven to discover the most innovative means of maintaining security for patrons. always searches for the holes in defensive strategies or even lores and stories.
-      
+
     #
     # Passions:
     #
@@ -423,7 +424,7 @@ npc:
     #
     passions: |
       Coalwater loves teaching lockpicking to ethical thieves ("geese"); study new lock and crypto designs for fun.
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +433,7 @@ npc:
     #
     vulnerabilities: |
       Coalwater's patience is not valued by some wealthy patrons, who feel security takes too long and costs too much.
-      
+
     #
     # Secrets:
     #
@@ -440,8 +441,7 @@ npc:
     # ???Maximum length???
     #
     secrets: N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -453,7 +453,7 @@ npc:
     str: 10
     dex: 18
     con: 10
-    int: 15 
+    int: 15
     wis: 13
     cha: 15
 
@@ -466,25 +466,25 @@ npc:
   #
   specialties:
     skills:
-   - - Drow Abilities:
-        - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-        - Keen Senses: Proficiency in Perception
-        - Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
-        - Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
-        - Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-        - Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness, Detect Magic, Dispel Magic and Levitate once per long rest with charisma as spellcasting ability
-        - Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
+    - Drow Abilities:
+      - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
+        Keen Senses: Proficiency in Perception
+        Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
+        Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
+        Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
+        Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness, Detect Magic, Dispel Magic and Levitate once per long rest with charisma as spellcasting ability
+        Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
 
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
 
-   - - Thief Abilities:
-       - Fast Hands: Can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
-       - Second-Story Work: climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier
-       - Supreme Sneak: has advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.       
+      Thief Abilities:
+      - Fast Hands: Can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
+        Second-Story Work: climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier
+        Supreme Sneak: has advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.       
 
     special-abilities:
     - Proficiencies: Persuasion; Survival; Perception; Insight; Arcana; History;    
@@ -496,7 +496,7 @@ npc:
     special-equipment:
     - A chess set with black farmers and white geese as pieces; a Kubernetic file
     - used for cutting open Pods.
-                                                                   
+
   profile:
 
     #
@@ -515,7 +515,6 @@ npc:
       investigate means of overcoming the security of local businesses and magistrates. Calling it 'troubleshooting', they would often come into conflict with the local guards and militia. It was during these brief skirmishes 
       that the three youth decided they would take it upon themselves to contract their skills and knowledge to the local elite with the slogan, 'Three Geese that will honk yer horn - If we can blow it, it need be reborn'.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -526,32 +525,3 @@ npc:
     #
     personality: |
       Purple hair; rose-hued smock over tatami armour. Two dark flecks on each cheek. Soft, steady eyes.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
