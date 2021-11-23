@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Watchperson/Guard; Amateur Winemaker/Somellier
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Elvish
-
 
     #
     # Factions:
@@ -336,7 +333,6 @@ npc:
     - id: local_guards
       name: Local Guards
       role: Watchperson
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -388,7 +384,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Can't make wine outta olives - some call me an olive, but I know I'm a cherry!"; "Keeping the peace seems foolhardy when its the Kings and Queens that cause the conflicts in the first place"; "I say 'Stick it to em', gold-hungry scoundrels, they are";
+    expressions:  
+    - "Can't make wine outta olives - some call me an olive, but I know I'm a cherry!"
+    - "Keeping the peace seems foolhardy when its the Kings and Queens that cause the conflicts in the first place"
+    - "I say 'Stick it to em', gold-hungry scoundrels, they are"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +411,7 @@ npc:
     #
     motivations: |
       Chloe wants to know as much as possible about fine wines and wine-making; more so than performing her duties for local magistrates. She also seeks to undermine law and order in the town or city where she serves
-      
+
     #
     # Passions:
     #
@@ -421,7 +420,7 @@ npc:
     #
     passions: |
       Winemaking; Sommellier; undermining watchkeeping and the power of the masgistrates and royalty
-      
+
     #
     # Vulnerabilities:
     #
@@ -438,8 +437,7 @@ npc:
     # ???Maximum length???
     #
     secrets: N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,18 +462,17 @@ npc:
   #
   specialties:
     skills:
- - Fighter Abilities:
-    - Fighting Style: Protection
-    - Second Wind: Bonus Action to regain 1d10 + Fighter Level
-    - Action Surge: Once every short/long rest can take an extra action
-    - Extra Attack: Can attack twice each turn
- 
- - Battle Master Abilities:
-    - Combat Superiority:
-      - Maneuvers: Menacing Attack, Pushing Attack, Sweeping Attack
-      - Superiority Dice: 4
-      - Maneuver DC: 12
-    - Student of War: Proficiency with Vintner's Tools      
+    - Fighter Abilities:
+      - Fighting Style: Protection
+        Second Wind: Bonus Action to regain 1d10 + Fighter Level
+        Action Surge: Once every short/long rest can take an extra action
+        Extra Attack: Can attack twice each turn
+      Battle Master Abilities:
+      - Combat Superiority:
+        Maneuvers: Menacing Attack, Pushing Attack, Sweeping Attack
+        Superiority Dice: 4
+        Maneuver DC: 12
+      Student of War: Proficiency with Vintner's Tools      
 
     special-abilities:
     - Proficiencies: Investigation, Nature, History    
@@ -504,7 +501,6 @@ npc:
       of discharge from her duties. Consequently, she floats through her duties during the day and returns to her passion for wine-making at night. She has a small tent outside of her family home within which she practices 
       methods of decanting late into the twilight hours.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -516,32 +512,3 @@ npc:
     personality: |
       Rather plain jane appearance - couldn't be picked out of a crowd; Wearing the armor of the local militia acting as watchmen for the city/town; In off hours, Chloe wears bland dresses and tops but pays close attention to 
       her hair and shoes as though compensating for her rather average appearance
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
