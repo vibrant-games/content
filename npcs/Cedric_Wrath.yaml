@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -337,7 +336,6 @@ npc:
     - id: Dumas_Family
       name: Dumas Family
       role: Recruiter and Information Gathering
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -389,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Tha Old God's er a comin back and will wipe tha world o ya filthy heathen curs!", "Git yee right wit yer Gods!"
+    expressions:  
+    - "Tha Old God's er a comin back and will wipe tha world o ya filthy heathen curs!"
+    - "Git yee right wit yer Gods!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -465,29 +465,29 @@ npc:
   #
   specialties:
     skills:
-  - - Cleric Abilities:
+    - Cleric Abilities:
         - Spellcasting: 
            Cantrips: Guidance, Light, Sacred Flame, Spare the Dying, Shillelagh
            1st Level: Bane, Command, Detect Magic, Inflict Wounds
            2nd Level: Lesser Restoration, Hold Person, Spiritual Weapon
            3rd Level: Animate Dead, Speak with Dead, Clairvoyance
            4th Level: Banishment, Stone Shape
-        - Channel Divinity: Turn Undead, Destroy Undead 
+          Channel Divinity: Turn Undead, Destroy Undead 
 
-  - - Trickery Domain Abilities:
-        - Blessing of the Trickster: Give another willing creature advantage on Stealth roles for an hour
-        - Invoke Duplicity: you can use your Channel Divinity to create an illusory duplicate of yourself. As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration 
-                            (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet 
-                            to a space you can see, but it must remain within 120 feet of you. For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, 
-                            when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target
-        - Cloak of Shadows: you can use your Channel Divinity to vanish. As an action, you become invisible until the end of your next turn. You become visible if you attack or cast a spell
-        - Divine Strike: Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to 
-                         2d8.        
-        - Spellcasting:
-           1st Level: Charm Person, Disguise Self
-           3rd Level: Mirror Image, Pass Without Trace
-           5th Level: Blink, Dispel Magic
-           7th Level: Dimension Door, Polymorph    
+   - Trickery Domain Abilities:
+     - Blessing of the Trickster: Give another willing creature advantage on Stealth roles for an hour
+       Invoke Duplicity: you can use your Channel Divinity to create an illusory duplicate of yourself. As an action, you create a perfect illusion of yourself that lasts for 1 minute, or until you lose your concentration 
+                         (as if you were concentrating on a spell). The illusion appears in an unoccupied space that you can see within 30 feet of you. As a bonus action on your turn, you can move the illusion up to 30 feet 
+                         to a space you can see, but it must remain within 120 feet of you. For the duration, you can cast spells as though you were in the illusion's space, but you must use your own senses. Additionally, 
+                         when both you and your illusion are within 5 feet of a creature that can see the illusion, you have advantage on attack rolls against that creature, given how distracting the illusion is to the target
+       Cloak of Shadows: you can use your Channel Divinity to vanish. As an action, you become invisible until the end of your next turn. You become visible if you attack or cast a spell
+       Divine Strike: Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to 
+                      2d8.        
+       Spellcasting:
+       - 1st Level: Charm Person, Disguise Self
+         3rd Level: Mirror Image, Pass Without Trace
+         5th Level: Blink, Dispel Magic
+         7th Level: Dimension Door, Polymorph    
 
     - special-abilities: 
        - Feats: Actor, Inspiring Leader, Observant, Tavern Brawler, War Caster
@@ -499,7 +499,6 @@ npc:
      special-equipment:
      - +1 Greatclub
      - Several different religious symbols
-    
     
   profile:
 
@@ -516,7 +515,7 @@ npc:
       work with the Dumas Family to help their patron devil achieve his goals. Cedric and his God's ultimate goal is sewing chaos as far and wide as possible. To that end, he acts as a recruiter and information gatherer 
       for the family. Those who are interested enough to stop and listen to his rambling sermons are assumed to be open to recruitment to the cause. Otherwise he is an expert set of eyes and ears on the streets keeping an 
       eye on the city's comings and goings. 
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -530,32 +529,3 @@ npc:
       symbols of a variety of different dieties. The only indication of which god he actually follows is the small symbol of Cyric carved into the head of his greatclub (jawless skull on a purple sunburst). He is a devout 
       beleiver in chaos and will do whatever he can to stir up as much trouble as he can, whenever he can for whoever he can. His god's current plan involves him working with the Dumas Family and helping their patron achieve 
       their goals, but he is in no way loyal to them in any way, and will have no problem screwing them over when the appropriate time inevitably comes 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
