@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Alchemist/Prophylactary Proprietor
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Common
     - Gnomish
     - Dwarvish
-
 
     #
     # Factions:
@@ -346,7 +343,7 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Bubbly    
+    - Bubbly
 
   improv:
 
@@ -388,7 +385,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Mix and match, there's a good batch!"; "Tinctures and solvents beat diplomacy every time"
+    expressions:
+    - "Mix and match, there's a good batch!"
+    - "Tinctures and solvents beat diplomacy every time"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +411,7 @@ npc:
     #
     motivations: |
       To promote the power and instrumentality of alchemy as a solution to everything from poverty and hunger to disease and even death itself
-      
+
     #
     # Passions:
     #
@@ -421,7 +420,7 @@ npc:
     #
     passions: |
       Alchemy; Draconic origins; Languages of all kinds;
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -439,8 +438,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,29 +463,27 @@ npc:
   #
   specialties:
     skills:
-   - - Dragonborn Abilities:
-       - Breathe Weapon: Can exhale a 5'x30' stream of acid with a DC 13. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one.           
-       - Damage Resistance: Resistance to acid
-                       
-   - - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
-         Cantrip: Mage Hand, Mending 
-         1st Level: Tasha's Caustic Brew, Detect Magic, Grease, Cure Wounds
-         2nd Level: Continual Flame, Heat Metal
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items 
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-       - Tool Expertise: Alchemist's Supplies proficiency bonus is doubled
- 
-       
-   - - Alchemist Abilities:
-       - Experimental Elixir: whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when
-                              someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature. You can create additional experimental elixirs by expending a spell slot of
-                              1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table. 
-                              Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest
-       - Alchemical Savant: you've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus,
-                            you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier 
-       
+    - Dragonborn Abilities:
+      - Breathe Weapon: Can exhale a 5'x30' stream of acid with a DC 13. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one.
+        Damage Resistance: Resistance to acid
+      Artificer Abilities:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+        Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
+          Cantrip: Mage Hand, Mending 
+          1st Level: Tasha's Caustic Brew, Detect Magic, Grease, Cure Wounds
+          2nd Level: Continual Flame, Heat Metal
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items
+        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+        Tool Expertise: Alchemist's Supplies proficiency bonus is doubled
+      Alchemist Abilities:
+      - Experimental Elixir: whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when
+                             someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature. You can create additional experimental elixirs by expending a spell slot of
+                             1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table.
+                             Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest
+        Alchemical Savant: you've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus,
+                           you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier
+
     special-abilities:
     - Proficiencies: Alchemy, Nature, Medecine   
     attacks: |
@@ -512,7 +508,6 @@ npc:
       prior to mixing ingredients, Eleanorious trained with various local phylacteries and alchemists to learn this remarkable trade. She has become well-known for her expertise as well as her pleasant personality, fine
       work-ethic, and her good fashion sense.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -523,32 +518,4 @@ npc:
     #
     personality: |
       A small feminine copper dragonborn with unusual horns and scales that glitter; dresses very flambouyantly, with tapestry-like cloaks and capes that flow over her limbs and tumble to the floor
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  
