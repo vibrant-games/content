@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +313,6 @@ npc:
     - Common
     - Gnomish
     - Dwarvish
-
 
     #
     # Factions:
@@ -337,7 +335,6 @@ npc:
     - id: N/A
       name: N/A
       role: N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -413,7 +410,7 @@ npc:
     #
     motivations: |
       To reinvent hospitality. Provide food and lodging along with laundering and other services for adventurers
-      
+
     #
     # Passions:
     #
@@ -438,9 +435,9 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: N/A
-       
-      
+    secrets: |
+      N/A
+
   #
   # The D & D stats block:
   # All integers.
@@ -452,7 +449,7 @@ npc:
     str: 12
     dex: 12
     con: 10
-    int: 16 
+    int: 16
     wis: 14
     cha: 16
 
@@ -465,11 +462,11 @@ npc:
   #
   specialties:
     skills:
-   - - Forest Gnome Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
-       - Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
-       - Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
+    - Forest Gnome Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
+        Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
+        Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
 
     special-abilities:
     - Proficiencies: Persuasion; Medecine; Insight; Perception    
@@ -479,7 +476,7 @@ npc:
       He won't fight unless defending himselfand his family
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -496,7 +493,7 @@ npc:
       poured for them. All they need is the receptacle, which are offered in stacks beside the 'barstop'. Cador is currently working on something that will also clean his dish and glassware.Consistently showing off his 
       innovations he is also open to help and feedback on them and on any ideas others might have for providing even better hospitable service to his guests.
 
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -507,32 +504,3 @@ npc:
     #
     personality: |
       Short white hair rims a bald spot. Crisp, clean facial features. Monocle attached to collar. Bright tunic and pants 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
