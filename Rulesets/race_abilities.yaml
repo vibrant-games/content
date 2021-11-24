@@ -21,13 +21,7 @@
 	
     
    - - Ibis-Head Aven Abilities:
-       - Kefnets Blessing: Can add half her proficiency bonus, rounded down, to any Intelligence check she makes that doesn’t already include herr proficiency bonus 	  
-	
-    
-   - - Dragonborn Abilities:
-       - Breathe Weapon: Can exhale x in a 15 foot cone with a DC x. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and
-                         5d6 at 16th level.           
-       - Damage Resistance: Resistance to x 	
+       - Kefnets Blessing: Can add half her proficiency bonus, rounded down, to any Intelligence check she makes that doesn’t already include herr proficiency bonus	
 
 
    - - Half-Orc Abilities:
@@ -374,7 +368,7 @@
         - Cantrips: You know one cantrip of your choice from the bard spell list spell list. Charisma is your spellcasting ability for it.
         
         
-   - - Beholder Abilities:
+   - - Beholderkin Abilities:
        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
        - Bite: Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 8 (2d6) piercing damage.
        - Antimagic Cone: The beholder's central eye creates an area of antimagic, as in the antimagic field spell, in a 150-foot cone. At the start of each of its turns, the beholder decides which way the cone faces and whether
@@ -542,6 +536,22 @@
         - Swim: You have a swimming speed of 30 feet.
         - Call to the Wave: You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way 
                             when you finish a long rest. Constitution is your spellcasting ability for these spells.
+                           
+   - - Earth Genasi Abilities:
+        - Earth Walk: You can move across difficult terrain made of earth or stone without expending extra movement.
+        - Merge with Stone: You can cast the Pass without Trace spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your 
+                            spellcasting ability for this spell.
+                            
+   - - Fire Genasi Abilities:
+        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. Your ties to the Elemental Plane of Fire make your darkvision unusual: everything you see 
+                      in darkness is in a shade of red.
+        - Fire Resistance: You have resistance to fire damage.
+        - Reach to the Blaze: You know the Produce Flame cantrip. Once you reach 3rd level, you can cast the Burning Hands spell once with this trait as a 1st-level spell, and you regain the ability to cast it this way when you 
+                              finish a long rest. Constitution is your spellcasting ability for these spells.
+                            
+   - - Air Genasi Abilities:
+        - Unending Breath: You can hold your breath indefinitely while you’re not incapacitated.
+        - Mingle with the Wind: You can cast the Levitate spell once with this trait, requiring no material components, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for this spell.
                             
                             
    - - Loxodon Abilities:
@@ -668,6 +678,20 @@
    - - Flamekin Abilities:
        - Fire Immunity: As a creature that is part-flame, you are immune to fire damage.
        - Water Weakness: Due to being part flame, you suffer 2d6 cold damage when you come into contact with water, and at the start of each of your turns when you are in water.
+       - Heart of Fire: The fire that burns within you produces bright light for a range of 20 feet, and dim light for an additional 20 feet. Whenever a creature touches you or hits you with a melee attack while within 5 feet of
+                        you, you may choose for it to immediately suffer 1 d4 fire damage, then suffer an additionalld4 fire damage at the start of each of its turns while it is touching you. You can also choose for an unattended
+                        item you touch to catch fire.
+       - The Great Aurora: If you are present on Lorwyn during its transformation into shadowmoor, your race changes to Cinder.
+       
+       
+   - - Cinder Abilities:
+       - Fire Immunity: As a creature that is part-flame, you are immune to fire damage.
+       - Water Weakness: Due to being part flame, you suffer 2d6 cold damage when you come into contact with water, and at the start of each of your turns when you are in water.
+       - Building Flames: When you would suffer fire damage, you instead regain hit points equal to half the amount of damage you would suffer.
+       - Heart of Ash: Your desperate need to add heat to your dying inner flame makes you drain living creatures of their own warmth. Your dying inner flame produces bright light for a range of 10 feet, and dim light for an
+                       additional 10 feet. Whenever a living creature touches you or hits you with a melee attack while within 5 feet of you, it immediately suffers ld4 necrotic damage, then suffers an additionalld4 necrotic
+                       damage at the start of each of its turns while it is touching you.
+       - The Great Aurora: If you are present on Shadowmoor during its transformation into Lorwyn, your race changes to Flamekin.
        
        
    - - Deep Gnome Abilities:
@@ -930,13 +954,6 @@
        - Savage Attacks: Once per turn when you roll damage for a melee weapon attack, you can reroU the weapon's damage die and use either total
        - Fiendish Skin: When you take damage, you can use your reaction to roll a d12 Add your Constitution modifier to the number rolled and reduce the damage by that total After you use this trait, you can't use it again until
                         you finish a short or long rest.
-                        
-                        
-   - - Nezumi Abilities:
-       - Darkvision: you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light
-       - Nezumi Cunning: Knowing you have the best chance of victory against an unaware target, you have trained to be better at killing your enemies before they are aware of you. You have advantage on attacks against enemies 
-                         that are surprised
-       - Nimble: Your lightweight body and innate dexterity grant you advantage on Dexterity saving throws. You have proficiency in Acrobatics and Stealth.
        
        
    - - Kithkin Abilities:
@@ -1028,3 +1045,137 @@
        - Thri-Kreen Telepathy: You have the magical ability to communicate mentally with any number of willing creatures you can see within 120 feet of you. A contacted creature doesn’t need to share a language with you, but it
                                must be able to understand at least one language. Your telepathic link to a creature is broken if you and the creature move more than 120 feet apart, if either of you is incapacitated, or if 
                                either of you mentally breaks the contact (no action required).
+                               
+                               
+   - - Chromatic Dragonborn Abilities:
+       - Breath Weapon: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a 
+                        Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Chromatic Ancestry. On a 
+                        successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times 
+                        equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+       - Draconic Resistance: You have resistance to the damage type associated with your Chromatic Ancestry.
+       - Chromatic Warding: Starting at 5th level, as an action, you can channel your draconic energy to protect yourself. For 1 minute, you become immune to the damage type associated with your Chromatic Ancestry. Once you use
+                            this trait, you can’t do so again until you finish a long rest.
+       
+       
+   - - Metallic Dragonborn Abilities:
+       - Breath Weapon: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw 
+                        (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Metallic Ancestry. On a successful save, it takes half as
+                        much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
+       - Draconic Resistance: You have resistance to the damage type associated with your Metallic Ancestry.
+       - Metallic Breath Weapon: At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath
+                                 is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one;
+                                 - Enervating Breath: Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.
+                                 - Repulsion Breath: Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked prone.
+                                 Once you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest.
+       
+       
+   - - Gem Dragonborn Abilities:
+       - Breath Weapon: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 15-foot cone. Each creature in that area must make a Dexterity saving throw 
+                        (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Gem Ancestry. On a successful save, it takes half as much
+                        damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
+       - Draconic Resistance: You have resistance to the damage type associated with your Gem Ancestry.
+       - Psionic Mind: You can telepathically speak to any creature you can see within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language.
+       - Gem Flight: Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover.
+                     Once you use this trait, you can’t do so again until you finish a long rest.
+                     
+                     
+   - - Half-Giant(Hill) Abilities:
+       - Boulder-Tosser: You are able to throw rocks and other similar objects, like weapons. You treat improvised weapons as having the thrown (30/120) property, and when thrown they deal 1d8 damage.
+       - Powerful Build: For the purpose of carrying capacity, you are treated as being one size larger.
+       - Consumer: You have advantage on saving throws against all things you consume, such as poisons and potions.
+       
+       
+   - - Half-Giant(Stone) Abilities:
+       - Boulder-Tosser: You are able to throw rocks and other similar objects, like weapons. You treat improvised weapons as having the thrown (30/120) property, and when thrown they deal 1d8 damage.
+       - Powerful Build: For the purpose of carrying capacity, you are treated as being one size larger.
+       - Darkvision: Due to your giant parent's ages of living underground, your eyes are well-adapted to the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim 
+                     light. You can’t discern color in darkness, only shades of gray.
+       - Stone Camouflage: You have advantage on Dexterity (Stealth) checks made to hide in rocky terrain.
+       - Master Artisan: You gain proficiency in one artisan's tool of your choice, and your proficiency bonus is doubled for checks involving it.
+       
+             
+   - - Half-Giant(Frost) Abilities:
+       - Boulder-Tosser: You are able to throw rocks and other similar objects, like weapons. You treat improvised weapons as having the thrown (30/120) property, and when thrown they deal 1d8 damage.
+       - Powerful Build: For the purpose of carrying capacity, you are treated as being one size larger.
+       - Adapted to Frost: You have resistance to cold-type damage, and are immune to exhaustion from travelling in icy or snowy terrain.
+       - Frozen Gatherer: During a short or long rest, if you there are sufficient materials nearby, you can craft a temporary tool out of ice, wood, and bone, from the following list; shield, greataxe, greatclub, battleaxe, 2 
+                          handaxes, quarterstaff. If you roll a 1 on an attack roll with one of these temporary tools, it shatters into pieces.
+
+
+   - - Half-Giant(Fire) Abilities:
+       - Boulder-Tosser: You are able to throw rocks and other similar objects, like weapons. You treat improvised weapons as having the thrown (30/120) property, and when thrown they deal 1d8 damage.
+       - Powerful Build: For the purpose of carrying capacity, you are treated as being one size larger.
+       - Master Smith: While crafting during downtime, the amount of gold per day towards crafting objects for you is doubled.
+       - Slavemaster: You can cast command without a spell slot or components. Intelligence is your spellcasting ability for this feature, and after casting it once you must take a long rest before doing so again. You gain an 
+                      additional usage per long rest at 3rd level, and at 5th level you cast it at 2nd-level instead of 1st-level.
+                      
+                     
+   - - Half-Giant(Cloud) Abilities:
+       - Boulder-Tosser: You are able to throw rocks and other similar objects, like weapons. You treat improvised weapons as having the thrown (30/120) property, and when thrown they deal 1d8 damage.
+       - Powerful Build: For the purpose of carrying capacity, you are treated as being one size larger.
+       - Might of Disease: Your teeth are imbued with some form of plague, making them natural weapons. They deal 1d6 piercing damage, and have the light property. When you hit a creature with this natural weapon, they must 
+                           make a DC 8 + your Proficiency bonus + your Constitution modifier Constitution saving throw, or be poisoned until the end of their next turn.
+                           
+
+   - - Nezumi Abilities:                           
+       - Darkvision: Coming from the dark bamboo swamps of Takenuma, your eyes have adapted to the darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. 
+                     You can't discern color in darkness, only shades of gray.
+       - Nezumi Resilience: You have advantage on saving throws against poison, and you have resistance against poison damage.
+       - Shadow Skulker: You can attempt to hide even when you are only lightly obscured by dim lighting.
+       - Contorting Frame: You can move at your base walk speed when squeezing through a space that is large enough for a creature one size smaller than you. You can only use this feature when you are in your normal form.
+       - Scavenger: You cannot contract diseases from food you eat. Add your proficiency bonus to saving throws against disease.
+       - Survival Instinct: Whenever you make a Dexterity saving throw against a trap or natural hazard, add your proficiency to the saving throw, if you are already proficient in Dexterity saving throws you may add double your
+                            proficiency to the saving throw, instead of you normal proficiency.
+       
+       
+   - - Toonkind Abilities:
+       - Hammerspace: Due to their less than hardy natures, Toonkind have access to a small personal pocket dimension in which they can store personal objects no more than three cubic feet in size. This is a fickle magic, 
+                      however, and may not always grant the return of the object they desire. Players must roll a percentile dice whenever pulling an object from hammerspace, with a 10 percent chance they pull out the wrong 
+                      item. Repeated attempts will increase to a 50 percent difficulty until the original item is found See the Hammerspaee Fumble table for options.
+       - Paper-Thin Disguise: As Toonkind have increased their interest in other cultures, they have adapted impressive methods of going incognito. just a wig or a false moustache can do wonders in obscuring their outlandish 
+                              appearances. Toonkind are proficient with the Disguise kit
+       - Smile Darn Ya: Once per long rest, a Toonkind can cast Hideous Laughter; with Charisma for their save DC.
+       
+       
+   - - Muppetborn Abilities:
+       - Always Obscured: No matter how you look at them, a Muppetborn's bottom half is always out of view. It's said that even when one stands in the middle of a field, the earth will rise up to meet them. For this reason. 
+                          They are always considered to have half cover and receive a permanent +2 bonus to AC.
+       - The Hand: Muppetborn mythology speaks of The Hand inside each of them. They innately know the cantrip Mage Hand, however the floating hand can only lift up to five pounds and move up to five feet per character level.
+       - Nom Nom Nom: Muppetborn absorb the energy from food without ever having to swallow it, this makes them immune to food-born poisons and diseases
+       - Cloth And Color: All Muppetborn know the cantrip "Mending" and once per long rest it can be used to heal ld8 hit points. This increases to twice per long rest at 5th level, three times at I Oth level, four times at 
+                          14th level. and five times at 18th level
+                          
+                          
+   - - Gargoyle Abilities:
+       - Cunning Hunter: Gargoyles excel at lying in wait to ambush unwary foes. You gain proficiency in Deception.
+       - Stone Wings: Your stony wings grant you a flying speed of 30 feet. You can still use this speed while wearing armor.
+       - Claws: Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1 d4 +your Strength modifier, instead of the bludgeoning damage normal for an 
+                unarmed strike.
+       - Natural Armor: Your stony flesh increases your durability greatly. When you aren't wearing armor, your AC is 13 +your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would 
+                        leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor.
+       - False Appearance: When you take the Hide action, you can become completely still. taking on the appearance of a statue. After you do so, your speed is 0 until the end of the current turn. You are hidden from creatures 
+                           that do not know your true nature until your true nature is revealed. A creature that uses its action to examine you can determine your true nature with a successful Intelligence (Investigation) check,
+                           opposed by your Constitution [Deception) check, as your physical construction determines how believable your deception is. Your true nature is also revealed to a creature that sees you move.
+                           
+                           
+   - - Pactborn - Fayborn Abilities:
+       - Chimeric Legacy: You know the minor illusion cantrip. Once you reach 3rd level, you can cast the charm person spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the misty step spell
+                          once per day. Charisma is your spellcasting ability for these spells.
+       - Fey Ancestry: You have advantage on saving throws against being charmed, and magic can't put you to s leep.
+       - Untrue: You have proficiency in the Deception skill.
+       
+       
+   - - Pactborn - Fiendborn Abilities:
+       - Darkvision: Thanks to your infernal heritage, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as it if were bright light, and in darkness as it if were dim light.
+                     You can't discern color in darkness, only shades of gray.
+       - Hellish Resistance: You have resistance to fire damage.
+       - Infernal Legacy: You know the thaumaturgy cantrip. Once you reach 3rd level, you can cast the hellish rebuke spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the darkness spell once
+                          per day. Charisma is your spellcasting ability for these spells.
+                          
+                          
+   - - Pactborn - Elderbornborn Abilities:
+       - Ineffable Legacy: You know the prestidigitation can trip. Once you reach 3rd level, you can cast the sleep spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the crown of madness spell
+                           once per day. Charisma is your spellcasting ability for these spells.
+       - Near Omniscience: When you complete a long rest roll a d20 and record the number rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with this roll. You
+                           must choose to do so before the roll. When you take a long rest you lose this foretold roll.
+       - Psychic Resistance: You have resistance to psychic damage.
