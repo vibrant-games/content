@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Researcher
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -310,11 +308,11 @@ npc:
     #
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
+    Languages:
     - Aquan
     - Primordial
-    - Draconic 
+    - Draconic
     - Celestial
-
 
     #
     # Factions:
@@ -344,7 +342,7 @@ npc:
     adjectives:
     - Foolhardy
     - Pompous
-    - Kinetic    
+    - Kinetic
 
   improv:
 
@@ -370,7 +368,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   He is a bald triton with teal skin, he has a crab familiar
+    appearance:  He is a bald triton with teal skin and he has a crab familiar
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -386,7 +384,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  Everyone should learn to read, it is what allows us to grow as civilizations.
+    expressions:
+    - "Everyone should learn to read. It is what allows us to grow as civilizations."
+    - "It is always the civilized who rise above. It's no secret."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -399,7 +399,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Figus often waves his fingers and hands uncontrollably, like a twitch of some sort. He often fidgets with a quill in his hand.
+    mannerisms:  Figus often waves his fingers and hands uncontrollably, like a twitch of some sort. He often fidgets with a quill in his hand.
 
   acting:
     #
@@ -410,7 +410,7 @@ npc:
     #
     motivations: |
       He likes to research obscure knowledge and magics to help civilization grow
-      
+
     #
     # Passions:
     #
@@ -419,7 +419,7 @@ npc:
     #
     passions: |
       He loves books, but also loves fire and is a pyromaniac Triton. He constantly tries to reconcile these
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,17 +428,16 @@ npc:
     #
     vulnerabilities: |
       He is obsessed with knowledge and will put himself in danger to obtain it, without clearly thinking of the consequences
-      
+
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: | 
+    secrets: |
       Obscure knowledge and magicks
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,37 +462,36 @@ npc:
   #
   specialties:
     skills:
-   - - Triton Abilities:
-       - Amphibious: You can breathe air and water           
-       - Control Air and Water: A child of the sea, you can call on the magic of elemental air and water. You can cast Fog Cloud with this trait. Starting at 3rd level, you can cast Gust of Wind with it
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray
-       - Emissary of the Sea:  Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though you have
-                               no special ability to understand them in return.
-       - Guardians of the Depths: Adapted to even the most extreme ocean depths, you have resistance to cold damage
+    - Triton Abilities:
+      - Amphibious: You can breathe air and water
+        Control Air and Water: A child of the sea, you can call on the magic of elemental air and water. You can cast Fog Cloud with this trait. Starting at 3rd level, you can cast Gust of Wind with it
+        Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray
+        Emissary of the Sea:  Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though
+                              you have no special ability to understand them in return.
+        Guardians of the Depths: Adapted to even the most extreme ocean depths, you have resistance to cold damage
+      Wizard Abilities:
+      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
+        Spellcasting:
+        - Description: DC 15
+          Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
+          1st Level: Burning Hands, Magic Missle, Mage Armor, Sleep
+          2nd Level: Continual Flame, Scorching Ray, Hold Person
+          3rd Level: Counterspell, Fireball
+      School of Evocation Abilities:
+      - Evocation Savant: the gold and time you must spend to copy an Evocation spell into Your Spellbook is halved
+        Sculpt Spells: you can create pockets of relative safety within the Effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them
+                       equal to 1 plus the spell’s level. The chosen creatures automatically succeed on their Saving Throws against the spell, and they take no damage if they would normally take half damage on a successful
+                       save
 
-   - - Wizard Abilities:
-         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level			  
-         - Spellcasting: DC 15
-            Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
-            1st Level: Burning Hands, Magic Missle, Mage Armor, Sleep
-            2nd Level: Continual Flame, Scorching Ray, Hold Person
-            3rd Level: Counterspell, Fireball
-
-   - - School of Evocation Abilities:
-         - Evocation Savant: the gold and time you must spend to copy an Evocation spell into Your Spellbook is halved
-         - Sculpt Spells: you can create pockets of relative safety within the Effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them
-                          equal to 1 + the spell’s level. The chosen creatures automatically succeed on their Saving Throws against the spell, and they take no damage if they would normally take half damage on a successful
-                          save         
-       
     special-abilities:
-    - Proficiencies: Investigation, Arcana, History   
+    - Proficiencies: Investigation, Arcana, History
     attacks: |
       1 spell attack
     combat-tactics: |
       Fire!!!
     special-equipment:
     - N/A 
-                                                                   
+
   profile:
 
     #
@@ -508,7 +506,6 @@ npc:
       it and has loved fire since. However, he once accidentally burned a valuable book while playing with the fire and is constantly looking for ways to feed his pyromaniac self while not burning any books and avoiding the
       natural uncomfortable feeling that most Tritons have around fire.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -519,32 +516,4 @@ npc:
     #
     personality: |
       He is a bald triton with teal skin, he has a crab familiar
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

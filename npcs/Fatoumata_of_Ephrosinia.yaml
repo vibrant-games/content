@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Unknown source of wealth
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -310,6 +308,7 @@ npc:
     #
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
+    languages:
     - Human
     - dwarvish
     - duergar
@@ -387,7 +386,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Well, there's a thing!"; "Go and chill out until supper time"; "What a load of old squit"; "Toodles!"
+    expressions:
+    - "Well, there's a thing!"
+    - "Go and chill out until supper time"
+    - "What a load of old squit"
+    - "Toodles!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +414,7 @@ npc:
     #
     motivations: |
       Fatoumata's noblewoman lifestyle and bottomless charity to the downtrodden flow from an unknown spring of wealth
-      
+
     #
     # Passions:
     #
@@ -420,7 +423,7 @@ npc:
     #
     passions: |
       Sends pipes filled with excellent yellow tobacco to prisoners in the local jail. Enjoys watching maskerata plays
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       Is unsure of whether her two-thumbed hands truly are signs that she is the daughter of a devil from some deep hell
-      
+
     #
     # Secrets:
     #
@@ -438,8 +441,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,22 +466,22 @@ npc:
   #
   specialties:
     skills:
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus      
-       
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check,
+                      instead of his normal Proficiency Bonus
+
     special-abilities:
-    - Proficiencies: Perception, Nature   
+    - Proficiencies: Perception, Nature
     attacks: |
       1 attack with unarmed attack
     combat-tactics: |
       Will not fight
     special-equipment:
     - Numerous masks on slender sticks
-    - Several pairs of long gold-laced two-thumbed gloves 
-                                                                   
+    - Several pairs of long gold-laced two-thumbed gloves
+
   profile:
 
     #
@@ -506,7 +508,6 @@ npc:
       both fascinated and terrified of her 'difference'. She has learned to adapt to this through disguise; carrying party masks with her and wearing beautiful gloves that distract from the 'difference' and draw peoples'
       attention to their ornate appearance instead.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -517,32 +518,4 @@ npc:
     #
     personality: |
       Plump, silky skin, mischievous, teasing eyes. Each of her uncannily slender hands is adorned with two thumbs.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

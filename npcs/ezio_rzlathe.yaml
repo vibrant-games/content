@@ -215,8 +215,9 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Thieves' guild advisor; insurgent; diplomat
-    
+    - Thieves' guild advisor
+    - insurgent
+    - diplomat
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +299,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -318,7 +318,6 @@ npc:
     - Thieves' cant
     - Halfling
     - Gnomish
-
 
     #
     # Factions:
@@ -364,7 +363,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Ezio will approach those who seem they could help undercut a city's political factions; Often flits between political courts and mercantile guilds making deals; Commission adventurers to infiltrate a religious order with a misinformation campaign.
+    introduction:  Ezio will approach those who seem they could help undercut a city's political factions. Often flits between political courts and mercantile guilds making deals; Commission adventurers to infiltrate a religious order with a misinformation campaign.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +390,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Diplomacy by blades as blades are the truest of diplomats"; "My people will mend the rift between the Upperworld and Underdark - be it in our own way"
+    expressions:  
+    - "Diplomacy by blades as blades are the truest of diplomats"
+    - "My people will mend the rift between the Upperworld and Underdark - be it in our own way"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +416,7 @@ npc:
     #
     motivations: |
       Diffusing political diplomacy in the region to make space for his tribe of Drow who have departed from the main population. Generating as much misinformation as possible to undermine religious and political orders
-      
+
     #
     # Passions:
     #
@@ -424,7 +425,7 @@ npc:
     #
     passions: |
       Politics. Watching fire burn
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +434,7 @@ npc:
     #
     vulnerabilities: |
       He is constantly thinking about the well-being of his family. Any hint that they are in danger will effectively penetrate his cool veneer
-      
+
     #
     # Secrets:
     #
@@ -442,8 +443,7 @@ npc:
     #
     secrets: | 
       Ezio keeps a multitude of secrets about his political connections and their intentions. He uses these like a commodity.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -468,29 +468,27 @@ npc:
   #
   specialties:
     skills:
-   - - Drow Abilities:
-       - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-       - Keen Senses: Proficiency in Perception
-       - Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
-       - Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
-       - Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-       - Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
-       - Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
-       
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail       
+    - Drow Abilities:
+      - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
+        Keen Senses: Proficiency in Perception
+        Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
+        Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
+        Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
+        Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
+        Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+      Assassin Abilities:
+      - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
+        Infiltration Expertise: you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an
+                                identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a
+                                trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you
+                                to be that person until given an obvious reason not to
 
-   - - Assassin Abilities:
-       - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
-       - Infiltration Expertise: you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an
-                                 identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a
-                                 trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you
-                                 to be that person until given an obvious reason not to       
-       
     special-abilities:
     - Proficiencies: Persuasion, Deception, Sleight-of-Hand, Stealth   
     attacks: |
@@ -501,7 +499,7 @@ npc:
     - Assassin's Aid (+1 ShortSword with 3 charges of Spiritual Weapon)
     - Amulet of protection from detection
     - Short Bow
-                                                                   
+
   profile:
 
     #
@@ -525,7 +523,6 @@ npc:
       approached the two men. Ezio leapt from the shadows and sunk the blade deep into the beasts eye, killing it. He’s since been a family hero. The tribe has taken it upon themselves to train him as an Assassin and Diplomat
       and send him forth into the Upperworld to cause chaos and make way for their rise to power.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -536,32 +533,4 @@ npc:
     #
     personality: |
       Lithe and muscular light blue skin; deep silver eyes
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

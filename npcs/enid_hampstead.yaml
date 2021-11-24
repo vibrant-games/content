@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Street Vendor
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     #
     languages:
     - Common
-
 
     #
     # Factions:
@@ -332,7 +329,7 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    N/A
+    - N/A
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -357,7 +354,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A plain young woman stands beside a fruit stall in the market square. "Bananas! We gots fresh bananas!"
+    introduction:  A plain young woman stands beside a fruit stall in the market square. /"Bananas! We gots fresh bananas!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -384,7 +381,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Freshest fruit and veg in tha market!", "Best prices too!", "Get outta here ya wee urchins or I'll call the watch!"
+    expressions:  
+    - "Freshest fruit and veg in tha market!"
+    - "Best prices too!"
+    - "Get outta here ya wee urchins or I'll call the watch!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +408,7 @@ npc:
     #
     motivations: |
       Just trying to make a living and get by
-      
+
     #
     # Passions:
     #
@@ -417,7 +417,7 @@ npc:
     #
     passions: |
       not particularly passionate about anything
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       She's pretty apathetic and not very enthusiastic about anything. Also, her secret
-      
+
     #
     # Secrets:
     #
@@ -435,8 +435,7 @@ npc:
     #
     secrets: | 
       She killed her abusive husband and made it look like an accident, then skipped town
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,8 +460,8 @@ npc:
   #
   specialties:
     skills:
-   - - N/A      
-       
+    - N/A      
+
     special-abilities:
     - Proficiencies: Persuasion, Deception, Insight   
     attacks: |
@@ -487,7 +486,6 @@ npc:
       was in the ground, she left her home town and her family and has never looked back. She took one of the only jobs she was qualified for in the new town, and now sells fruit for a grocery company in the market square. It's
       a job. It pays her bills, and most importantly, she's free of him!
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -498,32 +496,4 @@ npc:
     #
     personality: |
       Brown hair, brown eyes, in plain dress. Very little memorable about her other than a small scar above her right eye
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

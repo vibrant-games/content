@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Tailor
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Halfling
-
 
     #
     # Factions:
@@ -388,7 +385,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Hey Hon, What can I help you fix?" "I'm just going to have to measure your inseam"
+    expressions:  
+    - "Hey Hon, What can I help you fix?"
+    - "I'm just going to have to measure your inseam"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +411,7 @@ npc:
     #
     motivations: |
       Spreading joy, helping people, growing her business
-      
+
     #
     # Passions:
     #
@@ -421,7 +420,7 @@ npc:
     #
     passions: |
       Sewing and clothing design
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       A bit too nice
-      
+
     #
     # Secrets:
     #
@@ -439,8 +438,7 @@ npc:
     #
     secrets: | 
       May not actually be what she seems
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -476,7 +474,7 @@ npc:
     special-equipment:
     - Needle of Mending
     - Dimensional Scissors
-                                                                   
+
   profile:
 
     #
@@ -491,7 +489,6 @@ npc:
       she's the best tailor and clothing designer I've ever seen and such a lovely beautiful person too. I can't believe she's not married yet", seems to be the answer you get from anyone you ask about the gorgeous red head
       in the tailor shop.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -502,32 +499,4 @@ npc:
     #
     personality: |
       Extremely petite and absolutely beautiful with a dazzling smile and a mop of curly red hair and expertly crafted clothes
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  
