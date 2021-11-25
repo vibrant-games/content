@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Lab Assistant/Healer
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,8 +312,6 @@ npc:
     - Common
     - Gnomish
     - Giant
-
-
 
     #
     # Factions:
@@ -340,7 +336,6 @@ npc:
       name: Collegium Imaginata
       role: Assistant and Healer
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -364,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The massive gray-skinned beast of a man pokes his head through the door "Hey dad, where do you want these put"
+    introduction:  The massive gray-skinned beast of a man pokes his head through the door /"Hey dad, where do you want these put/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Can you show me how you did that?", "let me fix you up a little there", "I'm hoping my dad'll teach me more"
+    expressions:  
+    - "Can you show me how you did that?"
+    - "let me fix you up a little there"
+    - "I'm hoping my dad'll teach me more"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,8 +412,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      LEarning and pleasing his father  
-      
+      Learning and pleasing his father  
+
     #
     # Passions:
     #
@@ -424,7 +422,7 @@ npc:
     #
     passions: |
       Helping people, Artifice and Medicine
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       He's naive and over-trusting
-      
+
     #
     # Secrets:
     #
@@ -442,7 +440,7 @@ npc:
     #
     secrets: |
       He has seen his dad talking to an odd stranger that disaapeared in a flash of lightning afterwards a few time 
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,33 +465,33 @@ npc:
   #
   specialties:
     skills:
-   - - Goliath Abilities:
-        - Natural Athlete: Proficient in Athletics
-        - Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
-        - Powerful Build: Counts as one size larger detemining carrying capacity  
-        - Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
-      
-   - - Artificer Abilities:
-        - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
+    - Goliath Abilities:
+      - Natural Athlete: Proficient in Athletics
+        Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
+        Powerful Build: Counts as one size larger detemining carrying capacity  
+        Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
+      Artificer Abilities:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch. Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+        Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
           Cantrip: Mage Hand, Mending
           1st Level: Detect Magic, Identify
-        
-   - - Cleric Abilities:
-        - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
+      Cleric Abilities:
+      - Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
           Cantrip: Guidance, Light, Spare the Dying
           1st Level: Bless, Healing Word
-        
-   - - Life Domain Abilities:
-        - Disciple of Life: Whenever he uses a spell to Restore Hit Points to a creature, that creature regains additional hit points equal to 2+ the spell's level
-        - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
+      Life Domain Abilities:
+      - Disciple of Life: Whenever he uses a spell to Restore Hit Points to a creature, that creature regains additional hit points equal to 2+ the spell's level
+        Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
           Cantrip: Light
           1st Level: Bless, Cure Wounds
  
     special-abilities:
-    - Proficiencies: Proficient in Atheltics, Heavy Armor, Nature, Medicine     
-    - Feats: Durable, Grappler, Gunner, Healer, Tough                   
-    
+    - Proficiencies: Proficient in Atheltics, Heavy Armor, Nature, Medicine
+      Feats: Durable, Grappler, Gunner, Healer, Tough
+
     attacks: |
       Has 1 attack usually hand-to-hand combat
     combat-tactics: |
@@ -503,7 +501,7 @@ npc:
     - Medical Kit
     - Herbalist's Kit
     - Smith's Tools
-    
+
   profile:
 
     #
@@ -517,7 +515,7 @@ npc:
       Eugene Vardkelmp was found as a very young boy, abandoned and wandering in the mountains. He was taken in and adopted by Oswald Varfklemp. As he's grown Oswald has begun teaching him the ways of an artificer. Eugene 
       has also taken a strong interest in medicine and healing and has taken up the studies of a Life Domain Cleric to further his interests. In order to learn more about his chosen paths, he splits his time between studying 
       artifice with his adopted father and biology with Ulther Hapwath and Thadeus Periwinkle.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -530,33 +528,5 @@ npc:
       Eugene Vardklemp is an absolutle mountain of a young man. Almost 8' tall and 330lbs of solid muscle. His skin is a deep gray and specled with lines of black callous. He wears plain but well made clothes covered by a 
       massive lab coat that helps him feel like he fits in at the Collegium with the rest of the far more experienced researchers and scientists. Eugene makes up for his lack on knowledge with enthusiam and a strong work 
       ethic he is always willing to give any of the other Collegium members a hand with any little thing. He is exceptionally loyal to his adopted father and will do pretty much anything that is asked of him. He is reasonably 
-      clever but very naive and often finds himself the butt of many of the Collegium's goblin assistants jokes.    
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      clever but very naive and often finds himself the butt of many of the Collegium's goblin assistants jokes.
+  
