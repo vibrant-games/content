@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Apple Farmer, Pigkeeper
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Goblin
     - Common
     - Undercommon
-
 
     #
     # Factions:
@@ -371,7 +368,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Standing just over four feet he has Limbs of tangled wiry muscle like tree roots; wears burlap overalls and animal bone sandals; dusky red skin and indigo blue hair that tumbles to the middle of his back; Always has his pet rat in his center overall pocket
+    appearance:   Standing just over four feet he has Limbs of tangled wiry muscle like tree roots. Wears burlap overalls and animal bone sandals.  Dusky red skin and indigo blue hair that tumbles to the middle of his back. Always has his pet rat in his center overall pocket
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -387,7 +384,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Eeek! Youza ugly bunch, aint ya?"; "Like it or not, da ground is where we get our livin fuelz. Treat 'er wit da respect she deserves, innit?"; "Can't catch a pig widdout two buckets and a coupla apples. What makes you tink youz can do any different?"
+    expressions:  
+    - "Eeek! Youza ugly bunch, aint ya?"
+    - "Like it or not, da ground is where we get our livin fuelz. Treat 'er wit da respect she deserves, innit?"
+    - "Can't catch a pig widdout two buckets and a coupla apples. What makes you tink youz can do any different?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +411,7 @@ npc:
     #
     motivations: |
       This dirty little gem dreams of winning the big beautiful piggy competitions. He also invites locals to his farm to marvel together over his bountiful harvests
-      
+
     #
     # Passions:
     #
@@ -420,7 +420,7 @@ npc:
     #
     passions: |
       Soil, vegetation, farming, pigs
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -438,8 +438,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,13 +463,12 @@ npc:
   #
   specialties:
     skills:
-   - - Goblin Abilities:
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
-        - Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
-                             your level.
-        - Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
-                  
-           
+    - Goblin Abilities:
+      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
+                           your level.
+        Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
+
     special-abilities:
     - Proficiencies: Nature, Animal Handling, History   
     attacks: |
@@ -479,7 +477,7 @@ npc:
       Fot is not exactly cowardly but far from brave
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -497,7 +495,6 @@ npc:
       towards the merchants and traders of the nearby villages and cities, Fot and his family have established a stable standard of living. But not without further hard work. Little Fot continues his daily 16 hour grind to and
       from trading centers and market squares as a purveyor of fine livestock and farmed goods. He is also a committed competitor in the bi-annual pig competition, "Cochonatico", and has numerous ribbons and trophies to show-off.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -509,32 +506,4 @@ npc:
     personality: |
       Standing just over four feet he has Limbs of tangled wiry muscle like tree roots; wears burlap overalls and animal bone sandals; dusky red skin and indigo blue hair that tumbles to the middle of his back; Always has his
       pet rat in his center overall pocket
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  
