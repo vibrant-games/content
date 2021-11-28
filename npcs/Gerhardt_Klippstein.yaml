@@ -360,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Oswald! Zat ees not ze most efficient way to approach zat problem" says the blue-skinned man to the fat bald gnome
+    introduction:  /"Oswald! Zat ees not ze most efficient way to approach zat problem/" says the blue-skinned man to the fat bald gnome
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -413,7 +413,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Knowledge  
+      Knowledge
 
     #
     # Passions:
@@ -471,16 +471,16 @@ npc:
         Tireless Precision: Proficient in Arcana and with Tinker's Tool and add 1d4 to any checks with those skills
         Partially Amphibious: Can breathe underwater for up to 1hr per long rest 
         Aether Lore: When making an intelligence (history) check related to magic items or technological devices, adds twice his proficiency bonus
-      Artificer Abilities: 
+      Artificer Abilities:
       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting: 
+        Spellcasting:
         - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 23
           Cantrip: Shocking Grasp, Mage Hand, Mending, Create Bonfire, Fire Bolt
           1st Level: Arcane Weapon, Detect Magic, Identify, Expedition Retreat, Grease
           2nd Level: Arcane Lock, Continual Flame, Levitate, Magic Weapon
           3rd Level: Dispel Magic, Haste, Tiny Servant, Fly
-          4th Level: Fabricate, Stone Shape, Summon Construct    
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
+          4th Level: Fabricate, Stone Shape, Summon Construct
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
         The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
         Tool Expertise: Smith's Tool proficiency bonus is doubled
         Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
@@ -489,39 +489,45 @@ npc:
         Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
       Armorer Abilities:
       - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
-        Spellcasting: 
-        - Description:Requires Smith's Tools as Spellcasting focus, Spell DC 23
+        Spellcasting:
+        - Description: Requires Smith's Tools as Spellcasting focus, Spell DC 23
           3rd Level: Magic Missle, Shield
           5th Level: Mirror Image, Shatter
           9th Level: Hypnotic Patetrn, Fire Ball
           13th Level: Fire Sheild, Greater Invisibility
         Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
-        Infiltrator Armor: His powered armor has the Fire Launcher, Powered Steps & Second Skin abilities  
+        Infiltrator Armor: His powered armor has the Fire Launcher, Powered Steps & Second Skin abilities
         Extra Attack: Can take a second attack action each turn
         Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
         Perfected Armor: Successful Fire Launcher attacks he makes cause targets to glimmer with light giving the next attack roll against it by another creature advantage and does an extra 1d6 Fire Damage
 
-    special-abilities: 
-    - Feats: Keen Mind, Mounted Combatant, War Caster, Skill Expert - Smith's Tools, Observant, Heavy Armor Master
-      Legendary Resistance: (2/Day), If Gerhardt Klippstein fails a saving throw he can choose to succeed instead 
+    special-abilities:
+    - Feats: 
+      - Keen Mind
+      - Mounted Combatant
+      - War Caster
+      - Skill Expert: 
+        - Smith's Tools
+        - Observant
+        - Heavy Armor Master
+      Legendary Resistance: 2/Day, If Gerhardt Klippstein fails a saving throw he can choose to succeed instead
       Legendary Actions:
-      - Descruotion: Gerhardt Klippstein can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+      - Descruption: Gerhardt Klippstein can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn.
                      Gerhardt Klippstein regains spent Legendary Actions at the start of his turn
         Fire Upgrade: Gerhardt Klippstein cast the Fireball spell through his armor's Fire Launcher at 3rd Level with a Dex DC of 19
         Fancy Armor: Gerhardt Klippstein can Infuse one section of his Power Armor with one of his Artificer's Infusions
-        Escape Velocity: Gerhardt Klippstein can cast the Summon Construct Spell to summon his Steam Wagon, mount it and dash up to 80 feet  
-    
+        Escape Velocity: Gerhardt Klippstein can cast the Summon Construct Spell to summon his Steam Wagon, mount it and dash up to 80 feet
+
     attacks: |
-      Can make 2 attacks with his firearms and his Steel Defender can attack twice 
+      Can make 2 attacks with his firearms and his Steel Defender can attack twice
     combat-tactics: |
-      He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run 
+      He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run
     special-equipment:
-    - Full Plate Power Armor - See above for details, except his Power Armor has the ability to launch fire instead of lightning
-    - Random Artifact Devices - Can be carrying whatever he needs
-    - Steam Wagon: His Steam Wagon resembles a regular wagon but has a large steam-belching engine on the back powered by his Artificer's Infusion. It can move on it's own without horses and answers his call. 
+    - Full Plate Power Armor: See above for details, except his Power Armor has the ability to launch fire instead of lightning
+      Random Artifact Devices: Can be carrying whatever he needs
+      Steam Wagon: His Steam Wagon resembles a regular wagon but has a large steam-belching engine on the back powered by his Artificer's Infusion. It can move on it's own without horses and answers his call.
                    It has a speed of 80 feet and can take 150HP damage before it stops running.
-    
-    
+
   profile:
 
     #
@@ -532,11 +538,11 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Gerhardt Klippstein is a brilliant and driven artificer and armorer. He had worked in the past throughout his career with Oswald Vardklemp on developing the propulsion engine for his patented Steam Wagon. 
+      Gerhardt Klippstein is a brilliant and driven artificer and armorer. He had worked in the past throughout his career with Oswald Vardklemp on developing the propulsion engine for his patented Steam Wagon.
       So when he was approached by Oswald with an offer of unlimited funding, people to work with and a compound to continue his work, he jumped at the chance. Working with the Collegium Imaginata has been a 
-      dream come true for him. As an efficient researcher and administrator, Gerhardt was an easy choice for Oswald to make his second in command. Gerhardt likes Oswald, but has always believed that he is the 
+      dream come true for him. As an efficient researcher and administrator, Gerhardt was an easy choice for Oswald to make his second in command. Gerhardt likes Oswald, but has always believed that he is the
       smarter of the two men and that he should be in charge of the Collegium
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -546,8 +552,8 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Gerhardt Klippstein is a tall, thin, light blue-skinned, four-armed Vedalken man. He stands at about 6'6" tall. He is comepletely hairless with a broad, flat nose and light violet eyes. He is cold, severe 
-      and intense. He is deeply devoted to arcane science and to his work. He firmly believes that the world should be orderly and efficient and that his work will help it become that way. He does not particularly 
-      like people and rarely gets along with others but does appreciate scientific and arcane input from reputable sources. In typically dispassionate and detached Vedalken manner, he views the world through a 
-      sterile lens and does his best strive for what he views as perfections and limitless efficiency. 
- f
+      Gerhardt Klippstein is a tall, thin, light blue-skinned, four-armed Vedalken man. He stands at about 6'6" tall. He is comepletely hairless with a broad, flat nose and light violet eyes. He is cold, severe
+      and intense. He is deeply devoted to arcane science and to his work. He firmly believes that the world should be orderly and efficient and that his work will help it become that way. He does not particularly
+      like people and rarely gets along with others but does appreciate scientific and arcane input from reputable sources. In typically dispassionate and detached Vedalken manner, he views the world through a
+      sterile lens and does his best strive for what he views as perfections and limitless efficiency.
+ 

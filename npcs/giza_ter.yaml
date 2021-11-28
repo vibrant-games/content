@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +313,6 @@ npc:
     - Infernal
     - Common
     - Undercommon
-
 
     #
     # Factions:
@@ -386,7 +384,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Oy, you got some menacing talents to back up that (battle-axe, sword, etc.)?"; "I can fill ya up with some goodness if your feelin ragged from the trail, eh?"; "Whateva ya lookin fo, I can promise I got at least a facsimile of it in libational form, eh?"
+    expressions:  
+    - "Oy, you got some menacing talents to back up that (battle-axe, sword, etc.)?"
+    - "I can fill ya up with some goodness if your feelin ragged from the trail, eh?"
+    - "Whateva ya lookin fo, I can promise I got at least a facsimile of it in libational form, eh?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -463,13 +464,12 @@ npc:
   #
   specialties:
     skills:
-   - - Tiefling Abilities:
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
-       - Hellish Resistance: You have Resistance to fire damage
-       - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
-                          When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells
-                          
-           
+    - Tiefling Abilities:
+      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+        Hellish Resistance: You have Resistance to fire damage
+      - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
+                         When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells
+
     special-abilities:
     - Proficiencies: History; Persuasion; Sleight of Hand   
     attacks: |
@@ -505,32 +505,4 @@ npc:
     personality: |
       Stiff and firm posture for such an elderly tiefling; light purple skin that falls into shades of red and pink; horns pulled back tightly in a c shape from her brow to the back of her head; tumbling black hair beneath
       which a side cut is shaved around the circumference of her head
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  
