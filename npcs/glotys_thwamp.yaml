@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +313,6 @@ npc:
     - Common
     - Dwarvish
     - Gnomish
-
 
     #
     # Factions:
@@ -385,7 +383,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Can't make honey without getting stung!"; "My money is on the little things that make the world what it is. Bugs, crawlies, moss, and pebbles"; "Keep me outta the loop. I got tons to do already!"; "Bugs are far more organized than most peoples";
+    expressions:  
+    - "Can't make honey without getting stung!"
+    - "My money is on the little things that make the world what it is. Bugs, crawlies, moss, and pebbles"
+    - "Keep me outta the loop. I got tons to do already!"
+    - "Bugs are far more organized than most peoples";
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +411,7 @@ npc:
     #
     motivations: |
       Glotys is driven to discover new and exotic flora for her bees to pollinate and thus make different honies. She is also quietly motivated to quell the conflicts between races. She's convinced herself that the answer is 'Honey'.
-      
+
     #
     # Passions:
     #
@@ -418,7 +420,7 @@ npc:
     #
     passions: |
       Bees; Flowers; Honey
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -436,8 +438,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,50 +463,52 @@ npc:
   #
   specialties:
     skills:
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus                      
-                                   
-   - - Ranger Abilities:
-       - Ranger Spellcasting: Spell DC 14 
-          - 1st Level: Hunter's Mark, Goodberry, Wild Cunning, Animal Friendship 
-          - 2nd Level: Pass Without Trace, Lesser restoration
-       - Favored Enemy:  - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
-       - Natural Explorer: Favored Terrain - 
-          - Difficult Terrain doesn't slow your group's Travel
-          - Your group can't become lost except by magical means
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check,
+                      instead of his normal Proficiency Bonus
+      Ranger Abilities:
+      - Ranger Spellcasting:
+        - Description: Spell DC 14 
+          1st Level: Hunter's Mark, Goodberry, Wild Cunning, Animal Friendship 
+          2nd Level: Pass Without Trace, Lesser restoration
+        Favored Enemy:  Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+        Natural Explorer:
+        - Description: Favored Terrain
+          Additional Information:
+          - Difficult Terrain doesn't slow your group's Travel.Your group can't become lost except by magical means
           - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
           - If you are traveling alone, you can move stealthily at a normal pace
           - When you Forage, you find twice as much food as you normally would
           - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-       - Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-       - Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
-                             types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+        Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
+        Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+                            types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
                              reveal the creatures' location or number.
-       - Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-
-   - - Swarmkeeper Abilities:
-       - Gathered Swarm: a swarm of intangible Bee-shaped nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you
-                         within your space. Once on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack - 
-                         - The attack's target takes 1d6 piercing damage from the swarm.
-                         - The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
-                         - You are moved by the swarm 5 feet horizontally in a direction of your choice
-       - Swarmkeeper Magic: Spell DC 14
-          - 1st Level: Faerie Fire, Mage Hand  
-          - 2nd Level: Web
-
+        Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+      Swarmkeeper Abilities:
+      - Gathered Swarm:
+        - Description: a swarm of intangible Bee-shaped nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you
+                       within your space. Once on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack - 
+          Additional Information:
+          - The attack's target takes 1d6 piercing damage from the swarm.
+          - The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
+          - You are moved by the swarm 5 feet horizontally in a direction of your choice
+       - Swarmkeeper Magic:
+         - Description: Spell DC 14
+           1st Level: Faerie Fire, Mage Hand
+           2nd Level: Web
 
     special-abilities:
-    - Proficiencies: Animal Handling; Nature; History   
+    - Proficiencies: Animal Handling; Nature; History
     attacks: |
       2 attacks with War Pick
     combat-tactics: |
       Glotys will avoid combat in most cases. Should she be pressed she will first resort to calling her swarm and backing off in hopes that will suffice to waylay opponents or drive them off
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -522,7 +525,6 @@ npc:
       ecology of her surroundings the busy little insects were drawn to her. Her hard work and staunch dedication to learning more of her surroundings were rewarded with certain magicks that enable her to communicate with the
       tiny pollenators and call on them for help. These moments inspired her to begin an endeavour to provide housing and even greater love and support to these important components of the ecosystem.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -533,32 +535,4 @@ npc:
     #
     personality: |
       Relatively lean and gaunt for a dwarf; tangled black curls and chin beard; wears firm leather beekeeping uniforms at nearly all times; bright green eyes; Always wears fresh flowers in her hair
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

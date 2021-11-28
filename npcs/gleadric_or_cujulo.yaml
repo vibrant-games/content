@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Fur and Skins Trader
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Infernal
     - Common
     - Undercommon
-
 
     #
     # Factions:
@@ -387,7 +384,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Eek. Da dreamers be frownin"; "Long days make good pay"; "Right, right, right. Think it through"
+    expressions:
+    - "Eek. Da dreamers be frownin"
+    - "Long days make good pay"
+    - "Right, right, right. Think it through"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +411,7 @@ npc:
     #
     motivations: |
       To resist the industrial and technological innovations and cultural change and thus rebel against political structures
-      
+
     #
     # Passions:
     #
@@ -420,7 +420,7 @@ npc:
     #
     passions: |
       Nature. Protecting Lycanthropes. Equality. Socialism
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -438,8 +438,7 @@ npc:
     #
     secrets: | 
       His Shamanic Calling of Dreams attacks his psyche with demands to tear down royal lineages
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,44 +463,46 @@ npc:
   #
   specialties:
     skills:
-   - - Firbolg Abilities:
+    - Firbolg Abilities:
        - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
-                        short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
-       - Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
+                        short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.
+         Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
                       use it again until you finish a short or long rest.
-       - Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-       - Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
+         Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+         Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
                                    You have advantage on all Charisma checks you make to influence them
-                                   
-   - - Shaman Abilities:
-       - Spellcasting: DC 14
-         Cantrips: Toll the Dead, Guidance, Primal Savagery
-         1st Level: Bane, Cammand
-         2nd Level: Earthbind, Pass Without Trace
-         3rd Level: Life Transference
-       - Sacred Technique: This focus grants you innate bonuses depending on your choice of focus
-                           - Soul: When wearing no armor your AC = 10 + your Dexterity + your Wisdom.
-       - Totemic Magic: You Learn the Art of making Totems through which you channel shamanistic power. Totems Known 4						   
-         1: Totem of the Earthquake
-         2: Totem of the Eruption
-         3: Totem of the Avalanche
-         
-   - - Witch-Doctor Abilities:
-       - Life Bearer: as a bonus action you can touch one creature and heal it 1d10+ Wisdom Modifier
-       - Primal Blessing: Can bestow up to half your Totems upon other willing creatures until your next long rest
-       - Spellcasting: DC 14
-         3rd Level: Enhance Ability, Lesser Restoration
-         5th Level: Beacon of Hope, Revivify                          
-           
+      Shaman Abilities:
+      - Spellcasting:
+        - Description: DC 14
+          Cantrips: Toll the Dead, Guidance, Primal Savagery
+          1st Level: Bane, Cammand
+          2nd Level: Earthbind, Pass Without Trace
+          3rd Level: Life Transference
+        Sacred Technique: 
+        - Description: This focus grants you innate bonuses depending on your choice of focus
+          Soul: When wearing no armor your AC = 10 + your Dexterity + your Wisdom.
+        Totemic Magic:
+        - Description: You Learn the Art of making Totems through which you channel shamanistic power. Totems Known - 4.
+          1: Totem of the Earthquake
+          2: Totem of the Eruption
+          3: Totem of the Avalanche
+      Witch-Doctor Abilities:
+      - Life Bearer: as a bonus action you can touch one creature and heal it 1d10+ Wisdom Modifier
+        Primal Blessing: Can bestow up to half your Totems upon other willing creatures until your next long rest
+        Spellcasting:
+        - Description: DC 14
+          3rd Level: Enhance Ability, Lesser Restoration
+          5th Level: Beacon of Hope, Revivify
+
     special-abilities:
-    - Proficiencies: Survival, Nature, Athletics, Perception, Insight, Tanning, Skinning, Fabrics and Textiles, Stealth   
+    - Proficiencies: Survival, Nature, Athletics, Perception, Insight, Tanning, Skinning, Fabrics and Textiles, Stealth
     attacks: |
       1 attack with Quaterstaff
     combat-tactics: |
       Gleadric will retract from conflict. Cujoloa will ferciously use his magicks and invocations to down combatants
     special-equipment:
     - Quaterstaff
-                                                                   
+
   profile:
 
     #
@@ -522,7 +523,6 @@ npc:
       wild or 'crazy', but upon closer inspection and interactions, their distilled spirituality leaves a mark of genuine good. Depending on which spirit is taking charge, they refer to themselves in 3rd person - either
       Gleadric or Cujulo.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -533,32 +533,3 @@ npc:
     #
     personality: |
       Tall and stocky. Grey fur. Long wild deep blue hair and beard. Patched hides and leathers. Tiny bones and flora tied to hair
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

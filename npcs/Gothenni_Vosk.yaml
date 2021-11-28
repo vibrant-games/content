@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Crime Lord
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Aetherborn
     - Infernal
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -363,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  I have need of your services. "You have something that belongs to me". The party will be brought to meet Gothenni
+    introduction:  I have need of your services. /"You have something that belongs to me/". The party will be brought to meet Gothenni
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -390,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  What can you do for me?, "I will not be crossed!"
+    expressions:  
+    - "What can you do for me?"
+    - "I will not be crossed!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +413,7 @@ npc:
     #
     motivations: |
       They are motivated by greed, jealousy and hunger
-      
+
     #
     # Passions:
     #
@@ -423,7 +422,7 @@ npc:
     #
     passions: |
       Control, Cash and Information
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       They are jealous and untrusting. But their biggest weakness is the hunger that comes with The Gift
-      
+
     #
     # Secrets:
     #
@@ -441,8 +440,7 @@ npc:
     #
     secrets: | 
       They know all of the secrets of Kaladesh and beyond
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,39 +465,36 @@ npc:
   #
   specialties:
     skills:
-   - - Aetherborn Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Born of Aether: You have resistance to necrotic damage
-       - Menacing: You gain proficiency in the Intimidation skill
-       - Vampiric Gift: An aetherborn with this gift gains the Drain Life ability, which is a natural attack that uses Strength for its attack and damage rolls, dealing 1d6 necrotic damage and restores the same number of hit
-                        points to the aetherborn. However, if the aetherborn goes for 7 days without dealing this damage, their hit point maximum is reduced by 1d6 per week. This reduction can’t be removed until the aetherborn
-                        has used their Drain Life ability and completed a long rest                      
-                                   
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-       - Reliable Talent: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
-       - Blindsense: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
-       - Slippery Mind: You gain proficiency in Wisdom Saving Throws
-       - Elusive: No Attack roll has advantage against you while you aren't Incapacitated
-       - Stroke of Luck: If your Attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat The D20 roll as a 20
-
-   - - Mastermind Abilities:
-       - Master of Intrigue: you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice. Additionally, you can unerringly mimic the speech patterns
-                             and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language
-       - Master of Tactics: you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than
-                            5 feet of you, if the target can see or hear you
-       - Insightful Manipulators: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if
-                                  the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Intelligence score, Wisdom score, Charisma score, Class levels (if any)
-                                  - At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any.
-       - Misdirection: you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use
+    - Aetherborn Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Born of Aether: You have resistance to necrotic damage
+        Menacing: You gain proficiency in the Intimidation skill
+        Vampiric Gift: An aetherborn with this gift gains the Drain Life ability, which is a natural attack that uses Strength for its attack and damage rolls, dealing 1d6 necrotic damage and restores the same number of hit
+                       points to the aetherborn. However, if the aetherborn goes for 7 days without dealing this damage, their hit point maximum is reduced by 1d6 per week. This reduction can’t be removed until the aetherborn
+                       has used their Drain Life ability and completed a long rest                                                
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+        Reliable Talent: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
+        Blindsense: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
+        Slippery Mind: You gain proficiency in Wisdom Saving Throws
+        Elusive: No Attack roll has advantage against you while you aren't Incapacitated
+        Stroke of Luck: If your Attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat The D20 roll as a 20
+      Mastermind Abilities:
+      - Master of Intrigue: you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice. Additionally, you can unerringly mimic the speech patterns
+                            and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language
+        Master of Tactics: you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than
+                           5 feet of you, if the target can see or hear you
+        Insightful Manipulators: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if
+                                 the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Intelligence score, Wisdom score, Charisma score, Class levels (if any)
+                                 At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any.
+        Misdirection: you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use
                        your reaction to have the attack target that creature instead of you.
-       - Soul of Deciet: your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.
-                         Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic
-
+        Soul of Deciet: your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.
+                        Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful if you so choose, and you can't be compelled to tell the truth by magic
 
     special-abilities:
     - Proficiencies: Survival, Intimidation, Perception, Insight   
@@ -511,7 +506,7 @@ npc:
     - Cloak of Invisibility
     - Boots of Elvinkind
     - +3 Dagger
-                                                                   
+
   profile:
 
     #
@@ -526,7 +521,6 @@ npc:
       didn't want to die. Their will to live proved stronger than the nature of Their being and in Their final moment They absorbed the total life essence of their employer, extending Their life and ending his. From that point
       on, They took over as the new boss and continued to feed their Vampiric Hunger with anyone who crossed Them
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -538,32 +532,4 @@ npc:
     personality: |
       They are tall and broad with a featureless black skinned hairless face with glowing blue eyes and a glow of blue cracks on various parts of their skin. They are adorned with fine robes over thick leather armor laces with
       gold filigree. Gothenni's iron will has allowed him to exceed his natural life expectancey and ursurp control of a vast criminal network.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

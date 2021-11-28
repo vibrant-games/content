@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Document Creator; Forge; Fence
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Thieves' Cant
     - Halfling
     - Dwarven
-
 
     #
     # Factions:
@@ -389,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Can't be found when you're nobody in particular"; "How many lives have you already lived?"; "Plain sight? Overrated."
+    expressions:  
+    - "Can't be found when you're nobody in particular"
+    - "How many lives have you already lived?"
+    - "Plain sight? Overrated."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +413,7 @@ npc:
     #
     motivations: |
       Glem hopes to rewrite portions of history and the roles of its players
-      
+
     #
     # Passions:
     #
@@ -422,7 +422,7 @@ npc:
     #
     passions: |
       Identity and identification processes. The possibilities of the mind to create a self
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -440,8 +440,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,60 +465,58 @@ npc:
   #
   specialties:
     skills:
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
                       instead of his normal Proficiency Bonus
-                      
-   - - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-                                   
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-       
-   - - Soulknife Abilities:
-       - Psionic Talents: You can use your Psionic Talent die in the following ways - Psionic Talent Die is d8
-                          - Psi-Bolstered Knack: : if you fail an ability check using a skill or tool with which you have proficiency, you can roll your Psionic Talent die and add the number rolled to the check, potentially
-                                                   turning failure into success
-                          - Psychic Whisper:  As an action, you give yourself and at least one other creature the ability to speak telepathically with each other. When you do so, roll your Psionic Talent die, and choose
-                                              creatures you can see, up to a number of creatures equal to the number rolled. For 1 hour, the chosen creatures can speak telepathically with you, and you can speak telepathically
-                                              with them
-                          - Psi Replenishment: As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long
-                                               rest
-       - Psychic Blades: You can manifest your psionic power as shimmering blades of psychic energy. When you are about to make a melee or ranged weapon attack against a creature, you can manifest a psychic blade from your free
-                         hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals
-                         psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals
-                         damage. After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The
-                         damage die of this bonus attack is 1d4, instead of 1d6.
-       - Soul Blades: Your Psychic Blades are now an expression of your psi-suffused soul, giving you finer control over them in the following ways - 
-                      - Homing Strikes: If you make an attack roll with your Psychic Blades and miss the target, you can roll your Psionic Talent die and add the number rolled to the attack roll. If this causes the attack to
-                                        hit, your Psionic Talent die decreases by one die size, regardless of the number rolled
-                      - Psychic Teleportation: If your Psionic Talent die is available, you can hurl your Psychic Blades to magically transport yourself to another location. As a bonus action, you manifest one of your Psychic 
-                                               Blades and throw it at an unoccupied space you can see, up to a number of feet away equal to 5 times the highest number on your Psionic Talent die. You then teleport to that space,
-                                               the blade vanishes, and your Psionic Talent die decreases by one die size
-
+      Halfling Abilities:
+      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll
+        Brave: Has advantage on Saving Throws against being Frightened
+        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+      Soulknife Abilities:
+      - Psionic Talents:
+        - Description: You can use your Psionic Talent die in the following ways - Psionic Talent Die is d8
+          Psi-Bolstered Knack: if you fail an ability check using a skill or tool with which you have proficiency, you can roll your Psionic Talent die and add the number rolled to the check, potentially
+                                 turning failure into success
+          Psychic Whisper:  As an action, you give yourself and at least one other creature the ability to speak telepathically with each other. When you do so, roll your Psionic Talent die, and choose
+                            creatures you can see, up to a number of creatures equal to the number rolled. For 1 hour, the chosen creatures can speak telepathically with you, and you can speak telepathically
+                            with them
+          Psi Replenishment: As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long
+                             rest
+          Psychic Blades: You can manifest your psionic power as shimmering blades of psychic energy. When you are about to make a melee or ranged weapon attack against a creature, you can manifest a psychic blade from your free
+                          hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals
+                          psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals
+                          damage. After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The
+                          damage die of this bonus attack is 1d4, instead of 1d6.
+          Soul Blades: 
+          - Description: Your Psychic Blades are now an expression of your psi-suffused soul, giving you finer control over them in the following ways
+            Homing Strikes: If you make an attack roll with your Psychic Blades and miss the target, you can roll your Psionic Talent die and add the number rolled to the attack roll. If this causes the attack to
+                            hit, your Psionic Talent die decreases by one die size, regardless of the number rolled
+            Psychic Teleportation: If your Psionic Talent die is available, you can hurl your Psychic Blades to magically transport yourself to another location. As a bonus action, you manifest one of your Psychic
+                                   Blades and throw it at an unoccupied space you can see, up to a number of feet away equal to 5 times the highest number on your Psionic Talent die. You then teleport to that space,
+                                   the blade vanishes, and your Psionic Talent die decreases by one die size
 
     special-abilities:
-    - Proficiencies: Disguise; Persuasion; Forgery Kit   
+    - Proficiencies: Disguise; Persuasion; Forgery Kit
     attacks: |
       1 attack with Soul Knife
     combat-tactics: |
       Glem is quite courageous, but not foolhardy. He knows his limits. He will use his psionics to disorient opponents in order to calm a situation or make space to flee. If pressed, he will try negotiating before combat
     special-equipment:
     - Gloves of Fast Draw: can teleport any item on your person to your hand. Attunement may be necessary. Grip the items you want to fast draw. Hold them the way you want them to appear in your hand and say the command word
-                            ‘remember’. Any time after an item has been attuned it can be reflexively teleported to your hand. The item must be on your person for this to work.
-    - Contraband Concealment Container: When this item is created the creator selects a material - spice, coin, or any other mundane material and a command word. The container has a seemingly endless source of whatever mundane
+                            /"remember/". Any time after an item has been attuned it can be reflexively teleported to your hand. The item must be on your person for this to work.
+      Contraband Concealment Container: When this item is created the creator selects a material - spice, coin, or any other mundane material and a command word. The container has a seemingly endless source of whatever mundane
                                         object is selected though it deteriorates from existence within a day of being removed from the container. When the command word is spoken and the container is opened it reveals completely
                                         different contents. Stored in an extraplanar space the container may store any amount that would make sense for the size of the container and then by shutting the container the bag will
-                                        store the contents away until the command word is spoken again.<
-                                                                   
+                                        store the contents away until the command word is spoken again.
+
   profile:
 
     #
@@ -540,7 +537,6 @@ npc:
       local guild of Identity Traders; a faction dedicated to undermining the controls imposed by the Bureau. It was here that he perfected his skills at forgery, made connections within the community, and grew his notoriety as
       the 'go-to' for illegal documents required for trade, travel, and more.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -551,32 +547,4 @@ npc:
     #
     personality: |
       Under four feet tall. Rusty skin and short Caesar cut. Well-kept leathers. Multiple scroll cases adorn his person
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  

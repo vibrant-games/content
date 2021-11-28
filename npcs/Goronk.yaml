@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +313,6 @@ npc:
     - Common
     - Goblin
     - Undercommon
-
 
     #
     # Factions:
@@ -391,7 +389,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You are weak!", "The money pays for food and weapons, but I fight because those who don't are weak and pathetic"
+    expressions:
+    - "You are weak!"
+    - "The money pays for food and weapons, but I fight because those who don't are weak and pathetic"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +415,7 @@ npc:
     #
     motivations: |
       Proving his martial prowess, building his reputation, money
-      
+
     #
     # Passions:
     #
@@ -424,7 +424,7 @@ npc:
     #
     passions: |
       Fighting. His strength is the basis of his identity
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +433,7 @@ npc:
     #
     vulnerabilities: |
       Ego, quick to anger, doesn't know when to back down
-      
+
     #
     # Secrets:
     #
@@ -442,8 +442,7 @@ npc:
     #
     secrets: | 
       He really does like the money and the comforts it buys him
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -468,25 +467,23 @@ npc:
   #
   specialties:
     skills:
-   - - Hobgoblin Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Martial Training: You are proficient with two martial weapons of your choice and with light armor.
-       - Saving Face: Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll
-                      equal to the number of allies you can see within 30 feet of you                      
-                                   
-   - - Fighter Abilities:
-         - Fighting Style: Two Weapon Fighting
-         - Second Wind: Bonus Action to regain 1d10 + 
-         - Action Surge: Once every short/long rest can take an extra action
-
-   - - Battle Master Abilities:
-       - Cambat Superiority: 4 Superiority Dice. Saving Throw DC 13
-                             - Maneuvers:
-                             - Disarming Attack
-                             - Menacing Attack
-                             - Trip Attack
-       - Student of War: Proficient in Smith's Tools
-
+    - Hobgoblin Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Martial Training: You are proficient with two martial weapons of your choice and with light armor.
+        Saving Face: Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll
+                     equal to the number of allies you can see within 30 feet of you
+      Fighter Abilities:
+      - Fighting Style: Two Weapon Fighting
+        Second Wind: Bonus Action to regain 1d10 + 
+        Action Surge: Once every short/long rest can take an extra action
+      Battle Master Abilities:
+      - Combat Superiority: 
+        - Description: 4 Superiority Dice. Saving Throw DC 13
+          Maneuvers:
+          - Disarming Attack
+          - Menacing Attack
+          - Trip Attack
+         Student of War: Proficient in Smith's Tools
 
     special-abilities:
     - Proficiencies: Survival, Intimidation   
@@ -523,32 +520,4 @@ npc:
     #
     personality: |
       5'5", Broad as a barn. Deep red skin, lots of scars and some pretty top notch armor. Very well dressed for his kind
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  
