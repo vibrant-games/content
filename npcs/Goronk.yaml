@@ -468,7 +468,7 @@ npc:
   specialties:
     skills:
     - Hobgoblin Abilities:
-      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
         Martial Training: You are proficient with two martial weapons of your choice and with light armor.
         Saving Face: Hobgoblins are careful not to show weakness in front of their allies, for fear of losing status. If you miss with an attack roll or fail an ability check or a saving throw, you can gain a bonus to the roll
                      equal to the number of allies you can see within 30 feet of you
@@ -479,11 +479,12 @@ npc:
       Battle Master Abilities:
       - Combat Superiority: 
         - Description: 4 Superiority Dice. Saving Throw DC 13
-          Maneuvers:
-          - Disarming Attack
-          - Menacing Attack
-          - Trip Attack
-         Student of War: Proficient in Smith's Tools
+          Additional Information:
+          - Maneuvers:
+            - Disarming Attack
+            - Menacing Attack
+            - Trip Attack
+          Student of War: Proficient in Smith's Tools
 
     special-abilities:
     - Proficiencies: Survival, Intimidation   
@@ -494,7 +495,7 @@ npc:
     special-equipment:
     - 2x +1 Long swords
     - Half Plate
-                                                                   
+
   profile:
 
     #
