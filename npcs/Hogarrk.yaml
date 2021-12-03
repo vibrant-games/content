@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Security/Enforcer
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Goblin
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -342,11 +339,10 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Brash
     - Stupid
+
+  improv:
 
     #
     # Introduction:
@@ -386,7 +382,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "password?", "you should have had the password", "Hogarrk SMASH!!!"
+    expressions:
+    - "password?"
+    - "you should have had the password"
+    - "Hogarrk SMASH!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +409,7 @@ npc:
     #
     motivations: |
       Food, Money, Fear
-      
+
     #
     # Passions:
     #
@@ -419,7 +418,7 @@ npc:
     #
     passions: |
       N/A
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       He is about as smart as paint and because of this he is easily confused or tricked
-      
+
     #
     # Secrets:
     #
@@ -437,8 +436,7 @@ npc:
     #
     secrets: | 
       He knows the password
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,36 +461,36 @@ npc:
   #
   specialties:
     skills:
-   - - Bugbear Traits:
-        - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
-        - Long Limbed: when making a melee attack his reach is extended by 5 extra feet
-        - Powerfuk Build: Counts as one size larger for carrying capacity and amount he can lift, push or drag
-        - Sneaky: Proficient in Stealth
-        - Surprise Attack: If he surprises a creature and hit ti on the first turn of combat, he may add 2d6 to the damage
+    - Bugbear Traits:
+      - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
+        Long Limbed: when making a melee attack his reach is extended by 5 extra feet
+        Powerfuk Build: Counts as one size larger for carrying capacity and amount he can lift, push or drag
+        Sneaky: Proficient in Stealth
+        Surprise Attack: If he surprises a creature and hit ti on the first turn of combat, he may add 2d6 to the damage
 
-   - - Barbarian Abilities:
-         - Rage: Can enter a rage as a Bonus Action. 
-            - have advantage on Strength Checks and Strength Saving Throws.
-            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-            - Resistance to bludgeoning, piercing, and slashing damage          
-         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                            but Attack Rolls against him have advantage until his next turn
-
-   - - Path of the Ancestral Guardian:
-         - Ancestral Protectors: spectral warriors appear when you enter your rage. While you’re raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until
-                                 the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has
-                                 resistance to the damage of the target’s attacks
+      Barbarian Abilities:
+      - Rage:
+        - Can enter a rage as a Bonus Action. 
+        - have advantage on Strength Checks and Strength Saving Throws.
+        - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+        - Resistance to bludgeoning, piercing, and slashing damage
+        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                         but Attack Rolls against him have advantage until his next turn
+      Path of the Ancestral Guardian:
+      - Ancestral Protectors: spectral warriors appear when you enter your rage. While you’re raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until
+                              the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has
+                              resistance to the damage of the target’s attacks
 
     special-abilities:
-       - Animal Handling. Minor Veterinary Medicine. Horseback Riding         
+       - Animal Handling. Minor Veterinary Medicine. Horseback Riding
     attacks: |
       1 attack with his mace
     combat-tactics: |
       Goes out of his way to pick fights 
     special-equipment:
     - A huge bone-handled mace covered in spikes that counts as a +1 magical great club
-                                                                   
+
   profile:
 
     #
@@ -506,7 +504,6 @@ npc:
       Driven out of his clan when he was challenged by a younger, stronger Bugbear for the role of pack alpha, he went into exile rather than die fighting for leadership. He wandered for several years fending for himself before
       he was captured by slavers and sold into servitude as an enforcer/security. He found that he relished his new role as it provided a steady meal, a frequent outlet for his aggression and as little thinking as possible
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -518,32 +515,3 @@ npc:
     personality: |
       He is a massive hulking beast standing almost 8 feet tall and 350lbs. He is wearing what looks like reclaimed pieces leather armor. His skin is a hair-covered dark tan brown and his hair dark brown and unkempt. He has
       large pointed ears and a bestial face. He carries a large, heavy, spiked mace with a handle made of bone
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Engineer, Architect
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Dwarvish
-
 
     #
     # Factions:
@@ -363,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "No no no!" she yells, storming through the work site. "That's not how it is in my drawings, Do you have orc brains?!?"
+    introduction:  /"No no no!/" she yells, storming through the work site. /"That's not how it is in my drawings, Do you have orc brains?!?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -390,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Idiots!", "Doesn't anyone know how to follow a plan?", "My schematics are inscrutable!"
+    expressions:  
+    - "Idiots!"
+    - "Doesn't anyone know how to follow a plan?"
+    - "My schematics are inscrutable!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -423,7 +423,7 @@ npc:
     #
     passions: |
       Her craft and strong ale
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       Her ego and her temper
-      
+
     #
     # Secrets:
     #
@@ -441,8 +441,7 @@ npc:
     #
     secrets: | 
       Possibly schematics or layouts of secure locations she been involved in building
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,22 +466,21 @@ npc:
   #
   specialties:
     skills:
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
                       instead of his normal Proficiency Bonus
 
-
     special-abilities:
-    - Proficiencies: Architecture and Engineering, Performance, Insight, Perception   
+    - Proficiencies: Architecture and Engineering, Performance, Insight, Perception
     attacks: |
       1 attacks with Light Hammer
     combat-tactics: |
       She will only enter combat if her life is in danger
     special-equipment:
     - Magical Designing Tools that give a +2 bonus to intelligence roles when using them to design blueprints or schematics
-                                                                   
+
   profile:
 
     #
@@ -497,7 +495,6 @@ npc:
       Her fierce drive to master her craft and get ahead has made her well know and respected in her vocation, but she is also well known for letting her temper get the better of her. Her strong work ethic has also lead to a
       bit of a drinking problem in he relaxation time, which also does not help her temper at all
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -508,32 +505,3 @@ npc:
     #
     personality: |
       Tall for a dwarf, she has broad shoulders, a dark 5 o'clock shadow, long brown hair tied back in a braid
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

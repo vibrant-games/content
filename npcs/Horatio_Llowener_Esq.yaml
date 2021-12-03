@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     languages:
     - Common
     - Elvish
-
 
     #
     # Factions:
@@ -346,11 +344,10 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Slimy
     - Defeated
+
+  improv:
 
     #
     # Introduction:
@@ -390,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "What did you do this time?", "I see you're in need of representation", "Have you been hurt in an accident?"
+    expressions:
+    - "What did you do this time?"
+    - "I see you're in need of representation"
+    - "Have you been hurt in an accident?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +414,7 @@ npc:
     #
     motivations: |
       Money and a touch of justice
-      
+
     #
     # Passions:
     #
@@ -423,7 +423,7 @@ npc:
     #
     passions: |
       Loves his fine whiskeys
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       He's greedy and has a weakness for the drink
-      
+
     #
     # Secrets:
     #
@@ -441,8 +441,7 @@ npc:
     #
     secrets: | 
       He knows that all of his clients are probably guilty
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,11 +466,11 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
-        - Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 11
+    - Half-Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon
+        Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 11
 
     special-abilities:
        Proficient in Perception, Persuasion, Performance and Deception         
@@ -481,7 +480,7 @@ npc:
       Is a coward 
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -496,7 +495,6 @@ npc:
       justice is done. He's good at his job, but will happily sell his clients down the river for his own benefit. He does have a little bit of internal struggle about the things he sometimes does for money and this has caused
       him to have a bit of a drinking problem
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -507,32 +505,3 @@ npc:
     #
     personality: |
       Average height, thinning blonde hair pulled back in a ponytail. Well dressed though slightly disheveled
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

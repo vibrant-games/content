@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,8 +312,6 @@ npc:
     languages:
     - Common
     - Goblin
-
-
 
     #
     # Factions:
@@ -337,7 +334,6 @@ npc:
     - id: Collegium_Imaginata
       name: Collegium Imaginata
       role: Lab Assistant
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -389,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You! get gears to professor now!", "Why you goblins all so much slower than Huber?" "Don't make me tell Boss on you!" 
+    expressions:
+    - "You! get gears to professor now!"
+    - "Why you goblins all so much slower than Huber?"
+    - "Don't make me tell Boss on you!" 
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +412,7 @@ npc:
     #
     motivations: |
       Pleasing his bosses  
-      
+
     #
     # Passions:
     #
@@ -422,7 +421,7 @@ npc:
     #
     passions: |
       bossing around the other goblins
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       short-tempered, like to have authority
-      
+
     #
     # Secrets:
     #
@@ -440,7 +439,7 @@ npc:
     #
     secrets: |
       Doesn't actually know much about artifice or science 
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,22 +464,22 @@ npc:
   #
   specialties:
     skills:
- - - Gremlin Abilities:
+    - Gremlin Abilities:
       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-      - Almost Fire Proof: Resistant to fire damage
-      - Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
-      - Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
-      
-  - - Artificer Abilities:
+        Almost Fire Proof: Resistant to fire damage
+        Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
+        Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
+      Artificer Abilities:
       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-        Cantrip: Mage Hand, Mending, Shocking Grasp
-        1st Level: Faerie Fire, Cure Wounds
+        Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
+          Cantrip: Mage Hand, Mending, Shocking Grasp
+          1st Level: Faerie Fire, Cure Wounds
  
     special-abilities:
     - Proficiencies: Proficient in Perception, Deception, Theive's Tools, Tinker's Tools, Smith's Tools     
-    - Feats: Inspiring Leader                    
-    
+    - Feats: Inspiring Leader
+
     attacks: |
       Has 1 attack. Will range attack with his Blast Orb or bite or dagger in melee range
     combat-tactics: |
@@ -489,7 +488,6 @@ npc:
     - Tinker's, Thieve's and Smith's Tools
     - Dagger
 
-    
   profile:
 
     #
@@ -503,7 +501,7 @@ npc:
       Huber grew up in a clan that were former slaves and currently closely related to the naturally tinkering Rock Gnomes. The Gremlin Clan are different than other goblins because of their relationship with the gnomes. 
       Huber grew up jealous of his felow gremlins who have a natural affinity for artifice and creating. Many of his clan's members have been invited to work with the Collegium Imaginata in various capacities, having 
       asserted his jealous dominance within his clan, he was brought in to supervise the Collegium's retinue of goblin lackeys. He leads with more anger and bluster than actual efficiency 
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -516,32 +514,3 @@ npc:
       Huber is large for his clan but not as intelligent as most of relatives. What he lacks in brains, he more than makes up for in rage and dominance. He has the same red skin, pointy nose and pointy ears that is the 
       halmark of his clan. He dresses in coveralls and wears a yellow hat that end in a point that he thinks denotes his role as leader. He is jealous of any accomplishments that his clan members make and will always do 
       his best to take credit for their work. Most of his clan hates him, but are too afraid of him to not follow his orders.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Baker
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Common
     - Dwarvish
     - Gnomish
-
 
     #
     # Factions:
@@ -386,7 +383,12 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Ay, I've got a pastry that'll solve that problem by bringin a smile to that mug, sir/madam!"; "Whatever your destiny, meet it with a smile!"; "Everythin is better with cherry-wine and some meat-pies"; "'ere, lemme show you how to make a nice loaf of sylvan popper bread"; "Shall we 'ave ourselves a game of Matadon"
+    expressions:
+    - "Ay, I've got a pastry that'll solve that problem by bringin a smile to that mug, sir/madam!"
+    - "Whatever your destiny, meet it with a smile!"
+    - "Everythin is better with cherry-wine and some meat-pies"
+    - "'ere, lemme show you how to make a nice loaf of sylvan popper bread"
+    - "Shall we 'ave ourselves a game of Matadon"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +412,7 @@ npc:
     #
     motivations: |
       Gruda is always seeking new innovative recipes and ingredients for her baked goods and pastries. Her diligent work ethic is apparent in her almost constant sales and pitches to tavern and inn keepers
-      
+
     #
     # Passions:
     #
@@ -463,11 +465,10 @@ npc:
   #
   specialties:
     skills:
-   - - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-
+    - Halfling Abilities:
+      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+        Brave: Has advantage on Saving Throws against being Frightened 
+        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
 
     special-abilities:
     - Proficiencies: Baking, Persuasion   
@@ -477,7 +478,7 @@ npc:
       Gruda will only enter combat if her life is in danger
     special-equipment:
     - Bakers Supplies
-                                                                   
+
   profile:
 
     #
@@ -508,32 +509,4 @@ npc:
     #
     personality: |
       Chubby, even for a halfling, with long locks and braids of tangled golden hair; covered in jewelry both costume and ornate - earrings galore, eyebrows, lip, etc.; modest clothes that are well kept
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

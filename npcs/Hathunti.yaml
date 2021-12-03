@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Saboteur, Anarchist
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Aetherborn
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -386,7 +383,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  Boom!!!, "Coming Through!, Wasn't here, Nobody saw nuthin!" "Fire is your friend!"
+    expressions:
+    - "Boom!!!"
+    - "Coming Through!, Wasn't here, Nobody saw nuthin!"
+    - "Fire is your friend!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +410,7 @@ npc:
     #
     motivations: |
       The unbridled excitement of absolute chaos. The thrill of danger
-      
+
     #
     # Passions:
     #
@@ -419,7 +419,7 @@ npc:
     #
     passions: |
       The thrill and adrenaline that comes with danger and chaos
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       Brash. Conceited, Reckless
-      
+
     #
     # Secrets:
     #
@@ -437,8 +437,7 @@ npc:
     #
     secrets: | 
       Where the rebel groups meet and their plans for disrupting the Consulate
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,28 +462,28 @@ npc:
   #
   specialties:
     skills:
-   - - Aetherborn Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Born of Aether: You have resistance to necrotic damage
-       - Menacing: You gain proficiency in the Intimidation skill
-                             
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+    - Aetherborn Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Born of Aether: You have resistance to necrotic damage
+        Menacing: You gain proficiency in the Intimidation skill
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
          
-   - - The Arsonist Abilities:
-        - Firebug: You become exceptionally talented at setting things ablaze. You gain the following talents - 
-                   - Pyrotechnician: You may add your proficiency modifier to any ability check made to start or manipulate a fire, as well as determining the cause of one
-                   - Inflamable: You are considered proficient with improvised weapons when attacking with torches or any flaming object that can be held in one hand, as well as when throwing oil or similarly flamable compounds 
-                                 and any type of fire-based explosive
-                   - Firestarter: Any creature or object covered in a combustable compound, such as oil, by you specifically, that takes any amount of fire damage will be set ablaze for a number of rounds equal to your
+      The Arsonist Abilities:
+      - Firebug:
+        - Description: You become exceptionally talented at setting things ablaze. You gain the following talents - 
+          Pyrotechnician: You may add your proficiency modifier to any ability check made to start or manipulate a fire, as well as determining the cause of one
+          Inflamable: You are considered proficient with improvised weapons when attacking with torches or any flaming object that can be held in one hand, as well as when throwing oil or similarly flamable compounds 
+                      and any type of fire-based explosive
+        Firestarter: Any creature or object covered in a combustable compound, such as oil, by you specifically, that takes any amount of fire damage will be set ablaze for a number of rounds equal to your
                                   proficiency modifier. They will suffer 5hp of fire damage at the start of each of their turns for the duration or until it is extinguished 
-        - Fleet Spark: You can use the bonus action granted by your Cunning Action to use a tinder box or other fire starting tool, or to throw a flask of oil or similiarly flamable compound at a target
-        - Immolation: Any creature set on fire by you suffers a temporary -2 penalty to their total AC, regardless if they are otherwise resistant or immune to fire. If the fire is extinguished, this penalty ends at the end of
-                      the target's next turn
+        Fleet Spark: You can use the bonus action granted by your Cunning Action to use a tinder box or other fire starting tool, or to throw a flask of oil or similiarly flamable compound at a target
+        Immolation: Any creature set on fire by you suffers a temporary -2 penalty to their total AC, regardless if they are otherwise resistant or immune to fire. If the fire is extinguished, this penalty ends at the end of
+                    the target's next turn
 
     special-abilities:
       - Proficiencies: Stealth, Sleight of Hand, Fire, Explosives, Traps    
@@ -508,7 +507,6 @@ npc:
       Early in Their short life, Hathunti discovered their distaste for authority and the trill of danger. Since then, they have aligned themselves with the Kaladeshi rebels as the way they could cause the most chaos and
       disruption for the Consulate authorities.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -519,32 +517,3 @@ npc:
     #
     personality: |
       Small, lithe and faceless with shining blue eyes and fine leather armor covering ashen skin. Live free or die!
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

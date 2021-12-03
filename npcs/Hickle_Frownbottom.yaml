@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Toy Maker
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Gnomish
     - Dwarvish
-
 
     #
     # Factions:
@@ -388,7 +385,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Ah little one, what's your favorite animal", "Go, run ask your mother if she'll buy you one today"
+    expressions:
+    - "Ah little one, what's your favorite animal"
+    - "Go, run ask your mother if she'll buy you one today"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +411,7 @@ npc:
     #
     motivations: |
       Improving his skill, making a living, the happiness of children
-      
+
     #
     # Passions:
     #
@@ -421,7 +420,7 @@ npc:
     #
     passions: |
       He loves the delicacy of clockworks and has a large collection of clocks
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       He's vain when it comes to his clockwork toys. He thinks his are the best &amp; gets offended when someone says otherwise
-      
+
     #
     # Secrets:
     #
@@ -439,8 +438,7 @@ npc:
     #
     secrets: | 
       He's been slowly secretly building a clockwork man/Warforged for the last few years
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,35 +463,36 @@ npc:
   #
   specialties:
     skills:
-   - - Forest Gnome Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
-       - Tinker:  You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
-                  after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
-                  to three such devices active at a time. When you create a device, choose one of the following options - 
-                  - Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
-                                   a random direction. It makes noises as appropriate to the creature it represents.
-                  - Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-                  - Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
-                  
-   - - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
-         Cantrip: Mage Hand, Mending
-         1st Level: False Life, Grease, Detect Magic
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 4 Infusions and can Infuse 2 Items  
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+    - Forest Gnome Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
+        Tinker:
+        - Description: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
+                       after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
+                       to three such devices active at a time. When you create a device, choose one of the following options - 
+          Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+                         a random direction. It makes noises as appropriate to the creature it represents.
+          Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+          Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.        
+      Artificer Abilities:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+        Spellcasting:
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
+          Cantrip: Mage Hand, Mending
+          1st Level: False Life, Grease, Detect Magic
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 4 Infusions and can Infuse 2 Items  
+        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
 
-   - - Battle Smith Abilities:
-       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-         3rd Level: Heroism, Shield
-       - Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
-       - Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest  
+      Battle Smith Abilities:
+      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
+        Spellcasting:
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
+          3rd Level: Heroism, Shield
+        Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
+        Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest  
 
     special-abilities:
-      - Proficiencies: Tinker Tool's, Investigation, Sleight of Hand
-      - building lifelike clockwork toys      
+      - Proficiencies: Tinker Tool's, Investigation, Sleight of Hand, building lifelike clockwork toys      
     attacks: |
       1 attack with unarmed strike
     combat-tactics: |
@@ -515,7 +514,6 @@ npc:
       toy making his clockwork creatures more and more lifelike with every new design. When he's not building toys to sell in his store/shop he spends his time on his secret project, a clockwork man that he's been building and
       upgrading for years. He dreams of one day unveiling his clockwork being to the world and receiving the renown he has longed for all his life.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -526,32 +524,3 @@ npc:
     #
     personality: |
       Short and chubby with a bald head, large nose, a big bushy beard and thick multi-lens glasses
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

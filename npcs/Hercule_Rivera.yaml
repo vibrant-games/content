@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Magic Shop Owner
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Abyssal
     - Infernal
-
 
     #
     # Factions:
@@ -385,7 +382,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We can meet all of your magical needs!", "It's difficult to procure, but I may have some of that left in the back"
+    expressions:
+    - "We can meet all of your magical needs!"
+    - "It's difficult to procure, but I may have some of that left in the back"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +408,7 @@ npc:
     #
     motivations: |
       Money
-      
+
     #
     # Passions:
     #
@@ -418,7 +417,7 @@ npc:
     #
     passions: |
       Learning magic tricks
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       Being found out as a charlatan. He's also a bit of a coward
-      
+
     #
     # Secrets:
     #
@@ -436,8 +435,7 @@ npc:
     #
     secrets: | 
       Hercule has no real magic abilities of his own, just slight of hand tricks and uncanny salesmanship
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,11 +460,10 @@ npc:
   #
   specialties:
     skills:
-   - - Feats: Actor, Observant
+    - Feats: Actor, Observant
 
     special-abilities:
-      - Proficiencies: Persuasion, Deception, Sleight of Hand
-      - Far above average sleight of hand skills as it pertains to magic tricks      
+      - Proficiencies: Persuasion, Deception, Sleight of Hand, Far above average sleight of hand skills as it pertains to magic tricks      
     attacks: |
       1 attack with unarmed conflict
     combat-tactics: |
@@ -489,7 +486,6 @@ npc:
       and extensive stock of materials used for the various schools of spellcasting. From holy symbols to spellbook materials, Hercule's carries it all. Now and again, he does actually manage to procure some useful magic items
       for sale, but those are few and far between.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -500,32 +496,3 @@ npc:
     #
     personality: |
       Tall, thin and raven-haired, with a widow's peak and a curly mustache. A fine tailored suit with tales and a top hat
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

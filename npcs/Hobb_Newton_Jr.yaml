@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Livery Worker
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     #
     languages:
     - Common
-
 
     #
     # Factions:
@@ -385,7 +382,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Howdy". "That's a damn fine filly you got there"
+    expressions:
+    - "Howdy"
+    - "That's a damn fine filly you got there"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +408,7 @@ npc:
     #
     motivations: |
       Hard honest work is it's own reward, but cash doesn't hurt
-      
+
     #
     # Passions:
     #
@@ -418,7 +417,7 @@ npc:
     #
     passions: |
       Horses and his family
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       Not the wisest fellow
-      
+
     #
     # Secrets:
     #
@@ -436,8 +435,7 @@ npc:
     #
     secrets: | 
       Might know if other strangers are in town or have been through
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,7 +460,8 @@ npc:
   #
   specialties:
     skills:
-   - - Feats: Mounted Combatant, Tavern Brawler  
+    - Feats: Mounted Combatant, Tavern Brawler  
+   
     special-abilities:
        - Animal Handling. Minor Veterinary Medicine. Horseback Riding         
     attacks: |
@@ -471,7 +470,7 @@ npc:
       Will largely avoid combat unless cornered 
     special-equipment:
     - Animal handling gear
-                                                                   
+
   profile:
 
     #
@@ -486,7 +485,6 @@ npc:
       there is to know about horses and oxen and can even perform minor medical procedures on them. He works the livery with his wife and two young boys. His wife handles most of the bookkeeping and the boys are learning their
       father's trade
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -497,32 +495,3 @@ npc:
     #
     personality: |
       Short and stocky, ruggedly handsome wit blonde hair and blue eyes with standard farm type clothes
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

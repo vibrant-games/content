@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Master of the Revels
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Gnomish
     - Elvish
     - Dwarvisht
-
 
     #
     # Factions:
@@ -386,7 +383,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "What talents have ye, then?"; "Too many things to organize, else the magistrates get ornery"; "Off to the drinktables!"
+    expressions:
+    - "What talents have ye, then?"
+    - "Too many things to organize, else the magistrates get ornery"
+    - "Off to the drinktables!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +410,7 @@ npc:
     #
     motivations: |
       To create the greatest events that the people have ever seen. To balance the need for Order with desires of the commoner
-      
+
     #
     # Passions:
     #
@@ -419,7 +419,7 @@ npc:
     #
     passions: |
       Art. Music. Gatherings
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -437,8 +437,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,43 +462,44 @@ npc:
   #
   specialties:
     skills:
-   - - Forest Gnome Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
-       - Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
-       - Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
+    - Forest Gnome Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
+        Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
+        Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
                              
-   - - Bard Abilities:
-       - Bard Spellcasting: Spell DC 15
-           Cantrip: Mage Hand, Message, Minor Illusion, Vicious Mockery 
-           1st Level: Charm Person, Disguise Self, Tasha's Hideous Laughter, Unseen Servant
-           2nd Level: Calm Emotion, Detect Thoughts, Enthrall
-           3rd Level: Hypnotic Pattern, Major Image, Tongues
-           4th Level: Compulsion, Dimension Door, Polymorph
-           5th Level: Awaken, Legend Lore
-       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
-                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
-       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
-       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
-       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
-       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
-                       being Frightened or Charmed
-       - Expertise: gets double proficiency bonus in
-       - Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip - Fireball and Spirit Guardians
+      Bard Abilities:
+      - Bard Spellcasting: 
+        - Description: Spell DC 15
+          Cantrip: Mage Hand, Message, Minor Illusion, Vicious Mockery 
+          1st Level: Charm Person, Disguise Self, Tasha's Hideous Laughter, Unseen Servant
+          2nd Level: Calm Emotion, Detect Thoughts, Enthrall
+          3rd Level: Hypnotic Pattern, Major Image, Tongues
+          4th Level: Compulsion, Dimension Door, Polymorph
+          5th Level: Awaken, Legend Lore
+        Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
+                            10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+        Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+        Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+        Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+        Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                      being Frightened or Charmed
+        Expertise: gets double proficiency bonus in
+        Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip - Fireball and Spirit Guardians
          
-   - - College of Glamour Abilities:
-        - Mantle of Inspiration: you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed. As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous
-                                 appearance. When you do so, choose a number of creatures you can see and who can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them
-                                 gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks. The number of
-                                 temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level 
-        - Enthralling Performance: you can charge your performance with seductive, fey magic. If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At
-                                   the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each
-                                   target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who
-                                   speaks to it, and it hinders anyone who opposes you, avoiding violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage,
-                                   if you attack it, or if it witnesses you attacking or damaging any of its allies. If a target succeeds on its saving throw, the target has no hint that you tried to charm it
-        - Mantle of Majesty:  you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you cast Command, without expending a spell slot, and you take on an appearance of
-                              unearthly beauty for 1 minute or until your concentration ends (as if you were concentrating on a spell). During this time, you can cast Command as a bonus action on each of your turns, without
-                              expending a spell slot. Any creature charmed by you automatically fails its saving throw against the Command you cast with this feature
+      College of Glamour Abilities:
+      - Mantle of Inspiration: you gain the ability to weave a song of fey magic that imbues your allies with vigor and speed. As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous
+                               appearance. When you do so, choose a number of creatures you can see and who can see you within 60 feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them
+                               gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its reaction to move up to its speed, without provoking opportunity attacks. The number of
+                               temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 10th level, and 14 at 15th level 
+        Enthralling Performance: you can charge your performance with seductive, fey magic. If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At
+                                 the end of the performance, choose a number of humanoids within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each
+                                 target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who
+                                 speaks to it, and it hinders anyone who opposes you, avoiding violence unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage,
+                                 if you attack it, or if it witnesses you attacking or damaging any of its allies. If a target succeeds on its saving throw, the target has no hint that you tried to charm it
+        Mantle of Majesty:  you gain the ability to cloak yourself in a fey magic that makes others want to serve you. As a bonus action, you cast Command, without expending a spell slot, and you take on an appearance of
+                            unearthly beauty for 1 minute or until your concentration ends (as if you were concentrating on a spell). During this time, you can cast Command as a bonus action on each of your turns, without
+                            expending a spell slot. Any creature charmed by you automatically fails its saving throw against the Command you cast with this feature
 
     special-abilities:
       - Proficiencies: Persuasion; Performance; Perception; Insight; History    
@@ -514,7 +514,7 @@ npc:
                             play the instrument while casting a spell that causes any of its targets to be charmed on a failed saving throw thereby imposing disadvantage on the save. This effect applies only if the spell has a
                             somatic or a material component. All instruments of the bards can be used to cast the following spells - fly invisibility levitate and protection from evil and good. In addition the Mac-Fuirmidh
                             cittern can be used to cast barkskin cure wounds and fog cloud.
-                                                                   
+
   profile:
 
     #
@@ -530,7 +530,6 @@ npc:
       magistrates who enlisted her as his assistant and a discerning eye for festival talents. It wasn't long before she was given the role of Master of the Revels and took charge to create some of the most memorable events in
       recent history.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -541,32 +540,4 @@ npc:
     #
     personality: |
       Slender with high cheekbones. Long, beautiful gossamer hair. Glittering black eyes that harken the night sky
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

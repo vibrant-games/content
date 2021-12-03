@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Provisioner; Salve and Ointment Trader
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Elvish
     - Common
     - Halfling
-
 
     #
     # Factions:
@@ -359,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  From a shanty extension to a cluster of market buildings, a door creaks open. "Come in. Get well, my friends."
+    introduction:  From a shanty extension to a cluster of market buildings, a door creaks open. /"Come in. Get well, my friends./"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -386,7 +383,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You've got the smell of battle. I've got what you need", "Seal those wounds. Let old Grien bring more than respite."
+    expressions:
+    - "You've got the smell of battle. I've got what you need"
+    - "Seal those wounds. Let old Grien bring more than respite."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,8 +408,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Grien seeks to serve the greater good for the last years of her long life
-      
+      Grim seeks to serve the greater good for the last years of her long life
+
     #
     # Passions:
     #
@@ -419,7 +418,7 @@ npc:
     #
     passions: |
       Herbs, salves. Helping others
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -437,8 +436,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,23 +461,22 @@ npc:
   #
   specialties:
     skills:
-   - - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-
+    - Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Keen Senses: You have proficiency in the Perception skill
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is /“trance./”) While meditating, you can dream after a fashion. Such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
 
     special-abilities:
-    - Proficiencies: Herbalism; Survival; Alchemy; Medecine   
+    - Proficiencies: Herbalism; Survival; Alchemy; Medecine
     attacks: |
       1 attacks with unarmed strike
     combat-tactics: |
       She's too old to fight
-    special-equipment:
-    - N/A
-                                                                   
+    special-equipment: |
+      N/A
+
   profile:
 
     #
@@ -496,7 +493,6 @@ npc:
       reveres Grien's wisdom and abilities; Tsk, an aging Kenku who has sworn his life to Grien for the healing she provided him when he suffered from a major medical condition; and Miles, a warforged veteren of the militia who
       fled the military of the nearby region and found peace and solace in Grien's teachings and in service to her and her shop. Grien sells medicinal goods, potions, chemicals, and provisions of all sorts.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -507,32 +503,4 @@ npc:
     #
     personality: |
       Frail build yet smooth skin, barely mottled by age. Crops of long, silver hair. Many scarves and textiles fold over her
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+  
