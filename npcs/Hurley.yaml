@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Fool
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Goblin
-
 
     #
     # Factions:
@@ -342,12 +339,11 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Witty
     - Bold
     - Sharp
+
+  improv:
 
     #
     # Introduction:
@@ -387,7 +383,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "A-Hoy Hoy!", "Better a witty Fool than a foolish wit.", "After you M'lady!"
+    expressions:
+    - "A-Hoy Hoy!"
+    - "Better a witty Fool than a foolish wit."
+    - "After you M'lady!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       A comfortable life, safety, power
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       Acting and acrobatics
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       Sometimes he's too smart for his own good
-      
+
     #
     # Secrets:
     #
@@ -438,8 +437,7 @@ npc:
     #
     secrets: | 
       He is privy to all the secrets of the court
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,12 +462,12 @@ npc:
   #
   specialties:
     skills:
-   - - Goblin Abilities:
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
-        - Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
-                             your level.
-        - Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
-        - Mud Slinger:  You gain the cantrip vicious mockery. Charisma is your spellcasting ability for this spell.
+    - Goblin Abilities:
+      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
+        Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
+                           your level.
+        Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
+        Mud Slinger:  You gain the cantrip vicious mockery. Charisma is your spellcasting ability for this spell.
 
     special-abilities:
        Proficient in Acrobatics, Stealth, Sleaigh-of-Hand, Insight, Perception, Deception, Performance, Persuasion         
@@ -479,7 +477,7 @@ npc:
       Will only fight from a sneak attack, otherwise he will run 
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -496,7 +494,6 @@ npc:
       demonstrating feats dexterity. He was hired on the spot. Since then, he has grown accustomed to the comfort of his life at court. While it is demanding and occasionally stressful, he has grown to love his job and
       uses his wit and wisdom to entertain the court and from time to time, to speak truth to power.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -508,32 +505,4 @@ npc:
     personality: |
       Hurley is a clown. He loves to make people laugh and keep them entertained, for which he has a gift. His life started off rough, but he never could have dreamed where it would lead. He loves the life of luxury and has
       become accustomed to it, but he never takes his life for granted and will generally go out of his way to make sure that it doesn't change
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

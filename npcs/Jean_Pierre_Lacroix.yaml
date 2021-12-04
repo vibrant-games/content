@@ -297,7 +297,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Common
     - Elvish
     - Dwarvish
-
 
     #
     # Factions:
@@ -343,12 +341,11 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Snooty
     - Bigoted
     - Sneaky
+
+  improv:
 
     #
     # Introduction:
@@ -361,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A man in the finely tailored tuxedo greets you at door, "hmm. I see you're slightly under-dressed for our establishment"
+    introduction:  A man in the finely tailored tuxedo greets you at door, /"hmm. I see you're slightly under-dressed for our establishment/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -388,7 +385,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Do you have a reservation?", "I'm sorry, we don't serve your kind here"
+    expressions:
+    - "Do you have a reservation?"
+    - "I'm sorry, we don't serve your kind here"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +411,7 @@ npc:
     #
     motivations: |
       Ego, greed and mild classism
-      
+
     #
     # Passions:
     #
@@ -421,7 +420,7 @@ npc:
     #
     passions: |
       Expensive wine
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       His ego
-      
+
     #
     # Secrets:
     #
@@ -439,8 +438,7 @@ npc:
     #
     secrets: | 
       Jean-Pierre listens to very important customers and sell any information he gathers to the local thieve's guild
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -468,14 +466,14 @@ npc:
     - Exceptional customer service skills and a keen ear
 
     special-abilities:
-       Proficient in Performance, Perception        
+       Proficient in Performance, Perception
     attacks: |
       1 attack with unarmed strike
     combat-tactics: |
       Will not fight unless his life is directly threatened 
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -503,32 +501,3 @@ npc:
     #
     personality: |
       Jean-Pierre is a snooty jerk. He's a bigot, a sneak and a backstabber, but he is very good at his job. Unfortunately, he knows it and very proud and boastful of that. 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

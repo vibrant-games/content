@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Politician
-    
 
     #
     # D & D classes (case insensitive):
@@ -338,7 +337,6 @@ npc:
       name: Dumas Family
       role: Public Relations, Politician
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -362,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A tall, barrel-chested, distinguished man sits behind the council desk "We have a job for you while you're in town" 
+    introduction: A tall, barrel-chested, distinguished man sits behind the council desk /"We have a job for you while you're in town/" 
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -389,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "This city bends to the will of our family", "I don't give you leave to adventure in my city", "Guards!!!"
+    expressions:
+    - "This city bends to the will of our family"
+    - "I don't give you leave to adventure in my city"
+    - "Guards!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +414,7 @@ npc:
     #
     motivations: |
       Power
-      
+
     #
     # Passions:
     #
@@ -422,7 +423,7 @@ npc:
     #
     passions: |
       Power
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       Has a chronic resperatory issue
-      
+
     #
     # Secrets:
     #
@@ -440,7 +441,7 @@ npc:
     #
     secrets: |
       He doesn't like that Nicodeamus has been given the reighns of the family
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -480,7 +481,7 @@ npc:
     - Ring of Protection
     - Ring of Spell Turning
     - Ring of Mind Sheilding    
-    
+
   profile:
 
     #
@@ -498,7 +499,7 @@ npc:
       sister, but he understands that they needed to happen for the good of the family. He is, however, very unhappy with how Nicodeamus abuses and tortures his mother. He, in fact, does not like much of what Nicodeamus does, 
       who he is or the decisions he has made for the family and believes that Anastasia should have put him in charge instead of his demented nephew. While he would never make an outright play for leadership, especially while 
       Anastasia is still alive, he has been building his own power base in case the day should ever come. Above all else, he will do anything in his power to protect Delores.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -513,32 +514,3 @@ npc:
       escpecially devoted to his beloved, long-suffering sister, Delores. He is bitter and jealous of the favor that his mother Anastasia, has shown to his nephew Nicodeamus, and believes that he is the rightful heir 
       to the leadership of the Dumas clan. He is not bold enough to attempt a coup, but could possibly be persuaded to sneakily aid a plot that would see his nephew brought low or humiliated, as long as it wasn't to the 
       detriment of the family as a whole       
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

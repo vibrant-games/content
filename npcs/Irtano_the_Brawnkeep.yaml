@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Performer of Wonders; Mercenary; Farmhand; Chef
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Giant
     - Elven
     - Orcish
-
 
     #
     # Factions:
@@ -342,13 +339,12 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Boastful
     - Boorish
     - Confidents
 
+  improv:
+  
     #
     # Introduction:
     # A block of text the DM can read out to the party.
@@ -387,7 +383,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We always have better things to do and this situation would suggest so"; "I've no time for petty squabbles - strength and courage absolves us of such frivolities"; "An age of enlightenment is upon us and it will require strength of body and character"
+    expressions:
+    - "We always have better things to do and this situation would suggest so"
+    - "I've no time for petty squabbles - strength and courage absolves us of such frivolities"
+    - "An age of enlightenment is upon us and it will require strength of body and character"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       This talented giant is far from modest and is always seeking others' celebrations of his strength and prowess. He is also inherently motivated to promote and support the talents and skills of others
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       Justice; Feats of strength and courage; Irtano is a self-proclaimed chef and has a passion for finer foods; he enjoys helping struggling farmers with their farmwork
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       Irtano is terrified of frogs, Grung, and almost any other amphibious creature. This is a genetically derived phobia
-      
+
     #
     # Secrets:
     #
@@ -438,8 +437,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,46 +462,47 @@ npc:
   #
   specialties:
     skills:
-   - - Goliath Abilities:
-       - Natural Athlete: Proficient in Athletics
-       - Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
-       - Powerful Build: Counts as one size larger detemining carrying capacity  
-       - Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
-                  
-   - - Paladin Abilities:
-       - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                       within the same radius. Can use this ability x per long rest
-       - Lay on Hands: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
-       - Fighting Style: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an Attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The
-                                                 weapon must have the Two-Handed or Versatile property for you to gain this benefit 
-       - Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends 
-       - Divine Health: Immune to disease
-       - Extra Attack: Can take and extra attack action each turn       
-       - Spellcasting: DC 13
-         1st Level: Bless, Command, Cure Wounds, Protection from Evil
-         2nd Level: Branding Smite, Lesser Restoration
-       
-   - - Oath of Glory Abilities:
-       - Channel Divinity: 
-         - Peerless Athlete: As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry,
-                             push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet
-         - Inspiring Smite: Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice
-                            within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.
-       - Spellcasting: DC 13
-         1st Level: Guiding Bolt, Heroism
-         2nd Level: Enhance Ability, Magic Weapon
+    - Goliath Abilities:
+      - Natural Athlete: Proficient in Athletics
+        Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
+        Powerful Build: Counts as one size larger detemining carrying capacity  
+        Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
+      Paladin Abilities:
+      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+                      within the same radius. Can use this ability x per long rest
+        Lay on Hands: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+        Fighting Style: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an Attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The
+                        weapon must have the Two-Handed or Versatile property for you to gain this benefit 
+        Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends 
+        Divine Health: Immune to disease
+        Extra Attack: Can take and extra attack action each turn
+        Spellcasting:
+         - Description: DC 13
+           1st Level: Bless, Command, Cure Wounds, Protection from Evil
+           2nd Level: Branding Smite, Lesser Restoration
+      Oath of Glory Abilities:
+      - Channel Divinity: 
+        - Peerless Athlete: As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry,
+                            push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet
+          Inspiring Smite: Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice
+                           within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.
+        Spellcasting:
+        - Description: DC 13
+          1st Level: Guiding Bolt, Heroism
+          2nd Level: Enhance Ability, Magic Weapon
 
     special-abilities:
-       Proficient in Performance, Athletics        
+       Proficient in Performance, Athletics
     attacks: |
       2 attack with his Great Sword
     combat-tactics: |
       Irtano will often stand his ground and await whomever is foolish enough to attack first to do so. 
     special-equipment:
-    - Beads of Refreshment; 
-    - Lifewell Tattoo on his Right Hand - Necrotic Resistance. Irtano has resistance to necrotic damage. 
-                                        - Life Ward. When Irtano would be reduced to O hit points he drops to 1 hit point instead. Once used this property can't be used again until the next dawn.
-                                                                   
+    - Beads of Refreshment 
+    - Lifewell Tattoo on his Right Hand:
+      - Necrotic Resistance. Irtano has resistance to necrotic damage. 
+      - Life Ward. When Irtano would be reduced to O hit points he drops to 1 hit point instead. Once used this property can't be used again until the next dawn.
+
   profile:
 
     #
@@ -516,11 +515,9 @@ npc:
     background-story: |
       The Goliaths of Gond'Qor are known as devout followers of Re, the God of Hooves and Horns [Any Central Goliath Deity]. These religious peoples promote strength and fortitude in their followers and advocate for supporting
       the strengths and good in others. Raised in this complex ritualistic community, Irtano developed a strong set of powers, abilities, and skills, and an even stronger set of ethics about how to treat himself and others. This
-      also imbued him with high expectations as to how others ought to treat him. The Order of Re have set missionary goals whereby they send accomplished acolytes out into the Realms to aid in building up the 'lesser-
-      thans' and promote their code of interconnected support. Irtano was selected as one such acolyte and sent forth to display his strength and abilities and to promote the Order's code of a Realm-wide brotherhood of strength
+      also imbued him with high expectations as to how others ought to treat him. The Order of Re have set missionary goals whereby they send accomplished acolytes out into the Realms to aid in building up the 'lesser-thans' and promote their code of interconnected support. Irtano was selected as one such acolyte and sent forth to display his strength and abilities and to promote the Order's code of a Realm-wide brotherhood of strength
       and support.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -532,32 +529,3 @@ npc:
     personality: |
       Irtano is a devoted man. He's devoted to his gad and to his people and their traditions. The tradition of competition, and Irtano embraces any and all competition with his utmost. He loves to test himself against anyone
       and anything and he loves to brag about his many victories. He does however, tend to get on the nerves of those around him, and as such, lives the life of a wanderer.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

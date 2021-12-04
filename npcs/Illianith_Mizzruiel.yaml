@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Escort / Assassin
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -346,12 +344,11 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Sexy
     - Demure
     - Vicious
+
+  improv:
 
     #
     # Introduction:
@@ -364,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A knock at your Inn door reveals a stunning dark skinned elf. "You're looking for companionship this fine evening?"
+    introduction:  A knock at your Inn door reveals a stunning dark skinned elf. /"You're looking for companionship this fine evening?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "How may I please you?" "What are your tastes?", "My client sends their regards"
+    expressions:
+    - "How may I please you?"
+    - "What are your tastes?"
+    - "My client sends their regards"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +415,7 @@ npc:
     #
     motivations: |
       Revenge
-      
+
     #
     # Passions:
     #
@@ -424,7 +424,7 @@ npc:
     #
     passions: |
       Hunting her family's killers
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +433,7 @@ npc:
     #
     vulnerabilities: |
       She is zealous but still inexperienced
-      
+
     #
     # Secrets:
     #
@@ -442,8 +442,7 @@ npc:
     #
     secrets: | 
       She works for her madame and for the assassin's guild. She knows the names of her employers and her victims
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -468,25 +467,22 @@ npc:
   #
   specialties:
     skills:
-   - - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-                  
-   - - Drow Abilities:
-       - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-       - Keen Senses: Proficiency in Perception
-       - Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-       - Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
-       - Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
-       
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       
-   - - Assassin Abilities:
-       - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
+    - Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+      Drow Abilities:
+      - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
+        Keen Senses: Proficiency in Perception
+        Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
+        Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
+        Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+      Assassin Abilities:
+      - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
 
     special-abilities:
        Proficient in Sleaigh-of-Hand, Stealth, Disguise Kit and Poisoner's Kit        
@@ -496,7 +492,7 @@ npc:
       She will always attack by surprise and go for the immediate kill 
     special-equipment:
     - Dagger of Venom
-                                                                   
+
   profile:
 
     #
@@ -512,7 +508,6 @@ npc:
       carnal side of her nature, she does continue to work as an escort when the assassin work is slow, and she's not out hunting the adventurers that murdered her family. She has sworn to hunt and kill those that killed her
       family and uses most of her spare time and money to accomplish that goal
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -524,32 +519,3 @@ npc:
     personality: |
       Illianith is a hedonist and persues whatever her carnal desires cross her path. She does not have much in the way of morals or a code and does whatever serves her own interests. She is heavily driven by her persuit of
       those who murdered her parents.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

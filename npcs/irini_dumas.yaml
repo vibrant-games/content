@@ -337,7 +337,7 @@ npc:
     - id: Dumas_Family
       name: The Dumas Family
       role: Cult Leader and Recruiter
-      
+
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -388,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Yes my lovelies, dinner is served", "The family could use a handsome face like yours", "And I taste just as sweet"
+    expressions:
+    - "Yes my lovelies, dinner is served"
+    - "The family could use a handsome face like yours"
+    - "And I taste just as sweet"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,8 +414,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Serving her master and growing her "family"
-      
+      Serving her master and growing her /"family/"
+
     #
     # Passions:
     #
@@ -420,7 +423,8 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      serving her master and her "children"     
+      serving her master and her /"children/"
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +433,7 @@ npc:
     #
     vulnerabilities: |
       she's completely insane
-      
+
     #
     # Secrets:
     #
@@ -437,8 +441,7 @@ npc:
     # ???Maximum length???
     #
     secrets: Irini is married to her half-brother. Her father is the Greater Devil that is the family's patron
-      
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,14 +466,14 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Devil Abilities: 
-       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-       - Hellish Ancestry: You are resistant to fire damage.
-       - Art of the Word: You are proficient in the Persuasion skill
-       - Bewitching Words: Can cast Mass Charm once per long rest using Charisma as spellcasting DC
-       
-   - - Cleric Abilities:
-       - Spellcasting: DC 20
+    - Half-Devil Abilities:
+      - Darkvision: Can see 60' in dim light as though it was bright light and in darkness as if it was dim light
+        Hellish Ancestry: You are resistant to fire damage.
+        Art of the Word: You are proficient in the Persuasion skill
+        Bewitching Words: Can cast Mass Charm once per long rest using Charisma as spellcasting DC
+      Cleric Abilities:
+      - Spellcasting:
+        - Description: DC 20
           Cantrips: Guidance, Light, Resistance, Sacred Flame, Thaumaturgy
           1st Level: Bane, Command, Destroy Water, Inflict Wounds
           2nd Level: Zone of Truth, Hold Person, Spiritual Weapon
@@ -481,42 +484,40 @@ npc:
           7th Level: Fire Storm, Plane Shift
           8th Level: Anti-magic Field
           9th Level: Astral Projection
-       - Channel Divinity: Turn Undead, Destroy Undead 
-       - Divine Intervention: Can call her patron to intervene on her behalf
-
-   - - Death Domain Abilities: Proficient with Knives and Torture Implements, 
-       - Reaper: you learn one necromancy cantrip of your choice from any spell list. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures 
-                 within range and within 5 feet of each other
-       - Touch of Death: you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage to the target. 
-                         The damage equals 5 + twice your cleric level
-       - Inescapable Destruction: your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage
-       - Divine Strike: you gain the ability to infuse your weapon strikes with necrotic energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an a 1d8 necrotic 
-                        damage to the target. When you reach 14th level, the extra damage increases to 2d8
-       - Improved Reaper: when you cast a necromancy spell of 1st through 5th level that targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other. If the spell 
-                          consumes its material components, you must provide them for each target.
-       - Spellcasting:
-          Cantrips: Toll The Dead
+        Channel Divinity: Turn Undead, Destroy Undead
+        Divine Intervention: Can call her patron to intervene on her behalf
+      Death Domain Abilities: 
+      - Description: Proficient with Knives and Torture Implements.
+        Reaper: you learn one necromancy cantrip of your choice from any spell list. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures
+                within range and within 5 feet of each other
+        Touch of Death: you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage to the target.
+                        The damage equals 5 + twice your cleric level
+        Inescapable Destruction: your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage
+        Divine Strike: you gain the ability to infuse your weapon strikes with necrotic energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an a 1d8 necrotic
+                       damage to the target. When you reach 14th level, the extra damage increases to 2d8
+        Improved Reaper: when you cast a necromancy spell of 1st through 5th level that targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other. If the spell
+                         consumes its material components, you must provide them for each target.
+        Spellcasting:
+        - Cantrips: Toll The Dead
           1st Level: False Life, Ray of Sickness
-          3rd Level: Blindness/Deafness, Ray of Enfeeblement
+          3rd Level: Blindness\Deafness, Ray of Enfeeblement
           5th Level: Animate Dead, Vampiric Touch
           7th Level: Blight, Death Ward
           9th Level: Antilife Shell, Cloudkill
 
-       
-    special-abilities: 
+    special-abilities:
     - Feats: Actor, Inspiring Leader, Observant, War Caster, Shadow Touched (Invisibility and Cause Fear)
-    - Legendary Resistance: (3/Day), If Irini Dumas fails a saving throw she can choose to succeed instead 
-    - Legendary Actions: Irini Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Irini Dumas regains spent Legendary Actions at the start of her turn
-      - Devils Portal: Irini Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-      - Devils Tongue: Irini Dumas casts Charm Person using Charisma as her spellcasting DC
-      - Devils Children: Irini Dumas can cast Gate, opening a portal to summon up to 5 lesser devils and/or minor undead to join the fight     
+      Legendary Resistance: (3\Day), If Irini Dumas fails a saving throw she can choose to succeed instead
+      Legendary Actions:
+      - Description: Irini Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Irini Dumas regains spent Legendary Actions at the start of her turn
+        Devils Portal: Irini Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
+        Devils Tongue: Irini Dumas casts Charm Person using Charisma as her spellcasting DC
+        Devils Children: Irini Dumas can cast Gate, opening a portal to summon up to 5 lesser devils and\or minor undead to join the fight
     attacks: |
       Spellcasting
       Legendary Actions
     combat-tactics: |
-      Irini will do her best not to have to fight, she prefers sneak attacks and seduction if possible. Failing that she will someone her "children" to fight while she escapes  
-      
+      Irini will do her best not to have to fight, she prefers sneak attacks and seduction if possible. Failing that she will someone her /"children/" to fight while she escapes
     special-equipment:
     - Charm of Attraction
     - Staff of Charming
@@ -534,12 +535,13 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Irini Dumas is the wife and half-sister of Nicodeamus Dumas and eldest grandaughter of Anastasia Dumas. She is Nicodeamus' second in command and the primary recruiter for the family. 
-      She is also the child of a union between Anastasia'a only daughter and the family's patron Devil. She is the high priestess of the family and helps her grandmother with all of the 
-      family rites and ceremonies dedicated to her father. She also has several children of her own with Nicodeamus most of whom have some degree of her devil heritage. In addition to that, she 
-      also has her "children", a group of lesser devils and minor undead (skeletons, zombies, ghouls, Scarecrows, poes, etc.). She is also responsible for recruiting initiates into the family, 
-      training new inductees and sacrificing those that don't make the cut. 
-    #
+      Irini Dumas is the wife and half-sister of Nicodeamus Dumas and eldest grandaughter of Anastasia Dumas. She is Nicodeamus' second in command and the primary recruiter for the family.
+      She is also the child of a union between Anastasia'a only daughter and the family's patron Devil. She is the high priestess of the family and helps her grandmother with all of the
+      family rites and ceremonies dedicated to her father. She also has several children of her own with Nicodeamus most of whom have some degree of her devil heritage. In addition to that, she
+      also has her /"children/", a group of lesser devils and minor undead (skeletons, zombies, ghouls, Scarecrows, poes, etc.). She is also responsible for recruiting initiates into the family,
+      training new inductees and sacrificing those that don't make the cut.
+
+   #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
     # without any length limits.
@@ -548,38 +550,9 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Irini Dumas is a drop dead gorgeous waife of a woman. Her pale, freckled face is silhouetted by long, flowing deep red hair. Her fine features are the kind that catch the attention of men and women alike. 
-      Tiny horns peak out from the top of her forehead, the only visable sign of her hellish heritage. Always dressed in long, flowing, black gowns, she always looks fantastic. Her weapon of choice is seduction 
-      and manipulation, and she is a master of both. Her beauty doesn't hurt at all, but her persuasive abilities and her magic skills, blessed by her father, make her a dangerous package. In addition to that, 
-      she is a zealot, masochist and full on psychopath. However, despite al of this, in her own way she is a devoted mother to her children and to her "Children". While she does her absolute best not to do her 
+      Irini Dumas is a drop dead gorgeous waife of a woman. Her pale, freckled face is silhouetted by long, flowing deep red hair. Her fine features are the kind that catch the attention of men and women alike.
+      Tiny horns peak out from the top of her forehead, the only visable sign of her hellish heritage. Always dressed in long, flowing, black gowns, she always looks fantastic. Her weapon of choice is seduction
+      and manipulation, and she is a master of both. Her beauty doesn't hurt at all, but her persuasive abilities and her magic skills, blessed by her father, make her a dangerous package. In addition to that,
+      she is a zealot, masochist and full on psychopath. However, despite al of this, in her own way she is a devoted mother to her children and to her "Children". While she does her absolute best not to do her
       fighting herself, she will absolutely wade fully into battle to defend her children.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

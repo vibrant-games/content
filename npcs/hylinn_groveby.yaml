@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Bartender
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - ELvish
-
 
     #
     # Factions:
@@ -341,12 +338,11 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Plain
     - Disheveled
     - Gruff
+
+  improv:
 
     #
     # Introduction:
@@ -359,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A dumptruck of an elven woman brushes matted hair from her eyes, waddling over with a tankard. "Fuck it. On the house."
+    introduction:  A dumptruck of an elven woman brushes matted hair from her eyes, waddling over with a tankard. /"Fuck it. On the house./"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -386,7 +382,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Seen me other eye?" laughs; "The seas are generally unkind; to me especially"; "Piracy is a consuming art"
+    expressions:
+    - "Seen me other eye?"
+    - "The seas are generally unkind - to me especially"
+    - "Piracy is a consuming art"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +409,7 @@ npc:
     #
     motivations: |
       Not much other than getting drunk and filling up on fatty foods.
-      
+
     #
     # Passions:
     #
@@ -419,7 +418,7 @@ npc:
     #
     passions: |
       Very little besides feeding herself and getting wasted on cheap ales.
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       Too many to count
-      
+
     #
     # Secrets:
     #
@@ -437,8 +436,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,21 +461,21 @@ npc:
   #
   specialties:
     skills:
-   - - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+    - Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light 
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is /“trance./”) While meditating, you can dream after a fashion; such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
 
     special-abilities:
-       Proficient in Sleaigh-of-Hand        
+       Proficient in Sleaigh-of-Hand
     attacks: |
       1 attack with an unarmed strike or improvised weapon
     combat-tactics: |
       Will only fight if it's life or death, or if she's drunk enough 
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -508,32 +506,3 @@ npc:
     personality: |
       Hylinn is a broken elf. She has pretty much given up on life and mostly subsists rather than lives. She has been beaten and abused for her entire life and it has just become the norm. She gets by however she can and looks
       forward to nothing
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

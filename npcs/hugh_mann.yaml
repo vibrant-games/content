@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Thief
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Draconic
-
 
     #
     # Factions:
@@ -342,12 +339,11 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
-
-  improv:
     - Cunning
     - Sneaky
     - Cowardly
+
+  improv:
 
     #
     # Introduction:
@@ -387,7 +383,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We... I mean I, am very happy to meet you", "Please don't hurt us... I mean Me".
+    expressions:
+    - "We... I mean I, am very happy to meet you"
+    - "Please don't hurt us... I mean Me"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +409,7 @@ npc:
     #
     motivations: |
       Treasure!
-      
+
     #
     # Passions:
     #
@@ -420,7 +418,7 @@ npc:
     #
     passions: |
       Treasure!
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       Uhhh.. 3 kobolds in a cloak
-      
+
     #
     # Secrets:
     #
@@ -438,8 +436,7 @@ npc:
     #
     secrets: | 
       Hugh Mann is in fact 3 kobolds stacked on top of each other in a cloak pretending to be a person
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,32 +461,30 @@ npc:
   #
   specialties:
     skills:
-   - - Kobold Traits: 
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-       - Grovel, Cower & Beg: As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that
-                              can see you. Once you use this trait, you can't use it again until you finish a short or long rest.
-       - Pack Tactics: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
-       - Sunlight Sensitivity: You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.
-
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-      |
-   - - Thief Abilities:
-       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
-       - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
-                            your Dexterity modifier
+    - Kobold Traits:
+      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+        Grovel, Cower & Beg: As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that
+                             can see you. Once you use this trait, you can't use it again until you finish a short or long rest.
+        Pack Tactics: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
+        Sunlight Sensitivity: You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+      Thief Abilities:
+      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
+        Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
+                           your Dexterity modifier
 
     special-abilities:
-       Proficient in Perception, Persuasion, Performance and Deception         
+       Proficient in Perception, Persuasion, Performance and Deception
     attacks: |
       3 attacks with short swords
     combat-tactics: |
-      Will split into 3 and attack if seriously threatened, but only if cowering doesn't work 
+      Will split into 3 and attack if seriously threatened, but only if cowering doesn't work
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -503,7 +498,6 @@ npc:
       Looking for a way to gather more treasure for their tribe, Hugh Mann had the brilliant idea of pretending to be a human to infiltrate their society and steal treasure from the inside. It's not going very well for them,
       but at least they've been able to move about town without attracting too much attention
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -516,32 +510,3 @@ npc:
       Hugh Mann has three seperate personalities for obvious reasons; Keg, Quibbitz and Uurk. Keg is squat and fat and a little off his rocker. Quibbitz is the brains of the operaition, not to say that he's terribly bright, but
       comparatively to the other two, he's a genius. Uurk is the muscle of the group and usually on the bottom of the pile. They are generally cowardly but if cornered and and begging doesn't work, they will all fight
       ferociously. They aren't the best thieves, but they are loyal to their clan and work hard to steal as much treasure as they possibly can.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
