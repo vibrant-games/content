@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Pickpocket / Forger / Spy
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Common
     - Auran
-
 
     #
     # Factions:
@@ -384,7 +381,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Kablam"
+    expressions:
+    - "Kablam"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +406,7 @@ npc:
     #
     motivations: |
       Survival. Serving her masters at the guild
-      
+
     #
     # Passions:
     #
@@ -417,7 +415,7 @@ npc:
     #
     passions: |
       Shiny things
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +424,7 @@ npc:
     #
     vulnerabilities: |
       Kenku Curse
-      
+
     #
     # Secrets:
     #
@@ -435,8 +433,7 @@ npc:
     #
     secrets: | 
       Lots of things that she's done for the guild
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,37 +458,37 @@ npc:
   #
   specialties:
     skills:
-   - - Kenku Abilities:
-       - Expert Forgery: Can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects         
-       - Kenku Training: proficient in your choice of two of the following skills: Acrobatics, Deception, Stealth, and Sleight of Hand. 
-       - Mimicry: can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check
-       - Kenku Curse: Can read and write any language they can learn, but can only use the Mimicry ability to speak
+    - Kenku Abilities:
+      - Expert Forgery: Can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects.
+        Mimicry: can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.
+        Kenku Curse: Can read and write any language they can learn, but can only use the Mimicry ability to speak.
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creature.
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+      Arcane Trickster Abilities:
+      - Spellcasting: 
+        - Description: DC 13
+          Cantrips: Mage Hand, Thaumaturgy, Minor Illusion
+          1st Level: Illusory Script, Silent Image, Disguise Self
+        Mage Hand Legerdemain:
+        - Description: when you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it -
+          Additional Information: 
+          - You can stow one object the hand is holding in a container worn or carried by another creature.
+          - You can retrieve an object in a container worn or carried by another creature.
+          - You can use thieves' tools to pick locks and disarm traps at range.
+          - You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you can use the bonus
+            action granted by your Cunning Action to control the hand
 
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       
-   - - Arcane Trickster Abilities:
-       - Spellcasting: DC 13
-         - Cantrips: Mage Hand, Thaumaturgy, Minor Illusion
-         - 1st Level: Illusory Script, Silent Image, Disguise Self
-       - Mage Hand Legerdemain: when you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it - 
-         - You can stow one object the hand is holding in a container worn or carried by another creature.
-         - You can retrieve an object in a container worn or carried by another creature.
-         - You can use thieves' tools to pick locks and disarm traps at range.
-         - You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you can use the bonus
-           action granted by your Cunning Action to control the hand
-           
     special-abilities:
-       Proficient in Stealth, Sleight-of-Hand, Deception, Thieve's Tools and Forgery Kit        
+       Proficient in Stealth, Sleight-of-Hand, Deception, Thieve's Tools and Forgery Kit
     attacks: |
       1 attack with claws or dagger
     combat-tactics: |
       She'll fight with her dagger if cornerd, but will generally try to run first
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -506,7 +503,6 @@ npc:
       steal some food for herself, she was scouted and recruited by members of the local Thieve's Guild. Knowing of the nature Kenku, she was quickly trained to perform various 
       services for the guild. Her quick fingers make her an excellent pickpocket, her mimicry makes her an excellent spy and forger. She does as she's told and she does it well.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -518,33 +514,5 @@ npc:
     personality: |
       Kablam is fiesty and cute, but is very much on the naive side.  She only really knows the skills and knowledge that have been taught to her by her Thieve's Guild. She is exceptionally sneaky and a talented pickpocket and
       Forger. Her Kenku Curse while limiting as far as conversation, combined with her illusions and Thaumaturgy, her Mimicry makes her a valuable asset to her bosses. Not knowing any other way of life, she is exceptionally
-      loyal to her bosses, but does not trust others easily.  
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      loyal to her bosses, but does not trust others easily.
+  

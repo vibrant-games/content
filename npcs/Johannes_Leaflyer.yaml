@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Bartender
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Common
     - Elvish
     - Dwarvish
-
 
     #
     # Factions:
@@ -357,7 +354,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Behind the bar of the busy pub, a tall handsome half-elf juggles several liquor bottles. "What can I get you friends?"
+    introduction:  Behind the bar of the busy pub, a tall handsome half-elf juggles several liquor bottles. /"What can I get you friends?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -384,7 +381,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "It's all in the wrists", "I invented this drink myslef", "You look like you need more than just a drink
+    expressions:
+    - "It's all in the wrists"
+    - "I invented this drink myslef"
+    - "You look like you need more than just a drink"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +408,7 @@ npc:
     #
     motivations: |
       He's motivated by money and the ladies
-      
+
     #
     # Passions:
     #
@@ -417,7 +417,7 @@ npc:
     #
     passions: |
       He's passionate about showing off and raking in the tips
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       He's easily distracted by a pretty face
-      
+
     #
     # Secrets:
     #
@@ -435,8 +435,7 @@ npc:
     #
     secrets: | 
       He pays attention and knows various things going on around town
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -471,7 +470,7 @@ npc:
       Will not fight unless his life is directly threatened 
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -487,7 +486,6 @@ npc:
       attraction and leans into showing off, and the ladies eat it up. He is smart enough to pay attention to what is going on around him and can be a valuable source of information if he can be briefly pulled away from his
       entertaining the bar crowd
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -498,32 +496,4 @@ npc:
     #
     personality: |
       Johannes is a creature of pure ego. He is lazy and entitled and will persue anything that feeds his ego. His personality is superficial and could deffinitely be considered in the realm of shallow and vacuous 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+ 

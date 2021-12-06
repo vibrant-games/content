@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Merchant
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Common
     - Elvish
-
 
     #
     # Factions:
@@ -384,7 +381,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Oh no, tell me more." Laughs a lot at genuinely funny things. Loves puns at other peoples' expense
+    expressions:
+    - "Oh no, tell me more."
+    - Laughs a lot at genuinely funny things.
+    - Loves puns at other peoples' expense
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +408,7 @@ npc:
     #
     motivations: |
       Loves to sow chaos and will assist in pranks
-      
+
     #
     # Passions:
     #
@@ -417,7 +417,7 @@ npc:
     #
     passions: |
       Good food, especially meat
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       His dead wife, he never loved anyone else. She died at 25 and if mentioned will break down
-      
+
     #
     # Secrets:
     #
@@ -435,8 +435,7 @@ npc:
     #
     secrets: | 
       Lives in a secret city in a magical forest right next to an anti magic kingdom that only has paladins and clerics
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,24 +460,24 @@ npc:
   #
   specialties:
     skills:
-   - - Wizard Abilities:
-         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-         - Spell Mastery: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. 
-                          If you want to cast either spell at a higher level, you must expend a spell slot as normal
-         - Signature Spells: Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don't count against the number of Spells you have prepared, and you can 
-                             cast each of them once at 3rd Level without expending a spell slot.			  
-         - Spellcasting: Spell DC 14 
-            Cantrips: Blade Ward, Mage Hand, Minor Illusion, Fire Bolt
-            1st Level: Alarm, Mage Armor, Shield, Find Familiar
-            2nd Level: Arcane Lock, Phantasmal Force
-       
-   - - School of Abjuration Abilities:
-       - Abjuration Savant:  the gold and time you must spend to copy a abjuration spell into your spellbook is halved.
-       - Arcane Ward: you can weave magic around yourself for protection. When you cast an abjuration spell of 1st level or higher, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself
-                      that lasts until you finish a long rest. The ward has hit points equal to twice your wizard level + your Intelligence modifier. Whenever you take damage, the ward takes the damage instead. If this damage
-                      reduces the ward to 0 hit points, you take any remaining damage. While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever you cast an abjuration spell of 1st level or higher,
-                      the ward regains a number of hit points equal to twice the level of the spell
-           
+    - Wizard Abilities:
+      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
+        Spell Mastery: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. 
+                       If you want to cast either spell at a higher level, you must expend a spell slot as normal
+        Signature Spells: Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don't count against the number of Spells you have prepared, and you can 
+                          cast each of them once at 3rd Level without expending a spell slot.			  
+        Spellcasting: 
+        - Description: Spell DC 14 
+          Cantrips: Blade Ward, Mage Hand, Minor Illusion, Fire Bolt
+          1st Level: Alarm, Mage Armor, Shield, Find Familiar
+          2nd Level: Arcane Lock, Phantasmal Force
+      School of Abjuration Abilities:
+      - Abjuration Savant:  the gold and time you must spend to copy a abjuration spell into your spellbook is halved.
+        Arcane Ward: you can weave magic around yourself for protection. When you cast an abjuration spell of 1st level or higher, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself
+                     that lasts until you finish a long rest. The ward has hit points equal to twice your wizard level + your Intelligence modifier. Whenever you take damage, the ward takes the damage instead. If this damage
+                     reduces the ward to 0 hit points, you take any remaining damage. While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever you cast an abjuration spell of 1st level or higher,
+                     the ward regains a number of hit points equal to twice the level of the spell
+
     special-abilities:
        Proficient in Sleight-of-Hand, Deception and Arcana
        Ambidexterous
@@ -488,7 +487,7 @@ npc:
       He'll try to hide and cast spells
     special-equipment:
     - A ring of protection from evil
-                                                                   
+
   profile:
 
     #
@@ -503,7 +502,6 @@ npc:
       customer's exploits and enjoys a good joke or a prank and loves to help pull off practical jokes. He had a beautiful Elven wife for most of his life whom he doted on endlessly. Unfortunately she passed away much before
       her time and he misses her every day. He loved their life when he was younger and still tries to be as happy as he can everyday. Until they are reunited again.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -514,32 +512,3 @@ npc:
     #
     personality: |
       Karathor is a sweet sad old man. He loves to laugh and to hear the exploits of his customers. He lives vicariously through others and longs for the day that he is reunited with his wife  
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

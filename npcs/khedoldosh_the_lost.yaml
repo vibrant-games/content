@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Oracle; Fortune-teller;
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -316,7 +314,6 @@ npc:
     - Infernal
     - Dwarvish
 
-
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -334,6 +331,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - N/A
 
     #
@@ -359,7 +357,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Khedoldosh maintains a tent/hut at the outskirts of a market or tavern district with a sign above the entrance that glows with faint magical energy and reads, "TELLINGS". It can also be found slowly and carefully wandering from alleyway entrance to alley entrance. It may approach a group to ask for their help to obtain glyphs or sigils of farsight and offer to divulge important information in return.
+    introduction:  Khedoldosh maintains a tent/hut at the outskirts of a market or tavern district with a sign above the entrance that glows with faint magical energy and reads, /"TELLINGS/". It can also be found slowly and carefully wandering from alleyway entrance to alley entrance. It may approach a group to ask for their help to obtain glyphs or sigils of farsight and offer to divulge important information in return.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -370,7 +368,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   A tiny, beholder - the runt of the litter that was summoned that day, you could say - that never developed properly; drapes a cloak over itself and uses well-crafted fake arms and its innate magical capacity to operate them as though real; Perception check (DC 22) allows a person to notice this is not a humanoid; They lean they're body to one side, they're right, showing them one gleaming working eye while they have a prosthetic that remains closed to represent their left eye; their remaining eyes are all underdeveloped or dead and stay limp, tied into a ponytail along with their prosthetic hair
+    appearance:   A tiny, beholder - the runt of the litter that was summoned that day, you could say - that never developed properly; drapes a cloak over itself and uses well-crafted fake arms and its innate magical capacity to operate them as though real; Perception check (DC 22) allows a person to notice this is not a humanoid; They lean they're body to one side, their right, showing them one gleaming working eye while they have a prosthetic that remains closed to represent their left eye; their remaining eyes are all underdeveloped or dead and stay limp, tied into a ponytail along with their prosthetic hair
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -386,7 +384,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You've always got time to see the future, lad/lass. Take a minute to hear what Khedoldosh can offer"; "What can you see? I promise it cannot compare to my eye"; "How often are you offered a glimpse of your fate?"; "Only those who choose blindness over clarity of vision are truly lost..."
+    expressions:
+    - "You've always got time to see the future, lad/lass. Take a minute to hear what Khedoldosh can offer"
+    - "What can you see? I promise it cannot compare to my eye"
+    - "How often are you offered a glimpse of your fate?"
+    - "Only those who choose blindness over clarity of vision are truly lost..."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +412,7 @@ npc:
     #
     motivations: |
       It desires knowing more. About anything. Yet is trapped in the paradox of already believing it knows more than others. Hoping for a revelation to free it from this cognitive prison, Khedolosh remains eternally frustrated. It is driven to uncover the unknown yet knows that revealing the unknown destroys mystery.
-      
+
     #
     # Passions:
     #
@@ -419,7 +421,7 @@ npc:
     #
     passions: |
       Knowledge; History; Magicks
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       Small for its species and a massive ego
-      
+
     #
     # Secrets:
     #
@@ -437,8 +439,7 @@ npc:
     #
     secrets: | 
       Ummmm... It's a Beholder
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,38 +464,35 @@ npc:
   #
   specialties:
     skills:
-   - - Beholder Abilities:
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-       - Bite: Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 8 (2d6) piercing damage.
-       - Antimagic Cone: Khedoldosh's central eye creates an area of antimagic, as in the antimagic field spell, in a 50-foot cone. At the start of each of its turns, Khedoldosh decides which way the cone faces and whether
-                         the cone is active. The area works against Khedoldosh's own eye rays.
-       - Eye Rays:
-         - Fear Ray: The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a 
-                     success.
-         - Telekinetic Ray: If the target is a creature, it must succeed on a DC 12 Strength saving throw or Khedoldosh moves it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of
-                            Khedoldosh's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 ft. in any direction.
-                            Khedoldosh can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.  
-         - Charm Ray: The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by Khedoldosh for 1 hour, or until Khedoldosh harms the creature.
-        
-           
+    - Beholder Abilities:
+      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+        Bite: Melee Weapon Attack. +2 to hit, reach 5 ft., one target. Hit - 8 (2d6) piercing damage.
+        Antimagic Cone: Khedoldosh's central eye creates an area of antimagic, as in the antimagic field spell, in a 50-foot cone. At the start of each of its turns, Khedoldosh decides which way the cone faces and whether the cone is active. The area works against Khedoldosh's own eye rays.
+        Eye Rays:
+        - Fear Ray: The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a
+                    success.
+          Telekinetic Ray: If the target is a creature, it must succeed on a DC 12 Strength saving throw or Khedoldosh moves it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of
+                           Khedoldosh's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 ft. in any direction.
+                           Khedoldosh can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.
+          Charm Ray: The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by Khedoldosh for 1 hour, or until Khedoldosh harms the creature.
+
     special-abilities:
-       - Proficiecies: Insight, History, Arcana, Persuasion, Perception
-       - Feats: Keen Mind, Observant, Telekinetic 
-       - Legendary Resistance: (2/Day), If Khedoldosh The Lost fails a saving throw they can choose to succeed instead 
-       - Legendary Actions: Khedoldosh The Lost can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Khedoldosh The
-                            Lost regains spent Legendary Actions at the start of they're turn
-         - Eye Rays: Khedoldosh The Lost uses one random eye ray.
-       
+    - Proficiecies: Insight, History, Arcana, Persuasion, Perception
+      Feats: Keen Mind, Observant, Telekinetic 
+      Legendary Resistance: (2/Day), If Khedoldosh The Lost fails a saving throw they can choose to succeed instead
+      Legendary Actions:
+      - Description: Khedoldosh The Lost can take 1 Legendary Action. Choosing from the options below. Only one Legendary Action can be used at a time and only at the end of another creature's turn. Khedoldosh The Lost regains spent Legendary Actions at the start of their turn
+        Eye Rays: Khedoldosh The Lost uses one random eye ray.
     attacks: |
       2 attacks with Eye Rays
     combat-tactics: |
       Kedoldosh will largely avoid combat unless pressed. If pressed, it will doff it's disguise and take to flight. If cornered, it will use its eye rays.
     special-equipment:
-      - Tarokka deck: has fifty-four cards, each of which has its own name. Forty of them comprise the common deck, which is divided into four suits: swords, coins, stars, and glyphs. Each suit contains cards numbered one
-                      through nine, plus a tenth card that is called the master of that suit. A card can be referred to by its suit designation or by its name. For instance, the three of glyphs is also known as the healer, and
-                      the wizard card is also known as the master of stars. The remaining fourteen cards make up the high deck, which symbolizes the natural forces of the multiverse. These cards are represented by a crown symbol
-                      and are the most powerful cards in the deck
-                                                                   
+    - Tarokka deck: has fifty-four cards, each of which has its own name. Forty of them comprise the common deck, which is divided into four suits - swords, coins, stars, and glyphs. Each suit contains cards numbered one
+                    through nine, plus a tenth card that is called the master of that suit. A card can be referred to by its suit designation or by its name. For instance, the three of glyphs is also known as the healer, and
+                    the wizard card is also known as the master of stars. The remaining fourteen cards make up the high deck, which symbolizes the natural forces of the multiverse. These cards are represented by a crown symbol
+                    and are the most powerful cards in the deck
+
   profile:
 
     #
@@ -510,7 +508,7 @@ npc:
       whatever gestures he could make out to cast the spell. Flashes of light and shadow burst from nowhere, colliding in mid air in a cloud of grainy black mist that congealed into the form of a beholder. However, the scroll
       had been damaged badly and the verbal and somatic components thus distorted. The unfortunate result was an undeveloped creature, Khedoldosh, who glanced around with its only working eye, realized the imminent danger, and
       darted off into the hills. Needless to say, Gryt Tooth didn't live much longer.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -523,32 +521,3 @@ npc:
       Khedoldosh is a weak and malformed creature. However they use a combination of prostetics, magic and disquise in order to pass as a humanoid fortune teller. They don't really have any kind of precognative abilities, but
       use their telepathic powers to read minds and feed their customers the kind of information that they want to hear. It is very intelligent and has the ego to prove it, but due to it's malformation, it's cowardess outwieghs
       it's confidence when it comes to dealing with conflict. When it comes down to it, it's really just trying to survive in a world that it was never meant to be in
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

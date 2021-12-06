@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Khamal "Headrender" Algolunaka
+  name: Khamal /"Headrender/" Algolunaka
 
   #
   # The NPC artwork.
@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Executioner
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Giant
     - Gol-Kaa
     - Dwarvish
-
 
     #
     # Factions:
@@ -390,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "He wouldn't survive a day where I come from", "His death is no loss to anyone", "How much do you want to bet?"
+    expressions:
+    - "He wouldn't survive a day where I come from"
+    - "His death is no loss to anyone"
+    - "How much do you want to bet?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -467,30 +467,30 @@ npc:
   #
   specialties:
     skills:
-   - - Goliath Abilities:
-       - Natural Athlete: Proficient in Athletics
-       - Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
-       - Powerful Build: Counts as one size larger detemining carrying capacity  
-       - Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
-        
-   - - Barbarian Abilities:
-         - Rage: Can enter a rage as a Bonus Action. 
-            - have advantage on Strength Checks and Strength Saving Throws.
-            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-            - Resistance to bludgeoning, piercing, and slashing damage          
-         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                            but Attack Rolls against him have advantage until his next turn
-         - Extra Attack: Can attack twice each turn	
-         - Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
-         - Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
-                           before doing anything else on that turn.
-       
-   - - Path of the Berserker Abilities:
-       - Frenzy: you can go into a Frenzy when you rage. If you do so, for the Duration of your rage you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When your rage ends, you
-                 suffer one level of Exhaustion
-       - Mindless Rage: you can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your rage, the Effect is suspended for the Duration of the rage 
-           
+    - Goliath Abilities:
+      - Natural Athlete: Proficient in Athletics
+        Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
+        Powerful Build: Counts as one size larger detemining carrying capacity  
+        Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet. 
+      Barbarian Abilities:
+      - Rage: 
+        - Description: Can enter a rage as a Bonus Action. 
+          Additional Information:
+          - have advantage on Strength Checks and Strength Saving Throws.
+          - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+          - Resistance to bludgeoning, piercing, and slashing damage          
+        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                          but Attack Rolls against him have advantage until his next turn
+        Extra Attack: Can attack twice each turn	
+        Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+        Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+                        before doing anything else on that turn.
+      Path of the Berserker Abilities:
+      - Frenzy: you can go into a Frenzy when you rage. If you do so, for the Duration of your rage you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When your rage ends, you
+                suffer one level of Exhaustion
+        Mindless Rage: you can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your rage, the Effect is suspended for the Duration of the rage 
+
     special-abilities:
        - Proficiecies: Athletics, Intimidation, Insight
        - Feats: Great Weapons Master, Sentinel, Mage Slayer 
@@ -501,7 +501,7 @@ npc:
       Khamal will rage and attack head on, axe swinging
     special-equipment:
     - Executioners Axe: Get's +1 for each other sentient creature it has killed that day
-                                                                   
+
   profile:
 
     #
@@ -517,7 +517,7 @@ npc:
       His massive size, skill and rage served him well in their service and eventually he was given the job of executioner due to his strength and skill with an axe. He wears the executioner's mask as a badge of honor even
       though it clearly doesn't offer him any anonymity. Lately he has begun to question the rule of those in charge. His culture dictates that those with the best skills for the job should be doing the job, and its starting to
       become obvious to him that is not the case here.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -530,32 +530,3 @@ npc:
       Khamal is a very straight-forward man. He knows what he beleives in and has no compunction about fighting for it. He has a strong sense of fair play, right and wrong, and justice. He will always intercede when he feels
       that something is not fair. He has recently begun to realize that the nobles that he works for do not live up to his standards of justice and fairness, and may be starting to lean towards rectifying that wrong, most
       likely with his axe
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

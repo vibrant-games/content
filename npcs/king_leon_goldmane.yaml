@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - King
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Common
     - Leonin
     - Celestial
-
 
     #
     # Factions:
@@ -385,7 +382,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  If meeting him in a social setting, he will refer to them as "new friends". If its because of their reputaion, "heroes"
+    expressions:  
+    - If meeting him in a social setting, he will refer to them as /"new friends/". If its because of their reputaion, /"heroes/"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +407,7 @@ npc:
     #
     motivations: |
       He mustn't damage his reputation or dishonour his country. He lives for glory within the bounds of the law
-      
+
     #
     # Passions:
     #
@@ -418,7 +416,7 @@ npc:
     #
     passions: |
       He is very protective of his kings-blade, and he enjoys any chamce he gets to prove his strength on a battlefield.
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       He can get carried away if he is under the premise that he is doing whats "right", and he is hard to stop when he fights
-      
+
     #
     # Secrets:
     #
@@ -436,8 +434,7 @@ npc:
     #
     secrets: | 
       He's King, he's knows all the secrets
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,40 +459,41 @@ npc:
   #
   specialties:
     skills:
-   - - Fighter Abilities:
-         - Fighting Style: Defense
-         - Second Wind: Bonus Action to regain 1d10 + 20
-         - Action Surge: Twice every short/long rest can take an extra action
-         - Extra Attack: Can attack 4 times each turn
-         - Indomitable: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.
-         
-   - - Battle Master Abilities:
-         - Combat Superiority:
-           - Maneuvers: Knows any 9 Maneuvers 
-           - Superiority Dice: You have 6 superiority dice, which are d12s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
-           - Saving Throws: Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC 19
-         - Student of War: Proficeint with Mason's Tools
-         - Know Your Enemy: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the
-                            creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points,
-                            Total class levels, if any, Fighter class levels, if any.
-         - Relentless: when you roll initiative and have no superiority dice remaining, you regain 1 superiority die 
-        
-           
+    - Fighter Abilities:
+      - Fighting Style: Defense
+        Second Wind: Bonus Action to regain 1d10 + 20
+        Action Surge: Twice every short/long rest can take an extra action
+        Extra Attack: Can attack 4 times each turn
+        Indomitable: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.  
+      Battle Master Abilities:
+      - Combat Superiority:
+        - Maneuvers: Knows any 9 Maneuvers 
+          Superiority Dice: You have 6 superiority dice, which are d12s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
+          Saving Throws:
+          - Description: Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC 19
+            Student of War: Proficeint with Mason's Tools
+            Know Your Enemy: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the
+                             creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points,
+                             Total class levels, if any, Fighter class levels, if any.
+          Relentless: when you roll initiative and have no superiority dice remaining, you regain 1 superiority die 
+
     special-abilities:
-       - Proficiecies: Persuasion, Intimidation, Performance, Survival
-       - Feats: Great Weapons Master, Inspiring Leader, Mounted Combatant, Athlete 
-       - Legendary Resistance: (3/Day), If Leon Goldmane fails a saving throw they can choose to succeed instead 
-       - Legendary Actions: Leon Goldmane can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Leon Goldmane regains
-                            spent Legendary Actions at the start of they're turn
-         - Maneuver: Leon Goldmane attacks once with the Kingsblade and uses one maneuver.
-       
+    - Proficiecies: Persuasion, Intimidation, Performance, Survival
+      Feats: Great Weapons Master, Inspiring Leader, Mounted Combatant, Athlete 
+      Legendary Resistance: (3/Day), If Leon Goldmane fails a saving throw they can choose to succeed instead 
+      Legendary Actions: 
+      - Description: Leon Goldmane can take 1 Legendary Action. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Leon Goldmane regains
+                     spent Legendary Actions at the start of they're turn
+        Maneuver: Leon Goldmane attacks once with the Kingsblade and uses one maneuver.
+
     attacks: |
       4 attacks with The Kingsblade
     combat-tactics: |
       King leon is merciful on the battlefield, choosing to rather incapacitate and imprison his humanoid enemies, rather than killing them. However, when encountering enemies who the king doesn't consider people, he is merciless and a killer.
     special-equipment:
-      - The Kingsblade: melee weapon attack: +14 to hit, reach 5ft., Hit: (2d6 + 1d8 + 8) - an heirloom passed from king to king. It is a +3 greatsword (technically whoever wields this blade is the king)
-      - +2 mithril plate that he wears underneath his clothes.
+    - The Kingsblade: 
+      - Description: melee weapon attack - +14 to hit, reach 5ft., Hit - (2d6 + 1d8 + 8) - an heirloom passed from king to king. It is a +3 greatsword (technically whoever wields this blade is the king)
+      Plate Armor: +2 mithril plate that he wears underneath his clothes.
       
   profile:
 
@@ -510,7 +508,7 @@ npc:
       King Leon started out as a low-born soldier, however he quickly rose up the ranks with his natural talent and strength. He became known for his reputation as a powerful leader who commanded respect. After a while spent at
       this high position in the military, he completed a truly amazing feat of martial prowess . He became known for this deed throughout the land, and eventually word reached the king at the time, who had no heir to pass the
       crown to, so named Leon as his successor.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -521,32 +519,3 @@ npc:
     #
     personality: |
       King Leon is a clever and stalwart King. An imposing figure with incomparable martial prowess, he is generally well regarded and revered among his people and demands respect from his foes.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

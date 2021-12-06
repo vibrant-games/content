@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - River Guide
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +295,7 @@ npc:
     # Optional.
     #
     tendencies:
-
+    - N/A
 
     #
     # Languages the character speaks
@@ -314,7 +313,6 @@ npc:
     - Merfolk
     - Aquan
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -361,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Pulling himself up on the riverside dock "I understand you need a guide down the Umara safely, I'm the best there is!"
+    introduction:  Pulling himself up on the riverside dock /"I understand you need a guide down the Umara safely, I'm the best there is!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   7'5" tall with deep purple scaled skin, handsome features, lightly armored with and abundance of pouches, webbed digits
+    appearance:   7'5/" tall with deep purple scaled skin, handsome features, lightly armored with and abundance of pouches, webbed digits
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -388,7 +386,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I'll get ya there", "Best guide on the river!"
+    expressions:
+    - "I'll get ya there"
+    - "Best guide on the river!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +412,7 @@ npc:
     #
     motivations: |
       Money and Adventure
-      
+
     #
     # Passions:
     #
@@ -421,7 +421,7 @@ npc:
     #
     passions: |
       Baubles
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       He's got sticky fingers and steals for the sake of stealing
-      
+
     #
     # Secrets:
     #
@@ -439,8 +439,7 @@ npc:
     #
     secrets: | 
       He was of the Cosi Creed and still follows the ways of the Trickster God out of habit
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,29 +464,30 @@ npc:
   #
   specialties:
     skills:
-   - - Merfolk Traits:
-        - The Creed of the Trickster: No merfolk will openly admit to following the creed of the trickster, but those who do view Cosi as an ally who can grant them control over the chaotic forces of the world
-        - Amphibious: You can breathe air and water
-        - Trickster Talents:  You have proficiency in the Sleight of Hand and Stealth skills
-        - Cantrips: Vicious Mockery Spell DC 16
+    - Merfolk Traits:
+      - The Creed of the Trickster: No merfolk will openly admit to following the creed of the trickster, but those who do view Cosi as an ally who can grant them control over the chaotic forces of the world
+        Amphibious: You can breathe air and water
+        Trickster Talents:  You have proficiency in the Sleight of Hand and Stealth skills
+        Cantrips: Vicious Mockery Spell DC 16
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+      Arcane Trickster Abilities:
+      - Spellcasting:
+        - Description: DC 12
+          Cantrips: Mage Hand, Shocking Grasp, Shape Water
+          1st Level: Hideous Laughter, Disguise Self, Witch Bolt
+        Mage Hand Legerdemain:
+        - Description: when you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it - 
+          Additional Information:
+          - You can stow one object the hand is holding in a container worn or carried by another creature.
+          - You can retrieve an object in a container worn or carried by another creature.
+          - You can use thieves' tools to pick locks and disarm traps at range.
+          - You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you can use the bonus
+            action granted by your Cunning Action to control the hand
 
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-       
-   - - Arcane Trickster Abilities:
-       - Spellcasting: DC 12
-         - Cantrips: Mage Hand, Shocking Grasp, Shape Water
-         - 1st Level: Hideous Laughter, Disguise Self, Witch Bolt
-       - Mage Hand Legerdemain: when you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it - 
-         - You can stow one object the hand is holding in a container worn or carried by another creature.
-         - You can retrieve an object in a container worn or carried by another creature.
-         - You can use thieves' tools to pick locks and disarm traps at range.
-         - You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you can use the bonus
-           action granted by your Cunning Action to control the hand
-           
     special-abilities:
        Proficient in Stealth, Sleight-of-Hand, Deception, Nature, Survival, Thieve's Tools and Forgery Kit        
     attacks: |
@@ -496,7 +496,7 @@ npc:
       He'll do his best to sneak attack with his net to restrain opponents if possible then will attack with either his sword or his spellcasting
     special-equipment:
     - N/A
-                                                                   
+
   profile:
 
     #
@@ -512,7 +512,6 @@ npc:
       Zendikar's merfolk to abandon their gods, but Kailanno still maintains many of his beliefs and habits, despite no longer believing in Cosi himself. Because of this, he enjoys playing sleight of hand tricks, card tricks
       and even stealing small baubles and trinkets from the people he's guiding. This has gotten him in trouble more than once
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -524,33 +523,4 @@ npc:
     personality: |
       Kailanno is a boastful about his abilities, but can back them up. There are few better river guides out there. He is sly and cunning and has been know to sell his his customers down the river so to speak. He also has
       sticky finger and while he makes a decent living, he frequently steals for the fun of it. He collects all kinds of baubles and oddities and is not at all remorseful about relieving them from his customers when they
-      aren't looking   
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      aren't looking

@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Wandering Tinkerer; Wanderer; Repairman; Contractor
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Gnomish
     - Common
     - Dwarvish
-
 
     #
     # Factions:
@@ -385,7 +382,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Gimme a minute, I'll make something to fix this"; "Ain't got a chance against my chicken"; "Wanna watch me make sumthin outta notihin?"
+    expressions:
+    - "Gimme a minute, I'll make something to fix this"
+    - "Ain't got a chance against my chicken"
+    - "Wanna watch me make sumthin outta notihin?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +409,7 @@ npc:
     #
     motivations: |
       To bring technology to the fore of civilization. Kaz seeks to create the greatest and most useful inventions the worlds have ever seen.
-      
+
     #
     # Passions:
     #
@@ -418,7 +418,7 @@ npc:
     #
     passions: |
       Building and creating new things; Loves doing puzzles;
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       If he sees something in disrepair, Kaz can rarely help himself from fixing it
-      
+
     #
     # Secrets:
     #
@@ -436,8 +436,7 @@ npc:
     #
     secrets: | 
       He can't read
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,34 +461,33 @@ npc:
   #
   specialties:
     skills:
-   - - Rock Gnome Abilities:
-        - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Artificers Lore: Whenever making an History check related to magic items, alchemical objects and technological devices, add twice your proficiency bonus 
-        - Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
-        
-   - - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
-         Cantrip: Mage Hand, Mending
-         1st Level: Absorb Elements, Detect Magic, Grease, Disguise Self
-         2nd Level: Heat Metal, Continuous Flame
-       - Infuse Item: Imbue 2 mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
-       - Infusions Known: 4 -  Homunculus Servant, Replicate Magic Weapon, Mind Sharpener, Enhanced Arcane Focus      
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-       
-   - - Artillerist Abilities:
-       - Tool Proficiency: Proficient in Woodcarver's Tools
-       - Artillerist Spells:
-         3rd Level: Shield, Thunderwave
-         5th Level: Scortching Ray, Shatter
-       - Eldritch Cannon: Force Ballista - Steam Gun - Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature,
+    - Rock Gnome Abilities:
+      - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Artificers Lore: Whenever making an History check related to magic items, alchemical objects and technological devices, add twice your proficiency bonus 
+        Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
+      Artificer Abilities:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+        Spellcasting:
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
+          Cantrip: Mage Hand, Mending
+          1st Level: Absorb Elements, Detect Magic, Grease, Disguise Self
+          2nd Level: Heat Metal, Continuous Flame
+        Infuse Item: Imbue 2 mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+        - Infusions Known: 4 -  Homunculus Servant, Replicate Magic Weapon, Mind Sharpener, Enhanced Arcane Focus      
+        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+      Artillerist Abilities:
+      - Tool Proficiency: Proficient in Woodcarver's Tools
+        Spellcasting:
+        - 3rd Level: Shield, Thunderwave
+          5th Level: Scortching Ray, Shatter
+        Eldritch Cannon: Force Ballista - Steam Gun - Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature,
                                            it is pushed up to 5 feet away from the cannon
-       - Arcane Firearm: You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand,
-                         staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely. You can use your
-                         arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell's damage rolls equal to the
-                         number rolled
-           
+        Arcane Firearm: You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand,
+                        staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely. You can use your
+                        arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell's damage rolls equal to the
+                        number rolled
+
     special-abilities:
        - Proficiecies: Persuasion, History, Investigation, Survival, Woodcarver's Tools
        - Feats: N/A 
