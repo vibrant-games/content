@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Sailor; Tattoo Artist; Marksman; Musician
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Common
     - Thieves' Cant
     - Elvish
-
 
     #
     # Factions:
@@ -385,7 +382,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You know, not only do I sing like an Efreeti, I can also hit a Meeroskos from a hundred yards"; "I'll liven up this mundanity..."; "How long can you stare at the moon?"
+    expressions:
+    - "You know, not only do I sing like an Efreeti, I can also hit a Meeroskos from a hundred yards"
+    - "I'll liven up this mundanity..."
+    - "How long can you stare at the moon?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +409,7 @@ npc:
     #
     motivations: |
       Friendship and emotional or sexual intimacy are Kraven's greatest desires. Not keen on morality or self-actualization, per se, he often tries to impress others at the cost of fulfilling his own desires.
-      
+
     #
     # Passions:
     #
@@ -418,7 +418,7 @@ npc:
     #
     passions: |
       Sailing; Visual art; Tattoos; Great Cats
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       Magical and silvered weapons
-      
+
     #
     # Secrets:
     #
@@ -436,8 +436,7 @@ npc:
     #
     secrets: | 
       Kraven is a weretiger.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,55 +461,54 @@ npc:
   #
   specialties:
     skills:
-   - - Weretiger Abilities:
-       - Keen Hearing and Smell: Advantage on perception rolls that involve Hearing and Sight
-       - Tough Hide: +2 to AC in Tiger and Half-Tiger forms. 
-       - Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
-       - Heightened Prowess: +1 to Strength and Dexterity saving throws in Tiger or Half-Tiger
-       - Shapeshift: The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any
-                     equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies
-       - The Curse: Humanoid Creatures he bites must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
-       - Pounce: (Tiger or Hybrid Form Only). If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or
-                 be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action
-                 
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-       
-   - - Swashbuckler Abilities:
-       - Fancy Footwork: you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest
-                         of your turn
-       - Rakish Audacity: You can give yourself a bonus to your initiative rolls equal to your Charisma modifier. You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your
-                          Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still
-                          apply to you.
-       
-       - Bard Spellcasting: Spell DC 14
-           Cantrip: Mage Hand, Vicious Mockery, Minor Illusion
-           1st Level: Bane, Charm Person, Puppet, Hideous Laughter
-           2nd Level: Crown of Madness, Heat Metal, Detect Thoughts
-           3rd Level: Nondetection, Dispel Magic, Fear        
-       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d8. Once within the next 
+    - Weretiger Abilities:
+      - Keen Hearing and Smell: Advantage on perception rolls that involve Hearing and Sight
+        Tough Hide: +2 to AC in Tiger and Half-Tiger forms. 
+        Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
+        Heightened Prowess: +1 to Strength and Dexterity saving throws in Tiger or Half-Tiger
+        Shapeshift: The weretiger can use its action to polymorph into a tiger-humanoid hybrid or into a tiger, or back into its true form, which is humanoid. Its statistics, other than its size, are the same in each form. Any
+                    equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies
+        The Curse: Humanoid Creatures he bites must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
+        Pounce: (Tiger or Hybrid Form Only). If the weretiger moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or
+                be knocked prone. If the target is prone, the weretiger can make one bite attack against it as a bonus action          
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+      Swashbuckler Abilities:
+      - Fancy Footwork: you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest
+                        of your turn
+        Rakish Audacity: You can give yourself a bonus to your initiative rolls equal to your Charisma modifier. You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use your
+                         Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak Attack still
+                         apply to you.
+      Bard Abilities:
+      - Bard Spellcasting: 
+        - Description: Spell DC 14
+          Cantrip: Mage Hand, Vicious Mockery, Minor Illusion
+          1st Level: Bane, Charm Person, Puppet, Hideous Laughter
+          2nd Level: Crown of Madness, Heat Metal, Detect Thoughts
+          3rd Level: Nondetection, Dispel Magic, Fear        
+        Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d8. Once within the next 
                              10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
-       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
-       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
-       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
-       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
-                       being Frightened or Charmed
+        Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+        Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+        Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+        Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                      being Frightened or Charmed
                        
-   - - College of Ink Abilities:
-       - Connoisseur of Symbols: you have advantage on any ability check that you make using Arcana, History, Nature, Religion or your Tattooist’s Supplies or Calligrapher’s Supplies proficiencies to determine the nature of a
-                                 tattoo, sigil, or symbol. This includes symbols using a language you do not understand, so long as the symbol is mostly comprised of other shapes and images. This allows you to identify magic
-                                 tattoos with a successful check as well as understand basic warnings and information communicated through markings
-       - Lasting Inspiration: you can imbue your Bardic Inspiration into a tattoo. When you are tattooing someone, you may expend all remaining uses of your Bardic Inspiration to imbue one Bardic Inspiration die into the tattoo.
-                              The tattoo receives your current Bardic Inspiration die and does not increase when you increase in level. Once the tattoo is complete, the bearer may use a bonus action to activate the tattoo, adding
-                              your Bardic Inspiration die to their next attack roll, saving throw, or ability check. Once the recipient has used the tattoo in this fashion, it cannot be used again until they complete a long rest.
-                              You may add Lasting Inspiration to any tattoo you craft, be it magical or not. Adding Lasting Inspiration to a magical tattoo does not impact or impede its other effects in any way. Once your Bardic
-                              Inspiration die has increased, you may spend one hour performing a touch up on a tattoo you have previously invested with Lasting Inspiration. At the end of the hour, you expend one use of your
-                              Bardic Inspiration. Once this is complete, the Lasting Inspiration die increases to your current Bardic Inspiration die. You cannot perform touch ups in this way on another artist’s tattoos. In
-                              addition, you are now considered to have achieved the necessary tattoo artist notoriety required to study under an established tattoo adept, even if you have never maintained a shop
-               
+      College of Ink Abilities:
+      - Connoisseur of Symbols: you have advantage on any ability check that you make using Arcana, History, Nature, Religion or your Tattooist’s Supplies or Calligrapher’s Supplies proficiencies to determine the nature of a
+                                tattoo, sigil, or symbol. This includes symbols using a language you do not understand, so long as the symbol is mostly comprised of other shapes and images. This allows you to identify magic
+                                tattoos with a successful check as well as understand basic warnings and information communicated through markings
+        Lasting Inspiration: you can imbue your Bardic Inspiration into a tattoo. When you are tattooing someone, you may expend all remaining uses of your Bardic Inspiration to imbue one Bardic Inspiration die into the tattoo.
+                             The tattoo receives your current Bardic Inspiration die and does not increase when you increase in level. Once the tattoo is complete, the bearer may use a bonus action to activate the tattoo, adding
+                             your Bardic Inspiration die to their next attack roll, saving throw, or ability check. Once the recipient has used the tattoo in this fashion, it cannot be used again until they complete a long rest.
+                             You may add Lasting Inspiration to any tattoo you craft, be it magical or not. Adding Lasting Inspiration to a magical tattoo does not impact or impede its other effects in any way. Once your Bardic
+                             Inspiration die has increased, you may spend one hour performing a touch up on a tattoo you have previously invested with Lasting Inspiration. At the end of the hour, you expend one use of your
+                             Bardic Inspiration. Once this is complete, the Lasting Inspiration die increases to your current Bardic Inspiration die. You cannot perform touch ups in this way on another artist’s tattoos. In
+                             addition, you are now considered to have achieved the necessary tattoo artist notoriety required to study under an established tattoo adept, even if you have never maintained a shop
+
     special-abilities:
        - Proficiencies: Performance; Persuasion; Perception; Survival
        - Feats: Lucky 
@@ -537,7 +535,7 @@ npc:
       Kraven set forth on such an information campaign but was met with rebukes and violence. His lycanthropic form was incredibly dangerous in defence of many violent altercations, many of which unfortunately resulted in
       murders. Kraven thus turned his hand to what was in his heart: sailing, artwork, shadows, magic, mystery, and music. Combining these passions, Kraven is one of the first and only tattoo artists in the region who can
       offer magic tattoos - at a costly price.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -549,32 +547,3 @@ npc:
     personality: |
       Kraven is a sly and cunning individual, but hides it under a facade of jovial pleasantness. He loves a good chat, or a rousing song, but he's definitely not afraid to fight if hes pressed to it. He's smooth and charasmatic
       and has no problem expressing his pansexuality
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

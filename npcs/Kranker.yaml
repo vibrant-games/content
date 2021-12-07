@@ -298,7 +298,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,8 +312,6 @@ npc:
     languages:
     - Common
     - Goblin
-
-
 
     #
     # Factions:
@@ -338,7 +335,6 @@ npc:
     - id: Collegium_Imaginata
       name: Collegium Imaginata
       role: Lab Assistant
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -390,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I'm carry that for you sir?", "Kranker likes work for Mr. Oswald sir", "I learns to splode things, boom!" 
+    expressions:
+    - "I'm carry that for you sir?"
+    - "Kranker likes work for Mr. Oswald sir"
+    - "I learns to splode things, boom!" 
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +413,7 @@ npc:
     #
     motivations: |
       Learning and helping his boss  
-      
+
     #
     # Passions:
     #
@@ -423,7 +422,7 @@ npc:
     #
     passions: |
       Making things explode
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       cautiosly reckless
-      
+
     #
     # Secrets:
     #
@@ -441,7 +440,7 @@ npc:
     #
     secrets: |
       Loves fire but is afraid of it 
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,23 +465,24 @@ npc:
   #
   specialties:
     skills:
- - - Gremlin Abilities:
+    - Gremlin Abilities:
       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-      - Almost Fire Proof: Resistant to fire damage
-      - Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
-      - Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
+        Almost Fire Proof: Resistant to fire damage
+        Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
+        Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
       
-  - - Artificer Abilities:
+      Artificer Abilities:
       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-        Cantrip: Mage Hand, Mending, Shocking Grasp
-        1st Level: Faerie Fire, Cure Wounds
-      - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 4 Infusions and can Infuse 2 items
+        Spellcasting:
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
+          Cantrip: Mage Hand, Mending, Shocking Grasp
+          1st Level: Faerie Fire, Cure Wounds
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 4 Infusions and can Infuse 2 items
  
     special-abilities:
     - Proficiencies: Proficient in Perception, Sleight of Hand, Theive's Tools, Tinker's Tools, Smith's Tools     
-    - Feats: Lucky                    
-    
+    - Feats: Lucky
+
     attacks: |
       Has 1 attack. Will range attack with his Blast Orb or bite or dagger in melee range
     combat-tactics: |
@@ -491,7 +491,6 @@ npc:
     - Tinker's, Thieve's and Smith's Tools
     - Dagger
 
-    
   profile:
 
     #
@@ -505,7 +504,7 @@ npc:
       Kranker grew up in a clan that were former slaves and currently closely related to the naturally tinkering Rock Gnomes. The Gremlin Clan are different than other goblins because of their relationship with the gnomes. 
       Kranker grew up with an affinity for artifice and creating. Many of his clan's members have been invited to work with the Collegium Imaginata in various capacities, himself included. Kranker has become the trusted 
       personal assistant of Collegium founder Oswald Vardklemp and works closely with him helping to train his son Eugene. In his spare time, he likes to study and advnce his own skills as an artificer
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -518,32 +517,3 @@ npc:
       Kranker and his clan are all incredibly intelligent and creative for goblins. Like many of of his clan, he also has an affinity for fire and things that explode and leans towards the artiliery side of artifice. He is 
       bright and earnest in his pursuit of knowledge and willingness to be helpful. He is reckless like most of his people, but cautiously so. He's hurt himself enough times to be weary of explosions, but it clearly doesn't 
       stop him frmo researching his chosen field.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

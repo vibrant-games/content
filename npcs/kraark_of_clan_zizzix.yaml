@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Thief
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Undercommon
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -388,7 +385,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I don't know what you mean, I've had this for years", "You wouldn't hurt poor Kraark, would you?"
+    expressions:
+    - "I don't know what you mean, I've had this for years"
+    - "You wouldn't hurt poor Kraark, would you?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +411,7 @@ npc:
     #
     motivations: |
       Money, money and money
-      
+
     #
     # Passions:
     #
@@ -421,7 +420,7 @@ npc:
     #
     passions: |
       Food. He fancies himself the greatest goblin chef ever.... he is very much not
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       He's a goblin, most people don't like goblins
-      
+
     #
     # Secrets:
     #
@@ -439,8 +438,7 @@ npc:
     #
     secrets: | 
       He may know any manner of things going on in the city's underworld
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,35 +463,33 @@ npc:
   #
   specialties:
     skills:
-   - - Goblin Abilities:
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
-        - Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
-                             your level.
-        - Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
-         
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-                     
-   - - Thief Abilities:
-       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action 
-       - Second Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
-                            your Dexterity modifier
-               
+    - Goblin Abilities:
+      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
+        Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
+                           your level.
+        Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns. 
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail              
+      Thief Abilities:
+      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action 
+        Second Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
+                           your Dexterity modifier
+
     special-abilities:
        - Proficiecies: Stealth, Sleight of Hand, Investigation, Thieve's Tools
        - Feats: N/A 
-       
+
     attacks: |
       1 attack with dagger, 1 with bite or claw (1d4)
     combat-tactics: |
       Will mostly try to run away or beg if possible, but will fight fiercely and savagely if cornered 
     special-equipment:
       - Dagger
-      
+
   profile:
 
     #
@@ -506,7 +502,7 @@ npc:
     background-story: |
       Kraark was raised and still lives with a clan of goblins that has worked for the city's Thieve's Guild for generations. The guild has done well by his clan and they have been good steady earners for the guild. Small and
       quick, he can easily get in and out of places unnoticed that others have trouble with so occasionally he gets called on for bigger robbery jobs, but most of the time hes just a street thief.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -516,33 +512,3 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Kraark is small and quick and cowardly. He'd much rather run than fight, and will beg for mercy if clearly caught and outmatched. He is very loyal to both his clan and his guild, but can probably be bribed for information 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

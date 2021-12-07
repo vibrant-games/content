@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Playwright
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Common
     - Gnomish
-
 
     #
     # Factions:
@@ -384,7 +381,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Perhaps my best years are gone. But I wouldn't want them back. Not with the fire in me now."; "What does viduity mean?"
+    expressions:
+    - "Perhaps my best years are gone. But I wouldn't want them back. Not with the fire in me now."
+    - "What does viduity mean?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +407,7 @@ npc:
     #
     motivations: |
       It's Krapp's birthday today. He's celebrating. By himself. He has recorded local history on his Ansible for years.
-      
+
     #
     # Passions:
     #
@@ -417,7 +416,7 @@ npc:
     #
     passions: |
       Loves eating bananas, though they give him severe gas. He stares intently into eyes, which he feels glow from the heart.
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       The word "gooseberry" shocks him into a withdrawn reverie. Krapp's Last Parchment is rolled up in his pocket.
-      
+
     #
     # Secrets:
     #
@@ -435,8 +434,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,24 +459,24 @@ npc:
   #
   specialties:
     skills:
-   - - Forest Gnome Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
-       - Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
-       - Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
-               
+    - Forest Gnome Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
+        Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
+        Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
+
     special-abilities:
        - Proficiecies: Persuasion, Insight
        - Feats: N/A 
-       
+
     attacks: |
       1 attack with unarmed strike
     combat-tactics: |
-      Won't fight unless he absilutely has to 
+      Won't fight unless he absolutely has to 
     special-equipment:
     - The Ansible of Time: which he often rewinds and replays. Contains all local history from the past three decades.
-    - Krapps Last Parchment: a half-written play about a disappointed gnome in a pub on his birthday. Very hairy parchment.
-      
+      Krapps Last Parchment: a half-written play about a disappointed gnome in a pub on his birthday. Very hairy parchment.
+
   profile:
 
     #
@@ -497,7 +495,7 @@ npc:
       unsuccessful life. Currently, Krapp is middle-aged, and his unhappiness, his mistakes, his missed opportunities, the love of his life with scratches on her legs from a gooseberry bush, are all captured in the Ansible.
       So, too, are all local events. In his attic apartment, Krapp has numerous rolls of cheap, hairy goatskin parchment, on which he has penned his strange, apocalyptic plays.  His attic is also littered with black, slippery
       banana peels, and fruit flies are his flatmates, even in winter.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -509,32 +507,3 @@ npc:
     personality: |
       Krapp is a sad sack of a gnome. He writes and he drinks and he sulks, in a downward spiral of meloncholy. He has managed to keep an accurate history of the surrounding region for decades, but seems reluctant to share it
       with anybody. His plays and poetry on the other hand, he's more than happy to share, as terrible as it is. 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
