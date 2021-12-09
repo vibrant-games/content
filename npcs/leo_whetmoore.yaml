@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Tavern Keeper
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Elvish
     - Undercommon
     - Infernal
-
 
     #
     # Factions:
@@ -388,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Ye know yer own business, even?"; "Oy, grub n ale and a few curiosities for ya?"; "Time'll do ya no favors, friend";
+    expressions:
+    - "Ye know yer own business, even?"
+    - "Oy, grub n ale and a few curiosities for ya?"
+    - "Time'll do ya no favors, friend"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +412,7 @@ npc:
     #
     motivations: |
       To grow his underground organized crime syndicate beyond the current city. Murder of royals. Accrual of wealth.
-      
+
     #
     # Passions:
     #
@@ -421,7 +421,7 @@ npc:
     #
     passions: |
       Wealth and power. Leo is ruthless in his pursuit of these things.
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       Overconfidence
-      
+
     #
     # Secrets:
     #
@@ -439,8 +439,7 @@ npc:
     #
     secrets: | 
       Leo's Tavern, "The Lion's Mane", is a front for his organized crime syndicate.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,34 +464,34 @@ npc:
   #
   specialties:
     skills:
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus
-                      
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-       
-   - - Mastermind Abilities:
-       - Master of Intrigue: you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice
-       - Master of Tactics: you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than
-                            5 feet of you, if the target can see or hear you.
-       - Insightful Manipulator:  if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if
-                                  the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice;
-                                  - Intelligence score
-                                  - Wisdom score
-                                  - Charisma score
-                                  - Class levels (if any)
-                                  - At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any
-               
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+                      instead of his normal Proficiency Bonus              
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+      Mastermind Abilities:
+      - Master of Intrigue: you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice
+        Master of Tactics: you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than
+                           5 feet of you, if the target can see or hear you.
+        Insightful Manipulator:  
+        - Description: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if
+                       the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice;
+          Additional Information:
+          - Intelligence score
+          - Wisdom score
+          - Charisma score
+          - Class levels (if any)
+          - At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any
+
     special-abilities:
        - Proficiencies: Acrobatics, Athletics, Persuasion, Intimidation, Thieves' Tools, Disguise Kit, Forgery Kit, Three-Dragon Ante Set
-       - Feats: Actor, Skulker 
+         Feats: Actor, Skulker 
        
     attacks: |
       2 attacks with dagger
@@ -504,9 +503,9 @@ npc:
                            quick. The pocket watch regains 1 expended charge at dawn Alternately you can force it to turn backward as far as it can go. This does not require an action and takes 3 charges. You can’t do this if
                            you are incapacitated. You teleport to any location you have been earlier in this turn you regain any hit points you have lost since the beginning of your turn and you can immediately take another
                            turn. The pocket watch falls apart after that and require 1 week of specialized repairs. If this last ability is chosen after 1 minute you suffer one level of exhaustion.
-    - Dagger of Warning: - Most rogues shouldn't really need help with their perception but this dagger helps both the rogue and everyone around them. While attuned the rogue can't be surprised and are magically awoken from
-                           their sleep when danger approaches, along with all allies within 30 feet of them. Not to mention the dagger gives the rogue advantage on initiative rolls which is a valuable thing for them to have.
-      
+      Dagger of Warning: Most rogues shouldn't really need help with their perception but this dagger helps both the rogue and everyone around them. While attuned the rogue can't be surprised and are magically awoken from
+                         their sleep when danger approaches, along with all allies within 30 feet of them. Not to mention the dagger gives the rogue advantage on initiative rolls which is a valuable thing for them to have.
+
   profile:
 
     #
@@ -522,7 +521,7 @@ npc:
       Assembly doesn't perform what Leo calls, 'Brutish Outlaw' work, but instead is highly surgical in their activities. Kidnapping, smuggling, and political terrorism are the Assembly's professional province. Leo and
       his two brothers and one sister are carrying on the business of their father and uncles. Just how long the Assembly has been operating remains lore lost in history. Leo claims they've operated for centuries and span
       well-beyond the region. While there are some facts to corroborate this (and the local militia are certainly investigating), the evidence for this is lacking.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -534,32 +533,3 @@ npc:
     personality: |
       Leo plays the role of the pleasant businessman and dutiful family man. His customer service skills are impeccable. But this facade hides a much darker side; he is a ruthless and cunning mastermind, leading a cabal of
       criminals. He is doing his best to live up to the expectaions of his family and the example set by his ancestors. He is confident that he is doing so, and doing so very well. This may or may not be the case
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Messenger; Crier; Barker
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Giant
     - Elvish
-
 
     #
     # Factions:
@@ -333,9 +330,8 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: Monestary
-      name: Monestary
-
+    - id: Monastary
+      name: Monastary
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -387,7 +383,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Don't you know who I am??!"; "I ought to have you thrown into the dungeon of Carmite for that transgression!"; "The villainous scum of this region will feel my full wrath!"; "I must consult with the rest of my circle about these transpirations"
+    expressions:
+    - "Don't you know who I am??!"
+    - "I ought to have you thrown into the dungeon of Carmite for that transgression!"
+    - "The villainous scum of this region will feel my full wrath!"
+    - "I must consult with the rest of my circle about these transpirations"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +411,7 @@ npc:
     #
     motivations: |
       He seeks to trace his bloodline exclusively to a royal end, whether true or not. Cal will often spend hours barking and crying news of the activity of royalty or magistrates and spin it into something relating to his extended family and social circles; most of it true, but spun.
-      
+
     #
     # Passions:
     #
@@ -420,7 +420,7 @@ npc:
     #
     passions: |
       Politics; Himself; Bloodlines
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       He's possibly delusional, but maybe not
-      
+
     #
     # Secrets:
     #
@@ -438,8 +438,7 @@ npc:
     #
     secrets: | 
       Cal is not royalty at all. Or is he?
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,53 +463,55 @@ npc:
   #
   specialties:
     skills:
-   - - Firbolg Abilities:
-       - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
-                        short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
-       - Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
-                      use it again until you finish a short or long rest.
-       - Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-       - Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
-                                   You have advantage on all Charisma checks you make to influence them
-                      
-   - - Monk Abilities:
-       - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-       - Martial Arts:
-          - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-          - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
-          - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-       - Ki: 6 Ki Points, Ki DC= 13
-          - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          - Step of the Wind:Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
-       - Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
-       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                          free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-       - Slow Fall: Can us a Reaction to falling damage by by 85hp
-       - Extra Attack: Can Attack twice per turn
-       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-       - Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
-       
-   - - Way of the Empty Mind Abilities:
-       - Empty Mind Techniques: On your turn, after using Patient Defense, you may choose one creature that attcked you this turn. On a contested Wisdom (Insight) vs Charisma (Deception) check, you may perform any oneof the 
-                                following techniques - 
-                                - Gain advantage on any action you take against your chosen target until the end of your next turn
-                                - Gain 1 Ki point to use against your chosen target until the end of your next turn
-                                - The target creature gains disadvantage on attacks against any other creature than you
-       - Simultaneous Counter: You can strike at the same time as your opponent. Whenever a creature you can see hits you with a melee attack, you may spend 1 Ki point and your Reaction to make a melee attack against them before
-                               damage is rolled. For this attack, use the damage dice of your opponents attack. If the opponent is stunned or killed by your attack, you take no damage. Otherwise, damage resovles as normal. 
-               
+    - Firbolg Abilities:
+      - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
+                       short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
+        Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
+                     use it again until you finish a short or long rest.
+        Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+        Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
+                                  You have advantage on all Charisma checks you make to influence them              
+      Monk Abilities:
+      - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
+        Martial Arts:
+         - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+         - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+         - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+        Ki: 
+        - Ki Points: 6
+          Ki DC: 13
+          Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+          Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+          Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+        Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+        Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+                         free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+        Slow Fall: Can us a Reaction to falling damage by by 85hp
+        Extra Attack: Can Attack twice per turn
+        Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+        Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+      Way of the Empty Mind Abilities:
+      - Empty Mind Techniques: 
+        - Description: On your turn, after using Patient Defense, you may choose one creature that attcked you this turn. On a contested Wisdom (Insight) vs Charisma (Deception) check, you may perform any oneof the 
+                       following techniques - 
+          Additional Information: 
+          - Gain advantage on any action you take against your chosen target until the end of your next turn
+          - Gain 1 Ki point to use against your chosen target until the end of your next turn
+          - The target creature gains disadvantage on attacks against any other creature than you
+        Simultaneous Counter: You can strike at the same time as your opponent. Whenever a creature you can see hits you with a melee attack, you may spend 1 Ki point and your Reaction to make a melee attack against them before
+                              damage is rolled. For this attack, use the damage dice of your opponents attack. If the opponent is stunned or killed by your attack, you take no damage. Otherwise, damage resovles as normal. 
+
     special-abilities:
        - Proficiencies: Medicine, Persuasion, History
-       - Feats: N/A 
-       
+         Feats: N/A 
+
     attacks: |
       2 attacks with staff or martial arts unarmed strike
     combat-tactics: |
       Cal isn't a coward. His mental state ensures that he loses track of his well-being and launches himself into combat. He will bounce from opponent to opponent switching from his staff to fists in a blur of martial artistry.
     special-equipment:
     - Quaterstaff
-      
+
   profile:
 
     #
@@ -530,7 +531,7 @@ npc:
       line that some mysterious force seeks to end. No. I cannot allow it. I must find our sacred land. Our true Kingdom. The only way is to connect with those who claim royal positions here in this region and beyond. I must
       rebuild our people. Crazy Cal made his was through the tangled forests to the nearest town and began his meager political campaign to recharge his royal line. Although he is not consciously aware of his Firbolg clan's
       monastic heritage, his muscle memory and reflexive training are embedded within him. A contradiction, this Firbolg monk is loud and brazen.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -542,32 +543,3 @@ npc:
     personality: |
       Lord Cal is slightly on the crazy side. He may have been cursed or recieved a head injury, but his memory is not what it should be and he slides in and out of delusions and dementia. He is bold and persistent in his
       mission to rebuild his royal line, whether or not that royal line actually exisits is another matter entirely.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

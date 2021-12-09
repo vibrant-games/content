@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Innkeeper/Madame
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Common
     - Elvish
     - Dwarvish
-
 
     #
     # Factions:
@@ -334,7 +331,6 @@ npc:
     #
     - id: a_thieve_s_assassin_s_guild
       name: A Thieve's/Assassin's Guild
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -359,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A kindly-looking older woman sits behind the front desk of the inn. "How can I help y'all darlings?"
+    introduction:  A kindly-looking older woman sits behind the front desk of the inn. /"How can I help y'all darlings?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -386,7 +382,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "How many beds will you need this evening?", "Are you interested in some companionship during your stay"
+    expressions:
+    - "How many beds will you need this evening?"
+    - "Are you interested in some companionship during your stay"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +408,7 @@ npc:
     #
     motivations: |
       Money and comfort
-      
+
     #
     # Passions:
     #
@@ -419,7 +417,7 @@ npc:
     #
     passions: |
       Singing and painting. The Inn is decorated with her paintings
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       She has plenty of skeletons in her closet
-      
+
     #
     # Secrets:
     #
@@ -437,8 +435,7 @@ npc:
     #
     secrets: | 
       She knows who in town is cheating on their spouses and with whom
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,12 +459,13 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:      
-               
+    skills:
+    - N/A
+
     special-abilities:
-       - Proficiencies: Perception, Persuasion, Intimidation
-       - Feats: Observant, Keen Mind        
-       
+    - Proficiencies: Perception, Persuasion, Intimidation
+      Feats: Observant, Keen Mind
+
     attacks: |
       1 attack with Dagger or Hand Crossbow
     combat-tactics: |
@@ -475,8 +473,7 @@ npc:
     special-equipment:
     - Silver Dagger
     - Hand Crossbow
-    
-      
+
   profile:
 
     #
@@ -491,7 +488,7 @@ npc:
       business here.  The bulk of her income, however, comes from her harem of escorts. The Verada has a reputation as something of a "No tell, Motel". Lucretia is a stern mistress who runs a tight ship and wont take any crap
       from anybody. She's been at this game for a long time and knows exactly what she's doing. While friendly and gracious with customers, she won't accept any disrespect and has "security" on hand at all times to handle any
       problem customers or if necessary, escorts.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -503,32 +500,3 @@ npc:
     personality: |
       Lucretia is a plain but presentabl woman. She is well dressed and always presentable. She has a shrewd mnid for business and runs a tight ship that makes more than a decent living. She is no-nonsense but very hospitable
       and accomodating and always displays the pinnacle of customer service. She will not tolerate any abuse of her escorts and several heavyweight security guards in her employ that maintain a presence at the Inn
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

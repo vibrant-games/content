@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Tavern and Innkeeper
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -334,7 +332,6 @@ npc:
     - id: thieves_guild
       name: Thieve's Guild
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -358,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A black-feathered humanoid with a crooked beak adjusts its jacket while jotting in a notebook. "Yes. A room or grub?"
+    introduction:  A black-feathered humanoid with a crooked beak adjusts its jacket while jotting in a notebook. /"Yes. A room or grub?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -385,7 +382,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I'll serve ya what ya need. Just don't cause any trouble."; "Steer clear of sailors and cutthroats."
+    expressions:
+    - "I'll serve ya what ya need. Just don't cause any trouble."
+    - "Steer clear of sailors and cutthroats."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +408,7 @@ npc:
     #
     motivations: |
       Lrryk seeks to maintain a calm and stable life. He hopes to keep the rep of his inn and tavern free of ne'er do wells.
-      
+
     #
     # Passions:
     #
@@ -418,7 +417,7 @@ npc:
     #
     passions: |
       Stability. Saving for a better day.
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       Kenku Curse
-      
+
     #
     # Secrets:
     #
@@ -436,8 +435,7 @@ npc:
     #
     secrets: | 
       Lrryk was a former bandit leader and co-conspirator in organized criminal activity until he did serious time.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,26 +460,24 @@ npc:
   #
   specialties:
     skills:
-   - - Kenku Abilities:
-       - Expert Forgery: Can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects         
-       - Kenku Training: proficient in your choice of two of the following skills: Acrobatics, Deception, Stealth, and Sleight of Hand. 
-       - Mimicry: can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check
-       - Kenku Curse: Can read and write any language they can learn, but can only use the Mimicry ability to speak
+    - Kenku Abilities:
+      - Expert Forgery: Can duplicate other creatures' handwriting and craftwork. You have advantage on all checks made to produce forgeries or duplicates of existing objects         
+        Kenku Training: proficient in your choice of two of the following skills - Acrobatics, Deception, Stealth, and Sleight of Hand. 
+        Mimicry: can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check
+        Kenku Curse: Can read and write any language they can learn, but can only use the Mimicry ability to speak
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+      Thief Abilities:
+      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
+        Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
+                           your Dexterity modifier.       
 
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-
-   - - Thief Abilities:
-       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
-       - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
-                            your Dexterity modifier.       
-               
     special-abilities:
        - Proficiencies: Stealth, Survival, Acrobatics, Forgery Kit, Thieve's Tools
-       - Feats: N/A 
+         Feats: N/A 
        
     attacks: |
       1 attacks with Glaive
@@ -490,7 +486,7 @@ npc:
     special-equipment:
     - Conspirators Bolas: +2 to hit up to three separate creatures. When thrown these balls spread into three separate bolas that strike three separate chosen targets. If hit each target must make a DEX save vs. DC equal to the
                           roll that hit plus an additional 2 or be grappled. If the target tries to move that turn they are also knocked prone.
-      
+
   profile:
 
     #
@@ -506,7 +502,7 @@ npc:
       some common correction guards and proved to them that his transformation was genuine. It was these corrections officers that taught him the use of the glaive and the value of subduing his enemies rather than murdering
       them. When Lrryk was done his time he sought out a small fortune he hid in an abandoned mining camp. With these funds he commissioned the building of his inn and tavern, "the Roost", where he now lives a life of stability
       with very little tolerance for crime or aspects of 'the Life'.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -518,32 +514,3 @@ npc:
     personality: |
       Lrryk is a man full of regrets. He has honestly turned over a new leaf from his previous criminal life. He is cautious and careful not to allow his old life to creep back into his new life and does his best to keep the
       "unsavory types" out of his new establishment. He is a competent in his new life as he was in his old and runs a tight ship at his inn 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

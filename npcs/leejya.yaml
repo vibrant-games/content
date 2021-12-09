@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Mother, Craftswoman
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Aarakocra
     - Auran
-
 
     #
     # Factions:
@@ -383,7 +380,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  Skreech, Squack
+    expressions:
+    - Skreech, Squack
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -407,7 +405,7 @@ npc:
     #
     motivations: |
       Protecting her children, providing for he tribe
-      
+
     #
     # Passions:
     #
@@ -416,7 +414,7 @@ npc:
     #
     passions: |
       Her family and her art
-      
+
     #
     # Vulnerabilities:
     #
@@ -425,7 +423,7 @@ npc:
     #
     vulnerabilities: |
       Frail, Claustrophobic and devoted to her eggs
-      
+
     #
     # Secrets:
     #
@@ -434,8 +432,7 @@ npc:
     #
     secrets: | 
       That there is a lair of gargoyles nearby that have been waging war on her tribe
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -460,10 +457,10 @@ npc:
   #
   specialties:
     skills:
-   - - Aarakocra Abilities:
+    - Aarakocra Abilities:
       - Flight: Flying speed is 50 feet
-      - Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
-               
+        Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+
     special-abilities:
        - Proficiencies: Nature, Medicine, Woodcarver's Tools
        - Feats: N/A 
@@ -474,7 +471,7 @@ npc:
       will only fight in defence of her children
     special-equipment:
     - Woodcarving Tools
-      
+
   profile:
 
     #
@@ -486,7 +483,7 @@ npc:
     #
     background-story: |
       She is a mother devoted to the wellbeing of her children and tribe and she is a craftswoman who carves tools and weapons for her tribe out of wood
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -497,32 +494,3 @@ npc:
     #
     personality: |
       Leejya is a doting and nuturing mother who will defend her children to the death. She is respected in her tribe and a skilled craftswoman 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Smith; Merchant
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Dwarvish
     - Common
     - Draconic
-
 
     #
     # Factions:
@@ -334,7 +331,6 @@ npc:
     #
     - id: smiths_guild
       name: Smith's Guild
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -359,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Recommended as a fine blacksmith; often found in a market browsing for metals and gems; Hire adventurers to escort shipments.
+    introduction:  Recommended as a fine blacksmith. Often found in a market browsing for metals and gems. Hire adventurers to escort shipments.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -386,7 +382,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "That clinking and clanking of coins in a purse are the sole reason I take my first breath in the morning";
+    expressions:
+    - "That clinking and clanking of coins in a purse are the sole reason I take my first breath in the morning"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +407,7 @@ npc:
     #
     motivations: |
       Creating the finest forged products. Spreading his smithing as far throughout the region as possible
-      
+
     #
     # Passions:
     #
@@ -419,7 +416,7 @@ npc:
     #
     passions: |
       Dwarven metals; fine cigars
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       The site of the halfling merchant, Ygle Mossovere.
-      
+
     #
     # Secrets:
     #
@@ -437,8 +434,7 @@ npc:
     #
     secrets: | 
       Lorne is in love with a halfing merchant who passes through here-and-there. Although he hasn't done anything yet, as a married man, he is ashamed.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,32 +459,30 @@ npc:
   #
   specialties:
     skills:
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
                       instead of his normal Proficiency Bonus
-                      
-   - - Fighter Abilities:
-         - Fighting Style:
-         - Second Wind: Bonus Action to regain 1d10 + 
-         - Action Surge: Once every short/long rest can take an extra action
-         - Extra Attack: Can attack twice each turn
-       
-   - - Champion Abilities:
-       - Improved Critical: your weapon attacks score a critical hit on a roll of 19 or 20 
-               
+      Fighter Abilities:
+      - Fighting Style:
+        Second Wind: Bonus Action to regain 1d10 + 
+        Action Surge: Once every short/long rest can take an extra action
+        Extra Attack: Can attack twice each turn
+      Champion Abilities:
+      - Improved Critical: your weapon attacks score a critical hit on a roll of 19 or 20
+
     special-abilities:
        - Proficiencies: History, Intimidation, Smith's Tools, Leatherworking Tools
-       - Feats: N/A 
-       
+         Feats: N/A 
+
     attacks: |
       2 attacks with hand axe or warhammer
     combat-tactics: |
       Lorne will focus his attacks on the most apparently dangerous opponent but also use his action surge or second wind to keep any other opponents tied up in some way or another.
     special-equipment:
     - Bracers of Defense: Requires Attunement. While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no Shield.
-      
+
   profile:
 
     #
@@ -503,7 +497,7 @@ npc:
       harsh on him, but fair, and always urged him to keep his hands busy in his own business, not others. As talented and renown smiths, his family were also able to offer Lorne a lush and more-than-comfortable lifestyle. He
       thus absorbed and internalized the priority of wealth and proprietorship. Although among the upper class of his city, Lorne had watched his parents relentless toiling upon the anvils and forges. He learned that
       comfort is the result of long days of tireless labour. As his parents aged he began to take the roles of proprietor and designer of Stronghammer Arms. To this day, he swears by his name and lives for his brand
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -515,32 +509,3 @@ npc:
     personality: |
       Lorne Stronghammer is a gruff and surly man. He is very good at his craft and will treat other smith's with disdain, especially if they are better than him. He is a grumpy and stern with both his customers, his colleagues
       and his family
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

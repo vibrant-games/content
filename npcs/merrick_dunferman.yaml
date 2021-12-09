@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Tanner/Leather Worker
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Common
     - Halfling
-
 
     #
     # Factions:
@@ -338,7 +335,6 @@ npc:
     - id: trading_companies
       name: Trading Companies
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -362,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A Smiling Halfling, dirty and stained greets you at the counter of the tanner's stall, "finest leatherwork you'll find!"
+    introduction:  A Smiling Halfling, dirty and stained greets you at the counter of the tanner's stall, /"finest leatherwork you'll find!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -389,7 +385,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Don't low-ball me, just look at the quality of this filigree! It's not my first day out of the woods"
+    expressions:
+    - "Don't low-ball me, just look at the quality of this filigree! It's not my first day out of the woods"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +410,7 @@ npc:
     #
     motivations: |
       Improving his craft, growing his business, training his children in the family trade
-      
+
     #
     # Passions:
     #
@@ -422,7 +419,7 @@ npc:
     #
     passions: |
       He sees himself as an artisan and loves his work
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       His pride. His obsession with being the best
-      
+
     #
     # Secrets:
     #
@@ -440,8 +437,7 @@ npc:
     #
     secrets: | 
       A cantrip passed down for generations in his family that makes hides more pliable to work with and harder when they set
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,18 +462,17 @@ npc:
   #
   specialties:
     skills:
+    - Halfling Abilities:
+      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+        Brave: Has advantage on Saving Throws against being Frightened 
+        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+        Stout Resilience: You have advantage on saving throws against poison, and you have resistance to poison damage                          
 
-   - - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-       - Stout Resilience: You have advantage on saving throws against poison, and you have resistance to poison damage                          
-               
     special-abilities:
        - Proficiencies: Perception, Sleight-of-Hand, Leatehrworker's Tools
-       - Feats: Second Chance 
+         Feats: Second Chance 
        - Leather Working Cantrip that gives all leather armor he produces a +1 to AC       
-       
+
     attacks: |
       1 attack with shortsword or unarmed strike
     combat-tactics: |
@@ -486,8 +481,7 @@ npc:
     - Shortsword
     - Leatherworker's Tools
     - Various pieces of +1 Leather armor
-    
-      
+
   profile:
 
     #
@@ -502,7 +496,6 @@ npc:
      and loves his work. He takes great pride in the quality and beauty of his work. He lovingly trains his twin boys in the family trade. Not only is he an immaculate craftsman, he is also a shrewd businessman. He knows the
      quality of his work and will not be swayed on his prices. His prices aren't unreasonable, but they are definitely not on the cheaper end
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -514,32 +507,3 @@ npc:
     personality: |
       Merrick is a skilled man who takes pride in his work. He loves leatherworking and is very proud of his skill and proud to be passing along that skill to his children. He knows his worth and the worth of his work and is
       not easy to negotiate with. But he is also a reaonable man and wont overcharge for his work.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

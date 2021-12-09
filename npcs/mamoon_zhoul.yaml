@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Priest
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Undercommon
     - Infernal
     - Common
-
 
     #
     # Factions:
@@ -336,7 +333,6 @@ npc:
     #
     - id: the_order_of_moander_or_another_cult_to_an_old_god_or_god_of_rot_decay_etc_
       name: The Order of Moander [Or another cult to an Old God or God of Rot, Decay, etc.]
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -388,7 +384,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The forgotten Ones will rise again, by my hand"; "Shall you look into the abyss of the mouth of the Forgotten?"
+    expressions:
+    - "The forgotten Ones will rise again, by my hand"
+    - "Shall you look into the abyss of the mouth of the Forgotten?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -465,54 +463,51 @@ npc:
   #
   specialties:
     skills:
-
-   - - Dwarf Abilities:
-       - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-       - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-       - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+    - Dwarf Abilities:
+      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
                       instead of his normal Proficiency Bonus
+      Duergar Abilities:
+      - Superior Darkvision: You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Duergar Resilience: You have advantage on saving throws against illusions and against being charmed or paralyzed
+        Duergar Magic: When you reach 3rd level, you can cast the Enlarge/Reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the Invisibility spell on
+                       yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain
+                       the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells
+        Sunlight Sensitivity: You have disadvantage on Attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight   
+      Warlock Abilities:
+      - Pact Magic: 
+        - Spell DC: 16
+          Cantrip: Eldritch Blast, Toll The Dead, Chill Touch, Mage Hand
+          Spells: Armor of Agathys, Hex, Hallish Rebuke, Cloud of Daggers, Crown of Madness, Enthrall, Counterspell, Summon Undead, Summon Greater Demon, Sickening Radiance, Danse Macabre
+          Spell Slots: 2
+          Slot Level: 5th          
+        Eldritch Invocations:
+        - 1: Agaonizing Blast
+        - 2: Armor of Shadows
+        - 3: Protection of the Talisman
+        - 4: Maddening Hex
+        - 5: Rebuke of the Talisman
+        Pact Boon: Pact of the Talisman - Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning
+                   the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest. If you lose the talisman, you can perform
+                   a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die.
+      Pact of The Great Old One Abilities:
+      - Expanded Spell List:
+        - 1st Level: Dissonant Whispers, Hideous Laughter
+          2nd Level: Detect Thoughts, Phantasmal Force
+          3rd Level: Clairvoyance, Sending
+          4th Level: Dominate Beast, Black Tentacles
+          5th Level: Dominate Person, Telekinesis
+        Awakened Mind: your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with
+                       the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language
+        Entropis Ward: you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to
+                       impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. Once you use this feature, you can't
+                       use it again until you finish a short or long rest                          
 
-   - - Duergar Abilities:
-       - Superior Darkvision: You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Duergar Resilience: You have advantage on saving throws against illusions and against being charmed or paralyzed
-       - Duergar Magic: When you reach 3rd level, you can cast the Enlarge/Reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the Invisibility spell on
-                        yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain
-                        the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells
-       - Sunlight Sensitivity: You have disadvantage on Attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight   
-
-   - - Warlock Abilities:
-         - Pact Magic: Spell DC 16
-            Cantrip: Eldritch Blast, Toll The Dead, Chill Touch, Mage Hand
-            Spells: Armor of Agathys, Hex, Hallish Rebuke, Cloud of Daggers, Crown of Madness, Enthrall, Counterspell, Summon Undead, Summon Greater Demon, Sickening Radiance, Danse Macabre
-            Spell Slots: 2
-            Slot Level: 5th          
-         - Eldritch Invocations:
-            1: Agaonizing Blast
-            2: Armor of Shadows
-            3: Protection of the Talisman
-            4: Maddening Hex
-            5: Rebuke of the Talisman
-         - Pact Boon: Pact of the Talisman - Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning
-                      the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest. If you lose the talisman, you can perform
-                      a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die.
-
-   - - Pact of The Great Old One Abilities:
-         - Expanded Spell List:
-            1st Level: Dissonant Whispers, Hideous Laughter
-            2nd Level: Detect Thoughts, Phantasmal Force
-            3rd Level: Clairvoyance, Sending
-            4th Level: Dominate Beast, Black Tentacles
-            5th Level: Dominate Person, Telekinesis
-         - Awakened Mind: your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with
-                          the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language
-         - Entropis Ward: you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to
-                          impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. Once you use this feature, you can't
-                          use it again until you finish a short or long rest                          
-               
     special-abilities:
        - Proficiencies: Deception, Persuasion, Intimidation
-       - Feats: War Caster        
-       
+         Feats: War Caster        
+
     attacks: |
       1 attack with Scythe or Spell
     combat-tactics: |
@@ -520,8 +515,7 @@ npc:
     special-equipment:
     - Scythe
     - A preserved eye in a jar that serves as her arcane focus
-    
-      
+
   profile:
 
     #
@@ -541,7 +535,6 @@ npc:
      scooped up the body, and consumed it violently. Mammoon was then imbued with an overwhelming sense that she was destined for greater things. She denounced the tribe in an animal growl and fled the Underdark in search of
      greater sacrifices to Clax. Seeing such violence in sacrifice has become her primary goal.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -552,32 +545,3 @@ npc:
     #
     personality: |
       Mamoon Z'Houl is intense and frightening. She is devoted to her god and will tolerate no disrespect. She is entirely manic, demonstrating far more intensity and energy than soneone of her age should have.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

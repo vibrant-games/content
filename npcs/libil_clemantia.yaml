@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Merchant
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Elvish
     - Dwarvish
     - Thieves' Cant
-
 
     #
     # Factions:
@@ -363,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A half-Elven woman in semi-fine clothes overlooks market booths directing the chaos. "You there! Business or pleasure?"
+    introduction:  A half-Elven woman in semi-fine clothes overlooks market booths directing the chaos. /"You there! Business or pleasure?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -390,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Schemers won't police 'emselves"; "Bookkeeping and accounts. That's the future."; "Gotta protect against companies!"
+    expressions:
+    - "Schemers won't police 'emselves"
+    - "Bookkeeping and accounts. That's the future."
+    - "Gotta protect against companies!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +414,7 @@ npc:
     #
     motivations: |
       To ensure that the Regional Thieves' Guild has more control over the Merchants' Guild
-      
+
     #
     # Passions:
     #
@@ -423,7 +423,7 @@ npc:
     #
     passions: |
       Unionization. Bringing the market to the people.
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       Libil is vulnerable to any sight or talk of exploitation. It will send her into a frenzy that she will struggle to control.
-      
+
     #
     # Secrets:
     #
@@ -441,8 +441,7 @@ npc:
     #
     secrets: | 
       She is subverting the Merchants' guild in an attempt to bring it under control of the Regional Thieves' Guild.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,36 +466,34 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
-        - Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15
-                      
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-       
-   - - Inquisitive Abilities:
-       - Ear for Deciet: you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8
-       - Eye for Detail: you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
-       - Insightful Fighting: you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
-                              contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
-                              disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
-               
+    - Half-Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
+        Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+      Inquisitive Abilities:
+      - Ear for Deciet: you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8
+        Eye for Detail: you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
+        Insightful Fighting: you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
+                             contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
+                             disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
+
     special-abilities:
        - Proficiencies: Persuasion, Perception, Thieves' Tools, Intimidation
-       - Feats: Keen Mind 
-       
+         Feats: Keen Mind 
+
     attacks: |
       2 attacks with Dagger or Hand Crossbow
     combat-tactics: |
       Will almost exclusively withdraw to a distance and use her crossbow
     special-equipment:
     - Circlet of Persuasion: This silver headband grants a +3 competence bonus on the wearer's Charisma-based checks.
-      
+
   profile:
 
     #
@@ -516,7 +513,7 @@ npc:
       long-standing bid as High Journeyman of the Regional Thieves' Guild. Instead of abiding by laws that seemed to only mask the horrible truths that underpin the appearance of peace, She seeks to achieve true peace and
       stability for 'boots on the ground' through the unionization structures that guilds bring. She can often be found in the busiest marketplaces of large towns and cities, directing traffic, solving squabbles, and
       enlisting merchants to join the guild (both Merchants' and Thieves' (the latter often referenced, instead, as 'Workers' Guild', or 'Commoners' Association', or something of that ilk)
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -529,32 +526,3 @@ npc:
       Libil is a champion of the common man. In oppositrion to her upbringing among the High Elves, she has a strong aversion to authority figures and believes strongly in the need for and power of unions in controlling the
       exploitation of commoners by nobility and corporations. She is fierce and smart and cool under pressure. She always knows everything thats going on around her and isn't afraid to direct traffic or give orders when
       necessary
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

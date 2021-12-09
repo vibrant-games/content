@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Merchant
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Elvish
     - Goblin
     - Undercommon
-
 
     #
     # Factions:
@@ -410,7 +407,7 @@ npc:
     #
     motivations: |
       To unload merchandise, make coin, and get out of town before anyone knows that the stuff he's selling is no good.
-      
+
     #
     # Passions:
     #
@@ -428,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       His items are junk, they'll work for a short time, but after that they're just cheap replicas of the real thing.
-      
+
     #
     # Secrets:
     #
@@ -437,8 +434,7 @@ npc:
     #
     secrets: | 
       His merchandise is faulty.  He's using his artificer powers to put on a show, but as soon as he's gone, none of it works
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,32 +459,34 @@ npc:
   #
   specialties:
     skills:
-   - - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 13 
-         Cantrip: Mage Hand, Mending
-         1st Level: Alarm, Disguise Self, Detect Magic, Identify
-         2nd Level: Invisibility, Heat Metal 
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
-       - Infusions Known: 4       
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-                 
-   - - Battle Smith Abilities:
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 13 
-         3rd Level: Heroism, Shield
-         5th Level: Branding Smite, Warding Bond
-       - Battle Ready: your combat training and your experiments with magic have paid off in two ways;
-                       - You gain proficiency with martial weapons.
-                       - When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls
-       - Steel Defender: your tinkering has borne you a faithful companion, a steel defender. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which
-                         uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics. In combat, the defender
-                         shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a
-                         bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice,
-                         not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5
-                         feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel
-                         defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die       
-       - Extra Attack: Can attack twice each turn
-               
+    - Artificer Abilities:
+     - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+       - Spellcasting:
+         - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 13 
+           Cantrips: Mage Hand, Mending
+           1st Level: Alarm, Disguise Self, Detect Magic, Identify
+           2nd Level: Invisibility, Heat Metal 
+         Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+         Infusions Known: 4       
+         The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+
+      Battle Smith Abilities:
+      - Spellcasting:
+        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 13 
+          3rd Level: Heroism, Shield
+          5th Level: Branding Smite, Warding Bond
+        Battle Ready: your combat training and your experiments with magic have paid off in two ways;
+                      - You gain proficiency with martial weapons.
+                      - When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls
+        Steel Defender: your tinkering has borne you a faithful companion, a steel defender. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which
+                        uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics. In combat, the defender
+                        shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a
+                        bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice,
+                        not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5
+                        feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel
+                        defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die       
+        Extra Attack: Can attack twice each turn
+
     special-abilities:
        - Proficiencies: Performance; Persuasion; Tinker's Tools
        - Feats: Actor 
@@ -499,25 +497,25 @@ npc:
       will only take opportunity attacks, otherwise he lets his Steel Defender fight for him
     special-equipment:
     - Steel Defender:
-        - Armor Class: 15
-        - Hit Points: 31
-        - Speed: 40
-        - str: 14
-        - dex: 12
-        - con: 14
-        - int: 4
-        - wis: 10
-        - cha: 6
-        - Proficiencies: Proficiency Bonus +3 - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
-        - Immunities: Immune to Poison and Psychic Damage. Immune to Poison, Charmed and Exhaustion. Resistant to Fire
-        - Darkvision: 60ft. Passive Perception 22
-        - Vigilant: Can't be surprised
-        - Force Empowered Rend: Using a +6 Spellcasting modifier to hit one target within 5ft. Deals 1d8+6 force damage.
-        - Repair: (3/Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
-        - Extra Attack: Can take a second attack action each turn
-        - Deflect Attack: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
-                          The attacker takes 1d4+8 force damage. 
-        - Intimidate: It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
+      - Armor Class: 15
+        Hit Points: 31
+        Speed: 40
+        str: 14
+        dex: 12
+        con: 14
+        int: 4
+        wis: 10
+        cha: 6
+        Proficiencies: Proficiency Bonus +3 - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
+        Immunities: Immune to Poison and Psychic Damage. Immune to Poison, Charmed and Exhaustion. Resistant to Fire
+        Darkvision: 60ft. Passive Perception 22
+        Vigilant: Can't be surprised
+        Force Empowered Rend: Using a +6 Spellcasting modifier to hit one target within 5ft. Deals 1d8+6 force damage.
+        Repair: (3/Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
+        Extra Attack: Can take a second attack action each turn
+        Deflect Attack: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
+                        The attacker takes 1d4+8 force damage. 
+        Intimidate: It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
     - Dagger
     - Various gadgets and other inventory for sale
       
@@ -533,7 +531,7 @@ npc:
     background-story: |
       Lasan is the son of a merchant who did the same thing he does today. Make items that work for a short period of time, sell them for more than their worth, and get out of Dodge before any one is the wiser.  His dad died not
       too long ago, and he's still trying to cope with it. He took up adventuring for a time, but it complicated him with too many attachments, he just wasn't ready for.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -545,32 +543,3 @@ npc:
     personality: |
       Lasan is a flim flam man. He uses his artificers skills to create cheap little gadgets that break within days of being sold. He is emotionally stunted and refuses personal attachments, especially since his father's death.
       He's very good at selling his junk and good at getting while the getting is good
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

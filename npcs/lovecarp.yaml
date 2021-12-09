@@ -297,7 +297,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -330,9 +329,14 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: wipe_the_bottoms_society_storytellers_against_goblins_justice_for_us_humans_going_their_own_way
-      name: Wipe the Bottoms Society, Storytellers Against Goblins, Justice for Us, Humans Going Their Own Way
-
+    - id: wipe_the_bottoms_society_justice_for_us_humans_going_their_own_way
+      name: Wipe the Bottoms Society
+    - id: storytellers_against_goblinsS
+      name: Storytellers Against Goblins
+    - id: justice_for_us
+      name: Justice for Us
+    - id: humans_going_their_own_way
+      name: Humans Going Their Own Way
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -357,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Clustered around a long, pint-heavy table, listeners clap and toss coins into a wood burl bowl.  "Thankee kindly!"
+    introduction:  Clustered around a long, pint-heavy table, listeners clap and toss coins into a wood burl bowl.  /"Thankee kindly!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -384,7 +388,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I mean"; "Like I say"; "Low dwarves"; "I'm not a racist, but some of them bottomdarks will make any man racist".
+    expressions:
+    - "I mean"
+    - "Like I say"
+    - "Low dwarves"
+    - "I'm not a racist, but some of them bottomdarks will make any man racist"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +416,7 @@ npc:
     #
     motivations: |
       Finding his next payday
-      
+
     #
     # Passions:
     #
@@ -417,7 +425,7 @@ npc:
     #
     passions: |
       Loves storytelling; has found that rousing racial tensions increases profit, so plays on fears of "the other".
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +434,7 @@ npc:
     #
     vulnerabilities: |
       Pacifist, afraid of fighting, yet often incites violence with his stories full of racial invectives.
-      
+
     #
     # Secrets:
     #
@@ -435,8 +443,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,11 +468,11 @@ npc:
   #
   specialties:
     skills:
-   - - N/A 
-               
+    - N/A 
+
     special-abilities:
        - Proficiencies: Persuasion, History, Nature, Perception, Performance
-       - Feats: Actor, Lucky 
+         Feats: Actor, Lucky 
        
     attacks: |
       1 attacks with dagger
@@ -489,7 +496,7 @@ npc:
       travels confuses people. This is perhaps his goal. Nobody but Lovecarp himself truly knows. Traveling town to town crafting new stories and refining old, he gleefully shares his narrations with every listener with very
       little resistance. At the first hint of his gripping voice, most of those in the vicinity grab a tankard and sit down for one of the best stories they will hear for miles and miles. Well aware that racial tensions
       not only fuel wars but also economic splendour, Lovecarp's stories almost exclusively revolve around if not at the very least include complex layers of peoples' fears of those who are not like them - the 'Other'.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -500,32 +507,3 @@ npc:
     #
     personality: |
       Lovecarp is a slick and slimy charlatan. He is charasmatic and spins a good yarn, but he appeals to the lowest common denominator as much as possible because it makes him more money. 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

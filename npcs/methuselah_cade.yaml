@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Private Investigator
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Elvish
     - Dwarvish
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -338,7 +335,6 @@ npc:
       name: The Watch
     - id: military
       name: Military
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -363,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Behind the door at Cade Investigations sits a gruff weathered woman behind a desk. "What can I find for you?"
+    introduction:  Behind the door at Cade Investigations sits a gruff weathered woman behind a desk. /"What can I find for you?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -390,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "There's no such thing as lost", "The Eye in P.I. is me" "I can find anyone anywhere"
+    expressions:
+    - "There's no such thing as lost"
+    - "The Eye in P.I. is me"
+    - "I can find anyone anywhere"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +413,7 @@ npc:
     #
     motivations: |
       Truth, money, and helping people
-      
+
     #
     # Passions:
     #
@@ -423,7 +422,7 @@ npc:
     #
     passions: |
       She's especially passionate about missing children's cases
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       She over-obsesses over cases, especially those involving children
-      
+
     #
     # Secrets:
     #
@@ -441,8 +440,7 @@ npc:
     #
     secrets: | 
       She knows the underworld inside and out and possibly the under underworld too
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,39 +465,36 @@ npc:
   #
   specialties:
     skills:
+    - Revenant Abilities:
+      - Relentless Nature: 
+        - Regains 1HP at the beginning of each turn if below half maximum HP
+        - If she dies, she returns to life 24hrs after death. If her body is destroyed she will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
+        - Knows the distance and direction between her and the creature involved in her goal unless they are on another plane  
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+        Reliable Talent: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
+        Blindsense: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
+        Slippery Mind: You gain proficiency in Wisdom Saving Throws
+      Inquisitive Abilities:
+      - Ear for Deciet: you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8 
+        Eye for Detail:  you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
+        Insightful Fighting: you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
+                             contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
+                             disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
+        Steady Eye: you gain advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn
+        Enerring Eye: your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you,
+                      provided you aren't blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature. You can use this feature a number of times
+                      equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.   
 
-  - - Revenant Abilities:
-       - Relentless Nature: 
-         - Regains 1HP at the beginning of each turn if below half maximum HP
-         - If she dies, she returns to life 24hrs after death. If her body is destroyed she will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
-         - Knows the distance and direction between her and the creature involved in her goal unless they are on another plane  
-
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-       - Reliable Talent: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
-       - Blindsense: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
-       - Slippery Mind: You gain proficiency in Wisdom Saving Throws
-
-   - - Inquisitive Abilities:
-       - Ear for Deciet: you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8 
-       - Eye for Detail:  you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
-       - Insightful Fighting: you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
-                              contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
-                              disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
-       - Steady Eye: you gain advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn
-       - Enerring Eye: your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you,
-                       provided you aren't blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature. You can use this feature a number of times
-                       equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.   
-               
-    special-abilities:
+    specialabilities:
        - Proficiencies: Perception, Sleight-of-Hand, Deception, Performance, Stealth, Intimidation
        - Feats: Crossbow Expert, Sharpshooter, Investigator, Perceptive, Observant, Keen Mind, Dual Wielder, Prodigy 
-       - Science skills related to forensics       
-       
+       - Science skills related to forensics
+
     attacks: |
       2 attack with hand crossbow or dagger
     combat-tactics: |
@@ -509,8 +504,7 @@ npc:
     - Dagger
     - Thieve's Tools
     - Forensics Equipment
-    
-      
+
   profile:
 
     #
@@ -527,7 +521,6 @@ npc:
      or church officials. One such investigation involving several missing children pointed to a local temple and she was murdered for her trouble. Thuse is a Revenant. Returning from the dead with a mandate to find and save
      missing children, and to hunt and reek vengeance on child killers. In the meantime, she takes any cases she finds interesting to pass the time and pay the bills.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -544,32 +537,3 @@ npc:
       especially dogged and obsessive. Thuse is very witty and very jaded and her sarcasm has a bit of a bite. She is also a keen negotiator and will only take jobs that pay especially well or the genuinely spark her interest.
       Unlike many revenants, she does not have one specific creature or individual involved with her goal, just a general goal to protect or revenge lost children, as such, she has no idea what will be the case that will
       eventually be her last, but at this point, she hopes it's soon.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

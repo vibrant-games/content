@@ -297,7 +297,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Common
     - Elvish
     - Dwarvish
-
 
     #
     # Factions:
@@ -362,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A regal looking elderly elf awaits inside the Eldritch Bookshop. "Good day friends! We have all the latest editions!"
+    introduction:  A regal looking elderly elf awaits inside the Eldritch Bookshop. /"Good day friends! We have all the latest editions!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -389,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I'm sorry, we don't carry dirty books here", "We may have some tombs to your liking, but they re definitely not cheap"
+    expressions:
+    - "I'm sorry, we don't carry dirty books here"
+    - "We may have some tombs to your liking, but they re definitely not cheap"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +413,7 @@ npc:
     #
     motivations: |
       He loves books and the pursuit of knowledge
-      
+
     #
     # Passions:
     #
@@ -422,7 +422,7 @@ npc:
     #
     passions: |
       Books and writing
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       He can be easily distracted by discussions of ancient lore of the realm
-      
+
     #
     # Secrets:
     #
@@ -440,8 +440,7 @@ npc:
     #
     secrets: | 
       He may have various magical tombs and scrolls locked in his backroom safe at any given time
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,38 +465,38 @@ npc:
   #
   specialties:
     skills:
-   - - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        - Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow
-                      
-   - - Wizard Abilities:
-         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level			  
-         - Spellcasting: Spell DC 17 
-            Cantrips: True Strike, Dancing Lights, Fire Bolt, Mage Hand, Mending
-            1st Level: Comprehend Languages, Detect Magic, Gift of Alacrity, Find Familiar
-            2nd Level: Augury, Detect Thoughts, Mind Spike
-            3rd Level: Clairvoyance, Fireball, Tiny Servant
-            4th Level: Divination, Private Sanctum, Dimension Door
-            5th Level: Legend Lore, Scrying
-       
-   - - School of Divination Abilities:
-       - Divination Savant: the gold and time you must spend to copy a Divination spell into your spellbook is halved.
-       - Potent: when you choose this school, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw,
-                 or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. Each
-                 foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls
-       - Expert Divination: casting divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a divination spell of 2nd level or higher using a spell slot, you regain
-                            one expended spell slot. The slot you regain must be of a level lower than the spell you cast and can't be higher than 5th level
-       - The Third Eye:  you can use your action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you are incapacitated or you take a short or long rest. You can't
-                         use the feature again until you finish a short or long rest.
-                         - Darkvision: You gain darkvision out to a range of 60 feet.
-                         - Ethereal Sight: You can see into the Ethereal Plane within 60 feet of you.
-                         - Greater Comprehension: You can read any language.
-                         - See Invisibility: You can see invisible creatures and objects within 10 feet of you that are within line of sight
-               
+    - Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Keen Senses: You have proficiency in the Perception skill 
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+        Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow
+      Wizard Abilities:
+      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level			  
+        Spellcasting: 
+        - Spell DC: 17 
+          Cantrips: True Strike, Dancing Lights, Fire Bolt, Mage Hand, Mending
+          1st Level: Comprehend Languages, Detect Magic, Gift of Alacrity, Find Familiar
+          2nd Level: Augury, Detect Thoughts, Mind Spike
+          3rd Level: Clairvoyance, Fireball, Tiny Servant
+          4th Level: Divination, Private Sanctum, Dimension Door
+          5th Level: Legend Lore, Scrying
+      School of Divination Abilities:
+      - Divination Savant: the gold and time you must spend to copy a Divination spell into your spellbook is halved.
+        Potent: when you choose this school, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw,
+                or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. Each
+                foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls
+        Expert Divination: casting divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a divination spell of 2nd level or higher using a spell slot, you regain
+                           one expended spell slot. The slot you regain must be of a level lower than the spell you cast and can't be higher than 5th level
+        The Third Eye:  
+        - Description: you can use your action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you are incapacitated or you take a short or long rest. You can't
+                       use the feature again until you finish a short or long rest.
+          Darkvision: You gain darkvision out to a range of 60 feet.
+          Ethereal Sight: You can see into the Ethereal Plane within 60 feet of you.
+          Greater Comprehension: You can read any language.
+          See Invisibility: You can see invisible creatures and objects within 10 feet of you that are within line of sight
+
     special-abilities:
        - Proficiencies: Perception, Arcana, History
        - Feats: Keen Mind 
@@ -525,7 +524,7 @@ npc:
       lore and historical volumes, and can become distracted and talk at lengths about history, lore and arcana. To him, knowledge is it's own reward. During his travels
       he has collected a number of magical tombs and scrolls which he keeps under lock and key at the shop. A player would have to heavily impress him to sell one of them though,
       and even then, they would be very expensive.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -536,32 +535,3 @@ npc:
     #
     personality: |
       Llewellyn is a knowledgeable man and well travelled. He prizes learning and knowledge above all else, and is always happy to share his extensive knowledge and learn a little more himself.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
