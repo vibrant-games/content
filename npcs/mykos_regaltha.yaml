@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Adventurer / Pub Owner
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     languages:
     - Common
     - Infernal
-
 
     #
     # Factions:
@@ -336,7 +333,6 @@ npc:
     - id: The_Forgotten
       name: The Forgotten
       role: Leader
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -388,7 +384,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Where are your legs?"; "Can nobody in this city give a straight answer to a question?", "Shut up, Ordic!"
+    expressions:
+    - "Where are your legs?"
+    - "Can nobody in this city give a straight answer to a question?"
+    - "Shut up, Ordik!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +411,7 @@ npc:
     #
     motivations: |
       He is oddly motivated by justice and has a keen sense of fairness and a strong distaste for gods of all stripe
-      
+
     #
     # Passions:
     #
@@ -421,7 +420,7 @@ npc:
     #
     passions: |
       Cigars, His pub 
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +429,7 @@ npc:
     #
     vulnerabilities: |
       While driven and cunning, he isn't very smart or observant
-      
+
     #
     # Secrets:
     #
@@ -438,8 +437,7 @@ npc:
     # ???Maximum length???
     #
     secrets: just discovered he has a daughter he knew nothing about
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,94 +462,96 @@ npc:
   #
   specialties:
     skills:
-   - - Tiefling Abilities:
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
-       - Hellish Resistance: You have Resistance to fire damage
-       - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
-                          When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells 
-       - Monstrous Mask: You gain a +5 Bonus to all Intmiidation checks made against humanoid creatures                          
-    
-   - - Barbarian Abilities:
-         - Unarmored Defense: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
-         - Rage: Can enter a rage as a Bonus Action. 
-            - have advantage on Strength Checks and Strength Saving Throws.
-            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-            - Resistance to bludgeoning, piercing, and slashing damage          
-         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                            but Attack Rolls against him have advantage until his next turn
-         - Extra Attack: Can attack twice each turn	
-         - Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
-         - Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
-                           before doing anything else on that turn.
- 
-   - - Path of the Berserk Abilities:
-       - Fenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
+    - Tiefling Abilities:
+        Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+        Hellish Resistance: You have Resistance to fire damage
+        Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
+                         When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells 
+        Monstrous Mask: You gain a +5 Bonus to all Intmiidation checks made against humanoid creatures                          
+
+      Barbarian Abilities:
+      - Unarmored Defense: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+        Rage: 
+        - Description: Mykos Can enter a rage as a Bonus Action. 
+        - has advantage on Strength Checks and Strength Saving Throws.
+        - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+        - Resistance to bludgeoning, piercing, and slashing damage
+        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                         but Attack Rolls against him have advantage until his next turn
+        Extra Attack: Can attack twice each turn
+        Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+        Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+                        before doing anything else on that turn.
+      Path of the Berserk Abilities:
+      - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
                 he suffer one level of Exhaustion
-       - Mindless Rage: you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.   
+        Mindless Rage: you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.   
 
     special-abilities:
     - Proficiencies: Intimidation, Athletics, Survival
-    - Feats: 
-      - Barbed Hide: One of your ancestors was a barbed devil or other spiky fiend. Barbs protrude from your head. You gain the following benefits:
-                     - Increase your Constitution or Charisma score by 1, up to a maximum of 20.
-                     - You gain proficiency in the Intimidation skill. If you’re already proficient in it, your proficiency bonus is doubled for any check you make with it.
-                     - As a bonus action, you can cause small barbs to protrude all over your body or cause them to retract. At the start of each of your turns while the barbs are out, you deal 1d6 piercing damage to any
-                       creature grappling you or any creature grappled by you.
-                     - You gain resistance to cold and acid damage
-       - Two-Handed Dual Weilder: You have trained to use two Two-Handed weapons at once.
-                                  - Once per turn you may make an extra attack if you are equipped with more than one two-handed weapon (greatsword, greataxe, etc.) 
-       - Deathspeaker Tattoo: Can cast the spell Speak With Dead. Spellcasting Modifier +3, Save DC 15. 3rd Level Necromancy, Casting Time 1 Action, Range 10 feet, Duration 10 minutes or 5 Questions                                   
-    
+      Feats: 
+      - Barbed Hide:
+        - Description: One of your ancestors was a barbed devil or other spiky fiend. Barbs protrude from your head. You gain the following benefits -
+          Additional Information:
+          - Increase your Constitution or Charisma score by 1, up to a maximum of 20.
+          - You gain proficiency in the Intimidation skill. If you’re already proficient in it, your proficiency bonus is doubled for any check you make with it.
+          - As a bonus action, you can cause small barbs to protrude all over your body or cause them to retract. At the start of each of your turns while the barbs are out, you deal 1d6 piercing damage to any
+            creature grappling you or any creature grappled by you.
+          - You gain resistance to cold and acid damage
+        Two-Handed Dual Weilder: You have trained to use two Two-Handed weapons at once. Once per turn you may make an extra attack if you are equipped with more than one two-handed weapon (greatsword, greataxe, etc.) 
+      Deathspeaker Tattoo: Can cast the spell Speak With Dead. Spellcasting Modifier +3, Save DC 15. 3rd Level Necromancy, Casting Time 1 Action, Range 10 feet, Duration 10 minutes or 5 Questions
+
     attacks: |
       3 Attacks with his Greataxes
     combat-tactics: |
       Like a true berserk, Mykos will go into a berserker rage and charge headlong into any battle.
     special-equipment:
       - Hew: +1 greataxe that deals maximum damage when the wielder hits a plant creature or an object made of wood.
-      - Giant Slayer: +1 Greataxe. When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the Purpose of this weapon, "giant" 
+        Giant Slayer: +1 Greataxe. When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon's type and must succeed on a DC 15 Strength saving throw or fall prone. For the Purpose of this weapon, /"giant/" 
                       refers to any creature with the giant type, including ettins and Trolls
-      - The Alchemist: +1 greataxe/maul with slots on both flat sides made to hold two glass vials of liquid allowing them to break on a successful attack
-      - 3 Smoke Grenades: As an action, a character can throw a grenade at a point up to 60 feet away. One round after a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A 
+        The Alchemist: +1 greataxe/maul with slots on both flat sides made to hold two glass vials of liquid allowing them to break on a successful attack
+        3 Smoke Grenades: As an action, a character can throw a grenade at a point up to 60 feet away. One round after a smoke grenade lands, it emits a cloud of smoke that creates a heavily obscured area in a 20-foot radius. A 
                           moderate wind (at least 10 miles per hour) disperses the smoke in 4 rounds; a strong wind (20 or more miles per hour) disperses it in 1 round.
-      - Bracers of Defense: +2 to Action
-      - Ring of Mind Shielding: While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your Alignment, or know your Creature Type. Creatures can 
+        Bracers of Defense: +2 to Action
+        Ring of Mind Shielding: While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your Alignment, or know your Creature Type. Creatures can 
                                 telepathically communicate with you only if you allow it. You can use an action to cause the ring to become Invisible until you use another action to make it visible, until you remove the ring, or
                                 until you die. If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for The Afterlife. As long as your soul is in the ring,
                                 you can telepathically communicate with any creature wearing it. A wearer can't prevent this Telepathic Communication.      
-      - Animated Shield: While holding this Shield, you can speak its Command word as a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, 
+        Animated Shield: While holding this Shield, you can speak its Command word as a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, 
                          leaving your hands free. The Shield remains animated for 1 minute, until you use a Bonus Action to end this Effect, or until you are Incapacitated or die, at which point the Shield falls to the ground or
                          into your hand if you have one free.
-      - Beacon: +2 to Strength
-      - Pants of Holding: These pants have pockets with an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The pants can hold up to 500 pounds, not 
+        Beacon: +2 to Strength
+        Pants of Holding: These pants have pockets with an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The pants can hold up to 500 pounds, not 
                           exceeding a volume of 64 cubic feet. The pants weighs 15 pounds, regardless of their contents. Retrieving an item from the pants requires an action. If the pants are overloaded, pierced, or torn, they 
                           ruptures and are destroyed, and their contents are scattered in the Astral Plane. If the pant's pockets are turned inside out, their contents spill forth, unharmed, but the pants must be put right 
                           before they can be used again. Breathing creatures inside the pants can survive up to a number of minutes equal to 10 divided by the number of creatures (minimum 1 minute), after which time they begin 
                           to suffocate. Placing a pants of holding inside an extradimensional space created by a Handy Haversack, Portable Hole, or similar item instantly destroys both items and opens a gate to the Astral Plane.
                           The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it to a random Location on the Astral Plane. The gate then closes. The gate 
                           is one-way only and can't be reopened.
-       - Brooch of Shielding: Resistance to Force Damage and immunity to Magic Missle. Grants the wearer the ability to communicate telepathically within 30 feet. Allows the wearer to cast the spell Fairy Fire 3 times pe day
-       - Wand of Magic Missle: This wand has 7 Charges. While holding it, you can use an action to expend 1 or more of its Charges to cast the Magic Missile spell from it. For 1 charge, you cast the 1st-level version of the 
-                               spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended Charges daily at dawn. If you expend the wand's last charge, roll a d20.
-                               On a 1, the wand crumbles into ashes and is destroyed. 
-       - Rod of Security: While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. 
-                          You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery Tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless
-                          of its Nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower 
-                          picked from a garden in the paradise disappears if it is taken outside the extraplanar space. For each hour spent in the paradise, a visitor regains Hit Points as if it had spent 1 Hit Die. Also, 
-                          creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down). When the time 
-                          runs out or you use an action to end it, all visitors reappear in the Location they occupied when you activated the rod, or an unoccupied space nearest that Location. The rod can't be used again until 
-                          ten days have passed.                        
-       - Bag of Beans: Inside this heavy cloth bag are 6 dry beans. The bag weighs 1/2 pound plus 1/4 pound for each bean it contains. If you dump the bag's contents out on the ground, they explode in a 10-foot radius, extending
+        Brooch of Shielding: Resistance to Force Damage and immunity to Magic Missle. Grants the wearer the ability to communicate telepathically within 30 feet. Allows the wearer to cast the spell Fairy Fire 3 times pe day
+        Wand of Magic Missle: This wand has 7 Charges. While holding it, you can use an action to expend 1 or more of its Charges to cast the Magic Missile spell from it. For 1 charge, you cast the 1st-level version of the 
+                              spell. You can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended Charges daily at dawn. If you expend the wand's last charge, roll a d20.
+                              On a 1, the wand crumbles into ashes and is destroyed. 
+        Rod of Security: While holding this rod, you can use an action to activate it. The rod then instantly transports you and up to 199 other willing creatures you can see to a paradise that exists in an extraplanar space. 
+                         You choose the form that the paradise takes. It could be a tranquil garden, lovely glade, cheery Tavern, immense palace, tropical island, fantastic carnival, or whatever else you can imagine. Regardless
+                         of its Nature, the paradise contains enough water and food to sustain its visitors. Everything else that can be interacted with inside the extraplanar space can exist only there. For example, a flower 
+                         picked from a garden in the paradise disappears if it is taken outside the extraplanar space. For each hour spent in the paradise, a visitor regains Hit Points as if it had spent 1 Hit Die. Also, 
+                         creatures don't age while in the paradise, although time passes normally. Visitors can remain in the paradise for up to 200 days divided by the number of creatures present (round down). When the time 
+                         runs out or you use an action to end it, all visitors reappear in the Location they occupied when you activated the rod, or an unoccupied space nearest that Location. The rod can't be used again until 
+                         ten days have passed.                        
+        Bag of Beans: 
+        - Description: Inside this heavy cloth bag are 6 dry beans. The bag weighs 1/2 pound plus 1/4 pound for each bean it contains. If you dump the bag's contents out on the ground, they explode in a 10-foot radius, extending
                        from the beans. Each creature in the area, including you, must make a DC 15 Dexterity saving throw, taking 5d4 fire damage on a failed save, or half as much damage on a successful one. The fire ignites 
                        flammable Objects in the area that aren't being worn or carried. If you remove a bean from the bag, plant it in dirt or sand, and then water it, the bean produces an Effect 1 minute later from the ground 
                        where it was planted. The DM can choose an Effect from the following table, determine it randomly, or create an Effect.                    
-       - A Selection of Fine Cigars
-       - A large Selection of poitions, poisons and ointments
-       - Several spell scrolls
-       - Several Red Wizard's of Thay's Head's preserved in pickle jars
-       - 2 throwing axes
-       - 4 Javelins       
-                                                                   
+        - A Selection of Fine Cigars
+        - A large Selection of poitions, poisons and ointments
+        - Several spell scrolls
+        - Several Red Wizard's of Thay's Head's preserved in pickle jars
+        - 2 throwing axes
+        - 4 Javelins
+
   profile:
 
     #
@@ -570,7 +570,6 @@ npc:
       over the years, becoming known as "The Forgotten". Using their new found wealth to buy a tavern, settling in the small shanty town of Phandalin, and opening Ardenthal's Rest. Recently his Brother Rophelor came back into 
       his life, now also exiled from their tribe and escorted by, much to Mykos' surprise, a daughter that Mykos had never known existed.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -586,32 +585,3 @@ npc:
       barrelling headlong into danger, despite his acute danger sense. Once battle commences though, there are few more violent, cunning and aggressive. Despite his tendency towards violence, Mykos also has a keenly developed 
       sense of fairness and justice. He also has a strong aversion to authority in general, but specifically to the tenets and intervenions of the many gods of the realm. He also has a special distatse for slavers, and a 
       genuine hatred of the Red Wizards of Thay in particular. He has also been known to go out of his way to provoke any authority figure that crosses his path, especially those who see him as lesser.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

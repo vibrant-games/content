@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Body Guard
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,8 +311,6 @@ npc:
     languages:
     - Common
     - Gnomish
-
-
 
     #
     # Factions:
@@ -339,7 +335,6 @@ npc:
       name: Collegium Imaginata
       role: Body Guard
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -363,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Please step away from the professor" comes the buzzing voice from the massive steel automaton as its fist clenches
+    introduction:  /"Please step away from the professor/" comes the buzzing voice from the massive steel automaton as its fist clenches
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -390,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Yez boss", "Rosie Understands", "You are in unreeasonable proximity to the professor without his express permission"
+    expressions:
+    - "Yez boss"
+    - "Rosie Understands"
+    - "You are in unreeasonable proximity to the professor without his express permission"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +412,7 @@ npc:
     #
     motivations: |
       Protecting its creator  
-      
+
     #
     # Passions:
     #
@@ -423,7 +421,7 @@ npc:
     #
     passions: |
       N/A
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       Not a big thinker
-      
+
     #
     # Secrets:
     #
@@ -441,7 +439,7 @@ npc:
     #
     secrets: |
       N/A
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,31 +464,30 @@ npc:
   #
   specialties:
     skills:
-   - - Steel Defender Abilities:
-        - Proficiencies: Proficiency Bonus +6 - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
-        - Immunities: Immune to Poison and Psychic Damage. Immune to Poison, Charmed and Exhaustion. Resistant to Fire
-        - Darkvision: 60ft. Passive Perception 22
-        - Vigilant: Can't be surprised
-        - Force Empowered Rend: Using a +8 Spellcasting modifier to hit one target within 5ft. Deals 1d8+6 force damage.
-        - Repair: (3/Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
-        - Extra Attack: Can take a second attack action each turn
-        - Deflect Attack: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
-                          The attacker takes 1d4+8 force damage. 
-        - Intimidate: It is an imposing sight and all those seeing it for the first time mus make a DC 12 Wisdom save or become firghtened for 1 round                  
+    - Steel Defender Abilities:
+      - Proficiencies: Proficiency Bonus +6 - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
+        Immunities: Immune to Poison and Psychic Damage. Immune to Poison, Charmed and Exhaustion. Resistant to Fire
+        Darkvision: 60ft. Passive Perception 22
+        Vigilant: Can't be surprised
+        Force Empowered Rend: Using a +8 Spellcasting modifier to hit one target within 5ft. Deals 1d8+6 force damage.
+        Repair: (3/Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
+        Extra Attack: Can take a second attack action each turn
+        Deflect Attack: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
+                        The attacker takes 1d4+8 force damage. 
+        Intimidate: It is an imposing sight and all those seeing it for the first time mus make a DC 12 Wisdom save or become firghtened for 1 round                  
  
-
     attacks: |
       Can attack 2x per round 
     combat-tactics: |
       It will attack with its Force Empowered Rend, it's fist in close quarters and its gatling cannon for ranged attacks
     special-equipment:
     - Steel Fist: Does 1d8+5 damage
-    - Gatling Cannon: Fires multiple shots at a single target doing 7d12 damage on a failed Dex save with DC 16, or do a sweeping attack targetting each creature within 30 feet doing 2d12 on a failed Dex save with DC 16. 
+      Gatling Cannon: Fires multiple shots at a single target doing 7d12 damage on a failed Dex save with DC 16, or do a sweeping attack targetting each creature within 30 feet doing 2d12 on a failed Dex save with DC 16. 
                       Range 60/240, Heavy, (Two-Handed for anyone but Rosie 198). Can fire 10 bursts before needing to be reloaded. Reloading takes assistance from Oswald Vardklemp and 3 rounds.
-    - Jet Pack: (4/Day) Can fly in a single burst of up to 60ft
-    
-  profile:
+      Jet Pack: (4/Day) Can fly in a single burst of up to 60ft
 
+  profile:
+ 
     #
     # Background story:
     # The long form character development.
@@ -502,7 +499,7 @@ npc:
       Rosie 198 is the 198th upgrade of the Robotic Oswald Shield Interceptor Engine. It is a large, magic, steam and hydrolic powered construct made of gleaming steel and bronze. It is bipedaled with broad shoulders 
       and a small bronze humanoid head. Two long arms, one ends in a huge steel prehensile hand and the other ends in a massive gatling cannon similar to the one it's master has, but much much bigger. Rosie 198 is 
       an imposing force and does it's job well.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -514,32 +511,3 @@ npc:
     personality: |
       Rosie 198 is completely loyal to Oswald Vardklemp and will do whatever he tells it and will defend him to it's death or his. It is sentient and capable of operating and reasoning on it own if Oswald becomes 
       incapacitated, but is definitely not very smart. Due to the nature of its construction, nobody but Oswald can control it under any circumastance.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

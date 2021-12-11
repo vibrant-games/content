@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Engineer, ex-naval officer
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Common
     - Orcish
-
 
     #
     # Factions:
@@ -331,8 +328,8 @@ npc:
     #
     # Optional.  0 or more.
     #
+    Factions:
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -357,7 +354,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A slender spire of an orc spills gears and belts from a jute sack at your feet. "Ah'm sorry, y'all, ah'm fallin' apart!"
+    introduction: A slender spire of an orc spills gears and belts from a jute sack at your feet. /"Ah'm sorry, y'all, ah'm fallin' apart!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -384,7 +381,14 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Howdy"; "Y'all"; "Ah reckon"; "Ain't no thang"; "Pitchin' woo"; "By golly"; "Here's a florin for your troubles."
+    expressions:
+    - "Howdy"
+    - "Y'all"
+    - "Ah reckon"
+    - "Ain't no thang"
+    - "Pitchin' woo"
+    - "By golly"
+    - "Here's a florin for your troubles."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +412,7 @@ npc:
     #
     motivations: |
       He is motivated to cultivate his intelligence and talents with magic in spite of his heritage.
-      
+
     #
     # Passions:
     #
@@ -417,7 +421,7 @@ npc:
     #
     passions: |
       Brilliant with devices (clocks, thieves' tools, autocarpentry).  Quiet, unassuming, straightforward and honest.
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +430,7 @@ npc:
     #
     vulnerabilities: |
       Restless.  Can't stay put or keep three past families together to save their life.  Lonely, seeking.  Underappreciated.
-      
+
     #
     # Secrets:
     #
@@ -435,8 +439,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,38 +464,34 @@ npc:
   #
   specialties:
     skills:       
+    - Orc Abilities:
+      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
+        Primal Intuition: Proficient in Insight and Survival
+        Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+        Relentless Endurance: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
+        Savage Attack: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+      Thief Abilities:
+      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
+        Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
+                           your Dexterity modifier.
 
-   - - Orc Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
-       - Primal Intuition: Proficient in Insight and Survival
-       - Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-       - Relentless Endurance: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
-       - Savage Attack: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
-
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-       
-   - - Thief Abilities:
-       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
-       - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
-                            your Dexterity modifier.
-   
-               
     special-abilities:
        - Proficiencies: Arcana, History, Insight
-       - Feats: N/A       
-       
+         Feats: N/A
+
     attacks: |
       1 attack with Staff of Charming
     combat-tactics: |
       Nagata will Use his Staff of Charming at the start of combat to try to eliminate the most threatening opponent off the bat.
     special-equipment:
-    - Rocinante: an auto-nag devised by Nagata to remind him of calendar events.  "Y'all have an appointment in 10 minutes!"
-    - Staff of Charming: While holding this staff he can use an action to expend 1 of its 10 Charges to cast Charm Person Command or Comprehend Languages from it using his spell save DC. The staff can also be used as a magic Quarterstaff. If he is holding the staff and fail a saving throw against an Enchantment spell that Targets only him, he can turn your failed save into a successful one. He can't use this property of the staff again until the next dawn. If he succeeds on a save against an Enchantment spell that Targets only him with or without the staff's intervention he can use his Reaction to expend 1 charge from the staff and turn the spell back on its caster as if he had cast the spell. The staff regains 1d8 + 2 expended Charges daily at dawn. If he expend the last charge roll a d20. On a 1 the staff becomes a nonmagical Quarterstaff.
+    - Rocinante: an auto-nag devised by Nagata to remind him of calendar events.  /"Y'all have an appointment in 10 minutes!/"
+      Staff of Charming: While holding this staff he can use an action to expend 1 of its 10 Charges to cast Charm Person Command or Comprehend Languages from it using his spell save DC. The staff can also be used as a magic Quarterstaff. If he is holding the staff and fail a saving throw against an Enchantment spell that Targets only him, he can turn your failed save into a successful one. He can't use this property of the staff again until the next dawn. If he succeeds on a save against an Enchantment spell that Targets only him with or without the staff's intervention he can use his Reaction to expend 1 charge from the staff and turn the spell back on its caster as if he had cast the spell. The staff regains 1d8 + 2 expended Charges daily at dawn. If he expend the last charge roll a d20. On a 1 the staff becomes a nonmagical Quarterstaff.
     
       
   profile:
@@ -512,8 +511,6 @@ npc:
      dismayed. He took a quick look around at the crew, made a broad and clearly unsuspicious gesture towards the starboard bow of the ship and whistled clearly (a known call for his shipmates) and then made a deliberate and
      unnoticeable dash to the port side of the ship diving off quietly into the water. Nagata swam to shore unnoticed and sat on his knees. He ran his fingers through the sand, muttering, "dear sea, you have me".
 
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -525,32 +522,3 @@ npc:
     personality: |
       Nagata never really enjoyed his life in the orc clans. He was unhappy, listless and restless. He dreamed of a free life on the sea and one day made a break for it. He however, has yet to get a chance to live his dream. As
       an orc, there aren't a whole lot of captains willing to take him on. So he mostly just aimlessly wanders the shoreline trying to survive
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

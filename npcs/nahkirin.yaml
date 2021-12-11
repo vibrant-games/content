@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Adventurer
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Common
     - Kor
-
 
     #
     # Factions:
@@ -335,7 +332,6 @@ npc:
       name: Seagate Adventurer's Guild
     - id: kor_clan
       name: Kor Clan
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -360,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A tall wiry woman crosses the Seagate Adventurer's Guild, "I understand you need a guide the Umara River Gorge
+    introduction:  A tall wiry woman crosses the Seagate Adventurer's Guild, /"I understand you need a guide the Umara River Gorge/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -387,7 +383,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You can stick to the hedrons, I'm taking the Red Route"
+    expressions:
+    - "You can stick to the hedrons, I'm taking the Red Route"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +408,7 @@ npc:
     #
     motivations: |
       Adventure and reward
-      
+
     #
     # Passions:
     #
@@ -420,7 +417,7 @@ npc:
     #
     passions: |
       Her family and clan
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       Her pride and ego. She's overly self-sufficient and has a difficult time trusting new people
-      
+
     #
     # Secrets:
     #
@@ -438,8 +435,7 @@ npc:
     #
     secrets: | 
       She knows many secret paths through regions that are otherwise impassable
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,49 +460,47 @@ npc:
   #
   specialties:
     skills:       
+    - Kor Abilities:
+      - Kor Climbing: You are proficient in both the Athletics and Acrobatics skills.
+        Lucky: When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
+        Brave: You have advantage on saving throws against being frightened.
+      Monk Abilities:
+      - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
+      - Martial Arts:
+         - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+         - Can roll a 1d6 in place of normal damage for unarmed strikes and monk weapons
+         - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+      - Ki:
+        - Ki Points: 6
+          Ki DC: 15 
+        Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+        Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+        Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+        Unarmored Movement: Speed is increased by 15. Can move along vertical surfaces and across liquids without falling during the move 
+        Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+                         free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+        Slow Fall: Can us a Reaction to falling damage by by 85hp
+        Extra Attack: Can Attack twice per turn
+        Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+        Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+      Way of the Shadows Abilities:
+      - Shadow Arts: you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast Darkness, Darkvision, Pass without Trace, or Silence, without providing material components.
+                     Additionally, you gain the Minor Illusion cantrip if you don't already know it
+        Shadow Step: you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim
+                     light or darkness. You then have advantage on the first melee attack you make before the end of the turn
 
-   - - Kor Abilities:
-       - Kor Climbing: You are proficient in both the Athletics and Acrobatics skills.
-       - Lucky: When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
-       - Brave: You have advantage on saving throws against being frightened.
-
-   - - Monk Abilities:
-       - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-       - Martial Arts:
-          - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-          - Can roll a 1d6 in place of normal damage for unarmed strikes and monk weapons
-          - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-       - Ki: 6 Ki Points, Ki DC = 15 
-          - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          - Step of the Wind:Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
-       - Unarmored Movement: Speed is increased by 15. Can move along vertical surfaces and across liquids without falling during the move 
-       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                          free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-       - Slow Fall: Can us a Reaction to falling damage by by 85hp
-       - Extra Attack: Can Attack twice per turn
-       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-       - Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
-       
-   - - Way of the Shadows Abilities:
-       - Shadow Arts: you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast Darkness, Darkvision, Pass without Trace, or Silence, without providing material components.
-                      Additionally, you gain the Minor Illusion cantrip if you don't already know it
-       - Shadow Step: you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim
-                      light or darkness. You then have advantage on the first melee attack you make before the end of the turn
-   
-               
     special-abilities:
        - Proficiencies: Nature, Survival, Acrobatics, Athletics, Perception, Intimidation
-       - Feats: Athelete, Mobile       
+         Feats: Athelete, Mobile       
        - She is an expert in the skill/art of Kor Line-Slinging with a +6 to line-slinging Dex roles
-     
+
     attacks: |
       2 attack with Line-Slinging Hooks, Quaterstaff or Unarmed Strike
     combat-tactics: |
       She will generally fight with her hook lines much like a chain-blade to keep her distance. But she is also and exceptional hand-to-hand fighter as well
     special-equipment:
        - +2 Line-Slinging Hooks that give advantage on Line-slinging roles   
-      
+
   profile:
 
     #
@@ -523,8 +517,6 @@ npc:
      follower of the goddess Kamsa and a member of her order, but the likeness of her goddess now bares to much of a resemblance to the Eldrazi Titans for her to have any faith left. She has abandoned her order but still
      maintains the skills she has learned and has translated them into her daily life as a guide and adventurer
 
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -537,32 +529,3 @@ npc:
       Nahkirin lives a life of adventure. She much prefers the wildness of the wilderness to the confines of civilization. The more adventure the better, whatever it takes to keep her mind off of everything shes been through.
       She is exceptionally skilled at climbing and the traditional Kor skill of Line-Slinging, is very proud of her skill and will not hesitate to brag about her prowess. She is generally not keen on people and will avoid making
       attachments as much as possible. She has lost faith in her order. She does her best to hide it, but she is definitely haunted by the things she saw and did during the war
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

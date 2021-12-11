@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Teaching Assistant
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -310,7 +309,6 @@ npc:
     #
     languages:
     - All
-
 
     #
     # Factions:
@@ -329,8 +327,8 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -355,7 +353,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The town noticeboard highlights an opportunity in bold letters, "LEARN". "For you," a hand slaps it, "I'll offer a deal"
+    introduction:  The town noticeboard highlights an opportunity in bold letters, /"LEARN/". /"For you,/" a hand slaps it, /"I'll offer a deal/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -382,7 +380,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Education is over-rated. Skills, on the other hand", "Don't know to learn...learn to know to do", "Pragmatics, friends"
+    expressions:
+    - "Education is over-rated. Skills, on the other hand"
+    - "Don't know to learn...learn to know to do"
+    - "Pragmatics, friends"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -406,7 +407,7 @@ npc:
     #
     motivations: |
       To undermine scholastic systems and make learning a pragmatic, gig-based trade. To live a simple life without urgency.
-      
+
     #
     # Passions:
     #
@@ -415,7 +416,7 @@ npc:
     #
     passions: |
       Books. Trades. Teaching others.
-      
+
     #
     # Vulnerabilities:
     #
@@ -424,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       Doesn't like to stay in one place
-      
+
     #
     # Secrets:
     #
@@ -433,8 +434,7 @@ npc:
     #
     secrets: | 
       Many
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -458,12 +458,12 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:        
-      
+    skills:
+
     special-abilities:
-       - Proficiencies: Perception, History, Arcana, Medicine, Invesigation
-       - Feats: Keen Mind
-       - He is VERY well-read and able to practice just about any 'trade' or 'skill' can train others in just about anything; for the right price.
+    - Proficiencies: Perception, History, Arcana, Medicine, Invesigation
+      Feats: Keen Mind
+    - He is VERY well-read and able to practice just about any 'trade' or 'skill' can train others in just about anything; for the right price.
     attacks: |
       1 attack with Unarmed Strike
     combat-tactics: |
@@ -471,9 +471,9 @@ npc:
     special-equipment:
     - Wondrous Satchel of Libraries: This bag allows its user to pull any 5 books of any topic from it. After 5 books have been pulled the user cannot pull any more until they've returned one after which time they can pull
                                      another.
-    - Bag of Holding: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64
+      Bag of Holding: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64
                       cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action                                               
-      
+
   profile:
 
     #
@@ -491,8 +491,6 @@ npc:
      their love of knowledge and accumulate even greater wealth. Asexual and, in fact, without any noticeable confirmation of biological sex, they request that others use a variety of always changing pronouns when addressing
      them. 
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -504,33 +502,3 @@ npc:
     personality: |
      Ronn is an enigma. They are clearly well-read and knowledgeable and are happy to teach what they know for the right price. They have a biting and sarcastic wit and aren't afraid to use it. They seem to be at least
      moderately skilled in almost every discipline. Their level of knowledge indicates that they are much much older, and much less human than they appear to be.  
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

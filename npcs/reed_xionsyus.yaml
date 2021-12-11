@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Merchant
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +311,6 @@ npc:
     - Common
     - Orcish
     - Dwarvish
-
 
     #
     # Factions:
@@ -333,7 +331,6 @@ npc:
     #
     - id: xionsyus_clan
       name: Xionsyus Clan
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -358,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  One market booth is especially eye-catching with foreign weapons, armor, and curios . "Hail. I bring you to the East."
+    introduction:  One market booth is especially eye-catching with foreign weapons, armor, and curios . /"Hail. I bring you to the East./"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -385,7 +382,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Nothing is equal. Our duty is to make it so through disciplined action"; "Tradition over ambition. Always."
+    expressions:
+    - "Nothing is equal. Our duty is to make it so through disciplined action"
+    - "Tradition over ambition. Always."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +408,7 @@ npc:
     #
     motivations: |
       To expose the West to the East. To revive the importance of tradition.
-      
+
     #
     # Passions:
     #
@@ -418,7 +417,7 @@ npc:
     #
     passions: |
       Eastern weapons, armors, equipment, clothing, and curios.
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       Not the brightest of fellows
-      
+
     #
     # Secrets:
     #
@@ -436,8 +435,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,27 +460,25 @@ npc:
   #
   specialties:
     skills:       
-   - - Half-Orc Abilities:
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-       - Menacing: gain proficiency in the Intimidation skill 
-       - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-       - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+    - Half-Orc Abilities:
+      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+        Menacing: gain proficiency in the Intimidation skill 
+        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+      Fighter Abilities:
+      - Fighting Style: Two Weapon Fighting
+        Second Wind: Bonus Action to regain 1d10 + 5
+        Action Surge: Once every short/long rest can take an extra action
+        Extra Attack: Can attack twice each turn
+      Samurai Abilities:
+      - Fighting Spirit: your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on all weapon attack rolls until the end of the current turn. When you
+                         do so, you also gain 5 temporary hit points. The number of hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level. You can use this
+                         feature three times. You regain all expended uses of it when you finish a long rest.        
 
-   - - Fighter Abilities:
-         - Fighting Style: Two Weapon Fighting
-         - Second Wind: Bonus Action to regain 1d10 + 5
-         - Action Surge: Once every short/long rest can take an extra action
-         - Extra Attack: Can attack twice each turn
-
-   - - Samurai Abilities:
-         - Fighting Spirit: your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on all weapon attack rolls until the end of the current turn. When you
-                            do so, you also gain 5 temporary hit points. The number of hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level. You can use this
-                            feature three times. You regain all expended uses of it when you finish a long rest.        
-      
     special-abilities:
        - Proficiencies: Martial Weapons, Athletics, History, Persuasion
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       2 attacks with Ko-Naginata
     combat-tactics: |
@@ -491,7 +487,7 @@ npc:
     - Ancestors Radiant Ko-Naginata: You can use a bonus action to speak this magic weapon's command word causing a searing light to erupt from the blade. The light glows a deep warm yellow in the center of the blade sharpening
                                      to a brilliant white at the edge of the blade's cutting surface and sheds bright light in a 40-foot radius and dim light for an additional 40 feet. While the weapon is incandescent it deals
                                      an extra 2d6 radiant damage to any target it hits. The radiance lasts until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.                                                
-      
+
   profile:
 
     #
@@ -508,8 +504,6 @@ npc:
      mistake, however, because Reed is not a Ronin. He stands devout in his devotion to his family and their military objectives, acting as a diplomat, messenger, and trader of their fine goods. Often receiving mass imports from
      his home, he busies his days refining and sophisticating his market booth and managing his inventory to best provide an authentic experience of his culture. 
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -521,33 +515,3 @@ npc:
     personality: |
      Reed is a dutiful and devoted son. He is proud of his family and heritage and works hard to make his market stall a refection of that pride. He is also a skilled and patient warrior who studies and uses his enemies 
      weaknesses against them
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

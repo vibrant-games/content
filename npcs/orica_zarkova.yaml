@@ -315,8 +315,6 @@ npc:
     - Orcish
     - Gnomish
 
-
-
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -339,7 +337,6 @@ npc:
     - id: Collegium_Imaginata
       name: Collegium Imaginata
       role: Scientist and Researcher
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -364,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Don't drink that!" snaps the the tall orc lady, snatching the vial aggressively
+    introduction:  /"Don't drink that!/" snaps the the tall orc lady, snatching the vial aggressively
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Careful, that ones not good for you", "This'll give you a little boost", "Just don't get in my way"
+    expressions:
+    - "Careful, that ones not good for you"
+    - "This'll give you a little boost"
+    - "Just don't get in my way"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +415,7 @@ npc:
     #
     motivations: |
       the pursuit of knowledge  
-      
+
     #
     # Passions:
     #
@@ -424,7 +424,7 @@ npc:
     #
     passions: |
       The Elixir of Life
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +433,7 @@ npc:
     #
     vulnerabilities: |
       Jealous and guarded, comes off as cold
-      
+
     #
     # Secrets:
     #
@@ -442,7 +442,7 @@ npc:
     #
     secrets: |
       She doesn't trust Oswald or Gerhardt and thinks they want to steal her work
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,53 +467,55 @@ npc:
   #
   specialties:
     skills:
-  - - Orc Abilities:
+    - Orc Abilities:
       - Primal Intuition: Proficient in Medicine and Nature
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-      - Powerful Build: Counts as one size larger for determining carrying capacity 
-      - Relentless Endurance: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
-      - Savage Attack: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
-      - Peaceful Magic: Can cast Purify Food and Water, Sanctuary and Barkskin once per long rest with a DC 16
- 
-  - - Artificer Abilities:
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Powerful Build: Counts as one size larger for determining carrying capacity 
+        Relentless Endurance: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
+        Savage Attack: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
+        Peaceful Magic: Can cast Purify Food and Water, Sanctuary and Barkskin once per long rest with a DC 16
+      Artificer Abilities:
       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 19
-        Cantrip: Acid Splash, Mage Hand, Fire Bolt, Mending
-        1st Level: Absorb Elements, Detect Magic, Identify, Catapult
-        2nd Level: Continual Flame, Heat Metal, Levitate
-        3rd Level: Dispel Magic, Protection from Energy, Tiny Servant
-        4th Level: Fabricate, Elemental Bane
-        
-      - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
-      - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-      - Tool Expertise: Smith's Tool proficiency bonus is doubled
-      - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-      - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-      - Spell Storing Item: Can store a spell in and object once per long rest
-      - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 5 magic items       
-      
-  - - Alchemist Abilities:
+      - Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus
+          Spell DC: 19
+          Cantrip: Acid Splash, Mage Hand, Fire Bolt, Mending
+          1st Level: Absorb Elements, Detect Magic, Identify, Catapult
+          2nd Level: Continual Flame, Heat Metal, Levitate
+          3rd Level: Dispel Magic, Protection from Energy, Tiny Servant
+          4th Level: Fabricate, Elemental Bane
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
+        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+        Tool Expertise: Smith's Tool proficiency bonus is doubled
+        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+        Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+        Spell Storing Item: Can store a spell in and object once per long rest
+        Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 5 magic items       
+      Alchemist Abilities:
       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
-      - Spellcasting: Requires Alchemist Supplies as Spellcasting focus, Spell DC 19
-        3rd Level: Healing Word, Ray of Sickness
-        5th Level: Flaming Sphere, Melf's Acid Arrow
-        9th Level: Gaseous Form, Mass Healing Word
-        13th Level: Blight, Death Ward
-        15th Level: Cloudkill, Raise Dead
-      - Experimental Elixir: Can produce 3 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
-      - Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
-      - Restorative Reagents: Experimantal Elixirs also give 2d6+7 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
-      - Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
+        Spellcasting:
+        - Description: Requires Alchemist Supplies as Spellcasting focus
+          Spell DC: 19
+          3rd Level: Healing Word, Ray of Sickness
+          5th Level: Flaming Sphere, Melf's Acid Arrow
+          9th Level: Gaseous Form, Mass Healing Word
+          13th Level: Blight, Death Ward
+          15th Level: Cloudkill, Raise Dead
+        Experimental Elixir: Can produce 3 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
+        Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
+        Restorative Reagents: Experimantal Elixirs also give 2d6+7 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
+        Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
 
     special-abilities: 
     - Feats: Keen Mind, War Caster, Skill Expert - Alchemists Supplies, Observant, Chef, Elemental Adept - Acid, Orcish Fury, Healer. Poisoner, 
-    - Legendary Resistance: (3/Day), If Orica Zarkova fails a saving throw she can choose to succeed instead 
-    - Legendary Actions: Orica Zarkova can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Orica Zarkova regains spent Legendary Actions at the start of her turn
-      - Offensive Alchemy: Orica Zarkova can create and throw offensive experimental elixirs of her choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
-      - Selfcare: Orica Zarkova can heal herself for 2d6 HP
-      - Refreshing Infusion: Orica Zarkova can use her Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.                  
- 
+      Legendary Resistance: (3/Day), If Orica Zarkova fails a saving throw she can choose to succeed instead 
+      Legendary Actions:
+      - Desctiption: Orica Zarkova can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                     Orica Zarkova regains spent Legendary Actions at the start of her turn
+        Additional Information:
+        - Offensive Alchemy: Orica Zarkova can create and throw offensive experimental elixirs of her choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
+          Selfcare: Orica Zarkova can heal herself for 2d6 HP
+          Refreshing Infusion: Orica Zarkova can use her Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.                  
 
     attacks: |
       Will attack with spells 
@@ -522,7 +524,7 @@ npc:
     special-equipment:
     - Potions: Has all kinds potions and oils of every sort and can create whatever other potions she may need
     - 2x +1 Poisoned Daggers
-    
+
   profile:
 
     #
@@ -537,7 +539,7 @@ npc:
       pursue that into her career. She has become adept at alchemy especially the creation of healing potions, but through her research has learned to make pretty much any kind of potion, oil, acid or poison. The ultimate 
       goal of her research is to develop what she calls The Elixir of Life; a potion that will both grant immortality as well as restore life to the dead and the undead. So far she has been unsuccessful in her pursuit, 
       but continues her research undetered.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -551,32 +553,3 @@ npc:
       down as to not be so prevalent. She dresses in soft stylish leather armor covered by a long lab coat. Having been away from her tribe for a long time Orica is well aware of the way that the world views her people
       and because of this she has become jaded and guarded in her interations with others. She is fierce and driven to accomplish her goal. Anyone who questions her intent or ability is met with hostility and indignance. 
       She jealously guards her research and while she enjoys the benefits that the Collegium has to offer, she fears that Oswald Vardklemp and Gerhardt Klippstein want to steal her work (they don't). 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Pyc DeFeywilde
+  name: Pyc DeFeywilde /(Peace/)
 
   #
   # The NPC artwork.
@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Merchant
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +311,6 @@ npc:
     - Common
     - Elven
     - Halfling
-
 
     #
     # Factions:
@@ -333,7 +331,6 @@ npc:
     #
     - id: weaver_and_textile_guild
       name: Weaver and Textile Guild
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -358,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A beautiful woman gestures towards equally beautiful clothes hanging from a market stall. "Woven wares for your perusal"
+    introduction:  A beautiful woman gestures towards equally beautiful clothes hanging from a market stall. /"Woven wares for your perusal/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -385,7 +382,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Fine fabrics are not the sole province of aristocrats"; "Anything you choose can be garnished to your liking"
+    expressions:
+    - "Fine fabrics are not the sole province of aristocrats"
+    - "Anything you choose can be garnished to your liking"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +408,7 @@ npc:
     #
     motivations: |
       To genuinely create fine fabrics and clothing. To bring luxuriousness to the common classes.
-      
+
     #
     # Passions:
     #
@@ -418,7 +417,7 @@ npc:
     #
     passions: |
       Closing the class-divide. Preventing a monopoly on fine fabric
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -436,8 +435,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,45 +460,46 @@ npc:
   #
   specialties:
     skills:       
-   - - Half-Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon
+    - Half-Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon
+      Cleric Abilities:
+      - Spellcasting:
+        - Spell DC: 13
+          Cantrips: Resistance, Sacred Flame, Toll The Dead, Thaumaturgy
+          1st Level: Bane, Bless, Protection From Evil and Good, Purify Food and Drink
+          2nd Level: Calm Emotions, Hold Person, Zone of Truth
+          3rd Level: Dispel Magic, Mass Healing Word, Remove Curse
+        Channel Divinity: Turn Undead, Destroy Undead 
 
-   - - Cleric Abilities:
-       - Spellcasting: Spell DC 13
-         Cantrips: Resistance, Sacred Flame, Toll The Dead, Thaumaturgy
-         1st Level: Bane, Bless, Protection From Evil and Good, Purify Food and Drink
-         2nd Level: Calm Emotions, Hold Person, Zone of Truth
-         3rd Level: Dispel Magic, Mass Healing Word, Remove Curse
-       - Channel Divinity: Turn Undead, Destroy Undead 
+      Peace Domain Abilities:
+      - Spellcasting:
+        - Spell DC: 13 
+          1st Level: Heroism, Sanctuary
+          3rd Level: Aid, Warding Bond
+          5th Level: Beacon of Hope, Sending
+        Emboldening Bond: you can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your
+                          proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add
+                          the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn. You can use this feature a number of times equal to your
+                          proficiency bonus, and you regain all expended uses when you finish a long rest.
+        Channel Divinity: 
+        - Balm of Peace: you can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any
+                         other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once
+                         whenever you take this action. 
+        Protective Bond: the bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first
+                         can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead.       
 
-   - - Peace Domain Abilities:
-       - Spellcasting: Spell DC 13 
-         1st Level: Heroism, Sanctuary
-         3rd Level: Aid, Warding Bond
-         5th Level: Beacon of Hope, Sending
-       - Emboldening Bond: you can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your
-                           proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add
-                           the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn. You can use this feature a number of times equal to your
-                           proficiency bonus, and you regain all expended uses when you finish a long rest.
-       - Channel Divinity: 
-         - Balm of Peace: you can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any
-                          other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once
-                          whenever you take this action. 
-       - Protective Bond: the bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first
-                          can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead.       
-      
     special-abilities:
        - Proficiencies: Persuasion, Perception, Insight, Persuasion
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with mace or spell attack
     combat-tactics: |
       Pyc will do everthing in her power to diffuse any violence
     special-equipment:
-       N/A                                                  
+       N/A
       
   profile:
 
@@ -518,8 +517,6 @@ npc:
      clan would labor over textiles and fabrics to develop a standard of regal dress that they believed ought to be held by all members of the kingdoms. She doesn't frown on those who aren't well-kempt, nor does she sympathize.
      Rather, she genuinely empathizes with those who have resigned themselves to the 'less finer' things in life and advocates for the vital role that one's self-presentation takes in daily activities and overall destiny.
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -530,32 +527,3 @@ npc:
     #
     personality: |
      Pyc is a generous and empathetic young lady who believes in the persuit of peace and understanding. As a travelling merchant, she moves from town to town selling her fabrics and preaching peace.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

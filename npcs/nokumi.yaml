@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Guide
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Elvish
     - Beast
     - Aven
-
 
     #
     # Factions:
@@ -335,7 +332,6 @@ npc:
     #
     - id: the_nation_of_nac_mac
       name: The Nation of Nac Mac
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -387,7 +383,13 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "It is what it is"; "Love", "Dear", "Honey", "Sweetie".; "Be grateful to the rock, the dew, and the sun."
+    expressions:
+    - "It is what it is"
+    - "Love"
+    - "Dear"
+    - "Honey"
+    - "Sweetie"
+    - "Be grateful to the rock, the dew, and the sun."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +413,7 @@ npc:
     #
     motivations: |
       To aid people in traversing the wild while educating them on her peoples, the surroundings, and the inherent dichotomy of nature as calm/ferocious, growth/decay, etc.
-      
+
     #
     # Passions:
     #
@@ -420,7 +422,7 @@ npc:
     #
     passions: |
       Nokumi's world spins around her pets and her grandson. She accepts food, tools and clothes in return for her guidance.
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       Though friendly and kind, Nokumi only listens when she's interested; seems cold to those who do not share her passions.
-      
+
     #
     # Secrets:
     #
@@ -438,8 +440,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,67 +465,67 @@ npc:
   #
   specialties:
     skills:       
-
-   - - Wood Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        - Elf Weapon Training: You have proficiency with the longsword, shortsword, shortbow, and longbow.
-        - Fleet of Foot: Your base walking speed increases to 35 feet.
-        - Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.
-
-   - - Ranger Abilities:
-       - Ranger Spellcasting: Spell DC 14
-          - 1st Level: Goodberry, Hunter's Mark 
-          - 2nd Level: Pass Without Trace, Beast Sense
-          - 3rd Level: Flame Arrow, Plant Growth
-       - Favored Enemy:  - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them - Goblins and Trolls
-       - Natural Explorer: Favored Terrain - Forest
-          - Difficult Terrain doesn't slow your group's Travel
-          - Your group can't become lost except by magical means
-          - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-          - If you are traveling alone, you can move stealthily at a normal pace
-          - When you Forage, you find twice as much food as you normally would
-          - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-       - Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-       - Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
-                             types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
-                             reveal the creatures' location or number.
-       - Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-       - Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
-                     or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell
-       - Hide in Plain Sight: you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, Plants, soot, and other naturally occurring materials with which to create your camouflage. Once you 
-                              are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to 
-                              Dexterity (Stealth) checks as long as you remain there without moving or taking Actions. Once you move or take an action or a Reaction, you must camouflage yourself again to gain this benefit.
-       
-   - - Monster Slayer Conclave Abilities:
-       - Hunters Sense: you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has
-                        any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You
-                        can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest
-       - Slayers Prey: you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each
-                       turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different
-                       creature
-       - Supernatural Defense: you gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to
-                               escape that target's grapple, add 1d6 to your roll
-       - Monster Slayer Spellcasting: Spell DC 14
-          - 3rd Level: Protection from Good and Evil
-          - 5th Level: Zone of Truth
-          - 9th Level: Magic Circle
-               
+    - Wood Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Keen Senses: You have proficiency in the Perception skill 
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+        Elf Weapon Training: You have proficiency with the longsword, shortsword, shortbow, and longbow.
+        Fleet of Foot: Your base walking speed increases to 35 feet.
+        Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.
+      Ranger Abilities:
+      - Ranger Spellcasting: 
+        - Spell DC: 14
+          1st Level: Goodberry, Hunter's Mark 
+          2nd Level: Pass Without Trace, Beast Sense
+          3rd Level: Flame Arrow, Plant Growth
+        Favored Enemy: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them - Goblins and Trolls
+        Natural Explorer: 
+        - Favored Terrain: Forest
+        - Difficult Terrain doesn't slow your group's Travel
+        - Your group can't become lost except by magical means
+        - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+        - If you are traveling alone, you can move stealthily at a normal pace
+        - When you Forage, you find twice as much food as you normally would
+        - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+        Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
+        Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+                            types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+                            reveal the creatures' location or number.
+        Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+        Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
+                    or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell
+        Hide in Plain Sight: you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, Plants, soot, and other naturally occurring materials with which to create your camouflage. Once you 
+                             are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to 
+                             Dexterity (Stealth) checks as long as you remain there without moving or taking Actions. Once you move or take an action or a Reaction, you must camouflage yourself again to gain this benefit.
+      Monster Slayer Conclave Abilities:
+      - Hunters Sense: you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has
+                       any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You
+                       can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest
+        Slayers Prey: you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each
+                      turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different
+                      creature
+        Supernatural Defense: you gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to
+                              escape that target's grapple, add 1d6 to your roll
+        Monster Slayer Spellcasting:
+        - Spell DC: 14
+          3rd Level: Protection from Good and Evil
+          5th Level: Zone of Truth
+          9th Level: Magic Circle
+      
     special-abilities:
        - Proficiencies: Nature, Survival, Perception
-       - Feats: N/A
-     
+         Feats: N/A
+
     attacks: |
       2 attacks with Longsword or Long Bow
     combat-tactics: |
       Nokumi will choose the height advantages of the trees over direct combat, leaping from branch to branch and gaining distance whenever possible.
     special-equipment:
        - Longsword
-       - Long Bow       
-      
+       - Long Bow
+
   profile:
 
     #
@@ -543,9 +544,6 @@ npc:
      her love and kindness. They are all almost attuned to one another as an arcane caster might be attuned to her familiar. Eschewing most material wealth, as is custom for her peoples, Nokumi will often only accept tools
      or clothing in return for her guidance.
 
-
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -557,32 +555,3 @@ npc:
     personality: |
       Nokumi is a kind and generous soul. She loves the forest and all of its animal denizens. She helps them and they help her. She is always happy to guide people through her woods as much for the sake of helping as it is to
       prevent travellers from damaging the woods
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

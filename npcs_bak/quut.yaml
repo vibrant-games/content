@@ -160,7 +160,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Matriarch of the Golem Off-Lease Employm
+    - Matriarch of the Golem Off-Lease Employment Agency
 
     #
     # D & D classes (case insensitive):
@@ -302,7 +302,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "Mmmmmm"; "Mmmmm hmmmm"; "Mmmmm-mmmmm". Quut rarely says anything, preferring to roll her eyes or blink twice for "yes".
+    expressions:
+    - "Mmmmmm"
+    - "Mmmmm hmmmm"
+    - "Mmmmm-mmmmm"
+    - Quut rarely says anything, preferring to roll her eyes or blink twice for "yes".
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -392,25 +396,3 @@ npc:
     #
     background-story: |
       ***RK***
-
-    #
-    # Personality (or something like that):
-    # Expand on the introduction, appearance, expressions, mannerisms, etc.
-    # without any length limits.
-    #
-    # Required.
-    # No length limit for now.
-    #
-
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - wp:status: publish
-  - _wp_old_date: 2021-01-30
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]

@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Caravanserai proprietor
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Elvish
     - Halfling
     - Orcish
-
 
     #
     # Factions:
@@ -334,7 +332,6 @@ npc:
     #
     - id: the_canvaserai_of_mont_ire
       name: The Canvaserai of Mont Ire
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -359,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "G-g-good d-d-day, muh-muh-my friends. Horses and c-c-camels around back, puh-puh-please. A d-d-drink?"
+    introduction:  /"G-g-good d-d-day, muh-muh-my friends. Horses and c-c-camels around back, puh-puh-please. A d-d-drink?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -386,7 +383,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "An unmitigated disaster"; (referencing lacrosse) "Kluskap number one!"
+    expressions:
+    - "An unmitigated disaster"
+    - (referencing lacrosse) "Kluskap number one!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +409,7 @@ npc:
     #
     motivations: |
       Rahim aims to provide the kind of respite he believes the austere region demands.
-      
+
     #
     # Passions:
     #
@@ -419,7 +418,7 @@ npc:
     #
     passions: |
       Rahim's two daughters are his heart; he happily discusses fine wine, sweet ice, amateur astronomy, lacrosse.
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       Rahim has maintained the caravanserai for a year, since his mother's bequest. He longs for home, and his daughters.
-      
+
     #
     # Secrets:
     #
@@ -437,8 +436,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,24 +461,23 @@ npc:
   #
   specialties:
     skills:       
-   - - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-       - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
-       
-      
+    - Halfling Abilities:
+      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll
+        Brave: Has advantage on Saving Throws against being Frightened 
+        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+        Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
+
     special-abilities:
        - Proficiencies: Persuasion, Perception, Insight
-       - Feats: N/A
+         Feats: N/A
        
     attacks: |
       1 attack with unarmed attack
     combat-tactics: |
       Rahim will do whatever he can to avoid a fight
     special-equipment:
-      - A stellar looking glass signed by the inventor. Rahim sets it up at night in the courtyard for his guests to stargaze                                                  
-      
+      - A stellar looking glass signed by the inventor. Rahim sets it up at night in the courtyard for his guests to stargaze
+
   profile:
 
     #
@@ -496,8 +493,6 @@ npc:
      up in this challenging environment and wed his sweetheart, Mallum. The two have made a name for themselves as propritors of one of the finest rest stops in the region where they offer some of the finest consumables around,
      serving fine grub and wines and, with their deep cellar, one of the few purveyors of flavored ices for hundreds of miles
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -509,32 +504,3 @@ npc:
     personality: |
      Rahim is a kind and generous man. He and his wife work hard to provide the highest level of hospitality to their guests. By nature, he is a very nervous and anxious sort, and has a serious stutter because of it. Aside from
      his anxiety, Rahim has proved to be an astute and capable business man and has developed my contacts throughout his community  
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

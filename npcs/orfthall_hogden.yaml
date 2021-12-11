@@ -297,7 +297,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +311,6 @@ npc:
     languages:
     - Common
     - Orcish
-
 
     #
     # Factions:
@@ -333,7 +331,6 @@ npc:
     #
     - id: chamber_of_commerce
       name: Chamber of Commerce
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -358,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A big ugly half-orc wields a huge carving knife behind the counter at the local butcher shop. "Best cuts in town!"
+    introduction:  A big ugly half-orc wields a huge carving knife behind the counter at the local butcher shop. /"Best cuts in town!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -385,7 +382,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "How many chops do you want?", "Oi, that's a fine cut of mutton right there". "Time to make the sausage"
+    expressions:
+    - "How many chops do you want?"
+    - "Oi, that's a fine cut of mutton right there"
+    - "Time to make the sausage"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -462,24 +462,24 @@ npc:
   #
   specialties:
     skills:       
-   - - Half-Orc Abilities:
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-       - Menacing: gain proficiency in the Intimidation skill 
-       - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-       - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-      
+    - Half-Orc Abilities:
+      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+        Menacing: gain proficiency in the Intimidation skill 
+        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+
     special-abilities:
        - Proficiencies: Nature, Survival, Intimidation, Butcher Knives
-       - Feats: N/A
+         Feats: N/A
        - He is an incredibly skilled butcher and proficient with several kinds of knife as the pertain to his profession
-       
+
     attacks: |
       1 attack with knife
     combat-tactics: |
       It's unlikely that he would ever fight, but he is pretty spectacular with a knife
     special-equipment:
-       - +2 Butcher's Knife       
-      
+       - +2 Butcher's Knife
+
   profile:
 
     #
@@ -493,7 +493,7 @@ npc:
      Abandoned as a child and raised in orphanages, he had an early pension for catching and dissecting small animals. As he got older he found out he could do that for a living without people shunning him for it. He found a
      kindly butcher in town and became his apprentice. He took to the trade light lightning and quickly far surpassed the abilities of his mentor. When it came time for his mentor to retire, Orfthall took over the business and
      has excelled. However, as skilled as Orfthall is, he's not immune to the fluctuations of the market and has from time to time, passed off lesser meats as better cuts, especially in his sausage. 
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -504,32 +504,3 @@ npc:
     #
     personality: |
      Orfhall is a pleasant and jovial fellow. He may not be the sharpest knife in the drawer, but he is phenominal with the sharpest knife in the drawer. He is an exceptional butcher and is very proud of his skill.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

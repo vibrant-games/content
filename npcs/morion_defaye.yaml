@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Priest, Abbot, Overseer, Caravan Guard
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Elvish
     - Dwarvish
     - Orcish
-
 
     #
     # Factions:
@@ -340,7 +337,6 @@ npc:
       name: Regional Merchants' Guild
       role: High Counsellor
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -364,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Hooves clop on the ground Warrior priests approach on horseback clad in lush robes. "Make way for the caravan!"
+    introduction:  Hooves clop on the ground Warrior priests approach on horseback clad in lush robes. /"Make way for the caravan!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Coin demands Order and thus trade rules our way forward", "We are only divided by our ability to create wealth"
+    expressions:
+    - "Coin demands Order and thus trade rules our way forward"
+    - "We are only divided by our ability to create wealth"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +413,7 @@ npc:
     #
     motivations: |
       To advance venture capitalism. Morion desires that all societies operate as mercantile communities.
-      
+
     #
     # Passions:
     #
@@ -424,7 +422,7 @@ npc:
     #
     passions: |
       Capitalism
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       Overconfident, arrogant and believes he's always right even when he's not
-      
+
     #
     # Secrets:
     #
@@ -442,8 +440,7 @@ npc:
     #
     secrets: | 
       Maybe skims off the collection plate now and again
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -468,49 +465,46 @@ npc:
   #
   specialties:
     skills:
-
-   - - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        - Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow.
-        - Cantrip: Knows the Booming Blade cantrip, Spell DC 13        
-
-   - - Paladin Abilities:
-       - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                       within the same radius. Can use this ability 5 per long rest
-       - Lay on Hands: Can touch another creature to heal up to 50HP per long rest. Or can 5HP to cure a disease or poison affecting it.
-       - Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet 
-       - Divine Smite: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
-                       slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
-       - Divine Health: Immune to disease
-       - Extra Attack: Can take and extra attack action each turn
-       - Aura of Protection: When he or friendly creatures within 10 feet must make a saving throw, they get a +4 bonus to their roll
-       - Aura of Courage: He and friendly creatures within 10 feet can't be frightened while he is conscious
-       - Spellcasting: Spell DC 16
-         1st Level: Command, Compelled Dual, Searing Smite, Wrathful Smite
-         2nd Level: Warding Bond, Zone of Truth, Find Steed
-         3rd Level: Aura of Vitality, Dispel Magic
-
-   - - Oath of Free Commerce Abilities:
-       - Channel Divinity:
-         - Objective Worth: As an action, you can make manifest your knowledge of the true worth of things. You may either improve the quality and make of the weapon you are holding for 1 minute, causing it to become a +3
-                            magical weapon in addition to its other properties. Or you may know the exact monetary value of everything you see for 1 hours
-         - Turn the Craven:  As an action, you can raise your voice and demand that any thieves and skulkers in the area reveal themselves. Each creature that is invisible, attempting to hide, or otherwise intentionally
-                             difficult to see within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its
-                             turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or
-                             try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. 
-       - Invisible Hand of the Market: when an enemy moves within 10 feet of you, you may use a reaction to grapple them with an invisible hand of force at any point during the move. The enemy makes a Charisma saving throw
-                                       against your Spell Save DC, and if they fail this save they are restrained, or pulled up to 10 feet towards you and then restrained, until the beginning of their next turn. At 18th level,
-                                       the range (but not the distance of the pull) of this ability increases to 30 feet. In addition, you gain the mage hand cantrip
+    - Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Keen Senses: You have proficiency in the Perception skill 
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+        Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow.
+        Cantrip: Knows the Booming Blade cantrip, Spell DC 13        
+      Paladin Abilities:
+      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+                      within the same radius. Can use this ability 5 per long rest
+        Lay on Hands: Can touch another creature to heal up to 50HP per long rest. Or can 5HP to cure a disease or poison affecting it.
+        Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet 
+        Divine Smite: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+                      slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+        Divine Health: Immune to disease
+        Extra Attack: Can take and extra attack action each turn
+        Aura of Protection: When he or friendly creatures within 10 feet must make a saving throw, they get a +4 bonus to their roll
+        Aura of Courage: He and friendly creatures within 10 feet can't be frightened while he is conscious
+        Spellcasting:
+        - Spell DC: 16
+          1st Level: Command, Compelled Dual, Searing Smite, Wrathful Smite
+          2nd Level: Warding Bond, Zone of Truth, Find Steed
+          3rd Level: Aura of Vitality, Dispel Magic
+      Oath of Free Commerce Abilities:
+      - Channel Divinity:
+        - Objective Worth: As an action, you can make manifest your knowledge of the true worth of things. You may either improve the quality and make of the weapon you are holding for 1 minute, causing it to become a +3
+                           magical weapon in addition to its other properties. Or you may know the exact monetary value of everything you see for 1 hours
+          Turn the Craven:  As an action, you can raise your voice and demand that any thieves and skulkers in the area reveal themselves. Each creature that is invisible, attempting to hide, or otherwise intentionally
+                            difficult to see within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its
+                            turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or
+                            try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. 
+        Invisible Hand of the Market: when an enemy moves within 10 feet of you, you may use a reaction to grapple them with an invisible hand of force at any point during the move. The enemy makes a Charisma saving throw
+                                      against your Spell Save DC, and if they fail this save they are restrained, or pulled up to 10 feet towards you and then restrained, until the beginning of their next turn. At 18th level,
+                                      the range (but not the distance of the pull) of this ability increases to 30 feet. In addition, you gain the mage hand cantrip
    
-               
     special-abilities:
        - Proficiencies: Persuasion, Intimidation, Athletics, Insight, Medicine, Religion
-       - Feats: Sentinel, War Caster       
-       
+         Feats: Sentinel, War Caster
+
     attacks: |
       2 attack with maul or spell attack
     combat-tactics: |
@@ -518,10 +512,9 @@ npc:
     special-equipment:
     - Belt of the Sacred Mount: Wondrous Item (waist), Rare, requires attunement by a paladin, A leather belt with plates of steel every few inches. The belt buckle depicts a golden horse’s head. When the wearer summons a
                                 creature with the Find Steed spell the creature gains a bonus to attacks damage and AC equal to the wearer’s proficiency modifier.
-    - Compelling Maul: Magic Weapon, Uncommon, requires attunement by a paladin, A compelling weapon is gaudy and covered in fine metals and gems and is slightly larger than an average weapon of its type. It deals a bonus 2
+      Compelling Maul: Magic Weapon, Uncommon, requires attunement by a paladin, A compelling weapon is gaudy and covered in fine metals and gems and is slightly larger than an average weapon of its type. It deals a bonus 2
                        psychic damage with each hit. When the weapon scores a critical hit the weapon casts Compelled Duel on the creature hit. Creatures immune to the charmed condition are immune to this effect.
-    
-      
+
   profile:
 
     #
@@ -542,7 +535,6 @@ npc:
      rituals and prayer to the Marketplace Eternal at the Mercantile Temple, Morion is most often found escorting high-value trade caravans through distant trade routes. He is often accompanied by a small battalion of warforged
      dedicated to the mercantile clergy. Morion is quite fond of one particular follower, Cure.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -555,32 +547,3 @@ npc:
       Morion is smug and self-important to the point of arrogance. While he is known as an accomplished fighter, his arragonce does occasionally lead to overestimating his own abilities. Unfortunately he's never really learned
       this lesson due to being surrounded by his retinue of Warforged that have insullated him from the conseuences of his overconfidence. He is unquestioningly and unwaiveringly devoted to his religion which has lead him to
       look down on lesser people, the poor, and the "savages" of societies that aren't completely devoted and organized around commerce.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

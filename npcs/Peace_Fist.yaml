@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Scout and messenger
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     #
     languages:
     - All
-
 
     #
     # Factions:
@@ -335,7 +332,6 @@ npc:
     - id: The_Dead_Hunters
       name: The Dead Hunters
       role: Scout/Messenger
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -360,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The lean, multi-metallic colored Warforged rushes into the room. "Message for you, it's from my boss, The Phantom"  
+    introduction:  The lean, multi-metallic colored Warforged rushes into the room. /"Message for you, it's from my boss, The Phantom/"  
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -387,7 +383,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "A pleasure to make your acquaintance", "Message for you, sir"
+    expressions:
+    - "A pleasure to make your acquaintance"
+    - "Message for you, sir"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +409,7 @@ npc:
     #
     motivations: |
       ridding the world of fiends, undead and abominations.
-      
+
     #
     # Passions:
     #
@@ -429,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       Awkward and easily shamed
-      
+
     #
     # Secrets:
     #
@@ -438,7 +436,7 @@ npc:
     #
     secrets: |
       Was a tax collector for the Orzhov Syndicate but remembers nothing before that 
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,66 +461,67 @@ npc:
   #
   specialties:
     skills:
-  - - Warforged Traits:
-       - Constructed Resilience: 
-          - Advantage on saving throws against being poisoned and has resistance to poison damage
-          - Doesn't need to eat, drink or breathe
-          - Immune to disease
-          - Doesn't need sleep and cannot be magically put to sleep
-       - Sentrys Rest: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
-       - Specialized Design: Proficient in Stealth and Thieve's Tools
-       - Integrated Protection: Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table:
-          - Darkwood Core - AC= 11 + Dexterity + Proficiency Bonus
-          - Composite Plating - AC = 13 + Dexterity (Max 2) + Proficiency Bonus
-          - Heavy Plating - AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks
-    
-   - - Skirmisher Traits:
-       - Swift: Walking speed increases by 5 feet
-       - Light Step: When traveling alone for more than an hour, can move stealthily at normal pace
-
-   - - Monk Abilities:
-       - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-       - Martial Arts:
-          - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-          - Can roll a d10 in place of normal damage for unarmed strikes and monk weapons
-          - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-       - Ki: 17 Ki Points, Ki DC=20
-          - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          - Step of the Wind:Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
-       - Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
-       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                          free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-       - Slow Fall: Can us a Reaction to falling damage by by 85hp
-       - Extra Attack: Can Attack twice per turn
-       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-       - Ki-Empowered Strike: Unarmed Strikes count as magical 
-       - Stillness of Mind: Can use an Action to end on effect causing him to be Charmed or Frightened
-       - Evasion: When subject to an area effect that allows to make a Dex save to take half damage, he instead takes no damage on a save and half damage on a fail
-       - Purity of Body: Immune to disease and poison
-       - Tongue of Sun and Moon: Understands all spoken languages and can be understood by all creatures that can understand a language 
-       - Diamond Soul: Proficiency on all saving throws. On a failed save can send 1 Ki point to reroll and take the second roll
-       - Timeless Body: Cannot be aged magically       
-
-   - - Way of the Iron Mountain Abilities:
-       - Iron Mountain Technique: Whenever using Patient Defense or Step of the Wind can choose one of the following effects:
-           - Has resistance to all forms of damage other than psychic damage until the start of their next turn
-           - Gains a +4 Bonus to AC until the start of their next turn
-           - Has advantage on ability checks and saving throws to resist being grappled, restrained, forcebly moved or knocked prone           
-       - Fists of Steel: Can choose to deal slashing, piercing or blugeoning damage with unarmed strikes 
-       - Iron Body: Can use a reaction and spend 1 Ki point to reduce an attacks damage by 1d10 + 12. If damaged is reduced to 0, can make an unarmed melee attack on the attacking crature if its in range
-
-   - - Orzhov Guild Spells:
-         - 1st Level: Friends, Guidance
-         - 2nd Level: Command, Illusory Script
-         - 3rd Level: Bestow Curse, Speak with Dead, Spirit Guardians
-         - 4th Level: Blight, Death Ward, Leomund`s Secret Chest
-         - 5th Level: Geas         
+    - Warforged Traits:
+      - Constructed Resilience: 
+        - Advantage on saving throws against being poisoned and has resistance to poison damage
+        - Doesn't need to eat, drink or breathe
+        - Immune to disease
+        - Doesn't need sleep and cannot be magically put to sleep
+        Sentrys Rest: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
+        Specialized Design: Proficient in Stealth and Thieve's Tools
+        Integrated Protection: 
+        - Description: Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table.
+          Darkwood Core: AC = 11 + Dexterity + Proficiency Bonus
+          Composite Plating: AC = 13 + Dexterity (Max 2) + Proficiency Bonus
+          Heavy Plating: AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks
+      Skirmisher Traits:
+      - Swift: Walking speed increases by 5 feet
+        Light Step: When traveling alone for more than an hour, can move stealthily at normal pace
+      Monk Abilities:
+      - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
+        Martial Arts:
+        - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+        - Can roll a d10 in place of normal damage for unarmed strikes and monk weapons
+        - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+        Ki: 
+        - Ki Points: 17 
+          Ki DC: 20
+        Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+        Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+        Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+        Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+        Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+                         free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+        Slow Fall: Can us a Reaction to falling damage by by 85hp
+        Extra Attack: Can Attack twice per turn
+        Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+        Ki-Empowered Strike: Unarmed Strikes count as magical 
+        Stillness of Mind: Can use an Action to end on effect causing him to be Charmed or Frightened
+        Evasion: When subject to an area effect that allows to make a Dex save to take half damage, he instead takes no damage on a save and half damage on a fail
+        Purity of Body: Immune to disease and poison
+        Tongue of Sun and Moon: Understands all spoken languages and can be understood by all creatures that can understand a language 
+        Diamond Soul: Proficiency on all saving throws. On a failed save can send 1 Ki point to reroll and take the second roll
+        Timeless Body: Cannot be aged magically       
+      Way of the Iron Mountain Abilities:
+      - Iron Mountain Technique:
+        - Description: Whenever using Patient Defense or Step of the Wind can choose one of the following effects
+          Additional Information:
+          - Has resistance to all forms of damage other than psychic damage until the start of their next turn
+          - Gains a +4 Bonus to AC until the start of their next turn
+          - Has advantage on ability checks and saving throws to resist being grappled, restrained, forcebly moved or knocked prone           
+        Fists of Steel: Can choose to deal slashing, piercing or blugeoning damage with unarmed strikes 
+        Iron Body: Can use a reaction and spend 1 Ki point to reduce an attacks damage by 1d10 + 12. If damaged is reduced to 0, can make an unarmed melee attack on the attacking crature if its in range
+      Orzhov Guild Spells:
+      - 1st Level: Friends, Guidance
+        2nd Level: Command, Illusory Script
+        3rd Level: Bestow Curse, Speak with Dead, Spirit Guardians
+        4th Level: Blight, Death Ward, Leomund`s Secret Chest
+        5th Level: Geas         
 
     special-abilities:
     - Proficiencies: Thieve's Tools, Heavy Armor, Light Armor, Unarmed Combat, Athletics, Perception, , Intimidation, Insight, Stealth, Religion    
-    - Feats: Alert, Athlete, Linguist, Mobile, Skulker
-    
+      Feats: Alert, Athlete, Linguist, Mobile, Skulker
+
     attacks: |
       has 3 attacks
     combat-tactics: |
@@ -551,7 +550,7 @@ npc:
       idea how much time had passed and no recollection of anything in between. They have dedicated themselves to their new savior and his mission to keep people safe from fiends and the undead. Using his speed and monastic 
       abilities, they function as messenger and scout for The Dead Hunters, but is definitely no slouch when it comes to combat either, as much as they prefer to avoid it. Also, Peace Fist is not their given name, but they 
       don't actually remember their name and that's what The Phantom has dubbed them.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -564,32 +563,3 @@ npc:
       Peace Fist is a tall, lithe, muscular Warforged. Their body is constructed of several different types and colors of metal and organic matter. Their monastic training has left them strong and incredibly fast and agile. 
       They are calm, reserved and level-headed. They are not the smartest, but their ability to turn thought into action is unparalelled. Deft and quick-witted they are great at thinking on their feet. They are fiercly loyal 
       and ferverently loathe ghosts and slavers.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

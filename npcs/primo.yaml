@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Artist
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Common
     - Gnomish
     - Undercommon
-
 
     #
     # Factions:
@@ -335,7 +333,6 @@ npc:
     - id: artists_guild
       name: Artists' Guild
       role: The Order of Kiaransalee
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -360,7 +357,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A crowd bustles around a slender figure with hands flowing magically over wet clay. "I love an audience", he proclaims.
+    introduction:  A crowd bustles around a slender figure with hands flowing magically over wet clay. /"I love an audience/", he proclaims.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -387,7 +384,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Have you an imagination? Provide me something upon which to muse"; "Eons pass and at best we create war? Pshhh";
+    expressions:
+    - "Have you an imagination? Provide me something upon which to muse"
+    - "Eons pass and at best we create war? Pshhh"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       To reach such renown that none will ever forget him. To spread creativity as an alternative to war. 60s hippy-esque.
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       Art. Dismantling militant governance. Undercutting the role of the military in the goings-on of the Realms.
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       His ego gets the better of him
-      
+
     #
     # Secrets:
     #
@@ -438,8 +437,7 @@ npc:
     #
     secrets: | 
       He's sold out his family to the Order of Kiaransalee, an evil Elven Lich, in return for his talents. He's since haunted by undead.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,26 +462,26 @@ npc:
   #
   specialties:
     skills:       
-   - - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        - Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow 
-        - Cantrip: Can cast Prestidigitation. Intelligence is your Spellcasting Ability for it        
-      
+    - Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Keen Senses: You have proficiency in the Perception skill 
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+        Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow 
+        Cantrip: Can cast Prestidigitation. Intelligence is your Spellcasting Ability for it        
+
     special-abilities:
        - Proficiencies: Persuasion, Performance, Painter's tools, Calligrapher's tools, Woodcarver's tools
        - Feats: N/A
-       
+
     attacks: |
       1 attack with unarmed strike
     combat-tactics: |
       He's a coward and will always avoid combat, albeit with some regal excuse.
     special-equipment:
-       - Art Supplies                                                   
-      
+       - Art Supplies
+
   profile:
 
     #
@@ -518,32 +516,3 @@ npc:
     personality: |
      Primo, as he refers to himself, is a smug and preening narcissist. He flaunts his talents and craves the praise of his adoring public. His deal has given him exceptional talents and he knows it. Unfortunately, his deal has
      also left him haunted and paranoid, terrified that the family he sacrificed for his talent will come for him.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

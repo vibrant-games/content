@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Porter
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +311,6 @@ npc:
     - Abyssal
     - Giant
     - Common
-
 
     #
     # Factions:
@@ -332,7 +330,6 @@ npc:
     # Optional.  0 or more.
     #
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -357,7 +354,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  You arrange a room with the innkeep. He whistles and a giant muscular minotaur strides to your bags. "Let me take these"
+    introduction:  You arrange a room with the innkeep. He whistles and a giant muscular minotaur strides to your bags. /"Let me take these/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -384,7 +381,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You know my people tinker and create wonders, right?"; "No need to worry, Roly the Trolley will shoulder it!"
+    expressions:
+    - "You know my people tinker and create wonders, right?"
+    - "No need to worry, Roly the Trolley will shoulder it!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +407,7 @@ npc:
     #
     motivations: |
       To provide the best service possible as a porter at the Inn. He also transports goods between merchants.
-      
+
     #
     # Passions:
     #
@@ -417,7 +416,7 @@ npc:
     #
     passions: |
       Providing service and attempting to tinker with things to make them even better than before.
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       Has difficulties with remembering things
-      
+
     #
     # Secrets:
     #
@@ -435,8 +434,7 @@ npc:
     #
     secrets: | 
       Although Roly identifies as a gnome. He is not a gnome.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,27 +459,30 @@ npc:
   #
   specialties:
     skills:       
-   - - Minotaur Abilities:
-       - Horns: Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to ld6 + your Strength modifier, instead of the bludgeoning damage normal for
-                an unarmed strike.
-       - Goring Rush: Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action.
-       - Hammering Horns: Immediately after you hit a creature with a melee attack as a part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be
-                          within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to
-                          10 feet away from you.
-       - Imposing Presence: You have proficiency in one of the following skills of your choice: Intimidation or Persuasion 
-       
+    - Minotaur Abilities:
+      - Horns: Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to ld6 + your Strength modifier, instead of the bludgeoning damage normal for
+               an unarmed strike.
+        Goring Rush: Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action.
+        Hammering Horns: Immediately after you hit a creature with a melee attack as a part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be
+                         within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to
+                         10 feet away from you.
+        Imposing Presence:
+        - Description: You have proficiency in one of the following skills of your choice
+          Additional Infromation:
+          - Intimidation
+          - Persuasion 
       
     special-abilities:
        - Proficiencies: Intimidation, Athletics, Survival
-       - Feats: Charger
+         Feats: Charger
        
     attacks: |
       1 attack with Unarmed Strike or Horns
     combat-tactics: |
       will generally run away from a fight, but will go all in with hoof and horn if he has no other option
     special-equipment:
-    - N/A                                               
-      
+    - N/A
+
   profile:
 
     #
@@ -501,8 +502,6 @@ npc:
      properly guided to an identifiable name, Roly, by their caretaker, they made their way about town looking to help others. The local innkeeper sympathized with Roly and offered them the position of Porter for the Inn.
      Roly's incredible service gained notoriety and local merchants and guilds began to enlist their services. 
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -514,33 +513,3 @@ npc:
     personality: |
      Roly as they are called these days, is a genuine delight. They love to be helpful and works hard to be an asset to all they meets. It is unclear as to how much of they're actual personality is left in there and how much is
      a new construct, invented after his head injuries. It is also unclear if their old memories will ever return and what will happen if they ever do   
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

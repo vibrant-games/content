@@ -243,7 +243,6 @@ npc:
     #
     # Optional.  0 or more.
     #
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -292,7 +291,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "Can't trust no one"; "You're a freakish lot, ain't ya?"
+    expressions:
+    - "Can't trust no one"
+    - "You're a freakish lot, ain't ya?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -399,24 +400,3 @@ npc:
     #
     background-story: |
       Hes an old war veteran from the iron war, he knows sylvia and Clint from the war; compatriots
-
-    #
-    # Personality (or something like that):
-    # Expand on the introduction, appearance, expressions, mannerisms, etc.
-    # without any length limits.
-    #
-    # Required.
-    # No length limit for now.
-    #
-
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]

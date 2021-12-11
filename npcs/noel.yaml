@@ -289,7 +289,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions: $characters$ "My memories escape me."
+    expressions:
+    - "My memories escape me."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -365,14 +366,6 @@ npc:
   #
   specialties:
     special-abilities: |
-      There are some downsides to having amnesia. When Noel finds out about their past, if events go against their current alignment, Noel would make a wisdom saving throw (DC 10). If they fail, they take 1d4 physic damage and that damage is removed from their max HP.
-      |
-      N/A
-      |
-      N/A
-      |
-      N/A
-      |
       Noel starts as a Ranger. When the DM reveals more information about Noel's past through the story, Noel is able to reflect those changes on their character sheet: Meaning that if in Noel's past, the DM reveals they were a thief, Noel could obtain proficiency in thief's tools, or even multiclass as a rogue. This special ability can happen at anytime and is not related to experience, but is up to the DM.
     attacks: |
       Zephyr Strike
@@ -399,24 +392,3 @@ npc:
       Were they a warlock that made a deal with their patron? After they died did the patron put their soul into a machine for them to continue to serve? Are those memories actually their own, or are they being manipulated? 
       |
       There are so many possibilities, that I wouldn't feel right cementing only one background for this character. Adjust as needed for your own campaign.
-
-    #
-    # Personality (or something like that):
-    # Expand on the introduction, appearance, expressions, mannerisms, etc.
-    # without any length limits.
-    #
-    # Required.
-    # No length limit for now.
-    #
-
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - wp:status: publish
-  - _yoast_wpseo_focuskeywords: []
-  - _yoast_wpseo_keywordsynonyms: [""]

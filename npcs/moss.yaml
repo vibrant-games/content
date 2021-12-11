@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Botanist; Florist; Royal Floral Arranger
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Elvish
     - Halfling
     - Druidic
-
 
     #
     # Factions:
@@ -335,7 +332,6 @@ npc:
     #
     - id: the_druidic_enclave_of_luu_any_regional_enclave_of_druids_
       name: The Druidic Enclave of Luu [Any Regional Enclave of Druids]
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -360,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A face peers up from behind a basket of flowers being watered.  "I see the hoodlum convention is in town again," the woman says from one side of her mouth.
+    introduction:  A face peers up from behind a basket of flowers being watered.  /"I see the hoodlum convention is in town again,/" the woman says from one side of her mouth.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -387,7 +383,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Woman's oldest profession, next to seamstress..."; "Men are nuts"; "Take in, dearie, take in."
+    expressions:
+    - "Woman's oldest profession, next to seamstress"
+    - "Men are nuts"
+    - "Take in, dearie, take in."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       Moss leads a simple life, finding pleasure in tending gardens and arranging bouquets.  She is meticulously clean, believing that to scrub is to be free.
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       Moss loves flowers, especially perennials (rododendrons are among her favourites; she also grows numerous ferns at the royal gardens, and eats the fiddleheads in spring); and chamber music
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       Distrustful of men; sometimes overly trustful of women and children, to the point of being occasionally gullible
-      
+
     #
     # Secrets:
     #
@@ -438,8 +437,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,40 +462,38 @@ npc:
   #
   specialties:
     skills:       
+    - Druid Abilities:
+      - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+                 message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
+        Spellcasting:
+        - Spell DC: 15
+          Cantrips: Shillelagh, Druidcraft, Mending
+          1st Level: Create Water, Entangle, Goodberry, Speak With Animals
+          2nd Level: Pass Without Trace, Heat Metal, Locate Plants or Animals
+          3rd Level: Meld Into Stone, Speak to Plants
+        Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+                    determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+                    flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+                    You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+      Circle of Land Abilities:
+      - Natural Recovery: you can regain some of your magical energy by sitting in meditation and communing with Nature. During a Short Rest, you choose expended Spell Slots to recover. The Spell Slots can have a combined level
+                          that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a Long Rest. 
+        Spellcasting: 
+        - Spell DC: 15
+          3rd Level: Barkskin, Spider Climb
+          5th Level: Call Lightning, Plant Growth
 
-   - - Druid Abilities:
-       - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
-                  message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
-       - Spellcasting: Spell DC 15
-         Cantrips: Shillelagh, Druidcraft, Mending
-         1st Level: Create Water, Entangle, Goodberry, Speak With Animals
-         2nd Level: Pass Without Trace, Heat Metal, Locate Plants or Animals
-         3rd Level: Meld Into Stone, Speak to Plants
-       - Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
-                     determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
-                     flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
-                     You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
-
-   - - Circle of Land Abilities:
-       - Natural Recovery: you can regain some of your magical energy by sitting in meditation and communing with Nature. During a Short Rest, you choose expended Spell Slots to recover. The Spell Slots can have a combined level
-                           that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a Long Rest. 
-       - Spellcasting: Spell DC 15
-         3rd Level: Barkskin, Spider Climb
-         5th Level: Call Lightning, Plant Growth
-   
-               
     special-abilities:
        - Proficiencies: Nature, Survival, Perception, Investigation
        - Feats: N/A       
-       
+
     attacks: |
       1 attack with club or spell attack
     combat-tactics: |
       Moss will often take wild shape to avoid combat by fleeing into the woods. When cornered, she is a fierce and prolific combatant.
     special-equipment:
     - Many exotic roots and herbs traded with travelers.
-    
-      
+
   profile:
 
     #
@@ -514,8 +510,6 @@ npc:
      pseudo-abuse directed towards her womanhood. She absorbed these in her youth, thinking it was normal, but after touched buy the Goddess of Blooms she realized the horrors of which men are capable. In this moment another
      insight was whispered directly into the center of her mind. "Men are but the seeds. Save the soils, milady. Bless the petals. Love the stems. Revere the roots. But we will always be able to produce more seeds."
 
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -528,32 +522,3 @@ npc:
       Moss has a calling with plants. She loves them and is immaculte in her ability to arrange flowers. She is a bit of an odd contradiction, her idsabilities have left her somewhat jaded with a sharp sarcastic wit, but she is
       also naive in the ways of society. She has a strong distrust and is cautious of men and acively avoids them, but is overly trusting of women and children. She would overall prefer to spend all of her time with plants and
       animals and avoid other people entirely
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

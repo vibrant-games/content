@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Seeking the Rod of Seven Parts
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -316,7 +314,6 @@ npc:
     - Elvish
     - Celestial
 
-
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -334,8 +331,8 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -387,7 +384,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  The Dukes be Praised, "Squack!",
+    expressions:  
+    - "The Dukes be Praised"
+    - "Squack!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       Finding the pieces of the Rod of Seven Parts to gain esteem for his tribe in the eyes of the Wind Dukes of Aaqa
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       His Patron Gods
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       He's fragile and extremely claustrophobic even though he pretends hes not
-      
+
     #
     # Secrets:
     #
@@ -438,8 +437,7 @@ npc:
     #
     secrets: | 
       The location of several troves of treasure he has come across
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,36 +462,36 @@ npc:
   #
   specialties:
     skills:       
-   - - Aarakocra Abilities:
+    - Aarakocra Abilities:
       - Flight: Flying speed is 50 feet
-      - Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
-      
-   - - Cleric Abilities:
-      - Spellcasting: Spell DC 15
-        Cantrips: Guidance, Toll the Dead, Thaumaturgy, Light
-        1st Level: Bane, Bless, Sanctuary, Inflict Wounds
-        2nd Level: Locate Object, Spiritual Weapon, Calm Emotions
-        3rd Level: Clairvoyance, Tongues, Remove Curse
-      - Channel Divinity: Turn Undead, Destroy Undead
+        Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+      Cleric Abilities:
+      - Spellcasting: 
+        - Spell DC: 15
+          Cantrips: Guidance, Toll the Dead, Thaumaturgy, Light
+          1st Level: Bane, Bless, Sanctuary, Inflict Wounds
+          2nd Level: Locate Object, Spiritual Weapon, Calm Emotions
+          3rd Level: Clairvoyance, Tongues, Remove Curse
+        Channel Divinity: Turn Undead, Destroy Undead
      
-   - - Knowledge Domain Abilities: 
-      - Spellcasting: Spell DC 15
-        1st Level: Command, Identify
-        3rd Level: Augury, Suggestion
-        5th Level:Nondetection, Speak with Dead
-      - Blessing of Knowledge: Your proficiency bonus is doubled for any ability check you make that uses History or Arcana
-      - Channel Divinity:
+      Knowledge Domain Abilities: 
+      - Spellcasting: 
+        - Spell DC: 15
+          1st Level: Command, Identify
+          3rd Level: Augury, Suggestion
+          5th Level: Nondetection, Speak with Dead
+        Blessing of Knowledge: Your proficiency bonus is doubled for any ability check you make that uses History or Arcana
+        Channel Divinity:
         - Knowledge of Ages: you can use your Channel Divinity to tap into a divine well of knowledge. As an action, you choose one skill or tool. For 10 minutes, you have proficiency with the chosen skill or tool 
-        - Read Thoughts: you can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it. As an action, choose one creature that you can see within 60 feet of
+          Read Thoughts: you can use your Channel Divinity to read a creature's thoughts. You can then use your access to the creature's mind to command it. As an action, choose one creature that you can see within 60 feet of
                          you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can't use this feature on it again until you finish a long rest. If the creature fails its save, you
                          can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute. During
                          that time, you can use your action to end this effect and cast the Suggestion spell on the creature without expending a spell slot. The target automatically fails its saving throw against the spell.
 
-       
     special-abilities:
        - Proficiencies: History, Arcana, Medicine, Insight
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 spell attack
     combat-tactics: |
@@ -502,7 +500,7 @@ npc:
        - Staff of Healing: This staff has 10 Charges. While holding it, you can use an action to expend 1 or more of its Charges to cast one of the following Spells from it, using your spell save DC and Spellcasting Ability
                            modifier -  Cure Wounds (1 charge per Spell Level, up to 4th), Lesser Restoration (2 charges). or Mass Cure Wounds (5 charges). The staff regains 1d6 + 4 expended Charges daily at dawn. If you expend
                            the last charge, roll a d20. On a 1. the staff vanishes in a flash of light, lost forever       
-      
+
   profile:
 
     #
@@ -516,10 +514,6 @@ npc:
      He long ago left his tribe behind on the Elemental Planes of Air, in order to serve his God's, the Wind Dukes of Aaqa, to restore to them the Rod of Seven Parts to help defend his plane from elemental evil. Oomuk has spent
      the majority of his life exploring and researching in the furthest corners of the world, trying to find and retreive the pieces of the rod. He has yet been unsuccessful, but has not waivered in his devotion to his mission. 
 
-
-
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -530,32 +524,3 @@ npc:
     #
     personality: |
      Oomuk is is an excitable and animated fellow, who wildly gesticulates when speaking about his gods and their rod. He is thoroughly devoted to his gods and his mission and will not be detered from continuing his search
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

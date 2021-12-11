@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Smith, proprietor of the town forge
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -311,7 +310,6 @@ npc:
     languages:
     - Common
     - Gnomish
-
 
     #
     # Factions:
@@ -332,7 +330,6 @@ npc:
     #
     - id: subscribes_to_bowls_and_pens_a_wood_stock_of_the_month_club_for_turners_
       name: Subscribes to Bowls and Pens, a wood stock-of-the-month club for turners.
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -384,7 +381,13 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Rubbish!"; "Sard that!"; "Thou mollusc"; "Dotard"; "Fustilugs"; "Where is Of the Wind the Sussuration when I need her?"
+    expressions:
+    - "Rubbish!"
+    - "Sard that!"
+    - "Thou mollusc"
+    - "Dotard"
+    - "Fustilugs"
+    - "Where is Of the Wind the Sussuration when I need her?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -461,29 +464,29 @@ npc:
   #
   specialties:
     skills:       
-   - - Rock Gnome Abilities:
-       - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
-       - Tinker:  You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
-                  after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
-                  to three such devices active at a time. When you create a device, choose one of the following options - 
-                  - Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
-                                   a random direction. It makes noises as appropriate to the creature it represents.
-                  - Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-                  - Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
-       
-      
+    - Rock Gnome Abilities:
+      - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
+        Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+        Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
+        Tinker:
+        - Description: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
+                       after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
+                       to three such devices active at a time. When you create a device, choose one of the following options - 
+          Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+                         a random direction. It makes noises as appropriate to the creature it represents.
+          Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+          Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
+
     special-abilities:
        - Proficiencies: Athletics, Survival, History, Smith's Tools
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with club
     combat-tactics: |
       Rainbow tries to avoid or escape combat as much as possible, aware of her lack of training.
     special-equipment:
-    - Many exotic woods; doesn't know that their forge is actually the Sampo built by Ilmarinen the Everlasting Craftsman.                                                 
+    - Many exotic woods; doesn't know that their forge is actually the Sampo built by Ilmarinen the Everlasting Craftsman.
       
   profile:
 
@@ -500,8 +503,6 @@ npc:
      is an exemplar of these ideals. While their lineage is that of smiths, Rainbow abandoned metals and forges in favor of finding ways in which to weave together hides and woods to be just as sturdy and effective as irons and
      steels. She operates as a very unorthodox 'Smithy', heating woods and hids in her alternate style forge to bend and shape and harden them into innovative, light, and durable armors and weapons.
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -514,33 +515,3 @@ npc:
      Rainbow is an unorthodax individual. Passionate with a hot streak, she is innovative and exploratory with her smith and works hard to develop new techniques for her industry. Unfortunately her explosive anger and hot temper
      make her life far more difficult than it needs to be. She can't keep employees, doesn't have much in the way of friends and even has trouble keeping busines relationships functioning. If she wasn't so good at what she does,
      she'd have been out of business a long time ago
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

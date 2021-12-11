@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Tavern Owner
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +311,6 @@ npc:
     - Draconic
     - Dwarvish
     - Common
-
 
     #
     # Factions:
@@ -333,7 +331,6 @@ npc:
     #
     - id: chamber_of_commmerce
       name: Chamber of Commerce
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -385,7 +382,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Welcome! All are welcome!"; "Best heed tradition, or meet fate."
+    expressions:
+    - "Welcome! All are welcome!"
+    - "Best heed tradition, or meet fate."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +408,7 @@ npc:
     #
     motivations: |
       He wants to establish a network of 'Praxxys' across the world, to make a safe home for adventurers anywhere they go.
-      
+
     #
     # Passions:
     #
@@ -418,7 +417,7 @@ npc:
     #
     passions: |
       He has a nice collection of ornate flagons from across the world.
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       One of his barmaids, Lucia, was rescued a long time ago by him when she was 14, and he sees her as his daughter.
-      
+
     #
     # Secrets:
     #
@@ -436,8 +435,7 @@ npc:
     #
     secrets: | 
       In his youth, he pissed off a rival tavern owner, who is of great influence.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,21 +460,21 @@ npc:
   #
   specialties:
     skills:       
-   - - Dragonborn Abilities:
-       - Breathe Weapon: Can exhale fire in a 15 foot cone with a DC 13. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one.           
-       - Damage Resistance: Resistance to Fire       
-      
+    - Dragonborn Abilities:
+      - Breathe Weapon: Can exhale fire in a 15 foot cone with a DC 13. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one.           
+        Damage Resistance: Resistance to Fire
+
     special-abilities:
        - Proficiencies: Perception, Insight, Athletics
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with sword or breath weapon
     combat-tactics: |
       he keeps a sword tethered underneath the bar from his earlier days
     special-equipment:
-       - Bar Supples                                                   
-      
+    - Bar Supples
+
   profile:
 
     #
@@ -491,8 +489,7 @@ npc:
      after trying to find a new purpose, until he came across an abandoned bar within the city. He remembered his earlier days of how sometimes he just wanted to stop at a bar that didn't have constant fights or underworld
      presence at every turn. He spent the last of the gold he had repairing it and establishing contacts. Through the deals he made (and broke) he slowly learnt the tools of the trade of haggling, and now Praxxys is a thriving
      bar in the city. Though Praxius does lament a desire to adventure again, especially after seeing Lucia grow up into a fine businesswoman herself.
- 
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -504,32 +501,3 @@ npc:
     personality: |
      Praxius is a pleasant and hospitable gentleman. He isn't the greatest of businessmen, but he's learning, and he naturally has a pretty good sense of what is a good deal and what isn't. He loves his surrogate daughter and
      just wants a profitable but peaceful life for the both of them. He does however have slight pangs of missing his adventurous ways of his old days.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

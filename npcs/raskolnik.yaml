@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Law Student
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Elvish
     - Halfling
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -332,8 +330,8 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -385,7 +383,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Loathsome, harmful old moneylender"; "A thousand rabbits don't make a horse and a thousand suspicions aren't evidence."
+    expressions:
+    - "Loathsome, harmful old moneylender"
+    - "A thousand rabbits don't make a horse and a thousand suspicions aren't evidence."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +409,7 @@ npc:
     #
     motivations: |
       Proud; feels that the world is upside-down, bottom-feeders on top, and great men (like Raskolnik) live in poverty.
-      
+
     #
     # Passions:
     #
@@ -418,7 +418,7 @@ npc:
     #
     passions: |
       Knows the local legal code inside-out; also local history and legends. Observant; knows the daily patterns of locals.
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       Racked with guilt about the crime he's not sure he committed successfully. Feels greatness waning, replaced by doubt.
-      
+
     #
     # Secrets:
     #
@@ -436,8 +436,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,32 +461,31 @@ npc:
   #
   specialties:
     skills:       
-   - - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        - Snow Sight: Your vision is not hindered by heavy weather conditions such as falling snow, rain or mist.
-        - Cold Resistance: You have resistance against cold damage and you ignore any of the drawbacks caused by cold, arctic environments such as difficult terrain and slippery ice.
-        - Ice Magic: You know the ray of frost cantrip. Wisdom is your spellcasting ability for it.
-        - Snow Elf Weapon Training: You are proficient with the greatsword, longsword, pike, and war pick
+    - Elf Abilities:
+      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Keen Senses: You have proficiency in the Perception skill 
+        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+        Snow Sight: Your vision is not hindered by heavy weather conditions such as falling snow, rain or mist.
+        Cold Resistance: You have resistance against cold damage and you ignore any of the drawbacks caused by cold, arctic environments such as difficult terrain and slippery ice.
+        Ice Magic: You know the ray of frost cantrip. Wisdom is your spellcasting ability for it.
+        Snow Elf Weapon Training: You are proficient with the greatsword, longsword, pike, and war pick
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater       
 
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater       
-      
     special-abilities:
        - Proficiencies: Sleight-of-Hand, History, Stealth, Local Law
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with dagger
     combat-tactics: |
       Will only fight if he has to, and will try to sneak attack whenever possible
     special-equipment:
     - - A pouch hidden under the wooden sidewalk containing 17sp, 3gp, and a worn old love letter to a woman torn in two.                                                 
-      
+
   profile:
 
     #
@@ -516,8 +514,6 @@ npc:
      Raskolnik is riddled with guilt, not entirely for killing the woman (he partly believes she deserved it), but also for not being Great like he should be: for not being able to carry through with his own ambitions, for not
      being able to Act in the way that Great Men Act. 
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -529,33 +525,3 @@ npc:
     personality: |
      Raskolnik was a bright upcoming star of legal and political thought, unfortunately due to circumstances mostly beyond his control, is now nervous, on edge, easily frightened, secretive, mysterious, defensive, yet also
      desperately seeking someone to whom he can confess. And he still has no money to save his sister from what Raskolnik sees as a terrible, terrifying union. 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

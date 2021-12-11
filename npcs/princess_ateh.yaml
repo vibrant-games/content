@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Poetess, Philosopher, Court Advisor, Conquered Princess
     
 
@@ -296,7 +297,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -317,7 +317,6 @@ npc:
     - Orcish
     - Giant
 
-
     #
     # Factions:
     # These should be ids of factions (similar YAML file format, eventually).
@@ -337,7 +336,6 @@ npc:
     #
     - id: khazar_halflings
       name: Khazar halflings
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -362,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A young halfling woman bars your path. "Between us, a captured puma on a rope.  How are we to approach each other?"
+    introduction:  A young halfling woman bars your path. /"Between us, a captured puma on a rope.  How are we to approach each other?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -389,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We are all ku"; "Your thoughts are like my dresses, the waistlines all identical"; "All dreams were dreamt long ago."
+    expressions:
+    - "We are all ku"
+    - "Your thoughts are like my dresses, the waistlines all identical"
+    - "All dreams were dreamt long ago."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +414,7 @@ npc:
     #
     motivations: |
       Recovering her lost language, which she promptly forgot upon the khagan's decision to convert the Khazar halflings
-      
+
     #
     # Passions:
     #
@@ -422,7 +423,7 @@ npc:
     #
     passions: |
       Languages; Dreams
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       Remembers none of her native halfling language but the word "ku" (a fish-scaled fruit with a pulsating stone at heart).
-      
+
     #
     # Secrets:
     #
@@ -440,8 +441,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,23 +466,23 @@ npc:
   #
   specialties:
     skills:       
-   - - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-       - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
-      
+    - Halfling Abilities:
+      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+        Brave: Has advantage on Saving Throws against being Frightened 
+        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+        Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
+
     special-abilities:
        - Proficiencies: Persuasion, Performance, Perception, Arcana, Religion
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with club
     combat-tactics: |
       Princess Ateh will rarely engage in combat and instead call upon guards or surrounding civilians to intervene on her behalf.
     special-equipment:
        - Cutout letters that cast Power Word Kill on a would-be assassin on sight, she pastes these on her eyelids at night before sleep                                                   
-      
+
   profile:
 
     #
@@ -499,7 +499,6 @@ npc:
      equality and abundance. Her peoples believed in the beauty imparted by by Ku, her peoples concept of a central spiritual entity. The philosophy of Ku dictates that all things happen at the same time and that time is merely
      the gift of enjoying every moment that has or will exist. Her beliefs fuel her beauty and her beauty fuels her beliefs
  
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -511,32 +510,3 @@ npc:
     personality: |
      Ateh is sweet and bright and devoted to her people and their future. She can be slightly flaky in the way that artists can be. She knows that she is still being hunted and it worries her, but not as much as the plight of
      her people worries her.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

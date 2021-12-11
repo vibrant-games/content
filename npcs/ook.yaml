@@ -297,7 +297,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -311,7 +310,6 @@ npc:
     #
     languages:
     - Orangutan
-
 
     #
     # Factions:
@@ -332,7 +330,6 @@ npc:
     #
     - id: the_libraries_of_the_interstices_orders_of_knowledge_and_scribes_
       name: The Libraries of the Interstices; Orders of Knowledge and Scribes;
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -357,7 +354,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A flash of muscular orange fur swings down from the shelves. The ape stands on the checkout desk and says: "Ook?"
+    introduction:  A flash of muscular orange fur swings down from the shelves. The ape stands on the checkout desk and says - /"Ook?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -384,7 +381,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Ook!"; "Ook?"; "Ook."
+    expressions:
+    - "Ook!"
+    - "Ook?"
+    - "Ook."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +408,7 @@ npc:
     #
     motivations: |
       Ook loves bananas and the Dewey Decimal System. They frequently explore L-Space, the infinite library between worlds
-      
+
     #
     # Passions:
     #
@@ -417,7 +417,7 @@ npc:
     #
     passions: |
       Books and knowledge
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       If anyone calls them a monkey, Ook will fly into a rage, pummeling the culprit mercilessly until they tap out.
-      
+
     #
     # Secrets:
     #
@@ -435,8 +435,7 @@ npc:
     #
     secrets: | 
       Oook
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -460,11 +459,12 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
+    skills:
+    - N/A    
 
     special-abilities:
        - Proficiencies: History, Arcana, Nature
-       - Feats: N/A
+         Feats: N/A
        - Swinging Movement - Can move 50 ft in jungle/forest/library environement
        
     attacks: |
@@ -514,32 +514,3 @@ npc:
     personality: |
      Ook is generally kindly and inquisitive. He is a skilled and organized librarian but his lack of ability to communicate and his simian temper sometmie lead to him acting out. He doens't really have much in the way of
      memory of his life before becoming and orangutan, but he does have flashes from time to time
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

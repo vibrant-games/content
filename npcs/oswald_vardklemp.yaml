@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Head and Founder of Collegium Imaginata
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -315,7 +313,6 @@ npc:
     - Gnomish
     - Draconic
     - Sylvan
-
 
     #
     # Factions:
@@ -340,7 +337,6 @@ npc:
       name: Collegium Imaginata
       role: Founder and Leader
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -364,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "OUT OF THE WAY!!!" shouts the fat bald gnome as the steam contraption smashes it's way down the street
+    introduction:  /"OUT OF THE WAY!!!/" shouts the fat bald gnome as the steam contraption smashes it's way down the street
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "All science is magic to the untrained eye" "I'll replace all work beasts with artifice, no more need of horses or oxen"
+    expressions:
+    - "All science is magic to the untrained eye"
+    - "I'll replace all work beasts with artifice, no more need of horses or oxen"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +413,7 @@ npc:
     #
     motivations: |
       The pursuit of knowledge  
-      
+
     #
     # Passions:
     #
@@ -424,7 +422,7 @@ npc:
     #
     passions: |
       Artifice!
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       Reckless in his pusuit of knowledge
-      
+
     #
     # Secrets:
     #
@@ -442,7 +440,7 @@ npc:
     #
     secrets: |
       The Collegium Imaginata is secretly an extraplanar extension of Ravnica's Izzet League
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,66 +465,68 @@ npc:
   #
   specialties:
     skills:
-   - - Rock Gnome Abilities:
-       - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
-       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-       - Artificers Lore: Whenever making an History check related to magic items, alchemical objects and technological devices, add twice your proficiency bonus 
-       - Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
- 
-   - - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 22
-         Cantrip: Guidance, Mage Hand, Mending, Message
-         1st Level: Arcane Weapon, Detect Magic, Identify, Catapult
-         2nd Level: Arcane Lock, Heat Metal, Levitate
-         3rd Level: Dispel Magic, Haste, Tiny Servant
-         4th Level: Fabricate, Stone Shape, Leomund's Secret Chest
-         5th Level: Animate Object        
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-       - Tool Expertise: Smith's Tool proficiency bonus is doubled
-       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-       - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-       - Spell Storing Item: Can store a spell in and object once per long rest
-       - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
-       - Magic Item Master: Can attune to 6 magic items      
-      
-   - - Battle Smith Abilities:
-       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 24
-         3rd Level: Heroism, Shield
-         5th Level: Branding Smite, Warding Bond
-         9th Level: Aura of Vitality, Conjure Barrage
-         13th Level: Aura of Purity, Fire Shield
-         17th Level: Banishing Smite, Mass Cure Wounds
-       - Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
-       - Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest  
-       - Extra Attack: Can take a second attack action each turn
-       - Arcane Jolt: Using a magic weapon or Steel Defender he can add 4d6 force damage to attacks or restore 4d6 hit points to any creature or object within 30 feet
-       - Improved Defender: Steel Defender gets +2 to its AC and its Deflect Attack does 1d4 + Intelligence Modifier damage.
+    - Rock Gnome Abilities:
+      - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
+        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Artificers Lore: Whenever making an History check related to magic items, alchemical objects and technological devices, add twice your proficiency bonus 
+        Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
+      Artificer Abilities:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+        Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus
+          Spell DC: 22
+          Cantrip: Guidance, Mage Hand, Mending, Message
+          1st Level: Arcane Weapon, Detect Magic, Identify, Catapult
+          2nd Level: Arcane Lock, Heat Metal, Levitate
+          3rd Level: Dispel Magic, Haste, Tiny Servant
+          4th Level: Fabricate, Stone Shape, Leomund's Secret Chest
+          5th Level: Animate Object        
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
+        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+        Tool Expertise: Smith's Tool proficiency bonus is doubled
+        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+        Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+        Spell Storing Item: Can store a spell in and object once per long rest
+        Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
+        Magic Item Master: Can attune to 6 magic items      
+      Battle Smith Abilities:
+      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
+        Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus
+          Spell DC: 24
+          3rd Level: Heroism, Shield
+          5th Level: Branding Smite, Warding Bond
+          9th Level: Aura of Vitality, Conjure Barrage
+          13th Level: Aura of Purity, Fire Shield
+          17th Level: Banishing Smite, Mass Cure Wounds
+        Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
+        Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest  
+        Extra Attack: Can take a second attack action each turn
+        Arcane Jolt: Using a magic weapon or Steel Defender he can add 4d6 force damage to attacks or restore 4d6 hit points to any creature or object within 30 feet
+        Improved Defender: Steel Defender gets +2 to its AC and its Deflect Attack does 1d4 + Intelligence Modifier damage.
 
     special-abilities: 
     - Feats: Gunner, Keen Mind, Mounted Combatant, Sharpshooter, War Caster, Skill Expert - Smith's Tools, Observant, Fighting Initiate, Medium Armor Master
-    - Legendary Resistance: (3/Day), If Oswald Vardklemp fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: Oswald Vardklemp can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Oswald Vardklemp regains spent Legendary Actions at the start of his turn
-      - Rosies Swing: Oswald Vardklemp can instruct his Steel Guardian to make an extra attack
-      - Gatling Burst: Oswald Vardklemp can make an extra attack with his gatling gun
-      - Escape Velocity: Oswald Vardklemp can summon his Iron Horse, mount it and dash up to 60 feet
+      Legendary Resistance: (3/Day), If Oswald Vardklemp fails a saving throw he can choose to succeed instead 
+      Legendary Actions: 
+      - Description: Oswald Vardklemp can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                     Oswald Vardklemp regains spent Legendary Actions at the start of his turn
+        Rosies Swing: Oswald Vardklemp can instruct his Steel Guardian to make an extra attack
+        Gatling Burst: Oswald Vardklemp can make an extra attack with his gatling gun
+        Escape Velocity: Oswald Vardklemp can summon his Iron Horse, mount it and dash up to 60 feet
 
     attacks: |
       Can make 2 attacks with his firearms and his Steel Defender can attack twice 
     combat-tactics: |
       He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run 
     special-equipment:
-    - Gatling Cannon - Fires multiple shots at a single target doing 5d12 damage on a failed Dex save with DC 18, or do a sweeping attack targetting each creature within 30 feet doing 1d12 on a failed Dex save with DC 18. 
-                       Range 60/240, Heavy, Two-Handed. Can fire 5 bursts before needing to be reloaded. Reloading takes 1 round.
-    - Random Artifact Devices - Can be carrying whatever he needs
-    - Artificer's Glasses - Glasses with interchangable lenses that include lenses from Glasses of Hidden Eyes, Eyes of Minute Seeing, Goggles of Indentifying, Eyes of the Eagle, Prismatic Lens and Goggles of Night
-    - Steel Defender - See character sheet for Rosie 198 for details
-    - Iron Horse - His Iron Horse is a clockwork motorcycle powered by his Artificer's Infusion. It can move on it's own and answers his call. It has a speed of 60 feet and can take 30HP damage before it stops running.
-    
-    
+    - Gatling Cannon: Fires multiple shots at a single target doing 5d12 damage on a failed Dex save with DC 18, or do a sweeping attack targetting each creature within 30 feet doing 1d12 on a failed Dex save with DC 18. 
+                      Range 60/240, Heavy, Two-Handed. Can fire 5 bursts before needing to be reloaded. Reloading takes 1 round.
+      Random Artifact Devices: Can be carrying whatever he needs
+      Artificer Glasses: Glasses with interchangable lenses that include lenses from Glasses of Hidden Eyes, Eyes of Minute Seeing, Goggles of Indentifying, Eyes of the Eagle, Prismatic Lens and Goggles of Night
+      Steel Defender: See character sheet for Rosie 198 for details
+      Iron Horse: His Iron Horse is a clockwork motorcycle powered by his Artificer's Infusion. It can move on it's own and answers his call. It has a speed of 60 feet and can take 30HP damage before it stops running.
+
   profile:
 
     #
@@ -543,7 +543,7 @@ npc:
       discoveries back on Ravnica and convinced Oswald of the merits of creating a consortium of ideas and opening a permanent channel of communication with the Izzet League. Oswald then set about, with some financial aid 
       from the Izzet, bulding Collegium compounds in most major cities throughout the world and inviting prominent artificers, mages and scientists to join, learn, work and share. He continues to function as the leader and 
       spokesman for the Collegium while continuing his own research and development.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -558,32 +558,3 @@ npc:
       interupted. He is also known to be fairly reckless when testing his new devices and contraptions and now and again manages to do some significant damage to Collegium compounds and the surrounding cities with 
       out of control inventions. He has kept the indentity of of the Collegium's benefactors and their exraplanar origins to himself, but meets quarterly at secret location with Ral Zarek to maintain communication 
       channels.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

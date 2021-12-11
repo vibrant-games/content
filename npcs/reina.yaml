@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Street urchin
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -311,7 +309,6 @@ npc:
     #
     languages:
     - Common
-
 
     #
     # Factions:
@@ -332,7 +329,6 @@ npc:
     #
     - id: thieves_guild
       name: Thieve's Guild
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -357,7 +353,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  You turn to find a small human girl in furs relieving you of your coin purse. “Wait.... you can see me?”
+    introduction:  You turn to find a small human girl in furs relieving you of your coin purse. /“Wait.... you can see me?/”
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -384,7 +380,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  You can see me? I’m very forgettable. Even my family forgot me.
+    expressions:
+    - "You can see me?"
+    - "I’m very forgettable"
+    - "Even my family forgot me."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -408,7 +407,7 @@ npc:
     #
     motivations: |
       Motivated by fear and loneliness. She’s looking to find out why she is the way she is, for friendship and to be remembered.
-      
+
     #
     # Passions:
     #
@@ -417,7 +416,7 @@ npc:
     #
     passions: |
       People
-      
+
     #
     # Vulnerabilities:
     #
@@ -426,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       She’s overly trusting of anyone who see’s her, remembers her and shows her kindness
-      
+
     #
     # Secrets:
     #
@@ -435,8 +434,7 @@ npc:
     #
     secrets: | 
       She doesn’t know any, she just has one she doesn’t know
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -461,19 +459,20 @@ npc:
   #
   specialties:
     skills:
-   - - Barbarian Abilities:
-         - Rage: Can enter a rage as a Bonus Action. 
-            - have advantage on Strength Checks and Strength Saving Throws.
-            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-            - Resistance to bludgeoning, piercing, and slashing damage          
-         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                            but Attack Rolls against him have advantage until his next turn      
-               
+    - Barbarian Abilities:
+      - Rage:
+        - Description: Can enter a rage as a Bonus Action. 
+        - have advantage on Strength Checks and Strength Saving Throws.
+        - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+        - Resistance to bludgeoning, piercing, and slashing damage          
+        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                         but Attack Rolls against him have advantage until his next turn      
+
     special-abilities:
        - Proficiencies: Stealth, Sleight-of-Hand, Survival
-       - Feats: Skulker, Dual Weilder
-       - Curse of the Forgotten: It requires a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to see her and a Wisdom (Perception) check of DC 19 to remember her if they aren't directly looking at her.
+         Feats: Skulker, Dual Weilder
+         Curse of the Forgotten: It requires a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to see her and a Wisdom (Perception) check of DC 19 to remember her if they aren't directly looking at her.
                                  This ability makes her immune to blindsight and truesight         
        
     attacks: |
@@ -483,8 +482,7 @@ npc:
     special-equipment:
     - 2 Assassins Daggers: +1 bonus to attack and damage rolls. On your first successful attack against an enemy they must make a DC 18 Constitution saving throw, if they fail it they take 2d6 poison damage and are poisoned for
                            1 minute, however if they succeed the constitution saving throw they are immune to this effect for 24 hours. 
-    
-      
+
   profile:
 
     #
@@ -500,7 +498,7 @@ npc:
       very dangerous secret for everyone....
       Reina is The Wraith! Her curse is actually a spell put on her by a spymaster of the assassins guild at the same time that he murdered her tribe and created her split personality. When her skills are needed a simple
       subliminal phrase brings out the Wraith, the realms deadliest assassin, and Reina never remembers a thing.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -513,32 +511,3 @@ npc:
       Reina is lonely, she craves human contact, and that makes her far to trusting of anyone that can see and especially remember her. She aims to please and will do her best to help anyone who is kind to her. She is a survivor
       and quite capable of getting by on her own. She is very insecure about her appearance and nervously picks at her clothes and hair when she is interacting with other people. She knows nothing about her alter ego, but is
       aware that she occasionally loses time, sometimes days at a time, and this disturbs her greatly. She desperately wish someone could remember her long enough to help her figure out what happens to her. 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

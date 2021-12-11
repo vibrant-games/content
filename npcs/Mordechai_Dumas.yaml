@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Librarian / Record Keeper
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -340,7 +338,6 @@ npc:
       name: Dumas Family
       role: Record Keeper, Lore Master
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -364,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The librarian approaches quietly whispering "Fiction? History? Religion? Arcana? What can I interest you in?"
+    introduction:  The librarian approaches quietly whispering - /"Fiction? History? Religion? Arcana? What can I interest you in?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -391,7 +388,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The story of my family and the story of the world can be found in these books"
+    expressions:
+    - "The story of my family and the story of the world can be found in these books"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +413,7 @@ npc:
     #
     motivations: |
       Knowledge
-      
+
     #
     # Passions:
     #
@@ -424,7 +422,7 @@ npc:
     #
     passions: |
       Books, History and Lore
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       His thirst for knowledge has lead him down some dark paths
-      
+
     #
     # Secrets:
     #
@@ -442,7 +440,7 @@ npc:
     #
     secrets: |
       He knows all of the family secrets, even ones the rest of the family doesn't.
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,12 +465,12 @@ npc:
   #
   specialties:
     skills:
-   - - Wizard Abilities:
-       - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-       - Spell Mastery: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared If you 
-                        want to cast either spell at a higher level, you must expend a spell slot as normal - Detect Magic & Detect Toughts
-       - Spellcasting: 
-          Cantrips: Mending, Message, Mage Hand, Fire Bolt, Light, Dancing Lights, Minor Illusion
+    - Wizard Abilities:
+      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
+        Spell Mastery: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared If you 
+                       want to cast either spell at a higher level, you must expend a spell slot as normal - Detect Magic & Detect Toughts
+        Spellcasting: 
+        - Cantrips: Mending, Message, Mage Hand, Fire Bolt, Light, Dancing Lights, Minor Illusion
           1st Level: Alarm, Charm Person, Comprehend Languages, Detect Magic, Find Familiar, Floating Disk, Identify, Illusory Script, Magic Missle, Shield, Unseen Servant, Fog Cloud
           2nd Level: Arcane Lock, Arcanist's Magic Aura, Blindness/Deafness, Detect Thoughts, Hold Person, Invisibility, Knock, Locate Object, Misty Step, Suggestion
           3rd Level: Animate Dead, Clairvoyance, Counterspell, Dispel Magic, Fireball, Fly, Slow, Tiny Hut, Tongues, Vampiric Touch, Fear, Lightning Bolt, Sending
@@ -482,52 +480,55 @@ npc:
           7th Level: Delayed Blast Fireball, Etherealness, Finger of Death, Magnificent Mansion, Plane Shift, Project Image, Reverse Gravilty, Simulacrum, Symbol, Teleport
           8th Level: Antimagic Field, Clone, Demiplane, Domnate Monster, Feeblemind, Maze, Mind Blank, Power Word Stun
           9th Level: Astral Projection, Foresight, Gate, Power Word Kill, Shapechange, Time Stop, True Polymorph, Wish
-
-
-   - - Order of Scribes Abilities: 
-       - Wizardly Quill: as a bonus action, you can magically create a Tiny quill in your free hand. The magic quill has the following properties:
-                         - The quill doesn’t require ink. When you write with it, it produces ink in a color of your choice on the writing surface.
-                         - The time you must spend to copy a spell into your spell book equals 2 minutes per spell level if you use the quill for the transcription.
-                         - You can erase anything you write with the quill if you wave the feather over the text as a bonus action, provided the text is within 5 feet of you.
-                         - This quill disappears if you create another one or if you die
-       - Awakened Spellbook: Using specially prepared inks and ancient incantations passed down by your wizardly order, you have awakened an arcane sentience within your spellbook. At 2nd level, while you are holding the book, 
-                             it grants you the following benefits - 
-                             - You can use the book as a spellcasting focus for your wizard spells.
-                             - When you cast a wizard spell with a spell slot, you can temporarily replace its damage type with a type that appears in another spell in your spellbook, which magically alters the spell's formula 
-                               for this casting only. The latter spell must be of the same level as the spell slot you expend.
-                             - When you cast a wizard spell as a ritual, you can use the spell's normal casting time, rather than adding 10 minutes to it. Once you use this benefit, you can't do so again until you finish a long 
-                               rest.
-                             - If necessary, you can replace the book over the course of a short rest by using your Wizardly Quill to write arcane sigils in a blank book or a magic spellbook to which you're attuned. At the end 
-                               of the rest, your spellbook's consciousness is summoned into the new book, which the consciousness transforms into your spellbook, along with all its spells. If the previous book still existed 
-                               somewhere, all the spells vanish from its pages.
-       - Manifest Mind: you can conjure forth the mind of your Awakened Spellbook. As a bonus action while the book is on your person, you can cause the mind to manifest as a Tiny spectral object, hovering in an unoccupied space
-                        of your choice within 60 feet of you. The spectral mind is intangible and doesn't occupy its space, and it sheds dim light in a 10-foot radius. It looks like a ghostly tome, a cascade of text, or a 
-                        scholar from the past (your choice). While manifested, the spectral mind can hear and see, and it has darkvision with a range of 60 feet. The mind can telepathically share with you what it sees and hears
-                        (no action required). Whenever you cast a wizard spell on your turn, you can cast it as if you were in the spectral mind's space, instead of your own, using its senses. You can do so a number of times per
-                        day equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. As a bonus action, you can cause the spectral mind to hover up to 30 feet to an unoccupied space that you
-                        or it can see. It can pass through creatures but not objects. The spectral mind stops manifesting if it is ever more than 300 feet away from you, if someone casts Dispel Magic on it, if the Awakened 
-                        Spellbook is destroyed, if you die, or if you dismiss the spectral mind as a bonus action. Once you conjure the mind, you can't do so again until you finish a long rest, unless you expend a spell slot of 
-                        any level to conjure it again.
-       - Master Scrivner: whenever you finish a long rest, you can create one magic scroll by touching your Wizardly Quill to a blank piece of paper or parchment and causing one spell from your Awakened Spellbook to be copied 
-                          onto the scroll. The spellbook must be within 5 feet of you when you make the scroll. The chosen spell must be of 1st or 2nd level and must have a casting time of 1 action. Once in the scroll, the 
-                          spell's power is enhanced, counting as one level higher than normal. You can cast the spell from the scroll by reading it as an action. The scroll is unintelligible to anyone else, and the spell 
-                          vanishes from the scroll when you cast it or when you finish your next long rest. You are also adept at crafting spell scrolls, which are described in the treasure chapter of the Dungeon Master's Guide.
-                          The gold and time you must spend to make such a scroll are halved if you use your Wizardly Quill
-       - One with the Word: your connection to your Awakened Spellbook has become so profound that your soul has become entwined with it. While the book is on your person, you have advantage on all Intelligence (Arcana) checks, 
-                            as the spellbook helps you remember magical lore. Moreover, if you take damage while your spellbook's mind is manifested, you can prevent all of that damage to you by using your reaction to dismiss 
-                            the spectral mind, using its magic to save yourself. Then roll 3d6. The spellbook temporarily loses spells of your choice that have a combined spell level equal to that roll or higher. For example, 
-                            if the roll's total is 9, spells vanish from the book that have a combined level of at least 9, which could mean one 9th-level spell, three 3rd-level spells, or some other combination. If there aren't
-                            enough spells in the book to cover this cost, you drop to 0 hit points. Until you finish 1d6 long rests, you are incapable of casting the lost spells, even if you find them on a scroll or in another
-                            spellbook. After you finish the required number of rests, the spells reappear in the spell book. Once you use this reaction, you can't do so again until you finish a long rest
+      Order of Scribes Abilities: 
+      - Wizardly Quill: 
+        - Description: as a bonus action, you can magically create a Tiny quill in your free hand. The magic quill has the following properties -
+          Additional Information:
+          - The quill doesn’t require ink. When you write with it, it produces ink in a color of your choice on the writing surface.
+          - The time you must spend to copy a spell into your spell book equals 2 minutes per spell level if you use the quill for the transcription.
+          - You can erase anything you write with the quill if you wave the feather over the text as a bonus action, provided the text is within 5 feet of you.
+          - This quill disappears if you create another one or if you die
+          Awakened Spellbook: 
+          - Description: Using specially prepared inks and ancient incantations passed down by your wizardly order, you have awakened an arcane sentience within your spellbook. At 2nd level, while you are holding the book, 
+                        it grants you the following benefits - 
+            Additional Information:
+            - You can use the book as a spellcasting focus for your wizard spells.
+            - When you cast a wizard spell with a spell slot, you can temporarily replace its damage type with a type that appears in another spell in your spellbook, which magically alters the spell's formula 
+              for this casting only. The latter spell must be of the same level as the spell slot you expend.
+            - When you cast a wizard spell as a ritual, you can use the spell's normal casting time, rather than adding 10 minutes to it. Once you use this benefit, you can't do so again until you finish a long 
+              rest.
+            - If necessary, you can replace the book over the course of a short rest by using your Wizardly Quill to write arcane sigils in a blank book or a magic spellbook to which you're attuned. At the end 
+              of the rest, your spellbook's consciousness is summoned into the new book, which the consciousness transforms into your spellbook, along with all its spells. If the previous book still existed 
+              somewhere, all the spells vanish from its pages.
+          Manifest Mind: you can conjure forth the mind of your Awakened Spellbook. As a bonus action while the book is on your person, you can cause the mind to manifest as a Tiny spectral object, hovering in an unoccupied space
+                         of your choice within 60 feet of you. The spectral mind is intangible and doesn't occupy its space, and it sheds dim light in a 10-foot radius. It looks like a ghostly tome, a cascade of text, or a 
+                         scholar from the past (your choice). While manifested, the spectral mind can hear and see, and it has darkvision with a range of 60 feet. The mind can telepathically share with you what it sees and hears
+                         (no action required). Whenever you cast a wizard spell on your turn, you can cast it as if you were in the spectral mind's space, instead of your own, using its senses. You can do so a number of times per
+                         day equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. As a bonus action, you can cause the spectral mind to hover up to 30 feet to an unoccupied space that you
+                         or it can see. It can pass through creatures but not objects. The spectral mind stops manifesting if it is ever more than 300 feet away from you, if someone casts Dispel Magic on it, if the Awakened 
+                         Spellbook is destroyed, if you die, or if you dismiss the spectral mind as a bonus action. Once you conjure the mind, you can't do so again until you finish a long rest, unless you expend a spell slot of 
+                         any level to conjure it again.
+          Master Scrivner: whenever you finish a long rest, you can create one magic scroll by touching your Wizardly Quill to a blank piece of paper or parchment and causing one spell from your Awakened Spellbook to be copied 
+                           onto the scroll. The spellbook must be within 5 feet of you when you make the scroll. The chosen spell must be of 1st or 2nd level and must have a casting time of 1 action. Once in the scroll, the 
+                           spell's power is enhanced, counting as one level higher than normal. You can cast the spell from the scroll by reading it as an action. The scroll is unintelligible to anyone else, and the spell 
+                           vanishes from the scroll when you cast it or when you finish your next long rest. You are also adept at crafting spell scrolls, which are described in the treasure chapter of the Dungeon Master's Guide.
+                           The gold and time you must spend to make such a scroll are halved if you use your Wizardly Quill
+          One with the Word: your connection to your Awakened Spellbook has become so profound that your soul has become entwined with it. While the book is on your person, you have advantage on all Intelligence (Arcana) checks, 
+                             as the spellbook helps you remember magical lore. Moreover, if you take damage while your spellbook's mind is manifested, you can prevent all of that damage to you by using your reaction to dismiss 
+                             the spectral mind, using its magic to save yourself. Then roll 3d6. The spellbook temporarily loses spells of your choice that have a combined spell level equal to that roll or higher. For example, 
+                             if the roll's total is 9, spells vanish from the book that have a combined level of at least 9, which could mean one 9th-level spell, three 3rd-level spells, or some other combination. If there aren't
+                             enough spells in the book to cover this cost, you drop to 0 hit points. Until you finish 1d6 long rests, you are incapable of casting the lost spells, even if you find them on a scroll or in another
+                             spellbook. After you finish the required number of rests, the spells reappear in the spell book. Once you use this reaction, you can't do so again until you finish a long rest
 
     special-abilities: 
        - Feats: Keen Mind, Observant, Prodigy, Ritual Caster, Spell Sniper, Telepathic, War Caster
-       - Legendary Resistance: (3/Day), If Mordechai Dumas fails a saving throw she can choose to succeed instead 
-       - Legendary Actions: Mordechai Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                            Mordechai Dumas regains spent Legendary Actions at the start of her turn
-         - Devils Portal: Mordechai Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-         - Scholars Escape: Mordechai Dumas casts Misty Step
-         - Devils Children: Mordechai Dumas can cast Gate, opening a portal to summon up to 5 lesser devils and/or minor undead to join the fight  
+         Legendary Resistance: (3/Day), If Mordechai Dumas fails a saving throw she can choose to succeed instead 
+         Legendary Actions: 
+         - Description: Mordechai Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                        Mordechai Dumas regains spent Legendary Actions at the start of her turn
+           Devils Portal: Mordechai Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
+           Scholars Escape: Mordechai Dumas casts Misty Step
+           Devils Children: Mordechai Dumas can cast Gate, opening a portal to summon up to 5 lesser devils and/or minor undead to join the fight  
     attacks: |
       He wont fight unless absolutely pressed. He will summon others to fight for him
     combat-tactics: |
@@ -537,7 +538,7 @@ npc:
     - His Quill is his arcane focus
     - Ring of Protection
     - Ring of Mind Sheilding    
-    
+
   profile:
 
     #
@@ -554,7 +555,7 @@ npc:
       Mordechai knows that their parton has been manipulating the two families for centuries, and had in fact, engineered the marriage between Saul Dumas and Anastasia Lavaux. The devil has been steering the clans to this 
       point in history to help with his attempt to ascend to power in the nine hells. Mordechai has not passed along this information to the rest of the family and is unsure how he feels about he and his family being 
       the unwitting instuments of a devil or what to do about it.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -567,32 +568,3 @@ npc:
       Mordechai Dumas is abonormally tall and thin. Whispy red hair brushes across his mostly bald head. His thick glasses sit on top of his large, angular nose obsucring his familial violet eyes. He wears finely tailored robes 
       and is never without a book in his hands. He is quiet and scholarly and mostly keeps to himself. He spends most of his time travelling and researching in libraries throughout the realm, gathering knowledge and power. 
       Hes not a very social individual, but can definitely be engaged in scholarly conversations and debates    
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

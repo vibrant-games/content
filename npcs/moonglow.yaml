@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Dancer / Escort / Spy
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Common
     - Undercommon
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -334,7 +331,6 @@ npc:
     #
     - id: a_thieve_s_assassin_s_guild
       name: A Thieve's/Assassin's Guild
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -359,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A lithe, black-furred Tabaxi woman slinks up to the bar "Looking for a date tonight?"
+    introduction:  A lithe, black-furred Tabaxi woman slinks up to the bar /"Looking for a date tonight?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -386,7 +382,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You look lonely handsome". "Hands off for that price", "Don't be pushy"
+    expressions:
+    - "You look lonely handsome"
+    - "Hands off for that price"
+    - "Don't be pushy"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -410,7 +409,7 @@ npc:
     #
     motivations: |
       Money
-      
+
     #
     # Passions:
     #
@@ -419,7 +418,7 @@ npc:
     #
     passions: |
       Dancing
-      
+
     #
     # Vulnerabilities:
     #
@@ -428,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       She is vain and a little impulsive
-      
+
     #
     # Secrets:
     #
@@ -437,8 +436,7 @@ npc:
     #
     secrets: | 
       She gathers information for the local thieve's guild
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -463,27 +461,24 @@ npc:
   #
   specialties:
     skills:
+    - Tabaxi Abilities:
+      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+        Feline Agility:  When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again until you move 0 feet on one of your turns. 
+        Cats Claws: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to
+                    1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+        Cats Talent: You have proficiency in the Perception and Stealth skills. 
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+      Thief Abilities:
+      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
+        Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
+                           your Dexterity modifier.
 
-  - - Tabaxi Abilities:
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-       - Feline Agility:  When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again until you move 0 feet on one of your turns. 
-       - Cats Claws: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to
-                     1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
-       - Cats Talent: You have proficiency in the Perception and Stealth skills. 
-
-   - - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-
-   - - Thief Abilities:
-       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
-       - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
-                            your Dexterity modifier.   
-               
     special-abilities:
        - Proficiencies: Acrobatic, Sleight-of-Hand, Deception, Performance, Stealth
-       - Feats: N/A 
+         Feats: N/A 
        - She is a skilled Dancer       
        
     attacks: |
@@ -492,8 +487,7 @@ npc:
       he's not a big fighter but will fight with her dagger and with her claws if forced to
     special-equipment:
     - Dagger
-    
-      
+
   profile:
 
     #
@@ -508,7 +502,6 @@ npc:
      further supplement her income by providing some extra services at the clubs.  Approached by the Thieve's Guild, she received a little bit of training and began to make even more money by collecting information from her
      customers and passing that information to the guild. Her exotic appearance and talent, have made her one of the favorite performers in town, and being very popular has made gathering information that much easier.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -520,32 +513,3 @@ npc:
     personality: |
       Moonglow is lithe sexy and flirtatious. She loves to dance and is good at it. She is a little irresponsible and impulsive, but she knows where her bread is buttered, and wont do anything that will cost her job. She likes
       the extra money coming in that being a thieve's guild informant brings, but she does question the integrity of the work.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
