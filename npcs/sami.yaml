@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Maid
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -311,7 +310,6 @@ npc:
     languages:
     - Common
     - Halfling
-
 
     #
     # Factions:
@@ -330,8 +328,8 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -367,7 +365,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Plain looking halfling female wearing very basic clothes  trying to be inconspicuous and quiet
+    appearance:   Plain looking halfling female wearing very basic clothes trying to be inconspicuous and quiet
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -383,7 +381,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  Oh, sorry!Hello sirs.
+    expressions:
+    - "Oh, sorry!"
+    - "Hello sirs."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -407,7 +407,7 @@ npc:
     #
     motivations: |
       Not to be clocked.  To stay under the radar.
-      
+
     #
     # Passions:
     #
@@ -416,7 +416,7 @@ npc:
     #
     passions: |
       Games, Sami is a deft hand at Tak.
-      
+
     #
     # Vulnerabilities:
     #
@@ -425,7 +425,7 @@ npc:
     #
     vulnerabilities: |
       She lives with her "half sister", really her former wife who has helped her find her true self.
-      
+
     #
     # Secrets:
     #
@@ -434,8 +434,7 @@ npc:
     #
     secrets: | 
       She was born a male, but lives life as female.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -460,24 +459,23 @@ npc:
   #
   specialties:
     skills: 
+    - Halfling Abilities:
+      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+        Brave: Has advantage on Saving Throws against being Frightened 
+        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+        Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
 
-   - - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-       - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
-      
     special-abilities:
        - Proficiencies: Deception, Insight, Survival, Disguise Kit
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with unarmed attack
     combat-tactics: |
       will always run from a fight
     special-equipment:
     - N/A    
-      
+
   profile:
 
     #
@@ -491,8 +489,6 @@ npc:
      Sami is a male halfling who has been living as a female since she and her "half-sister" moved to this new city. Sami's sister is really her wife who has helped transform Sami into the women she now is. Sami works as a
      cleaning maid at the local inn and enjoys playing games at the inn when she's not working. Her favorite tavern game is Tak.
 
- 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -504,33 +500,3 @@ npc:
     personality: |
      Sami is truly happy for the first time in her life. She is shy and a little bit on the quiet side, as she does her best not to attract much attantion. She works hard, likes to play games and is thoroughly enjoying fuinally
      living her truth
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Brigand
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -310,7 +309,6 @@ npc:
     #
     languages:
     - Common
-
 
     #
     # Factions:
@@ -336,7 +334,6 @@ npc:
     - id: mercenary_army
       name: Mercenary Army
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -360,7 +357,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A burly young man steps out into the firelight, "Don't anybody move, we've got you surrounded"
+    introduction:  A burly young man steps out into the firelight, /"Don't anybody move, we've got you surrounded/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -387,7 +384,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Aye, don't you be trying anyfin funny", "Just hand o'er yer loot and we'll be on our way, no need to get yesef hurt"
+    expressions:
+    - "Aye, don't you be trying anyfin funny"
+    - "Just hand o'er yer loot and we'll be on our way, no need to get yesef hurt"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       Money, survival, power
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       Clog Dancing
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       Young and full of bravado but not quite so full of wisdom
-      
+
     #
     # Secrets:
     #
@@ -464,15 +463,14 @@ npc:
   #
   specialties:
     skills: 
+    - Fighter Abilities:
+      - Fighting Style:
+        Second Wind: Bonus Action to regain 1d10 + 2 
+        Action Surge: Once every short/long rest can take an extra action    
 
-   - - Fighter Abilities:
-         - Fighting Style:
-         - Second Wind: Bonus Action to regain 1d10 + 2 
-         - Action Surge: Once every short/long rest can take an extra action    
-      
     special-abilities:
        - Proficiencies: Athletics, Intimidation, Deception
-       - Feats: Tough, Grappler
+         Feats: Tough, Grappler
        
     attacks: |
       1 attack with long sword or long bow
@@ -481,7 +479,7 @@ npc:
     special-equipment:
     - Long Sword
     - Long Bow    
-      
+
   profile:
 
     #
@@ -497,7 +495,6 @@ npc:
      The Carnelian Shroud rounded up a group of like-minded, impoverished youngsters and set them loose robbing travelers and merchants along the less policed travel routes. Proving a good fit for him, Rutgard was soon given his
      own crew.
  
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -510,33 +507,3 @@ npc:
      Rutgard is a brash and confident young man. He's street smart and tough as nails and has proved himself to be a competent leader. He was very quickly seen as a reliable asset and promoted to head his own crew. He is
      quick-witted but not the wisest or smartest of men and can be goaded into letting his temper get the better of him. He is a good soldier and has become loyal to The Carnelian Shroud and sees a bright future in the
      organization
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
