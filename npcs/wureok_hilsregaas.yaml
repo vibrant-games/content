@@ -393,7 +393,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The regals are on travel-time. If you have business, it is with me", "Our time is valuable. Make it quick."
+    expressions:
+    - "The regals are on travel-time. If you have business, it is with me"
+    - "Our time is valuable. Make it quick."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -470,25 +472,25 @@ npc:
   #
   specialties:
     skills:
-   - - Dragonborn Abilities:
+    - Dragonborn Abilities:
        - Breathe Weapon: Can exhale poison in a 15 foot cone with a DC 13. A creature takes 3d6 damage on a failed save, and half as much damage on a successful one.           
        - Damage Resistance: Resistance to Fire                      
                                    
-   - - Sorcerer Ability
-       - Sorcerer Spellcasting:  Sorcery Points 10
-          Cantrips: Dancing Lights, Fire Bolt, Mage Hand, Minor Illusion, Ray of Frost, Chill Touch
-          1st Level: Burning Hands, Magic Missle, Mage Armor, Shield
-          2nd Level: Detect Thoughts, Shatter, Scorching Ray
-          3rd Level: Counterspell, Fireball, Tongues
-          4th Level: Banishment, Polymorph, Wall of Fire
-          5th Level: Cloudkill, Dominate Person
+    - Sorcerer Ability:
+       - Spellcasting:  Sorcery Points 10
+         Cantrips: Dancing Lights, Fire Bolt, Mage Hand, Minor Illusion, Ray of Frost, Chill Touch
+         1st Level: Burning Hands, Magic Missle, Mage Armor, Shield
+         2nd Level: Detect Thoughts, Shatter, Scorching Ray
+         3rd Level: Counterspell, Fireball, Tongues
+         4th Level: Banishment, Polymorph, Wall of Fire
+         5th Level: Cloudkill, Dominate Person
        - MetaMagic: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
-          1: Empowered Spell
-          2: Heightened Spell
-          3: Twinned Spell
+         1: Empowered Spell
+         2: Heightened Spell
+         3: Twinned Spell
        - Sorcerous Restoration: you regain 4 expended sorcery points whenever you finish a Short Rest
 
-   - - Shadow Magic Abilities: 
+    - Shadow Magic Abilities: 
         - Eyes of the Dark: you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
                             can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
         - Strength of the Grave: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
@@ -529,7 +531,6 @@ npc:
       and generations, Wureok has, at least on the surface, appeared to be an exemplary court official. He watches over the castle and surrounding villas with great attention to detail; especially when it comes to collecting
       taxes and scutage. Wureok has organized a growing rebel faction among the peasants and townsfolk, using the pressures he himself applies to turn them against his benefactor, then twisting the stories of uprisings in
       reports to his benefactor. He thereby presents further reason for his position, for the further exploitation of the common-folk, and for the royal family to further insulate themselves from the outside world.
-
       
     #
     # Personality (or something like that):
@@ -541,32 +542,3 @@ npc:
     #
     personality: |
       A robed dragonborn, gnarled hound, and equipped militia stroll from the castle gates. "What business have ye here?"
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

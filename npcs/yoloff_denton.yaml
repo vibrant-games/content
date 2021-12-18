@@ -359,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Move along folks, Nothing to see here" shouts the graying dwarf standing at the perimeter of the crime scene
+    introduction: /"Move along folks, Nothing to see here"/ shouts the graying dwarf standing at the perimeter of the crime scene
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -386,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Just another day keeping the city safe", "I'm too old for this %@#&amp;". "You'll learn rookie, it's just the way it goes"
+    expressions:
+    - "Just another day keeping the city safe"
+    - "I'm too old for this %@#&amp;"
+    - "You'll learn rookie, it's just the way it goes"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -464,22 +467,22 @@ npc:
   specialties:
     skills:
 
-   - - Dwarf Abilities:
+    - Dwarf Abilities:
        - Darkvision: Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You
                      can't discern color in darkness, only shades of gray
        - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-       - Tool Proficiency: You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.       
+       - Tool Proficiency: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
        - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
        - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
                       instead of his normal Proficiency Bonus  
                   
-   - - Fighter Abilities:
+    - Fighter Abilities:
          - Fighting Style:
          - Second Wind: Bonus Action to regain 1d10 + 
          - Action Surge: Once every short/long rest can take an extra action
          - Extra Attack: Can attack twice each turn
             
-   - - Battle Master Abilities:
+    - Battle Master Abilities:
        - Combat Superiority:
          - Maneuvers: Menacing Attack, Pushing Attack, Grappling Attack
          - Superiority Dice: 5
@@ -522,8 +525,6 @@ npc:
      sen it all. Despite his comments to the contrary, he actually enjoys and takes pride in training and keeping the rookies safe on the job. Due to his advanced age, most of his duties consist of training and crowd control on 
      the few days that he gets away from pushing paper at his desk at Watch HQ. He's been a good watchman for a long long time, but has been known to take the odd bribe to supplement his income as long, as it's not to ignore 
      something that will directly hurt anyone.
-
-
       
     #
     # Personality (or something like that):
@@ -535,34 +536,4 @@ npc:
     #
     personality: |
      Yoloff is tired. He's worked long and hard and is counting the days until his retirement. He's well known as one of the best trainers on the force and has cycled through many new recruits. He's been around the block more 
-     than a few times and knows both the city and the city's underworld inside and out. 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     than a few times and knows both the city and the city's underworld inside and out.

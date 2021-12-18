@@ -384,7 +384,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  Screeeech, "I will not go in there", "The sky is my home"
+    expressions:  
+    - "Screeeech"
+    - "I will not go in there"
+    - "The sky is my home"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -397,7 +400,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:    Elegantly bows and nods his head to one side. Often balances on one foot as though a nervous tick
+    mannerisms: Elegantly bows and nods his head to one side. Often balances on one foot as though a nervous tick
 
   acting:
     #
@@ -462,17 +465,17 @@ npc:
   specialties:
     skills: 
 
-   - - Aarakocra Abilities:
+    - Aarakocra Abilities:
       - Flight: Flying speed is 50 feet
       - Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
 
-   - - Fighter Abilities:
+    - Fighter Abilities:
          - Fighting Style: Protection
          - Second Wind: Bonus Action to regain 1d10 + 5
          - Action Surge: Once every short/long rest can take an extra action
          - Extra Attack: Can attack twice each turn 
        
-   - - Champion Abilities:
+    - Champion Abilities:
        - Improved Critical: your weapon attacks score a critical hit on a roll of 19 or 20.
        
     special-abilities:
@@ -500,8 +503,6 @@ npc:
     #
     background-story: |
      Urreeek is the guardian of his tribe who have been trapped on the material plane.  He has been sent out into a world he wants nothing to do wih to find help getting him and his tribe back to the Elemental Planes of Air
-
-
       
     #
     # Personality (or something like that):
@@ -513,33 +514,3 @@ npc:
     #
     personality: |
      Urreeek is very serious in his duty. He is loyal to his family and clan above all else and will do whatever he needs to do to find their way back home.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

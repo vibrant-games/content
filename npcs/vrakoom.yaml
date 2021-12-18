@@ -386,7 +386,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Trostani's light be upon you", "May peace guide your way"
+    expressions:
+    - "Trostani's light be upon you"
+    - "May peace guide your way"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -464,7 +466,7 @@ npc:
   specialties:
     skills: 
 
-   - - Loxodon Abilities:
+    - Loxodon Abilities:
         - Loxodon Serenity: You have advantage on saving throws against being charmed or frightened.
         - Natural Armor: You have thick, leathery skin. When you aren't wearing armor, your AC is 12 +your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a 
                          lower AC. A shield's benefits apply as normal while you use your natural armor.
@@ -473,7 +475,7 @@ npc:
                  that list of options. Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.
         - Keen Smell: Thanks to your sensitive trunk, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell
 
-   - - Cleric Abilities:
+    - Cleric Abilities:
        - Spellcasting: Spell DC 15
          Cantrips: Decompose, Guidance, Light, Spare the Dying, 
          1st Level: Create/Destroy Water, Detect Evil and Good, Detect Magic, Purify Food and Drink 
@@ -481,8 +483,8 @@ npc:
          3rd Level: Mass Healing Word, Dispel Magic, Spirit Guardians
          4th Level: Arua of Life, Banishment
        - Channel Divinity: Turn Undead, Destroy Undead
-       
-   - - Cleric Abilities:
+              
+    - Life Domain Abilities:
        - Spellcasting: Spell DC 15 
          1st Level: Bless, Cure Wounds
          3rd Level: Lesser Restoration, Spiritual Weapon
@@ -537,33 +539,3 @@ npc:
      Vrakoom is a wise and pious young man. He has spent his life devoted to the conclave and their tenets. He prefers the peace of the conclave and studying history, medicine and arcana, but because of his skill and imposing
      size, he's spent a fair amount of time in combat situations. He prefers to funstion as more of a combat medic in those situations but he can certainly do a lot of damage with his maul if he needs to. He is very laid back
      and generous, but he's not the biggest people person, prefering his books to conversation.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

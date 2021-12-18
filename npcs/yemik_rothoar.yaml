@@ -464,18 +464,18 @@ npc:
   specialties:
     skills:
 
-   - - Half-Orc Abilities:
+    - Half-Orc Abilities:
        - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
        - Menacing: gain proficiency in the Intimidation skill 
        - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
        - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.  
                   
-   - - Sorcerer Ability:
-       - Sorcerer Spellcasting:  Sorcery Points  Spell DC 13
-          Cantrips: Fire Bolt, Mage Hand, Thunderclap, Minor Illusion
-          1st Level: Ice Knife, Magic Missle
+    - Sorcerer Ability:
+       - Spellcasting:  Sorcery Points  Spell DC 13
+         Cantrips: Fire Bolt, Mage Hand, Thunderclap, Minor Illusion
+         1st Level: Ice Knife, Magic Missle
             
-   - - Wild Magic Abilities:
+    - Wild Magic Abilities:
        - Wild Magic Surge: your spellcasting can unleash surges of untamed magic. Immediately after you cast a sorcerer spell of 1st level or higher, the DM can have you roll a d20. If you roll a 1, roll on the Wild Magic Surge 
                            table to create a random magical effect.
        - Tides of Chaos: you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. 
@@ -507,7 +507,6 @@ npc:
     background-story: |
      Orphaned at a young age, Yemik does not remember his family. Yemik spent his days learning to read at the orphanage and eventually was requested to live at a school for the gifted. A prof. took him in as an assistant and 
      fed Yemik's curiosities. Yemik has a desire to give the world the gift of knowledge, hoping to make a book that would be in every household.
-
       
     #
     # Personality (or something like that):
@@ -519,33 +518,3 @@ npc:
     #
     personality: |
      Yemik is a helpful and eager student. He's not the brightest, strictly speaking, but he is resourceful, charasmatic and has a lot of potential. He is ambitious and has high hopes for his own future.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

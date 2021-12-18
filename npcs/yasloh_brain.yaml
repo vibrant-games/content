@@ -358,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "You're carrying that wrong," declares a robed, trinketed gnome, walking youward.  "Let me share my learnings with you."
+    introduction:  /"You're carrying that wrong,"/ declares a robed, trinketed gnome, walking youward. /"Let me share my learnings with you."/
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -463,36 +463,36 @@ npc:
   specialties:
     skills:
 
-   - - Swamp Gnome Abilities:
+    - Swamp Gnome Abilities:
        - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
        - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
        - Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
        - Tinker:  You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
                   after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
                   to three such devices active at a time. When you create a device, choose one of the following options - 
-                  - Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
-                                   a random direction. It makes noises as appropriate to the creature it represents.
-                  - Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-                  - Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.  
+         Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+                        a random direction. It makes noises as appropriate to the creature it represents.
+         Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+         Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.  
                   
-   - - Wizard Abilities:
+    - Wizard Abilities:
          - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
          - Spell Mastery: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. 
                           If you want to cast either spell at a higher level, you must expend a spell slot as normal
          - Signature Spells: Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don't count against the number of Spells you have prepared, and you can 
                              cast each of them once at 3rd Level without expending a spell slot.			  
          - Spellcasting: Spell DC 17
-            Cantrips: Minor Illusion, Mage Hand, Message, Prestidigitation, Shocking Grasp, Thunderclap
-            1st Level: Disguise Self, Illusory Script, Silent Image, Charm Person
-            2nd Level: Invisibility, Mirror Image, Phantasmal Force 
-            3rd Level: Fear, Hypnotic Pattern, Major Image
-            4th Level: Greater Invisibility, Hallucinatory Terrain, Phantasmal Killer
-            5th Level: Dream, Mislead
-            6th Level: Programme Illusion
-            7th Level: Simulacrum
-            8th Level: Telepathy
+           Cantrips: Minor Illusion, Mage Hand, Message, Prestidigitation, Shocking Grasp, Thunderclap
+           1st Level: Disguise Self, Illusory Script, Silent Image, Charm Person
+           2nd Level: Invisibility, Mirror Image, Phantasmal Force 
+           3rd Level: Fear, Hypnotic Pattern, Major Image
+           4th Level: Greater Invisibility, Hallucinatory Terrain, Phantasmal Killer
+           5th Level: Dream, Mislead
+           6th Level: Programme Illusion
+           7th Level: Simulacrum
+           8th Level: Telepathy
             
-   - - School of Enchantment Abilities:
+    - School of Enchantment Abilities:
        - Illusion Savant: the gold and time you must spend to copy a Illusion spell into your spellbook is halved.
        - Improved Minor Illusion: you learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice. The cantrip doesn't count against your number of cantrips known. 
                                   When you cast Minor Illusion, you can create both a sound and an image with a single casting of the spell.           
@@ -536,9 +536,6 @@ npc:
      and languages. These hallucinations eventually began to congeal into gears, sigils, machinations, glyphs, and locations of great power. It appeared as though Yasloh had fallen asleep in the bath at the camp and he began 
      muttering incomprehensibly in an increasing volume until he was nearly shouting. A young Halfling soldier approached to shake him awake. "Sir. Sir? Are you okay? Are you..." And Yasloh shot up in the bathtub screaming 
      valorously, "I've got it mate!" He may have lost his past but now saw the many magical inventions that would define his future.
-
-
-
       
     #
     # Personality (or something like that):
@@ -552,33 +549,3 @@ npc:
      Yasloh doesn't remember much of his life before waking up in the swamp, but it doesn't seem to bother him very much. He still maintains all of his arcane and historical knowledge, just none of his personal memories and as 
      far as he's concerned, thats all that matters anyway. He is manic, intense and animated all the time, to a level that doesn't seem possible to maintain for any length, yet there he goes. He talks constantly to anyone who 
      will listen, and even those who won't, giving advice, sharing his thoughts and finding, no matter how little they make sense.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

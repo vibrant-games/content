@@ -361,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "where was I going again" asks the wild-eyed, hunched old man as he bumps into passers-by.
+    introduction:  /"where was I going again"/ asks the wild-eyed, hunched old man as he bumps into passers-by.
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -388,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I meant to say that", "Can you help me find my way home", "I used to run this town"
+    expressions:
+    - "I meant to say that"
+    - "Can you help me find my way home"
+    - "I used to run this town"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +404,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   shakey and hunched, walks with a cane
+    mannerisms: shakey and hunched, walks with a cane
 
   acting:
     #
@@ -464,7 +467,7 @@ npc:
   #
   specialties:
     skills:
- - - Werewolf Abilities:
+    - Werewolf Abilities:
       - Keen Hearing and Smell: Advantage on perception rolls that involve Hearing and Sight
       - Tough Hide: +2 to AC and HP double in Wolf and Half-Wolf forms.
       - Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
@@ -475,7 +478,7 @@ npc:
  
 
     special-abilities: 
-Feats: Actor, Inspiring Leader
+    - Feats: Actor, Inspiring Leader
 
     attacks: |
       2 claws and a bite attack 
@@ -515,32 +518,3 @@ Feats: Actor, Inspiring Leader
       filthy and shabby at best. Walther is and alcoholic and while once he was a respected politician, he is now mostly a local punchline. A combination of his alcoholism, his age and his circumstances have left him 
       with extnded bouts of dementia and often wanders aimlessly around town talking nonsense and looking for help. His Lycanthropy turns him into a vicious bloodthirsty monster, but his dementia means that unless 
       directly in the company of Basil Dumas, he doesn't really remember his affliction.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -392,7 +392,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "You should have seen the other guy", "It's not perfect, but I get by", "It'll get fixed in due time"
+    expressions:
+    - "You should have seen the other guy"
+    - "It's not perfect, but I get by"
+    - "It'll get fixed in due time"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -468,13 +471,13 @@ npc:
   #
   specialties:
     skills:
-   - - Half-Wood Elf Abilities:
+    - Half-Wood Elf Abilities:
        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
        - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
        - Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15
  
-   - - Artificer Abilities:
+    - Artificer Abilities:
        - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
        - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 16
          Cantrip: Fire Bolt, Mage Hand, Mending
@@ -486,7 +489,7 @@ npc:
        - Tool Expertise: Smith's Tool proficiency bonus is doubled
        - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws    
       
-   - - Arterialist Abilities:
+    - Arterialist Abilities:
        - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools, and Smith's Tools
        - Spellcasting: Requires Smith's Tools as Spellcasting focus, Spell DC 16
          3rd Level: Shield, Thunderwave
@@ -496,7 +499,7 @@ npc:
        - Arcane Firearm: A metal rod carved with arcane ruins attached to his robotic arm that acts as a focus for Artificer Spells and add 1d8 to damage rolls for those spells  
        - Explosive Cannon: Add 1d8 his cannon's damage rolls. Can detatch and and detonate his cannon within 60 feet causing 3d8 force damage to each creature within 20 feet on a failed Dex Save  
 
-   - - Ranger Abilities:
+    - Ranger Abilities:
        - Favored Enemy: Giants, Monstrosities
        - Natural Explorer: Favored Terrain - Forest, Swamp
        - Spellcasting: Spell DC 15
@@ -506,7 +509,7 @@ npc:
        - Primal Awareness: Can spend a spell slot to sense the following types of creatures within 1 mile (6 mile in favored terrain) - Aberrations, Celestials, Dragons, Elementals, Fey, Fiends and Undead
        - Extra Attack: Can take a second attack action each turn
 
-   - - Monster Hunter Abilities:
+    - Monster Hunter Abilities:
        - Spellcasting: Spell DC 15
          3rd Level: Protection from Evil and Good
          5th Level: Zone of Truth
@@ -556,33 +559,4 @@ npc:
     personality: |
       Thadeus Periwinkle is a tall and thin Half-Elf. He has short, blonde hair and pointed ears and scars on his face. He almost always wears a long trenchcoat or lab coat to cover the mechanized components of his body. 
       Considereing his trauma and the fact that he is almost constantly in pain, he is generally pleasant and personable. He has long ago accepted that he's never getting his body back, but has been methodical and devoted 
-      in continuing to upgrade his prostectics. His devotion to his work and knowledge of upgrading humanoid forms has led him to work closely and become fast friends with Ulther Hapwath as they pursue their goals together.    
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      in continuing to upgrade his prostectics. His devotion to his work and knowledge of upgrading humanoid forms has led him to work closely and become fast friends with Ulther Hapwath as they pursue their goals together.

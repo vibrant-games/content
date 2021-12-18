@@ -383,7 +383,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Bzzz bzzz"; "Nobody lishens"; "Sho thatsh how it ish"; "I shaysh to them: century foot and trout. Shee if they caresh."
+    expressions:
+    - "Bzzz bzzz"
+    - "Nobody lishens"
+    - "Sho thatsh how it ish"
+    - "I shaysh to them; century foot and trout. Shee if they caresh."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -497,8 +501,6 @@ npc:
      again as the egg hatched and a chick stumbled forth with a head that was an exact replica of her husband. One member of the coven snatched the fleeing chick and forced it down Wendy's throat, crying in a crackled voice, 
      "henceforth you will be Wendigola, she who lost her beauty to her longing..." Reluctantly reborn and recognizing she hadn't gained the power and comradery she had expected, Wendigola fled the cave as the coven's cackling 
      slowly faded away among the interstices of the steppes and trees.
-
-
       
     #
     # Personality (or something like that):
@@ -510,34 +512,4 @@ npc:
     #
     personality: |
      Wendigola's mind is mostly gone now, any semblance of Wendy is long gone. She still studies and plays at alchemy, trying to capture the promised power she was deprived, but has yet to be able to acomplish much of anything. 
-     She is mad and abrasive and about as socially awkward as a human can be. 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     She is mad and abrasive and about as socially awkward as a human can be.

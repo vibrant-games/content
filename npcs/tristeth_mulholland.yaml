@@ -213,6 +213,7 @@ npc:
     #
     # Required.
     # Max length per occupation: ...
+    occupation:
     - Gravekeeper
     
 
@@ -383,7 +384,12 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "It is what it is"; "Love", "Dear", "Honey", "Sweetie".
+    expressions:
+    - "It is what it is"
+    - "Love"
+    - "Dear"
+    - "Honey"
+    - "Sweetie"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -396,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:    Sucks breath when cogitating; overfeeds pets with treats.
+    mannerisms: Sucks breath when cogitating; overfeeds pets with treats.
 
   acting:
     #
@@ -461,13 +467,13 @@ npc:
   specialties:
     skills: 
 
-   - - Cleric Abilities:
+    - Cleric Abilities:
        - Spellcasting: Spell DC 13
          Cantrips: Guidance, Decompose, Toll the Dead
          1st Level: Guiding Bolt, Cure Wounds, Sanctuary 
        - Channel Divinity: Turn Undead, Destroy Undead 
        
-   - - Grave Domain Abilities:
+    - Grave Domain Abilities:
        - Spellcasting: Spell DC 13
          1st Level: Bane, False Life 
        - Circle of Mortality: you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use 
@@ -514,11 +520,6 @@ npc:
      have penetrated his mind and begun causing a sort of madness where Tristeth escapes to an astral realm that he calls, "the Chalk". The Warlocks essentially send his astral form to wander an endless expanse of near 
      nothingness; only faint and fading chalk outlines of reality. In the chalk, he is faced with the spirits of those the Warlocks seek to sacrifice next. The victim convinces Tristeth to continue his supply of bodies. He then 
      wakes, exhausted and wondering why sleep no longer provides him rest. He's begun talking to himself and exhibiting odd twitches and spasms due to exhaustion.
-
-
-
-
-
       
     #
     # Personality (or something like that):
@@ -529,34 +530,4 @@ npc:
     # No length limit for now.
     #
     personality: |
-     Tristeth is a drunk and not terribly bright, but he is cautious and deliberate when it comes to his work with bodies. He's an odd duck who is much more comfortable around corpses than people. 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     Tristeth is a drunk and not terribly bright, but he is cautious and deliberate when it comes to his work with bodies. He's an odd duck who is much more comfortable around corpses than people.

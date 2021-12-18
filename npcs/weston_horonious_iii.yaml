@@ -386,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Let's have a round on the bar!", "It was such a glorious party!", "Have you heard the latest gossip?"
+    expressions:
+    - "Let's have a round on the bar!"
+    - "It was such a glorious party!"
+    - "Have you heard the latest gossip?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -489,9 +492,6 @@ npc:
      brilliant business man in the importing and exporting industry, it only took Weston III, a whole 3 years to run his family business into the ground. Couple that with his large gambling addiction and terrible gambling skill,
      alcohol addiction and illicit substance addiction, and it adds up to Weston III being flat broke and bordering on homeless. He still does his utmost to keep up appearances and flits among high society parties and taverns 
      sponging as much as he can grift despite owing a lot of people a lot of money.
-
-
-
       
     #
     # Personality (or something like that):
@@ -503,34 +503,4 @@ npc:
     #
     personality: |
      Weston isn't really good for much. He's an awful businessman. He's got serious addiction issues. He's made bad choice after bad choice in his life and since his parent's deaths, he's staring to pay for it. He puts on a 
-     great show of bravado, acting like his life hasn't gone to pot, but inside he knows that he's a failure. So he'll continue to grift through life until someting changes or everybody catches on to what a fraud he is.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     great show of bravado, acting like his life hasn't gone to pot, but inside he knows that he's a failure. So he'll continue to grift through life until something changes or everybody catches on to what a fraud he is.

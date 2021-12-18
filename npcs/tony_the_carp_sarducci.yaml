@@ -213,6 +213,7 @@ npc:
     #
     # Required.
     # Max length per occupation: ...
+    occupation:
     - Pawn Shop Owner
     
 
@@ -386,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "5 copper, best I can do", "This is a very fine specimen, just came in yesterday. It'll cost ya though"
+    expressions:
+    - "5 copper, best I can do"
+    - "This is a very fine specimen, just came in yesterday. It'll cost ya though"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -464,12 +467,12 @@ npc:
   specialties:
     skills: 
 
-   - - Rogue Abilities:
+    - Rogue Abilities:
        - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
        - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
        - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
                             
-   - - Thief Abilities:
+    - Thief Abilities:
        - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
        - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to 
                             your Dexterity modifier.
@@ -501,9 +504,6 @@ npc:
      Tony is the stereotypical pawn shop owner. He's sleazy, greedy and ill-tempered. But if you're looking for stolen goods or to sell something in a pinch, Tony's your go to guy. You're never going to get a lot for what you're
      selling, and you're going to pay way to much for anything you're buying, but he'll definitely get you what you need, no questions asked. Tony is well known in the underworld and a card carrying member of the local thieves'
      guild. He's a pretty big fish, but he's definitely a bottom feeder.
-
-
-
       
     #
     # Personality (or something like that):
@@ -516,33 +516,3 @@ npc:
     personality: |
      Tony is scum. He's greedy, he's rude, he's cheap, he's mean and he's completely devoid of empathy. He's also a coward and is easily bought or intimidated. If he ever finds himself in real danger he'll lock himself into his 
      own safe and wait for backup. He is however, one hell of a negotiator and will always bargain for the lowest buying price and highest selling price possible for any good coming or going from his shop
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

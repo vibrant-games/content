@@ -388,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "This one's gonna be big, boys", "Light em up!", "You're gonna want to move... like nowish, fella"
+    expressions:
+    - "This one's gonna be big, boys"
+    - "Light em up!"
+    - "You're gonna want to move... like nowish, fella"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -464,19 +467,19 @@ npc:
   #
   specialties:
     skills:
-   - - Viashino Traits:
+    - Viashino Traits:
         - Bite: can make an unarmed strike for 1d4+4 piercing damage
         - Lashing Tail: Prehensile tail tipped with a bony blade. As a reaction, when a creature within 5 feet deals damage to him, he can make a melee attack dealing 1d6+4 slashing damage on a hit
         - Wiry Frame: Proficient in Acrobatics and Stealth
        
-   - - Fighter Abilities:
+    - Fighter Abilities:
         - Fighting Style: Archery
         - Second Wind: Bonus Action to regain 1d10 + Fighter Level
         - Action Surge: Once every short/long rest can take an extra action
         - Extra Attack: Can attack twice each turn
         - Indomitable: Can reroll 1 saving throw per long rest
  
-   - - Gunslinger Traits: 
+    - Gunslinger Traits: 
         - Firearm Proficiency: Add proficiency to firearm attacks
         - Gunsmith: Proficent with tinker's toolsand can use them to craft ammunition at half price, repair damaged firearms and design and craft new firearms
         - Adept Marksman: 3 Grit, Trick Shot DC19
@@ -485,7 +488,7 @@ npc:
         - Lightning Reload: Can reload a firearm as a bonus action
         - Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot    
 
-   - - Artificer Abilities:
+    - Artificer Abilities:
        - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
        - Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy
        - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 19
@@ -502,7 +505,7 @@ npc:
        - Spell Storing Item: Can store a spell in and object once per long rest
        - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 5 magic items       
       
-   - - Alchemist Abilities:
+    - Alchemist Abilities:
        - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
        - Spellcasting: Requires Alchemist Supplies as Spellcasting focus, Spell DC 19
          3rd Level: Healing Word, Ray of Sickness
@@ -521,9 +524,9 @@ npc:
     - Legendary Resistance: (3/Day), If Uha "Boomer" Bannock fails a saving throw he can choose to succeed instead 
     - Legendary Actions: Uha "Boomer" Bannock can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
                          Uha "Boomer" Bannock regains spent Legendary Actions at the start of his turn
-      - Explosive Alchemy: Uha "Boomer" Bannock can create and throw various explosive devices and elixirs
-      - Tail Grapple: Uha "Boomer" Bannock can make a grappling attack with his prehensile tail. Opponents must make a DC16 Strength Saving Throw or be grappled and restrained
-      - Alcemical Escape: Uha "Boomer" Bannock can ignite smoke grenades that an opaque cloud of smoke in a 30 foot radius that acts as a Fog Cloud spell for a 1 minute duration 
+      Explosive Alchemy: Uha "Boomer" Bannock can create and throw various explosive devices and elixirs
+      Tail Grapple: Uha "Boomer" Bannock can make a grappling attack with his prehensile tail. Opponents must make a DC16 Strength Saving Throw or be grappled and restrained
+      Alcemical Escape: Uha "Boomer" Bannock can ignite smoke grenades that an opaque cloud of smoke in a 30 foot radius that acts as a Fog Cloud spell for a 1 minute duration 
     
     attacks: |
       has 2 attacks
@@ -576,33 +579,4 @@ npc:
       Uha "Boomer" Bannock is a large, scaly reptilian man with a protruding snout full of sharp teeth, yellow eyes, a long, thick prehensile tail with sharp scales and a serrated bone protrusion at the end.  He wears a tailored 
       leather armored vest and pants full of pockets and pouches. He is as excitable and fiery as his weapon of choice. He's quick to anger, often to his detriment. He generally manages to keep his composure in the heat of 
       battle against the Dead Hunter's quarries of choice, but dealing with regular people tends to brnig out the worst of him, and quickly. When it comes to his alchemical work and his explosives he is cool as a cucmber, 
-      attentive and diligent. Exceptionally detail oriented in his work, but there is still nothing he enjoys more than a good explosion. 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      attentive and diligent. Exceptionally detail oriented in his work, but there is still nothing he enjoys more than a good explosion.

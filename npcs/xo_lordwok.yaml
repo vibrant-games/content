@@ -384,7 +384,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "The sharper the more likely to, you know, breach the shell."
+    expressions:  
+    - "The sharper the more likely to, you know, breach the shell."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -397,7 +398,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:    Speaks slowly and seemingly stupidly, which, he is. Almost ignores conversation, but he just doesn't really understand.
+    mannerisms: Speaks slowly and seemingly stupidly, which, he is. Almost ignores conversation, but he just doesn't really understand.
 
   acting:
     #
@@ -462,7 +463,7 @@ npc:
   specialties:
     skills:
 
-   - - Tortle Abilities:
+    - Tortle Abilities:
        - Claws: Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an 
                 unarmed strike.
        - Hold Breath: You can hold your breath for up to 1 hour at a time. Tortles aren't natural swimmers, but they can remain underwater for some time before needing to come up for air.
@@ -500,8 +501,6 @@ npc:
      members of his community but has realized that most of his tribe aspire to travel or to grow their skills and wealth. As the heir apparent, Xo realized he would have to take up the mantle of his tribe and advance their 
      interests. He seeks no such advancement but instead simply to 'get by'. The 'simple life'. This, to Xo, is more enjoyable. Particularly when one can help others and interact with the diverse array of peoples that frequent 
      a marketplace. He now operates primarily as a grinder and sells various accoutrements from his cart. These range from collectibles, like bells or miniatures, to pragmatic items, like pitons or adventuring packs.
-
-
       
     #
     # Personality (or something like that):
@@ -514,33 +513,3 @@ npc:
     personality: |
      Xo Is a laid back kinda guy. He does his best to avoid responsibility and prefers to just take things as they come. This attitude however, is not ideal in his father's eyes. As Chief, His father expects Xo to take over that
      role when he passes. Xo is not even marginally interested in succeeding his father and just wants to live a simple life doing his job, travelling around and meeting new people.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

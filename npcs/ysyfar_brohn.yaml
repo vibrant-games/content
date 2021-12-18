@@ -388,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "No business of yours", "The dark shall rise", "Commoners. Psh. Filth, I say. Kenaan will do away with 'em. In time."
+    expressions:
+    - "No business of yours"
+    - "The dark shall rise"
+    - "Commoners. Psh. Filth, I say. Kenaan will do away with 'em. In time."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -466,13 +469,13 @@ npc:
   specialties:
     skills:
 
-   - - Tiefling Abilities:
+    - Tiefling Abilities:
        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
        - Hellish Resistance: You have Resistance to fire damage
        - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
                           When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells 
                   
-   - - Paladin Abilities:
+    - Paladin Abilities:
        - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
                        within the same radius. Can use this ability 5 per long rest
        - Lay on Hands: Can touch another creature to heal up to 35HP per long rest. Or can 5HP to cure a disease or poison affecting it.
@@ -487,7 +490,7 @@ npc:
          1st Level: Searing Smite, Thunderous Smite, Wrathful Smite, Detect Good and Evil
          2nd Level: Branding Smite, Find Steed, Warding Bond
             
-   - - Battle Master Abilities:
+    - Oath of Vengeance Abilities:
        - Channel Divinity:
          - Abjure Enemy: As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom 
                          saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
@@ -534,9 +537,6 @@ npc:
      the region visiting temples of various deities to evaluate their role in the wars that characterize the races. He is very calculated in these 'visits', aware that he and his Order, while not well known, are not accepted 
      nor desired among the other communities of the region. Often found in deep prayer at the entrance to a temple or to a statuette of a deity acceptable to Kenaan, Ysyfar will rarely compromise his maleficent pilgrimage and 
      instead do everything possible to keep himself and his entourage appearing as peaceful pilgrims from a respectable Order.
-
-
-
       
     #
     # Personality (or something like that):
@@ -550,33 +550,3 @@ npc:
      Ysyfar is bitter, decietful and bigoted. His indoctrinated hatred for all other races manifests in his quest for vengeance and to eradicate them from the word. His divine-fueled hatred has rallied his people around him. Not
      only does he excise his vengeance and rage upon other races, but other gods as well, destroying and defiling temples in his path if he beleives those gods deserve it. His devotion to Kenaan is above all, his driving 
      motivation in life.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

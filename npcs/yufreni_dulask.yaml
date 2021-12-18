@@ -384,7 +384,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Life is short", "Join the Game", "We're all friends here".
+    expressions:
+    - "Life is short"
+    - "Join the Game"
+    - "We're all friends here"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -462,7 +465,7 @@ npc:
   specialties:
     skills:
 
-   - - Aetherborn Abilities:
+    - Aetherborn Abilities:
        - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
        - Born of Aether: You have resistance to necrotic damage
        - Menacing: You gain proficiency in the Intimidation skill 
@@ -494,9 +497,6 @@ npc:
      Like the rest of their kind, Yufreni knows their days are numbered. Born from the Aether as they are today, They live to have as much fun as they can in the short time they have, damn the consequences. A skilled performer, 
      Yufreni is a master singer, dancer, juggler and acrobat. They mostly just wanders from party to party, entertaining, having fun and seeking pleasure of all kinds. They are familiar with and have many contacts in the 
      Aetherborn underworld. Through these contacts they have heard of the "Vampiric Gift" that can drastically extend their lives, but they aren't really sure if they want to live longer than the Aether sees fit.
-
-
-
       
     #
     # Personality (or something like that):
@@ -508,33 +508,3 @@ npc:
     #
     personality: |
      Yufreni is the pinnacle of hedonism. They are carefree, irresponsible and completely live in the moment. They don't care about anybody but themselves. They are the definition of live fast and dye young.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

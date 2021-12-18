@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Bartender
     
 
@@ -385,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We've got one kinda ale, take it or leave it", "Nah we don't serve food here", Finish yer drink and kindly leave"
+    expressions:
+    - "We've got one kinda ale, take it or leave it"
+    - "Nah we don't serve food here"
+    - "Finish yer drink and kindly leave"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -469,7 +473,7 @@ npc:
       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
        
-   - - Thief Abilities:
+    - Thief Abilities:
        - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
        - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
                             your Dexterity modifier.
@@ -502,7 +506,6 @@ npc:
      punishment, the Thieve's Guild took his eye, stripped him of his responsibilities for planning jobs and stuck him behind the bar at the tavern that hides their secret hall. He's basically a glorified doorman for the guild
      and he resents every second of it. He does however, have a permanent reminder to not betray the guild again. He's mean and doesn't care for serving customers at all, he gets paid whether anyone is drinking or not. He keeps
      a hand crossbow behind the bar and a dagger on his belt in case any trouble makes it past the security outside the door
-
       
     #
     # Personality (or something like that):
@@ -515,33 +518,3 @@ npc:
     personality: |
      Steve hates his life. He's always been tough and his life has never been easy, but the life he's living now, as barely more than a doorman, he hates his life. He resents what he's being forced to do. He resents that he's
      not being allowed to use his skills and his experience. He hates everything about this, but as much as he hates it, he'd still rather be alive
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

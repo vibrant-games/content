@@ -387,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I own this sea"; "The weather owns us"
+    expressions:
+    - "I own this sea"
+    - "The weather owns us"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -465,33 +467,32 @@ npc:
   specialties:
     skills: 
 
-   - - Water Genasi Abilities:
+    - Water Genasi Abilities:
         - Acid Resistance: You have resistance to acid damage.
         - Amphibious: You can breathe air and water.
         - Swim: You have a swimming speed of 30 feet.
         - Call to the Wave: You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way 
                             when you finish a long rest. Constitution is your spellcasting ability for these spells.
 
-   - - Sorcerer Ability
-       - Sorcerer Spellcasting: 7 Sorcery Points, Spell DC 16
-          Cantrips: Thunderclap, Shape Water, Booming Blade, Ray of Frost, Lightning Lure
-          1st Level: Fog Cloud, Shield, Thunderwave, Magic Missle
-          2nd Level: Misty Step, Mind Thrust, Invisibility
-          3rd Level: Counterspell, Lightning Bolt, Wall of Water
+    - Sorcerer Ability:
+       - Spellcasting: 7 Sorcery Points, Spell DC 16
+         Cantrips: Thunderclap, Shape Water, Booming Blade, Ray of Frost, Lightning Lure
+         1st Level: Fog Cloud, Shield, Thunderwave, Magic Missle
+         2nd Level: Misty Step, Mind Thrust, Invisibility
+         3rd Level: Counterspell, Lightning Bolt, Wall of Water
        - MetaMagic: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
-          1: Empowered Spell
-          2: Heightened Spell 
+         1: Empowered Spell
+         2: Heightened Spell 
        
-   - - Storm Sorcery Abilities:
-       - Wind Speaker: The arcane magic you command is infused with elemental air. You can speak, read, and write Primordial. Knowing this language allows you to understand and be understood by those who speak its dialects: 
-                       Aquan, Auran, Ignan, and Terran.
-       - Tempestuous Magic: you can use a bonus action on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to 
-                            fly up to 10 feet without provoking opportunity attacks
-       - Heart of the Storm: you gain resistance to lightning and thunder damage. In addition, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This 
-                             eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to half your sorcerer level.
-       - Storm Guide: you gain the ability to subtly control the weather around you. If it is raining, you can use an action to cause the rain to stop falling in a 20-foot-radius sphere centered on you. You can end this effect 
-                      as a bonus action. If it is windy, you can use a bonus action each round to choose the direction that the wind blows in a 100-foot-radius sphere centered on you. The wind blows in that direction until the 
-                      end of your next turn. This feature doesn't alter the speed of the wind.
+    - Storm Sorcery Abilities:
+      - Wind Speaker: The arcane magic you command is infused with elemental air. You can speak, read, and write Primordial. Knowing this language allows you to understand and be understood by those who speak its dialects;                        Aquan, Auran, Ignan, and Terran.
+      - Tempestuous Magic: you can use a bonus action on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to 
+                           fly up to 10 feet without provoking opportunity attacks
+      - Heart of the Storm: you gain resistance to lightning and thunder damage. In addition, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This 
+                            eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to half your sorcerer level.
+      - Storm Guide: you gain the ability to subtly control the weather around you. If it is raining, you can use an action to cause the rain to stop falling in a 20-foot-radius sphere centered on you. You can end this effect 
+                     as a bonus action. If it is windy, you can use a bonus action each round to choose the direction that the wind blows in a 100-foot-radius sphere centered on you. The wind blows in that direction until the 
+                     end of your next turn. This feature doesn't alter the speed of the wind.
        
     special-abilities:
        - Proficiencies: Medicine, Insight, History, Gravekeeping and Embalming Tools
@@ -526,9 +527,6 @@ npc:
      The child of an errant Water Djinn and a Sea Elf, Uthriel has sea water in her veins. She grew up in and around the ocean and is more comfortable at sea than on land. In her teens she left her seaside home to attend a 
      Sorcerer's University in the capital. Being that far from the water didn't sit well with her for long, so after just 2 years she returned and began working on ships until she had made enough money to buy her own. The Djinn 
      Rummy is her ship and she runs cargo for customers but her favorite jobs are delivering adventurers to exotic locales.
-
-
-
       
     #
     # Personality (or something like that):
@@ -541,33 +539,3 @@ npc:
     personality: |
      Uthriel has worked hard for all that she has, and is confident, often to the point of arrogance. This is becuse she knows how hard she worked and how good she is. She also has an adverturous streak and loves to take on the 
      more odd and difficult jobs. She is a assertive captain who accepts no insubordination from either her crew or her passengers. She knows the sea and loves it with all her heart
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

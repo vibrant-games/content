@@ -358,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  "Excuse me ma'am, can you please move along" asks the young-looking Half-Orc guarding the perimeter of the crime scene
+    introduction: /"Excuse me ma'am, can you please move along"/ asks the young-looking Half-Orc guarding the perimeter of the crime scene
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -385,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Umm... sir... Umm... I don't think you're allowed to do that sir", "Please stop resisting" "Please move along ma'am"
+    expressions:
+    - "Umm... sir... Umm... I don't think you're allowed to do that sir"
+    - "Please stop resisting"
+    - "Please move along ma'am"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -398,7 +401,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:    Fidgets nervously with his hands in his pockets
+    mannerisms: Fidgets nervously with his hands in his pockets
 
   acting:
     #
@@ -463,18 +466,18 @@ npc:
   specialties:
     skills: 
 
-   - - Half-Orc Abilities:
+    - Half-Orc Abilities:
        - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
        - Menacing: gain proficiency in the Intimidation skill 
        - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
        - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
 
-   - - Fighter Abilities:
+    - Fighter Abilities:
          - Fighting Style: Protection
          - Second Wind: Bonus Action to regain 1d10 + 3
          - Action Surge: Once every short/long rest can take an extra action
        
-   - - Battle Master Abilities:
+    - Battle Master Abilities:
        - Combat Superiority:
          - Maneuvers: Menacing Attack, Pushing Attack, Grappling Attack
          - Superiority Dice: 4
@@ -507,7 +510,6 @@ npc:
      Warsoc's father leads a powerful and especially brutal war party of orcs. With little stomach for the violence of his clan, he abandoned a raiding party in his young teens and made his way to town. He found that his tribe 
      had lied and he wasn't immediately hated and feared for his heritage, In return, he decided he would defend his new home. When he came of age, he joined The Watch. Since he was part of a war-band for 
      most of his youth, he has developed an affinity for the children's toys he was denied as a child and has amassed quite a collection in his small barracks room
-
       
     #
     # Personality (or something like that):
@@ -520,33 +522,3 @@ npc:
     personality: |
      Warsoc is a rookie and not very confident in his skills, smarts or anything else really, but his trainer and sergeant think he's slowly becoming a good watchman. He is loyal and earnest but not very assertive for an officer,
      but he's working on it. After not having much of a childhood, he's still a little naive and juvenile, but he's working on that too.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

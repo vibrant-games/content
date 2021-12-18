@@ -213,7 +213,7 @@ npc:
     #
     # Required.
     # Max length per occupation: ...
-    
+    occupation:
     - UnderCity Guide
     
 
@@ -388,7 +388,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "My little friends don't like you", "Death is the natural progression of life", "Death feeds the world"
+    expressions:
+    - "My little friends don't like you"
+    - "Death is the natural progression of life"
+    - "Death feeds the world"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -466,29 +469,29 @@ npc:
   specialties:
     skills: 
 
-   - - Elf Abilities:
+    - Elf Abilities:
         - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
         - Darkvision: Can see 120 in dim light as though it was bright light and in darkness as if it was dim light
         - Keen Senses: You have proficiency in the Perception skill 
         - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
                   dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
                   
-   - - Devkarin Abilities:
+    - Devkarin Abilities:
        - Undercity Dweller: Devkarin gain advantage on History and Survival checks made underground.
        - Plagueborn: Resistant to Poison and Disease. Advantage on Constitution Saving Throws
        - Weapon Proficiency: Devkarin are naturally proficient with the Longsword, Longbow, Composite longbow, shortbow, composite shortbow, and Razor bow       
 
-   - - Rogue Abilities:
+    - Rogue Abilities:
        - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
        - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
        - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
        - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
                             
-   - - Scout Abilities:
+    - Scout Abilities:
        - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks
        - Survivalist:  you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
        
-   - - Druid Abilities:
+    - Druid Abilities:
        - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
                   message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
        - Spellcasting: Spell DC 16
@@ -501,7 +504,7 @@ npc:
                      flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
                      You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
                      
-   - - Circle of Spores Abilities:
+    - Circle of Spores Abilities:
        - Halo of Spores: you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn 
                          there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th
                          level, 1d8 at 10th level, and 1d10 at 14th level.
@@ -546,8 +549,6 @@ npc:
      Raise as a druid by his people and initiated into the Golgari Guild at a young age for training, he has an extensive knowledge of the routes and pathways through Ravnic's UnderCity. The UnderCity is a dangerous place filled
      with rot, decay and other not so nice things.  He was injured during his ascension trial to become a full Golgari Spore Priest, accounting for his limp, and still holds a grudge against the elf who caused the injury. One 
      day he'll get his payback. In the meantime, He takes pride, probably too much pride, in getting the Golgari High Council's guests safely through the UnderCity unscathed.
-
-
       
     #
     # Personality (or something like that):
@@ -561,33 +562,3 @@ npc:
      Thrassal is devout in his faith in the circle of life and death. He should have been a Spore Priest, but an injury kept him from completing his ascension. He has excepted his role and is proud to be one of the top guides 
      in the Undercity, but he has never forgotten the slight. He is jealous of those who did become full priests, especially the one he blames for his injury. He will never for get that slight and plots to one day have his 
      revenge
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

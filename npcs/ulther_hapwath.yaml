@@ -391,7 +391,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Each addition gets me closer to perfection", "Why would anyone want to remain normal, when they can be so much more?"
+    expressions:
+    - "Each addition gets me closer to perfection"
+    - "Why would anyone want to remain normal, when they can be so much more?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -467,7 +469,7 @@ npc:
   #
   specialties:
     skills:
-   - - Hybrid Abilities:
+    - Hybrid Abilities:
        - Truesight - Berbalang Eye: Can see in magical Darkness, can see Invisibe things, Automatically saves against Illusions, Can see shapeshifter's true form and can see the Ethereal Plane
        - Darkvision - Owl Eye: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
        - Manta Glide - Manta Wings: Subtract up to 100 feet when calculating fall damage. Can glide 2 feet horizontally for evey 1 foot of vertical drop  
@@ -478,7 +480,7 @@ npc:
        - Acid Spit - Ankheg Acid Pouches: Twice per long rest, Targets one creature within 30 feet, Target must make a Dex Saving Throw against DC15 or takes 3d10 Damage. 
        - Poison Sting - Giant Scorpion Tail: A hit does 1d10+2 piercing damage. Then the target must make a DC15 Con Saving Throw or take 4d10 poison damage or half that on a successful save       
  
-   - - Wizard Abilities:
+    - Wizard Abilities:
        - Spellcasting: 
          Cantrips: Chill Touch, Fire Bolt, Ray of Frost, Mage Hand, Minor Illusion
          1st Level: Burning Hands, Disguise Self, Fog Cloud, Magic Missle
@@ -489,17 +491,17 @@ npc:
          6th Level: Flesh to Stone
          7th Level: Reverse Gravity
         
-   - - Spellcasting Ability: 
+    - Spellcasting Ability: 
        - Ritual Casting: Can ritual cast and spell in spellbook with a ritual tag
        - Arcane Recovery: After a short rest can recover combined spell slots up to 7
 
-   - - School of Transmutation Abilities: 
+    - School of Transmutation Abilities: 
        - Transmutation Savant: Gold and Time required to copy Transmutation spells is halved
        - Minor Alchemy: For each 10 minutes spent performaing procedure, can transform 1 cubic foot of wood, stone, iron, copper or silver into a different one of those materials for 1 hour or concentration
-       - Transmuters Stone: Can spend 8hrs to create a transmuter's Stone which gives a creature: Darkvision, Increase speed of 10 feet, Proficiency on Constitution Saving Throws, or Resistance to acid, cold, 
+       - Transmuters Stone: Can spend 8hrs to create a transmuter's Stone which gives a creature; Darkvision, Increase speed of 10 feet, Proficiency on Constitution Saving Throws, or Resistance to acid, cold, 
                             fire, lightning or thunder damage. The effect can be changed any time a transmutation spell is cast
        - Shapechanger: Once per short rest can cast Polymorph on themselves changing into a beast with challenge rating 1 or lower
-       - Master Transmuter: Can use all enregy in a Transmuter's Stone to chose: Major Transformation, Panacea, Restore Life or Restore Youth      
+       - Master Transmuter: Can use all enregy in a Transmuter's Stone to chose; Major Transformation, Panacea, Restore Life or Restore Youth      
 
     special-abilities:
     - Proficiencies: Proficient in Survival, Arcana, Animal Handling and Pecerption with expertise in Nature and Medicine     
@@ -507,9 +509,9 @@ npc:
     - Legendary Resistance: (3/Day), If Ulther Hapwath fails a saving throw they can choose to succeed instead 
     - Legendary Actions: Ulther Hapwath can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
                          Ulther Hapwath regains spent Legendary Actions at the start of their turn
-      - Scorpion Strike: Ulther Hapwath can make an attack with their scorpion sting
-      - Spell Sniper: Ulther Hapwath can cast a cantrip
-      - Slimy Hugs: Ulther Hapwath can use their squid tentacles to attempt to grapple a creature.                   
+      Scorpion Strike: Ulther Hapwath can make an attack with their scorpion sting
+      Spell Sniper: Ulther Hapwath can cast a cantrip
+      Slimy Hugs: Ulther Hapwath can use their squid tentacles to attempt to grapple a creature.                   
     
     attacks: |
       Has 3 attacks which can be any of their natural attacks or a spell attack
@@ -553,33 +555,4 @@ npc:
       time looking at them, although they are often using some kind of glamour (disguise self, polymorph, etc.) when in public so as not to stand out as much. Ulther is fanatical about his work and about chasing his 
       personal concept of bodily perfection and finds it hard to comprehend why everyone isn't seeking to augment thier bodies. They are reckless and never think twice about experimenting on themselves and have little 
       regard for the wellbeing of the other creatures that they experiment on. Thanks to the influence of their secret benefactor, they have gradually started to explore the commonly unknown arcane study of biomancy. 
-      While mostly keeping this information to themselves, they have shared some of their studies with their close friend and fellow body-modifying scientist and Collegium member Thadeus Periwinkle.   
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      While mostly keeping this information to themselves, they have shared some of their studies with their close friend and fellow body-modifying scientist and Collegium member Thadeus Periwinkle.

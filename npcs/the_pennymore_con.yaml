@@ -213,7 +213,7 @@ npc:
     #
     # Required.
     # Max length per occupation: ...
-
+    occupation:
     - Fence
     
 
@@ -387,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Can never make a truly fair trade - so might as well go with the flow"; "The things we do, the things we do...why do we do the things we do?"; "I once bought a large slice of land from a tribe of hobgoblins and sold it to an enemy tribe just to watch the party";
+    expressions:
+    - "Can never make a truly fair trade - so might as well go with the flow"
+    - "The things we do, the things we do...why do we do the things we do?"
+    - "I once bought a large slice of land from a tribe of hobgoblins and sold it to an enemy tribe just to watch the party"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -465,7 +468,7 @@ npc:
   specialties:
     skills: 
 
-   - - Elf Abilities:
+    - Elf Abilities:
         - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
         - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
         - Keen Senses: You have proficiency in the Perception skill 
@@ -475,14 +478,14 @@ npc:
         - Fleet of Foot: Your base walking speed increases to 35 feet.
         - Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena
 
-   - - Rogue Abilities:
+    - Rogue Abilities:
        - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
        - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
        - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
        - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
        - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
                             
-   - - Thief Abilities:
+    - Thief Abilities:
        - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
        - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to 
                             your Dexterity modifier.
@@ -522,7 +525,6 @@ npc:
      an important local Duke in exchange for a long-sought after item that had been fenced to him. Constantly seeking business with members of every eschelon of a city or town, the Con is open about his business dealings but
      opaque as to his motivations. Consequently, although suspected of high crimes, none have been proven and the Con is allowed free movement. In fact, his movement is likely advocated among higher magistrates because of the
      goods and services they've obtained from him through less-than-legal means.
-
       
     #
     # Personality (or something like that):
@@ -534,34 +536,4 @@ npc:
     #
     personality: |
      The Con is a shifty fellow. Cautious and brazen at the same time, he carries out his business out in the open but keeps his motives to himself. The Con's reputation is almost entirely based on myth as nobody has actually 
-     spent enough time with him or knows him well enough for it to be anything else. He keeps himself to himself and keeps everybody else at arms reach. 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     spent enough time with him or knows him well enough for it to be anything else. He keeps himself to himself and keeps everybody else at arms reach.

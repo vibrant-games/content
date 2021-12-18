@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Grocer, Provisioner to the Militia
     
 
@@ -385,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Sure I make a good living. Puts food on the table. But I never bargained for this mundane life"; "I adventured the land, once! I was a great and well-known idol of the people!"; "Ever seen that Orc priestess from the Everstill Tribe. Melt my old bones. Gimme that rough and tumble love";
+    expressions:
+    - "Sure I make a good living. Puts food on the table. But I never bargained for this mundane life"
+    - "I adventured the land, once! I was a great and well-known idol of the people!"
+    - "Ever seen that Orc priestess from the Everstill Tribe. Melt my old bones. Gimme that rough and tumble love"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -463,7 +467,7 @@ npc:
   specialties:
     skills: 
 
-   - - Half-Elf Abilities:
+    - Half-Elf Abilities:
         - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
         - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
         - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon     
@@ -494,8 +498,6 @@ npc:
      and her important role in the defense of the city. She is, after all, the primary provisioner for the militia. Raised in the farmlands surrounding the city that were provisioned by Baron Korimir Havensloch upon the 
      inception of his oligarchical rule, Teaghan spent her early years as a farmhand on the farmlands of her immediate and extended family. When the threat of encroaching waves of Hobgoblins and Orcs threatened the security of
      the city, the militia required more streamlined channels for sundries and provisions. The Baron chose the Forestlight family as the primary provisioner and Teaghan's family were locked into the role.
-
-
       
     #
     # Personality (or something like that):
@@ -508,33 +510,3 @@ npc:
     personality: |
      Teaghan is a young woman with the wrong family. She longs for adventure and excitement but her family keeps her grounded and in the family business. She is very good at what she does and is exceptional at accounting and
      mathematics. Her job is clearly her calling, but she hates it all the same and would way rather be out having the adventures than provisioning others to have them
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

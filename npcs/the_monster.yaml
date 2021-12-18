@@ -474,7 +474,7 @@ npc:
         cha: 12
           - The Monster cannot use any Artificer or Alchemist or Legendary abilities unless Roderick has regained control
           
-   - - Reborn Abilities:
+    - Reborn Abilities:
        - Faded Memories: Has no memory of their previous life other than random flashes
        - Darkvision: can see in dim light within 60ft.
        - Deathless Nature: 
@@ -484,7 +484,7 @@ npc:
          - Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
        - Knowledge from a Past Life: When making a an ability check that uses a skill, roll a d6 and add it to the check roll. Can use this a number of times equal to proficiency bonus each long rest 
       
-   - - Artificer Abilities:
+    - Artificer Abilities:
        - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
        - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 19
          Cantrip: Acid Splash, Mage Hand, Fire Bolt, Mending
@@ -501,7 +501,7 @@ npc:
        - Spell Storing Item: Can store a spell in and object once per long rest
        - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 6 magic items       
       
-   - - Alchemist Abilities:
+    - Alchemist Abilities:
        - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
        - Spellcasting: Requires Alchemist Supplies as Spellcasting focus, Spell DC 19
          3rd Level: Healing Word, Ray of Sickness
@@ -522,9 +522,9 @@ npc:
       - Legendary Resistance: (3/Day), If Roderick Holmestar fails a saving throw he can choose to succeed instead 
       - Legendary Actions: Roderick Holmestar can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
                            Roderick Holmestar regains spent Legendary Actions at the start of his turn
-        - Offensive Alchemy: Roderick Holmestar can create and throw offensive experimental elixirs of his choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
-        - Selfcare: Roderick Holmestar can heal himself for 3d6 HP
-        - Refreshing Infusion: Roderick Holmestar can use his Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.     
+        Offensive Alchemy: Roderick Holmestar can create and throw offensive experimental elixirs of his choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
+        Selfcare: Roderick Holmestar can heal himself for 3d6 HP
+        Refreshing Infusion: Roderick Holmestar can use his Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.     
     
     attacks: |
       The Monster: has 2 attacks. Will attack with daggers or fists in melee range
@@ -567,32 +567,3 @@ npc:
       somewhat like Roderick did in life, but more of a grim parody and considerably larger. Unbeknownst to the other members of the Collegium, Roderick's mind is still mostly intact inside The Monster, but he can't seem to find 
       his way back to the surface through the rage and confusion that is controlling the body. He does not remember who or what he was was before, but his intelect and knowledge is still there buried deep. It was Roderick's 
       influence that encouraged The Monster to escape his comfortable prison in an effort to get out and find a way to bring himself back into control.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

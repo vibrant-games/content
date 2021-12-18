@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Archeologist
     
 
@@ -385,7 +386,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I've been land-locked for far too long"; "We must band together in this world. there is water in all of us"
+    expressions:
+    - "I've been land-locked for far too long"
+    - "We must band together in this world. there is water in all of us"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -463,22 +466,22 @@ npc:
   specialties:
     skills: 
 
-   - - Water Genasi Abilities:
+    - Water Genasi Abilities:
         - Acid Resistance: You have resistance to acid damage.
         - Amphibious: You can breathe air and water.
         - Swim: You have a swimming speed of 30 feet.
         - Call to the Wave: You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way 
                             when you finish a long rest. Constitution is your spellcasting ability for these spells.
                             
-   - - Monk Abilities:
+    - Monk Abilities:
        - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
        - Martial Arts:
           - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
           - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
           - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
        - Ki: 6 Ki Points, Ki DC= 16
-          - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+       - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+       - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
           - Step of the Wind:Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
        - Unarmored Movement: Speed is increased by 25. 
        - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 11. If damaged is reduced to 0, the missle is caught if he has one 
@@ -488,18 +491,18 @@ npc:
        - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
        - Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
        
-   - - Way of the Kensei Abilities:
+    - Way of the Kensei Abilities:
        - Path of the Kensei: your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits
-                             - Kensei Weapons: Longbow, Spear, Javilin
-                             - Agile Parry: If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus
-                                            to AC until the start of your next turn, while the weapon is in your hand and you aren’t incapacitated.
-                             - Kenseis Shot: You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon
-                                             takes an extra 1d4 damage of the weapon’s type. You retain this benefit until the end of the current turn.
-                             - Way of the Brush: You gain proficiency with your choice of calligrapher's supplies or painter's supplies.
+         Kensei Weapons: Longbow, Spear, Javilin
+         Agile Parry: If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus
+                      to AC until the start of your next turn, while the weapon is in your hand and you aren’t incapacitated.
+         Kenseis Shot: You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon
+                       takes an extra 1d4 damage of the weapon’s type. You retain this benefit until the end of the current turn.
+         Way of the Brush: You gain proficiency with your choice of calligrapher's supplies or painter's supplies.
        - One with the Blade: you extend your ki into your kensei weapons, granting you the following benefits
-                             - Magic Kensei Weapons: Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
-                             - Deft Strike: When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature 
-                                            only once on each of your turns.
+         Magic Kensei Weapons: Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+         Deft Strike: When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature 
+                      only once on each of your turns.
        
     special-abilities:
        - Proficiencies: Insight, Religion, Acrobatics, Stealth, Perception
@@ -534,9 +537,6 @@ npc:
      to hide Thaerus from the eyes of Djinns who would wish to see this secret die along with him, imbuing her weapons with elemental magic, and providing her with a large sum of wealth. Today, Thaerus is obsessed with finding
      this lost city, learning why it's existence is such a strongly protected secret and avenging her father. She has invested her inheritance from her father in the development of an archeological exploration company that she
      uses to track down this settlement and unearth other secrets of the realm's past along the way.
-
-
-
       
     #
     # Personality (or something like that):
@@ -550,33 +550,3 @@ npc:
      Thaerus is an intelligent and competent woman, she runs a successful archeology and treasure hunting business. Her kind are generally disliked and distrusted by the rest of society, but she has managed to make a good name
      for herself around town. She is driven and intense, but also very inquisitive and patient when it comes to solving puzzles and looking for clues. She desperately wants to solve the puzzle that is the hidden city, find its
      answers and exact her revenge
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Highwayman/Gang Leader
     
 
@@ -389,7 +390,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "l thank you for your contributions to my cause, fine stranger", "Please don't try to put up a fight, I hate that!"
+    expressions:
+    - "l thank you for your contributions to my cause, fine stranger"
+    - "Please don't try to put up a fight, I hate that!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -467,7 +470,7 @@ npc:
   specialties:
     skills: 
 
-   - - Rogue Abilities:
+    - Rogue Abilities:
        - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
        - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
        - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
@@ -475,7 +478,7 @@ npc:
        - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
        - Reliable Talent: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
                             
-   - - Mastermind Abilities:
+    - Mastermind Abilities:
          - Master of Intrigue: you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice. Additionally, you can unerringly mimic the speech
                                patterns and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language.
          - Master of Tactics: you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than
@@ -513,11 +516,6 @@ npc:
      scarred. With no husband or career to support her or the orphanage they had just built together, Maria put her acting and makeup skills to work for her and created The Carnelian Shroud and began robbing wagons and carriages
      on horseback. As she became more and more successful, she began to recruit groups of struggling young men and sending them out into the country side in gangs to continue raising funds so she had to venture out less and less
      and could spend more time focusing on her orphanage. As the legend grew, so did the income. Now every cent that isn't being paid to her men in the field is anonymously donated to orphanages around the countryside.
-
-
-
-
-
       
     #
     # Personality (or something like that):
@@ -531,34 +529,4 @@ npc:
      The Carnelian Shroud is confident and boastful with a dramatic flair. Bold and defiant, they will not shy away from attacking any caravan with enough preperation. Darkly mysterious, there are very few people who know The
      Shroud's true identity. They are extremely charismatic and have had no trouble amassing followers to their cause. Maria Estivan on the other hand is a kind, generous and demure woman. As a former actor, she does have a
      flair for the dramatic, but she does her best to keep that under wraps now adays. She works hard to provide a decent life for the orphans she supports through her endavours and has been successful enough in her
-     "alternative career" to support many orphanages throughout the countryside  
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     "alternative career" to support many orphanages throughout the countryside

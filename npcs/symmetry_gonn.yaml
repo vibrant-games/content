@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Performer, Informer
     
 
@@ -386,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "They be lookin fer me, yknow. Gotta go.", "They want that damned group, they can get em themselves"
+    expressions:
+    - "They be lookin fer me, yknow. Gotta go."
+    - "They want that damned group, they can get em themselves"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -464,21 +467,21 @@ npc:
   specialties:
     skills: 
 
-   - - Kobold Traits: 
+    - Kobold Traits: 
        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
        - Grovel, Cower & Beg: As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that
                               can see you. Once you use this trait, you can't use it again until you finish a short or long rest.
        - Pack Tactics: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
        - Sunlight Sensitivity: You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.
 
-   - - Bard Abilities:
+    - Bard Abilities:
        - Bard Spellcasting: Spell DC 15 
-           Cantrip: Mage Hand, Vicious Mockery, Friends, Dancing Lights
-           1st Level: Charm Person, Dissonant Whispers, Hideous Laughter, Disguise Self  
-           2nd Level: Detect Thoughts, Magic Mouth, Zone of Truth
-           3rd Level: Dispel Magic, Tongues, Fear
-           4th Level: Charm Monster, Dimension Door, Greater Invisibility
-           5th Level: Mislead, Modify Memory
+         Cantrip: Mage Hand, Vicious Mockery, Friends, Dancing Lights
+         1st Level: Charm Person, Dissonant Whispers, Hideous Laughter, Disguise Self  
+         2nd Level: Detect Thoughts, Magic Mouth, Zone of Truth
+         3rd Level: Dispel Magic, Tongues, Fear
+         4th Level: Charm Monster, Dimension Door, Greater Invisibility
+         5th Level: Mislead, Modify Memory
        - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d10. Once within the next 
                              10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
        - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
@@ -487,9 +490,9 @@ npc:
        - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
                        being Frightened or Charmed
        - Expertise: gets double proficiency bonus in
-       - Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip: Sending, Scrying
+       - Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip; Sending, Scrying
        
-   - - College of Whispers Abilities:
+    - College of Whispers Abilities:
        - Psychic Blades: you gain the ability to make your weapon attacks magically toxic to a creature's mind. When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an 
                          additional 5d6 psychic damage to that target. You can do so only once per round on your turn.
        - Words of Terror: you learn to infuse innocent-seeming words with an insidious magic that can inspire terror. If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear into its
@@ -542,7 +545,6 @@ npc:
      watch as to the location of Vys' lair. He turned the information over for a handsome reward. The Regional Watch found the band of kobolds with haste. Symmetry was a primary target with her bright clothes and distinct
      appearance. However, using the secrets found in Vys' lair, Symmetry was able to terrify the Watchman and escape. The rest of her band scattered. Symmetry has been in flight ever since and makes a good living from selling
      her secrets - via letter - to the Regional Watch; sending them on wild goose chases.
-
       
     #
     # Personality (or something like that):
@@ -554,33 +556,3 @@ npc:
     #
     personality: |
      Symmetry, not her real name, is quick, clever and talented. She is happy to be free of her dragon captor, but misses her clan and especially her group of bandits. 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

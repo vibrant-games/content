@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Barkeep, chef, tavern owner
     
 
@@ -383,7 +384,11 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Aaaaaaaah ha"; "My little doves"; "My chicadees"; "A pint of Swarth's and a pound of flesh, and you'll never grow old."
+    expressions:
+    - "Aaaaaaaah ha"
+    - "My little doves"
+    - "My chicadees"
+    - "A pint of Swarth's and a pound of flesh, and you'll never grow old."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -491,7 +496,6 @@ npc:
      preparation during busy hours, and the waitress roles are filled from a revolving door of ladies of all ages, shapes and sizes. Swarth's food comprises layers of various types of meat, exquisitely arranged, often with a
      liver paste "S" signature on top. During a recent bar mitzvah catered by Swarth, Flee -- whether deliberately or accidentally -- slapped Swarth in the face with a chain.  Ever since, Swarth has been trying to find Flee. 
      He does not know what punishment lies in store for Flee, only that face is important to be saved.
-
       
     #
     # Personality (or something like that):
@@ -503,34 +507,4 @@ npc:
     #
     personality: |
      Swarth is a beautiful cook and a terrible human being. He's angry, abusive, slovenly, and slothful. He represents the worst that humanity has to offer. He's not afraid to kill to get what he wants or advance his career.
-     People don't come much creepier, his social skills are beyond lacking and he's just generally offensive and disgusting 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     People don't come much creepier, his social skills are beyond lacking and he's just generally offensive and disgusting

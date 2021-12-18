@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Prison Guard
     
 
@@ -386,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Quiet scrag! I'm in charge here", "Shut up and eat your gruel" , "Don't even bother thinking about escape from here"
+    expressions:
+    - "Quiet scrag! I'm in charge here"
+    - "Shut up and eat your gruel"
+    - "Don't even bother thinking about escape from here"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -464,24 +468,24 @@ npc:
   specialties:
     skills: 
 
-   - - Minotaur Abilities:
+    - Minotaur Abilities:
        - Horns: Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to ld6 + your Strength modifier, instead of the bludgeoning damage normal for
                 an unarmed strike.
        - Goring Rush: Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action.
        - Hammering Horns: Immediately after you hit a creature with a melee attack as a part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be
                           within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to
                           10 feet away from you.
-       - Imposing Presence: You have proficiency in one of the following skills of your choice: Intimidation or Persuasion
+       - Imposing Presence: You have proficiency in one of the following skills of your choice; Intimidation or Persuasion
        - Menacing: You gain proficiency in the Intimidation skill.
        - Relentless Endurance: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.
        - Savage Attacks: When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit
 
-   - - Fighter Abilities:
+    - Fighter Abilities:
          - Fighting Style: Defense
          - Second Wind: Bonus Action to regain 1d10 + 3
          - Action Surge: Once every short/long rest can take an extra action
        
-   - - Battle Master Abilities:
+    - Battle Master Abilities:
        - Combat Superiority:
          - Maneuvers: Menacing Attack, Pushing Attack, Grappling Attack
          - Superiority Dice: 4
@@ -515,7 +519,6 @@ npc:
      Tanarolf loves his job. He works hard under the premise that he's keeping order and loyally doing his duty to his city and nation. He is strong and a natural fighter but will run rather than fight if he thinks he's 
      outmatched. As large as he is, he was the runt of his litter and was picked on by his siblings growing up, which has resulted in him having anger issues and "small-man" syndrome. His guard job gives him the position of
      power that hes always craved and lets him take out his aggression in a socially acceptable way, on criminals
-
       
     #
     # Personality (or something like that):
@@ -529,33 +532,3 @@ npc:
      Tanarolf is a bully and a coward. He likes to assert his power and he really loves the feeling of power and control that his job gives him. It gives him the opportunity to take out his naturally aggressive tendencies on his
      prisoners. He is a petty man with a quick temper, but he's also a coward when he's not in charge of the situation. Like most bullies, he will quickly back down and turn to self-preservation when presented with an actual
      threat.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

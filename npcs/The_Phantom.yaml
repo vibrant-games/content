@@ -391,7 +391,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We are sworn to hold back the night", "Our cabal could use someone of your ilk", "Peace be upon you children"
+    expressions:
+    - "We are sworn to hold back the night"
+    - "Our cabal could use someone of your ilk"
+    - "Peace be upon you children"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -468,7 +471,7 @@ npc:
   specialties:
     skills:
           
-  - - Dragonborn Abilities:
+    - Dragonborn Abilities:
        - Draconic Ancestry: He is decended from Crystal Dragons but is also a Revenant
        - Breath Weapon: Is capable of using either of his breathe weapons once per short rest. Either a 5'x30' Line requiring a (Dex Save DC18) of Radiant or a 15' Cone (Con Save DC18) of Necrotic Energy. 
                         On a failed save from his radiant breath the victim is blinded for 1d6 rounds
@@ -476,13 +479,13 @@ npc:
        - Psionic Mind: Can telepathically speak to any creature within 30 feet
        - Gem Flight: Once per long rest as a bonus action can summon crystal wings for 1 minute that allow him to fly or hover in place      
 
-  - - Revenant Abilities:
+    - Revenant Abilities:
        - Relentless Nature: 
          - Regains 1HP at the beginning of each turn if below half maximum HP
          - If he dies, he returns to life 24hrs after death. If his body is destroyed he will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
          - Knows the distance and direction between him and the creature involved in his goal unless they are on another plane       
       
-   - - Cleric Abilities:
+    - Cleric Abilities:
        - Spellcasting: DC22
          Cantrips: Guidance, Light, Resistance, Sacred Flame, Thaumaturgy
          1st Level: Healing Word, Command, Bless, Inflict Wounds
@@ -497,7 +500,7 @@ npc:
        - Channel Divinity: Turn Undead, Destroy Undead, Path to the Grave 
        - Divine Intervention: Can call her patron to intervene on her behalf
 
-   - - Grave Domain Abilities:
+    - Grave Domain Abilities:
        - Circle of Mortality:  When rolling to restore hit points with a spell to creatue with 0hp, they gain the maximum hit point possible for the spell. Can cast the Spare the Dying cantrip
        - Eyes of the Grave: Can magically detect undead within 60' eight times per long rest.
        - Path to the Grave: Can curse one creature within 30". The next time an ally hits the cursed target with an attack, the target has vulnerability to all of that attack's damage,
@@ -512,7 +515,7 @@ npc:
          7th Level: Blight, Death Ward
          9th Level: Antilife Shell, Raise Dead
          
-   - - Paladin Abilities:
+    - Paladin Abilities:
        - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
                        within the same radius. Can use this ability 5x per long rest
        - Lay on Hands: Can touch another creature to heal up to 100HP per long rest. Or can 5HP to cure a disease or poison affecting it.
@@ -528,14 +531,14 @@ npc:
          2nd Level: Aid, Branding Smite, Zone of Truth
          3rd Level: Magic Circle, Revivify, Remove Curse
          4th Level: Banishment, Locate Creature
-         5th Level: Dispel Evil and Good, Raise Dead:
+         5th Level: Dispel Evil and Good, Raise Dead
 
-   - - Oath of Redemption Abilities: Proficient with Knives and Torture Implements, Reaper, Touch of Death, Inescapable Destruction, Divine Strike, Improved Reaper 
+    - Oath of Redemption Abilities: 
        - Spellcasting:
          3rd Level: Sanctuary, Sleep
          5th Level: Calm Emotions, Hold Person
          9th Level: Counterspell, Hypnotic Pattern
-         13th Level: Otiluke's Resilient Sphere, Stoneskin
+         13th Level: Resilient Sphere, Stoneskin
          17th Level: Hold Monster, Wall of Force
        - Channel Divinity: 
          - Emissary of Peace: As a bonus action can grant himself a +5 bonus to Persuasion checks for 10 minutes
@@ -553,9 +556,9 @@ npc:
     - Legendary Resistance: (3/Day), If The Phantom fails a saving throw he can choose to succeed instead 
     - Legendary Actions: The Phantom can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
                          The Phantom regains spent Legendary Actions at the start of his turn
-      - Lords Light: The Phantom can emit a blast of radiant energy in a 100 foot radius that deals 3d10 radiant damage to any fiends, undead or creatures that have dealt him or creatures he considers damage in this combat 
-      - Selfcare: The Phantom can heal himself for 3d10 HP
-      - Lords Fury: The Phantom can make a melee attack. If this attack deals damage to a creature, that creature must make a Strength Saving Throw DC25 or be knocked prone    
+      Lords Light: The Phantom can emit a blast of radiant energy in a 100 foot radius that deals 3d10 radiant damage to any fiends, undead or creatures that have dealt him or creatures he considers damage in this combat 
+      Selfcare: The Phantom can heal himself for 3d10 HP
+      Lords Fury: The Phantom can make a melee attack. If this attack deals damage to a creature, that creature must make a Strength Saving Throw DC25 or be knocked prone    
     
     attacks: |
       has 2 attacks
@@ -605,33 +608,4 @@ npc:
       He is extremely dedicated to the path of peace and redemption and the destruction of those who are unredeemable. After his death and ressurection, he no longer felt quite like himself, and exchanged his name for a new 
       one for his new life, The Phantom. He is beyond calm, cool and collected in life and in battle. He inspires his troops with his sheer force of will. He is selfless and willingly puts himself into harm's way to protect 
       his companions and innocents. His is a battle that has been going on for a long long time, roughly 200 years, and hes very tired. He's tired of the chase. He's tired of watching his loved ones grow old and die. He's 
-      just tired. But he knows he will not be allowed to move on to his final reward until he destroys the evil that made him this way.  
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      just tired. But he knows he will not be allowed to move on to his final reward until he destroys the evil that made him this way.

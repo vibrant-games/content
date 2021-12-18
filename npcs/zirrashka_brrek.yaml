@@ -387,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "One moment while I record this for the ancients"; "Jergel must be informed"
+    expressions:
+    - "One moment while I record this for the ancients"
+    - "Jergel must be informed"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -400,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:    Deep and gruff voice. Will challenge others much like a sheriff. He will almost without exception return any and all conversations to whatever task is immediately at hand and impose a sense of following tradition to address it.
+    mannerisms: Deep and gruff voice. Will challenge others much like a sheriff. He will almost without exception return any and all conversations to whatever task is immediately at hand and impose a sense of following tradition to address it.
 
   acting:
     #
@@ -465,13 +467,13 @@ npc:
   specialties:
     skills:
 
-   - - Githzerai Abilities:
+    - Githzerai Abilities:
        - Mental Discipline: You have advantage on saving throws against the charmed and frightened conditions. Under the tutelage of monastic masters, githzerai learn to govern their own minds
        - Githzerai Psionics: You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Shield spell once with this trait, and you regain the
                              ability to do so when you finish a long rest. When you reach 5th level, you can cast the Detect Thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.
                              Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.
                              
-   - - Cleric Abilities:
+    - Cleric Abilities:
        - Spellcasting: Spell DC 15
          Cantrips: Sacred Flame, Toll the Dead, Guidance, Word of Radiance
          1st Level: Detect Good and Evil, Detect Magic, Guiding Bolt, Healing Word
@@ -479,7 +481,7 @@ npc:
          3rd Level: Dispel Magic, Speak with Dead
        - Channel Divinity: Turn Undead, Destroy Undead 
        
-   - - Life Domain Abilities:
+    - Life Domain Abilities:
        - Disciple of Life: your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to Restore Hit Points to a creature, the creature regains additional Hit Points equal to 2 + the spell’s level.
        - Spellcasting: Spell DC 15
          1st Level: Bless, Cure Wounds 
@@ -488,16 +490,16 @@ npc:
                                            times your Cleric level. Choose any creatures within 30 feet of you, and divide those Hit Points among them. This feature can restore a creature to no more than half of its hit point 
                                            maximum. You can’t use this feature on an Undead or a Construct 
        
-   - - Monk Abilities:
+    - Monk Abilities:
        - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
        - Martial Arts:
           - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
           - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
           - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
        - Ki: 5 Ki Points, Ki DC= 15
-          - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          - Step of the Wind:Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+         Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+         Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
+         Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
        - Unarmored Movement: Speed is increased by 10. Can move along vertical surfaces and across liquids without falling during the move 
        - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
                           free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
@@ -506,7 +508,7 @@ npc:
        - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
        - Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
        
-   - - Way of the Astral Self Abilities:
+    - Way of the Astral Self Abilities:
        - Arms of the Astral Self: your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of 
                                   your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die. For 10 minutes, these spectral arms 
                                   hover near your shoulders or surround your arms (your choice). You determine the arms' appearance, and they vanish early if you are incapacitated or die.
@@ -518,10 +520,10 @@ npc:
        - Visage of the Astral Self: you can summon the visage of your astral self. As a bonus action, or as part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage 
                                     for 10 minutes. It vanishes early if you are incapacitated or die. The spectral visage covers your face like a helmet or mask. You determine its appearance. While the spectral visage is 
                                     present, you gain the following benefits.
-                                    - Astral Sight: You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
-                                    - Wisdom of the Spirit: You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
-                                    - Word of the Spirit: When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively,
-                                                          you can amplify your voice so that all creatures within 600 feet can hear you.
+         Astral Sight: You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
+         Wisdom of the Spirit: You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
+         Word of the Spirit: When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively,
+                             you can amplify your voice so that all creatures within 600 feet can hear you.
                   
        
     special-abilities:
@@ -536,11 +538,11 @@ npc:
     - 2x +2 Tambo
     - Decanter of Endless Water: This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds. You can use an action to remove the stopper and speak one of three Command words, whereupon an 
                                  amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options - 
-                                 - Stream: produces 1 gallon of water.
-                                 - Fountain: produces 5 gallons of water.
-                                 - Geyser: produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a Bonus Action while holding the decanter, you can aim the geyser at a creature you can see 
-                                           within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't
-                                           being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you.  
+      Stream: produces 1 gallon of water.
+      Fountain: produces 5 gallons of water.
+      Geyser: produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a Bonus Action while holding the decanter, you can aim the geyser at a creature you can see 
+              within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't
+              being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you.  
     - Quill of Acurate Writing: This magical quill never needs ink and allows you to write mistake-free messages simply by dictating. You can also provide an empty book or scroll and a book or scroll you wish to copy, and the 
                                 quill of accurate writing will copy it in 1 hour. The quill of accurate writing cannot copy spell scrolls or magical books such as a tome of understanding.                                           
     
@@ -559,9 +561,6 @@ npc:
      keeping to themselves and continuting their gratitude towards their patrons, his tribe thirsted for knowledge of the material plane. They formed a monastic tradition that offered worship and tithing to Jegel, the God of 
      Scribes and Depositioner of the Passed (Or any Deity overlooking the passing of the living to the Dead). They pledged to keep track of all those denizens that once lived, how they lived, and when, how, where, and why they 
      died. Over the decades they developed an advanced library and monastary, training their monks in the value of knowledge, gratitude, courage, and direct action.
-
-
-
       
     #
     # Personality (or something like that):
@@ -575,33 +574,3 @@ npc:
      Zirrash'ka is the epitome of serious. All business, all the time, he takes his work very very seriously. He watches everything all the time and records everything in his journal to be filed later at the Zerai Library. As a 
      member of a very long-lived species, Zirrash'ka has been wandering and documenting the material plane for a long long time and very little surprises him. He is patient and wise. but very stoic and stern, almost entirely 
      devoid of a sense of humor.
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

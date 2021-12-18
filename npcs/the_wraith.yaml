@@ -463,7 +463,7 @@ npc:
   #
   specialties:
     skills:
-   - - Rogue Abilities:
+    - Rogue Abilities:
        - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
        - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
        - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
@@ -474,7 +474,7 @@ npc:
        - Slippery Mind: You gain proficiency in Wisdom Saving Throws
        - Elusive: No Attack roll has advantage against you while you aren't Incapacitated
 
-   - - Assassin Abilities:
+    - Assassin Abilities:
        - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.
        - Infiltration Expertise: you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an
                                  identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a
@@ -491,13 +491,13 @@ npc:
        - Feats: Skulker, Dual Weilder, Alert, Observant, Sharpshooter
        - Curse of the Forgotten: It requires a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to see her and a Wisdom (Perception) check of DC 19 to remember her if they aren't directly looking at her. 
                                  This ability makes her immune to blindsight and truesight
-      - Legendary Resistance: (3/Day), If The Wraith fails a saving throw she can choose to succeed instead 
-      - Legendary Actions: The Wraith can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. The Wraith
+         Legendary Resistance: (3/Day), If The Wraith fails a saving throw she can choose to succeed instead 
+         Legendary Actions: The Wraith can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. The Wraith
                            regains spent Legendary Actions at the start of her turn
-        - Assassins Toss: The Wraith can throw one of her daggers at a target, accurately up to 60 feet without penalty
-        - Misty Step: The Wraith can cast Misty Step
-        - Poison Touch: The Wraith can touch a creature to poison it - Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d8) poison damage. The target must succeed on a DC 15 Constitution saving
-                        throw or it is poisoned                                 
+         Assassins Toss: The Wraith can throw one of her daggers at a target, accurately up to 60 feet without penalty
+         Misty Step: The Wraith can cast Misty Step
+         Poison Touch: The Wraith can touch a creature to poison it - Melee Spell Attack; +5 to hit, reach 5 ft., one creature. Hit 10 (2d8) poison damage. The target must succeed on a DC 15 Constitution saving
+                       throw or it is poisoned                                 
        
     attacks: |
       2 attacks with daggers or hand crossbow
@@ -531,33 +531,4 @@ npc:
     #
     personality: |
       The Wraith is a stone cold kiiler. She lives to kill. She is a loaded gun and kills whoever her master points her at. She has no real will of her own and just kills who she is told to kill. and she is very very good at it.
-      She is tough, vicious and relentless. She will never give up on a target 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      She is tough, vicious and relentless. She will never give up on a target
