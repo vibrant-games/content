@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Scientist/Spy
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -318,8 +316,6 @@ npc:
     - Draconic
     - Infernal
     - Goblin
-
-
 
     #
     # Factions:
@@ -344,7 +340,6 @@ npc:
       name: Collegium Imaginata
       role: Scientist and Espionage/Communications Expert
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -368,7 +363,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The sharp-featured Elf looks the short, fat Gnome up and down "I've got the information you were looking for Oswald"
+    introduction:  The sharp-featured Elf looks the short, fat Gnome up and down /"I've got the information you were looking for Oswald/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -395,7 +390,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Information is the highest of currency", "It's not who you know, it's what you know about who", "I see you"
+    expressions:
+    - "Information is the highest of currency"
+    - "It's not who you know, it's what you know about who"
+    - "I see you"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -419,7 +417,7 @@ npc:
     #
     motivations: |
       Compiling as much information about everything as possible  
-      
+
     #
     # Passions:
     #
@@ -428,7 +426,7 @@ npc:
     #
     passions: |
       Opening lines of mass public worldwide communication
-      
+
     #
     # Vulnerabilities:
     #
@@ -437,7 +435,7 @@ npc:
     #
     vulnerabilities: |
       She's cagey and distant
-      
+
     #
     # Secrets:
     #
@@ -446,7 +444,7 @@ npc:
     #
     secrets: |
       Passes information back to her poeple 
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -471,58 +469,58 @@ npc:
   #
   specialties:
     skills:
-   - - High Elf Abilities:
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: Proficiency in Perception
-        - Fey Ancestry: Advantage on saving throws against being charmed and immune to sleep magic   
-        - Trance: Doesn't need to sleep. Meditating for 4 hours couts as a long rest
-        - Elf Weapons Training: Proficiency with the longsword, shortsword, longbow and shortbow
-        - Cantrip: Minor Illusion 
-      
-   - - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting: Requires Powered Armor as Spellcasting focus, Spell DC 17
-         Cantrip: Mage Hand, Mending, Message
-         1st Level: Alarm, Detect Magic, Disguise Self, Identify
-         2nd Level: Alter Self, See Invisibility, Invisibility
-         3rd Level: Dispel Magic, Tiny Servant       
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items at a time  
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-       - Tool Expertise: Smith's Tool proficiency bonus is doubled
-       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws     
-      
-   - - Armorer Abilities:
-       - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
-       - Spellcasting: Requires Powered Armor as Spellcasting focus, Spell DC 17
-         3rd Level: Magic Missle, Shield
-         5th Level: Mirror Image, Shatter
-         9th Level: Hypnotic Patetrn, Lightning Bolt
-       - Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
-       - Infiltrator Armor: Powered armor has the Lightning Launcher, Powered Steps & Second Skin abilities  
-       - Extra Attack: Can take a second attack action each turn
-       - Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
-      
-   - - Rogue Abilities: 
-       - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
-       - Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
-       - Uncanny Dodge: Can use her reaction to halve an attack's damage
-       - Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage            
-      
-   - - Spy Abilities:
-       - Tricks of the Trade: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools, Disguise, Forgery and Poison Kits and Gadget Box
-       - Imposter: Has the ability to unerringly mimic another person's speech, writing and behavior after spending 3 hours studying those things and gains advantage on deception rolls to avoid detection
-      
-   - - Gadget Box:
-         Spellcasting: DC of 16
-         Cantrip: Prestidigitation, Produce Flame
-         1st Level: Knock, Warding Bond
-         2nd Level: Locate, Sending, Scrying
-       - Self Destruct Mode: Can choose a delay between 1 second and 24 hours. During this time the box cannot be opened by any means. At the end of the chosen duration the box detonates requiring all creatures within 60' 
-                             to make a Con savings throw DC15 or take 7d6 force damage and be knocked prone. Successful throws recieve half damage and arent knocked prone. It takes one week to build a new one
+    - High Elf Abilities:
+      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+        Keen Senses: Proficiency in Perception
+        Fey Ancestry: Advantage on saving throws against being charmed and immune to sleep magic
+        Trance: Doesn't need to sleep. Meditating for 4 hours couts as a long rest
+        Elf Weapons Training: Proficiency with the longsword, shortsword, longbow and shortbow
+        Cantrip: Minor Illusion 
+      Artificer Abilities:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+        Spellcasting:
+        - Description: Requires Powered Armor as Spellcasting focus
+          Spell DC: 17
+          Cantrip: Mage Hand, Mending, Message
+          1st Level: Alarm, Detect Magic, Disguise Self, Identify
+          2nd Level: Alter Self, See Invisibility, Invisibility
+          3rd Level: Dispel Magic, Tiny Servant
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items at a time  
+        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+        Tool Expertise: Smith's Tool proficiency bonus is doubled
+        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws     
+      Armorer Abilities:
+      - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
+        Spellcasting: 
+        - Description: Requires Powered Armor as Spellcasting focus
+          Spell DC: 17
+          3rd Level: Magic Missle, Shield
+          5th Level: Mirror Image, Shatter
+          9th Level: Hypnotic Patetrn, Lightning Bolt
+        Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
+        Infiltrator Armor: Powered armor has the Lightning Launcher, Powered Steps & Second Skin abilities  
+        Extra Attack: Can take a second attack action each turn
+        Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
+      Rogue Abilities: 
+      - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
+        Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
+        Uncanny Dodge: Can use her reaction to halve an attack's damage
+        Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage
+      Spy Abilities:
+      - Tricks of the Trade: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools, Disguise, Forgery and Poison Kits and Gadget Box
+        Imposter: Has the ability to unerringly mimic another person's speech, writing and behavior after spending 3 hours studying those things and gains advantage on deception rolls to avoid detection
+      Gadget Box:
+      - Spellcasting: 
+        - Spell DC: 16
+          Cantrip: Prestidigitation, Produce Flame
+          1st Level: Knock, Warding Bond
+          2nd Level: Locate, Sending, Scrying
+        Self Destruct Mode: Can choose a delay between 1 second and 24 hours. During this time the box cannot be opened by any means. At the end of the chosen duration the box detonates requiring all creatures within 60' 
+                            to make a Con savings throw DC15 or take 7d6 force damage and be knocked prone. Successful throws recieve half damage and arent knocked prone. It takes one week to build a new one
  
     special-abilities:
     - Proficiencies: Proficient in Stealth, Perception, Insight, Sleight of Hand, Theive's Tools, Tinker's Tools, Smith's Tools, Firearms, Forgery, Disguise and Poison Kits and Gadget Box     
-    - Feats: War Caster, Gunner, Observant, Mobile, Fey Touched - Misty Step & Charm Person, Alert, Actor, Elven Accuracy, Keen Mind, Poisoner, Skulker                    
+      Feats: War Caster, Gunner, Observant, Mobile, Fey Touched - Misty Step & Charm Person, Alert, Actor, Elven Accuracy, Keen Mind, Poisoner, Skulker                    
     
     attacks: |
       Has 2 attack. Will range attack with her power armor or a spell attack
@@ -536,7 +534,7 @@ npc:
     - Several color-coded Speaking Stones
     - Several remote-operable Recording Stones
     - Various Scying Lenses and Spyglasses
-    
+
   profile:
 
     #
@@ -551,7 +549,7 @@ npc:
       only sees it as an avenue to improve her reconnaissance skills, but as a potential way to improve society as a whole and possibly make a significant amount of money. Her work in developing these technologies attracted 
       the attention of Oswald Vardklemp and the Collegium, She saw it as an opportunity to advance her work and to keep an eye the other members and their work. She has a strong woking knowledge of communication magics but 
       is attempting to develop communication technologies that don't require the use of magic (ie. telephony) so they are available for all people. 
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -564,32 +562,3 @@ npc:
       Sorsha Silvanya is a shorter, thin, High Elf with long light-brown hair that she almost always wear pinned-up in a bun. She has pretty, but sharp features, a youthful appearance that belies her actual age. She is cool and 
       cunning. Reserved, but capable of playing at personable and pleasant.  She carries herself with the standard High Elf snootiness, but for her it's more of an air that she uses to hide her ruthlessness. She does however 
       have a streak of altruism and does ligitimately want to use the technology she is developing to benefit society as a whole, not just for her own and her people's benefits 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

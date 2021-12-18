@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Assistant
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,8 +312,6 @@ npc:
     - Common
     - Gnomish
     - Goblin
-
-
 
     #
     # Factions:
@@ -339,7 +335,6 @@ npc:
     - id: Collegium_Imaginata
       name: Collegium Imaginata
       role: Lab Assistant and Occasional Guinea Pig
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -391,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "that was bigger splosion than me expecting", "WATER!!! HotHotHotHot!!!", "Hahahaha look that boom!"
+    expressions:
+    - "that was bigger splosion than me expecting"
+    - "WATER!!! HotHotHotHot!!!"
+    - "Hahahaha look that boom!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -415,7 +413,7 @@ npc:
     #
     motivations: |
       Tinkering and Creating  
-      
+
     #
     # Passions:
     #
@@ -424,7 +422,7 @@ npc:
     #
     passions: |
       Creating Booms!
-      
+
     #
     # Vulnerabilities:
     #
@@ -433,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       completely reckless, loves fire
-      
+
     #
     # Secrets:
     #
@@ -442,7 +440,7 @@ npc:
     #
     secrets: |
       it's not a secret, but she loves fire and explosions 
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -467,22 +465,23 @@ npc:
   #
   specialties:
     skills:
- - - Gremlin Abilities:
+    - Gremlin Abilities:
       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-      - Almost Fire Proof: Resistant to fire damage
-      - Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
-      - Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
-      
-  - - Artificer Abilities:
+        Almost Fire Proof: Resistant to fire damage
+        Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
+        Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
+      Artificer Abilities:
       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 15
-        Cantrip: Mage Hand, Mending, Fire Bolt
-        1st Level: Grease, Tasha's Caustic Brew
+        Spellcasting: 
+        - Description: Requires Tinker's Tools as Spellcasting focus
+          Spell DC: 15
+          Cantrip: Mage Hand, Mending, Fire Bolt
+          1st Level: Grease, Tasha's Caustic Brew
  
     special-abilities:
     - Proficiencies: Proficient in Stealth, Sleight of Hand, Theive's Tools, Tinker's Tools, Smith's Tools     
-    - Feats: Skulker                    
-    
+      Feats: Skulker
+
     attacks: |
       Has 1 attack. Will range attack with her Fire Bolt or Blast Orb or bite or dagger in melee range
     combat-tactics: |
@@ -491,7 +490,6 @@ npc:
     - Tinker's, Thieve's and Smith's Tools
     - Dagger
 
-    
   profile:
 
     #
@@ -505,7 +503,7 @@ npc:
       Splorch grew up in a clan that were former slaves and currently closely related to the naturally tinkering Rock Gnomes. The Gremlin Clan are different than other goblins because of their relationship with the gnomes. 
       Splorch grew up with an affinity for artifice and creating. Many of her clan's members have been invited to work with the Collegium Imaginata in various capacities, herslef included. She primarily functions as a lab 
       assistant for various scientists and researchers. Occasionally she will also funtion as a guinea pig for some less deadly experiments  
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -518,32 +516,3 @@ npc:
       Splorch and her clan are all incredibly intelligent and creative for goblins. Unfortunately she also has a strong affinity for fire and things that go boom and funnels most of her creativity in that direction. She is 
       utterly fearless and completely reckless but has managed to blow herself up several times without killing herself. She is also pretty gleeful for a goblin and enjoys playing practical jokes with and on her friends and 
       especially that big dummy Eugene Vardklemp.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
