@@ -165,7 +165,7 @@ Faction:
     #
     # Required.
     #
-    reach: Regional
+  reach: Regional
 
     #
     # Type (case insensitive):
@@ -187,7 +187,7 @@ Faction:
     # Required.
     # Max length: ...
     #
-    type: Adventurer
+  type: Adventurer
 
     #
     # Alignments (case insensitive):
@@ -203,7 +203,7 @@ Faction:
     #
     # Required.
     #
-    alignment: neutral good
+  alignment: neutral good
 
     #
     # Secrecy (case insensitive):
@@ -216,7 +216,7 @@ Faction:
     # Required.
     # Max length: ...
     #
-    Secrecy: Secret
+  Secrecy: Secret
     
     
   improv:
@@ -315,33 +315,4 @@ Faction:
                     Most of their hunting is done through intensive research, scouting and investigation, resulting in pin point strikes agains their targets. However, they are also often on hand to deal with situations that 
                     have arisen with litte to no time to prepare, wading into the tides of undead and fiendish bodies, striking them down with great relish and fervor. Each member of the group has their own distinct reasons for
                     fighting this fight, but they are all very good at what they do, and very devoted to the cause. They do their best to remain an urban legend, but sometimes that is just unavoidable, but they always try to get
-                    in and out of situations as quickly and unseen as possible. 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the Faction art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple Factions can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+                    in and out of situations as quickly and unseen as possible.

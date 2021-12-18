@@ -165,7 +165,7 @@ Faction:
     #
     # Required.
     #
-    reach: Regional
+  reach: Regional
 
     #
     # Type (case insensitive):
@@ -187,7 +187,7 @@ Faction:
     # Required.
     # Max length: ...
     #
-    type: Religious
+  type: Religious
 
     #
     # Alignments (case insensitive):
@@ -203,7 +203,7 @@ Faction:
     #
     # Required.
     #
-    alignment: neutral evil
+  alignment: neutral evil
 
     #
     # Secrecy (case insensitive):
@@ -216,7 +216,7 @@ Faction:
     # Required.
     # Max length: ...
     #
-    Secrecy: Private
+  Secrecy: Private
     
     
   improv:
@@ -321,32 +321,3 @@ Faction:
                     Anastasia's sons Jedediah, Basil and Mordechai handle most of the more clandestine recruitment of high level officials, often via blackmail or other nefarious means. Delores, daughter of Anastasia and mother 
                     of both Nickodeamus and his wife Irini, is completely mad, but operates as an oracle of sorts for the family, and many of their actions are fulfilments of her prophetic visions. as muddled and unclear as they 
                     are.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the Faction art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple Factions can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
