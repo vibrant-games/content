@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Dead Hunter
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -338,7 +336,6 @@ npc:
     - id: The_Dead_Hunters
       name: The Dead Hunters
       role: Nun
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -390,7 +387,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Moon have mercy on yer heathen soul", "Enougha yer yappin, let smash us some devils", "The good sister abides"
+    expressions:
+    - "Moon have mercy on yer heathen soul"
+    - "Enougha yer yappin, let smash us some devils"
+    - "The good sister abides"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -414,7 +414,7 @@ npc:
     #
     motivations: |
       ridding the world of fiends, undead and abominations 
-      
+
     #
     # Passions:
     #
@@ -423,7 +423,7 @@ npc:
     #
     passions: |
       Cigars, whiskey and the moon
-      
+
     #
     # Vulnerabilities:
     #
@@ -432,7 +432,7 @@ npc:
     #
     vulnerabilities: |
       set in her ways, holds a grudge
-      
+
     #
     # Secrets:
     #
@@ -441,7 +441,7 @@ npc:
     #
     secrets: |
       as a young woman she was a prostitute before she became a cleric 
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,67 +466,65 @@ npc:
   #
   specialties:
     skills:
-  - - Hill Dwarf Traits:
-       - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
-       - Dwarven Resiliance: Advantage on saving throws against poison and resistance to poison damage
-       - Dwarven Combat Training: Proficiency with Battle Axes, Handaxes, Light Hammers and Warhammers
-       - Tool Proficincey: Proficient with Smith's Tools
-       - Stonecunning: Whenever making an Intelligence (History) check related to stonework, is considered proficient in the History skill adding double her proficiency
-       - Dwarven Toughness: Hit point Max increases by 1 every level
-       
-  - - Fighter Abilities:
-       - Fighting Style: Archery
-       - Second Wind: Bonus Action to regain 1d10 + Fighter Level
-       - Action Surge: Once every short/long rest can take an extra action
-       - Extra Attack: Can attack twice each turn
-       - Indomitable: Can reroll 1 saving throw per long rest
- 
-  - - Rune Knight Traits: 
-       - Rune Carver: Once per long rest can touch 4 objects that can be worn or held, to inscribe runes onto those objects. The rune stays on the object until the next long rest
-       - Runes Known: Cloud Rune, Stone Rune, Storm Rune, Fire Rune
-       - Giant Might: 4 Times per long rest as a bonus action can increase size to Large, have advantage Strength Checks and Strength Saving Throws, Once per turn can deal an extra 1d8 damage on one attack
-       - Runic Shield: 4 Times per long rest as a reaction when another creature within 60 feet is hit by an attack roll, can force the attacker to reroll the d20 and use the new roll
-       - Great Stature: gains 11 inches in height and increases Giant Might damage
-    
-   - - Cleric Abilities:
-       - Spellcasting: DC21
-         Cantrips: Guidance, Light, Resistance, Sacred Flame, Spare the Dying
-         1st Level: Healing Word, Bane, Bless, Cure Wounds
-         2nd Level: Lesser Restoration, Spiritual Weapon, Prayer of Healing
-         3rd Level: Mass Healing Word, Beacon of Hope, Revivify
-         4th Level: Banishment, Locate Creature, Divination
-         5th Level: Hallow, Greater Restoration, Dispel Evil, Mass Cure Wounds
-         6th Level: Heal 
-         7th Level: Resurrection 
-         8th Level: Anti-magic Field, Holy Aura
-         9th Level: Mass Heal
-       - Channel Divinity: Turn Undead, Destroy Undead, Twilight Sanctuary 
-       - Divine Intervention: Can call her patron to intervene on her behalf
-
-   - - Twilight Domain Abilities:
-       - Eyes of Night: Once pe long rest as an action can share her dark vision with up to 7 other creatures within 10 feet of her for up to 1 hour
-       - Vigilant Blessing: Can give any creature she touches (herself included) advantage on their next initiative roll
-       - Twilight Sanctuary: As an action , can use holy symbol to create a 30-foot-radius sphere of twilight  giving all creatures with 1d6+18 temporary hit points and end one charming or frightened effect on them
-       - Steps of Night: 6 times per long rest as a bonus action in dim light or darkness she gains a flying speed of 30 feet for 1 minute
-       - Divine Strike: Once per turn when hitting a creature with a weapon attack, that attack deals and extra 2d8 psychic damage
-       - Twilight Shroud: Allies with her Twilight Sanctuary are considered to have half cover        
-       - Spellcasting:
-         Cantrips: Toll The Dead
-         1st Level: Faerie Fire, Sleep
-         3rd Level: Moonbeam, See Invisibility
-         5th Level: Aure of Vitality, Leomund's Tiny Hut
-         7th Level: Aura of Life, Greater Invisibility
-         9th Level: Circle of Power, Mislead      
+    - Hill Dwarf Traits:
+      - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
+        Dwarven Resiliance: Advantage on saving throws against poison and resistance to poison damage
+        Dwarven Combat Training: Proficiency with Battle Axes, Handaxes, Light Hammers and Warhammers
+        Tool Proficincey: Proficient with Smith's Tools
+        Stonecunning: Whenever making an Intelligence (History) check related to stonework, is considered proficient in the History skill adding double her proficiency
+        Dwarven Toughness: Hit point Max increases by 1 every level
+      Fighter Abilities:
+      - Fighting Style: Archery
+        Second Wind: Bonus Action to regain 1d10 + Fighter Level
+        Action Surge: Once every short/long rest can take an extra action
+        Extra Attack: Can attack twice each turn
+        Indomitable: Can reroll 1 saving throw per long rest
+      Rune Knight Traits: 
+      - Rune Carver: Once per long rest can touch 4 objects that can be worn or held, to inscribe runes onto those objects. The rune stays on the object until the next long rest
+        Runes Known: Cloud Rune, Stone Rune, Storm Rune, Fire Rune
+        Giant Might: 4 Times per long rest as a bonus action can increase size to Large, have advantage Strength Checks and Strength Saving Throws, Once per turn can deal an extra 1d8 damage on one attack
+        Runic Shield: 4 Times per long rest as a reaction when another creature within 60 feet is hit by an attack roll, can force the attacker to reroll the d20 and use the new roll
+        Great Stature: gains 11 inches in height and increases Giant Might damage
+      Cleric Abilities:
+       - Spellcasting: 
+         - Spell DC: 21
+           Cantrips: Guidance, Light, Resistance, Sacred Flame, Spare the Dying
+           1st Level: Healing Word, Bane, Bless, Cure Wounds
+           2nd Level: Lesser Restoration, Spiritual Weapon, Prayer of Healing
+           3rd Level: Mass Healing Word, Beacon of Hope, Revivify
+           4th Level: Banishment, Locate Creature, Divination
+           5th Level: Hallow, Greater Restoration, Dispel Evil, Mass Cure Wounds
+           6th Level: Heal 
+           7th Level: Resurrection 
+           8th Level: Anti-magic Field, Holy Aura
+           9th Level: Mass Heal
+         Channel Divinity: Turn Undead, Destroy Undead, Twilight Sanctuary 
+         Divine Intervention: Can call her patron to intervene on her behalf
+      Twilight Domain Abilities:
+      - Eyes of Night: Once pe long rest as an action can share her dark vision with up to 7 other creatures within 10 feet of her for up to 1 hour
+        Vigilant Blessing: Can give any creature she touches (herself included) advantage on their next initiative roll
+        Twilight Sanctuary: As an action , can use holy symbol to create a 30-foot-radius sphere of twilight  giving all creatures with 1d6+18 temporary hit points and end one charming or frightened effect on them
+        Steps of Night: 6 times per long rest as a bonus action in dim light or darkness she gains a flying speed of 30 feet for 1 minute
+        Divine Strike: Once per turn when hitting a creature with a weapon attack, that attack deals and extra 2d8 psychic damage
+        Twilight Shroud: Allies with her Twilight Sanctuary are considered to have half cover        
+        Spellcasting:
+        - Cantrips: Toll The Dead
+          1st Level: Faerie Fire, Sleep
+          3rd Level: Moonbeam, See Invisibility
+          5th Level: Aure of Vitality, Leomund's Tiny Hut
+          7th Level: Aura of Life, Greater Invisibility
+          9th Level: Circle of Power, Mislead
 
     special-abilities:
-    - Proficiencies: Smith's Tools, Armor, Shields, Insight, Perception, Intimidation, History, Religion, Medicine    
-    - Feats:Durable, Great Weapon Master, Grudge-Bearer - Undead, Healer, Heavy Armor Master, Keen Mind, Sentinel, Shield Master, War Caster 
-    - Legendary Resistance: (3/Day), If Sister Uriah Quartz fails a saving throw she can choose to succeed instead 
-    - Legendary Actions: Sister Uriah Quartz can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Sister Uriah Quartz regains spent Legendary Actions at the start of her turn
-      - Moons Curse: Sister Uriah Quartz can cast Bane on any number of Undead or Fiends within 30 feet
-      - Sisters Strike: Sister Uriah Quartz can slam her shield into the ground releasing a thunder wave. All creatures within 30 feet to make a strength saving throw DC15 or take 1d10 Thunder damage and be knocked prone
-      - Moons Respite: Sister Uriah Quartz regain 1d12+6 HP 
+    - Proficiencies: Smith's Tools, Armor, Shields, Insight, Perception, Intimidation, History, Religion, Medicine
+      Feats: Durable, Great Weapon Master, Grudge-Bearer - Undead, Healer, Heavy Armor Master, Keen Mind, Sentinel, Shield Master, War Caster 
+      Legendary Resistance: (3/Day), If Sister Uriah Quartz fails a saving throw she can choose to succeed instead 
+      Legendary Actions:
+      - Description: Sister Uriah Quartz can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                     Sister Uriah Quartz regains spent Legendary Actions at the start of her turn
+        Moons Curse: Sister Uriah Quartz can cast Bane on any number of Undead or Fiends within 30 feet
+        Sisters Strike: Sister Uriah Quartz can slam her shield into the ground releasing a thunder wave. All creatures within 30 feet to make a strength saving throw DC15 or take 1d10 Thunder damage and be knocked prone
+        Moons Respite: Sister Uriah Quartz regain 1d12+6 HP 
     
     attacks: |
       has 2 attacks
@@ -537,7 +535,6 @@ npc:
     - Holy Shield
     - +2 Chainmail
 
-    
   profile:
 
     #
@@ -553,7 +550,7 @@ npc:
       monster. That night she felt the blessing of the moon goddess for the first time and used her blessing to heal all of the other girls ravaged by the vampire and prevent them from turning. Feeling her new calling, 
       she left her life of sin and joined a convent devoted to the goddess. She learned the ways of the Twilight Clerics and devoted her life to ridding the world of fiends and the undead. After 200+ years of fighting the 
       forces of darkness, she has become one tough old bird and is not to be trifled with. In her tenure, she repeatedly crossed paths with The Phantom, eventually leaving the convent to join his Dead Hunters full time.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -568,32 +565,3 @@ npc:
       spellcasting focus. She is gruff and wise and has been around the block more than a few times. She is compassionate and loving towards her companions, and acts as a judgement-free minister and confessor for the local 
       bordellos and brothels, giving solace, advice and blessings to those in need. She is also a force to be reckoned with when it comes to battling fiends and the undead. She is also one of the very few people who know 
       The Phantom's secret. She is not a fan of him being undead, but she knows his story, his patrons and his mission and accepts them as valid.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

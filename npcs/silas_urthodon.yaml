@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Undertaker
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -338,7 +336,6 @@ npc:
       name: Dumas Family
       role: Undertaker/Informant
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -362,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The thin eldrerly-looking Drow with shock white hair sitting behind the desk lifts his top hat "Who needs burryin wat?" 
+    introduction:  The thin eldrerly-looking Drow with shock white hair sitting behind the desk lifts his top hat /"Who needs burryin wat?/" 
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -389,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We'll bury yer love ones, best price ya kin get", "What'dya like on yer stone?" "From yer family ta ours"
+    expressions:  
+    - "We'll bury yer love ones, best price ya kin get"
+    - "What'dya like on yer stone?"
+    - "From yer family ta ours"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -413,7 +413,7 @@ npc:
     #
     motivations: |
       Money, providing "raw materials" and "waste disposal" for the Dumas Family
-      
+
     #
     # Passions:
     #
@@ -422,7 +422,7 @@ npc:
     #
     passions: |
       Dead bodies
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +431,7 @@ npc:
     #
     vulnerabilities: |
       Overly cocky and self-assured
-      
+
     #
     # Secrets:
     #
@@ -440,7 +440,7 @@ npc:
     #
     secrets: |
       He is neither as old or as infirmed as he appears
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,20 +465,19 @@ npc:
   #
   specialties:
     skills:
-   - - Drow Abilities:
-       - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-       - Keen Senses: Proficiency in Perception
-       - Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
-       - Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
-       - Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-       - Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness, Detect Magic, Dispel Magic and Levitate once per long rest with charisma as spellcasting ability
-       - Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
-    
-   - - Undertaker Abilities: 
-       - Skill Proficiencies: Medicine, Religion: Burial Rites, Investigation, History: Burial Rites, Insight,
-       - Tool Proficiencies: Carpenter's Tools, Stonecarver's Tools, Disguise Kit, Alchemist Kit, Sewnig Kit, Medical Kit
-       - Funeral Network: Well connected in circles dealing with funerals ie. florists, carriages, churches, other undertakers and advantage on persuasion in dealing with them
-       - Coroner: Has advantage when trying to determine cause and/or time of death    
+    - Drow Abilities:
+      - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
+        Keen Senses: Proficiency in Perception
+        Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
+        Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
+        Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
+        Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness, Detect Magic, Dispel Magic and Levitate once per long rest with charisma as spellcasting ability
+        Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
+      Undertaker Abilities: 
+      - Skill Proficiencies: Medicine, Religion - Burial Rites, Investigation, History - Burial Rites, Insight,
+        Tool Proficiencies: Carpenter's Tools, Stonecarver's Tools, Disguise Kit, Alchemist Kit, Sewnig Kit, Medical Kit
+        Funeral Network: Well connected in circles dealing with funerals ie. florists, carriages, churches, other undertakers and advantage on persuasion in dealing with them
+        Coroner: Has advantage when trying to determine cause and/or time of death    
 
     special-abilities: 
     - Feats: Elven Acuracy, Actor, Crossbow Expert, Healer, Keen Mind, Drow High Magic
@@ -491,8 +490,7 @@ npc:
     - Hand Crossbow
     - +1 Rapier Cane
     - Undertaker's Tools - Various tools from Carpenter's and Stonecarver's Tools as well as items from Disguise, Alchemist, Medical and Sewing Kits 
-    
-    
+
   profile:
 
     #
@@ -509,7 +507,7 @@ npc:
       murder investigations. He also hires himself out to insurance companies to investigate mysterious deaths. Both of these jobs not only let him exercise his mind, but also to cover for the Dumas Family in any cases that 
       may involve them. He also knows humanoid bodies inside and out, which makes him well suited to perform medical procedures, a service he provides for members of the family in need as well as various criminal organizations 
       and underworld sources.  
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -524,32 +522,3 @@ npc:
       Family and their patron for generations, while also managing to serve his own interests quite well throughout that time. As he's gotten on in age, his physical prowess has degraded, but he's still sharp as a tack and 
       not quite as infirmed as he pretends to be and is still capable of putting up a fight if things come to that. Due to his age and impending mortality, Silas has taken on an apprentice; A comparatively younger and much 
       more physically robust Deurgar named Thomdrick Holecarver.
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

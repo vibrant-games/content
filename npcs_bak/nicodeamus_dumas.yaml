@@ -190,15 +190,6 @@ npc:
     race: Human
 
     #
-    # The sub-race can be anything.
-    # For example, swamp gnome or red elf etc.
-    #
-    # Optional.  Can be commented out.
-    # Max length: ...
-    #
-    sub-race: N/A
-
-    #
     # Pronouns (case insensitive):
     # - he/him
     # - she/her
@@ -262,7 +253,7 @@ npc:
     #
     # Required.
     #
-    class: Gunslinger/Hexblade
+    subclass: Gunslinger/Hexblade
 
     #
     # Class level.
@@ -296,7 +287,8 @@ npc:
     # Optional.
     #
     tendencies:
-
+    - N/A
+    
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -404,7 +396,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Whistles happy tunes incessantly. Regularly shuffles the deck of cards he always carries with him. Performs card tricks.
+    mannerisms: Whistles happy tunes incessantly. Regularly shuffles the deck of cards he always carries with him. Performs card tricks.
 
   acting:
     #
@@ -414,7 +406,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Growing his /"family/", furthering the goals of his patron
+      Growing his 'family', furthering the goals of his patron
 
     #
     # Passions:
@@ -423,7 +415,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Gambling, card tricks, his /"studies/"
+      Gambling, card tricks, his studies
 
     #
     # Vulnerabilities:
@@ -449,7 +441,7 @@ npc:
   #
   stats:
     armour-class: 20
-    hit-points: 213
+    hit-points: 21
     speed: 40
     str: 15
     dex: 24
@@ -472,7 +464,7 @@ npc:
         - Second Wind: Bonus Action to regain 1d10
           Action Surge: Once every short or long rest can take an extra action
           Extra Attack: Can attack twice each turn
-          Indomiable: you can reroll a saving throw that you fail. If you do so, you must use the new roll
+          Indominable Will: you can reroll a saving throw that you fail. If you do so, you must use the new roll
       Gunslinger Traits:
       - Firearm Proficiency: you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.
         Gunsmith: you gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and
@@ -487,8 +479,8 @@ npc:
       Warlock Traits:
       - Pact Magic:
         - Spell DC: 19
-          Cantrips: Eldritch Blast, Mage Hand, Toll The Dead, Thunderclap.
-          Spells: Contact Other Plane, Danse Macabre, Hold Monster, Infernal Calling, Modify Memory, Sickening Radiance, Summon Greater Demon, Dimension Door, Blight, Counterspell, Dispel Magic, Summon Lesser Demon, Vampiric Touch, Summon Undead, Crown of Madness, Hold Person, Armor of Agathys, Charm Person, Hex, Hellish Rebuke,
+          Cantrips: Eldritch Blast, Mage Hand, Toll The Dead, Thunderclap
+          Spells: Contact Other Plane, Danse Macabre, Hold Monster, Infernal Calling, Modify Memory, Sickening Radiance, Summon Greater Demon, Dimension Door, Blight, Counterspell, Dispel Magic, Summon Lesser Demon, Vampiric Touch, Summon Undead, Crown of Madness, Hold Person, Armor of Agathys, Charm Person, Hex, Hellish Rebuke
         Eldritch Invocations:
         - 1: Agonizing Blast
           2: Eldrich Spear
@@ -512,19 +504,19 @@ npc:
                       rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity,
                       for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature,
                       no matter the weapon's type.
-        Accursed Specter:  you can curse the soul of a person you slay, temporarily binding it in your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a specter. When the specter appears,
-                           it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack
-                           rolls equal to your Charisma modifier (minimum of +0). The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife
+        Accursed Specter: you can curse the soul of a person you slay, temporarily binding it in your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a specter. When the specter appears,
+                          it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack
+                          rolls equal to your Charisma modifier (minimum of +0). The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife
         Armor of Hexes: your hex grows more powerful. If the target cursed by your Hexblade’s Curse hits you with an attack roll, you can use your reaction to roll a d6. On a 4 or higher, the attack instead misses you,
                         regardless of its roll
         Master of Hexes: you can spread your Hexblade's Curse from a slain creature to another creature. When the creature cursed by your Hexblade's Curse dies, you can apply the curse to a different creature you can see
                          within 30 feet of you, provided you aren't incapacitated. When you apply the curse in this way, you don't regain hit points from the death of the previously cursed creature
         Hexblade Spells:
-        - 1st Level: Shield, Wrathful Smite 
-        - 2nd Level: Blur, Branding Smite
-        - 3rd Level: Blink, Elemental Weapon
-        - 4th Level: Phantasmal Killer, Staggering Smite
-        - 5th Level: Banishing Smite, Cone of Cold
+        - 1st Level: Shield, Wrathful Smite
+          2nd Level: Blur, Branding Smite
+          3rd Level: Blink, Elemental Weapon
+          4th Level: Phantasmal Killer, Staggering Smite
+          5th Level: Banishing Smite, Cone of Cold
  
     special-abilities:
     - Feats: Inspiring Leader, Lucky, Sharpshooter, War Caster, Skulker, Gunner
@@ -536,9 +528,9 @@ npc:
         Devils Portal: Nicodeamus can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of his master for 1 minute
         Cantrip: Nicodeamus Dumas casts a cantrip
         Family Reserve: Nicodeamus Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight
+   
     attacks: |
-      Dual Pistol Sidearms
-      Throws playing cards that turn into Eldritch Blasts
+      Dual Pistol Sidearms. Throws playing cards that turn into Eldritch Blasts
     combat-tactics: |
       He'll do his best to get the jump on his opponents with his quickdraw Firebrand pistols or his Eldritch cards. Failing that, he'll resort to more traditional spellcasting using his card deck as an arcane focus so he does not need other spell components and use his Legendary Actions to bring in backup
     special-equipment:
@@ -582,4 +574,5 @@ npc:
       Nicodeamus is sharp as a tack and thoroughly vicious. His happy demeanor is primarily for the purposes of recruitment, but also partially because he's a little on the mad side. He is endearing and charming while things
       are going his way, but like a true sociopath, can turn hard and cold at a moments notice. He is ruthless in persuit of his goals, but generally finds it easier to use the carrot rather than the stick to achieve his
       aims. He likes to use either gambling or card tricks to break the ice with potential recruits and can be very persuasive when he wants to be. With the exception of his patron and his granmother, he will tolerate absolutley
-      no disrespect or disobedience from the other members of "The Family" and will not hesitate to sacrifice anyone who invokes his ire.
+      no disrespect or disobedience from the other members of 'The Family' and will not hesitate to sacrifice anyone who invokes his ire.
+

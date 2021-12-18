@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Performer
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Goblin
     - Giant
     - Common
-
 
     #
     # Factions:
@@ -358,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  Might be found wandering a town or city calling, "Bodius..? Ohhh, Bodius? Where have you gone dear friend?"; Scarback has a serious drinking problem and is renown at local pubs - having lots of good acquaintances
+    introduction:  Might be found wandering a town or city calling, /"Bodius..? Ohhh, Bodius? Where have you gone dear friend?/"; Scarback has a serious drinking problem and is renown at local pubs - having lots of good acquaintances
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -385,7 +383,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Go get good at stuff"; "Bodius says Migrug does good"; "I can break stuff and break it again"
+    expressions:
+    - "Go get good at stuff"
+    - "Bodius says Migrug does good"
+    - "I can break stuff and break it again"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -409,7 +410,7 @@ npc:
     #
     motivations: |
       Almost a result of cognitive dissonance, Scarback ardently seeks to convince others that his old peformance partner, Bodius, is missing and that he needs help to find her.
-      
+
     #
     # Passions:
     #
@@ -418,7 +419,7 @@ npc:
     #
     passions: |
       Bodius, his elven performance colleague of the past - he is always referring to her even though she is supposedly long dead
-      
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       Is a raging drunk
-      
+
     #
     # Secrets:
     #
@@ -436,8 +437,7 @@ npc:
     #
     secrets: | 
       Keeps Bodius in a locked chest where he feeds her and keeps her alive - his most prized possession.
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -462,47 +462,49 @@ npc:
   #
   specialties:
     skills: 
+    - Half-Ogre Abilities:
+      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+        Strong and Angry: Due to your giant size and insane strength, using great weapons tends to be really easy for you. You gain proficiency with the greataxe and the maul.
+        Relentless Power: Nothing can stop your imense strength. When you roll a critical hit with a melee weapon, you can roll one of the weapon dice again and add it to the total.
+        Unstoppable Destruction: Your size and strength are unmatched. If you hit an enemy with an attack with a two-handed melee weapon, you can use your bonus action to attack one adjacent enemy within 5ft from you and the
+                                 enemy you first hit with your two-handed melee weapon, though the second attack is rolled with disadvantage.
+        Frightful Appearance: Due to your sheer size, you would put the braves to run. You gain proficiency in the Intimidation skill.
+        Bloodrage: Your blood becomes filled with your anger. Once per long rest, with a bonus action, you may raise your Strength score by 4 for 1 minute. When the Bloodrage ceases, you get a minus 4 in your Intelligence
+                   score untill you finish a short or long rest.
+      Barbarian Abilities:
+      - Rage:
+        - Descripition: Can enter a rage as a Bonus Action.
+          Additional Information:
+          - Advantage on Strength Checks and Strength Saving Throws
+          - Make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+          - Resistance to bludgeoning, piercing, and slashing damage
+          Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+          Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn,
+                           but Attack Rolls against him have advantage until his next turn
+          Extra Attack: Can attack twice each turn
+          Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor. 
+        Path of the Beast Abilities:
+        - Form of the Beast:
+          - Description: When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your 
+                         Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon’s form each time you rage - 
+            Bite: Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you
+                  regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
+            Claws: Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using
+                   the Attack action, you can make one additional claw attack as part of the same action.
+            Tail: You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use
+                  your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you
+        Bestial Soul:
+        - Description: the feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You
+                       can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest
+          Additional informaion:
+          - You gain a swimming speed equal to your walking speed, and you can breathe underwater.
+          - You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+          - When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.        f
 
-   - - Half-Ogre Abilities:
-        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-        - Strong and Angry: Due to your giant size and insane strength, using great weapons tends to be really easy for you. You gain proficiency with the greataxe and the maul.
-        - Relentless Power: Nothing can stop your imense strength. When you roll a critical hit with a melee weapon, you can roll one of the weapon dice again and add it to the total.
-        - Unstoppable Destruction: Your size and strength are unmatched. If you hit an enemy with an attack with a two-handed melee weapon, you can use your bonus action to attack one adjacent enemy within 5ft from you and the
-                                   enemy you first hit with your two-handed melee weapon, though the second attack is rolled with disadvantage.
-        - Frightful Appearance: Due to your sheer size, you would put the braves to run. You gain proficiency in the Intimidation skill.
-        - Bloodrage: Your blood becomes filled with your anger. Once per long rest, with a bonus action, you may raise your Strength score by 4 for 1 minute. When the Bloodrage ceases, you get a minus 4 in your Intelligence
-                     score untill you finish a short or long rest.
-
-   - - Barbarian Abilities:
-         - Rage: Can enter a rage as a Bonus Action. 
-            - have advantage on Strength Checks and Strength Saving Throws.
-            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-            - Resistance to bludgeoning, piercing, and slashing damage          
-         - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                            but Attack Rolls against him have advantage until his next turn
-         - Extra Attack: Can attack twice each turn	
-         - Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor. 
-
-   - - Path of the Beast Abilities:
-         - Form of the Beast: when you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your 
-                              Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon’s form each time you rage - 
-                              - Bite: Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you
-                                      regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
-                              - Claws: Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using
-                                       the Attack action, you can make one additional claw attack as part of the same action.
-                              - Tail: You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use
-                                      your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you
-         - Bestial Soul: the feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You
-                         can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest
-                         - You gain a swimming speed equal to your walking speed, and you can breathe underwater.
-                         - You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-                         - When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.        
-      
     special-abilities:
        - Proficiencies: Athletics, Intimidation, Survival
-       - Feats: Great Weapons Master
-       
+         Feats: Great Weapons Master
+
     attacks: |
       1 attack with Great Axe or Javelins
     combat-tactics: |
@@ -510,7 +512,7 @@ npc:
     special-equipment:
     - Great Axe
     - 3 Javelins
-      
+
   profile:
 
     #
@@ -534,7 +536,6 @@ npc:
      for Bodius. At the same time he has an inexorable bond with his steamer trunk. Twice daily, in private, he will check on his belongings and only then recognize that Bodius remains in the chest. He will feed her and provide
      her water, only to Bind and gag her and lock the steamer back up.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -547,33 +548,3 @@ npc:
      Scarback is a conflicted being. A behemoth with deminished mental capacity, his poor fracured mind cannot deal with the reality of his situation. He loves and cares so deeply for Bodius that he does not want any more harm
      to come to her. But in his zeal to protector her, he has denied her comfort and freedom. At the same time, a combination of massive amounts of alcohol and the power of self-denial, he mostly dissociates his mind from the
      torture that he has actually perpetrated upon her. The drunker her gets, the more he wanders and laments his "lost" love despite her being, however unwillingly, by his side the whole time
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

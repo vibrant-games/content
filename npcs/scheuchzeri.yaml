@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Wharfside spectacle / exhibit
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -311,7 +310,6 @@ npc:
     languages:
     - Common
     - Newt
-
 
     #
     # Factions:
@@ -330,8 +328,8 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -339,7 +337,7 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Observant   
+    - Observant
     - Slippery
     - Unoriginal
 
@@ -356,7 +354,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  From the wharfside water comes a hoarse croaking voice: "WILL PELHAM BEAUTY OR GOBERNADOR WIN THIS YEAR'S DERBY?"
+    introduction:  From the wharfside water comes a hoarse croaking voice - /"WILL PELHAM BEAUTY OR GOBERNADOR WIN THIS YEAR'S DERBY?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -383,7 +381,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  WILL THERE BE A WAR?; DEATH RAYS TURN WHOLE CONTINENTS INTO DUST; DO YOU WANT PERFUMED BREATH? USE "FRESH" TOOTHPASTE.
+    expressions:
+    - "WILL THERE BE A WAR?"
+    - "DEATH RAYS TURN WHOLE CONTINENTS INTO DUST"
+    - "DO YOU WANT PERFUMED BREATH? USE FRESH TOOTHPASTE."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -396,7 +397,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Wags tail underwater when excited; barks when happy or scared; performs "the newt", his underwater dance, on request.
+    mannerisms:   Wags tail underwater when excited; barks when happy or scared; performs /"the newt/", his underwater dance, on request.
 
   acting:
     #
@@ -407,7 +408,7 @@ npc:
     #
     motivations: |
       Gossips incessantly, and strangers gossip to him; reads every pamphlet ever printed; parrots the town crier verbatim.
-      
+
     #
     # Passions:
     #
@@ -416,7 +417,7 @@ npc:
     #
     passions: |
       Gossip
-      
+
     #
     # Vulnerabilities:
     #
@@ -425,7 +426,7 @@ npc:
     #
     vulnerabilities: |
       Will never be accepted into a human social group so as to satisfy his yearnings; has never had an original thought.
-      
+
     #
     # Secrets:
     #
@@ -434,8 +435,7 @@ npc:
     #
     secrets: | 
       N/A
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -460,29 +460,28 @@ npc:
   #
   specialties:
     skills: 
+    - Firenewt Abilities:
+       - Amphibious: You can breathe in smoke, air, and water, as well as ingest lava and other flammable liquids.
+         Spit Fire: As an action, you can spit a molt of fire at a creature within 10 feet of you. The creature must make a Dexterity saving throw with a DC equal to 8 + your Constitution modifier + your proficiency bonus. A
+                    creature takes 2d8 fire damage on a failed save, and half as much damage on a successful one. The damage increases to 3d8 at 6th level, 4d8 at 11th level, and 5d8 at 16th level. You cannot spit fire again
+                    until you finish a short or long rest or take time to ingest at least a flask of some flammable liquid like lantern oil.
+         Fireborne: You are resistant to fire damage.
+         Heat Seeker: If you spend a week without a source of moist heat, you have disadvantage on all ability checks and attack rolls until you spend a short or long rest with a source of moist heat.
+         Explosive Desires: You are proficient with either alchemist’s tools or smith’s tools.
+         Critical Flame: When you score a critical hit with a melee weapon attack, your weapon ignites in flame and you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical
+                         hit. This extra damage is fire damage regardless of the weapon damage type
 
-   - - Firenewt Abilities:
-        - Amphibious: You can breathe in smoke, air, and water, as well as ingest lava and other flammable liquids.
-        - Spit Fire: As an action, you can spit a molt of fire at a creature within 10 feet of you. The creature must make a Dexterity saving throw with a DC equal to 8 + your Constitution modifier + your proficiency bonus. A
-                     creature takes 2d8 fire damage on a failed save, and half as much damage on a successful one. The damage increases to 3d8 at 6th level, 4d8 at 11th level, and 5d8 at 16th level. You cannot spit fire again
-                     until you finish a short or long rest or take time to ingest at least a flask of some flammable liquid like lantern oil.
-        - Fireborne: You are resistant to fire damage.
-        - Heat Seeker: If you spend a week without a source of moist heat, you have disadvantage on all ability checks and attack rolls until you spend a short or long rest with a source of moist heat.
-        - Explosive Desires: You are proficient with either alchemist’s tools or smith’s tools.
-        - Critical Flame: When you score a critical hit with a melee weapon attack, your weapon ignites in flame and you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical
-                          hit. This extra damage is fire damage regardless of the weapon damage type
-        
-      
     special-abilities:
        - Proficiencies: Nature, Persuasion, Survival, Deception
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with Fire Spit
     combat-tactics: |
       Scheuchzeri will avoid combat at all costs
     special-equipment:
-    N/A
+    - N/A
+  
   profile:
 
     #
@@ -500,8 +499,6 @@ npc:
      attempt to capture her heart she laughed in his face and banished him to the ponds and wharf-side. Others tell a story of how it was his own choice; that he is actually a powerful sorcerer who grew tired of his capabilities
      and cast this polymorph on himself in reverence of the greater society.
 
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -512,33 +509,3 @@ npc:
     #
     personality: |
      Scheuschzeri is kind of a blank slate. He picks up and repeats gossip he hears as he flits around the warf and ponds around town
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

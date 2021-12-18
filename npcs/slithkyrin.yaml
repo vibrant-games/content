@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Priestess
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Celestial
     - Draconic
     - Snake
-
 
     #
     # Factions:
@@ -336,7 +334,6 @@ npc:
       name: Naga Temple of Bahamut
     - id: naga_clan
       name: Naga Clan
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -388,7 +385,8 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Welcome, we are the divine-touched of Bahamut"
+    expressions:
+    - "Welcome, we are the divine-touched of Bahamut"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -412,7 +410,7 @@ npc:
     #
     motivations: |
       Serving her divine purpose. Spreading the word of Bahamut
-      
+
     #
     # Passions:
     #
@@ -421,7 +419,7 @@ npc:
     #
     passions: |
       Painting
-      
+
     #
     # Vulnerabilities:
     #
@@ -430,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       She is still young and unsure of herself, her abilities and her faith
-      
+
     #
     # Secrets:
     #
@@ -439,8 +437,7 @@ npc:
     #
     secrets: | 
       She occasionally gets visited in her dreams by the voice of Zehir, the Naga's former god
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -465,52 +462,49 @@ npc:
   #
   specialties:
     skills: 
+      Naga Abilities:
+      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+        Keen Senses: You are proficient in the Perception skill
+        Poison Resistance: You have resistance to poison damage, and you have advantage on saving throws against becoming poisoned.
+        Herbalist: The foliage of the jungle has given you knowledge in herbs and their preparation. You are proficient in the Medicine skill. 
+      Naga Feats:
+      - Python: your body has the power to grapple enemies that are your size. You have advantage on checks to grapple enemies that are equal to or smaller than you in size. As a bonus action, you may squeeze a creature you
+                are grappling for 1d4 bludgeoning damage. This damage increases by 1d4 at levels 8 (2d4), 12 (3d4), 16 (4d4), and 20 (5d4). This feature can be used a number of times equal to your Strength modifier. You regain
+                all uses after you finish a long rest.
+        Venomous: your fangs allow you to inject it into your enemies with a fearsome bite. When you successfully attack a creature within 5 feet of you, you may use a bonus action to make a following strike on that creature,
+                  forcing them to make a Constitution saving throw or become poisoned for 1 minute. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. You regain use of this
+                  ability after you complete a short or long rest.     
+      Cleric Abilities:
+      - Spellcasting: 
+        - Spell DC: 14
+          Cantrips: Decompose, Guidance, Sacred Flame, Resistance 
+          1st Level: Inflict Wounds, Bane, Bless, Guiding Bolt
+          2nd Level: Gentle Repose, Spiritual Weapon, Hold Person
+          3rd Level: Spirit Shroud, Speak with Dead, Animate Dead 
+        Channel Divinity: Turn Undead, Destroy Undead 
+      Death Domain Abilities:
+      - Spellcasting: 
+        - Spell DC: 14 
+          1st Level: False Life, Ray of Sickness
+          3rd Level: Blindness/Deafness, Ray of Enfeeblement
+          5th Level: Animate Dead, Vampiric Touch 
+        Reaper: you learn one necromancy cantrip of your choice from any spell list - Toll the Dead. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within
+                range and within 5 feet of each other. 
+        Channel Divinity: Touch of Death - you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage
+                          to the target. The damage equals 5 + 12 
+        Inescapable Destruction:  your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage.
 
-   - - Naga Abilities:
-        - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-        - Keen Senses: You are proficient in the Perception skill
-        - Poison Resistance: You have resistance to poison damage, and you have advantage on saving throws against becoming poisoned.
-        - Herbalist: The foliage of the jungle has given you knowledge in herbs and their preparation. You are proficient in the Medicine skill.
-        
-   - - Naga Feats:
-        - Python: your body has the power to grapple enemies that are your size. You have advantage on checks to grapple enemies that are equal to or smaller than you in size. As a bonus action, you may squeeze a creature you
-                  are grappling for 1d4 bludgeoning damage. This damage increases by 1d4 at levels 8 (2d4), 12 (3d4), 16 (4d4), and 20 (5d4). This feature can be used a number of times equal to your Strength modifier. You regain
-                  all uses after you finish a long rest.
-        - Venomous: your fangs allow you to inject it into your enemies with a fearsome bite. When you successfully attack a creature within 5 feet of you, you may use a bonus action to make a following strike on that creature,
-                    forcing them to make a Constitution saving throw or become poisoned for 1 minute. The DC for this saving throw is equal to 8 + your Constitution modifier + your proficiency bonus. You regain use of this
-                    ability after you complete a short or long rest.
-        
-   - - Cleric Abilities:
-       - Spellcasting: Spell DC 14
-         Cantrips: Decompose, Guidance, Sacred Flame, Resistance 
-         1st Level: Inflict Wounds, Bane, Bless, Guiding Bolt
-         2nd Level: Gentle Repose, Spiritual Weapon, Hold Person
-         3rd Level: Spirit Shroud, Speak with Dead, Animate Dead 
-       - Channel Divinity: Turn Undead, Destroy Undead 
-
-   - - Death Domain Abilities:
-       - Spellcasting: Spell DC 14 
-         1st Level: False Life, Ray of Sickness
-         3rd Level: Blindness/Deafness, Ray of Enfeeblement
-         5th Level: Animate Dead, Vampiric Touch 
-       - Reaper: you learn one necromancy cantrip of your choice from any spell list - Toll the Dead. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures within
-                 range and within 5 feet of each other. 
-       - Channel Divinity: Touch of Death - you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage
-                           to the target. The damage equals 5 + 12 
-       - Inescapable Destruction:  your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage.
-       
     special-abilities:
        - Proficiencies: Perception, Medicine, Arcana, Deception
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with spell attach or venom or grapple
     combat-tactics: |
       Not used to fighting, she will attempt to grapple and constrict her opponent with her tail coils and then claw and bite them with her venom
     special-equipment:
     - Her tiara is her magical focus and holy symbol of office and contains a Gem of Seeing
-    
-    
+
   profile:
 
     #
@@ -526,9 +520,6 @@ npc:
      Zehir speaks to her. A dark reptilian old god, full of rage and hunger, Zehir wants his chosen people back from Bahamut. He fills her head with hunger and dark thoughts. She knows he is wrong and was a cruel master to her
      people, but she struggles to keep his seductive words from her mind as her power grows.
 
-
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -539,33 +530,3 @@ npc:
     #
     personality: |
      Slith'Kyrin is young and insecure. She is working hard to come into her own as the next high priestess of here people but she is still full of self-doubt. The voices in her head are not helping the matter at all
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training

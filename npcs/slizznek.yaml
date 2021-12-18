@@ -214,8 +214,8 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Dock Worker
-    
 
     #
     # D & D classes (case insensitive):
@@ -296,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +311,6 @@ npc:
     - Common
     - Draconic
     - Aquan
-
 
     #
     # Factions:
@@ -335,7 +333,6 @@ npc:
       name: His Tribe
     - id: thieve_s_guild
       name: Thieve's Guil
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -360,7 +357,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. "Outta da way, softskin!"
+    introduction:  A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. /"Outta da way, softskin!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -387,7 +384,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Y'all softskins don't know how to live", "Gotta get my work done, it's almost time to eat"
+    expressions:
+    - "Y'all softskins don't know how to live"
+    - "Gotta get my work done, it's almost time to eat"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -411,7 +410,7 @@ npc:
     #
     motivations: |
       Food
-      
+
     #
     # Passions:
     #
@@ -420,7 +419,7 @@ npc:
     #
     passions: |
       also food
-      
+
     #
     # Vulnerabilities:
     #
@@ -429,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       He's not very smart
-      
+
     #
     # Secrets:
     #
@@ -438,8 +437,7 @@ npc:
     #
     secrets: | 
       he occasionally helps smuggle goods passed port officials
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,32 +462,29 @@ npc:
   #
   specialties:
     skills: 
+    - Lizardfolk Abilities:
+      - Bite: Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an 
+              unarmed strike.
+        Cunning Artisan: As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items - a shield, a 
+                      club, a javelin, or 1d4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools.
+        Hold Breath: You can hold your breath for up to 15 minutes at a time.
+        Hunters Lore: You gain proficiency with two of the following skills of your choice - Animal Handling, Nature, Perception, Stealth, and Survival.
+        Natural Armor: You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower
+                       AC. A shield's benefits apply as normal while you use your natural armor.
+        Hungry Jaws: In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit
+                     points (minimum of 1) equal to your Constitution modifier, and you can't use this trait again until you finish a short or long rest.
 
-   - - Lizardfolk Abilities:
-        - Bite: Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an 
-                unarmed strike.
-        - Cunning Artisan: As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items: a shield, a 
-                           club, a javelin, or 1d4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as leatherworker's tools.
-        - Hold Breath: You can hold your breath for up to 15 minutes at a time.
-        - Hunters Lore: You gain proficiency with two of the following skills of your choice: Animal Handling, Nature, Perception, Stealth, and Survival.
-        - Natural Armor: You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower
-                         AC. A shield's benefits apply as normal while you use your natural armor.
-        - Hungry Jaws: In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit
-                       points (minimum of 1) equal to your Constitution modifier, and you can't use this trait again until you finish a short or long rest.
-        
-       
     special-abilities:
        - Proficiencies: Athletics, Survival, Intimidation, Deception
-       - Feats: N/A
-       
+         Feats: N/A
+
     attacks: |
       1 attack with bite, claw or club
     combat-tactics: |
       He's not keen to fight, but he won't go out of his way to avoid one. He's not much on tactics, he'll claw, bite and slash with his tale until he wins or loses
     special-equipment:
     - A Lucky Rabbit's Foot from a rabbit he once ate. Lets him reroll 1 saving throw of his choice per long rest
-    
-    
+
   profile:
 
     #
@@ -504,10 +499,6 @@ npc:
      adapts. Taking a job on the docks to show the "softskins" what a "real male" is.  He's gruff, uncultured and temperamental, but he works hard and makes enough to afford all of the food that he can eat. Not being terribly
      bright and generally having a disrespect the government that has overtaken his lands, he can easily be bribed to help out with smuggling operations at the docks
 
-
-
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -520,33 +511,3 @@ npc:
      Slizz'nek isn't the smartest guy on the docks, but he's not afraid of a day's hard labor. He's gruf and hot-tempered and very much a traditionalist of lizardfolk culture. He doesn't like outsiders and thinks of other races
      as softskins of fleshbags and sees them as a potential meal somewhere down the line. But in the meantime, he's a survivor, so he keeps his head down and does his job. Now and then, he'll make a little extra cash to turn a
      blind eye to some of the illegal activities that go on down at the docks
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
