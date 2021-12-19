@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Performer, Informer
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Common
     - Draconic
     - Elvish
-
 
     #
     # Factions:
@@ -335,7 +332,6 @@ npc:
     #
     - id: the_windrunners
       name: The Windrunners
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -360,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A flash of rusty scales and bright clothes darts from a dark alley across the street. "Cause a distraction!!"
+    introduction:  A flash of rusty scales and bright clothes darts from a dark alley across the street. /"Cause a distraction!!/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -371,7 +367,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Rusty red scales. Roughly 2'5". Bright orange eyes. Loose bootcut puffy pants. Loose jerkin. Dual-ribbon cloak.
+    appearance:   Rusty red scales. Roughly 2'5/". Bright orange eyes. Loose bootcut puffy pants. Loose jerkin. Dual-ribbon cloak.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -413,7 +409,7 @@ npc:
     #
     motivations: |
       Escaping a regional watch hoping to disband a crew of kobolds believed sent by a dragon to stir and steal valuables
-      
+
     #
     # Passions:
     #
@@ -422,7 +418,7 @@ npc:
     #
     passions: |
       Self-Preservation. Wealth.
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       She is lonely now that her group has disbanded
-      
+
     #
     # Secrets:
     #
@@ -440,8 +436,7 @@ npc:
     #
     secrets: | 
       Most of what she informs the authorities is lies
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,50 +461,49 @@ npc:
   #
   specialties:
     skills: 
-
     - Kobold Traits: 
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-       - Grovel, Cower & Beg: As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that
-                              can see you. Once you use this trait, you can't use it again until you finish a short or long rest.
-       - Pack Tactics: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
-       - Sunlight Sensitivity: You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.
+      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+        Grovel, Cower & Beg: As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that
+                             can see you. Once you use this trait, you can't use it again until you finish a short or long rest.
+        Pack Tactics: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
+        Sunlight Sensitivity: You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.
+      Bard Abilities:
+      - Bard Spellcasting: 
+        - Spell DC:  15 
+          Cantrips: Mage Hand, Vicious Mockery, Friends, Dancing Lights
+          1st Level: Charm Person, Dissonant Whispers, Hideous Laughter, Disguise Self  
+          2nd Level: Detect Thoughts, Magic Mouth, Zone of Truth
+          3rd Level: Dispel Magic, Tongues, Fear
+          4th Level: Charm Monster, Dimension Door, Greater Invisibility
+          5th Level: Mislead, Modify Memory
+        Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d10. Once within the next 
+                            10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+        Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+        Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+        Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+        Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+                      being Frightened or Charmed
+        Expertise: gets double proficiency bonus in
+        Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip; Sending, Scrying
+       
+      College of Whispers Abilities:
+      - Psychic Blades: you gain the ability to make your weapon attacks magically toxic to a creature's mind. When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an 
+                        additional 5d6 psychic damage to that target. You can do so only once per round on your turn.
+        Words of Terror: you learn to infuse innocent-seeming words with an insidious magic that can inspire terror. If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear into its
+                         mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in
+                         this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. If the target succeeds on its saving throw, the target has no hint that you tried to
+                         frighten it. Once you use this feature, you can’t use it again until you finish a short rest or long rest.
+        Mantle of Whispers: you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or
+                            you finish a long rest. You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy
+                            and alive. This disguise lasts for 1 hour or until you end it as a bonus action. While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual
+                            acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by
+                            drawing on its memories. Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.
+                            Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest.     
 
-    - Bard Abilities:
-       - Bard Spellcasting: Spell DC 15 
-         Cantrip: Mage Hand, Vicious Mockery, Friends, Dancing Lights
-         1st Level: Charm Person, Dissonant Whispers, Hideous Laughter, Disguise Self  
-         2nd Level: Detect Thoughts, Magic Mouth, Zone of Truth
-         3rd Level: Dispel Magic, Tongues, Fear
-         4th Level: Charm Monster, Dimension Door, Greater Invisibility
-         5th Level: Mislead, Modify Memory
-       - Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d10. Once within the next 
-                             10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
-       - Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
-       - Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
-       - Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
-       - Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
-                       being Frightened or Charmed
-       - Expertise: gets double proficiency bonus in
-       - Magical Secrets: Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip; Sending, Scrying
-       
-    - College of Whispers Abilities:
-       - Psychic Blades: you gain the ability to make your weapon attacks magically toxic to a creature's mind. When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an 
-                         additional 5d6 psychic damage to that target. You can do so only once per round on your turn.
-       - Words of Terror: you learn to infuse innocent-seeming words with an insidious magic that can inspire terror. If you speak to a humanoid alone for at least 1 minute, you can attempt to seed paranoia and fear into its
-                          mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in
-                          this way for 1 hour, until it is attacked or damaged, or until it witnesses its allies being attacked or damaged. If the target succeeds on its saving throw, the target has no hint that you tried to
-                          frighten it. Once you use this feature, you can’t use it again until you finish a short rest or long rest.
-       - Mantle of Whispers: you gain the ability to adopt a humanoid's persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or
-                             you finish a long rest. You can use the shadow as an action. When you do so, it vanishes, magically transforming into a disguise that appears on you. You now look like the dead person, but healthy
-                             and alive. This disguise lasts for 1 hour or until you end it as a bonus action. While you're in the disguise, you gain access to all information that the humanoid would freely share with a casual
-                             acquaintance. Such information includes general details on its background and personal life, but doesn't include secrets. The information is enough that you can pass yourself off as the person by
-                             drawing on its memories. Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.
-                             Once you capture a shadow with this feature, you can't capture another one with it until you finish a short or long rest.     
-       
     special-abilities:
        - Proficiencies: Performance, Stealth, Disguise Kit, History, Persuasion, Acrobatics, Deception
-       - Feats: Dual Weilder, Actor
-       
+         Feats: Dual Weilder, Actor
+
     attacks: |
       2 attacks with dagger, sling or spell attack
     combat-tactics: |
@@ -520,8 +514,7 @@ npc:
     - and bells at the same time.
     - Sling and Stones
     - 2x Daggers
-    
-    
+
   profile:
 
     #
@@ -545,7 +538,7 @@ npc:
      watch as to the location of Vys' lair. He turned the information over for a handsome reward. The Regional Watch found the band of kobolds with haste. Symmetry was a primary target with her bright clothes and distinct
      appearance. However, using the secrets found in Vys' lair, Symmetry was able to terrify the Watchman and escape. The rest of her band scattered. Symmetry has been in flight ever since and makes a good living from selling
      her secrets - via letter - to the Regional Watch; sending them on wild goose chases.
-      
+
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -556,3 +549,4 @@ npc:
     #
     personality: |
      Symmetry, not her real name, is quick, clever and talented. She is happy to be free of her dragon captor, but misses her clan and especially her group of bandits. 
+     
