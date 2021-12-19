@@ -385,7 +385,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Gimme a minute, I'll make something to fix this"; "Ain't got a chance against my chicken"; "Wanna watch me make sumthin outta notihin?"
+    expressions:
+    - "Gimme a minute, I'll make something to fix this"
+    - "Ain't got a chance against my chicken"
+    - "Wanna watch me make sumthin outta notihin?"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -462,13 +465,13 @@ npc:
   #
   specialties:
     skills:
-   - - Rock Gnome Abilities:
+    - Rock Gnome Abilities:
         - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
         - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
         - Artificers Lore: Whenever making an History check related to magic items, alchemical objects and technological devices, add twice your proficiency bonus 
         - Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
         
-   - - Artificer Abilities:
+    - Artificer Abilities:
        - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
        - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
          Cantrip: Mage Hand, Mending
@@ -478,7 +481,7 @@ npc:
        - Infusions Known: 4 -  Homunculus Servant, Replicate Magic Weapon, Mind Sharpener, Enhanced Arcane Focus      
        - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
        
-   - - Artillerist Abilities:
+    - Artillerist Abilities:
        - Tool Proficiency: Proficient in Woodcarver's Tools
        - Artillerist Spells:
          3rd Level: Shield, Thunderwave
@@ -531,33 +534,4 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Kaz is an inquisitive fellow. He likes to travel, and wander from place to place. He's always looking for new oddities and curiousities that he can dissect and learn from. He is a happy fellow and very good natured 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      Kaz is an inquisitive fellow. He likes to travel, and wander from place to place. He's always looking for new oddities and curiousities that he can dissect and learn from. He is a happy fellow and very good natured
