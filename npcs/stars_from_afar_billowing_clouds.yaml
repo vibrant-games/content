@@ -459,7 +459,9 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    Proficiencies: Alchemy, Persuasion, Athletics, Stealth, Athletics, Thieves' tools, Tinker Tools, History, Perception, Smith's tools
+    skills: N/A
+    special-abilities:
     - Tabaxi Abilities:
       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
         Feline Agility: Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again
@@ -510,9 +512,9 @@ npc:
                         The attacker takes 1d4+8 force damage. 
         Intimidate: It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
 
-    special-abilities:
-    - Proficiencies: Alchemy, Persuasion, Athletics, Stealth, Athletics, Thieves' tools, Tinker Tools, History, Perception, Smith's tools
-      Feats: N/A
+    
+        
+    Feats: N/A
 
     attacks: |
       2 attacks with claws, x-wing crossbow or clockwork daggers
