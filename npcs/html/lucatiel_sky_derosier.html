@@ -374,11 +374,11 @@
 		  			
 								<h1 >Lucatiel Sky DeRosier</h1>
 						
-								<h2>middle aged adult human <br>
+								<h2>middle aged adult Human <br>
 						
-									lawful neutral<br>
+									Lawful Neutral<br>
 						
-									Level 12 rogue </h2>
+									Level 13 Rogue Thief</h2>
 		
 						
 							
@@ -435,7 +435,7 @@
 							
 										<h4>STR</h4>
 							
-										<p>4 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+										<p>10 (<span id="strmodi"></span><span id="strmod"></span>)</p>
 						
 										
 									</span> 
@@ -468,7 +468,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>8 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+										<p>14 (<span id="wismodi"></span><span id="wismod"></span>)</p>
 						
 									</span> 
 						
@@ -476,15 +476,15 @@
 							
 										<h4>CHA</h4>
 							
-										<p>13 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+										<p>17 (<span id="chamodi"></span><span id="chamod"></span>)</p>
 						
 									</span> 
 					<script>
 											
 											
 
-											document.getElementById("strmod").innerHTML = myMod(4);
-											document.getElementById("strmodi").innerHTML = myModi(4);
+											document.getElementById("strmod").innerHTML = myMod(10);
+											document.getElementById("strmodi").innerHTML = myModi(10);
 											
 											
 						
@@ -502,13 +502,13 @@
 											document.getElementById("intmodi").innerHTML = myModi(16);
 						
 											
-											document.getElementById("wismod").innerHTML = myMod(8);
-											document.getElementById("wismodi").innerHTML = myModi(8);
+											document.getElementById("wismod").innerHTML = myMod(14);
+											document.getElementById("wismodi").innerHTML = myModi(14);
 						
 						
 											
-											document.getElementById("chamod").innerHTML = myMod(13);
-											document.getElementById("chamodi").innerHTML = myModi(13);
+											document.getElementById("chamod").innerHTML = myMod(17);
+											document.getElementById("chamodi").innerHTML = myModi(17);
 											
 											
 						
@@ -564,10 +564,7 @@
 									<p>
       								
 									
-										Sharpshooter feat<br>
-        							
-									
-										weapon mastery for longbow<br>
+										{&quot;Rogue Abilities&quot;=&gt;[{&quot;Expertise&quot;=&gt;&quot;Double proficiency bonus with Thieve&#39;s Tools and Sleight of Hand&quot;, &quot;Sneak Attack&quot;=&gt;&quot;Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater&quot;, &quot;Cunning Action&quot;=&gt;&quot;Can tak a bonus action on each turn to Hide, Disengage or Dash&quot;, &quot;Uncanny Dodge&quot;=&gt;&quot;When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage&quot;, &quot;Evasion&quot;=&gt;&quot;When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail&quot;, &quot;Reliable Talent&quot;=&gt;&quot;Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.&quot;}], &quot;Thief Abilities&quot;=&gt;[{&quot;Fast Hands&quot;=&gt;&quot;you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action&quot;, &quot;Second-Story Work&quot;=&gt;&quot;you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.&quot;, &quot;Supreme Sneak&quot;=&gt;&quot;you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn&quot;, &quot;Use Magic Device&quot;=&gt;&quot;you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of Magic Items.&quot;}]}<br>
         							
       								
 									</p>
@@ -599,7 +596,7 @@
 								<script>
 									
 									
-									document.getElementById("profMod").innerHTML = profMod(12);
+									document.getElementById("profMod").innerHTML = profMod(13);
 									
 									function profMod(modifier) {
 									
@@ -668,9 +665,11 @@
 									<h4>Languages - </h4>
 						<p>
 							Primordial
-							common
-							elvish
-							dwarvish
+							Common
+							Elvish
+							Dwarvish
+							{&quot;id&quot;=&gt;&quot;government_of_her_city&quot;, &quot;name&quot;=&gt;&quot;Government of her city&quot;}
+							{&quot;id&quot;=&gt;&quot;thieves_guild&quot;, &quot;name&quot;=&gt;&quot;Thieves guild&quot;}
 					</p>
 							
 								</span> 
@@ -680,6 +679,9 @@
 						
 									<h4>Adjectives - </h4>
 						
+									Bold, 
+									Determined, 
+									Diplomatic, 
 	
 					
 								</span> 
@@ -718,10 +720,6 @@
 								<h3>Special Equipment</h3>
 								<p>	<b></b> - <br></p>
 									
-								<p>	<b></b> - <br></p>
-									
-								<p>	<b></b> - <br></p>
-									
 								
 							
 								</span>	
@@ -729,7 +727,7 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								<p>Stays at range whenever possible, will use invisibility or stealth to remain safe if she feels threatened
+								<p>Stays at range whenever possible, will use invisibility to remain safe if she feels threatened
 </p>
 								
 							</span> 
@@ -750,18 +748,6 @@
 				
 							
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Government of her city</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Thieves guild (formerly)</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -830,7 +816,10 @@
 											<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Be careful&quot;/ &quot;What don&#39;t you understand?&quot;</i></p></li><br>
+											<li><p><i>Be careful</i></p></li><br>
+											
+											
+											<li><p><i>What don&#39;t you understand?</i></p></li><br>
 											
 											
 											
@@ -842,7 +831,7 @@
 			
 											<h3>Mannerisms</h3>
 											
-											<p>Very calm</p>
+											<p>Very calm. Slow, purposeful movements</p>
 		
 										</span> 
 		
@@ -862,7 +851,8 @@
 			
 											<h3>Passions</h3>
 											
-											<p></p>
+											<p>her home and her work
+</p>
 		
 										</span> 
 		
@@ -870,7 +860,8 @@
 			
 											<h3>Secrets</h3>
 										<br>
-											<p></p>	
+											<p>She used to be a thief
+</p>	
 		
 										</span> 
 						
@@ -898,11 +889,11 @@
 		  			
 								<h1>Lucatiel Sky DeRosier</h1>
 						
-								<h2>middle aged adult human <br>
+								<h2>middle aged adult Human <br>
 						
-									lawful neutral<br>
+									Lawful Neutral<br>
 						
-									Level 12 rogue </h2>
+									Level 13 Rogue Thief</h2>
 		
 						
 							
@@ -960,7 +951,7 @@
 							
 										<h4>STR</h4>
 							
-										<p>4 (<span id="strmodi2"></span><span id="strmod2"></span>)</p>
+										<p>10 (<span id="strmodi2"></span><span id="strmod2"></span>)</p>
 						
 										
 									</span> 
@@ -993,7 +984,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>8 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
+										<p>14 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
 									</span> 
 						
@@ -1001,15 +992,15 @@
 							
 										<h4>CHA</h4>
 							
-										<p>13 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
+										<p>17 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
 						
 									</span> 
 					<script>
 											
 											
 
-											document.getElementById("strmod2").innerHTML = myMod(4);
-											document.getElementById("strmodi2").innerHTML = myModi(4);
+											document.getElementById("strmod2").innerHTML = myMod(10);
+											document.getElementById("strmodi2").innerHTML = myModi(10);
 											
 											
 						
@@ -1027,13 +1018,13 @@
 											document.getElementById("intmodi2").innerHTML = myModi(16);
 						
 											
-											document.getElementById("wismod2").innerHTML = myMod(8);
-											document.getElementById("wismodi2").innerHTML = myModi(8);
+											document.getElementById("wismod2").innerHTML = myMod(14);
+											document.getElementById("wismodi2").innerHTML = myModi(14);
 						
 						
 											
-											document.getElementById("chamod2").innerHTML = myMod(13);
-											document.getElementById("chamodi2").innerHTML = myModi(13);
+											document.getElementById("chamod2").innerHTML = myMod(17);
+											document.getElementById("chamodi2").innerHTML = myModi(17);
 											
 											
 						
@@ -1090,8 +1081,7 @@
 									
 									<h4>Skills - </h4>
 									<p>
-									Sharpshooter feat<br>
-									weapon mastery for longbow<br>
+									{&quot;Rogue Abilities&quot;=&gt;[{&quot;Expertise&quot;=&gt;&quot;Double proficiency bonus with Thieve&#39;s Tools and Sleight of Hand&quot;, &quot;Sneak Attack&quot;=&gt;&quot;Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater&quot;, &quot;Cunning Action&quot;=&gt;&quot;Can tak a bonus action on each turn to Hide, Disengage or Dash&quot;, &quot;Uncanny Dodge&quot;=&gt;&quot;When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage&quot;, &quot;Evasion&quot;=&gt;&quot;When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail&quot;, &quot;Reliable Talent&quot;=&gt;&quot;Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.&quot;}], &quot;Thief Abilities&quot;=&gt;[{&quot;Fast Hands&quot;=&gt;&quot;you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action&quot;, &quot;Second-Story Work&quot;=&gt;&quot;you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.&quot;, &quot;Supreme Sneak&quot;=&gt;&quot;you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn&quot;, &quot;Use Magic Device&quot;=&gt;&quot;you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of Magic Items.&quot;}]}<br>
      
 									</p>
 					
@@ -1134,9 +1124,11 @@
 									<h4>Languages - </h4>
 						<p>		
 									Primordial 
-									common 
-									elvish 
-									dwarvish 
+									Common 
+									Elvish 
+									Dwarvish 
+									{&quot;id&quot;=&gt;&quot;government_of_her_city&quot;, &quot;name&quot;=&gt;&quot;Government of her city&quot;} 
+									{&quot;id&quot;=&gt;&quot;thieves_guild&quot;, &quot;name&quot;=&gt;&quot;Thieves guild&quot;} 
 					</p>
 							
 								</span> <!-- property line -->
@@ -1146,7 +1138,7 @@
 						
 									<h4>Adjectives - </h4>
 						
-									<p></p>	
+									<p>Bold, Determined, Diplomatic, </p>	
 					
 								</span> <!-- property line -->
 			
@@ -1183,10 +1175,6 @@
 								<h3>Special Equipment</h3>
 								<p>	<b></b> - <br></p>
 									
-								<p>	<b></b> - <br></p>
-									
-								<p>	<b></b> - <br></p>
-									
 								
 							
 								</span>	
@@ -1194,7 +1182,7 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								<p>Stays at range whenever possible, will use invisibility or stealth to remain safe if she feels threatened
+								<p>Stays at range whenever possible, will use invisibility to remain safe if she feels threatened
 </p>
 								
 							</span> 
@@ -1216,18 +1204,6 @@
 								
 								
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Government of her city</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Thieves guild (formerly)</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -1304,7 +1280,10 @@
 										<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Be careful&quot;/ &quot;What don&#39;t you understand?&quot;</i></p></li><br>
+											<li><p><i>Be careful</i></p></li><br>
+											
+											
+											<li><p><i>What don&#39;t you understand?</i></p></li><br>
 											
 											
 											
@@ -1322,7 +1301,7 @@
 								<h3>Mannerisms</h3>
 							
 							
-								<p>Very calm</p>
+								<p>Very calm. Slow, purposeful movements</p>
 		
 								
 							</span> 
@@ -1351,7 +1330,8 @@
 								
 								
 									
-								<p></p>
+								<p>her home and her work
+</p>
 		
 									
 							</span> 
@@ -1365,7 +1345,8 @@
 								<h3>Secrets</h3>
 									
 							<br>
-									<p></p>		
+									<p>She used to be a thief
+</p>		
 		
 										
 							</span> 
@@ -1425,7 +1406,9 @@
 	
 								<span class="property-line">	
 		
-									
+									Lucatiel is a determined diplomat who works hard to help and maintain piece in her city. She is mildly embarassed of her time as a thief and tries to keep that to herself as much as possible, but does use her the
+connections from her former way of life to help her in her work 
+
     
 								</span>
 

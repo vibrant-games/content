@@ -374,11 +374,11 @@
 		  			
 								<h1 >Tristeth Mulholland</h1>
 						
-								<h2>elderly human <br>
+								<h2>elderly Human <br>
 						
-									neutral<br>
+									Neutral<br>
 						
-									Level 2/2 rogue; cleric </h2>
+									Level 2 Cleric Grave Domain</h2>
 		
 						
 							
@@ -460,7 +460,7 @@
 							
 										<h4>INT</h4>
 							
-										<p>14 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+										<p>11 (<span id="intmodi"></span><span id="intmod"></span>)</p>
 						
 									</span> 
 						
@@ -468,7 +468,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>11 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+										<p>15 (<span id="wismodi"></span><span id="wismod"></span>)</p>
 						
 									</span> 
 						
@@ -476,7 +476,7 @@
 							
 										<h4>CHA</h4>
 							
-										<p>15 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+										<p>14 (<span id="chamodi"></span><span id="chamod"></span>)</p>
 						
 									</span> 
 					<script>
@@ -498,17 +498,17 @@
 						
 						
 						
-											document.getElementById("intmod").innerHTML = myMod(14);
-											document.getElementById("intmodi").innerHTML = myModi(14);
+											document.getElementById("intmod").innerHTML = myMod(11);
+											document.getElementById("intmodi").innerHTML = myModi(11);
 						
 											
-											document.getElementById("wismod").innerHTML = myMod(11);
-											document.getElementById("wismodi").innerHTML = myModi(11);
+											document.getElementById("wismod").innerHTML = myMod(15);
+											document.getElementById("wismodi").innerHTML = myModi(15);
 						
 						
 											
-											document.getElementById("chamod").innerHTML = myMod(15);
-											document.getElementById("chamodi").innerHTML = myModi(15);
+											document.getElementById("chamod").innerHTML = myMod(14);
+											document.getElementById("chamodi").innerHTML = myModi(14);
 											
 											
 						
@@ -564,7 +564,10 @@
 									<p>
       								
 									
-										Gravekeeping; Embalming;<br>
+										{&quot;Cleric Abilities&quot;=&gt;[{&quot;Spellcasting&quot;=&gt;&quot;Spell DC 13&quot;, &quot;Cantrips&quot;=&gt;&quot;Guidance, Decompose, Toll the Dead&quot;, &quot;1st Level&quot;=&gt;&quot;Guiding Bolt, Cure Wounds, Sanctuary&quot;}, {&quot;Channel Divinity&quot;=&gt;&quot;Turn Undead, Destroy Undead&quot;}]}<br>
+        							
+									
+										{&quot;Grave Domain Abilities&quot;=&gt;[{&quot;Spellcasting&quot;=&gt;&quot;Spell DC 13&quot;, &quot;1st Level&quot;=&gt;&quot;Bane, False Life&quot;}, {&quot;Circle of Mortality&quot;=&gt;&quot;you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die. In addition, you learn the Spare the Dying cantrip, which doesn&#39;t count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action&quot;}, {&quot;Eyes of the Grave&quot;=&gt;&quot;you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn&#39;t behind total cover and that isn&#39;t protected from divination magic. This sense doesn&#39;t tell you anything about a creature&#39;s capabilities or identity. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.&quot;}, {&quot;Channel Divinity&quot;=&gt;&quot;Path to the Grave - you can use your Channel Divinity to mark another creature’s life force for termination. As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack&#39;s damage, and then the curse ends.&quot;}]}<br>
         							
       								
 									</p>
@@ -596,7 +599,7 @@
 								<script>
 									
 									
-									document.getElementById("profMod").innerHTML = profMod(2/2);
+									document.getElementById("profMod").innerHTML = profMod(2);
 									
 									function profMod(modifier) {
 									
@@ -665,7 +668,8 @@
 									<h4>Languages - </h4>
 						<p>
 							Common
-							Dwarven
+							Dwarvish
+							{&quot;id&quot;=&gt;&quot;order_of_selune_any_good_moon_god_&quot;, &quot;name&quot;=&gt;&quot;Order of Selune [Any Good Moon God]&quot;}
 					</p>
 							
 								</span> 
@@ -675,7 +679,9 @@
 						
 									<h4>Adjectives - </h4>
 						
-									Dim, 
+									Drunk, 
+									Dim-witted, 
+									Careful, 
 	
 					
 								</span> 
@@ -699,6 +705,7 @@
 					
 								
 								<span class="ability-item"><p><b></b> - <br></p></span>
+								<span class="ability-item"><p><b></b> - <br></p></span>
 	
 									
 
@@ -712,6 +719,10 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+								<p>	<b></b> - <br></p>
+									
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -740,12 +751,6 @@
 				
 							
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Order of Selune [Any Good Moon God]</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -814,7 +819,19 @@
 											<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.</i></p></li><br>
+											<li><p><i>It is what it is</i></p></li><br>
+											
+											
+											<li><p><i>Love</i></p></li><br>
+											
+											
+											<li><p><i>Dear</i></p></li><br>
+											
+											
+											<li><p><i>Honey</i></p></li><br>
+											
+											
+											<li><p><i>Sweetie</i></p></li><br>
 											
 											
 											
@@ -856,6 +873,7 @@
 											<h3>Secrets</h3>
 										<br>
 											<p>Created the world&#39;s first Ansible, and named it, too. Tristeth has colluded with evil necromancers/warlocks to sacrifice the bodies at his gravesite to their deity.
+ 
 </p>	
 		
 										</span> 
@@ -884,11 +902,11 @@
 		  			
 								<h1>Tristeth Mulholland</h1>
 						
-								<h2>elderly human <br>
+								<h2>elderly Human <br>
 						
-									neutral<br>
+									Neutral<br>
 						
-									Level 2/2 rogue; cleric </h2>
+									Level 2 Cleric Grave Domain</h2>
 		
 						
 							
@@ -971,7 +989,7 @@
 							
 										<h4>INT</h4>
 							
-										<p>14 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
+										<p>11 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
 						
 									</span> 
 						
@@ -979,7 +997,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>11 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
+										<p>15 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
 									</span> 
 						
@@ -987,7 +1005,7 @@
 							
 										<h4>CHA</h4>
 							
-										<p>15 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
+										<p>14 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
 						
 									</span> 
 					<script>
@@ -1009,17 +1027,17 @@
 						
 						
 						
-											document.getElementById("intmod2").innerHTML = myMod(14);
-											document.getElementById("intmodi2").innerHTML = myModi(14);
+											document.getElementById("intmod2").innerHTML = myMod(11);
+											document.getElementById("intmodi2").innerHTML = myModi(11);
 						
 											
-											document.getElementById("wismod2").innerHTML = myMod(11);
-											document.getElementById("wismodi2").innerHTML = myModi(11);
+											document.getElementById("wismod2").innerHTML = myMod(15);
+											document.getElementById("wismodi2").innerHTML = myModi(15);
 						
 						
 											
-											document.getElementById("chamod2").innerHTML = myMod(15);
-											document.getElementById("chamodi2").innerHTML = myModi(15);
+											document.getElementById("chamod2").innerHTML = myMod(14);
+											document.getElementById("chamodi2").innerHTML = myModi(14);
 											
 											
 						
@@ -1076,7 +1094,8 @@
 									
 									<h4>Skills - </h4>
 									<p>
-									Gravekeeping; Embalming;<br>
+									{&quot;Cleric Abilities&quot;=&gt;[{&quot;Spellcasting&quot;=&gt;&quot;Spell DC 13&quot;, &quot;Cantrips&quot;=&gt;&quot;Guidance, Decompose, Toll the Dead&quot;, &quot;1st Level&quot;=&gt;&quot;Guiding Bolt, Cure Wounds, Sanctuary&quot;}, {&quot;Channel Divinity&quot;=&gt;&quot;Turn Undead, Destroy Undead&quot;}]}<br>
+									{&quot;Grave Domain Abilities&quot;=&gt;[{&quot;Spellcasting&quot;=&gt;&quot;Spell DC 13&quot;, &quot;1st Level&quot;=&gt;&quot;Bane, False Life&quot;}, {&quot;Circle of Mortality&quot;=&gt;&quot;you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use the highest number possible for each die. In addition, you learn the Spare the Dying cantrip, which doesn&#39;t count against the number of cleric cantrips you know. For you, it has a range of 30 feet, and you can cast it as a bonus action&quot;}, {&quot;Eyes of the Grave&quot;=&gt;&quot;you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. Until the end of your next turn, you know the location of any undead within 60 feet of you that isn&#39;t behind total cover and that isn&#39;t protected from divination magic. This sense doesn&#39;t tell you anything about a creature&#39;s capabilities or identity. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.&quot;}, {&quot;Channel Divinity&quot;=&gt;&quot;Path to the Grave - you can use your Channel Divinity to mark another creature’s life force for termination. As an action, you choose one creature you can see within 30 feet of you, cursing it until the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack&#39;s damage, and then the curse ends.&quot;}]}<br>
      
 									</p>
 					
@@ -1119,7 +1138,8 @@
 									<h4>Languages - </h4>
 						<p>		
 									Common 
-									Dwarven 
+									Dwarvish 
+									{&quot;id&quot;=&gt;&quot;order_of_selune_any_good_moon_god_&quot;, &quot;name&quot;=&gt;&quot;Order of Selune [Any Good Moon God]&quot;} 
 					</p>
 							
 								</span> <!-- property line -->
@@ -1129,7 +1149,7 @@
 						
 									<h4>Adjectives - </h4>
 						
-									<p>Dim, </p>	
+									<p>Drunk, Dim-witted, Careful, </p>	
 					
 								</span> <!-- property line -->
 			
@@ -1151,6 +1171,7 @@
 					
 								
 								<span class="ability-item"><p><b></b> - <br></p></span>
+								<span class="ability-item"><p><b></b> - <br></p></span>
 	
 									
 
@@ -1164,6 +1185,10 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+								<p>	<b></b> - <br></p>
+									
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -1193,12 +1218,6 @@
 								
 								
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Order of Selune [Any Good Moon God]</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -1275,7 +1294,19 @@
 										<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;It is what it is&quot;; &quot;Love&quot;, &quot;Dear&quot;, &quot;Honey&quot;, &quot;Sweetie&quot;.</i></p></li><br>
+											<li><p><i>It is what it is</i></p></li><br>
+											
+											
+											<li><p><i>Love</i></p></li><br>
+											
+											
+											<li><p><i>Dear</i></p></li><br>
+											
+											
+											<li><p><i>Honey</i></p></li><br>
+											
+											
+											<li><p><i>Sweetie</i></p></li><br>
 											
 											
 											
@@ -1338,6 +1369,7 @@
 									
 							<br>
 									<p>Created the world&#39;s first Ansible, and named it, too. Tristeth has colluded with evil necromancers/warlocks to sacrifice the bodies at his gravesite to their deity.
+ 
 </p>		
 		
 										
@@ -1370,7 +1402,18 @@
 								<span class="property-line bg">	
 		
 								
-									<p>Growing up as the son of a poor farmer can be hard as it is. Add alcoholism, abuse, and lecherous behaviors and you have the ingredients for an exploitative upbringing rife with imparted dysfunctional behaviors. Tristeth learned to put his focus on what he could control: whether or not small animals would live or die.</p><p>As this trope would suggest, Tristeth began with the family cat. He then began picking off birds with his slingshot. He would carefully examine these animals inside and out, learning their morphologies and organic composition. He would often bury the parts separately in what he, arbitrartily, deemed to be the "right spot".</p><p>Nobody ever really found out about his little hobby. He covered it up well by always having a variety of pets that he cared for. Eventually, Tristeth came of age where he had to choose between laboring on his father's farm or venturing out on his own to pursue a different trade. The choice wasn't hard. He hated living there, as much as he adored a few of his 7 brothers and sisters. He departed to a nearby village and volunteered for the coroner of the religious order of Selune [Any Moon or Good Goddess] and learned various respectful means of preparing bodies for burial or pyre. Because this religious Order preached the sanctity of bodies and spirits, he also began changing his overall attitude and strange hobbies. Eventually he worked his way into the position of gravekeeper for the Order and currently presides over their countryside sacred burial grounds. He and his one bastard son, abandoned by his mother, reside in the small townhouse next to the burial grounds.</p>[Optional] Tristeth is being exploited by Duergar Warlocks looking to sacrifice the bodies in the burial ground to an Evil Deity. Consequently, they have penetrated his mind and begun causing a sort of madness where Tristeth escapes to an astral realm that he calls, "the Chalk". The Warlocks essentially send his astral form to wander an endless expanse of near nothingness; only faint and fading chalk outlines of reality. In the chalk, he is faced with the spirits of those the Warlocks seek to sacrifice next. The victim convinces Tristeth to continue his supply of bodies. He then wakes, exhausted and wondering why sleep no longer provides him rest. He's begun talking to himself and exhibiting odd twitches and spasms due to exhaustion.</p>
+									Growing up as the son of a poor farmer can be hard as it is. Add alcoholism, abuse, and lecherous behaviors and you have the ingredients for an exploitative upbringing rife with imparted dysfunctional behaviors. Tristeth 
+learned to put his focus on what he could control: whether or not small animals would live or die. As this trope would suggest, Tristeth began with the family cat. He then began picking off birds with his slingshot. He 
+would carefully examine these animals inside and out, learning their morphologies and organic composition. He would often bury the parts separately in what he, arbitrartily, deemed to be the "right spot". Nobody ever really
+found out about his little hobby. He covered it up well by always having a variety of pets that he cared for. Eventually, Tristeth came of age where he had to choose between laboring on his father's farm or venturing out on
+his own to pursue a different trade. The choice wasn't hard. He hated living there, as much as he adored a few of his 7 brothers and sisters. He departed to a nearby village and volunteered for the coroner of the religious 
+order of Selune [Any Moon or Good Goddess] and learned various respectful means of preparing bodies for burial or pyre. Because this religious Order preached the sanctity of bodies and spirits, he also began changing his 
+overall attitude and strange hobbies. Eventually he worked his way into the position of gravekeeper for the Order and currently presides over their countryside sacred burial grounds. He and his one bastard son, abandoned 
+by his mother, reside in the small townhouse next to the burial grounds. Tristeth may be being exploited by Duergar Warlocks looking to sacrifice the bodies in the burial ground to an Evil Deity. Consequently, they 
+have penetrated his mind and begun causing a sort of madness where Tristeth escapes to an astral realm that he calls, "the Chalk". The Warlocks essentially send his astral form to wander an endless expanse of near 
+nothingness; only faint and fading chalk outlines of reality. In the chalk, he is faced with the spirits of those the Warlocks seek to sacrifice next. The victim convinces Tristeth to continue his supply of bodies. He then 
+wakes, exhausted and wondering why sleep no longer provides him rest. He's begun talking to himself and exhibiting odd twitches and spasms due to exhaustion.
+ 
 
 								
     
@@ -1398,7 +1441,7 @@
 	
 								<span class="property-line">	
 		
-									
+									Tristeth is a drunk and not terribly bright, but he is cautious and deliberate when it comes to his work with bodies. He&#39;s an odd duck who is much more comfortable around corpses than people.
     
 								</span>
 

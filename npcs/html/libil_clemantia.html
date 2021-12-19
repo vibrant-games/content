@@ -374,11 +374,11 @@
 		  			
 								<h1 >Libil Clemantia</h1>
 						
-								<h2>older adult half-elf <br>
+								<h2>older adult Half-Elf <br>
 						
-									neutral good<br>
+									Neutral Good<br>
 						
-									Level 5 rogue </h2>
+									Level 5 Rogue Inquisitive</h2>
 		
 						
 							
@@ -393,7 +393,7 @@
 	 				
 								<span class="top-property-line first">
 						
-									<h4>Pronouns - </h4><p>she-her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> 
 					
@@ -460,7 +460,7 @@
 							
 										<h4>INT</h4>
 							
-										<p>15 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+										<p>17 (<span id="intmodi"></span><span id="intmod"></span>)</p>
 						
 									</span> 
 						
@@ -498,8 +498,8 @@
 						
 						
 						
-											document.getElementById("intmod").innerHTML = myMod(15);
-											document.getElementById("intmodi").innerHTML = myModi(15);
+											document.getElementById("intmod").innerHTML = myMod(17);
+											document.getElementById("intmodi").innerHTML = myModi(17);
 						
 											
 											document.getElementById("wismod").innerHTML = myMod(16);
@@ -564,7 +564,7 @@
 									<p>
       								
 									
-										Persuasion; Perception; Thieves&#39; Tools; Intimidation;<br>
+										{&quot;Half-Elf Abilities&quot;=&gt;[{&quot;Fey Ancestry&quot;=&gt;&quot;Advantage on saving throws againts charm and immune to sleep magic&quot;, &quot;Darkvision&quot;=&gt;&quot;Can see 60 in dim light as though it was bright light and in darkness as if it was dim light&quot;, &quot;Mask of the Wild&quot;=&gt;&quot;Can attempt to hide even when only lightly obscured by natural phenomenon&quot;, &quot;Wood Elf Magic&quot;=&gt;&quot;Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15&quot;}], &quot;Rogue Abilities&quot;=&gt;[{&quot;Expertise&quot;=&gt;&quot;Double proficiency bonus with Thieve&#39;s Tools and Sleight of Hand&quot;, &quot;Sneak Attack&quot;=&gt;&quot;Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater&quot;, &quot;Cunning Action&quot;=&gt;&quot;Can tak a bonus action on each turn to Hide, Disengage or Dash&quot;, &quot;Uncanny Dodge&quot;=&gt;&quot;When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage&quot;}], &quot;Inquisitive Abilities&quot;=&gt;[{&quot;Ear for Deciet&quot;=&gt;&quot;you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8&quot;, &quot;Eye for Detail&quot;=&gt;&quot;you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues&quot;, &quot;Insightful Fighting&quot;=&gt;&quot;you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don&#39;t have advantage on the attack roll, but not if you have disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target&quot;}]}<br>
         							
       								
 									</p>
@@ -665,9 +665,11 @@
 									<h4>Languages - </h4>
 						<p>
 							Common
-							Elven
-							Dwarven
+							Elvish
+							Dwarvish
 							Thieves&#39; Cant
+							{&quot;id&quot;=&gt;&quot;regional_merchants_guild&quot;, &quot;name&quot;=&gt;&quot;Regional Merchants&#39; Guild&quot;, &quot;role&quot;=&gt;&quot;Guild Leader&quot;}
+							{&quot;id&quot;=&gt;&quot;thieves_guild_regional&quot;, &quot;name&quot;=&gt;&quot;Thieves&#39; Guild - Regional&quot;, &quot;role&quot;=&gt;&quot;High Journeyman&quot;}
 					</p>
 							
 								</span> 
@@ -678,6 +680,8 @@
 									<h4>Adjectives - </h4>
 						
 									Lithe, 
+									Confident, 
+									Scrutinous, 
 	
 					
 								</span> 
@@ -723,7 +727,7 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								<p>Will almost exclusively withdraw to a distance and use her longbow.
+								<p>Will almost exclusively withdraw to a distance and use her crossbow
 </p>
 								
 							</span> 
@@ -744,18 +748,6 @@
 				
 							
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Regional Merchants&#39; Guild</b><br></p>
-					
-							
-									<br><p>Role: <i>Guild Leader</i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Thieves&#39; Guild - Regional</b><br></p>
-					
-							
-									<br><p>Role: <i>High Journeyman</i><br></p></span><br>
 									
 								<br><br>
 								
@@ -803,7 +795,7 @@
 							
 										
 											
-										<p>A half-Elven woman in semi-fine clothes overlooks market booths directing the chaos. &quot;You there! Business or pleasure?&quot;</p>
+										<p>A half-Elven woman in semi-fine clothes overlooks market booths directing the chaos. /&quot;You there! Business or pleasure?/&quot;</p>
 		
 						
 										</span>
@@ -812,7 +804,7 @@
 										<span class="right-line">
 			
 											<h3>Appearance</h3>
-										<p>Strangely muscular for old age. Tabard in heraldic colors &amp;amp;  appropriate symbols of Merchants&#39; guild. Long silver hair.</p>
+										<p>Strangely muscular for old age. Tabard in heraldic colors and appropriate symbols of Merchants&#39; guild. Long silver hair.</p>
 		
 										</span>
 		
@@ -824,7 +816,13 @@
 											<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Schemers won&#39;t police &#39;emselves&quot;; &quot;Bookkeeping and accounts. That&#39;s the future.&quot;; &quot;Gotta protect against companies!&quot;</i></p></li><br>
+											<li><p><i>Schemers won&#39;t police &#39;emselves</i></p></li><br>
+											
+											
+											<li><p><i>Bookkeeping and accounts. That&#39;s the future.</i></p></li><br>
+											
+											
+											<li><p><i>Gotta protect against companies!</i></p></li><br>
 											
 											
 											
@@ -894,11 +892,11 @@
 		  			
 								<h1>Libil Clemantia</h1>
 						
-								<h2>older adult half-elf <br>
+								<h2>older adult Half-Elf <br>
 						
-									neutral good<br>
+									Neutral Good<br>
 						
-									Level 5 rogue </h2>
+									Level 5 Rogue Inquisitive</h2>
 		
 						
 							
@@ -913,7 +911,7 @@
 	 				
 								<span class="top-property-line">
 						
-									<h4>Pronouns - </h4><p>she-her</p><br>
+									<h4>Pronouns - </h4><p>she/her</p><br>
 					
 								</span> <!-- property line -->
 					
@@ -981,7 +979,7 @@
 							
 										<h4>INT</h4>
 							
-										<p>15 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
+										<p>17 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
 						
 									</span> 
 						
@@ -1019,8 +1017,8 @@
 						
 						
 						
-											document.getElementById("intmod2").innerHTML = myMod(15);
-											document.getElementById("intmodi2").innerHTML = myModi(15);
+											document.getElementById("intmod2").innerHTML = myMod(17);
+											document.getElementById("intmodi2").innerHTML = myModi(17);
 						
 											
 											document.getElementById("wismod2").innerHTML = myMod(16);
@@ -1086,7 +1084,7 @@
 									
 									<h4>Skills - </h4>
 									<p>
-									Persuasion; Perception; Thieves&#39; Tools; Intimidation;<br>
+									{&quot;Half-Elf Abilities&quot;=&gt;[{&quot;Fey Ancestry&quot;=&gt;&quot;Advantage on saving throws againts charm and immune to sleep magic&quot;, &quot;Darkvision&quot;=&gt;&quot;Can see 60 in dim light as though it was bright light and in darkness as if it was dim light&quot;, &quot;Mask of the Wild&quot;=&gt;&quot;Can attempt to hide even when only lightly obscured by natural phenomenon&quot;, &quot;Wood Elf Magic&quot;=&gt;&quot;Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15&quot;}], &quot;Rogue Abilities&quot;=&gt;[{&quot;Expertise&quot;=&gt;&quot;Double proficiency bonus with Thieve&#39;s Tools and Sleight of Hand&quot;, &quot;Sneak Attack&quot;=&gt;&quot;Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater&quot;, &quot;Cunning Action&quot;=&gt;&quot;Can tak a bonus action on each turn to Hide, Disengage or Dash&quot;, &quot;Uncanny Dodge&quot;=&gt;&quot;When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage&quot;}], &quot;Inquisitive Abilities&quot;=&gt;[{&quot;Ear for Deciet&quot;=&gt;&quot;you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8&quot;, &quot;Eye for Detail&quot;=&gt;&quot;you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues&quot;, &quot;Insightful Fighting&quot;=&gt;&quot;you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don&#39;t have advantage on the attack roll, but not if you have disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target&quot;}]}<br>
      
 									</p>
 					
@@ -1129,9 +1127,11 @@
 									<h4>Languages - </h4>
 						<p>		
 									Common 
-									Elven 
-									Dwarven 
+									Elvish 
+									Dwarvish 
 									Thieves&#39; Cant 
+									{&quot;id&quot;=&gt;&quot;regional_merchants_guild&quot;, &quot;name&quot;=&gt;&quot;Regional Merchants&#39; Guild&quot;, &quot;role&quot;=&gt;&quot;Guild Leader&quot;} 
+									{&quot;id&quot;=&gt;&quot;thieves_guild_regional&quot;, &quot;name&quot;=&gt;&quot;Thieves&#39; Guild - Regional&quot;, &quot;role&quot;=&gt;&quot;High Journeyman&quot;} 
 					</p>
 							
 								</span> <!-- property line -->
@@ -1141,7 +1141,7 @@
 						
 									<h4>Adjectives - </h4>
 						
-									<p>Lithe, </p>	
+									<p>Lithe, Confident, Scrutinous, </p>	
 					
 								</span> <!-- property line -->
 			
@@ -1185,7 +1185,7 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								<p>Will almost exclusively withdraw to a distance and use her longbow.
+								<p>Will almost exclusively withdraw to a distance and use her crossbow
 </p>
 								
 							</span> 
@@ -1207,18 +1207,6 @@
 								
 								
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Regional Merchants&#39; Guild</b><br></p>
-					
-							
-									<br><p>Role: <i>Guild Leader</i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Thieves&#39; Guild - Regional</b><br></p>
-					
-							
-									<br><p>Role: <i>High Journeyman</i><br></p></span><br>
 									
 								<br><br>
 								
@@ -1262,7 +1250,7 @@
 								
 							
 							
-							<p>A half-Elven woman in semi-fine clothes overlooks market booths directing the chaos. &quot;You there! Business or pleasure?&quot;</p><br />
+							<p>A half-Elven woman in semi-fine clothes overlooks market booths directing the chaos. /&quot;You there! Business or pleasure?/&quot;</p><br />
 		
 							</span>
 		
@@ -1274,7 +1262,7 @@
 							
 							
 								
-								<p>Strangely muscular for old age. Tabard in heraldic colors &amp;amp;  appropriate symbols of Merchants&#39; guild. Long silver hair.</p>
+								<p>Strangely muscular for old age. Tabard in heraldic colors and appropriate symbols of Merchants&#39; guild. Long silver hair.</p>
 		
 										
 							</span>
@@ -1295,7 +1283,13 @@
 										<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Schemers won&#39;t police &#39;emselves&quot;; &quot;Bookkeeping and accounts. That&#39;s the future.&quot;; &quot;Gotta protect against companies!&quot;</i></p></li><br>
+											<li><p><i>Schemers won&#39;t police &#39;emselves</i></p></li><br>
+											
+											
+											<li><p><i>Bookkeeping and accounts. That&#39;s the future.</i></p></li><br>
+											
+											
+											<li><p><i>Gotta protect against companies!</i></p></li><br>
 											
 											
 											
@@ -1390,7 +1384,15 @@
 								<span class="property-line bg">	
 		
 								
-									<p>The high elves of the Northern Expanse have remained stoic in their pursuit of peace with the surrounding Nations. This is exemplified in their various treatises. Hailing from this environment sounds near idyllic and its peoples destined for greatness in politics. Well, perhaps only half of this is true.</p><p>Over her 150 years, for sure, Libil has achieved political prominence in the regional Merchants's Guild. She has been an important figure in the negotiations between the various increasingly expanding trading companies that threatened to put a stranglehold on individual merchants. Libil established, nearly single-handedly, the regulations for these companies and the available guilds for the individual merchants on the ground.</p><p>Libil's upbringing among the purportedly peaceful High Elves should bespeak the formation of a law-abiding character. Her knowledge of their inner-workings led her astray from this destiny. Instead, Libil learned that the High Elves, out of survival or desperation, had been conducting various unethical surgical strikes against surrounding Nations; unethical because they betrayed the expectations of the treatises and were kept out of the public eye. This led Libil to pursue the art of inquisition, of unearthing the truth of a situation, and drove her in a long-standing bid as High Journeyman of the Regional Thieves' Guild. Instead of abiding by laws that seemed to only mask the horrible truths that underpin the appearance of peace, She seeks to achieve true peace and stability for 'boots on the ground' through the unionization structures that guilds bring.</p><p>She can often be found in the busiest marketplaces of large towns and cities, directing traffic, solving squabbles, and enlisting merchants to join the guild (both Merchants' and Thieves' (the latter often referenced, instead, as 'Workers' Guild', or 'Commoners' Association', or something of that ilk)).</p>
+									The high elves of the Northern Expanse have remained stoic in their pursuit of peace with the surrounding Nations. This is exemplified in their various treatises. Hailing from this environment sounds near idyllic and its
+peoples destined for greatness in politics. Well, perhaps only half of this is true. Over her 150 years, for sure, Libil has achieved political prominence in the regional Merchants's Guild. She has been an important
+figure in the negotiations between the various increasingly expanding trading companies that threatened to put a stranglehold on individual merchants. Libil established, nearly single-handedly, the regulations for these
+companies and the available guilds for the individual merchants on the ground. Libil's upbringing among the purportedly peaceful High Elves should bespeak the formation of a law-abiding character. Her knowledge of
+their inner-workings led her astray from this destiny. Instead, Libil learned that the High Elves, out of survival or desperation, had been conducting various unethical surgical strikes against surrounding Nations;
+unethical because they betrayed the expectations of the treatises and were kept out of the public eye. This led Libil to pursue the art of inquisition, of unearthing the truth of a situation, and drove her in a
+long-standing bid as High Journeyman of the Regional Thieves' Guild. Instead of abiding by laws that seemed to only mask the horrible truths that underpin the appearance of peace, She seeks to achieve true peace and
+stability for 'boots on the ground' through the unionization structures that guilds bring. She can often be found in the busiest marketplaces of large towns and cities, directing traffic, solving squabbles, and
+enlisting merchants to join the guild (both Merchants' and Thieves' (the latter often referenced, instead, as 'Workers' Guild', or 'Commoners' Association', or something of that ilk)
 
 								
     
@@ -1418,7 +1420,10 @@
 	
 								<span class="property-line">	
 		
-									
+									Libil is a champion of the common man. In oppositrion to her upbringing among the High Elves, she has a strong aversion to authority figures and believes strongly in the need for and power of unions in controlling the
+exploitation of commoners by nobility and corporations. She is fierce and smart and cool under pressure. She always knows everything thats going on around her and isn&#39;t afraid to direct traffic or give orders when
+necessary
+
     
 								</span>
 

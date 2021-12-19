@@ -374,11 +374,11 @@
 		  			
 								<h1 >The Pennymore Con</h1>
 						
-								<h2>middle-aged wood elf <br>
+								<h2>middle aged adult Elf <br>
 						
-									chaotic evil<br>
+									Chaotic Evil<br>
 						
-									Level 10 rogue </h2>
+									Level 10 Rogue Thief</h2>
 		
 						
 							
@@ -417,7 +417,7 @@
 					
 								<span class="top-property-line">
 						
-									<h4>Speed - </h4><p>30.</p>
+									<h4>Speed - </h4><p>35.</p>
 			
 								</span> 
 					
@@ -444,7 +444,7 @@
 							
 										<h4>DEX</h4>
 							
-										<p>15 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+										<p>18 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
 						
 									</span> 
 						
@@ -468,7 +468,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>12 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+										<p>17 (<span id="wismodi"></span><span id="wismod"></span>)</p>
 						
 									</span> 
 						
@@ -488,8 +488,8 @@
 											
 											
 						
-											document.getElementById("dexmod").innerHTML = myMod(15);
-											document.getElementById("dexmodi").innerHTML = myModi(15);
+											document.getElementById("dexmod").innerHTML = myMod(18);
+											document.getElementById("dexmodi").innerHTML = myModi(18);
 						
 						
 											
@@ -502,8 +502,8 @@
 											document.getElementById("intmodi").innerHTML = myModi(12);
 						
 											
-											document.getElementById("wismod").innerHTML = myMod(12);
-											document.getElementById("wismodi").innerHTML = myModi(12);
+											document.getElementById("wismod").innerHTML = myMod(17);
+											document.getElementById("wismodi").innerHTML = myModi(17);
 						
 						
 											
@@ -564,7 +564,13 @@
 									<p>
       								
 									
-										Persuasion; Stealth; Perception; Acrobatics; Athletics; Intimidation; Deception<br>
+										{&quot;Elf Abilities&quot;=&gt;[{&quot;Fey Ancestry&quot;=&gt;&quot;Advantage on saving throws againts charm and immune to sleep magic&quot;}, {&quot;Darkvision&quot;=&gt;&quot;Can see 60 in dim light as though it was bright light and in darkness as if it was dim light&quot;}, {&quot;Keen Senses&quot;=&gt;&quot;You have proficiency in the Perception skill&quot;}, {&quot;Trance&quot;=&gt;&quot;Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep&quot;}, {&quot;Elf Weapon Training&quot;=&gt;&quot;You have proficiency with the longsword, shortsword, shortbow, and longbow.&quot;}, {&quot;Fleet of Foot&quot;=&gt;&quot;Your base walking speed increases to 35 feet.&quot;}, {&quot;Mask of the Wild&quot;=&gt;&quot;You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena&quot;}]}<br>
+        							
+									
+										{&quot;Rogue Abilities&quot;=&gt;[{&quot;Expertise&quot;=&gt;&quot;Double proficiency bonus with Thieve&#39;s Tools and Sleight of Hand&quot;}, {&quot;Sneak Attack&quot;=&gt;&quot;Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater&quot;}, {&quot;Cunning Action&quot;=&gt;&quot;Can tak a bonus action on each turn to Hide, Disengage or Dash&quot;}, {&quot;Uncanny Dodge&quot;=&gt;&quot;When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage&quot;}, {&quot;Evasion&quot;=&gt;&quot;When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail&quot;}]}<br>
+        							
+									
+										{&quot;Thief Abilities&quot;=&gt;[{&quot;Fast Hands&quot;=&gt;&quot;you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.&quot;}, {&quot;Second-Story Work&quot;=&gt;&quot;you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.&quot;}, {&quot;Supreme Sneak&quot;=&gt;&quot;you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.&quot;}]}<br>
         							
       								
 									</p>
@@ -668,6 +674,7 @@
 							Elvish
 							Halfling
 							Gnomish
+							{&quot;id&quot;=&gt;&quot;the_lost_reclusive_abbots_of_iremore&quot;, &quot;name&quot;=&gt;&quot;The Lost Reclusive Abbots of Iremore&quot;, &quot;role&quot;=&gt;&quot;Marshall Abbot&quot;}
 					</p>
 							
 								</span> 
@@ -678,6 +685,8 @@
 									<h4>Adjectives - </h4>
 						
 									Opaque, 
+									Sneaky, 
+									Elusive, 
 	
 					
 								</span> 
@@ -701,6 +710,7 @@
 					
 								
 								<span class="ability-item"><p><b></b> - <br></p></span>
+								<span class="ability-item"><p><b></b> - <br></p></span>
 	
 									
 
@@ -716,6 +726,8 @@
 								<h3>Special Equipment</h3>
 								<p>	<b></b> - <br></p>
 									
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -723,7 +735,7 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								<p>The Con will engage in combat with a smile, first using his acrobatics to parour and disorient unsuspecting combatants.
+								<p>The Con will engage in combat with a smile, first using his acrobatics to parkour and disorient unsuspecting combatants.
 </p>
 								
 							</span> 
@@ -812,7 +824,13 @@
 											<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Can never make a truly fair trade - so might as well go with the flow&quot;; &quot;The things we do, the things we do...why do we do the things we do?&quot;; &quot;I once bought a large slice of land from a tribe of hobgoblins and sold it to an enemy tribe just to watch the party&quot;;</i></p></li><br>
+											<li><p><i>Can never make a truly fair trade - so might as well go with the flow</i></p></li><br>
+											
+											
+											<li><p><i>The things we do, the things we do...why do we do the things we do?</i></p></li><br>
+											
+											
+											<li><p><i>I once bought a large slice of land from a tribe of hobgoblins and sold it to an enemy tribe just to watch the party</i></p></li><br>
 											
 											
 											
@@ -854,6 +872,7 @@
 											<h3>Secrets</h3>
 										<br>
 											<p>The &quot;Pennymore Con&quot; is in search of a magic stone with sigils carved into it. It passed through his fencing shop and in the process captured an aspect of his soul. He doesn&#39;t know what it does but he knows it will bring him riches at the expense of others so he never says anything, but instead dreams of it night and day.
+ 
 </p>	
 		
 										</span> 
@@ -882,11 +901,11 @@
 		  			
 								<h1>The Pennymore Con</h1>
 						
-								<h2>middle-aged wood elf <br>
+								<h2>middle aged adult Elf <br>
 						
-									chaotic evil<br>
+									Chaotic Evil<br>
 						
-									Level 10 rogue </h2>
+									Level 10 Rogue Thief</h2>
 		
 						
 							
@@ -925,7 +944,7 @@
 					
 								<span class="top-property-line">
 						
-									<h4>Speed - </h4><p>30.</p>
+									<h4>Speed - </h4><p>35.</p>
 			
 								</span> 
 					
@@ -953,7 +972,7 @@
 							
 										<h4>DEX</h4>
 							
-										<p>15 (<span id="dexmodi2"></span><span id="dexmod2"></span>)</p>
+										<p>18 (<span id="dexmodi2"></span><span id="dexmod2"></span>)</p>
 						
 									</span> 
 						
@@ -977,7 +996,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>12 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
+										<p>17 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
 									</span> 
 						
@@ -997,8 +1016,8 @@
 											
 											
 						
-											document.getElementById("dexmod2").innerHTML = myMod(15);
-											document.getElementById("dexmodi2").innerHTML = myModi(15);
+											document.getElementById("dexmod2").innerHTML = myMod(18);
+											document.getElementById("dexmodi2").innerHTML = myModi(18);
 						
 						
 											
@@ -1011,8 +1030,8 @@
 											document.getElementById("intmodi2").innerHTML = myModi(12);
 						
 											
-											document.getElementById("wismod2").innerHTML = myMod(12);
-											document.getElementById("wismodi2").innerHTML = myModi(12);
+											document.getElementById("wismod2").innerHTML = myMod(17);
+											document.getElementById("wismodi2").innerHTML = myModi(17);
 						
 						
 											
@@ -1074,7 +1093,9 @@
 									
 									<h4>Skills - </h4>
 									<p>
-									Persuasion; Stealth; Perception; Acrobatics; Athletics; Intimidation; Deception<br>
+									{&quot;Elf Abilities&quot;=&gt;[{&quot;Fey Ancestry&quot;=&gt;&quot;Advantage on saving throws againts charm and immune to sleep magic&quot;}, {&quot;Darkvision&quot;=&gt;&quot;Can see 60 in dim light as though it was bright light and in darkness as if it was dim light&quot;}, {&quot;Keen Senses&quot;=&gt;&quot;You have proficiency in the Perception skill&quot;}, {&quot;Trance&quot;=&gt;&quot;Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep&quot;}, {&quot;Elf Weapon Training&quot;=&gt;&quot;You have proficiency with the longsword, shortsword, shortbow, and longbow.&quot;}, {&quot;Fleet of Foot&quot;=&gt;&quot;Your base walking speed increases to 35 feet.&quot;}, {&quot;Mask of the Wild&quot;=&gt;&quot;You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena&quot;}]}<br>
+									{&quot;Rogue Abilities&quot;=&gt;[{&quot;Expertise&quot;=&gt;&quot;Double proficiency bonus with Thieve&#39;s Tools and Sleight of Hand&quot;}, {&quot;Sneak Attack&quot;=&gt;&quot;Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater&quot;}, {&quot;Cunning Action&quot;=&gt;&quot;Can tak a bonus action on each turn to Hide, Disengage or Dash&quot;}, {&quot;Uncanny Dodge&quot;=&gt;&quot;When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage&quot;}, {&quot;Evasion&quot;=&gt;&quot;When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail&quot;}]}<br>
+									{&quot;Thief Abilities&quot;=&gt;[{&quot;Fast Hands&quot;=&gt;&quot;you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.&quot;}, {&quot;Second-Story Work&quot;=&gt;&quot;you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.&quot;}, {&quot;Supreme Sneak&quot;=&gt;&quot;you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.&quot;}]}<br>
      
 									</p>
 					
@@ -1120,6 +1141,7 @@
 									Elvish 
 									Halfling 
 									Gnomish 
+									{&quot;id&quot;=&gt;&quot;the_lost_reclusive_abbots_of_iremore&quot;, &quot;name&quot;=&gt;&quot;The Lost Reclusive Abbots of Iremore&quot;, &quot;role&quot;=&gt;&quot;Marshall Abbot&quot;} 
 					</p>
 							
 								</span> <!-- property line -->
@@ -1129,7 +1151,7 @@
 						
 									<h4>Adjectives - </h4>
 						
-									<p>Opaque, </p>	
+									<p>Opaque, Sneaky, Elusive, </p>	
 					
 								</span> <!-- property line -->
 			
@@ -1151,6 +1173,7 @@
 					
 								
 								<span class="ability-item"><p><b></b> - <br></p></span>
+								<span class="ability-item"><p><b></b> - <br></p></span>
 	
 									
 
@@ -1166,6 +1189,8 @@
 								<h3>Special Equipment</h3>
 								<p>	<b></b> - <br></p>
 									
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -1173,7 +1198,7 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
-								<p>The Con will engage in combat with a smile, first using his acrobatics to parour and disorient unsuspecting combatants.
+								<p>The Con will engage in combat with a smile, first using his acrobatics to parkour and disorient unsuspecting combatants.
 </p>
 								
 							</span> 
@@ -1271,7 +1296,13 @@
 										<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Can never make a truly fair trade - so might as well go with the flow&quot;; &quot;The things we do, the things we do...why do we do the things we do?&quot;; &quot;I once bought a large slice of land from a tribe of hobgoblins and sold it to an enemy tribe just to watch the party&quot;;</i></p></li><br>
+											<li><p><i>Can never make a truly fair trade - so might as well go with the flow</i></p></li><br>
+											
+											
+											<li><p><i>The things we do, the things we do...why do we do the things we do?</i></p></li><br>
+											
+											
+											<li><p><i>I once bought a large slice of land from a tribe of hobgoblins and sold it to an enemy tribe just to watch the party</i></p></li><br>
 											
 											
 											
@@ -1334,6 +1365,7 @@
 									
 							<br>
 									<p>The &quot;Pennymore Con&quot; is in search of a magic stone with sigils carved into it. It passed through his fencing shop and in the process captured an aspect of his soul. He doesn&#39;t know what it does but he knows it will bring him riches at the expense of others so he never says anything, but instead dreams of it night and day.
+ 
 </p>		
 		
 										
@@ -1366,7 +1398,13 @@
 								<span class="property-line bg">	
 		
 								
-									<p>As is well known across the Realms, Elves live a very long time. During these extensive life-spans, they are susceptible to major life changes, whether in vocation, direction, location, or what-have-you. Nobody knows where the Con hails from, they only know that he is a Sylvan Elf because of his gaunt, lanky, and gruff appearance, ruddy skin and hair, and his bright silverish eyes. Nobody is sure what life trajectory brought the Pennymore Con to where he is today. The few things that are known about him could be myth.</p><p>The Con is blamed across the Realm for various high-level robberies and for starting various skirmishes between nations by offering a contract on an important local Duke in exchange for a long-sought after item that had been fenced to him. Constantly seeking business with members of every eschelon of a city or town, the Con is open about his business dealings but opaque as to his motivations. Consequently, although suspected of high crimes, none have been proven and the Con is allowed free movement. In fact, his movement is likely advocated among higher magistrates because of the goods and services they've obtained from him through less-than-legal means.</p>
+									As is well known across the Realms, Elves live a very long time. During these extensive life-spans, they are susceptible to major life changes, whether in vocation, direction, location, or what-have-you. Nobody knows where
+the Con hails from, they only know that he is a Sylvan Elf because of his gaunt, lanky, and gruff appearance, ruddy skin and hair, and his bright silverish eyes. Nobody is sure what life trajectory brought the Pennymore Con
+to where he is today. The few things that are known about him could be myth. The Con is blamed across the Realm for various high-level robberies and for starting various skirmishes between nations by offering a contract on
+an important local Duke in exchange for a long-sought after item that had been fenced to him. Constantly seeking business with members of every eschelon of a city or town, the Con is open about his business dealings but
+opaque as to his motivations. Consequently, although suspected of high crimes, none have been proven and the Con is allowed free movement. In fact, his movement is likely advocated among higher magistrates because of the
+goods and services they've obtained from him through less-than-legal means.
+ 
 
 								
     
@@ -1394,7 +1432,8 @@
 	
 								<span class="property-line">	
 		
-									
+									The Con is a shifty fellow. Cautious and brazen at the same time, he carries out his business out in the open but keeps his motives to himself. The Con&#39;s reputation is almost entirely based on myth as nobody has actually 
+spent enough time with him or knows him well enough for it to be anything else. He keeps himself to himself and keeps everybody else at arms reach.
     
 								</span>
 

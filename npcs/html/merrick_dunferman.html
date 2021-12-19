@@ -374,11 +374,11 @@
 		  			
 								<h1 >Merrick Dunferman</h1>
 						
-								<h2>middle aged adult halfling <br>
+								<h2>middle aged adult Halfling <br>
 						
-									lawful good<br>
+									Lawful Good<br>
 						
-									Level  civilian / commoner </h2>
+									Level 0 Civilian N/A</h2>
 		
 						
 							
@@ -411,7 +411,7 @@
 					
 								<span class="top-property-line">
 						
-									<h4>Hit Points - </h4>	<p>46 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>26 (TODO Hitdice)</p><br>
 					
 								</span> 
 					
@@ -468,7 +468,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>14 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+										<p>10 (<span id="wismodi"></span><span id="wismod"></span>)</p>
 						
 									</span> 
 						
@@ -476,7 +476,7 @@
 							
 										<h4>CHA</h4>
 							
-										<p>12 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+										<p>9 (<span id="chamodi"></span><span id="chamod"></span>)</p>
 						
 									</span> 
 					<script>
@@ -502,13 +502,13 @@
 											document.getElementById("intmodi").innerHTML = myModi(13);
 						
 											
-											document.getElementById("wismod").innerHTML = myMod(14);
-											document.getElementById("wismodi").innerHTML = myModi(14);
+											document.getElementById("wismod").innerHTML = myMod(10);
+											document.getElementById("wismodi").innerHTML = myModi(10);
 						
 						
 											
-											document.getElementById("chamod").innerHTML = myMod(12);
-											document.getElementById("chamodi").innerHTML = myModi(12);
+											document.getElementById("chamod").innerHTML = myMod(9);
+											document.getElementById("chamodi").innerHTML = myModi(9);
 											
 											
 						
@@ -564,7 +564,7 @@
 									<p>
       								
 									
-										Proficiency with leather working tools<br>
+										{&quot;Halfling Abilities&quot;=&gt;[{&quot;Lucky&quot;=&gt;&quot;When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll&quot;, &quot;Brave&quot;=&gt;&quot;Has advantage on Saving Throws against being Frightened&quot;, &quot;Halfling Nimbleness&quot;=&gt;&quot;can move through the space of any creature that is of a size larger than her&quot;, &quot;Stout Resilience&quot;=&gt;&quot;You have advantage on saving throws against poison, and you have resistance to poison damage&quot;}]}<br>
         							
       								
 									</p>
@@ -596,7 +596,7 @@
 								<script>
 									
 									
-									document.getElementById("profMod").innerHTML = profMod();
+									document.getElementById("profMod").innerHTML = profMod(0);
 									
 									function profMod(modifier) {
 									
@@ -666,6 +666,9 @@
 						<p>
 							Common
 							Halfling
+							{&quot;id&quot;=&gt;&quot;chamber_of_commerce&quot;, &quot;name&quot;=&gt;&quot;Chamber of Commerce&quot;}
+							{&quot;id&quot;=&gt;&quot;adventurer_s_guild&quot;, &quot;name&quot;=&gt;&quot;Adventurer&#39;s Guild&quot;}
+							{&quot;id&quot;=&gt;&quot;trading_companies&quot;, &quot;name&quot;=&gt;&quot;Trading Companies&quot;}
 					</p>
 							
 								</span> 
@@ -675,6 +678,9 @@
 						
 									<h4>Adjectives - </h4>
 						
+									Talented, 
+									Prideful, 
+									Competative, 
 	
 					
 								</span> 
@@ -698,6 +704,7 @@
 					
 								
 								<span class="ability-item"><p><b></b> - <br></p></span>
+								<span class="ability-item"><p><b></b> - <br></p></span>
 	
 									
 
@@ -713,6 +720,10 @@
 								<h3>Special Equipment</h3>
 								<p>	<b></b> - <br></p>
 									
+								<p>	<b></b> - <br></p>
+									
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -720,6 +731,9 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>He&#39;s not a fighter but will fight if required
+</p>
+								
 							</span> 
 			
 				
@@ -727,6 +741,8 @@
 					
 								<h3>Actions</h3>
 					
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -736,24 +752,6 @@
 				
 							
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Chamber of Commerce</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Adventurer&#39;s Guild</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Trading Companies</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -801,7 +799,7 @@
 							
 										
 											
-										<p>A Smiling Halfling, dirty and stained greets you at the counter of the tanner&#39;s stall, &quot;finest leatherwork you&#39;ll find!&quot;</p>
+										<p>A Smiling Halfling, dirty and stained greets you at the counter of the tanner&#39;s stall, /&quot;finest leatherwork you&#39;ll find!/&quot;</p>
 		
 						
 										</span>
@@ -822,7 +820,7 @@
 											<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Don&#39;t low-ball me, just look at the quality of this filigree! It&#39;s not my first day out of the woods&quot;</i></p></li><br>
+											<li><p><i>Don&#39;t low-ball me, just look at the quality of this filigree! It&#39;s not my first day out of the woods</i></p></li><br>
 											
 											
 											
@@ -892,11 +890,11 @@
 		  			
 								<h1>Merrick Dunferman</h1>
 						
-								<h2>middle aged adult halfling <br>
+								<h2>middle aged adult Halfling <br>
 						
-									lawful good<br>
+									Lawful Good<br>
 						
-									Level  civilian / commoner </h2>
+									Level 0 Civilian N/A</h2>
 		
 						
 							
@@ -929,7 +927,7 @@
 					
 								<span class="top-property-line">
 						
-									<h4>Hit Points - </h4>	<p>46 (TODO Hitdice)</p><br>
+									<h4>Hit Points - </h4>	<p>26 (TODO Hitdice)</p><br>
 					
 								</span> <!-- property line -->
 					
@@ -987,7 +985,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>14 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
+										<p>10 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
 									</span> 
 						
@@ -995,7 +993,7 @@
 							
 										<h4>CHA</h4>
 							
-										<p>12 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
+										<p>9 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
 						
 									</span> 
 					<script>
@@ -1021,13 +1019,13 @@
 											document.getElementById("intmodi2").innerHTML = myModi(13);
 						
 											
-											document.getElementById("wismod2").innerHTML = myMod(14);
-											document.getElementById("wismodi2").innerHTML = myModi(14);
+											document.getElementById("wismod2").innerHTML = myMod(10);
+											document.getElementById("wismodi2").innerHTML = myModi(10);
 						
 						
 											
-											document.getElementById("chamod2").innerHTML = myMod(12);
-											document.getElementById("chamodi2").innerHTML = myModi(12);
+											document.getElementById("chamod2").innerHTML = myMod(9);
+											document.getElementById("chamodi2").innerHTML = myModi(9);
 											
 											
 						
@@ -1084,7 +1082,7 @@
 									
 									<h4>Skills - </h4>
 									<p>
-									Proficiency with leather working tools<br>
+									{&quot;Halfling Abilities&quot;=&gt;[{&quot;Lucky&quot;=&gt;&quot;When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll&quot;, &quot;Brave&quot;=&gt;&quot;Has advantage on Saving Throws against being Frightened&quot;, &quot;Halfling Nimbleness&quot;=&gt;&quot;can move through the space of any creature that is of a size larger than her&quot;, &quot;Stout Resilience&quot;=&gt;&quot;You have advantage on saving throws against poison, and you have resistance to poison damage&quot;}]}<br>
      
 									</p>
 					
@@ -1128,6 +1126,9 @@
 						<p>		
 									Common 
 									Halfling 
+									{&quot;id&quot;=&gt;&quot;chamber_of_commerce&quot;, &quot;name&quot;=&gt;&quot;Chamber of Commerce&quot;} 
+									{&quot;id&quot;=&gt;&quot;adventurer_s_guild&quot;, &quot;name&quot;=&gt;&quot;Adventurer&#39;s Guild&quot;} 
+									{&quot;id&quot;=&gt;&quot;trading_companies&quot;, &quot;name&quot;=&gt;&quot;Trading Companies&quot;} 
 					</p>
 							
 								</span> <!-- property line -->
@@ -1137,7 +1138,7 @@
 						
 									<h4>Adjectives - </h4>
 						
-									<p></p>	
+									<p>Talented, Prideful, Competative, </p>	
 					
 								</span> <!-- property line -->
 			
@@ -1159,6 +1160,7 @@
 					
 								
 								<span class="ability-item"><p><b></b> - <br></p></span>
+								<span class="ability-item"><p><b></b> - <br></p></span>
 	
 									
 
@@ -1174,6 +1176,10 @@
 								<h3>Special Equipment</h3>
 								<p>	<b></b> - <br></p>
 									
+								<p>	<b></b> - <br></p>
+									
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -1181,6 +1187,9 @@
 							<span class="property-line">
 					
 								<h3>Combat Tactics</h3>
+								<p>He&#39;s not a fighter but will fight if required
+</p>
+								
 							</span> 
 			
 				
@@ -1188,6 +1197,8 @@
 					
 								<h3>Actions</h3>
 					
+								<p><b></b> - 
+								<br></p>
 								<br>
 				
 							</span>
@@ -1198,24 +1209,6 @@
 								
 								
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>Chamber of Commerce</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Adventurer&#39;s Guild</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Trading Companies</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -1259,7 +1252,7 @@
 								
 							
 							
-							<p>A Smiling Halfling, dirty and stained greets you at the counter of the tanner&#39;s stall, &quot;finest leatherwork you&#39;ll find!&quot;</p><br />
+							<p>A Smiling Halfling, dirty and stained greets you at the counter of the tanner&#39;s stall, /&quot;finest leatherwork you&#39;ll find!/&quot;</p><br />
 		
 							</span>
 		
@@ -1292,7 +1285,7 @@
 										<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Don&#39;t low-ball me, just look at the quality of this filigree! It&#39;s not my first day out of the woods&quot;</i></p></li><br>
+											<li><p><i>Don&#39;t low-ball me, just look at the quality of this filigree! It&#39;s not my first day out of the woods</i></p></li><br>
 											
 											
 											
@@ -1387,7 +1380,9 @@
 								<span class="property-line bg">	
 		
 								
-									Merrick comes from a long line of tanners and leather workers. The skills have been passed down through generations of his family along with the leather working magic his great great grandfather developed.  He works hard and loves his work. He takes great pride in the quality and beauty of his work. He lovingly trains his twin boys in the family trade. Not only is he an immaculate craftsman, he is also a shrewd businessman. He knows the quality of his work and will not be swayed on his prices. His prices aren't unreasonable, but they are definitely not on the cheaper end
+									Merrick comes from a long line of tanners and leather workers. The skills have been passed down through generations of his family along with the leather working magic his great great grandfather developed.  He works hard
+and loves his work. He takes great pride in the quality and beauty of his work. He lovingly trains his twin boys in the family trade. Not only is he an immaculate craftsman, he is also a shrewd businessman. He knows the
+quality of his work and will not be swayed on his prices. His prices aren't unreasonable, but they are definitely not on the cheaper end
 
 								
     
@@ -1415,7 +1410,9 @@
 	
 								<span class="property-line">	
 		
-									
+									Merrick is a skilled man who takes pride in his work. He loves leatherworking and is very proud of his skill and proud to be passing along that skill to his children. He knows his worth and the worth of his work and is
+not easy to negotiate with. But he is also a reaonable man and wont overcharge for his work.
+
     
 								</span>
 

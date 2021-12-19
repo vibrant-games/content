@@ -374,11 +374,11 @@
 		  			
 								<h1 >Slizz&#39;nek</h1>
 						
-								<h2>middle aged adult other (you will be asked to specify) <br>
+								<h2>middle aged adult Lizardfolk <br>
 						
-									chaotic neutral<br>
+									Chaotic Neutral<br>
 						
-									Level  civilian / commoner </h2>
+									Level 0 Civilian N/A</h2>
 		
 						
 							
@@ -399,7 +399,7 @@
 					
 								<span class="top-property-line">		
 						
-									<h4>Occupations - </h4><p>Dockworker</p><br>
+									<h4>Occupations - </h4><p>Dock Worker</p><br>
 					
 								</span> 
 					
@@ -468,7 +468,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>14 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+										<p>8 (<span id="wismodi"></span><span id="wismod"></span>)</p>
 						
 									</span> 
 						
@@ -476,7 +476,7 @@
 							
 										<h4>CHA</h4>
 							
-										<p>8 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+										<p>14 (<span id="chamodi"></span><span id="chamod"></span>)</p>
 						
 									</span> 
 					<script>
@@ -502,13 +502,13 @@
 											document.getElementById("intmodi").innerHTML = myModi(9);
 						
 											
-											document.getElementById("wismod").innerHTML = myMod(14);
-											document.getElementById("wismodi").innerHTML = myModi(14);
+											document.getElementById("wismod").innerHTML = myMod(8);
+											document.getElementById("wismodi").innerHTML = myModi(8);
 						
 						
 											
-											document.getElementById("chamod").innerHTML = myMod(8);
-											document.getElementById("chamodi").innerHTML = myModi(8);
+											document.getElementById("chamod").innerHTML = myMod(14);
+											document.getElementById("chamodi").innerHTML = myModi(14);
 											
 											
 						
@@ -562,6 +562,11 @@
 					
 									<h4>Skills - </h4>
 									<p>
+      								
+									
+										{&quot;Lizardfolk Abilities&quot;=&gt;[{&quot;Bite&quot;=&gt;&quot;Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.&quot;, &quot;Cunning Artisan&quot;=&gt;&quot;As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items - a shield, a club, a javelin, or 1d4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan&#39;s tools, such as leatherworker&#39;s tools.&quot;, &quot;Hold Breath&quot;=&gt;&quot;You can hold your breath for up to 15 minutes at a time.&quot;, &quot;Hunters Lore&quot;=&gt;&quot;You gain proficiency with two of the following skills of your choice - Animal Handling, Nature, Perception, Stealth, and Survival.&quot;, &quot;Natural Armor&quot;=&gt;&quot;You have tough, scaly skin. When you aren&#39;t wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield&#39;s benefits apply as normal while you use your natural armor.&quot;, &quot;Hungry Jaws&quot;=&gt;&quot;In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points (minimum of 1) equal to your Constitution modifier, and you can&#39;t use this trait again until you finish a short or long rest.&quot;}]}<br>
+        							
+      								
 									</p>
      
       
@@ -591,7 +596,7 @@
 								<script>
 									
 									
-									document.getElementById("profMod").innerHTML = profMod();
+									document.getElementById("profMod").innerHTML = profMod(0);
 									
 									function profMod(modifier) {
 									
@@ -662,6 +667,8 @@
 							Common
 							Draconic
 							Aquan
+							{&quot;id&quot;=&gt;&quot;his_tribe&quot;, &quot;name&quot;=&gt;&quot;His Tribe&quot;}
+							{&quot;id&quot;=&gt;&quot;thieve_s_guild&quot;, &quot;name&quot;=&gt;&quot;Thieve&#39;s Guil&quot;}
 					</p>
 							
 								</span> 
@@ -671,6 +678,9 @@
 						
 									<h4>Adjectives - </h4>
 						
+									Dull-Witted, 
+									Hard-Working, 
+									Unpleasant, 
 	
 					
 								</span> 
@@ -707,6 +717,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -735,18 +747,6 @@
 				
 							
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>His Tribe</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Thieve&#39;s Guild</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -794,7 +794,7 @@
 							
 										
 											
-										<p>A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. &quot;Outta da way, softskin!&quot;</p>
+										<p>A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. /&quot;Outta da way, softskin!/&quot;</p>
 		
 						
 										</span>
@@ -815,7 +815,10 @@
 											<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Y&#39;all softskins don&#39;t know how to live&quot;, &quot;Gotta get my work done, it&#39;s almost time to eat&quot;</i></p></li><br>
+											<li><p><i>Y&#39;all softskins don&#39;t know how to live</i></p></li><br>
+											
+											
+											<li><p><i>Gotta get my work done, it&#39;s almost time to eat</i></p></li><br>
 											
 											
 											
@@ -885,11 +888,11 @@
 		  			
 								<h1>Slizz&#39;nek</h1>
 						
-								<h2>middle aged adult other (you will be asked to specify) <br>
+								<h2>middle aged adult Lizardfolk <br>
 						
-									chaotic neutral<br>
+									Chaotic Neutral<br>
 						
-									Level  civilian / commoner </h2>
+									Level 0 Civilian N/A</h2>
 		
 						
 							
@@ -910,7 +913,7 @@
 					
 								<span class="top-property-line">		
 						
-									<h4>Occupations - </h4><p>Dockworker</p><br>
+									<h4>Occupations - </h4><p>Dock Worker</p><br>
 					
 								</span> <!-- property line -->
 					
@@ -980,7 +983,7 @@
 							
 										<h4>WIS</h4>
 							
-										<p>14 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
+										<p>8 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
 						
 									</span> 
 						
@@ -988,7 +991,7 @@
 							
 										<h4>CHA</h4>
 							
-										<p>8 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
+										<p>14 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
 						
 									</span> 
 					<script>
@@ -1014,13 +1017,13 @@
 											document.getElementById("intmodi2").innerHTML = myModi(9);
 						
 											
-											document.getElementById("wismod2").innerHTML = myMod(14);
-											document.getElementById("wismodi2").innerHTML = myModi(14);
+											document.getElementById("wismod2").innerHTML = myMod(8);
+											document.getElementById("wismodi2").innerHTML = myModi(8);
 						
 						
 											
-											document.getElementById("chamod2").innerHTML = myMod(8);
-											document.getElementById("chamodi2").innerHTML = myModi(8);
+											document.getElementById("chamod2").innerHTML = myMod(14);
+											document.getElementById("chamodi2").innerHTML = myModi(14);
 											
 											
 						
@@ -1077,6 +1080,7 @@
 									
 									<h4>Skills - </h4>
 									<p>
+									{&quot;Lizardfolk Abilities&quot;=&gt;[{&quot;Bite&quot;=&gt;&quot;Your fanged maw is a natural weapon, which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.&quot;, &quot;Cunning Artisan&quot;=&gt;&quot;As part of a short rest, you can harvest bone and hide from a slain beast, construct, dragon, monstrosity, or plant creature of size Small or larger to create one of the following items - a shield, a club, a javelin, or 1d4 darts or blowgun needles. To use this trait, you need a blade, such as a dagger, or appropriate artisan&#39;s tools, such as leatherworker&#39;s tools.&quot;, &quot;Hold Breath&quot;=&gt;&quot;You can hold your breath for up to 15 minutes at a time.&quot;, &quot;Hunters Lore&quot;=&gt;&quot;You gain proficiency with two of the following skills of your choice - Animal Handling, Nature, Perception, Stealth, and Survival.&quot;, &quot;Natural Armor&quot;=&gt;&quot;You have tough, scaly skin. When you aren&#39;t wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield&#39;s benefits apply as normal while you use your natural armor.&quot;, &quot;Hungry Jaws&quot;=&gt;&quot;In battle, you can throw yourself into a vicious feeding frenzy. As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points (minimum of 1) equal to your Constitution modifier, and you can&#39;t use this trait again until you finish a short or long rest.&quot;}]}<br>
      
 									</p>
 					
@@ -1121,6 +1125,8 @@
 									Common 
 									Draconic 
 									Aquan 
+									{&quot;id&quot;=&gt;&quot;his_tribe&quot;, &quot;name&quot;=&gt;&quot;His Tribe&quot;} 
+									{&quot;id&quot;=&gt;&quot;thieve_s_guild&quot;, &quot;name&quot;=&gt;&quot;Thieve&#39;s Guil&quot;} 
 					</p>
 							
 								</span> <!-- property line -->
@@ -1130,7 +1136,7 @@
 						
 									<h4>Adjectives - </h4>
 						
-									<p></p>	
+									<p>Dull-Witted, Hard-Working, Unpleasant, </p>	
 					
 								</span> <!-- property line -->
 			
@@ -1165,6 +1171,8 @@
 								<span class="property-line">
 					
 								<h3>Special Equipment</h3>
+								<p>	<b></b> - <br></p>
+									
 								
 							
 								</span>	
@@ -1194,18 +1202,6 @@
 								
 								
 								<h3>Factions</h3><br>
-									
-									
-								<span class="ability-item">	<p><b>His Tribe</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
-									
-									
-								<span class="ability-item">	<p><b>Thieve&#39;s Guild</b><br></p>
-					
-							
-									<br><p>Role: <i></i><br></p></span><br>
 									
 								<br><br>
 								
@@ -1249,7 +1245,7 @@
 								
 							
 							
-							<p>A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. &quot;Outta da way, softskin!&quot;</p><br />
+							<p>A gruff and scaly lizardfolk pushes past you, guiding a cart full of crates down the dock. /&quot;Outta da way, softskin!/&quot;</p><br />
 		
 							</span>
 		
@@ -1282,7 +1278,10 @@
 										<ul style="list-style-type:none;">
   
  	
-											<li><p><i> &quot;Y&#39;all softskins don&#39;t know how to live&quot;, &quot;Gotta get my work done, it&#39;s almost time to eat&quot;</i></p></li><br>
+											<li><p><i>Y&#39;all softskins don&#39;t know how to live</i></p></li><br>
+											
+											
+											<li><p><i>Gotta get my work done, it&#39;s almost time to eat</i></p></li><br>
 											
 											
 											
@@ -1377,7 +1376,9 @@
 								<span class="property-line bg">	
 		
 								
-									The swamp community that Slizz'nek lives in has become an important port city at a river delta  bordering a large lake between nation-states, much to the chagrin of the local lizardfolk population. But as always, his tribe adapts. Taking a job on the docks to show the "softskins" what a "real male" is.  He's gruff, uncultured and temperamental, but he works hard and makes enough to afford all of the food that he can eat. Not being terribly bright and generally having a disrespect the government that has overtaken his lands, he can easily be bribed to help out with smuggling operations at the docks
+									The swamp community that Slizz'nek lives in has become an important port city at a river delta  bordering a large lake between nation-states, much to the chagrin of the local lizardfolk population. But as always, his tribe
+adapts. Taking a job on the docks to show the "softskins" what a "real male" is.  He's gruff, uncultured and temperamental, but he works hard and makes enough to afford all of the food that he can eat. Not being terribly
+bright and generally having a disrespect the government that has overtaken his lands, he can easily be bribed to help out with smuggling operations at the docks
 
 								
     
@@ -1405,7 +1406,10 @@
 	
 								<span class="property-line">	
 		
-									
+									Slizz&#39;nek isn&#39;t the smartest guy on the docks, but he&#39;s not afraid of a day&#39;s hard labor. He&#39;s gruf and hot-tempered and very much a traditionalist of lizardfolk culture. He doesn&#39;t like outsiders and thinks of other races
+as softskins of fleshbags and sees them as a potential meal somewhere down the line. But in the meantime, he&#39;s a survivor, so he keeps his head down and does his job. Now and then, he&#39;ll make a little extra cash to turn a
+blind eye to some of the illegal activities that go on down at the docks
+
     
 								</span>
 
