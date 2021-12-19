@@ -7,6 +7,7 @@
                   - You gain proficiency in the Intimidation skill. If you’re already proficient in it, your proficiency bonus is doubled for any check you make with it.
                   - As a bonus action, you can cause small barbs to protrude all over your body or cause them to retract. At the start of each of your turns while the barbs are out, you deal 1d6 piercing damage to any creature
                     grappling you or any creature grappled by you.
+                  - You gain resistance to cold and acid
    - Bountiful Luck: Prerequisite - Halfling. You can let an ally within 30 ft of you to reroll a 1 on a d20.
    - Charger: As part of the Dash action you can make a melee attack with a +5 bonus if you move at least 10 ft before.
    - Chef: +1 in Con. or Wis., proficiency with cook's utensils and cook special food to regain hp.
@@ -28,6 +29,13 @@
    - Fey Touched: +1 in Int., Wis., or Cha., and you learn misty step and one 1st-level spell from divination or enchantment school.
    - Fighting Initiate:	Prerequisite - Proficiency with a martial weapon. You learn one Fighting Style option from the fighter class.
    - Flames of Phlegethos:	Prerequisite - Tiefling. +1 in Int. or Cha., reroll any 1 on fire spell damage, and cause flames to wreathe you if you cast a fire spell.
+   - Gift of the Chromatic Dragon: Chromatic Infusion - Using your bonus action, you can add 1d4 of your choice of acid, cold, fire, poison, or lightning damage for one minute. This can’t be used again until a long rest.
+                                   Reactive Resistance - Any time you take acid, cold, fire, lightning, or poison damage, you can use your reaction to give yourself resistance to that type of damage. 
+                                                         This feature reloads on a long rest and can be used a number of times equal to your proficiency bonus.
+   - Gift of the Gem Dragon: Ability Score Increase - Boost INT, WIS, or CHA by 1, up to a maximum of 20.
+                             Telekinetic Reprisal - As a reaction, you can deal force damage and push creatures away from you when they cause you damage.
+   - Gift of the Metallic Dragon: Draconic Healing - You learn cure wounds. Not only can you cast this once per long rest, but you can also use it with any spell slots you have left.
+                                  Protective Wings - Using your reaction, you can manifest spectral wings to protect yourself or allies within 5 feet of you. When you or a nearby ally is hit by an attack roll, you can grant a bonus to the target’s AC equal to your proficiency bonus. You can use this reaction a number of times equal to your proficiency bonus.
    - Grappler: Prerequisite - Strength 13 or higher. You have advantage on attack rolls when grappling, and can try to restrained a creature grappled by you.
    - Great Weapon Master: Extra attack after a melee critical hit and you can choose to take -5 to attack roll to add +10 to damage with an heavy weapon.
    - Gunner: +1 in Dex., proficiency with firearms, ignore loading property of firearms and no disadvantage to attacks within 5 ft.
@@ -47,7 +55,7 @@
    - Magic Initiate: You learn two cantrips and one 1st-level spell from one class.
    - Martial Adept: You learn two maneuvers from Battle Master archetype and gain one superiority die (d6).
    - Medium Armor Master: Prerequisite - Proficiency with medium armor. No disadvantage to Stealth checks wearing medium armor and Dexterity bonus max to +3 instead of +2.
-   - Metabolic Control: Prerequisite: Psionic Talent feature or Wild Talent feat You have refined psionic control over your body’s functions. You gain the following benefits - 
+   - Metabolic Control: Prerequisite- Psionic Talent feature or Wild Talent feat You have refined psionic control over your body’s functions. You gain the following benefits - 
                         - Increase your Strength, Dexterity, or Constitution score by 1, to a maximum of 20.
                         - If your Psionic Talent die is available, you can take an action to channel your psionic power to nourish yourself for the next 24 hours, as if you consumed sufficient food and water for a day. When you 
                           take this action, your Psionic Talent die decreases by one die size.
@@ -64,6 +72,10 @@
    - Polearm Master: You can make an extra attack with a polearm weapon, and make an opportunity attack if a creature enter your reach.
    - Prodigy: Prerequisite - Half-elf, half-orc, or human. You gain proficiency with one skill, one tool or one language, and you gain expertise with one skill.
    - Resilient: +1 in one ability and you gain proficiency in saving throws using this ability.
+   - Revenant Blade: Prerequisite; Elf - You are descended from a master of the double-bladed scimitar, and some of that mastery has passed on to you. You gain the following benefits;
+                     - Increase your Strength or Dexterity by 1, to a maximum of 20.
+                     - While you are holding a double-bladed scimitar with two hands, you gain a +1 bonus to Armor Class.
+                     - A double-bladed scimitar has the finesse property when you wield it.
    - Ritual Caster: Prerequisite - Intelligence or Wisdom 13 or higher. You have a ritual book with two 1-st level ritual spells from one class and you can later on add other ritual spells you found.
    - Savage Attacker: You can reroll melee weapon attack damage once per turn.
    - Second Chance: Prerequisite - Halfling. +1 in Dex., Con., or Cha., and you can force a creature to reroll its attack roll if it hits you.
@@ -77,19 +89,37 @@
    - Slasher: +1 in Str. or Dex., reduce target's speed by 10 ft when you hit (slashing) and target has disadvantage on attacks rolls.
    - Spell Sniper: Prerequisite - The ability to cast at least one spell, Offensive spell's range doubled, these spells ignore some cover, and you learn one offensive cantrip.
    - Squat Nimbleness: Prerequisite - Dwarf or a Small race. +1 in Str. or Dex., your speed increases by 5 ft, and proficiency and advantage to escape with Acrobatics or Athletics checks.
+   - Strixhaven Initiate: You have studied some magical theory and have learned a few spells associated with Strixhaven University.
+                          Choose one of Strixhaven’s colleges; Lorehold, Prismari, Quandrix, Silverquill, or Witherbloom.
+                          You learn two cantrips and one 1st-level spell based on the college you choose, as specified in the Strixhaven Spells table below.
+                          You can cast the chosen 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.
+                          Your spellcasting ability for this feat’s spells is Intelligence, Wisdom, or Charisma (choose when you select this feat).
+     Strixhaven Spells:
+                          College	    Cantrips	                                                        1st-Level Spell
+                          Lorehold	    Choose two from light, sacred flame, and thaumaturgy. 	            Choose one 1st-level cleric or wizard spell.
+                          Prismari	    Choose two from fire bolt, presditigitation, and ray of frost. 	    Choose one 1st-level bard or sorcerer spell.
+                          Quandrix	    Choose two from druidcraft, guidance, and mage hand. 	            Choose one 1st-level druid or wizard spell.
+                          Silverquill	Choose two from sacred flame, thaumaturgy, and vicious mockery . 	Choose one 1st-level cleric or bard spell.
+                          Witherbloom	Choose two from chill touch, druidcraft, and spare the dying. 	    Choose one 1st-level druid or wizard spell.
+   - Strixhaven Mascot: Prerequisites; 4th level, Strixhaven Initiate feat - You have learned how to summon a Strixhaven mascot to assist you, granting you these benefits;
+                        - You can cast the find familiar spell as a ritual. Your familiar can take the form of the mascot associated with the college you chose for the Strixhaven Initiate feat; a spirit statue mascot (Lorehold), an art elemental mascot (Prismari), a fractal mascot (Quandrix), an inkling mascot (Silverquill), or a pest mascot (Witherbloom).
+                        - When you take the Attack action on your turn, you can forgo one attack to allow your mascot familiar to make one attack of its own with its reaction.
+                        - If your mascot familiar is within 60 feet of you, you can teleport as an action, swapping places with the familiar. If your destination space is too small for you to occupy, the teleportation fails and is wasted. Once you teleport in this way, you can't do so again until you finish a long rest, unless you expend a spell slot of 2nd level or higher to do it again.
+   - Svirfneblin Magic: Prerequisite; Gnome - You have inherited the innate spellcasting ability of your ancestors. This ability allows you to cast nondetection on yourself at will, without needing a material component. You can also cast each of the following spells once with this ability; blindness/deafness, blur, and disguise self. You regain the ability to cast these spells when you finish a long rest.
+                        Intelligence is your spellcasting ability for these spells, and you cast them at their lowest possible levels.
    - Tandem Tactics: You can use the Help action as a bonus action. When you use the Help action to aid an ally in attacking a creature, increase the range of the Help action by 10 feet. Additionally, you can help two allies 
                      targeting the same creature within range when you use the Help action this way
    - Tavern Brawler: +1 in Str. or Con., proficiency with improvised weapons, d4 for unarmed strike, and grapple with a bonus action.
-   - Telekinetic: Prerequisite: Psionic Talent feature or Wild Talent feat, +1 in Int., Wis., or Cha., You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand
+   - Telekinetic: Prerequisite; Psionic Talent feature or Wild Talent feat, +1 in Int., Wis., or Cha., You learn the mage hand cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand
                   invisible. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat. As a bonus action, you can try to telekinetically 
                   shove one creature you can see within 30 feet of you. When you do so, roll your Psionic Talent die, and the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier
                   of the score increased by this feat) or be moved toward you or away from you a number of feet equal to 5 times the number you rolled. A creature can willingly fail this save.
-   - Telepathic: Prerequisite: Psionic Talent feature or Wild Talent feat, +1 in Int., Wis., or Cha., You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language 
+   - Telepathic: Prerequisite; Psionic Talent feature or Wild Talent feat, +1 in Int., Wis., or Cha., You can speak telepathically to any creature you can see within 30 feet of you. Your telepathic utterances are in a language 
                  you know, and the creature understands you only if it knows that language. Your communication doesn’t give the creature the ability to respond to you telepathically. If your Psionic Talent die is available, you 
                  can cast the detect thoughts spell, requiring no components. When you start casting the spell, your Psionic Talent die decreases by one die size. Your spellcasting ability for the spell is the ability increased 
                  by this feat.
    - Tough: Your hit point maximum increases by an amount equal to twice your level then by +2 at each level.
-   - Tower of Iron Will: Prerequisite: Psionic Talent feature or Wild Talent feat. Your mind’s defenses are formidable. After you or another creature you can see within 30 feet of you fails a saving throw, you can use your 
+   - Tower of Iron Will: Prerequisite; Psionic Talent feature or Wild Talent feat. Your mind’s defenses are formidable. After you or another creature you can see within 30 feet of you fails a saving throw, you can use your 
                          reaction to roll your Psionic Talent die and add the number rolled to the saving throw, potentially causing it to succeed.
    - Tracker: Increase your Wisdom score by 1, to a maximum of 20. You learn the hunter’s mark spell. You can cast it once without expending a spell slot, and you must finish a long rest before you can cast it in this way again.
               You can also cast the spell using any spell slots you have. Wisdom is your spellcasting ability for this spell. You have advantage on Wisdom (Survival) checks to track creatures
@@ -97,8 +127,8 @@
    - Weapon Master: +1 in Str. or Dex. and you gain proficiency with four weapons.
    - Wild Talent: Increase one ability score of your choice by 1, to a maximum of 20, to represent this enhancement. You also harbor a wellspring of psionic power within yourself, an energy that ebbs and flows as you channel it 
                   in various ways. This power is represented by your Psionic Talent die, the starting size of which is a d6. Psionic Talent Options. You can use your Psionic Talent die in the following ways;
-                  - Psi-Boosted Ability: When you make an ability check with the ability increased by this feat, you can roll your Psionic Talent die and add the number rolled to the check. You can choose to do so before or 
-                                         after rolling the d20, but before you know whether the check succeeded or failed.
-                  - Psi-Guided Strike: Once on each of your turns when you hit with an attack roll that uses the ability increased by this feat, you can roll your Psionic Talent die after you make the damage roll and then 
-                                       replace one of the damage dice with the number rolled on the Psionic Talent die.
+     Psi-Boosted Ability: When you make an ability check with the ability increased by this feat, you can roll your Psionic Talent die and add the number rolled to the check. You can choose to do so before or 
+                          after rolling the d20, but before you know whether the check succeeded or failed.
+     Psi-Guided Strike: Once on each of your turns when you hit with an attack roll that uses the ability increased by this feat, you can roll your Psionic Talent die after you make the damage roll and then 
+                        replace one of the damage dice with the number rolled on the Psionic Talent die.
    - Wood Elf Magic: Prerequisite - Elf (wood). You learn one druid cantrip and can cast the longstrider and pass without trace spells (1/long rest)
