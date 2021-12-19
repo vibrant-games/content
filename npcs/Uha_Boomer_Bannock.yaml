@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Dead Hunter
-    
 
     #
     # D & D classes (case insensitive):
@@ -298,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -361,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The raptilian man barrels forward, diving to ground as he shouts "Fire in the Hole!" as the building behind explodes  
+    introduction:  The raptilian man barrels forward, diving to ground as he shouts /"Fire in the Hole!/" as the building behind explodes  
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -468,66 +466,68 @@ npc:
   specialties:
     skills:
     - Viashino Traits:
-        - Bite: can make an unarmed strike for 1d4+4 piercing damage
-        - Lashing Tail: Prehensile tail tipped with a bony blade. As a reaction, when a creature within 5 feet deals damage to him, he can make a melee attack dealing 1d6+4 slashing damage on a hit
-        - Wiry Frame: Proficient in Acrobatics and Stealth
-       
-    - Fighter Abilities:
-        - Fighting Style: Archery
-        - Second Wind: Bonus Action to regain 1d10 + Fighter Level
-        - Action Surge: Once every short/long rest can take an extra action
-        - Extra Attack: Can attack twice each turn
-        - Indomitable: Can reroll 1 saving throw per long rest
- 
-    - Gunslinger Traits: 
-        - Firearm Proficiency: Add proficiency to firearm attacks
-        - Gunsmith: Proficent with tinker's toolsand can use them to craft ammunition at half price, repair damaged firearms and design and craft new firearms
-        - Adept Marksman: 3 Grit, Trick Shot DC19
-        - Quickdraw: Adds proficiancy bonus to initiative. can stow and draw a firearm as a single object interaction
-        - Rapid Repair: Can spend one Grit Point to attempt to repair a misfired firearm as a bonus action
-        - Lightning Reload: Can reload a firearm as a bonus action
-        - Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot    
+      - Bite: can make an unarmed strike for 1d4+4 piercing damage
+        Lashing Tail: Prehensile tail tipped with a bony blade. As a reaction, when a creature within 5 feet deals damage to him, he can make a melee attack dealing 1d6+4 slashing damage on a hit
+        Wiry Frame: Proficient in Acrobatics and Stealth
+      Fighter Abilities:
+      - Fighting Style: Archery
+        Second Wind: Bonus Action to regain 1d10 + Fighter Level
+        Action Surge: Once every short/long rest can take an extra action
+        Extra Attack: Can attack twice each turn
+        Indomitable: Can reroll 1 saving throw per long rest
+      Gunslinger Traits: 
+      - Firearm Proficiency: Add proficiency to firearm attacks
+        Gunsmith: Proficent with tinker's toolsand can use them to craft ammunition at half price, repair damaged firearms and design and craft new firearms
+        Adept Marksman: 3 Grit, Trick Shot DC19
+        Quickdraw: Adds proficiancy bonus to initiative. can stow and draw a firearm as a single object interaction
+        Rapid Repair: Can spend one Grit Point to attempt to repair a misfired firearm as a bonus action
+        Lightning Reload: Can reload a firearm as a bonus action
+        Trick Shots: Deadeye Shot, Disarming Shot, Forceful Shot, Piercing Shot, Violent Shot    
 
-    - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 19
-         Cantrip: Create Bonfire, Mage Hand, Fire Bolt, Message
-         1st Level: Absorb Elements, Faerie Fire, Identify, Disguise Self
-         2nd Level: Continual Flame, Heat Metal, Pyrotechnics
-         3rd Level: Haste, Flame Arrows, Flame Stride
-         4th Level: Elemental Bane
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-       - Tool Expertise: Smith's Tool proficiency bonus is doubled
-       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-       - Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-       - Spell Storing Item: Can store a spell in and object once per long rest
-       - Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 5 magic items       
-      
-    - Alchemist Abilities:
-       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
-       - Spellcasting: Requires Alchemist Supplies as Spellcasting focus, Spell DC 19
-         3rd Level: Healing Word, Ray of Sickness
-         5th Level: Flaming Sphere, Melf's Acid Arrow
-         9th Level: Gaseous Form, Mass Healing Word
-         13th Level: Blight, Death Ward
-         15th Level: Cloudkill, Raise Dead
-       - Experimental Elixir: Can produce 3 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
-       - Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
-       - Restorative Reagents: Experimantal Elixirs also give 2d6+7 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
-       - Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
+      Artificer Abilities:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+        Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy
+        Spellcasting:
+        - Description: Requires Tinker's Tools as Spellcasting focus
+          Spell DC: 19
+          Cantrip: Create Bonfire, Mage Hand, Fire Bolt, Message
+          1st Level: Absorb Elements, Faerie Fire, Identify, Disguise Self
+          2nd Level: Continual Flame, Heat Metal, Pyrotechnics
+          3rd Level: Haste, Flame Arrows, Flame Stride
+          4th Level: Elemental Bane
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
+        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+        Tool Expertise: Smith's Tool proficiency bonus is doubled
+        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+        Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+        Spell Storing Item: Can store a spell in and object once per long rest
+        Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 5 magic items       
+      Alchemist Abilities:
+      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
+        Spellcasting:
+        - Description: Requires Alchemist Supplies as Spellcasting focus
+          Spell DC: 19
+          3rd Level: Healing Word, Ray of Sickness
+          5th Level: Flaming Sphere, Melf's Acid Arrow
+          9th Level: Gaseous Form, Mass Healing Word
+          13th Level: Blight, Death Ward
+          15th Level: Cloudkill, Raise Dead
+        Experimental Elixir: Can produce 3 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
+        Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
+        Restorative Reagents: Experimantal Elixirs also give 2d6+7 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
+        Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
 
     special-abilities:
     - Proficiencies: Athletics, Perception, Survival, Intimidation, Investigation,    
-    - Feats: Alert, Crossbow Expert, Dual Weilder, Gunner, Keen Mind, Lucky, Mobile, Sharpshooter, War Caster 
-    - Legendary Resistance: (3/Day), If Uha "Boomer" Bannock fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: Uha "Boomer" Bannock can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Uha "Boomer" Bannock regains spent Legendary Actions at the start of his turn
-      Explosive Alchemy: Uha "Boomer" Bannock can create and throw various explosive devices and elixirs
-      Tail Grapple: Uha "Boomer" Bannock can make a grappling attack with his prehensile tail. Opponents must make a DC16 Strength Saving Throw or be grappled and restrained
-      Alcemical Escape: Uha "Boomer" Bannock can ignite smoke grenades that an opaque cloud of smoke in a 30 foot radius that acts as a Fog Cloud spell for a 1 minute duration 
-    
+      Feats: Alert, Crossbow Expert, Dual Weilder, Gunner, Keen Mind, Lucky, Mobile, Sharpshooter, War Caster 
+      Legendary Resistance: (3/Day), If Uha /"Boomer/" Bannock fails a saving throw he can choose to succeed instead 
+    - Legendary Actions: 
+      - Description: Uha /"Boomer/" Bannock can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+                     Uha /"Boomer/" Bannock regains spent Legendary Actions at the start of his turn
+        Explosive Alchemy: Uha "Boomer" Bannock can create and throw various explosive devices and elixirs
+        Tail Grapple: Uha "Boomer" Bannock can make a grappling attack with his prehensile tail. Opponents must make a DC16 Strength Saving Throw or be grappled and restrained
+        Alcemical Escape: Uha "Boomer" Bannock can ignite smoke grenades that an opaque cloud of smoke in a 30 foot radius that acts as a Fog Cloud spell for a 1 minute duration 
+
     attacks: |
       has 2 attacks
     combat-tactics: |
@@ -550,7 +550,6 @@ npc:
     - 5x Oil Bomb - works as the Grease spell, plus 1d8 force damage to any creature with 5 feet of the detonation failing a Dex Save of DC15
     - 5x Concussion Grenade - works as the Force Blast spell cast at 8th level. Creature who fail their Strength Savce are knocked prone
 
-    
   profile:
 
     #
