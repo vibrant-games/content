@@ -409,7 +409,6 @@ npc:
     #
     motivations: |
       To bring technology to the fore of civilization. Kaz seeks to create the greatest and most useful inventions the worlds have ever seen.
-
     #
     # Passions:
     #
@@ -418,7 +417,6 @@ npc:
     #
     passions: |
       Building and creating new things; Loves doing puzzles;
-
     #
     # Vulnerabilities:
     #
@@ -427,7 +425,6 @@ npc:
     #
     vulnerabilities: |
       If he sees something in disrepair, Kaz can rarely help himself from fixing it
-
     #
     # Secrets:
     #
@@ -436,7 +433,6 @@ npc:
     #
     secrets: | 
       He can't read
-
   #
   # The D & D stats block:
   # All integers.
@@ -474,7 +470,7 @@ npc:
           1st Level: Absorb Elements, Detect Magic, Grease, Disguise Self
           2nd Level: Heat Metal, Continuous Flame
         Infuse Item: Imbue 2 mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
-        - Infusions Known: 4 -  Homunculus Servant, Replicate Magic Weapon, Mind Sharpener, Enhanced Arcane Focus      
+        Infusions Known: 4 -  Homunculus Servant, Replicate Magic Weapon, Mind Sharpener, Enhanced Arcane Focus      
         The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
       Artillerist Abilities:
       - Tool Proficiency: Proficient in Woodcarver's Tools
@@ -530,32 +526,3 @@ npc:
     #
     personality: |
       Kaz is an inquisitive fellow. He likes to travel, and wander from place to place. He's always looking for new oddities and curiousities that he can dissect and learn from. He is a happy fellow and very good natured 
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
