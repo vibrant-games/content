@@ -407,7 +407,6 @@ npc:
     #
     motivations: |
       To unload merchandise, make coin, and get out of town before anyone knows that the stuff he's selling is no good.
-
     #
     # Passions:
     #
@@ -425,7 +424,6 @@ npc:
     #
     vulnerabilities: |
       His items are junk, they'll work for a short time, but after that they're just cheap replicas of the real thing.
-
     #
     # Secrets:
     #
@@ -434,7 +432,6 @@ npc:
     #
     secrets: | 
       His merchandise is faulty.  He's using his artificer powers to put on a show, but as soon as he's gone, none of it works
-
   #
   # The D & D stats block:
   # All integers.
@@ -460,15 +457,15 @@ npc:
   specialties:
     skills:
     - Artificer Abilities:
-     - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting:
+      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+      - Spellcasting:
          - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 13 
            Cantrips: Mage Hand, Mending
            1st Level: Alarm, Disguise Self, Detect Magic, Identify
            2nd Level: Invisibility, Heat Metal 
-         Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
-         Infusions Known: 4       
-         The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+        Infusions Known: 4       
+      - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
 
       Battle Smith Abilities:
       - Spellcasting:
@@ -531,15 +528,3 @@ npc:
     background-story: |
       Lasan is the son of a merchant who did the same thing he does today. Make items that work for a short period of time, sell them for more than their worth, and get out of Dodge before any one is the wiser.  His dad died not
       too long ago, and he's still trying to cope with it. He took up adventuring for a time, but it complicated him with too many attachments, he just wasn't ready for.
-
-    #
-    # Personality (or something like that):
-    # Expand on the introduction, appearance, expressions, mannerisms, etc.
-    # without any length limits.
-    #
-    # Required.
-    # No length limit for now.
-    #
-    personality: |
-      Lasan is a flim flam man. He uses his artificers skills to create cheap little gadgets that break within days of being sold. He is emotionally stunted and refuses personal attachments, especially since his father's death.
-      He's very good at selling his junk and good at getting while the getting is good
