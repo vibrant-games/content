@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Mercenary
     
 
@@ -385,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Hela!", "Khlum!", "We have a saying: tsu khlum iz tsu lebn: you will not find what you seek with your eyes open."
+    expressions:  
+    - "Hela!"
+    - "Khlum!"
+    - "We have a saying; tsu khlum iz tsu lebn: you will not find what you seek with your eyes open."
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -463,7 +467,7 @@ npc:
   specialties:
     skills: 
 
-   - - Elf Abilities:
+    - Elf Abilities:
         - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
         - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
         - Keen Senses: You have proficiency in the Perception skill 
@@ -473,13 +477,13 @@ npc:
         - Fleet of Foot: Your base walking speed increases to 35 feet.
         - Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena
 
-   - - Fighter Abilities:
+    - Fighter Abilities:
          - Fighting Style: Protection
          - Second Wind: Bonus Action to regain 1d10 + 5
          - Action Surge: Once every short/long rest can take an extra action
          - Extra Attack: Can attack twice each turn 
 
-   - - Champion Abilities:
+    - Champion Abilities:
          - Improved Critical: your weapon attacks score a critical hit on a roll of 19 or 20         
       
     special-abilities:
@@ -525,33 +529,3 @@ npc:
     #
     personality: |
      Samuel looks out for number one. he wanders through life looking to connect it to his dreams. As an orphan he is self-reliant amd really only cares about himself and what the world can do for him
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
