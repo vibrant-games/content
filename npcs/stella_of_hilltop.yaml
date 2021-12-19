@@ -214,6 +214,7 @@ npc:
     # Required.
     # Max length per occupation: ...
     #
+    occupation:
     - Merchant
     
 
@@ -386,7 +387,9 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "We shall replace the Queen with a figurehead of those with boots on the ground!"; "I will bring the best goods to the people so they can rise".
+    expressions:
+    - "We shall replace the Queen with a figurehead of those with boots on the ground!"
+    - "I will bring the best goods to the people so they can rise"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -464,19 +467,19 @@ npc:
   specialties:
     skills: 
 
-   - - Halfling Abilities:
+    - Halfling Abilities:
        - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
        - Brave: Has advantage on Saving Throws against being Frightened 
        - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
        - Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
         
-   - - Rogue Abilities:
+    - Rogue Abilities:
        - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
        - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
        - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
        - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
        
-   - - Scout Abilities:
+    - Scout Abilities:
        - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.
        - Survivalist: you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
        
@@ -525,34 +528,4 @@ npc:
     #
     personality: |
      Stella is a determined young lady. Being abandoned by her family has left her cautios to trust anyone, but her adopted family has made her strong and confident. She wears her heart on her sleeve and has turned her ire
-     towards those of wealth, like the father who abandoned her. Her indignance has led her to join the resistance against the ruling class though her health issues do limit her ability to participate in physical combat 
-     
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+     towards those of wealth, like the father who abandoned her. Her indignance has led her to join the resistance against the ruling class though her health issues do limit her ability to participate in physical combat
