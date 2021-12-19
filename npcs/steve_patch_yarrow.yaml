@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Bartender
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +311,6 @@ npc:
     - Common
     - Undercommon
     - Thieve's Cant
-
 
     #
     # Factions:
@@ -334,7 +331,6 @@ npc:
     #
     - id: a_thieve_s_assassin_s_guild
       name: A Thieve's/Assassin's Guild
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -359,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A one-eyed man behind the bar meets your gaze as you enter the run-down tavern. "Whatdya Want?" He says with a scowl
+    introduction:  A one-eyed man behind the bar meets your gaze as you enter the run-down tavern. /"Whatdya Want?/" He says with a scowl
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -413,7 +409,7 @@ npc:
     #
     motivations: |
       Money, Protecting the local thieve's guild's secrets
-      
+
     #
     # Passions:
     #
@@ -422,7 +418,7 @@ npc:
     #
     passions: |
       Stabbing people he doesn't like
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       He's greedy. He's sharp, but pretty much devoid of any creativity or wit
-      
+
     #
     # Secrets:
     #
@@ -440,8 +436,7 @@ npc:
     #
     secrets: | 
       He's the gatekeeper to the local thieve's guild which has a secret entrance in the back of his dive bar
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,9 +461,9 @@ npc:
   #
   specialties:
     skills: 
-        
     - Rogue Abilities:
       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+<<<<<<< Updated upstream
       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
@@ -478,9 +473,19 @@ npc:
        - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
                             your Dexterity modifier.
        
+=======
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+      Thief Abilities:
+      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
+        Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
+                           your Dexterity modifier.
+
+>>>>>>> Stashed changes
     special-abilities:
        - Proficiencies: Intimidation, Stealth, Sleight-of-Hand, Survival
-       - Feats: Crossbow Expert
+         Feats: Crossbow Expert
        
     attacks: |
       1 attacks with hand crossbow or dagger
@@ -489,8 +494,7 @@ npc:
     special-equipment:
     - Dagger
     - Hand Crossbow
-    
-    
+
   profile:
 
     #
@@ -506,7 +510,11 @@ npc:
      punishment, the Thieve's Guild took his eye, stripped him of his responsibilities for planning jobs and stuck him behind the bar at the tavern that hides their secret hall. He's basically a glorified doorman for the guild
      and he resents every second of it. He does however, have a permanent reminder to not betray the guild again. He's mean and doesn't care for serving customers at all, he gets paid whether anyone is drinking or not. He keeps
      a hand crossbow behind the bar and a dagger on his belt in case any trouble makes it past the security outside the door
+<<<<<<< Updated upstream
       
+=======
+
+>>>>>>> Stashed changes
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -517,4 +525,8 @@ npc:
     #
     personality: |
      Steve hates his life. He's always been tough and his life has never been easy, but the life he's living now, as barely more than a doorman, he hates his life. He resents what he's being forced to do. He resents that he's
+<<<<<<< Updated upstream
      not being allowed to use his skills and his experience. He hates everything about this, but as much as he hates it, he'd still rather be alive
+=======
+     not being allowed to use his skills and his experience. He hates everything about this, but as much as he hates it, he'd still rather be alive
+>>>>>>> Stashed changes

@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Barkeep, chef, tavern owner
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -312,7 +310,6 @@ npc:
     languages:
     - Common
     - Gnome
-
 
     #
     # Factions:
@@ -331,8 +328,8 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - N/A
-
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -357,7 +354,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The tectonically massive proprietor quakes toward you. "You!  Have you seen Flee? I must find Flee. Was he with you?"
+    introduction:  The tectonically massive proprietor quakes toward you. /"You!  Have you seen Flee? I must find Flee. Was he with you?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -412,7 +409,7 @@ npc:
     #
     motivations: |
       At night, pale green-lit kitchen barely illuminates him practicing sneaking up on a sack of rice, cleaver in hand.
-      
+
     #
     # Passions:
     #
@@ -430,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       Treats tavern staff with contempt. Obsessed with finding Flee and avenging the chain-slap humiliation.
-      
+
     #
     # Secrets:
     #
@@ -439,8 +436,7 @@ npc:
     #
     secrets: | 
       He's basically a serial killer, who has never been afraid to murder to advance his career
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -464,12 +460,12 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    skills:
        
     special-abilities:
-       - Proficiencies: Intimidation, Cooking, Survival
-       - Feats: Chef, Crusher
-       
+    - Proficiencies: Intimidation, Cooking, Survival
+      Feats: Chef, Crusher
+
     attacks: |
       1 attacks with cleaver or unarmed strike
     combat-tactics: |
@@ -477,8 +473,7 @@ npc:
     special-equipment:
     - A cleaver bearing an inscription in ancient dwarvish, "For my little chicadee"
     - A well-used whetstone
-    
-    
+
   profile:
 
     #
@@ -496,7 +491,11 @@ npc:
      preparation during busy hours, and the waitress roles are filled from a revolving door of ladies of all ages, shapes and sizes. Swarth's food comprises layers of various types of meat, exquisitely arranged, often with a
      liver paste "S" signature on top. During a recent bar mitzvah catered by Swarth, Flee -- whether deliberately or accidentally -- slapped Swarth in the face with a chain.  Ever since, Swarth has been trying to find Flee. 
      He does not know what punishment lies in store for Flee, only that face is important to be saved.
+<<<<<<< Updated upstream
       
+=======
+
+>>>>>>> Stashed changes
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -507,4 +506,8 @@ npc:
     #
     personality: |
      Swarth is a beautiful cook and a terrible human being. He's angry, abusive, slovenly, and slothful. He represents the worst that humanity has to offer. He's not afraid to kill to get what he wants or advance his career.
+<<<<<<< Updated upstream
      People don't come much creepier, his social skills are beyond lacking and he's just generally offensive and disgusting
+=======
+     People don't come much creepier, his social skills are beyond lacking and he's just generally offensive and disgusting 
+>>>>>>> Stashed changes

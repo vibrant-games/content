@@ -216,7 +216,6 @@ npc:
     #
     occupation:
     - Merchant
-    
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -314,7 +312,6 @@ npc:
     - Goblin
     - Common
     - Halfling
-
 
     #
     # Factions:
@@ -422,7 +419,7 @@ npc:
     #
     passions: |
       Love and belonging (i.e., keeping a warm home or safe space for others with good grub and fine linens). Toppling dictators.
-      
+
     #
     # Vulnerabilities:
     #
@@ -431,7 +428,7 @@ npc:
     #
     vulnerabilities: |
       Stella's breathing is hampered by an untreated lung condition. She isn't capable of long periods of physical activity without needing a short rest after. Otherwise, she falls prone.
-      
+
     #
     # Secrets:
     #
@@ -440,8 +437,7 @@ npc:
     #
     secrets: | 
       Stella operates as a lieutenant for a local rebel faction
-       
-      
+
   #
   # The D & D stats block:
   # All integers.
@@ -466,6 +462,7 @@ npc:
   #
   specialties:
     skills: 
+<<<<<<< Updated upstream
 
     - Halfling Abilities:
        - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
@@ -482,10 +479,25 @@ npc:
     - Scout Abilities:
        - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.
        - Survivalist: you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
+=======
+    - Halfling Abilities:
+      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+        Brave: Has advantage on Saving Throws against being Frightened 
+        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+        Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you 
+      Rogue Abilities:
+      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
+        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+      Scout Abilities:
+      - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.
+        Survivalist: you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
+>>>>>>> Stashed changes
        
     special-abilities:
        - Proficiencies: Persuasion, Stealth, Sleight-of-Hand, Nature, Survival
-       - Feats: N/A
+         Feats: N/A
        
     attacks: |
       1 attacks with dagger
@@ -493,8 +505,7 @@ npc:
       Stella is calculated about her tactics because of her lung condition and how it limits her endurance so she will mostly try to sneak attack
     special-equipment:
     - Dagger
-    
-    
+
   profile:
 
     #
@@ -517,7 +528,6 @@ npc:
      kind elderly halfling lady told Stella, "you're from where you choose to be from. You can be Stella of Hilltop". The name stuck and Stella quickly became a surrogate child to the people of Hilltop. Her father never did
      return.
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -528,4 +538,8 @@ npc:
     #
     personality: |
      Stella is a determined young lady. Being abandoned by her family has left her cautios to trust anyone, but her adopted family has made her strong and confident. She wears her heart on her sleeve and has turned her ire
+<<<<<<< Updated upstream
      towards those of wealth, like the father who abandoned her. Her indignance has led her to join the resistance against the ruling class though her health issues do limit her ability to participate in physical combat
+=======
+     towards those of wealth, like the father who abandoned her. Her indignance has led her to join the resistance against the ruling class though her health issues do limit her ability to participate in physical combat 
+>>>>>>> Stashed changes
