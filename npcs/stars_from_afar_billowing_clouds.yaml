@@ -460,7 +460,7 @@ npc:
   #
   specialties:
     Proficiencies: Alchemy, Persuasion, Athletics, Stealth, Athletics, Thieves' tools, Tinker Tools, History, Perception, Smith's tools
-    skills: N/A
+    skills: Testing conversion
     special-abilities:
     - Tabaxi Abilities:
       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
@@ -516,8 +516,9 @@ npc:
         
     Feats: N/A
 
-    attacks: |
-      2 attacks with claws, x-wing crossbow or clockwork daggers
+    attacks:
+    - 2 attacks with claws
+    - x-wing crossbow or clockwork daggers
     combat-tactics: |
       Darts about landing clockwork daggers and letting them unwind. Then backs off to fire his X-Wing Crossbow. Usually the noise is enough to disturb most people.
     special-equipment:
