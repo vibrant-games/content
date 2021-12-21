@@ -505,7 +505,7 @@ npc:
         - hound of ill omen
         description: 
         - you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes
-        additional information:
+        additional-information:
         - The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
         - It appears with a number of temporary hit points equal to half your sorcerer level.
         - It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
@@ -535,7 +535,7 @@ npc:
     - legendary Actions
     - description: 
       - Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
-      additional information:
+      additional-information:
       - devils Portal: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
         cantrips: Anastasia Dumas casts a cantrip
         family reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
