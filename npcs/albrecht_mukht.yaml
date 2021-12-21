@@ -465,8 +465,12 @@ npc:
   #
   specialties:
     - skills:
-      -Masonry 
-      Proficiencies: Intimidation, Persuasion, Mason's Tools, Woodcrafter's Tools    
+      - Masonry
+    - Proficiencies: 
+      - Intimidation
+      - Persuasion
+      - Mason's Tools
+      - Woodcrafter's Tools
       special-abilities:
       - Half-Orc Abilities:
         - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
@@ -493,14 +497,14 @@ npc:
         - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
                   he suffer one level of Exhaustion 
         
-    attacks: |
-      2 Attacks with his Maul or Javelins
-    combat-tactics: |
-      Albrecht has worked to control his anger and will likely only rage if vehemently provoked. After this point, however, better duck and run
-    special-equipment:
+    - attacks: |
+        2 Attacks with his Maul or Javelins
+    - combat-tactics: |
+        Albrecht has worked to control his anger and will likely only rage if vehemently provoked. After this point, however, better duck and run
+    - special-equipment:
     - Mason's Tools
     - Woodcrafter's Tools
-                                                                   
+
   profile:
 
     #
