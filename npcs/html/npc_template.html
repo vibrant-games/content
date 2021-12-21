@@ -759,7 +759,11 @@
 								
 								{{#npc.special-abilities.length}}
 								{{#npc.special-abilities}}
-								<span class="ability-item">{{{.}}}<br></p></span>
+								<span class="ability-item">
+									<ul>
+									<br>{{#each items}}
+									<li> {{@index}} - {{.}} </li>
+										{{/each}}</ul></p></span>
 								{{/npc.special-abilities}}
 								{{/npc.special-abilities.length}}	
 									
