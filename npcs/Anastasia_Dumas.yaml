@@ -491,9 +491,9 @@ npc:
           subtle Spell: When you Cast a Spell, you can spend 1 sorcery point to cast it without any somatic or verbal Components
           etwinned Spell: When you Cast a Spell that Targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the 
                           same spell (1 sorcery point if the spell is a cantrip)
-    - title: Sorcerous Restoration
+      title: Sorcerous Restoration
       - description: you regain 4 expended sorcery points whenever you finish a Short Rest
-    - title: 
+      title: 
       - shadow Magic Abilities
       - description:
         - eyes of the dark: you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
@@ -517,13 +517,13 @@ npc:
                        creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. You remain in this form for 1 minute. It ends early if you are incapacitated, if you 
                        die, or if you dismiss it as a bonus action.
           shadow sorcerer quirks: When you are asleep, you don't appear to breathe (though you must still breathe to survive).
-    - title:
+      title:
       - legendary resistance
       - description: (3/Day), If Anastasia Dumas fails a saving throw she can choose to succeed instead 
-    title: 
-    - legendary Actions
-    - description: 
-      - Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
+      title: 
+      - legendary Actions
+      - description: 
+        - Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
         devils Portal: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
         cantrips: Anastasia Dumas casts a cantrip
         family reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
