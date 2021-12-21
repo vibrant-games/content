@@ -405,7 +405,7 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    motivations: |
+    motivations:
       Growing his 'family', furthering the goals of his patron
     #
     # Passions:
@@ -413,7 +413,7 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    passions: |
+    passions:
       Gambling, card tricks, his studies
     #
     # Vulnerabilities:
@@ -421,7 +421,7 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    vulnerabilities: |
+    vulnerabilities:
       His ego has been known to get the better of him
     #
     # Secrets:
@@ -429,7 +429,7 @@ npc:
     # Required.
     # ???Maximum length???
     #
-    secrets: |
+    secrets:
       The Dumas Family, while having some actual familial ties, is definitely more of a cult than a family. He is also married to his half-sister
   #
   # The D & D stats block:
@@ -524,9 +524,9 @@ npc:
       Cantrip: Nicodeamus Dumas casts a cantrip
       Family Reserve: Nicodeamus Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight
    
-    attacks: |
+    attacks:
       Dual Pistol Sidearms. Throws playing cards that turn into Eldritch Blasts
-    combat-tactics: |
+    combat-tactics:
       He'll do his best to get the jump on his opponents with his quickdraw Firebrand pistols or his Eldritch cards. Failing that, he'll resort to more traditional spellcasting using his card deck as an arcane focus so he does not need other spell components and use his Legendary Actions to bring in backup
     special-equipment:
     - Arcane Playing Cards: Can be used to read Tarot and when thrown they take on the traits of the Eldrich Blast spell at the level of the caster
@@ -542,7 +542,7 @@ profile:
     # Required.
     # No length limit for now.
     #
-    background-story: |
+    background-story:
      Nicodeamus Dumas is the eldest grandson of Anastasia Dumas and the defacto leader of the Dumas Family cult. Pretty much since birth, Nicodeamus was raised by his grandmother Anastasia, and grew in her twisted image.
      As a child, his only friends were the lesser devils that serve his grandmothers patrons. They taught him their ways, their magic, their bargains, their deceptions, and they taught him well. He grew to become a consumate
      grifter, conman and liar. They taught him to play their games and to gamble. When he came of age, his grandmother introduced him to her benefactor, to whom he took an oath, brokered a deal and was rewarded with a
@@ -561,7 +561,7 @@ profile:
     # Required.
     # No length limit for now.
     #
-    personality: |
+    personality:
       Nicodeamus Dumas is almost a caricature of a man. Tall and bone-thin with pale, freckled skin and wild curls of flaming red hair that he keeps tucked under a wide brimmed hat. He dresses like a dandy, with fine travelling
       clothes, impeccibly pressed, usually in a purple or burgundy with white gloves. He almost always has a sly, almost quizzical smile plastered across his face and entrancing violet-colored eyes. He is perpetually whistling
       a jaunty little tune but makes no effort to hide the sidearm on each hip under his long black coat, openly demonstrating to all that encounter him that he is always a threat. While coming off as jovial and cartoonish,
