@@ -464,35 +464,35 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    -Masonry 
-    special-abilities:
-    - Half-Orc Abilities:
-      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-        Menacing: gain proficiency in the Intimidation skill 
-        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-      Half-Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus       
-      Barbarian Abilities:
-      - Rage: 
-        - Description: Can enter a rage as a Bonus Action. 
-          Additional Information:
-          - have advantage on Strength Checks and Strength Saving Throws.
-          - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-          - Resistance to bludgeoning, piercing, and slashing damage          
-        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                         but Attack Rolls against him have advantage until his next turn
-        Extra Attack: Can attack twice each turn
-      Path of the Berserk Abilities:
-      - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
-                he suffer one level of Exhaustion 
-    Proficiencies: Intimidation, Persuasion, Mason's Tools, Woodcrafter's Tools    
-    
+    - skills:
+      -Masonry 
+      Proficiencies: Intimidation, Persuasion, Mason's Tools, Woodcrafter's Tools    
+      special-abilities:
+      - Half-Orc Abilities:
+        - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+          Menacing: gain proficiency in the Intimidation skill 
+          Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+          Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+        Half-Dwarf Abilities:
+        - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
+          Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+          Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+                        instead of his normal Proficiency Bonus       
+        Barbarian Abilities:
+        - Rage: 
+          - Description: Can enter a rage as a Bonus Action. 
+            Additional Information:
+            - have advantage on Strength Checks and Strength Saving Throws.
+            - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+            - Resistance to bludgeoning, piercing, and slashing damage          
+          Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+          Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+                           but Attack Rolls against him have advantage until his next turn
+          Extra Attack: Can attack twice each turn
+        Path of the Berserk Abilities:
+        - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
+                  he suffer one level of Exhaustion 
+        
     attacks: |
       2 Attacks with his Maul or Javelins
     combat-tactics: |
