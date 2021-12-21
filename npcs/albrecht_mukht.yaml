@@ -465,6 +465,8 @@ npc:
   #
   specialties:
     skills:
+    -Masonry 
+    special-abilities:
     - Half-Orc Abilities:
       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
         Menacing: gain proficiency in the Intimidation skill 
@@ -488,10 +490,8 @@ npc:
         Extra Attack: Can attack twice each turn
       Path of the Berserk Abilities:
       - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
-                he suffer one level of Exhaustion    
-
-    special-abilities:
-    - Proficiencies: Intimidation, Persuasion, Mason's Tools, Woodcrafter's Tools    
+                he suffer one level of Exhaustion 
+    Proficiencies: Intimidation, Persuasion, Mason's Tools, Woodcrafter's Tools    
     
     attacks: |
       2 Attacks with his Maul or Javelins
