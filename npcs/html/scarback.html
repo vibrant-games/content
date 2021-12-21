@@ -1,0 +1,1438 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Scarback</title>
+
+<link rel="stylesheet" href="file:///D|/Github_bak_bak/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github_bak_bak/docs-index/index.html"><img src="file:///D|/Github_bak_bak/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		<div class="banner bottom"></div>
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		<p id="demo1">npc template DICK DICK DICK</p>
+			
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		<p id="demo2"></p>
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			<p id="demo3"></p>
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="file:///D|/Github_bak_bak/content/npcs/html/npc_imgs/Scarback.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+				<span class="stat-block single">
+					
+						<p>Scarback</p>
+				<span class="npc-heading">
+		  			
+								<h1 >Scarback</h1>
+						
+								<h2>middle aged adult Half-Ogre <br>
+						
+									Lawful Neutral<br>
+						
+									Level 6 Barbarian Path of the Beast</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+				
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>it/him</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Performer</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>16</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>68 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>40.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>20 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>14 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>18 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>7 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>8 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>8 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(20);
+											document.getElementById("strmodi").innerHTML = myModi(20);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(14);
+											document.getElementById("dexmodi").innerHTML = myModi(14);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(18);
+											document.getElementById("conmodi").innerHTML = myModi(18);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(7);
+											document.getElementById("intmodi").innerHTML = myModi(7);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(8);
+											document.getElementById("wismodi").innerHTML = myModi(8);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(8);
+											document.getElementById("chamodi").innerHTML = myModi(8);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										{&quot;Half-Ogre Abilities&quot;=&gt;[{&quot;Darkvision&quot;=&gt;&quot;You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can&#39;t discern color in darkness, only shades of gray.&quot;, &quot;Strong and Angry&quot;=&gt;&quot;Due to your giant size and insane strength, using great weapons tends to be really easy for you. You gain proficiency with the greataxe and the maul.&quot;, &quot;Relentless Power&quot;=&gt;&quot;Nothing can stop your imense strength. When you roll a critical hit with a melee weapon, you can roll one of the weapon dice again and add it to the total.&quot;, &quot;Unstoppable Destruction&quot;=&gt;&quot;Your size and strength are unmatched. If you hit an enemy with an attack with a two-handed melee weapon, you can use your bonus action to attack one adjacent enemy within 5ft from you and the enemy you first hit with your two-handed melee weapon, though the second attack is rolled with disadvantage.&quot;, &quot;Frightful Appearance&quot;=&gt;&quot;Due to your sheer size, you would put the braves to run. You gain proficiency in the Intimidation skill.&quot;, &quot;Bloodrage&quot;=&gt;&quot;Your blood becomes filled with your anger. Once per long rest, with a bonus action, you may raise your Strength score by 4 for 1 minute. When the Bloodrage ceases, you get a minus 4 in your Intelligence score untill you finish a short or long rest.&quot;}], &quot;Barbarian Abilities&quot;=&gt;[{&quot;Rage&quot;=&gt;[{&quot;Descripition&quot;=&gt;&quot;Can enter a rage as a Bonus Action.&quot;, &quot;Additional Information&quot;=&gt;[&quot;Advantage on Strength Checks and Strength Saving Throws&quot;, &quot;Make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll&quot;, &quot;Resistance to bludgeoning, piercing, and slashing damage&quot;], &quot;Danger Sense&quot;=&gt;&quot;has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells&quot;, &quot;Reckless Attack&quot;=&gt;&quot;When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, but Attack Rolls against him have advantage until his next turn&quot;, &quot;Extra Attack&quot;=&gt;&quot;Can attack twice each turn&quot;, &quot;Fast Movement&quot;=&gt;&quot;your speed increases by 10 feet while you aren&#39;t wearing Heavy Armor.&quot;}], &quot;Path of the Beast Abilities&quot;=&gt;[{&quot;Form of the Beast&quot;=&gt;[{&quot;Description&quot;=&gt;&quot;When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon’s form each time you rage -&quot;, &quot;Bite&quot;=&gt;&quot;Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.&quot;, &quot;Claws&quot;=&gt;&quot;Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.&quot;, &quot;Tail&quot;=&gt;&quot;You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you&quot;}]}], &quot;Bestial Soul&quot;=&gt;[{&quot;Description&quot;=&gt;&quot;the feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest&quot;, &quot;Additional informaion&quot;=&gt;[&quot;You gain a swimming speed equal to your walking speed, and you can breathe underwater.&quot;, &quot;You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.&quot;, &quot;When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.        f&quot;]}]}]}<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(6);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+								</span> 
+
+								<span class="top-property-line">
+						
+								</span> 
+					
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							Orcish
+							Goblin
+							Giant
+							Common
+							N/A
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Caring, 
+									Delusional, 
+									Drunk, 
+	
+					
+								</span> 
+
+					
+							
+				
+
+
+				
+
+								<svg height="5" width="100%" class="tapered-rule">
+	   				
+									<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+								</svg>	
+				
+							<span class="property-line first">
+
+								<h3>Special Abilities</h3>
+					
+								
+	
+									
+
+								
+								
+								
+							</span>
+
+				
+							
+								<span class="property-line">
+					
+								<h3>Special Equipment</h3>
+								
+							
+								</span>	
+				
+							<span class="property-line">
+					
+								<h3>Combat Tactics</h3>
+							</span> 
+			
+				
+							<span class="property-line">
+					
+								<h3>Actions</h3>
+					
+								<br>
+				
+							</span>
+			
+				
+							<span class="property-line">
+				
+							
+								<h3>Factions</h3><br>
+									
+								<br><br>
+								
+								
+					</span>
+					</span>
+			
+					</span>
+					
+				</span>
+				
+			
+				<span class="data">	
+	
+								
+					<hr class="steel-border" />			
+
+				
+					
+					
+					<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="file:///D|/Github_bak_bak/content/npcs/html/npc_imgs/Scarback.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>
+					
+					
+					
+					<span class="stat-block single">
+						
+						<span class="npc-heading">
+										
+						<h1>Roleplaying</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							
+										<span class="right-line first">
+								
+											<h3>Introduction</h3>
+							
+										
+											
+										<p>Might be found wandering a town or city calling, /&quot;Bodius..? Ohhh, Bodius? Where have you gone dear friend?/&quot;; Scarback has a serious drinking problem and is renown at local pubs - having lots of good acquaintances</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+										<p>Enormous and intimidating; Muscular and dirty; wears bright, patched stitch-work clothing</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i>Go get good at stuff</i></p></li><br>
+											
+											
+											<li><p><i>Bodius says Migrug does good</i></p></li><br>
+											
+											
+											<li><p><i>I can break stuff and break it again</i></p></li><br>
+											
+											
+											
+											</ul>
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Mannerisms</h3>
+											
+											<p>Constantly scratching himself from poor hygeine; always flexing; Spits a lot (Chews tobacco)</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+										
+											<p>Almost a result of cognitive dissonance, Scarback ardently seeks to convince others that his old peformance partner, Bodius, is missing and that he needs help to find her.
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											
+											<p>Bodius, his elven performance colleague of the past - he is always referring to her even though she is supposedly long dead
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+										<br>
+											<p>Keeps Bodius in a locked chest where he feeds her and keeps her alive - his most prized possession.
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+					</span>
+										
+				</span>
+				
+			</div>
+			  
+			
+				
+		  <div class="cell" id="cell2">
+			
+				<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block single">
+		
+					
+						
+	
+				
+							<span class="npc-heading">
+		  			
+								<h1>Scarback</h1>
+						
+								<h2>middle aged adult Half-Ogre <br>
+						
+									Lawful Neutral<br>
+						
+									Level 6 Barbarian Path of the Beast</h2>
+		
+						
+							
+						
+				
+															<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+				
+							
+	 				
+								<span class="top-property-line">
+						
+									<h4>Pronouns - </h4><p>it/him</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Performer</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>16</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>68 (TODO Hitdice)</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>40.</p>
+			
+								</span> 
+					
+					<!-- property line -->
+					
+			
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>20 (<span id="strmodi2"></span><span id="strmod2"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>14 (<span id="dexmodi2"></span><span id="dexmod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>18 (<span id="conmodi2"></span><span id="conmod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>7 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>8 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>8 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod2").innerHTML = myMod(20);
+											document.getElementById("strmodi2").innerHTML = myModi(20);
+											
+											
+						
+											document.getElementById("dexmod2").innerHTML = myMod(14);
+											document.getElementById("dexmodi2").innerHTML = myModi(14);
+						
+						
+											
+											document.getElementById("conmod2").innerHTML = myMod(18);
+											document.getElementById("conmodi2").innerHTML = myModi(18);
+						
+						
+						
+											document.getElementById("intmod2").innerHTML = myMod(7);
+											document.getElementById("intmodi2").innerHTML = myModi(7);
+						
+											
+											document.getElementById("wismod2").innerHTML = myMod(8);
+											document.getElementById("wismodi2").innerHTML = myModi(8);
+						
+						
+											
+											document.getElementById("chamod2").innerHTML = myMod(8);
+											document.getElementById("chamodi2").innerHTML = myModi(8);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+					
+					<!-- abilities -->
+					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+				
+								<span class="top-property-line first">
+						
+									<h4>Saving Throws - </h4>
+						
+									<h4>Saving Throws - </h4>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+					
+									
+									<h4>Skills - </h4>
+									<p>
+									{&quot;Half-Ogre Abilities&quot;=&gt;[{&quot;Darkvision&quot;=&gt;&quot;You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can&#39;t discern color in darkness, only shades of gray.&quot;, &quot;Strong and Angry&quot;=&gt;&quot;Due to your giant size and insane strength, using great weapons tends to be really easy for you. You gain proficiency with the greataxe and the maul.&quot;, &quot;Relentless Power&quot;=&gt;&quot;Nothing can stop your imense strength. When you roll a critical hit with a melee weapon, you can roll one of the weapon dice again and add it to the total.&quot;, &quot;Unstoppable Destruction&quot;=&gt;&quot;Your size and strength are unmatched. If you hit an enemy with an attack with a two-handed melee weapon, you can use your bonus action to attack one adjacent enemy within 5ft from you and the enemy you first hit with your two-handed melee weapon, though the second attack is rolled with disadvantage.&quot;, &quot;Frightful Appearance&quot;=&gt;&quot;Due to your sheer size, you would put the braves to run. You gain proficiency in the Intimidation skill.&quot;, &quot;Bloodrage&quot;=&gt;&quot;Your blood becomes filled with your anger. Once per long rest, with a bonus action, you may raise your Strength score by 4 for 1 minute. When the Bloodrage ceases, you get a minus 4 in your Intelligence score untill you finish a short or long rest.&quot;}], &quot;Barbarian Abilities&quot;=&gt;[{&quot;Rage&quot;=&gt;[{&quot;Descripition&quot;=&gt;&quot;Can enter a rage as a Bonus Action.&quot;, &quot;Additional Information&quot;=&gt;[&quot;Advantage on Strength Checks and Strength Saving Throws&quot;, &quot;Make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll&quot;, &quot;Resistance to bludgeoning, piercing, and slashing damage&quot;], &quot;Danger Sense&quot;=&gt;&quot;has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells&quot;, &quot;Reckless Attack&quot;=&gt;&quot;When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, but Attack Rolls against him have advantage until his next turn&quot;, &quot;Extra Attack&quot;=&gt;&quot;Can attack twice each turn&quot;, &quot;Fast Movement&quot;=&gt;&quot;your speed increases by 10 feet while you aren&#39;t wearing Heavy Armor.&quot;}], &quot;Path of the Beast Abilities&quot;=&gt;[{&quot;Form of the Beast&quot;=&gt;[{&quot;Description&quot;=&gt;&quot;When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon’s form each time you rage -&quot;, &quot;Bite&quot;=&gt;&quot;Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.&quot;, &quot;Claws&quot;=&gt;&quot;Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.&quot;, &quot;Tail&quot;=&gt;&quot;You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you&quot;}]}], &quot;Bestial Soul&quot;=&gt;[{&quot;Description&quot;=&gt;&quot;the feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest&quot;, &quot;Additional informaion&quot;=&gt;[&quot;You gain a swimming speed equal to your walking speed, and you can breathe underwater.&quot;, &quot;You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.&quot;, &quot;When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.        f&quot;]}]}]}<br>
+     
+									</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+									
+									
+					
+								</span> <!-- property line -->
+			
+			
+					
+								<span class="top-property-line">
+						
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+					
+								</span> <!-- property line -->
+			
+					
+					
+								<span class="top-property-line">
+					
+									
+					
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>		
+									Orcish 
+									Goblin 
+									Giant 
+									Common 
+									N/A 
+					</p>
+							
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									<p>Caring, Delusional, Drunk, </p>	
+					
+								</span> <!-- property line -->
+			
+					
+							
+				
+				<!-- top stats -->
+				
+				
+
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+				
+							<span class="property-line">
+					
+								<h3>Special Abilities</h3>
+					
+								
+								<span class="ability-item"><p><b></b> - <br></p></span>
+	
+									
+
+								
+								
+								
+							</span>
+
+				
+							
+								<span class="property-line">
+					
+								<h3>Special Equipment</h3>
+								<p>	<b></b> - <br></p>
+									
+								<p>	<b></b> - <br></p>
+									
+								
+							
+								</span>	
+				
+							<span class="property-line">
+					
+								<h3>Combat Tactics</h3>
+								<p>Scarback is fearless. He will almost always begin any combat by entering a rage and attacking the most powerful appearing foe.
+</p>
+								
+							</span> 
+			
+				
+							<span class="property-line">
+					
+								<h3>Actions</h3>
+					
+								<p><b></b> - 
+								<br></p>
+								<br>
+				
+							</span>
+			
+				
+							<span class="property-line ">
+					
+								
+								
+								<h3>Factions</h3><br>
+									
+								<br><br>
+								
+								
+								</span>
+					</span>
+						
+					</span>
+					
+			  </span>
+		
+			
+			</div>
+			
+		  <div class="cell" id="cell3">
+    
+				<span class="data">
+				
+					
+				
+					<span class="stat-block single">
+
+						
+					
+						<span class="npc-heading">
+							
+						
+							<h1>Roleplaying</h1>
+
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
+									
+							<span class="property-line first">	
+								
+								
+								<h3>Introduction</h3>
+							
+								
+							
+							
+							<p>Might be found wandering a town or city calling, /&quot;Bodius..? Ohhh, Bodius? Where have you gone dear friend?/&quot;; Scarback has a serious drinking problem and is renown at local pubs - having lots of good acquaintances</p><br />
+		
+							</span>
+		
+							
+							<span class="property-line">
+			
+							
+								<h3>Appearance</h3>
+							
+							
+								
+								<p>Enormous and intimidating; Muscular and dirty; wears bright, patched stitch-work clothing</p>
+		
+										
+							</span>
+		
+		
+								
+							<span class="property-line">
+			
+								
+								<h3>Expressions</h3>
+									
+							
+		
+							
+								
+							
+											
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i>Go get good at stuff</i></p></li><br>
+											
+											
+											<li><p><i>Bodius says Migrug does good</i></p></li><br>
+											
+											
+											<li><p><i>I can break stuff and break it again</i></p></li><br>
+											
+											
+											
+											</ul>
+											
+		
+								
+							</span> 
+		
+		
+								
+							<span class="property-line">
+			
+							
+								<h3>Mannerisms</h3>
+							
+							
+								<p>Constantly scratching himself from poor hygeine; always flexing; Spits a lot (Chews tobacco)</p>
+		
+								
+							</span> 
+		
+		
+								
+							<span class="property-line">
+			
+								
+								<h3>Motivations</h3>
+								
+							
+											
+								<p>Almost a result of cognitive dissonance, Scarback ardently seeks to convince others that his old peformance partner, Bodius, is missing and that he needs help to find her.
+</p>
+							
+							</span>
+		
+		
+			
+			
+								
+							<span class="property-line">
+			
+								<h3>Passions</h3>
+								
+								
+									
+								<p>Bodius, his elven performance colleague of the past - he is always referring to her even though she is supposedly long dead
+</p>
+		
+									
+							</span> 
+		
+	
+		
+									
+							<span class="property-line">
+			
+									
+								<h3>Secrets</h3>
+									
+							<br>
+									<p>Keeps Bodius in a locked chest where he feeds her and keeps her alive - his most prized possession.
+</p>		
+		
+										
+							</span> 
+						
+						</span>
+					
+					</span>
+			  
+			  </span>
+				</div>
+			<div class="container2">
+				<div class="bgcell">
+				
+					<span class="data2">
+					
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+							
+							
+								<span class="property-line bg">	
+		
+								
+									When the village of Everskinnis [Any Elven village] was raided by Ogres and goblinoids, the inevitable results of the plunder and pillage was that the ravaged female escapees would birth half-breeds. Relima Haas, a young
+woman and former wife of a fine hunter who fell in the raids, was among these poor women. The gestation period was more than draining and the birth fatal. Scarback was born. Scavenging for food and other sustenance
+and forced to reform their beliefs and direction, the camp of survivors raised Scarback in the wilderness. He learned to value the spirits of the wild beasts and flora. He also learned the value of connecting with the rage
+he felt over the abuses imparted upon his mother and her now scattered community of hunters. A small portion of these survivors refused to live in survival-mode and instead departed together to seek a better life.
+Scarback followed. The 5 departees were the smarter and more talented of the group. One of these departees was a beautiful young elven woman named Bodius towards whom Scarback took a serious liking. Traveling village to
+village, they would perform feats of strength and agility for coins to wrangle up food or drink. In time, they came to be known as an entertaining side-show. On one fateful night, the group encountered a particularly
+vicious pack of gnolls. Scarback fought valiantly while most of the group were slain. The gnolls plundered what they could and fled while Scarback was left tending to a seriously wounded Bodius with tears in his eyes.
+"Scarback love pretty elf-lady", he lamented. He tucked Bodius in the group's steamer chest and gently fed her, gave her water, and tended to her wounds as he made his way to the nearest township. Upon next opening the
+steamer, Bodius was somewhat recovered and attempted to get out. "No. Elf lady not safe", Scarback proclaimed as he knocked her out with a back hand. He tied her up securely, stuffed cloth in her mouth, and closed the
+chest, determined to keep Bodius safe from harm. Yet, that same day, when he made his way through town his mind encountered a serious psychological schism; he couldn't accept what he'd done and immediately began searching
+for Bodius. At the same time he has an inexorable bond with his steamer trunk. Twice daily, in private, he will check on his belongings and only then recognize that Bodius remains in the chest. He will feed her and provide
+her water, only to Bind and gag her and lock the steamer back up.
+
+								
+    
+								</span>
+</span>
+							</span>
+								
+					</span>
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Scarback is a conflicted being. A behemoth with deminished mental capacity, his poor fracured mind cannot deal with the reality of his situation. He loves and cares so deeply for Bodius that he does not want any more harm
+to come to her. But in his zeal to protector her, he has denied her comfort and freedom. At the same time, a combination of massive amounts of alcohol and the power of self-denial, he mostly dissociates his mind from the
+torture that he has actually perpetrated upon her. The drunker her gets, the more he wanders and laments his &quot;lost&quot; love despite her being, however unwillingly, by his side the whole time
+
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+			-->	
+		</div>	
+	</div>
+</body>
+
+</html>

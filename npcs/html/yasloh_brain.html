@@ -1,0 +1,1439 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yasloh Brain</title>
+
+<link rel="stylesheet" href="file:///D|/Github_bak_bak/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github_bak_bak/docs-index/index.html"><img src="file:///D|/Github_bak_bak/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		<div class="banner bottom"></div>
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		<p id="demo1">npc template DICK DICK DICK</p>
+			
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		<p id="demo2"></p>
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			<p id="demo3"></p>
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="file:///D|/Github_bak_bak/content/npcs/html/npc_imgs/Yasloh Brain.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+				<span class="stat-block single">
+					
+						<p>Yasloh Brain</p>
+				<span class="npc-heading">
+		  			
+								<h1 >Yasloh Brain</h1>
+						
+								<h2>middle aged adult Gnome <br>
+						
+									Lawful Evil<br>
+						
+									Level 15 Wizard School of Enchantment</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+				
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>he/him</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Scrum Wizard</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>14</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>68 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>25.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>14 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>10 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>11 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>19 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>5 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>3 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(14);
+											document.getElementById("strmodi").innerHTML = myModi(14);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(10);
+											document.getElementById("dexmodi").innerHTML = myModi(10);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(11);
+											document.getElementById("conmodi").innerHTML = myModi(11);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(19);
+											document.getElementById("intmodi").innerHTML = myModi(19);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(5);
+											document.getElementById("wismodi").innerHTML = myModi(5);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(3);
+											document.getElementById("chamodi").innerHTML = myModi(3);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										{&quot;Swamp Gnome Abilities&quot;=&gt;[{&quot;Gnome Cunning&quot;=&gt;&quot;Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic&quot;}, {&quot;Darkvision&quot;=&gt;&quot;can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can&#39;t discern color in darkness, only shades of gray&quot;}, {&quot;Artificers Lore&quot;=&gt;&quot;Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply&quot;}, {&quot;Tinker&quot;=&gt;&quot;You have proficiency with artisan tools (tinker&#39;s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options -&quot;, &quot;Clockwork Toy&quot;=&gt;&quot;This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.&quot;, &quot;Fire Starter&quot;=&gt;&quot;The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.&quot;, &quot;Music Box&quot;=&gt;&quot;When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song&#39;s end or when it is closed.&quot;}]}<br>
+        							
+									
+										{&quot;Wizard Abilities&quot;=&gt;[{&quot;Arcane Recovery&quot;=&gt;&quot;After a short rest can recover a spell slot up to 3rd level&quot;}, {&quot;Spell Mastery&quot;=&gt;&quot;Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal&quot;}, {&quot;Signature Spells&quot;=&gt;&quot;Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don&#39;t count against the number of Spells you have prepared, and you can cast each of them once at 3rd Level without expending a spell slot.&quot;}, {&quot;Spellcasting&quot;=&gt;&quot;Spell DC 17&quot;, &quot;Cantrips&quot;=&gt;&quot;Minor Illusion, Mage Hand, Message, Prestidigitation, Shocking Grasp, Thunderclap&quot;, &quot;1st Level&quot;=&gt;&quot;Disguise Self, Illusory Script, Silent Image, Charm Person&quot;, &quot;2nd Level&quot;=&gt;&quot;Invisibility, Mirror Image, Phantasmal Force&quot;, &quot;3rd Level&quot;=&gt;&quot;Fear, Hypnotic Pattern, Major Image&quot;, &quot;4th Level&quot;=&gt;&quot;Greater Invisibility, Hallucinatory Terrain, Phantasmal Killer&quot;, &quot;5th Level&quot;=&gt;&quot;Dream, Mislead&quot;, &quot;6th Level&quot;=&gt;&quot;Programme Illusion&quot;, &quot;7th Level&quot;=&gt;&quot;Simulacrum&quot;, &quot;8th Level&quot;=&gt;&quot;Telepathy&quot;}]}<br>
+        							
+									
+										{&quot;School of Enchantment Abilities&quot;=&gt;[{&quot;Illusion Savant&quot;=&gt;&quot;the gold and time you must spend to copy a Illusion spell into your spellbook is halved.&quot;}, {&quot;Improved Minor Illusion&quot;=&gt;&quot;you learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice. The cantrip doesn&#39;t count against your number of cantrips known. When you cast Minor Illusion, you can create both a sound and an image with a single casting of the spell.&quot;}, {&quot;Malleable Illusion&quot;=&gt;&quot;when you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell&#39;s normal parameters for the illusion), provided that you can see the illusion.&quot;}, {&quot;Illusory Self&quot;=&gt;&quot;you can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates. Once you use this feature, you can&#39;t use it again until you finish a short or long rest.&quot;}, {&quot;Illusory Reality&quot;=&gt;&quot;you have learned the secret of weaving shadow magic into your illusions to give them a semi-reality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross. The object can&#39;t deal damage or otherwise directly harm anyone.&quot;}]}<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(15);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+								</span> 
+
+								<span class="top-property-line">
+						
+								</span> 
+					
+								
+								<span class="top-property-line">
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							Common
+							Gnomish
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Learned, 
+									Intense, 
+									Manic, 
+	
+					
+								</span> 
+
+					
+							
+				
+
+
+				
+
+								<svg height="5" width="100%" class="tapered-rule">
+	   				
+									<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+								</svg>	
+				
+							<span class="property-line first">
+
+								<h3>Special Abilities</h3>
+					
+								
+	
+									
+
+								
+								
+								
+							</span>
+
+				
+							
+								<span class="property-line">
+					
+								<h3>Special Equipment</h3>
+								
+							
+								</span>	
+				
+							<span class="property-line">
+					
+								<h3>Combat Tactics</h3>
+							</span> 
+			
+				
+							<span class="property-line">
+					
+								<h3>Actions</h3>
+					
+								<br>
+				
+							</span>
+			
+				
+							<span class="property-line">
+				
+							
+								<h3>Factions</h3><br>
+									
+									
+								<span class="ability-item">	<p><b>Scrum Wizards</b><br></p>
+					
+							
+									<br><p>Role: <i></i><br></p></span><br>
+									
+								<br><br>
+								
+								
+					</span>
+					</span>
+			
+					</span>
+					
+				</span>
+				
+			
+				<span class="data">	
+	
+								
+					<hr class="steel-border" />			
+
+				
+					
+					
+					<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="file:///D|/Github_bak_bak/content/npcs/html/npc_imgs/Yasloh Brain.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>
+					
+					
+					
+					<span class="stat-block single">
+						
+						<span class="npc-heading">
+										
+						<h1>Roleplaying</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							
+										<span class="right-line first">
+								
+											<h3>Introduction</h3>
+							
+										
+											
+										<p>/&quot;You&#39;re carrying that wrong,&quot;/ declares a robed, trinketed gnome, walking youward. /&quot;Let me share my learnings with you.&quot;/</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+										<p>Cross-eyed; powerful, like a wild cat; intense; wears showy expensive jewelry, bits of coloured paper pasted on pants.</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i>(Interrupting) &quot;I know what you&#39;re going to say&quot;; &quot;I think very, very deeply&quot;; &quot;You&#39;re where I was at ten years ago.&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Mannerisms</h3>
+											
+											<p>Constantly rubbing knuckles, flexing his jaw and his triceps; sighs in disappointment whenever others speak.</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+										
+											<p>Wants to lead other wizards in the building of new, never-before-invented magical devices; sees himself as a mentor.
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											
+											<p>Innovation and guiding others into a new and vibrant future.
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+										<br>
+											<p>N/A
+ 
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+					</span>
+										
+				</span>
+				
+			</div>
+			  
+			
+				
+		  <div class="cell" id="cell2">
+			
+				<span class="data">
+				<hr class="steel-border" />
+					<span class="stat-block single">
+		
+					
+						
+	
+				
+							<span class="npc-heading">
+		  			
+								<h1>Yasloh Brain</h1>
+						
+								<h2>middle aged adult Gnome <br>
+						
+									Lawful Evil<br>
+						
+									Level 15 Wizard School of Enchantment</h2>
+		
+						
+							
+						
+				
+															<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+				
+							
+	 				
+								<span class="top-property-line">
+						
+									<h4>Pronouns - </h4><p>he/him</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Scrum Wizard</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>14</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>68 (TODO Hitdice)</p><br>
+					
+								</span> <!-- property line -->
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>25.</p>
+			
+								</span> 
+					
+					<!-- property line -->
+					
+			
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+			
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>14 (<span id="strmodi2"></span><span id="strmod2"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>10 (<span id="dexmodi2"></span><span id="dexmod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>11 (<span id="conmodi2"></span><span id="conmod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>19 (<span id="intmodi2"></span><span id="intmod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>5 (<span id="wismodi2"></span><span id="wismod2"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>3 (<span id="chamodi2"></span><span id="chamod2"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod2").innerHTML = myMod(14);
+											document.getElementById("strmodi2").innerHTML = myModi(14);
+											
+											
+						
+											document.getElementById("dexmod2").innerHTML = myMod(10);
+											document.getElementById("dexmodi2").innerHTML = myModi(10);
+						
+						
+											
+											document.getElementById("conmod2").innerHTML = myMod(11);
+											document.getElementById("conmodi2").innerHTML = myModi(11);
+						
+						
+						
+											document.getElementById("intmod2").innerHTML = myMod(19);
+											document.getElementById("intmodi2").innerHTML = myModi(19);
+						
+											
+											document.getElementById("wismod2").innerHTML = myMod(5);
+											document.getElementById("wismodi2").innerHTML = myModi(5);
+						
+						
+											
+											document.getElementById("chamod2").innerHTML = myMod(3);
+											document.getElementById("chamodi2").innerHTML = myModi(3);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+					
+					<!-- abilities -->
+					
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+				
+								<span class="top-property-line first">
+						
+									<h4>Saving Throws - </h4>
+						
+									<h4>Saving Throws - </h4>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+					
+									
+									<h4>Skills - </h4>
+									<p>
+									{&quot;Swamp Gnome Abilities&quot;=&gt;[{&quot;Gnome Cunning&quot;=&gt;&quot;Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic&quot;}, {&quot;Darkvision&quot;=&gt;&quot;can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can&#39;t discern color in darkness, only shades of gray&quot;}, {&quot;Artificers Lore&quot;=&gt;&quot;Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply&quot;}, {&quot;Tinker&quot;=&gt;&quot;You have proficiency with artisan tools (tinker&#39;s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options -&quot;, &quot;Clockwork Toy&quot;=&gt;&quot;This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.&quot;, &quot;Fire Starter&quot;=&gt;&quot;The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.&quot;, &quot;Music Box&quot;=&gt;&quot;When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song&#39;s end or when it is closed.&quot;}]}<br>
+									{&quot;Wizard Abilities&quot;=&gt;[{&quot;Arcane Recovery&quot;=&gt;&quot;After a short rest can recover a spell slot up to 3rd level&quot;}, {&quot;Spell Mastery&quot;=&gt;&quot;Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal&quot;}, {&quot;Signature Spells&quot;=&gt;&quot;Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don&#39;t count against the number of Spells you have prepared, and you can cast each of them once at 3rd Level without expending a spell slot.&quot;}, {&quot;Spellcasting&quot;=&gt;&quot;Spell DC 17&quot;, &quot;Cantrips&quot;=&gt;&quot;Minor Illusion, Mage Hand, Message, Prestidigitation, Shocking Grasp, Thunderclap&quot;, &quot;1st Level&quot;=&gt;&quot;Disguise Self, Illusory Script, Silent Image, Charm Person&quot;, &quot;2nd Level&quot;=&gt;&quot;Invisibility, Mirror Image, Phantasmal Force&quot;, &quot;3rd Level&quot;=&gt;&quot;Fear, Hypnotic Pattern, Major Image&quot;, &quot;4th Level&quot;=&gt;&quot;Greater Invisibility, Hallucinatory Terrain, Phantasmal Killer&quot;, &quot;5th Level&quot;=&gt;&quot;Dream, Mislead&quot;, &quot;6th Level&quot;=&gt;&quot;Programme Illusion&quot;, &quot;7th Level&quot;=&gt;&quot;Simulacrum&quot;, &quot;8th Level&quot;=&gt;&quot;Telepathy&quot;}]}<br>
+									{&quot;School of Enchantment Abilities&quot;=&gt;[{&quot;Illusion Savant&quot;=&gt;&quot;the gold and time you must spend to copy a Illusion spell into your spellbook is halved.&quot;}, {&quot;Improved Minor Illusion&quot;=&gt;&quot;you learn the Minor Illusion cantrip. If you already know this cantrip, you learn a different wizard cantrip of your choice. The cantrip doesn&#39;t count against your number of cantrips known. When you cast Minor Illusion, you can create both a sound and an image with a single casting of the spell.&quot;}, {&quot;Malleable Illusion&quot;=&gt;&quot;when you cast an illusion spell that has a duration of 1 minute or longer, you can use your action to change the nature of that illusion (using the spell&#39;s normal parameters for the illusion), provided that you can see the illusion.&quot;}, {&quot;Illusory Self&quot;=&gt;&quot;you can create an illusory duplicate of yourself as an instant, almost instinctual reaction to danger. When a creature makes an attack roll against you, you can use your reaction to interpose the illusory duplicate between the attacker and yourself. The attack automatically misses you, then the illusion dissipates. Once you use this feature, you can&#39;t use it again until you finish a short or long rest.&quot;}, {&quot;Illusory Reality&quot;=&gt;&quot;you have learned the secret of weaving shadow magic into your illusions to give them a semi-reality. When you cast an illusion spell of 1st level or higher, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a bonus action while the spell is ongoing. The object remains real for 1 minute. For example, you can create an illusion of a bridge over a chasm and then make it real long enough for your allies to cross. The object can&#39;t deal damage or otherwise directly harm anyone.&quot;}]}<br>
+     
+									</p>
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+									
+									
+					
+								</span> <!-- property line -->
+			
+			
+					
+								<span class="top-property-line">
+						
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+					
+								</span> <!-- property line -->
+			
+					
+					
+								<span class="top-property-line">
+					
+									
+					
+					
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>		
+									Common 
+									Gnomish 
+					</p>
+							
+								</span> <!-- property line -->
+			
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									<p>Learned, Intense, Manic, </p>	
+					
+								</span> <!-- property line -->
+			
+					
+							
+				
+				<!-- top stats -->
+				
+				
+
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+				
+							<span class="property-line">
+					
+								<h3>Special Abilities</h3>
+					
+								
+								<span class="ability-item"><p><b></b> - <br></p></span>
+								<span class="ability-item"><p><b></b> - <br></p></span>
+	
+									
+
+								
+								
+								
+							</span>
+
+				
+							
+								<span class="property-line">
+					
+								<h3>Special Equipment</h3>
+								<p>	<b></b> - <br></p>
+									
+								
+							
+								</span>	
+				
+							<span class="property-line">
+					
+								<h3>Combat Tactics</h3>
+								<p>Yasloh will rarely engage in direct hand-to-hand combat and almost exclusively rely on his spells to create distance and eliminate hostiles.
+</p>
+								
+							</span> 
+			
+				
+							<span class="property-line">
+					
+								<h3>Actions</h3>
+					
+								<p><b></b> - 
+								<br></p>
+								<br>
+				
+							</span>
+			
+				
+							<span class="property-line ">
+					
+								
+								
+								<h3>Factions</h3><br>
+									
+									
+								<span class="ability-item">	<p><b>Scrum Wizards</b><br></p>
+					
+							
+									<br><p>Role: <i></i><br></p></span><br>
+									
+								<br><br>
+								
+								
+								</span>
+					</span>
+						
+					</span>
+					
+			  </span>
+		
+			
+			</div>
+			
+		  <div class="cell" id="cell3">
+    
+				<span class="data">
+				
+					
+				
+					<span class="stat-block single">
+
+						
+					
+						<span class="npc-heading">
+							
+						
+							<h1>Roleplaying</h1>
+
+<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+								
+									
+									
+							<span class="property-line first">	
+								
+								
+								<h3>Introduction</h3>
+							
+								
+							
+							
+							<p>/&quot;You&#39;re carrying that wrong,&quot;/ declares a robed, trinketed gnome, walking youward. /&quot;Let me share my learnings with you.&quot;/</p><br />
+		
+							</span>
+		
+							
+							<span class="property-line">
+			
+							
+								<h3>Appearance</h3>
+							
+							
+								
+								<p>Cross-eyed; powerful, like a wild cat; intense; wears showy expensive jewelry, bits of coloured paper pasted on pants.</p>
+		
+										
+							</span>
+		
+		
+								
+							<span class="property-line">
+			
+								
+								<h3>Expressions</h3>
+									
+							
+		
+							
+								
+							
+											
+										<ul style="list-style-type:none;">
+  
+ 	
+											<li><p><i>(Interrupting) &quot;I know what you&#39;re going to say&quot;; &quot;I think very, very deeply&quot;; &quot;You&#39;re where I was at ten years ago.&quot;</i></p></li><br>
+											
+											
+											
+											</ul>
+											
+		
+								
+							</span> 
+		
+		
+								
+							<span class="property-line">
+			
+							
+								<h3>Mannerisms</h3>
+							
+							
+								<p>Constantly rubbing knuckles, flexing his jaw and his triceps; sighs in disappointment whenever others speak.</p>
+		
+								
+							</span> 
+		
+		
+								
+							<span class="property-line">
+			
+								
+								<h3>Motivations</h3>
+								
+							
+											
+								<p>Wants to lead other wizards in the building of new, never-before-invented magical devices; sees himself as a mentor.
+</p>
+							
+							</span>
+		
+		
+			
+			
+								
+							<span class="property-line">
+			
+								<h3>Passions</h3>
+								
+								
+									
+								<p>Innovation and guiding others into a new and vibrant future.
+</p>
+		
+									
+							</span> 
+		
+	
+		
+									
+							<span class="property-line">
+			
+									
+								<h3>Secrets</h3>
+									
+							<br>
+									<p>N/A
+ 
+</p>		
+		
+										
+							</span> 
+						
+						</span>
+					
+					</span>
+			  
+			  </span>
+				</div>
+			<div class="container2">
+				<div class="bgcell">
+				
+					<span class="data2">
+					
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+							
+							
+								<span class="property-line bg">	
+		
+								
+									There really aren't any Swamp Gnomes. Except for Yasloh. Emerging from a mountain cave on a dimly glimmering morning, the Gnome sputtered at the sun, "Yes, yes, I know that already", and coughed up a bit of flem in his hand.
+He slapped his hands together and rubbed them vigorously, laughing to himself. "What does this day have to offer?" He stepped forward out of the cave and his foot found no ground. The black swamps of Kol-oug had deceived 
+yet another. Whoever Yasloh used to be was absorbed into the gritty sandy mire of Kol-oug. How could I have forgotten the bloody swamp? Was the last thought that crossed his mind before the Mind Flayer pit swamp consumed 
+his identity. Three days later a small humanoid limped his way towards a makeshift Halfling military camp. "Who goes there?", cried the lieutenant. The "Brain" began to reflect upon itself and found nothing. Well, who does 
+go here? He asked himself. Nothing. "Who goes there?" The lieutenant asked again. Oh, well, I had better answer him. He seems important. "Brain!" Yasloh shouted the only thing he could think. "Brain" approached the militia 
+party having all the smarts he had before but having no idea who he actually was. "Oy, innit a gnome...", the halfling lieutenant remarked, "covered in muck". "Yes", Yasloh replied, "a swamp gnome". "But there's no such..."
+Yasloh shot the soldier an intimidating glance. Silence. They gave "Brain" a place to clean up and change.  During this reflection time his mind filled with criss-crossing images of shimmering grids and incoherent numbers 
+and languages. These hallucinations eventually began to congeal into gears, sigils, machinations, glyphs, and locations of great power. It appeared as though Yasloh had fallen asleep in the bath at the camp and he began 
+muttering incomprehensibly in an increasing volume until he was nearly shouting. A young Halfling soldier approached to shake him awake. "Sir. Sir? Are you okay? Are you..." And Yasloh shot up in the bathtub screaming 
+valorously, "I've got it mate!" He may have lost his past but now saw the many magical inventions that would define his future.
+ 
+
+								
+    
+								</span>
+</span>
+							</span>
+								
+					</span>
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Yasloh doesn&#39;t remember much of his life before waking up in the swamp, but it doesn&#39;t seem to bother him very much. He still maintains all of his arcane and historical knowledge, just none of his personal memories and as 
+far as he&#39;s concerned, thats all that matters anyway. He is manic, intense and animated all the time, to a level that doesn&#39;t seem possible to maintain for any length, yet there he goes. He talks constantly to anyone who 
+will listen, and even those who won&#39;t, giving advice, sharing his thoughts and finding, no matter how little they make sense.
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+			-->	
+		</div>	
+	</div>
+</body>
+
+</html>
