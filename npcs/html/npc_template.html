@@ -757,15 +757,19 @@
 								<h3>Special Abilities</h3>
 					
 								
-								{{#each npc.special-abilities}}
-								
+								{{#npc.special-abilities.length}}
+								{{#npc.special-abilities}}
 								<span class="ability-item">
 									<ul>
 									<br>
-									<li> {{@index}} - {{.}} </li>
-										</ul></p></span>
-								{{/each}}
-								
+										{{#racial-abilities.length}}
+										{{#racial-abilities}}
+									<li>{.} </li>
+									{{/racial-abilities}}
+									{{/racial-abilities.length}}
+									</ul></p></span>
+								{{/npc.special-abilities}}
+								{{/npc.special-abilities.length}}	
 									
 
 								
