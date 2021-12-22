@@ -762,11 +762,18 @@
 								<span class="ability-item">
 									<ul>
 									<br>
-									
-										<b>{{#title}}</b>{{/title}}
-									{{#description}}{{/description}}
-								    {{#abilities}}{{/abilities}}
-								    {{#additional-information}}{{/additional-information}}
+									    {{#title}}
+										<b>{{.}}</b>
+										{{/title}}
+									    {{#description}}
+										{{.}}
+										{{/description}}
+								        {{#abilities}}
+										{{.}}
+										{{/abilities}}
+										{{#additional-information}}
+										{{.}}
+										{{/additional-information}}
 									</ul></p></span>
 								{{/npc.special-abilities}}
 								{{/npc.special-abilities.length}}	
