@@ -342,7 +342,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A withered elderly woman glares across the courtyard, "Have you decided to join our little family, dearies?"
+    introduction: A withered elderly woman glares across the courtyard, /"Have you decided to join our little family, dearies?/"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -500,7 +500,7 @@ npc:
                           can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
         strength of the grave: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
                                reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
-      additional information:
+      additional-information:
       - title:
         - hound of ill omen
         description: 
