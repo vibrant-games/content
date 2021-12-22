@@ -762,10 +762,10 @@
 								<span class="ability-item">
 									<br>
 									    
-									<p><b>{{#title}}{{/title}}</b></p>
-								    <p>{{#description}}{{/description}}</p>
-									<p>{{#abilities}}{{/abilities}}</p>
-									<p>{{#additional-information}}{{/additional-information}}</p>
+									<p><b>{{#npc.special-abilities.title}}{{.}}{{/npc.special-abilities.title}}</b></p>
+								    <p>{{#npc.special-abilities.description}}{{.}}{{/npc.special-abilities.description}}</p>
+									<p>{{#npc.special-abilities.abilities}}{{.}}{{/npc.special-abilities.abilities}}</p>
+									<p>{{#npc.special-abilities.additional-information}}{{.}}{{/npc.special-abilities.additional-information}}</p>
 								</span>
 								{{/npc.special-abilities}}
 								{{/npc.special-abilities.length}}	
@@ -783,7 +783,7 @@
 								<h3>Special Equipment</h3>
 								{{#npc.special-equipment.length}}
 								{{#npc.special-equipment}}
-								<p>	<b>{{title}}</b> - {{{description}}}<br></p>
+								<p>	<b>{{#title}}{{.}}{{/title}}</b> - {{#description}}{{{.}}}{{/description}}<br></p>
 									
          						{{/npc.special-equipment}}
 								{{/npc.special-equipment.length}}
