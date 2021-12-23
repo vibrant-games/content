@@ -767,16 +767,17 @@
 									<p>
 									<ul>
 										{{#abilities}}
-										<li><p><b>{{title}}</b><br>
-								   		<p>Description: {{{description}}}</p>{{{additional-information}}}</li>
+										<li><p>{{#title}}<b>{{.}}{{/title}}</b><br>
+								   		{{#description}}<p>Description: {{{.}}}</p>{{/description}}{{#additional-information}}{{{.}}}{{/additional-information}}</li>
 										{{/abilities}}
 									</ul>
 								    </p>
 									<p>
 									<ul>
 										{{#additional-information}}
-										<li><p><b>{{title}}</b><br>
-								  	    <p>Description: {{{description}}} {{{additional-information}}}</p></li>
+										{{#title}}<li><p><b>{{.}}</b></p>{{/title}}
+								  	    {{#description}}<p>Description: {{{.}}}{{/description}}
+										{{#additional-information}}<p>{{{.}}}</p></li>
 										{{/additional-information}}
 									</ul>
 								    </p>
