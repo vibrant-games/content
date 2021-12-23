@@ -768,8 +768,8 @@
 									<p>
 									
 										{{#abilities}}
-										{{#title}}
-										<span><b>{{.}}: </b>{{/title}}{{#content}}{{.}}{{/content}}</span>
+										
+										<span>{{#title}<b>{{.}}{{/title}}: </b>{{#content}}{{.}}{{/content}}</span>
 											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
 										{{/abilities}}
 									
@@ -777,8 +777,8 @@
 									
 									
 										{{#additional-information}}
-											{{#title}}<p><b>{{.}}: </b>{{/title}}{{#content}}{{.}}{{/content}}</p>
-											{{#additional-information}}<p>{{.}}</p>{{/additional-information}}
+											{{#title}}<span><b>{{.}}{{/title}}: </b>{{#content}}{{.}}{{/content}}</span>
+											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
 										{{/additional-information}}<br>
 									
 								   
