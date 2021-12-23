@@ -760,30 +760,30 @@
 								<br>
 								{{#npc}}
 								{{#special-abilities}}
-								<span class="ability-item">
+								<div class="ability-item">
 														 
-									<p><b>{{title}}</b><br></p>
-								    <p>{{content}}</p><br>
+									<div><b>{{title}}</b></div><br>
+								    <div>{{content}}</div><br>
 									
-									<p>
+									
 									
 										{{#abilities}}
 										
-										<span>{{#title}}<b>{{.}}{{/title}}: </b>{{#content}}{{.}}{{/content}}</span>
-											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
+										<div>{{#title}<b>{{.}}{{/title}}: </b>{{#content}}{{.}}{{/content}}</div>
+											{{#additional-information}}<div>{{.}}</div>{{/additional-information}}
 										{{/abilities}}
 									
-								    </p><br>
+								    <br>
 									
 									
 										{{#additional-information}}
-											{{#title}}<span><b>{{.}}{{/title}}: </b>{{#content}}{{.}}{{/content}}</span>
-											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
+											{{#title}}<div><b>{{.}}: </b>{{/title}}{{#content}}{{.}}{{/content}}</div>
+											{{#additional-information}}<div>{{.}}</div>{{/additional-information}}
 										{{/additional-information}}<br>
 									
 								   
 									
-								</span>
+								</div>
 								{{/special-abilities}}
 								{{/npc}}	
 									
