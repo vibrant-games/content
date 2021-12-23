@@ -756,29 +756,30 @@
 
 							<p>	<h3>Special Abilities</h3></p>
 					            
-								
+								<br>
+								<br>
 								{{#npc}}
 								{{#special-abilities}}
 								<span class="ability-item">
 														 
-									<p><b>{{title}}</b><br></p>
-								    <p>{{content}}</p>
+									<p><b>{{title}}</b><br></p><br>
+								    <p>{{content}}</p><br>
 									
 									<p>
 									
 										{{#abilities}}
-										{{#title}}<p><b>{{.}}{{/title}}: </b>{{#content}}{{{.}}}{{/content}}</p>
+										{{#title}}<p><b>{{.}}{{/title}}: </b>{{#content}}{{{.}}}{{/content}}</p></br>
 											<p>{{#additional-information}}{{{.}}}{{/additional-information}}</p>
 										{{/abilities}}
 									
-								    </p>
+								    </p><br>
 									
 									
 										{{#additional-information}}
 											{{#title}}<p><b>{{{.}}}: </b>{{/title}}
 											{{#content}}{{{.}}}{{/content}}</p>
 											{{#additional-information}}<p>{{{.}}}</p>{{/additional-information}}
-										{{/additional-information}}
+										{{/additional-information}}<br>
 									
 								   
 									

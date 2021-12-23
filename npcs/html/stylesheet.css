@@ -318,7 +318,7 @@ div {
 
 .top-property-line{
 	display: inline-block;
-	text-align: justify;
+	text-align: left;
 	
 	width: 90%;
 	font-weight: normal;
@@ -343,6 +343,7 @@ div {
 	
 	  text-indent: 4px;
 }
+
 .top-property-line h4{
   color:indigo;
 }
@@ -354,7 +355,7 @@ div {
   margin: 10px 0px 0px 10px;
   font-size: 15.5px;
   line-height: 150%;
-	color: crimson;
+	color: indigo;
 	
 }
 
@@ -393,7 +394,7 @@ div {
 
 .property-line{
 	display: inline-block;
-	text-align: justify;
+	text-align: left;
 	
 	width: 90%;
 	font-weight: normal;
