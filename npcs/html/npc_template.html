@@ -765,10 +765,17 @@
 									<p><b>{{title}}</b></p>
 								    <p>{{description}}</p>
 									
-									<p>{{#title}}{{.}}{{/title}}</p>
-									<p>{{#abilities}}{{.}}{{/abilities}}</p>
-								
-									<p>{{#additional-information}}{{.}}{{/additional-information}}</p>
+									<p>
+									<ul>
+										{{#abilities}}
+										<li>{{.}}</li>
+										{{/abilities}}</p>
+									</ul>
+									<p>
+										{{#additional-information}}
+										<li>{{.}}</li>
+										{{/additional-information}}
+									</p>
 									
 								</span>
 								{{/special-abilities}}
