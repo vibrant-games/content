@@ -757,22 +757,22 @@
 								<h3>Special Abilities</h3>
 					
 								
-								{{#npc.special-abilities}}
-								
+								{{#npc}}
+								{{#special-abilities}}
 								<span class="ability-item">
 									<br>
 								 
 									<p><b>{{title}}</b></p>
 								    <p>{{description}}</p>
 									
-									<p>{{abilities}}</p>
+									<p>{{#abilities}}{{.}}{{/abilities}}</p>
 									
 								
-									<p>{{additional-information}}</p>
+									<p>{{#additional-information}}{{.}}{{/additional-information}}</p>
 									
 								</span>
-								
-								{{/npc.special-abilities}}	
+								{{/special-abilities}}
+								{{/npc}}	
 									
 
 								
