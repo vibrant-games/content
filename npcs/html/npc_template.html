@@ -755,28 +755,29 @@
 							<span class="property-line first">
 
 								<h3>Special Abilities</h3>
-					
+					            <br>
 								
 								{{#npc}}
 								{{#special-abilities}}
 								<span class="ability-item">
 														 
 									<p><b>{{title}}</b><br>
-								    <p>Description: {{{description}}}</p>
+								    <p>{{{description}}}</p>
 									
 									<p>
 									<ul>
 										{{#abilities}}
-										<li><p>{{#title}}<b>{{.}}{{/title}}</b><br></p>
-								   		{{#description}}<p>Description: {{{.}}}</p>{{/description}}{{#additional-information}}{{{.}}}{{/additional-information}}</li>
+										<li><p>{{#title}}<b>{{.}}{{/title}}: </b>
+											{{#description}}{{{.}}}: {{/description}}</p>
+											{{#additional-information}}{{{.}}}{{/additional-information}}</p></li>
 										{{/abilities}}
 									</ul>
 								    </p>
 									<p>
 									<ul>
 										{{#additional-information}}
-										{{#title}}<li><p><b>{{.}}</b></p>{{/title}}
-										{{#description}}<p>Description: {{{.}}}{{/description}}</p>
+										{{#title}}<li><p><b>{{.}}: </b>{{/title}}
+										{{#description}}{{{.}}}{{/description}}</p>
 										{{#additional-information}}<p>{{{.}}}</p></li>
 										{{/additional-information}}
 										{{/additional-information}}
