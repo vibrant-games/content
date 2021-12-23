@@ -467,26 +467,26 @@ npc:
   - title: Sorcerer Spellcasting
   - abilities: 
     - sorcery points: 20, 
-      spell dc: 20
-      cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Minor Illusion, Message, Chill Touch
-      1st Level: Charm Person, Magic Missle, Shield, Mage Armor
-      2nd Level: Detect Thoughts, Hold Person, Scorching Ray, Shatter, Darkness
-      3rd Level: Fireball, Counterspell, Lightning Bolt, Slow, Fly, Dispel Magic, Blink
-      4th Level: Banishment, Dimension Door, Polymorph, Wall of Fire
-      5th Level: Cloudkill, Cone of Cold, Dominate Person, Teleportation Circle
-      6th Level: Chain Lightning, Disintegrate, Circle of Death, Mass Suggestion
-      7th Level: Finger of Death, Fire Storm, Plane Shift
-      8th Level: Incendiary Cloud, Earthquake, Power Word Stun
-      9th Level: Gate, Power Word Kill, Time Stop
+    - spell dc: 20
+    - cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Minor Illusion, Message, Chill Touch
+    - 1st Level: Charm Person, Magic Missle, Shield, Mage Armor
+    - 2nd Level: Detect Thoughts, Hold Person, Scorching Ray, Shatter, Darkness
+    - 3rd Level: Fireball, Counterspell, Lightning Bolt, Slow, Fly, Dispel Magic, Blink
+    - 4th Level: Banishment, Dimension Door, Polymorph, Wall of Fire
+    - 5th Level: Cloudkill, Cone of Cold, Dominate Person, Teleportation Circle
+    - 6th Level: Chain Lightning, Disintegrate, Circle of Death, Mass Suggestion
+    - 7th Level: Finger of Death, Fire Storm, Plane Shift
+    - 8th Level: Incendiary Cloud, Earthquake, Power Word Stun
+    - 9th Level: Gate, Power Word Kill, Time Stop
   - title: MetaMagic
   - decription: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
   - abilities:
     - empowered spell: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls. You can use Empowered 
                       Spell even if you have already used a different Metamagic option during the casting of the spell.
-      heightened spell: When you Cast a Spell that forces a creature to make a saving throw to resist its Effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made 
+    - heightened spell: When you Cast a Spell that forces a creature to make a saving throw to resist its Effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made 
                         against the spell.
-      subtle spell: When you Cast a Spell, you can spend 1 sorcery point to cast it without any somatic or verbal Components
-      etwinned spell: When you Cast a Spell that Targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the 
+    - subtle spell: When you Cast a Spell, you can spend 1 sorcery point to cast it without any somatic or verbal Components
+    - etwinned spell: When you Cast a Spell that Targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the 
                       same spell (1 sorcery point if the spell is a cantrip)
   - title: Sorcerous Restoration
   - description: you regain 4 expended sorcery points whenever you finish a Short Rest
@@ -494,7 +494,7 @@ npc:
   - abilities:
     - eyes of the dark: you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
                         can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
-      strength of the grave: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
+    - strength of the grave: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
                              reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
   - title: Hound of ill omen
   - description: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes
@@ -521,8 +521,8 @@ npc:
   - description: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
   - additional-information:
     - devils portal: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-      cantrips: Anastasia Dumas casts a cantrip
-      family reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
+    - cantrips: Anastasia Dumas casts a cantrip
+    - family reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
 
   attacks: |
     Spellcasting
@@ -531,10 +531,10 @@ npc:
     Prefers to let her family do her fighting for her but is an exceedingly powerful spellcaster if it comes to it 
      
   special-equipment:
-  - Ring of Evasion
-  - Ring of Spell Turning
-  - Ring of Regeneration
-  - Amulet of the Planes
+  - title: Ring of Evasion
+  - title: Ring of Spell Turning
+  - title: Ring of Regeneration
+  - title: Amulet of the Planes
 
   profile:
 
