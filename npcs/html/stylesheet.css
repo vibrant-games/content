@@ -248,7 +248,7 @@ div {
 
 .abilities > span{
   display: inline-block;
-	text-align: center;
+	text-align: left;
   vertical-align: middle;
   width: 15.5%;
   min-width: 40px; 
@@ -257,7 +257,7 @@ div {
 }
 
 .abilities p{
-	text-align: center;
+	text-align: left;
   margin: 0 0 10px 0;
   line-height: 200%;
 	font-weight: bold;
