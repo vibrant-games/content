@@ -492,10 +492,12 @@ npc:
   - description: you regain 4 expended sorcery points whenever you finish a Short Rest
   - title: Shadow Magic Abilities
   - abilities:
-    - eyes of the dark: you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
-                        can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
-    - strength of the grave: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
-                             reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
+    - title: eyes of the dark
+    - description: you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
+                   can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
+    - title: strength of the grave
+    - description: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
+                   reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
   - title: Hound of ill omen
   - description: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes
   - additional-information:
@@ -520,9 +522,12 @@ npc:
   - title: Legendary Actions
   - description: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
   - additional-information:
-    - devils portal: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-    - cantrips: Anastasia Dumas casts a cantrip
-    - family reserve: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
+    - title: devils portal
+    - description: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
+    - title: cantrips
+    - description: Anastasia Dumas casts a cantrip
+    - title: family reserve
+    - description: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
 
   attacks: |
     Spellcasting
