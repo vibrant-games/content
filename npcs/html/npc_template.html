@@ -769,7 +769,7 @@
 									
 										{{#abilities}}
 										{{#title}}
-										<span><b>{{.}}: </b>{{#content}}{{.}}{{/content}}</span>{{/title}}
+										<span><b>{{.}}: </b>{{/title}}{{#content}}{{.}}{{/content}}</span>
 											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
 										{{/abilities}}
 									
@@ -777,8 +777,7 @@
 									
 									
 										{{#additional-information}}
-											{{#title}}<p><b>{{.}}: </b>{{/title}}
-											{{#content}}{{.}}{{/content}}</p>
+											{{#title}}<p><b>{{.}}: </b>{{/title}}{{#content}}{{.}}{{/content}}</p>
 											{{#additional-information}}<p>{{.}}</p>{{/additional-information}}
 										{{/additional-information}}<br>
 									
