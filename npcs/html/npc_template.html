@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>{{npc.name}}</title>
 
-<link rel="stylesheet" href="file:///D|/Github_bak_bak/content/npcs/html/stylesheet.css"/>
+<link rel="stylesheet" href="file:///D|/Github/content/npcs/html/stylesheet.css"/>
 	
 	
 	</head>
@@ -752,17 +752,17 @@
 	  
 								</svg>	
 				
-							<span class="property-line first">
+							<span class="top-property-line">
 
 							<p>	<h3>Special Abilities</h3></p>
-					            <br>
+					            
 								
 								{{#npc}}
 								{{#special-abilities}}
 								<span class="ability-item">
 														 
-									<p><b>{{title}}</b><br>
-								    <p>{{{content}}}</p>
+									<p><b>{{title}}</b><br></p>
+								    <p>{{content}}</p>
 									
 									<p>
 									
@@ -772,15 +772,15 @@
 										{{/abilities}}
 									
 								    </p>
-									<p>
-									<ul>
+									
+									
 										{{#additional-information}}
-											{{#title}}<li><p><b>{{.}}: </b>{{/title}}
+											{{#title}}<p><b>{{{.}}}: </b>{{/title}}
 											{{#content}}{{{.}}}{{/content}}</p>
-											{{#additional-information}}<p>{{{.}}}</p></li>{{/additional-information}}
+											{{#additional-information}}<p>{{{.}}}</p>{{/additional-information}}
 										{{/additional-information}}
-									</ul>
-								    </p>
+									
+								   
 									
 								</span>
 								{{/special-abilities}}
