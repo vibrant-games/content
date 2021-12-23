@@ -767,7 +767,7 @@
 									<p>
 									<ul>
 										{{#abilities}}
-										<li><p>{{#title}}<b>{{.}}{{/title}}</b><br>
+										<li><p>{{#title}}<b>{{.}}{{/title}}</b><br></p>
 								   		{{#description}}<p>Description: {{{.}}}</p>{{/description}}{{#additional-information}}{{{.}}}{{/additional-information}}</li>
 										{{/abilities}}
 									</ul>
@@ -776,8 +776,9 @@
 									<ul>
 										{{#additional-information}}
 										{{#title}}<li><p><b>{{.}}</b></p>{{/title}}
-								  	    {{#description}}<p>Description: {{{.}}}{{/description}}
+										{{#description}}<p>Description: {{{.}}}{{/description}}</p>
 										{{#additional-information}}<p>{{{.}}}</p></li>
+										{{/additional-information}}
 										{{/additional-information}}
 									</ul>
 								    </p>
