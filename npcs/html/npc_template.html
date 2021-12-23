@@ -754,7 +754,7 @@
 				
 							<span class="property-line first">
 
-								<h3>Special Abilities</h3>
+							<p>	<h3>Special Abilities</h3></p>
 					            <br>
 								
 								{{#npc}}
@@ -765,21 +765,19 @@
 								    <p>{{{description}}}</p>
 									
 									<p>
-									<ul>
+									
 										{{#abilities}}
-										<li><p>{{#title}}<b>{{.}}{{/title}}: </b>
-											{{#description}}{{{.}}}: {{/description}}</p>
-											{{#additional-information}}{{{.}}}{{/additional-information}}</p></li>
+										<p>{{#title}}<b>{{.}}{{/title}}: </b>{{#content}}{{{.}}}{{/content}}</p>
+											<p>{{#additional-information}}{{{.}}}{{/additional-information}}</p>
 										{{/abilities}}
-									</ul>
+									
 								    </p>
 									<p>
 									<ul>
 										{{#additional-information}}
-										{{#title}}<li><p><b>{{.}}: </b>{{/title}}
-										{{#description}}{{{.}}}{{/description}}</p>
-										{{#additional-information}}<p>{{{.}}}</p></li>
-										{{/additional-information}}
+											{{#title}}<li><p><b>{{.}}: </b>{{/title}}
+											{{#content}}{{{.}}}{{/content}}</p>
+											{{#additional-information}}<p>{{{.}}}</p></li>{{/additional-information}}
 										{{/additional-information}}
 									</ul>
 								    </p>
@@ -801,7 +799,7 @@
 								<h3>Special Equipment</h3>
 								
 								{{#npc.special-equipment}}
-								<p>	<b>{{#title}}{{.}}{{/title}}</b> - {{#description}}{{{.}}}{{/description}}<br></p>
+								<p>	<b>{{#title}}{{.}}{{/title}}</b> - {{#content}}{{{.}}}{{/content}}<br></p>
 									
          						{{/npc.special-equipment}}
 								
