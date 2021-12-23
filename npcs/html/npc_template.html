@@ -769,17 +769,17 @@
 									
 										{{#abilities}}
 										{{#title}}
-										<span><b>{{.}}: </b>{{#content}}{{{.}}}</span>{{/title}}{{/content}}
-											{{#additional-information}}<span>{{{.}}}</span>{{/additional-information}}
+										<span><b>{{.}}: </b>{{#content}}{{.}}{{/content}}</span>{{/title}}
+											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
 										{{/abilities}}
 									
 								    </p><br>
 									
 									
 										{{#additional-information}}
-											{{#title}}<p><b>{{{.}}}: </b>{{/title}}
-											{{#content}}{{{.}}}{{/content}}</p>
-											{{#additional-information}}<p>{{{.}}}</p>{{/additional-information}}
+											{{#title}}<p><b>{{.}}: </b>{{/title}}
+											{{#content}}{{.}}{{/content}}</p>
+											{{#additional-information}}<p>{{.}}</p>{{/additional-information}}
 										{{/additional-information}}<br>
 									
 								   
