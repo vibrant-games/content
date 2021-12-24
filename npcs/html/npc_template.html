@@ -752,33 +752,33 @@
 	  
 								</svg>	
 				
-							<span class="top-property-line">
+							<div class="property-line">
 
 							<p>	<h3>Special Abilities</h3></p>
 					            
-								<br>
+								
 								<br>
 								{{#npc}}
 								{{#special-abilities}}
 								<span class="ability-item">
 														 
-									<span><b>{{title}}</b></span><br>
-								    <span>{{content}}</span><br>
+									<p><span><b>{{title}}</b></span><br>
+								    <span>{{content}}</span><br></p>
 									
 									
 									
 										{{#abilities}}
 										
-										<span>{{#title}}<b>{{.}}{{/title}}: </b>{{#content}}{{.}}{{/content}}</span>
-											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
+										<p>{{#title}}<b>{{.}}{{/title}}: </b>{{#content}}{{.}}{{/content}}</p>
+											{{#additional-information}}<p>{{.}}</p>{{/additional-information}}
 										{{/abilities}}
 									
 								    <br>
 									
 									
 										{{#additional-information}}
-											{{#title}}<span><b>{{.}}: </b>{{/title}}{{#content}}{{.}}{{/content}}</span>
-											{{#additional-information}}<span>{{.}}</span>{{/additional-information}}
+											{{#title}}<p><b>{{.}}: </b>{{/title}}{{#content}}{{.}}{{/content}}</p>
+											{{#additional-information}}<p>{{.}}</p>{{/additional-information}}
 										{{/additional-information}}<br>
 									
 								   
@@ -791,11 +791,11 @@
 								
 								
 								
-							</span>
+							</div>
 
 				
 							
-								<span class="property-line">
+								<div class="property-line">
 					
 								<h3>Special Equipment</h3>
 								
@@ -806,7 +806,7 @@
 								
 								
 							
-								</span>	
+								</div>	
 				
 							<span class="property-line">
 					
