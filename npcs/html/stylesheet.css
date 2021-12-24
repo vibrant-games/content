@@ -294,7 +294,7 @@ div {
 .ability-item {
 	
 	text-align: left;
-	text-indent: -30px;
+	text-indent: 10px;
 	
 }
 
@@ -302,7 +302,7 @@ div {
 	
 	text-align: left;
 	margin: 0px 0px 0px 0px;
-	text-indent: -30px;
+	text-indent: 10px;
 }
 
 
@@ -407,6 +407,7 @@ div {
   padding: 	0px 20px 0px 15px;
   line-height: 1.4em;
 	
+	
 }
 
 
@@ -417,14 +418,10 @@ div {
   margin: 0px 0px 0px 15px;
   font-size: 15.5px;
   line-height: 150%;
-	color: indigo;
+  color: indigo;
+  text-indent: 0px;	
 }
 
-.property-line p {
-	
-	  text-indent: -175px;
-
-}
 .property-line h4{
   color:indigo;
 }
