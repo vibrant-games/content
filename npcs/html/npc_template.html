@@ -762,14 +762,14 @@
 								{{#special-abilities}}
 								<span class="ability-item">
 														 
-									<p><span><b>{{title}}</b></span>
-								    <span>{{content}}</span><br></p>
+									<p><b>{{title}}</b></p>
+								    <p>{{content}}<br></p>
 									
-									
+									<br>
 									
 										{{#abilities}}
 										
-										<p>{{#title}}<b>{{.}}:</b> {{#content}}{{.}}{{/content}}</p>
+										<p>{{#title}}<b>{{.}}:</b>{{/title}} {{#content}}{{.}}{{/content}}</p>
 											{{#additional-information}}<p>{{#title}}{{.}}{{/title}}</p>{{/additional-information}}
 										{{/abilities}}
 									
