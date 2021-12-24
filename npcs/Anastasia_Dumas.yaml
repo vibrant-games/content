@@ -485,7 +485,7 @@ npc:
     - title: 6th Level
     - content: Chain Lightning, Disintegrate, Circle of Death, Mass Suggestion
     - title: 7th Level
-    - descripton: Finger of Death, Fire Storm, Plane Shift
+    - content: Finger of Death, Fire Storm, Plane Shift
     - title: 8th Level
     - content: Incendiary Cloud, Earthquake, Power Word Stun
     - title: 9th Level
@@ -508,13 +508,13 @@ npc:
   - content: you regain 4 expended sorcery points whenever you finish a Short Rest
   - title: Shadow Magic Abilities
   - abilities:
-    - title: eyes of the dark
-    - content: you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
-                   can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
-    - title: strength of the grave
+    - title: Eyes of the Dark
+    - content: You have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
+               can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
+    - title: Strength of the Grave
     - content: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
-                   reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
-  - title: Hound of ill omen
+               reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
+  - title: Hound of Ill Omen
   - content: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes
   - additional-information:
     - The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
@@ -526,14 +526,14 @@ npc:
       disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
   - title: Shadow walk
   - content: You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can teleport up to 120 feet to an unoccupied space you can see that is also in dim 
-                 light or darkness.
+             light or darkness.
   - title: Umbral form
   - content: You can spend 6 sorcery points as a bonus action to transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other 
-                 creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. You remain in this form for 1 minute. It ends early if you are incapacitated, if you 
-                 die, or if you dismiss it as a bonus action.
-  - title: Shadow sorcerer quirks 
+             creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. You remain in this form for 1 minute. It ends early if you are incapacitated, if you 
+             die, or if you dismiss it as a bonus action.
+  - title: Shadow Sorcerer Quirks 
   - content: When you are asleep, you don't appear to breathe (though you must still breathe to survive).
-  - title: Legendary resistance
+  - title: Legendary Resistance
   - content: (3/Day), If Anastasia Dumas fails a saving throw she can choose to succeed instead 
   - title: Legendary Actions
   - content: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
