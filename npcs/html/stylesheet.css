@@ -248,7 +248,7 @@ div {
 
 .abilities > span{
   display: inline-block;
-	text-align: left;
+	text-align: center;
   vertical-align: middle;
   width: 15.5%;
   min-width: 40px; 
@@ -257,7 +257,7 @@ div {
 }
 
 .abilities p{
-	text-align: left;
+	text-align: center;
   margin: 0 0 10px 0;
   line-height: 200%;
 	font-weight: bold;
@@ -268,10 +268,10 @@ div {
 
 .ability {
 	
-	margin-left: 0 auto;
+	margin-left:0 auto;
     position:relative;
 	
-	display: inline-block;
+	display: block;
 }
 
 .abilities h4{
@@ -294,7 +294,7 @@ div {
 .ability-item {
 	
 	text-align: left;
-	text-indent: 0px;
+	text-indent: -30px;
 	
 }
 
@@ -393,7 +393,7 @@ div {
 
 
 .property-line{
-	display: block;
+	display: inline-block;
 	text-align: left;
 	
 	width: 90%;
