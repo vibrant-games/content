@@ -205,7 +205,15 @@ div {
 	
 }
 
-
+.picright {
+    padding-top: 70px; 
+	display: flex;  
+	flex-basis: auto;
+	flex-grow: 1;
+	justify-content: center;
+	
+	
+}
 
 .npc-heading{
 	
@@ -740,6 +748,18 @@ div {
 	
 	
 }
+
+#cell5 {
+	
+	 flex-direction: row;
+    
+    position: relative;
+     
+    align-content: flex-start;
+	align-items: flex-start;
+	padding-bottom: 60px;
+  }
+
 #bgcell{
 		flex-direction: column;
     	position: relative;
@@ -802,6 +822,15 @@ div {
 	align-items: flex-start;
   }
 
+#cell6 {
+	
+	 flex-direction: row;
+    
+    position: relative;
+     
+    align-content: flex-start;
+	align-items: flex-start;
+  }
 
 #bgcell{
 		flex-direction: column;
