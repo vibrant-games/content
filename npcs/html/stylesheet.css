@@ -841,13 +841,24 @@ div {
 #cell6 {
 	
 	 flex-direction: row;
-    
+    flex:1;
     position: relative;
      
     align-content: flex-start;
 	align-items: flex-start;
 	padding-bottom: 60px;
-  }
+-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+	width: 100%;
+}
+#cell6 p {
+  margin: 0;
+}
+#cell6 p + p {
+  text-indent: 1em;  
+
+}
 
 #bgcell{
 		flex-direction: column;
