@@ -628,6 +628,21 @@ div {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
+
+
+#needtowrap {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+}
+#needtowrap p {
+  margin: 0;
+}
+#needtowrap p + p {
+  text-indent: 1em;
+}
+
+
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 10px #ggg, 0 0 20px #ggg, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
@@ -830,6 +845,7 @@ div {
      
     align-content: flex-start;
 	align-items: flex-start;
+	padding-bottom: 60px;
   }
 
 #bgcell{
