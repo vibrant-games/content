@@ -304,14 +304,22 @@ div {
 	
 	text-align: left;
 	text-indent: 10px;
-	
+	-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+	width: 100%;
 }
+
 
 .ability-item p{
 	
 	text-align: left;
-	margin: 0px 0px 0px 0px;
+	margin: 0px 0px 10px 20px;
 	text-indent: 10px;
+	-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+	width: 100%;
 }
 
 
@@ -841,7 +849,7 @@ div {
 #cell6 {
 	
 	 flex-direction: row;
-    flex:1;
+    
     position: relative;
      
     align-content: flex-start;
