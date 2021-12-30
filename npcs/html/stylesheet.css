@@ -553,7 +553,10 @@ table-layout: fixed;
 }
 .right-line h4{
   color:indigo;
-
+-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+	width: 100%;
 }
 
 .right-line.first{
