@@ -311,21 +311,17 @@ div {
 }
 
 
-.ability-item {
+.ability-item p{
 	
 	text-align: left;
 	margin: 0px 0px 10px 20px;
 	text-indent: 10px;
-	
-}
-
-
-.sa_table {
-	
-table-layout: fixed;
+	-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
 	width: 100%;
-	
 }
+
 
 .factions-item {
 
@@ -527,8 +523,6 @@ table-layout: fixed;
 	text-indent: 20px;
   padding: 	0 20 0 15px;
   line-height: 1.4em;
-	
-	
 }
 
 
@@ -561,10 +555,6 @@ table-layout: fixed;
 
 .right-line.first{
   margin: 0 0 0 0;
-	-webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2;
-	width: 100%;
 }
 .right-line.last{
   margin: 0px 0px 10px 0px;
