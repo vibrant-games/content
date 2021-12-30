@@ -891,18 +891,24 @@
 					            
 								
 							<p><br>
+								
+								
+								
 								{{#npc}}
 								{{#special-abilities}}
 								<span class="ability-item" >
-					<table class="sa_table">									 
 									<p><b>{{title}}</b></p>
-								    <p>{{content}}<br></p>
+
+						
+						<p>{{content}}<br></p>
 									
 									<br>
 									
 										{{#abilities}}
 										
-										<p>{{#title}}<b>{{.}} </b>{{/title}}{{#content}}{{.}}{{/content}}</p>
+									{{#title}}<p><b>{{.}}</b></p>{{/title}}
+											
+									{{#content}}<p>{{.}}</p>{{/content}}
 											
 										{{/abilities}}
 									
