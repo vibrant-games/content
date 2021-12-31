@@ -156,7 +156,7 @@ div {
 	
 	flex-direction: column;
 	vertical-align: top;
-	padding: 0px 0px 10px;
+	padding: 0px 0px 10px 0px;
 	background-image: url();
 	
 }
@@ -235,7 +235,7 @@ div {
 	min-width: 200px;
 	display: inline-block;
 	flex-grow: 1;
-	margin: 0 25px 45px 10px;
+	margin: 0 15px 15px 0px;
 
 }
 
@@ -263,7 +263,7 @@ div {
   font-style: italic;
   font-size: 16px;
   line-height: 1.2em;
-  margin: 10px 0 20px 20px;
+  margin: 10px 0 20px 0px;
 	
 	color: indigo;
 
@@ -575,7 +575,7 @@ table, th, td {
 .right-line-columns h3 {
 	
 	display: inline-block;
-  margin: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   font-size: 16px;
   line-height: 100%;
 	color: indigo;
@@ -626,7 +626,7 @@ table, th, td {
   vertical-align: top;
 	width: 100%;
   text-align: left;
-	margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 30px;
 	
 }
 
@@ -666,8 +666,8 @@ table, th, td {
   color:indigo;
   font-size: 32px;
   line-height: 1.2em;
-  margin: 0px 0 0 0x;
-  letter-spacing: 1px;
+  margin: 0px 0px 0px 0x;
+  letter-spacing: 0px;
   font-variant: small-caps;
   font-weight: bold;
 }
@@ -908,7 +908,7 @@ table, th, td {
   margin: 0;
 }
 #cell6 p + p {
-  text-indent: 1em;  
+  text-indent: 0;  
 
 }
 
