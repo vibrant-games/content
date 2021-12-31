@@ -885,49 +885,42 @@
 								<polyline points="0,0 520,2.5 0,5"></polyline>
 	  
 							</svg>
-							
-										<span class="right-line first">						
-						
-					            
-								
-							
-								
-								
+						<table class="sa_table">	
+																							
 								
 								{{#npc}}
 								{{#special-abilities}}
-								<span class="ability-item" >
 
-							<table class="sa_table">
+							
 									
 
-									<p><b>{{title}}</b></p>
+										<tr>	<b>{{title}}</b><br>
 
 						
-						<p>{{content}}<br></p>
+						{{content}}<br>
 									
-									<br>
+									
 									
 										{{#abilities}}
 										
-									{{#title}}<p><b>{{.}}</b></p>{{/title}}
+									{{#title}}<b>{{.}}</b>{{/title}}
 											
-									{{#content}}<p>{{.}}</p>{{/content}}
+									{{#content}}{{.}}{{/content}}
 											
 										{{/abilities}}
 									
 
 								
 								{{/special-abilities}}
-								{{/npc}}	
+								{{/npc}}	</tr>
 									
-
+				
 								
 								
 								
-							
 					
-						<p>		<h3>Special Equipment</h3></p>
+					
+						<tr>		<h3>Special Equipment</h3></tr>
 								
 								{{#npc.special-equipment}}
 								<p>	<b>{{#title}}{{.}}{{/title}}</b> - {{#content}}{{{.}}}{{/content}}<br></p>
@@ -976,14 +969,13 @@
 									{{/npc.traits.factions.length}}
 								<br><br>
 								
-
+					</span>
+			</span>
+					</span>
 					
 					</table>
-					</span>
-					</span>
-			
-					</span>
-					</span>
+				
+					
 				</div>
 				
 			

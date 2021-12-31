@@ -536,6 +536,10 @@ div {
   line-height: 150%;
 	color: indigo;
 	text-indent: 30px;
+	-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+	width: 100%;
 	
 }
 
@@ -543,6 +547,10 @@ div {
 	
 	margin-left: 0px;
 	text-indent: -30px;
+	-webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+	width: 100%;
 	
 }
 .right-line h4{
