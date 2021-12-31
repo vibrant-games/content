@@ -534,7 +534,7 @@ div {
 	width: 90%;
 	font-weight: normal;
 	color: indigo;
-	text-indent: 20px;
+	text-indent: 0px;
   padding: 	0 20 0 15px;
   line-height: 1.4em;
 }
@@ -566,11 +566,20 @@ table, th, td {
 	font-weight: normal;
 	color: indigo;
 	text-indent: 20px;
-  padding: 	0 20 0 15px;
-  line-height: 1.4em;column-count: 2;
+  padding: 	0 20px 0 15px;
+  line-height: 1.4em;
+	column-count: 2;
 	column-gap: 20px;
 }
 
+.right-line-columns h3 {
+	
+	display: inline-block;
+  margin: 0px 0px 0px 0px;
+  font-size: 17.5px;
+  line-height: 100%;
+	color: indigo;
+}
 
 .right-line li {
 	
