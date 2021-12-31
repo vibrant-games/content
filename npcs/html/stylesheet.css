@@ -127,6 +127,21 @@ div {
 
 }
 
+.cell6 {
+  
+	display: flex;
+
+	align-content:center;
+	align-items:center;
+  
+	flex-basis: auto;
+	flex-grow:1;
+	
+	flex-wrap: nowrap;
+	flex-direction: row;
+	
+
+}
 
 
 
@@ -516,7 +531,7 @@ div {
 	
 	display: inline-block;
 	text-align: justify;
-	
+	column-count: 2;
 	width: 90%;
 	font-weight: normal;
 	color: indigo;
@@ -525,7 +540,9 @@ div {
   line-height: 1.4em;
 }
 
-
+table, th, td {
+  ;
+}
 
 .right-line h4,
 .right-line p{
@@ -536,12 +553,25 @@ div {
   line-height: 150%;
 	color: indigo;
 	text-indent: 30px;
-	-webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2;
-	width: 100%;
 	
 }
+
+.right-line-columns{
+	
+	display: inline-block;
+	text-align: justify;
+	column-count: 2;
+	min-width: 600px;
+	max-width: 1200px;
+	
+	font-weight: normal;
+	color: indigo;
+	text-indent: 20px;
+  padding: 	0 20 0 15px;
+  line-height: 1.4em;column-count: 2;
+	column-gap: 20px;
+}
+
 
 .right-line li {
 	
@@ -555,10 +585,7 @@ div {
 }
 .right-line h4{
   color:indigo;
--webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2;
-	width: 100%;
+
 }
 
 .right-line.first{
@@ -866,10 +893,8 @@ div {
     align-content: flex-start;
 	align-items: flex-start;
 	padding-bottom: 60px;
--webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2;
-	width: 100%;
+    column-count: 2;
+	column-width: 300px;
 }
 #cell6 p {
   margin: 0;
