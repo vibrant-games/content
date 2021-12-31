@@ -534,7 +534,7 @@ div {
 	width: 90%;
 	font-weight: normal;
 	color: indigo;
-	text-indent: 0px;
+	text-indent: 20px;
   padding: 	0 20 0 15px;
   line-height: 1.4em;
 }
@@ -566,7 +566,7 @@ table, th, td {
 	font-weight: normal;
 	color: indigo;
 	text-indent: 20px;
-  padding: 	0 20px 0 15px;
+  padding: 	0 20px 0 0px;
   line-height: 1.4em;
 	column-count: 2;
 	column-gap: 20px;
@@ -576,7 +576,7 @@ table, th, td {
 	
 	display: inline-block;
   margin: 0px 0px 0px 0px;
-  font-size: 17.5px;
+  font-size: 16px;
   line-height: 100%;
 	color: indigo;
 }
@@ -657,7 +657,7 @@ table, th, td {
 	display: inline-block;
 	
 	min-width: 250px;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 0px;
 	
 }
 
@@ -666,7 +666,7 @@ table, th, td {
   color:indigo;
   font-size: 32px;
   line-height: 1.2em;
-  margin: 10px 0 0 10px;
+  margin: 0px 0 0 0x;
   letter-spacing: 1px;
   font-variant: small-caps;
   font-weight: bold;
