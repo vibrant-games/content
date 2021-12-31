@@ -770,6 +770,7 @@
 					<div class="cell" id="cell5">
 						<span class="data">
 						
+							<span class="stat-block single">
 						
 						<span class="npc-heading">
 										
@@ -822,7 +823,7 @@
 		
 								</span>
 							</span>
-						
+						</span>
 						<span class="picright">
 							<span class="npc-heading">
 							
@@ -889,22 +890,16 @@
 								
 								{{#npc}}
 								{{#special-abilities}}
-
-							
-									
-
-									<b>{{title}}</b><br>
-
-						
-						{{content}}<br>
+							<p><b>{{title}}</b><br>
+							{{content}}</p>
 									
 									
 									
 										{{#abilities}}
 										
-									{{#title}}<b>{{.}}</b>{{/title}}
+									{{#title}}<p><b>{{.}}</b><br>{{/title}}
 											
-									{{#content}}{{.}}{{/content}}
+									{{#content}}{{.}}</p><br>{{/content}}
 											
 										{{/abilities}}
 									
