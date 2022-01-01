@@ -550,6 +550,7 @@ div {
 	display: inline-block;
 	text-align: justify;
 	width: 90%;
+	
 	font-weight: normal;
 	color: indigo;
 	text-indent: 0px;
@@ -625,7 +626,7 @@ table, th, td {
 }
 
 .right-line.first{
-  margin: 0 0 0 0;
+  margin: 60px 0px 0px 0px;
 }
 .right-line.last{
   margin: 0px 0px 10px 0px;
@@ -918,6 +919,8 @@ table, th, td {
      
     align-content: flex-start;
 	align-items: flex-start;
+	column-count: 2;
+	column-width: 400px;
   }
 
 #cell6 {
@@ -930,7 +933,7 @@ table, th, td {
 	align-items: flex-start;
 	padding-bottom: 60px;
     column-count: 2;
-	column-width: 300px;
+	column-width: 400px;
 }
 #cell6 p {
   margin: 0;
