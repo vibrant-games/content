@@ -961,9 +961,8 @@
 					
 					
 					
-					
-					
-		<!-- property line			
+									
+			
 				
 		  <div class="cell" id="cell2">
 			
@@ -993,7 +992,7 @@
 	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
 	  </svg>
 				
-				
+						</span>
 							
 	 				
 								<span class="top-property-line">
@@ -1003,11 +1002,9 @@
 								</span> 
 						</span>
 					</span>
-			  </span>
 			  
 			  
 					
-								</div>
 						
 					
 								<span class="top-property-line">		
@@ -1158,9 +1155,7 @@
 								</span> 
 					
 					
-					<!-- abilities 
-					
-<svg height="5" width="100%" class="tapered-rule">
+					<svg height="5" width="100%" class="tapered-rule">
 	    							<polyline points="0,0 520,2.5 0,5"></polyline>
 	  							</svg>
 					
@@ -1177,7 +1172,7 @@
 									{{/npc.specialties.saving-throws}}
 									{{/npc.specialties.saving-throws.length}}
 					
-								</span> <!-- property line 
+								</span> 
 			
 					
 								<span class="top-property-line">
@@ -1193,8 +1188,7 @@
      
 									</p>
 					
-								</span> <!-- property line 
-			
+								</span> 
 					
 								<span class="top-property-line">
 						
@@ -1212,7 +1206,7 @@
       								
 										{{/npc.specialties.proficiencies.length}}
 					
-								</span> <!-- property line 
+								</span>  
 			
 			
 					
@@ -1226,7 +1220,7 @@
 					
 									{{/npc.specialties.damage-immunities}}
 									{{/npc.specialties.damage-immunities.length}}
-								</span> <!-- property line 
+								</span> 
 			
 					
 								<span class="top-property-line">
@@ -1241,7 +1235,7 @@
 									{{/npc.specialties.condition-immunities}}
 									{{/npc.specialties.condition-immunities.length}}
 					
-								</span> <!-- property line 
+								</span> 
 			
 					
 					
@@ -1259,7 +1253,7 @@
 									{{/npc.specialties.senses}}
 									{{/npc.specialties.senses.length}}
 					
-								</span> <!-- property line 
+								</span> 
 			
 					
 								<span class="top-property-line">
@@ -1272,7 +1266,7 @@
 									{{/npc.traits.languages.length}}
 					</p>
 							
-								</span> <!-- property line 
+								</span> 
 			
 					
 								<span class="top-property-line">
@@ -1281,12 +1275,12 @@
 						
 									<p>{{#npc.traits.adjectives.length}}{{#npc.traits.adjectives}}{{.}}, {{/npc.traits.adjectives}}{{/npc.traits.adjectives.length}}</p>	
 					
-								</span> <!-- property line 
+								</span> 
 			
 					
 							
 				
-				<!-- top stats 				
+					
 				
 
 								<svg height="5" width="100%" class="tapered-rule">
@@ -1299,224 +1293,195 @@
 								<h3>Special Abilities</h3>
 					
 								
-								{{#npc.specialties.special-abilities.length}}
-								{{#npc.specialties.special-abilities}}
-								<span class="ability-item"><p><b>{{title}}</b> - {{{description}}}<br></p></span>
-								{{/npc.specialties.special-abilities}}
-								{{/npc.specialties.special-abilities.length}}	
+								{{#npc}}
+								{{#special-abilities}}
+							<p><b>{{title}}</b> {{content}}</p>
+									
+									
+									
+										{{#abilities}}
+										
+									{{#title}}<p><b>{{.}}</b><br>{{/title}}
+											
+									{{#content}}{{.}}</p><br>{{/content}}
+											
+										{{/abilities}}
 									
 
 								
-								
-								
-							</span>
-
+								{{/special-abilities}}
+								{{/npc}}	
 				
-							
-								<span class="property-line">
+								
+								
+								
 					
-								<h3>Special Equipment</h3>
-								{{#npc.specialties.special-equipment.length}}
-								{{#npc.specialties.special-equipment}}
-								<p>	<b>{{title}}</b> - {{{description}}}<br></p>
+					
+								<p><h3>Special Equipment</h3></p>
+								
+								{{#npc.special-equipment}}
+								<p>	<b>{{#title}}{{.}}{{/title}}</b> - {{#content}}{{{.}}}{{/content}}<br></p>
 									
-         						{{/npc.specialties.special-equipment}}
-								{{/npc.specialties.special-equipment.length}}
+         						{{/npc.special-equipment}}
+								
 								
 							
-								</span>	
 				
-							<span class="property-line">
-					
-								<h3>Combat Tactics</h3>
-								{{#npc.specialties.combat-tactics.length}}
-								{{#npc.specialties.combat-tactics}}
+							
+							<p>	<h3>Combat Tactics</h3></p>
+								{{#npc.combat-tactics.length}}
+								{{#npc.combat-tactics}}
 								<p>{{.}}</p>
 								
-								{{/npc.specialties.combat-tactics}}
-								{{/npc.specialties.combat-tactics.length}}
-							</span> 
+								{{/npc.combat-tactics}}
+								{{/npc.combat-tactics.length}}
+							
 			
 				
-							<span class="property-line">
+							
+							<p>	<h3>Actions</h3></p>
 					
-								<h3>Actions</h3>
-					
-								{{#npc.specialties.attacks.length}}
-								{{#npc.specialties.attacks}}
-								<p><b>{{{title}}}</b> - {{{description}}}
+								
+								{{#npc.attacks}}
+						<p><b>{{{title}}}</b> - {{{description}}}
 								<br></p>
-								{{/npc.specialties.attacks}}
-								{{/npc.specialties.attacks.length}}
-								<br>
+								{{/npc.attacks}}
+								
+						<br>
 				
-							</span>
+							
 			
 				
-							<span class="property-line ">
-					
-								
-								
-								<h3>Factions</h3><br>
+							<p><h3>Factions</h3><br></p>
 									
-									{{#npc.traits.factions.length}}
+									
 									{{#npc.traits.factions}}
 									
-								<span class="ability-item">	<p><b>{{name}}</b><br></p>
+						<p><b>{{name}}</b><br></p>
 					
 							
-									<br><p>Role: <i>{{role}}</i><br></p></span><br>
+									<br><p>Role: <i>{{role}}</i><br></p><br>
 									
 									{{/npc.traits.factions}}
-									{{/npc.traits.factions.length}}
+									
 								<br><br>
 								
-								
-								</span>
 					</span>
-						
-					</span>
+			
 					
-			  </span>
+				
+					
+				</div>
+				
+								
+								
+						
+						
+					
 		
 			
-			</div>
 			
 		  <div class="cell" id="cell3">
     
 				<span class="data">
 				
-					
-				
-					<span class="stat-block single">
-
 						
 					
 						<span class="npc-heading">
 							
+									
+						<h1>5ecology</h1>
 						
-							<h1>Roleplaying</h1>
 
-<svg height="5" width="100%" class="tapered-rule">
-	    							<polyline points="0,0 520,2.5 0,5"></polyline>
-	  							</svg>
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>	
+										<span class="right-line">
 								
-									
-									
-							<span class="property-line first">	
-								
-								
-								<h3>Introduction</h3>
-							
-								
-							
-							
-							<p>{{npc.improv.introduction}}</p><br />
-		
-							</span>
-		
-							
-							<span class="property-line">
-			
-							
-								<h3>Appearance</h3>
-							
-							
-								
-								<p>{{npc.improv.appearance}}</p>
-		
+										<p>	<h3>Introduction</h3>
+										</p>
+							<br>
 										
-							</span>
-		
-		
-								
-							<span class="property-line">
-			
-								
-								<h3>Expressions</h3>
-									
-							
-		
-							
-								
-							
 											
-										<ul style="list-style-type:none;">
+										<p>{{npc.improv.introduction}}</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+											<br>
+											<p>{{npc.improv.appearance}}</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3>
+										
+											<ul style="list-style-type:none;">
   
  	
 											{{#npc.improv.expressions.length}}
 											{{#npc.improv.expressions}}
-											<li><p><i>{{.}}</i></p></li><br>
+											<li><p><i>"{{.}}"</i></p></li>
 											
 											
 											{{/npc.improv.expressions}}
 											{{/npc.improv.expressions.length}}
 											
 											</ul>
-											
+										</span> 
 		
-								
-							</span> 
-		
-		
-								
-							<span class="property-line">
+								</span>
+					
+						
+										<span class="right-line first">
 			
-							
-								<h3>Mannerisms</h3>
-							
-							
-								<p>{{npc.improv.mannerisms}}</p>
+										<h3>Mannerisms</h3>
+											<br>
+											<p>{{npc.improv.mannerisms}}</p>
 		
-								
-							</span> 
+										</span> 
 		
 		
-								
-							<span class="property-line">
+										<span class="right-line">
 			
-								
-								<h3>Motivations</h3>
-								
-							
-											
-								<p>{{npc.acting.motivations}}</p>
-							
-							</span>
+											<h3>Motivations</h3>
+											<br>
+											<p>{{npc.acting.motivations}}</p>
+										</span>
 		
 		
 			
 			
-								
-							<span class="property-line">
+										<span class="right-line">
 			
-								<h3>Passions</h3>
-								
-								
-									
-								<p>{{npc.acting.passions}}</p>
+											<h3>Passions</h3>
+											<br>
+											<p>{{npc.acting.passions}}</p>
 		
-									
-							</span> 
+										</span> 
 		
-	
-		
-									
-							<span class="property-line">
+										<span class="right-line">
 			
-									
-								<h3>Secrets</h3>
-									
-							<br>
-									<p>{{npc.acting.secrets}}</p>		
+											<h3>Secrets</h3>
+											<br>
+											<p>{{npc.acting.secrets}}</p>	
 		
-										
-							</span> 
+										</span> 
 						
 						</span>
-					
-					</span>
-			  
+			 
+										
+				
+			
 			  </span>
 				</div>
 -->
