@@ -156,7 +156,7 @@ div {
 	
 	flex-direction: column;
 	vertical-align: top;
-	padding: 0px 0px 10px 0px;
+	padding: 0px 0px 10px 20px;
 	background-image: url();
 	
 }
@@ -176,6 +176,24 @@ div {
 	background-image: url("../../images/bg-testt.png");
 	
 }
+
+
+.data3 {
+	
+	display: flex;
+	flex-grow: 1;
+    flex-basis: 0;
+	max-width: 1200px;
+	min-width: 600px;
+	flex-wrap: wrap;
+	
+	flex-direction: column;
+	vertical-align: top;
+	padding: 0px 0px 10px 0px;
+	background-image: url();
+	
+}
+
 
 
 
@@ -235,7 +253,7 @@ div {
 	min-width: 200px;
 	display: inline-block;
 	flex-grow: 1;
-	margin: 0 15px 15px 0px;
+	margin: 0 15px 15px 10px;
 
 }
 
@@ -534,8 +552,8 @@ div {
 	width: 90%;
 	font-weight: normal;
 	color: indigo;
-	text-indent: 20px;
-  padding: 	0 20 0 15px;
+	text-indent: 0px;
+  padding: 	0px 20px 0px 15px;
   line-height: 1.4em;
 }
 
@@ -546,12 +564,12 @@ table, th, td {
 .right-line h4,
 .right-line p{
   display: inline-block;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0px;
   
   font-size: 15.5px;
   line-height: 150%;
 	color: indigo;
-	text-indent: 30px;
+	text-indent: 0px;
 	
 }
 
@@ -560,22 +578,32 @@ table, th, td {
 	display: inline-block;
 	text-align: justify;
 	column-count: 2;
+	column-gap: 20px;
 	min-width: 600px;
 	max-width: 1200px;
 	
 	font-weight: normal;
 	color: indigo;
-	text-indent: 20px;
+	text-indent: 0px;
+	margin: 10px 10px 10px 25px;
   padding: 	0 20px 0 0px;
   line-height: 1.4em;
-	column-count: 2;
-	column-gap: 20px;
+	
 }
 
 .right-line-columns h3 {
 	
 	display: inline-block;
   margin: 10px 0px 0px 0px;
+  font-size: 16px;
+  line-height: 100%;
+	color: indigo;
+}
+
+.right-line h3 {
+	
+	display: inline-block;
+  margin: 0px 0px 0px 0px;
   font-size: 16px;
   line-height: 100%;
 	color: indigo;
@@ -657,7 +685,7 @@ table, th, td {
 	display: inline-block;
 	
 	min-width: 250px;
-	margin: 10px 0 0 0px;
+	margin: 10px 0px 0px 15px;
 	
 }
 
