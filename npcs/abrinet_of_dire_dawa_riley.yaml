@@ -468,38 +468,75 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - None
+    condition-immunities:
+    - None
+    resistances:
+    - None
     skills:
-    - Drow Traits:
-      - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-        Keen Senses: Proficiency in Perception
-        Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
-        Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
-        Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-        Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
-        Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
-
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage       
-
-      Scout Abilities:
-       - Skirmisher: Can move half her speed as a reaction when an enemy ends a turn within 5 feet of her. this movement does not provoke an opportunity attack          
-         Survivalist: Double proficiency bonus on Nature and Survival checks         
-
+    - Perception +2
+    - Stealth +4
+    proficiencies:
+    - Sleight of Hand
+    - Stealth
+    - Disguise
+    - Perception
+    - Deception
+    - Persuasion
+    - Survival
+    - Nature
+    - Thieve's Tools
     special-abilities:
-    - Proficiencies: Sleight of Hand, Stealth; Disguise; Perception; Deception; Persuasion; Survival; Nature; Thieve's Tools    
-    
+    - title: Drow Traits
+    - abilities:
+      - title: Superior Darkvision
+      - content: See 120' like bright light in dim light and like dim light in darkness
+      - title: Keen Senses
+      - content: Proficiency in Perception
+      - title: Fey Ancestry
+      - content: Advantage on saving throws against charm and immune to sleep magic
+      - title: Trance
+      - content: Deasn't need to sleep, 4 hours meditation counts as a long rest
+      - title: Sunlight Sensitivity
+      - content: Disadvantage on attack and perception roles in direct sunlight
+      - title: Drow Magic
+      - content: Can cast Dancing Lights, Faerie Fire, Darkness
+      - title: Drow Weapons Training
+      - content: Proficient with rapiers, shortswords and hand crossbow
+    - title: Rogue Abilities
+    - abilities:
+      - title: Expertise
+      - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+      - title: Sneak Attack
+      - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+      - title: Cunning Action
+      - content: Can tak a bonus action on each turn to Hide, Disengage or Dash
+      - title: Uncanny Dodge
+      - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage       
+    - title: Scout Abilities:
+    - abilities:
+      - title: Skirmisher
+      - content: Can move half her speed as a reaction when an enemy ends a turn within 5 feet of her. This movement does not provoke an opportunity attack          
+      - title: Survivalist
+      - content: Double proficiency bonus on Nature and Survival checks         
+
     attacks: |
       Short Sword or Hand Crossbow
     combat-tactics: |
       Abrinet will not hesitate to engage with hostile combatants, particularly if they are interfering with her 'running' messages with her colleagues.
     special-equipment:
-    - Steam Shoes filled with coal and ignited to double movement for 1-4 hours.
-    - Thieve's Tools
-    - Courier Bag of Holding
-    - Dog Vlad at home with her husband
+    - title: Steam Shoes
+    - content: Filled with coal and ignited to double movement for 1-4 hours.
+    - title: Thieve's Tools
+    - content:
+    - title: Courier Bag of Holding
+    - content:
+    - title: Dog Vlad 
+    - content: At home with her husband
 
     
   profile:
