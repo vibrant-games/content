@@ -104,7 +104,7 @@ div {
 
 .container2 {
   margin: 0 auto;
-  padding: 0 0 60px 0;
+  padding: 0px 0px 60px 0px;
 	
 }
 
@@ -911,9 +911,15 @@ table, th, td {
 }
 
 #bgcell{
-		display: flex;
-	flex-direction: column;
-    	position: relative;
-		width: 90%;
+	
+	display: flex;
+	
+	flex-direction: row;
+    
+    position: relative;
+     width: 1200px;
+    align-content: center;
+	align-items: flex-start;
+	  padding-left: 60px;
 		
 	}
