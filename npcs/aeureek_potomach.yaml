@@ -462,57 +462,77 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Dexterity
+    damage-immunities:
+    - None
+    condition-immunities:
+    - None
+    resistances:
+    - None
     skills:
-    - Aarakocra Traits:
-      - Flight: Flying speed is 50 feet
-        Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+    - N/A
+    proficiencies:
+    - Arcana
+    - History
+    - Investigation
+    - Religion
+    - Persuasion
+    - Insight
+    - Deception
+  special-abilities:
+  - title: Aarakocra Traits
+  - abilities:
+    - title: Flight
+    - content: Flying speed is 50 feet
+    - title: Talons
+    - content: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+  - title: Wizard Abilities
+  - abilities:
+    - title: Arcane Recovery
+    - content: After a short rest can recover a spell slot up to 3rd level
+    - title: Spellcasting:
+    - abilities:
+      - title: Spell DC
+      - content: 14
+      - title: Cantrips
+      - content: Message, Minor Illusion, Mage Hand, Prestidigitation
+      - title: 1st Level
+      - content: Alarm, Comprehend Languages, Protection from Evil, Magic Missle
+      - title: 2nd Level
+      - content: Arcane Lock, Hold Person, Detect Thoughts 
+      - title: 3rd Level
+      - content: Counterspell, Dispel Magic, Glyph of Warding      
+  - title: School of Lore Mastery Abilities
+  - abilities:
+    - title: Lore Master
+    - content: You become an increasingly broader compendium of knowledge on a vast array of topics. Choose one skill from Arcana, History, Nature or Religion. Your proficiency bonus is doubled for any ability check that 
+               uses the chosen skill if you are proficient in that skill. At levels 6, 10 and 14 you get to choose one more skill from the list. In addition, your initiative in combat can be driven by mental agility, 
+               rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice). Your proficiency bonus is also doubled for any ability check that uses
+               the Investigation skill if you are proficient in that skill. neither this feature nor the previous feature gives proficiency in any skill           
+    - title: Spell Secrets
+    - content: You start to master your first in a series of arcane secrets uncovered by your extensive studies. Choose two damage types from acid, cold, fire, force, lightning, necrotic, radiant or thunder. When you 
+               cast a wizard spell with a spell slot and the spell deals one of the chosen damage types you can substitute that damage type with another (previously) chosen damage type from the list. You can use this 
+               feature a number of times equal to your Inteligence Modifier (minimum of once~ and only a single damage type may be substituted per spell You regain any expended uses when you finish a long rest. At 
+               levels 6, 10 and 14 you get to choose two more damage types from the list. Additionally, when you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from
+               one ability score to another of your choice. Once you change a saving throw in this way, you can't do so again until you finish a long rest.
+    - title: Arcane Analyser
+    - content: You learn to augment spells in a variety of ways. When you cast a spell with a spell slot, you can expend one additional spell slot to augment its effects for this casting, mixing the raw stuff of magic
+               into your spell to amplify it. The effect depends on the spell slot you expend. An additional 1st-level spell slot can increase the spell's raw force. If you roll damage for the spell when you cast it, 
+               increase the damage against one target of your choice by 2dl0 force damage. lfthe spell can deal damage on more than one turn, it deals this extra force damage only on the turn you cast the spell. An 
+               additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it's range is tripled, or it becomes 1/4 of a mile (whichever is greater) An additional 3rd-
+               level spell slot can increase the spell's potency. Increase the spell's save DC by 2 for one turn against all targets.          
 
-      Wizard Abilities:
-         - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-           Spellcasting:
-           - Description: DC 14
-             Cantrips: Message, Minor Illusion, Mage Hand, Prestidigitation
-             1st Level: Alarm, Comprehend Languages, Protection from Evil, Magic Missle
-             2nd Level: Arcane Lock, Hold Person, Detect Thoughts 
-             3rd Level: Counterspell, Dispel Magic, Glyph of Warding      
+  attacks: |
+    Claws and Quarterstaff
+  combat-tactics: |
+    She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. 
+    Then she will use AoE spells if safe to do so.
+  special-equipment:
+  - title: Protective Verses Spellbook
+  - content: Contains the spells: Arcane lock, dispel magic, globe of invulnerability, glyph of warding, Mordenkainen's private sanctum, protection from evil, symbol. It functions as a spellbook. While holding the book it can be used as a spellcasting focus. The book has 3 charges. It regains 1d3 expended charges daily at dawn. Charges can be used in the following ways while holding it - Spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book.  The new spell must be of the abjuration school. When casting an abjuration spell expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
 
-      School of Lore Mastery Abilities:
-      - Lore Master: you become an increasingly broader compendium of knowledge on a vast array of topics. Choose one skill from Arcana, History, Nature or Religion. Your proficiency bonus is doubled for any ability check that 
-                     uses the chosen skill if you are proficient in that skill. At levels 6, 10 and 14 you get to choose one more skill from the list. In addition, your initiative in combat can be driven by mental agility, 
-                     rather than physical agility. When you roll initiative, it is either an Intelligence check or a Dexterity check for you (your choice). Your proficiency bonus is also doubled for any ability check that uses
-                     the Investigation skill if you are proficient in that skill. neither this feature nor the previous feature gives proficiency in any skill           
-        Spell Secrets: you start to master your first in a series of arcane secrets uncovered by your extensive studies. Choose two damage types from acid, cold, fire, force, lightning, necrotic, radiant or thunder. When you 
-                       cast a wizard spell with a spell slot and the spell deals one of the chosen damage types you can substitute that damage type with another (previously) chosen damage type from the list. You can use this 
-                       feature a number of times equal to your Inteligence Modifier (minimum of once~ and only a single damage type may be substituted per spell You regain any expended uses when you finish a long rest. At 
-                       levels 6, 10 and 14 you get to choose two more damage types from the list. Additionally, when you cast a spell with a spell slot and the spell requires a saving throw, you can change the saving throw from
-                       one ability score to another of your choice. Once you change a saving throw in this way, you can't do so again until you finish a long rest.
-        Arcane Analyser: you learn to augment spells in a variety of ways. When you cast a spell with a spell slot, you can expend one additional spell slot to augment its effects for this casting, mixing the raw stuff of magic
-                         into your spell to amplify it. The effect depends on the spell slot you expend. An additional 1st-level spell slot can increase the spell's raw force. If you roll damage for the spell when you cast it, 
-                         increase the damage against one target of your choice by 2dl0 force damage. lfthe spell can deal damage on more than one turn, it deals this extra force damage only on the turn you cast the spell. An 
-                         additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it's range is tripled, or it becomes 1/4 of a mile (whichever is greater) An additional 3rd-
-                         level spell slot can increase the spell's potency. Increase the spell's save DC by 2 for one turn against all targets.          
-
-    special-abilities:
-    - Proficiencies: Arcana, History, Investigation, Religion, Persuasion, Insight, Deception    
-    
-    attacks: |
-      Claws and Quarterstaff
-    combat-tactics: |
-      She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. 
-      Then she will use AoE spells if safe to do so.
-    special-equipment:
-      - Protective Verses Spellbook:
-        - Contains the spells
-        - arcane lock
-        - dispel magic
-        - globe of invulnerability
-        - glyph of warding
-        - Mordenkainen's private sanctum
-        - protection from evil
-        - symbol 
-        - It functions as a spellbook. While holding the book it can be used as a spellcasting focus. The book has 3 charges. It regains 1d3 expended charges daily at dawn. Charges can be used in the following ways while holding it - Spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book.  The new spell must be of the abjuration school.
-        - When casting an abjuration spell expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
-                                                                   
   profile:
 
     #
@@ -531,8 +551,6 @@ npc:
       were convinced to make such changes. Aeureek was offered a position among the magistrates but firmly declined, asserting that her abilities would best suit a position among the officers and within the confines of the 
       slums and markets. Since then, Aeureek has been a well-respected and often feared officer and an advisor to the magistrates.
 
-
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
