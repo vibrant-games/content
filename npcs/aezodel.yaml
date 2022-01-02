@@ -462,35 +462,73 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Wisdom
+    damage-immunities:
+    - None
+    condition-immunities:
+    - None
+    resistances:
+    - None
     skills:
-    - Aasimar Traits:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Celestial Resistance: Resistance to Necrotic and Radiant Damage
-        Healing Hands: Once per longrest, can touch a creature and cause it to gain 5HP
-        Light Bearer: Can cast the Light cantrip using Charisma as spellcasting abaility
-      Scourge Traits:
-      - Radiant Consumption: Can use his action to unleash the divine energy within himself, causing a searing light to radiate from him, pour out of his eyes and mouth, and threaten to char him.  The transformation lasts for 1 minute or until he ends it as a bonus action. During it, he sheds bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of his turns, he and each creature within 10 feet of him take 3 radiant damage. In addition, once on each of his turns, he can deal an extra 5 radiant damage to one target when he deals damage to it with an attack or a spell.            
-
-      Warlock Abilities:
-      - Pact of the Blade Magic: 
-        - Description: Spell DC 14
-          Cantrips: Eldritch Blast, Minor Illusion
-          1st Level: Hellish Rebuke, Charm Person
-          2nd Level: Hold Person, Misty Step
-          3rd Level: Counterspell, Dispel Magic
-        Eldritch Invocations:
-        - Agonizing Blast: Can add Charisma modifier to Eldritch Blast Damage
-          Mask of Many Faces: Can cast Disguise Self at will without using a spell slot
-          Eldritch Sight: Can cast Detect Magic at will without using a spell slot
-        Pact Weapon: Can use his action to create a +2 Scimitar in his empty hand. He is proficient with it while he wields it.
-
-      Hexblade Abilities:
-      - Hexblade Spells:
-        - 1st Level: Shield, Wrathful Smite
-          2nd Level: Blur, Branding Smite
-          3rd Level: Blink, Elemental Weapon
-          4th Level: Phantasmal Killer, Staggering Smite
-          5th Level: Banishing Smite, Cone of Cold
+    - N/A
+    proficiencies:
+    - Arcana
+    - Investigation
+    - Persuasion
+    - Intimidation
+    - Deception 
+  special-abilities:
+  - title: Aasimar Traits
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Celestial Resistance
+    - content: Resistance to Necrotic and Radiant Damage
+    - title: Healing Hands
+    - content: Once per longrest, can touch a creature and cause it to gain 5HP
+    - title: Light Bearer
+    - content: Can cast the Light cantrip using Charisma as spellcasting abaility
+  - title: Scourge Traits
+  - abilities:
+    - title: Radiant Consumption
+    - content: Can use his action to unleash the divine energy within himself, causing a searing light to radiate from him, pour out of his eyes and mouth, and threaten to char him.  The transformation lasts for 1 minute or until he ends it as a bonus action. During it, he sheds bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of his turns, he and each creature within 10 feet of him take 3 radiant damage. In addition, once on each of his turns, he can deal an extra 5 radiant damage to one target when he deals damage to it with an attack or a spell.
+  - title: Warlock Abilities
+  - abilities: 
+    - title: Pact of the Blade Magic 
+    - content: Spell DC 14
+    - title: Cantrips
+    - content: Eldritch Blast, Minor Illusion
+    - title: 1st Level
+    - content: Hellish Rebuke, Charm Person
+    - title: 2nd Level
+    - content: Hold Person, Misty Step
+    - title: 3rd Level
+    - content: Counterspell, Dispel Magic
+    - title: Eldritch Invocations
+    - abilities: 
+      - title: Agonizing Blast
+      - content: Can add Charisma modifier to Eldritch Blast Damage
+      - title: Mask of Many Faces
+      - content: Can cast Disguise Self at will without using a spell slot
+      - title: Eldritch Sight
+      - content: Can cast Detect Magic at will without using a spell slot
+      - title: Pact Weapon
+      - content: Can use his action to create a +2 Scimitar in his empty hand. He is proficient with it while he wields it.
+    - title: Hexblade Abilities
+    - abilities:
+      - title: Hexblade Spells
+      - title: 1st Level
+      - content: Shield, Wrathful Smite
+      - title: 2nd Level
+      - content: Blur, Branding Smite
+      - title: 3rd Level
+      - content: Blink, Elemental Weapon
+      - title: 4th Level
+      - content: Phantasmal Killer, Staggering Smite
+      - title: 5th Level
+      - content: Banishing Smite, Cone of Cold
         Hexblades Curse: Gain a bonus to damage rolls against the cursed target equal to his proficiency bonus. Any attack roll he makes against the cursed target is a critical hit on a roll of 19 or 20 on the d20.
                          If the cursed target dies, he regains 6Hp
         Hex Warrior: When using his Pact Weapon, he can use Charisma for Attack and Damage rolls
@@ -499,7 +537,7 @@ npc:
                           rolls equal to his Charisma modifier
 
     special-abilities:
-    - Proficiencies: Arcana, Investigation, Persuasion, Intimidation, Deception    
+    - Proficiencies:    
 
     attacks: |
       Hexblade an Eldritch Blasts
