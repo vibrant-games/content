@@ -474,9 +474,9 @@ npc:
     damage-immunities:
     - None
     condition-immunities:
-    - None
+    - Sleep Magicks
     resistances:
-    - None
+    - Advantage on Saves Against Charm
     skills:
     - Perception +2
     - Stealth +4
@@ -493,12 +493,9 @@ npc:
   special-abilities:
   - title: Drow Traits
   - abilities:
-    - title: Superior Darkvision
-    - content: See 120' like bright light in dim light and like dim light in darkness
-    - title: Keen Senses
-    - content: Proficiency in Perception
-    - title: Fey Ancestry
-    - content: Advantage on saving throws against charm and immune to sleep magic
+    - Superior Darkvision: See 120' like bright light in dim light and like dim light in darkness
+      Keen Senses: Proficiency in Perception
+      Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
     - title: Trance
     - content: Deasn't need to sleep, 4 hours meditation counts as a long rest
     - title: Sunlight Sensitivity
