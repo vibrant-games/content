@@ -869,25 +869,24 @@
 						<span class="right-line-columns">	
 																							
 								
-								{{#npc}}
-								{{#special-abilities}}
+								{{#npc.special-abilities}}
 							<p><b>{{title}}</b> {{content}}</p>
 									
 									
 									
-										{{#abilities}}
+										{{#npc.special-abilities.abilities}}
 										
 									{{#title}}<p><b>{{.}}</b><br>{{/title}}
 											
 									{{#content}}{{.}}</p><br>{{/content}}
 							        {{#abilities}}<p>{{.}}</p>{{/abilities}}
 											
-										{{/abilities}}
+										{{/npc.special-abilities.abilities}}
 									
 
 								
-								{{/special-abilities}}
-								{{/npc}}	
+								{{/npc.special-abilities}}
+									
 				
 								
 								
