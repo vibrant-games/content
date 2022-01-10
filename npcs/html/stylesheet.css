@@ -661,9 +661,47 @@ table, th, td {
 
 }
 
-.right-line.first{
-  margin: 60px 0px 0px 60px;
+.right-line-first{
+	display: inline-block;
+	text-align: justify;
+	min-width: 100px;
+	max-width: 450px;
+	
+	font-weight: normal;
+	color: indigo;
+  padding: 	10px 0px 0px 0px;
+  line-height: 1.4em;
+
+  margin: 60px 0px 0px 0px;
 }
+
+
+
+.right-line-first h3 {
+	
+	display: inline-block;
+  margin: 15 0px 0px -90px;
+  font-size: 16px;
+  line-height: 100%;
+	color: indigo;
+}
+
+
+.right-line-first h4{
+  color:indigo;
+
+}
+
+
+
+.right-line-first p {
+	
+	
+	margin: 0px 0px 0px -7px;
+}
+
+
+
 .right-line.last{
   margin: 0px 0px 10px 0px;
 	padding: 0px 0px 20px 0px
