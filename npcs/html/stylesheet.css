@@ -207,6 +207,17 @@ div {
   stroke: #922610;
 }
 
+.tapered-rule-left{
+  display: inline-block;
+	margin: 0px 0px 0px -15px;
+  width: 100%;
+  height: 4px;
+  border: none;
+  color: #922610;
+  fill: #922610;
+  stroke: #922610;
+}
+
 .path2 {
   stroke-dasharray: 1120;
 /*   stroke-dashoffset: 800; */
@@ -555,9 +566,9 @@ div {
 	font-weight: normal;
 	color: indigo;
 	text-indent: 0px;
-  padding: 	10px 0px 0px 15px;
+  padding: 	10px 0px 0px 0px;
   line-height: 1.4em;
-	margin-left: 60px;
+	margin-left: 0px;
 }
 
 table, th, td {
@@ -747,6 +758,31 @@ table, th, td {
   font-variant: small-caps;
   font-weight: bold;
 }
+
+
+.npc-heading-left {
+	
+	flex-grow: 1;
+	display: inline-block;
+	
+	min-width: 250px;
+	margin: 10px 0px 0px -15px;
+	
+}
+
+
+.npc-heading-left h1{
+  font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+  color:indigo;
+  font-size: 32px;
+  line-height: 1.2em;
+  margin: 0px 0px 0px -10px;
+  letter-spacing: 0px;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+
 
 
 .glow {
