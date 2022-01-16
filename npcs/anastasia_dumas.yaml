@@ -325,8 +325,8 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Wicked
-    - Wrathful
+    - Wicked,
+    - Wrathful,
     - Vengeful
 
   improv:
@@ -342,7 +342,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction: A withered elderly woman glares across the courtyard, /"Have you decided to join our little family, dearies?/"
+    introduction: A withered elderly woman glares across the courtyard, "Have you decided to join our little family, dearies?"
 
     #
     # Appearance: a brief content of the character skin, clothes, hair, eyes, etc.
@@ -404,7 +404,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Dark Magic
+      Dark Magic, Revenge
      
     #
     # Vulnerabilities:
@@ -449,20 +449,20 @@ npc:
   specialties:
     saving-throws:
     - Constitution
-    - Strength
+    - Intelligence
     damage-immunities:
-    - N/A
+    - Necrotic
     condition-immunities:
-    - N/A
+    - Sleep and Charmed
     resistances:
-    - N/A
+    - Cold and Fire
     skills:
-    - Masonry
+    - Tailoring & Leatherworking
     proficiencies: 
     - Intimidation
     - Persuasion
-    - Mason's Tools
-    - Woodcrafter's Tools
+    - Tailor's Tools
+    - Leatherworker's Tools
   special-abilities: 
   - title: Sorcerer Spellcasting
   - abilities: 
@@ -516,14 +516,13 @@ npc:
                reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
   - title: Hound of Ill Omen
   - content: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes
-  - abilities:
-    - The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
-    - It appears with a number of temporary hit points equal to half your sorcerer level.
-    - It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
-    - At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
-    - The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
-      can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
-      disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
+             The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
+             It appears with a number of temporary hit points equal to half your sorcerer level.
+             It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
+             At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
+             The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
+             can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
+             disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
   - title: Shadow walk
   - content: You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can teleport up to 120 feet to an unoccupied space you can see that is also in dim 
              light or darkness.
@@ -537,12 +536,11 @@ npc:
   - content: (3/Day), If Anastasia Dumas fails a saving throw she can choose to succeed instead 
   - title: Legendary Actions
   - content: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
-  - abilities:
-    - title: devils portal
+    - title: Devil's Portal
     - content: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-    - title: cantrips
+    - title: Cantrips
     - content: Anastasia Dumas casts a cantrip
-    - title: family reserve
+    - title: Family Reserve
     - content: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
 
   attacks: |
@@ -553,12 +551,13 @@ npc:
      
   special-equipment:
   - title: Ring of Evasion
-  - content:
+  - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving throw instead.
   - title: Ring of Spell Turning
-  - content:
+  - content: While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
   - title: Ring of Regeneration
-  - content:
+  - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
   - title: Amulet of the Planes
+  - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
 
   profile:
 
@@ -582,7 +581,7 @@ npc:
       sacrificial rites to her patron herself. She spends more and more time in a fugue state communing with her patron and less and less time in lucidity. 
       She is capable of great feats of magic but will almost never engage in extended combat. If she can't immediately dispatch her eneies within or before the 
       first round of combat, she will summon and allow her family to do her fighting for her and use her magic to make her escape as quickly as possible. It is
-      unclear what her or her patron's endgame is beyond the accumulation of power and the devouring of souls, but theres no way it's good for anyone.
+      unclear what her or her patron's endgame is beyond the accumulation of power and the devouring of souls, but there's no way it's good for anyone.
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
