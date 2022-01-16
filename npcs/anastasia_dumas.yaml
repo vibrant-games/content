@@ -292,8 +292,8 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - Common
-    - Abyssal
+    - Common,
+    - Abyssal,
     - Draconic
 
     #
@@ -325,8 +325,8 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Wicked,
-    - Wrathful,
+    - Wicked
+    - Wrathful
     - Vengeful
 
   improv:
@@ -453,7 +453,7 @@ npc:
     damage-immunities:
     - Necrotic
     condition-immunities:
-    - Sleep and Charmed
+    - Sleep and Charm Magic
     resistances:
     - Cold and Fire
     skills:
@@ -523,10 +523,10 @@ npc:
                The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
                can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
                disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
-    - title: Shadow walk
+    - title: Shadow Walk
     - content: You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can teleport up to 120 feet to an unoccupied space you can see that is also in dim 
                light or darkness.
-    - title: Umbral form
+    - title: Umbral Form
     - content: You can spend 6 sorcery points as a bonus action to transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other 
                creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. You remain in this form for 1 minute. It ends early if you are incapacitated, if you 
                die, or if you dismiss it as a bonus action.
@@ -551,14 +551,14 @@ npc:
     Prefers to let her family do her fighting for her but is an exceedingly powerful spellcaster if it comes to it 
      
   special-equipment:
-  - title: Ring of Evasion
-  - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving throw instead.
-  - title: Ring of Spell Turning
-  - content: While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
-  - title: Ring of Regeneration
-  - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
-  - title: Amulet of the Planes
-  - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
+    - title: Ring of Evasion
+    - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving throw instead.
+    - title: Ring of Spell Turning
+    - content: While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
+    - title: Ring of Regeneration
+    - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
+    - title: Amulet of the Planes
+    - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
 
   profile:
 
@@ -592,10 +592,10 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Anastasia was once a fairly regular woman, perhaps a little bit rude, snobby and condescending, but nothing too exceptional. Her husband's murder at the
+      Anastasia was once a fairly regular woman, perhaps a little bit rude, snobby and condescending, with a minor talen for sorcery, but nothing too exceptional. Her husband's murder at the
       hands of his business rivals, left her a broken, vengeful and angry woman. Feeling helpless to get revenge on her own, she sought out ancient rites and 
-      made a pact with a greater devil to give herself the powers she needed. Cold, calculating and shrewed, one by one she sent her enemies souls to her patron. 
-      By the time she had exacted her revenge the kust for power had overcome her. As the years went by and she grew her family, she became more and more cruel
+      made a pact with a greater devil to boost her sorcery far beyond its original levels. Cold, calculating and shrewed, one by one she sent her enemies souls to her patron. 
+      By the time she had exacted her revenge the lust for power had overcome her. As the years went by and she grew her family, she became more and more cruel
       vicious and wrathful. The more time she spent communing with her patron, the less of a grip she continued to hold on reality and is now quite mad. 
       Despite her madnees and her infirmity, she is still very capable, cunning and intelligent. She rules her family with an iron fist and will tolerate no
       failure from her descendants or followers. She is manuipulative, and will often play members of her family against each other to get the outcome she wants.
