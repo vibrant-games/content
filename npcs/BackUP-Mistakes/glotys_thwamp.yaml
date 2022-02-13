@@ -387,7 +387,7 @@ npc:
     - "Can't make honey without getting stung!"
     - "My money is on the little things that make the world what it is. Bugs, crawlies, moss, and pebbles"
     - "Keep me outta the loop. I got tons to do already!"
-    - "Bugs are far more organized than most peoples";
+    - "Bugs are far more organized than most peoples"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -495,10 +495,10 @@ npc:
           - The attack's target takes 1d6 piercing damage from the swarm.
           - The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
           - You are moved by the swarm 5 feet horizontally in a direction of your choice
-       - Swarmkeeper Magic:
-         - Description: Spell DC 14
-           1st Level: Faerie Fire, Mage Hand
-           2nd Level: Web
+        - Swarmkeeper Magic:
+          - Description: Spell DC 14
+            1st Level: Faerie Fire, Mage Hand
+            2nd Level: Web
 
     special-abilities:
     - Proficiencies: Animal Handling; Nature; History
