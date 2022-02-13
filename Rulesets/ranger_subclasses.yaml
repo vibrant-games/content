@@ -1,700 +1,1012 @@
-    - Gloom Stalker Conclave Abilities:
-       - Spellcasting: Spell DC 
-         3rd Level: Disguise Self 
-         5th Level: Rope Trick
-         9th Level: Fear
-         13th Level: Greater Invisibility
-         17th Level: Seeming
-       - Dread Ambusher: You master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier. At the start of your first turn of each combat, your walking speed increases by 10 
-                         feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 
-                         1d8 damage of the weapon's damage type.
-       - Umbra Sight: You gain darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet. You are also adept at evading creatures that rely on darkvision. While in 
-                      darkness, you are invisible to any creature that relies on darkvision to see you in that darkness. 
-       - Iron Mind: You have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or
-                    Charisma saving throws (your choice).
-       - Stalkers Flurry: You learn to attack with such unexpected speed that you can turn a miss into another strike. Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of 
-                          the same action.
-       - Shadowy Dodge: you can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn't have advantage on the roll, you can use your reaction to 
-                        impose disadvantage on it. You must use this feature before you know the outcome of the attack roll.
+  - title: Gloom Stalker Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Disguise Self 
+    - title: 5th Level
+    - content: Rope Trick
+    - title: 9th Level
+    - content: Fear
+    - title: 13th Level
+    - content: Greater Invisibility
+    - title: 17th Level
+    - content: Seeming
+    - title: Dread Ambusher
+    - content: You master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier. At the start of your first turn of each combat, your walking speed increases by 10 
+               feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 
+               1d8 damage of the weapon's damage type.
+    - title: Umbra Sight
+    - content: You gain darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet. You are also adept at evading creatures that rely on darkvision. While in 
+               darkness, you are invisible to any creature that relies on darkvision to see you in that darkness. 
+    - title: Iron Mind
+    - content: You have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or
+               Charisma saving throws (your choice).
+    - title: Stalkers Flurry
+    - content: You learn to attack with such unexpected speed that you can turn a miss into another strike. Once on each of your turns when you miss with a weapon attack, you can make another weapon attack as part of 
+               the same action.
+    - title: Shadowy Dodge
+    - content: You can dodge in unforeseen ways, with wisps of supernatural shadow around you. Whenever a creature makes an attack roll against you and doesn't have advantage on the roll, you can use your reaction to 
+               impose disadvantage on it. You must use this feature before you know the outcome of the attack roll.
                         
                         
                         
-    - Monster Slayer Conclave Abilities:
-       - Spellcasting: Spell DC 
-         3rd Level: Protection from Evil and Good 
-         5th Level: Zone of Truth
-         9th Level: Magic Circle
-         13th Level: Banishment
-         17th Level: Hold Monster
-       - Hunters Sense: you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has 
-                        any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You 
-                        can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest.
-       - Slayers Prey: you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each 
-                       turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different 
-                       creature.
-       - Supernatural Defense: you gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to 
-                               escape that target's grapple, add 1d6 to your roll.
-       - Magic-Users Nemesis: you gain the ability to thwart someone else's magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your reaction to try to magically foil it. The creature
-                              must succeed on a Wisdom saving throw against your spell save DC, or its spell or teleport fails and is wasted. Once you use this feature, you can't use it again until you finish a short or long 
-                              rest.
-       - Slayers Counter: you gain the ability to counterattack when your prey tries to sabotage you. If the target of your Slayer’s Prey forces you to make a saving throw, you can use your reaction to make one weapon attack 
-                          against the quarry. You make this attack immediately before making the saving throw. If the attack hits, your save automatically succeeds, in addition to the attack’s normal effects. 
+  - title: Monster Slayer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Protection from Evil and Good 
+    - title: 5th Level
+    - content: Zone of Truth
+    - title: 9th Level
+    - content: Magic Circle
+    - title: 13th Level
+    - content: Banishment
+    - title: 17th Level
+    - content: Hold Monster
+    - title: Hunters Sense
+    - content: You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has 
+               any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You 
+               can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest.
+    - title: Slayers Prey
+    - content: You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each 
+               turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different 
+               creature.
+    - title: Supernatural Defense
+    - content: You gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to 
+               escape that target's grapple, add 1d6 to your roll.
+    - title: Magic-Users Nemesis
+    - content: You gain the ability to thwart someone else's magic. When you see a creature casting a spell or teleporting within 60 feet of you, you can use your reaction to try to magically foil it. The creature
+               must succeed on a Wisdom saving throw against your spell save DC, or its spell or teleport fails and is wasted. Once you use this feature, you can't use it again until you finish a short or long rest.
+    - title: Slayers Counter
+    - content: You gain the ability to counterattack when your prey tries to sabotage you. If the target of your Slayer’s Prey forces you to make a saving throw, you can use your reaction to make one weapon attack 
+               against the quarry. You make this attack immediately before making the saving throw. If the attack hits, your save automatically succeeds, in addition to the attack’s normal effects. 
                           
                           
                           
-    - Swarmkeeper Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Faerie Fire, Mage Hand 
-         5th Level: Web
-         9th Level: Gaseous Form
-         13th Level: Arcane Eye
-         17th Level: Insect Plague
-       - Gathered Swarm: a swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your
-                         space. You determine its appearance. Once on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack; 
-                         - The attack's target takes 1d6 piercing damage from the swarm.
-                         - The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
-                         - You are moved by the swarm 5 feet horizontally in a direction of your choice
-       - Writhing Tide: you can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 10 feet and can hover. This effect lasts for 1 minute or until you are 
-                        incapacitated. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
-       - Mighty Swarm: your Gathered Swarm grows mightier in the following ways;
-                       - The damage of Gathered Swarm increases to 1d8.
-                       - If a creature fails its saving throw against being moved by the Gathered Swarm, you can also cause the swarm to knock the creature prone.
-                       - When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn.
-       - Swarming Dispersal: you can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an 
-                             unoccupied space that you can see within 30 feet of you, where you reappear with the swarm. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended 
-                             uses when you finish a long rest.
+  - title: Swarmkeeper Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Faerie Fire, Mage Hand 
+    - title: 5th Level
+    - content: Web
+    - title: 9th Level
+    - content: Gaseous Form
+    - title: 13th Level
+    - content: Arcane Eye
+    - title: 17th Level
+    - content: Insect Plague
+    - title: Gathered Swarm
+    - content: A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your
+               space. You determine its appearance. Once on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack; 
+               The attack's target takes 1d6 piercing damage from the swarm.
+               The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
+               You are moved by the swarm 5 feet horizontally in a direction of your choice
+    - title: Writhing Tide
+    - content: You can condense part of your swarm into a focused mass that lifts you up. As a bonus action, you gain a flying speed of 10 feet and can hover. This effect lasts for 1 minute or until you are 
+               incapacitated. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+    - title: Mighty Swarm
+    - content: Your Gathered Swarm grows mightier in the following ways;
+               The damage of Gathered Swarm increases to 1d8.
+               If a creature fails its saving throw against being moved by the Gathered Swarm, you can also cause the swarm to knock the creature prone.
+               When you are moved by Gathered Swarm, it gives you half cover until the start of your next turn.
+    - title: Swarming Dispersal
+    - content: You can discorporate into your swarm, avoiding danger. When you take damage, you can use your reaction to give yourself resistance to that damage. You vanish into your swarm and then teleport to an 
+               unoccupied space that you can see within 30 feet of you, where you reappear with the swarm. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended 
+               uses when you finish a long rest.
                              
                              
                              
-    - Fey Wanderer Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Charm Person 
-         5th Level: Misty Step
-         9th Level: Dispel Magic
-         13th Level: Dimension Door
-         17th Level: Mislead
-       - Dreadful Strikes: you can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target,
-                           which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach 11th level in this class.
-       - Otherworldly Glamour: your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1). In addition, you gain
-                               proficiency in one of the following skills of your choice; Deception, Performance, or Persuasion.
-       - Beguiling Twist: the magic of the Feywild guards your mind. You have advantage on saving throws against being charmed or frightened. In addition, whenever you or a creature you can see within 120 feet of you succeeds on
-                          a saving throw against being charmed or frightened, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. 
-                          If the save fails, the target is charmed or frightened by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a 
-                          successful save.
-       - Fey Reinforcements: the royal courts of the Feywild have blessed you with the assistance of fey beings; you know the spell Summon Fey. It doesn't count against the number of ranger spells you know, and you can cast it 
-                             without a material component. You can also cast it once without using a spell slot, and you regain the ability to do so when you finish a long rest. Whenever you start casting the spell, you can 
-                             modify it so that it doesn't require concentration. If you do so, the spell's duration becomes 1 minute for that casting.
-       - Misty Wanderer: you can slip in and out of the Feywild to move in a blink of an eye; you can cast Misty Step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once)
-                         and you regain all expended uses when you finish a long rest. In addition, whenever you cast Misty Step, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an
-                         unoccupied space of your choice within 5 feet of your destination space.
+  - title: Fey Wanderer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Charm Person 
+    - title: 5th Level
+    - content: Misty Step
+    - title: 9th Level
+    - content: Dispel Magic
+    - title: 13th Level
+    - content: Dimension Door
+    - title: 17th Level
+    - content: Mislead
+    - title: Dreadful Strikes
+    - content: You can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target,
+               which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach 11th level in this class.
+    - title: Otherworldly Glamour
+    - content: Your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1). In addition, you gain
+               proficiency in one of the following skills of your choice; Deception, Performance, or Persuasion.
+    - title: Beguiling Twist
+    - content: The magic of the Feywild guards your mind. You have advantage on saving throws against being charmed or frightened. In addition, whenever you or a creature you can see within 120 feet of you succeeds on
+               a saving throw against being charmed or frightened, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. 
+               If the save fails, the target is charmed or frightened by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a 
+               successful save.
+    - title: Fey Reinforcements
+    - content: The royal courts of the Feywild have blessed you with the assistance of fey beings; you know the spell Summon Fey. It doesn't count against the number of ranger spells you know, and you can cast it 
+               without a material component. You can also cast it once without using a spell slot, and you regain the ability to do so when you finish a long rest. Whenever you start casting the spell, you can 
+               modify it so that it doesn't require concentration. If you do so, the spell's duration becomes 1 minute for that casting.
+    - title: Misty Wanderer
+    - content: You can slip in and out of the Feywild to move in a blink of an eye; you can cast Misty Step without expending a spell slot. You can do so a number of times equal to your Wisdom modifier (minimum of once)
+               and you regain all expended uses when you finish a long rest. In addition, whenever you cast Misty Step, you can bring along one willing creature you can see within 5 feet of you. That creature teleports to an
+               unoccupied space of your choice within 5 feet of your destination space.
                          
                          
-    - Hunter Conclave Abilities:
-       - Hunters Prey: you gain one of the following features of your choice.
-         Colossus Slayer: Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal 
-                          this extra damage only once per turn.
-         Giant Killer: When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can
-                       see the creature.
-         Horde Breaker: Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and 
-                        within range of your weapon.
-       - Defensive Tactics: you gain one of the following features of your choice.
-         Escape the Horde: Opportunity attacks against you are made with disadvantage.
-         Multiattack Defense: When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
-         Steel Will: You have advantage on saving throws against being frightened.
-       - Multiattack: you gain one of the following features of your choice.
-         Volley: You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as 
-                 normal, and you make a separate attack roll for each target
-         Whirlwind Attack: You can use your action to make melee attacks against any number of creatures within 5 feet of you, with a separate attack roll for each target.
-       - Superior Hunters Defense: you gain one of the following features of your choice.
-         Evasion: When you are subjected to an effect, such as a red dragon’s fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you 
-                  instead take no damage if you succeed on a saving throw, and only half damage if you fail
-         Stand Against the Tide: When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than
-                                 itself) of your choice.
-         Uncanny Dodge: When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.   
+  - title: Hunter Conclave Abilities
+  - abilities: 
+    - title: Hunters Prey
+    - content: You gain one of the following features of your choice.
+               Colossus Slayer - Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal 
+                                 this extra damage only once per turn.
+               Giant Killer - When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can
+                              see the creature.
+               Horde Breaker - Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and 
+                               within range of your weapon.
+    - title: Defensive Tactics
+    - content: You gain one of the following features of your choice.
+               Escape the Horde - Opportunity attacks against you are made with disadvantage.
+               Multiattack Defense - When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+               Steel Will - You have advantage on saving throws against being frightened.
+    - title: Multiattack
+    - content: You gain one of the following features of your choice.
+               Volley - You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as 
+                        normal, and you make a separate attack roll for each target
+               Whirlwind Attack - You can use your action to make melee attacks against any number of creatures within 5 feet of you, with a separate attack roll for each target.
+    - title: Superior Hunters Defense
+    - content: You gain one of the following features of your choice.
+               Evasion - When you are subjected to an effect, such as a red dragon’s fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you 
+                         instead take no damage if you succeed on a saving throw, and only half damage if you fail
+               Stand Against the Tide - When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than
+                                        itself) of your choice.
+               Uncanny Dodge - When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.   
                                    
                                    
                                    
-    - Horizon Walker Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Protection from Evil and Good 
-         5th Level: Misty Step
-         9th Level: Haste
-         13th Level: Banishment
-         17th Level: Teleportation Circle
-       - Detect Portal: you gain the ability to magically sense the presence of a planar portal. As an action, you detect the distance and direction to the closest planar portal within 1 mile of you. Once you use this feature, 
-                        you can't use it again until you finish a short or long rest. See the "Planar Travel" section in chapter 2 of the Dungeon Master's Guide for examples of planar portals.
-       - Planar Warrior: you learn to draw on the energy of the multiverse to augment your attacks. As a bonus action, choose one creature you can see within 30 feet of you. The next time you hit that creature on this turn with 
-                         a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases
-                         to 2d8.
-       - Ethereal Step: you learn to step through the Ethereal Plane. As a bonus action on your turn, you can cast the Etherealness spell with this feature, without expending a spell slot, but the spell ends at the end of the 
-                        current turn. Once you use this feature, you can’t use it again until you finish a short or long rest.
-       - Distant Strike: you gain the ability to pass between the planes in a blink of an eye. When you use the Attack action, you can teleport up to 10 feet before each attack to an unoccupied space you can see. If you attack 
-                         at least two different creatures with the action, you can make one additional attack with it against a third creature.
-       - Spectral Defense: your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack, you can use your reaction to 
-                           give yourself resistance to all of that attack's damage on this turn.
+  - title: Horizon Walker Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Protection from Evil and Good 
+    - title: 5th Level
+    - content: Misty Step
+    - title: 9th Level
+    - content: Haste
+    - title: 13th Level
+    - content: Banishment
+    - title: 17th Level
+    - content: Teleportation Circle
+    - title: Detect Portal
+    - content: You gain the ability to magically sense the presence of a planar portal. As an action, you detect the distance and direction to the closest planar portal within 1 mile of you. Once you use this feature, 
+               you can't use it again until you finish a short or long rest. See the "Planar Travel" section in chapter 2 of the Dungeon Master's Guide for examples of planar portals.
+    - title: Planar Warrior
+    - content: You learn to draw on the energy of the multiverse to augment your attacks. As a bonus action, choose one creature you can see within 30 feet of you. The next time you hit that creature on this turn with 
+               a weapon attack, all damage dealt by the attack becomes force damage, and the creature takes an extra 1d8 force damage from the attack. When you reach 11th level in this class, the extra damage increases
+               to 2d8.
+    - title: Ethereal Step
+    - content: You learn to step through the Ethereal Plane. As a bonus action on your turn, you can cast the Etherealness spell with this feature, without expending a spell slot, but the spell ends at the end of the 
+               current turn. Once you use this feature, you can’t use it again until you finish a short or long rest.
+    - title: Distant Strike
+    - content: You gain the ability to pass between the planes in a blink of an eye. When you use the Attack action, you can teleport up to 10 feet before each attack to an unoccupied space you can see. If you attack 
+               at least two different creatures with the action, you can make one additional attack with it against a third creature.
+    - title: Spectral Defense
+    - content: Your ability to move between planes enables you to slip through the planar boundaries to lessen the harm done to you during battle. When you take damage from an attack, you can use your reaction to 
+               give yourself resistance to all of that attack's damage on this turn.
                            
                            
-    - Bounty Hunter Conclave Abilities:
-       - On The Hook: you gain proficiency with the spiked chain weapon. Additionally, you do not need a free hand to grapple while you are wielding a sickle, war pick, whip or spiked chain. Whenever you hit a creature with one 
-                      of those weapons on your turn, you can use your bonus action to attempt to grapple that creature. That weapon can only be used to attack the grappled creature for as long as it is grappled. When grappling 
-                      from range, you are pulled within 5 feet of the target. You can grapple creatures that are exactly two sizes larger than you, though your speed becomes 0 and they can move up to half their speed while 
-                      grappled. If a grappled creature more than one sizes larger than you moves, it drags you along as if that creature is the one grappling you.
-                      Spiked Chain, 25gp, 1d6 slashing, 5lb Reach, versatile (1d8)
-       - Stunning Blow: when you hit a creature with a weapon attack on your turn, you can use your bonus action and spend a ranger spell slot to attempt to stun your target. The target must make a Constitution saving throw 
-                        against your ranger spell DC. On a failed save the target is stunned for up to 1 minute. At the end of each of its turns, the affected creature can make a new saving throw with advantage. If it succeeds, 
-                        the effect ends.
-       - End Of The Line: your proficiency bonus is doubled for any grapple or shoving checks. You can also use your action to throw bolas that trip your enemies at range. Bolas can be thrown up to 30 feet, and the target must 
-                          make a Dexterity saving throw against your ranger spell save DC. On a failed save the target is restrained. The target can use its action to make a new Strength or Dexterity saving throw or destroy the 
-                          bola using slashing damage. If it succeeds, the effect ends. The bolas have no effect on creatures that are huge or larger.
-       - Master Of Restraint: whenever you hit a creature with a weapon attack, you can use your bonus action to make a shove attack against the target. Additionally, you can grapple creatures that are more than two sizes larger
-                              than you, but your speed becomes 0 and their speed is reduced by 10. A grappled creature takes bludgeoning damage equal to your Strength modifier at the beginning of each of their turns for as long
-                              as it remains grappled.
+  - title: Bounty Hunter Conclave Abilities
+  - abilities: 
+    - title: On The Hook
+    - content: You gain proficiency with the spiked chain weapon. Additionally, you do not need a free hand to grapple while you are wielding a sickle, war pick, whip or spiked chain. Whenever you hit a creature with one 
+               of those weapons on your turn, you can use your bonus action to attempt to grapple that creature. That weapon can only be used to attack the grappled creature for as long as it is grappled. When grappling 
+               from range, you are pulled within 5 feet of the target. You can grapple creatures that are exactly two sizes larger than you, though your speed becomes 0 and they can move up to half their speed while 
+               grappled. If a grappled creature more than one sizes larger than you moves, it drags you along as if that creature is the one grappling you.
+               Spiked Chain, 25gp, 1d6 slashing, 5lb Reach, versatile (1d8)
+    - title: Stunning Blow
+    - content: When you hit a creature with a weapon attack on your turn, you can use your bonus action and spend a ranger spell slot to attempt to stun your target. The target must make a Constitution saving throw 
+               against your ranger spell DC. On a failed save the target is stunned for up to 1 minute. At the end of each of its turns, the affected creature can make a new saving throw with advantage. If it succeeds, 
+               the effect ends.
+    - title: End Of The Line
+    - content: Your proficiency bonus is doubled for any grapple or shoving checks. You can also use your action to throw bolas that trip your enemies at range. Bolas can be thrown up to 30 feet, and the target must 
+               make a Dexterity saving throw against your ranger spell save DC. On a failed save the target is restrained. The target can use its action to make a new Strength or Dexterity saving throw or destroy the 
+               bola using slashing damage. If it succeeds, the effect ends. The bolas have no effect on creatures that are huge or larger.
+    - title: Master Of Restraint
+    - content: Whenever you hit a creature with a weapon attack, you can use your bonus action to make a shove attack against the target. Additionally, you can grapple creatures that are more than two sizes larger
+               than you, but your speed becomes 0 and their speed is reduced by 10. A grappled creature takes bludgeoning damage equal to your Strength modifier at the beginning of each of their turns for as long
+               as it remains grappled.
                               
                               
-    - Channeler Conclave Abilities:
-       - Spirit Animal: you connect with a certain animal spirit. Choose one of the following animals to become your spirit animal; Bear, Eagle, Tiger, Wolf. You gain one feature for your spirit animal
-         Bear: After you finish a long rest, you gain temporary hit points equal to your Ranger level + your Wisdom modifier (mimimum of 1).
-         Eagle: You gain advantage on perception checks that rely on sight. Additionally, you can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more 
-                than 1 00 feet away from you.
-         Tiger: Your speed increases by 10 feet. Additionally, opportunity attacks against you are made with disadvantage.
-         Wolf: When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.
-       - Spirit Animal Attack: you can use your spiritual bond to aid you in combat. As an action you can summon your spirit animal to make a single attack. You can make a melee spell attack against a creature within 30 feet of 
-                               you. On a hit, the target takes force damage equal to ldlO +your Wisdom modifier. The damage increases to 2d10 +your Wisdom modifier at 7th level
-       - Spiritual Bond: your bond with your spirit animal enhances your abilities even more. You gain one feature for the same spirit animal you have chosen at 3rd level
-         Bear: You have advantage on Strength (Athletics) checks in order to Shove or Grapple a target.
-         Eagle: Your ranged attacks ignore half cover and threequarters cover.
-         Tiger: If you move at least 10 feet straight toward a creature before attacking it with a melee weapon, you have advantage on the attack roll
-         Wolf: If one of your allies makes a melee weapon attack against a target within 5 feet of you, you can use your reaction to give the ally advantage on the roll
-       - Unified Spirits: when you use your action for a spirit animal attack, you can make one weapon attack as a bonus action against the same enemy. Additionally you gain one feature for the same spirit animal you have chosen
-                          at 3rd level
-         Bear: The damage of your spirit animal attack becomes 2d 12 + your Wisdom modifier.
-         Eagle: The range of your spirit animal attack becomes 120 feet.
-         Tiger: If you move at least 20 feet straight toward a creature before attacking it with a your spirit animal attack, that target must succeed on a Strength saving throw against your spell DC or be 
-                knocked prone.
-         Wolf: If you are within 5 feet of the target, the spirit animal attack is made with advantage.
-       - Spiritual Fusion: you gain one ability for the same spirit animal you have chosen at 3rd level You can use this ability a number of times equal to your Wisdom modifier (minimum of 1) before you need to take a long rest.
-         Bear: You gain resistance to all damage until the start of your next turn.
-         Eagle: You gain the ability to fly for 1 minute. You have a flying speed equal to your current walking speed
-         Tiger: When you score a hit with a melee weapon attack on which you had advantage, you can make this attack a critical hit.
-         Wolf: As an action you can Howl Creatures of your choice that you can see within 30 feet and that can hear you must,succeed on a Wisdom saving throw against your spell DC or have disadvantage on the 
-               next attack roll they make before the end of their next turn.
+  - title: Channeler Conclave Abilities
+  - abilities:
+    - title: Spirit Animal
+    - content: You connect with a certain animal spirit. Choose one of the following animals to become your spirit animal; Bear, Eagle, Tiger, Wolf. You gain one feature for your spirit animal
+               Bear - After you finish a long rest, you gain temporary hit points equal to your Ranger level + your Wisdom modifier (mimimum of 1).
+               Eagle - You gain advantage on perception checks that rely on sight. Additionally, you can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more 
+                       than 1 00 feet away from you.
+               Tiger - Your speed increases by 10 feet. Additionally, opportunity attacks against you are made with disadvantage.
+               Wolf - When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.
+    - title: Spirit Animal Attack
+    - content: You can use your spiritual bond to aid you in combat. As an action you can summon your spirit animal to make a single attack. You can make a melee spell attack against a creature within 30 feet of 
+               you. On a hit, the target takes force damage equal to ldlO +your Wisdom modifier. The damage increases to 2d10 +your Wisdom modifier at 7th level
+    - title: Spiritual Bond
+    - content: Your bond with your spirit animal enhances your abilities even more. You gain one feature for the same spirit animal you have chosen at 3rd level
+               Bear - You have advantage on Strength (Athletics) checks in order to Shove or Grapple a target.
+               Eagle - Your ranged attacks ignore half cover and threequarters cover.
+               Tiger - If you move at least 10 feet straight toward a creature before attacking it with a melee weapon, you have advantage on the attack roll
+               Wolf - If one of your allies makes a melee weapon attack against a target within 5 feet of you, you can use your reaction to give the ally advantage on the roll
+    - title: Unified Spirits
+    - content: When you use your action for a spirit animal attack, you can make one weapon attack as a bonus action against the same enemy. Additionally you gain one feature for the same spirit animal you have chosen 
+               at 3rd level
+               Bear - The damage of your spirit animal attack becomes 2d 12 + your Wisdom modifier.
+               Eagle - The range of your spirit animal attack becomes 120 feet.
+               Tiger - If you move at least 20 feet straight toward a creature before attacking it with a your spirit animal attack, that target must succeed on a Strength saving throw against your spell DC or be 
+                       knocked prone.
+               Wolf - If you are within 5 feet of the target, the spirit animal attack is made with advantage.
+    - title: Spiritual Fusion
+    - content: You gain one ability for the same spirit animal you have chosen at 3rd level You can use this ability a number of times equal to your Wisdom modifier (minimum of 1) before you need to take a long rest.
+               Bear - You gain resistance to all damage until the start of your next turn.
+               Eagle - You gain the ability to fly for 1 minute. You have a flying speed equal to your current walking speed
+               Tiger - When you score a hit with a melee weapon attack on which you had advantage, you can make this attack a critical hit.
+               Wolf - As an action you can Howl Creatures of your choice that you can see within 30 feet and that can hear you must,succeed on a Wisdom saving throw against your spell DC or have disadvantage on the 
+                      next attack roll they make before the end of their next turn.
                                  
                                  
-    - Commando Conclave Abilities:
-       - Special Operations: you gain proficiency with the Stealth skill and Thieves' Tools. Additionally you gain all the benefits of your Natural Explorer feature when in urban settings such as villages, cities, sewers, and 
-                             castles.
-       - Danger Sense: you have an uncanny sense of when things aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such 
-                       as traps and spells. To gain this benefit, you can't be blinded, deafened , or incapacitated.
-       - Swift Fingers: you can use your bonus action to perform one of the following
-                        - reload a ranged weapon with the loading quality. Doing so allows you to fire the weapon once more that turn.
-                        - draw or stow a weapon, shield , or item.
-                        - take the Use an Object action.
-       - Quick Work: whenever you score a critical hit, reduce a creature to 0 hit points with a weapon attack, or knock a creature unconscious, you may immediately move up to half your speed and take a Hide action. This 
-                     movement does not provoke opportunity attacks. You can use this feature a number of times equal to your Dexterity modifier (mini mum 1). You regain all uses of this feature upon completion of a long or short
-                     rest.
-       - Specialized Tactics: when you complete a long rest you may choose one fighting style option from the Fighting Style feature that you do not already know. You are treated as having that fighting style until you start a 
-                              long rest. In addition to the fighting styles listed in the Ranger class feature you can choose any of the following options.
-         Close Quarter Shooter: You are trained in making ranged attacks at close quarters. When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the 
-                                attack roll. Your ranged attacks ignore half oover and three-quarters cover against targets within 30 feet of you.
-         Defense: While you are wearing armor, you gain a +1 bonus to AC.
-         Mariner: As long as you are not wearing heavy armor or using a shield, you have a swimming speed and a climbing speed equal to your normal walking speed.
+  - title: Commando Conclave Abilities
+  - abilities:
+    - title: Special Operations
+    - content: You gain proficiency with the Stealth skill and Thieves' Tools. Additionally you gain all the benefits of your Natural Explorer feature when in urban settings such as villages, cities, sewers, and castles.
+    - title: Danger Sense
+    - content: You have an uncanny sense of when things aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such 
+               as traps and spells. To gain this benefit, you can't be blinded, deafened , or incapacitated.
+    - title: Swift Fingers
+    - content: You can use your bonus action to perform one of the following
+               Reload a ranged weapon with the loading quality. Doing so allows you to fire the weapon once more that turn.
+               Draw or stow a weapon, shield , or item.
+               Take the Use an Object action.
+    - title: Quick Work
+    - content: Whenever you score a critical hit, reduce a creature to 0 hit points with a weapon attack, or knock a creature unconscious, you may immediately move up to half your speed and take a Hide action. This 
+               movement does not provoke opportunity attacks. You can use this feature a number of times equal to your Dexterity modifier (mini mum 1). You regain all uses of this feature upon completion of a long or short rest.
+    - title: Specialized Tactics
+    - content: When you complete a long rest you may choose one fighting style option from the Fighting Style feature that you do not already know. You are treated as having that fighting style until you start a 
+               long rest. In addition to the fighting styles listed in the Ranger class feature you can choose any of the following options.
+    - title: Close Quarter Shooter
+    - content: You are trained in making ranged attacks at close quarters. When making a ranged attack while you are within 5 feet of a hostile creature, you do not have disadvantage on the 
+               attack roll. Your ranged attacks ignore half oover and three-quarters cover against targets within 30 feet of you.
+    - title: Defense
+    - content: While you are wearing armor, you gain a +1 bonus to AC.
+    - title: Mariner
+    - content: As long as you are not wearing heavy armor or using a shield, you have a swimming speed and a climbing speed equal to your normal walking speed.
                               
                               
-    - Corsair Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Compelled Duel 
-         5th Level: Locate Object
-         9th Level: Enemies Abound
-         13th Level: Secret Chest
-         17th Level: Legend Lore
-       - Treasure Hunter: you have advantage on Perception checks to search for items worth at least 1gp, and you can track them as you would a creature. You can do so by tracking individuals, investigating hearsay, or 
-                          discerning physical evidence relevant to that item. You can also gain proficiency in Navigator's Tools and waterborne vehicles.
-       - Saltwater Roulette: you can challenge a worthy opponent to a duel As a bonus action, you can choose a creature you can see within 30 feet of you. For up to 1 minute or until either you or the target drops to 0 hit 
-                             points, you both can deal 1d6 extra damage on attacks against each other once per turn. If a creature rolls a 1 on this d6, the attack will backfire, missing the target and hitting the attacker 
-                             instead This d6 can't be rerolled, and critical hits can't backfire. While you have half your maximum hit points or less, your d6 automatically rolls a 6. You can't target a second creature with this
-                             feature until after the effect on the first creature ends. You can cast compelled duel with the same bonus action you use for this feature, targeting the same creature. You also don't need to make 
-                             Constitution saving throws to maintain concentration when damaged by creatures affected by this feature or your compelled duel.
-       - Cutting Riposte: when a creature you can see makes a weapon attack against you, you can use your reaction to add your Wisdom modifier to your AC against that attack. If this causes a melee weapon attack to miss, the 
-                          attacker drops the weapon used to make the attack if they're holding it.
-       - Boarding Party: you can let loose a rallying battle cry as part of the bonus action you use for Saltwater Roulette. Each hostile creature within 30 feet of you that can hear you must succeed a Wisdom saving throw or be 
-                         affected by Saltwater Roulette, along with you, your primary target, and any willing creature that can hear you. Once per turn, an affected creature can add the Saltwater Roulette's d6 to the damage 
-                         rolls of their attacks against another affected creature. After you use this feature, you can't do so again until you complete a short or long rest.
-       - Tough Grit: the carnage of battle no longer fazes you. You gain resistance against bludgeoning, piercing, and slashing damage from creatures affected by your Saltwater Roulette.
+  - title: Corsair Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Compelled Duel 
+    - title: 5th Level
+    - content: Locate Object
+    - title: 9th Level
+    - content: Enemies Abound
+    - title: 13th Level
+    - content: Secret Chest
+    - title: 17th Level
+    - content: Legend Lore
+    - title: Treasure Hunter
+    - content: You have advantage on Perception checks to search for items worth at least 1gp, and you can track them as you would a creature. You can do so by tracking individuals, investigating hearsay, or 
+               discerning physical evidence relevant to that item. You can also gain proficiency in Navigator's Tools and waterborne vehicles.
+    - title: Saltwater Roulette
+    - content: You can challenge a worthy opponent to a duel As a bonus action, you can choose a creature you can see within 30 feet of you. For up to 1 minute or until either you or the target drops to 0 hit 
+               points, you both can deal 1d6 extra damage on attacks against each other once per turn. If a creature rolls a 1 on this d6, the attack will backfire, missing the target and hitting the attacker 
+               instead This d6 can't be rerolled, and critical hits can't backfire. While you have half your maximum hit points or less, your d6 automatically rolls a 6. You can't target a second creature with this
+               feature until after the effect on the first creature ends. You can cast compelled duel with the same bonus action you use for this feature, targeting the same creature. You also don't need to make 
+               Constitution saving throws to maintain concentration when damaged by creatures affected by this feature or your compelled duel.
+    - title: Cutting Riposte
+    - content: When a creature you can see makes a weapon attack against you, you can use your reaction to add your Wisdom modifier to your AC against that attack. If this causes a melee weapon attack to miss, the 
+               attacker drops the weapon used to make the attack if they're holding it.
+    - title: Boarding Party
+    - content: You can let loose a rallying battle cry as part of the bonus action you use for Saltwater Roulette. Each hostile creature within 30 feet of you that can hear you must succeed a Wisdom saving throw or be 
+               affected by Saltwater Roulette, along with you, your primary target, and any willing creature that can hear you. Once per turn, an affected creature can add the Saltwater Roulette's d6 to the damage 
+               rolls of their attacks against another affected creature. After you use this feature, you can't do so again until you complete a short or long rest.
+    - title: Tough Grit
+    - content: The carnage of battle no longer fazes you. You gain resistance against bludgeoning, piercing, and slashing damage from creatures affected by your Saltwater Roulette.
        
        
-    - Conclave of The Fey Warden Abilities:
-       - Embrace Aspect: you may spend 1 hour to attune yourself to an aspect of nature. You choose to pledge yourself to the Ancient, the Destroyer, or the Stalker. As a bonus action, you may embrace this aspect, becoming an 
-                         avatar of the fey. You may choose to relinquish this bond on your turn, and may benefit from an aspect for no more than 1 round per ranger level between each long rest. Aspect descriptions follow.
-       - The Ancient: A ranger embracing the aspect of the ancient taps into the fey reverie - a dream-like realm that hold s many of nature's deepest secrets, and the origin of most fey powers. As an avatar of the ancient, you 
-                      gain the following benefits.
-         Magic Resistance: You have advantage on saving throws against spells a nd magical effects. In additi on, whe never you resist a magical effect, you are healed for 1d8 hit points.
-         Natures Command: As an action, you issue a command against creatu res of nature. Every beast, fey, and plant that can see or hear you must make a Wisdom saving throw against your spell save DC. If it fails 
-                          its saving throw, the creature is turned for 1 minute or until it takes damage. A turned creature spends its turns moving as far away from you as it can and cannot willingly move to any 
-                          space within 30 feet of you. It can also not take any reactions. It may only use the Dash action to try to escape from an effect which prevents it from moving. If it cannot move, the 
-                          creature may use the Dodge action.
-       - The Destroyer: A ranger who embraces this aspect aligns herself with the Unseelie court bas at her command the destructive power of nature itself. As an avatar of the destroyer, you gain the following benefits
-         Elemental Might: You have resistance against fire, cold, and electricity damage. Additionally, foes lose any resistance they have against fire, cold, or electricity damage that originates from you.
-         Smite Defiler: Attacks against aberrations, constructs, monstrosities, oozes, and undead, your attacks and damage-dealing spells deal+ ld8 damage. You may expend a single ranger spell slot when you hit 
-                        any of these types of creatures to deal another extra ld8 damage for every level of that spell slot.
-       - The Stalker: A ranger embracing the aspect of the stalker embodies stealth and keen senses. None can hide from her.
-         Heightened Senses: You have advantage on Wisdom (Perception) checks. In addition, you can "see" without relying on sight out to 30 feet through instinct.
-         Twilight Cloak: You can draw upon the power of the Reverie to cloak yourself. As an action on your turn, you may hide anywhere as though heavily obscured. You become revealed after you make an attack with a
-                         weapon or spell, otherwise you may choose to remain hidden until you are no longer embracing the Stalker.
-       - Fey Step: difficult terrain no longer impedes your movement. Additionally, your devotion to protecting nature gifts you with access to the Crossroads. You can cast dimension door once per short or long rest. You can 
-                   cast dimension door twice per short or long rest at 13th level, and three times at 18th level.
-       - Fluid Embrace: you may use your Embrace Aspect ability twice per long rest. Additionally, while you are embody one aspect of nature, you may change this aspect as a bonus action on your turn and remain in your new 
-                        aspect form for the remaining duration. You may only change aspects this way once per long rest.
-       - Quickening Zephyr: you can beseech nature as a bonus action to give you the speed of the wind. During your turn, you may act and move twice. You must finish a long rest before you can use this ability again.
+  - title: Conclave of the Fey Warden Abilities
+  - abilities:
+    - title: Embrace Aspect
+    - content: You may spend 1 hour to attune yourself to an aspect of nature. You choose to pledge yourself to the Ancient, the Destroyer, or the Stalker. As a bonus action, you may embrace this aspect, becoming an 
+               avatar of the fey. You may choose to relinquish this bond on your turn, and may benefit from an aspect for no more than 1 round per ranger level between each long rest. Aspect descriptions follow.
+    - title: The Ancient
+    - content: A ranger embracing the aspect of the ancient taps into the fey reverie - a dream-like realm that hold s many of nature's deepest secrets, and the origin of most fey powers. As an avatar of the ancient, you 
+               gain the following benefits.
+               Magic Resistance - You have advantage on saving throws against spells a nd magical effects. In additi on, whe never you resist a magical effect, you are healed for 1d8 hit points.
+               Natures Command - As an action, you issue a command against creatu res of nature. Every beast, fey, and plant that can see or hear you must make a Wisdom saving throw against your spell save DC. If it fails 
+                                 its saving throw, the creature is turned for 1 minute or until it takes damage. A turned creature spends its turns moving as far away from you as it can and cannot willingly move to any 
+                                 space within 30 feet of you. It can also not take any reactions. It may only use the Dash action to try to escape from an effect which prevents it from moving. If it cannot move, the 
+                                 creature may use the Dodge action.
+    - title: The Destroyer
+    - content: A ranger who embraces this aspect aligns herself with the Unseelie court bas at her command the destructive power of nature itself. As an avatar of the destroyer, you gain the following benefits
+               Elemental Might - You have resistance against fire, cold, and electricity damage. Additionally, foes lose any resistance they have against fire, cold, or electricity damage that originates from you.
+               Smite Defiler - Attacks against aberrations, constructs, monstrosities, oozes, and undead, your attacks and damage-dealing spells deal+ ld8 damage. You may expend a single ranger spell slot when you hit 
+                               any of these types of creatures to deal another extra ld8 damage for every level of that spell slot.
+    - title: The Stalker
+    - content: A ranger embracing the aspect of the stalker embodies stealth and keen senses. None can hide from her.
+               Heightened Senses - You have advantage on Wisdom (Perception) checks. In addition, you can "see" without relying on sight out to 30 feet through instinct.
+               Twilight Cloak - You can draw upon the power of the Reverie to cloak yourself. As an action on your turn, you may hide anywhere as though heavily obscured. You become revealed after you make an attack with a
+                                weapon or spell, otherwise you may choose to remain hidden until you are no longer embracing the Stalker.
+    - title: Fey Step
+    - content: Difficult terrain no longer impedes your movement. Additionally, your devotion to protecting nature gifts you with access to the Crossroads. You can cast dimension door once per short or long rest. You can 
+               cast dimension door twice per short or long rest at 13th level, and three times at 18th level.
+    - title: Fluid Embrace
+    - content: You may use your Embrace Aspect ability twice per long rest. Additionally, while you are embody one aspect of nature, you may change this aspect as a bonus action on your turn and remain in your new 
+               aspect form for the remaining duration. You may only change aspects this way once per long rest.
+    - title: Quickening Zephyr
+    - content: You can beseech nature as a bonus action to give you the speed of the wind. During your turn, you may act and move twice. You must finish a long rest before you can use this ability again.
        
        
-    - Conclave of The Frost Warden Abilities:
-       - Spellcasting: Spell DC
-         Cantrip: Shape Water
-         3rd Level: Create of Destroy Water
-         5th Level: Snowball Storm
-         9th Level: Sleet Storm
-         13th Level: Control Water
-         17th Level: Cone of Cold
-       - Hoar Frost: damage from your ranger spells and weapon attacks can instead be dealt in cold damage if you choose. When a creature receives cold damage from you, it loses 10 feet of its speed and resistance to cold damage
-                     until the end of your next turn. A creature cannot lose more than 10 feet of its speed from this effect. You deal an additionalld4 cold damage on weapon attacks against creatures affected by Hoar Frost.
-       - Flash Freeze: your attacks and spells can suddenly freeze your target. When a die of cold damage from you yields the maximum result, the target receiving that damage is restrained for 1 minute. An affected creature can 
-                       make a Strength saving throw at the end of its turns, freeing itself on success.
-       - Extra Attack: you can attack twice, instead of once, whenever you take the Attack action on your turn.
-       - Wardens Amnesty: you suffer no harm from being in a hot or cold environment. While in conditions between -50 and 140 degrees Fahrenheit, you automatically succeed Constitution saving throws against Exhaustion induced by
-                          the surrounding climate. Additionally, you ignore light and heavy obscurity induced by fog or precipitation within 60 feet of you.
-       - Rime Ice: your weapon attacks against creatures affected by Hoar Frost will critically strike on a natural roll of 18-20.
-       - Frost Weathering: you gain resistance to cold damage. When a creature hits you with a melee attack, you can use your reaction to halve the attack's damage. The attacking creature takes cold damage equal to the damage 
-                           reduced
+  - title: Conclave of the Frost Warden Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: Cantrip
+    - content: Shape Water
+    - title: 3rd Level
+    - content: Create of Destroy Water
+    - title: 5th Level
+    - content: Snowball Storm
+    - title: 9th Level
+    - content: Sleet Storm
+    - title: 13th Level
+    - content: Control Water
+    - title: 17th Level
+    - content: Cone of Cold
+    - title: Hoar Frost
+    - content: Damage from your ranger spells and weapon attacks can instead be dealt in cold damage if you choose. When a creature receives cold damage from you, it loses 10 feet of its speed and resistance to cold damage
+               until the end of your next turn. A creature cannot lose more than 10 feet of its speed from this effect. You deal an additionalld4 cold damage on weapon attacks against creatures affected by Hoar Frost.
+    - title: Flash Freeze
+    - content: Your attacks and spells can suddenly freeze your target. When a die of cold damage from you yields the maximum result, the target receiving that damage is restrained for 1 minute. An affected creature can 
+               make a Strength saving throw at the end of its turns, freeing itself on success.
+    - title: Extra Attack
+    - content: You can attack twice, instead of once, whenever you take the Attack action on your turn.
+    - title: Wardens Amnesty
+    - content: You suffer no harm from being in a hot or cold environment. While in conditions between -50 and 140 degrees Fahrenheit, you automatically succeed Constitution saving throws against Exhaustion induced by
+               the surrounding climate. Additionally, you ignore light and heavy obscurity induced by fog or precipitation within 60 feet of you.
+    - title: Rime Ice
+    - content: Your weapon attacks against creatures affected by Hoar Frost will critically strike on a natural roll of 18-20.
+    - title: Frost Weathering
+    - content: You gain resistance to cold damage. When a creature hits you with a melee attack, you can use your reaction to halve the attack's damage. The attacking creature takes cold damage equal to the damage reduced
                            
                            
-    - Ghost Conclave Abilities:
-       - Sanctuary: you choose a city, town, fortification, ruin, or named landmark in the world. This place and the lands around it fall under your protection, as a Sanctuary for those who live within whether they know it or 
-                    not. Whenever you are within an 80 mile radius of your Sanctuary, you are considered to be within favored terrain. You may choose a new Sanctuary by selecting a new location, and spending 5 days studying and
-                    ranging the land within a 30 mile radius of the location. When you do this, your previous Sanctuary ceases to be your Sanctuary, and is replaced by the new location.
-       - Ambush: those who threaten your people have forfeit their right to fair combat. If you are hidden when you roll Initiative, you deal an extra ld6 damage whenever you hit a creature with a weapon attack for the next 1 
-                 minute. Additionally, if you are not hidden when you roll Initiative, you can still receive this damage bonus when you hit on an attack you make while hidden.
-       - Guerrilla Warfare: when a creature hits or misses you with. an attack, you can use your reaction to move up to half your movement speed and Hide. When you Hide using this feature, you may Hide even when you are only 
-                            lightly obscured
-       - Silent Guardian: none can threaten your companions without risking your vengeance. At the end of your turn, you may use your Reaction to watch over one friendly creature within 30 feet of you. If that creature is 
-                          attacked before your next turn, you gain advantage on attack rolls against the source of the attack, if you can see it.
-       - Unseen Terror: if you are lightly obscured or hidden when you hit a creature with a weapon attack, you may attempt to frighten the target. The target must make a Wisdom saving throw against your Spell Save DC. On a 
-                        failed save, it is frightened of you until the end of your next turn. You may use this feature a number of times equal to your Wisdom Modifier (minimum 1} You regain expended uses when you finish a long 
-                        rest.
+  - title: Ghost Conclave Abilities
+  - abilities:
+    - title: Sanctuary
+    - content: You choose a city, town, fortification, ruin, or named landmark in the world. This place and the lands around it fall under your protection, as a Sanctuary for those who live within whether they know it or 
+               not. Whenever you are within an 80 mile radius of your Sanctuary, you are considered to be within favored terrain. You may choose a new Sanctuary by selecting a new location, and spending 5 days studying and
+               ranging the land within a 30 mile radius of the location. When you do this, your previous Sanctuary ceases to be your Sanctuary, and is replaced by the new location.
+    - title: Ambush
+    - content: Those who threaten your people have forfeit their right to fair combat. If you are hidden when you roll Initiative, you deal an extra ld6 damage whenever you hit a creature with a weapon attack for the next 1 
+               minute. Additionally, if you are not hidden when you roll Initiative, you can still receive this damage bonus when you hit on an attack you make while hidden.
+    - title: Guerrilla Warfare
+    - content: When a creature hits or misses you with. an attack, you can use your reaction to move up to half your movement speed and Hide. When you Hide using this feature, you may Hide even when you are only 
+               lightly obscured
+    - title: Silent Guardian
+    - content: None can threaten your companions without risking your vengeance. At the end of your turn, you may use your Reaction to watch over one friendly creature within 30 feet of you. If that creature is 
+               attacked before your next turn, you gain advantage on attack rolls against the source of the attack, if you can see it.
+    - title: Unseen Terror
+    - content: If you are lightly obscured or hidden when you hit a creature with a weapon attack, you may attempt to frighten the target. The target must make a Wisdom saving throw against your Spell Save DC. On a 
+               failed save, it is frightened of you until the end of your next turn. You may use this feature a number of times equal to your Wisdom Modifier (minimum 1} You regain expended uses when you finish a long rest.
                         
                         
-    - Sentinel Conclave Abilities:
-       - Swift Intent: When you use the Attack action to make a ranged weapon attack, you can make one ranged weapon attack as a bonus action.
-       - Lithness: ranged attackers you can see have disadvantage against you.
-       - Vigilance: your instincts for danger border on the supernatural. When a creature you can see makes a melee attack against a target other than you, you can use your reaction to make a ranged weapon attack against the 
-                    attacking creature. If your attack hits you impose Disadvantage on the attack roll.
-       - True Aim: you have become an unmatched master of precision. Any hit you score against a creature that is at its hit point maximum is a critical hit. Additionally, when you score a critical hit with a ranged weapon 
-                   Attack, you deal additional damage equal to your Ranger level.
+  - title: Sentinel Conclave Abilities
+  - abilities:
+    - title: Swift Intent
+    - content: When you use the Attack action to make a ranged weapon attack, you can make one ranged weapon attack as a bonus action.
+    - title: Lithness
+    - content: Ranged attackers you can see have disadvantage against you.
+    - title: Vigilance
+    - content: Your instincts for danger border on the supernatural. When a creature you can see makes a melee attack against a target other than you, you can use your reaction to make a ranged weapon attack against the 
+               attacking creature. If your attack hits you impose Disadvantage on the attack roll.
+    - title: True Aim
+    - content: You have become an unmatched master of precision. Any hit you score against a creature that is at its hit point maximum is a critical hit. Additionally, when you score a critical hit with a ranged weapon 
+               Attack, you deal additional damage equal to your Ranger level.
                    
                    
-    - Shadow Walker Conclave Abilities:
-       - Shadow Image: you can summon a ghostly image of yourself within 5 feet of yourself as a bonus action. This image looks exactly like you at the moment you summon it, but is obviously ethereal, a ghost, barely obstructing
-                       vision. All attacks aimed at the shadow go through the ethereal being. You must remain within 100 feet of your shadow or it vanishes. Otherwise, this shadow lasts until dispelled, or for one minute. You 
-                       can only have one shadow present at a time. Although stationary, the shadow will mimic your actions. Each time you attack an enemy, your shadow will also launch an attack at the same target if in range. If
-                       the target is not in range, your shadow attacks the nearest enemy. You must role an attack role for your shadow, using your attack modifiers. If your shadow hits, it rolls half its weapon's damage die and 
-                       adds half of the relevant modifier, rounded down.
-       - Displacement: you can use your reaction to take the place of your shadow. By using this ability, you take the place of your ghost if there is no obstruction within the same space. In addition, your shadow appears at 
-                       your previous location. Once you use this feature, you cannot use it again until you take a short or long rest.
-       - Duplicity: you gain the ability to summon and maintain two shadows. Each shadow behaves the same as defined in Shadow Image.
-       - Shadow Assault: your shadows become relentless. As an action, you can have a shadow explode into a mass of dark energy, dealing 6d10 necrotic damage to all enemies in a 5 foot radius from the shadow's position. Once you
-                         use this feature, you cannot reuse it until you finish a long rest.
+  - title: Shadow Walker Conclave Abilities
+  - abilities:
+    - title: Shadow Image
+    - content: You can summon a ghostly image of yourself within 5 feet of yourself as a bonus action. This image looks exactly like you at the moment you summon it, but is obviously ethereal, a ghost, barely obstructing
+               vision. All attacks aimed at the shadow go through the ethereal being. You must remain within 100 feet of your shadow or it vanishes. Otherwise, this shadow lasts until dispelled, or for one minute. You 
+               can only have one shadow present at a time. Although stationary, the shadow will mimic your actions. Each time you attack an enemy, your shadow will also launch an attack at the same target if in range. If
+               the target is not in range, your shadow attacks the nearest enemy. You must role an attack role for your shadow, using your attack modifiers. If your shadow hits, it rolls half its weapon's damage die and 
+               adds half of the relevant modifier, rounded down.
+    - title: Displacement
+    - content: You can use your reaction to take the place of your shadow. By using this ability, you take the place of your ghost if there is no obstruction within the same space. In addition, your shadow appears at 
+               your previous location. Once you use this feature, you cannot use it again until you take a short or long rest.
+    - title: Duplicity
+    - content: You gain the ability to summon and maintain two shadows. Each shadow behaves the same as defined in Shadow Image.
+    - title: Shadow Assault
+    - content: Your shadows become relentless. As an action, you can have a shadow explode into a mass of dark energy, dealing 6d10 necrotic damage to all enemies in a 5 foot radius from the shadow's position. Once you
+               use this feature, you cannot reuse it until you finish a long rest.
                          
                          
-    - Conclave of the Spirit Caller:
-       - Spirit Companion: you gain a special Spirit Companion. This is a powerful nature spirit that you have forged a bond with. It guides and protects you while acting as your liason to the world of spirits. Choose one beast 
-                           with a Challenge Rating of 1 when you gain this feature. When you manifest your Spirit Companion (see below) it takes tbe spectral form of the chosen beast. Once you make this choice, you cannot change
-                           it, but you can (at your DM's discretion) replaoe this Spirit Companion with another if it is destroyed or you otherwise part ways. The Spirit Companion is always with you, even when not manifested It 
-                           has 0 hit points and no physical form, following you from the edge of the ethereal plane. You can sense its presence, but others without a similar sensitivi!y to spirits or the means to see into the 
-                           ethereal plane cannot detect it in any way. Some of your class features only function when your Spirit Companion is with you. It is considered to be with you if it accompanies you passively or if it is
-                           manifested and within 30 feet of you. If a manifested companion leaves this range or a non-manifested one is separated from you for any reason, these features do not function until it returns. As a 
-                           bonus action on your turn, you can lend some of your own life force to your Spirit Companion to allow it to manifest on the material plane. When you do, choose an unoccupied spot within 30 feet, expend
-                           any number of hit dice and roll them. adding the Constitution modifier of your Spirit Companion's chosen form to each. It gains hit points equal to the result and manifests in the spot you chose. As a 
-                           bonus acion while your Spirit Companion is manifested and within 30 feet of you. you can expend any number of hit dice (modified by the Spirit Companion's Constitution modifier, as above) to have it 
-                           gain hit points equal to the result. While manifested your Spirit Companion uses the statistics of the beast you chose for its form. with the following exceptions; it is a fey rather than a beast and 
-                           its hit points are calculated as described in this feature. The Spirit Companion has no hit point maximum. but it also cannot gain hit points in any way except when you use this feature. It remains 
-                           manifested until its hit points are reduced to 0 at which point its physical form harmlessly disipates and it continues to accompany you from the ethereal plane. When you finisb a long rest. the Spirit
-                           Companion's hit points automatically become 0 and you are healed by an amount equal to tbe number of hit points it had
-       - Watchful Spirit: your Spirit Companion's perceptions supplement your own. While it is with you. you have proficiency with the Perception skill lf you are already proficient with this skill, you gain expertise with it 
-                          instead ln addition, white your Spirit Companion is with you, you can rely on its senses even when your own are hindered You can mak¢ a Perception check to perceive even something that your current 
-                          senses could not (such as a visual stimulus whiie blinded), but you make any such checks with disadvantage, owing to your reliance on your companion's senses. If you have the Feral Senses feature. it 
-                          functions even if you are blinded or deafened, but not both.
-       - Guardian Spirit: your bond with your Spirit Companion has given it the power to passively infuse you with its spiritual strength, even when it isn't manifested Whenevtr you finish a short or long rest while your 
-                          companion is with you. you regain one extra hit die. In addition, your Spirit Companion does what it can to protect you from grievous harm. Whenever you finish a long rest. it casts death ward on you as
-                          a ranger spell as if it was a ranger of your ranger level Tbe spell's duration is until you finish a long rest (or until it is broken. as stated in its description} It is only active while your Spirit 
-                          Companion is with you.
-       - Soul Resonance: your bond with your Spirit Companion is so strong that your attacks resonate with each other in battle. When your Guardian Spirit deals damage to a creature, your weapon attacks deal additional force 
-                         damage equal to your Wisdom modifier a,gainst that creature until the end of your next turn.
-       - Spirit Bond: whenever you take damage while your Guardian Spirit is manifested and within 30 feet of you, it can use its reaction to take half of the damage in your place. Any damage that exceeds its current hit points 
-                      is dealt to you, as normal
+  - title: Conclave of the Spirit Abilities
+  - abilities:
+    - title: Spirit Companion
+    - content: You gain a special Spirit Companion. This is a powerful nature spirit that you have forged a bond with. It guides and protects you while acting as your liason to the world of spirits. Choose one beast 
+               with a Challenge Rating of 1 when you gain this feature. When you manifest your Spirit Companion (see below) it takes tbe spectral form of the chosen beast. Once you make this choice, you cannot change
+               it, but you can (at your DM's discretion) replaoe this Spirit Companion with another if it is destroyed or you otherwise part ways. The Spirit Companion is always with you, even when not manifested It 
+               has 0 hit points and no physical form, following you from the edge of the ethereal plane. You can sense its presence, but others without a similar sensitivi!y to spirits or the means to see into the 
+               ethereal plane cannot detect it in any way. Some of your class features only function when your Spirit Companion is with you. It is considered to be with you if it accompanies you passively or if it is
+               manifested and within 30 feet of you. If a manifested companion leaves this range or a non-manifested one is separated from you for any reason, these features do not function until it returns. As a 
+               bonus action on your turn, you can lend some of your own life force to your Spirit Companion to allow it to manifest on the material plane. When you do, choose an unoccupied spot within 30 feet, expend
+               any number of hit dice and roll them. adding the Constitution modifier of your Spirit Companion's chosen form to each. It gains hit points equal to the result and manifests in the spot you chose. As a 
+               bonus acion while your Spirit Companion is manifested and within 30 feet of you. you can expend any number of hit dice (modified by the Spirit Companion's Constitution modifier, as above) to have it 
+               gain hit points equal to the result. While manifested your Spirit Companion uses the statistics of the beast you chose for its form. with the following exceptions; it is a fey rather than a beast and 
+               its hit points are calculated as described in this feature. The Spirit Companion has no hit point maximum. but it also cannot gain hit points in any way except when you use this feature. It remains 
+               manifested until its hit points are reduced to 0 at which point its physical form harmlessly disipates and it continues to accompany you from the ethereal plane. When you finisb a long rest. the Spirit
+               Companion's hit points automatically become 0 and you are healed by an amount equal to tbe number of hit points it had
+    - title: Watchful Spirit
+    - content: Your Spirit Companion's perceptions supplement your own. While it is with you. you have proficiency with the Perception skill lf you are already proficient with this skill, you gain expertise with it 
+               instead ln addition, white your Spirit Companion is with you, you can rely on its senses even when your own are hindered You can mak¢ a Perception check to perceive even something that your current 
+               senses could not (such as a visual stimulus whiie blinded), but you make any such checks with disadvantage, owing to your reliance on your companion's senses. If you have the Feral Senses feature. it 
+               functions even if you are blinded or deafened, but not both.
+    - title: Guardian Spirit
+    - content: Your bond with your Spirit Companion has given it the power to passively infuse you with its spiritual strength, even when it isn't manifested Whenevtr you finish a short or long rest while your 
+               companion is with you. you regain one extra hit die. In addition, your Spirit Companion does what it can to protect you from grievous harm. Whenever you finish a long rest. it casts death ward on you as
+               a ranger spell as if it was a ranger of your ranger level Tbe spell's duration is until you finish a long rest (or until it is broken. as stated in its description} It is only active while your Spirit 
+               Companion is with you.
+    - title: Soul Resonance
+    - content: Your bond with your Spirit Companion is so strong that your attacks resonate with each other in battle. When your Guardian Spirit deals damage to a creature, your weapon attacks deal additional force 
+               damage equal to your Wisdom modifier a,gainst that creature until the end of your next turn.
+    - title: Spirit Bond
+    - content: Whenever you take damage while your Guardian Spirit is manifested and within 30 feet of you, it can use its reaction to take half of the damage in your place. Any damage that exceeds its current hit points 
+               is dealt to you, as normal
                       
                       
-    - Conclave of the Stormborn Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Gift of Alacrity
-         5th Level: Gust of Wind
-         9th Level: Thunder Step
-         13th Level: Conjure Minor Elementals
-         17th Level: Control Winds
-       - Children of the Sky: you always know what the weather will be for the next 24 hours. You gain resistance to lightning and thunder damage.
-       - Fury of the Storm: you can channel the tempest through your attacks. When you hit with a weapon attack you can supercharge the attack. You can supercharge a number of attacks equal to your Wisdom modifier (minimum of 
-                            one) before you must complete a short or long rest. When you supercharge an attack, you choose whether the weapon's damage becomes lightning or thunder damage instead of the weapon's usual damage. The
-                            following effect is applied to the attack depending on the damage type the attack dealt
-         Lightning Damage: One creature of your choice within 15 feet of the target of the attack receives lightning damage equal to the damage dealt to the target if the attack would hit the new target.
-         Thunder Damage: Each creature of your choice within 5 feet of the target of the attack receives thunder damage equal to the damage dealt to the target if the attack would hit the new target.
-       - Stormforged: whenever you make any weapon attack, you can choose to deal the damage as thunder or lightning damage. When you suffer lightning or thunder damage, you can use your reaction to capture some of the storm's 
-                      power. Your next weapon attack deals an additionalld8 damage of the type which you suffered. At 11th level when you use this ability, you regain one use of your Fury of the Storm feature.
-       - Uncontanied Fury: the range of your supercharge effects are doubled The target and all creatures which suffered damage as a result of your supercharge effect now suffer an additional effect based on the type of damage 
-                           they suffered
-         Lightning Damage: The affected creatures may no longer take reactions until the end of their next turn.
-         Thunder Damage: The affected creatures are deafened until the end of their next turn.
-       - Storms Call: as a bonus action, you can return to the storm in a crack of lightning and reappear 30 feet from where you were. When you do so, you may expend one spell slot to create a surge of lightning in a 5-foot 
-                      radius sphere centered on you when you reappear. Each creature of your choice within range must succeed on a Dexterity saving throw against your spell save DC or suffer ld8lightning damage for each level of
-                      the spell slot you expended and be unable to use reactions until the start of the creature's next turn. You cannot use this feature if you are underground or indoors.
+  - title: Conclave of the Stormborn Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Gift of Alacrity
+    - title: 5th Level
+    - content: Gust of Wind
+    - title: 9th Level
+    - content: Thunder Step
+    - title: 13th Level
+    - content: Conjure Minor Elementals
+    - title: 17th Level
+    - content: Control Winds
+    - title: Children of the Sky
+    - content: You always know what the weather will be for the next 24 hours. You gain resistance to lightning and thunder damage.
+    - title: Fury of the Storm
+    - content: You can channel the tempest through your attacks. When you hit with a weapon attack you can supercharge the attack. You can supercharge a number of attacks equal to your Wisdom modifier (minimum of 
+               one) before you must complete a short or long rest. When you supercharge an attack, you choose whether the weapon's damage becomes lightning or thunder damage instead of the weapon's usual damage. The
+               following effect is applied to the attack depending on the damage type the attack dealt
+               Lightning Damage - One creature of your choice within 15 feet of the target of the attack receives lightning damage equal to the damage dealt to the target if the attack would hit the new target.
+               Thunder Damage - Each creature of your choice within 5 feet of the target of the attack receives thunder damage equal to the damage dealt to the target if the attack would hit the new target.
+    - title: Stormforged
+    - content: Whenever you make any weapon attack, you can choose to deal the damage as thunder or lightning damage. When you suffer lightning or thunder damage, you can use your reaction to capture some of the storm's 
+               power. Your next weapon attack deals an additionalld8 damage of the type which you suffered. At 11th level when you use this ability, you regain one use of your Fury of the Storm feature.
+    - title: Uncontanied Fury
+    - content: The range of your supercharge effects are doubled The target and all creatures which suffered damage as a result of your supercharge effect now suffer an additional effect based on the type of damage 
+               they suffered
+               Lightning Damage - The affected creatures may no longer take reactions until the end of their next turn.
+               Thunder Damage - The affected creatures are deafened until the end of their next turn.
+    - title: Storms Call
+    - content: As a bonus action, you can return to the storm in a crack of lightning and reappear 30 feet from where you were. When you do so, you may expend one spell slot to create a surge of lightning in a 5-foot 
+               radius sphere centered on you when you reappear. Each creature of your choice within range must succeed on a Dexterity saving throw against your spell save DC or suffer ld8lightning damage for each level of
+               the spell slot you expended and be unable to use reactions until the start of the creature's next turn. You cannot use this feature if you are underground or indoors.
                       
                       
-    - Bladeslinger Conclave Abilities:
-       - Thrown Weapon Fighting Style: you have chosen your ammunition to be anything that you can throw. Any weapon that has the Thrown property counts as a Ranged Weapon for the purpose of functioning with other class features
-                                       and feats. For example, you may take the Archery Fighting Style at 2nd level and gain the +2 bonus to attack rolls with your thrown weapons.
-       - Thrown Weapon Trick: you choose three of the thrown weapon Tricks, detailed at the end of the class description, and you gain another of your choice at 7th, 11th, and 15th level Each time you learn a new Trick you may 
-                              replace one you know with a different one. You cannot choose the same Trick more than once and you may only use one Trick per attack.
-       - TRICKS:
-                              Deadeye Shot: When you acquire this Trick, your thrown weapons deal triple the amount of damage on a critical hit instead of double.
-                              Defensive Throw: You can choose to suffer a -4 to hit on an attack roll to gain a +2 to your AC until the beginning of your next turn.
-                              Doubletoss: When you use this Trick, you can throw 2 thrown weapons at one or two targets within range as part of one attack. Normal penalties for Two Weapon Fighting still apply.
-                              Palm Throw: When you use this Trick, you can throw two thrown weapons that fit in your palm with one attack roll but you do not add your ability modifier to the damage.
-                              Sneaky Shot: When you use this Trick, you can make a Sleight of Hand check against a targets Perception. If you win, you gain advantage on the attack roll
-                              Trip Shot: When you use this Trick, you attack as normal but the target must succeed on an Athletics or Acrobatics check (DC= 8 +your Dexterity modifier +your proficiency bonus) or be tripped and 
-                                         fall prone.
-                              Tumbling Toss: When you use this Trick, you can attempt to tumble through a hostile creatures' space as an action or bonus action. Make a Dexterity (Acrobatics) check against the opposing creatures 
-                                             Dexterity (Acrobatics) check. If you succeed, you can move through that creatures space for this movement only. If you succeed by 5 or more, you can continue your momentum to make a
-                                             single ranged attack against any target within range.
-                              Two With One Blow: When you use this Trick, you can attack two opponents adjacent to each other in an attempt to hit them both, but the attack roll is at disadvantage. The attack may hit either, 
-                                                 both, or neither opponent depending on the roll and the Armor Class of each opponent. Damage for each opponent is resolved separately. If the attack roll results in a critical hit,
-                                                 roll each critical hit separately.
-                              Weak Spot: When you use this Trick, you can gain a + 5 to hit a target that is your size or larger, but you do not add your Strength modifier to the damage.
-       - Evasion: you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm spell When you are subjected to an effect that allows you to make a Dexterity saving throw to 
-                  take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-       - Missle Snaring: when a ranged weapon attack hits you, you can use your reaction to reduce the damage by 1dl0 +your Dexterity modifier, provided that you have a free hand If you reduce the damage to 0, you can catch the 
-                         missile if it is small enough for you to hold in that hand
-       - Critical Throw: your thrown weapon attacks score a critical hit on a roll of 18-20.
+  - title: Bladesinger Conclave Abilities
+  - abilities:
+    - title: Thrown Weapon Fighting Style
+    - content: You have chosen your ammunition to be anything that you can throw. Any weapon that has the Thrown property counts as a Ranged Weapon for the purpose of functioning with other class features
+               and feats. For example, you may take the Archery Fighting Style at 2nd level and gain the +2 bonus to attack rolls with your thrown weapons.
+    - title: Thrown Weapon Trick
+    - content: You choose three of the thrown weapon Tricks, detailed at the end of the class description, and you gain another of your choice at 7th, 11th, and 15th level Each time you learn a new Trick you may 
+               replace one you know with a different one. You cannot choose the same Trick more than once and you may only use one Trick per attack.
+               TRICKS
+               Deadeye Shot - When you acquire this Trick, your thrown weapons deal triple the amount of damage on a critical hit instead of double.
+               Defensive Throw - You can choose to suffer a -4 to hit on an attack roll to gain a +2 to your AC until the beginning of your next turn.
+               Doubletoss - When you use this Trick, you can throw 2 thrown weapons at one or two targets within range as part of one attack. Normal penalties for Two Weapon Fighting still apply.
+               Palm Throw - When you use this Trick, you can throw two thrown weapons that fit in your palm with one attack roll but you do not add your ability modifier to the damage.
+               Sneaky Shot - When you use this Trick, you can make a Sleight of Hand check against a targets Perception. If you win, you gain advantage on the attack roll
+               Trip Shot - When you use this Trick, you attack as normal but the target must succeed on an Athletics or Acrobatics check (DC= 8 +your Dexterity modifier +your proficiency bonus) or be tripped and fall prone.
+               Tumbling Toss - When you use this Trick, you can attempt to tumble through a hostile creatures' space as an action or bonus action. Make a Dexterity (Acrobatics) check against the opposing creatures 
+                               Dexterity (Acrobatics) check. If you succeed, you can move through that creatures space for this movement only. If you succeed by 5 or more, you can continue your momentum to make a
+                               single ranged attack against any target within range.
+               Two With One Blow - When you use this Trick, you can attack two opponents adjacent to each other in an attempt to hit them both, but the attack roll is at disadvantage. The attack may hit either, 
+                                   both, or neither opponent depending on the roll and the Armor Class of each opponent. Damage for each opponent is resolved separately. If the attack roll results in a critical hit,
+                                   roll each critical hit separately.
+               Weak Spot - When you use this Trick, you can gain a + 5 to hit a target that is your size or larger, but you do not add your Strength modifier to the damage.
+    - title: Evasion
+    - content: You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm spell When you are subjected to an effect that allows you to make a Dexterity saving throw to 
+               take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+    - title: Missle Snaring
+    - content: When a ranged weapon attack hits you, you can use your reaction to reduce the damage by 1dl0 +your Dexterity modifier, provided that you have a free hand If you reduce the damage to 0, you can catch the 
+               missile if it is small enough for you to hold in that hand
+    - title: Critical Throw
+    - content: Your thrown weapon attacks score a critical hit on a roll of 18-20.
        
        
-    - Divine Hunt Conclave Abilities:
-       - Predators Beginnings: you gain the ability to use Divine Bolts, and one use of the Channel Divinity feature (as described on page 85 of the PHB)
-                               - You can expend Ranger spell slots to create Divine bolts (no action required) according to the chart below.
-       - DIVINE BOLTS:
-                               NUMBER OF CHARGES GAINED PER SLOT
-                               Spell Slot level     Divine Bolt Charges
-                                     lst                   2
-                                     2nd                   3
-                                     3rd                   4
-                                     4th                   5
-                                     5th                   6
-                               Divine Bolts can be used instead of regular ammunition, and are created when the spell slot is expended, but onty come into physical form when you load your ranged weapon or as part of the attack 
-                               action. The damage die of a Divine Bolt is 1 d8 radiant. Once fired or otherwise unloaded, the Divine Bolt's energy will disappear at the end of your turn. Uses of Divine Bolt can be expended once
-                               per attack to enhance existing ammunition. When used to enhance existing ammunition, declare the enhancement before making the attack roll. On a hit, add 1 d8 radiant damage on top of the weapon's 
-                               regular damage. Hit or miss, the use of Divine Bolt is expended. Unspent uses of Divine Bolt are expended harmlessly at the end of a long rest.
-       - Channel Divinity: When you take this archetype at 3rd leveL you gain the following two Channel Divinity options.
-         Hunters lnslincts: When you make a stealth, perception, or investigation check, you can use your Channel Divinity to gain a+ 10 bonus to the roll You make this choice after you see the roll but before 
-                            the DM says whether the roll succeeds or fails.
-         Predator: Against a favored enemy, you can tum one missed attack into a hit, or a h it into a critical hit
-       - Pursuit: as an action, choose a target that you have seen after gaining the use of this feature. You can use Primeval Awareness to track this creature without expending a spell s lot, though when used this way treat 
-                  Primeval Awareness as if it had been cast using your highest available spell slot. When Primeval Awareness is used in this way, you can sense the target's direction, speed and vague proximity, though you do not
-                  also sense other aberrations, celestials, dragons, elementals, fey, fiends, and undead. You can choose one target per day, and the use of this feature is limited to a number equal to your wisdom modifier. You 
-                  regain all uses at the end of a long rest.
-       - Halting Blows: creatures of large size or smaller that are hit by your ranged weapon attacks have their movement speed reduced by ten feet until the end of their next turn. This effect stacks with each hit. Additionally,
-                        your ranged attacks deal an additional 1d8 radiant damage.
-       - Huntsmans Avatar: nothing stands between you and your prey. For 1 minute. you have the following bonuses against your favored enemies, and creatures chosen by your Pursuit feature
-                           - All your ranged attacks deal an additional 1d8 radiant damage.
-                           - You are always aware of the exact location of these creatures, if they are within 60 feet.
-                           - While the target of your ranged weapon attack is within 60 feet of you. your attacks against it are not affected by cover (total or o therwise) or by the target being prone. You still need to make 
-                             attack rolls as normal
-                           - Attacks against the target pass harmlessly through effects and objects not enchanted to resist or block radiant damage. In the case of an effect that can block radiant damage, make a wisdom check 
-                             against the Spell DC of the effect's creator. On a fail the shot is stopped at that point.
-                           Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Divine Hunt Conclave Abilities
+  - abilities:
+    - title: Predators Beginnings
+    - content: You gain the ability to use Divine Bolts, and one use of the Channel Divinity feature (as described on page 85 of the PHB)
+               You can expend Ranger spell slots to create Divine bolts (no action required) according to the chart below.
+               DIVINE BOLTS
+               NUMBER OF CHARGES GAINED PER SLOT
+               Spell Slot level     Divine Bolt Charges
+               lst                  2
+               2nd                  3
+               3rd                  4
+               4th                  5
+               5th                  6
+               Divine Bolts can be used instead of regular ammunition, and are created when the spell slot is expended, but onty come into physical form when you load your ranged weapon or as part of the attack 
+               action. The damage die of a Divine Bolt is 1 d8 radiant. Once fired or otherwise unloaded, the Divine Bolt's energy will disappear at the end of your turn. Uses of Divine Bolt can be expended once
+               per attack to enhance existing ammunition. When used to enhance existing ammunition, declare the enhancement before making the attack roll. On a hit, add 1 d8 radiant damage on top of the weapon's 
+               regular damage. Hit or miss, the use of Divine Bolt is expended. Unspent uses of Divine Bolt are expended harmlessly at the end of a long rest.
+    - title: Channel Divinity
+    - content: When you take this archetype at 3rd leveL you gain the following two Channel Divinity options.
+    - title: Channel Divinity - Hunters lnslincts
+    - content: When you make a stealth, perception, or investigation check, you can use your Channel Divinity to gain a+ 10 bonus to the roll You make this choice after you see the roll but before 
+               the DM says whether the roll succeeds or fails.
+    - title: Channel Divinity - Predator
+    - content: Against a favored enemy, you can tum one missed attack into a hit, or a h it into a critical hit
+    - title: Pursuit
+    - content: As an action, choose a target that you have seen after gaining the use of this feature. You can use Primeval Awareness to track this creature without expending a spell s lot, though when used this way treat 
+               Primeval Awareness as if it had been cast using your highest available spell slot. When Primeval Awareness is used in this way, you can sense the target's direction, speed and vague proximity, though you do not
+               also sense other aberrations, celestials, dragons, elementals, fey, fiends, and undead. You can choose one target per day, and the use of this feature is limited to a number equal to your wisdom modifier. You 
+               regain all uses at the end of a long rest.
+    - title: Halting Blows
+    - content: Creatures of large size or smaller that are hit by your ranged weapon attacks have their movement speed reduced by ten feet until the end of their next turn. This effect stacks with each hit. Additionally,
+               your ranged attacks deal an additional 1d8 radiant damage.
+    - title: Huntsmans Avatar
+    - content: Nothing stands between you and your prey. For 1 minute. you have the following bonuses against your favored enemies, and creatures chosen by your Pursuit feature
+               All your ranged attacks deal an additional 1d8 radiant damage.
+               You are always aware of the exact location of these creatures, if they are within 60 feet.
+               While the target of your ranged weapon attack is within 60 feet of you. your attacks against it are not affected by cover (total or o therwise) or by the target being prone. You still need to make 
+               attack rolls as normal
+               Attacks against the target pass harmlessly through effects and objects not enchanted to resist or block radiant damage. In the case of an effect that can block radiant damage, make a wisdom check 
+               against the Spell DC of the effect's creator. On a fail the shot is stopped at that point.
+               Once you use this feature, you can't use it again until you finish a long rest.
 
 
-    - Inquisitor Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Hellish Rebuke
-         5th Level: See Invisibility
-         9th Level: Dispel Magic
-         13th Level: Guardian of Faith
-         17th Level: Hold Monster
-       - Pronounce Judgement: you gain the ability to pronounce judgement upon your enemies. Pronouncing judgment identifies a creature as an enemy of the faith and provide you with an upper hand when dealing with them. Some 
-                              judgments make use of a judgment die. At level 3 yoor judgment die is a d4. At level 7 your judgment die becomes a d6. At level 11 your judgment die becomes a d8. At level 17 your judgment die 
-                              becomes a d1O.
-       - Judgement of Penance: you have the upper hand when dealing skillully with adversaries. As a bonus action, you pronounce judgment against a latget you can see witllin 30 feet. for 1 minute when you make an ability check 
-                               related to your target, you can roll your judgment die and add the result to your ability check when it relates to that creature. You cannot use this feature again until you complete a short or 
-                               long rest..
-       - Judgement of Misfortune: you can pronounce a judgment of misfortune. When a creature makes an attack roll or a saving throw, you can use your reaction to roll your judgment die and subtract the number rolled from tlle 
-                                  attack roll or saving throw. You cannot use this feature again until you complete a short or long rest.
-       - Judgement of Wrath: your judgment can deliver the wrath of your weapon against enemies of the faith. When you hit a target with a melee weapon attack, you can use your reaction to roll your judgment die three times to 
-                             determine the radiant damage you inflict.. Additionally, the target must succeed on a Constitution saving throw or be blinded for 1 minute. You cannot use this feature again until you complete a 
-                             short or long rest. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.
-       - Judgement of Tracking: your abilicy to track your enemies is further enhanced. a bonus action, you can pronounce a judgment that allows you to see your target even if they become invisible or move behind cover up to a 
-                                range of 60 feet. This lasts for up to 1 minute or until the Creature moves out of range. You cannot use this feature again until you complete a short or long rest.
+  - title: Inquisitor Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Hellish Rebuke
+    - title: 5th Level
+    - content: See Invisibility
+    - title: 9th Level
+    - content: Dispel Magic
+    - title: 13th Level
+    - content: Guardian of Faith
+    - title: 17th Level
+    - content: Hold Monster
+    - title: Pronounce Judgement
+    - content: You gain the ability to pronounce judgement upon your enemies. Pronouncing judgment identifies a creature as an enemy of the faith and provide you with an upper hand when dealing with them. Some 
+               judgments make use of a judgment die. At level 3 yoor judgment die is a d4. At level 7 your judgment die becomes a d6. At level 11 your judgment die becomes a d8. At level 17 your judgment die 
+               becomes a d1O.
+    - title: Judgement of Penance
+    - content: You have the upper hand when dealing skillully with adversaries. As a bonus action, you pronounce judgment against a latget you can see witllin 30 feet. for 1 minute when you make an ability check 
+               related to your target, you can roll your judgment die and add the result to your ability check when it relates to that creature. You cannot use this feature again until you complete a short or 
+               long rest..
+    - title: Judgement of Misfortune
+    - content: You can pronounce a judgment of misfortune. When a creature makes an attack roll or a saving throw, you can use your reaction to roll your judgment die and subtract the number rolled from tlle 
+               attack roll or saving throw. You cannot use this feature again until you complete a short or long rest.
+    - title: Judgement of Wrath
+    - content: Your judgment can deliver the wrath of your weapon against enemies of the faith. When you hit a target with a melee weapon attack, you can use your reaction to roll your judgment die three times to 
+               determine the radiant damage you inflict.. Additionally, the target must succeed on a Constitution saving throw or be blinded for 1 minute. You cannot use this feature again until you complete a 
+               short or long rest. A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.
+    - title: Judgement of Tracking
+    - content: Your abilicy to track your enemies is further enhanced. a bonus action, you can pronounce a judgment that allows you to see your target even if they become invisible or move behind cover up to a 
+               range of 60 feet. This lasts for up to 1 minute or until the Creature moves out of range. You cannot use this feature again until you complete a short or long rest.
                                 
                                 
-    - Lunar Sniper Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Bless
-         5th Level: Invisibility
-         9th Level: Clairvoyance
-         13th Level: Divination
-         17th Level: Far Step
-       - Eyes of Astarte: the moon lit sky becomes one of your greatest allies. Yours eyes now take on those of a lunar predator, and you can see anything within 120ft of you as if you were In daylight unless it is in magical 
-                          darkness. You also gain an excellent, pinpoint vision which allows you to see out to half a mile with enough clarity to read the cover of a book at that distance.
-       - Marks of Selene: you've learned to mark targets for death, and remain patient to strike at a greater advantage later. You immediately gain knowledge of the hunter's mark spell if you don't already have it. When you wish
-                          to cast hunter's mark, you may choose to spend an action and cast it as Marks of Selene instead If you do so, it gains the following effect instead You may choose to mark up to three creatures, instead 
-                          of one. You gain advantage to hit marked targets, and whenever you first deal damage to a marked target you deal an extra 2d6 radiant damage. After this damage is dealt, the mark remains on all 
-                          creatures marked earlier, but suffer the same effects of the normal hunter's mark.
-       - Dance of Diana: you've learned to keep your enemies at a good distance, even in the middle of combat. If you are hit by melee attack, you may use your reaction to turn into a shift into unreality and reappear 20ft away
-                         to a space you can see. If the creature that attacked you is marked with a mark of Selene, you may make a ranged attack against them
-       - Arrows of Artemis: you have befriended the moon, and it does its best to help you destroy your enemies. As an action, you see the exact location of every creature within 120ft of you, or 60ft if you cannot see the night
-                            sky, even if they are behind full cover, or invisible. You may then make one ranged attack against any creature you see. This attack ignores full cover, as the radiant power of the attack given to it 
-                            by the moon allows it to penetrate up to lOft of stone or 2ft of metal If the attack hits, it deal an additional 2d10 radiant damage, or 4d10 against your preferred enemies. Creatures who are hidden 
-                            from divination magic, or have alteast 15ft of stone between you and them are not revealed to you. You may use this feature a number of times equal to your wisdom modifier before you must finish a 
-                            long rest.
-       - Whispers of Phoebe: you regularly receive whispers from the moon, telling you about your surroundings and your future, which gives you many a moment in which you have deja vu. You can no longer be surprised and you may 
-                             immediately take the first turn during any surprise rounds in which you would have been surprised. You have advantage on any dexterity saving throws you are forced to make by creatures or traps.
+  - title: Lunar Sniper Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Bless
+    - title: 5th Level
+    - content: Invisibility
+    - title: 9th Level
+    - content: Clairvoyance
+    - title: 13th Level
+    - content: Divination
+    - title: 17th Level
+    - content: Far Step
+    - title: Eyes of Astarte
+    - content: The moon lit sky becomes one of your greatest allies. Yours eyes now take on those of a lunar predator, and you can see anything within 120ft of you as if you were In daylight unless it is in magical 
+               darkness. You also gain an excellent, pinpoint vision which allows you to see out to half a mile with enough clarity to read the cover of a book at that distance.
+    - title: Marks of Selene
+    - content: You've learned to mark targets for death, and remain patient to strike at a greater advantage later. You immediately gain knowledge of the hunter's mark spell if you don't already have it. When you wish
+               to cast hunter's mark, you may choose to spend an action and cast it as Marks of Selene instead If you do so, it gains the following effect instead You may choose to mark up to three creatures, instead 
+               of one. You gain advantage to hit marked targets, and whenever you first deal damage to a marked target you deal an extra 2d6 radiant damage. After this damage is dealt, the mark remains on all 
+               creatures marked earlier, but suffer the same effects of the normal hunter's mark.
+    - title: Dance of Diana
+    - content: You've learned to keep your enemies at a good distance, even in the middle of combat. If you are hit by melee attack, you may use your reaction to turn into a shift into unreality and reappear 20ft away
+               to a space you can see. If the creature that attacked you is marked with a mark of Selene, you may make a ranged attack against them
+    - title: Arrows of Artemis
+    - content: You have befriended the moon, and it does its best to help you destroy your enemies. As an action, you see the exact location of every creature within 120ft of you, or 60ft if you cannot see the night
+               sky, even if they are behind full cover, or invisible. You may then make one ranged attack against any creature you see. This attack ignores full cover, as the radiant power of the attack given to it 
+               by the moon allows it to penetrate up to lOft of stone or 2ft of metal If the attack hits, it deal an additional 2d10 radiant damage, or 4d10 against your preferred enemies. Creatures who are hidden 
+               from divination magic, or have alteast 15ft of stone between you and them are not revealed to you. You may use this feature a number of times equal to your wisdom modifier before you must finish a 
+               long rest.
+    - title: Whispers of Phoebe
+    - content: You regularly receive whispers from the moon, telling you about your surroundings and your future, which gives you many a moment in which you have deja vu. You can no longer be surprised and you may 
+               immediately take the first turn during any surprise rounds in which you would have been surprised. You have advantage on any dexterity saving throws you are forced to make by creatures or traps.
                              
                              
-    - Witch Hunter Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Protection from Good and Evil
-         5th Level: Gentle Repose
-         9th Level: Remove Curse
-         13th Level: Locate Creature
-         17th Level: Holy Weapon  
-       - Coated For Death: you can gain proficiency in Firearms. The cost of crafting silvered ammunition and coating weapons in silver is halved When you use silvered ammunition or weapon for an attack, it is considered magical
-                           for the purposes of overcoming resistances and immunities.
-       - Assorted Arsenal: you are adept at making use of different weaponry to purge the unholy in efficient ways.
-                           - You can draw or stow two items when you would normally be able to draw or stow only one.
-                           - If you have a melee weapon in one hand, being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.
-                           - Once per tum, when attacking with a crossbow or a firearm, you may add your Wisdom modifier to the damage. This bonus damage is radiant damage. Additonally, you learn the can trip Sacred Flame, and 
-                             it counts as a ranger spell for you.
-       - Prying Assassin: you gain proficiency in the Insight and Investigation skills. If you are already proficient in either skill your proficiency bonus is doubled for any ability check you make that uses either of those 
-                          proficiencies. Additionally, as an action you can examine a creature through divine aid Select a creature within 30 feet of you and make a Wisdom (Insight) check contested by the creature's Charisma 
-                          (Deception) check. On a success, you know if the creature is affected by magic, its creature type, and you perceive the original form if the creature is a shapechanger for 1 hour. You may use this 
-                          feature once per long rest.
-       - Expect The Unexpected: you tend to have the upper hand even when things take a bad turn. You may use one of the following features by speaking a phrase.
-         Cleansing Shot: Before attacking with a crossbow or a firearm, you bless the ammunition. On a hit, the target takes an additional 4d6 radiant damage. For one round, the target can't be invisible,
-                         and emits bright light from itself up to 30 feet.
-         Destabilizing Shot: Before attacking with a crossbow or a firearm, you curse the ammunition. On a hit, the target takes an additional 4d4 psychic damage, and the target will have disadvantage on 
-                             their next saving throw.
-         Decline the Heresy: As a reaction when you or a creature within 60 feet gain a charmed or frightened condition, you remove that condition from yourself or the creature.
-         Stop the Devious: As a reaction when a creature moves within 60 feet of you, the creature must make a Wisdom saving throw against your spell save DC. If the creature fails, its movement speed is 
-                           reduced to 0, and attacks against the creature can't suffer disadvantage, until its next turn. You can use this feature an amount equal to your Wisdom modifier (minimum of 1). 
-                           The uses reset after you finish a long rest.
-       - - Always Ready: your intuition tells you when things turn grim. At the beginning of combat, you can treat your initiative roll as a 20, and on your first turn in combat you have advantage on your attack rolls and 
-                         enemies have disadvantage against saving throws you trigger.
+  - title: Witch Hunter Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Protection from Good and Evil
+    - title: 5th Level
+    - content: Gentle Repose
+    - title: 9th Level
+    - content: Remove Curse
+    - title: 13th Level
+    - content: Locate Creature
+    - title: 17th Level
+    - content: Holy Weapon  
+    - title: Coated For Death
+    - content: You can gain proficiency in Firearms. The cost of crafting silvered ammunition and coating weapons in silver is halved When you use silvered ammunition or weapon for an attack, it is considered magical
+               for the purposes of overcoming resistances and immunities.
+    - title: Assorted Arsenal
+    - content: You are adept at making use of different weaponry to purge the unholy in efficient ways.
+               You can draw or stow two items when you would normally be able to draw or stow only one.
+               If you have a melee weapon in one hand, being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.
+               Once per tum, when attacking with a crossbow or a firearm, you may add your Wisdom modifier to the damage. This bonus damage is radiant damage. Additonally, you learn the can trip Sacred Flame, and 
+               it counts as a ranger spell for you.
+    - title: Prying Assassin
+    - content: You gain proficiency in the Insight and Investigation skills. If you are already proficient in either skill your proficiency bonus is doubled for any ability check you make that uses either of those 
+               proficiencies. Additionally, as an action you can examine a creature through divine aid Select a creature within 30 feet of you and make a Wisdom (Insight) check contested by the creature's Charisma 
+               (Deception) check. On a success, you know if the creature is affected by magic, its creature type, and you perceive the original form if the creature is a shapechanger for 1 hour. You may use this 
+               feature once per long rest.
+    - title: Expect The Unexpected
+    - content: You tend to have the upper hand even when things take a bad turn. You may use one of the following features by speaking a phrase.
+               Cleansing Shot - Before attacking with a crossbow or a firearm, you bless the ammunition. On a hit, the target takes an additional 4d6 radiant damage. For one round, the target can't be invisible,
+                                and emits bright light from itself up to 30 feet.
+               Destabilizing Shot - Before attacking with a crossbow or a firearm, you curse the ammunition. On a hit, the target takes an additional 4d4 psychic damage, and the target will have disadvantage on 
+                                    their next saving throw.
+               Decline the Heresy - As a reaction when you or a creature within 60 feet gain a charmed or frightened condition, you remove that condition from yourself or the creature.
+               Stop the Devious - As a reaction when a creature moves within 60 feet of you, the creature must make a Wisdom saving throw against your spell save DC. If the creature fails, its movement speed is 
+                                  reduced to 0, and attacks against the creature can't suffer disadvantage, until its next turn. You can use this feature an amount equal to your Wisdom modifier (minimum of 1). 
+                                  The uses reset after you finish a long rest.
+    - title: Always Ready
+    - content: Your intuition tells you when things turn grim. At the beginning of combat, you can treat your initiative roll as a 20, and on your first turn in combat you have advantage on your attack rolls and 
+               enemies have disadvantage against saving throws you trigger.
                          
                          
-    - Witchguard Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Aid
-         5th Level: Warding Bond
-         9th Level: Dispel Magic
-         13th Level: Death Ward
-         17th Level: Telepathic Bond 
-       - Witchguards Bond: you are sworn to protect your witch with your own life. Choose a willing humanoid as your ward Your ward must have fewer maximum hit points than you, and must have the Spell casting or Pact Magic 
-                           feature. If your ward is killed you cannot cast your Witchery spells until your ward is revived or you choose a new ward which you can do by means of an eight-hour ritual spent with your new ward. If 
-                           you and your ward are on the same plane of existence and your ward is not dead you sense your ward through the bond You are always aware of the current hit points and of any conditions affecting your 
-                           ward As an action, you can know the relative direction and distance of your ward Your ward can also sense your hit points, conditions, and location through the bond in the same manner as you do.
-       - Warder Training: you are trained to eliminate threats to your witch, and you gain the following benefits; You gain proficiency with heavy armor, and you ignore disadvantage on Dexterity (Stealth) checks imposed by light
-                          or medium armor. If you are within 15 feet of your ward when your ward casts a spell, you can use your reaction to make one melee weapon attack. This range increases to 30 feet at level 11. If your ward
-                          is the target of an attack, you can use your reaction to move up to half your speed towards your ward without provoking opportunity attacks. If you end your movement within five feet of your ward you 
-                          can choose to exchange positions with your ward; you then become the target of the attack instead
-       - Patrons Gift: the bond grants you a measure of your ward's magical power. You learn two can trips of your choice from the wizard spell list, which count as ranger spells for you. Choose one spell from your ward's class 
-                       spell list and add it to your spells known. This spell must be of a level you can cast and counts as a ranger spell for you, but doesn't count against the number of ranger spells you know. You have access 
-                       to this spell while your ward is not incapacitated or dead You can exchange the spell at the end of a long rest. If your ward has more than one class, choose from one list corresponding to your ward's 
-                       highest class level
-       - War Magic: when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.
-       - Warders Training: you have mastered the offensive and defensive techniques you learned in Warder Training. When you use your reaction to attack in response to your ward casting a spell, you can instead use a cantrip 
-                           with a casting time of one action. When you use your reaction to protect your ward you gain resistance to all damage from the triggering attack.       
+  - title: Witchguard Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Aid
+    - title: 5th Level
+    - content: Warding Bond
+    - title: 9th Level
+    - content: Dispel Magic
+    - title: 13th Level
+    - content: Death Ward
+    - title: 17th Level
+    - content: Telepathic Bond 
+    - title: Witchguards Bond
+    - content: You are sworn to protect your witch with your own life. Choose a willing humanoid as your ward Your ward must have fewer maximum hit points than you, and must have the Spell casting or Pact Magic 
+               feature. If your ward is killed you cannot cast your Witchery spells until your ward is revived or you choose a new ward which you can do by means of an eight-hour ritual spent with your new ward. If 
+               you and your ward are on the same plane of existence and your ward is not dead you sense your ward through the bond You are always aware of the current hit points and of any conditions affecting your 
+               ward As an action, you can know the relative direction and distance of your ward Your ward can also sense your hit points, conditions, and location through the bond in the same manner as you do.
+    - title: Warder Training
+    - content: You are trained to eliminate threats to your witch, and you gain the following benefits; You gain proficiency with heavy armor, and you ignore disadvantage on Dexterity (Stealth) checks imposed by light
+               or medium armor. If you are within 15 feet of your ward when your ward casts a spell, you can use your reaction to make one melee weapon attack. This range increases to 30 feet at level 11. If your ward
+               is the target of an attack, you can use your reaction to move up to half your speed towards your ward without provoking opportunity attacks. If you end your movement within five feet of your ward you 
+               can choose to exchange positions with your ward; you then become the target of the attack instead
+    - title: Patrons Gift
+    - content: The bond grants you a measure of your ward's magical power. You learn two can trips of your choice from the wizard spell list, which count as ranger spells for you. Choose one spell from your ward's class 
+               spell list and add it to your spells known. This spell must be of a level you can cast and counts as a ranger spell for you, but doesn't count against the number of ranger spells you know. You have access 
+               to this spell while your ward is not incapacitated or dead You can exchange the spell at the end of a long rest. If your ward has more than one class, choose from one list corresponding to your ward's 
+               highest class level
+    - title: War Magic
+    - content: When you use your action to cast a cantrip, you can make one weapon attack as a bonus action.
+    - title: Warders Training
+    - content: You have mastered the offensive and defensive techniques you learned in Warder Training. When you use your reaction to attack in response to your ward casting a spell, you can instead use a cantrip 
+               with a casting time of one action. When you use your reaction to protect your ward you gain resistance to all damage from the triggering attack.       
 
 
-    - Wild Master Conclave Abilities:
-       - Master of the Wilderness: Your connection to the wild has manifested itself as supernatural abilities drawn from nature and animals, allowing you to journey the wilderness with unmatched skill. You gain one of the 
-                                   following features at 3rd level and an additional feature at both 7th and 11th level Your choices should represent the places you have travelled throughout your adventures.
-         Master of Climates: You gain resistance to either cold or fire damage. You may change your choice at the end of any long rest.
-         Master of Darkness: You gain darkvision to a range of 60 feet, and you cannot be blinded unless you are also simultaneously deafened If you already have darkvision from your race, its range 
-                             increases by 30 feet.
-         Master of Grasses: Your walking speed increases by 5 feet. It increases by 5 feet again at both 7th and 11th level even if you picked this feature after reaching those levels.
-         Master of Mires: Your long jump increases to up to 20 feet and your high jump increases to up to 10 feet, with or without a running start. You also gain advantage on saving throws against 
-                          disease.
-         Master of Peaks: You gain a climbing speed equal to your walking speed, and you gain advantage on Strength and Dexterity saving throws against effects that would knock you prone.
-         Master of Waters: You gain a swimming speed equal to your walking speed, and you can hold your breath for up to 1 hour.
-         Master of Woods: You have advantage on Wisdom (Perception) checks that rely on one of the following senses of your choice; hearing, sight, or smelL You may choose another sense at 7th and 11th 
-                          level even if you picked this feature after reaching those levels.
-       - Wild Expertise: you gain proficiency in the Nature and Survival skills, and your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
-       - Apex Hunter: you have mastered fighting your sworn foes. When fighting your favoured enemies, you gain an additional feature based on the Fighting Style you chose at 2nd level
-         Archery: You can use your action to make a ranged attack against any number of your favoured enemies you can see within your weapon's range, making a separate attack roll for each target.
-         Defence: You gain a bonus to your AC equal to your Wisdom modifier against attacks made by your favoured enemies.
-         Dueling: Your melee weapon attacks deal an additional die of damage against your favoured enemies.
-         Two-Weapon Fighting: When a favoured enemy within 5 feet of you misses an attack, you can use your reaction to make a melee attack against it.
-       - Primal Instincts: you cannot be surprised, and you can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.
-       - Bestial Fury: you know how to fight like a wild beast, and gain one of the following features of your choice.
-         Blood Frenzy: Once per turn, you can gain advantage on an attack roll against a creature that doesn't have all its hit points.
-         Pack Tactics: You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and isn't incapacitated
-         Relentless: When you are reduced to 0 hit points but not kllled outright, you can make a Constitution saving throw, dropping to 1 hit point instead on a success. The DC for the saving throw is equal to 10 
-                     or the amount of damage you take, whichever is higher.   
+  - title: Wild Master Conclave Abilities
+  - abilities:
+    - title: Master of the Wilderness
+    - content: Your connection to the wild has manifested itself as supernatural abilities drawn from nature and animals, allowing you to journey the wilderness with unmatched skill. You gain one of the 
+               following features at 3rd level and an additional feature at both 7th and 11th level Your choices should represent the places you have travelled throughout your adventures.
+               Master of Climates - You gain resistance to either cold or fire damage. You may change your choice at the end of any long rest.
+               Master of Darkness - You gain darkvision to a range of 60 feet, and you cannot be blinded unless you are also simultaneously deafened If you already have darkvision from your race, its range 
+                                    increases by 30 feet.
+               Master of Grasses - Your walking speed increases by 5 feet. It increases by 5 feet again at both 7th and 11th level even if you picked this feature after reaching those levels.
+               Master of Mires - Your long jump increases to up to 20 feet and your high jump increases to up to 10 feet, with or without a running start. You also gain advantage on saving throws against disease.
+               Master of Peaks - You gain a climbing speed equal to your walking speed, and you gain advantage on Strength and Dexterity saving throws against effects that would knock you prone.
+               Master of Waters - You gain a swimming speed equal to your walking speed, and you can hold your breath for up to 1 hour.
+               Master of Woods - You have advantage on Wisdom (Perception) checks that rely on one of the following senses of your choice; hearing, sight, or smelL You may choose another sense at 7th and 11th 
+                                 level even if you picked this feature after reaching those levels.
+    - title: Wild Expertise
+    - content: You gain proficiency in the Nature and Survival skills, and your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
+    - title: Apex Hunter
+    - content: You have mastered fighting your sworn foes. When fighting your favoured enemies, you gain an additional feature based on the Fighting Style you chose at 2nd level
+               Archery - You can use your action to make a ranged attack against any number of your favoured enemies you can see within your weapon's range, making a separate attack roll for each target.
+               Defence - You gain a bonus to your AC equal to your Wisdom modifier against attacks made by your favoured enemies.
+               Dueling - Your melee weapon attacks deal an additional die of damage against your favoured enemies.
+               Two-Weapon Fighting - When a favoured enemy within 5 feet of you misses an attack, you can use your reaction to make a melee attack against it.
+    - title: Primal Instincts
+    - content: You cannot be surprised, and you can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.
+    - title: Bestial Fury
+    - content: You know how to fight like a wild beast, and gain one of the following features of your choice.
+               Blood Frenzy - Once per turn, you can gain advantage on an attack roll against a creature that doesn't have all its hit points.
+               Pack Tactics - You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and isn't incapacitated
+               Relentless - When you are reduced to 0 hit points but not kllled outright, you can make a Constitution saving throw, dropping to 1 hit point instead on a success. The DC for the saving throw is equal to 10 
+                            or the amount of damage you take, whichever is higher.   
                                    
                                    
-    - Big Iron Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Compelled Duel
-         5th Level: Find Steed
-         9th Level: Haste
-         13th Level: Find Greater Steed
-         17th Level: Skill Empowerment
-       - Rode Into Town One Fine Day: you gain proficiency in the intimidation skill, firearms, and 1 land vehicle of your choice.
-       - Dead or Alive: as a bonus action, you can mark a creature as your bounty for the next hour. You gain the following benefits against the marked creatures;
-                        - You have advantage on Wisdom (Survival) check when attempting to track a marked creature.
-                        - Ranged weapon attacks deal an additional 1d4 damage.
-                        - If a marked creature misses a weapon attack against you, you can make a weapon attack as a reaction against that creature.
-                        You can use this feature a number of times equal to your Wisdom modifier and regain all uses of this feature after finishing a long rest.
-       - 30 Paces at Noon: if you move at least 15 feet away from a hostile creature on your turn, you gain advantage on your next attack roll against that creature. If you move at least 30ft away you can add your proficiency 
-                           bonus to the damage of your next ranged weapon attack. Additionally, your movement no longer provokes attacks of opportunity.
-       - Quick on the Draw: You can stow a firearm, then draw another firearm as a single object interaction on your turn. Additionally, you can reload any firearm as a bonus action.
-       - Make the Slip: as a reaction, when a creature makes a weapon attack against you, you can add your proficiency to your AC until the start of your next turn. Additionally, when you kill a creature marked by your Dead or 
-                        Alive feature you regain 1 use of this feature.
+  - title: Big Iron Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Compelled Duel
+    - title: 5th Level
+    - content: Find Steed
+    - title: 9th Level
+    - content: Haste
+    - title: 13th Level
+    - content: Find Greater Steed
+    - title: 17th Level
+    - content: Skill Empowerment
+    - title: Rode Into Town One Fine Day
+    - content: You gain proficiency in the intimidation skill, firearms, and 1 land vehicle of your choice.
+    - title: Dead or Alive
+    - content: As a bonus action, you can mark a creature as your bounty for the next hour. You gain the following benefits against the marked creatures;
+               You have advantage on Wisdom (Survival) check when attempting to track a marked creature.
+               Ranged weapon attacks deal an additional 1d4 damage.
+               If a marked creature misses a weapon attack against you, you can make a weapon attack as a reaction against that creature.
+               You can use this feature a number of times equal to your Wisdom modifier and regain all uses of this feature after finishing a long rest.
+    - title: 30 Paces at Noon
+    - content: If you move at least 15 feet away from a hostile creature on your turn, you gain advantage on your next attack roll against that creature. If you move at least 30ft away you can add your proficiency 
+               bonus to the damage of your next ranged weapon attack. Additionally, your movement no longer provokes attacks of opportunity.
+    - title: Quick on the Draw
+    - content: You can stow a firearm, then draw another firearm as a single object interaction on your turn. Additionally, you can reload any firearm as a bonus action.
+    - title: Make the Slip
+    - content: As a reaction, when a creature makes a weapon attack against you, you can add your proficiency to your AC until the start of your next turn. Additionally, when you kill a creature marked by your Dead or 
+               Alive feature you regain 1 use of this feature.
                         
                         
-    - Falconer Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Hunter's Mark
-         5th Level: Animal Messenger
-         9th Level: Fly
-         13th Level: Locate Creature
-         17th Level: Steel Wind Strike
-       - Avian Companion: your training is complete, and you've tamed a bird of prey of your own. Your companion gains the same benefits as the Revised Ranger's Companion's Bond. Additionally, as an action, you can see through 
-                          its eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own 
-                          senses.
-       - Extra Attack: you can attack twice, instead of once, whenever you take the Attack action on your turn.
-       - On the Wing: your companion's training has carried them far, making them more agile, intelligent and responsive to your needs. They are now capable of taking the Dash, Dodge, and Help actions as Bonus Actions. In 
-                      addition, they gain the following reaction
-         Harry: As a reaction, your companion may move half their movement speed and harass a foe that attempts to harm you or an ally. The target must make a Dexterity saving throw against your Spell Save DC. On a 
-                failure, they have disadvantage on attacks on that turn against you and take 1d6 piercing damage. On a success, they only take the damage. Your companion may also Harry a spellcaster concentrating on
-                a spell, forcing them to make a DC 10 Concentration check. On a failure, their concentration ends and they take 1d6 piercing damage. On a success, they only take the damage.
-       - Paired Hunters: your companion gains the ability to cast Hunter's Mark at first level once per short rest. You gain the same benefits against their Quarry as if you were the one casting the spell.
-       - Birds of a Feather: you have advantage on attack rolls against a creature if your companion is within 5 ft. of you. Additionally you deal an additional 1d6 of your weapon's damage type.
+  - title: Falconer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Hunter's Mark
+    - title: 5th Level
+    - content: Animal Messenger
+    - title: 9th Level
+    - content: Fly
+    - title: 13th Level
+    - content: Locate Creature
+    - title: 17th Level
+    - content: Steel Wind Strike
+    - title: Avian Companion
+    - content: Your training is complete, and you've tamed a bird of prey of your own. Your companion gains the same benefits as the Revised Ranger's Companion's Bond. Additionally, as an action, you can see through 
+               its eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses that the familiar has. During this time, you are deaf and blind with regard to your own senses.
+    - title: Extra Attack
+    - content: You can attack twice, instead of once, whenever you take the Attack action on your turn.
+    - title: On the Wing
+    - content: Your companion's training has carried them far, making them more agile, intelligent and responsive to your needs. They are now capable of taking the Dash, Dodge, and Help actions as Bonus Actions. In 
+               addition, they gain the following reaction
+               Harry - As a reaction, your companion may move half their movement speed and harass a foe that attempts to harm you or an ally. The target must make a Dexterity saving throw against your Spell Save DC. On a 
+                       failure, they have disadvantage on attacks on that turn against you and take 1d6 piercing damage. On a success, they only take the damage. Your companion may also Harry a spellcaster concentrating on
+                       a spell, forcing them to make a DC 10 Concentration check. On a failure, their concentration ends and they take 1d6 piercing damage. On a success, they only take the damage.
+    - title: Paired Hunters
+    - content: Your companion gains the ability to cast Hunter's Mark at first level once per short rest. You gain the same benefits against their Quarry as if you were the one casting the spell.
+    - title: Birds of a Feather
+    - content: You have advantage on attack rolls against a creature if your companion is within 5 ft. of you. Additionally you deal an additional 1d6 of your weapon's damage type.
        
        
-    - Conclave of The Sky Warden Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Feather Fall
-         5th Level: Earthbind
-         9th Level: Haste
-         13th Level: Storm Sphere
-         17th Level: Control Winds
-       - Death from Above: you strike like a bird of prey. Once on each of your turns, you can deal an extra 1d6 damage to a creature you hit with a weapon attack if you're at least 10 feet above the target. You can deal this 
-                           extra damage even if the target isn't directly underneath you. When you reach 11th level in this class, the extra damage increases to 2d6.
-       - Tempest Wings: you gain the ability to sprout a pair of powerful but fleeting wings. At the start of your turn, you can manifest your tempest wings, gaining a flying speed equal to your current walking speed. Your wings
-                        fade at the end of your next turn unless you expend another use of this feature. If you're flying when the wings fade, you can use them to slow your descent, taking no damage from the fall. You can use 
-                        this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.
-       - Tempest Dash: you can use your reaction immediately after a creature hits or misses you with an attack to move up to half your speed without provoking opportunity attacks. If you don't have your Tempest Wings, you can
-                       manifest them as part of the same reaction.
-       - Thunderbird: you effortlessly soar above the clouds. You can manifest your Tempest Wings an unlimited number of times. In addition, your wings only fade if you dismiss them (no action required) or if you die. 
-                      Additionally, you're acclimated to high altitude, including elevations above 20,000 feet.
-       - Eye of the Storm: you rule the skies. While you aren't underground or indoors, your Tempest Wings grant you a flying speed equal to twice your walking speed. Additionally, the storm follows you wherever you go. You gain
-                           resistance to lightning and thunder damage, and whenever you use your Tempest Dash, the attacker takes lightning damage equal to your Wisdom modifier (minimum of 1).
+  - title: Conclave of the Sky Warden Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Feather Fall
+    - title: 5th Level
+    - content: Earthbind
+    - title: 9th Level
+    - content: Haste
+    - title: 13th Level
+    - content: Storm Sphere
+    - title: 17th Level
+    - content: Control Winds
+    - title: Death from Above
+    - content: You strike like a bird of prey. Once on each of your turns, you can deal an extra 1d6 damage to a creature you hit with a weapon attack if you're at least 10 feet above the target. You can deal this 
+               extra damage even if the target isn't directly underneath you. When you reach 11th level in this class, the extra damage increases to 2d6.
+    - title: Tempest Wings
+    - content: You gain the ability to sprout a pair of powerful but fleeting wings. At the start of your turn, you can manifest your tempest wings, gaining a flying speed equal to your current walking speed. Your wings
+               fade at the end of your next turn unless you expend another use of this feature. If you're flying when the wings fade, you can use them to slow your descent, taking no damage from the fall. You can use 
+               this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest.
+    - title: Tempest Dash
+    - content: You can use your reaction immediately after a creature hits or misses you with an attack to move up to half your speed without provoking opportunity attacks. If you don't have your Tempest Wings, you can
+               manifest them as part of the same reaction.
+    - title: Thunderbird
+    - content: You effortlessly soar above the clouds. You can manifest your Tempest Wings an unlimited number of times. In addition, your wings only fade if you dismiss them (no action required) or if you die. 
+               Additionally, you're acclimated to high altitude, including elevations above 20,000 feet.
+    - title: Eye of the Storm
+    - content: You rule the skies. While you aren't underground or indoors, your Tempest Wings grant you a flying speed equal to twice your walking speed. Additionally, the storm follows you wherever you go. You gain
+               resistance to lightning and thunder damage, and whenever you use your Tempest Dash, the attacker takes lightning damage equal to your Wisdom modifier (minimum of 1).
                            
                            
-    - Pelt Collector Conclave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Cause Fear
-         5th Level: Alter Self
-         9th Level: Feign Death
-         13th Level: Polymorph
-         17th Level: Hold Monster
-       - Expert Artisan: you gain proficiency with leatherworker's tools if you don't already have it and your proficiency bonus is doubled for any checks you make using leatherworker's tools.
-       - Skin The Essence: you learn the techniques of the Pelt Collectors. You gain the ability to skin a creature in a ritual that magically preserves the skinned creature's vital essence in the pelt you craft from it. When 
-                           you wear this pelt, you gain the powers of the creature from which it came. You can spend an hour skinning and tanning a small or larger, dead creature with a CR of 1/4 or lower. The creature cannot 
-                           have been dead for more than 24 hours. and it must be a Beast or Monstrosity. At the end of the hour; you gain a mystic pelt which counts as a suit of light armor for you . While wearing a mystic pelt,
-                           your AC equals 12 + your Dexterity modifier. While you wear a mystic pelt, you can use a bonus action on your turn to partially alter your body into tbe skinned creature. When you do so, you gain 
-                           temporary hit points equal to yout Ranger level. You remain altered until you lose these temporary hit points. While altered when you take the Attack action , you can replace any number or your attacks
-                           with a weapon attack action listed in the skinned creature's game statistics if you have a free hand. You are considered proficient with the attack and you can use your Strength o r Dexterity for the 
-                           attack and damage rolls or the weapon attack. This feature does not allow you to use the Multiattack action. You can alter your body a number of times equal to your Wisdom modifier, and you regain 
-                           expended uses when you finish a long rest. Your features slowly change the longer you wear a pelt. Your nails may sharpen like claws while you wear a wolf's fur or your eyes might turn red while 
-                           wearing the tentacled cloak of a Darkmantle. You can have a number of mystic pelts equal to half your ranger level (rounded dawn} 1f you craft a mystic pelt beyond this number; one of your previous 
-                           pelts loses its magical benefits (your choice}. The CR of creatures you can skin increases when you reach certain levels in this class. increasing to 1/2 at 7th level, 1 at 11th level and 2 at 15th 
-                           level
-       - Mystic Essence: when you make a weapon attack listed in one of your skinned creature's game statistics, the attack counts as magical for the purpose of overcoming resistance and immunity to nonmngical attacks and 
-                         damage. Addidonally, when you don one or your mystic pelts you can give yourself one damage resistance listed in the skinned creature's game statistic. If the skinned creature has an immunity to a damage
-                         type, you can instead give yourself resistance to that damage type. This resisistance lasts until you doff che pelt.
-       - Predators Assault: you unlock additional abilities from your mystic pelts. While wearing one of your pelts, you can perfom any action listed in the skinned crealure's game statistics. You can perfom any action in this 
-                            way a number of times equal to your Wisdom modifier and you regain expended uses when you finish a long rest.
-       - Monsterous Attributes: you can alter your body in more drastic ways to emulate your mystic pelts. When you don a mystic pelt, you can give yourself one trait listed in the skinned creature's game statistics such as Pack
-                                Tactics, Rampage or Two-Headed until you doff thee pelt. Alternatively you can give yourslef one speed listed in the skinned crearue's game statistics. You cannot gain the Innate Spellcasting 
-                                trait with this feature
+  - title: Pelt Collector Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Cause Fear
+    - title: 5th Level
+    - content: Alter Self
+    - title: 9th Level
+    - content: Feign Death
+    - title: 13th Level
+    - content: Polymorph
+    - title: 17th Level
+    - content: Hold Monster
+    - title: Expert Artisan
+    - content: You gain proficiency with leatherworker's tools if you don't already have it and your proficiency bonus is doubled for any checks you make using leatherworker's tools.
+    - title: Skin The Essence
+    - content: You learn the techniques of the Pelt Collectors. You gain the ability to skin a creature in a ritual that magically preserves the skinned creature's vital essence in the pelt you craft from it. When 
+               you wear this pelt, you gain the powers of the creature from which it came. You can spend an hour skinning and tanning a small or larger, dead creature with a CR of 1/4 or lower. The creature cannot 
+               have been dead for more than 24 hours. and it must be a Beast or Monstrosity. At the end of the hour; you gain a mystic pelt which counts as a suit of light armor for you . While wearing a mystic pelt,
+               your AC equals 12 + your Dexterity modifier. While you wear a mystic pelt, you can use a bonus action on your turn to partially alter your body into tbe skinned creature. When you do so, you gain 
+               temporary hit points equal to yout Ranger level. You remain altered until you lose these temporary hit points. While altered when you take the Attack action , you can replace any number or your attacks
+               with a weapon attack action listed in the skinned creature's game statistics if you have a free hand. You are considered proficient with the attack and you can use your Strength o r Dexterity for the 
+               attack and damage rolls or the weapon attack. This feature does not allow you to use the Multiattack action. You can alter your body a number of times equal to your Wisdom modifier, and you regain 
+               expended uses when you finish a long rest. Your features slowly change the longer you wear a pelt. Your nails may sharpen like claws while you wear a wolf's fur or your eyes might turn red while 
+               wearing the tentacled cloak of a Darkmantle. You can have a number of mystic pelts equal to half your ranger level (rounded dawn} 1f you craft a mystic pelt beyond this number; one of your previous 
+               pelts loses its magical benefits (your choice}. The CR of creatures you can skin increases when you reach certain levels in this class. increasing to 1/2 at 7th level, 1 at 11th level and 2 at 15th level
+    - title: Mystic Essence
+    - content: When you make a weapon attack listed in one of your skinned creature's game statistics, the attack counts as magical for the purpose of overcoming resistance and immunity to nonmngical attacks and 
+               damage. Addidonally, when you don one or your mystic pelts you can give yourself one damage resistance listed in the skinned creature's game statistic. If the skinned creature has an immunity to a damage
+               type, you can instead give yourself resistance to that damage type. This resisistance lasts until you doff che pelt.
+    - title: Predators Assault
+    - content: You unlock additional abilities from your mystic pelts. While wearing one of your pelts, you can perfom any action listed in the skinned crealure's game statistics. You can perfom any action in this 
+               way a number of times equal to your Wisdom modifier and you regain expended uses when you finish a long rest.
+    - title: Monsterous Attributes
+    - content: You can alter your body in more drastic ways to emulate your mystic pelts. When you don a mystic pelt, you can give yourself one trait listed in the skinned creature's game statistics such as Pack
+               Tactics, Rampage or Two-Headed until you doff thee pelt. Alternatively you can give yourslef one speed listed in the skinned crearue's game statistics. You cannot gain the Innate Spellcasting 
+               trait with this feature
                                 
                                 
-    - Conclave of The Grim Warden Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Protection From Evil and Good
-         5th Level: See Invisibility
-         9th Level: Counterspell
-         13th Level: Banishment
-         17th Level: Dispel Good and Evil
-       - Occult Secrets: you gain the ability to cast the Detect Magic and Identify spells as rituals, without the need of material components.
-       - Sever The Thread: when you hit a creature with a weapon attack, the creature takes an extra 1d4 radiant damage, and has disadvantage on the saving throw it makes to maintain its concentration if the creature is 
-                           concentrating on a spell You can deal this extra damage only once per turn. The damage increases by 1d4 if the target is an Undead, Fiend, Fey, or Aberration.
-       - Field Training: you've gained a better understanding of the inner workings of the arcane, not through study, but through experience. Whenever you make a Intelligence (Arcana) check or a Intelligence (Investigation) 
-                         check you can add your Wisdom modifier to it.
-       - Ring of the Worthy: you learn to invoke the ancient knowledge of the divine scriptures. As a bonus action, you can create a 30-foot-radius circle of holy runes centered on a point on the ground that you can see within 
-                             range, and place one effect in the area. Fey, Fiends, Aberrations, and Undead can't Teleport, use Portals, exit The Material Plane, or leave the circle while in the area. The holy scripture lasts for
-                             1 minute. Once you use this feature, you can't use it again until you finish a short or long rest. The effect of the area is based on the divine scripture you choose to invoke.
-         Scripture of Zeal: You and your allies gain a bonus to all saving throws equal to your Wisdom modifier.
-         Scripture of Fervour: Hostile creatures in the area have their speed reduced by an amount equal to your Wisdom modifier multiplied by 5.
-         Scripture of Faith: You and your allies gain temporary hit points equal to your level +your Wisdom modifier when you use this scripture.
-       - Call To Grim: when you roll initiative and are not surprised, you can demand the last rites of your foes. Each hostile creature that you can see or hear you within 30 feet of you must make a Wisdom saving throw. If a 
-                       creature fails its saving throw, its speed is reduced to 0 and it is frightened until the end of its next turn.
+  - title: Conclave of the Grim Warden Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Protection From Evil and Good
+    - title: 5th Level
+    - content: See Invisibility
+    - title: 9th Level
+    - content: Counterspell
+    - title: 13th Level
+    - content: Banishment
+    - title: 17th Level
+    - content: Dispel Good and Evil
+    - title: Occult Secrets
+    - content: You gain the ability to cast the Detect Magic and Identify spells as rituals, without the need of material components.
+    - title: Sever The Thread
+    - content: When you hit a creature with a weapon attack, the creature takes an extra 1d4 radiant damage, and has disadvantage on the saving throw it makes to maintain its concentration if the creature is 
+               concentrating on a spell You can deal this extra damage only once per turn. The damage increases by 1d4 if the target is an Undead, Fiend, Fey, or Aberration.
+    - title: Field Training
+    - content: You've gained a better understanding of the inner workings of the arcane, not through study, but through experience. Whenever you make a Intelligence (Arcana) check or a Intelligence (Investigation) 
+               check you can add your Wisdom modifier to it.
+    - title: Ring of the Worthy
+    - content: You learn to invoke the ancient knowledge of the divine scriptures. As a bonus action, you can create a 30-foot-radius circle of holy runes centered on a point on the ground that you can see within 
+               range, and place one effect in the area. Fey, Fiends, Aberrations, and Undead can't Teleport, use Portals, exit The Material Plane, or leave the circle while in the area. The holy scripture lasts for
+               1 minute. Once you use this feature, you can't use it again until you finish a short or long rest. The effect of the area is based on the divine scripture you choose to invoke.
+               Scripture of Zeal - You and your allies gain a bonus to all saving throws equal to your Wisdom modifier.
+               Scripture of Fervour - Hostile creatures in the area have their speed reduced by an amount equal to your Wisdom modifier multiplied by 5.
+               Scripture of Faith - You and your allies gain temporary hit points equal to your level +your Wisdom modifier when you use this scripture.
+    - title: Call To Grim
+    - content: When you roll initiative and are not surprised, you can demand the last rites of your foes. Each hostile creature that you can see or hear you within 30 feet of you must make a Wisdom saving throw. If a 
+               creature fails its saving throw, its speed is reduced to 0 and it is frightened until the end of its next turn.
                        
                        
                        
-    - Drakewarden Conclave Abilities:
-       - Draconic Gift: The bond you share with your drake creates a deeper connection to dragon kind, granting you understanding and empowering your presence. You gain the following benefits
-                        - If you can’t already, you learn to speak, read, and write Draconic.
-                        - You learn the thaumaturgy cantrip, which is a ranger spell for you.
-       - Drake Companion: You can magically summon the drake bound to you. As an action, you can summon the drake, which appears in an unoccupied space of your choice that you can see within 30 feet of you. The drake is friendly
-                          to you and your companions and obeys your commands. See its game statistics in the Drake Companion stat block, which uses your proficiency bonus (PB) in several places. When you summon the drake, choose
-                          a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake such as its color, scale texture, or any visible effect of its Draconic Essence; your 
-                          choice has no effect on its game statistics. In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only 
-                          action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you 
-                          are incapacitated, the drake can take any action of its choice, not just Dodge. Once you summon the drake, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level
-                          or higher to summon it. The drake remains for a number of hours equal to your proficiency bonus, until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you 
-                          die. Anything the drake was wearing or carrying is left behind when the drake vanishes.
-         Drake: Small Dragon
-         Armor Class: 14 + PB (natural armor)
-         Hit Points: 5 + five times your ranger level (the drake has a number of hit dice [d10s] equal to your ranger level)
-         Speed: 40ft.
-         Stats: STR 16(+3) DEX 12(+1) CON 15(+2) INT 8(−1) WIS 14(+2) CHA 8(−1)    
-         Saving Throws: Dex +1 plus PB, Wis +2 plus PB
-         Damage Immunities: determined by the drake’s Draconic Essence trait
-         Senses: darkvision 60 ft., passive Perception 12
-         Languages: Draconic
-         Challenge: Proficiency Bonus (PB) equals your bonus
-         Draconic Essence: When you summon the drake, choose a damage type; acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity, the damage of its bite, and the damage 
-                           of its Infused Strikes trait.
-         Actions:
-         Bite: Melee Weapon Attack; +3 plus PB to hit, reach 5ft., one target. Hit 1d6 piercing damage plus PB damage of a type determined by the drake’s Draconic Essence.
-         Reactions:
-         Infused Strikes: When another creature within 30 feet of the drake that it can see hits with a weapon attack, the drake infuses the strike with its essence, causing the attack to deal an extra 1d6 
-                          damage of the type determined by its Draconic Essence.
-       - Bond of Fang and Scale: The bond you share with your drake intensifies, protecting you and stoking the drake’s fury. While your drake is summoned, you and the drake gain the following benefits
-                                 - You gain resistance to the damage type chosen for the drake’s Draconic Essence.
-                                 - Choose one of the following; the drake gains a swimming speed of 40 feet and can breathe both air and water, or the drake grows wings and gains a flying speed of 40 feet.
-                                 - The drake’s bite attack deals an extra 1d6 damage of the type chosen for its Draconic Essence.
-       - Drakes Breath: As an action, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage. Each creature in the cone must make a Dexterity 
-                        saving throw against your spell save DC, taking 6d6 damage on a failed save, or half as much damage on a successful one. This damage increases to 8d6 when you reach 15th level in this class. Once you use 
-                        this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use it again.
-       - Perfected Bond: Your bond to your drake reaches the pinnacle of its power. While your drake is summoned, you and the drake gain the following benefits
-                         - The drake grows to Large size.
-                         - The drake’s bite attack deals an extra 1d6 damage of the type chosen for its Draconic Essence (for a total of 2d6 extra damage).
-                         - When either you or the drake takes damage while you’re within 30 feet of each other, you can use your reaction to give yourself or the drake resistance to that instance of damage.
+  - title: Drakewarden Conclave Abilities
+  - abilities:
+    - title: Draconic Gift
+    - content: The bond you share with your drake creates a deeper connection to dragon kind, granting you understanding and empowering your presence. You gain the following benefits
+               If you can’t already, you learn to speak, read, and write Draconic.
+               You learn the thaumaturgy cantrip, which is a ranger spell for you.
+    - title: Drake Companion
+    - content: You can magically summon the drake bound to you. As an action, you can summon the drake, which appears in an unoccupied space of your choice that you can see within 30 feet of you. The drake is friendly
+               to you and your companions and obeys your commands. See its game statistics in the Drake Companion stat block, which uses your proficiency bonus (PB) in several places. When you summon the drake, choose
+               a damage type listed in its Draconic Essence trait. You can determine the cosmetic characteristics of the drake such as its color, scale texture, or any visible effect of its Draconic Essence; your 
+               choice has no effect on its game statistics. In combat, the drake shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only 
+               action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you 
+               are incapacitated, the drake can take any action of its choice, not just Dodge. Once you summon the drake, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level
+               or higher to summon it. The drake remains for a number of hours equal to your proficiency bonus, until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you 
+               die. Anything the drake was wearing or carrying is left behind when the drake vanishes.
+         
+               Drake - Small Dragon
+               Armor Class - 14 + PB (natural armor)
+               Hit Points - 5 + five times your ranger level (the drake has a number of hit dice [d10s] equal to your ranger level)
+               Speed - 40ft.
+               Stats - STR 16(+3) DEX 12(+1) CON 15(+2) INT 8(−1) WIS 14(+2) CHA 8(−1)    
+               Saving Throws - Dex +1 plus PB, Wis +2 plus PB
+               Damage Immunities - determined by the drake’s Draconic Essence trait
+               Senses - darkvision 60 ft., passive Perception 12
+               Languages - Draconic
+               Challenge - Proficiency Bonus (PB) equals your bonus
+               Draconic Essence - When you summon the drake, choose a damage type; acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity, the damage of its bite, and the damage 
+                                  of its Infused Strikes trait.
+               Actions
+               Bite - Melee Weapon Attack; +3 plus PB to hit, reach 5ft., one target. Hit 1d6 piercing damage plus PB damage of a type determined by the drake’s Draconic Essence.
+               Reactions
+               Infused Strikes - When another creature within 30 feet of the drake that it can see hits with a weapon attack, the drake infuses the strike with its essence, causing the attack to deal an extra 1d6 
+                                 damage of the type determined by its Draconic Essence.
+    - title: Bond of Fang and Scale
+    - content: The bond you share with your drake intensifies, protecting you and stoking the drake’s fury. While your drake is summoned, you and the drake gain the following benefits
+               You gain resistance to the damage type chosen for the drake’s Draconic Essence.
+               Choose one of the following; the drake gains a swimming speed of 40 feet and can breathe both air and water, or the drake grows wings and gains a flying speed of 40 feet.
+               The drake’s bite attack deals an extra 1d6 damage of the type chosen for its Draconic Essence.
+    - title: Drakes Breath
+    - content: As an action, you can exhale a 30-foot cone of damaging breath or cause your drake to exhale it. Choose acid, cold, fire, lightning, or poison damage. Each creature in the cone must make a Dexterity 
+               saving throw against your spell save DC, taking 6d6 damage on a failed save, or half as much damage on a successful one. This damage increases to 8d6 when you reach 15th level in this class. Once you use 
+               this feature, you can’t do so again until you finish a long rest, unless you expend a spell slot of 3rd level or higher to use it again.
+    - title: Perfected Bond
+    - content: Your bond to your drake reaches the pinnacle of its power. While your drake is summoned, you and the drake gain the following benefits
+               The drake grows to Large size.
+               The drake’s bite attack deals an extra 1d6 damage of the type chosen for its Draconic Essence (for a total of 2d6 extra damage).
+               When either you or the drake takes damage while you’re within 30 feet of each other, you can use your reaction to give yourself or the drake resistance to that instance of damage.
