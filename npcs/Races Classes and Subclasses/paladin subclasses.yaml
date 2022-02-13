@@ -1,558 +1,917 @@
-    - Oath of the Watchers Abilities:
-       - Spellcasting: DC
-         3rd Level: Alarm, Detect Magic
-         5th Level: Moonbeam, See Invsibility
-         9th Level: Counterspell, Nondetection
-         13th Level: Aura of Purity, Banishment
-         17th Level: Hold Monster, Scrying
-       - Channel Divinity: 
-         - Watchers Will: You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal
-                          to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws
-         - Abjure the Extraplanar: You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that 
-                                   can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.
-                                   - A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the
-                                     Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the Dodge action.
-       - Aura of the Sentinel: you emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency
-                               bonus. At 18th level, the range of this aura increases to 30 feet.
-       - Vigilant Rebuke: you've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a 
-                          Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw.
-       - Mortal Bulwark: you manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute;
-                         - You gain truesight with a range of 120 feet.
-                         - You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.
-                         - When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished
-                           to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.
-                         Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.
+  - title: Oath of the Watchers Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Alarm, Detect Magic
+    - title: 5th Level
+    - content: Moonbeam, See Invsibility
+    - title: 9th Level
+    - content: Counterspell, Nondetection
+    - title: 13th Level
+    - content: Aura of Purity, Banishment
+    - title: 17th Level
+    - content: Hold Monster, Scrying
+    - title: Channel Divinity - Watchers Will
+    - content: You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal
+               to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws
+    - title: Channel Divinity - Abjure the Extraplanar
+    - content: You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that 
+               can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.
+               A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the
+               Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the Dodge action.
+    - title: Aura of the Sentinel
+    - content: You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency
+               bonus. At 18th level, the range of this aura increases to 30 feet.
+    - title: Vigilant Rebuke
+    - content: You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a 
+               Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw.
+    - title: Mortal Bulwark
+    - content: You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute;
+               You gain truesight with a range of 120 feet.
+               You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.
+               When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished
+               to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.
+               Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.
                          
                          
                          
-    - Oath of Free Commerce Abilities:
-       - Spellcasting: DC
-         3rd Level: Unseen Servant, Identify
-         5th Level: Arcane Lock, See Invsibility
-         9th Level: Glyph of Warding, Tongues
-         13th Level: Secret Chest, Faithful Hound
-         17th Level: Bigby's Hand, Planar Binding
-       - Channel Divinty: 
-         - Objective Worth: As an action, you can make manifest your knowledge of the true worth of things. You may either improve the quality and make of the weapon you are holding for one minute, causing it to become a +3 
-                            magical weapon in addition to its other properties, or you may inherently know the exact monetary value of anything you see for one hour.
-         - Turn the Craven: As an action, you can raise your voice and demand that any thieves and skulkers in the area reveal themselves. Each creature that is invisible, attempting to hide, or otherwise intentionally difficult
-                            to see within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying
-                            to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape 
-                            from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
-       - Invisible Hand of The Market: when an enemy moves within 10 feet of you, you may use a reaction to grapple them with an invisible hand of force at any point during the move. The enemy makes a Charisma saving throw 
-                                       against your Spell Save DC, and if they fail this save they are restrained, or pulled up to 10 feet towards you and then restrained, until the beginning of their next turn. At 18th level, 
-                                       the range (but not the distance of the pull) of this ability increases to 30 feet. In addition, you gain the mage hand can trip. If you already know this can trip, you gain a different can 
-                                       trip of your choice from a class spell list that you have access to. When you cast mage hand, you may choose to make the spectral hand invisible.
-       - Market Equilibrium: when you are hit by an attack and receive damage, you may use a reaction to take half the triggering damage and cause the attacking creature to take the same amount of damage. Once you use this 
-                             ability, you can't use it again until you finish a short or long rest.
-       - Game Theory: you can, as an action, gain perfect insight into the motivation and potential rational actions of all economic and physical players in your immediate situation. Your eyes begin to glow slightly with a dim 
-                      light and the rustling of your armor sounds strangely like the clinking of coins, but otherwise you are not perceptibly changed. For 1 minute, you gain the following benefits
-                      - Truesight for 120 feet
-                      - Attacks against you are made with disadvantage
-                      - When you take the Attack action, either all attacks you make are made with advantage, or you add an additional attack to the total number of attacks this action allows you to make.
-                      Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of Free Commerce Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Unseen Servant, Identify
+    - title: 5th Level
+    - content: Arcane Lock, See Invsibility
+    - title: 9th Level
+    - content: Glyph of Warding, Tongues
+    - title: 13th Level
+    - content: Secret Chest, Faithful Hound
+    - title: 17th Level
+    - content: Bigby's Hand, Planar Binding
+    - title: Channel Divinty - Objective Worth
+    - content: As an action, you can make manifest your knowledge of the true worth of things. You may either improve the quality and make of the weapon you are holding for one minute, causing it to become a +3 
+               magical weapon in addition to its other properties, or you may inherently know the exact monetary value of anything you see for one hour.
+    - title: Channel Divinity - Turn the Craven
+    - content: As an action, you can raise your voice and demand that any thieves and skulkers in the area reveal themselves. Each creature that is invisible, attempting to hide, or otherwise intentionally difficult
+               to see within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying
+               to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape 
+               from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
+    - title: Invisible Hand of The Market
+    - content: When an enemy moves within 10 feet of you, you may use a reaction to grapple them with an invisible hand of force at any point during the move. The enemy makes a Charisma saving throw 
+               against your Spell Save DC, and if they fail this save they are restrained, or pulled up to 10 feet towards you and then restrained, until the beginning of their next turn. At 18th level, 
+               the range (but not the distance of the pull) of this ability increases to 30 feet. In addition, you gain the mage hand can trip. If you already know this can trip, you gain a different can 
+               trip of your choice from a class spell list that you have access to. When you cast mage hand, you may choose to make the spectral hand invisible.
+    - title: Market Equilibrium
+    - content: When you are hit by an attack and receive damage, you may use a reaction to take half the triggering damage and cause the attacking creature to take the same amount of damage. Once you use this 
+               ability, you can't use it again until you finish a short or long rest.
+    - title: Game Theory
+    - content: You can, as an action, gain perfect insight into the motivation and potential rational actions of all economic and physical players in your immediate situation. Your eyes begin to glow slightly with a dim 
+               light and the rustling of your armor sounds strangely like the clinking of coins, but otherwise you are not perceptibly changed. For 1 minute, you gain the following benefits
+               Truesight for 120 feet
+               Attacks against you are made with disadvantage
+               When you take the Attack action, either all attacks you make are made with advantage, or you add an additional attack to the total number of attacks this action allows you to make.
+               Once you use this feature, you can't use it again until you finish a long rest.
                       
                       
                       
-    - Oath of Devotion Abilities:
-       - Spellcasting: DC
-         3rd Level: Protection from Evil and Good, Sanctuary
-         5th Level: Lesser Restoration, Zone of Truth
-         9th Level: Beacon of Hope, Dispel Magic
-         13th Level: Freedom of Movement, Guardian of faith
-         17th Level: Commune, Flame Strike
-       - Channel Divinty:
-         - Sacred Weapon: As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to Attack rolls made with that weapon (with a 
-                          minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the Duration. You can end 
-                          this Effect on Your Turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall Unconscious, this Effect ends.  
-         - Turn the Unholy: As an action, you present your holy Symbol and speak a prayer censuring Fiends and Undead, using your Channel Divinity. Each fiend or Undead that can see or hear you within 30 feet of you must make a 
-                            Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, 
-                            and it can’t willingly move to a space within 30 feet of you. It also can’t take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving.
-                            If there’s nowhere to move, the creature can use the Dodge action.
-       - Aura of Devotion: you and friendly creatures within 10 feet of you can’t be Charmed while you are conscious. At 18th level, the range of this aura increases to 30 feet.
-       - Purity of Spirit: you are always under the Effects of a Protection from evil and good spell.
-       - Holy Nimbus: you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that. Whenever an enemy creature starts its turn in the bright light,
-                      the creature takes 10 radiant damage. In addition, for the Duration, you have advantage on Saving Throws against Spells cast by Fiends or Undead.
+  - title: Oath of Devotion Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Protection from Evil and Good, Sanctuary
+    - title: 5th Level
+    - content: Lesser Restoration, Zone of Truth
+    - title: 9th Level
+    - content: Beacon of Hope, Dispel Magic
+    - title: 13th Level
+    - content: Freedom of Movement, Guardian of faith
+    - title: 17th Level
+    - content: Commune, Flame Strike
+    - title: Channel Divinty - Sacred Weapon
+    - content: As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to Attack rolls made with that weapon (with a 
+               minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the Duration. You can end 
+               this Effect on Your Turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall Unconscious, this Effect ends.  
+    - title: Channel Divinity - Turn the Unholy
+    - content: As an action, you present your holy Symbol and speak a prayer censuring Fiends and Undead, using your Channel Divinity. Each fiend or Undead that can see or hear you within 30 feet of you must make a 
+               Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, 
+               and it can’t willingly move to a space within 30 feet of you. It also can’t take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving.
+               If there’s nowhere to move, the creature can use the Dodge action.
+    - title: Aura of Devotion
+    - content: You and friendly creatures within 10 feet of you can’t be Charmed while you are conscious. At 18th level, the range of this aura increases to 30 feet.
+    - title: Purity of Spirit
+    - content: You are always under the Effects of a Protection from evil and good spell.
+    - title: Holy Nimbus
+    - content: You can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that. Whenever an enemy creature starts its turn in the bright light,
+               the creature takes 10 radiant damage. In addition, for the Duration, you have advantage on Saving Throws against Spells cast by Fiends or Undead.
                       
                       
                       
-    - Oath of Glory Abilities:
-       - Spellcasting: DC 13
-         3rd Level: Guiding Bolt, Heroism
-         5th Level: Enhance Ability, Magic Weapon
-         9th Level: Haste, Protection From Energy
-         13th Level: Compulsion, Freedom Of Movement
-         17th Level: Commune, Flame Strike
-       - Channel Divinity: 
-         - Peerless Athlete: As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry,
-                             push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet
-         - Inspiring Smite: Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice
-                            within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.
-       - Aura of Alacrity: you emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 10 feet. In addition, if you 
-                           aren't incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn. When you reach 18th level in this class, the range of the
-                           aura increases to 10 feet.
-       - Glorious Defense: you can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against
-                           that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +l). If the attack misses, you can make one weapon attack against the attacker as part of this reaction,
-                           provided the attacker is within your weapon's range. You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a 
-                           long rest.
-       - Living Legend: you can empower yourself with the legends — whether true or exaggerated — of your great deeds. As a bonus action, you gain the following benefits for 1 minute;
-                        - You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.
-                        - Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.
-                        - If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.
-                        Once you use this feature, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.
+  - title: Oath of Glory Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Guiding Bolt, Heroism
+    - title: 5th Level
+    - content: Enhance Ability, Magic Weapon
+    - title: 9th Level
+    - content: Haste, Protection From Energy
+    - title: 13th Level
+    - content: Compulsion, Freedom Of Movement
+    - title: 17th Level
+    - content: Commune, Flame Strike
+    - title: Channel Divinity - Peerless Athlete
+    - content: As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry,
+               push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet
+    - title: Channel Divinity - Inspiring Smite
+    - content: Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice
+               within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.
+    - title: Aura of Alacrity
+    - content: You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 10 feet. In addition, if you 
+               aren't incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn. When you reach 18th level in this class, the range of the
+               aura increases to 10 feet.
+    - title: Glorious Defense
+    - content: You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against
+               that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +l). If the attack misses, you can make one weapon attack against the attacker as part of this reaction,
+               provided the attacker is within your weapon's range. You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a 
+               long rest.
+    - title: Living Legend
+    - content: You can empower yourself with the legends — whether true or exaggerated — of your great deeds. As a bonus action, you gain the following benefits for 1 minute;
+               You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.
+               Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.
+               If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.
+               Once you use this feature, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.
                         
                         
                         
-    - Oathbreaker Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Hellish Rebuke, Inflict Wounds
-         5th Level: Crown of Madness, Darkness
-         9th Level: Animate Dead, Bestow Curse
-         13th Level: Blight, Confusion 
-         17th Level: Contagion, Dominate Person
-       - Channel Divinity:
-         - Control Undead: As an action, you target one undead creature you can see within 30 feet of you. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for the next 24 hours, 
-                           or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than your paladin level is immune to this effect.
-         - Dreadful Aspect: As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a
-                            failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt another Wisdom saving throw to end the 
-                            effect on it.
-       - Aura of Hate: you as well any fiends and undead within 10 feet of you, gain a bonus to melee weapon damage rolls equal to your Charisma modifier (+x). A creature can benefit from this feature from only one
-                       paladin at a time.
-       - Supernatural Resistance: you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons 
-       - Dread Lord: you can, as an action, surround yourself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around you to dim light. Whenever an enemy that is frightened by
-                     you starts its turn in the aura, it takes 4d10 psychic damage. Additionally, you and any creatures of your choosing in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on
-                     attack rolls against creatures draped in this shadow. While the aura lasts, you can use a bonus action on your turn to cause the shadows in the aura to attack one creature. Make a melee spell attack against
-                     the target. If the attack hits, the target takes necrotic damage equal to 3d10 + your Charisma modifier. After activating the aura, you can't do so again until you finish a long rest.     
+  - title: Oathbreaker Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Hellish Rebuke, Inflict Wounds
+    - title: 5th Level
+    - content: Crown of Madness, Darkness
+    - title: 9th Level
+    - content: Animate Dead, Bestow Curse
+    - title: 13th Level
+    - content: Blight, Confusion 
+    - title: 17th Level
+    - content: Contagion, Dominate Person
+    - title: Channel Divinity - Control Undead
+    - content: As an action, you target one undead creature you can see within 30 feet of you. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for the next 24 hours, 
+               or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than your paladin level is immune to this effect.
+    - title: Channel Divinity - Dreadful Aspect
+    - content: As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a
+               failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt another Wisdom saving throw to end the 
+               effect on it.
+    - title: Aura of Hate
+    - content: You as well any fiends and undead within 10 feet of you, gain a bonus to melee weapon damage rolls equal to your Charisma modifier (+x). A creature can benefit from this feature from only one
+               paladin at a time.
+    - title: Supernatural Resistance
+    - content: You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons 
+    - title: Dread Lord
+    - content: You can, as an action, surround yourself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around you to dim light. Whenever an enemy that is frightened by
+               you starts its turn in the aura, it takes 4d10 psychic damage. Additionally, you and any creatures of your choosing in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on
+               attack rolls against creatures draped in this shadow. While the aura lasts, you can use a bonus action on your turn to cause the shadows in the aura to attack one creature. Make a melee spell attack against
+               the target. If the attack hits, the target takes necrotic damage equal to 3d10 + your Charisma modifier. After activating the aura, you can't do so again until you finish a long rest.     
 
 
 
-    - Oath of Redemption Abilities: 
-       - Spellcasting:
-         3rd Level: Sanctuary, Sleep
-         5th Level: Calm Emotions, Hold Person
-         9th Level: Counterspell, Hypnotic Pattern
-         13th Level: Resilient Sphere, Stoneskin
-         17th Level: Hold Monster, Wall of Force
-       - Channel Divinity: 
-         - Emissary of Peace: You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.
-         - Rebuke the Violent: You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use 
-                               your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage.
-       - Aura of the Guardian: you can shield your allies from harm at the cost of your own health. When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that 
-                               creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way. At 18th level, the range of this aura increases to 
-                               30 feet.
-       - Protective Spirit: a holy presence mends your wounds in combat. You regain hit points equal to 1d6 + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you 
-                            aren’t incapacitated.
-       - Emissary of Redemption: you become an avatar of peace, which gives you the following benefits;
-                                 - You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).
-                                 - Whenever a creature damages you, it takes radiant damage equal to half the amount it dealt to you.
-                                 If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest.                    
+  - title: Oath of Redemption Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Sanctuary, Sleep
+    - title: 5th Level
+    - content: Calm Emotions, Hold Person
+    - title: 9th Level
+    - content: Counterspell, Hypnotic Pattern
+    - title: 13th Level
+    - content: Resilient Sphere, Stoneskin
+    - title: 17th Level
+    - content: Hold Monster, Wall of Force
+    - title: Channel Divinity - Emissary of Peace
+    - content: You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.
+    - title: Channe; Divnity - Rebuke the Violent
+    - content: You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use 
+               your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage.
+    - title: Aura of the Guardian
+    - content: You can shield your allies from harm at the cost of your own health. When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that 
+               creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way. At 18th level, the range of this aura increases to 
+               30 feet.
+    - title: Protective Spirit
+    - content: A holy presence mends your wounds in combat. You regain hit points equal to 1d6 + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you 
+               aren’t incapacitated.
+    - title: Emissary of Redemption
+    - content: You become an avatar of peace, which gives you the following benefits;
+               You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).
+               Whenever a creature damages you, it takes radiant damage equal to half the amount it dealt to you.
+               If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest.                    
   
 
 
-    - Oath of Vengeance Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Bane, Hunter's Mark
-         5th Level: Hold Person, Misty Step
-         9th Level: Haste, Protection from Energy
-         13th Level: Banishment, Dimension Door
-         17th Level: Hold Monster, Scrying
-       - Channel Divinity:
-         - Abjure Enemy: As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom 
-                         saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
-                         - On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
-                         - On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
-         - Vow of Enmity: As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute 
-                          or until it drops to 0 hit points or falls unconscious.
-       - Relentless Avenger: your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the 
-                             same reaction. This movement doesn't provoke opportunity attacks.
-       - Soul of Vengeance: the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a
-                            melee weapon attack against that creature if it is within range.
-       - Avenging Angel: you can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits;
-                         - Wings sprout from your back and grant you a flying speed of 60 feet.
-                         - You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or 
-                           become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.
-                         Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of Vengeance Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Bane, Hunter's Mark
+    - title: 5th Level
+    - content: Hold Person, Misty Step
+    - title: 9th Level
+    - content: Haste, Protection from Energy
+    - title: 13th Level
+    - content: Banishment, Dimension Door
+    - title: 17th Level
+    - content: Hold Monster, Scrying
+    - title: Channel Divinity - Abjure Enemy
+    - content: As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom 
+               saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
+               On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
+               On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
+    - title: Channel Divinity - Vow of Enmity
+    - content: As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute 
+               or until it drops to 0 hit points or falls unconscious.
+    - title: Relentless Avenger
+    - content: Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the 
+               same reaction. This movement doesn't provoke opportunity attacks.
+    - title: Soul of Vengeance
+    - content: The authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a
+               melee weapon attack against that creature if it is within range.
+    - title: Avenging Angel
+    - content: You can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits;
+               Wings sprout from your back and grant you a flying speed of 60 feet.
+               You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or 
+               become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.
+               Once you use this feature, you can't use it again until you finish a long rest.
 
 
 
-    - Oath of Conquest Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Armor of Agathys, Command
-         5th Level: Hold Person, Spiritual Weapon
-         9th Level: Bestow Curse, Fear
-         13th Level: Dominate Beast, Stoneskin
-         17th Level: Cloudkill, Dominate Person
-       - Channel Divinity:
-         - Conquering Presence: You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a 
-                                failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.
-         - Guided Strike: You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you 
-                          see the roll, but before the DM says whether the attack hits or misses.
-       - Aura of Conquest: you constantly emanate a menacing aura while you’re not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover. If a creature is frightened of you, its speed 
-                           is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there. the range of this aura increases to 30 feet.
-       - Scornful Rebuke: those who dare to strike you are psychically punished for their audacity. Whenever a creature hits you with an attack, that creature takes psychic damage equal to your Charisma modifier (minimum of 1) 
-                          if you’re not incapacitated.
-       - Invincible Conqueror: you gain the ability to harness extraordinary martial prowess. As an action, you can magically become an avatar of conquest, gaining the following benefits for 1 minute;
-                               - You have resistance to all damage.
-                               - When you take the Attack action on your turn, you can make one additional attack as part of that action.
-                               - Your melee weapon attacks score a critical hit on a roll of 19 or 20 on the d20.
-                               Once you use this feature, you can’t use it again until you finish a long rest.
+  - title: Oath of the Open Sea Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd level
+    - content: Create or Destroy Water, Expeditious Retreat
+    - title: 5th level
+    - content: Augury, Misty Step
+    - title: 9th level
+    - content: Call Lightning, Tidal Wave
+    - title: 13th level
+    - content: Control Water, Freedom of Movement
+    - title: 17th level
+    - content: Commune With Nature, Maelstrom
+    - title: Channel Divinity - Marine Layer
+    - content: As an action, Open Sea paladins can create a thick cloud of fog, with a radius of 20 feet, centered on themselves and lasting 10 minutes. The area within the fog is considered heavily obscured. The paladin and any creatures within 5 feet of them, however, treat the area as lightly obscured. The fog spreads around corners and cannot be dispersed.[2]
+    - title: Channel Divinity - Fury of the Tides
+    - content: As a bonus action, an Open Sea paladin can channel the power of the ocean for 1 minute to enhance their weapon attacks. Once per turn for the duration, they can choose to push a creature hit by their weapon attack 10 feet away from themselves. If the target is pushed into an obstacle or another creature, they take additional bludgeoning damage equal to the paladin's charisma modifier.[2]
+    - title: Aura of Liberation
+    - content: When an Open Sea paladin is not incapacitated, they emit an aura for 10 feet. All creatures of the paladin's choice within the aura cannot be grappled nor restrained and can ignore ignore penalties on movement or attacks while underwater. A creature already subject to the grappled or restrained condition that enters into the aura can spend 5 feet of movement to automatically escape nonmagical restraints. The range of the aura increases to 30 feet at level 18.[2]
+    - title: Stormy Waters
+    - content: An Open Sea paladin can summon the waters as a reaction whenever a creature enters or exits their melee range. The creature takes 1d12 bludgeoning damage, and on a failed Strength saving throw is knocked prone.[2]
+    - title: Mythic Swashbuckler
+    - content: An Open Sea paladin can channel the spirits of historic sea captains to become a paragon of adventure. As an action this can be invoked to gain the the following benefits for 1 minute
+               Their climbing does not cost additional movement and they have advantage on Strength and Athletics checks.
+               If they are within 5 feet of a creature, and no other creatures are within 5 feet of them, attacks against that creature are made with advantage.
+               They can Dodge as a bonus action rather than an action.
+               They have advantage on all Dexterity ability checks and Dexterity saving throws against effects they can see.
+               Once used, this feature cannot be used again until finishing a long rest.
+
+
+
+  - title: Oath of Conquest Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Armor of Agathys, Command
+    - title: 5th Level
+    - content: Hold Person, Spiritual Weapon
+    - title: 9th Level
+    - content: Bestow Curse, Fear
+    - title: 13th Level
+    - content: Dominate Beast, Stoneskin
+    - title: 17th Level
+    - content: Cloudkill, Dominate Person
+    - title: Channel Divinity - Conquering Presence
+    - content: You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a 
+               failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.
+    - title: Channel Divinity - Guided Strike
+    - content: You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you 
+               see the roll, but before the DM says whether the attack hits or misses.
+    - title: Aura of Conquest
+    - content: You constantly emanate a menacing aura while you’re not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover. If a creature is frightened of you, its speed 
+               is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there. the range of this aura increases to 30 feet.
+    - title: Scornful Rebuke
+    - content: Those who dare to strike you are psychically punished for their audacity. Whenever a creature hits you with an attack, that creature takes psychic damage equal to your Charisma modifier (minimum of 1) 
+               if you’re not incapacitated.
+    - title: Invincible Conqueror
+    - content: You gain the ability to harness extraordinary martial prowess. As an action, you can magically become an avatar of conquest, gaining the following benefits for 1 minute;
+               You have resistance to all damage.
+               When you take the Attack action on your turn, you can make one additional attack as part of that action.
+               Your melee weapon attacks score a critical hit on a roll of 19 or 20 on the d20.
+               Once you use this feature, you can’t use it again until you finish a long rest.
                                
                                
                                
-    - Oath of Ancients Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Ensnaring Strike, Speak with Animals
-         5th Level: Moonbeam, Misty Step
-         9th Level: Plant Growth, Protection from Energy
-         13th Level: Ice Storm, Stoneskin
-         17th Level: Commune with Nature, Tree Stride
-       - Channel Divinity:
-         - Natures Wrath: You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The
-                          creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a 
-                          success, it frees itself and the vines vanish.
-         - Turn the Faithless: You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that 
-                               can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from 
-                               you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that 
-                               prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is 
-                               revealed while it is turned.
-       - Aura of Warding: ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells. At 18th level, the range of this aura 
-                          increases to 30 feet.
-       - Undying Sentinel: when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can't use it again until you finish a long rest. 
-                           Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically.
-       - Elder Champion: you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or 
-                         moss-like, or you might sprout antlers or a lion-like mane. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits;
-                         - At the start of each of your turns, you regain 10 hit points.
-                         - Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.
-                         - Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.
-                         Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of the Ancients Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Ensnaring Strike, Speak with Animals
+    - title: 5th Level
+    - content: Moonbeam, Misty Step
+    - title: 9th Level
+    - content: Plant Growth, Protection from Energy
+    - title: 13th Level
+    - content: Ice Storm, Stoneskin
+    - title: 17th Level
+    - content: Commune with Nature, Tree Stride
+    - title: Channel Divinity - Natures Wrath
+    - content: You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The
+               creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a 
+               success, it frees itself and the vines vanish.
+    - title: Channel Divinity - Turn the Faithless
+    - content: You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that 
+               can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from 
+               you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that 
+               prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. If the creature's true form is concealed by an illusion, shapeshifting, or other effect, that form is 
+               revealed while it is turned.
+    - title: Aura of Warding
+    - content: Ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells. At 18th level, the range of this aura 
+               increases to 30 feet.
+    - title: Undying Sentinel
+    - content: When you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can't use it again until you finish a long rest. 
+               Additionally, you suffer none of the drawbacks of old age, and you can't be aged magically.
+    - title: Elder Champion
+    - content: You can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or 
+               moss-like, or you might sprout antlers or a lion-like mane. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits;
+               At the start of each of your turns, you regain 10 hit points.
+               Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.
+               Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.
+               Once you use this feature, you can't use it again until you finish a long rest.
                          
                          
                          
-    - Oath of Crown Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Command, Compelled Duel
-         5th Level: Warding Bond, Zone of Truth
-         9th Level: Aura of Vitality, Spirit Guardians
-         13th Level: Banishment, Guardian of Faith
-         17th Level: Circle of Power, Geas
-       - Channel Divinity:
-         - Champion Challenge: As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On 
-                               a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is more than 30 feet away from 
-                               you.
-         - Turn the Tide: As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Charisma 
-                          modifier (minimum of 1) if it has no more than half of its hit points.
-       - Divine Allegiance: when a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. 
-                            Instead, you take the damage. This damage to you can't be reduced or prevented in any way.
-       - Unyielding Saint: you have advantage on saving throws to avoid becoming paralyzed or stunned.
-       - Exalted Champion: your presence on the field of battle is an inspiration to those dedicated to your cause. You can use your action to gain the following benefits for 1 hour;
-                           - You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.
-                           - Your allies have advantage on death saving throws while within 30 feet of you.
-                           - You have advantage on Wisdom saving throws, as do your allies within 30 feet of you.
-                           This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of the Crown Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Command, Compelled Duel
+    - title: 5th Level
+    - content: Warding Bond, Zone of Truth
+    - title: 9th Level
+    - content: Aura of Vitality, Spirit Guardians
+    - title: 13th Level
+    - content: Banishment, Guardian of Faith
+    - title: 17th Level
+    - content: Circle of Power, Geas
+    - title: Channel Divinity - Champion Challenge
+    - content: As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On 
+               a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is more than 30 feet away from you.
+    - title: Channel Divinity - Turn the Tide
+    - content: As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Charisma 
+               modifier (minimum of 1) if it has no more than half of its hit points.
+    - title: Divine Allegiance
+    - content: When a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. 
+               Instead, you take the damage. This damage to you can't be reduced or prevented in any way.
+    - title: Unyielding Saint
+    - content: You have advantage on saving throws to avoid becoming paralyzed or stunned.
+    - title: Exalted Champion
+    - content: Your presence on the field of battle is an inspiration to those dedicated to your cause. You can use your action to gain the following benefits for 1 hour;
+               You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.
+               Your allies have advantage on death saving throws while within 30 feet of you.
+               You have advantage on Wisdom saving throws, as do your allies within 30 feet of you.
+               This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.
                            
                            
                            
-    - Oath of Martyrdom Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Shield, Hellish Rebuke
-         5th Level: Warding Bond, Misty Step
-         9th Level: Life Transference, Fear
-         13th Level: Stoneskin, Wall of Fire
-         17th Level: Wall of Force, Steel Wind Strike
-       - Channel Divinity:
-         - Overwhelm: As an action, you exert a terrible force. Each creature of your choice within 10 of the you must make a Wisdom saving throw if it can see you. On a failed save, the target takes psychic damage equal to your
-                      Paladin level + your Charisma modifier and is frightened of you for 1 minute. A creature frightened by this effect can attempt another Wisdom saving throw at the end of its turn to end the effect.
-         - Unbreakable Resolve: As a bonus action, you can bolster your allied with your Channel Divinity. Each creature of your choice 10 feet of you is granted a+ 1 bonus to AC and has advantage on Wisdom saving throws for 1 
-                                minute.
-       - Aura of Martyrdom: When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that 
-                            might accompany the damage, and this damage can't be reduced in any way. At 18th leveL the range of this aura increases to 30 feet.
-       - Indomitable Spirit: you have advantage on saving throws to avoid being charmed or frightened
-       - Last Stand: as an action you can transform into an embodiment of martyrdom. For 1 minute, while in that form, you have the following benefits
-                     - You have resistance to all damage.
-                     - When you take the Attack action on your turn, you can make one additional attack as part of that action.
-                     - You emanate an aura in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there, the creature must succeeded on a Wisdom saving throw or become frightened of you for 1 
-                       minute. Attack rolls against the frightened creature have advantage.
-                     - While the aura lasts, the paladin can use a bonus action on their turn to cause a creature in the aura to suffer intense fear. The creature must make a Wisdom saving throw. On a failed save, the target 
-                       takes psychic damage equal to 5d8 + the paladin's Charisma modifier.
-                     - When the transformation ends naturally, you fall unconscious for 1d4 hours.
-                     - This effect ends early if you are incapacitated or die.
-                     - Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of Martyrdom Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Shield, Hellish Rebuke
+    - title: 5th Level
+    - content: Warding Bond, Misty Step
+    - title: 9th Level
+    - content: Life Transference, Fear
+    - title: 13th Level
+    - content: Stoneskin, Wall of Fire
+    - title: 17th Level
+    - content: Wall of Force, Steel Wind Strike
+    - title: Channel Divinity - Overwhelm
+    - content: As an action, you exert a terrible force. Each creature of your choice within 10 of the you must make a Wisdom saving throw if it can see you. On a failed save, the target takes psychic damage equal to your
+               Paladin level + your Charisma modifier and is frightened of you for 1 minute. A creature frightened by this effect can attempt another Wisdom saving throw at the end of its turn to end the effect.
+    - title: Channel Divinity - Unbreakable Resolve
+    - content: As a bonus action, you can bolster your allied with your Channel Divinity. Each creature of your choice 10 feet of you is granted a+ 1 bonus to AC and has advantage on Wisdom saving throws for 1 minute.
+    - title: Aura of Martyrdom
+    - content: When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that 
+               might accompany the damage, and this damage can't be reduced in any way. At 18th leveL the range of this aura increases to 30 feet.
+    - title: Indomitable Spirit
+    - content: You have advantage on saving throws to avoid being charmed or frightened
+    - title: Last Stand
+    - content: As an action you can transform into an embodiment of martyrdom. For 1 minute, while in that form, you have the following benefits
+               You have resistance to all damage.
+               When you take the Attack action on your turn, you can make one additional attack as part of that action.
+               You emanate an aura in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there, the creature must succeeded on a Wisdom saving throw or become frightened of you for 1 
+               minute. Attack rolls against the frightened creature have advantage.
+               While the aura lasts, the paladin can use a bonus action on their turn to cause a creature in the aura to suffer intense fear. The creature must make a Wisdom saving throw. On a failed save, the target 
+               takes psychic damage equal to 5d8 + the paladin's Charisma modifier.
+               When the transformation ends naturally, you fall unconscious for 1d4 hours.
+               This effect ends early if you are incapacitated or die.
+               Once you use this feature, you can't use it again until you finish a long rest.
                      
                      
                      
-    - Oath of Perseverance Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Absorb Elements, Shield
-         5th Level: Enhance Ability, Warding Bond
-         9th Level: Protection from Energy, Revivify
-         13th Level: Death Ward, Freedom of Movement
-         17th Level: Dispel Evil and Good, Greater Restoration
-       - Channel Divinity:
-         - Push Through: You can use your Channel Divinity to push through challenges. As a reaction, you or a creature within 30 feet of you may reroll a failed saving throw or ability check. Additionally, the target rolls a d4
-                         and add the number rolled to the result. They must use the new roll
-         - Defy Death: You can use your Channel Divinity to fight from the brink of death. You can forgo rolling for a death saving throw, taking a 20 as the result.
-       - Aura of Perseverance: your will stand against adversity spreads to those around you. When you and any friendly creatures within 10 feet of you make an ability check, they may roll a d4 and add it to the result. At 18th 
-                               level the range of this aura increases to 30 feet.
-       - Fortify Resolve: your ability with Lay on Hands grows such that you may react to the aggression of others. You may use Lay on Hands as a reaction when you or a creature within 5 feet of you would take damage. When used 
-                          in this way, you expend 5 hit points from your pool of healing to grant resistance to the triggering damage until the end of the turn.
-       - Avatar of Perseverance: as an action you can assume the form of an avatar of perseverance. You may dictate the form you take. Flightless wings, halo, etc. For the next minute, you gain the following benefits
-                                 - You and up to 5 friendly creatures within 30 feet of you are under the effects of Death Ward for the duration.
-                                 - Once per turn, if your Attack misses a target within range, you can turn the miss into a hit.
-                                 - Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
-                                 Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of Perseverance Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Absorb Elements, Shield
+    - title: 5th Level
+    - content: Enhance Ability, Warding Bond
+    - title: 9th Level
+    - content: Protection from Energy, Revivify
+    - title: 13th Level
+    - content: Death Ward, Freedom of Movement
+    - title: 17th Level
+    - content: Dispel Evil and Good, Greater Restoration
+    - title: Channel Divinity - Push Through
+    - content: You can use your Channel Divinity to push through challenges. As a reaction, you or a creature within 30 feet of you may reroll a failed saving throw or ability check. Additionally, the target rolls a d4
+               and add the number rolled to the result. They must use the new roll
+    - title: Channel Divinity - Defy Death
+    - content: You can use your Channel Divinity to fight from the brink of death. You can forgo rolling for a death saving throw, taking a 20 as the result.
+    - title: Aura of Perseverance
+    - content: Your will stand against adversity spreads to those around you. When you and any friendly creatures within 10 feet of you make an ability check, they may roll a d4 and add it to the result. At 18th 
+               level the range of this aura increases to 30 feet.
+    - title: Fortify Resolve
+    - content: Your ability with Lay on Hands grows such that you may react to the aggression of others. You may use Lay on Hands as a reaction when you or a creature within 5 feet of you would take damage. When used 
+               in this way, you expend 5 hit points from your pool of healing to grant resistance to the triggering damage until the end of the turn.
+    - title: Avatar of Perseverance
+    - content: As an action you can assume the form of an avatar of perseverance. You may dictate the form you take. Flightless wings, halo, etc. For the next minute, you gain the following benefits
+               You and up to 5 friendly creatures within 30 feet of you are under the effects of Death Ward for the duration.
+               Once per turn, if your Attack misses a target within range, you can turn the miss into a hit.
+               Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
+               Once you use this feature, you can't use it again until you finish a long rest.
                                  
                                  
                                  
-    - Oath of Purification Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Burning Hands, Searing Smite
-         5th Level: Continual Flame, Heat Metal
-         9th Level: Daylight, Minute Meteors
-         13th Level: Fire Shield, Wall of Fire
-         17th Level: Flame Strike, Greater Restoration
-       - Channel Divinity:
-         - Cloaked in Fire: You can use your Channel Divinity to wreathe yourself in magical golde n flames. As an action, you become surrounded with fire that scorches your foes without harming you or your equipm ent. Each 
-                            enemy creature within 10 feet of you must make a Dexterity saving throw. A target takes fire damage equal to 2d6 + half your paladin level on a failed save, or half as much on a success. Until the 
-                            start of your next turn, the fl ames continue to bum, shedding bright light in a 20-foot radius and dim light for an additional 20 fee t, and each enemy creature that ends its tum within 10 feet of 
-                            you takes fire damage equal to 2d6 + half your paladin level
-         - Purifying Flames: You can use your Channel Divinity to imbue a target with purifying flame that does not burn them. As an action, you fill one creature that you can see within 60 feet of you with divine fire, and any 
-                             creatures that are inside the target's body or possessing the target take fire damage equal to twice your paladin level You can cure one disease on the target or end up to one effect causing it to be
-                             blinded, charmed, deafened, paralyzed, or poisoned In addition, the target h as advantage on Constitution saving throws until the end of your next tum, and the next time it hits with a weapon attack 
-                             before the end of your next turn, the attack deals bonus fire damage equal to your paladin level + your Charisma modifier (minimum + 1}
-       - Aura of Warmth: you gain an aura of warmth that tempers flame, banishes cold, and purifies toxins. While you are conscious, you and friendly creatures within 10 feet of you have resistance to cold damage, fire damage, 
-                         and poison damage. At 18th Level the range of this aura increases to 30 feet.
-       - Purge By Fire: when you deal fire damage with a spell or paladin class feature to a creature you can see within 120 feet of you, you can choose to instantly cast dispel magic on that creature, without expending a spell 
-                        slot or requiring components. You can do this even if you do not have dispel magic prepared Once you have used this ability, you cannot use it again until you finish a short or long rest.
-       - Eradicating Flame: you can use your action to ignite one weapon you a re holding with divine flame. The weapon is engulfed in roaring golden fire that doesn't harm the weapon or you. This fire s heds bright light in a 
-                            20-foot radius and dim light for a n additional 20 feet, and lasts for 1 minute or until you stop holding the weapon. The fire cannot be extinguished by normal means. Melee attacks you make using the 
-                            flaming weapon have advantage. When you hit with such an attack, the attack deals an extra 1d 10 fire damage a nd 1d10 radiant damage, and if the target is flammable or is a creature, it is lit 
-                            ablaze. Until someone takes an action to douse the fire, it takes 1d10 fire damage at the start of each of its turns. If damage from the attack or the fire kills a target, th e target is turned to 
-                            ash. Once you have used this ability, you cannot use it again until you finish a long rest.
+  - title: Oath of Purification Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Burning Hands, Searing Smite
+    - title: 5th Level
+    - content: Continual Flame, Heat Metal
+    - title: 9th Level
+    - content: Daylight, Minute Meteors
+    - title: 13th Level
+    - content: Fire Shield, Wall of Fire
+    - title: 17th Level
+    - content: Flame Strike, Greater Restoration
+    - title: Channel Divinity - Cloaked in Fire
+    - content: You can use your Channel Divinity to wreathe yourself in magical golde n flames. As an action, you become surrounded with fire that scorches your foes without harming you or your equipm ent. Each 
+               enemy creature within 10 feet of you must make a Dexterity saving throw. A target takes fire damage equal to 2d6 + half your paladin level on a failed save, or half as much on a success. Until the 
+               start of your next turn, the fl ames continue to bum, shedding bright light in a 20-foot radius and dim light for an additional 20 fee t, and each enemy creature that ends its tum within 10 feet of 
+               you takes fire damage equal to 2d6 + half your paladin level
+    - title: Channel Divinity - Purifying Flames
+    - content: You can use your Channel Divinity to imbue a target with purifying flame that does not burn them. As an action, you fill one creature that you can see within 60 feet of you with divine fire, and any 
+               creatures that are inside the target's body or possessing the target take fire damage equal to twice your paladin level You can cure one disease on the target or end up to one effect causing it to be
+               blinded, charmed, deafened, paralyzed, or poisoned In addition, the target h as advantage on Constitution saving throws until the end of your next tum, and the next time it hits with a weapon attack 
+               before the end of your next turn, the attack deals bonus fire damage equal to your paladin level + your Charisma modifier (minimum + 1}
+    - title: Aura of Warmth
+    - content: You gain an aura of warmth that tempers flame, banishes cold, and purifies toxins. While you are conscious, you and friendly creatures within 10 feet of you have resistance to cold damage, fire damage, 
+               and poison damage. At 18th Level the range of this aura increases to 30 feet.
+    - title: Purge By Fire
+    - content: When you deal fire damage with a spell or paladin class feature to a creature you can see within 120 feet of you, you can choose to instantly cast dispel magic on that creature, without expending a spell 
+               slot or requiring components. You can do this even if you do not have dispel magic prepared Once you have used this ability, you cannot use it again until you finish a short or long rest.
+    - title: Eradicating Flame
+    - content: You can use your action to ignite one weapon you a re holding with divine flame. The weapon is engulfed in roaring golden fire that doesn't harm the weapon or you. This fire s heds bright light in a 
+               20-foot radius and dim light for a n additional 20 feet, and lasts for 1 minute or until you stop holding the weapon. The fire cannot be extinguished by normal means. Melee attacks you make using the 
+               flaming weapon have advantage. When you hit with such an attack, the attack deals an extra 1d 10 fire damage a nd 1d10 radiant damage, and if the target is flammable or is a creature, it is lit 
+               ablaze. Until someone takes an action to douse the fire, it takes 1d10 fire damage at the start of each of its turns. If damage from the attack or the fire kills a target, th e target is turned to 
+               ash. Once you have used this ability, you cannot use it again until you finish a long rest.
                             
                             
                             
-    - Oath of Sacrifice Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: False Life, Sanctuary
-         5th Level: Blindness/Deafness, Lesser Restoration
-         9th Level: Life Transference, Vampiric Touch
-         13th Level: Aura of Life, Death Ward
-         17th Level: Enervation, Mass Cure Wounds
-       - Channel Divinity:
-         - Penitent Chain: You can use your Channel Divinity to force another creature to share your pain. As a bonus action, you link yourself to a creature within 30 feet for up to 1 minute. The next time you take damage, your
-                           target takes necrotic damage equal to the damage you suffered The effect then ends.
-         - Sanguinary Shield: You can use your Channel Divinity to spill your own blood in defense of your allies. As an action, you take damage equal to your paladin leveL This damage can't be reduced in any way. Each creature 
-                              of your choice within 30 feet of you then gains temporary hit points for 1 minute equal to the damage you took.
-       - Aura of Blood: you can tie your life force to those nearby, healing wounds or inflicting pain. When you take damage, choose a creature within 10 feet of you. It either regains hit points or takes necrotic damage equal 
-                        to your Charisma modifier (your choice). At 18th levet the range of this aura increases to 30 feet.
-       - Penance: when you inflict damage with an attack or spell on your turn, you can choose to take damage equal to your Charisma modifier. You can only use this feature once once per turn.
-       - Enduring Wrath: you can channel your pain into a terrible fury. While you have fewer than half of your hit points remaining and aren't incapacitated, you gain the following benefits
-         Righteous Fortitude: You have resistance to bludgeoning, piercing, and slashing damage.
-         Lust for Victory: You add half your proficiency bonus (rounded down) to your attack and damage rolls.
-       - Martyrdom: when you are reduced to 0 hit points you can use your reaction to return from the brink of death to save your aJiies and smite your foes. You stand up and regain 75 hit points. For 1 minute, you are cloaked 
-                    in a mantle of iridescent red light. The damage and healing from your Aura of Blood are doubled, and any damage you take from your Penance feature is reduced to 1. Once you use this feature, you must finish a
-                    long rest before you can do so again.
+  - title: Oath of Sacrifice Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: False Life, Sanctuary
+    - title: 5th Level
+    - content: Blindness/Deafness, Lesser Restoration
+    - title: 9th Level
+    - content: Life Transference, Vampiric Touch
+    - title: 13th Level
+    - content: Aura of Life, Death Ward
+    - title: 17th Level
+    - content: Enervation, Mass Cure Wounds
+    - title: Channel Divinity - Penitent Chain
+    - content: You can use your Channel Divinity to force another creature to share your pain. As a bonus action, you link yourself to a creature within 30 feet for up to 1 minute. The next time you take damage, your
+               target takes necrotic damage equal to the damage you suffered The effect then ends.
+    - title: Channel Divinity - Sanguinary Shield
+    - content: You can use your Channel Divinity to spill your own blood in defense of your allies. As an action, you take damage equal to your paladin leveL This damage can't be reduced in any way. Each creature 
+               of your choice within 30 feet of you then gains temporary hit points for 1 minute equal to the damage you took.
+    - title: Aura of Blood
+    - content: You can tie your life force to those nearby, healing wounds or inflicting pain. When you take damage, choose a creature within 10 feet of you. It either regains hit points or takes necrotic damage equal 
+               to your Charisma modifier (your choice). At 18th levet the range of this aura increases to 30 feet.
+    - title: Penance
+    - content: When you inflict damage with an attack or spell on your turn, you can choose to take damage equal to your Charisma modifier. You can only use this feature once once per turn.
+    - title: Enduring Wrath
+    - content: You can channel your pain into a terrible fury. While you have fewer than half of your hit points remaining and aren't incapacitated, you gain the following benefits
+               Righteous Fortitude - You have resistance to bludgeoning, piercing, and slashing damage.
+               Lust for Victory - You add half your proficiency bonus (rounded down) to your attack and damage rolls.
+    - title: Martyrdom
+    - content: When you are reduced to 0 hit points you can use your reaction to return from the brink of death to save your aJiies and smite your foes. You stand up and regain 75 hit points. For 1 minute, you are cloaked 
+               in a mantle of iridescent red light. The damage and healing from your Aura of Blood are doubled, and any damage you take from your Penance feature is reduced to 1. Once you use this feature, you must finish a
+               long rest before you can do so again.
                     
                     
                     
-    - Oath of Shadows Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Disguise Self, Dissonant Whispers
-         5th Level: Darkness, Mirror Image
-         9th Level: Blink, Nondetection
-         13th Level: Greater Invisibility, Shadow of Moil
-         17th Level: Mislead, Seeming
-       - Channel Divinity:
-         - Cloak of Shadows: You can use your Channel Divinity to give yourself and your alllies, a supernatural shroud of non-detection. As a bonus action, you and friendly creatures you can see within 30 feet of you gain a 
-                             bonus equal to half your character level plus your Charisma modifier to all Dexterity (stealth) checks made for the next ten minutes. Additionally, you no longer have disadvantage on stealth checks 
-                             imposed by medium or heavy armor when you use this channel divinity option.
-         - Shadowbomb Teleportation: As an action, you can teleport to an unoccupied space within 30 feet of you and all those within five feet of your original location must make a dexterity saving throw or take 2d6 necrotic 
-                                     damage on a failed save or half as much on a successful save.
-       - Aura of DarkSight: you see through darkness as if it were not even there. You and friendly creatures within 10 feet of you gain darkvision with a range of 60 feet or if you or anyone in your group already has darkvision
-                            they instead gain blind-sight with a range of 60 feet. At 18th level, the range of this aura increases to 30 feet.
-       - Dusk Knight: you become resistant to necrotic damage and can deal an extra amount of necrotic damage equal to your charisma modifier on an attack, once per turn.
-       - Nightfall: you learn to float like a looming shadow. You never suffer disadvantage on Dexterity (Stealth) checks for wearing any kind of armor you are proficient in. In addition, when you fall, if you are in dim light, 
-                    darkness, or shadows, you silently fall only 60 feet per round and do not take falling damage.
-       - Living Shadow: you become an incorporeal shadow as an action for 1 minute. You gain the following benefits;
-                        - You are resistant to non-magical bludgeoning, piercing, and slashing and become immune to necrotic damage.
-                        - You gain a flying speed equal to your walking speed and you can hover.
-                        - You can move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or an object. If you move through a creature they must
-                          make a constitution saving throw against your spell save DC on the start of their next turn. On a failed save they take 1d10 plus your charisma mod necrotic damage, can not take reactions on their turn 
-                          and their movement is reduced by half; on a succesful save they take half damage and their movement and reactions are unaffected.
+  - title: Oath of Shadows Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Disguise Self, Dissonant Whispers
+    - title: 5th Level
+    - content: Darkness, Mirror Image
+    - title: 9th Level
+    - content: Blink, Nondetection
+    - title: 13th Level
+    - content: Greater Invisibility, Shadow of Moil
+    - title: 17th Level
+    - content: Mislead, Seeming
+    - title: Channel Divinity - Cloak of Shadows
+    - content: You can use your Channel Divinity to give yourself and your alllies, a supernatural shroud of non-detection. As a bonus action, you and friendly creatures you can see within 30 feet of you gain a 
+               bonus equal to half your character level plus your Charisma modifier to all Dexterity (stealth) checks made for the next ten minutes. Additionally, you no longer have disadvantage on stealth checks 
+               imposed by medium or heavy armor when you use this channel divinity option.
+    - title: Channel Divinity - Shadowbomb Teleportation
+    - content: As an action, you can teleport to an unoccupied space within 30 feet of you and all those within five feet of your original location must make a dexterity saving throw or take 2d6 necrotic 
+               damage on a failed save or half as much on a successful save.
+    - title: Aura of DarkSight
+    - content: You see through darkness as if it were not even there. You and friendly creatures within 10 feet of you gain darkvision with a range of 60 feet or if you or anyone in your group already has darkvision
+               they instead gain blind-sight with a range of 60 feet. At 18th level, the range of this aura increases to 30 feet.
+    - title: Dusk Knight
+    - content: You become resistant to necrotic damage and can deal an extra amount of necrotic damage equal to your charisma modifier on an attack, once per turn.
+    - title: Nightfall
+    - content: You learn to float like a looming shadow. You never suffer disadvantage on Dexterity (Stealth) checks for wearing any kind of armor you are proficient in. In addition, when you fall, if you are in dim light, 
+               darkness, or shadows, you silently fall only 60 feet per round and do not take falling damage.
+    - title: Living Shadow
+    - content: You become an incorporeal shadow as an action for 1 minute. You gain the following benefits;
+               You are resistant to non-magical bludgeoning, piercing, and slashing and become immune to necrotic damage.
+               You gain a flying speed equal to your walking speed and you can hover.
+               You can move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or an object. If you move through a creature they must
+               make a constitution saving throw against your spell save DC on the start of their next turn. On a failed save they take 1d10 plus your charisma mod necrotic damage, can not take reactions on their turn 
+               and their movement is reduced by half; on a succesful save they take half damage and their movement and reactions are unaffected.
                           
                           
                           
-    - Oath of Simplicity Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Absorb Elements, Comprehend Langauges
-         5th Level: Calm Emotions, See Invisibility
-         9th Level: Clairvoyance, Dispel Magic
-         13th Level: Elemental Bane, Freedom of Movement
-         17th Level: Dispel Good and Evil, Greater Restoration
-       - Channel Divinity:
-         - Universal Truth: As an action, you can use your Channel Divinity to allow your weapon to cut through misdirection and false protections. For 1 minute, attacks made by your weapon are not affected by disadvantage, 
-                            rolling as normal instead. Furthermore, any magical effects which would reduce your attack rolls or damage rolls are also ignored, and any magical effects which would increase the targets AC are also 
-                            ignored If your weapon is not already magical it becomes magical for the duration. You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this 
-                            weapon, or if you fall unconscious, this effect ends.
-         - Stifle the Maddening: You can use your Channel Divinity to protect yourself and your allies from degredations of the mind. When you or an ally within 30 feet of you must make a Charisma or Wisdom saving throw or is 
-                                 going to take psychic damage, you can use your reaction to grant them and all allies within 30 feet of them advantage on that saving throw and resistance to psychic damage until the end of the
-                                 turn .
-       - Aura of Clarity: Your clarity of purpose and single minded determination helps better guide your allies. Allies within 10 feet of you gain a bonus to any Insight or Perception checks they make equal to your Charisma 
-                          modifier (min. 1) and may use your modifiers for those checks instead of their own. At 17th Level the range of this aura increases to 30 feet.
-       - Singular Focus: Through rigorous meditation (and self-delusion) you come to realize that true holy radiance is not necessarily holy or radiant. Choose a damage type when you gain this feature. Any damage dealt by your 
-                         Divine Smite class feature and any damage dealt by your spells becomes that damage type instead. You may choose a different damage type after a short or long rest.
-       - All Consuming Conviction: as an action, you may cloack yourself in your own convictions and rigid beliefs. For 1 minute, when you first use this feature and at the start of your turn, choose a damage type, replacing any
-                                   previously chosen types. Creatures within 30 feet of you of your choice lose all resistances and immunities to the chosen damage type, and gain a vulnerability to it for as long as they remain 
-                                   within 30 feet of you.
+  - title: Oath of Simplicity Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Absorb Elements, Comprehend Langauges
+    - title: 5th Level
+    - content: Calm Emotions, See Invisibility
+    - title: 9th Level
+    - content: Clairvoyance, Dispel Magic
+    - title: 13th Level
+    - content: Elemental Bane, Freedom of Movement
+    - title: 17th Level
+    - content: Dispel Good and Evil, Greater Restoration
+    - title: Channel Divinity - Universal Truth
+    - content: As an action, you can use your Channel Divinity to allow your weapon to cut through misdirection and false protections. For 1 minute, attacks made by your weapon are not affected by disadvantage, 
+               rolling as normal instead. Furthermore, any magical effects which would reduce your attack rolls or damage rolls are also ignored, and any magical effects which would increase the targets AC are also 
+               ignored If your weapon is not already magical it becomes magical for the duration. You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this 
+               weapon, or if you fall unconscious, this effect ends.
+    - title: Channel Divinity - Stifle the Maddening
+    - content: You can use your Channel Divinity to protect yourself and your allies from degredations of the mind. When you or an ally within 30 feet of you must make a Charisma or Wisdom saving throw or is 
+               going to take psychic damage, you can use your reaction to grant them and all allies within 30 feet of them advantage on that saving throw and resistance to psychic damage until the end of the
+               turn
+    - title: Aura of Clarity
+    - content: Your clarity of purpose and single minded determination helps better guide your allies. Allies within 10 feet of you gain a bonus to any Insight or Perception checks they make equal to your Charisma 
+               modifier (min. 1) and may use your modifiers for those checks instead of their own. At 17th Level the range of this aura increases to 30 feet.
+    - title: Singular Focus
+    - content: Through rigorous meditation (and self-delusion) you come to realize that true holy radiance is not necessarily holy or radiant. Choose a damage type when you gain this feature. Any damage dealt by your 
+               Divine Smite class feature and any damage dealt by your spells becomes that damage type instead. You may choose a different damage type after a short or long rest.
+    - title: All Consuming Conviction
+    - content: As an action, you may cloack yourself in your own convictions and rigid beliefs. For 1 minute, when you first use this feature and at the start of your turn, choose a damage type, replacing any
+               previously chosen types. Creatures within 30 feet of you of your choice lose all resistances and immunities to the chosen damage type, and gain a vulnerability to it for as long as they remain 
+               within 30 feet of you.
                                    
                                    
                                    
-    - Oath of Temperance Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Bless, Heroism
-         5th Level: Calm Emotion, Hold Person
-         9th Level: Glyph of Warding, Tiny Hut
-         13th Level: Polymorph, Resilient Sphere
-         17th Level: Hold Monster, Wall of Force
-       - Channel Divinity:
-         - Repenting Prayer: As an action, you can pray for the soul of the creature you want to attack. For one minute, every attack you make against that creature may have your Wisdom modifier added to both the attack and 
-                             damage rolls. Additionally, Divine Smites and spell-based smites do an extra 1 d8 damage to that creature. You may not do lethal damage to this creature until the combat is over and the creature 
-                             commits another evil act, as per DM's discretion.
-         - Vow of Humanity: As an action, when you see a frightened or charmed creature, you may present your holy symbol and begin to pray for that creature. That creature is no longer charmed or frightened; however, you must 
-                            make a Wisdom saving throw equal to your 8 + your proficiency+your Wisdom modi fier or suffer the effects yourself.
-       - Lifesaver: you produce of an aura around you for 10 feet. When any creature is struck while inside of your aura, you can use your reaction to split the damage in half between you and the creature. At the 18th level, 
-                    this aura spreads to 30 feet.
-       - Blessing of Mercy: when you see a creature hit 0 hit points, you have until the end of your turn (or one minute out of combat) to cast Spare the Dying as a bonus action on the creature, keeping it stabilized and 
-                            unconscious at 0 hit points. A creature may only receive this blessing once.
-       - Savior of Souls: you can take the form of a Savior of Souls. You may gain a halo of radiant light, begin to exude a gentle aura, hush the sounds and levels of light around, or some other peaceful effect signaling your 
-                          transformation.
-                          - Using your action, you may undergo this transformation. For 1 minute, you gain the following effects
-                          - You may roll a number of hit die as an action, losing that much health and restoring it to all creatures within 10 feet of you.
-                          - Creatures you strike must roll a hit die. When they fall to the amount of HP rolled or lower they are incapacitated but blessed, and thus cannot fall to 0 hit points until they commit another evil 
-                            act. The player decides whether an act is evil, and a creature cannot be blessed more than once in its lifetime.
-                          - Allied creatures within 10 feet of you automatically pass saving throws, but you must make the same saving throws at disadvantage or suffer the effects.
-                          Once you use this feature, you cannot use it again until you finish a long rest.
+  - title: Oath of Temperance Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Bless, Heroism
+    - title: 5th Level
+    - content: Calm Emotion, Hold Person
+    - title: 9th Level
+    - content: Glyph of Warding, Tiny Hut
+    - title: 13th Level
+    - content: Polymorph, Resilient Sphere
+    - title: 17th Level
+    - content: Hold Monster, Wall of Force
+    - title: Channel Divinity - Repenting Prayer
+    - content: As an action, you can pray for the soul of the creature you want to attack. For one minute, every attack you make against that creature may have your Wisdom modifier added to both the attack and 
+               damage rolls. Additionally, Divine Smites and spell-based smites do an extra 1 d8 damage to that creature. You may not do lethal damage to this creature until the combat is over and the creature 
+               commits another evil act, as per DM's discretion.
+    - title: Channel Divinity - Vow of Humanity
+    - content: As an action, when you see a frightened or charmed creature, you may present your holy symbol and begin to pray for that creature. That creature is no longer charmed or frightened; however, you must 
+               make a Wisdom saving throw equal to your 8 + your proficiency+your Wisdom modi fier or suffer the effects yourself.
+    - title: Lifesaver
+    - content: You produce of an aura around you for 10 feet. When any creature is struck while inside of your aura, you can use your reaction to split the damage in half between you and the creature. At the 18th level, 
+               this aura spreads to 30 feet.
+    - title: Blessing of Mercy
+    - content: When you see a creature hit 0 hit points, you have until the end of your turn (or one minute out of combat) to cast Spare the Dying as a bonus action on the creature, keeping it stabilized and 
+               unconscious at 0 hit points. A creature may only receive this blessing once.
+    - title: Savior of Souls
+    - content: You can take the form of a Savior of Souls. You may gain a halo of radiant light, begin to exude a gentle aura, hush the sounds and levels of light around, or some other peaceful effect signaling your 
+               transformation.
+               Using your action, you may undergo this transformation. For 1 minute, you gain the following effects
+               You may roll a number of hit die as an action, losing that much health and restoring it to all creatures within 10 feet of you.
+               Creatures you strike must roll a hit die. When they fall to the amount of HP rolled or lower they are incapacitated but blessed, and thus cannot fall to 0 hit points until they commit another evil 
+               act. The player decides whether an act is evil, and a creature cannot be blessed more than once in its lifetime.
+               Allied creatures within 10 feet of you automatically pass saving throws, but you must make the same saving throws at disadvantage or suffer the effects.
+               Once you use this feature, you cannot use it again until you finish a long rest.
                           
                           
                           
-    - Oath of The Drowned Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Thunderous Smite, Heroism
-         5th Level: Gust of Wind, Misty Step
-         9th Level: Water Breathing, Aura of Vitality
-         13th Level: Control Water, Freedom of Movement
-         17th Level: Cone of Cold, Raise Dead
-       - Channel Divinity:
-         - Turn the Sea: As an action, you present your holy symbol and speak a prayer censuring aquatic and amphibious creatures, using your Channel Divinity. Each aquatic or amphibious creature that can see or hear you within 
-                         30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far 
-                         away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that 
-                         prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
-         - Conquer the Water: As an action you can cause swirling water to launch out from your holy symbol and latch onto 4 creatures, which can include yourself. All creatures chosen can choose to gain a swim speed of 30 feet.
-                              This effect lasts for an amount of hours equal to your Charisma modifier.
-       - Aura of Humidity: you have an aura of humidity around you. The area within 10 feet of you in considered to be difficult terrain. You can choose to exclude specific creatures from this effect. In addition to this, you 
-                           feel comfortable in temperatures as high as 125 degrees fah renheit, and are unaffected by humidity. At 18th level, the range of this aura increases to 30 feet.
-       - Dancing Water Weapon: you can harvest water around you to extend your reach. As a bonus action you can have pillars of swirling water grab onto one or two melee weapons from your hands and carry them away. Your reach 
-                               with those melee weapons is increased by 20 feet. In addition to the extra reach, the water carrying the weapons assists in the fight. When you make an attack with a dancing weapon it deals an 
-                               additional ld6 bludgeoning damage as the water jets out at the creature as well. The weapons will dance for an amount of rounds equal to your Charisma modifier, after which the weapons will return 
-                               to your hands. lf your hands are full, they fall at your feet. Once you use this feature, you can't use it against until you frnish a short or long rest.
-       - Stormy Waters: as an action you can cause the ground within 30 feet of you to bubble and flow with water. For 1 minute you gain the following benerfits
-                        - When a creature moves within 30 feel of you, you can cause a geyser to erupt under their feet as a reaction. They must make a Dexterity saving throw or be flung 30 feet into the air.
-                        - You can use your action to cause watery weapons to attack all creatures of your choice within 30 feet. Make a separate melee weapon attack against a ll creatures in the area.
-                        Once you use this feature, you can't use it against until you finish a long rest.
+  - title: Oath of the Drowned Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Thunderous Smite, Heroism
+    - title: 5th Level
+    - content: Gust of Wind, Misty Step
+    - title: 9th Level
+    - content: Water Breathing, Aura of Vitality
+    - title: 13th Level
+    - content: Control Water, Freedom of Movement
+    - title: 17th Level
+    - content: Cone of Cold, Raise Dead
+    - title: Channel Divinity - Turn the Sea
+    - content: As an action, you present your holy symbol and speak a prayer censuring aquatic and amphibious creatures, using your Channel Divinity. Each aquatic or amphibious creature that can see or hear you within 
+               30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far 
+               away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that 
+               prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
+    - title: Channel Divinity - Conquer the Water
+    - content: As an action you can cause swirling water to launch out from your holy symbol and latch onto 4 creatures, which can include yourself. All creatures chosen can choose to gain a swim speed of 30 feet.
+               This effect lasts for an amount of hours equal to your Charisma modifier.
+    - title: Aura of Humidity
+    - content: You have an aura of humidity around you. The area within 10 feet of you in considered to be difficult terrain. You can choose to exclude specific creatures from this effect. In addition to this, you 
+               feel comfortable in temperatures as high as 125 degrees fah renheit, and are unaffected by humidity. At 18th level, the range of this aura increases to 30 feet.
+    - title: Dancing Water Weapon
+    - content: You can harvest water around you to extend your reach. As a bonus action you can have pillars of swirling water grab onto one or two melee weapons from your hands and carry them away. Your reach 
+               with those melee weapons is increased by 20 feet. In addition to the extra reach, the water carrying the weapons assists in the fight. When you make an attack with a dancing weapon it deals an 
+               additional ld6 bludgeoning damage as the water jets out at the creature as well. The weapons will dance for an amount of rounds equal to your Charisma modifier, after which the weapons will return 
+               to your hands. lf your hands are full, they fall at your feet. Once you use this feature, you can't use it against until you frnish a short or long rest.
+    - title: Stormy Waters
+    - content: As an action you can cause the ground within 30 feet of you to bubble and flow with water. For 1 minute you gain the following benerfits
+               When a creature moves within 30 feel of you, you can cause a geyser to erupt under their feet as a reaction. They must make a Dexterity saving throw or be flung 30 feet into the air.
+               You can use your action to cause watery weapons to attack all creatures of your choice within 30 feet. Make a separate melee weapon attack against a ll creatures in the area.
+               Once you use this feature, you can't use it against until you finish a long rest.
                         
                         
                         
-    - Oath of The Grim Hunt Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Long Strider, Faerie fire
-         5th Level: Misty Step, Hold Person
-         9th Level: Dispel Magic, Haste
-         13th Level: Locate Creature, Elemental Bane
-         17th Level: Hold Monster, Scrying
-       - Channel Divinity:
-         - Slayers Smite: You can use your channel divinity to deliver an earth shattering blow. Whenever you hit a creature with a melee attack you may use channel divinity to use your divine smite feature without using a spell
-                          slot. The level of the smite equals your highest level spell slot plus one, and there is no limit to the number of d8's that may be rolled for damage.
-         - Wind-backed Chase: You can use your channel divinity to grant you the speed of the wind in order to chase your target. Choose any number of creature within 30ft of you. For the next minute you and your chosen 
-                              creatures have their speed increased by 1Oft.
-       - Beacon of Safety: your magics give you and your allies safety from the effects of the abhorrent. You and friendly creatures within lOft of you gain a bonus to all saving throws equal to your charisma modifier. At 18th 
-                           level the range of this aura increases to 30ft
-       - Steel Hide: if you are dealt damage by an attack or spell made by a hostile creature, you may use your reaction to reduce the damage by an amount equal to your paladin level
-       - Chosen Slayer: you can spend an action to become your own kind of monster. You gain the following benefits for one minute
-                        - You and all your equipment become large, and you treat your total strength score as being 26.
-                        - You can't be paralyzed, stunned, or charmed
-                        - You can grapple creature that are two size categories larger than you.
-                        Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of the Grim Hunt Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Long Strider, Faerie fire
+    - title: 5th Level
+    - content: Misty Step, Hold Person
+    - title: 9th Level
+    - content: Dispel Magic, Haste
+    - title: 13th Level
+    - content: Locate Creature, Elemental Bane
+    - title: 17th Level
+    - content: Hold Monster, Scrying
+    - title: Channel Divinity - Slayers Smite
+    - content: You can use your channel divinity to deliver an earth shattering blow. Whenever you hit a creature with a melee attack you may use channel divinity to use your divine smite feature without using a spell
+               slot. The level of the smite equals your highest level spell slot plus one, and there is no limit to the number of d8's that may be rolled for damage.
+    - title: Channel Divinity - Wind-backed Chase
+    - content: You can use your channel divinity to grant you the speed of the wind in order to chase your target. Choose any number of creature within 30ft of you. For the next minute you and your chosen 
+               creatures have their speed increased by 1Oft.
+    - title: Beacon of Safety
+    - content: Your magics give you and your allies safety from the effects of the abhorrent. You and friendly creatures within lOft of you gain a bonus to all saving throws equal to your charisma modifier. At 18th 
+               level the range of this aura increases to 30ft
+    - title: Steel Hide
+    - content: If you are dealt damage by an attack or spell made by a hostile creature, you may use your reaction to reduce the damage by an amount equal to your paladin level
+    - title: Chosen Slayer
+    - content: You can spend an action to become your own kind of monster. You gain the following benefits for one minute
+               You and all your equipment become large, and you treat your total strength score as being 26.
+               You can't be paralyzed, stunned, or charmed
+               You can grapple creature that are two size categories larger than you.
+               Once you use this feature, you can't use it again until you finish a long rest.
                         
                         
                         
-    - Oath of Orthodoxy Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Bane, Disguise Self
-         5th Level: Detect Thoughts, Suggestion
-         9th Level: Bestow Curse, Fear
-         13th Level: Compulsion, Greater Invisibility
-         17th Level: Mislead, Scrying
-       - Channel Divinity:
-         - Stern Gaze: As a bonus action, you focus your mind on a particular creature, using your channel divinity. Choose one creature within 60 feet of you that you can see. You have advantage on Charisma-based skill checks 
-                       and Charisma saving throws against that creature, and the target has disadvantage on Charisma-based skill checks and Charisma saving throws against you for 1 minute.
-         - Unexpected Strike: As a bonus action, you can use your Channel Divinity to exploit your enemies' distractions. For a number of rounds equal to your Charisma modifier, you can add ld6 damage to creatures you hit with 
-                              an attack if you have advantage on the attack roll. You don't need advantage if an ally, that is not in capacitated, is within 5 feet of the target and you don't have disadvantage on the attack 
-                              roll.
-       - Lay On Brands: you can use Lay on Hands points instead of a spell slot when you use Divine Smite. You must spend 10 points per spell slot level. You cannot Divine Smite at a level above your highest spell slot.
-       - Soul Gaze: your Stern Gaze also affects Wisdom-based skill checks and Wisdom saving throws.
-       - Wrath Of The Faith: you can directly channel the fury of your faith into combat. Using your action, you can undergo a transformation. For 1 minute you gain the following benefits
-                             - You gain the benefits of Stern Gaze against every creature within 60 feet of you.
-                             - When you use Divine Smite, deal an extra ld8 radiant damage.
-                             - You emanate an aura of menace in a 60-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle. the creature must succeed on a Wisdom saving throw or 
-                               become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creatures have advantage.
-                             Once you use this feature, you can't use it again until you finish a long rest.
+  - title: Oath of Orthodoxy Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Bane, Disguise Self
+    - title: 5th Level
+    - content: Detect Thoughts, Suggestion
+    - title: 9th Level
+    - content: Bestow Curse, Fear
+    - title: 13th Level
+    - content: Compulsion, Greater Invisibility
+    - title: 17th Level
+    - content: Mislead, Scrying
+    - title: Channel Divinity - Stern Gaze
+    - content: As a bonus action, you focus your mind on a particular creature, using your channel divinity. Choose one creature within 60 feet of you that you can see. You have advantage on Charisma-based skill checks 
+               and Charisma saving throws against that creature, and the target has disadvantage on Charisma-based skill checks and Charisma saving throws against you for 1 minute.
+    - title: Channel Divinity - Unexpected Strike
+    - content: As a bonus action, you can use your Channel Divinity to exploit your enemies' distractions. For a number of rounds equal to your Charisma modifier, you can add ld6 damage to creatures you hit with 
+               an attack if you have advantage on the attack roll. You don't need advantage if an ally, that is not in capacitated, is within 5 feet of the target and you don't have disadvantage on the attack 
+               roll.
+    - title: Lay On Brands
+    - content: You can use Lay on Hands points instead of a spell slot when you use Divine Smite. You must spend 10 points per spell slot level. You cannot Divine Smite at a level above your highest spell slot.
+    - title: Soul Gaze
+    - content: Your Stern Gaze also affects Wisdom-based skill checks and Wisdom saving throws.
+    - title: Wrath Of The Faith
+    - content: You can directly channel the fury of your faith into combat. Using your action, you can undergo a transformation. For 1 minute you gain the following benefits
+               You gain the benefits of Stern Gaze against every creature within 60 feet of you.
+               When you use Divine Smite, deal an extra ld8 radiant damage.
+               You emanate an aura of menace in a 60-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle. the creature must succeed on a Wisdom saving throw or 
+               become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creatures have advantage.
+               Once you use this feature, you can't use it again until you finish a long rest.
                              
                              
                              
-    - Oath of The Grave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Inflict Wounds, Ice Knife
-         5th Level: Gentle Repose, Snowball Swarm
-         9th Level: Sleet Storm. Speak With Dead
-         13th Level: Blight, Ice Storm
-         17th Level: Cone of Cold, Destructive Wave
-       - Channel Divinity:
-         - Icy Repose.: As an action, you present your holy symbol and speak a prayer against undcath, using your Channel Divinity. Each undead that can see or hear you within 30 feet of you must make a Wi sdom saving throw. If 
-                        the creature fails its saving throw, it is frozen for I minute or until it takes damage. A frozen creature is affected by the petrified condition until the frozen effect ends, at which point the creature 
-                        is freed and able to act norn1ally.
-         - Vow of Death: As a bonus action, you can utter a vow of death against a creature you can see within 10 feet of you, using your Channel Divinity. You deal an extra ld6 necrotic damage to the creature whenever you hit
-                         it with an attack for I minute or until it drops to 0 hit points or falls unconscious. If a creature under this effect dies, it can't become undead.
-       - Aura of Preservation: you and friendly creatures within 10 feet of you have resistance to necrotic damage, and cannot be charmed. frightened, or possessed by undead creatures. At 18th level, the range of this aura 
-                               increases to 30 feet.
-       - Soul of Demise: your vow of death has become far more persistent. When a creature under the effect of your vow of death dies, that creature cannot be raised from the dead for the next 30 days, outside of using a wish 
-                         spell. Additionally, you can use a bonus action on your next to mark a new creature.
-       - Reaper of Winter: as an action, you can surround yourself with a deathly chill. For I minute, swirls of chilling wind surround you in a 30 foot radius. Whenever an enemy creature starts its turn in the area, the 
-                           creature takes 6d10 cold damage and their movement speed is reduced by 10 feet. In addition, whenever a creature dies within the area, you regain 20 hit points. Once you use this feature, you can't use
-                           it again until you finish a long rest.
+  - title: Oath of the Grave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Inflict Wounds, Ice Knife
+    - title: 5th Level
+    - content: Gentle Repose, Snowball Swarm
+    - title: 9th Level
+    - content: Sleet Storm. Speak With Dead
+    - title: 13th Level
+    - content: Blight, Ice Storm
+    - title: 17th Level
+    - content: Cone of Cold, Destructive Wave
+    - title: Channel Divinity - Icy Repose
+    - content: As an action, you present your holy symbol and speak a prayer against undcath, using your Channel Divinity. Each undead that can see or hear you within 30 feet of you must make a Wi sdom saving throw. If 
+               the creature fails its saving throw, it is frozen for I minute or until it takes damage. A frozen creature is affected by the petrified condition until the frozen effect ends, at which point the creature 
+               is freed and able to act norn1ally.
+    - title: Channel Divinity - Vow of Death
+    - content: As a bonus action, you can utter a vow of death against a creature you can see within 10 feet of you, using your Channel Divinity. You deal an extra ld6 necrotic damage to the creature whenever you hit
+               it with an attack for I minute or until it drops to 0 hit points or falls unconscious. If a creature under this effect dies, it can't become undead.
+    - title: Aura of Preservation
+    - content: You and friendly creatures within 10 feet of you have resistance to necrotic damage, and cannot be charmed. frightened, or possessed by undead creatures. At 18th level, the range of this aura 
+               increases to 30 feet.
+    - title: Soul of Demise
+    - content: Your vow of death has become far more persistent. When a creature under the effect of your vow of death dies, that creature cannot be raised from the dead for the next 30 days, outside of using a wish 
+               spell. Additionally, you can use a bonus action on your next to mark a new creature.
+    - title: Reaper of Winter
+    - content: As an action, you can surround yourself with a deathly chill. For I minute, swirls of chilling wind surround you in a 30 foot radius. Whenever an enemy creature starts its turn in the area, the 
+               creature takes 6d10 cold damage and their movement speed is reduced by 10 feet. In addition, whenever a creature dies within the area, you regain 20 hit points. Once you use this feature, you can't use
+               it again until you finish a long rest.
                            
                            
                            
-    - Oath of The Grave Abilities:
-       - Spellcasting: Spell DC
-         3rd Level: Alarm, Protection From Evil and Good
-         5th Level: Calm Emotions, Heat Metal
-         9th Level: Counterspell, Intellect Fortress
-         13th Level: Fabricate, Summon Construct
-         17th Level: Dispel Evil and Good, Steel Wind Strike
-       - Channel Divinity:
-         - Artificial Intelligence: As a bonus action, you can use your Channel Divinity to enter a state of clockwork consciousness. For the next 10 minutes, you can use your Charisma modifier in place of your Intelligence 
-                                    modifier when making Intelligence checks and Intelligence saving throws.
-         - Restore Balance: You can use your Channel Divinity to temporarily link yourself to the plane of absolute order. As an action, you present your holy symboL and a sphere of shimmering, golden particles emanates from 
-                            you. The sphere is centered on you and has 30-foot radius. It moves with you, and lasts for 1 minute or until you are knocked unconscious. When a creature you can see within the range of sphere is 
-                            about to roll a d20 with advantage or disadvantage, you prevent the roll from being affected by advantage or disadvantage. For the purpose of determining skills like Sneak Attack, attack rolls that 
-                            would benefit from advantage but didn't because of Restore Balance are s till treated as an attack with advantage.
-       - Bulwark of Law: when you or a friendly creature within 10 feet of you is s ubjected to an effect that allows to make a saving throw to take only half damage, it instead takes half damage on both success and a fail. At 
-                         18th level the range of this aura increases to 30 feet.
-       - Grey Spirit: you gain immunity to all magical effects that otherwise would change your alignment, short of a Wish spell
-       - Clockwork Predictability: you can replace any attack roll saving throw, or ability check made by you or a creature that you can see with a 10 on the die. You must choose to do so before the roll. Once you use this 
-                                   ability, you can't use it again until you finish a short or long rest.
-       - Balance Bringer: you gain the ability to harness extraordinary powers of Mechanus. As a bonus action, you can become an avatar of balance, gaining the following benefits for 1 minute
-                          - Whenever you make an attack roH an ability check or a saving throw, you can treat a d20 roll of 9 or lower as a 10.
-                          - Whenever you make a damage rolL you can choose to deal half the maximum damage instead of rolling.
-                          - You have resistance to psychic, necrotic and radiant damage.
-                          Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.
+  - title: Oath of Balance Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Alarm, Protection From Evil and Good
+    - title: 5th Level
+    - content: Calm Emotions, Heat Metal
+    - title: 9th Level
+    - content: Counterspell, Intellect Fortress
+    - title: 13th Level
+    - content: Fabricate, Summon Construct
+    - title: 17th Level
+    - content: Dispel Evil and Good, Steel Wind Strike
+    - title: Channel Divinity - Artificial Intelligence
+    - content: As a bonus action, you can use your Channel Divinity to enter a state of clockwork consciousness. For the next 10 minutes, you can use your Charisma modifier in place of your Intelligence 
+               modifier when making Intelligence checks and Intelligence saving throws.
+    - title: Channel Divinity - Restore Balance
+    - content: You can use your Channel Divinity to temporarily link yourself to the plane of absolute order. As an action, you present your holy symboL and a sphere of shimmering, golden particles emanates from 
+               you. The sphere is centered on you and has 30-foot radius. It moves with you, and lasts for 1 minute or until you are knocked unconscious. When a creature you can see within the range of sphere is 
+               about to roll a d20 with advantage or disadvantage, you prevent the roll from being affected by advantage or disadvantage. For the purpose of determining skills like Sneak Attack, attack rolls that 
+               would benefit from advantage but didn't because of Restore Balance are s till treated as an attack with advantage.
+    - title: Bulwark of Law
+    - content: When you or a friendly creature within 10 feet of you is s ubjected to an effect that allows to make a saving throw to take only half damage, it instead takes half damage on both success and a fail. At 
+               18th level the range of this aura increases to 30 feet.
+    - title: Grey Spirit
+    - content: You gain immunity to all magical effects that otherwise would change your alignment, short of a Wish spell
+    - title: Clockwork Predictability
+    - content: You can replace any attack roll saving throw, or ability check made by you or a creature that you can see with a 10 on the die. You must choose to do so before the roll. Once you use this 
+               ability, you can't use it again until you finish a short or long rest.
+    - title: Balance Bringer
+    - content: You gain the ability to harness extraordinary powers of Mechanus. As a bonus action, you can become an avatar of balance, gaining the following benefits for 1 minute
+               Whenever you make an attack roH an ability check or a saving throw, you can treat a d20 roll of 9 or lower as a 10.
+               Whenever you make a damage rolL you can choose to deal half the maximum damage instead of rolling.
+               You have resistance to psychic, necrotic and radiant damage.
+               Once you use this feature, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.
+                          
+                          
+                          
+  - title: Oath of Freedon Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Expeditious Retreat, Feather Fall
+    - title: 5th Level
+    - content: Knock, Misty Step
+    - title: 9th Level
+    - content: Haste, Fly
+    - title: 13th Level
+    - content: Dimension Door, Freedom of Movement
+    - title: 20th Level
+    - content: Passwall, Teleportation Circle
+    - title: Channel Divinity - Divine Translocation
+    - content: You can invoke the sacred power of freedom to spirit your allies through arcane passageways. As an action, you can choose a number of willing creatures you can see within 30 feet of you, up to your Charisma 
+               modifier (minimum of one creature). The chosen creatures are each teleported up to 30 feet to unoccupied spaces you can see.
+    - title: Channel Divinity - Break the Chains
+    - content: You can magically empower an ally with the strength to break free of that which binds them. As a bonus action, you can end any of the following conditions on yourself or a willing creature you can see within 30 
+               feet of you - Paralyzed, Stunned, Grappled, or Restrained.
+    - title: Aura of Escape
+    - content: Your presence on the battlefield secures the retreat of your wards. Hostile creatures within 5 feet of you can’t make opportunity attacks against your allies, provided you aren’t incapacitated.
+               At 18th level, the range of this ability increases to 10 feet.
+    - title: Holy Emancipator
+    - content: You can cause a friendly creature of your choice to erupt with emancipating energy immediately before or after you target it with one of your Channel Divinity options. Hostile creatures within 10 feet of the 
+               target must make a Constitution saving throw, taking radiant damage equal to 3d8 + half your paladin level on a failed save, or half as much on a success. On a failed save, a creature is also pushed up to 10 feet 
+               away from the target.
+    - title: Spirit of Freedom
+    - content: Your liberating will manifests in full. None shall bind you. As a bonus action, you gain the following benefits for 1 minute
+               You are immune to being Paralyzed, Stunned, Grappled, or Restrained.
+               Your speed cannot be reduced, and you gain a magical flying speed equal to your walking speed.
+               If a hostile creature you can see subjects a friendly creature to the Paralyzed, Stunned, Grappled, or Restrained condition, you gain advantage on attack rolls against that hostile creature until the condition ends.
+               Once you use this bonus action, you can't do so again until you finish a long rest, unless you expend a 5th level spell slot to use it again.
