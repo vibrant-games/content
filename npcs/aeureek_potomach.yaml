@@ -105,25 +105,6 @@ metadata:
   #
   date: "2021-05-09"
 
-  #
-  # Arbitrary labels that are opaque to the system, only
-  # potentially useful to humans.  For example, the original
-  # WordPress id of a character (1234 etc).
-  #
-  # Optional.
-  #
-  labels:
-  - label_template_1: TEMPLATE
-  - label_template_2: TEMPLATE
-  - label_template_3: TEMPLATE
-
-  #
-  # In future more metadata will likely be needed.
-  # How the data was submitted, some kind of digital
-  # signature giving Vibrant Games license to basically
-  # use the content however it chooses, etc...
-  #
-
 #
 # The content:
 #
@@ -215,7 +196,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Diplomat; Magistrate; Political Advisor;
+    - Diplomat, Magistrate, Political Advisor
     
 
     #
@@ -289,15 +270,6 @@ npc:
     #
     alignment: Neutral Good
 
-    #
-    # Alignment tendencies:
-    # same as alignment, can be 0 or more.
-    #
-    # Optional.
-    #
-    tendencies:
-    - N/A
-
 
     #
     # Languages the character speaks
@@ -338,7 +310,6 @@ npc:
       name: Militia of Hula-krah
       role: Diplomat
 
-
     #
     # Adjectives or other tags that can be used for searching.
     #
@@ -346,6 +317,8 @@ npc:
     #
     adjectives:
     - Regal
+    - Ambitious
+    - Driven
 
   improv:
 
@@ -387,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "I assume you cannot comprehend our mother tongue or that I just demanded your commitment to keeping peace"
+    expressions: "I assume you cannot comprehend our mother tongue or that I just demanded your commitment to keeping peace"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -437,7 +410,7 @@ npc:
     # ???Maximum length???
     #
     secrets: |
-       
+       She secretly desires to lead
       
   #
   # The D & D stats block:
@@ -482,12 +455,13 @@ npc:
     - Insight
     - Deception
   special-abilities:
-  - title: Aarakocra Traits
-  - abilities:
+  - title: Aarakocra Abilities
+  - abilities: 
     - title: Flight
     - content: Flying speed is 50 feet
     - title: Talons
     - content: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+  #special-abilities: 
   - title: Wizard Abilities
   - abilities:
     - title: Arcane Recovery
@@ -505,7 +479,7 @@ npc:
       - title: 3rd Level
       - content: Counterspell, Dispel Magic, Glyph of Warding      
   - title: School of Lore Mastery Abilities
-  - abilities:
+  - abilities: 
     - title: Lore Master
     - content: You become an increasingly broader compendium of knowledge on a vast array of topics. Choose one skill from Arcana, History, Nature or Religion. Your proficiency bonus is doubled for any ability check that 
                uses the chosen skill if you are proficient in that skill. At levels 6, 10 and 14 you get to choose one more skill from the list. In addition, your initiative in combat can be driven by mental agility, 
@@ -524,14 +498,16 @@ npc:
                additional 2nd-level spell slot can increase the spell's range. If the spell's range is at least 30 feet, it's range is tripled, or it becomes 1/4 of a mile (whichever is greater) An additional 3rd-
                level spell slot can increase the spell's potency. Increase the spell's save DC by 2 for one turn against all targets.          
 
-  attacks: |
-    Claws and Quarterstaff
-  combat-tactics: |
-    She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. 
-    Then she will use AoE spells if safe to do so.
-  special-equipment:
-  - title: Protective Verses Spellbook
-  - content: Contains the spells Arcane Lock, Dispel Magic, Globe of Invulnerability, Glyph of Warding, Mordenkainen's Private Sanctum, Protection from Evil, Symbol. It functions as a spellbook. While holding the book it can be used as a spellcasting focus. The book has 3 charges. It regains 1d3 expended charges daily at dawn. Charges can be used in the following ways while holding it - Spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book.  The new spell must be of the abjuration school. When casting an abjuration spell expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
+  - title: Attacks
+  - content: Talons and Quarterstaff
+  - title: Combat Tactics
+  - content: She will take to flight and find high ground from which to cast spells, beginning with arcane wards followed by any charm or control-type spells on the most formidable opponents. 
+             Then she will use AoE spells if safe to do so.
+    
+  - title: Special Equipment
+  - abilities:
+    - title: Protective Verses Spellbook
+    - content: Contains the spells Arcane Lock, Dispel Magic, Globe of Invulnerability, Glyph of Warding, Mordenkainen's Private Sanctum, Protection from Evil, Symbol. It functions as a spellbook. While holding the book it can be used as a spellcasting focus. The book has 3 charges. It regains 1d3 expended charges daily at dawn. Charges can be used in the following ways while holding it - Spend 1 minute studying the book to expend 1 charge to replace one prepared wizard spell with a different spell in the book.  The new spell must be of the abjuration school. When casting an abjuration spell expend 1 charge to grant a creature she can see within 30 feet 2d10 temporary hit points.
 
   profile:
 

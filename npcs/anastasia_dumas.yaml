@@ -267,18 +267,8 @@ npc:
     #
     # Required.
     #
-    alignment: chaotic evil
+    alignment: Chaotic Evil
 
-    #
-    # Alignment tendencies:
-    # same as alignment, can be 0 or more.
-    #
-    # Optional.
-    #
-    tendencies:
-    - TEMPLATE
-    - TEMPLATE
-    - TEMPLATE
 
     #
     # Languages the character speaks
@@ -353,7 +343,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:  Ancient with sharp, angular features. Tiny, feeble and gray but with deep piercing eyes. Dressed like a rich old lady.
+    appearance: Ancient with sharp, angular features. Tiny, feeble and gray but with deep piercing eyes. Dressed like a rich old lady.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -369,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  
+    expressions: 
     - "Come my dearies, Feast!"
     - "Join our family, the Master will love you!"
     - "Burnnnn!!!"
@@ -385,7 +375,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:  Eerily calm and still except for a chronic cough.
+    mannerisms: Eerily calm and still except for a chronic cough.
 
   acting:
     #
@@ -449,23 +439,27 @@ npc:
   specialties:
     saving-throws:
     - Constitution
-    - Strength
+    - Intelligence
     damage-immunities:
-    - N/A
+    - Necrotic
     condition-immunities:
-    - N/A
+    - Frightened, Charmed, Poisoned
     resistances:
-    - N/A
+    - Necrotic, Fire
     skills:
-    - Masonry
-    proficiencies: 
+    - Leatherworking
+    proficiencies:
+    - Arcana
+    - Perception    
     - Intimidation
     - Persuasion
-    - Mason's Tools
+    - Leatherworking Tools
     - Woodcrafter's Tools
-  special-abilities: 
-  - title: Sorcerer Spellcasting
+  special-abilities:
+  - title: Sorcerer Abilities
   - abilities: 
+    - title: Sorcerer Spellcasting
+    - abilities: 
     - title: Sorcery Points
     - content: 20 
     - title: Spell DC
@@ -507,30 +501,30 @@ npc:
   - title: Sorcerous Restoration
   - content: you regain 4 expended sorcery points whenever you finish a Short Rest
   - title: Shadow Magic Abilities
-  - abilities:
+  - abilities: 
     - title: Eyes of the Dark
     - content: You have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
                can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
     - title: Strength of the Grave
     - content: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
                reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
-  - title: Hound of Ill Omen
-  - content: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes
-  - abilities:
-    - The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
-    - It appears with a number of temporary hit points equal to half your sorcerer level.
-    - It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
-    - At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
-    - The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
-      can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
-      disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
-  - title: Shadow walk
-  - content: You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can teleport up to 120 feet to an unoccupied space you can see that is also in dim 
-             light or darkness.
-  - title: Umbral form
-  - content: You can spend 6 sorcery points as a bonus action to transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other 
-             creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. You remain in this form for 1 minute. It ends early if you are incapacitated, if you 
-             die, or if you dismiss it as a bonus action.
+    - title: Hound of Ill Omen
+    - content: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can 
+               see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes - 
+               The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
+               It appears with a number of temporary hit points equal to half your sorcerer level.
+               It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
+               At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
+               The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
+               can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
+               disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
+    - title: Shadow Walk
+    - content: You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action, you can teleport up to 120 feet to an unoccupied space you can see that is also in dim 
+               light or darkness.
+    - title: Umbral Form
+    - content: You can spend 6 sorcery points as a bonus action to transform yourself into a shadowy form. In this form, you have resistance to all damage except force and radiant damage, and you can move through other 
+               creatures and objects as if they were difficult terrain. You take 5 force damage if you end your turn inside an object. You remain in this form for 1 minute. It ends early if you are incapacitated, if you 
+               die, or if you dismiss it as a bonus action
   - title: Shadow Sorcerer Quirks 
   - content: When you are asleep, you don't appear to breathe (though you must still breathe to survive).
   - title: Legendary Resistance
@@ -538,27 +532,33 @@ npc:
   - title: Legendary Actions
   - content: Anastasia Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Anastasia Dumas regains spent Legendary Actions at the start of her turn.
   - abilities:
-    - title: devils portal
+    - title: Devil's Portal
     - content: Anastasia can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-    - title: cantrips
+    - title: Cantrips
     - content: Anastasia Dumas casts a cantrip
-    - title: family reserve
+    - title: Family Reserve
     - content: Anastasia Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight   
 
-  attacks: |
-    Spellcasting
-    Legendary Actions
-  combat-tactics: |
-    Prefers to let her family do her fighting for her but is an exceedingly powerful spellcaster if it comes to it 
+  - title: Attacks
+  - content: Spellcasting and Legendary Actions
+  - title: Combat Tactics
+  - content: Prefers to let her family do her fighting for her but is an exceedingly powerful spellcaster if it comes to it 
      
-  special-equipment:
-  - title: Ring of Evasion
-  - content:
-  - title: Ring of Spell Turning
-  - content:
-  - title: Ring of Regeneration
-  - content:
-  - title: Amulet of the Planes
+  - title: Special Equipment
+  - abilities:
+    - title: Ring of Evasion
+    - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving 
+               throw instead.
+    - title: Ring of Spell Turning
+    - content: While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the 
+               spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
+    - title: Ring of Regeneration
+    - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full 
+               functionality after 1d6 + 1 days if you have at least 1 hit point the whole time.
+    - title: Amulet of the Planes
+    - content: While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift
+               spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1–60, you travel to a random location on the plane you named. On a 61–100, you travel
+               to a randomly determined plane of existence
 
   profile:
 
