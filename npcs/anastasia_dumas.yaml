@@ -285,6 +285,7 @@ npc:
     - Common
     - Abyssal
     - Draconic
+    - Infernal
 
     #
     # Factions:
@@ -499,8 +500,8 @@ npc:
     - title: Twinned spell
     - content: When you Cast a Spell that Targets only one creature and doesn’t have a range of self, you can spend a number of sorcery points equal to the spell’s level to target a second creature in range with the 
                    same spell (1 sorcery point if the spell is a cantrip)
-  - title: Sorcerous Restoration
-  - content: you regain 4 expended sorcery points whenever you finish a Short Rest
+    - title: Sorcerous Restoration
+    - content: you regain 4 expended sorcery points whenever you finish a Short Rest
   - title: Shadow Magic Abilities
   - abilities: 
     - title: Eyes of the Dark
