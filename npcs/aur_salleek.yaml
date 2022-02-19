@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: elderly
+    age: Elderly
 
     #
     # Races (case insensitive):
@@ -340,8 +340,6 @@ npc:
     factions:
     - id: N/A
       name: N/A
-    - id: N/A
-      name: N/A
       role: N/A
 
 
@@ -470,50 +468,90 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Intelligence
+    - Wisdon
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Aarakocra Abilities:
-       - Flight:  flying speed of 50 feet. To use this speed, you can’t be wearing medium or heavy armor           
-         Talons: proficient with your unarmed strikes, which deal 1d6 slashing damage on a hit  
-
-         Littlebird Abilities:
-         - Flitter: His small size prevents attacks of opportunity against you when you are in flight
-           Natural Acrobat: proficient in Dexterity (Acrobatics) checks       
-    
-      Monk Abilities:
-      - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-        
-        Martial Arts:
-         - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-         - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
-         - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-        
-        Ki:
-        - Description: 5 Ki Points, Ki DC=15
-          Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          Step of the Wind: Can spend 1 Ki point to take the Disengage or d=Dash action as a bonus action. Jump distance is doubled for the turn
-        Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move. 
-        Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                         free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-        Slow Fall: Can us a Reaction to falling damage by by 85hp
-        Extra Attack: Can Attack twice per turn
-        Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn    
- 
-      Way of Mercy Abilities:
-      - Hands of Healing:   As an action, he can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of his Martial Arts die + his Wisdom modifier. When using Flurry of Blows, he can 
-                            replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.
-        Hands of Harm:  When hitting a creature with an unarmed strike, he can spend 1 ki point to deal extra necrotic damage equal to one roll of his Martial Arts die + his Wisdom modifier. He can use this feature 
-                        only once per turn 
+    - Librarian
+    proficiencies:
+    - Persuasion
+    - Performance
+    - Insight    
+    - Perception
+    - Medicine
+    - Arcana
+    - Acrobatics
+    - Unarmed Strike
+  special-abilities:
+  - title: Aarakocra Abilities
+  - abilities: 
+    - title: Flight
+    - content: Flying speed is 50 feet
+    - title: Talons
+    - content: Proficiency in Unarmed Strikes, doing 1d4 slashing damage 
+  - title: Littlebird Abilities
+  - abilities:
+    - title: Flitter
+    - content: His small size prevents attacks of opportunity against you when you are in flight
+    - title: Natural Acrobat
+    - content: Proficient in Dexterity (Acrobatics) checks       
+  - title: Monk Abilities
+  - abilities:
+    - title: Unarmored Defense 
+    - content: When not wearing armor Ac = 10 + Dexterity + Wisdom
+  - title: Martial Arts
+  - abilities:
+    - content: Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+               Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+               When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+  - title: Ki
+  - abilities:  
+    - title: Ki Points
+    - contents: 5
+    - title: Ki DC
+    - contents: 15
+    - title: Flurry of Blows
+    - content: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+    - title: Patient Defense
+    - content: Can spend 1 Ki point to take the Dodge action as a bonus action
+    - title: Step of the Wind
+    - content: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+    - title: Unarmored Movement
+    - content: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+    - title: Deflect Missles
+    - content: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+               free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+    - title: Slow Fall
+    - content: Can us a Reaction to falling damage by by x hp
+    - title: Extra Attack
+    - content: Can Attack twice per turn
+    - title: Stunning Strike
+    - content: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn    
+  - title: Way of Mercy Abilities
+  - abilities: 
+    - title: Hands of Healing
+    - content: Your mystical touch can mend wounds. As an action, you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier. When 
+               you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.
+    - title: Hands of Harm
+    - content: You use your ki to inflict wounds. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra necrotic damage equal to one roll of your Martial Arts die + your Wisdom modifier.
+               You can use this feature only once per turn.
        
-    special-abilities:
-    - Proficiencies: Persuasion, Performance, Insight, Perception, Medicine     
-    
-    attacks: |
-      2 Unarmed Attacks
-    combat-tactics: |
-      Will not fight unless his life is in danger
-    special-equipment:
-          - Tome of Understanding
+  - title: Attacks
+  - content: 2 Unarmed Attacks
+  - title: Combat Tactics
+  - content: Will not fight unless his life is in danger
+
+  - title: Special Equipment
+  - abilities:
+    - title: Tome of Understanding
+    - content: This book contains intuition and Insight exercises, and its words are charged with magic. If you spend 48 hours over a period of 6 days or fewer studying the book's Contents and practicing its guidelines, your 
+               Wisdom score increases by 2, as does your maximum for that score. The manual then loses its magic, but regains it in a century.
                                                                    
   profile:
 

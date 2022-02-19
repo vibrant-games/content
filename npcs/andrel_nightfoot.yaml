@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -466,56 +466,101 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Frightened
     skills:
-     - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-         Brave: Has advantage on Saving Throws against being Frightened 
-         Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-       Ghostwise Abilities:
-       - Silent Speech: Can speak telepathically to any creature within 30 feet. The creature understands her only if they share a language. Can speak telepathically in this way to one creature at a time.       
-       Ranger Abilities:
-       - Ranger Spellcasting: 
-         - Description: Spell DC14 
-           1st Level: Hunter's Mark, Speak with Animals, Goodberry, Detect Magic 
-           2nd Level: Locate Animals or Plants, Pass Without Trace, Summon Beast        
-         Favored Enemy: Orc & Giant - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
-         Natural Explorer: 
-         - Description: Favored Terrain - Forest & Swamp
-           Additional Information:
-           - Difficult Terrain doesn't slow your group's Travel
-           - Your group can't become lost except by magical means
-           - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-           - If you are traveling alone, you can move stealthily at a normal pace
-           - When you Forage, you find twice as much food as you normally would
-           - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-         Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-         Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
-                             types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
-                             reveal the creatures' location or number.
-         Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-         Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
-                     or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell       
-       Gloom Stalker Abilities:
-       - Gloom Stalker Spellcasting: 
-         - Description: Spell DC14 
-           3rd Level: Disguise Self 
-           5th Level: Rope Trick
-         Dread Ambusher:  can give yourself a bonus to her initiative rolls equal to her Wisdom modifier. At the start of her first turn of each combat, her walking speed increases by 10 feet, which lasts until the end of 
-                         that turn. If she takes the Attack action on that turn, she can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 1d8 damage of the weapon's 
-                         damage type.
-         Umbra Sight:  darkvision out to a range of 60 feet. While in darkness, she is invisible to any creature that relies on darkvision to see her in that darkness. 
-         Iron Mind: Proficiency in Wisdom saving throws.        
-
-    special-abilities:
-    - Proficiencies: Persuasion, Performance, Insight, Perception, Nature 
-      Feats: Alert, Crossbow Expert, Sharpshooter    
-    
-    attacks: |
-      2 Attacks with her light crossbow or short sword
-    combat-tactics: |
-      Prefer's Distance Fighting, but isn't afraid to mix it up close and personal if she has to
-    special-equipment:
-          - Seeker's Compass
+    - Tracking, Hunting and Scouting
+    proficiencies:
+    - Performance
+    - Perception
+    - Nature    
+    - Intimidation
+    - Persuasion
+  special-abilities:
+  - title: Halfling Abilities
+  - abilities: 
+    - title: Lucky
+    - content: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+    - title: Brave
+    - content: Has advantage on Saving Throws against being Frightened 
+    - title: Halfling Nimbleness
+    - content: Can move through the space of any creature that is of a size larger than her
+  - title: Ghostwise Abilities
+  - abilities:
+    - title: Silent Speech
+    - content: You can speak telepathically to any creature within 30 feet of you. The creature understands you only if the two of you share a language. You can speak telepathically in this way to one creature at a time.  
+  - title: Ranger Abilities
+  - abilities:
+  - title: Ranger Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: 1st Level
+    - content: Hunter's Mark, Speak with Animals, Goodberry, Detect Magic 
+    - title: 2nd Level
+    - content: Locate Animals or Plants, Pass Without Trace, Summon Beast        
+    - title: Favored Enemy - Orc and Giant
+    - content: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+    - title: Natural Explorer 
+    - content: Favored Terrain - Forrest 
+               Difficult Terrain doesn't slow your group's Travel
+               Your group can't become lost except by magical means
+               Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+               If you are traveling alone, you can move stealthily at a normal pace
+               When you Forage, you find twice as much food as you normally would
+               While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+    - title: Fighting Style
+    - content: Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.
+    - title: Primeval Awareness
+    - content: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+               types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+               reveal the creatures' location or number.
+    - title: Extra Attack
+    - content: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+    - title: Landstride
+    - cintent: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
+               or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell       
+  - title: Gloom Stalker Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Disguise Self 
+    - title: 5th Level
+    - content: Rope Trick
+    - title: Dread Ambusher
+    - content: You master the art of the ambush. You can give yourself a bonus to your initiative rolls equal to your Wisdom modifier. At the start of your first turn of each combat, your walking speed increases by 10 
+               feet, which lasts until the end of that turn. If you take the Attack action on that turn, you can make one additional weapon attack as part of that action. If that attack hits, the target takes an extra 
+               1d8 damage of the weapon's damage type.
+    - title: Umbra Sight
+    - content: You gain darkvision out to a range of 60 feet. If you already have darkvision from your race, its range increases by 30 feet. You are also adept at evading creatures that rely on darkvision. While in 
+               darkness, you are invisible to any creature that relies on darkvision to see you in that darkness. 
+    - title: Iron Mind
+    - content: You have honed your ability to resist the mind-altering powers of your prey. You gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or
+               Charisma saving throws (your choice).
+      
+    - title: Feats
+    - content: Alert, Crossbow Expert, Sharpshooter    
+    - title: Attacks
+    - content: 2 Attacks with her light crossbow or short sword
+    - title: Combat Tactics
+    - content: Prefer's Distance Fighting, but isn't afraid to mix it up close and personal if she has to
+  - title: Special Equipment
+  - abilities:
+    - title: Seeker's Compass
+    - content: A compass inside of an otherwise nondescript wooden case. Inside the face of the compass is covered with symbols that resemble constellations. If the bearer holds the compass and concentrates on a person, object, 
+               or location for one minute the compass will point in approximately that direction until it is closed again. If the concentration isn't specific enough the compass with either point to something that's close to the
+               idea, or the nearest object that fits the bill (ex. concentrate on "gold" or "piles of gold" without a specific place in mind and the compass will point to the nearest wallet or loose change) The more specific or 
+               well known the subject of concentration is, the more accurately the compass will point. Once a compass has been used in this way, it may not be used again until the next dawn.
                                                                    
   profile:
 

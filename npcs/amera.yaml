@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -466,46 +466,89 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Siren Abilities:
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-         Amphibious: You can breathe both air and water 
-         Sirens Body: As a bonus action, they turn into an amphibious form, their legs becoming a single powerful tail. Their walking speed is reduced to 5 feet and they gain a swimming speed of 40 feet. While in this form, 
-                     they can use their bonus action to return to normal..
-         Sirens Call: Whenever they make a Charisma (Performance) check to sing, they are considered proficient in the Performance skill and add double their proficiency bonus to the check, instead of their normal proficiency 
-                      bonus. In addition, they know the friends cantrip. They can cast the charm person spell once and need to finish a long rest before they can cast it again. They can also cast the suggestion spell once 
-                      and need to finish a long rest before they can cast it again. Charisma is their spellcasting ability for these spells. 
-         Charm Resistant: Has advantage against being charmed       
-      Bard Abilities:
-      - Bard Spellcasting: 
-        - Spell DC: 15 
-          Cantrip: Vicious Mockery, Dancing Lights, Minor Illusion
-          1st Level: Disguise Self, Faerie Fire, Hideous Laughter, Sleep 
-          2nd Level: Enthrall, Suggestion, Heat Metal
-          3rd Level: Nondetection, Major Image, Dispel Magic         
-        Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
-                            10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
-        Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
-        Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
-        Font of Inspiration: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
-        Countercharm: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
-                      being Frightened or Charmed
-        Expertise: gets double proficiency bonus in Persuasion and Deception                
-      College of Heartbreakers Abilities:
-      - Promise of Sweet Nothings: Once per short rest, after speaking to a humanoid for 1 minute, the target must make a Wisdom saving throw of DC15 or be charmed for 1 hour. On a successful save there is no hint that 
-                                   they have attempted to charm them
-        Heartbreak: As a bonus action they can spend a Bardic Inspiration Point to end a charm or enchantment effect the are concentrating on to do 1d8+10 Psychic damage. They gain HP equal to the damage done 
-        Seductive Glance: As a bonus action, 1 humanoid with 60 feet gets disadvantage on attack rolls against them and saving throws againts enchamntment spells they cast       
-
-    special-abilities:
-    - Proficiencies: Persuasion, Deception, Performance, Insight, Intimidation, Perception    
-    
-    attacks: |
-      2 Attacks with their Call or their Claws
-    combat-tactics: |
-      She will rarely fight. She will use her call to charm her opponents. If that doesn't work, she will try to escape
-    special-equipment:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Sailing
+    proficiencies:
+    - Insight
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Performance
+  special-abilities:
+  - title: Siren Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.           
+    - title: Amphibious
+    - content: You can breathe both air and water 
+    - title: Sirens Body
+    - content: As a bonus action, they turn into an amphibious form, their legs becoming a single powerful tail. Their walking speed is reduced to 5 feet and they gain a swimming speed of 40 feet. While in this form, 
+               they can use their bonus action to return to normal..
+    - title: Sirens Call
+    - content: Whenever they make a Charisma (Performance) check to sing, they are considered proficient in the Performance skill and add double their proficiency bonus to the check, instead of their normal proficiency 
+               bonus. In addition, they know the friends cantrip. They can cast the charm person spell once and need to finish a long rest before they can cast it again. They can also cast the suggestion spell once 
+               and need to finish a long rest before they can cast it again. Charisma is their spellcasting ability for these spells. 
+    - title: Charm Resistant
+    - content: Has advantage against being charmed 
+  - title: Bard Abilities
+  - abilities:
+  - title: Bard Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: Cantrip
+    - content: Vicious Mockery, Dancing Lights, Minor Illusion
+    - title: 1st Level
+    - content: Disguise Self, Faerie Fire, Hideous Laughter, Sleep 
+    - title: 2nd Level
+    - content: Enthrall, Suggestion, Heat Metal
+    - title: 3rd Level
+    - content: Nondetection, Major Image, Dispel Magic         
+    - title: Bardic Inspiration
+    - content: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
+               10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+    - title: Jack of All Trades
+    - content: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+    - title: Song of Rest
+    - content: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+    - title: Font of Inspiration 
+    - content: they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest
+    - title: Countercharm
+    - content: As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against 
+               being Frightened or Charmed
+    - title: Expertise
+    - content: gets double proficiency bonus in                
+  - title: College of Heartbreakers Abilities
+  - abilities: 
+    - title: Promise of Sweet Nothings
+    - content: Once per short rest, after speaking to a humanoid for 1 minute, the target must make a Wisdom saving throw against your Spell Saving Throw  or be charmed for 1 hour. On a successful save there
+               is no hint that you have attempted to charm them
+    - title: Heartbreak
+    - content: As a bonus action you can spend a Bardic Inspiration Point to end a charm or enchantment effect the are concentrating on to do Psychic damage equal to your Bardic Inspiration Die + Your Bard Level + Your 
+               Charisma Modifier. You gain HP equal to the damage done 
+    - title: Seductive Glance
+    - content: As a bonus action, 1 humanoid with 60 feet gets disadvantage on attack rolls against you and saving throws againts enchamntment spells you cast for 1 minute. You can use this ability a naumber of times
+               equal to your charisma modifier per long rest      
+
+  - title: Attacks
+  - content: 2 Attacks with their Call or their Claws
+  - title: Combat Tactics
+  - content: She will rarely fight. She will use her call to charm her opponents. If that doesn't work, she will try to escape
+  - title: Special Equipment
+  - abilities:
+    - title: Reveler's Concertina
+    - content: While holding this concertina, you gain a +2 bonus to the saving throw DC of your bard spells. As an action, you can use the concertina to cast Otto's Irresistible Dance from the item. This property of the 
+               concertina can't be used again until the next dawn
 
   profile:
 
