@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -420,7 +420,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Woodworking; puzzles; racism
+      Woodworking, puzzles, racism
       
     #
     # Vulnerabilities:
@@ -472,7 +472,7 @@ npc:
     condition-immunities:
     - N/A
     resistances:
-    - N/A
+    - Poison
     skills:
     - Masonry
     proficiencies: 
@@ -481,38 +481,63 @@ npc:
     - Mason's Tools
     - Woodcrafter's Tools
   special-abilities:
-  - Half-Orc Abilities:
-    - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-    - Menacing: gain proficiency in the Intimidation skill 
-    - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-    - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-  - Half-Dwarf Abilities:
-    - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-    - Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-    - Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                    instead of his normal Proficiency Bonus       
-  - Barbarian Abilities:
-    - Rage: 
-      - Description: Can enter a rage as a Bonus Action. 
-      - Additional Information:
-        - have advantage on Strength Checks and Strength Saving Throws.
-        - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-        - Resistance to bludgeoning, piercing, and slashing damage          
-    - Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-    - Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                       but Attack Rolls against him have advantage until his next turn
-    - Extra Attack: Can attack twice each turn
-  - Path of the Berserk Abilities:
-    - Frenzy: can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
-              he suffer one level of Exhaustion 
+  - title: Half-Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+    - title: Menacin
+    - content: Gain proficiency in the Intimidation skill 
+    - title: Relentless Endurance
+    - content: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+    - title: Savage Attack
+    - content: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+  - title: Half-Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus       
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+    - title: Extra Attack
+    - content: Can attack twice each turn
+  - title: Path of the Berserk Abilities
+  - abilities: 
+    - title: Fenzy
+    - content: Can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
+               he suffer one level of Exhaustion 
 
-  attacks: |
-    2 Attacks with his Maul or Javelins
-  combat-tactics: |
-    Albrecht has worked to control his anger and will likely only rage if vehemently provoked. After this point, however, better duck and run
-  special-equipment:
-  - Mason's Tools
-  - Woodcrafter's Tools
+  - title: Attacks
+  - content: 2 Attacks with his Maul or Javelins
+  - title: Combat Tactics
+  - content: Albrecht has worked to control his anger and will likely only rage if vehemently provoked. After this point, however, better duck and run
+  - title: Special Equipment
+  - abilities:
+    - title: Mason's Tools
+    - content: Mason's tools allow you to craft stone structures, including walls and buildings crafted from brick. 
+               Components - Mason's tools consist of a trowel, a hammer, a chisel, brushes, and a square. 
+    - title: Woodcrafter's Tools
+    - content: Woodcarver's tools allow you to craft intricate objects from wood, such as wooden tokens or arrows. 
+               Components - Woodcarver's tools consist of a knife, a gouge, and a small saw.
 
   profile:
 
@@ -532,3 +557,15 @@ npc:
       Meership Downs, a small sailing port and bustling sea-side community. Here he grew his talents, but also his hatred for other races as the village was frequented by many types of people carousing, drinking, fighting, 
       and all-around ne'er-do-wells. Now, Albrecht focuses on having his 'stamp' on as many buildings, ships, wagons, and so forth, as he possibly can. He puts his anger and hatred into his work knowing that unleashing his 
       rage would not only be dangerous for others, but most certainly for himself.
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+    Albrecht is not a very nice man. Most people he meets find him racist, abrasive, short and angry. Despite his less than personable disposition, it's difficult for anyone to complain about the quality of his work. He is an 
+    exceptionally talented tradesman and runs a tight ship on his job sites. He has worked hard over the years to build his reputation and even harder to curve his temper. He's been known to charge a little too much for his work
+    and no compunction about overcharging and ripping off naive clients, and will argue tooth and nail over his prices.
