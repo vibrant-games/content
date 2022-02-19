@@ -331,8 +331,8 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: N/A
-      name: N/A
+    - id: The_Dead_Hunters
+      name: The Dead Hunters
       role: Demon Hunter
 
     #
@@ -470,7 +470,7 @@ npc:
     condition-immunities:
     - None
     resistances:
-    - None
+    - Radiant and Necrotic
     skills:
     - N/A
     proficiencies:
@@ -480,7 +480,7 @@ npc:
     - Intimidation
     - Deception 
   special-abilities:
-  - title: Aasimar Traits
+  - title: Aasimar Abilities
   - abilities: 
     - title: Darkvision
     - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
@@ -493,12 +493,17 @@ npc:
   - title: Scourge Traits
   - abilities:
     - title: Radiant Consumption
-    - content: Can use his action to unleash the divine energy within himself, causing a searing light to radiate from him, pour out of his eyes and mouth, and threaten to char him.  The transformation lasts for 1 minute or until he ends it as a bonus action. During it, he sheds bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of his turns, he and each creature within 10 feet of him take 3 radiant damage. In addition, once on each of his turns, he can deal an extra 5 radiant damage to one target when he deals damage to it with an attack or a spell.
+    - content: you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you. Your transformation lasts for 1 minute 
+               or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of 
+               you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The 
+               extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest.
   - title: Warlock Abilities
-  - abilities: 
-    - title: Pact of the Blade Magic 
-    - content: Spell DC 14
-    - title: Cantrips
+  - abilities:
+  - title: Pact Magic
+  - abilities:
+    - title: Spell DC
+    - content:
+    - title: Cantrip
     - content: Eldritch Blast, Minor Illusion
     - title: 1st Level
     - content: Hellish Rebuke, Charm Person
@@ -506,46 +511,64 @@ npc:
     - content: Hold Person, Misty Step
     - title: 3rd Level
     - content: Counterspell, Dispel Magic
-    - title: Eldritch Invocations
-    - abilities: 
-      - title: Agonizing Blast
-      - content: Can add Charisma modifier to Eldritch Blast Damage
-      - title: Mask of Many Faces
-      - content: Can cast Disguise Self at will without using a spell slot
-      - title: Eldritch Sight
-      - content: Can cast Detect Magic at will without using a spell slot
-      - title: Pact Weapon
-      - content: Can use his action to create a +2 Scimitar in his empty hand. He is proficient with it while he wields it.
-    - title: Hexblade Abilities
+  - title: Eldritch Invocations
+  - abilities:
+    - title: Agonizing Blast
+    - content: Can add Charisma modifier to Eldritch Blast Damage
+    - title: Mask of Many Faces
+    - content: Can cast Disguise Self at will without using a spell slot
+    - title: Eldritch Sight
+    - content: Can cast Detect Magic at will without using a spell slot
+    - title: Pact Boon
+    - content: Pact of the Blade - You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. 
+                                   This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. Your pact weapon disappears if it is more than 5 feet away from you for 1 
+                                   minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die. You can transform one magic weapon into your pact weapon by 
+                                   performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it 
+                                   into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can't affect an artifact or a sentient weapon in this way. The weapon ceases being your pact 
+                                   weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the 
+                                   extradimensional space when the bond breaks.
+  - title: Hexblade Abilities
+  - abilities: 
+    - title: Spellcasting
     - abilities:
-      - title: Hexblade Spells
-      - title: 1st Level
-      - content: Shield, Wrathful Smite
-      - title: 2nd Level
-      - content: Blur, Branding Smite
-      - title: 3rd Level
-      - content: Blink, Elemental Weapon
-      - title: 4th Level
-      - content: Phantasmal Killer, Staggering Smite
-      - title: 5th Level
-      - content: Banishing Smite, Cone of Cold
-        Hexblades Curse: Gain a bonus to damage rolls against the cursed target equal to his proficiency bonus. Any attack roll he makes against the cursed target is a critical hit on a roll of 19 or 20 on the d20.
-                         If the cursed target dies, he regains 6Hp
-        Hex Warrior: When using his Pact Weapon, he can use Charisma for Attack and Damage rolls
-        Accursed Specter: can curse the soul of a person he slays, temporarily binding it in his service. When he slays a humanoid, he can cause its spirit to rise from its corpse as a specter. When the specter appears, 
-                          it gains temporary hit points equal to half his warlock level. Roll initiative for the specter, which has its own turns. It obeys his verbal commands, and it gains a special bonus to its attack 
-                          rolls equal to his Charisma modifier
+    - title: Spell DC
+    - content:
+    - title: 1st Level
+    - content: Shield, Wrathful Smite
+    - title: 2nd Level
+    - content: Blur, Branding Smite
+    - title: 3rd Level
+    - content: Blink, Elemental Weapon
+    - title: 4th Level
+    - content: Phantasmal Killer, Staggering Smite
+    - title: 5th Level
+    - content: Banishing Smite, Cone of Cold      
+    - title: Hexblades Curse
+    - content: You gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target
+               dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits - 
+               You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.
+               Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.
+               If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier
+    - title: Hex Warriors
+    - content: You gain proficiency with medium armor, shields, and martial weapons. The influence of your patron also allows you to mystically channel your will through a particular weapon. Whenever you finish a long 
+               rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity,
+               for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature,
+               no matter the weapon's type.
+    - title: Accursed Specter
+    - content: You can curse the soul of a person you slay, temporarily binding it in your service. When you slay a humanoid, you can cause its spirit to rise from its corpse as a specter. When the specter appears,
+               it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack 
+               rolls equal to your Charisma modifier (minimum of +0). The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife
 
-    special-abilities:
-    - Proficiencies:    
-
-    attacks: |
-      Hexblade an Eldritch Blasts
-    combat-tactics: |
-      Will fight Evil wherever he finds it using his Hexblade and his Magic
-    special-equipment:
-      - +2 Hexblade Scimitar
-      - Leather Armor
+  - title: Attacks
+  - content: Hexblade and Eldritch Blasts
+  - title: Combat Tactics
+  - content: Will fight Evil wherever he finds it using his Hexblade and his Magic
+  - title: Special Equipment
+  - abilities:
+    - title: +2 Hexblade Scimitar
+    - content: +2 to attack and damage
+    - title: Leather Armor of Protection from Cold
+    - content: This armor give its wearer resistance to cold damage
 
   profile:
 
@@ -558,7 +581,7 @@ npc:
     #
     background-story: |
       He was charged whole cloth by his patron god to hunt down and slay a specific demon from the abyssal plane, Ghaal, and right any wrongs along his path.  He made the Pact of The Blade to give himself the power and the 
-      tools to fulfill his destiny.
+      tools to fulfill his destiny. He has since been recruited by The Dead Hunters and has eagerly thrown himself into their service.
 
     #
     # Personality (or something like that):
