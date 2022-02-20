@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -331,8 +331,8 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: church_of_mercantile_god
-      name: Church of Mercantile God
+    - id: church_of_the_mercantile_god
+      name: Church of the Mercantile God
       role: Abbot
     - id: merchants_guild
       name: Merchants' Guild
@@ -361,7 +361,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The moneylenders' temple is quite a site. One of the warforged abbots raises a hand. /"Hail. Currency? Borrow or Trade?/"
+    introduction:  The moneylenders' temple is quite a site. One of the warforged abbots raises a hand. "Hail. Currency? Borrow or Trade?"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -464,58 +464,117 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Disease
+    resistances:
+    - Poison
     skills:
-    - Warforged Traits:
-      - Constructed Resilience: 
-        - Advantage on saving throws against being poisoned and has resistance to poison damage
-        - Doesn't need to eat, drink or breathe
-        - Immune to disease
-        - Doesn't need sleep and cannot be magically put to sleep
-        Sentrys Rest: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
-        Specialized Design: Proficient in Stealth and Thieve's Tools
-        Integrated Protection:
-        - Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table:
-          - Darkwood Core - AC= 11 + Dexterity + Proficiency Bonus
-          - Composite Plating - AC = 13 + Dexterity (Max 2) + Proficiency Bonus
-          - Heavy Plating - AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks	
-      Cleric Abilities:
-      - Spellcasting:
-        - Description: DC 16
-          Cantrips: Guidance, Light, Sacred Flame, Mending, Resistsnce
-          1st Level: Bane, Bless, Detect Magic, Sanctuary
-          2nd Level: Augury, Calm Emotions, Locate Object
-          3rd Level: Animate Dead, Dispel Magic, Speak with Dead
-          4th Level: Banishment, Divination, Stone Shape
-          5th Level: Raise Dead, Dispel Evil and Good
-        Channel Divinity: Turn Undead, Destroy Undead, Artisan's Blessing 
-        Divine Intervention: Can call her patron to intervene on her behalf 
-        Order Domain Abilities:
-        - Bonus Proficiencies: you gain proficiency with heavy armor. You also gain proficiency in the Intimidation and Persuasion skill
-          Voice of Authority: you can invoke the power of law to embolden an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction 
-                              immediately after the spell to make one weapon attack against a creature of your choice that you can see. If the spell targets more than one ally, you choose the ally who can make the attack
-          Orders Demand: you can use your Channel Divinity to exert an intimidating presence over others. As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 30 feet of
-                         you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any of the charmed creatures to drop what
-                         they are holding when they fail the saving throw
-          Embodiment of the Law: If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting 
-                                 time is normally 1 action. You can use this feature a number of times equal to your Wisdom modifier
-          Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage
-                         to the target. When you reach 14th level, the extra damage increases to 2d8
-          Spellcasting:
-          - 1st Level: Command, Heroism 
-            3rd Level: Hold Person, Zone of Truth
-            5th Level: Mass Healing Word, Slow
-            7th Level: Compulsion, Locate Creature
-            9th Level: Commune, Dominate Person
+    - Finance
+    proficiencies:
+    - Investigation
+    - Nature
+    - History    
+    - Intimidation
+    - Arcana
+  special-abilities:
+  - title: Warforged Abilities
+  - abilities: 
+    - title: Constructed Resilience 
+    - content: Advantage on saving throws against being poisoned and has resistance to poison damage
+               Doesn't need to eat, drink or breathe
+               Immune to disease
+               Doesn't need sleep and cannot be magically put to sleep
+    - title: Sentry's Rest
+    - content: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
+    - title: Specialized Design
+    - content: Proficient in Stealth and Thieve's Tools
+    - title: Integrated Protection
+    - content: Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table
+               Darkwood Core - AC= 11 + Dexterity + Proficiency Bonus
+               Composite Plating - AC = 13 + Dexterity (Max 2) + Proficiency Bonus
+               Heavy Plating - AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 16
+    - title: Cantrips
+    - content: Guidance, Light, Sacred Flame, Mending, Resistsnce
+    - title: 1st Level
+    - content: Bane, Bless, Detect Magic, Sanctuary
+    - title: 2nd Level
+    - content: Augury, Calm Emotions, Locate Object
+    - title: 3rd Level
+    - content: Animate Dead, Dispel Magic, Speak with Dead
+    - title: 4th Level
+    - content: Banishment, Divination, Stone Shape
+    - title: 5th Level
+    - content: Raise Dead, Dispel Evil and Good
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.    
+    - title: Divine Intervention
+    - content: Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll 
+               percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. The DM chooses the Nature of the intervention; the Effect of any Cleric spell or Cleric domain spell would be 
+               appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest. At 20th level, your call for intervention succeeds automatically, 
+               no roll required. 
+  - title: Order Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 16
+    - title: 1st Level
+    - content: Command, Heroism 
+    - title: 3rd Level
+    - content: Hold Person, Zone of Truth
+    - title: 5th Level
+    - content: Mass Healing Word, Slow
+    - title: 7th Level
+    - content: Compulsion, Locate Creature
+    - title: 9th Level
+    - content: Commune, Dominate Person 
+    - title: Bonus Proficiencies
+    - content: You gain proficiency with heavy armor. You also gain proficiency in the Intimidation or Persuasion skill (your choice).
+    - title: Voice of Authority
+    - content: You can invoke the power of law to embolden an ally to attack. If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction 
+               immediately after the spell to make one weapon attack against a creature of your choice that you can see. If the spell targets more than one ally, you choose the ally who can make the attack.
+    - title: Channel Divinity - Orders Demand
+    - content: You can use your Channel Divinity to exert an intimidating presence over others. As an action, you present your holy symbol, and each creature of your choice that can see or hear you 
+               within 30 feet of you must succeed on a Wisdom saving throw or be charmed by you until the end of your next turn or until the charmed creature takes any damage. You can also cause any 
+               of the charmed creatures to drop what they are holding when they fail the saving throw.
+    - title: Embodiment of the Law
+    - content: You become remarkably adept at channeling magical energy to compel others. If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's 
+               casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action. You can use this feature a number of times equal to your Wisdom modifier (minimum of once),
+               and you regain all expended uses of it when you finish a long rest
+    - title: Divine Strike
+    - content: You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage
+               to the target. When you reach 14th level, the extra damage increases to 2d8
+  - title: Feats
+  - content: War Caster, Silver Tracery
+  - title: Attacks
+  - content: 2 Attacks with their War Maul
+  - title: Combat Tactics
+  - content: Cure finds combat repugnant and unnecessary and will try to use magic or coins to negotiate out of it. If left without a choice he is a brave and valiant warrior
 
-    special-abilities:
-    - Proficiencies: Investigation, Nature, History
-    attacks: |
-      2 Attacks with their War Maul
-    combat-tactics: |
-      Cure finds combat repugnant and unnecessary and will try to use magic or coins to negotiate out of it. If left without a choice he is a brave and valiant warrior
-    special-equipment:
-    - War Maul
-    - Bag of Holding
+  - title: Special Equipment
+  - abilities:
+    - title: +1 War Maul
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Bag of Holding
+    - content: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. 
+               The bag weighs 15 pounds, regardless of its Contents. Retrieving an item from the bag requires an action.
 
   profile:
 
@@ -543,5 +602,6 @@ npc:
     # No length limit for now.
     #
     personality: |
-      colossal body of metal and stone. Gaudy black and blue, gold trimmed habit. Complex coif set with coins
+      colossal body of metal and stone. Gaudy black and blue, gold trimmed habit. Complex coif set with coins. He is calm and abhores violence of any sort, but is a valiant warrior when left with no other option. He is patient
+      but rigid and orderly in his dealings with others.
  

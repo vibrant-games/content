@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -331,8 +331,8 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: N/A
-      name: N/A
+    - id: merchants_guild
+      name: Merchant's Guild
       role: Merchant
 
     #
@@ -358,7 +358,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A colorful figure mans a covered carriage adorned with patterns pulled slowly by a draft horse. /"Feed yer curiosity!/"
+    introduction:  A colorful figure mans a covered carriage adorned with patterns pulled slowly by a draft horse. "Feed yer curiosity!"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -462,18 +462,37 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - N/A       
-
-    special-abilities:
-    - Proficiencies: Persuasion; Survival; Perception; Insight; Arcana; History;    
-    attacks: |
-      1 Attacks with his short sword
-    combat-tactics: |
-      will only fight in sel defense.
-    special-equipment:
-    - Emerald Spyglass - This spyglass can see through weather effects at up to 10x magnification be it stars, the distant horizon, or an incoming threat.
-    - Peace Pipe - This long ornate pipe calms the emotions of whomever smokes it and bonds - through friendship - anyone who shares the same pipe load
+    - Leatherworking
+    proficiencies:
+    - Arcana
+    - Perception
+    - History    
+    - Intimidation
+    - Persuasion
+    - Survival
+    - Insight    
+  special-abilities:
+  - title: Attacks
+  - content: 1 Attacks with his short sword
+  - title: Combat Tactics
+  - content: will only fight in self defense.
+  
+  - title: Special Equipment
+  - abilities:
+    - title: Emerald Spyglass
+    - content: While gazing through this spyglass, you can observe the stars of regardless of weather conditions
+    - title: Peace Pipe
+    - content: This long ornate pipe calms the emotions of whomever smokes it and bonds - through friendship - anyone who shares the same pipe load
                                                                    
   profile:
 

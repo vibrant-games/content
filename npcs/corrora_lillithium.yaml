@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -363,7 +363,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  /"Corrora Lillitium at your service./" Corrora can be found exploring the South East frontier of Yakahe surrounding towns
+    introduction:  Corrora Lillitium at your service. Corrora can be found exploring the South East frontier of Yakahe surrounding towns
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -374,7 +374,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   nearly 6 ft tall, muscular, brown skin and blonde cornrows. eyes that burn with pain
+    appearance:   Searly 6 ft tall, muscular, brown skin and blonde cornrows. Eyes that burn with pain
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -465,51 +465,105 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Wisdom
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - Half-Elf Abilities:
-      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
-        Fey Ancestry: Advantage on Saving Throws against being Charmed, and magic can’t put you to sleep.
-      Cleric Abilities:
-       - Spellcasting:
-         - Cantrips: Guidance, Sacred Flame, Mending, Sacred Flame
-           1st Level: Bane, Bless, Guiding Bolt, Healing Word
-           2nd Level: Hold Person, Spiritual Weapon, Prayer of Healing
-           3rd Level: Spirit Guardians, Speak with Dead, Sending
-           4th Level: Banishment, Death Ward
-         Channel Divinity: Turn Undead, Destroy Undead
-         Divine Intervention: Can call her patron to intervene on her behalf
-      Arcana Domain Abilities:
-      - Spellcasting:
-        - Cantrips: Fire Bolt, Mage Hand
-          1st Level: Detect Magic, Magic Missle
-          3rd Level: Magic Weapon, Nystul's Magic Aura
-          5th Level: Dispel Magic, Magic Circle
-          7th Level: Arcane Eye, Leomund's Secret Chest
-        Channel Divinity: 
-        - Description: Arcane Abjuration
-          Additional Information: As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provide
-                                  that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns
-                                  trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can only
-                                  use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. After you reach 5th level,
-                                  when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the Banishment spell, no concentration required) if
-                                  it isn't on its plane of origin and its challenge rating is at or below a certain threshold, as shown on the Arcane Banishment table.
-        Spell Breaker: when you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than
-                       the level of the spell slot you use to cast the healing spell
-        Potent Spellcasting: add your Wisdom modifier to the damage you deal with any cleric cantrip.
+    - Leatherworking
+    proficiencies:
+    - Arcana
+    - Perception
+    - Insight    
+    - History
+    - Persuasion
+  special-abilities:
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon 
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 15
+    - title: Cantrips
+    - content:  Guidance, Sacred Flame, Mending, Sacred Flame
+    - title: 1st Level
+    - content: Bane, Bless, Guiding Bolt, Healing Word
+    - title: 2nd Level
+    - content: Hold Person, Spiritual Weapon, Prayer of Healing
+    - title: 3rd Level
+    - content: Spirit Guardians, Speak with Dead, Sending
+    - title: 4th Level
+    - content: Banishment, Death Ward
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed. 
+  - title: Arcana Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content: Detect Magic, Magic Missle
+    - title: 3rd Level
+    - content: Magic Weapon, Nystul's Magic Aura
+    - title: 5th Level
+    - content: Dispel Magic, Magic Circle
+    - title: 7th Level
+    - content: Arcane Eye, Leomund's Secret Chest
+    - title: Channel Divinity - Arcane Abjuration
+    - content: As an action, you present your holy symbol, and one celestial, elemental, fey, or fiend of your choice that is within 30 feet of you must make a Wisdom saving throw, provided 
+               that the creature can see or hear you. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns 
+               trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. It also can't take reactions. For its action, it can only 
+               use the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. After you reach 5th level, 
+               when a creature fails its saving throw against your Arcane Abjuration feature, the creature is banished for 1 minute (as in the Banishment spell, no concentration required) if 
+               it isn't on its plane of origin and its challenge rating is at or below a certain threshold, as shown on the Arcane Banishment table.    
+    - title: Spell Breaker
+    - content: When you restore hit points to an ally with a spell of 1st level or higher, you can also end one spell of your choice on that creature. The level of the spell you end must be equal to or lower than 
+               the level of the spell slot you use to cast the healing spell
+    - title: Potent Spellcasting
+    - content: Add your Wisdom modifier to the damage you deal with any cleric cantrip.
+    - title: Feats
+    - content: War Caster, Sharpshooter
+    - title: Berserker Ancestors
+    - contnet: When Corrora is reduced to half of his hitpoints in a battle, there is a 1 in 10 chance that his body will be taken over by the spirit of one of his ancestors, temporarily increasing his strength,
+               dexterity, and constitution to 18, adding 40 temporary hit points, entering a rage state, and removing his spellcasting capabilities. Corrora makes a Charisma saving throw at the end of each round.
+               A success allows him to regain control of his body 
 
-    special-abilities:
-    - Berserker Ancestors: When Corrora is reduced to half of his hitpoints in a battle, there is a 1 in 10 chance that his body will be taken over by the spirit of one of his ancestors, temporarily increasing his strength,
-                           dexterity, and constitution to 18, adding 40 temporary hit points, entering a rage state, and removing his spellcasting capabilities. Corrora makes a Charisma saving throw at the end of each round.
-                           A success allows him to regain control of his body 
-      Proficiencies: Persuasion; Survival; Perception; Insight; Arcana; History;
-    attacks: |
-      1 Attack with a spell or Dawnbringer
-    combat-tactics: |
-      Corrora prefers to use his arsenal of ranged attack spells whenever possible. As a warcaster, he is able to carry his shield and either a war hammer or longsword to defend himself from enemies who get too close
-      Corrora will be the first to rush to the aid of fallen allies. He'll drag them to safety and use his healing spells to save them
-    special-equipment:
-    - Sun Blade named Dawnbringer - +3 to attack, 1d8+2 damage, additional 2d4 damage to undead
-    - Warhammer of Warning
+  - title: Attacks
+  - content: 1 Attack with a spell or Dawnbringer
+  - title: Combat Tactics
+  - content: Corrora prefers to use his arsenal of ranged attack spells whenever possible. As a war caster, he is able to carry his shield and either a war hammer or longsword to defend himself from enemies who get too close
+             Corrora will be the first to rush to the aid of fallen allies. He'll drag them to safety and use his healing spells to save them
+
+  - title: Special Equipment
+  - abilities:
+    - title: Sun Blade named Dawnbringer
+    - content: This item appears to be a Longsword hilt. While grasping the hilt, you can use a Bonus Action to cause a blade of pure Radiance to spring into existence, or make the blade disappear. While the blade exists, this
+               magic Longsword has the Finesse property. If you are proficient with shortswords or longswords, you are proficient with the sun blade.
+               You gain a +2 bonus to Attack and Damage Rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an Undead with it, that target takes an extra 1d8 radiant damage.
+    - title: Warhammer of Warning
+    - content: This magic weapon warns you of danger. While the weapon is on your person, you have advantage on initiative rolls. In addition, you and any of your companions within 30 feet of you can’t be surprised, except when 
+               incapacitated by something other than nonmagical sleep. The weapon magically awakens you and your companions within range if any of you are sleeping naturally when combat begins.
+
 
   profile:
 

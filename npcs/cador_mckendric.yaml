@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -464,21 +464,39 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Forest Gnome Abilities:
-      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-        Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
-        Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
-        Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
-
-    special-abilities:
-    - Proficiencies: Persuasion; Medecine; Insight; Perception    
-    attacks: |
-      1 Unarmed Attacks
-    combat-tactics: |
-      He won't fight unless defending himselfand his family
-    special-equipment:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Bookkeeping
+    proficiencies:
+    - Medicine
+    - Perception
+    - Insight
+    - Persuasion
+  special-abilities:
+  - title: Forest Gnome Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Gnome Cunning
+    - content: Advantage on all Intelligence, Wisdom, and Charisma saves against magic
+    - title: Natural Illusionist
+    - content: Knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
+    - title: Speak with Small Beasts
+    - content: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
+   
+  - title: Attacks
+  - content: 1 Unarmed Attacks
+  - title: Combat Tactics
+  - content: He won't fight unless defending himself and his family
+
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -463,70 +463,147 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    damage-immunities:
+    - Fire
+    condition-immunities:
+    - N/A
+    resistances:
+    - bludgeoning, piercing, and slashing damage from nonmagical attacks while weraing heavy armor
     skills:
-    - Bugbear Traits:
-      - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
-        Long Limbed: when making a melee attack his reach is extended by 5 extra feet
-        Powerfuk Build: Counts as one size larger for carrying capacity and amount he can lift, push or drag
-        Sneaky: Proficient in Stealth
-        Surprise Attack: If he surprises a creature and hit ti on the first turn of combat, he may add 2d6 to the damage
-      Cleric Abilities:
-      - Spellcasting:
-        - Description: DC 19
-          Cantrips: Guidance, Thaumaturgy, Resistance, Sacred Flame, Mending
-          1st Level: Detect Magic, Bane, Bless, Cure Wounds
-          2nd Level: Hold Person, Spiritual Weapon, Continual Flame
-          3rd Level: Dispel Magic, Create Food and Water, Spirit Guardians
-          4th Level: Banishment, Control Water, Stone Shape
-          5th Level: Flame Strike, Greater Restoration, 
-          6th Level: Blade Barrier 
-          7th Level: Fire Storm 
-          8th Level: Earthquake
-          9th Level: Mass Heal
-        Channel Divinity: Turn Undead, Destroy Undead, Artisan's Blessing 
-        Divine Intervention: Can call her patron to intervene on her behalf
-      Forge Domain Abilities:
-      - Spellcasting:
-        - Description: DC 19
-          1st Level: Identify, Searing Smite
-          3rd Level: Heat Metal, Magic Weapon
-          5th Level: Elemental Weapon, Protection from Energy
-          7th Level: Fabricate, Wall of Fire
-          9th Level: Animate Object, Creation
-        Bonus Proficiencies: Proficiency with Heavy Armor and Smith's Tools
-        Blessing of the Forge: you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of
-                                your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it’s armor or a +1 bonus to attack and damage rolls if it’s a weapon. Once you use this feature,
-                                you can’t use it again until you finish a long rest.
-        Channel Divinity - Artisans Blessing: you can use your Channel Divinity to create simple items. You conduct an hour-long ritual that crafts a nonmagical item that must include some metal; a simple or martial weapon, a 
-                                              suit of armor, ten pieces of ammunition, a set of tools, or another metal object. The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice
-                                              on a surface within 5 feet of you. The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins,
-                                              with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual’s end, magically forming even nonmetal parts of the creation. 
-                                              The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual.
-        Soul of the Forge: your mastery of the forge grants you special abilities; You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC
-        Divine Strike: you gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8
-                       fire damage to the target. When you reach 14th level, the extra damage increases to 2d8.
-        Saint of Forge and Fire: your blessed affinity with fire and metal becomes more powerful; You gain immunity to fire damage. While wearing heavy armor, you have resistance to bludgeoning, piercing, and slashing damage
-                                 from nonmagical attacks.
-
-    special-abilities:
-    - Proficiencies: Smith's Tools, Heavy Armor, Shields, Athletics, Perception, Intimidation, Stealth, Religion
-      Feats: Crusher, Durable, Grappler, Great Weapon Master, Mobile, Savage Attacker, Sentinel, War Caster
-      Legendary Resistance: (3/Day), If Crusible Firepeak fails a saving throw he can choose to succeed instead
-      Legendary Actions: Crusible Firepeak can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn.
-                         Crusible Firepeak regains spent Legendary Actions at the start of his turn
-      Forge Bane: Crusible Firepeak can cause one magical metal item within 30 feet to become nonmagical until the end of his next turn
-      Forge Restoration: Crusible Firepeak can gain HP equal to the total amount of fire damage done in combat this round
-      Fires Rage: Crusible Firepeak can cast Fire Storm without using a Spell Slot
-
-    attacks: |
-      has 2 attacks
-    combat-tactics: |
-      Loves to fight up close and personal, but tries hard to control his temper unless it's against fiends or undead
-    special-equipment:
-    - +3 Plate Armor
-    - Forge Breaker Great Maul
-    - Forge Ringer Great WarHammer
+    - Metal Working
+    proficiencies:
+    - Stealth
+    - Intimidation
+    - Religion
+    - Perception    
+    - Athletics
+    - Shields
+    - Heavy Armor
     - Smith's Tools
+  special-abilities:
+  - title: Bugbear Abilities
+  - abilities: 
+    - title: Supreme Darkvision
+    - content: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Long Limbed
+    - content: When making a melee attack his reach is extended by 5 extra feet
+    - title: Powerfuk Build
+    - content: Counts as one size larger for carrying capacity and amount he can lift, push or drag
+    - title: Sneaky
+    - content: Proficient in Stealth
+    - title: Surprise Attack
+    - content: If he surprises a creature and hit it on the first turn of combat, he may add 2d6 to the damage
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 19
+    - title: Cantrips
+    - content: Guidance, Thaumaturgy, Resistance, Sacred Flame, Mending
+    - title: 1st Level
+    - content: Detect Magic, Bane, Bless, Cure Wounds
+    - title: 2nd Level
+    - content: Hold Person, Spiritual Weapon, Continual Flame
+    - title: 3rd Level
+    - content: Dispel Magic, Create Food and Water, Spirit Guardians
+    - title: 4th Level
+    - content: Banishment, Control Water, Stone Shape
+    - title: 5th Level
+    - content: Flame Strike, Greater Restoration, 
+    - title: 6th Level
+    - content: Blade Barrier 
+    - title: 7th Level
+    - content: Fire Storm 
+    - title: 8th Level
+    - content: Earthquake
+    - title: 9th Level
+    - content: Mass Heal
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.    
+    - title: Divine Intervention
+    - content: Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll 
+               percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. The DM chooses the Nature of the intervention; the Effect of any Cleric spell or Cleric domain spell would be 
+               appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest. At 20th level, your call for intervention succeeds automatically, 
+               no roll required.
+  - title: Forge Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 19
+    - title: 1st Level
+    - content: Identify, Searing Smite
+    - title: 3rd Level
+    - content: Heat Metal, Magic Weapon
+    - title: 5th Level
+    - content: Elemental Weapon, Protection from Energy
+    - title: 7th Level
+    - content: Fabricate, Wall of Fire
+    - title: 9th Level
+    - content: Animate Object, Creation
+    - title: Bonus Proficiencies
+    - content: Proficiency with Heavy Armor and Smith's Tools
+    - title: Blessing of the Forge
+    - content: You gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of 
+               your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it’s armor or a +1 bonus to attack and damage rolls if it’s a weapon. Once you use this feature,
+               you can’t use it again until you finish a long rest.
+    - title: Channel Divinity - Artisans Blessing
+    - content: You can use your Channel Divinity to create simple items. You conduct an hour-long ritual that crafts a nonmagical item that must include some metal; a simple or martial weapon, a 
+               suit of armor, ten pieces of ammunition, a set of tools, or another metal object. The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice 
+               on a surface within 5 feet of you. The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, 
+               with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual’s end, magically forming even nonmetal parts of the creation. 
+               The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual.
+    - title: Soul of the Forge
+    - content: Your mastery of the forge grants you special abilities; You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC
+    - title: Divine Strike
+    - content: You gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8
+               fire damage to the target. When you reach 14th level, the extra damage increases to 2d8.
+    - title: Saint of Forge and Fire
+    - content: Your blessed affinity with fire and metal becomes more powerful; You gain immunity to fire damage. While wearing heavy armor, you have resistance to bludgeoning, piercing, and slashing damage 
+               from nonmagical attacks.
+    - title: Feats
+    - content: Crusher, Durable, Grappler, Great Weapon Master, Mobile, Savage Attacker, Sentinel, War Caster
+  - title: Legendary Resistance
+  - content: (3/Day), If Crusible Firepeak fails a saving throw he can choose to succeed instead
+  - title: Legendary Actions
+  - content: Crusible Firepeak can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn.
+             Crusible Firepeak regains spent Legendary Actions at the start of his turn
+  - abilities:
+    - title: Forge's Bane
+    - content: Crusible Firepeak can cause one magical metal item within 30 feet to become nonmagical until the end of his next turn
+    - title: Forge's Restoration
+    - content: Crusible Firepeak can gain HP equal to the total amount of fire damage done in combat this round
+    - title: Fires Rage
+    - content: Crusible Firepeak can cast Fire Storm without using a Spell Slot
+
+  - title: Attacks
+  - content: has 2 attacks
+  - title: Combat Tactics
+  - content: Loves to fight up close and personal, but tries hard to control his temper unless it's against fiends or undead
+
+  - title: Special Equipment
+  - abilities:
+    - title: +3 Plate Armor
+    - content: You have a +3 bonus to AC while wearing this armor.
+    - title: Forge Breaker Great Maul
+    - content: You gain a +2 bonus to attack and damage rolls made with this magic weapon. When you score a critical hit and the target is using a metal weapon, you begin to break the target's weapon. Their weapon, as long as it
+               is mundane takes a permanent and cumulative -1 penalty to damage rolls. If this penalty drops to -5, the weapon is destroyed. This damage is unfixable unless by magic spells such as the mending cantrip, or by 
+               other magical items. This weapon does not break other magical weapons; however, it creates a thunderous boom audible out to 300 feet when hitting such items.
+    - title: Forge Ringer Great WarHammer
+    - content: You gain a +2 bonus to attack and damage rolls made with this magic weapon. When hitting this weapon against a broken object made of metal like a broken sword, the object is subjected to the mending cantrip. Also,
+               the weapon does not cause a sound when hitting other objects unless the wielder wants it to.
+    - title: Smith's Tools
+    - content: Smith's tools include hammers, tongs, charcoal, rags, and a whetstone.
 
   profile:
 

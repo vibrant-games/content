@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -289,15 +289,6 @@ npc:
     #
     alignment: Chaotic Neutral
 
-    #
-    # Alignment tendencies:
-    # same as alignment, can be 0 or more.
-    #
-    # Optional.
-    #
-    tendencies:
-    - N/A
-
 
     #
     # Languages the character speaks
@@ -335,8 +326,8 @@ npc:
     factions:
     - id: the_skurge_s_crew
       name: The Skurge's Crew
-    - id: possibly_a_thieve_s_guild
-      name: Possibly a Thieve's Guild
+    - id: thieve_s_guild
+      name: Thieve's Guild
       role: Captain
 
     #
@@ -466,38 +457,73 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Strength
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Half-Orc Abilities:
-      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
-        Menacing: gain proficiency in the Intimidation skill 
-        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+    - Sailing
+    proficiencies:
+    - Athletics
+    - Acrobatics
+    - Deception    
+    - Intimidation
+  special-abilities:
+  - title: Half-Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+    - title: Menacin
+    - content: Gain proficiency in the Intimidation skill 
+    - title: Relentless Endurance
+    - content: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+    - title: Savage Attack
+    - content: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+  - title: Swashbuckler Abilities
+  - abilities: 
+    - title: Fancy Footwork
+    - content: You learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest 
+               of your turn.
+    - title: Rakish Audacity
+    - content: Your confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your Charisma modifier. You also gain an additional way to use your Sneak Attack; you don't need 
+               advantage on the attack roll to use your Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. 
+               All the other rules for Sneak Attack still apply to you.
+    - title: Panache
+    - content: Your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you
+               must share a language. If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other
+               than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart. If you succeed on the check and the
+               creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.
 
-      Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-         Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-         Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-         Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-         Evasion: When subjected to an Effect that allows him to make a Dexterity saving throw to take only half damage, he instead take no damage if he succeeds on the saving throw, and only half damage if he fails
-      Swashbuckler Abilities:
-       - Fancy Footwork: During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn
-         Rakish Audacity: can give yourself a bonus to your initiative rolls equal to your Charisma modifier. You also gain an additional way to use your Sneak Attack; you don't need advantage on the attack roll to use 
-                          your Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don't have disadvantage on the attack roll. All the other rules for Sneak 
-                          Attack still apply to you.
-         Panache: As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language. If you succeed on 
-                  the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 
-                  minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart. If you succeed on the check and the creature isn't hostile to you, 
-                  it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.
+  - title: Attacks
+  - content: 2 Attacks with his Cutlass or Knife
+  - title: Combat Tactics
+  - content: Sneak Attacks when possible, but will go headlong into melee if forced
 
-    special-abilities:
-    - Proficiencies: Persuasion; Medecine; Insight; Perception
-    attacks: |
-      2 Attacks with his Cutlass or Knife
-    combat-tactics: |
-      Sneak Attacks when possible, but will go headlong into melee if forced
-    special-equipment:
-    - Sailor's Ear Stud
-    - Sailor's Earring
+  - title: Special Equipment
+  - abilities:
+    - title: Sailor's Ear Stud
+    - content: a simple platinum stud to be worn in whichever ear lobe the owner wishes. The stud functions exactly like a ring of swimming AND a ring of free action, but only when the wearer is under water.
+    - title: Sailor's Earring
+    - content: a simple small gold hoop that can be worn in either ear. The wearer is able to understand and speak the Aquan language.
+    - title: Cutlass of Crazed Courage
+    - content: Once per day, when the cutlass is drawn from its sheath, the wielder fights as if they have consumed a potion of heroism. The item recharges each night at midnight, if it has been used during the previous 24 hours
 
   profile:
 
