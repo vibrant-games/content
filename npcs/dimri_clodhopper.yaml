@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -463,42 +463,79 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Spells and Magical Effects
     skills:
-    - Satyr Abilities:
-      - Fey: Your creature type is fey, rather than humanoid           
-        Ram: You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d4 + your Strength modifier
-        Magic Resistance: You have advantage on saving throws against spells and other magical effects
-        Mirthful Leap: Whenever you make a long or high jump, you can roll a d8 and add the number to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal
-        Reveler: You have proficiency in the Performance and Persuasion skills, and you have proficiency with a Pipe Flute
-      Bard Abilities:
-      - Bard Spellcasting:
-        - Description: Spell DC 14
-          Cantrip: Minor Illusion, Vicious Mockery
-          1st Level: Bane, Charm Person, Faerie Fire, Tasha's Hideous Laughter 
-          2nd Level: Heat Metal, Enthrall
-        Bardic Inspiration: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
-                            10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
-        Jack of All Trades: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
-        Song of Rest: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
-      College of Glamour Abilities:
-      - Mantle of Inspiration: As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and who can see you within 60
-                              feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its 
-                               reaction to move up to its speed, without provoking opportunity attacks. The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 
-                               10th level, and 14 at 15th level.   
-        Enthralling Performance: If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids 
-                                 within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell
-                                 save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who speaks to it, and it hinders anyone who opposes you, avoiding violence
-                                 unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of
-                                 its allies. If a target succeeds on its saving throw, the target has no hint that you tried to charm it.                         
+    - Musician
+    proficiencies:
+    - Performance
+    - Deception    
+    - Sleight-of-Hand
+    - Persuasion
+    - Mason's Tools
+  special-abilities:
+  - title: Satyr Abilities
+  - abilities: 
+    - title: Fey
+    - content: Your creature type is fey, rather than humanoid           
+    - title: Ram
+    - content: You can use your head and horns to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d4 + your Strength modifier
+    - title: Magic Resistance
+    - content: You have advantage on saving throws against spells and other magical effects
+    - title: Mirthful Leap
+    - content: Whenever you make a long or high jump, you can roll a d8 and add the number to the number of feet you cover, even when making a standing jump. This extra distance costs movement as normal
+    - title: Reveler
+    - content: You have proficiency in the Performance and Persuasion skills, and you have proficiency with a Pipe Flute
+  - title: Bard Abilities
+  - abilities:
+  - title: Bard Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 14  
+    - title: Cantrip
+    - content: Minor Illusion, Vicious Mockery
+    - title: 1st Level
+    - content: Bane, Charm Person, Faerie Fire, Tasha's Hideous Laughter 
+    - title: 2nd Level
+    - content: Heat Metal, Enthrall
+    - title: Bardic Inspiration
+    - content: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
+               10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+    - title: Jack of All Trades
+    - content: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+    - title: Song of Rest
+    - content: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+  - title: College of Glamour Abilities
+  - abilities: 
+    - title: Mantle of Inspiration
+    - content: As a bonus action, you can expend one use of your Bardic Inspiration to grant yourself a wondrous appearance. When you do so, choose a number of creatures you can see and who can see you within 60
+               feet of you, up to a number equal to your Charisma modifier (minimum of one). Each of them gains 5 temporary hit points. When a creature gains these temporary hit points, it can immediately use its 
+               reaction to move up to its speed, without provoking opportunity attacks. The number of temporary hit points increases when you reach certain levels in this class, increasing to 8 at 5th level, 11 at 
+               10th level, and 14 at 15th level.   
+    - title: Enthralling Performance
+    - content: If you perform for at least 1 minute, you can attempt to inspire wonder in your audience by singing, reciting a poem, or dancing. At the end of the performance, choose a number of humanoids 
+               within 60 feet of you who watched and listened to all of it, up to a number equal to your Charisma modifier (minimum of one). Each target must succeed on a Wisdom saving throw against your spell
+               save DC or be charmed by you. While charmed in this way, the target idolizes you, it speaks glowingly of you to anyone who speaks to it, and it hinders anyone who opposes you, avoiding violence
+               unless it was already inclined to fight on your behalf. This effect ends on a target after 1 hour, if it takes any damage, if you attack it, or if it witnesses you attacking or damaging any of
+               its allies. If a target succeeds on its saving throw, the target has no hint that you tried to charm it.                         
+   
+  - title: Attacks
+  - content: 2 attacks with Headbutts, Fists and Hooves
+  - title: Combat Tactics
+  - content: He has zero tactics for anything in his life
 
-    special-abilities:
-    - Proficiencies: Mason's Tools, Master Mason    
-    attacks: |
-      2 attacks with Headbutts, Fists and Hooves
-    combat-tactics: |
-      He has zero tactics for anything in his life
-    special-equipment:
-    - Wine Skin that is never empty
+  - title: Special Equipment
+  - abilities:
+    - title: Never Ending Wine Skin
+    - content: The wine skin contains a maximum of three servings of wine. The wine skin will fully replenish itself after 1d3 rounds only if the stopper is in place. Any wine poured into a seperate vessel dissapears if not 
+               consumed within one minute.
                                                                    
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -459,22 +459,43 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Goblin Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals
-                           your level.
-        Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
-
-    special-abilities:
-    - Proficiencies: Mason's Tools, Master Mason    
-    attacks: |
-      1 attacks with unarmed strike
-    combat-tactics: |
-      He will run and hide
-    special-equipment:
-    - Twelve-thousand page tome he is writing and drawing with the aid of pictures
-    - some lewd pictures cut from other manuscripts.
+    - Landscaping
+    proficiencies:
+    - Medicine
+    - Nature
+    - Persuasion
+    - Mason's Tools
+    - Woodcrafter Tools
+  special-abilities:
+  - title: Goblin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
+    - title: Fury of the Small
+    - content: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
+               your level.
+    - title: Nimble Escape
+    - content: You can take the Disengage or Hide action as a bonus action on each of your turns.
+    
+  - title: Attacks
+  - content: 1 attacks with unarmed strike
+  - title: Combat Tactics
+  - content: He will run and hide
+  
+  - title: Special Equipment
+  - abilities:
+    - title: His Treatise
+    - content: Twelve-thousand page tome he is writing and drawing with the aid of pictures as well as some lewd pictures cut from other manuscripts.
 
   profile:
 

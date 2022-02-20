@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Path of the Berserker
+    subclass: Path of the Warlord
 
     #
     # Class level.
@@ -456,41 +456,75 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Peircing, Bludgeoning and Slashing Damage while Raging
     skills:
-    - Barbarian Abilities:
-       - Rage:
-         - Description: Can enter a rage as a Bonus Action. 
-           Additonal Information: 
-           - have advantage on Strength Checks and Strength Saving Throws.
-           - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-           - Resistance to bludgeoning, piercing, and slashing damage
-         Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-         Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn,
-                          but Attack Rolls against him have advantage until his next turn
-         Extra Attack: Can attack twice each turn
-         Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
-         Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage
-                         before doing anything else on that turn.
-         Brutal Critical: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.
-      Path of the Berserker Abilities:
-      - Frenzy: you can go into a Frenzy when you rage. If you do so, for the Duration of your rage you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When your rage ends, you
-                suffer one level of Exhaustion
-        Mindless Rage: you can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your rage, the Effect is suspended for the Duration of the rage
-        Intimidating Presence: you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must
-                               succeed on a Wisdom saving throw (DC equal to 8 + your Proficiency Bonus + your Charisma modifier) or be Frightened of you until the end of your next turn. On subsequent turns, you can use your
-                               action to extend the Duration of this Effect on the Frightened creature until the end of your next turn. This Effect ends if the creature ends its turn out of Line of Sight or more than 60 feet
-                               away from you. If the creature succeeds on its saving throw, you can’t use this feature on that creature again for 24 hours
+    - Battle Tactics
+    proficiencies:
+    - Survival    
+    - Intimidation
+    - Persuasion
+    - Athletics
+    - Animal Handling
+  special-abilities:
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+    - title: Extra Attack
+    - content: Can attack twice each turn	
+    - title: Fast Movement
+    - content: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+    - title: Feral Instinct
+    - content: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+               before doing anything else on that turn.		
+    - title: Brutal Critical
+    - content: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.
+  - title: Path of the Warlord Abilities
+  - abilities: 
+    - title: Bonus Proficiencies
+    - content: You learn two langagues of your choice. Also, you become proficient in your choice of two of the following skills; Deception, Insight, Intimidate, or Persuasion.
+    - title: Inspire Heroism
+    - content: Whenever you hit a creature with an attack, you can use your bonus action to give one friendly creature that can see or hear you temporary hit points equal to your 2 +your Charisma modifier.
+    - title: Tribal Rally
+    - content: You and any ally that can see and hear have advantage on strength ability checks, strength saving throws, and saving throws against being frightened while you are raging.
+    - title: Inspire Recklessness
+    - content: You may inspire your allies to attack with reckless abandon. When you hit a creature while under the effects of Reckless Attack, you can use your bonus action to allow one friendly creature that 
+               can see or hear you can make a melee attack with advantage against that target as a reaction. If they do, that ally grants advantage to all attack rolls against it until the start of your next 
+               turn.
 
-    special-abilities:
-    - Proficiencies: Survival, Intimidation
-    attacks: |
-      2 attacks
-    combat-tactics: |
-      Will attack with rage and axes
-    special-equipment:
-    - Hand Axe +2
-    - Hand Axe +1
-    - Boots of Speed
+  - title: Attacks
+  - content: 2 attacks
+  - title: Combat Tactics
+  - content: Will attack with rage and axes
+
+  - title: Special Equipment
+  - abilities:
+    - title: Hand Axe +2
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Hand Axe +1
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Boots of Speed
+    - content: While you wear these boots, you can use a Bonus Action and click the boots' heels together. If you do, the boots double your walking speed, and any creature that makes an opportunity Attack against you has 
+               disadvantage on the Attack roll. If you click your heels together again, you end the Effect. When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a Long 
+               Rest.
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -458,38 +458,85 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Charmed while wearing his Charmfold
+    resistances:
+    - N/A
     skills:
-    - Wizard Abilities:
-      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-        Spellcasting:
-        - Description: DC 15
-          Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
-          1st Level: Feather Fall, Magic Missle, Shield, Floating Disk
-          2nd Level: Levitate, Misty Step, Hold Person
-          3rd Level: Counterspell, Fireball, Fly
-      Graviturgy Abilities:
-      - Spellcasting:
-        - Description: DC 15
-          1st Level: Sapping Sting, Magnify Gravity
-          3rd Level: Fortune's Favor, Immovable Object, Wristpocket
-          5th Level: Pulse Wave
-        Adjust Density: as an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for
-                        up to 1 minute or until your concentration ends (as if you were concentrating on a spell). While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump
-                        twice as far as normal, and it has disadvantage on Strength checks and Strength saving throws. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it
-                        has advantage on Strength checks and Strength saving throws. Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller
-        Gravity Well: you've learned how to manipulate gravity around a living being.Whenever you cast a spell on a creature, you can move the target 5 feet to an unoccupied space of your choice if the target is willing to
-                      move, the spell hits it with an attack, or it fails a saving throw against the spell.
+    - Undertaking and Burial Rites
+    proficiencies:
+    - Arcana
+    - Perception
+    - Investigation
+    - Medicine
+    - History
+    - Religion
+  special-abilities:
+  - title: Wizard Abilities
+  - abilities:
+    - title: Arcane Recovery
+    - content: After a short rest can recover a spell slot up to 3rd level
+  - title: Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: Cantrips
+    - content: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
+    - title: 1st Level
+    - content: Feather Fall, Magic Missle, Shield, Floating Disk
+    - title: 2nd Level
+    - content: Levitate, Misty Step, Hold Person
+    - title: 3rd Level
+    - content: Counterspell, Fireball, Fly
+  - title: School of Graviturgy Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content: Sapping Sting, Magnify Gravity
+    - title: 3rd Level
+    - content: Fortune's Favor, Immovable Object, Wristpocket
+    - title: 5th Level
+    - content: Pulse Wave
+    - title: Adjust Density
+    - content: As an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for
+               up to 1 minute or until your concentration ends (as if you were concentrating on a spell). While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump 
+               twice as far as normal, and it has disadvantage on Strength checks and Strength saving throws. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it
+               has advantage on Strength checks and Strength saving throws. Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller  
+    - title: Gravity Well
+    - content: You've learned how to manipulate gravity around a living being; whenever you cast a spell on a creature, you can move the target 5 feet to an unoccupied space of your choice if the target is willing to 
+               move, the spell hits it with an attack, or it fails a saving throw against the spell.
+  - title: Undertaker Abilities
+  - abilities:
+    - title: Skill Proficiencies
+    - content: Medicine, Religion, Burial Rites, Investigation, History, Burial Rites, Insight,
+    - title: Tool Proficiencies
+    - content: Carpenter's Tools, Stonecarver's Tools, Disguise Kit, Alchemist Kit, Sewnig Kit, Medical Kit
+    - title: Funeral Network
+    - content: Well connected in circles dealing with funerals ie. florists, carriages, churches, other undertakers and advantage on persuasion in dealing with them
+    - title: Coroner
+    - content: Has advantage when trying to determine cause and/or time of death
 
-    special-abilities:
-    - Proficiencies: He is exceptional at preparing bodies for funerals and burial
-    attacks: |
-      1 attacks
-    combat-tactics: |
-      Will spell attack
-    special-equipment:
-    - Three indestructible metalic balls each wieghing 10 pounds each.
-    - +3 leather armor
-    - A blind fold that magically rejects all charm or hypnosis.
+  - title: Attacks
+  - content: 1 attacks
+  - title: Combat Tactics
+  - content: Will spell attack
+  
+  - title: Special Equipment
+  - abilities:
+    - title: Graviturgy Balls
+    - content: Three indestructible metalic balls each wieghing 10 pounds each.
+    - title: +3 Leather Armor
+    - content: This armor adds +3 to your AC while wearing it
+    - title: Charmfold
+    - content: A blindfold that magically gives immunity to all charm or hypnosis effects.
 
   profile:
 

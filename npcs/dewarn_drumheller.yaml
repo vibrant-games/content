@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -464,21 +464,46 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check,
-                      instead of his normal Proficiency Bonus
+    - Leatherworking
+    proficiencies:
+    - History
+    - Perception   
+    - Intimidation
+    - Mason's Tools
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus
+    
+  - title: Attacks
+  - content: 1 attacks with unarmed strike
+  - title: Combat Tactics
+  - content: He's not a fighter, but as an old drunk with a lot of pride, he's been known to get into the odd bar brawl now and again where he'll fight with anything he can get his hands on
 
-    special-abilities:
-    - Proficiencies: Mason's Tools, Master Mason    
-    attacks: |
-      1 attacks with unarmed strike
-    combat-tactics: |
-      He's not a fighter, but as an old drunk with a lot of pride, he's been known to get into the odd bar brawl now and again where he'll fight with anything he can get his hands on
-    special-equipment:
-    - Magic Level Line that always lays level
+  - title: Special Equipment
+  - abilities:
+    - title:True Level
+    - content: A magic level line that always lays true and level
                                                                    
   profile:
 

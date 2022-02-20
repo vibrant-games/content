@@ -466,62 +466,130 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Wisdom
+    damage-immunities:
+    - Psychic Damage
+    condition-immunities:
+    - Frightened, Charmed
+    resistances:
+    - N/A
     skills:
-    - Cleric Abilities:
-      - Spellcasting:
-        - Description: DC 19
-          Cantrips: Thaumaturgy, Primal Savagery, Prestidigitation, Mind Sliver, Toll of the Dead
-          1st Level: Arms of Hadar, Bane, Faerie Fire, Sleep, Id Insinuation
-          2nd Level: Augury, Tasha's Mind Whip, Mind Spike
-          3rd Level: Counterspell, Hunger of Hadar, Psionic Blast
-          4th Level: Compulsion, Confusion, Divination
-          5th Level: Scrying, Synaptic Static, Temporal Shunt
-          6th Level: Psychic Crush, Otto's Irresistible Dance
-          7th Level: Forcecage, Create Undead
-          8th Level: Reality Break
-          9th Level: Psychic Scream
-        Channel Divinity: Turn Undead, Destroy Undead 
-        Divine Intervention: Can call her patron to intervene on her behalf
-
-      Madness Domain Abilities:
-      - Divine Hallucinations: you can use an action to enter a catatonic trance to receive warnings from your god via hallucination. You become incapacitated for 1 minute as you experience a vivid hallucination that might be
-                               prophetic. The DM rolls a d6 in secret. On a roll of a 5 or 6, the DM shows you a likely future involving a real threat you're likely to face soon. On any other roll the DM shows you a paranoid
-                               vision of an unlikely future involving threats that are not real or that you're unlikely to face, such as a betrayal from allies that are actually trustworthy, or an attack from monsters that
-                               aren't actually present in the immediate area. You can enter this trance a number of times equal to your cleric level divided by 4 (a minimum of once).
-        Gift of Madness: level you also learn how to ward off attackers by sharing your madness with them. Immediately after a creature hits you with a melee attack, you can use your reaction to assault it with hallucinations.
-                         The creature must make a Wisdom saving throw. On a failed saving throw, it takes psychic damage equal to 2 + half your cleric level and the hallucinations make it either blinded or deafened (your choice)
-                         and frightened of you until the end of your next turn. You can use this reaction ability a number of times equal to your Wisdom modifier (a minimum of once).
-        Dread Whispers: you can use your Channel Divinity to infuse the creatures in an area with paranoid dread and maddening whispers warning them of betrayal As an action, you choose a point that you can see within 60 feet.
-                        Each creature in a 10 foot sphere centered on that point must make a Wisdom saving throw. On a failed saving throw, a creature takes psychic damage equal to ld6 + half your cleric level and it becomes
-                        addled with dread for 1 minute. A creature addled with this dread treats all other creatures as enemies for the purpose of disadvantage for ranged attacks, and must make any opportunity attack it
-                        possibly can. At the end of an affected creature's turn, it repeats the saving throw. A success ends the effect on that creature.
-        Crazed Stumbling: when you deal psychic damage to a creature you can cause it to stagger with fear and confusion. You can choose to push it up to 10 feet in any direction that it can move, but you cannot move it further
-                          than half its speed
-        Potent Spellcasting: you add your Wisdom modifier to the damage you deal with any cleric cantrip.
-        Already Mad: you cannot be charmed or frightened and you have immunity to psychic damage.
-        Spellcasting:
-        - Cantrips: Vicious Mockery
-          1st Level: Dissonant Whispers, Tasha's Hideous Laughter
-          3rd Level: Crown of Madness, Phantasmal Force
-          5th Level: Fear, Incite Self-Harm
-          7th Level: Phantasmal Killer, Staggering Smite
-          9th Level: Modify Memory, Phantasmal Plunge
-
-    special-abilities: 
-    - Feats: Indefinite Madness, Contortionist, Eldritch Adept, 
-      Legendary Resistance: (3/Day), If Delores Dumas fails a saving throw she can choose to succeed instead. Delores is completely immune to Psychic Damage and Charms 
-      Legendary Actions: 
-      - Description: Delores Dumas can take 3 Legendary Actions. Randomly choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Delores Dumas 
+    - N/A
+    proficiencies:
+    - Arcana
+    - Perception
+    - Deception
+    - Sleight-of-Hand
+    - Acrobatics
+  special-abilities:
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 19
+    - title: Cantrips
+    - content: Thaumaturgy, Primal Savagery, Prestidigitation, Mind Sliver, Toll of the Dead
+    - title: 1st Level
+    - content: Arms of Hadar, Bane, Faerie Fire, Sleep, Id Insinuation
+    - title: 2nd Level
+    - content: Augury, Tasha's Mind Whip, Mind Spike
+    - title: 3rd Level
+    - content: Counterspell, Hunger of Hadar, Psionic Blast
+    - title: 4th Level
+    - content: Compulsion, Confusion, Divination
+    - title: 5th Level
+    - content: Scrying, Synaptic Static, Temporal Shunt
+    - title: 6th Level
+    - content: Psychic Crush, Otto's Irresistible Dance
+    - title: 7th Level
+    - content: Forcecage, Create Undead
+    - title: 8th Level
+    - content: Reality Break
+    - title: 9th Level
+    - content: Psychic Scream
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.    
+    - title: Divine Intervention
+    - content: Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll 
+               percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. The DM chooses the Nature of the intervention; the Effect of any Cleric spell or Cleric domain spell would be 
+               appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest. At 20th level, your call for intervention succeeds automatically, 
+               no roll required.
+  - title: Madness Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 19
+    - title: Cantrips
+    - content: Vicious Mockery
+    - title: 1st Level
+    - content: Dissonant Whispers, Hideous Laughter
+    - title: 3rd Level
+    - content: Crown of Madness, Phantasmal Force
+    - title: 5th Level
+    - content: Fear, Incite Self-Harm
+    - title: 7th Level
+    - content: Phantasmal Killer, Staggering Smite
+    - title: 9th Level
+    - content: Modify Memory, Phantasmal Plunge
+    - title: Divine Hallucinations
+    - content: You can use an action to enter a catatonic trance to receive warnings from your god via hallucination. You become incapacitated for 1 minute as you experience a vivid hallucination that might be 
+               prophetic. The DM rolls a d6 in secret. On a roll of a 5 or 6, the DM shows you a likely future involving a real threat you're likely to face soon. On any other roll the DM shows you a paranoid 
+               vision of an unlikely future involving threats that are not real or that you're unlikely to face, such as a betrayal from allies that are actually trustworthy, or an attack from monsters that 
+               aren't actually present in the immediate area. You can enter this trance a number of times equal to your cleric level divided by 4 (a minimum of once). 
+    - title: Gift of Madness
+    - content: You also learn how to ward off attackers by sharing your madness with them. Immediately after a creature hits you with a melee attack, you can use your reaction to assault it with hallucinations. 
+               The creature must make a Wisdom saving throw. On a failed saving throw, it takes psychic damage equal to 2 + half your cleric level and the hallucinations make it either blinded or deafened (your choice)
+               and frightened of you until the end of your next turn. You can use this reaction ability a number of times equal to your Wisdom modifier (a minimum of once).
+    - title: Channel Divinity - Dread Whispers
+    - content: You can use your Channel Divinity to infuse the creatures in an area with paranoid dread and maddening whispers warning them of betrayal As an action, you choose a point that you can 
+               see within 60 feet. Each creature in a 10 foot sphere centered on that point must make a Wisdom saving throw. On a failed saving throw, a creature takes psychic damage equal to ld6 + 
+               half your cleric level and it becomes  addled with dread for 1 minute. A creature addled with this dread treats all other creatures as enemies for the purpose of disadvantage for 
+               ranged attacks, and must make any opportunity attack it  possibly can. At the end of an affected creature's turn, it repeats the saving throw. A success ends the effect on that 
+               creature.
+    - title: Crazed Stumbling
+    - content: When you deal psychic damage to a creature you can cause it to stagger with fear and confusion. You can choose to push it up to 10 feet in any direction that it can move, but you cannot move it further
+               than half its speed
+    - title: Potent Spellcasting
+    - contnet: You add your Wisdom modifier to the damage you deal with any cleric cantrip.
+    - title: Already Mad
+    - content: You cannot be charmed or frightened and you have immunity to psychic damage.
+    - title: Feats
+    - content: Indefinite Madness, Contortionist, Eldritch Adept, 
+  - title: Legendary Resistance
+  - content: (3/Day), If Delores Dumas fails a saving throw she can choose to succeed instead. Delores is completely immune to Psychic Damage and Charms 
+  - title: Legendary Actions 
+  - content: Delores Dumas can take 3 Legendary Actions. Randomly choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Delores Dumas 
                      regains spent Legendary Actions at the start of her turn
-        Devils Portal: Delores Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-        Touch of Madness: Delores Dumas touch one person within range and the must make a wisdom savign throw equal to her spellcasting DC or roles two results on the Short-Term Madness Table lasting until the end of their next turn
-        Devils Children: Delores Dumas can cast Gate, opening a portal to summon up to 5 lesser devils
-    attacks: |
-      Various psychic spell attacks
-    combat-tactics: |
-      Delores has no real combat strategy and generally just responds randomly to outside stimuli
-    special-equipment:
-    - Dimensional Shackles - These function as the dimensional shackles from the DMG but also function as her arcane focus allowing her to spellcast without any other components
+  - abilities:
+    - title: Devil's Portal
+    - content: Delores Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
+    - title: Touch of Madness
+    - content: Delores Dumas touch one person within range and the must make a wisdom saving throw equal to her spellcasting DC or roles two results on the Short-Term Madness Table lasting until the end of their next turn
+    - title: Devil's Children
+    - content: Delores Dumas can cast Gate, opening a portal to summon up to 5 lesser devils
+
+  - title: Attacks
+  - content: Various psychic spell attacks
+  - title: Combat Tactics
+  - content: Delores has no real combat strategy and generally just responds randomly to outside stimuli
+
+  - title: Special Equipment
+  - abilities:
+    - title: Dimensional Shackles
+    - content: You can use an action to place these shackles on an Incapacitated creature. The shackles adjust to fit a creature of Small to Large size. In addition to serving as mundane Manacles, the shackles prevent a creature
+               bound by them from using any method of extradimensional Movement, including teleportation or Travel to a different plane of existence. They don't prevent the creature from passing-through an interdimensional 
+               portal.
+               These also function as Delores' spellcasting focus allowing her to cast spells without using material components
     
   profile:
 

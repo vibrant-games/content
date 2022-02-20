@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - innkeeper
+    - Caravan Escort
 
     #
     # D & D classes (case insensitive):
@@ -332,8 +332,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: church_of_poetic_justice_hoar_
-      name: Church of Poetic Justice [Hoar]
+    - id: church_of_the_mercantile_god
+      name: Church of the Mercantile God
+      role: Caravan Escort
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -343,6 +344,7 @@ npc:
     adjectives:
     - Stoic
     - Survivor
+    - Pious
 
   improv:
 
@@ -443,7 +445,7 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 10
+    armour-class: 21
     hit-points: 48
     speed: 30
     str: 18
@@ -461,38 +463,91 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Half-Orc Abilities:
-      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..
-        Menacing: gain proficiency in the Intimidation skill
-        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-      Paladin Abilities:
-      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated
-                      within the same radius. Can use this ability 4 per long rest
-        Lay on Hands: Can touch another creature to heal up to 25HP per long rest. Or can 5HP to cure a disease or poison affecting it.
-        Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet
-        Divine Smite: Melee weapon attacks deal an additional 2d8 radiant damage, or 3d8 versus undead or fiends
-        Divine Health: Immune to disease
-        Extra Attack: Can take and extra attack action each turn
-        Spellcasting:
-        - Description: DC 14
-          1st Level: Bless, Command, Purify Food and Drink, Shield of Faith
-          2nd Level: Branding Smite, Lesser Restoration
-      Oath of free Commerce Abilities:
-      - Channel Divinty:
-        - Objective Worth: As an action, you can improve the quality of a weapon you are holding for one minute, causing it to become a +3 Magical Weapon in addition to it's other attributes or inherently know the exact
-                           monetary value of anything you see for one hour
-          Turn the Craven: As an action you can cause each creature within 30 feet that is invisible, hiding or otherwise difficult to see, must make a wisdom save. If it fails, that creature is turned
+    - Survival
+    proficiencies:
+    - Survival
+    - Perception
+    - Athletics    
+    - Intimidation
+    - Persuasion
+    - Herbalism
+  special-abilities:
+  - title: Half-Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+    - title: Menacin
+    - content: Gain proficiency in the Intimidation skill 
+    - title: Relentless Endurance
+    - content: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+    - title: Savage Attack
+    - content: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.	
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability x per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: Protection - When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 14
+    - title: 1st Level
+    - content: Bless, Command, Purify Food and Drink, Shield of Faith
+    - title: 2nd Level
+    - content: Branding Smite, Lesser Restoration
+  - title: Oath of Free Commerce Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: 3rd Level
+    - content: Unseen Servant, Identify
+    - title: 5th Level
+    - content: Arcane Lock, See Invsibility
+    - title: Channel Divinty - Objective Worth
+    - content: As an action, you can make manifest your knowledge of the true worth of things. You may either improve the quality and make of the weapon you are holding for one minute, causing it to become a +3 
+               magical weapon in addition to its other properties, or you may inherently know the exact monetary value of anything you see for one hour.
+    - title: Channel Divinity - Turn the Craven
+    - content: As an action, you can raise your voice and demand that any thieves and skulkers in the area reveal themselves. Each creature that is invisible, attempting to hide, or otherwise intentionally difficult
+               to see within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying
+               to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape 
+               from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
 
-    special-abilities:
-    - Proficiencies: Herbalsim, Nature, Medicine
-    attacks: |
-      2 attacks
-    combat-tactics: |
-      Deonne is not to be reckoned with. He attacks fiercely, head-on
-    special-equipment:
-    - Khopesh
+  - title: Attacks
+  - content: 2 attacks
+  - title: Combat Tactics
+  - content: Deonne is not to be reckoned with. He attacks fiercely, head-on
+
+  - title: Special Equipment
+  - abilities:
+    - title: Khopesh
+    - content: The khopesh is a slashing sword with an axe-like curve and a hooked tip - 1d8+Strength Slashing
+    - title: +1 Chainmail
+    - content: While wearing this armor, you gain +1 to your AC
+    - title: +2 Golden Shield
+    - content: While holding this shield, you have a +2 bonus to AC. This bonus is in addition to the shield's normal bonus to AC
 
   profile:
 
@@ -508,7 +563,7 @@ npc:
       paths of devastation into the surrounding kingdoms. Unknown to the broader public, the Grimfang tribe has derived their ruthlessness from a desire to protect themselves from the strategic and unethical assaults of
       the Northern Dwarven and Elven alliances. Separated from his tribe during a heavy skirmish, Deonne was held and tortured by the Inquisitors of the North seeking the hearth of the King of the Grimfang. Tortured over
       and over without giving up any information, he was abandoned for dead. Trudging through the bitter winter landscape, he eventually found a family of traveling merchants who took pity on the cowering, shivering youth hidden
-      off the side of a trading route. They took him in as an adopted son. Eventually finding Solace in the Church of the Poet of Justice [Hoar or some similar God of Revenge], Deonne has since committed his life to
+      off the side of a trading route. They took him in as an adopted son. Eventually finding Solace in the Church of the Merchantile God, Deonne has since committed his life to
       gaining retribution for the little known evils of the allied nations. While this serves as his over arching life-goal, he has settled himself into a rewarding juxtapositional life of providing comfort and respite to
       travelers of the Realms, dwarves and elves alike, to offer the comfort and compassion that he and his peoples never received. Noble in presence, Deonne is committed to a life governed by natural law and the order
       civilization brings to the masses. Although resentful of the factions responsible for the unethical treatment of his tribe, he recognizes that town and city officials must bring order for their people, and he believes that
