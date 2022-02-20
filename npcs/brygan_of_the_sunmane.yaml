@@ -105,7 +105,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -229,15 +229,6 @@ npc:
     alignment: Lawful Good
 
     #
-    # Alignment tendencies:
-    # same as alignment, can be 0 or more.
-    #
-    # Optional.
-    #
-    tendencies:
-    - N/A
-
-    #
     # Languages the character speaks
     # (human, dwarvish, etc).
     #
@@ -297,7 +288,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  \"Get down! you're surrounded!\", comes the hushed voice from somewhere in the long golden grass of the open plains
+    introduction: Get down! you're surrounded!, comes the hushed voice from somewhere in the long golden grass of the open plains
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -308,7 +299,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:  7' Tall and lithe with golden fur, lion-like features, piercing blue eyes, a shining gold breastplate and a long spear
+    appearance: 7' Tall and lithe with golden fur, lion-like features, piercing blue eyes, a shining gold breastplate and a long spear
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -339,7 +330,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:  Swift and cat-like
+    mannerisms: Swift and cat-like
 
   acting:
     #
@@ -383,9 +374,9 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 16
+    armour-class: 17
     hit-points: 83
-    speed: 35
+    speed: 45
     str: 16
     dex: 15
     con: 17
@@ -401,55 +392,107 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Extreme Heat and Dehydration
     skills:
-     - Leonin Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-         Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
-         Primal Intuition: Proficient in Insight and Survival
-         Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-         Heat Resistance: Gains Advantage on saving throws caused by extremely hot weather or dehydration
-       Ranger Abilities:
-       - Ranger Spellcasting:
-         - Description: Spell DC11
-           1st Level: Hunter's Mark, Searing Smite, Cure Wounds, Wild Cunning
-           2nd Level: Locate Animals or Plants, Pass Without Trace, Cordon of Arrows
-         Favored Enemy: Demon & Hydra - Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
-         Natural Explorer:
-         - Description: Grassland & Forest
-           Additional Information:
-           - Difficult Terrain doesn't slow your group's Travel
-           - Your group can't become lost except by magical means
-           - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-           - If you are traveling alone, you can move stealthily at a normal pace
-           - When you Forage, you find twice as much food as you normally would
-           - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-         Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-         Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following
-                             types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't
-                             reveal the creatures' location or number.
-         Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-         Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines,
-                     or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell
-       Monster Slayer Abilities:
-       - Monster Slayer Spellcasting:
-         - Description: Spell DC14
-           3rd Level: Protection from Evil and Good
-           5th Level: Zone of Truth
-         Hunters Sense:  As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are. If the
-                         creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities
-         Slayers Prey:  As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each turn that you hit that target with a weapon attack, it takes an extra
-                        1d6 damage from the weapon.
-         Supernatural Defense: Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to escape that target's grapple, add 1d6 to your roll
+    - Tracking
+    proficiencies:
+    - Athletics
+    - Acrobatics
+    - Perception   
+    - Intimidation
+    - Survival
+    - Insight
+  special-abilities:
+  - title: Leonin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Aggressive
+    - content: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
+    - title: Primal Intuition
+    - content: Proficient in Insight and Survival
+    - title: Powerful Build
+    - content: Count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+    - title: Heat Resistance
+    - content: Gains Advantage on saving throws caused by extremely hot weather or dehydration
+  - title: Ranger Abilities
+  - abilities:
+  - title: Ranger Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: 1st Level
+    - content: Hunter's Mark, Searing Smite, Cure Wounds, Wild Cunning
+    - title: 2nd Level
+    - content: Locate Animals or Plants, Pass Without Trace, Cordon of Arrows
+    - title: Favored Enemy - Demon and Hydra
+    - content: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+    - title: Natural Explorer 
+    - content: Favored Terrain - Grassland and Forest
+               Difficult Terrain doesn't slow your group's Travel
+               Your group can't become lost except by magical means
+               Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+               If you are traveling alone, you can move stealthily at a normal pace
+               When you Forage, you find twice as much food as you normally would
+               While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+    - title: Fighting Style
+    - content: Archery. You gain a +2 bonus to attack rolls you make with ranged weapons.
+    - title: Primeval Awareness
+    - content: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+               types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+               reveal the creatures' location or number.
+    - title: Extra Attack
+    - content: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+    - title: Landstride
+    - cintent: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
+               or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell
+  - title: Monster Slayer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: 3rd Level
+    - content: Protection from Evil and Good 
+    - title: 5th Level
+    - content: Zone of Truth
+    - title: Hunters Sense
+    - content: You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has 
+               any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You 
+               can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest.
+    - title: Slayers Prey
+    - content: You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each 
+               turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different 
+               creature.
+    - title: Supernatural Defense
+    - content: You gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to 
+               escape that target's grapple, add 1d6 to your roll.
 
-    special-abilities:
-    - Proficiencies: Cooking, Mixology, Disguise Kit, Poisoner's Kit, Stealth, Insight, Survival, Thieve's Tools, Sleight of Hand
-    attacks: |
-      2 Attacks with his Longbow or Spear
-    combat-tactics: |
-      He will do his best to stay hidden and strike from a distance, but once he closes on his prey he will fight with his spear
-    special-equipment:
-    - +2 Longbow
-    - +1 Spear
+  - title: Attacks
+  - content: 2 Attacks with his Longbow or Spear
+  - title: Combat Tactics
+  - content: He will do his best to stay hidden and strike from a distance, but once he closes on his prey he will fight with his spear
+
+  - title: Special Equipment
+  - abilities:
+    - title: +2 Longbow
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.
+    - title: +1 Spear
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Golden Breastplate
+    - content: While wearing it, you have an extra +1 bonus to your AC, and your speed increases by 10 feet.
+               This armor has 5 charges. It regains 1d4 + 1 charges daily at dawn.
+               When you roll a Dexterity saving throw or you roll for initiative, you can expend 1 charge to gain advantage on that roll before you make it.
+               When you are hit by an attack, you can use your reaction to expend 2 charges and halve the damage you take from that attack, unless the damage is necrotic.
+               If you fail a saving throw, you can expend 4 charges to succeed instead.
 
   profile:
 

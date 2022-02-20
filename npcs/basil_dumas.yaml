@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: civilian
+    class: Civilian
 
     #
     # D & D subclasses (case insensitive):
@@ -464,27 +464,80 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Dexterity
+    damage-immunities:
+    - Non-Magic or Non-Silver Bludgeoning, Piercing and Slashing
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
     skills:
-    - Werewolf Abilities:
-      - Keen Hearing and Smell: Advantage on perception rolls that involve Hearing and Sight
-        Tough Hide: +2 to AC in Wolf and Half-Wolf forms. 
-        Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
-        Heightened Prowess: +1 to Strength and Dexterity saving throws in Wolf or Half-Wolf
-        Shapeshift: Basil has mastered his curse and can shapeshift between forms at will except on the full moon, upon which he changes whether he wants to or not
-        The Curse: Humanoid Creatures he bites must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
+    - Banking and Investment Finance
+    proficiencies:
+    - History
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+  special-abilities:
+  - title: Werewolf Abilities
+  - abilities: 
+    - title: Keen Hearing and Smell
+    - content: Advantage on perception rolls that involve Hearing and Sight
+    - title: Tough Hide
+    - content: +2 to AC in Wolf and Half-Wolf forms. 
+    - title: Lycan Immunity
+    - content: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all its forms. Resistance to poison 
+    - title: Heightened Prowess
+    - content: +1 to Strength and Dexterity saving throws in Wolf or Half-Wolf
+    - title: Shapeshift
+    - content: Can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Any equipment it is wearing or carrying isn't transformed. It reverts to its true
+               form if it dies
+    - title: The Curse
+    - content: Humanoid Creatures you bite must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
+    - title: Spellcasting
+    - content: Basil has taken the time to learn the Arcane Lock and Alarm spells for use only on his Arcane Lock Box. The spells are considered 5th level and must be cast as a ritual that takes 1 minute    
+    - title: Feats
+    - content: Keen Mind, Observant, Prodigy 
+  - title: Legendary Resistance
+  - content: (3/Day), If Basil Dumas fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions
+  - content: Basil Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Basil Dumas regains spent Legendary Actions at the start of his turn.
+  - abilities:
+    - title: Devil's Portal
+    - content: Basil can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of his master for 1 minute
+    - title: Ferocious Bite
+    - content: Basil Dumas makes a bite attack
+    - title: Family Reserve
+    - content: Basil Dumas can cast Gate, opening up to 5 portals to summon other members of the Dumas Family to join the fight
 
-    special-abilities: 
-    - Feats: Keen Mind, Observant, Prodigy,  
-      Legendary Resistance: (3/Day), If Basil Dumas fails a saving throw she can choose to succeed instead.
-
-    attacks: |
-      3 Attacks - 1 Bite (1D8+str) and 2 Claws (2D4+str)
-    combat-tactics: |
-      He attacks with feral passion
-    special-equipment:
-    - Pen of Endless Ink
-    - Broken Pocket Watch
-    - Arcane Lock Box
+  - title: Attacks
+  - content: 3 Attacks - 1 Bite (1D8+str) and 2 Claws (2D4+str)
+  - title: Combat Tactics
+  - content: He attacks with feral passion
+  
+  - title: Special Equipment
+  - abilities:
+    - title: Pen of Endless Ink
+    - content: This pen never runs out of ink. Though truly a novelty, the ink that comes from the pen is of poor quality, making it unusable in the writing of spell scrolls, spellbooks, and other delicate magical writings.
+    - title: Broken Pocket Watch
+    - content: It’s rare to find a pocket watch at all outside of gnomish settlements. This one seems to be broken, as it sometimes skips back a few seconds. It holds great power for the one who attunes it, though. The broken 
+               pocket watch has 3 charges. On your turn, you can spend 1 charge to take an additional bonus action, as the pocket watch ticks back by two seconds to give you another moment for something quick. Once you spend a 
+               charge, you can’t spend another for 1 hour. The pocket watch regains 1 expended charge at dawn.
+               Alternately, you can force it to turn backward as far as it can go. This does not require an action or any charges from the pocket watch, but you can’t do this if you are incapacitated. You teleport to any 
+               location you have been earlier in this turn, you regain any hit points you have lost since the beginning of your turn, and you can immediately take another turn. The pocket watch falls apart after that, and can’t 
+               be repaired. After 1 minute, you suffer one level of exhaustion.
+    - title: Arcane Lock Box
+    - content: This small chest weighs 10 lbs. and is made entirely of brass or iron. The box holds 3 cubic feet or 75 lbs. of items, and objects within are considered to be under the effects of a nondetection spell. Only the 
+               creature attuned to the box can open it freely. It has no keyhole, handle, or outside mechanism, making all standard non-magical means of opening it (like lock-picking) impossible. It can be broken open with a 
+               Strength check of DC 25.
+               The arcane lock spell can be cast upon the box as a ritual. If the alarm spell is cast upon the box as a ritual, its duration is twice as long.
+               If a knock spell is cast upon the box, the caster must make a DC 15 (or DC 20 if the box is secured with arcane lock) ability check using their spellcasting ability. If the check fails, the spell does not open the
+               box.
+               If a dispel magic spell is cast upon the box, the spells affecting the box are considered to be 5th level.
+               If a creature attuned to the box is more than 100 feet away from it, they do not loose their attunement until 1 week has passed
     
   profile:
 
