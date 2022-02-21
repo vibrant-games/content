@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -460,36 +460,68 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Bugbear Traits:
-      - Darkvision: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
-        Long Limbed: when making a melee attack his reach is extended by 5 extra feet
-        Powerfuk Build: Counts as one size larger for carrying capacity and amount he can lift, push or drag
-        Sneaky: Proficient in Stealth
-        Surprise Attack: If he surprises a creature and hit ti on the first turn of combat, he may add 2d6 to the damage
+    - N/A
+    proficiencies:
+    - Stealth
+    - Athletics    
+    - Intimidation
+    - Animal Handling
+    - Veterinary Medicine
+  special-abilities:
+  - title: Bugbear Abilities
+  - abilities: 
+    - title: Supreme Darkvision
+    - content: Can see 300 feet in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Long Limbed
+    - content: When making a melee attack his reach is extended by 5 extra feet
+    - title: Powerfuk Build
+    - content: Counts as one size larger for carrying capacity and amount he can lift, push or drag
+    - title: Sneaky
+    - content: Proficient in Stealth
+    - title: Surprise Attack
+    - content: If he surprises a creature and hit it on the first turn of combat, he may add 2d6 to the damage
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+  - title: Path of the Ancestral Guardian Abilities
+  - abilities: 
+    - title: Ancestral Protectors
+    - content: Spectral warriors appear when you enter your rage. While you’re raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until 
+               the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has 
+               resistance to the damage of the target’s attacks.
 
-      Barbarian Abilities:
-      - Rage:
-        - Can enter a rage as a Bonus Action. 
-        - have advantage on Strength Checks and Strength Saving Throws.
-        - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-        - Resistance to bludgeoning, piercing, and slashing damage
-        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                         but Attack Rolls against him have advantage until his next turn
-      Path of the Ancestral Guardian:
-      - Ancestral Protectors: spectral warriors appear when you enter your rage. While you’re raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until
-                              the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has
-                              resistance to the damage of the target’s attacks
+  - title: Feats
+  - content: Crusher, Charger, Grappler
+  - title: Attacks
+  - content: 1 attack with his mace
+  - title: Combat Tactics
+  - content: Goes out of his way to pick fights 
 
-    special-abilities:
-       - Animal Handling. Minor Veterinary Medicine. Horseback Riding
-    attacks: |
-      1 attack with his mace
-    combat-tactics: |
-      Goes out of his way to pick fights 
-    special-equipment:
-    - A huge bone-handled mace covered in spikes that counts as a +1 magical great club
+  - title: Special Equipment
+  - abilities:
+    - title: Bone-Handled Mace
+    - content: A huge bone-handled mace covered in spikes that counts as a +1 magical great club
 
   profile:
 
