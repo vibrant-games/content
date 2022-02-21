@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -465,21 +465,40 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Half-Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon
-        Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 11
-
-    special-abilities:
-       Proficient in Perception, Persuasion, Performance and Deception         
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      Is a coward 
-    special-equipment:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - charmed
+    skills:
+    - Law
+    proficiencies:
+    - History
+    - Perception
+    - Deception    
+    - Performance
+    - Persuasion
+  special-abilities:
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon
+    - title: Wood Elf Magic
+    - content: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 11
+        
+  - title: Attacks
+  - content: 1 attack with unarmed strike
+  - title: Combat Tactics
+  - content: Is a coward 
+
 
   profile:
 

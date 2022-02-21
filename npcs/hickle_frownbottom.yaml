@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: elderly
+    age: Elderly
 
     #
     # Races (case insensitive):
@@ -462,43 +462,109 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Forest Gnome Abilities:
-      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-        Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
-        Tinker:
-        - Description: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
-                       after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
-                       to three such devices active at a time. When you create a device, choose one of the following options - 
-          Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
-                         a random direction. It makes noises as appropriate to the creature it represents.
-          Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-          Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.        
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting:
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
-          Cantrip: Mage Hand, Mending
-          1st Level: False Life, Grease, Detect Magic
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 4 Infusions and can Infuse 2 Items  
-        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
+    - Toy Making
+    proficiencies:
+    - Arcana
+    - Perception
+    - Sleight-of-Hand
+    - Investigation
+    - Tinker's Tools
+  special-abilities:
+  - title: Rock Gnome Abilities
+  - abilities: 
+    - title: Gnome Cunning
+    - content: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Artificers Lore
+    - content: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
+    - title: Tinker
+    - content: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
+               after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
+               to three such devices active at a time. When you create a device, choose one of the following options - 
+               Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+                               a random direction. It makes noises as appropriate to the creature it represents.
+               Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+               Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.        
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 14   
+    - title: Cantrip
+    - content: Mage Hand, Mending
+    - title: 1st Level
+    - content: False Life, Grease, Detect Magic
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 4
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+  - title: Battle Smith Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Heroism, Shield
+    - title: Tool Proficiency
+    - content: You gain proficiency with smith's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.
+    - title: Battle Ready
+    - content: Your combat training and your experiments with magic have paid off in two ways
+               You gain proficiency with martial weapons.
+               When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.
+    - title: Steel Defender
+    - content: Your tinkering has borne you a faithful companion, a steel defender. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which
+               uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics. In combat, the defender
+               shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a 
+               bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, 
+               not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 
+               feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel 
+               defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die.                          
+               Steel Defender - Medium construct
+               Armor Class - 15 (natural armor)
+               Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
+               Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
+               Speed - 40 ft.     
+               Saving Throws - Dex +1 plus PB, Con +2 plus PB
+               Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
+               Damage Immunities - poison
+               Condition Immunities - charmed, exhaustion, poisoned
+               Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
+               Languages - understands the languages you speak
+               Challenge —
+               Proficiency Bonus (PB) - equals your bonus
+               Vigilant - The defender can't be surprised.
+               Actions -
+               Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
+               Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
+               Reactions -
+               Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.  
+      
+  - title: Attacks
+  - content: 1 attack with unarmed strike or Steel Defender
+  - title: Combat Tactics
+  - content: Hickle largely avoids combat unless cornered
 
-      Battle Smith Abilities:
-      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
-        Spellcasting:
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-          3rd Level: Heroism, Shield
-        Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
-        Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest  
-
-    special-abilities:
-      - Proficiencies: Tinker Tool's, Investigation, Sleight of Hand, building lifelike clockwork toys      
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      Hickle largely avoids combat unless cornered
-    special-equipment:
-    - Various magic trinkets
+  - title: Special Equipment
+  - abilities:
+    - title: Magic Trinkets
+    - content: a selection of various small magical artifacts and toys
                                                                    
   profile:
 

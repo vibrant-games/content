@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -461,38 +461,73 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Necrotic and Fire Damage
     skills:
-    - Aetherborn Abilities:
-      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-        Born of Aether: You have resistance to necrotic damage
-        Menacing: You gain proficiency in the Intimidation skill
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-         
-      The Arsonist Abilities:
-      - Firebug:
-        - Description: You become exceptionally talented at setting things ablaze. You gain the following talents - 
-          Pyrotechnician: You may add your proficiency modifier to any ability check made to start or manipulate a fire, as well as determining the cause of one
-          Inflamable: You are considered proficient with improvised weapons when attacking with torches or any flaming object that can be held in one hand, as well as when throwing oil or similarly flamable compounds 
-                      and any type of fire-based explosive
-        Firestarter: Any creature or object covered in a combustable compound, such as oil, by you specifically, that takes any amount of fire damage will be set ablaze for a number of rounds equal to your
-                                  proficiency modifier. They will suffer 5hp of fire damage at the start of each of their turns for the duration or until it is extinguished 
-        Fleet Spark: You can use the bonus action granted by your Cunning Action to use a tinder box or other fire starting tool, or to throw a flask of oil or similiarly flamable compound at a target
-        Immolation: Any creature set on fire by you suffers a temporary -2 penalty to their total AC, regardless if they are otherwise resistant or immune to fire. If the fire is extinguished, this penalty ends at the end of
-                    the target's next turn
+    - Fire, Explosives, Traps
+    proficiencies:
+    - Stealth
+    - Sleight-of-Hand
+    - Deception    
+    - Intimidation
+    - Acrobatics
+    - Accelerants
+  special-abilities:
+  - title: Aetherborn Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Born of Aether
+    - content: You have resistance to necrotic damage
+    - title: Menacing
+    - content: You gain proficiency in the Intimidation skill
+    - title: Vampiric Gift
+    - content: An aetherborn with this gift gains the Drain Life ability, which is a natural attack that uses Strength for its attack and damage rolls, dealing 1d6 necrotic damage and restores the same number of hit
+               points to the aetherborn. However, if the aetherborn goes for 7 days without dealing this damage, their hit point maximum is reduced by 1d6 per week. This reduction can’t be removed until the aetherborn
+               has used their Drain Life ability and completed a long rest
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+  - title: Arsonist Abilities
+  - abilities: 
+    - title: Firebug
+    - content: You become exceptionally talented at setting things ablaze. You gain the following talents - 
+               Pyrotechnician - You may add your proficiency modifier to any ability check made to start or manipulate a fire, as well as determining the cause of one
+               Inflamable - You are considered proficient with improvised weapons when attacking with torches or any flaming object that can be held in one hand, as well as when throwing oil or similarly flamable compounds 
+                            and any type of fire-based explosive
+               Firestarter - Any creature or object covered in a combustable compound, such as oil, by you specifically, that takes any amount of fire damage will be set ablaze for a number of rounds equal to your
+                             proficiency modifier. They will suffer 5hp of fire damage at the start of each of their turns for the duration or until it is extinguished 
+    - title: Fleet Spark
+    - content: You can use the bonus action granted by your Cunning Action to use a tinder box or other fire starting tool, or to throw a flask of oil or similiarly flamable compound at a target
+    - title: Immolation
+    - content: Any creature set on fire by you suffers a temporary -2 penalty to their total AC, regardless if they are otherwise resistant or immune to fire. If the fire is extinguished, this penalty ends at the end of
+               the target's next turn
+   
+  - title: Attacks
+  - content: 1 attack with Fire
+  - title: Combat Tactics
+  - content: He will run, unless he has no other choice
 
-    special-abilities:
-      - Proficiencies: Stealth, Sleight of Hand, Fire, Explosives, Traps    
-    attacks: |
-      1 attack with Fire
-    combat-tactics: |
-      He will run, unless he has no other choice
-    special-equipment:
-    - Various Oils, Firestarters and Explosives
+  - title: Special Equipment
+  - abilities:
+    - title: Accelerants
+    - content: Various Oils, Firestarters and Explosives
                                                                    
   profile:
 

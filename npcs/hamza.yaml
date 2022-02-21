@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -314,6 +314,7 @@ npc:
     - Common
     - Draconic
     - Abyssal
+    - Celestial
 
     #
     # Factions:
@@ -460,67 +461,126 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    - Strength
+    damage-immunities:
+    - Necrotic and Psychic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - Githyanki Abilities:
-      - Decadent Mastery: Proficiency with all artisan's tools
-        Martial Prodigy: You are proficient with light and medium armor and with shortswords, longswords, and greatswords
-        Githyanki Psionics: You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Jump spell once with this trait, and you regain the
-                            ability to do so when you finish a long rest. When you reach 5th level, you can cast the Misty Step spell once with this trait, and you regain the ability to do so when you finish a long rest.
-                            Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components
-      Fighter Abilities:
-      - Fighting Style: Great Weapon Fighting
-        Second Wind: Bonus Action to regain 1d10 +18 
-        Action Surge: Once every short/long rest can take an extra action
-        Extra Attack: Can attack 4 times each turn
-        Indomiable: you can reroll a saving throw that you fail. If you do so, you must use the new roll. 3x per long rest
-      Psi Knight Abilities:
-      - Psionic Talents: 
-        - Description: You harbor a wellspring of psionic power within yourself, an energy that ebbs and flows as you channel it in various ways. This power is represented by your Psionic Talent die, the starting size of 
-                       which is a d6.
-          Psionic Talent Options: You can use your Psionic Talent die in the following ways - 
-          Protective Field: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to roll your Psionic Talent die and reduce the damage taken by the number 
-                            rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.
-          Psi-Powered Leap: When you make a high or long jump, you can roll your Psionic Talent die and extend the distance of the jump, up to a number of feet equal to twice the number rolled plus twice 
-                            your Intelligence modifier (minimum of 1 extra foot). This extra distance costs you only 1 foot of movement.
-          Telekinetic Strike: You can propel your attacks with telekinetic force. Once on each of your turns, immediately after you deal damage to a target within 30 feet of you with a weapon  attack, you 
-                              can roll your Psionic Talent die and also deal force damage to the target equal to the number rolled.
-          Changing the Die’s Size: If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example,
-                                   if the die is a d6 and you roll a 6, it becomes a d4. If it’s a d4 and you roll a 4, it becomes unusable until you finish a long rest. Conversely, if you roll a 1 on your 
-                                   Psionic Talent die, it increases by one die size after the roll, up to its starting size. This represents you conserving psionic energy for later use. For example, if you 
-                                   roll a 1 on a d4, the die then becomes a d6. Whenever you finish a long rest, your Psionic Talent die resets to its starting size. When you reach certain levels in this 
-                                   class, the starting size of your Psionic Talent die increases - at 5th level (d8), 11th level (d10), and 17th level (d12).
-          Psi Replenishment: As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long
-                             rest.
-      Telekinetic Adept: 
-      - Description: You have mastered new ways to use your telekinesis - 
-        Psionic Thrust: When you deal damage to a target with the Telekinetic Strike of your Psionic Talent, you can force the target to make a Strength saving throw against a DC equal to 8 + your 
-                        proficiency bonus + your Intelligence modifier. Unless the save succeeds, you can knock the target prone or move it up to 10 feet in any direction horizontally.
-        Telekinetic Movement: If your Psionic Talent die is available, you can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing 
-                              creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it
-                              is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. When you take this action, your Psionic Talent die 
-                              decreases by one die size.
-      Psi-Enhanced Metabolism: 
-      - Description: The psionic energy flowing through you has bolstered your mind and body. You have resistance to poison and psychic damage, and you are immune to the poisoned condition.
-        Bulwark of Force: You can shield yourself and others with telekinetic force. As a bonus action, you can choose creatures, which can include you, that you can see within 30 feet of you, up to a number of creatures 
-                          equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures is protected by half cover for 1 minute or until you’re incapacitated. Once you use this feature, you can’t
-                          do so again until you finish a long rest, unless you decrease your Psionic Talent die by one die size to use this feature again.
-        Telekinetic Master: Your ability to move creatures and objects with your mind is matched by few. If your Psionic Talent die is available, you can cast the telekinesis spell, requiring no components. Your spellcasting 
-                            ability for the spell is Intelligence. When you cast this spell, your Psionic Talent die decreases by one die size
+    - Everything
+    proficiencies:
+    - Survival
+    - Perception
+    - Deception    
+    - Intimidation
+    - Insight
+    - Athletics
+    - All Artisan's Tools
+  special-abilities:
+  - title: Githyanki Abilities
+  - abilities: 
+    - title: Decadent Mastery
+    - content: Proficiency with all artisan's tools           
+    - title: Martial Prodigy
+    - content: You are proficient with light and medium armor and with shortswords, longswords, and greatswords
+    - title: Githyanki Psionics
+    - content: You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Jump spell once with this trait, and you regain the
+               ability to do so when you finish a long rest. When you reach 5th level, you can cast the Misty Step spell once with this trait, and you regain the ability to do so when you finish a long rest.
+               Intelligence is your spellcasting ability for these spells. When you cast them with this trait, they don't require components
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new 
+               roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 18
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+    - title: Extra Attack
+    - content: Can attack twice each turn
+    - title: Indomitable
+    - content: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.
+  - title: Psi Knight Abilities
+  - abilities: 
+    - title: Psionic Talents
+    - content: You harbor a wellspring of psionic power within yourself, an energy that ebbs and flows as you channel it in various ways. This power is represented by your Psionic Talent die, the starting size of 
+               which is a d6.
+    - title: Psionic Talent Options
+    - content: You can use your Psionic Talent die in the following ways - 
+    - title: Protective Field
+    - content: When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to roll your Psionic Talent die and reduce the damage taken by the number 
+               rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.
+    - title: Psi-Powered Leap
+    - content: When you make a high or long jump, you can roll your Psionic Talent die and extend the distance of the jump, up to a number of feet equal to twice the number rolled plus twice 
+               your Intelligence modifier (minimum of 1 extra foot). This extra distance costs you only 1 foot of movement.
+               Telekinetic Strike - You can propel your attacks with telekinetic force. Once on each of your turns, immediately after you deal damage to a target within 30 feet of you with a weapon  attack, you 
+                                    can roll your Psionic Talent die and also deal force damage to the target equal to the number rolled.
+               Changing the Die’s Size - If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example,
+                                         if the die is a d6 and you roll a 6, it becomes a d4. If it’s a d4 and you roll a 4, it becomes unusable until you finish a long rest. Conversely, if you roll a 1 on your Psionic
+                                         Talent die, it increases by one die size after the roll, up to its starting size. This represents you conserving psionic energy for later use. For example, if you roll a 1 on a d4,
+                                         the die then becomes a d6. Whenever you finish a long rest, your Psionic Talent die resets to its starting size. When you reach certain levels in this class, the starting 
+                                         size of your Psionic Talent die increases - at 5th level (d8), 11th level (d10), and 17th level (d12).
+               Psi Replenishment - As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long rest.
+    - title: Telekinetic Adept
+    - content: You have mastered new ways to use your telekinesis 
+               Psionic Thrust - When you deal damage to a target with the Telekinetic Strike of your Psionic Talent, you can force the target to make a Strength saving throw against a DC equal to 8 + your 
+                                proficiency bonus + your Intelligence modifier. Unless the save succeeds, you can knock the target prone or move it up to 10 feet in any direction horizontally.
+               Telekinetic Movement - If your Psionic Talent die is available, you can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing 
+                                      creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it
+                                      is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. When you take this action, your Psionic Talent die 
+                                      decreases by one die size.
+    - title: Psi-Enhanced Metabolism
+    - content: The psionic energy flowing through you has bolstered your mind and body. You have resistance to poison and psychic damage, and you are immune to the poisoned condition.
+    - title: Bulwark of Force
+    - content: You can shield yourself and others with telekinetic force. As a bonus action, you can choose creatures, which can include you, that you can see within 30 feet of you, up to a number of creatures 
+               equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures is protected by half cover for 1 minute or until you’re incapacitated. Once you use this feature, you can’t
+               do so again until you finish a long rest, unless you decrease your Psionic Talent die by one die size to use this feature again.
+    - title: Telekinetic Master
+    - content: Your ability to move creatures and objects with your mind is matched by few. If your Psionic Talent die is available, you can cast the telekinesis spell, requiring no components. Your spellcasting 
+               ability for the spell is Intelligence. When you cast this spell, your Psionic Talent die decreases by one die size
 
-    special-abilities:
-      - Proficiencies: Performance, Insight, Perception, Survival, Athletics,
-        Legendary Resistance: (3/Day), If Ham'za fails a saving throw she can choose to succeed instead 
-        Legendary Actions: 
-        - Description: Ham'za can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Ham'za regains spent Legendary Actions at the start of her turn
-          Gith Portal: Ham'za can cast Teleport, travelling to anywhere he's been before regardless of distance
-          Word of the Gith: Ham'za casts Power Word Kill. He may only do this once per long rest
-          Psionic Reserve: Ham'za replenish all of his Psionic Energy Dice. He may only do this once per long rest
-    attacks: |
-      4 attacks with Psionic attacks or his Great Sword
-    combat-tactics: |
-      He will fight anyone, anywhere, anytime
-    special-equipment:
-    - Silver GreatSword
+  - title: Legendary Resistance
+  - content: (3/Day), If Ham'za fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions 
+  - content: Ham'za can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Ham'za regains spent Legendary Actions at 
+             the start of her turn
+  - abilities: 
+    - title: Gith Portal
+    - content: Ham'za can cast Teleport, travelling to anywhere he's been before regardless of distance
+    - title: Word of the Gith
+    - content: Ham'za casts Power Word Kill. He may only do this once per long rest
+    - title: Psionic Reserve
+    - content: Ham'za replenish all of his Psionic Energy Dice. He may only do this once per long rest
+  - title: Aura of Fear
+  - content: Due to his terrifying presence, any creature within 10 ft. of Ham'za must make a DC18 Wisdom saving throw or become frightened. If that saving throw is successful, that creature is immune for the next 24 hours
+  - title: Feats
+  - content: Wild Talent, Telepathic, Telekenetic, Sentinel, Savage Attacker, Mobile, Mage Slayer, Keen Mind, Great Weapons Master, Dual Weilder, Alert, Sharpshooter
+  - title: Attacks
+  - content: 4 attacks with Psionic attacks or his Great Sword
+  - title: Combat Tactics
+  - content: He will fight anyone, anywhere, anytime
+    
+  - title: Special Equipment
+  - abilities:
+    - title: Silver GreatSword
+    - content: These silver greatswords are the Githyanki's sacred weapons, and are capable of cutting the cord that tethers a creature to their astral body. You gain a +3 bonus to attack and damage rolls made with this magic 
+               weapon. If you attack a creature's astral body (that is, the creature is under the effect of the astral projection spell or similar magic) and the attack was a critical hit, you sever that creature's astral cord.
+    - title: Ebony Plate Mail
+    - content: While wearing it, you have an extra +4 bonus to your AC. When you wear this pitch black plate armor, you do not incur the normal disadvange on Dexterity (Stealth) checks, and instead gain advantage on such checks.
+               Whenever a hostile creature comes within 5 feet of you, and whenever it begins its turn within 5 feet of you, it suffers 1d4 poison damage.
+    - title: Bow of the Hunter's Markdown
+    - content: This Bow gives it's weilder +3 to attack and damage rolls, critical hits on 19s and 20s, and allows the weilder to cast the Hunter's Mark spell as a bonus action
+    - title: Magic Arrows
+    - content: An assortment of various magical arrows including; Walloping Arrows, Arrows of Slaying, Explosive Arrows, Lightning Arrows, etc.
+    - title: Wand of Fireballs
+    - content: This wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to cast the fireball spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You 
+               can increase the spell slot level by one for each additional charge you expend. The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles 
+               into ashes and is destroyed.
                                                                    
   profile:
 
@@ -546,4 +606,4 @@ npc:
     # No length limit for now.
     #
     personality: |
-      6'9", gaunt and wiry. Yellow skin, black eyes and black hair in a topknot. Armored with jewels, feathers and bones. He is basically evil incarnate
+      6'9", gaunt and wiry. Yellow skin, black eyes and black hair in a topknot. His Ebony Armor is decorated with jewels, feathers and bones. He is basically chaos incarnate. 

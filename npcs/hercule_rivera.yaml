@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle age adult
+    age: Middle Age Adult
 
     #
     # Races (case insensitive):
@@ -459,17 +459,43 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Feats: Actor, Observant
+    - Magic Tricks and Minor Illusiosn
+    proficiencies:
+    - Arcana
+    - Perception
+    - Deception    
+    - Sleight-of-Hand
+    - Persuasion
+  special-abilities:
+  - title: Feats
+  - content: Actor, Observant, Magic Initiate
+  - abilities:
+    - title: Magic Initiate Spell DC
+    - content: 16
+    - title: Cantrips
+    - content: Mage Hand, Prestidigitation
+    - title: 1st Level
+    - content: Detect Magic
+     
+  - title: Attacks
+  - content: 1 attack with unarmed conflict
+  - title: Combat Tactics
+  - content: Will do everything in his power to run away from a fight.
 
-    special-abilities:
-      - Proficiencies: Persuasion, Deception, Sleight of Hand, Far above average sleight of hand skills as it pertains to magic tricks      
-    attacks: |
-      1 attack with unarmed conflict
-    combat-tactics: |
-      Will do everything in his power to run away from a fight.
-    special-equipment:
-    - Various magic trinkets
+  - title: Special Equipment
+  - abilities:
+    - title: Magic Trinkets
+    - content: Various low grade magical trinkets and occasionally a couple decent magic items
                                                                    
   profile:
 
@@ -481,7 +507,7 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Hercule is the owner/operator of Hercule's Curiosity Shop. Having tried his hand at several careers throughout his lifetime, including briefly attempting to school for sorcery, he found that he excelled at sales. Using
+      Hercule is the owner/operator of Hercule's Curiosity Shop. Having tried his hand at several careers throughout his lifetime, including briefly attempting go to school for sorcery, he found that he excelled at sales. Using
       the contacts he made through his brief schooling, he created his current personae and opened his curiosity shop. Most of the goods he carries are minor magic trinkets of no real use to anyone, but he also carries
       and extensive stock of materials used for the various schools of spellcasting. From holy symbols to spellbook materials, Hercule's carries it all. Now and again, he does actually manage to procure some useful magic items
       for sale, but those are few and far between.

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 1
+    level: 3
 
     #
     # Alignments (case insensitive):
@@ -463,30 +463,80 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Gremlin Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Almost Fire Proof: Resistant to fire damage
-        Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
-        Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-          Cantrip: Mage Hand, Mending, Shocking Grasp
-          1st Level: Faerie Fire, Cure Wounds
- 
-    special-abilities:
-    - Proficiencies: Proficient in Perception, Deception, Theive's Tools, Tinker's Tools, Smith's Tools     
-    - Feats: Inspiring Leader
+    - Tinkering
+    proficiencies:
+    - Perception
+    - Deception    
+    - Thieve's Tools
+    - Tinker's  Tools
+    - Smith's  Tools
+  special-abilities:
+  - title: Gremlin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Almost Fire Proof
+    - content: Resistant to fire damage
+    - title: Tinkerer
+    - content: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
+    - title: Dangerous Tinker
+    - content: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 14  
+    - title: Cantrip
+    - content: Mage Hand, Mending
+    - title: 1st Level
+    - content: Faerie Fire, Cure Wounds, Identify
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 4
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+  - title: Forge Adept Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 14
+    - title: 3rd Level
+    - content: Armor of Agathys, Shield of Faith
+    - title: Tool Proficiency
+    - content: When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.
+    - title: Battle Ready
+    - content: Beginning at 3rd level, you’re skilled in fighting side-by-side with your companions on the field of battle. You gain proficiency with martial weapons. Additionally, when you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls.
+    - title: Ghall'Shaarat
+    - content: At 3rd level, you learn to imbue a weapon with a fraction of your spirit. The Dhakaani daashors called this weapon the ghaal’shaarat, Goblin for “mighty blade.” Imbuing your ghaal’shaarat works like infusing an 
+               item, but does not count toward your maximum number of infused items. When you finish a long rest, you can touch a magic or nonmagical simple or martial melee weapon, which becomes your ghaal’shaarat.
+               Once imbued, your ghaal’shaarat is a magic weapon that grants a +1 bonus to attack and damage rolls, unless the base weapon you imbued already grants a higher bonus. This bonus increases when you reach certain 
+               levels in this class, increasing to +2 at 8th level and +3 at 13th level. If the weapon you imbued has the thrown property, it returns to your hand immediately after it is used to make a ranged attack.
+               Your ghaal’shaarat’s benefits remain until the weapon is destroyed or until you use this ability to imbue a new item with this power. Other creatures can’t benefit from your ghaal’shaarat’s powers, and to them, it
+               functions as the unimbued weapon did.
+     
+  - title: Feats
+  - content: Inspiring Leader
+  - title: Attacks
+  - content: Has 1 attack. Will range attack with his Blast Orb or bite or dagger in melee range
+  - title: Combat Tactics
+  - content: Likes to pick fights
 
-    attacks: |
-      Has 1 attack. Will range attack with his Blast Orb or bite or dagger in melee range
-    combat-tactics: |
-      Likes to pick fights
-    special-equipment:
-    - Tinker's, Thieve's and Smith's Tools
-    - Dagger
 
   profile:
 

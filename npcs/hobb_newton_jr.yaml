@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Human
+    race: Half-Giant
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Hill
 
     #
     # Pronouns (case insensitive):
@@ -444,11 +444,11 @@ npc:
     armour-class: 12
     hit-points: 34
     speed: 30
-    str: 16
+    str: 21
     dex: 12
     con: 14
-    int: 16
-    wis: 10
+    int: 11
+    wis: 13
     cha: 14
 
   #
@@ -459,17 +459,39 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Anything consumed - poisons and potions, etc.
     skills:
-    - Feats: Mounted Combatant, Tavern Brawler  
-   
-    special-abilities:
-       - Animal Handling. Minor Veterinary Medicine. Horseback Riding         
-    attacks: |
-      1 attack with unarmed strike or improvised weapon
-    combat-tactics: |
-      Will largely avoid combat unless cornered 
-    special-equipment:
-    - Animal handling gear
+    - Horseback Riding, Animal Husbandry
+    proficiencies:
+    - Animal Handling
+    - Veterinary Medicine    
+    - Intimidation
+    - Persuasion
+    - Tack and Saddles
+  special-abilities:
+  - title: Half-Giant(Hill) Abilities
+  - abilities: 
+    - title: Boulder-Tosser
+    - content: You are able to throw rocks and other similar objects, like weapons. You treat improvised weapons as having the thrown (30/120) property, and when thrown they deal 1d8 damage.
+    - title: Powerful Build
+    - content: For the purpose of carrying capacity, you are treated as being one size larger.
+    - title: Consumer
+    - content: You have advantage on saving throws against all things you consume, such as poisons and potions.
+  - title: Feats
+  - content: Mounted Combatant, Tavern Brawler  
+  - title: Attacks
+  - content: 1 attack with unarmed strike or improvised weapon
+  - title: Combat Tactics
+  - content: Will largely avoid combat unless cornered 
+
 
   profile:
 
