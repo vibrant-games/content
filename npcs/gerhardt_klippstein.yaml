@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -465,68 +465,160 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Intelligence
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Vedalken Abilities:
-      - Vedalken Dispassion: Advantage on all Intelligence, Wisdom and Charisma saving throws
-        Tireless Precision: Proficient in Arcana and with Tinker's Tool and add 1d4 to any checks with those skills
-        Partially Amphibious: Can breathe underwater for up to 1hr per long rest 
-        Aether Lore: When making an intelligence (history) check related to magic items or technological devices, adds twice his proficiency bonus
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting:
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 23
-          Cantrip: Shocking Grasp, Mage Hand, Mending, Create Bonfire, Fire Bolt
-          1st Level: Arcane Weapon, Detect Magic, Identify, Expedition Retreat, Grease
-          2nd Level: Arcane Lock, Continual Flame, Levitate, Magic Weapon
-          3rd Level: Dispel Magic, Haste, Tiny Servant, Fly
-          4th Level: Fabricate, Stone Shape, Summon Construct
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
-        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-        Tool Expertise: Smith's Tool proficiency bonus is doubled
-        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-        Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-        Spell Storing Item: Can store a spell in and object once per long rest
-        Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
-      Armorer Abilities:
-      - Tool Proficiency: Proficiency with Thieve's Tools, Smith's Tools and Heavy Armor
-        Spellcasting:
-        - Description: Requires Smith's Tools as Spellcasting focus, Spell DC 23
-          3rd Level: Magic Missle, Shield
-          5th Level: Mirror Image, Shatter
-          9th Level: Hypnotic Patetrn, Fire Ball
-          13th Level: Fire Sheild, Greater Invisibility
-        Power Armor: Powered Armor ignores strength requirements, can be used as his spellcasting focus, cannot be removed against his will and covers his entire body
-        Infiltrator Armor: His powered armor has the Fire Launcher, Powered Steps & Second Skin abilities
-        Extra Attack: Can take a second attack action each turn
-        Armor Modifications: Each part of his armor is consisdered seperate for the purpose of Infusion and the number of items he can infuse increases by 2 as long as theyre part of his armor
-        Perfected Armor: Successful Fire Launcher attacks he makes cause targets to glimmer with light giving the next attack roll against it by another creature advantage and does an extra 1d6 Fire Damage
+    - Engineering
+    proficiencies:
+    - Arcana
+    - Perception
+    - Tinker's Tools    
+    - History
+    - Nature
+    - Smith's Tools
+    - Thieve's Tools
+    - Heavy Armor
+  special-abilities:
+  - title: Vedalken Abilities
+  - abilities: 
+    - title: Vedalken Dispassion
+    - content: Advantage on all Intelligence, Wisdom and Charisma saving throws
+    - title: Tireless Precision
+    - content: Proficient in Arcana and with Tinker's Tool and add 1d4 to any checks with those skills
+    - title: Partially Amphibious
+    - content: Can breathe underwater for up to 1hr per long rest 
+    - title: Aether Lore
+    - content: When making an intelligence (history) check related to magic items or technological devices, adds twice his proficiency bonus
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 23
+    - title: Cantrip
+    - content: Shocking Grasp, Mage Hand, Mending, Create Bonfire, Fire Bolt
+    - title: 1st Level
+    - content: Arcane Weapon, Detect Magic, Identify, Expedition Retreat, Grease
+    - title: 2nd Level
+    - content: Arcane Lock, Continual Flame, Levitate, Magic Weapon
+    - title: 3rd Level
+    - content: Dispel Magic, Haste, Tiny Servant, Fly
+    - title: 4th Level
+    - content: Fabricate, Stone Shape, Summon Construct
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 10  
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+    - title: Flash of Genius
+    - contents: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+    - title: Magic Item Adept
+    - content: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+    - title: Spell Storing Item
+    - content: Can store a spell in and object once per long rest
+    - title: Magic Item Savant
+    - content: Can attune to any magic item regardless of class, race, spell and level requirements 
+    - title: Magic Item Master
+    - content: Can attune to 6 magic items 
+  - title: Armorer Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 23
+    - title: 3rd Level
+    - content: Magic Missle, Shield
+    - title: 5th Level
+    - content: Mirror Image, Shatter
+    - title: 9th Level
+    - content: Hypnotic Patetrn, Fire Ball
+    - title: 13th Level
+    - content: Fire Sheild, Greater Invisibility
+    - title: Tools of the Trade
+    - content: You gain proficiency with heavy armor. You also gain proficiency with smith's tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan's tools of your 
+               choice.
+    - title: Arcane Armor
+    - contnet: Your metallurgical pursuits have led to you making armor a conduit for your magic. As an action, you can turn a suit of armor you are wearing into Arcane Armor, provided you have smith's tools in hand. 
+               You gain the following benefits while wearing this armor;
+               If the armor normally has a Strength requirement, the arcane armor lacks this requirement for you.
+               You can use the arcane armor as a spellcasting focus for your artificer spells.
+               The armor attaches to you and can’t be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action. The armor replaces any 
+               missing limbs, functioning identically to a body part it is replacing.
+               The armor continues to be Arcane Armor until you don another suit of armor or you die.
+    - title: Armor Model
+    - content: You can customize your Arcane Armor. When you do so, choose one of the following armor models; Guardian or Infiltrator. The model you choose gives you special benefits while you wear it. Each model includes
+               a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls. You can change the armor's model whenever you 
+               finish a short or long rest, provided you have smith's tools in hand.
+    - title: Guardian
+    - content: You design your armor to be in the front line of conflict. It has the following features
+    - title: Thunder Gauntlets
+    - content: Each of the armor's gauntlets counts as a simple melee weapon while you aren't holding anything in it, and it deals 1d8 thunder damage on a hit. A creature hit by the gauntlet has 
+               disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else.
+    - title: Defensive Field
+    - content: As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you 
+               doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+    - title: Infiltrator
+    - content: You customize your armor for subtle undertakings. It has the following features;
+               Lightning Launcher - A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, 
+                                    and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.
+               Powered Steps - Your walking speed increases by 5 feet.
+               Dampening Field - You have advantage on Dexterity (Stealth) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal.  
+    - title: Extra Attack
+    - content: You can attack twice, rather than once, whenever you take the Attack action on your turn.
+    - title: Armor Modifications
+    - content: You learn how to use your artificer infusions to specially modify your Arcane Armor. That armor now counts as separate items for the purposes of your Infuse Items feature; armor (the chest piece), 
+               boots, helmet, and the armor's special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor's model with the Armor Model feature. In 
+               addition, the maximum number of items you can infuse at once increases by 2, but those extra items must be part of your Arcane Armor.
+    - title: Perfected Armor
+    - content: Your Arcane Armor gains additional benefits based on its model, as shown below.
+               Guardian - When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force the creature to make a Strength saving throw against your spell 
+                          save DC, pulling the creature up to 30 feet toward you to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of 
+                          this reaction. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.
+               Infiltrator - Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot 
+                             radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, 
+                             the target takes an extra 1d6 lightning damage.
+  - title: Feats
+  - content: Keen Mind, Mounted Combatant, War Caster, Observant, Heavy Armor Master
+  - title: Legendary Resistance
+  - content: (2/Day) If Gerhardt Klippstein fails a saving throw he can choose to succeed instead
+  - title: Legendary Actions
+  - content: Gerhardt Klippstein can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn.
+             Gerhardt Klippstein regains spent Legendary Actions at the start of his turn
+  - abilities:
+    - title: Fire Upgrade
+    - content: Gerhardt Klippstein cast the Fireball spell through his armor's Fire Launcher at 3rd Level with a Dex DC of 19
+    - title: Fancy Armor
+    - content: Gerhardt Klippstein can Infuse one section of his Power Armor with one of his Artificer's Infusions
+    - title: Escape Velocity
+    - content: Gerhardt Klippstein can cast the Summon Construct Spell to summon his Steam Wagon, mount it and dash up to 80 feet
 
-    special-abilities:
-    - Feats: 
-      - Keen Mind
-      - Mounted Combatant
-      - War Caster
-      - Skill Expert: 
-        - Smith's Tools
-        - Observant
-        - Heavy Armor Master
-      Legendary Resistance: 2/Day, If Gerhardt Klippstein fails a saving throw he can choose to succeed instead
-      Legendary Actions:
-      - Descruption: Gerhardt Klippstein can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn.
-                     Gerhardt Klippstein regains spent Legendary Actions at the start of his turn
-        Fire Upgrade: Gerhardt Klippstein cast the Fireball spell through his armor's Fire Launcher at 3rd Level with a Dex DC of 19
-        Fancy Armor: Gerhardt Klippstein can Infuse one section of his Power Armor with one of his Artificer's Infusions
-        Escape Velocity: Gerhardt Klippstein can cast the Summon Construct Spell to summon his Steam Wagon, mount it and dash up to 80 feet
+  - title: Attacks
+  - content: Can make 2 attacks with his firearms and his Steel Defender can attack twice
+  - title: Combat Tactics
+  - content: He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run
 
-    attacks: |
-      Can make 2 attacks with his firearms and his Steel Defender can attack twice
-    combat-tactics: |
-      He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run
-    special-equipment:
-    - Full Plate Power Armor: See above for details, except his Power Armor has the ability to launch fire instead of lightning
-      Random Artifact Devices: Can be carrying whatever he needs
-      Steam Wagon: His Steam Wagon resembles a regular wagon but has a large steam-belching engine on the back powered by his Artificer's Infusion. It can move on it's own without horses and answers his call.
-                   It has a speed of 80 feet and can take 150HP damage before it stops running.
+  - title: Special Equipment
+  - abilities:
+    - title: Full Plate Power Armor
+    - content: See above for details, except his Power Armor has the ability to launch fire instead of lightning
+    - title: Random Artifact Devices
+    - content: Can be carrying whatever kind of gadget or artifact he needs
+    - title: Steam Wagon
+    - content: His Steam Wagon resembles a regular wagon but has a large steam-belching engine on the back powered by his Artificer's Infusion. It can move on it's own without horses and answers his call.
+               It has a speed of 80 feet and can take 150HP damage before it stops running.
 
   profile:
 

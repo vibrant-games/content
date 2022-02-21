@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -462,46 +462,92 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Firbolg Abilities:
-       - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
-                        short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.
-         Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
-                      use it again until you finish a short or long rest.
-         Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-         Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
-                                   You have advantage on all Charisma checks you make to influence them
-      Shaman Abilities:
-      - Spellcasting:
-        - Description: DC 14
-          Cantrips: Toll the Dead, Guidance, Primal Savagery
-          1st Level: Bane, Cammand
-          2nd Level: Earthbind, Pass Without Trace
-          3rd Level: Life Transference
-        Sacred Technique: 
-        - Description: This focus grants you innate bonuses depending on your choice of focus
-          Soul: When wearing no armor your AC = 10 + your Dexterity + your Wisdom.
-        Totemic Magic:
-        - Description: You Learn the Art of making Totems through which you channel shamanistic power. Totems Known - 4.
-          1: Totem of the Earthquake
-          2: Totem of the Eruption
-          3: Totem of the Avalanche
-      Witch-Doctor Abilities:
-      - Life Bearer: as a bonus action you can touch one creature and heal it 1d10+ Wisdom Modifier
-        Primal Blessing: Can bestow up to half your Totems upon other willing creatures until your next long rest
-        Spellcasting:
-        - Description: DC 14
-          3rd Level: Enhance Ability, Lesser Restoration
-          5th Level: Beacon of Hope, Revivify
+    - Tanning, Skinning, Fabrics and Textiles
+    proficiencies:
+    - Survival
+    - Nature
+    - Athletics    
+    - Perception
+    - Insight
+    - Stealth
+    - Leatherworking Tools
+    - Weaving Tools
+  special-abilities:
+  - title: Firbolg Abilities
+  - abilities: 
+    - title: Firbolg Magic
+    - content: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
+               short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
+    - title: Hidden Step
+    - content: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
+               use it again until you finish a short or long rest.
+    - title: Powerful Build
+    - content: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+    - title: Speech of Beast and Leaf
+    - content: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
+               You have advantage on all Charisma checks you make to influence them
+  - title: Shaman 1 Abilities
+  - abilities:
+  - title: Shaman 1 Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: Cantrips
+    - content: Toll the Dead, Guidance, Primal Savagery
+    - title: 1st Level
+    - content: Bane, Cammand
+    - title: 2nd Level
+    - content: Earthbind, Pass Without Trace
+    - title: 3rd Level
+    - content: Life Transference
+    - title: Sacred Technique 
+    - content: This focus grants you innate bonuses depending on your choice of focus
+               Body - Your hit point max increases by 1 each level
+               Mind - When you make an intelligence-based ability check or saving throw, you can choose to use your wisdon score instead of your intelligence
+               Heart - When you make a saving throw you can choose to have advantage or disadvantage on it. The next saving throw you make has to be the opposite
+               Soul - When wearing no armor your AC = 10 + your Dexterity + your Wisdom.
+    - title: Totemic Magic
+    - content: You Learn the Art of making Totems through which you channel shamanistic power. 
+    - title: Totems Known
+    - content: 4    
+    - title: Totem 1
+    - content: Totem of the Earthquake
+    - title: Totem 2
+    - content: Totem of the Eruption
+    - title: Totem 3
+    - content: Totem of the Avalanche
+  - title: Witch-Doctor Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 14
+    - title: 3rd Level
+    - content: Enhance Ability, Lesser Restoration
+    - title: 5th Level
+    - content: Beacon of Hope, Revivify
+    - content: Creation, Greater Restoration
+    - title: Life Bearer
+    - content: As a bonus action you can touch one creature and heal it. It gains 1d10+ Wisdom Modifier HP. You can use this a number of times equal to your Wisdom modifier per long rest
+    - title: Primal Blessing
+    - content: At the end of a long rest, you can bestow up to half your Totems upon other willing creatures that you can touch. The benefits of these totems last until your next long rest, at which point the abilites
+               end for the creature and return to you. You can only grant each totem to one creature, and each person may only have one totem 
 
-    special-abilities:
-    - Proficiencies: Survival, Nature, Athletics, Perception, Insight, Tanning, Skinning, Fabrics and Textiles, Stealth
-    attacks: |
-      1 attack with Quaterstaff
-    combat-tactics: |
-      Gleadric will retract from conflict. Cujoloa will ferciously use his magicks and invocations to down combatants
-    special-equipment:
-    - Quaterstaff
+  - title: Attacks
+  - content: 1 attack with Quaterstaff
+  - title: Combat Tactics
+  - content: Gleadric will retract from conflict. Cujoloa will ferciously use his magicks and invocations to down combatants
+
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -464,20 +464,37 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Frightened
     skills:
-    - Halfling Abilities:
-      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-        Brave: Has advantage on Saving Throws against being Frightened 
-        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
+    - Baking
+    proficiencies:
+    - Performance
+    - Insight
+    - Persuasion
+    - Baker's Supplpies
+  special-abilities:
+  - title: Halfling Abilities
+  - abilities: 
+    - title: Lucky
+    - content: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+    - title: Brave
+    - content: Has advantage on Saving Throws against being Frightened 
+    - title: Halfling Nimbleness
+    - content: Can move through the space of any creature that is of a size larger than her
+ 
+  - title: Attacks
+  - content: 1 attacks with club (rolling pin)
+  - title: Combat Tactics
+  - content: Gruda will only enter combat if her life is in danger
 
-    special-abilities:
-    - Proficiencies: Baking, Persuasion   
-    attacks: |
-      1 attacks with club (rolling pin)
-    combat-tactics: |
-      Gruda will only enter combat if her life is in danger
-    special-equipment:
-    - Bakers Supplies
 
   profile:
 

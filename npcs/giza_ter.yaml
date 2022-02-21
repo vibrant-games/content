@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: elderly
+    age: Elderly
 
     #
     # Races (case insensitive):
@@ -463,21 +463,37 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Tiefling Abilities:
-      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
-        Hellish Resistance: You have Resistance to fire damage
-      - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
-                         When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells
-
-    special-abilities:
-    - Proficiencies: History; Persuasion; Sleight of Hand   
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      Giza will try to avoid combat through persuasion, sleight of hand, or thaumaturgy tricks
-    special-equipment:
+    saving-throws:
+    - Constitution
+    - Charisma
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire
+    skills:
+    - Bookkeeping
+    proficiencies:
+    - History
+    - Sleight-of-Hands
+    - Persuasion
+  special-abilities:
+  - title: Tiefling Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+    - title: Hellish Resistance
+    - content: You have Resistance to fire damage
+    - title: Asmodeal Legacy
+    - content: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
+               When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells
+   
+  - title: Attacks
+  - content: 1 attack with unarmed strike
+  - title: Combat Tactics
+  - content: Giza will try to avoid combat through persuasion, sleight of hand, or thaumaturgy tricks
+
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: elderly
+    age: Elderly
 
     #
     # Races (case insensitive):
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Provisioner; Salve and Ointment Trader
+    - Provisioner, Salve and Ointment Trader
 
     #
     # D & D classes (case insensitive):
@@ -297,7 +297,6 @@ npc:
     tendencies:
     - N/A
 
-
     #
     # Languages the character speaks
     # (human, dwarvish, etc).
@@ -313,7 +312,6 @@ npc:
     - Elvish
     - Common
     - Halfling
-
 
     #
     # Factions:
@@ -358,7 +356,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  From a shanty extension to a cluster of market buildings, a door creaks open. "Come in. Get well, my friends."
+    introduction:  From a shanty extension to a cluster of market buildings, a door creaks open. /"Come in. Get well, my friends./"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -410,7 +408,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Grien seeks to serve the greater good for the last years of her long life
+      Grim seeks to serve the greater good for the last years of her long life
+
     #
     # Passions:
     #
@@ -419,6 +418,7 @@ npc:
     #
     passions: |
       Herbs, salves. Helping others
+
     #
     # Vulnerabilities:
     #
@@ -427,7 +427,7 @@ npc:
     #
     vulnerabilities: |
       N/A
-      
+
     #
     # Secrets:
     #
@@ -460,23 +460,42 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Keen Senses: You have proficiency in the Perception skill 
-        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-
-    special-abilities:
-    - Proficiencies: Herbalism; Survival; Alchemy; Medecine   
-    attacks: |
-      1 attacks with unarmed strike
-    combat-tactics: |
-      She's too old to fight
-    special-equipment:
+    saving-throws:
+    - Wisdom
+    - Intelligence
+    damage-immunities:
     - N/A
-                                                                   
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
+    skills:
+    - Herbalism
+    proficiencies:
+    - Arcana
+    - Survival
+    - Medicine    
+    - Alchemy
+    - Herbalism Kit
+  special-abilities:
+  - title: Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Keen Senses
+    - content: You have proficiency in the Perception skill 
+    - title: Trance
+    - content: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+               dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+
+  - title: Attacks
+  - content: 1 attacks with unarmed strike
+  - title: Combat Tactics
+  - content: She's too old to fight
+
+
   profile:
 
     #
@@ -503,3 +522,4 @@ npc:
     #
     personality: |
       Frail build yet smooth skin, barely mottled by age. Crops of long, silver hair. Many scarves and textiles fold over her
+  

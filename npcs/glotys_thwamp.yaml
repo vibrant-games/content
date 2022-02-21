@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -342,6 +342,8 @@ npc:
     #
     adjectives:
     - Bubbly
+    - Sweet
+    - Dedicated
 
   improv:
 
@@ -462,52 +464,86 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check,
-                      instead of his normal Proficiency Bonus
-      Ranger Abilities:
-      - Ranger Spellcasting:
-        - Description: Spell DC 14 
-          1st Level: Hunter's Mark, Goodberry, Wild Cunning, Animal Friendship 
-          2nd Level: Pass Without Trace, Lesser restoration
-        Favored Enemy:  Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
-        Natural Explorer:
-        - Description: Favored Terrain
-          Additional Information:
-          - Difficult Terrain doesn't slow your group's Travel.Your group can't become lost except by magical means
-          - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-          - If you are traveling alone, you can move stealthily at a normal pace
-          - When you Forage, you find twice as much food as you normally would
-          - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-        Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-        Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
-                            types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
-                             reveal the creatures' location or number.
-        Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-      Swarmkeeper Abilities:
-      - Gathered Swarm:
-        - Description: a swarm of intangible Bee-shaped nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you
-                       within your space. Once on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack - 
-          Additional Information:
-          - The attack's target takes 1d6 piercing damage from the swarm.
-          - The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
-          - You are moved by the swarm 5 feet horizontally in a direction of your choice
-        - Swarmkeeper Magic:
-          - Description: Spell DC 14
-            1st Level: Faerie Fire, Mage Hand
-            2nd Level: Web
+    - Leatherworking
+    proficiencies:
+    - Animal Handling
+    - Nature
+    - History 
+    - Apiary Tools
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus
+  - title: Ranger Abilities
+  - abilities:
+  - title: Ranger Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: 1st Level
+    - content:  Hunter's Mark, Goodberry, Wild Cunning, Animal Friendship 
+    - title: 2nd Level
+    - content: Pass Without Trace, Lesser restoration
+    - title: Favored Enemy - Orcs and Goblinoids
+    - content: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+    - title: Natural Explorer 
+    - content: Favored Terrain - Forest and Plains
+               Difficult Terrain doesn't slow your group's Travel
+               Your group can't become lost except by magical means
+               Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+               If you are traveling alone, you can move stealthily at a normal pace
+               When you Forage, you find twice as much food as you normally would
+               While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+    - title: Fighting Style
+    - content: Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.
+    - title: Primeval Awareness
+    - content: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+               types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+               reveal the creatures' location or number.
+    - title: Extra Attack
+    - content: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+  - title: Swarmkeeper Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: 3rd Level
+    - content: Faerie Fire, Mage Hand 
+    - title: 5th Level
+    - content: Web
+    - title: Gathered Swarm
+    - content: A swarm of intangible nature spirits has bonded itself to you and can assist you in battle. Until you die, the swarm remains in your space, crawling on you or flying and skittering around you within your
+               space. You determine its appearance. Once on each of your turns, you can cause the swarm to assist you in one of the following ways, immediately after you hit a creature with an attack; 
+               The attack's target takes 1d6 piercing damage from the swarm.
+               The attack's target must succeed on a Strength saving throw against your spell save DC or be moved by the swarm up to 15 feet horizontally in a direction of your choice.
+               You are moved by the swarm 5 feet horizontally in a direction of your choice
 
-    special-abilities:
-    - Proficiencies: Animal Handling; Nature; History
-    attacks: |
-      2 attacks with War Pick
-    combat-tactics: |
-      Glotys will avoid combat in most cases. Should she be pressed she will first resort to calling her swarm and backing off in hopes that will suffice to waylay opponents or drive them off
-    special-equipment:
-    - N/A
+  - title: Attacks
+  - content: 2 attacks with War Pick
+  - title: Combat Tactics
+  - content: Glotys will avoid combat in most cases. Should she be pressed she will first resort to calling her swarm and backing off in hopes that will suffice to waylay opponents or drive them off
+
 
   profile:
 

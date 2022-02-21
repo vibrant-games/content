@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -467,48 +467,86 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Charmed
     skills:
-    - Changeling Abilities:
-      - Change Appearance: 
-        - As an action, you can transform your appearance or revert to your natural form. You can’t duplicate the appearance of a creature you’ve never seen, and you revert to your natural form if you die.
-        - You decide what you look like, including your height, weight, facial features, the sound of your voice, coloration, hair length, sex, and any other distinguishing characteristics. You can make
-          yourself appear as a member of another race, though none of your game statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if
-          you’re bipedal, you can’t use this trait to become quadrupedal, for instance. Your clothing and other equipment don’t change in appearance, size, or shape to match your new form, requiring you to
-          keep a few extra outfits on hand to make the most compelling disguise possible.
-        - Even to the most astute observers, your ruse is usually indiscernible. If you rouse suspicion, or if a wary creature suspects something is amiss, you have advantage on any Charisma (Deception)
-          check you make to avoid detection.
-        Unsettling Visage:
-        - When a creature you can see makes an attack roll against you, you can use your reaction to impose disadvantage on the roll. You must use this feature before knowing whether the attack hits or misses.
-        - Using this trait reveals your shapeshifting nature to any creature within 30 feet that can see you. Once you use this trait, you can’t use it again until you finish a short or long rest
-        Divergent Persona: You gain proficiency with one tool of your choice. Define a unique identity associated with that proficiency; establish the name, race, gender, age, and other details. While you are in the form of
-                           this persona, the related proficiency bonus is doubled for any ability check you make that uses that proficiency
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-      Spy Abilities:
-      - Tricks of the Trade: Proficiency in Disguise, Forgery, Poison Kits, Tinker's Tools and Gadget Box
-        Imposter: Gain the ability to unerringly mimic another person's speech, writing and bahavior. You must spend at least three hours studying these components of these behaviors. Your ruse is your indiscernible to the
-                  casual observer. If a weary creature suspects something is amiss, you have advantage on Charisma (Deception) checks to avoid detection
-        Gadget Box Spellcasting:
-        - Cantrip: Mage Hand, Message
-          1st Level: Knock, Invisibility
-          2nd Level: Find Traps
-        Gadget Box Self Destruct Mode: You can set a delay between 1 second and 24hrs. During that time the gadget box cannot be open by any means and cannot be used. At the end of that duration all creatures within 60ft must
-                                        make a Constitution saving throw or take Xd6 force damage and be knocked prone, where X is your Rogue Level. Taking half damage on a successful save. It takes 1 weeks using tinker's tools
-                                        to build a new box
+    - Espionage
+    proficiencies:
+    - Performance
+    - Stealth
+    - Perception
+    - Deception
+    - Persuasion
+    - Sleight-of-Hand
+    - Thieve's Tools
+  special-abilities:
+  - title: Changeling (Eberron) Abilities
+  - abilities: 
+    - title: Change Appearance
+    - content: As an action, you can transform your appearance or revert to your natural form. You can’t duplicate the appearance of a creature you’ve never seen, and you revert to your natural form if you die.
+               You decide what you look like, including your height, weight, facial features, the sound of your voice, coloration, hair length, sex, and any other distinguishing characteristics. You can make
+               yourself appear as a member of another race, though none of your game statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if
+               you’re bipedal, you can’t use this trait to become quadrupedal, for instance. Your clothing and other equipment don’t change in appearance, size, or shape to match your new form, requiring you to
+               keep a few extra outfits on hand to make the most compelling disguise possible.
+               Even to the most astute observers, your ruse is usually indiscernible. If you rouse suspicion, or if a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) 
+               check you make to avoid detection.
+    - title: Unsettling Visage
+    - content: When a creature you can see makes an attack roll against you, you can use your reaction to impose disadvantage on the roll. You must use this feature before knowing whether the attack hits or misses.
+               Using this trait reveals your shapeshifting nature to any creature within 30 feet that can see you. Once you use this trait, you can’t use it again until you finish a short or long rest
+    - title: Divergent Persona
+    - content: You gain proficiency with one tool of your choice. Define a unique identity associated with that proficiency; establish the name, race, gender, age, and other details. While you are in the form of
+               this persona, the related proficiency bonus is doubled for any ability check you make that uses that proficiency
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+  - title: Spy Abilities
+  - abilities: 
+    - title: Tricks of the Trade
+    - content: Proficiency in Disguise, Forgery, Poison Kits, Tinker's Tools and Gadget Box
+    - title: Imposter
+    - content: You gain the ability to unerringly mimic another person's speech, writing and bahavior. You must spend at least three hours studying these components of these behaviors. Your ruse is your indiscernible to the
+               casual observer. If a weary creature suspects something is amiss, you have advantage on Charisma (Deception) checks to avoid detection
+    - title: Gadget Box
+    - content: Allows you to use specific spells of your choosing and can be used identically to Thieve's Tools or Tinker's Tools, Spellcasting is not intrinisc to the spy and that without the Gadget Box, the Spy may not 
+               use Gadget Box spellcasting.
+               Gadget Box Spellcasting
+               Cantrip - Mage Hand, Message
+               1st Level - Knock, Invisibility
+               2nd Level - Find Traps
+               Gadget Box Self Destruct Mode - You can set a delay between 1 second and 24hrs. During that time the gadget box cannot be open by any means and cannot be used. At the end of that duration all creatures within
+                                               60ft must make a Constitution saving throw or take Xd6 force damage and be knocked prone, where X is your Rogue Level. Taking half damage on a successful save. It takes 1 weeks 
+                                               using tinker's tools to build a new box
 
-    special-abilities:
-    - Proficiencies: Persuasion; Perception; Deception; Performance
-    attacks: |
-      1 attack with Poison Dagger
-    combat-tactics: |
-      Stealth and Surprise
-    special-equipment:
-    - Gadget Box
-    - Poison Dagger
+  - title: Attacks
+  - content: 1 attack with Poison Dagger
+  - title: Combat Tactics
+  - content: Stealth and Surprise
+
+  - title: Special Equipment
+  - abilities:
+    - title: Gadget Box
+    - content: see above
+    - title: Poison Dagger
+    - content: This dagger contains a small reservoir in the handle to keep the blade coated in fluid, usually some form of poison, ideal for assassins who need to poison multiple targets in quick succession. The altered shape 
+               of the dagger to make room for the fluid inside makes it impractical for throwing, however.
+               Poison Reserve - Thanks to the cavity inside this dagger, it can hold up to two doses of poison when poison is applied to it. For obvious reasons, you cannot store two poisons of different types within this weapon
+               at the same time.
 
   profile:
 

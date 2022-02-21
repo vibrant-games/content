@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -463,55 +463,98 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - Orc Abilities:
-      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-        Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
-        Primal Intuition: Proficient in Insight and Survival
-        Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-        Relentless Endurance: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
-        Savage Attack: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total                                                  
-      Ranger Abilities:
-      - Ranger Spellcasting: 
-        - Description: Spell DC 13 
-          1st Level: Hunter's Mark, Goodberry, Wild Cunning, Animal Friendship 
-          2nd Level: Pass Without Trace, Lesser restoration, Animal Messenger
-        Favored Enemy:  Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
-        Natural Explorer: 
-        - Decription: Favored Terrain
-          Additional Information:
-          - Difficult Terrain doesn't slow your group's Travel
-          - Your group can't become lost except by magical means
-          - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-          - If you are traveling alone, you can move stealthily at a normal pace
-          - When you Forage, you find twice as much food as you normally would
-          - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-        Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-        Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
-                            types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
-                            reveal the creatures' location or number.
-        Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-      Fey Wanderer Abilities:
-      - Dreadful Strikes: you can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the
-                          target, which can take this extra damage only once per turn.
-        Fey Wanderer Magic: 
-        - Description: Spell DC 13
-          1st Level: Charm Person  
-          2nd Level: Misty Step
-        Otherworldly Glamour: your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier
-        Beguiling Twist: the magic of the Feywild guards your mind. You have advantage on saving throws against being charmed or frightened. In addition, whenever you or a creature you can see within 120 feet of you succeeds
-                         on a saving throw against being charmed or frightened, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save
-                         DC. If the save fails, the target is charmed or frightened by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a
-                         successful save
+    - Leatherworking
+    proficiencies:
+    - Medicine
+    - Animal Handling
+    - Nature    
+    - Survival
+    - Persuasion
+  special-abilities:
+  - title: Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Aggressive
+    - content: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
+    - title: Primal Intuition
+    - content: Proficient in Insight and Survival
+    - title: Powerful Build
+    - content: Count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+    - title: Relentless Endurance
+    - content: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
+    - title: Savage Attack
+    - content: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total	                                                  
+  - title: Ranger Abilities
+  - abilities:
+  - title: Ranger Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 13
+    - title: 1st Level
+    - content:  Hunter's Mark, Goodberry, Wild Cunning, Animal Friendship 
+    - title: 2nd Level
+    - content: Pass Without Trace, Lesser restoration, Animal Messenger
+    - title: Favored Enemy - Dragons and Giants
+    - content: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+    - title: Natural Explorer 
+    - content: Favored Terrain - Forest and Plains
+               Difficult Terrain doesn't slow your group's Travel
+               Your group can't become lost except by magical means
+               Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+               If you are traveling alone, you can move stealthily at a normal pace
+               When you Forage, you find twice as much food as you normally would
+               While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+    - title: Fighting Style
+    - content: Archery - You gain a +2 bonus to attack rolls you make with ranged weapons
+    - title: Primeval Awareness
+    - content: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+               types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+               reveal the creatures' location or number.
+    - title: Extra Attack
+    - content: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+  - title: Fey Wanderer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 13
+    - title: 3rd Level
+    - content: Charm Person 
+    - title: 5th Level
+    - content: Misty Step
+    - title: Dreadful Strikes
+    - content: You can augment your weapon strikes with mind-scarring magic, drawn from the gloomy hollows of the Feywild. When you hit a creature with a weapon, you can deal an extra 1d4 psychic damage to the target,
+               which can take this extra damage only once per turn. The extra damage increases to 1d6 when you reach 11th level in this class.
+    - title: Otherworldly Glamour
+    - content: Your fey qualities give you a supernatural charm. As a result, whenever you make a Charisma check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1). In addition, you gain
+               proficiency in one of the following skills of your choice; Deception, Performance, or Persuasion.
+    - title: Beguiling Twist
+    - content: The magic of the Feywild guards your mind. You have advantage on saving throws against being charmed or frightened. In addition, whenever you or a creature you can see within 120 feet of you succeeds on
+               a saving throw against being charmed or frightened, you can use your reaction to force a different creature you can see within 120 feet of you to make a Wisdom saving throw against your spell save DC. 
+               If the save fails, the target is charmed or frightened by you (your choice) for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a 
+               successful save.
+   
+  - title: Attacks
+  - content: 2 attacks with Chain Sickle
+  - title: Combat Tactics
+  - content: Golomir is fierce in combat. He will begin by entangling foes with the chain attached to the hilt of his sickle and follow up with a vicious swipe
 
-    special-abilities:
-    - Proficiencies: Medicine; Animal Handling; Nature; Persuasion; Survival   
-    attacks: |
-      2 attacks with Chain Sickle
-    combat-tactics: |
-      Golomir is fierce in combat. He will begin by entangling foes with the chain attached to the hilt of his sickle and follow up with a vicious swipe
-    special-equipment:
-    - Aetheric Chain Sickle - A +1 chain sickle; as a magic effect chain can be used to pull an entangled target towards Golomir or Golomir towards the target after which Golomir receives an additional +2 to strike and damage
+  - title: Special Equipment
+  - abilities:
+    - title: Aetheric Chain Blades
+    - content: A +1 chain sickle. As a magical effect the chain can be used to pull an entangled target up to 15ft. towards you or you towards the target, after which you receives an additional +2 to strike and damage on your 
+               next attack
 
   profile:
 

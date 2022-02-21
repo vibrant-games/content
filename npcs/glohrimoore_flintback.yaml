@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -460,52 +460,106 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus
-      Cleric Abilities:
-      - Spellcasting:
-        - Description: DC16
-          Cantrips: Guidance, Thaumaturgy, Resistance, Sacred Flame, Mending
-          1st Level: Detect Magic, Bane, Bless, Cure Wounds
-          2nd Level: Hold Person, Spiritual Weapon, Continual Flame
-          3rd Level: Dispel Magic, Create Food and Water, Spirit Guardians
-          4th Level: Banishment, Control Water, Stone Shape
-          5th Level: Flame Strike, Greater Restoration, 
-        Channel Divinity: Turn Undead, Destroy Undead, Artisan's Blessing 
-        Divine Intervention: Can call her patron to intervene on her behalf
-      Forge Domain Abilities:
-      - Spellcasting:
-        - Description: DC 16
-          1st Level: Identify, Searing Smite
-          3rd Level: Heat Metal, Magic Weapon
-          5th Level: Elemental Weapon, Protection from Energy
-          7th Level: Fabricate, Wall of Fire
-          9th Level: Animate Object, Creation
-        Bonus Proficiencies: Proficiency with Heavy Armor and Smith's Tools
-        Blessing of the Forge: you gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of
-                               your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it’s armor or a +1 bonus to attack and damage rolls if it’s a weapon. Once you use this feature,
-                               you can’t use it again until you finish a long rest.
-        Channel Divinity - Artisans Blessing: you can use your Channel Divinity to create simple items. You conduct an hour-long ritual that crafts a nonmagical item that must include some metal; a simple or martial weapon, a 
-                                              suit of armor, ten pieces of ammunition, a set of tools, or another metal object. The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice
-                                              on a surface within 5 feet of you. The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins,
-                                              with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual’s end, magically forming even nonmetal parts of the creation.
-                                              The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual.
-        Soul of the Forge: your mastery of the forge grants you special abilities; You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC
-        Divine Strike: you gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8
-                       fire damage to the target. When you reach 14th level, the extra damage increases to 2d8.
-
-    special-abilities:
-    - Proficiencies: Survival; Smithing Tools   
-    attacks: |
-      1 attack with WarHammer
-    combat-tactics: |
-      Glohrimoore is essentially fearless. Particularly if faced with what he perceives as an evil combatant. Of course, this has its pros - that he is a brave fighter - and its cons - that he is foolhardy in battle and takes short-sighted risks.
-    special-equipment:
+    saving-throws:
+    - Constitution
+    - Wisdom
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
+    skills:
+    - Leatherworking
+    proficiencies:
+    - Survival
+    - Perception
+    - History    
+    - Smith's Tools
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 16
+    - title: Cantrips
+    - content: Guidance, Thaumaturgy, Resistance, Sacred Flame, Mending
+    - title: 1st Level
+    - content: Detect Magic, Bane, Bless, Cure Wounds
+    - title: 2nd Level
+    - content: Hold Person, Spiritual Weapon, Continual Flame
+    - title: 3rd Level
+    - content: Dispel Magic, Create Food and Water, Spirit Guardians
+    - title: 4th Level
+    - content: Banishment, Control Water, Stone Shape
+    - title: 5th Level
+    - content: Flame Strike, Greater Restoration, 
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.    
+    - title: Divine Intervention
+    - content: Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll 
+               percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. The DM chooses the Nature of the intervention; the Effect of any Cleric spell or Cleric domain spell would be 
+               appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest. At 20th level, your call for intervention succeeds automatically, 
+               no roll required.
+  - title: Forge Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 16
+    - title: 1st Level
+    - content: Identify, Searing Smite
+    - title: 3rd Level
+    - content: Heat Metal, Magic Weapon
+    - title: 5th Level
+    - content: Elemental Weapon, Protection from Energy
+    - title: 7th Level
+    - content: Fabricate, Wall of Fire
+    - title: 9th Level
+    - content: Animate Object, Creation
+    - title: Bonus Proficiencies
+    - content: Proficiency with Heavy Armor and Smith's Tools
+    - title: Blessing of the Forge
+    - content: You gain the ability to imbue magic into a weapon or armor. At the end of a long rest, you can touch one nonmagical object that is a suit of armor or a simple or martial weapon. Until the end of 
+               your next long rest or until you die, the object becomes a magic item, granting a +1 bonus to AC if it’s armor or a +1 bonus to attack and damage rolls if it’s a weapon. Once you use this feature,
+               you can’t use it again until you finish a long rest.
+    - title: Channel Divinity - Artisans Blessing
+    - content: You can use your Channel Divinity to create simple items. You conduct an hour-long ritual that crafts a nonmagical item that must include some metal; a simple or martial weapon, a 
+               suit of armor, ten pieces of ammunition, a set of tools, or another metal object. The creation is completed at the end of the hour, coalescing in an unoccupied space of your choice 
+               on a surface within 5 feet of you. The thing you create can be something that is worth no more than 100 gp. As part of this ritual, you must lay out metal, which can include coins, 
+               with a value equal to the creation. The metal irretrievably coalesces and transforms into the creation at the ritual’s end, magically forming even nonmetal parts of the creation. 
+               The ritual can create a duplicate of a nonmagical item that contains metal, such as a key, if you possess the original during the ritual.
+    - title: Soul of the Forge
+    - content: Your mastery of the forge grants you special abilities; You gain resistance to fire damage. While wearing heavy armor, you gain a +1 bonus to AC
+    - title: Divine Strike
+    - content: You gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8
+               fire damage to the target. When you reach 14th level, the extra damage increases to 2d8.
+  
+  - title: Attacks
+  - content: 1 attack with WarHammer
+  - title: Combat Tactics
+  - content: Glohrimoore is essentially fearless. Particularly if faced with what he perceives as an evil combatant. Of course, this has its pros - that he is a brave fighter - and its cons - that he is foolhardy in battle and takes short-sighted risks.
+
 
   profile:
 
