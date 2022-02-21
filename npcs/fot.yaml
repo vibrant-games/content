@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -462,21 +462,37 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Goblin Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
-                           your level.
-        Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.
-
-    special-abilities:
-    - Proficiencies: Nature, Animal Handling, History   
-    attacks: |
-      1 attack with club
-    combat-tactics: |
-      Fot is not exactly cowardly but far from brave
-    special-equipment:
+    saving-throws:
+    - Constitution
+    - Dexterity
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Hog Farming
+    proficiencies:
+    - Nature
+    - Animal Handling
+    - History
+  special-abilities:
+  - title: Goblin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
+    - title: Fury of the Small
+    - content: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
+               your level.
+    - title: Nimble Escape
+    - content: You can take the Disengage or Hide action as a bonus action on each of your turns.
+   
+  - title: Attacks
+  - content: 1 attack with club
+  - title: Combat Tactics
+  - content: Fot is not exactly cowardly but far from brave
+
 
   profile:
 

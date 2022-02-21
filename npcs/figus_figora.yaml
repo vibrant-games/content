@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -461,36 +461,64 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Cold
     skills:
-    - Triton Abilities:
-      - Amphibious: You can breathe air and water
-        Control Air and Water: A child of the sea, you can call on the magic of elemental air and water. You can cast Fog Cloud with this trait. Starting at 3rd level, you can cast Gust of Wind with it
-        Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray
-        Emissary of the Sea:  Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though
-                              you have no special ability to understand them in return.
-        Guardians of the Depths: Adapted to even the most extreme ocean depths, you have resistance to cold damage
-      Wizard Abilities:
-      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-        Spellcasting:
-        - Description: DC 15
-          Cantrips: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
-          1st Level: Burning Hands, Magic Missle, Mage Armor, Sleep
-          2nd Level: Continual Flame, Scorching Ray, Hold Person
-          3rd Level: Counterspell, Fireball
-      School of Evocation Abilities:
-      - Evocation Savant: the gold and time you must spend to copy an Evocation spell into Your Spellbook is halved
-        Sculpt Spells: you can create pockets of relative safety within the Effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them
-                       equal to 1 plus the spell’s level. The chosen creatures automatically succeed on their Saving Throws against the spell, and they take no damage if they would normally take half damage on a successful
-                       save
+    - Leatherworking
+    proficiencies:
+    - Arcana
+    - History
+    - Investigation
+  special-abilities:
+  - title: Triton Abilities
+  - abilities: 
+    - title: Amphibious
+    - content: You can breathe air and water           
+    - title: Control Air and Water
+    - content: A child of the sea, you can call on the magic of elemental air and water. You can cast Fog Cloud with this trait. Starting at 3rd level, you can cast Gust of Wind with it
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray
+    - title: Emissary of the Sea
+    - content: Aquatic beasts have an extraordinary affinity with your people. You can communicate simple ideas with beasts that can breathe water. They can understand the meaning of your words, though you have
+               no special ability to understand them in return.
+    - title: Guardians of the Depths
+    - content: Adapted to even the most extreme ocean depths, you have resistance to cold damage
+  - title: Wizard Abilities
+  - abilities:
+    - title: Arcane Recovery
+    - content: After a short rest can recover a spell slot up to 3rd level
+  - title: Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: Cantrips
+    - content: Fire Bolt, Mage Hand, Shocking Grasp, Dancing Lights
+    - title: 1st Level
+    - content: Burning Hands, Magic Missle, Mage Armor, Sleep
+    - title: 2nd Level
+    - content: Continual Flame, Scorching Ray, Hold Person
+    - title: 3rd Level
+    - content: Counterspell, Fireball
+  - title: School of Evocation Abilities
+  - abilities: 
+    - title: Evocation Savant
+    - content: The gold and time you must spend to copy an Evocation spell into Your Spellbook is halved.
+    - title: Sculpt Spells
+    - content: You can create pockets of relative safety within the Effects of your Evocation Spells. When you cast an Evocation spell that affects other creatures that you can see, you can choose a number of them 
+               equal to 1 + the spell’s level. The chosen creatures automatically succeed on their Saving Throws against the spell, and they take no damage if they would normally take half damage on a successful save.
 
-    special-abilities:
-    - Proficiencies: Investigation, Arcana, History
-    attacks: |
-      1 spell attack
-    combat-tactics: |
-      Fire!!!
-    special-equipment:
-    - N/A 
+  - title: Attacks
+  - content: 1 spell attack
+  - title: Combat Tactics
+  - content: Fire!!!
+ 
 
   profile:
 

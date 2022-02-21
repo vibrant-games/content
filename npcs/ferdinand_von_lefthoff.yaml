@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Owlfolk
+    race: Owlin
 
     #
     # The sub-race can be anything.
@@ -463,53 +463,139 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Diseased or Poisoned through food or drink
+    resistances:
+    - N/A
     skills:
-    - Owlfolk Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Predator Senses: Advantage on all Wisdom Perception checks
-        Bone Eater: Immune to disease and poisoning through food or drink
-        Light Feathers: Proficiency in Stealth when flying
-        Talons: Talons do 1d4+1 Slashing Damage
-        Magic Sight: Can cast Detect Magic as a ritual 
-        Nimble Flight: When falling can use a reaction to make a Dexterity saving throw (DC10) to stop falling and fly in place
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 17
-          Cantrip: Mage Hand, Mending, Message
-          1st Level: Feather Fall, Detect Magic, Jump, Catapult
-          2nd Level: Rope Trick, Heat Metal, Levitate
-          3rd Level: Revivify, Haste        
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items at a time
-        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-        Tool Expertise: Smith's Tool proficiency bonus is doubled
-        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-      Battle Smith Abilities:
-      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
-        Spellcasting:
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 17
-          3rd Level: Heroism, Shield
-          5th Level: Branding Smite, Warding Bond
-          9th Level: Aura of Vitality, Conjure Barrage
-        Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
-        Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest. Ferdinand's Defender has wings instead of arms and can fly at a speed of 30 feet as well
-        Extra Attack: Can take a second attack action each turn
-        Arcane Jolt: Using a magic weapon or Steel Defender he can add 4d6 force damage to attacks or restore 4d6 hit points to any creature or object within 30 feet
-
-    special-abilities:
-    - Proficiencies: Proficient in Stealth, Perception, Nature, Insight, Sleight of Hand, Theive's Tools, Tinker's Tools, Smith's Tools, Firearms
-      Feats: War Caster, Gunner, Observant, Mobile, Fey Touched - Misty Step & Charm Person, Alert
-
-    attacks: |
-      Has 2 attack. At range he'll use his pistol, in melee he'll use his cutlass and his talons 
-    combat-tactics: |
-      He'll always try to fight at range or attack while flying
-    special-equipment:
+    - Engineering and Aeronautics
+    proficiencies:
+    - Stealth
+    - Perception
+    - Nature    
+    - Insight
+    - Sleight-of-Hand
+    - Thieve's Tools
     - Tinker's Tools
-    - Theive's Tools
     - Smith's Tools
-    - +2 Cutlass
-    - Pistol
+    - Firearms
+  special-abilities:
+  - title: Owlin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Predator Senses
+    - content: Advantage on all Wisdom Perception checks
+    - title: Bone Eater
+    - content: Immune to disease and poisoning through food or drink  
+    - title: Light Feathers
+    - content: Proficiency in Stealth when flying
+    - title: Talons
+    - content: Talons do 1d4+1 Slashing Damage
+    - title: Magic Sight
+    - content: Can cast Detect Magic as a ritual 
+    - title: Nimble Flight
+    - content: When falling can use a reaction to make a Dexterity saving throw (DC10) to stop falling and fly in place
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 17
+    - title: Cantrip
+    - content: Mage Hand, Mending, Message
+    - title: 1st Level
+    - content: Feather Fall, Detect Magic, Jump, Catapult
+    - title: 2nd Level
+    - content: Rope Trick, Heat Metal, Levitate
+    - title: 3rd Level
+    - content: Revivify, Haste        
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 6 
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+    - title: Flash of Genius
+    - contents: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+  - title: Battle Smith Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 17
+    - title: 3rd Level
+    - content: Heroism, Shield
+    - title: 5th Level
+    - content: Branding Smite, Warding Bond
+    - title: 9th Level
+    - content: Aura of Vitality, Conjure Barrage
+    - title: Tool Proficiency
+    - content: You gain proficiency with smith's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.
+    - title: Battle Ready
+    - content: Your combat training and your experiments with magic have paid off in two ways
+               You gain proficiency with martial weapons.
+               When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.
+    - title: Steel Defender
+    - content: Your tinkering has borne you a faithful companion, a steel defender. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which
+               uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics. In combat, the defender
+               shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a 
+               bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, 
+               not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 
+               feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel 
+               defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die. Ferdinand's Defender has Wings instead
+               of arms
+               
+               Steel Defender - Medium construct
+               Armor Class - 15 (natural armor)
+               Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
+               Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
+               Speed - 25 ft. walking/40 ft. Flying     
+               Saving Throws - Dex +1 plus PB, Con +2 plus PB
+               Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
+               Damage Immunities - poison
+               Condition Immunities - charmed, exhaustion, poisoned
+               Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
+               Languages - understands the languages you speak
+               Challenge —
+               Proficiency Bonus (PB) - equals your bonus
+               Vigilant - The defender can't be surprised.
+               Actions -
+               Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
+               Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
+               Reactions -
+               Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
+    - title: Extra Attack
+    - content: You can attack twice, rather than once, whenever you take the Attack action on your turn.
+    - title: Arcane Jolt
+    - content: You've learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the 
+               strike to create one of the following effects
+               The target takes an extra 2d6 force damage.
+               Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.
+               You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.
+  - title: Feats
+  - content: War Caster, Gunner, Observant, Mobile, Fey Touched - Misty Step & Charm Person, Alert
+
+  - title: Attacks
+  - content: Has 2 attack. At range he'll use his pistol, in melee he'll use his cutlass and his talons 
+  - title: Combat Tactics
+  - content: He'll always try to fight at range or attack while flying
+
+  - title: Special Equipment
+  - abilities:
+    - title: +2 Cutlass
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Pistol
+    - content: Deals 1d10 piercing damage, Range 60/240, Reload 4, misfire 1
 
   profile:
 

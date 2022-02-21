@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -330,8 +330,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: daughter_of_the_low_queen_
-      name: Daughter of the Low Queen.
+    - id:
+      name:
+      role:
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -340,7 +341,8 @@ npc:
     #
     adjectives:
     - Beautiful
-    - Bold   
+    - Brash
+    - Deluded
 
   improv:
 
@@ -462,23 +464,43 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check,
-                      instead of his normal Proficiency Bonus
-      Hill Dwarf Abilities:
-       - Dwarven Toughness: Your hit point maximum increases by 1, and it increases by 1 every time you gain a level
-
-    special-abilities:
-    - Proficiencies: Persuasion; Perception; Deception; Performance   
-    attacks: |
-      1 attack with Light Hammer
-    combat-tactics: |
-      Fuchsia is frightfully brave in combat, although her skills don't quite match up
-    special-equipment:
-    - A ruby she keeps hidden at home locked in a dresser drawer for the right man
+    - Storytelling
+    proficiencies:
+    - Perception
+    - Deception    
+    - Performance
+    - Persuasion
+    - Leatherworking Tools
+    - Woodcrafter Tools
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus
+   
+  - title: Attacks
+  - content: 1 attack with Light Hammer
+  - title: Combat Tactics
+  - content: Fuchsia is frightfully brave in combat, although her skills don't quite match up
 
   profile:
 
@@ -491,7 +513,7 @@ npc:
     #
     background-story: |
       The royals of Avonguard Vale [a Forest Gnome City] have difficulty tracing their lineage because of infidelity of the High Tinker Yahnigan Buuhl. His lecherous infidelity has diffused his line many, many times. Among this
-      brood, one stands apart because of her combination of madness and beauty - Fuchsia. She is well aware of her royal lineage but has been denounced from announcing it. Yet she couldn't care less and often flaunts it in
+      brood, one stands apart because of her combination of madness and beauty - Fuchsia. She is well aware of her royal lineage but has been forbidden from announcing it. Yet she couldn't care less and often flaunts it in
       the presence of just about anyone who will listen, claiming that her mother, a barmaid named Clarice, is the Low Queen of the Region. She weaves stories about her life as the Low Queen's daughter at local taverns and
       mercantile houses, gaining quite an audience who are more than happy to pay for her discursive talent.
 
@@ -504,5 +526,5 @@ npc:
     # No length limit for now.
     #
     personality: |
-      N/A
+      Fuchsia is beutiful and vain and a little bit on the mad side. She lies and fabricates stories about her life for theentertainment of herself and others
   

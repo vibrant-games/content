@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -409,7 +409,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Gold or magic items in exchange for rings OR identifying rings orMagical nature
+      Gold or magic items in exchange for rings OR identifying rings of a Magical nature
 
     #
     # Passions:
@@ -436,7 +436,7 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      Not all his rings are magical and he has sold people non-magicalRings one more than one occasion
+      Not all his rings are magical and he has sold people non-magical rings on more than one occasion
 
   #
   # The D & D stats block:
@@ -461,34 +461,102 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charm
     skills:
-    - Half-Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon
-        Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 13
-      Sorcerer Abilities:
-      - Sorcerer Spellcasting:  
-        - Description: Sorcery Points 4
-          Cantrips: Fire Bolt, Mage Hand, Ray of Frost, Chill Touch, Dancing Lights
-          1st Level: Charm Person, Disguise Self, Magic Missle, Fog Cloud
-          2nd Level: Scorching Ray, Mirror Image, Shatter
-        MetaMagic: 
-        - Description: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level. Subtle Spell or Twinned Spell
-      Clockwork Soul Abilities:
-      - Restore Balance: When a creature you can see within 60 feet of you is about to roll a d20 with advantage or disadvantage, you can use your reaction to prevent the roll from being affected by advantage and disadvantage
-        Spellcasting: 
-        - 1st Level: Alarm, Protection from Good and Evil
-          3rd Level: Aid Lesser Restoration
-       
-    special-abilities:
-    - Proficiencies: Investigation, Arcana, History
-    attacks: |
-      1 spell attack
-    combat-tactics: |
-      Will try to charm his way out of problems
-    special-equipment:
-    - a wide selection of rings, some magic, some not, some valuable, some not 
+    - Jewelry Appraisals
+    proficiencies:
+    - Arcana
+    - Investigation
+    - History    
+    - Intimidations
+  special-abilities:
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon 
+    - title: Wood Elf Magic
+    - content: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 13
+  - title: Sorcerer Abilities
+  - abilities:
+  - title: Sorcerer Spellcasting
+  - abilities: 
+    - title: Sorcery Points
+    - content: 4
+    - title: Spell DC
+    - content: 15
+    - title: Cantrips
+    - content: Fire Bolt, Mage Hand, Ray of Frost, Chill Touch, Dancing Lights
+    - title: 1st Level
+    - content: Charm Person, Disguise Self, Magic Missle, Fog Cloud
+    - title: 2nd Level
+    - content: Scorching Ray, Mirror Image, Shatter
+  - title: MetaMagic
+  - content: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
+  - abilities:
+    - title: Careful Spell
+    - content: When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those 
+               creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.
+    - title: Distant Spell
+    - content: When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.
+               When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.
+    - title: Empowered Spell
+    - content: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.
+               You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.
+    - title: Extended Spell
+    - content: When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.
+    - title: Heightened Spell
+    - content: When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell.
+    - title: Quickened Spell
+    - content: When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.
+    - title: Seeking Spell
+    - content: If you make an attack roll for a spell and miss, you can spend 2 sorcerer points to reroll the d20, and you must use the new roll.
+               You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell.
+               Seeking Spell (UA). When you cast a spell that requires you to make a spell attack roll or that forces a target to make a Dexterity saving throw, you can spend 1 sorcery point to ignore the effects of half- and 
+               three-quarters cover against targets of the spell.
+    - title: Subtle Spell
+    - content: When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.
+    - title: Transmuted Spell
+    - content: When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types - acid, cold, fire, lightning, poison, thunder.
+    - title: Twinned Spell
+    - content: When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip). To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, Magic Missile and Scorching Ray aren't eligible, but Ray of Frost and Chromatic Orb are.
+    - title: Sorcerous Restoration
+    - content: you regain 4 expended sorcery points whenever you finish a Short Rest
+  - title: Clockwork Soul Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content: Alarm, Protection from Evil and Good
+    - title: 3rd Level
+    - content: Aid, Lesser Restoration
+    - title: Restore Balance
+    - content: Your connection to the plane of absolute order allows you to equalize chaotic moments. When a creature you can see within 60 feet of you is about to roll a d20 with advantage or disadvantage, you can 
+               use your reaction to prevent the roll from being affected by advantage and disadvantage. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when
+               you finish a long rest.
+
+  - title: Attacks
+  - content: 1 spell attack
+  - title: Combat Tactics
+  - content: Will try to charm his way out of problems
+
+  - title: Special Equipment
+  - abilities:
+    - title: Collection of Rings
+    - content: A wide selection of rings, some magic, some not, some valuable, some not 
 
   profile:
 

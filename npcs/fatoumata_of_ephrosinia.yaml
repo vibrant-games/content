@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -465,22 +465,47 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check,
-                      instead of his normal Proficiency Bonus
+    - N/A
+    proficiencies:
+    - Nature
+    - Perception
+    - Deception
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus
+               
+  - title: Attacks
+  - content: 1 attack with unarmed attack
+  - title: Combat Tactics
+  - content: Will not fight
 
-    special-abilities:
-    - Proficiencies: Perception, Nature
-    attacks: |
-      1 attack with unarmed attack
-    combat-tactics: |
-      Will not fight
-    special-equipment:
-    - Numerous masks on slender sticks
-    - Several pairs of long gold-laced two-thumbed gloves
+  - title: Special Equipment
+  - abilities:
+    - title: Masks
+    - content: Numerous masquerade masks on slender sticks
+    - title: Gloves
+    - content: Several pairs of long gold-laced two-thumbed gloves
 
   profile:
 
