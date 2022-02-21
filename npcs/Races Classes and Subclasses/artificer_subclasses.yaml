@@ -4,15 +4,15 @@
     - abilities:
     - title: Spell DC
     - content:
-    - title: 1st Level
-    - content: Healing Word, Ray of Sickness
     - title: 3rd Level
-    - content: Flaming Sphere, Melf's Acid Arrow
+    - content: Healing Word, Ray of Sickness
     - title: 5th Level
-    - content: Gaseous Form, Mass Healing Word
-    - title: 7th Level
-    - content: Blight, Death Ward 
+    - content: Flaming Sphere, Melf's Acid Arrow
     - title: 9th Level
+    - content: Gaseous Form, Mass Healing Word
+    - title: 13th Level
+    - content: Blight, Death Ward 
+    - title: 17th Level
     - content: Cloudkill, Raise Dead
     - title: Experimental Elixir
     - content: whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when 
@@ -222,4 +222,40 @@
                whether the cannons are identical to each other or different. You can't create a third cannon while you have two.
                                
                                
-                              
+  - title: Arcane Weaver Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Entangle, Shield of Faith
+    - title: 5th Level
+    - content: Enthrall, Gust of Wind
+    - title: 9th Level
+    - content: Hypnotic Pattern, Magic Circle
+    - title: 13th Level
+    - content: Charm Monster, Grasping Vine 
+    - title: 17th Level
+    - content: Dream, Control Wind
+    - title: Tool Proficiency
+    - content: You gain proficiency with Weaver's Tools
+    - title: Mystical Mantle
+    - content: You craft a signature garment, designed to become ever more elaborate as you learn new techniques. This cloak, robe, mantle, or some other cloth garment of your choice has the following properties;
+               Dramatic Flair - This item functions as a Cloak of Billowing
+               Protective Weave - While wearing this cloak you may cast Mage Armor at will
+               Resistant Embroidery - Choose Fire, Cold, Lightning, Necrotic or Radiant when you finish a short or long rest. You gain resistance to that damage type until you choose a new one with this feature
+               At the end of a long rest, you can create anew Mystical Mantle if you have weaver's tools on hand. If you already have a Mystical Mantle, the first one unravels and is destroyed
+    - title: Spellbinding Thread
+    - content: You learn to store threads of magic in your mantle's patterns. At the end of a long rest, you can weave a 1st Level Artificer Spell with a casting time of 1 Action or less into your mantle. You can cast this spell
+               without expending materials or spellslots a number of times equasl to your intelligence modifier. At 9th Level this increases to a 2nd Level spell and at 15th Level increases to a 3rd Level
+    - title: Intercepting Cloak
+    - content: You further enhance your mantle's capabilities, allowing it to deflect incoming blows. When an attacker hits you with an attack, your cloak can intercept the blow. Once per turn you can reduce the damage of that
+               attack by 1d10 + your intelligence modifier
+    - title: Masterwork Mantle
+    - conent: You embroider a series of temporary designs on your mantle, allowing you to switch to various powerful effects. At the end of a Long Rest, you can choose one of the following properties to add to your Mystical
+              Mantle, which lasts until you choose a different effect with this feature.
+              Arcane Sigils - This item requires attunment and functions as a Mantle of Spell Resistance
+              Feathered Texture - This item requires attunment and functions as Wings of Flying
+              Minimalism - While wearing this item, your Armor Class increases by 1
+              Shadow Weave - This item requires attunment and functions as a Cloak of Displacement

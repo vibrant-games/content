@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -332,8 +332,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: alchemists_guild
-      name: Alchemists' guild
+    - id: Collegium_Imaginata
+      name: Collegium Imaginata
+      role: Alchemist
     - id: diplomats_of_daron_garr
       name: Diplomats of Daron-Garr
 
@@ -344,6 +345,8 @@ npc:
     #
     adjectives:
     - Bubbly
+    - Curious
+    - Dedicated
 
   improv:
 
@@ -462,36 +465,96 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Acid
     skills:
-    - Dragonborn Abilities:
-      - Breathe Weapon: Can exhale a 5'x30' stream of acid with a DC 13. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one.
-        Damage Resistance: Resistance to acid
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14 
-          Cantrip: Mage Hand, Mending 
-          1st Level: Tasha's Caustic Brew, Detect Magic, Grease, Cure Wounds
-          2nd Level: Continual Flame, Heat Metal
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 6 Infusions, Can Infuse 3 Items
-        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-        Tool Expertise: Alchemist's Supplies proficiency bonus is doubled
-      Alchemist Abilities:
-      - Experimental Elixir: whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when
-                             someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature. You can create additional experimental elixirs by expending a spell slot of
-                             1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table.
-                             Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest
-        Alchemical Savant: you've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus,
-                           you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier
+    - Herbalism
+    proficiencies:
+    - Arcana
+    - Alchemy
+    - Deception    
+    - Nature
+    - Medicine
+    - Herbalism Kit
+    - Tinker's Tools
+    - Alchemist's Supplies
+  special-abilities:
+  - title: Metallic Dragonborn Abilities
+  - abilities: 
+    - title: Breath Weapon
+    - content: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of Acid in a 15-foot cone. Each creature in that area must make a Dexterity saving throw 
+               (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 Acid damage. On a successful save, it takes half as
+               much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
+    - title: Draconic Resistance
+    - content: You have resistance to Acid
+    - title: Metallic Breath Weapon
+    - content: At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath
+               is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one
+               Enervating Breath - Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.
+               Repulsion Breath - Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked prone.
+               Once you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest.
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 15
+    - title: Cantrip
+    - content: Mage Hand, Mending 
+    - title: 1st Level
+    - content: Caustic Brew, Detect Magic, Grease, Cure Wounds
+    - title: 2nd Level
+    - content: Continual Flame, Heat Metal
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 6
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+  - title: Alchemist Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 3rd Level
+    - content: Healing Word, Ray of Sickness
+    - title: 5th Level
+    - content: Flaming Sphere, Acid Arrow
+    - content: whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when 
+               someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature. You can create additional experimental elixirs by expending a spell slot of 
+               1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table. 
+               Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. 
+               When you reach certain levels in this class, you can make more elixirs at the end of a long rest; two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir 
+               requires its own flask.
+               d6     Effect
+                1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
+                2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
+                3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
+                4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
+                5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
+                6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
+    - title: Alchemical Savant
+    - content: You've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, 
+               you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier 
+               (minimum of +1). 
+   
+  - title: Attacks
+  - content: 1 attack with Sickle
+  - title: Combat Tactics
+  - content: She will keep distance as best as she can and use any kinds spell attacks
 
-    special-abilities:
-    - Proficiencies: Alchemy, Nature, Medecine   
-    attacks: |
-      1 attack with Sickle
-    combat-tactics: |
-      She will keep distance as best as she can and use any kinds spell attacks
-    special-equipment:
-     - Alchemist's Supplies
                                                                    
   profile:
 

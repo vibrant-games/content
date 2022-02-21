@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Human
+    race: Pactborn
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Feyborn
 
     #
     # Pronouns (case insensitive):
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Civilian
+    class: Artificer
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: N/A
+    subclass: Arcane Weaver
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 0
+    level: 20
 
     #
     # Alignments (case insensitive):
@@ -462,18 +462,131 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - Piercing and Slashing Damage
+    condition-immunities:
+    - Frightened, Charmed
+    resistances:
+    - N/A
     skills:
-    - Amazing seamstress and designer and maybe something else entirely     
-       
-    special-abilities:
-    - Proficiencies: Persuasion, Deception, Sleight-of-Hand   
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      She wont fight unless she has to
-    special-equipment:
-    - Needle of Mending
-    - Dimensional Scissors
+    - Tailoring, Weaving and Leatherworking
+    proficiencies:
+    - Arcana
+    - Deception
+    - Sleight-of-Hand
+    - Persuasion
+    - Leatherworking Tools
+    - Tailoring Tools
+    - Weaver's Tools
+  special-abilities:
+  - title: Pactborn(Feyborn) Abilities
+  - abilities: 
+    - title: Chimeric Legacy
+    - content: You know the minor illusion cantrip. Once you reach 3rd level, you can cast the charm person spell once per day as a 2nd-level spell. Once you reach 5th level, you can also cast the misty step spell
+               once per day. Charisma is your spellcasting ability for these spells.
+    - title: Fey Ancestry
+    - content: You have advantage on saving throws against being charmed, and magic can't put you to sleep.
+    - title: Untrue
+    - content: You have proficiency in the Deception skil
+  - title: Artificer Abilities
+  - abilities:
+    - title: Spellcasting
+    - content: Eugenia uses Charisma for her spellcasting rather than Intelligence
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 21  
+    - title: Cantrip
+    - content: Mage Hand, Mending, Prestidigitation, Guidance
+    - title: 1st Level
+    - content: Alarm, Cure Wounds, Detect Magic, Disguise Self
+    - title: 2nd Level
+    - content: Alter Self, Invisibility, Arcane Lock
+    - title: 3rd Level
+    - content: Dispel Magic, Fly, Tiny Servant
+    - title: 4th Level
+    - content: Private Sanctum, Fabricate
+    - title: 5th Level
+    - content: Animate Object, Bigby's Hand
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: All
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+    - title: Flash of Genius
+    - contents: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+    - title: Magic Item Adept
+    - content: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+    - title: Spell Storing Item
+    - content: Can store a spell in and object once per long rest
+    - title: Magic Item Savant
+    - content: Can attune to any magic item regardless of class, race, spell and level requirements 
+    - title: Magic Item Master
+    - content: Can attune to 6 magic items
+    - title: Soul of Artifice
+    - content: You develop a mystical connection to your magic items, which you can draw on for protection;
+               You gain a +1 bonus to all saving throws per magic item you are currently attuned to.
+               If you're reduced to 0 hit points but not killed out-right, you can use your reaction to end one of your artificer infusions, causing you to drop to 1 hit point instead of 0.    
+  - title: Arcane Weaver Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 21
+    - title: 3rd Level
+    - content: Entangle, Shield of Faith
+    - title: 5th Level
+    - content: Enthrall, Gust of Wind
+    - title: 9th Level
+    - content: Hypnotic Pattern, Magic Circle
+    - title: 13th Level
+    - content: Charm Monster, Grasping Vine 
+    - title: 17th Level
+    - content: Dream, Control Wind
+    - title: Tool Proficiency
+    - content: You gain proficiency with Weaver's Tools
+    - title: Mystical Mantle
+    - content: You craft a signature garment, designed to become ever more elaborate as you learn new techniques. This cloak, robe, mantle, or some other cloth garment of your choice has the following properties;
+               Dramatic Flair - This item functions as a Cloak of Billowing
+               Protective Weave - While wearing this cloak you may cast Mage Armor at will
+               Resistant Embroidery - Choose Fire, Cold, Lightning, Necrotic or Radiant when you finish a short or long rest. You gain resistance to that damage type until you choose a new one with this feature
+               At the end of a long rest, you can create anew Mystical Mantle if you have weaver's tools on hand. If you already have a Mystical Mantle, the first one unravels and is destroyed
+    - title: Spellbinding Thread
+    - content: You learn to store threads of magic in your mantle's patterns. At the end of a long rest, you can weave a 1st Level Artificer Spell with a casting time of 1 Action or less into your mantle. You can cast this spell
+               without expending materials or spellslots a number of times equasl to your intelligence modifier. At 9th Level this increases to a 2nd Level spell and at 15th Level increases to a 3rd Level
+    - title: Intercepting Cloak
+    - content: You further enhance your mantle's capabilities, allowing it to deflect incoming blows. When an attacker hits you with an attack, your cloak can intercept the blow. Once per turn you can reduce the damage of that
+               attack by 1d10 + your intelligence modifier
+    - title: Masterwork Mantle
+    - conent: You embroider a series of temporary designs on your mantle, allowing you to switch to various powerful effects. At the end of a Long Rest, you can choose one of the following properties to add to your Mystical
+              Mantle, which lasts until you choose a different effect with this feature.
+              Arcane Sigils - This item requires attunment and functions as a Mantle of Spell Resistance
+              Feathered Texture - This item requires attunment and functions as Wings of Flying
+              Minimalism - While wearing this item, your Armor Class increases by 1
+              Shadow Weave - This item requires attunment and functions as a Cloak of Displacement
+    
+  - title: Attacks
+  - content: 1 attack with a spell attack
+  - title: Combat Tactics
+  - contentL She wont fight unless she has to
+  
+  - title: Special Equipment
+  - abilities:
+    - title: Needle of Mending
+    - content: This weapon is a magic dagger disguised as a sewing needle. When you hold it and use a bonus action to speak its command word, it transforms into a dagger or back into a needle. You gain a +1 bonus to attack and 
+               damage rolls made with the dagger. While holding it, you can use an action to cast the Mending cantrip from it
+    - title: Dimensional Scissors
+    - content: While you are holding these scissors, you may use an action to cast the dimension door spell. The scissors can't be used again in this way until the next dawn.
+
+
 
   profile:
 
@@ -498,5 +611,7 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Extremely petite and absolutely beautiful with a dazzling smile and a mop of curly red hair and expertly crafted clothes
+      Extremely petite and absolutely beautiful with a dazzling smile and a mop of curly red hair and expertly crafted clothes. Eugenia is sweet, gentle and reassuring. She takes the pride of an expert in her tailoring abilities.
+      She is phenominal at her job and at the leading edge of fashion. There is somethine strange about her though. No one seems to know where she came from or when she arrrived, but whenever it was, her reputation as a 
+      seamstress preceeded her. For all intents and purposes and to all forms of detection, Eugenia appears to be a non-magical human, but she is in fact some sort of ancient Fey and a master artificer.
   

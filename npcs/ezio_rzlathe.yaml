@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Drow
+    race: Elf
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Drow
 
     #
     # Pronouns (case insensitive):
@@ -467,38 +467,80 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charima
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
     skills:
-    - Drow Abilities:
-      - Superior Darkvision: See 120 in like bright light in dim light and like dim light in darkness
-        Keen Senses: Proficiency in Perception
-        Fey Ancestry: Advantage on saving throws against charm and immune to sleep magic
-        Trance: Deasn't need to sleep, 4 hours meditation counts as a long rest
-        Sunlight Sensitivity: disadvantage on attack and perception roles in direct sunlight
-        Drow Magic: Can cast Dancing Lights, Faerie Fire, Darkness
-        Drow Weapons Training: Proficient with rapiers, shortswords and hand crossbow
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-      Assassin Abilities:
-      - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
-        Infiltration Expertise: you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an
-                                identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a
-                                trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you
-                                to be that person until given an obvious reason not to
-
-    special-abilities:
-    - Proficiencies: Persuasion, Deception, Sleight-of-Hand, Stealth   
-    attacks: |
-      1 attack with Assassin's Aid
-    combat-tactics: |
-      Will always try to sneak attack
-    special-equipment:
-    - Assassin's Aid (+1 ShortSword with 3 charges of Spiritual Weapon)
-    - Amulet of protection from detection
-    - Short Bow
+    - N/A
+    proficiencies:
+    - Stealth
+    - Sleight-of-Hand
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Thieve's Tools
+    - Finesse Weapons
+  special-abilities:
+  - title: Drow Abilities
+  - abilities: 
+    - title: Superior Darkvision 
+    - content: See 120 in like bright light in dim light and like dim light in darkness
+    - title: Keen Senses
+    - content: Proficiency in Perception
+    - title: Fey Ancestry
+    - content: Advantage on saving throws against charm and immune to sleep magic
+    - title: Trance
+    - content: Doesn't need to sleep, 4 hours meditation counts as a long rest
+    - title: Sunlight Sensitivity
+    - content: Disadvantage on attack and perception roles in direct sunlight
+    - title: Drow Magic
+    - content: Can cast Dancing Lights, Faerie Fire, Darkness
+    - title: Drow Weapons Training
+    - content: Proficient with rapiers, shortswords and hand crossbow
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+  - title: Assassin Abilities
+  - abilities: 
+    - title: Bonus Proficiencies
+    - content: When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.
+    - title: Assassinate
+    - content: You are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a 
+               creature that is surprised is a critical hit.
+    - title: Infiltration Expertise
+    - content: You can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an 
+               identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a 
+               trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you 
+               to be that person until given an obvious reason not to.
+   
+  - title: Attacks
+  - content: 1 attack with Assassin's Aid
+  - title: Combat Tactics
+  - content: Will always try to sneak attack
+  
+  - title: Special Equipment
+  - abilities:
+    - title: Assassin's Aid
+    - content: +1 ShortSword with 3 charges the allow the weilder to cast the spell Spiritual Weapon at will
+    - title: Amulet of Non-Detection
+    - content: While wearing this Amulet, you are hidden from Divination magic. You can't be targeted by such magic or perceived through magical Scrying Sensors.
+    - title: +1 Short Bow
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
 
   profile:
 
@@ -514,7 +556,7 @@ npc:
       the tribe heard rumors and saw evidence that the Great Old Ones were on the rise to reclaim their positions of power over the material and astral planes. The great Jackal Irrt, the Lord of Hunger, Thirst, Famine, and
       Drought, and Moander, the Lord of Growth and Decay [Two Forgotten Gods] are separately surging forward into the hearts and minds of those in the underdark and those few clans who wander the middle-ground between the
       upperworld and the Underdark. Disaffected with fascist rulers, Ezio's tribe rejected and became fervent enemies of the ruling pantheons of the Underdark. Learning of the power and promise of the Forgotten Gods, Ezio's
-      clan began offering faith and tithings to Ommen-Hurr [A different Forgotten God], the goddess of Shadow and Time.</p><p>Because of their growing size and relative power, other apostatic clans who followed other Old Gods
+      clan began offering faith and tithings to Ommen-Hurr [A different Forgotten God], the goddess of Shadow and Time. Because of their growing size and relative power, other apostatic clans who followed other Old Gods
       became violent towards Ezio's tribe. One fateful night, the followers of Irrt summoned aspects of the deity to the material realm to strike. Massive jackals with gnashing teeth and almost rotted skin hanging loosely from
       their frames were unleashed on Ezio's village. Demon hounds descended on the Underground city of Daur’zzwth (Dar-zooth) [or any Drow or Underdark village] that Ezio and his people called home. One of these great
       demon hounds sought out Ezio’s father and uncle especially, invaded their home, and assaulted the family. Ezio’s father, Ziirr’kho (Zee-rick-oh) and uncle Ras’klnn (Raz-kill- non) bravely fought the beast, bringing it

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: He/him
+    pronouns: He/Him
 
     #
     # Occupation(s).
@@ -464,43 +464,77 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Cold
     skills:
-    - Goliath Abilities:
-      - Natural Athlete: Proficient in Athletics
-        Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
-        Powerful Build: Counts as one size larger detemining carrying capacity  
-        Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch. Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-          Cantrip: Mage Hand, Mending
-          1st Level: Detect Magic, Identify
-      Cleric Abilities:
-      - Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-          Cantrip: Guidance, Light, Spare the Dying
-          1st Level: Bless, Healing Word
-      Life Domain Abilities:
-      - Disciple of Life: Whenever he uses a spell to Restore Hit Points to a creature, that creature regains additional hit points equal to 2+ the spell's level
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-          Cantrip: Light
-          1st Level: Bless, Cure Wounds
- 
-    special-abilities:
-    - Proficiencies: Proficient in Atheltics, Heavy Armor, Nature, Medicine
-      Feats: Durable, Grappler, Gunner, Healer, Tough
+    - Medicine
+    proficiencies:
+    - Athletics
+    - Medicine
+    - Perception    
+    - Nature
+    - Herbalism
+    - Heavy Armor
+  special-abilities:
+  - title: Goliath Abilities
+  - abilities: 
+    - title: Natural Athlete
+    - content: Proficient in Athletics
+    - title: Stones Endurance
+    - content: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
+    - title: Powerful Build
+    - content: Counts as one size larger detemining carrying capacity  
+    - title: Mountain Born
+    - content: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 14  
+    - title: Cantrip
+    - content: Mage Hand, Mending
+    - title: 1st Level
+    - content: Detect Magic, Identify
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: Cantrips
+    - content: Guidance, Light, Spare the Dying
+    - title: 1st Level
+    - content: Bless, Healing Word
+  - title: Life Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 14
+    - title: 1st Level
+    - content: Bless, Cure Wounds
+    - title: Bonus Proficiency
+    - content: You gain proficiency with Heavy Armor.
+    - title: Disciple of Life
+    - content: Your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to Restore Hit Points to a creature, the creature regains additional Hit Points equal to 2 + the spell’s level.
+    - title: Feats
+    - content: Durable, Grappler, Gunner, Healer, Tough
 
-    attacks: |
-      Has 1 attack usually hand-to-hand combat
-    combat-tactics: |
-      Really has no interest in fighting
-    special-equipment:
-    - Tinker's Tools
-    - Medical Kit
-    - Herbalist's Kit
-    - Smith's Tools
+  - title: Attacks
+  - content: Has 1 attack usually hand-to-hand combat
+  - title: Combat Tactics
+  - content: Really has no interest in fighting
+
 
   profile:
 

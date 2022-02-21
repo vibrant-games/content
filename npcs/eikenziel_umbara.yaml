@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -338,7 +338,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Proud    
+    - Proud
+    - Stern
+    - Serious    
 
   improv:
 
@@ -457,45 +459,97 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - Aasimar Abilities: 
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Celestial Resistance: You have resistance to necrotic damage and radiant damage
-        Healing Hands: As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest
-        Light Bearer: You know the Light cantrip. Charisma is your spellcasting ability for it.
-      Protector Abilities:
-      - Radiant Soul: you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or
-                      until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack
-                      or a spell. The extra radiant damage equals your level
-      Paladin Abilities:
-      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated
-                      within the same radius. Can use this ability x per long rest
-        Lay on Hands: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
-        Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet
-        Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends
-        Divine Health: Immune to disease
-        Extra Attack: Can take and extra attack action each turn
-        Aura of Protection: When he or friendly creatures within 30 feet must make a saving throw, they get a +5 bonus to their roll
-        Spellcasting:
-        - Description: DC 16
-          1st Level: Bless, Command, Divine Favor, Cure Wounds
-          2nd Level: Branding Smite, Lesser Restoration, Magic Weapon       
-      Oath of Devotion Abilities:
-      - Sacred Weapon: As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to Attack Rolls made with that weapon (with a
-                       minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the Duration
-        Turn the Unholy: As an action, you present your holy Symbol and speak a prayer censuring Fiends and Undead, using your Channel Divinity. Each fiend or Undead that can see or hear you within 30 feet of you must make a
-                         Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage
-        Aura of Devotion: you and friendly creatures within 10 feet of you can’t be Charmed while you are conscious
+    - Leatherworking
+    proficiencies:
+    - Insight
+    - Medicine
+    - Persuasion
+  special-abilities:
+  - title: Aasimar Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Celestial Resistance
+    - content: Resistance to Necrotic and Radiant Damage
+    - title: Healing Hands
+    - content: Once per longrest, can touch a creature and cause it to gain 5HP
+    - title: Light Bearer
+    - content: Can cast the Light cantrip using Charisma as spellcasting abaility
+  - title: Protector Abilities
+  - abilities:
+    - title: Radiant Soul
+    - content: You can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for 1 minute or
+               until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack
+               or a spell. The extra radiant damage equals your level
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability x per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: 
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+    - title: Aura of Protection
+    - content: When he or friendly creatures within x feet must make a saving throw, they get a +x bonus to their roll
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 16
+    - title: 1st Level
+    - content: Bless, Command, Divine Favor, Cure Wounds
+    - title: 2nd Level
+    - content: Branding Smite, Lesser Restoration, Magic Weapon       
+  - title: Oath of Devotion Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 16
+    - title: 3rd Level
+    - content: Protection from Evil and Good, Sanctuary
+    - title: 5th Level
+    - content: Lesser Restoration, Zone of Truth
+    - title: Channel Divinty - Sacred Weapon
+    - content: As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to Attack rolls made with that weapon (with a 
+               minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the Duration. You can end 
+               this Effect on Your Turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall Unconscious, this Effect ends.  
+    - title: Channel Divinity - Turn the Unholy
+    - content: As an action, you present your holy Symbol and speak a prayer censuring Fiends and Undead, using your Channel Divinity. Each fiend or Undead that can see or hear you within 30 feet of you must make a 
+               Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, 
+               and it can’t willingly move to a space within 30 feet of you. It also can’t take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving.
+               If there’s nowhere to move, the creature can use the Dodge action.
+    - title: Aura of Devotion
+    - content: You and friendly creatures within 10 feet of you can’t be Charmed while you are conscious. At 18th level, the range of this aura increases to 30 feet.
+  
+  - title: Attacks
+  - content: 2 attacks
+  - title: Combat Tactics
+  - content: Divine Smite with his Great Sword
 
-    special-abilities:
-    - Proficiencies: Insight, Medicine, Persuasion   
-    attacks: |
-      2 attacks
-    combat-tactics: |
-      Divine Smite with his Great Sword
-    special-equipment:
-    - +1 Great Sword
-    - Full Plate
+  - title: Special Equipment
+  - abilities:
+    - title: +1 Great Sword
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: +1 Full Plate
+    - content: While wearing it, you have an extra +1 bonus to your AC
 
   profile:
 
@@ -518,5 +572,6 @@ npc:
     # No length limit for now.
     #
     personality: |
-      He stand over 7' tall with long golden hair, pupiless, azure eyes and opalescent skin. He wears full shining plate and carries a great sword
+      He stand over 7' tall with long golden hair, pupiless, azure eyes and opalescent skin. He wears full shining plate and carries a great sword. Eikenziel is always deadly serious and doesn't understand the emaning of 
+      the word fun. He is Stern and humorless and completely devoted to his divine purpose.
   

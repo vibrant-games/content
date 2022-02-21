@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -459,17 +459,35 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - N/A      
+    - Leatherworking
+    proficiencies:
+    - Persuasion
+    - Perception
+    - Deception   
+    - Insight
+  special-abilities:
+  - title: Feats
+  - content: Healer, Lucky
+   
+  - title: Attacks
+  - content: 1 attack with unarmed strike
+  - title: Combat Tactics
+  - content: She wont fight unless she has to
 
-    special-abilities:
-    - Proficiencies: Persuasion, Deception, Insight   
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      She wont fight unless she has to
-    special-equipment:
-     - knife
+  - title: Special Equipment
+  - abilities:
+    - title: +1 Knife
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
                                                                    
   profile:
 
@@ -495,5 +513,6 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Brown hair, brown eyes, in plain dress. Very little memorable about her other than a small scar above her right eye
+      Brown hair, brown eyes, in plain dress. Very little memorable about her other than a small scar above her right eye. Enid is meek and soft-spoken, but works hard at her produce stand and is a stalwart and dependable
+      employee
   
