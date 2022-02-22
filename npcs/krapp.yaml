@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -328,6 +328,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: actors_guild
       name: The Actor's Guild
 
@@ -458,24 +459,48 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    - Constitution
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Magic
     skills:
-    - Forest Gnome Abilities:
-      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-        Gnome Cunning: advantage on all Intelligence, Wisdom, and Charisma saves against magic
-        Natural Illusionist:  knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
-        Speak with Small Beasts: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
+    - Writing
+    proficiencies:
+    - Performance
+    - Deception    
+    - Insight
+    - Persuasion
+  special-abilities:
+  - title: Forest Gnome Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Gnome Cunning
+    - content: Advantage on all Intelligence, Wisdom, and Charisma saves against magic
+    - title: Natural Illusionist
+    - content: Knows the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it
+    - title: Speak with Small Beasts
+    - content: Through sound and gestures, you may communicate simple ideas with Small or smaller beasts
+  - title: Feats
+  - content: Actor  
 
-    special-abilities:
-       - Proficiecies: Persuasion, Insight
-       - Feats: N/A 
+  - title: Attacks
+  - content: 1 attack with unarmed strike
+  - title: Combat Tactics
+  - content: Won't fight unless he absolutely has to 
 
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      Won't fight unless he absolutely has to 
-    special-equipment:
-    - The Ansible of Time: which he often rewinds and replays. Contains all local history from the past three decades.
-      Krapps Last Parchment: a half-written play about a disappointed gnome in a pub on his birthday. Very hairy parchment.
+  - title: Special Equipment
+  - abilities:
+    - title: The Ansible of Time
+    - content: Which he often rewinds and replays. Contains all local history from the past three decades.
+    - title: Krapps Last Parchment
+    - content: A half-written play about a disappointed gnome in a pub on his birthday. Very hairy parchment.
 
   profile:
 

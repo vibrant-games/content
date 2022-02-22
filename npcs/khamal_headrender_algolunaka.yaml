@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: noble_house
       name: Noble House
     - id: city_town_employee
@@ -466,41 +467,73 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Cold. Piercing, Slashing and Bludgeoning Damage while Raging
     skills:
-    - Goliath Abilities:
-      - Natural Athlete: Proficient in Athletics
-        Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
-        Powerful Build: Counts as one size larger detemining carrying capacity  
-        Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet. 
-      Barbarian Abilities:
-      - Rage: 
-        - Description: Can enter a rage as a Bonus Action. 
-          Additional Information:
-          - have advantage on Strength Checks and Strength Saving Throws.
-          - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-          - Resistance to bludgeoning, piercing, and slashing damage          
-        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                          but Attack Rolls against him have advantage until his next turn
-        Extra Attack: Can attack twice each turn	
-        Fast Movement: your speed increases by 10 feet while you aren't wearing Heavy Armor.
-        Feral Instinct: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
-                        before doing anything else on that turn.
-      Path of the Berserker Abilities:
-      - Frenzy: you can go into a Frenzy when you rage. If you do so, for the Duration of your rage you can make a single melee weapon Attack as a Bonus Action on each of your turns after this one. When your rage ends, you
-                suffer one level of Exhaustion
-        Mindless Rage: you can’t be Charmed or Frightened while raging. If you are Charmed or Frightened when you enter your rage, the Effect is suspended for the Duration of the rage 
+    - Execution
+    proficiencies:
+    - Athletics    
+    - Intimidation
+    - Insight
+  special-abilities:
+  - title: Goliath Abilities
+  - abilities: 
+    - title: Natural Athlete
+    - content: Proficient in Athletics
+    - title: Stones Endurance
+    - content: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
+    - title: Powerful Build
+    - content: Counts as one size larger detemining carrying capacity  
+    - title: Mountain Born
+    - content: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.. 
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+    - title: Extra Attack
+    - content: Can attack twice each turn	
+    - title: Fast Movement
+    - content: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+    - title: Feral Instinct
+    - content: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+               before doing anything else on that turn.
+  - title: Path of the Berserk Abilities
+  - abilities: 
+    - title: Fenzy
+    - content: Can go into a Frenzy when he rages. If he does so, for the Duration of his rage he can make a single melee weapon Attack as a Bonus Action on each of his turns after this one. When his rage ends, 
+               he suffer one level of Exhaustion
+    - title: Mindless Rage
+    - content: You can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage. 
 
-    special-abilities:
-       - Proficiecies: Athletics, Intimidation, Insight
-       - Feats: Great Weapons Master, Sentinel, Mage Slayer 
-       
-    attacks: |
-      2 attacks with Greataxe (3 if raging, 4 if frenzied)
-    combat-tactics: |
-      Khamal will rage and attack head on, axe swinging
-    special-equipment:
-    - Executioners Axe: Get's +1 for each other sentient creature it has killed that day
+  - title: Feats
+  - content: Great Weapons Master, Sentinel, Mage Slayer 
+  - title: Attacks
+  - content: 2 attacks with Greataxe (3 if raging, 4 if frenzied)
+  - title: Combat Tactics
+  - content: Khamal will rage and attack head on, axe swinging
+
+  - title: Special Equipment
+  - abilities:
+    - title: Executioners Axe
+    - content: This weapon get's +1 to attack and damage for each other sentient creature it has killed that day
 
   profile:
 

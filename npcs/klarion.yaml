@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: druid_circle
       name: Druid Circle)
 
@@ -458,48 +459,75 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire
     skills:
-    - Tiefling Abilities:
-      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
-        Hellish Resistance: You have Resistance to fire damage
-        Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
-                         When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells  
-      Druid Abilities:
-      - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
-                 message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
-        Spellcasting: 
-        - Description: Spell DC 12
-          Cantrips: Mold Earth, Shape Water 
-          1st Level: Create Water, Speak with Animals, Goodberry
-        Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
-                    determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
-                    flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
-                    You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
-      Circle of Spores Abilities:
-      - Halo of Spores: you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn
-                        there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th
-                        level, 1d8 at 10th level, and 1d10 at 14th level  
-        Spellcasting: 
-        - Description: Spell DC 12
-          2nd Level: Chill Touch
-        Symbiotic Entity: 
-        - Description: you gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4
-          Additional Information:
-          - temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits;
-          - When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.
-          - Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit.
-          - These benefits last for 10 minutes, until you lose all these temporary hit points. or until you use your Wild Shape again      
+    - Gardening
+    proficiencies:
+    - Nature
+    - Perception
+    - Medicine    
+    - Survival
+    - Herbalism
+    - Herbalist's Kit
+    - Gardening Tools
+  special-abilities:
+  - title: Tiefling Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+    - title: Hellish Resistance
+    - content: You have Resistance to fire damage
+    - title: Asmodeal Legacy
+    - content: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
+               When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells  
+  - title: Druid Abilities
+  - abilities:
+  - title: Druid Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 12
+    - title: Cantrips
+    - content: Mold Earth, Shape Water
+    - title: 1st Level
+    - content: Create Water, Speak with Animals, Goodberry
+    - title: Druidic
+    - content: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+               message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.
+    - title: Wild Shape
+    - content: You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+               determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+               flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+               You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+  - title: Circle of Spores Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 12
+    - title: 2nd Level
+    - content: Chill Touch
+    - title: Halo of Spores
+    - content: You are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn 
+               there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th 
+               level, 1d8 at 10th level, and 1d10 at 14th level.
+    - title: Symbiotic Entity
+    - content: You gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 
+               temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits;
+               When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.
+               Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit.      
 
-    special-abilities:
-       - Proficiecies: Nature, Medicine, Survival
-       - Feats: N/A 
-
-    attacks: |
-      1 attack with garden implement or unaramed strike
-    combat-tactics: |
-      Will wild shape into something small and fast and run away from any trouble
-    special-equipment:
-      - various gardening tools
+  - title: Attacks
+  - content: 1 attack with garden implement or unaramed strike
+  - title: Combat Tactics
+  - content: Will wild shape into something small and fast and run away from any trouble
 
   profile:
 

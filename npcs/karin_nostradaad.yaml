@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -327,6 +327,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    faction:
     - id: thieves_guild
       name: Thieve's Guild
 
@@ -457,59 +458,97 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Pugilist Abilities:
-      - Fisticuffs:
-        - Description: your years of fighting in back alleys and taverns have given you mastery over combat styles that use unarmed strikes and pugilist weapons, which are simple melee weapons without the two-handed property, whips,
-                       and improvised weapons. You may not use the finesse property of a weapon while using it as a pugilist weapon. You gain the following benefits while you are unarmed or using only pugilist weapons and you are
-                       wearing light or no armor and not using a shield - 
-          Additional Informaiton:
-          - You can roll a d8 in place of the normal damage of your unarmed strike or pugilist weapon. This die changes as you gain pugilist levels, as shown in the Fisticuffs column on the Pugilist table.
-          - When you use the Attack action with an unarmed strike or a pugilist weapon on your turn, you can make one unarmed strike or grapple as a bonus action.
-          Iron Chin: you can use Constitution instead of Dexterity to determine your armor class when you are wearing light or no armor and are not using a shield.
-          Moxie:
-          - Description: Moxie Points - 4. your experience laying the beatdown on others has given you a moxie you can channel in the midst of battle. This swagger is represented by a number of moxie points. Your pugilist level determines the maximum number
-                 of points you have, as shown in the Moxie Points column of the Pugilist table. You can spend these points to fuel various moxie features. You start knowing three such features -  Brace Up, The Old One-Two, and Stick
-                 and Move. You learn more moxie features as you gain levels in this class. You regain all expended moxie points when you complete a short or long rest.
-            Brace Up: You can use a bonus action and spend 1 moxie point to brace for attacks. Roll your fisticuffs die + your pugilist level + your Constitution modifier and gain that many temporary hit points.
-            The Old One-Two: Immediately after you take the Attack action on your turn, you can spend 1 moxie point to make two unarmed strikes as a bonus action.
-            Stick and Move: You can use a bonus action and expend 1 moxie point to make a shove attack or take the Dash action.
-        Street Smart: carousing, shadowboxing, and sparring all count as light activity for the purposes of resting for you. Additionally, once you have caroused in a settlement for 8 hours or more, you know all public locations
-                      in the city as if you were born and raised there and you cannot be lost by non-magical means while within the city.
-        Bloodied But Unbowed: when you take damage that reduces you to half your maximum hit points or less, you can use your reaction to gain temporary hit points equal to your pugilist level + your Constitution modifier (11) and you
-                              regain all expended moxie points. You cannot use this feature again until you finish a short or long rest.
-        Fight Club: Piss & Vinegar
-        Dig Deep: you discover a strength inside you that can’t be broken. As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage for one minute. At the end of that minute you gain a level of
-                  exhaustion.
-        Extra Attack: you can attack twice, instead of once, whenever you take the Attack action
-        Haymaker: before you make an attack roll with an unarmed strike or pugilist melee weapon attack that does not already have disadvantage, you can declare you are swinging wild haymakers. You make all attack rolls until
-                  the end of this turn with disadvantage and when you deal damage you do not roll, but use the maximum die result instead.
-        Moxie-Fueled Fists: your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to non-magical attacks and damage.
-        Fancy Footwork: you gain proficiency in Dexterity saving throws.
-        Shake It Off: you can use your action to end one effect on yourself that is causing you to be charmed or frightened.
-      Piss and Vinegar Abilities:
-      - Salty Salute:  you have mastered the art of the enraging insult. You can use a bonus action on your turn to provoke a creature within 60 feet who can see or hear you. That creature must make a Wisdom saving throw. On a
-                       failure, the creature takes your fisticuff’s damage die + your Charisma modifier in psychic damage and has disadvantage on any attack rolls it makes that do not include you as a target before the start of
-                       your next turn. For any of your Piss & Vinegar features that require your opponent to make a saving throw, the saving DC 15
-        Dirty Tricks:
-        - Description: you have a few tricks up your sleeve to even the odds when the going gets rough. You can each of these dirty tricks once and regain their use when you finish a short or long rest.
-          Heelstomper: When you deal damage with an unarmed attack, you attempt to slow the creature you hit. The creature must make a Dexterity saving throw. On a failure, you gain 1 moxie point (up to your
-                       maximum) and its movement speed is halved for one minute.
-          Low Blow: When you deal damage with an unarmed attack you can choose to hit them below the belt. The creature must make a Strength saving throw. On a failure, you gain 1 moxie point (up to your maximum)
-                    and it is knocked prone.
-          Pocket Sand: You can use a bonus action to attempt to blind a creature within 5 feet. The creature must make a Constitution saving throw. On a failure, you gian 1 moxie point (up to your maximum) and it
-                       is blinded until the end of its next turn
-
-    special-abilities:
-       - Proficiecies: Sleight-of-Hand, Intimidation, Athletics, Thieve's Tools, Improvised Weapons
-       - Feats: Tavern Brawler, Tough 
-       
-    attacks: |
-      3 attacks with unarmed strikes or improvised weapons
-    combat-tactics: |
-      Karin is a brawler who generally charges straight ahead relying on his superior fighting ability to inflict maximum damage to opponents. He's not afraid to fight dirty
-    special-equipment:
+    saving-throws:
+    - Constitution
+    - Charisma
+    - Strength
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Boxing
+    proficiencies:
+    - Sleight-of-Hand
+    - Athletics    
+    - Intimidation
+    - Persuasion
+    - Thieve's Tools
+    - Improvised Weapons
+  special-abilities:
+  - title: Pugilist Abilities
+  - abilities:
+    - title: Fisticuffs
+    - content: Your years of fighting in back alleys and taverns have given you mastery over combat styles that use unarmed strikes and pugilist weapons, which are simple melee weapons without the two-handed property, whips,
+               and improvised weapons. You may not use the finesse property of a weapon while using it as a pugilist weapon. You gain the following benefits while you are unarmed or using only pugilist weapons and you are 
+               wearing light or no armor and not using a shield 
+               You can roll a d6 in place of the normal damage of your unarmed strike or pugilist weapon. This die changes as you gain pugilist levels, as shown in the Fisticuffs column on the Pugilist table.
+               When you use the Attack action with an unarmed strike or a pugilist weapon on your turn, you can make one unarmed strike or grapple as a bonus action.
+    - title: Iron Chin
+    - content: You can use Constitution instead of Dexterity to determine your armor class when you are wearing light or no armor and are not using a shield.
+  - title: Moxie
+  - abilities:
+    - content: Your experience laying the beatdown on others has given you a moxie you can channel in the midst of battle. This swagger is represented by a number of moxie points. Your pugilist level determines the maximum number 
+               of points you have, as shown in the Moxie Points column of the Pugilist table. You can spend these points to fuel various moxie features. You start knowing three such features -  Brace Up, The Old One-Two, and Stick 
+               and Move. You learn more moxie features as you gain levels in this class. You regain all expended moxie points when you complete a short or long rest.
+    - title: Moxie Points
+    - content: 4
+    - title: Brace Up
+    - content: You can use a bonus action and spend 1 moxie point to brace for attacks. Roll your fisticuffs die + your pugilist level + your Constitution modifier and gain that many temporary hit points.
+    - title: The Old One-Two
+    - content: Immediately after you take the Attack action on your turn, you can spend 1 moxie point to make two unarmed strikes as a bonus action.
+    - title: Stick and Move
+    - content: You can use a bonus action and expend 1 moxie point to make a shove attack or take the Dash action.
+    - title: Street Smart
+    - content: Carousing, shadowboxing, and sparring all count as light activity for the purposes of resting for you. Additionally, once you have caroused in a settlement for 8 hours or more, you know all public locations 
+               in the city as if you were born and raised there and you cannot be lost by non-magical means while within the city.
+    - title: Bloodied But Unbowed
+    - content: When you take damage that reduces you to half your maximum hit points or less, you can use your reaction to gain temporary hit points equal to your pugilist level + your Constitution modifier and you
+               regain all expended moxie points. You cannot use this feature again until you finish a short or long rest.
+    - title: Fight Club
+    - content: You choose a fight club that best exemplifies your style; Arena Royale, Bloodhound Bruisers, Dog & Hound, Piss & Vinegar, the Squared Circle, or the Sweet Science, all detailed at the end of the class 
+               description. Your fight club grants you features at 3rd level and again at 6th, 11th, and 17th level.
+    - title: Dig Deep
+    - content: You discover a strength inside you that can’t be broken. As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage for one minute. At the end of that minute you gain a level of 
+               exhaustion.
+    - title: Extra Attack
+    - content: You can attack twice, instead of once, whenever you take the Attack action
+    - title: Haymaker
+    - content: Before you make an attack roll with an unarmed strike or pugilist melee weapon attack that does not already have disadvantage, you can declare you are swinging wild haymakers. You make all attack rolls until 
+               the end of this turn with disadvantage and when you deal damage you do not roll, but use the maximum die result instead.
+    - title: Moxie-Fueled Fists
+    - content: Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to non-magical attacks and damage.
+    - title: Fancy Footwork
+    - content: You gain proficiency in Dexterity saving throws.
+    - title: Shake It Off
+    - content: You can use your action to end one effect on yourself that is causing you to be charmed or frightened.
+  - title: Piss & Vinegar Fight Club Abilities
+  - abilities: 
+    - title: Bonus Proficiency
+    - content: You gain proficiency with the Intimidation skill if you don’t have it already.
+    - title: Salty Salute
+    - content: You have mastered the art of the enraging insult. You can use a bonus action on your turn to provoke a creature within 60 feet who can see or hear you. That creature must make a Wisdom saving throw. On a 
+               failure, the creature takes your fisticuff’s damage die + your Charisma modifier in psychic damage and has disadvantage on any attack rolls it makes that do not include you as a target before the start of 
+               your next turn. For any of your Piss & Vinegar features that require your opponent to make a saving throw, the saving DC is calculated as follows;
+               Piss & Vinegar save DC = 8 + your proficiency bonus + your Charisma modifier
+    - title: Dirty Tricks
+    - content: You have a few tricks up your sleeve to even the odds when the going gets rough. You can each of these dirty tricks once and regain their use when you finish a short or long rest.
+               Heelstomper - When you deal damage with an unarmed attack, you attempt to slow the creature you hit. The creature must make a Dexterity saving throw. On a failure, you gain 1 moxie point (up to your maximum)
+                             and its movement speed is halved for one minute.
+               Low Blow - When you deal damage with an unarmed attack you can choose to hit them below the belt. The creature must make a Strength saving throw. On a failure, you gain 1 moxie point (up to your maximum)and
+                          it is knocked prone.
+               Pocket Sand - You can use a bonus action to attempt to blind a creature within 5 feet. The creature must make a Constitution saving throw. On a failure, you gian 1 moxie point (up to your maximum) and it is
+                             blinded until the end of its next turn.
+
+  - title: Feats
+  - content: Tavern Brawler, Tough 
+  - title: Attacks
+  - content: 3 attacks with unarmed strikes or improvised weapons
+  - title: Combat Tactics
+  - content: Karin is a brawler who generally charges straight ahead relying on his superior fighting ability to inflict maximum damage to opponents. He's not afraid to fight dirty
+
 
   profile:
 

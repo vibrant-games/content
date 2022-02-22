@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -331,6 +331,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: adventurer_s_guild
       name: Adventurer's Guild
     - id: thieve_s_guild
@@ -463,39 +464,70 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Merfolk Traits:
-      - The Creed of the Trickster: No merfolk will openly admit to following the creed of the trickster, but those who do view Cosi as an ally who can grant them control over the chaotic forces of the world
-        Amphibious: You can breathe air and water
-        Trickster Talents:  You have proficiency in the Sleight of Hand and Stealth skills
-        Cantrips: Vicious Mockery Spell DC 16
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-      Arcane Trickster Abilities:
-      - Spellcasting:
-        - Description: DC 12
-          Cantrips: Mage Hand, Shocking Grasp, Shape Water
-          1st Level: Hideous Laughter, Disguise Self, Witch Bolt
-        Mage Hand Legerdemain:
-        - Description: when you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it - 
-          Additional Information:
-          - You can stow one object the hand is holding in a container worn or carried by another creature.
-          - You can retrieve an object in a container worn or carried by another creature.
-          - You can use thieves' tools to pick locks and disarm traps at range.
-          - You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you can use the bonus
-            action granted by your Cunning Action to control the hand
-
-    special-abilities:
-       Proficient in Stealth, Sleight-of-Hand, Deception, Nature, Survival, Thieve's Tools and Forgery Kit        
-    attacks: |
-      1 attack with Net or Long Sword
-    combat-tactics: |
-      He'll do his best to sneak attack with his net to restrain opponents if possible then will attack with either his sword or his spellcasting
-    special-equipment:
+    saving-throws:
+    - Charisma
+    - Wisdom
+    - Dexterity
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - River Guide
+    proficiencies:
+    - Sleight-of-Hand
+    - Stealth
+    - Deception    
+    - Nature
+    - Survival
+    - Thieve's Tools
+    - Forgery Kit
+  special-abilities:
+  - title: Merfolk Abilities
+  - abilities: 
+    - title: The Creed of the Trickster
+    - content: No merfolk will openly admit to following the creed of the trickster, but those who do view Cosi as an ally who can grant them control over the chaotic forces of the world
+    - title: Amphibious
+    - content: You can breathe air and water
+    - title: Trickster Talents
+    - content: You have proficiency in the Sleight of Hand and Stealth skills
+    - title: Cantrips
+    - content: You know one cantrip of your choice from the bard spell list spell list. Charisma is your spellcasting ability for it.
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+  - title: Arcane Trickster Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 12
+    - title: Cantrips
+    - content: Mage Hand, Shocking Grasp, Shape Water
+    - title: 1st Level
+    - content: Hideous Laughter, Disguise Self, Witch Bolt
+    - title: Mage Hand Legerdemain
+    - content: When you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it;
+               You can stow one object the hand is holding in a container worn or carried by another creature.
+               You can retrieve an object in a container worn or carried by another creature.
+               You can use thieves' tools to pick locks and disarm traps at range.
+               You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you
+               can use the bonus action granted by your Cunning Action to control the hand.
+       
+  - title: Attacks
+  - content: 1 attack with Net or Long Sword
+  - title: Combat Tactics
+  - content: He'll do his best to sneak attack with his net to restrain opponents if possible then will attack with either his sword or his spellcasting
+
 
   profile:
 

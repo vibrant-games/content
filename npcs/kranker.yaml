@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 2
+    level: 3
 
     #
     # Alignments (case insensitive):
@@ -464,32 +464,61 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Gremlin Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Almost Fire Proof: Resistant to fire damage
-        Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
-        Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
-      
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting:
-        - Description: Requires Tinker's Tools as Spellcasting focus, Spell DC 14
-          Cantrip: Mage Hand, Mending, Shocking Grasp
-          1st Level: Faerie Fire, Cure Wounds
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Knows 4 Infusions and can Infuse 2 items
- 
-    special-abilities:
-    - Proficiencies: Proficient in Perception, Sleight of Hand, Theive's Tools, Tinker's Tools, Smith's Tools     
-    - Feats: Lucky
+    - Leatherworking
+    proficiencies:
+    - Arcana
+    - Perception
+    - Sleight-of-Hand
+    - Thieve's Tools
+    - Tinker's Tools
+    - Smith's Tools
+  special-abilities:
+  - title: Gremlin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Almost Fire Proof
+    - content: Resistant to fire damage
+    - title: Tinkerer
+    - content: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
+    - title: Dangerous Tinker
+    - content: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content:    
+    - title: Cantrip
+    - content: Mage Hand, Mending
+    - title: 1st Level
+    - content: Faerie Fire, Cure Wounds
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 4 
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+     
+  - title: Feats
+  - content: Lucky
+  - title: Attacks
+  - content: Has 1 attack. Will range attack with his Blast Orb or bite or dagger in melee range
+  - title: Combat Tactics
+  - content: Tries to avoid violence but will fight if needed
 
-    attacks: |
-      Has 1 attack. Will range attack with his Blast Orb or bite or dagger in melee range
-    combat-tactics: |
-      Tries to avoid violence but will fight if needed
-    special-equipment:
-    - Tinker's, Thieve's and Smith's Tools
-    - Dagger
 
   profile:
 

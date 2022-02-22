@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -328,7 +328,7 @@ npc:
     #
     # Optional.  0 or more.
     #
-    Factions:
+    factions:
     - id: N/A
       name: N/A
 
@@ -455,46 +455,87 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Intelligence
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
     skills:
-    - Half-Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon
-        Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC
-      Druid Abilities:
-      - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the
-                 message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.
-        Spellcasting:
-        - Description: Spell DC 16
-          Cantrips: Guidance, Produce Flame, Shillelagh, Shape Water
-          1st Level: Beast Bond, Goodberry, Ice Knife, Thunderwave
-          2nd Level: Barkskin, Heat Metal, Lesser Restoration
-          3rd Level: Call Lightning, Dispell Magic, Speak with Plants
-          4th Level: Dominate Beast, Wall of Fire, Divination
-          5th Level:  Maelstrom, Scrying
-        Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level
-                    determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a
-                    flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature.
-                    You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
-      Circle of the Moon Abilities:
-      - Combat Wild Shape: you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell
-                           slot to regain 1d8 hit points per level of the spell slot expended.
-        Circle Forms: The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a beast with a challenge rating as high as
-                      1. You ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there. Starting at 6th level, you can transform into a beast with a challenge rating as high as your
-                      druid level divided by 3, rounded down
-        Primal Strike:  your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
-        Elemental Wild Shape:  you can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental
+    - Herbalism
+    proficiencies:
+    - Arcana
+    - Nature
+    - Medicine    
+    - Insight
+    - Perception
+    - Herbalist's Kit
+  special-abilities:
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon
+    - title: Wood Elf Magic
+    - content: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 16
+  - title: Druid Abilities
+  - abilities:
+  - title: Druid Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content:
+    - title: Cantrips
+    - content: Guidance, Produce Flame, Shillelagh, Shape Water
+    - title: 1st Level
+    - content: Beast Bond, Goodberry, Ice Knife, Thunderwave
+    - title: 2nd Level
+    - content: Barkskin, Heat Metal, Lesser Restoration
+    - title: 3rd Level
+    - content: Call Lightning, Dispell Magic, Speak with Plants
+    - title: 4th Level
+    - content: Dominate Beast, Wall of Fire, Divination
+    - title: 5th Level
+    - content: Maelstrom, Scrying
+    - title: Druidic
+    - content: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+               message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.
+    - title: Wild Shape
+    - content: You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+               determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+               flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+               You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+  - title: Circle of the Moon Abilities
+  - abilities: 
+    - title: Combat Wild Shape
+    - content: You gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. Additionally, while you are transformed by Wild Shape, you can use a bonus action to expend one spell
+               slot to regain 1d8 hit points per level of the spell slot expended.
+    - title: Circle Forms
+    - content: The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your Wild Shape to transform into a beast with a challenge rating as high as
+               1. You ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there. Starting at 6th level, you can transform into a beast with a challenge rating as high as your
+               druid level divided by 3, rounded down
+    - title: Primal Strike
+    - content: Your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+    - title: Elemental Wild Shape
+    - content: You can expend two uses of Wild Shape at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental
 
-    special-abilities:
-       - Proficiecies: Nature, Medicine, Insight, Herbalist's Kit
-       - Feats: Warcaster
+  - title: Feats
+  - content: Warcaster
+  - title: Attacks
+  - content: 1 attacks with bat, spell or wild shape
+  - title: Combat Tactics
+  - content: Katerina is a combat veteran and it shows. She confronts opponents first with the bat under her bar. If things escalate, she transforms into a Wild Shape.
 
-    attacks: |
-      1 attacks with bat, spell or wild shape
-    combat-tactics: |
-      Katerina is a combat veteran and it shows. She confronts opponents first with the bat under her bar. If things escalate, she transforms into a Wild Shape.
-    special-equipment:
-    - A pouch of painted twigs gifted from Treants. Each twig can be used to ask a favor of a small animal like a raven or racoon. If used to stir a drink it can also charm the person who drinks it.
+  - title: Special Equipment
+  - abilities:
+    - title: Treant Pouch
+    - content: A pouch of painted twigs gifted from Treants. Each twig can be used to ask a favor of a small animal like a raven or racoon. If used to stir a drink it can also charm the person who drinks it.
 
   profile:
 

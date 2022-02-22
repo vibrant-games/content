@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -328,6 +328,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: aldria_name_of_the_nation_surrounding_aldris_s_haven
       name: Aldria, name of the nation surrounding Aldris's Haven
 
@@ -459,34 +460,59 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Wizard Abilities:
-      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level
-        Spell Mastery: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. 
-                       If you want to cast either spell at a higher level, you must expend a spell slot as normal
-        Signature Spells: Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don't count against the number of Spells you have prepared, and you can 
-                          cast each of them once at 3rd Level without expending a spell slot.			  
-        Spellcasting: 
-        - Description: Spell DC 14 
-          Cantrips: Blade Ward, Mage Hand, Minor Illusion, Fire Bolt
-          1st Level: Alarm, Mage Armor, Shield, Find Familiar
-          2nd Level: Arcane Lock, Phantasmal Force
-      School of Abjuration Abilities:
-      - Abjuration Savant:  the gold and time you must spend to copy a abjuration spell into your spellbook is halved.
-        Arcane Ward: you can weave magic around yourself for protection. When you cast an abjuration spell of 1st level or higher, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself
-                     that lasts until you finish a long rest. The ward has hit points equal to twice your wizard level + your Intelligence modifier. Whenever you take damage, the ward takes the damage instead. If this damage
-                     reduces the ward to 0 hit points, you take any remaining damage. While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever you cast an abjuration spell of 1st level or higher,
-                     the ward regains a number of hit points equal to twice the level of the spell
+    - Ambidexterous
+    proficiencies:
+    - Arcana
+    - Sleight-of-Hand
+    - Deception    
+    - Stealth
+  special-abilities:
+  - title: Wizard Abilities
+  - abilities:
+    - title: Arcane Recovery
+    - content: After a short rest can recover a spell slot up to 3rd level
+  - title: Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 14  
+    - title: Cantrips
+    - content: Blade Ward, Mage Hand, Minor Illusion, Fire Bolt    
+    - title: 1st Level
+    - content: Alarm, Mage Armor, Shield, Find Familiar    
+    - title: 2nd Level
+    - content: Arcane Lock, Phantasmal Force
+  - title: School of Abjuration Abilities
+  - abilities: 
+    - title: Abjuration Savant
+    - content: The gold and time you must spend to copy a abjuration spell into your spellbook is halved.
+    - title: Arcane Ward
+    - content: You can weave magic around yourself for protection. When you cast an abjuration spell of 1st level or higher, you can simultaneously use a strand of the spell's magic to create a magical ward on yourself
+               that lasts until you finish a long rest. The ward has hit points equal to twice your wizard level + your Intelligence modifier. Whenever you take damage, the ward takes the damage instead. If this damage
+               reduces the ward to 0 hit points, you take any remaining damage. While the ward has 0 hit points, it can't absorb damage, but its magic remains. Whenever you cast an abjuration spell of 1st level or higher,
+               the ward regains a number of hit points equal to twice the level of the spell. Once you create the ward, you can't create it again until you finish a long rest.
 
-    special-abilities:
-       Proficient in Sleight-of-Hand, Deception and Arcana
-       Ambidexterous
-    attacks: |
-      1 spell attack
-    combat-tactics: |
-      He'll try to hide and cast spells
-    special-equipment:
-    - A ring of protection from evil
+  - title: Attacks
+  - content: 1 spell attack
+  - title: Combat Tactics
+  - content: He'll try to hide and cast spells
+
+  - title: Special Equipment
+  - abilities:
+    - title: Ring of Protection from Evil
+    - content: The wearer is protected against certain types of Creatures - Aberrations, Celestials, Elementals, Fey, Fiends, and Undead. The Protection grants several benefits. Creatures of those types have disadvantage on 
+               Attack rolls against the target. The target also can't be Charmed, Frightened, or possessed by them. If the target is already Charmed, Frightened, or possessed by such a creature, the target has advantage on any 
+               new saving throw against the relevant Effect.
 
   profile:
 
