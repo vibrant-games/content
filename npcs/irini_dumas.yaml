@@ -465,65 +465,155 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed
+    resistances:
+    - Fire
     skills:
-    - Half-Devil Abilities:
-      - Darkvision: Can see 60' in dim light as though it was bright light and in darkness as if it was dim light
-        Hellish Ancestry: You are resistant to fire damage.
-        Art of the Word: You are proficient in the Persuasion skill
-        Bewitching Words: Can cast Mass Charm once per long rest using Charisma as spellcasting DC
-      Cleric Abilities:
-      - Spellcasting:
-        - Description: DC 20
-          Cantrips: Guidance, Light, Resistance, Sacred Flame, Thaumaturgy
-          1st Level: Bane, Command, Destroy Water, Inflict Wounds
-          2nd Level: Zone of Truth, Hold Person, Spiritual Weapon
-          3rd Level: Bestow Curse, Speak with Dead, Dispel Magic
-          4th Level: Banishment, Locate Creature, Control Water
-          5th Level: Raise Dead, Insect Plague, Dispel Good
-          6th Level: Create Undead, Harm
-          7th Level: Fire Storm, Plane Shift
-          8th Level: Anti-magic Field
-          9th Level: Astral Projection
-        Channel Divinity: Turn Undead, Destroy Undead
-        Divine Intervention: Can call her patron to intervene on her behalf
-      Death Domain Abilities: 
-      - Description: Proficient with Knives and Torture Implements.
-        Reaper: you learn one necromancy cantrip of your choice from any spell list. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures
-                within range and within 5 feet of each other
-        Touch of Death: you can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage to the target.
-                        The damage equals 5 + twice your cleric level
-        Inescapable Destruction: your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage
-        Divine Strike: you gain the ability to infuse your weapon strikes with necrotic energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an a 1d8 necrotic
-                       damage to the target. When you reach 14th level, the extra damage increases to 2d8
-        Improved Reaper: when you cast a necromancy spell of 1st through 5th level that targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other. If the spell
-                         consumes its material components, you must provide them for each target.
-        Spellcasting:
-        - Cantrips: Toll The Dead
-          1st Level: False Life, Ray of Sickness
-          3rd Level: Blindness\Deafness, Ray of Enfeeblement
-          5th Level: Animate Dead, Vampiric Touch
-          7th Level: Blight, Death Ward
-          9th Level: Antilife Shell, Cloudkill
+    - Torture
+    proficiencies:
+    - Arcana
+    - Persuasion
+    - Deception    
+    - Intimidation
+    - Insight
+    - Performance
+    - Knives and Torture Implements
+  special-abilities:
+  - title: Half-Devil Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Hellish Ancestry
+    - content: You are resistant to fire damage.
+    - title: Art of the Word
+    - content: You are proficient in the Persuasion skill
+    - title: Bewitching Words
+    - content: Can cast Mass Charm once per long rest using Charisma as spellcasting DC
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 20
+    - title: Cantrips
+    - content: Guidance, Light, Resistance, Sacred Flame, Thaumaturgy 
+    - title: 1st Level
+    - content: Bane, Command, Destroy Water, Inflict Wounds  
+    - title: 2nd Level
+    - content: Zone of Truth, Hold Person, Spiritual Weapon   
+    - title: 3rd Level
+    - content: Bestow Curse, Speak with Dead, Dispel Magic
+    - title: 4th Level
+    - content: Banishment, Locate Creature, Control Water   
+    - title: 5th Level
+    - content: Raise Dead, Insect Plague, Dispel Good  
+    - title: 6th Level
+    - content: Create Undead, Harm   
+    - title: 7th Level
+    - content: Fire Storm, Plane Shift   
+    - title: 8th Level
+    - content: Anti-magic Field   
+    - title: 9th Level
+    - content: Astral Projection
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.    
+    - title: Divine Intervention
+    - content: Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll 
+               percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. The DM chooses the Nature of the intervention; the Effect of any Cleric spell or Cleric domain spell would be 
+               appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest. At 20th level, your call for intervention succeeds automatically, 
+               no roll required.
+  - title: Death Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 20
+    - title: Cantrips
+    - content: Toll The Dead
+    - title: 1st Level
+    - content: False Life, Ray of Sickness
+    - title: 3rd Level
+    - content: Blindness/Deafness, Ray of Enfeeblement
+    - title: 5th Level
+    - content: Animate Dead, Vampiric Touch
+    - title: 7th Level
+    - content: Blight, Death Ward
+    - title: 9th Level
+    - content: Antilife Shell, Cloudkill
+    - title: Bonus Proficiency
+    - content: You gain proficiency with martial weapons.
+    - title: Reaper
+    - content: You learn one necromancy cantrip of your choice from any spell list. When you cast a necromancy cantrip that normally targets only one creature, the spell can instead target two creatures 
+               within range and within 5 feet of each other
+    - title: Channel Divinity - Touch of Death
+    - content: You can use Channel Divinity to destroy another creature's life force by touch. When you hit a creature with a melee attack, you can use Channel Divinity to deal extra necrotic damage 
+               to the target. The damage equals 5 + twice your cleric level
+    - title: Inescapable Destruction
+    - content: Your ability to channel negative energy becomes more potent. Necrotic damage dealt by your cleric spells and Channel Divinity options ignores resistance to necrotic damage
+    - title: Divine Strike
+    - content: You gain the ability to infuse your weapon strikes with necrotic energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an a 1d8 necrotic 
+               damage to the target. When you reach 14th level, the extra damage increases to 2d8
+    - title: Improved Reaper
+    - content: When you cast a necromancy spell of 1st through 5th level that targets only one creature, the spell can instead target two creatures within range and within 5 feet of each other. If the spell 
+               consumes its material components, you must provide them for each target.
 
-    special-abilities:
-    - Feats: Actor, Inspiring Leader, Observant, War Caster, Shadow Touched (Invisibility and Cause Fear)
-      Legendary Resistance: (3\Day), If Irini Dumas fails a saving throw she can choose to succeed instead
-      Legendary Actions:
-      - Description: Irini Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Irini Dumas regains spent Legendary Actions at the start of her turn
-        Devils Portal: Irini Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
-        Devils Tongue: Irini Dumas casts Charm Person using Charisma as her spellcasting DC
-        Devils Children: Irini Dumas can cast Gate, opening a portal to summon up to 5 lesser devils and\or minor undead to join the fight
-    attacks: |
-      Spellcasting
-      Legendary Actions
-    combat-tactics: |
-      Irini will do her best not to have to fight, she prefers sneak attacks and seduction if possible. Failing that she will someone her /"children/" to fight while she escapes
-    special-equipment:
-    - Charm of Attraction
-    - Staff of Charming
-    - Black Heart Dagger
-    - Talisman of Ultimate Evil
-    - Ring of Regeneration
+  - title: Legendary Resistance
+  - content: (3\Day), If Irini Dumas fails a saving throw she can choose to succeed instead
+  - title: Legendary Actions
+  - content: Irini Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Irini Dumas regains spent Legendary 
+             Actions at the start of her turn
+  - abilities:
+    - title: Devils Portal
+    - content: Irini Dumas can cast Gate, opening a portal and send one person who fails a DC 15 Dexterity directly to the realm of her master for 1 minute
+    - title: Devils Tongue
+    - content: Irini Dumas casts Charm Person using Charisma as her spellcasting DC
+    - title: Devils Children
+    - content: Irini Dumas can cast Gate, opening a portal to summon up to 5 lesser devils and\or minor undead to join the fight
+  - title: Feats
+  - content: Actor, Inspiring Leader, Observant, War Caster, Shadow Touched (Invisibility and Cause Fear) 
+  - title: Attacks
+  - content: 1 aatck with Spellcasting and Legendary Actions
+  - title: Combat Tactics
+  - content: Irini will do her best not to have to fight, she prefers sneak attacks and seduction if possible. Failing that she will someone her "children" to fight while she escapes
+
+  - title: Special Equipment
+  - abilities:
+    - title: Charm of Attraction
+    - content: The intricately carved broach has 1 charge that is evoked when rubbed. When evoked, the person activating the charm gains a +2 bonus to persuasion checks if the target of the persuasion is of a desired sex and 
+               species. This effect lasts for 10 minutes. When the effect ends, it cannot be used again until after a Long Rest
+    - title: Staff of Charming
+    - content: While holding this staff, you can use an action to expend 1 of its 10 Charges to cast Charm Person, Command, or comprehend Languages from it using your spell save DC. The staff can also be used as a magic 
+               Quarterstaff. If you are holding the staff and fail a saving throw against an Enchantment spell that Targets only you, you can turn your failed save into a successful one. You can't use this property of the staff 
+               again until the next dawn. If you succeed on a save against an Enchantment spell that Targets only you, with or without the staff's intervention, you can use your Reaction to expend 1 charge from the staff and 
+               turn the spell back on its caster as if you had cast the spell. The staff regains 1d8 + 2 expended Charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical 
+               Quarterstaff.
+    - title: Black Heart Dagger
+    - content: This weapon allows you to cast Darkness nonmagically as an action, regaining use at dawn. You are not affected by this, and thus may see through it as normal. If another creature casts Darkness, or other magical 
+               darkness is applied in this area, the spell affects you as normal.
+               First strike - If you are in the globe of darkness created by this weapon and you have advantage on the melee attack roll, this weapon's base damage is 4d4.
+    - title: Talisman of Ultimate Evil
+    - content: This item symbolizes unrepentant evil. A creature that is neither good nor evil in Alignment takes 6d6 necrotic damage upon touching the talisman. A good creature takes 8d6 necrotic damage upon touching the 
+               talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.
+               If you are an evil Cleric or Paladin, you can use the talisman as a holy Symbol, and you gain a +2 bonus to spell Attack rolls while you wear or hold it.
+               The talisman has 6 Charges. If you are wearing or holding it, you can use an action to expend 1 charge from the talisman and choose one creature you can see on the ground within 120 feet of you. If the target is 
+               of good Alignment, a flaming fissure opens under it. The target must succeed on a DC 20 Dexterity saving throw or fall into the fissure and be destroyed, leaving no remains. The fissure then closes, leaving no 
+               trace of its existence. When you expend the last charge, the talisman dissolves into foul-smelling slime and is destroyed.
+    - title: Ring of Regeneration
+    - content: While wearing this ring, you regain 1d6 Hit Points every 10 minutes, provided that you have at least 1 hit point. If you lose a body part, the ring causes the missing part to regrow and return to full 
+               functionality after 1d6 + 1 days if you have at least 1 hit point the whole time. 
 
   profile:
 
@@ -538,7 +628,7 @@ npc:
       Irini Dumas is the wife and half-sister of Nicodeamus Dumas and eldest grandaughter of Anastasia Dumas. She is Nicodeamus' second in command and the primary recruiter for the family.
       She is also the child of a union between Anastasia'a only daughter and the family's patron Devil. She is the high priestess of the family and helps her grandmother with all of the
       family rites and ceremonies dedicated to her father. She also has several children of her own with Nicodeamus most of whom have some degree of her devil heritage. In addition to that, she
-      also has her /"children/", a group of lesser devils and minor undead (skeletons, zombies, ghouls, Scarecrows, poes, etc.). She is also responsible for recruiting initiates into the family,
+      also has her "children", a group of lesser devils and minor undead (skeletons, zombies, ghouls, Scarecrows, poes, etc.). She is also responsible for recruiting initiates into the family,
       training new inductees and sacrificing those that don't make the cut.
 
    #

@@ -465,22 +465,47 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Strength
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened
+    resistances:
+    - N/A
     skills:
-    - He is a brilliant orator with a steel will and a keen eye for human nature. 
-    - He is proficient in persuasion, deception and perception 
-    - He is profiecient in Martial Weapons 
+    - Politics, Oration, Public Speaking
+    proficiencies:
+    - Insight
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+  special-abilities: 
+  - title: Feats
+  - content: Actor, Athlete, Crusher, Keen Mind, Ritual Caster, Inspiring Leader, Tavern Brawler  
+  - title: Attacks
+  - content: He'll fight with a club or blade, or is also a decent hand with improvised weapons
+  - title: Combat Tactics
+  - content: He is a brawler
 
-    special-abilities: 
-    Feats: Actor, Athlete, Crusher, Keen Mind, Ritual Caster, Inspiring Leader, Tavern Brawler   
-    attacks: |
-      He'll fight with a club or blade, or is also a decent hand with improvised weapons
-    combat-tactics: |
-      He is a brawler
-    special-equipment:
-    - Ritual Book including Gate, Message and Scrye
-    - Ring of Protection
-    - Ring of Spell Turning
-    - Ring of Mind Sheilding    
+  - title: Special Equipment
+  - abilities:
+    - title: Ritual Book
+    - content: Spells Included - Detect Magic, Identify, Find Familiar, Augury, Phantom Steed, Divination, Contact Other Plane, Commune, Instant Summons, Forbiddance, Gate, Plane Shift
+    - title: Ring of Protection
+    - content: You gain a +1 bonus to AC and Saving Throws while wearing this ring.
+    - title: Ring of Spell Turning
+    - content: While wearing this ring, you have advantage on saving throws against any spell that targets only you (not in an area of effect). In addition, if you roll a 20 for the save and the spell is 7th level or lower, the
+               spell has no effect on you and instead targets the caster, using the slot level, spell save DC, attack bonus, and spellcasting ability of the caster.
+    - title: Ring of Mind Sheilding
+    - content: While wearing this ring, you are immune to magic that allows other Creatures to read your thoughts, determine whether you are lying, know your Alignment, or know your Creature Type. Creatures can telepathically 
+               communicate with you only if you allow it.
+               You can use an action to cause the ring to become Invisible until you use another action to make it visible, until you remove the ring, or until you die.
+               If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for The Afterlife. As long as your soul is in the ring, you can telepathically 
+               communicate with any creature wearing it. A wearer can't prevent this Telepathic Communication.    
 
   profile:
 

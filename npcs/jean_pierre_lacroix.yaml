@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -462,17 +462,32 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
-    - Exceptional customer service skills and a keen ear
-
-    special-abilities:
-       Proficient in Performance, Perception
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      Will not fight unless his life is directly threatened 
-    special-equipment:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Customer Service, Sommelier
+    proficiencies:
+    - Performance
+    - Perception
+    - Deception    
+    - Insight
+    - Persuasion
+  special-abilities:
+  - title: Feats
+  - content: Keen Mind, Observant, Actor
+
+  - title: Attacks
+  - content: 1 attack with unarmed strike
+  - title: Combat Tactics
+  - content: Will not fight unless his life is directly threatened 
+
 
   profile:
 

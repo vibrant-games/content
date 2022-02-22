@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -449,9 +449,9 @@ npc:
     str: 16
     dex: 10
     con: 18
-    int: 10
-    wis: 12
-    cha: 15
+    int: 9
+    wis: 11
+    cha: 18
 
   #
   # Special characteristics.
@@ -461,47 +461,88 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Constitution
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Disease
+    resistances:
+    - Cold and Necrotic Damage
     skills:
-    - Goliath Abilities:
-      - Natural Athlete: Proficient in Athletics
-        Stones Endurance: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
-        Powerful Build: Counts as one size larger detemining carrying capacity  
-        Mountain Born: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
-      Paladin Abilities:
-      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                      within the same radius. Can use this ability x per long rest
-        Lay on Hands: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
-        Fighting Style: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an Attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The
-                        weapon must have the Two-Handed or Versatile property for you to gain this benefit 
-        Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends 
-        Divine Health: Immune to disease
-        Extra Attack: Can take and extra attack action each turn
-        Spellcasting:
-         - Description: DC 13
-           1st Level: Bless, Command, Cure Wounds, Protection from Evil
-           2nd Level: Branding Smite, Lesser Restoration
-      Oath of Glory Abilities:
-      - Channel Divinity: 
-        - Peerless Athlete: As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry,
-                            push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet
-          Inspiring Smite: Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice
-                           within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.
-        Spellcasting:
-        - Description: DC 13
-          1st Level: Guiding Bolt, Heroism
-          2nd Level: Enhance Ability, Magic Weapon
+    - Leatherworking
+    proficiencies:
+    - Performance
+    - Athletics
+    - Survival    
+    - Intimidation
+  special-abilities:
+  - title: Goliath Abilities
+  - abilities: 
+    - title: Natural Athlete
+    - content: Proficient in Athletics
+    - title: Stones Endurance
+    - content: Once per short rest when he takes damage he can use a reaction to reduce that damage by 1d12+4
+    - title: Powerful Build
+    - content: Counts as one size larger detemining carrying capacity  
+    - title: Mountain Born
+    - content: Resistance to cold damage. Acclimated to high altitude including elevations above 20,000 feet.
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability x per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must 
+                                       have the two-handed or versatile property for you to gain this benefit.
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content: Bless, Command, Cure Wounds, Protection from Evil
+    - title: 2nd Level
+    - content: Branding Smite, Lesser Restoration
+  - title: Oath of Glory Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 15
+    - title: 3rd Level
+    - content: Guiding Bolt, Heroism
+    - title: 5th Level
+    - content: Enhance Ability, Magic Weapon
+    - title: Channel Divinity - Peerless Athlete
+    - content: As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry,
+               push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet
+    - title: Channel Divinity - Inspiring Smite
+    - content: Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice
+               within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.
 
-    special-abilities:
-       Proficient in Performance, Athletics
-    attacks: |
-      2 attack with his Great Sword
-    combat-tactics: |
-      Irtano will often stand his ground and await whomever is foolish enough to attack first to do so. 
-    special-equipment:
-    - Beads of Refreshment 
-    - Lifewell Tattoo on his Right Hand:
-      - Necrotic Resistance. Irtano has resistance to necrotic damage. 
-      - Life Ward. When Irtano would be reduced to O hit points he drops to 1 hit point instead. Once used this property can't be used again until the next dawn.
+  - title: Attacks
+  - content: 2 attack with his Great Sword
+  - title: Combat Tactics
+  - content: Irtano will often stand his ground and await whomever is foolish enough to attack first to do so. 
+
+  - title: Special Equipment
+  - abilities:
+    - title: Beads of Refreshment
+    - content: This spongy, flavorless, gelatinous bead dissolves in liquid, transforming up to a pint of the liquid into fresh, cold drinking water. The bead has no effect on magical liquids or harmful substances such as poison
+    - title: Lifewell Tattoo on his Right Hand
+    - content: Gives Resistance to Necrotic Damage. 
+               Life Ward - When you would be reduced to O hit points he drops to 1 hit point instead. Once used this property can't be used again until the next dawn.
 
   profile:
 

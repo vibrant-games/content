@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -459,17 +459,36 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
     skills:
     - Flare Bartending
+    proficiencies:
+    - Performance
+    - Sleight-of-Hand
+    - Persuasion
+  special-abilities:
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon 
+        
+  - title: Attacks
+  - content: 1 attack with unarmed strike
+  - title: Combat Tactics
+  - content: Will not fight unless his life is directly threatened 
 
-    special-abilities:
-       Proficient in Performance, Sleight-of-Hand, Persuasion        
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      Will not fight unless his life is directly threatened 
-    special-equipment:
-    - N/A
 
   profile:
 
