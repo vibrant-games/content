@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: (Lord) Cal Manterius
+  name: Lord Cal Manterius
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    faction:
     - id: Monastary
       name: Monastary
 
@@ -451,8 +452,8 @@ npc:
     dex: 17
     con: 14
     int: 10
-    wis: 10
-    cha: 17
+    wis: 17
+    cha: 10
 
   #
   # Special characteristics.
@@ -462,55 +463,90 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Dexterity
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Firbolg Abilities:
-      - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
-                       short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
-        Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
-                     use it again until you finish a short or long rest.
-        Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-        Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
-                                  You have advantage on all Charisma checks you make to influence them              
-      Monk Abilities:
-      - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-        Martial Arts:
-         - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-         - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
-         - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-        Ki: 
-        - Ki Points: 6
-          Ki DC: 13
-          Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-          Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
-        Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
-        Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                         free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-        Slow Fall: Can us a Reaction to falling damage by by 85hp
-        Extra Attack: Can Attack twice per turn
-        Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-        Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
-      Way of the Empty Mind Abilities:
-      - Empty Mind Techniques: 
-        - Description: On your turn, after using Patient Defense, you may choose one creature that attcked you this turn. On a contested Wisdom (Insight) vs Charisma (Deception) check, you may perform any oneof the 
-                       following techniques - 
-          Additional Information: 
-          - Gain advantage on any action you take against your chosen target until the end of your next turn
-          - Gain 1 Ki point to use against your chosen target until the end of your next turn
-          - The target creature gains disadvantage on attacks against any other creature than you
-        Simultaneous Counter: You can strike at the same time as your opponent. Whenever a creature you can see hits you with a melee attack, you may spend 1 Ki point and your Reaction to make a melee attack against them before
-                              damage is rolled. For this attack, use the damage dice of your opponents attack. If the opponent is stunned or killed by your attack, you take no damage. Otherwise, damage resovles as normal. 
+    - N/A
+    proficiencies:
+    - Medicine
+    - Survival
+    - Acrobatics    
+    - History
+    - Persuasion
+  special-abilities:
+  - title: Firbolg Abilities
+  - abilities: 
+    - title: Firbolg Magic
+    - content: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
+               short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
+    - title: Hidden Step
+    - content: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
+               use it again until you finish a short or long rest.
+    - title: Powerful Build
+    - content: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+    - title: Speech of Beast and Leaf
+    - content: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
+               You have advantage on all Charisma checks you make to influence them             
+  - title: Monk Abilities
+  - abilities:
+    - title: Unarmored Defense 
+    - content: When not wearing armor Ac = 10 + Dexterity + Wisdom
+  - title: Martial Arts
+  - abilities:
+    - content: Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+               Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+               When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+  - title: Ki
+  - abilities:  
+    - title: Ki Points
+    - contents: 6
+    - title: Ki DC
+    - contents: 13
+    - title: Flurry of Blows
+    - content: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+    - title: Patient Defense
+    - content: Can spend 1 Ki point to take the Dodge action as a bonus action
+    - title: Step of the Wind
+    - content: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+    - title: Unarmored Movement
+    - content: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+    - title: Deflect Missles
+    - content: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+               free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+    - title: Slow Fall
+    - content: You can use your Reaction when you fall to reduce any Falling damage you take by an amount equal to five times your monk level.
+    - title: Extra Attack
+    - content: Can Attack twice per turn
+    - title: Stunning Strike
+    - content: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+    - title: Ki-Empowered Strike
+    - content: Your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+  - title: Way of the Empty Mind Abilities
+  - abilities: 
+    - title: Empty Mind Techniques
+    - content: On your turn, after using Patient Defense, you may choose one creature that attcked you this turn. On a contested Wisdom (Insight) vs Charisma (Deception) check, you may perform any oneof the 
+               following techniques - 
+               Gain advantage on any action you take against your chosen target until the end of your next turn
+               Gain 1 Ki point to use against your chosen target until the end of your next turn
+               The target creature gains disadvantage on attacks against any other creature than you. In addition you mat give it advantage on attack rolls against you until the end of your next turn
+    - title: Simultaneous Counter
+    - content: You can strike at the same time as your opponent to create a devastating collision that uses their own power against them. Whenever a creature you can see hits you with a melee attack, you may 
+               spend 1 Ki point and your Reaction to make a melee attack against them before damage is rolled. For this attack, use the damage dice of your opponents attack. If the opponent is stunned or killed 
+               by your attack, you take no damage. Otherwise, damage resovles as normal. At level 15, your Simultaneous Counter does one extra Martial Arts die in damage 
 
-    special-abilities:
-       - Proficiencies: Medicine, Persuasion, History
-         Feats: N/A 
+  - title: Attacks
+  - content: 2 attacks with staff or martial arts unarmed strike
+  - title: Combat Tactics
+  - content: Cal isn't a coward. His mental state ensures that he loses track of his well-being and launches himself into combat. He will bounce from opponent to opponent switching from his staff to fists in a blur of martial artistry.
 
-    attacks: |
-      2 attacks with staff or martial arts unarmed strike
-    combat-tactics: |
-      Cal isn't a coward. His mental state ensures that he loses track of his well-being and launches himself into combat. He will bounce from opponent to opponent switching from his staff to fists in a blur of martial artistry.
-    special-equipment:
-    - Quaterstaff
 
   profile:
 

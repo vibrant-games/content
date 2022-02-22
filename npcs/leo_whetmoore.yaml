@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -331,6 +331,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_lythiad_assembly
       name: The Lythiad Assembly
       role: Seanair (Leader)
@@ -463,48 +464,85 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Poisoned
+    resistances:
+    - Poison
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus              
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-      Mastermind Abilities:
-      - Master of Intrigue: you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice
-        Master of Tactics: you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than
-                           5 feet of you, if the target can see or hear you.
-        Insightful Manipulator:  
-        - Description: if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if
-                       the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice;
-          Additional Information:
-          - Intelligence score
-          - Wisdom score
-          - Charisma score
-          - Class levels (if any)
-          - At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any
+    - N/A
+    proficiencies:
+    - Acrobatics
+    - Athletics
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Thieve's Tools
+    - Disguise Kit
+    - Forgery Kit
+    - Three Dragon Ante Gaming Set
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus             
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+  - title: Mastermind Abilities
+  - abilities: 
+    - title: Master of Intrigue
+    - content: You gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice. Additionally, you can unerringly mimic the speech patterns
+               and accent of a creature that you hear speak for at least 1 minute, enabling you to pass yourself off as a native speaker of a particular land, provided that you know the language
+    - title: Master of Tactics
+    - content: You can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than
+               5 feet of you, if the target can see or hear you
+    - title: Insightful Manipulators
+    - content: If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if
+               the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Intelligence score, Wisdom score, Charisma score, Class levels (if any)
+               At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any.
 
-    special-abilities:
-       - Proficiencies: Acrobatics, Athletics, Persuasion, Intimidation, Thieves' Tools, Disguise Kit, Forgery Kit, Three-Dragon Ante Set
-         Feats: Actor, Skulker 
-       
-    attacks: |
-      2 attacks with dagger
-    combat-tactics: |
-      Leo is no coward. He will, however, try to avoid or escape combat because of his belief that his worth as leader of the Lythiad assembly is more important than proving his mettle in a single battle.
-    special-equipment:
-    - Broken Pocket Watch: It’s rare to find a pocket watch at all outside of gnomish settlements. This one seems to be broken as it sometimes skips back a few seconds. It holds great power for the one who attunes it though.
-                           The broken pocket watch has 3 charges. On your turn you can spend 1 charge to take an additional bonus action as the pocket watch ticks back by two seconds to give you another moment for something
-                           quick. The pocket watch regains 1 expended charge at dawn Alternately you can force it to turn backward as far as it can go. This does not require an action and takes 3 charges. You can’t do this if
-                           you are incapacitated. You teleport to any location you have been earlier in this turn you regain any hit points you have lost since the beginning of your turn and you can immediately take another
-                           turn. The pocket watch falls apart after that and require 1 week of specialized repairs. If this last ability is chosen after 1 minute you suffer one level of exhaustion.
-      Dagger of Warning: Most rogues shouldn't really need help with their perception but this dagger helps both the rogue and everyone around them. While attuned the rogue can't be surprised and are magically awoken from
-                         their sleep when danger approaches, along with all allies within 30 feet of them. Not to mention the dagger gives the rogue advantage on initiative rolls which is a valuable thing for them to have.
+  - title: Feats
+  - content: Actor, Skulker 
+  - title: Attacks
+  - content: 2 attacks with dagger
+  - title: Combat Tactics
+  - content: Leo is no coward. He will, however, try to avoid or escape combat because of his belief that his worth as leader of the Lythiad assembly is more important than proving his mettle in a single battle.
+
+  - title: Special Equipment
+  - abilities:
+    - title: Broken Pocket Watch
+    - content: It’s rare to find a pocket watch at all outside of gnomish settlements. This one seems to be broken as it sometimes skips back a few seconds. It holds great power for the one who attunes it though.
+               The broken pocket watch has 3 charges. On your turn you can spend 1 charge to take an additional bonus action as the pocket watch ticks back by two seconds to give you another moment for something
+               quick. The pocket watch regains 1 expended charge at dawn Alternately you can force it to turn backward as far as it can go. This does not require an action and takes 3 charges. You can’t do this if
+               you are incapacitated. You teleport to any location you have been earlier in this turn you regain any hit points you have lost since the beginning of your turn and you can immediately take another
+               turn. The pocket watch falls apart after that and require 1 week of specialized repairs. If this last ability is chosen after 1 minute you suffer one level of exhaustion.
+    - title: Dagger of Warning
+    - content: Most rogues shouldn't really need help with their perception but this dagger helps both the rogue and everyone around them. While attuned the rogue can't be surprised and are magically awoken from
+               their sleep when danger approaches, along with all allies within 30 feet of them. Not to mention the dagger gives the rogue advantage on initiative rolls which is a valuable thing for them to have.
 
   profile:
 

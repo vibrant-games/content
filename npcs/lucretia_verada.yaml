@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: a_thieve_s_assassin_s_guild
       name: A Thieve's/Assassin's Guild
 
@@ -459,20 +460,37 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    - Intelligence
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Bookkeeping
+    proficiencies:
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+  special-abilities:
+  - title: Feats
+  - content: Observant, Keen Mind
+  - title: Attacks
+  - content: 1 attack with Dagger or Hand Crossbow
+  - title: Combat Tactics
+  - content: She'll only fight long enough for her security arrive
 
-    special-abilities:
-    - Proficiencies: Perception, Persuasion, Intimidation
-      Feats: Observant, Keen Mind
-
-    attacks: |
-      1 attack with Dagger or Hand Crossbow
-    combat-tactics: |
-      She'll only fight long enough for her security arrive
-    special-equipment:
-    - Silver Dagger
-    - Hand Crossbow
+  - title: Special Equipment
+  - abilities:
+    - title: Silver Dagger
+    - content: A dagger forged into a smaller shape out of a lighter metal. When rolling for damage with a tiny silver dagger, you do not add your Strength modifier, either positive or negative
+    - title: +1 Hand Crossbow and Bolts
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon
 
   profile:
 

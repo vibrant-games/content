@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: wipe_the_bottoms_society_justice_for_us_humans_going_their_own_way
       name: Wipe the Bottoms Society
     - id: storytellers_against_goblinsS
@@ -467,19 +468,35 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - N/A 
+    - Public Speaking
+    proficiencies:
+    - Performance
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+  special-abilities:
+  - title: Feats
+  - content: Actor, Lucky 
+  - title: Attacks
+  - content: 1 attacks with dagger
+  - title: Combat Tactics
+  - content: He is a coward and will not fight unless his life depends on it
 
-    special-abilities:
-       - Proficiencies: Persuasion, History, Nature, Perception, Performance
-         Feats: Actor, Lucky 
-       
-    attacks: |
-      1 attacks with dagger
-    combat-tactics: |
-      H is a coward and will not fight unless his life depends on it
-    special-equipment:
-    - The Call of Stronginthearm: his magnum opus transcribed by an adoring fan about religious cannibal lust among dwarves.
+  - title: Special Equipment
+  - abilities:
+    - title: The Call of Stronginthearm
+    - content: His magnum opus transcribed by an adoring fan about religious cannibal lust among dwarves.
       
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -456,21 +456,34 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Aarakocra Abilities:
-      - Flight: Flying speed is 50 feet
-        Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+    - Woodcarving
+    proficiencies:
+    - Nature
+    - Survival
+    - Medicine
+    - Woodcarvers Tools
+  special-abilities:
+  - title: Aarakocra Abilities
+  - abilities: 
+    - title: Flight
+    - content: Flying speed is 50 feet
+    - title: Talons
+    - content: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
 
-    special-abilities:
-       - Proficiencies: Nature, Medicine, Woodcarver's Tools
-       - Feats: N/A 
-       
-    attacks: |
-      1 attack with talons
-    combat-tactics: |
-      will only fight in defence of her children
-    special-equipment:
-    - Woodcarving Tools
+  - title: Attacks
+  - content: 1 attack with talons
+  - title: Combat Tactics
+  - content: Aill only fight in defence of her children
 
   profile:
 

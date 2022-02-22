@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: elderly
+    age: Elderly
 
     #
     # Races (case insensitive):
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: elf_tribe
       name: Elf Tribe
     - id: chamber_of_commerce
@@ -464,50 +465,85 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
     skills:
-    - Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Keen Senses: You have proficiency in the Perception skill 
-        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow
-      Wizard Abilities:
-      - Arcane Recovery: After a short rest can recover a spell slot up to 3rd level			  
-        Spellcasting: 
-        - Spell DC: 17 
-          Cantrips: True Strike, Dancing Lights, Fire Bolt, Mage Hand, Mending
-          1st Level: Comprehend Languages, Detect Magic, Gift of Alacrity, Find Familiar
-          2nd Level: Augury, Detect Thoughts, Mind Spike
-          3rd Level: Clairvoyance, Fireball, Tiny Servant
-          4th Level: Divination, Private Sanctum, Dimension Door
-          5th Level: Legend Lore, Scrying
-      School of Divination Abilities:
-      - Divination Savant: the gold and time you must spend to copy a Divination spell into your spellbook is halved.
-        Potent: when you choose this school, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw,
-                or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. Each
-                foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls
-        Expert Divination: casting divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a divination spell of 2nd level or higher using a spell slot, you regain
-                           one expended spell slot. The slot you regain must be of a level lower than the spell you cast and can't be higher than 5th level
-        The Third Eye:  
-        - Description: you can use your action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you are incapacitated or you take a short or long rest. You can't
-                       use the feature again until you finish a short or long rest.
-          Darkvision: You gain darkvision out to a range of 60 feet.
-          Ethereal Sight: You can see into the Ethereal Plane within 60 feet of you.
-          Greater Comprehension: You can read any language.
-          See Invisibility: You can see invisible creatures and objects within 10 feet of you that are within line of sight
+    - Librarian
+    proficiencies:
+    - Arcana
+    - Perception
+    - History    
+    - Insight
+    - Persuasion
+  special-abilities:
+  - title: Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Keen Senses
+    - content: You have proficiency in the Perception skill 
+    - title: Trance
+    - content: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+               dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+  - title: Wizard Abilities
+  - abilities:
+    - title: Arcane Recovery
+    - content: After a short rest can recover a spell slot up to 3rd level			  
+  - title: Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 17  
+    - title: Cantrips
+    - content: True Strike, Dancing Lights, Fire Bolt, Mage Hand, Mending
+    - title: 1st Level
+    - content: Comprehend Languages, Detect Magic, Gift of Alacrity, Find Familiar
+    - title: 2nd Level
+    - content: Augury, Detect Thoughts, Mind Spike
+    - title: 3rd Level
+    - content: Clairvoyance, Fireball, Tiny Servant
+    - title: 4th Level
+    - content: Divination, Private Sanctum, Dimension Door
+    - title: 5th Level
+    - content: Legend Lore, Scrying
+  - title: School of Divination Abilities
+  - abilities: 
+    - title: Divination Savant
+    - content: The gold and time you must spend to copy a Divination spell into your spellbook is halved.
+    - title: Potent
+    - content: When you choose this school, glimpses of the future begin to press in on your awareness. When you finish a long rest, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw,
+               or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the roll, and you can replace a roll in this way only once per turn. Each
+               foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls
+    - title: Expert Divination
+    - content: Casting divination spells comes so easily to you that it expends only a fraction of your spellcasting efforts. When you cast a divination spell of 2nd level or higher using a spell slot, you regain
+               one expended spell slot. The slot you regain must be of a level lower than the spell you cast and can't be higher than 5th level
+    - title: The Third Eye
+    - content: You can use your action to increase your powers of perception. When you do so, choose one of the following benefits, which lasts until you are incapacitated or you take a short or long rest. You can't
+               use the feature again until you finish a short or long rest.
+               Darkvision - You gain darkvision out to a range of 60 feet.
+               Ethereal Sight - You can see into the Ethereal Plane within 60 feet of you.
+               Greater Comprehension - You can read any language.
+               See Invisibility - You can see invisible creatures and objects within 10 feet of you that are within line of sight
 
-    special-abilities:
-       - Proficiencies: Perception, Arcana, History
-       - Feats: Keen Mind 
-       
-    attacks: |
-      1 attacks with spell
-    combat-tactics: |
-      He will only ever fight if his life is directly threatened at which point he'll use his spellcasting to fight
-    special-equipment:
-    - Various magical scrolls
-    - books and tombs
+  - title: Feats
+  - content: Keen Mind 
+  - title: Attacks
+  - content: 1 attacks with spell
+  - title: Combat Tactics
+  - content: He will only ever fight if his life is directly threatened at which point he'll use his spellcasting to fight
+
+  - title: Special Equipment
+  - abilities:
+    - title: Bookstore Inventory
+    - content: Various magical scrolls, books and tombs
       
   profile:
 

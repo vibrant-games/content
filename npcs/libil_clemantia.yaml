@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -330,11 +330,12 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: regional_merchants_guild
       name: Regional Merchants' Guild
       role: Guild Leader
-    - id: thieves_guild_regional
-      name: Thieves' Guild - Regional
+    - id: thieves_guild
+      name: Thieves' Guild
       role: High Journeyman
 
     #
@@ -465,34 +466,67 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
     skills:
-    - Half-Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
-        Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-      Inquisitive Abilities:
-      - Ear for Deciet: you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8
-        Eye for Detail: you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
-        Insightful Fighting: you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
-                             contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
-                             disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
+    - Administration
+    proficiencies:
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Thieve's Tools
+  special-abilities:
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon 
+    - title: Wood Elf Magic
+    - content: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+  - title: Inquisitive Abilities
+  - abilities: 
+    - title: Ear for Deciet
+    - content: You develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8
+    - title: Eye for Detail
+    - content: You can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
+    - title: Insightful Fighting
+    - content: You gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
+               contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
+               disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
 
-    special-abilities:
-       - Proficiencies: Persuasion, Perception, Thieves' Tools, Intimidation
-         Feats: Keen Mind 
+  - title: Feats
+  - content: Keen Mind 
+  - title: Attacks
+  - content: 2 attacks with Dagger or Hand Crossbow
+  - title: Combat Tactics
+  - content: Will almost exclusively withdraw to a distance and use her crossbow
 
-    attacks: |
-      2 attacks with Dagger or Hand Crossbow
-    combat-tactics: |
-      Will almost exclusively withdraw to a distance and use her crossbow
-    special-equipment:
-    - Circlet of Persuasion: This silver headband grants a +3 competence bonus on the wearer's Charisma-based checks.
+  - title: Special Equipment
+  - abilities:
+    - title: Circlet of Persuasion
+    - content: This silver headband grants a +3  bonus on the wearer's Charisma-based ability checks and saving throws.
 
   profile:
 

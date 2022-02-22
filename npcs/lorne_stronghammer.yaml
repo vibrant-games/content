@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: smiths_guild
       name: Smith's Guild
 
@@ -458,30 +459,62 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus
-      Fighter Abilities:
-      - Fighting Style:
-        Second Wind: Bonus Action to regain 1d10 + 
-        Action Surge: Once every short/long rest can take an extra action
-        Extra Attack: Can attack twice each turn
-      Champion Abilities:
-      - Improved Critical: your weapon attacks score a critical hit on a roll of 19 or 20
+    - Leatherworking
+    proficiencies:
+    - History
+    - Insight
+    - Athletics    
+    - Intimidation
+    - Smith's Tools
+    - Woodcarver's Tools
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content:
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+    - title: Extra Attack
+    - content: Can attack twice each turn
+  - title: Champion Abilities
+  - abilities: 
+    - title: Improved Critical
+    - content: Your weapon attacks score a critical hit on a roll of 19 or 20 
 
-    special-abilities:
-       - Proficiencies: History, Intimidation, Smith's Tools, Leatherworking Tools
-         Feats: N/A 
+  - title: Attacks
+  - content: 2 attacks with hand axe or warhammer
+  - title: Combat Tactics
+  - content: Lorne will focus his attacks on the most apparently dangerous opponent but also use his action surge or second wind to keep any other opponents tied up in some way or another.
 
-    attacks: |
-      2 attacks with hand axe or warhammer
-    combat-tactics: |
-      Lorne will focus his attacks on the most apparently dangerous opponent but also use his action surge or second wind to keep any other opponents tied up in some way or another.
-    special-equipment:
-    - Bracers of Defense: Requires Attunement. While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no Shield.
+  - title: Special Equipment
+  - abilities:
+    - title: Bracers of Defense
+    - content: Requires Attunement. While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no Shield.
 
   profile:
 
