@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -328,6 +328,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: chamber_of_commerce
       name: Chamber of Commerce
     - id: adventurer_s_guild
@@ -461,26 +462,42 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Frightened, Poisoned and Poison Damage
     skills:
-    - Halfling Abilities:
-      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-        Brave: Has advantage on Saving Throws against being Frightened 
-        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-        Stout Resilience: You have advantage on saving throws against poison, and you have resistance to poison damage                          
+    - Leatherworking
+    proficiencies:
+    - Sleight-of-Hand
+    - Perception
+    - Leatherworking Tools
+  special-abilities:
+  - title: Halfling Abilities
+  - abilities: 
+    - title: Lucky
+    - content: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+    - title: Brave
+    - content: Has advantage on Saving Throws against being Frightened 
+    - title: Halfling Nimbleness
+    - content: Can move through the space of any creature that is of a size larger than her
+    - title: Stout Resilience
+    - content: You have advantage on saving throws against poison, and you have resistance to poison damage                          
 
-    special-abilities:
-       - Proficiencies: Perception, Sleight-of-Hand, Leatehrworker's Tools
-         Feats: Second Chance 
-       - Leather Working Cantrip that gives all leather armor he produces a +1 to AC       
+  - title: Feats
+  - content: Second Chance 
+  - title: Leatherworking Cantrip
+  - content: This Cantrip gives all leather armor he produces a +1 to AC       
 
-    attacks: |
-      1 attack with shortsword or unarmed strike
-    combat-tactics: |
-      He's not a fighter but will fight if required
-    special-equipment:
-    - Shortsword
-    - Leatherworker's Tools
-    - Various pieces of +1 Leather armor
+  - title: Attacks
+  - content: 1 attack with shortsword or unarmed strike
+  - title: Combat Tactics
+  - content: He's not a fighter but will fight if required
 
   profile:
 

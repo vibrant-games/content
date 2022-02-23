@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    faction:
     - id: a_thieve_s_assassin_s_guild
       name: A Thieve's/Assassin's Guild
 
@@ -460,33 +461,58 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Tabaxi Abilities:
-      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-        Feline Agility:  When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again until you move 0 feet on one of your turns. 
-        Cats Claws: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to
-                    1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
-        Cats Talent: You have proficiency in the Perception and Stealth skills. 
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-      Thief Abilities:
-      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
-        Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
-                           your Dexterity modifier.
-
-    special-abilities:
-       - Proficiencies: Acrobatic, Sleight-of-Hand, Deception, Performance, Stealth
-         Feats: N/A 
-       - She is a skilled Dancer       
+    - Dancing
+    proficiencies:
+    - Acrobatics
+    - Perception
+    - Deception    
+    - Sleight-of-Hand
+    - Stealth
+    - Performance
+    - Thieve's Tools
+  special-abilities:
+  - title: Tabaxi Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+    - title: Feline Agility
+    - content: Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again
+               until you move 0 feet on one of your turns.
+    - title: Cat's Claws
+    - content: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 
+               1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+    - title: Cat's Talent
+    - content: You have proficiency in the Perception and Stealth skills 
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+  - title: Thief Abilities
+  - abilities: 
+    - title: Fast Hands
+    - content: You can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
+    - title: Second-Story Work
+    - content: When you choose this archetype at 3rd Level, you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you 
+               cover increases by a number of feet equal to your Dexterity modifier.    
        
-    attacks: |
-      1 attack with dagger or claws
-    combat-tactics: |
-      he's not a big fighter but will fight with her dagger and with her claws if forced to
-    special-equipment:
-    - Dagger
+  - title: Attacks
+  - content: 1 attack with dagger or claws
+  - title: Combat Tactics
+  - content: he's not a big fighter but will fight with her dagger and with her claws if forced to
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -330,8 +330,9 @@ npc:
     #
     # Optional.  0 or more.
     #
-    - id: church_of_waukeen_god_of_civilization_
-      name: Church of Waukeen (God of Civilization)
+    factions:
+    - id: church_of_the_mercantile_god
+      name: Church of the Mercantile God
       role: Truetrader (High Priest)
     - id: regional_merchants_guild
       name: Regional Merchants' Guild
@@ -464,56 +465,111 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
     skills:
-    - Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Keen Senses: You have proficiency in the Perception skill 
-        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        Elf Weapon Training: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow.
-        Cantrip: Knows the Booming Blade cantrip, Spell DC 13        
-      Paladin Abilities:
-      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                      within the same radius. Can use this ability 5 per long rest
-        Lay on Hands: Can touch another creature to heal up to 50HP per long rest. Or can 5HP to cure a disease or poison affecting it.
-        Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet 
-        Divine Smite: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
-                      slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
-        Divine Health: Immune to disease
-        Extra Attack: Can take and extra attack action each turn
-        Aura of Protection: When he or friendly creatures within 10 feet must make a saving throw, they get a +4 bonus to their roll
-        Aura of Courage: He and friendly creatures within 10 feet can't be frightened while he is conscious
-        Spellcasting:
-        - Spell DC: 16
-          1st Level: Command, Compelled Dual, Searing Smite, Wrathful Smite
-          2nd Level: Warding Bond, Zone of Truth, Find Steed
-          3rd Level: Aura of Vitality, Dispel Magic
-      Oath of Free Commerce Abilities:
-      - Channel Divinity:
-        - Objective Worth: As an action, you can make manifest your knowledge of the true worth of things. You may either improve the quality and make of the weapon you are holding for 1 minute, causing it to become a +3
-                           magical weapon in addition to its other properties. Or you may know the exact monetary value of everything you see for 1 hours
-          Turn the Craven:  As an action, you can raise your voice and demand that any thieves and skulkers in the area reveal themselves. Each creature that is invisible, attempting to hide, or otherwise intentionally
-                            difficult to see within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its
-                            turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or
-                            try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. 
-        Invisible Hand of the Market: when an enemy moves within 10 feet of you, you may use a reaction to grapple them with an invisible hand of force at any point during the move. The enemy makes a Charisma saving throw
-                                      against your Spell Save DC, and if they fail this save they are restrained, or pulled up to 10 feet towards you and then restrained, until the beginning of their next turn. At 18th level,
-                                      the range (but not the distance of the pull) of this ability increases to 30 feet. In addition, you gain the mage hand cantrip
-   
-    special-abilities:
-       - Proficiencies: Persuasion, Intimidation, Athletics, Insight, Medicine, Religion
-         Feats: Sentinel, War Caster
+    - Publis Speaking
+    proficiencies:
+    - Athletics
+    - Religion
+    - Medicine    
+    - Intimidation
+    - Persuasion
+  special-abilities:
+  - title: Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Keen Senses
+    - content: You have proficiency in the Perception skill 
+    - title: Trance
+    - content: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+               dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+    - title: Elf Weapon Training
+    - content: You have proficiency with the Longsword, Shortsword, Shortbow, and Longbow.
+    - title: Cantrip
+    - content: Knows the Booming Blade cantrip, Spell DC 16        
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability x per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: 
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+    - title: Aura of Protection
+    - content: When he or friendly creatures within x feet must make a saving throw, they get a +x bonus to their roll
+    - title: Aura of Courage
+    - content: He and friendly creatures within x feet can't be frightened while he is conscious
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 16
+    - title: 1st Level
+    - content: Command, Compelled Dual, Searing Smite, Wrathful Smite    
+    - title: 2nd Level
+    - content: Warding Bond, Zone of Truth, Find Steed   
+    - title: 3rd Level
+    - content: Aura of Vitality, Dispel Magic
+  - title: Oath of Free Commerce Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Unseen Servant, Identify
+    - title: 5th Level
+    - content: Arcane Lock, See Invsibility
+    - title: 9th Level
+    - content: Glyph of Warding, Tongues
+    - title: Channel Divinty - Objective Worth
+    - content: As an action, you can make manifest your knowledge of the true worth of things. You may either improve the quality and make of the weapon you are holding for one minute, causing it to become a +3 
+               magical weapon in addition to its other properties, or you may inherently know the exact monetary value of anything you see for one hour.
+    - title: Channel Divinity - Turn the Craven
+    - content: As an action, you can raise your voice and demand that any thieves and skulkers in the area reveal themselves. Each creature that is invisible, attempting to hide, or otherwise intentionally difficult
+               to see within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying
+               to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape 
+               from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
+    - title: Invisible Hand of The Market
+    - content: When an enemy moves within 10 feet of you, you may use a reaction to grapple them with an invisible hand of force at any point during the move. The enemy makes a Charisma saving throw 
+               against your Spell Save DC, and if they fail this save they are restrained, or pulled up to 10 feet towards you and then restrained, until the beginning of their next turn. At 18th level, 
+               the range (but not the distance of the pull) of this ability increases to 30 feet. In addition, you gain the mage hand can trip. If you already know this can trip, you gain a different can 
+               trip of your choice from a class spell list that you have access to. When you cast mage hand, you may choose to make the spectral hand invisible.
 
-    attacks: |
-      2 attack with maul or spell attack
-    combat-tactics: |
-      Morion is a very dangerous opponent. Particularly because he is rarely alone and usually accompanied by a number of warforged warrior priests. As a combatant he will often use divine abilities to manipulate the situation before charging forward with his Compelling Maul.
-    special-equipment:
-    - Belt of the Sacred Mount: Wondrous Item (waist), Rare, requires attunement by a paladin, A leather belt with plates of steel every few inches. The belt buckle depicts a golden horse’s head. When the wearer summons a
-                                creature with the Find Steed spell the creature gains a bonus to attacks damage and AC equal to the wearer’s proficiency modifier.
-      Compelling Maul: Magic Weapon, Uncommon, requires attunement by a paladin, A compelling weapon is gaudy and covered in fine metals and gems and is slightly larger than an average weapon of its type. It deals a bonus 2
-                       psychic damage with each hit. When the weapon scores a critical hit the weapon casts Compelled Duel on the creature hit. Creatures immune to the charmed condition are immune to this effect.
+  - title: Feats
+  - content: Sentinel, War Caster
+  - title: Attacks
+  - content: 2 attack with maul or spell attack
+  - title: Combat Tactics
+  - content: Morion is a very dangerous opponent. Particularly because he is rarely alone and usually accompanied by a number of warforged warrior priests. As a combatant he will often use divine abilities to manipulate the situation before charging forward with his Compelling Maul.
+
+  - title: Special Equipment
+  - abilities:
+    - title: Belt of the Sacred Mount
+    - content: Wondrous Item (waist), Rare, requires attunement by a paladin, A leather belt with plates of steel every few inches. The belt buckle depicts a golden horse’s head. When the wearer summons a
+               creature with the Find Steed spell the creature gains a bonus to attacks damage and AC equal to the wearer’s proficiency modifier.
+    - title: Compelling Maul
+    - content: Magic Weapon, Uncommon, requires attunement by a paladin, A compelling weapon is gaudy and covered in fine metals and gems and is slightly larger than an average weapon of its type. It deals a bonus 2
+               psychic damage with each hit. When the weapon scores a critical hit the weapon casts Compelled Duel on the creature hit. Creatures immune to the charmed condition are immune to this effect.
 
   profile:
 

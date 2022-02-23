@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -331,6 +331,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_order_of_moander_or_another_cult_to_an_old_god_or_god_of_rot_decay_etc_
       name: The Order of Moander [Or another cult to an Old God or God of Rot, Decay, etc.]
 
@@ -462,59 +463,96 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Illusion, Charmed or Paralyzed
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage           
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
-                      instead of his normal Proficiency Bonus
-      Duergar Abilities:
-      - Superior Darkvision: You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-        Duergar Resilience: You have advantage on saving throws against illusions and against being charmed or paralyzed
-        Duergar Magic: When you reach 3rd level, you can cast the Enlarge/Reduce spell on yourself once with this trait, using only the spell's enlarge option. When you reach 5th level, you can cast the Invisibility spell on
-                       yourself once with this trait. You don't need material components for either spell, and you can't cast them while you're in direct sunlight, although sunlight has no effect on them once cast. You regain
-                       the ability to cast these spells with this trait when you finish a long rest. Intelligence is your spellcasting ability for these spells
-        Sunlight Sensitivity: You have disadvantage on Attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight   
-      Warlock Abilities:
-      - Pact Magic: 
-        - Spell DC: 16
-          Cantrip: Eldritch Blast, Toll The Dead, Chill Touch, Mage Hand
-          Spells: Armor of Agathys, Hex, Hallish Rebuke, Cloud of Daggers, Crown of Madness, Enthrall, Counterspell, Summon Undead, Summon Greater Demon, Sickening Radiance, Danse Macabre
-          Spell Slots: 2
-          Slot Level: 5th          
-        Eldritch Invocations:
-        - 1: Agaonizing Blast
-        - 2: Armor of Shadows
-        - 3: Protection of the Talisman
-        - 4: Maddening Hex
-        - 5: Rebuke of the Talisman
-        Pact Boon: Pact of the Talisman - Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning
+    - N/A
+    proficiencies:
+    - Arcana
+    - Deception    
+    - Intimidation
+    - Persuasion
+  special-abilities:
+  - title: Duergar Abilities
+  - abilities: 
+    - title: Superior Darkvision
+    - content: See 120 in like bright light in dim light and like dim light in darkness
+    - title: Duergar Resilience
+    - content: Advantage on saving throws against illusions and phantasms and against being charmed, paralyzed, and poisoned with alchemical poisons
+    - title: Sunlight Sensitivity
+    - content: Disadvantage on attack and perception roles in direct sunlight
+    - title: Duergar Magic
+    - content: Can cast Enlarge/Reduce and Invisibility once per long rest with intelligence as spellcasting ability
+    - title: Duergar Weapons Training
+    - content: Proficient with Battleaxe, Handaxe, Light Hammer and Warhammer  
+  - title: Warlock Abilities
+  - abilities:
+  - title: Pact Magic
+  - abilities:
+    - title: Spell DC
+    - content: 18
+    - title: Cantrip
+    - content:  Eldritch Blast, Toll The Dead, Chill Touch, Mage Hand
+    - title: Spells
+    - content: Armor of Agathys, Hex, Hallish Rebuke, Cloud of Daggers, Crown of Madness, Enthrall, Counterspell, Summon Undead, Summon Greater Demon, Sickening Radiance, Danse Macabre
+    - title: Spell Slots
+    - content: 2
+    - title: Slot Level
+    - content: 5th          
+  - title: Eldritch Invocations
+  - abilities:
+    - title: Invocations 1
+    - content: Agaonizing Blast
+    - title: Invocations 2
+    - content: Armor of Shadows
+    - title: Invocations 3
+    - content: Protection of the Talisman
+    - title: Invocations 4
+    - content: Maddening Hex
+    - title: Invocations 5
+    - content: Rebuke of the Talisman
+    - title: Pact Boon
+    - content: Pact of the Talisman - Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning
                    the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest. If you lose the talisman, you can perform
                    a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die.
-      Pact of The Great Old One Abilities:
-      - Expanded Spell List:
-        - 1st Level: Dissonant Whispers, Hideous Laughter
-          2nd Level: Detect Thoughts, Phantasmal Force
-          3rd Level: Clairvoyance, Sending
-          4th Level: Dominate Beast, Black Tentacles
-          5th Level: Dominate Person, Telekinesis
-        Awakened Mind: your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with
-                       the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language
-        Entropis Ward: you learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to
-                       impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. Once you use this feature, you can't
-                       use it again until you finish a short or long rest                          
+  - title: The Great Old One Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 18
+    - title: 1st Level
+    - content: Dissonant Whispers, Hideous Laughter
+    - title: 2nd Level
+    - content: Detect Thoughts, Phantasmal Force
+    - title: 3rd Level
+    - content: Clairvoyance, Sending
+    - title: 4th Level
+    - content: Dominate Beast, Black Tentacles
+    - title: 5th Level
+    - content: Dominate Person, Telekinesis
+    - title: Awakened Mind
+    - content: Your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with
+               the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language
+    - title: Entropic Ward
+    - content: You learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to
+               impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. Once you use this feature, you can't
+               use it again until you finish a short or long rest                           
 
-    special-abilities:
-       - Proficiencies: Deception, Persuasion, Intimidation
-         Feats: War Caster        
-
-    attacks: |
-      1 attack with Scythe or Spell
-    combat-tactics: |
-      Ferocious and Short-sighted; Leaps into Combat
-    special-equipment:
-    - Scythe
-    - A preserved eye in a jar that serves as her arcane focus
+  - title: Feats
+  - content: War Caster        
+  - title: Attacks
+  - content: 1 attack with Scythe or Spell
+  - title: Combat Tactics
+  - content: Ferocious and Short-sighted; Leaps into Combat
 
   profile:
 

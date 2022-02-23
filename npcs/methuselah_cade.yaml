@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -331,6 +331,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_watch
       name: The Watch
     - id: military
@@ -464,46 +465,87 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Wisdom
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Revenant Abilities:
-      - Relentless Nature: 
-        - Regains 1HP at the beginning of each turn if below half maximum HP
-        - If she dies, she returns to life 24hrs after death. If her body is destroyed she will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
-        - Knows the distance and direction between her and the creature involved in her goal unless they are on another plane  
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-        Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-        Reliable Talent: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
-        Blindsense: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
-        Slippery Mind: You gain proficiency in Wisdom Saving Throws
-      Inquisitive Abilities:
-      - Ear for Deciet: you develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8 
-        Eye for Detail:  you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
-        Insightful Fighting: you gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
-                             contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
-                             disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
-        Steady Eye: you gain advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn
-        Enerring Eye: your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you,
-                      provided you aren't blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature. You can use this feature a number of times
-                      equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.   
-
-    specialabilities:
-       - Proficiencies: Perception, Sleight-of-Hand, Deception, Performance, Stealth, Intimidation
-       - Feats: Crossbow Expert, Sharpshooter, Investigator, Perceptive, Observant, Keen Mind, Dual Wielder, Prodigy 
-       - Science skills related to forensics
-
-    attacks: |
-      2 attack with hand crossbow or dagger
-    combat-tactics: |
-      Methuselah is a skiil fighter but will still attempt talk her way out of it first
-    special-equipment:
-    - 2x Vicious Hand Crossbows
-    - Dagger
+    - Forensic Science
+    proficiencies:
+    - Sleight-of-Hand
+    - Perception
+    - Deception    
+    - Intimidation
+    - Performance
+    - Stealth
+    - Insight
+    - Investigation
+    - Survival
     - Thieve's Tools
-    - Forensics Equipment
+  special-abilities:
+  - title: Revenant Abilities
+  - abilities: 
+    - title: Relentless Nature 
+    - content: Regains 1HP at the beginning of each turn if below half maximum HP
+               If he dies, he returns to life 24hrs after death. If his body is destroyed he will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
+               Knows the distance and direction between him and the creature involved in his goal unless they are on another plane  
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+    - title: Reliable Talent
+    - content: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
+    - title: Blindsense
+    - content: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
+    - title: Slippery Mind
+    - content: You gain proficiency in Wisdom Saving Throws
+  - title: Inquisitive Abilities
+  - abilities: 
+    - title: Ear for Deciet
+    - content: You develop a keen ear for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8
+    - title: Eye for Detail
+    - content: You can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues
+    - title: Insightful Fighting
+    - content: You gain the ability to decipher an opponent’s tactics and develop a counter to them. As a bonus action, you make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated,
+               contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don't have advantage on the attack roll, but not if you have
+               disadvantage on it. This benefit lasts for 1 minute or until you successfully use this feature against a different target
+    - title: Steady Eye
+    - content: You gain advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn.
+    - title: Unerring Eye
+    - content: Your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you,
+               provided you aren't blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature. You can use this feature a number of times
+               equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.   
+
+  - title: Feats
+  - content: Crossbow Expert, Sharpshooter, Investigator, Perceptive, Observant, Keen Mind, Dual Wielder, Prodigy 
+  - title: Attacks
+  - content: 2 attack with hand crossbow or dagger
+  - title: Combat Tactics
+  - content: Methuselah is a skiil fighter but will still attempt talk her way out of it first
+
+  - title: Special Equipment
+  - abilities:
+    - title: 2x Vicious Hand Crossbows
+    - content: When you roll a 20 with this Magic Weapon, the target takes an extra 2d6 piercing damage.
+    - title: Assassin's Dagger
+    - content: You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you attack and hit a creature that is surprised with this dagger, it must make a DC 18 Constitution saving throw. On a failed save, 
+               the target takes an extra 4d6 damage from your attack.
+    - title: Forensics Equipment
+    - content: Various gadgets and scientific equiptment of her own invention for use in tracking and forensic evidence collection
 
   profile:
 

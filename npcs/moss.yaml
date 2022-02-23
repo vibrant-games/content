@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_druidic_enclave_of_luu_any_regional_enclave_of_druids_
       name: The Druidic Enclave of Luu [Any Regional Enclave of Druids]
 
@@ -461,38 +462,69 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Druid Abilities:
-      - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
-                 message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
-        Spellcasting:
-        - Spell DC: 15
-          Cantrips: Shillelagh, Druidcraft, Mending
-          1st Level: Create Water, Entangle, Goodberry, Speak With Animals
-          2nd Level: Pass Without Trace, Heat Metal, Locate Plants or Animals
-          3rd Level: Meld Into Stone, Speak to Plants
-        Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
-                    determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
-                    flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
-                    You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
-      Circle of Land Abilities:
-      - Natural Recovery: you can regain some of your magical energy by sitting in meditation and communing with Nature. During a Short Rest, you choose expended Spell Slots to recover. The Spell Slots can have a combined level
-                          that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a Long Rest. 
-        Spellcasting: 
-        - Spell DC: 15
-          3rd Level: Barkskin, Spider Climb
-          5th Level: Call Lightning, Plant Growth
+    saving-throws:
+    - Constitution
+    - Intelligence
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Horticulture
+    proficiencies:
+    - Nature
+    - Perception
+    - Survival    
+    - Investigation
+    - Medicine
+  special-abilities:      
+  - title: Druid Abilities
+  - abilities:
+  - title: Druid Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content:
+    - title: Cantrips
+    - content:  Shillelagh, Druidcraft, Mending
+    - title: 1st Level
+    - content: Create Water, Entangle, Goodberry, Speak With Animals
+    - title: 2nd Level
+    - content: Pass Without Trace, Heat Metal, Locate Plants or Animals
+    - title: 3rd Level
+    - content: Meld Into Stone, Speak to Plants
+    - title: Druidic
+    - content: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+               message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.
+    - title: Wild Shape
+    - content: You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+               determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+               flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+               You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+  - title: Circle of Land Abilities
+  - abilities: 
+    - title: Chosen Land Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 16
+    - title: Forest
+    - title: 3rd Level
+    - content: Barkskin, Spider Climb
+    - title: 5th Level
+    - content: Call Lightning, Plant Growth
+    - title: Bonus Cantrip
+    - content: You learn one additional druid cantrip of your choice.
+    - title: Natural Recovery
+    - content: You can regain some of your magical energy by sitting in meditation and communing with Nature. During a Short Rest, you choose expended Spell Slots to recover. The Spell Slots can have a combined level
+               that is equal to or less than half your druid level (rounded up), and none of the slots can be 6th level or higher. You can’t use this feature again until you finish a Long Rest. For example, when you 
+               are a 4th-level druid, you can recover up to two levels worth of Spell Slots. You can recover either a 2nd-level slot or two 1st-level slots.     
 
-    special-abilities:
-       - Proficiencies: Nature, Survival, Perception, Investigation
-       - Feats: N/A       
-
-    attacks: |
-      1 attack with club or spell attack
-    combat-tactics: |
-      Moss will often take wild shape to avoid combat by fleeing into the woods. When cornered, she is a fierce and prolific combatant.
-    special-equipment:
-    - Many exotic roots and herbs traded with travelers.
+  - title: Attacks
+  - content: 1 attack with club or spell attack
+  - title: Combat Tactics
+  - content: Moss will often take wild shape to avoid combat by fleeing into the woods. When cornered, she is a fierce and prolific combatant.
 
   profile:
 
@@ -519,6 +551,6 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Moss has a calling with plants. She loves them and is immaculte in her ability to arrange flowers. She is a bit of an odd contradiction, her idsabilities have left her somewhat jaded with a sharp sarcastic wit, but she is
+      Moss has a calling with plants. She loves them and is immaculte in her ability to arrange flowers. She is a bit of an odd contradiction, her disabilities have left her somewhat jaded with a sharp sarcastic wit, but she is
       also naive in the ways of society. She has a strong distrust and is cautious of men and acively avoids them, but is overly trusting of women and children. She would overall prefer to spend all of her time with plants and
       animals and avoid other people entirely
