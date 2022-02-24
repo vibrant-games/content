@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: elderly
+    age: Elderly
 
     #
     # Races (case insensitive):
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_nation_of_nac_mac
       name: The Nation of Nac Mac
 
@@ -464,67 +465,104 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Wood Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Keen Senses: You have proficiency in the Perception skill 
-        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        Elf Weapon Training: You have proficiency with the longsword, shortsword, shortbow, and longbow.
-        Fleet of Foot: Your base walking speed increases to 35 feet.
-        Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.
-      Ranger Abilities:
-      - Ranger Spellcasting: 
-        - Spell DC: 14
-          1st Level: Goodberry, Hunter's Mark 
-          2nd Level: Pass Without Trace, Beast Sense
-          3rd Level: Flame Arrow, Plant Growth
-        Favored Enemy: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them - Goblins and Trolls
-        Natural Explorer: 
-        - Favored Terrain: Forest
-        - Difficult Terrain doesn't slow your group's Travel
-        - Your group can't become lost except by magical means
-        - Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
-        - If you are traveling alone, you can move stealthily at a normal pace
-        - When you Forage, you find twice as much food as you normally would
-        - While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-        Fighting Style: Archery - gains a +2 bonus to Attack Rolls made with Ranged Weapons
-        Primeval Awareness: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
-                            types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
-                            reveal the creatures' location or number.
-        Extra Attack: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
-        Landstride: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
-                    or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell
-        Hide in Plain Sight: you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, Plants, soot, and other naturally occurring materials with which to create your camouflage. Once you 
-                             are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to 
-                             Dexterity (Stealth) checks as long as you remain there without moving or taking Actions. Once you move or take an action or a Reaction, you must camouflage yourself again to gain this benefit.
-      Monster Slayer Conclave Abilities:
-      - Hunters Sense: you gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has
-                       any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You
-                       can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest
-        Slayers Prey: you can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each
-                      turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different
-                      creature
-        Supernatural Defense: you gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to
-                              escape that target's grapple, add 1d6 to your roll
-        Monster Slayer Spellcasting:
-        - Spell DC: 14
-          3rd Level: Protection from Good and Evil
-          5th Level: Zone of Truth
-          9th Level: Magic Circle
-      
-    special-abilities:
-       - Proficiencies: Nature, Survival, Perception
-         Feats: N/A
+    saving-throws:
+    - Constitution
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
+    skills:
+    - Guiding and Tracking
+    proficiencies:
+    - Nature
+    - Perception
+    - Survival    
+    - Insight
+    - Athletics
+  special-abilities:       
+  - title: Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Keen Senses
+    - content: You have proficiency in the Perception skill 
+    - title: Trance
+    - content: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+               dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+    - title: Fleet of Foot
+    - content: Your base walking speed increases to 35 feet.
+    - title: Mask of the Wild
+    - content: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.
+  - title: Ranger Abilities
+  - abilities:
+  - title: Ranger Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 14
+    - title: 1st Level
+    - content: Goodberry, Hunter's Mark 
+    - title: 2nd Level
+    - content: Pass Without Trace, Beast Sense
+    - title: 3rd Level
+    - content: Flame Arrow, Plant Growth
+    - title: Favored Enemy - Goblinoids and Giants
+    - content: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+    - title: Natural Explorer 
+    - content: Favored Terrain - Forest and Mountain
+               Difficult Terrain doesn't slow your group's Travel
+               Your group can't become lost except by magical means
+               Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+               If you are traveling alone, you can move stealthily at a normal pace
+               When you Forage, you find twice as much food as you normally would
+               While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+    - title: Fighting Style
+    - content: Archery - You gain a +2 bonus to attack rolls you make with ranged weapons.
+    - title: Primeval Awareness
+    - content: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+               types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+               reveal the creatures' location or number.
+    - title: Extra Attack
+    - content: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+    - title: Landstride
+    - cintent: Moving through nonmagical Difficult Terrain costs no extra Movement. Can also pass through nonmagical Plants without being slowed by them and without taking damage from them if they have thorns, spines, 
+               or a similar hazard. In addition, she has advantage on Saving Throws against Plants that are magically created or manipulated to impede Movement, such those created by the Entangle spell
+    - title: Hide in Plain Sight
+    - content: you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, Plants, soot, and other naturally occurring materials with which to create your camouflage. Once you 
+               are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to 
+               Dexterity (Stealth) checks as long as you remain there without moving or taking Actions. Once you move or take an action or a Reaction, you must camouflage yourself again to gain this benefit.
+  - title: Monster Slayer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Protection from Evil and Good 
+    - title: 5th Level
+    - content: Zone of Truth
+    - title: 9th Level
+    - content: Magic Circle
+    - title: Hunters Sense
+    - content: You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has 
+               any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You 
+               can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest.
+    - title: Slayers Prey
+    - content: You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each 
+               turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different 
+               creature.
+    - title: Supernatural Defense
+    - content: You gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to 
+               escape that target's grapple, add 1d6 to your roll.
 
-    attacks: |
-      2 attacks with Longsword or Long Bow
-    combat-tactics: |
-      Nokumi will choose the height advantages of the trees over direct combat, leaping from branch to branch and gaining distance whenever possible.
-    special-equipment:
-       - Longsword
-       - Long Bow
+  - title: Attacks
+  - content: 2 attacks with Longsword or Long Bow
+  - title: Combat Tactics
+  - content: Nokumi will choose the height advantages of the trees over direct combat, leaping from branch to branch and gaining distance whenever possible.
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -328,6 +328,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: seagate_adventurer_s_guild
       name: Seagate Adventurer's Guild
     - id: kor_clan
@@ -459,47 +460,90 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Kor Abilities:
-      - Kor Climbing: You are proficient in both the Athletics and Acrobatics skills.
-        Lucky: When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
-        Brave: You have advantage on saving throws against being frightened.
-      Monk Abilities:
-      - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-      - Martial Arts:
-         - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-         - Can roll a 1d6 in place of normal damage for unarmed strikes and monk weapons
-         - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-      - Ki:
-        - Ki Points: 6
-          Ki DC: 15 
-        Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-        Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-        Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
-        Unarmored Movement: Speed is increased by 15. Can move along vertical surfaces and across liquids without falling during the move 
-        Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                         free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-        Slow Fall: Can us a Reaction to falling damage by by 85hp
-        Extra Attack: Can Attack twice per turn
-        Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-        Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
-      Way of the Shadows Abilities:
-      - Shadow Arts: you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast Darkness, Darkvision, Pass without Trace, or Silence, without providing material components.
-                     Additionally, you gain the Minor Illusion cantrip if you don't already know it
-        Shadow Step: you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim
-                     light or darkness. You then have advantage on the first melee attack you make before the end of the turn
+    saving-throws:
+    - Dexterity
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Frightened
+    resistances:
+    - N/A
+    skills:
+    - Line-Slinging
+    proficiencies:
+    - Nature
+    - Survival
+    - Acrobatics    
+    - Athletics
+    - Perception
+    - Intimidation
+    - Line-Slinging
+  special-abilities:      
+  - title: Kor Abilities
+  - abilities: 
+    - title: Kor Climbing
+    - content: You are proficient in both the Athletics and Acrobatics skills.
+    - title: Lucky
+    - content: When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
+    - title: Brave
+    - content: You have advantage on saving throws against being frightened.
+  - title: Monk Abilities
+  - abilities:
+    - title: Unarmored Defense 
+    - content: When not wearing armor Ac = 10 + Dexterity + Wisdom
+  - title: Martial Arts
+  - abilities:
+    - content: Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+               Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+               When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+  - title: Ki
+  - abilities:  
+    - title: Ki Points
+    - contents: 6
+    - title: Ki DC
+    - contents: 15
+    - title: Flurry of Blows
+    - content: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+    - title: Patient Defense
+    - content: Can spend 1 Ki point to take the Dodge action as a bonus action
+    - title: Step of the Wind
+    - content: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+    - title: Unarmored Movement
+    - content: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+    - title: Deflect Missles
+    - content: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+               free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+    - title: Slow Fall
+    - content: You can use your Reaction when you fall to reduce any Falling damage you take by an amount equal to five times your monk level.
+    - title: Extra Attack
+    - content: Can Attack twice per turn
+    - title: Stunning Strike
+    - content: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+    - title: Ki-Empowered Strike
+    - content: Your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+  - title: Way of Shadows Abilities
+  - abilities: 
+    - title: Shadow Arts
+    - content: You can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast Darkness, Darkvision, Pass without Trace, or Silence, without providing material components.
+               Additionally, you gain the Minor Illusion cantrip if you don't already know it
+    - title: Shadow Step
+    - content: You gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim
+               light or darkness. You then have advantage on the first melee attack you make before the end of the turn
 
-    special-abilities:
-       - Proficiencies: Nature, Survival, Acrobatics, Athletics, Perception, Intimidation
-         Feats: Athelete, Mobile       
-       - She is an expert in the skill/art of Kor Line-Slinging with a +6 to line-slinging Dex roles
+  - title: Feats
+  - content: Athelete, Mobile       
+  - title: Line-Slniging 
+  - content: She is an expert in the skill/art of Kor Line-Slinging with a +6 to line-slinging Dex roles
+  - title: Attacks
+  - content: 2 attack with Line-Slinging Hooks, Quaterstaff or Unarmed Strike
+  - title: Combat Tactics
+  - content: She will generally fight with her hook lines much like a chain-blade to keep her distance. But she is also and exceptional hand-to-hand fighter as well
 
-    attacks: |
-      2 attack with Line-Slinging Hooks, Quaterstaff or Unarmed Strike
-    combat-tactics: |
-      She will generally fight with her hook lines much like a chain-blade to keep her distance. But she is also and exceptional hand-to-hand fighter as well
-    special-equipment:
-       - +2 Line-Slinging Hooks that give advantage on Line-slinging roles   
+  - title: Special Equipment
+  - abilities:
+    - title: +2 Line-Slinging Hooks
+    - content: This ancestral hooks provide +2 and advantage to all Line-Slinging rolls    
 
   profile:
 

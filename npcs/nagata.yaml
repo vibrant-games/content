@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolesent
+    age: Adolesent
 
     #
     # Races (case insensitive):
@@ -328,7 +328,7 @@ npc:
     #
     # Optional.  0 or more.
     #
-    Factions:
+    factions:
     - N/A
 
     #
@@ -463,35 +463,71 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Orc Abilities:
-      - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-        Aggressive: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
-        Primal Intuition: Proficient in Insight and Survival
-        Powerful Build: count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-        Relentless Endurance: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
-        Savage Attack: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-        Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-        Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-      Thief Abilities:
-      - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action
-        Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to
-                           your Dexterity modifier.
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Sailing
+    proficiencies:
+    - Arcana
+    - History
+    - Insight
+    - Thieve's Tools
+  special-abilities:      
+  - title: Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Aggressive
+    - content: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
+    - title: Primal Intuition
+    - content: Proficient in Insight and Survival
+    - title: Powerful Build
+    - content: Count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+    - title: Relentless Endurance
+    - content: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
+    - title: Savage Attack
+    - content: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+  - title: Thief Abilities
+  - abilities: 
+    - title: Fast Hands
+    - content: You can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
+    - title: Second-Story Work
+    - content: When you choose this archetype at 3rd Level, you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you 
+               cover increases by a number of feet equal to your Dexterity modifier.
 
-    special-abilities:
-       - Proficiencies: Arcana, History, Insight
-         Feats: N/A
+  - title: Attacks
+  - content: 1 attack with Staff of Charming
+  - title: Combat Tactics
+  - content: Nagata will Use his Staff of Charming at the start of combat to try to eliminate the most threatening opponent off the bat.
 
-    attacks: |
-      1 attack with Staff of Charming
-    combat-tactics: |
-      Nagata will Use his Staff of Charming at the start of combat to try to eliminate the most threatening opponent off the bat.
-    special-equipment:
-    - Rocinante: an auto-nag devised by Nagata to remind him of calendar events.  /"Y'all have an appointment in 10 minutes!/"
-      Staff of Charming: While holding this staff he can use an action to expend 1 of its 10 Charges to cast Charm Person Command or Comprehend Languages from it using his spell save DC. The staff can also be used as a magic Quarterstaff. If he is holding the staff and fail a saving throw against an Enchantment spell that Targets only him, he can turn your failed save into a successful one. He can't use this property of the staff again until the next dawn. If he succeeds on a save against an Enchantment spell that Targets only him with or without the staff's intervention he can use his Reaction to expend 1 charge from the staff and turn the spell back on its caster as if he had cast the spell. The staff regains 1d8 + 2 expended Charges daily at dawn. If he expend the last charge roll a d20. On a 1 the staff becomes a nonmagical Quarterstaff.
+  - title: Special Equipment
+  - abilities:
+    - title: Rocinante
+    - content: An auto-nag devised by Nagata to remind him of calendar events.  /"Y'all have an appointment in 10 minutes!/"
+    - title: Staff of Charming
+    - content: While holding this staff, you can use an action to expend 1 of its 10 Charges to cast Charm Person, Command, or comprehend Languages from it using your spell save DC. The staff can also be used as a magic 
+               Quarterstaff.
+               If you are holding the staff and fail a saving throw against an Enchantment spell that Targets only you, you can turn your failed save into a successful one. You can't use this property of the staff again until 
+               the next dawn. If you succeed on a save against an Enchantment spell that Targets only you, with or without the staff's intervention, you can use your Reaction to expend 1 charge from the staff and turn the spell 
+               back on its caster as if you had cast the spell.
+               The staff regains 1d8 + 2 expended Charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a nonmagical Quarterstaff.
     
       
   profile:

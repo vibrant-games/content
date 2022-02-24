@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -459,83 +459,144 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - Necrotic and Radiant Damage
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - N/A
     skills:
-    - Aasimar Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Celestial Resistance: Resistance to Necrotic and Radiant Damage
-        Hurting Hands: Once per longrest, can touch a creature and cause it to lose 5HP
-        Dark Bearer: Can cast the Darkness spell using Charisma as spellcasting abaility
-        Necrotic Shroud: 
-        - Description: you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant
-                       you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 21) or become frightened of you until the end of your next turn.
-          Additional Information:
-          - Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with
-            an attack or a spell. The extra necrotic damage equals your level (20).
-          - Once you use this trait, you can't use it again until you finish a long rest.
-      Paladin Abilities:
-      - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                      within the same radius. Can use this ability 7 times per long rest
-        Lay on Hands: Can touch another creature to heal up to 100HP per long rest. Or can 5HP to cure a disease or poison affecting it.
-        Fighting Style: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an Attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The
-                        weapon must have the Two-Handed or Versatile property for you to gain this benefit 
-        Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends 
-        Divine Health: Immune to disease
-        Extra Attack: Can take an extra attack action each turn
-        Aura of Protection: you or friendly creatures within 30 feet must make a saving throw, they get a +7 bonus to their roll
-        Aura of Courage: you and friendly creatures within 30 feet can't be frightened while he is conscious
-        Cleansing Touch: 7 times per long rest can use an action to touch a creature to end one spell on himself or a willing creature he touches       
-        Spellcasting: 
-        - Spell DC: 21
-          1st Level: Command, Searing Smite, Thunderous Smite, Wrathful Smite
-          2nd Level: Branding Smite, Find Steed, Locate Object
-          3rd Level: Blinding Smite, Dispel Magic, Elemental Weapon
-          4th Level: Banishment, Staggering Smite, Locate Creature
-          5th Level: Banishing Smite, Destructive Wave
-      Oathbreaker Abilities:
-      - Channel Divinity:
-        - Description: you gain the following 2 Channel Divinity options
-          Control Undead: As an action, you target one undead creature you can see within 30 feet of you. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for
-                          the next 24 hours, or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than your paladin level is immune to this effect.
-          Dreadful Aspect: As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it
-                           can see you. On a failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt
-                           another Wisdom saving throw to end the effect on it.
-        Aura of Hate: you as well any fiends and undead within 30 feet of you, gain a bonus to melee weapon damage rolls equal to your Charisma modifier (+7). A creature can benefit from this feature from only one
-                      paladin at a time.
-        Supernatural Resistance: you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons 
-        Dread Lord: you can, as an action, surround yourself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around you to dim light. Whenever an enemy that is frightened by
-                    you starts its turn in the aura, it takes 4d10 psychic damage. Additionally, you and any creatures of your choosing in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on
-                    attack rolls against creatures draped in this shadow. While the aura lasts, you can use a bonus action on your turn to cause the shadows in the aura to attack one creature. Make a melee spell attack against
-                    the target. If the attack hits, the target takes necrotic damage equal to 3d10 + your Charisma modifier. After activating the aura, you can't do so again until you finish a long rest.        
-        Spellcasting:
-        - Spell DC: 21
-          3rd Level: Hellish Rebuke, Inflict Wounds
-          5th Level: Crown of Madness, Darkness
-          9th Level: Animate Dead, Bestow Curse
-          13th Level: Blight, Confusion 
-          17th Level: Contagion, Dominate Person       
+    - Leatherworking
+    proficiencies:
+    - Arcana
+    - Perception
+    - Athletics    
+    - Intimidation
+    - Persuasion
+    - Survival
+    - Heavy Armor
+  special-abilities:
+  - title: Aasimar Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Celestial Resistance
+    - content: Resistance to Necrotic and Radiant Damage
+    - title: Hurting Hands
+    - content: Once per long rest, you can touch a creature and cause it to lose 5HP
+    - title: Dark Bearer
+    - content: Can cast the Darkness spell using Charisma as spellcasting abaility
+    - title: Necrotic Shroud 
+    - content: You can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant
+              you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 21) or become frightened of you until the end of your next turn.
+              Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with
+              an attack or a spell. The extra necrotic damage equals your level (20).
+              Once you use this trait, you can't use it again until you finish a long rest.
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability 7 per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to 100HP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: 
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+    - title: Aura of Protection
+    - content: When he or friendly creatures within 30 feet must make a saving throw, they get a +x bonus to their roll
+    - title: Aura of Courage
+    - content: He and friendly creatures within 30 feet can't be frightened while he is conscious
+    - title: Cleansing Touch
+    - content: 7 times per long rest can use an action to touch a creature to end one spell on himself or a willing creature he touches       
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 21
+    - title: 1st Level
+    - content: Command, Searing Smite, Thunderous Smite, Wrathful Smite
+    - title: 2nd Level
+    - content: Branding Smite, Find Steed, Locate Object
+    - title: 3rd Level
+    - content: Blinding Smite, Dispel Magic, Elemental Weapon
+    - title: 4th Level
+    - content: Banishment, Staggering Smite, Locate Creature
+    - title: 5th Level
+    - content: Banishing Smite, Destructive Wave
+  - title: Oathbreaker Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 21
+    - title: 3rd Level
+    - content: Hellish Rebuke, Inflict Wounds
+    - title: 5th Level
+    - content: Crown of Madness, Darkness
+    - title: 9th Level
+    - content: Animate Dead, Bestow Curse
+    - title: 13th Level
+    - content: Blight, Confusion 
+    - title: 17th Level
+    - content: Contagion, Dominate Person
+    - title: Channel Divinity - Control Undead
+    - content: As an action, you target one undead creature you can see within 30 feet of you. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for the next 24 hours, 
+               or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than your paladin level is immune to this effect.
+    - title: Channel Divinity - Dreadful Aspect
+    - content: As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a
+               failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt another Wisdom saving throw to end the 
+               effect on it.
+    - title: Aura of Hate
+    - content: You as well any fiends and undead within 10 feet of you, gain a bonus to melee weapon damage rolls equal to your Charisma modifier (+7). A creature can benefit from this feature from only one
+               paladin at a time.
+    - title: Supernatural Resistance
+    - content: You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons 
+    - title: Dread Lord
+    - content: You can, as an action, surround yourself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around you to dim light. Whenever an enemy that is frightened by
+               you starts its turn in the aura, it takes 4d10 psychic damage. Additionally, you and any creatures of your choosing in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on
+               attack rolls against creatures draped in this shadow. While the aura lasts, you can use a bonus action on your turn to cause the shadows in the aura to attack one creature. Make a melee spell attack against
+               the target. If the attack hits, the target takes necrotic damage equal to 3d10 + your Charisma modifier. After activating the aura, you can't do so again until you finish a long rest.       
 
-    special-abilities:
-    - Proficiencies: Athletics, Intimidation, Heavy Armor, Perception, Survival
-      Feats: Dual Weilder, Great Weapons Master, Heavy Armor Master, Mage Slayer, Savage Attacker, War Caster
-      Truesight: within 60ft can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a
-                 shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.
-      Legendary Resistance: (3/Day), If Nothuriel Oathbreaker fails a saving throw she can choose to succeed instead 
-      Legendary Actions: 
-      - Description: Nothuriel Oathbreaker can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Nothuriel
-                     Oathbreaker regains spent Legendary Actions at the start of her turn
-        Legion of the Damned: Nothuriel Oathbreaker can cast Summon Undead at 5th Level except she summons 1d12+3 undead instead of one
-        Misty Step: Nothuriel Oathbreaker can cast Misty Step
-        Trade Life: Nothuriel Oathbreaker can touch a creature to drain its life - Melee Spell Attack, +4 to hit, reach 5 ft., one creature. Hit - 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving
-                    throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum
-                    to 0. Nothuriel gains HP equal to the damage done
+  - title: Feats
+  - content: Great Weapon Dual Weilder, Great Weapons Master, Heavy Armor Master, Mage Slayer, Savage Attacker, War Caster
+  - title: Truesight
+  - content: Within 60ft can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a
+             shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.
+  - title: Legendary Resistance
+  - content: (3/Day), If Nothuriel Oathbreaker fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions 
+  - content: Nothuriel Oathbreaker can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Nothuriel
+             Oathbreaker regains spent Legendary Actions at the start of her turn
+  - abilities:
+    - title: Legion of the Damned
+    - content: Nothuriel Oathbreaker can cast Summon Undead at 5th Level except she summons 1d12+3 undead instead of one
+    - title: Misty Step
+    - content: Nothuriel Oathbreaker can cast Misty Step
+    - title: Trade Life
+    - content: Nothuriel Oathbreaker can touch a creature to drain its life - Melee Spell Attack, +4 to hit, reach 5 ft., one creature. Hit - 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving
+               throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum
+               to 0. Nothuriel gains HP equal to the damage done
 
-    attacks: |
-      3 attacks with Greatswords or 1 spell attack
-    combat-tactics: |
-      Nothuriel will march recklessly headlong into battle attacking with her greatsword and spell attacks while summoning her undead legions to fight along side her
-    special-equipment:
-    - Dual +2 Greatswords
-    - +2 Plate Armor
+  - title: Attacks
+  - content: 3 attacks with Greatswords or 1 spell attack
+  - title: Combat Tactics
+  - content: Nothuriel will march recklessly headlong into battle attacking with her greatsword and spell attacks while summoning her undead legions to fight along side her
+
+  - title: Special Equipment
+  - abilities:
+    - title: Dual +3 Greatswords
+    - content: You have a +3 bonus to Attack and Damage Rolls made with this weapon.
+    - title: +3 Plate Armor
+    - content: While wearing it, you have an extra +3 bonus to your AC
 
   profile:
 
