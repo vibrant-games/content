@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: chamber_of_commerce
       name: Chamber of Commerce
 
@@ -461,24 +462,48 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Half-Orc Abilities:
-      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-        Menacing: gain proficiency in the Intimidation skill 
-        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
+    saving-throws:
+    - Constitution
+    - Strength
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Piercing and Slashing Damage
+    skills:
+    - Butchery
+    proficiencies:
+    - Nature
+    - Survival    
+    - Intimidation
+    - Animal Handling
+    - Butcher Knives
+  special-abilities:       
+  - title: Half-Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+    - title: Menacin
+    - content: Gain proficiency in the Intimidation skill 
+    - title: Relentless Endurance
+    - content: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+    - title: Savage Attack
+    - content: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.	
 
-    special-abilities:
-       - Proficiencies: Nature, Survival, Intimidation, Butcher Knives
-         Feats: N/A
-       - He is an incredibly skilled butcher and proficient with several kinds of knife as the pertain to his profession
+  - title: Butchery
+  - content: He is an incredibly skilled butcher and proficient with several kinds of knife as the pertain to his profession
 
-    attacks: |
-      1 attack with knife
-    combat-tactics: |
-      It's unlikely that he would ever fight, but he is pretty spectacular with a knife
-    special-equipment:
-       - +2 Butcher's Knife
+  - title: Attacks
+  - content: 1 attack with knife
+  - title: Combat Tactics
+  - content: It's unlikely that he would ever fight, but he is pretty spectacular with a knife
+
+  - title: Special Equipment
+  - abilities:
+    - title: +2 Butcher's Knife
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon and advantage on Dexterity skill checks pertaining to butchery
 
   profile:
 

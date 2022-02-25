@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -466,64 +466,156 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Wisdom
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Poisoned
+    resistances:
+    - Fire, Acid
     skills:
-    - Orc Abilities:
-      - Primal Intuition: Proficient in Medicine and Nature
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Powerful Build: Counts as one size larger for determining carrying capacity 
-        Relentless Endurance: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
-        Savage Attack: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
-        Peaceful Magic: Can cast Purify Food and Water, Sanctuary and Barkskin once per long rest with a DC 16
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-      - Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus
-          Spell DC: 19
-          Cantrip: Acid Splash, Mage Hand, Fire Bolt, Mending
-          1st Level: Absorb Elements, Detect Magic, Identify, Catapult
-          2nd Level: Continual Flame, Heat Metal, Levitate
-          3rd Level: Dispel Magic, Protection from Energy, Tiny Servant
-          4th Level: Fabricate, Elemental Bane
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
-        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-        Tool Expertise: Smith's Tool proficiency bonus is doubled
-        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-        Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-        Spell Storing Item: Can store a spell in and object once per long rest
-        Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements. Can attune to 5 magic items       
-      Alchemist Abilities:
-      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Alchemist's Supplies
-        Spellcasting:
-        - Description: Requires Alchemist Supplies as Spellcasting focus
-          Spell DC: 19
-          3rd Level: Healing Word, Ray of Sickness
-          5th Level: Flaming Sphere, Melf's Acid Arrow
-          9th Level: Gaseous Form, Mass Healing Word
-          13th Level: Blight, Death Ward
-          15th Level: Cloudkill, Raise Dead
-        Experimental Elixir: Can produce 3 experimantal elixirs per long rest, rolling on the experimantal elixir table for each elixir 
-        Alchemical Savant: Whenever casting a spell using alchemical supplies as a focus, can add Intelligence Modifier bonus to either hit points restored or damage dealt  
-        Restorative Reagents: Experimantal Elixirs also give 2d6+7 temporary HP. Can cast Lesser Restoration without expending a spell slot using Alchemists Supplies once per long rest
-        Chemical Mastery: Resistance to Acid and Poison damage and immune to Poisoned condition. Can cast Greater Restoration and Heal without expending a spell slot using Alchemists Supplies once per long rest
+    - Leatherworking
+    proficiencies:
+    - Arcana
+    - Insight
+    - Investigation    
+    - Intimidation
+    - Persuasion
+    - History
+    - Medicine
+    - Nature
+    - Herbalism
+    - Tinker's Tools
+    - Thieve's Tools
+    - Alchemist Supplies
+  special-abilities:
+  - title: Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Aggressive
+    - content: As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started
+    - title: Primal Intuition
+    - content: Proficient in Insight and Survival
+    - title: Powerful Build
+    - content: Count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
+    - title: Relentless Endurance
+    - content: Once per long rest, when reduced to 0hp but not outright killed, can drop to 1hp instead
+    - title: Savage Attack
+    - content: When scoring a critical hit on a melee weapon attack, can roll an additonal damage dice of the weapons type and add it to the total
+    - title: Primal Intuition
+    - content: Proficient in Medicine and Nature
+    - title: Peaceful Magic
+    - content: Can cast Purify Food and Water, Sanctuary and Barkskin once per long rest with a DC 16
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 19   
+    - title: Cantrip
+    - content: Acid Splash, Mage Hand, Fire Bolt, Mending
+    - title: 1st Level
+    - content: Absorb Elements, Detect Magic, Identify, Catapult
+    - title: 2nd Level
+    - content: Continual Flame, Heat Metal, Levitate
+    - title: 3rd Level
+    - content: Dispel Magic, Protection from Energy, Tiny Servant
+    - title: 4th Level
+    - content: Fabricate, Elemental Bane
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 10
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+    - title: Flash of Genius
+    - contents: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+    - title: Magic Item Adept
+    - content: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+    - title: Spell Storing Item
+    - content: Can store a spell in and object once per long rest
+    - title: Magic Item Savant
+    - content: Can attune to any magic item regardless of class, race, spell and level requirements       
+  - title: Alchemist Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Healing Word, Ray of Sickness
+    - title: 5th Level
+    - content: Flaming Sphere, Melf's Acid Arrow
+    - title: 9th Level
+    - content: Gaseous Form, Mass Healing Word
+    - title: 13th Level
+    - content: Blight, Death Ward 
+    - title: 17th Level
+    - content: Cloudkill, Raise Dead
+    - title: Experimental Elixir
+    - content: whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when 
+               someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature. You can create additional experimental elixirs by expending a spell slot of 
+               1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir's effect from the Experimental Elixir table. 
+               Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. 
+               When you reach certain levels in this class, you can make more elixirs at the end of a long rest; two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir 
+               requires its own flask.
+               d6     Effect
+                1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
+                2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
+                3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
+                4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
+                5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
+                6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
+    - title: Alchemical Savant
+    - content: You've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, 
+               you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier 
+               (minimum of +1). 
+    - title: Restorative Reagents
+    - content: You can incorporate restorative reagents into some of your works
+               Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).
+               You can cast Lesser Restoration without expending a spell slot and without preparing the spell, provided you use alchemist's supplies as the spellcasting focus. You can do so a number of times 
+               equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.
+    - title: Chemical Mastery
+    - content: You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments
+               You gain resistance to acid damage and poison damage, and you are now immune to the poisoned condition.
+               You can cast Greater Restoration and Heal without expending a spell slot, without preparing the spell, and without providing the material component, provided you use alchemist’s supplies as the 
+               spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest.
+ 
+  - title: Feats
+  - content: Keen Mind, War Caster, Skill Expert - Alchemists Supplies, Observant, Chef, Elemental Adept - Acid, Orcish Fury, Healer. Poisoner, 
+  - title: Legendary Resistance
+  - content: (3/Day), If Orica Zarkova fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions
+  - content: Orica Zarkova can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+             Orica Zarkova regains spent Legendary Actions at the start of her turn
+  - abilities:
+    - title: Offensive Alchemy
+    - content: Orica Zarkova can create and throw offensive experimental elixirs of her choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
+    - title: Selfcare
+    - content: Orica Zarkova can heal herself for 2d6 HP
+    - title: Refreshing Infusion
+    - content: Orica Zarkova can use her Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.                  
 
-    special-abilities: 
-    - Feats: Keen Mind, War Caster, Skill Expert - Alchemists Supplies, Observant, Chef, Elemental Adept - Acid, Orcish Fury, Healer. Poisoner, 
-      Legendary Resistance: (3/Day), If Orica Zarkova fails a saving throw she can choose to succeed instead 
-      Legendary Actions:
-      - Desctiption: Orica Zarkova can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                     Orica Zarkova regains spent Legendary Actions at the start of her turn
-        Additional Information:
-        - Offensive Alchemy: Orica Zarkova can create and throw offensive experimental elixirs of her choice including acid (3d6 acid damage), poison (3d6 poison damage) and explosive (3d6 Bludgeoning + 1d6 Fire)
-          Selfcare: Orica Zarkova can heal herself for 2d6 HP
-          Refreshing Infusion: Orica Zarkova can use her Arcane Infusion to create and consume any potions or oil listed in any official D&D 5e legal source.                  
+  - title: Attacks
+  - content: Will attack with spells or potions 
+  - title: Combat Tactics
+  - content: Generally isn't interested in fighting but will use her spellcasting or her poisoned daggers if pushed
 
-    attacks: |
-      Will attack with spells 
-    combat-tactics: |
-      Generally isn't interested in fighting but will use her spellcasting or her poisoned daggers if pushed
-    special-equipment:
-    - Potions: Has all kinds potions and oils of every sort and can create whatever other potions she may need
-    - 2x +1 Poisoned Daggers
+  - title: Special Equipment
+  - abilities:
+    - title: Potions
+    - content: Has all kinds potions and oils of every sort and can create whatever other potions she may need
+    - title: 2x Daggers of Venom
+    - content: You gain a +1 bonus to Attack and Damage Rolls made with this Magic Weapon. You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an Attack using this 
+               weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become Poisoned for 1 minute. The Dagger can't be used this way again until the next dawn.
 
   profile:
 

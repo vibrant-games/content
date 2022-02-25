@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: artificer
+    class: Artificer
 
     #
     # D & D subclasses (case insensitive):
@@ -464,68 +464,181 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire, Lightning, Magic
     skills:
-    - Rock Gnome Abilities:
-      - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Artificers Lore: Whenever making an History check related to magic items, alchemical objects and technological devices, add twice your proficiency bonus 
-        Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus
-          Spell DC: 22
-          Cantrip: Guidance, Mage Hand, Mending, Message
-          1st Level: Arcane Weapon, Detect Magic, Identify, Catapult
-          2nd Level: Arcane Lock, Heat Metal, Levitate
-          3rd Level: Dispel Magic, Haste, Tiny Servant
-          4th Level: Fabricate, Stone Shape, Leomund's Secret Chest
-          5th Level: Animate Object        
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,  
-        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-        Tool Expertise: Smith's Tool proficiency bonus is doubled
-        Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
-        Magic Item Adept: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
-        Spell Storing Item: Can store a spell in and object once per long rest
-        Magic Item Savant: Can attune to any magic item regardless of class, race, spell and level requirements 
-        Magic Item Master: Can attune to 6 magic items      
-      Battle Smith Abilities:
-      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus
-          Spell DC: 24
-          3rd Level: Heroism, Shield
-          5th Level: Branding Smite, Warding Bond
-          9th Level: Aura of Vitality, Conjure Barrage
-          13th Level: Aura of Purity, Fire Shield
-          17th Level: Banishing Smite, Mass Cure Wounds
-        Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
-        Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest  
-        Extra Attack: Can take a second attack action each turn
-        Arcane Jolt: Using a magic weapon or Steel Defender he can add 4d6 force damage to attacks or restore 4d6 hit points to any creature or object within 30 feet
-        Improved Defender: Steel Defender gets +2 to its AC and its Deflect Attack does 1d4 + Intelligence Modifier damage.
+    - Engineering
+    proficiencies:
+    - Arcana
+    - Investigation
+    - Perception    
+    - History
+    - Persuasion
+    - Insight
+    - Tinker's Tools
+    - Thieve's Tools
+    - Smith's Tools
+  special-abilities:
+  - title: Rock Gnome Abilities
+  - abilities: 
+    - title: Gnome Cunning
+    - content: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Artificers Lore
+    - content: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
+    - title: Tinker
+    - content: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
+               after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
+               to three such devices active at a time. When you create a device, choose one of the following options - 
+               Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+                               a random direction. It makes noises as appropriate to the creature it represents.
+               Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+               Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 22
+    - title: Cantrip
+    - content: Guidance, Mage Hand, Mending, Message
+    - title: 1st Level
+    - content: Arcane Weapon, Detect Magic, Identify, Catapult
+    - title: 2nd Level
+    - content: Arcane Lock, Heat Metal, Levitate
+    - title: 3rd Level
+    - content: Dispel Magic, Haste, Tiny Servant
+    - title: 4th Level
+    - content: Fabricate, Stone Shape, Leomund's Secret Chest
+    - title: 5th Level
+    - content: Animate Object        
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 12
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+    - title: Flash of Genius
+    - contents: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+    - title: Magic Item Adept
+    - content: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+    - title: Spell Storing Item
+    - content: Can store a spell in and object once per long rest
+    - title: Magic Item Savant
+    - content: Can attune to any magic item regardless of class, race, spell and level requirements 
+    - title: Magic Item Master
+    - content: Can attune to 6 magic items      
+  - title: Battle Smith Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 22
+    - title: 3rd Level
+    - content: Heroism, Shield
+    - title: 5th Level
+    - content: Branding Smite, Warding Bond
+    - title: 9th Level
+    - content: Aura of Vitality, Conjure Barrage
+    - title: 13th Level
+    - content: Aura of Purity, Fire Shield
+    - title: 17th Level
+    - content: Banishing Smite, Mass Cure Wounds
+    - title: Tool Proficiency
+    - content: You gain proficiency with smith's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.
+    - title: Battle Ready
+    - content: Your combat training and your experiments with magic have paid off in two ways
+               You gain proficiency with martial weapons.
+               When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.
+    - title: Steel Defender
+    - content: Your tinkering has borne you a faithful companion, a steel defender. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which
+               uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics. In combat, the defender
+               shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a 
+               bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, 
+               not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 
+               feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel 
+               defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die.                          
+               
+               Steel Defender - Medium construct
+               Armor Class - 15 (natural armor)
+               Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
+               Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
+               Speed - 40 ft.     
+               Saving Throws - Dex +1 plus PB, Con +2 plus PB
+               Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
+               Damage Immunities - poison
+               Condition Immunities - charmed, exhaustion, poisoned
+               Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
+               Languages - understands the languages you speak
+               Challenge —
+               Proficiency Bonus (PB) - equals your bonus
+               Vigilant - The defender can't be surprised.
+               Actions -
+               Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
+               Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
+               Reactions -
+               Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
 
-    special-abilities: 
-    - Feats: Gunner, Keen Mind, Mounted Combatant, Sharpshooter, War Caster, Skill Expert - Smith's Tools, Observant, Fighting Initiate, Medium Armor Master
-      Legendary Resistance: (3/Day), If Oswald Vardklemp fails a saving throw he can choose to succeed instead 
-      Legendary Actions: 
-      - Description: Oswald Vardklemp can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                     Oswald Vardklemp regains spent Legendary Actions at the start of his turn
-        Rosies Swing: Oswald Vardklemp can instruct his Steel Guardian to make an extra attack
-        Gatling Burst: Oswald Vardklemp can make an extra attack with his gatling gun
-        Escape Velocity: Oswald Vardklemp can summon his Iron Horse, mount it and dash up to 60 feet
+    - title: Extra Attack
+    - content: You can attack twice, rather than once, whenever you take the Attack action on your turn.
+    - title: Arcane Jolt
+    - content: You've learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the 
+               strike to create one of the following effects
+               The target takes an extra 2d6 force damage.
+               Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.
+               You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.
+    - title: Improved Defender
+    - content: Your Arcane Jolt and steel defender become more powerful
+               The extra damage and the healing of your Arcane Jolt both increase to 4d6.
+               Your steel defender gains a +2 bonus to Armor Class.
+               Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 + your Intelligence modifier.
 
-    attacks: |
-      Can make 2 attacks with his firearms and his Steel Defender can attack twice 
-    combat-tactics: |
-      He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run 
-    special-equipment:
-    - Gatling Cannon: Fires multiple shots at a single target doing 5d12 damage on a failed Dex save with DC 18, or do a sweeping attack targetting each creature within 30 feet doing 1d12 on a failed Dex save with DC 18. 
-                      Range 60/240, Heavy, Two-Handed. Can fire 5 bursts before needing to be reloaded. Reloading takes 1 round.
-      Random Artifact Devices: Can be carrying whatever he needs
-      Artificer Glasses: Glasses with interchangable lenses that include lenses from Glasses of Hidden Eyes, Eyes of Minute Seeing, Goggles of Indentifying, Eyes of the Eagle, Prismatic Lens and Goggles of Night
-      Steel Defender: See character sheet for Rosie 198 for details
-      Iron Horse: His Iron Horse is a clockwork motorcycle powered by his Artificer's Infusion. It can move on it's own and answers his call. It has a speed of 60 feet and can take 30HP damage before it stops running.
+  - title: Feats
+  - content: Gunner, Keen Mind, Mounted Combatant, Sharpshooter, War Caster, Skill Expert - Smith's Tools, Observant, Fighting Initiate, Medium Armor Master
+  - title: Legendary Resistance
+  - content: (3/Day), If Oswald Vardklemp fails a saving throw he can choose to succeed instead 
+  - title: Legendary Actions 
+  - content: Oswald Vardklemp can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+             Oswald Vardklemp regains spent Legendary Actions at the start of his turn
+  - abilities:
+    - title: Rosies Swing
+    - content: Oswald Vardklemp can instruct his Steel Guardian to make an extra attack
+    - title: Gatling Burst
+    - content: Oswald Vardklemp can make an extra attack with his gatling gun
+    - title: Escape Velocity
+    - content: Oswald Vardklemp can summon his Iron Horse, mount it and dash up to 60 feet
+
+  - title: Attacks
+  - content: Can make 2 attacks with his firearms and his Steel Defender can attack twice 
+  - title: Combat Tactics
+  - content: He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run 
+
+  - title: Special Equipment
+  - abilities:
+    - title: Gatling Cannon
+    - cotnent: Fires multiple shots at a single target doing 5d12 damage on a failed Dex save with DC 18, or do a sweeping attack targetting each creature within 30 feet doing 1d12 on a failed Dex save with DC 18. 
+               Range 60/240, Heavy, Two-Handed. Can fire 5 bursts before needing to be reloaded. Reloading takes 1 round.
+    - title: Random Artifact Devices
+    - content: Can be carrying whatever he needs
+    - title: Artificer Glasses
+    - content: Glasses with interchangable lenses that include lenses from Glasses of Hidden Eyes, Eyes of Minute Seeing, Goggles of Indentifying, Eyes of the Eagle, Prismatic Lens and Goggles of Night
+    - title: Steel Defender
+    - content: See character sheet for Rosie 198 for details
+    - title: Iron Horse
+    - content: His Iron Horse is a clockwork motorcycle powered by his Artificer's Infusion. It can move on it's own and answers his call. It has a speed of 60 feet and can take 30HP damage before it stops running.
 
   profile:
 

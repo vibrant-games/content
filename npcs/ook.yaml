@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: orangutan
+    race: Orangutan
 
     #
     # The sub-race can be anything.
@@ -328,6 +328,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_libraries_of_the_interstices_orders_of_knowledge_and_scribes_
       name: The Libraries of the Interstices; Orders of Knowledge and Scribes;
 
@@ -459,21 +460,47 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Exhaustion
     skills:
-    - N/A    
+    - Librarian
+    proficiencies:
+    - Arcana
+    - Nature
+    - History    
+    - Athletics
+    - Acrobatics
+  special-abilities:
+  - title: Orangutan Abilities
+  - abilities:
+    - title: Great Leaper
+    - content: You increase your long jump distance by 5 feet, or 10 feet when you get a running start.
+    - title: Naturally Athletic
+    - content: You have proficiency in the Athletics and Acrobatics skills.
+    - title: Rough and Tumble
+    - content: You have advantage on saving throws against gaining exhaustion levels.
+    - title: Unimpeded
+    - content: You ignore difficult terrain when you take a Dash action  
+    - title: Arboreal
+    - content: You can move along a tree line or library stacks by leaping and swinging at a speed of 50 feet. Additionally, you gain a climb speed of 50 feet.
+ 
+  - title: Attacks
+  - content: Two Fist Attacks - +5 to hit, 1d6+3 dmg.
+             Rock/Book/Bookweight - Ranged +5 to hit 25/50 ft 1d6+3 bludgeoning
+  - title: Combat Tactics
+  - content: Swinging and beating the tar out of anyone who might be a combatant
 
-    special-abilities:
-       - Proficiencies: History, Arcana, Nature
-         Feats: N/A
-       - Swinging Movement - Can move 50 ft in jungle/forest/library environement
-       
-    attacks: |
-      Two Fist Attacks: +5 to hit, 1d6+3 dmg.
-      Rock/Book/Bookweight Ranged +5 to hit 25/50 ft 1d6+3 bludgeoning
-    combat-tactics: |
-      Swinging and beating the tar out of anyone who might be a combatant
-    special-equipment:
-       - Knows the whereabouts of even the most abstruse books in the library and how to open them safely       
+  - title: Special Equipment
+  - abilities:
+    - title: Library Inventory
+    - content: Knows the whereabouts of even the most abstruse books in the library and how to open them safely       
       
   profile:
 
