@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -334,6 +334,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: khazar_halflings
       name: Khazar halflings
 
@@ -465,23 +466,42 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Halfling Abilities:
-      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-        Brave: Has advantage on Saving Throws against being Frightened 
-        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-        Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Frightened
+    resistances:
+    - N/A
+    skills:
+    - N/A
+    proficiencies:
+    - Arcana
+    - Perception
+    - Performance    
+    - Religion
+    - Persuasion
+  special-abilities:       
+  - title: Halfling Abilities
+  - abilities: 
+    - title: Lucky
+    - content: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+    - title: Brave
+    - content: Has advantage on Saving Throws against being Frightened 
+    - title: Halfling Nimbleness
+    - content: Can move through the space of any creature that is of a size larger than her      
 
-    special-abilities:
-       - Proficiencies: Persuasion, Performance, Perception, Arcana, Religion
-         Feats: N/A
+  - title: Attacks
+  - content: 1 attack with club
+  - title: Combat Tactics
+  - content: Princess Ateh will rarely engage in combat and instead call upon guards or surrounding civilians to intervene on her behalf.
 
-    attacks: |
-      1 attack with club
-    combat-tactics: |
-      Princess Ateh will rarely engage in combat and instead call upon guards or surrounding civilians to intervene on her behalf.
-    special-equipment:
-       - Cutout letters that cast Power Word Kill on a would-be assassin on sight, she pastes these on her eyelids at night before sleep                                                   
+  - title: Special Equipment
+  - abilities:
+    - title: Assassination Prevention
+    - content: Cutout letters that cast Power Word Kill on a would-be assassin on sight, she pastes these on her eyelids at night before sleep                                                   
 
   profile:
 

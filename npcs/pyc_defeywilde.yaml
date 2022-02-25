@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: weaver_and_textile_guild
       name: Weaver and Textile Guild
 
@@ -459,47 +460,82 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Half-Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon
-      Cleric Abilities:
-      - Spellcasting:
-        - Spell DC: 13
-          Cantrips: Resistance, Sacred Flame, Toll The Dead, Thaumaturgy
-          1st Level: Bane, Bless, Protection From Evil and Good, Purify Food and Drink
-          2nd Level: Calm Emotions, Hold Person, Zone of Truth
-          3rd Level: Dispel Magic, Mass Healing Word, Remove Curse
-        Channel Divinity: Turn Undead, Destroy Undead 
+    saving-throws:
+    - Dexterity
+    - Cahrisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
+    skills:
+    - Weaving
+    proficiencies:
+    - Insight
+    - Perception    
+    - Persuasion
+    - Weaving Tools
+  special-abilities:       
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon 
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 13
+    - title: Cantrips
+    - content: Resistance, Sacred Flame, Toll The Dead, Thaumaturgy
+    - title: 1st Level
+    - content: Bane, Bless, Protection From Evil and Good, Purify Food and Drink
+    - title: 2nd Level
+    - content: Calm Emotions, Hold Person, Zone of Truth
+    - title: 3rd Level
+    - content: Dispel Magic, Mass Healing Word, Remove Curse
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed. 
+  - title: Peace Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 13
+    - title: 1st Level
+    - content: Heroism, Sanctuary
+    - title: 3rd Level
+    - content: Aid, Warding Bond
+    - title: 5th Level
+    - content: Beacon of Hope, Sending
+    - title: Emboldening Bond
+    - content: You can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your
+               proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add
+               the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn. You can use this feature a number of times equal to your
+               proficiency bonus, and you regain all expended uses when you finish a long rest.
+    - title: Channel Divinity - Balm of Peace
+    - content: You can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any
+               other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once
+               whenever you take this action. 
+    - title: Protective Bond
+    - content: The bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first
+               can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead.
 
-      Peace Domain Abilities:
-      - Spellcasting:
-        - Spell DC: 13 
-          1st Level: Heroism, Sanctuary
-          3rd Level: Aid, Warding Bond
-          5th Level: Beacon of Hope, Sending
-        Emboldening Bond: you can forge an empowering bond among people who are at peace with one another. As an action, you choose a number of willing creatures within 30 feet of you (this can include yourself) equal to your
-                          proficiency bonus. You create a magical bond among them for 10 minutes or until you use this feature again. While any bonded creature is within 30 feet of another, the creature can roll a d4 and add
-                          the number rolled to an attack roll, an ability check, or a saving throw it makes. Each creature can add the d4 no more than once per turn. You can use this feature a number of times equal to your
-                          proficiency bonus, and you regain all expended uses when you finish a long rest.
-        Channel Divinity: 
-        - Balm of Peace: you can use your Channel Divinity to make your very presence a soothing balm. As an action, you can move up to your speed, without provoking opportunity attacks, and when you move within 5 feet of any
-                         other creature during this action, you can restore a number of hit points to that creature equal to 2d6 + your Wisdom modifier (minimum of 1 hit point). A creature can receive this healing only once
-                         whenever you take this action. 
-        Protective Bond: the bond you forge between people helps them protect each other. When a creature affected by your Emboldening Bond feature is about to take damage, a second bonded creature within 30 feet of the first
-                         can use its reaction to teleport to an unoccupied space within 5 feet of the first creature. The second creature then takes all the damage instead.       
-
-    special-abilities:
-       - Proficiencies: Persuasion, Perception, Insight, Persuasion
-         Feats: N/A
-
-    attacks: |
-      1 attack with mace or spell attack
-    combat-tactics: |
-      Pyc will do everthing in her power to diffuse any violence
-    special-equipment:
-       N/A
+  - title: Attacks
+  - content: 1 attack with mace or spell attack
+  - title: Combat Tactics
+  - content: Pyc will do everthing in her power to diffuse any violence
       
   profile:
 

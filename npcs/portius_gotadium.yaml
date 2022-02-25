@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: half-dwarf/half-gnome
+    race: Half-Dwarf/Half-Gnome
 
     #
     # The sub-race can be anything.
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: doctor_s_guild
       name: Doctor's Guild
       role: Journeyman
@@ -464,88 +465,143 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison and Magic
     skills:
-    - Dwarf Abilities:
-      - Dwarven Resistance: Has advantage on Saving Throws against poison, and has Resistance against poison damage
-        Dwarven Combat Training: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
-        Stonecunning: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, instead of his normal Proficiency Bonus
-      Rock Gnome Abilities:
-      - Gnome Cunning: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
-        Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
-        Artificers Lore: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
-        Tinker:
-        - Description: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
-                       after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it - at that time, you can reclaim the materials used to create it. You can have up
-                       to three such devices active at a time. When you create a device, choose one of the following options
-          Clockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
-                         a random direction. It makes noises as appropriate to the creature it represents.
-          Fire Starter: The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-          Music Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
-      Doctor Abilities:
-      - Medical Training: Due to your meticulous study into the healing arts you can use your Intelligence modifier instead of your Wisdom modifier for Medicine checks. In addition your proficiency bonus is doubled for any
-                          Medicine checks that you make.
-        Doctors Bag: you gain access to a number of special supplies due to your medical training. These supplies include things like bandages, syringes, medicinal powders, and healing salves. You keep these in a storage
-                     container of your choice such as a bag, a series of pouches, or even a trunk. As long as you have access to your Doctor's Bag you may use an action to stabilize a creature that has 0 hit points, without
-                     needing to make a Medicine check.
-        First Aid: you can apply basic first aid to an adjacent creature you can touch. As a bonus action you heal the target for 1d4 hit points. This increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th
-                   level (4d4). You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.
-        Second Opinion: you have become accustomed not only to combat, but to coordinating with other healers. Whenever an ally within 20ft of you uses a healing ability, spell, or item, you can use your reaction to increase
-                        the amount healed to a single target by half, rounded up. Your ally must be able to see or hear you.
-        Patch Up: you have learned that there is always another fight around the corner, and it's best to be ready for it. Select up to 6 willing creatures that you can touch. You spend the next 10 minutes quickly stitching up
-                  any open wounds and applying painkillers where needed, whatever it takes to get them to the next battle. This cures them of any non-magical ailments and restores a number of hit points equal to half of their
-                  maximum rounded up. You can use this feature a number of times equal to your Intelligence modifier divided by two (a minimum of once). You regain any expended uses when you finish a Long Rest.
-        Diagnosis: you have learned to treat hostile scenarios as just another day at the office. As an action you study a living creature and gain vital insight towards its physical state. You learn one of the targets
-                   following statistics - Damage Vulnerabilities, Damage Resistances, Damage Immunities, Highest Saving Throw, Lowest Saving Throw, or whether or not the creature is below half its health. You can use this
-                   feature a number of times equal to your Intelligence modifier (a minimum of once). You regain expended uses when you finish a Short Rest.
-        Paramedic: you have become experienced at reaching the injured without taking damage. When you use your action to disengage you may also double your movement speed until the end of your turn
-        Vaccination: you have spent countless hours attempting to aid those suffering from disease and have developed a number of treatments. As an action you can cure a target of a single disease afflicting them. Alternatively,
-                     you can inoculate a target against disease for the next 24 hours. In addition, due to exposure from numerous patients the doctor gains immunity to all disease.
-      Surgeon Abilities:
-      - Expert Practice: you can now add your intelligence modifier to the result of any healing ability you perform.
-        Surgery: you have gained the confidence to delve deeper into the bodies of your patients. You operate on an injured subject, curing them of any ailments, both mundane and magical. The target regains a number of hit points
-                 equal to their maximum. Any hit points the target gains over their maximum become temporary hit points. This takes 2 full hours from start to finish.
+    - Medicine
+    proficiencies:
+    - Medicine
+    - Perception
+    - Doctor's Tools    
+    - Barber's Kit
+    - History
+    - Sleight-of-Hand
+    - Investigation
+  special-abilities:
+  - title: Dwarf Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray.
+    - title: Dwarven Resistance
+    - content: Has advantage on Saving Throws against poison, and has Resistance against poison damage
+    - title: Tool Proficiency
+    - content: You gain proficiency with the artisan's tools of your choice; smith's tools, brewer's supplies, or mason's tools.       
+    - title: Dwarven Combat Training
+    - content: Has proficiency with the Battleaxe, Handaxe, Light Hammer, and Warhammer.
+    - title: Stonecunning
+    - content: Whenever making an Intelligence (History) check related to the Origin of stonework, he is considered proficient in the History skill and adds double his Proficiency Bonus to the check, 
+               instead of his normal Proficiency Bonus Proficiency Bonus
+  - title: Rock Gnome Abilities
+  - abilities: 
+    - title: Gnome Cunning
+    - content: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Artificers Lore
+    - content: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
+    - title: Tinker
+    - content: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
+               after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
+               to three such devices active at a time. When you create a device, choose one of the following options - 
+               Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+                               a random direction. It makes noises as appropriate to the creature it represents.
+               Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+               Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
+  - title: Doctor Abilities
+  - abilities:
+    - title: Medical Training
+    - content: Due to your meticulous study into the healing arts you can use your Intelligence modifier instead of your Wisdom modifier for Medicine checks. In addition your proficiency bonus is doubled for any
+               Medicine checks that you make. 
+    - title: Doctors Bag
+    - content: You gain access to a number of special supplies due to your medical training. These supplies include things like bandages, syringes, medicinal powders, and healing salves. You keep these in a storage
+               container of your choice such as a bag, a series of pouches, or even a trunk. As long as you have access to your Doctor's Bag you may use an action to stabilize a creature that has 0 hit points, without
+               needing to make a Medicine check.
+    - title: First Aid
+    - content: You can apply basic first aid to an adjacent creature you can touch. As a bonus action you heal the target for 1d4 hit points. This increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th
+               level (4d4). You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.
+    - title: Second Opinion
+    - content: You have become accustomed not only to combat, but to coordinating with other healers. Whenever an ally within 20ft of you uses a healing ability, spell, or item, you can use your reaction to increase
+               the amount healed to a single target by half, rounded up. Your ally must be able to see or hear you.
+    - title: Patch Up
+    - content: You have learned that there is always another fight around the corner, and it's best to be ready for it. Select up to 6 willing creatures that you can touch. You spend the next 10 minutes quickly stitching up
+               any open wounds and applying painkillers where needed, whatever it takes to get them to the next battle. This cures them of any non-magical ailments and restores a number of hit points equal to half of their
+               maximum rounded up. You can use this feature a number of times equal to your Intelligence modifier divided by two (a minimum of once). You regain any expended uses when you finish a Long Rest.
+    - title: Diagnosis
+    - content: You have learned to treat hostile scenarios as just another day at the office. As an action you study a living creature and gain vital insight towards its physical state. You learn one of the targets
+               following statistics - Damage Vulnerabilities, Damage Resistances, Damage Immunities, Highest Saving Throw, Lowest Saving Throw, or whether or not the creature is below half its health. You can use this
+               feature a number of times equal to your Intelligence modifier (a minimum of once). You regain expended uses when you finish a Short Rest.
+    - title: Paramedic
+    - content: You have become experienced at reaching the injured without taking damage. When you use your action to disengage you may also double your movement speed until the end of your turn
+    - title: Vaccination
+    - content: You have spent countless hours attempting to aid those suffering from disease and have developed a number of treatments. As an action you can cure a target of a single disease afflicting them. Alternatively,
+               you can inoculate a target against disease for the next 24 hours. In addition, due to exposure from numerous patients the doctor gains immunity to all disease.
+  - title: Surgeon Domain Abilities
+  - abilities: 
+    - title: Expert Practice
+    - content: You can now add your intelligence modifier to the result of any healing ability you perform.
+    - title: Surgery
+    - content: You have gained the confidence to delve deeper into the bodies of your patients. You operate on an injured subject, curing them of any ailments, both mundane and magical. The target regains a number of hit points
+               equal to their maximum. Any hit points the target gains over their maximum become temporary hit points. This takes 2 full hours from start to finish.
 
-    special-abilities:
-       - Proficiencies: Medicine, Perception, Doctors' Tools, Rectifiers' Tools, Barber's Kit, History, Sleight of Hand, Investigation
-         Feats: Healer
+  - title: Feats
+  - content: Healer
 
-    attacks: |
-      1 attack with dagger
-    combat-tactics: |
-      They abhor violence and will avoid it at all costs.
-    special-equipment:
-    - Keoghtoms Ointment: Wondrous item, uncommon, This glass jar 3 inches in diameter contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh half a pound. As an action one dose of
-                          the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points ceases to be poisoned and is cured of any disease. They carry one at all times and
-                          have many at their shack.
-      Robe of Useful Items: 
-      - Description: adventuring gear (wondrous item robe)This robe has cloth patches of various shapes and colors covering it. While wearing the robe. you can use an action to detach one of the patches causing it to
-                     become the object or creature it represents. Once the last patch is removed the robe becomes an ordinary garment. The robe has two of each of the following patches - 
-        Items:
-        - Dagger
-        - Bullseye lantern (filled and lit)
-        - Steel mirror
-        - 10-foot pole
-        - Hempen rope (50 feet coiled)
-        - Sack
-        Patches:
-        - Description: In addition their robe has 10 patches as follows 
-          Additional Information:
-          - 2 Iron doors
-          - 2 Riding Horses
-          - 2 Windows
-          - 2 Spell Scrolls of 1st to 3rd level
-          - 2 Superior Potions of Healing
-      Dr. Gotadiums Headband of De-Obfuscation: 
-      - Description: This headband is made of flexible metals with various arms tucked and folded into themselves. It aids a surgeon and rectifier in their tasks. It's multiple folding arms can
-                     extend to - 
-        Additional Information:
-        - provide light
-        - a magnification lens
-        - a small beam of heat (to help with incisions or cauterization)
-        - a surgeon's mask
-        - a tiny hand that can grasp or hold a small tool (like a scalpel or needle or suture)
-        - and a small vial of iodine
-    - Doctor's Bag
+  - title: Attacks
+  - content: 1 attack with dagger
+  - title: Combat Tactics
+  - content: They abhor violence and will avoid it at all costs.
+
+  - title: Special Equipment
+  - abilities:
+    - title: Keoghtoms Ointment
+    - content: Wondrous item, uncommon, This glass jar 3 inches in diameter contains 1d4 + 1 doses of a thick mixture that smells faintly of aloe. The jar and its contents weigh half a pound. As an action one dose of
+               the ointment can be swallowed or applied to the skin. The creature that receives it regains 2d8 + 2 hit points ceases to be poisoned and is cured of any disease. They carry one at all times and
+               have many at their shack.
+    - title: Robe of Useful Items 
+    - content: adventuring gear (wondrous item robe)This robe has cloth patches of various shapes and colors covering it. While wearing the robe. you can use an action to detach one of the patches causing it to
+               become the object or creature it represents. Once the last patch is removed the robe becomes an ordinary garment. The robe has two of each of the following patches - 
+               Items
+               Dagger
+               Bullseye lantern (filled and lit)
+               Steel mirror
+               10-foot pole
+               Hempen rope (50 feet coiled)
+               Sack
+               Patches
+               In addition their robe has 10 patches as follows 
+               2 Iron doors
+               2 Riding Horses
+               2 Windows
+               2 Spell Scrolls of 1st to 3rd level
+               2 Superior Potions of Healing
+    - title: Dr. Gotadiums Headband of De-Obfuscation 
+    - content: This headband is made of flexible metals with various arms tucked and folded into themselves. It aids a surgeon and rectifier in their tasks. It's multiple folding arms can
+               extend to - 
+               provide light
+               a magnification lens
+               a small beam of heat (to help with incisions or cauterization)
+               a surgeon's mask
+               a tiny hand that can grasp or hold a small tool (like a scalpel or needle or suture)
+               and a small vial of iodine
+    - title: Doctor's Bag
+    - content: Doctor's tools come in a flat-bottomed black or brown leather bag with a metal-frame closing mouth. The bag contains a number of general steel tools of a highly polished and precision nature, as well as a couple 
+               of additional tools unique to the doctor's specialty.
+               Proficiency with this kit lets you add your proficiency bonus to Wisdom (Medicine) checks when using it to stabilize a dying creature or diagnosing an illness. If you are already proficient with the medicine skill,
+               your proficiency bonus is doubled. The content of the bag includes
+               A needle and fine wire or thread
+               A hinged splint or brace
+               A small steel cone (Low-tech stethoscope)
+               A small mirror
+               Live leeches
+               Tools for clamping and binding open wounds to prevent blood loss
+               Two small tools relevant to the practitioner's specialty.
 
   profile:
 

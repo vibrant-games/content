@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Scout and messenger
+    - Scout and Messenger
 
     #
     # D & D classes (case insensitive):
@@ -460,78 +460,143 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Dexterity
+    - Wisdom
+    damage-immunities:
+    - Poison Damage
+    condition-immunities:
+    - Poison Damage, Sleep Magic and Disease
+    resistances:
+    - Exhaustion
     skills:
-    - Warforged Traits:
-      - Constructed Resilience: 
-        - Advantage on saving throws against being poisoned and has resistance to poison damage
-        - Doesn't need to eat, drink or breathe
-        - Immune to disease
-        - Doesn't need sleep and cannot be magically put to sleep
-        Sentrys Rest: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
-        Specialized Design: Proficient in Stealth and Thieve's Tools
-        Integrated Protection: 
-        - Description: Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table.
-          Darkwood Core: AC = 11 + Dexterity + Proficiency Bonus
-          Composite Plating: AC = 13 + Dexterity (Max 2) + Proficiency Bonus
-          Heavy Plating: AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks
-      Skirmisher Traits:
-      - Swift: Walking speed increases by 5 feet
-        Light Step: When traveling alone for more than an hour, can move stealthily at normal pace
-      Monk Abilities:
-      - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-        Martial Arts:
-        - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-        - Can roll a d10 in place of normal damage for unarmed strikes and monk weapons
-        - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-        Ki: 
-        - Ki Points: 17 
-          Ki DC: 20
-        Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-        Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-        Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
-        Unarmored Movement: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
-        Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                         free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-        Slow Fall: Can us a Reaction to falling damage by by 85hp
-        Extra Attack: Can Attack twice per turn
-        Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-        Ki-Empowered Strike: Unarmed Strikes count as magical 
-        Stillness of Mind: Can use an Action to end on effect causing him to be Charmed or Frightened
-        Evasion: When subject to an area effect that allows to make a Dex save to take half damage, he instead takes no damage on a save and half damage on a fail
-        Purity of Body: Immune to disease and poison
-        Tongue of Sun and Moon: Understands all spoken languages and can be understood by all creatures that can understand a language 
-        Diamond Soul: Proficiency on all saving throws. On a failed save can send 1 Ki point to reroll and take the second roll
-        Timeless Body: Cannot be aged magically       
-      Way of the Iron Mountain Abilities:
-      - Iron Mountain Technique:
-        - Description: Whenever using Patient Defense or Step of the Wind can choose one of the following effects
-          Additional Information:
-          - Has resistance to all forms of damage other than psychic damage until the start of their next turn
-          - Gains a +4 Bonus to AC until the start of their next turn
-          - Has advantage on ability checks and saving throws to resist being grappled, restrained, forcebly moved or knocked prone           
-        Fists of Steel: Can choose to deal slashing, piercing or blugeoning damage with unarmed strikes 
-        Iron Body: Can use a reaction and spend 1 Ki point to reduce an attacks damage by 1d10 + 12. If damaged is reduced to 0, can make an unarmed melee attack on the attacking crature if its in range
-      Orzhov Guild Spells:
-      - 1st Level: Friends, Guidance
-        2nd Level: Command, Illusory Script
-        3rd Level: Bestow Curse, Speak with Dead, Spirit Guardians
-        4th Level: Blight, Death Ward, Leomund`s Secret Chest
-        5th Level: Geas         
-
-    special-abilities:
-    - Proficiencies: Thieve's Tools, Heavy Armor, Light Armor, Unarmed Combat, Athletics, Perception, , Intimidation, Insight, Stealth, Religion    
-      Feats: Alert, Athlete, Linguist, Mobile, Skulker
-
-    attacks: |
-      has 3 attacks
-    combat-tactics: |
-      Doesn`t like to fight, but is pretty unstoppable once they get rolling. Will use unarmed attacks or his Bo
-    special-equipment:
-    - Bo Staff of Striking
-    - 10x +1 Shuriken
-    - 2x Gravity Vortex Shuriken
+    - Scouting and Tracking
+    proficiencies: 
+    - Athletics
+    - Perception
+    - Insight    
+    - Intimidation
+    - Stealth
+    - Religion
     - Thieve's Tools
+    - Heavy Armor
+    - Unarmed Combat
+  special-abilities:
+  - title: Warforged Abilities
+  - abilities: 
+    - title: Constructed Resilience 
+    - content: Advantage on saving throws against being poisoned and has resistance to poison damage
+               Doesn't need to eat, drink or breathe
+               Immune to disease
+               Doesn't need sleep and cannot be magically put to sleep
+    - title: Sentry's Rest
+    - content: Long rest requires 6 hours in a motionless state, appearing inert, but can still see and hear as normal
+    - title: Specialized Design
+    - content: Proficient in Stealth and Thieve's Tools
+    - title: Integrated Protection
+    - content: Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table
+               Darkwood Core - AC= 11 + Dexterity + Proficiency Bonus
+               Composite Plating - AC = 13 + Dexterity (Max 2) + Proficiency Bonus
+               Heavy Plating - AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks
+  - title: Skirmisher Traits
+  - abilities:
+    - title: Swift
+    - content: Walking speed increases by 5 feet
+    - title: Light Step
+    - content: When traveling alone for more than an hour, can move stealthily at normal pace
+  - title: Monk Abilities
+  - abilities:
+    - title: Unarmored Defense 
+    - content: When not wearing armor Ac = 10 + Dexterity + Wisdom
+  - title: Martial Arts
+  - abilities:
+    - content: Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+               Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+               When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+  - title: Ki
+  - abilities:  
+    - title: Ki Points
+    - contents: 17
+    - title: Ki DC
+    - contents: 20
+    - title: Flurry of Blows
+    - content: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+    - title: Patient Defense
+    - content: Can spend 1 Ki point to take the Dodge action as a bonus action
+    - title: Step of the Wind
+    - content: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+    - title: Unarmored Movement
+    - content: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+    - title: Deflect Missles
+    - content: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+               free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+    - title: Slow Fall
+    - content: You can use your Reaction when you fall to reduce any Falling damage you take by an amount equal to five times your monk level.
+    - title: Extra Attack
+    - content: Can Attack twice per turn
+    - title: Stunning Strike
+    - content: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+    - title: Ki-Empowered Strike
+    - content: Your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+    - title: Stillness of Mind
+    - content: You can use your action to end one Effect on yourself that is causing you to be Charmed or Frightened
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+    - title: Purity of Body
+    - content: Your mastery of the ki flowing through you makes you immune to disease and poison.
+    - title: Tongue of Sun and Moon
+    - content: You learn to touch the ki of other minds so that you understand all spoken Languages. Moreover, any creature that can understand a language can understand what you say.
+    - title: Diamond Soul
+    - content: Your mastery of ki grants you proficiency in all Saving Throws. Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.
+    - title: Timeless Body
+    - content: Your ki sustains you so that you suffer none of the Frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water.      
+  - title: Way of the Iron Mountain Abilities
+  - abilities: 
+    - title: Iron Mountain Technique
+    - content: Whenever using Patient Defense or Step of the Wind can choose one of the following effects;
+               You have resistance to all forms of damage other than psychic damage until the start of your next turn
+               You gains a bonus to your AC equal to your strength modifier until the start of your next turn
+               You have advantage on ability checks and saving throws to resist being grappled, restrained, forcebly moved or knocked prone           
+    - title: Fists of Steel
+    - content: When making an unarmed strike, your unarmed damage die increases to s d8. The die becomes at d10 at 11th Level and a d12 at 17th Level. Can choose to deal slashing, piercing or blugeoning damage with 
+               unarmed strikes 
+    - title: Iron Body
+    - content: Whenever you are hit by a melee attack, you can use a reaction and spend 1 Ki point to reduce an attacks damage by 1d10 + your constitution modifier plus half your monk level. If damaged is reduced to 0, can 
+               make an unarmed melee attack on the attacking crature if its in range
+  - title: Orzhov Guild Spells
+  - abilities:
+    - title: 1st Level
+    - content: Friends, Guidance
+    - title: 2nd Level
+    - content: Command, Illusory Script
+    - title: 3rd Level
+    - content: Bestow Curse, Speak with Dead, Spirit Guardians
+    - title: 4th Level
+    - content: Blight, Death Ward, Leomund`s Secret Chest
+    - title: 5th Level
+    - content: Geas         
+    
+  - title: Feats
+  - content: Alert, Athlete, Linguist, Mobile, Skulker
 
+  - title: Attacks
+  - content: He has 3 attacks
+  - title: Combat Tactics
+  - content: Doesn`t like to fight, but is pretty unstoppable once they get rolling. Will use unarmed attacks or his Bo
+
+  - title: Special Equipment
+  - abilities:
+    - title: Bo Staff of Striking
+    - content: This staff can be wielded as a magic Quarterstaff that grants a +3 bonus to Attack and Damage Rolls made with it. The staff has 10 Charges. When you hit with a melee Attack using it, you can expend up to 3 of its 
+               Charges. For each charge you expend, the target takes an extra 1d6 force damage. The staff regains 1d6 + 4 expended Charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff becomes a 
+               nonmagical Quarterstaff.
+    - title: 10x +1 Shuriken
+    - content: Shuriken are small star-shaped throwing blades that are easily concealable in clothing that do 1d4 Damage. You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: 2x Gravity Vortex Shuriken
+    - content: When thrown, this shuriken bursts into a vortex of gravitational magic. Hostile creatures within 20 feet of the shuriken must make 3 Strength Saving Throw, DC 15. On a failure, their movement is reduced to 0, and 
+               are pulled 10 feet closer to the vortex. At the start of your next turn, the vortex detonates, dealing 3d6 force damage to targets within 10 feet of the star, an d 5d6 force damage to targets directly in the 
+               vortex.
     
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: chamber_of_commmerce
       name: Chamber of Commerce
 
@@ -459,21 +460,42 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Dragonborn Abilities:
-      - Breathe Weapon: Can exhale fire in a 15 foot cone with a DC 13. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one.           
-        Damage Resistance: Resistance to Fire
+    saving-throws:
+    - Strength
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire
+    skills:
+    - N/A
+    proficiencies:
+    - Insight
+    - Perception
+    - Athletics
+  special-abilities:       
+  - title: Metallic Dragonborn Abilities
+  - abilities: 
+    - title: Breath Weapon
+    - content: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of fire in a 15-foot cone. Each creature in that area must make a Dexterity saving throw 
+               (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 damage of the type associated with your Metallic Ancestry. On a successful save, it takes half as
+               much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
+    - title: Draconic Resistance
+    - content: You have resistance to fire
+    - title: Metallic Breath Weapon
+    - content: At 5th level, you gain a second breath weapon. When you take the Attack action on your turn, you can replace one of your attacks with an exhalation in a 15-foot cone. The save DC for this breath
+               is 8 + your Constitution modifier + your proficiency bonus. Whenever you use this trait, choose one
+               Enervating Breath - Each creature in the cone must succeed on a Constitution saving throw or become incapacitated until the start of your next turn.
+               Repulsion Breath - Each creature in the cone must succeed on a Strength saving throw or be pushed 20 feet away from you and be knocked prone.
+               Once you use your Metallic Breath Weapon, you can’t do so again until you finish a long rest.
 
-    special-abilities:
-       - Proficiencies: Perception, Insight, Athletics
-         Feats: N/A
+  - title: Attacks
+  - content: 1 attack with sword or breath weapon
+  - title: Combat Tactics
+  - content: he keeps a sword tethered underneath the bar from his earlier days
 
-    attacks: |
-      1 attack with sword or breath weapon
-    combat-tactics: |
-      he keeps a sword tethered underneath the bar from his earlier days
-    special-equipment:
-    - Bar Supples
 
   profile:
 
