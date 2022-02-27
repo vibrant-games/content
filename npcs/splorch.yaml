@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -464,31 +464,55 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire
     skills:
-    - Gremlin Abilities:
-      - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Almost Fire Proof: Resistant to fire damage
-        Tinkerer: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
-        Dangerous Tinker: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus
-          Spell DC: 15
-          Cantrip: Mage Hand, Mending, Fire Bolt
-          1st Level: Grease, Tasha's Caustic Brew
- 
-    special-abilities:
-    - Proficiencies: Proficient in Stealth, Sleight of Hand, Theive's Tools, Tinker's Tools, Smith's Tools     
-      Feats: Skulker
+    - Research
+    proficiencies:
+    - Stealth
+    - Sleight-of-Hand
+    - Investigation
+    - Thieve's Tools    
+    - Tinker's Tools
+    - Smith's Tools
+  special-abilities:
+  - title: Gremlin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Almost Fire Proof
+    - content: Resistant to fire damage
+    - title: Tinkerer
+    - content: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Clockwork Toy, Fire Starter, Music Box   
+    - title: Dangerous Tinker
+    - content: Proficiency with Tinker's Tools, can create clockwork divice with 1hr and 10gp worth of material - Arsonist's Friend, Blast Orb, Bomb Boy 
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 15
+    - title: Cantrip
+    - content: Mage Hand, Mending, Fire Bolt
+    - title: 1st Level
+    - content: Grease, Tasha's Caustic Brew
+    
+  - title: Feats
+  - content: Skulker
 
-    attacks: |
-      Has 1 attack. Will range attack with her Fire Bolt or Blast Orb or bite or dagger in melee range
-    combat-tactics: |
-      a vicious fighter when provoked, prefers to use fire but will stab and bite when she can't burn
-    special-equipment:
-    - Tinker's, Thieve's and Smith's Tools
-    - Dagger
+  - title: Attacks
+  - content: Has 1 attack. Will range attack with her Fire Bolt or Blast Orb or bite or dagger in melee range
+  - title: Combat Tactics
+  - content: A vicious fighter when provoked, prefers to use fire but will stab and bite when she can't burn
 
   profile:
 

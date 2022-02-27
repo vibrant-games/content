@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -459,72 +459,117 @@ npc:
   # ???Max length???
   #
   specialties:
-    Proficiencies: Alchemy, Persuasion, Athletics, Stealth, Athletics, Thieves' tools, Tinker Tools, History, Perception, Smith's tools
-    skills: Testing conversion
-    special-abilities:
-    - Tabaxi Abilities:
-      - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-        Feline Agility: Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again
-                        until you move 0 feet on one of your turns.
-        Cats Claws: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 
-                    1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
-        Cats Talent: You have proficiency in the Perception and Stealth skills
-      Artificer Abilities:
-      - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-        Spellcasting:
-        - Description: Requires Tinker's Tools as Spellcasting focus
-          Spell DC: 15
-          Cantrip: Mage Hand, Mending
-          1st Level: False Life, Grease, Detect Magic, Expiditious Retreat 
-          2nd Level: Heat Metal, Invisibility 
-        Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately.
-        Infusions Known: 4     
-        The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-      Battle Smith Abilities:
-      - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools and Smith's Tools
-        Spellcasting: 
-        - Description: Requires Tinker's Tools as Spellcasting focus
-          Spell DC: 15
-          3rd Level: Heroism, Shield
-          5th Level: Branding Smite, Warding Bond
-        Battle Ready: Proficient with Martial Weapons. When attacking with magic weapons can add intelligence modifier instead of strength or dexterity modifier to attack and damage rolls
-        Steel Defender: Can build a clockwork creature with the Steel Defender Stat Block once per long rest
-        Extra Attack: Can take a second attack action each turn
-      Steel Defender Abilities:
-      - Description: Iron Mastiff
-        Armor Class: 15
-        Hit Points: 2+ your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
-        Speed: 40
-        str: 14
-        dex: 12
-        con: 14
-        int: 4
-        wis: 10
-        cha: 6
-        Proficiencies: Proficiency Bonus + - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
-        Immunities: Immune to Poison and Psychic Damage. Immune to Poison, Charmed and Exhaustion. Resistant to Fire
-        Darkvision: 60ft. Passive Perception 22
-        Vigilant: Can't be surprised
-        Force Empowered Rend: Using a + Spellcasting modifier to hit one target within 5ft. Deals 1d8+PB force damage.
-        Repair: (3/Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
-        Extra Attack: Can take a second attack action each turn
-        Deflect Attack: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
-                        The attacker takes 1d4+8 force damage. 
-        Intimidate: It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Alchemy
+    proficiencies:
+    - Arcana
+    - Perception
+    - Stealth
+    - Athletics   
+    - History
+    - Persuasion
+    - Thieve's Tools
+    - Tinker's Tools
+    - Smith's Tools
+  special-abilities:
+  - title: Tabaxi Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+    - title: Feline Agility
+    - content: Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again
+               until you move 0 feet on one of your turns.
+    - title: Cat's Claws
+    - content: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 
+               1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+    - title: Cat's Talent
+    - content: You have proficiency in the Perception and Stealth skills
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 15
+    - title: Cantrip
+    - content: Mage Hand, Mending
+    - title: 1st Level
+    - content: False Life, Grease, Detect Magic, Expiditious Retreat 
+    - title: 2nd Level
+    - content: Heat Metal, Invisibility 
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 4
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+  - title: Battle Smith Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 3rd Level
+    - content: Heroism, Shield
+    - title: 5th Level
+    - content: Branding Smite, Warding Bond
+    - title: Tool Proficiency
+    - content: You gain proficiency with smith's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.
+    - title: Battle Ready
+    - content: Your combat training and your experiments with magic have paid off in two ways
+               You gain proficiency with martial weapons.
+               When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.
+    - title: Steel Defender
+    - content: Your tinkering has borne you a faithful companion, a steel defender. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which
+               uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics. In combat, the defender
+               shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a 
+               bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, 
+               not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 
+               feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel 
+               defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die.                          
+               Steel Defender - Medium construct
+               Armor Class - 15 (natural armor)
+               Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
+               Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
+               Speed - 40 ft.     
+               Saving Throws - Dex +1 plus PB, Con +2 plus PB
+               Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
+               Damage Immunities - poison
+               Condition Immunities - charmed, exhaustion, poisoned
+               Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
+               Languages - understands the languages you speak
+               Challenge —
+               Proficiency Bonus (PB) - equals your bonus
+               Vigilant - The defender can't be surprised.
+               Actions -
+               Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
+               Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
+               Reactions -
+               Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
+               Intimidate - It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
 
-    
-        
-    Feats: N/A
+  - title: Attacks
+  - content: 2 attacks with claws, x-wing crossbow or clockwork daggers
+  - title: Combat Tactics
+  - content: Darts about landing clockwork daggers and letting them unwind. Then backs off to fire his X-Wing Crossbow. Usually the noise is enough to disturb most people.
 
-    attacks:
-    - 2 attacks with claws
-    - x-wing crossbow or clockwork daggers
-    combat-tactics: |
-      Darts about landing clockwork daggers and letting them unwind. Then backs off to fire his X-Wing Crossbow. Usually the noise is enough to disturb most people.
-    special-equipment:
-    - X-wing Multi-Arrow Crossbow: +2 - Shoots 4 bolts at once. One round to load. Afar is skilled with this and can move freely while reloading. (1d6 +2 dmg each)
-      Clockwork Daggers:  If Afar has wound the hilt of this dagger and strikes an opponent he can let the dagger go to unwind inside the target's flesh causing 1d6 damage per round for 3 rounds or until the target removes it 
-                          from their flesh. He carries a 4 of these prize inventions.
+  - title: Special Equipment
+  - abilities:
+    - title: X-wing Multi-Arrow Crossbow
+    - content: +2 - Shoots 4 bolts at once. One round to load. Afar is skilled with this and can move freely while reloading. (1d6 +2 dmg each)
+    - title: Clockwork Daggers
+    - content: If Afar has wound the hilt of this dagger and strikes an opponent he can let the dagger go to unwind inside the target's flesh causing 1d6 damage per round for 3 rounds or until the target removes it 
+               from their flesh. He carries a 4 of these prize inventions.
 
   profile:
 

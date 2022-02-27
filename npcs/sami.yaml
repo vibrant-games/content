@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -458,23 +458,38 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
-    - Halfling Abilities:
-      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-        Brave: Has advantage on Saving Throws against being Frightened 
-        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-        Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Frightened
+    skills:
+    - Disguises
+    proficiencies:
+    - Insight
+    - Survival
+    - Deception    
+    - Disguise Kit
+  special-abilities: 
+  - title: Halfling Abilities
+  - abilities: 
+    - title: Lucky
+    - content: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+    - title: Brave
+    - content: Has advantage on Saving Throws against being Frightened 
+    - title: Halfling Nimbleness
+    - content: Can move through the space of any creature that is of a size larger than her
+    - title: Naturally Stealthy
+    - content: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you       
 
-    special-abilities:
-       - Proficiencies: Deception, Insight, Survival, Disguise Kit
-         Feats: N/A
-
-    attacks: |
-      1 attack with unarmed attack
-    combat-tactics: |
-      will always run from a fight
-    special-equipment:
-    - N/A    
+  - title: Attacks
+  - content: 1 attack with unarmed attack
+  - title: Combat Tactics
+  - content: will always run from a fight    
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -459,28 +459,45 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
-    - Firenewt Abilities:
-       - Amphibious: You can breathe in smoke, air, and water, as well as ingest lava and other flammable liquids.
-         Spit Fire: As an action, you can spit a molt of fire at a creature within 10 feet of you. The creature must make a Dexterity saving throw with a DC equal to 8 + your Constitution modifier + your proficiency bonus. A
-                    creature takes 2d8 fire damage on a failed save, and half as much damage on a successful one. The damage increases to 3d8 at 6th level, 4d8 at 11th level, and 5d8 at 16th level. You cannot spit fire again
-                    until you finish a short or long rest or take time to ingest at least a flask of some flammable liquid like lantern oil.
-         Fireborne: You are resistant to fire damage.
-         Heat Seeker: If you spend a week without a source of moist heat, you have disadvantage on all ability checks and attack rolls until you spend a short or long rest with a source of moist heat.
-         Explosive Desires: You are proficient with either alchemist’s tools or smith’s tools.
-         Critical Flame: When you score a critical hit with a melee weapon attack, your weapon ignites in flame and you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical
-                         hit. This extra damage is fire damage regardless of the weapon damage type
-
-    special-abilities:
-       - Proficiencies: Nature, Persuasion, Survival, Deception
-         Feats: N/A
-
-    attacks: |
-      1 attack with Fire Spit
-    combat-tactics: |
-      Scheuchzeri will avoid combat at all costs
-    special-equipment:
+    saving-throws:
+    - Deterity
+    - Charisma
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire
+    skills:
+    - N/A
+    proficiencies:
+    - Nature
+    - Deception    
+    - Survival
+    - Persuasion
+  special-abilities: 
+  - title: Firenewt Abilities
+  - abilities: 
+    - title: Amphibious
+    - content: You can breathe in smoke, air, and water, as well as ingest lava and other flammable liquids.
+    - title: Spit Fire
+    - content: As an action, you can spit a molt of fire at a creature within 10 feet of you. The creature must make a Dexterity saving throw with a DC equal to 8 + your Constitution modifier + your proficiency bonus. A
+               creature takes 2d8 fire damage on a failed save, and half as much damage on a successful one. The damage increases to 3d8 at 6th level, 4d8 at 11th level, and 5d8 at 16th level. You cannot spit fire again
+               until you finish a short or long rest or take time to ingest at least a flask of some flammable liquid like lantern oil.
+    - title: Fireborne
+    - content: You are resistant to fire damage.
+    - title: Heat Seeker
+    - content: If you spend a week without a source of moist heat, you have disadvantage on all ability checks and attack rolls until you spend a short or long rest with a source of moist heat.
+    - title: Explosive Desires
+    - content: You are proficient with either alchemist’s tools or smith’s tools.
+    - title: Critical Flame
+    - content: When you score a critical hit with a melee weapon attack, your weapon ignites in flame and you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical
+               hit. This extra damage is fire damage regardless of the weapon damage type
+
+  - title: Attacks
+  - content: 1 attack with Fire Spit
+  - title: Combat Tactics
+  - content: Scheuchzeri will avoid combat at all costs
   
   profile:
 

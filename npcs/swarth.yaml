@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -460,20 +460,32 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:
+    saving-throws:
+    - Constitution
+    - Strength
+    - Dexterity
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
+    skills:
+    - Cooking
+    proficiencies:
+    - Survival    
+    - Intimidation
+    - Persuasion
+    - Cookery
+  special-abilities:
+  - title: Feats
+  - content: Chef, Crusher
 
-    special-abilities:
-    - Proficiencies: Intimidation, Cooking, Survival
-      Feats: Chef, Crusher
+  - title: Attacks
+  - content: 1 attacks with cleaver or unarmed strike
+  - title: Combat Tactics
+  - content: Full frontal assault, either with his cleaver, or the squishy smother-hug of doom
 
-    attacks: |
-      1 attacks with cleaver or unarmed strike
-    combat-tactics: |
-      Full frontal assault, either with his cleaver, or the squishy smother-hug of doom
-    special-equipment:
-    - A cleaver bearing an inscription in ancient dwarvish, "For my little chicadee"
-    - A well-used whetstone
 
   profile:
 
