@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -327,6 +327,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: thieves_guild
       name: Thieve's Guild
 
@@ -458,30 +459,54 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-    - Barbarian Abilities:
-      - Rage:
-        - Description: Can enter a rage as a Bonus Action. 
-        - have advantage on Strength Checks and Strength Saving Throws.
-        - make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-        - Resistance to bludgeoning, piercing, and slashing damage          
-        Danger Sense: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
-        Reckless Attack: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
-                         but Attack Rolls against him have advantage until his next turn      
+    - N/A
+    proficiencies:
+    - Stealth
+    - Sleight-of-Hand
+    - Survival
+    - Thieve's Tools
+  special-abilities:
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn      
 
-    special-abilities:
-       - Proficiencies: Stealth, Sleight-of-Hand, Survival
-         Feats: Skulker, Dual Weilder
-         Curse of the Forgotten: It requires a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to see her and a Wisdom (Perception) check of DC 19 to remember her if they aren't directly looking at her.
-                                 This ability makes her immune to blindsight and truesight         
+  - title: Feats
+  - content: Skulker, Dual Weilder
+  - title: Curse of the Forgotten
+  - content: It requires a cretaure to make a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to even see her when looking directly at her, and a Wisdom (Perception) check of DC 19 to remember her if 
+             they aren't directly looking at her. This ability makes her immune to blindsight and truesight         
        
-    attacks: |
-      2 attacks with daggers
-    combat-tactics: |
-      Reina doesn't like to fight but will go into a rage and attack with her daggers if attacked
-    special-equipment:
-    - 2 Assassins Daggers: +1 bonus to attack and damage rolls. On your first successful attack against an enemy they must make a DC 18 Constitution saving throw, if they fail it they take 2d6 poison damage and are poisoned for
-                           1 minute, however if they succeed the constitution saving throw they are immune to this effect for 24 hours. 
+  - title: Attacks
+  - content: 2 attacks with daggers
+  - title: Combat Tactics
+  - content: Reina doesn't like to fight but will go into a rage and attack with her daggers if attacked
+  
+  - title: Special Equipment
+  - abilities:
+    - title: 2 Assassins Daggers
+    - content: +1 bonus to attack and damage rolls. On your first successful attack against an enemy they must make a DC 18 Constitution saving throw, if they fail it they take 2d6 poison damage and are poisoned for
+               1 minute, however if they succeed the constitution saving throw they are immune to this effect for 24 hours. 
 
   profile:
 

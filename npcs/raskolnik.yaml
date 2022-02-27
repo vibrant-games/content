@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -460,31 +460,55 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Elf Abilities:
-      - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        Keen Senses: You have proficiency in the Perception skill 
-        Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        Snow Sight: Your vision is not hindered by heavy weather conditions such as falling snow, rain or mist.
-        Cold Resistance: You have resistance against cold damage and you ignore any of the drawbacks caused by cold, arctic environments such as difficult terrain and slippery ice.
-        Ice Magic: You know the ray of frost cantrip. Wisdom is your spellcasting ability for it.
-        Snow Elf Weapon Training: You are proficient with the greatsword, longsword, pike, and war pick
-      Rogue Abilities:
-      - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-        Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater       
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
+    skills:
+    - Law
+    proficiencies:
+    - Perception
+    - Sleight-of-Hand    
+    - History
+    - Stealth
+    - Local Law
+    - Thieve's Tools
+  special-abilities:      
+  - title: Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Keen Senses
+    - content: You have proficiency in the Perception skill 
+    - title: Trance
+    - content: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+               dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+    - title: Snow Sight
+    - contnt: Your vision is not hindered by heavy weather conditions such as falling snow, rain or mist.
+    - title: Cold Resistance
+    - content: You have resistance against cold damage and you ignore any of the drawbacks caused by cold, arctic environments such as difficult terrain and slippery ice.
+    - title: Ice Magic
+    - content: You know the ray of frost cantrip. Wisdom is your spellcasting ability for it.
+    - title: Snow Elf Weapon Training
+    - content: You are proficient with the greatsword, longsword, pike, and war pick
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater       
 
-    special-abilities:
-       - Proficiencies: Sleight-of-Hand, History, Stealth, Local Law
-         Feats: N/A
-
-    attacks: |
-      1 attack with dagger
-    combat-tactics: |
-      Will only fight if he has to, and will try to sneak attack whenever possible
-    special-equipment:
-    - - A pouch hidden under the wooden sidewalk containing 17sp, 3gp, and a worn old love letter to a woman torn in two.                                                 
+  - title: Attacks
+  - content: 1 attack with dagger
+  - title: Combat Tactics
+  - content: Will only fight if he has to, and will try to sneak attack whenever possible                                                
 
   profile:
 

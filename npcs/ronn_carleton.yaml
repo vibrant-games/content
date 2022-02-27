@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -458,21 +458,42 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-
-    special-abilities:
-    - Proficiencies: Perception, History, Arcana, Medicine, Invesigation
-      Feats: Keen Mind
-    - He is VERY well-read and able to practice just about any 'trade' or 'skill' can train others in just about anything; for the right price.
-    attacks: |
-      1 attack with Unarmed Strike
-    combat-tactics: |
-      Ronn talks down to opponents and avoids combat.
-    special-equipment:
-    - Wondrous Satchel of Libraries: This bag allows its user to pull any 5 books of any topic from it. After 5 books have been pulled the user cannot pull any more until they've returned one after which time they can pull
-                                     another.
-      Bag of Holding: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64
-                      cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action                                               
+    - Teaching
+    proficiencies:
+    - Arcana
+    - Perception
+    - Medicine    
+    - Investigation
+    - History
+  special-abilities:
+  - title: Feats
+  - content: Keen Mind
+  - title: Jack of all Trades
+  - content: He is VERY well-read and able to practice just about any 'trade' or 'skill' 
+  - title: The Great Teacher
+  - content: Ronn can train others in just about anything; for the right price.
+  - title: Attacks
+  - content: 1 attack with Unarmed Strike
+  - title: Combat Tactics
+  - content: Ronn talks down to opponents and avoids combat.
+  
+  - title: Special Equipment
+  - abilities:
+    - title: Wondrous Satchel of Libraries
+    - content: This bag allows its user to pull any 5 books of any topic from it. After 5 books have been pulled the user cannot pull any more until they've returned one after which time they can pull another.
+    - title: Bag of Holding
+    - content: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64
+               cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action                                               
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Champion
+    subclass: Samurai
 
     #
     # Class level.
@@ -329,6 +329,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: xionsyus_clan
       name: Xionsyus Clan
 
@@ -459,34 +460,65 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Half-Orc Abilities:
-      - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-        Menacing: gain proficiency in the Intimidation skill 
-        Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-        Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.
-      Fighter Abilities:
-      - Fighting Style: Two Weapon Fighting
-        Second Wind: Bonus Action to regain 1d10 + 5
-        Action Surge: Once every short/long rest can take an extra action
-        Extra Attack: Can attack twice each turn
-      Samurai Abilities:
-      - Fighting Spirit: your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on all weapon attack rolls until the end of the current turn. When you
-                         do so, you also gain 5 temporary hit points. The number of hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level. You can use this
-                         feature three times. You regain all expended uses of it when you finish a long rest.        
+    saving-throws:
+    - Strength
+    - Constitution
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Importing/Exporting
+    proficiencies:
+    - Martial Weapons
+    - Athletics
+    - History    
+    - Intimidation
+    - Persuasion
+  special-abilities:       
+  - title: Half-Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+    - title: Menacin
+    - content: Gain proficiency in the Intimidation skill 
+    - title: Relentless Endurance
+    - content: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+    - title: Savage Attack
+    - content: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.	
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content:
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+    - title: Extra Attack
+    - content: Can attack twice each turn
+  - title: Samurai Abilities
+  - abilities: 
+    - title: Fighting Spirit
+    - content: Your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on all weapon attack rolls until the end of the current turn. When you 
+               do so, you also gain 5 temporary hit points. The number of hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level. You can use this feature
+               three times. You regain all expended uses of it when you finish a long rest.
+    - title: Elegant Courtier
+    - content: Your discipline and attention to detail allow you to excel in social situations. Whenever you make a Charisma (Persuasion) check, you gain a bonus to the check equal to your Wisdom modifier. Your self-
+               control also causes you to gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).
 
-    special-abilities:
-       - Proficiencies: Martial Weapons, Athletics, History, Persuasion
-         Feats: N/A
+  - title: Attacks
+  - content: 2 attacks with Ko-Naginata
+  - title: Combat Tactics
+  - content: Calm and poised he awaits his combatants moves.
 
-    attacks: |
-      2 attacks with Ko-Naginata
-    combat-tactics: |
-      Calm and poised he awaits his combatants moves.
-    special-equipment:
-    - Ancestors Radiant Ko-Naginata: You can use a bonus action to speak this magic weapon's command word causing a searing light to erupt from the blade. The light glows a deep warm yellow in the center of the blade sharpening
-                                     to a brilliant white at the edge of the blade's cutting surface and sheds bright light in a 40-foot radius and dim light for an additional 40 feet. While the weapon is incandescent it deals
-                                     an extra 2d6 radiant damage to any target it hits. The radiance lasts until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.                                                
+  - title: Special Equipment
+  - abilities:
+    - title: Ancestors Radiant Ko-Naginata
+    - content: You can use a bonus action to speak this magic weapon's command word causing a searing light to erupt from the blade. The light glows a deep warm yellow in the center of the blade sharpening
+               to a brilliant white at the edge of the blade's cutting surface and sheds bright light in a 40-foot radius and dim light for an additional 40 feet. While the weapon is incandescent it deals
+               an extra 2d6 radiant damage to any target it hits. The radiance lasts until you use a bonus action to speak the command word again or until you drop or sheathe the weapon.                                                
 
   profile:
 

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -458,30 +458,49 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Minotaur Abilities:
-      - Horns: Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to ld6 + your Strength modifier, instead of the bludgeoning damage normal for
-               an unarmed strike.
-        Goring Rush: Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action.
-        Hammering Horns: Immediately after you hit a creature with a melee attack as a part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be
-                         within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to
-                         10 feet away from you.
-        Imposing Presence:
-        - Description: You have proficiency in one of the following skills of your choice
-          Additional Infromation:
-          - Intimidation
-          - Persuasion 
-      
-    special-abilities:
-       - Proficiencies: Intimidation, Athletics, Survival
-         Feats: Charger
-       
-    attacks: |
-      1 attack with Unarmed Strike or Horns
-    combat-tactics: |
-      will generally run away from a fight, but will go all in with hoof and horn if he has no other option
-    special-equipment:
+    saving-throws:
+    - Strength
+    - Constitution
+    damage-immunities:
     - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - N/A
+    proficiencies:
+    - Athletics
+    - Survival    
+    - Intimidation
+  special-abilities:       
+  - title: Minotaur Abilities
+  - abilities: 
+    - title: Horns
+    - contnet: Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to ld6 + your Strength modifier, instead of the bludgeoning damage normal for
+               an unarmed strike.
+    - title: Goring Rush
+    - content: Immediately after you use the Dash action on your turn and move at least 20 feet, you can make one melee attack with your horns as a bonus action.
+    - title: Hammering Horns
+    - content: Immediately after you hit a creature with a melee attack as a part of the Attack action on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be
+               within 5 feet of you and no more than one size larger than you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to
+               10 feet away from you.
+    - title: Imposing Presence
+    - content: You have proficiency in one of the following skills of your choice; Intimidation or Persuasion
+    - title: Menacing
+    - content: You gain proficiency in the Intimidation skill.
+    - title: Relentless Endurance
+    - content: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.
+    - title: Savage Attacks
+    - content: When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit
+  - title: Feats
+  - content: Charger
+       
+  - title: Attacks
+  - content: 1 attack with Unarmed Strike or Horns
+  - title: Combat Tactics
+  - content: will generally run away from a fight, but will go all in with hoof and horn if he has no other option
+
 
   profile:
 

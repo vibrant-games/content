@@ -451,7 +451,7 @@ npc:
     str: 20
     dex: 18
     con: 14
-    int: 4
+    int: 6
     wis: 10
     cha: 6
 
@@ -463,28 +463,58 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Dexterity
+    - Constitution
+    damage-immunities:
+    - Poison and Psychic Damage
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Exhaustion, Surprised
+    resistances:
+    - Fire, Lightning
     skills:
-    - Steel Defender Abilities:
-      - Proficiencies: Proficiency Bonus +6 - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
-        Immunities: Immune to Poison and Psychic Damage. Immune to Poison, Charmed and Exhaustion. Resistant to Fire
-        Darkvision: 60ft. Passive Perception 22
-        Vigilant: Can't be surprised
-        Force Empowered Rend: Using a +8 Spellcasting modifier to hit one target within 5ft. Deals 1d8+6 force damage.
-        Repair: (3\Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
-        Extra Attack: Can take a second attack action each turn
-        Deflect Attack: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
-                        The attacker takes 1d4+8 force damage. 
-        Intimidate: It is an imposing sight and all those seeing it for the first time mus make a DC 12 Wisdom save or become firghtened for 1 round                  
+    - Guarding
+    proficiencies:
+    - Athletics
+    - Perception
+  special-abilities:
+  - title: Steel Defender Abilities
+  - abilities: 
+    - title: Proficiencies
+    - content: Proficiency Bonus + - Atheltics +2 plus PB, Perception +0 plus PBx2, Dex Saves +3 plus PB, Con Saves +2 plus PB
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray
+    - title: Passive Perception
+    - content: 22
+    - title: Vigilant
+    - content: Can't be surprised
+    - title: Force Empowered Rend
+    - content: Using a + Spellcasting modifier to hit one target within 5ft. Deals 1d8+PB force damage.
+    - title: Repair
+    - content:(3/Day) Restore 2d8+6 hit points to itself or another object or construct within 5ft
+    - title: Extra Attack
+    - content: Can take a second attack action each turn
+    - title: Deflect Attack
+    - content: Imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it provided that attack roll is against a creature other than it,
+               The attacker takes 1d4+8 force damage. 
+    - title: Intimidate
+    - content: It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round                 
  
-    attacks: |
-      Can attack 2x per round 
-    combat-tactics: |
-      It will attack with its Force Empowered Rend, it's fist in close quarters and its gatling cannon for ranged attacks
-    special-equipment:
-    - Steel Fist: Does 1d8+5 damage
-      Gatling Cannon: Fires multiple shots at a single target doing 7d12 damage on a failed Dex save with DC 16, or do a sweeping attack targetting each creature within 30 feet doing 2d12 on a failed Dex save with DC 16. 
-                      Range 60\240, Heavy, (Two-Handed for anyone but Rosie 198). Can fire 10 bursts before needing to be reloaded. Reloading takes assistance from Oswald Vardklemp and 3 rounds.
-      Jet Pack: (4\Day) Can fly in a single burst of up to 60ft
+  - title: Attacks
+  - content: Can attack 2x per round 
+  - title: Combat Tactics
+  - content: It will attack with its Force Empowered Rend, it's fist in close quarters and its gatling cannon for ranged attacks
+
+  - title: Special Equipment
+  - abilities:
+    - title: Steel Fist
+    - content: Does 1d8+5 damage
+    - title: Gatling Cannon
+    - content: Fires multiple shots at a single target doing 7d12 damage on a failed Dex save with DC 16, or do a sweeping attack targetting each creature within 30 feet doing 2d12 on a failed Dex save with DC 16. 
+               Range 60\240, Heavy, (Two-Handed for anyone but Rosie 198). Can fire 10 bursts before needing to be reloaded. Reloading takes assistance from Oswald Vardklemp and 3 rounds.
+    - title: Jet Pack
+    - content: (4\Day) Can fly in a single burst of up to 60ft
 
   profile:
  

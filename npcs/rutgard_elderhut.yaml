@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: N/A 
+    subclass: Champion 
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 2
+    level: 3
 
     #
     # Alignments (case insensitive):
@@ -327,6 +327,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_red_carnelian_s_gang
       name: The Red Carnelian's Gang
     - id: thieve_s_guild
@@ -462,23 +463,43 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
-    - Fighter Abilities:
-      - Fighting Style:
-        Second Wind: Bonus Action to regain 1d10 + 2 
-        Action Surge: Once every short/long rest can take an extra action    
+    saving-throws:
+    - Strength
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Mining
+    proficiencies:
+    - Athletics
+    - Deception    
+    - Intimidation
+    - Improvised Weapons
+  special-abilities: 
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content: Archery - You gain a +2 bonus to Attack rolls you make with ranged Weapons.
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+  - title: Champion Abilities
+  - abilities: 
+    - title: Improved Critical
+    - content: Your weapon attacks score a critical hit on a roll of 19 or 20    
 
-    special-abilities:
-       - Proficiencies: Athletics, Intimidation, Deception
-         Feats: Tough, Grappler
+  - title: Feats
+  - content: Tough, Grappler, Tavern Brawler
        
-    attacks: |
-      1 attack with long sword or long bow
-    combat-tactics: |
-      Straight ahead with his sword and if he proves outmatched, he'll fall back and use his bow if possible
-    special-equipment:
-    - Long Sword
-    - Long Bow    
+  - title: Attacks
+  - content: 1 attack with long sword or hand crossbow
+  - title: Combat Tactics
+  - content: Straight ahead with his sword and if he proves outmatched, he'll fall back and use his crossbow if possible   
 
   profile:
 

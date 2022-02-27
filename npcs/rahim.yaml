@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_canvaserai_of_mont_ire
       name: The Canvaserai of Mont Ire
 
@@ -460,23 +461,38 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills:       
-    - Halfling Abilities:
-      - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll
-        Brave: Has advantage on Saving Throws against being Frightened 
-        Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-        Naturally Stealthy: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Frightened
+    skills:
+    - N/A
+    proficiencies:
+    - Perception
+    - Insight    
+    - Stealth
+    - Persuasion
+  special-abilities:       
+  - title: Halfling Abilities
+  - abilities: 
+    - title: Lucky
+    - content: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+    - title: Brave
+    - content: Has advantage on Saving Throws against being Frightened 
+    - title: Halfling Nimbleness
+    - content: Can move through the space of any creature that is of a size larger than her
+    - title: Naturally Stealthy
+    - content: You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you
 
-    special-abilities:
-       - Proficiencies: Persuasion, Perception, Insight
-         Feats: N/A
-       
-    attacks: |
-      1 attack with unarmed attack
-    combat-tactics: |
-      Rahim will do whatever he can to avoid a fight
-    special-equipment:
-      - A stellar looking glass signed by the inventor. Rahim sets it up at night in the courtyard for his guests to stargaze
+  - title: Attacks
+  - content: 1 attack with unarmed attack
+  - title: Combat Tactics
+  - content: Rahim will do whatever he can to avoid a fight
 
   profile:
 
