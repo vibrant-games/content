@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: adolescent
+    age: Adolescent
 
     #
     # Races (case insensitive):
@@ -332,6 +332,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: assassins_guild
       name: Assassin's Guild
 
@@ -450,7 +451,7 @@ npc:
     str: 18
     dex: 27
     con: 17
-    int: 15
+    int: 19
     wis: 10
     cha: 10
 
@@ -462,50 +463,96 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Intelligence
+    - Dexterity
+    damage-immunities:
+    - Poison
+    condition-immunities:
+    - Frightened, Charmed, Poisoned
+    resistances:
+    - N/A
     skills:
-    - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-       - Reliable Talent: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
-       - Blindsense: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
-       - Slippery Mind: You gain proficiency in Wisdom Saving Throws
-       - Elusive: No Attack roll has advantage against you while you aren't Incapacitated
+    - Killing
+    proficiencies:
+    - Stealth
+    - Sleight-of-Hand
+    - Survival
+    - Intimidation
+    - Disguise Kit
+    - Poisoner's Kit
+    - Thieve's Tools
+  special-abilities:
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+    - title: Reliable Talent
+    - content: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
+    - title: Blindsense
+    - content: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
+    - title: Slippery Mind
+    - content: You gain proficiency in Wisdom Saving Throws
+    - title: Elusive
+    - content: No Attack roll has advantage against you while you aren't Incapacitated
+  - title: Assassin Abilities
+  - abilities: 
+    - title: Bonus Proficiencies
+    - content: When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.
+    - title: Assassinate
+    - content: You are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a 
+               creature that is surprised is a critical hit.
+    - title: Infiltration Expertise
+    - content: You can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an 
+               identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a 
+               trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you 
+               to be that person until given an obvious reason not to.
+    - title: Impostor
+    - content: You gain the ability to unerringly mimic another person's speech, writing, and behavior. You must spend at least three hours studying these three components of the person's behavior, listening to speech, 
+               examining handwriting, and observing mannerisms. Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make
+               to avoid detection.
+    - title: Death Strike
+    - content: You become a master of instant death. When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed 
+               save, double the damage of your attack against the creature.       
 
-    - Assassin Abilities:
-       - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.
-       - Infiltration Expertise: you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an
-                                 identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a
-                                 trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you
-                                 to be that person until given an obvious reason not to
-       - Imposter: you gain the ability to unerringly mimic another person's speech, writing, and behavior. You must spend at least three hours studying these three components of the person's behavior, listening to speech,
-                   examining handwriting, and observing mannerisms. Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you
-                   make to avoid detection.
-       - Death Strike: When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack
-                       against the creature.       
-               
-    special-abilities:
-       - Proficiencies: Stealth, Sleight-of-Hand, Survival, Disguise Kit, Poisoner's Kit
-       - Feats: Skulker, Dual Weilder, Alert, Observant, Sharpshooter
-       - Curse of the Forgotten: It requires a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to see her and a Wisdom (Perception) check of DC 19 to remember her if they aren't directly looking at her. 
-                                 This ability makes her immune to blindsight and truesight
-         Legendary Resistance: (3/Day), If The Wraith fails a saving throw she can choose to succeed instead 
-         Legendary Actions: The Wraith can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. The Wraith
-                           regains spent Legendary Actions at the start of her turn
-         Assassins Toss: The Wraith can throw one of her daggers at a target, accurately up to 60 feet without penalty
-         Misty Step: The Wraith can cast Misty Step
-         Poison Touch: The Wraith can touch a creature to poison it - Melee Spell Attack; +5 to hit, reach 5 ft., one creature. Hit 10 (2d8) poison damage. The target must succeed on a DC 15 Constitution saving
-                       throw or it is poisoned                                 
+  - title: Feats
+  - content: Skulker, Dual Weilder, Alert, Observant, Sharpshooter
+  - title: Curse of the Forgotten
+  - content: It requires a passive perception of 17 or an active Wisdom (Perception) check of DC 15 to see her and a Wisdom (Perception) check of DC 19 to remember her if they aren't directly looking at her. 
+             This ability makes her immune to blindsight and truesight
+  - title: Legendary Resistance
+  - content: (3/Day), If The Wraith fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions
+  - content: The Wraith can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. The Wraith
+             regains spent Legendary Actions at the start of her turn
+  - abilities:
+    - title: Assassins Toss
+    - content: The Wraith can throw one of her daggers at a target, accurately up to 60 feet without penalty
+    - title: Misty Step
+    - content: The Wraith can cast Misty Step
+    - title: Poison Touch
+    - content: The Wraith can touch a creature to poison it - Melee Spell Attack; +5 to hit, reach 5 ft., one creature. Hit 10 (2d8) poison damage. The target must succeed on a DC 15 Constitution saving
+               throw or it is poisoned                                 
        
-    attacks: |
-      2 attacks with daggers or hand crossbow
-    combat-tactics: |
-      Cold, brutal and efficient, she attacks from and returns to the shadows
-    special-equipment:
-    - 2 Assassins Daggers: +1 bonus to attack and damage rolls. On your first successful attack against an enemy they must make a DC 18 Constitution saving throw, if they fail it they take 2d6 poison damage and are poisoned for
-                           1 minute, however if they succeed the constitution saving throw they are immune to this effect for 24 hours. If the dagger is thrown, she can summon it back to her hand as a bonus action. 
+  - title: Attacks
+  - content: 2 attacks with daggers or hand crossbow
+  - title: Combat Tactics
+  - content: Cold, brutal and efficient, she attacks from and returns to the shadows
+
+  - title: Special Equipment
+  - abilities:
+    - title: 2 Assassins Daggers
+    - content: +1 bonus to attack and damage rolls. On your first successful attack against an enemy they must make a DC 18 Constitution saving throw, if they fail it they take 2d6 poison damage and are poisoned for
+               1 minute, however if they succeed the constitution saving throw they are immune to this effect for 24 hours. If the dagger is thrown, she can summon it back to her hand as a bonus action. 
     
       
   profile:

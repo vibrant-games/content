@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -332,6 +332,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: the_lost_reclusive_abbots_of_iremore
       name: The Lost Reclusive Abbots of Iremore
       role: Marshall Abbot
@@ -466,47 +467,83 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Constitution
+    - Dextrerity
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
+    skills:
+    - Con Artistry
+    proficiencies:
+    - Stealth
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Acrobatics
+    - Athletics
+    - Thieve's Tools
+  special-abilities: 
+  - title: Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Keen Senses
+    - content: You have proficiency in the Perception skill 
+    - title: Trance
+    - content: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+               dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+    - title: Elf Weapon Training
+    - content: You have proficiency with the longsword, shortsword, shortbow, and longbow.
+    - title: Fleet of Foot
+    - content: Your base walking speed increases to 35 feet.
+    - title: Mask of the Wild
+    - content: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+  - title: Thief Abilities
+  - abilities: 
+    - title: Fast Hands
+    - content: You can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
+    - title: Second-Story Work
+    - content: When you choose this archetype at 3rd Level, you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you 
+               cover increases by a number of feet equal to your Dexterity modifier.
+    - title: Supreme Sneak
+    - content: You have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.
 
-    - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-        - Elf Weapon Training: You have proficiency with the longsword, shortsword, shortbow, and longbow.
-        - Fleet of Foot: Your base walking speed increases to 35 feet.
-        - Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena
+  - title: Attacks
+  - content: 1 attacks with bullwhip of entanglement
+  - title: Combat Tactics
+  - content: The Con will engage in combat with a smile, first using his acrobatics to parkour and disorient unsuspecting combatants.
 
-    - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
-       - Evasion: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
-                            
-    - Thief Abilities:
-       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
-       - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to 
-                            your Dexterity modifier.
-       - Supreme Sneak: you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.
-       
-    special-abilities:
-       - Proficiencies: Persuasion, Stealth, Perception, Acrobatics, Athletics, Intimidation, Deception 
-       - Feats: N/A
-       
-    attacks: |
-      1 attacks with bullwhip of entanglement
-    combat-tactics: |
-      The Con will engage in combat with a smile, first using his acrobatics to parkour and disorient unsuspecting combatants.
-    special-equipment:
-    - Bullwhip of Entanglement: 1d6+5 Force Damage. If you hold one end of the whip and use an action to speak its Command Word, the other end darts forward to Entangle a creature you can see within 20 feet of you. The target 
-                                must succeed on a DC 15 Dexterity saving throw or become Restrained. You can release the creature by using a Bonus Action to speak a second Command Word. A target Restrained by the rope can use 
-                                an action to make a DC 15 Strength or Dexterity check (target's choice). On a success, the creature is no longer Restrained by the rope. The rope has AC 20 and 20 Hit Points. It regains 1 hit 
-                                point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 Hit Points, it is destroyed.
-    - Quaals Feather Token: Whip, You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a Bonus Action to make a melee spell Attack
-                            against a creature within 10 feet of the whip, with an Attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage. As a Bonus Action on Your Turn, you can direct the whip to fly up to 20 feet
-                            and repeat the Attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are Incapacitated or die
+  - title: Special Equipment
+  - abilities:
+    - title: Bullwhip of Entanglement
+    - content: 1d6+5 Force Damage. If you hold one end of the whip and use an action to speak its Command Word, the other end darts forward to Entangle a creature you can see within 20 feet of you. The target 
+               must succeed on a DC 15 Dexterity saving throw or become Restrained. You can release the creature by using a Bonus Action to speak a second Command Word. A target Restrained by the rope can use 
+               an action to make a DC 15 Strength or Dexterity check (target's choice). On a success, the creature is no longer Restrained by the rope. The rope has AC 20 and 20 Hit Points. It regains 1 hit 
+               point every 5 minutes as long as it has at least 1 hit point. If the rope drops to 0 Hit Points, it is destroyed.
+    - title: Quaals Feather Token
+    - content: Whip, You can use an action to throw the token to a point within 10 feet of you. The token disappears, and a floating whip takes its place. You can then use a Bonus Action to make a melee spell Attack
+               against a creature within 10 feet of the whip, with an Attack bonus of +9. On a hit, the target takes 1d6 + 5 force damage. As a Bonus Action on Your Turn, you can direct the whip to fly up to 20 feet
+               and repeat the Attack against a creature within 10 feet of it. The whip disappears after 1 hour, when you use an action to dismiss it, or when you are Incapacitated or die
     
     
   profile:

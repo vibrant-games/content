@@ -463,51 +463,151 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    - Dexterity
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Disease, Poison, Death
     skills:
-    - Fighter Abilities:
-       - Fighting Style: Two-Weapon Fighting
-       - Second Wind: Bonus Action to regain 1d10 + Fighter Level
-       - Action Surge: Once every short/long rest can take an extra action
-       - Extra Attack: Can attack twice each turn
-       - Indomitable: Can reroll 1 saving throw per long rest
- 
-    - Battle Master Abilities:
-       - Combat Superiority:
-         - Maneuvers: Ambush, Brace, Menacing Attack, Pushing Attack, Sweeping Attack, Trip Attack
-         - Superiority Dice: 6
-         - Maneuver DC: 18
-       - Student of War: Smith's Tools
-       - Know Your Enemy: DM tells you if someone you have observed for 1 minute outside of combat is your equal
-       - Improves Superiority: Superiority are d10s
-       - Relentless: Regain superiority dice on initiative
+    - N/A
+    proficiencies:
+    - Athletics
+    - Acrobatics
+    - Stealth    
+    - Intimidation
+    - Sleight-of-Hand
+    - Smith's Tools
+  special-abilities:
+  - title: Reborn Abilities
+  - abilities: 
+    - title: Faded Memories 
+    - content: Has no memory of their previous life other than his love and devotion to Anastasia Dumas
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Deathless Nature 
+    - content: Advantage on saving throws against disease and being poisoned and resistance to poison damage
+               Advantage on Death saving throws     
+               Doesn't need to eat, drink or breathe
+               Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
+    - title: Knowledge from a Past Life
+    - content: When making a an ability check that uses a skill, roll a d6 and add it to the check roll. Can use this a number of times equal to proficiency bonus each long rest 
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content: Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 15
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+    - title: Extra Attack
+    - content: Can attack twice each turn
+  - title: Battle Master Abilities
+  - abilities: 
+    - title: Combat Superiority
+    - content: Maneuvers - You learn three maneuvers of your choice. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th 
+                           level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one
+               Ambush - When you make a Dexterity (Stealth) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't incapacitated.
+               Bait and Switch - When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature
+                                 is willing and isn't incapacitated. This movement doesn't provoke opportunity attacks. Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) 
+                                 gains a bonus to AC equal to the number rolled.
+               Brace - When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using
+                       that weapon. If the attack hits, add the superiority die to the weapon's damage roll.
+               Commander's Strike - When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly 
+                                    creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's 
+                                    damage roll.
+               Commanding Presence - When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check, you can expend one superiority die and add the superiority die to the ability check.
+               Disarming Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the 
+                                  superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.
+               Distracting Strike - When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's 
+                                    damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.
+               Evasive Footwork - When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.
+               Feinting Attack - You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll 
+                                 against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll.
+               Goading Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and
+                                the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.
+               Grappling Strike - Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player's Handbook for
+                                  rules on grappling). Add the superiority die to your Strength (Athletics) check.
+               Lunging Attack - When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's 
+                                damage roll.
+               Maneuvering Attack - When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the 
+                                    attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks 
+                                    from the target of your attack.
+               Menacing Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target 
+                                 must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.
+               Parry - When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity 
+                       modifier.
+               Precision Attack - When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before
+                                  any effects of the attack are applied.
+               Pushing Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target
+                                is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.
+               Quick Toss - As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add 
+                            the superiority die to the weapon's damage roll.
+               Rally - On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That 
+                       creature gains temporary hit points equal to the superiority die roll + your Charisma modifier.
+               Riposte - When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die 
+                         to the attack's damage roll.
+               Sweeping Attack - When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of 
+                                 the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of 
+                                 the same type dealt by the original attack.
+               Tactical Assessment - When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check, you can expend one superiority die and add the superiority die to the ability check.
+               Trip Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target 
+                             is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.
+    - title: Superiority Dice
+    - content: You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another 
+               superiority die at 7th level and one more at 15th level.
+    - title: Maneuver DC 20
+    - content: 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice)
+    - title: Student of War
+    - content: You gain proficiency with one type of artisan's tools of your choice
+    - title: Know Your Enemy
+    - content: If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the 
+               creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points, 
+               Total class levels, if any, Fighter class levels, if any
+    - title: Improves Superiority
+    - content: Your superiority dice turn into d10s. At 18th level, they turn into d12s.
+    - title: Relentless
+    - content: When you roll initiative and have no superiority dice remaining, you regain 1 superiority die      
 
-    - Reborn Abilities:
-       - Faded Memories: Has no memory of his previous life other than his love for Anastasia Dumas
-       - Darkvision: can see in dim light within 60ft.
-       - Deathless Nature: 
-         - Advantage on saving throws against disease and being poisoned and resistance to poison damage
-         - Advantage on Death saving throws     
-         - Doesn't need to eat, drink or breathe
-         - Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
-       - Knowledge from a Past Life: When making a an ability check that uses a skill, roll a d6 and add it to the check roll. Can use this a number of times equal to proficiency bonus each long rest      
+  - title: Feats
+  - content: Dual Weilder, Heavy Armor Master, Shadow Touched - Invisibility and Darkness, Skulker, Slasher
+  - title: Legendary Resistance
+  - content: (3/Day), If The Hooded Man fails a saving throw he can choose to succeed instead. The Hooded Man cannot be charmed. 
+  - title: Legendary Actions
+  - content: The Hooded Man can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+             The Hooded Man regains spent Legendary Actions at the start of her turn
+  - abilities:
+    - title: Hood's Intimidation
+    - content: The Hooded Man can moan, causing anyone with 10 feet to make a DC 15 wisdon saving throw or become afraid
+    - title: Hood's Escape
+    - content: The Hooded Man casts Misty Step
+    - title: Hood's Rage
+    - content: The Hooded Man can reroll one damage die and take the highest roll  
+  - title: Attacks
+  - content: He will attack with both blades and use his maneuvers
+  - title: Combat Tactics
+  - content: He will try to take his quarry by surprise and uses his Misty Step ability to remain hidden and move behind opponenets
 
-    special-abilities: 
-       - Feats: Dual Weilder, Heavy Armor Master, Shadow Touched - Invisibility and Darkness, Skulker, Slasher
-       - Legendary Resistance: (3/Day), If The Hooded Man fails a saving throw he can choose to succeed instead. The Hooded Man cannot be charmed. 
-       - Legendary Actions: The Hooded Man can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                            The Hooded Man regains spent Legendary Actions at the start of her turn
-         Hoods Intimidation: The Hooded Man can moan, causing anyone with 10 feet to make a DC 15 wisdon saving throw or become afraid
-         Hoods Escape: The Hooded Man casts Misty Step
-         Hoods Rage: The Hooded Man can reroll one damage die and take the highest roll  
-    attacks: |
-      He will attack with both blades and use his maneuvers
-    combat-tactics: |
-      He will try to take his quarry by surprise and uses his Misty Step ability to remain hidden and move behind opponenets
-    special-equipment:
-    - Blade of Misty Step
-    - Charge Blade
-    - Shadowcloak
-    - Ring of Mind Sheilding    
+  - title: Special Equipment
+  - abilities:
+    - title: Blade of Misty Step
+    - content: You have a +2 bonus to attack and damage rolls made with this magic weapon. This weapon has 3 charges. While wielding it, you can use an bonus action and expend 1 charge to cast the Misty step spell from it. The 
+               weapon regains all expended charges upon a long rest.
+    - title: Charge Blade
+    - content: This blade is imbued with raw magical energy and has 4 charges. When you hit a creature with this sword, as a bonus action, you may spend a charge to make the blade deal 2d6 additional force damage. The sword 
+               regains 1d3 + 1 expended charges daily at dawn.
+    - title: Shadowcloak
+    - content: This black cloak writhes as if it were alive. A shadow cloak grants a +1 deflection bonus to AC. It also gives advantage on Dexterity (Stealth) checks against creatures that rely on sight.
+    - title: Ring of Mind Sheilding
+    - content: While wearing this ring, you are immune to magic that allows other Creatures to read your thoughts, determine whether you are lying, know your Alignment, or know your Creature Type. Creatures can telepathically 
+               communicate with you only if you allow it.
+               You can use an action to cause the ring to become Invisible until you use another action to make it visible, until you remove the ring, or until you die.
+               If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for The Afterlife. As long as your soul is in the ring, you can telepathically 
+               communicate with any creature wearing it. A wearer can't prevent this Telepathic Communication.    
     
   profile:
 

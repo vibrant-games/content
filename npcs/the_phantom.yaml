@@ -469,113 +469,273 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - Radiant Damage
+    condition-immunities:
+    - Charmed, Stunned, Poisoned, Diseased
+    resistances:
+    - Necrotic Damage
     skills:
-          
-    - Dragonborn Abilities:
-       - Draconic Ancestry: He is decended from Crystal Dragons but is also a Revenant
-       - Breath Weapon: Is capable of using either of his breathe weapons once per short rest. Either a 5'x30' Line requiring a (Dex Save DC18) of Radiant or a 15' Cone (Con Save DC18) of Necrotic Energy. 
-                        On a failed save from his radiant breath the victim is blinded for 1d6 rounds
-       - Damage Resistance: Immune to Radiant damage and Resistance to Necrotic damage
-       - Psionic Mind: Can telepathically speak to any creature within 30 feet
-       - Gem Flight: Once per long rest as a bonus action can summon crystal wings for 1 minute that allow him to fly or hover in place      
-
-    - Revenant Abilities:
-       - Relentless Nature: 
-         - Regains 1HP at the beginning of each turn if below half maximum HP
-         - If he dies, he returns to life 24hrs after death. If his body is destroyed he will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
-         - Knows the distance and direction between him and the creature involved in his goal unless they are on another plane       
-      
-    - Cleric Abilities:
-       - Spellcasting: DC22
-         Cantrips: Guidance, Light, Resistance, Sacred Flame, Thaumaturgy
-         1st Level: Healing Word, Command, Bless, Inflict Wounds
-         2nd Level: Lesser Restoration, Blindness/Deafness, Prayer of Healing
-         3rd Level: Mass Healing Word, Speak with Dead, Dispel Magic
-         4th Level: Banishment, Locate Creature, Divination
-         5th Level: Hallow, Greater Restoration, Dispel Evil
-         6th Level: Heal, True Seeing
-         7th Level: Divine Word, Resurrection
-         8th Level: Anti-magic Field
-         9th Level: Mass Heal
-       - Channel Divinity: Turn Undead, Destroy Undead, Path to the Grave 
-       - Divine Intervention: Can call her patron to intervene on her behalf
-
-    - Grave Domain Abilities:
-       - Circle of Mortality:  When rolling to restore hit points with a spell to creatue with 0hp, they gain the maximum hit point possible for the spell. Can cast the Spare the Dying cantrip
-       - Eyes of the Grave: Can magically detect undead within 60' eight times per long rest.
-       - Path to the Grave: Can curse one creature within 30". The next time an ally hits the cursed target with an attack, the target has vulnerability to all of that attack's damage,
-       - Sentinel at Deaths Door: 6 times per long rest, can use a reaction to cancel a critial hit on an ally within 30'
-       - Potent Spellcaster: All cleric cantrips cause an extra 8 damage
-       - Keeper of Souls: Once per turn, when an enemy within 30' dies, he or an ally of his choice within 30' regains hit point equal to the enemy's hit dice       
-       - Spellcasting:
-         Cantrips: Toll The Dead
-         1st Level: Bane, False Life
-         3rd Level: Gentle Repose, Ray of Enfeeblement
-         5th Level: Revivify, Vampiric Touch
-         7th Level: Blight, Death Ward
-         9th Level: Antilife Shell, Raise Dead
-         
-    - Paladin Abilities:
-       - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                       within the same radius. Can use this ability 5x per long rest
-       - Lay on Hands: Can touch another creature to heal up to 100HP per long rest. Or can 5HP to cure a disease or poison affecting it.
-       - Fighting Style: Protection - Can impose disadvantage on attacks again other creatures with 5 feet 
-       - Divine Smite: Melee weapon attacks deal an additional 5d8 radiant damage, or 6d8 versus undead or fiends 
-       - Divine Health: Immune to disease
-       - Extra Attack: Can take and extra attack action each turn
-       - Aura of Protection: When he or friendly creatures within 30 feet must make a saving throw, they get a +5 bonus to their roll
-       - Aura of Courage: He and friendly creatures within 30 feet can't be frightened while he is conscious
-       - Cleansing Touch: 5x per long rest can use an action to touch a creature to end one spell on himself or a willing creature he touches       
-       - Spellcasting: DC19
-         1st Level: Bless, Command, Cure Wounds, Shield of Faith
-         2nd Level: Aid, Branding Smite, Zone of Truth
-         3rd Level: Magic Circle, Revivify, Remove Curse
-         4th Level: Banishment, Locate Creature
-         5th Level: Dispel Evil and Good, Raise Dead
-
-    - Oath of Redemption Abilities: 
-       - Spellcasting:
-         3rd Level: Sanctuary, Sleep
-         5th Level: Calm Emotions, Hold Person
-         9th Level: Counterspell, Hypnotic Pattern
-         13th Level: Resilient Sphere, Stoneskin
-         17th Level: Hold Monster, Wall of Force
-       - Channel Divinity: 
-         - Emissary of Peace: As a bonus action can grant himself a +5 bonus to Persuasion checks for 10 minutes
-         - Rebuke the Violent: After an attacker within 30 feet of him deals damage to with an attack against another creature, can force it to make a Wisdom save, on a failed save the attacking creature takes radiant 
-                               damage equal to the damage it dealt or half that much on a successful save
-       - Aura of the Guardian: When a creature within 30 feet takes damage, can use a reation to take that damage instead
-       - Protective Spirit: Regains 1d6+10 HP each turn if that turn ends with fewer than half his hit pionts remaining if not incapacitated
-       - Emissary of Redemption: Has resistance to all damage by other creatures. If a creature damages him it takes radiant damage equal to half the amount it dealt. This effect ends if he attacks, casts a spell on or 
-                                 damages that creature in any way until after a long rest
- 
-    special-abilities:
-    - Proficiencies: Athletics, Arcana, History, Investigation, Religion, Animal Handling, Insight, Medicine, Perception, Survival, Intimidation, Persuasion    
-    - Feats: Alert, Crossbow Expert, Defensive Duelist, Dragon Fear, Dragon Hide, Healer, Heavy Armor Master, Inspiring Leader, Keen Mind, Mage Slayer, Mounted Combatant, Observant, Sentinel, Shield Master, War Caster, 
+    - Leatherworking
+    proficiencies:
+    - Athletics
+    - Arcana
+    - History
+    - Investigation
+    - Religion
+    - Animal Handling
+    - Insight
+    - Medicine
+    - Perception
+    - Survival
+    - Intimidation
+    - Persuasion
+  special-abilities:
+  - title: Gem Dragonborn Abilities
+  - abilities: 
+    - title: Breath Weapon
+    - content: Is capable of using either of his breathe weapons once per short rest. Either a 5'x30' Line requiring a (Dex Save DC18) of Radiant or a 15' Cone (Con Save DC18) of Necrotic Energy. 
+               On a failed save from his radiant breath the victim is blinded for 1d6 rounds. Both breathe weapons deal 5d8 damage, or half damage on a successful save
+    - title: Draconic Resistance
+    - content: Immune to Radiant damage and Resistance to Necrotic damage
+    - title: Psionic Mind
+    - content: You can telepathically speak to any creature you can see within 30 feet of you. You don’t need to share a language with the creature, but the creature must be able to understand at least one language.
+    - title: Gem Flight
+    - content: Starting at 5th level, you can use a bonus action to manifest spectral wings on your body. These wings last for 1 minute. For the duration, you gain a flying speed equal to your walking speed and can hover.
+               Once you use this trait, you can’t do so again until you finish a long rest.               
+  - title: Revenant Abilities
+  - abilities: 
+    - title: Relentless Nature 
+    - content: Regains 1HP at the beginning of each turn if below half maximum HP
+               If he dies, he returns to life 24hrs after death. If his body is destroyed he will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
+               Knows the distance and direction between him and the creature involved in his goal unless they are on another plane       
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 22
+    - title: Cantrips
+    - content: Guidance, Light, Resistance, Sacred Flame, Thaumaturgy
+    - title: 1st Level
+    - content: Healing Word, Command, Bless, Inflict Wounds
+    - title: 2nd Level
+    - content: Lesser Restoration, Blindness/Deafness, Prayer of Healing
+    - title: 3rd Level
+    - content: Mass Healing Word, Speak with Dead, Dispel Magic
+    - title: 4th Level
+    - content: Banishment, Locate Creature, Divination
+    - title: 5th Level
+    - content: Hallow, Greater Restoration, Dispel Evil
+    - title: 6th Level
+    - content: Heal, True Seeing
+    - title: 7th Level
+    - cotntent: Divine Word, Resurrection
+    - title: 8th Level
+    - content: Anti-magic Field
+    - title: 9th Level
+    - content: Mass Heal
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.    
+    - title: Divine Intervention
+    - content: Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll 
+               percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. The DM chooses the Nature of the intervention; the Effect of any Cleric spell or Cleric domain spell would be 
+               appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest. At 20th level, your call for intervention succeeds automatically, 
+               no roll required.
+  - title: Grave Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 1st Level
+    - content: Bane, False Life
+    - title: 3rd Level
+    - content: Gentle Repose, Ray of Enfeeblement
+    - title: 5th Level
+    - content: Revivify, Vampiric Touch
+    - title: 7th Level
+    - content: Blight, Death Ward 
+    - title: 9th Level
+    - content: Antilife Shell, Raise Dead
+    - title: Circle of Mortality
+    - content: You gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use 
+               the highest number possible for each die. In addition, you learn the Spare the Dying cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet, 
+               and you can cast it as a bonus action.   
+    - title: Eyes of the Grave
+    - content: You gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. 
+               Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you 
+               anything about a creature's capabilities or identity. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long 
+               rest.
+    - title: Channel Divinity - Path to the Grave
+    - content: You can use your Channel Divinity to mark another creature’s life force for termination. As an action, you choose one creature you can see within 30 feet of you, cursing it until 
+               the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the
+               curse ends.
+    - title: Sentinel at Deaths Door
+    - content: You gain the ability to impede death’s progress. As a reaction when you or an ally that you can see within 30 feet of you suffers a critical hit, you can turn that attack into a normal hit. Any 
+               effects triggered by a critical hit are canceled. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long 
+               rest.
+    - title: Potent Spellcasting
+    - content: You add your Wisdom modifier to the damage you deal with any cleric cantrip.
+    - title: Keeper of Souls
+    - content: You can seize a trace of vitality from a parting soul and use it to heal the living. When an enemy you can see dies within 30 feet of you, you or one ally of your choice that is within 30 feet of you 
+               regains hit points equal to the enemy’s number of Hit Dice. You can use this feature only if you aren't incapacitated. Once you use it, you can't do so again until the start of your next turn.
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability x per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: Protection - When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your Reaction to impose disadvantage on the Attack roll. You must be wielding a Shield.
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+    - title: Aura of Protection
+    - content: When he or friendly creatures within x feet must make a saving throw, they get a +x bonus to their roll
+    - title: Aura of Courage
+    - content: He and friendly creatures within x feet can't be frightened while he is conscious
+    - title: Cleansing Touch
+    - content: x times per long rest can use an action to touch a creature to end one spell on himself or a willing creature he touches       
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 19
+    - title: 1st Level
+    - content: Bless, Command, Cure Wounds, Shield of Faith
+    - title: 2nd Level
+    - content: Aid, Branding Smite, Zone of Truth
+    - title: 3rd Level
+    - content: Magic Circle, Revivify, Remove Curse
+    - title: 4th Level
+    - content: Banishment, Locate Creature
+    - title: 5th Level
+    - content: Dispel Evil and Good, Raise Dead
+  - title: Oath of Redemption Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 19
+    - title: 3rd Level
+    - content: Sanctuary, Sleep
+    - title: 5th Level
+    - content: Calm Emotions, Hold Person
+    - title: 9th Level
+    - content: Counterspell, Hypnotic Pattern
+    - title: 13th Level
+    - content: Resilient Sphere, Stoneskin
+    - title: 17th Level
+    - content: Hold Monster, Wall of Force
+    - title: Channel Divinity - Emissary of Peace
+    - content: You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.
+    - title: Channe; Divnity - Rebuke the Violent
+    - content: You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use 
+               your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage.
+    - title: Aura of the Guardian
+    - content: You can shield your allies from harm at the cost of your own health. When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that 
+               creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way. At 18th level, the range of this aura increases to 
+               30 feet.
+    - title: Protective Spirit
+    - content: A holy presence mends your wounds in combat. You regain hit points equal to 1d6 + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you 
+               aren’t incapacitated.
+    - title: Emissary of Redemption
+    - content: You become an avatar of peace, which gives you the following benefits;
+               You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).
+               Whenever a creature damages you, it takes radiant damage equal to half the amount it dealt to you.
+               If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest.
+   
+  - title: Feats
+  - content: Alert, Crossbow Expert, Defensive Duelist, Dragon Fear, Dragon Hide, Healer, Heavy Armor Master, Inspiring Leader, Keen Mind, Mage Slayer, Mounted Combatant, Observant, Sentinel, Shield Master, War Caster, 
              Weapon Master - Longsword, Lance, Spear, Longbow.
-    - Legendary Resistance: (3/Day), If The Phantom fails a saving throw he can choose to succeed instead 
-    - Legendary Actions: The Phantom can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         The Phantom regains spent Legendary Actions at the start of his turn
-      Lords Light: The Phantom can emit a blast of radiant energy in a 100 foot radius that deals 3d10 radiant damage to any fiends, undead or creatures that have dealt him or creatures he considers damage in this combat 
-      Selfcare: The Phantom can heal himself for 3d10 HP
-      Lords Fury: The Phantom can make a melee attack. If this attack deals damage to a creature, that creature must make a Strength Saving Throw DC25 or be knocked prone    
+  - title: Legendary Resistance
+  - content: (3/Day), If The Phantom fails a saving throw he can choose to succeed instead 
+  - title: Legendary Actions
+  - content: The Phantom can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+             The Phantom regains spent Legendary Actions at the start of his turn
+  - abilities:
+    - title: Lords Light
+    - content: The Phantom can emit a blast of radiant energy in a 100 foot radius that deals 3d10 radiant damage to any fiends, undead or creatures that have dealt him or creatures he considers damage in this combat 
+    - title: Selfcare
+    - content: The Phantom can heal himself for 3d10 HP
+    - title: Lords Fury
+    - content: The Phantom can make a melee attack. If this attack deals damage to a creature, that creature must make a Strength Saving Throw DC25 or be knocked prone    
     
-    attacks: |
-      has 2 attacks
-    combat-tactics: |
-      Will do whatever he possibly can not to fight unless facing undead or fiends. If his hand is forced its going to get ugly fast for whoever forced it
-    special-equipment:
-    - Holy Avenger Longsword
-    - Angelic Longbow, 10 Sunmote Arrows, 10 Light Arrows
-    - Champion's Lance
-    - Windvane Spear
-    - 2x +2 Daggers    
-    - Animated Shield
-    - Bag of Holding
-    - Angelic Plate Mail
-    - Helm of Brilliance
-    - Arthon, Noble Warhorse
-    - Dead Hunter's Headquarters
+  - title: Attacks
+  - content: has 2 attacks
+  - title: Combat Tactics
+  - content: Will do whatever he possibly can not to fight unless facing undead or fiends. If his hand is forced its going to get ugly fast for whoever forced it
+
+  - title: Special Equipment
+  - abilities:
+    - title: Holy Avenger Longsword
+             You gain a +3 bonus to Attack and Damage Rolls made with this Magic Weapon. When you hit a fiend or an Undead with it, that creature takes an extra 2d10 radiant damage. While you hold the drawn sword, it creates an aura in
+             a 10-foot radius around you. You and all Creatures friendly to you in the aura have advantage on Saving Throws against Spells and other magical Effects. If you have 17 or more levels in the Paladin class, the radius of the
+             aura increases to 30 feet.
+    - title: Angelic Longbow
+    - content: You gain a +2 bonus to attack and damage rolls made with this weapon. An angelic bow has 3 charges. When you hit a creature you can expend a charge to deal an additional 1d10 fire, lightning, or radiant damage. 
+               The bow regains 1d3 charges daily at dawn. If you hit a fiend or undead with the angelic bow, it deals an additional 1d10 radiant damage
+    - title: 10 Sunmote Arrows
+    - content: This magical arrow deals an additional 2d6 radiant damage when it hits. The target rolls a DC 14 Constitution saving throw; on a failure, they are blinded until the beginning of your next turn. This arrow 
+               disappears when used and reappears in your quiver, or otherwise in your possession if you have no quiver, the next morning at dawn.
+    - title: 10 Light Arrows
+    - content: Once this arrow is drawn, you can use your bonus action to focus on the arrow, causing it to brightly glow a golden color. Before the start of your next turn, you can shoot this arrow in place of a normal attack. 
+               You do not make an attack roll with this arrow. Instead, all creatures in a 5-foot-wide line extending from you to the longest range of your weapon must succeed on a DC 19 saving throw or take 2d10 piercing damage
+               and 10d10 radiant damage. If there is only one creature in this line and it is within your weapon's normal range, that creature has disadvantage on this saving throw. If an undead, a fiend, or creature that is 
+               vulnerable to radiant damage fails this saving throw, it is paralyzed until the end of its next turn.
+    - title: Champion's Lance
+    - content: The Champion's Lance resembles a very long lance of oak carved with spirals in such a way that the wood looks to almost have naturally grown this way. Upon attuning with it the lance is nearly weightless in hand. 
+               You have a +2 bonus to attack and damage rolls made with this magic weapon.
+               Long Reach - The champion's lance has an increased reach of 10 feet. But, due to its massive size, you can only attack with this lance once per turn. You have disadvantage when you use a lance to attack a target 
+                            within 5 feet of you.
+               Champion's Flurry - If the attuned wielder of the champion lance has an extra attack feature, they add an additional 1d12 damage to the lance's damage rolls for each number of additional attacks they can make. So,
+                          a 5th level fighter can add a 1d12 to the champion lance's damage, whereas an 11th level fighter can add 2d12.
+               Single Striker - Once the lance makes a successful attack, the tip breaks off and all subsequent attacks made with the lance are at a disadvantage. The lance regrows its potency after the course of a long rest.  
+               Riding Shift - If you successfully hit a creature with the lance while mounted, you may use your bonus action to move on your mount a distance up to half your mount's speed in any direction without provoking 
+                              opportunity attacks.
+    - title: 2x +2 Daggers
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.  
+    - title: Animated Shield
+    - content: While holding this Shield, you can speak its Command word as a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your 
+               hands free. The Shield remains animated for 1 minute, until you use a Bonus Action to end this Effect, or until you are Incapacitated or die, at which point the Shield falls to the ground or into your hand if you
+               have one free.
+    - title: Bag of Holding
+    - content: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. 
+               The bag weighs 15 pounds, regardless of its Contents. Retrieving an item from the bag requires an action.
+    - title: Angelic Plate Mail
+    - content: While wearing this armor, you gain a +2 bonus to AC, you have advantage on all saving throws against effects caused by fiends, and it creates an aura in a 5-foot radius around you. Fiends in the aura have 
+               disadvantage on saving throws.
+    - title: Helm of Brilliance
+    - content: This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from The Helm crumbles to dust. When all the gems are removed or destroyed, The Helm loses its magic.
+               You gain the following benefits while wearing it
+               You can use an action to cast one of the following Spells (save DC 18), using one of the helm's gems of the specified type as a component - Daylight (opal), Fireball (fire opal), Prismatic Spray (diamond), or Wall
+               of Fire (ruby). The gem is destroyed when the spell is cast and disappears from The Helm.
+               As long as it has at least one Diamond, The Helm emits dim light in a 30-foot radius when at least one Undead is within that area. Any Undead that starts its turn in that area takes 1d6 radiant damage.
+               As long as The Helm has at least one ruby, you have Resistance to fire damage.
+               As long as The Helm has at least one fire opal, you can use an action and speak a Command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim 
+               light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an Attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a 
+               Bonus Action to speak the Command word again or until you drop or stow the weapon.
+               Roll a d20 if you are wearing The Helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, The Helm emits beams of light from its remaining gems. Each creature within 60 
+               feet of The Helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in The Helm. The Helm and its gems are then destroyed.
+    - title: Arthon, Noble Warhorse
+    - content: see profile for Arthon, Noble Warhorse
+    - title: Dead Hunter's Headquarters
+    - content: The Dead Hunter's Headquarters is located in an excavated crypt of a small church.
 
     
   profile:
