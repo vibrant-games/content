@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 2
+    level: 3
 
     #
     # Alignments (case insensitive):
@@ -330,6 +330,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: order_of_selune_any_good_moon_god_
       name: Order of Selune [Any Good Moon God]
 
@@ -465,39 +466,70 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - gravekeeping
+    proficiencies:
+    - Arcana
+    - Medicine
+    - History - Funeral Rites
+    - Religion - Funeral Rites    
+    - Gravekeeping Tools
+  special-abilities:: 
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 13
+    - title: Cantrips
+    - content: Guidance, Decompose, Toll the Dead
+    - title: 1st Level
+    - content: Guiding Bolt, Cure Wounds, Sanctuary, Create or Destroy Water
+    - title: 2nd Level
+    - content: Calm Emotions, Lesser Restoration    
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action. 
+  - title: Grave Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 13
+    - title: 1st Level
+    - content: Bane, False Life
+    - title: 3rd Level
+    - title: Circle of Mortality
+    - content: You gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use 
+               the highest number possible for each die. In addition, you learn the Spare the Dying cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet, 
+               and you can cast it as a bonus action.   
+    - title: Eyes of the Grave
+    - content: You gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. 
+               Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you 
+               anything about a creature's capabilities or identity. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long 
+               rest.
+    - title: Channel Divinity - Path to the Grave
+    - content: You can use your Channel Divinity to mark another creature’s life force for termination. As an action, you choose one creature you can see within 30 feet of you, cursing it until 
+               the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the
+               curse ends.
 
-    - Cleric Abilities:
-       - Spellcasting: Spell DC 13
-         Cantrips: Guidance, Decompose, Toll the Dead
-         1st Level: Guiding Bolt, Cure Wounds, Sanctuary 
-       - Channel Divinity: Turn Undead, Destroy Undead 
-       
-    - Grave Domain Abilities:
-       - Spellcasting: Spell DC 13
-         1st Level: Bane, False Life 
-       - Circle of Mortality: you gain the ability to manipulate the line between life and death. When you would normally roll one or more dice to restore hit points with a spell to a creature at 0 hit points, you instead use 
-                              the highest number possible for each die. In addition, you learn the Spare the Dying cantrip, which doesn't count against the number of cleric cantrips you know. For you, it has a range of 30 feet, 
-                              and you can cast it as a bonus action  
-       - Eyes of the Grave: you gain the ability to occasionally sense the presence of the undead, whose existence is an insult to the natural cycle of life. As an action, you can open your awareness to magically detect undead. 
-                            Until the end of your next turn, you know the location of any undead within 60 feet of you that isn't behind total cover and that isn't protected from divination magic. This sense doesn't tell you 
-                            anything about a creature's capabilities or identity. You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long 
-                            rest.  
-       - Channel Divinity: Path to the Grave - you can use your Channel Divinity to mark another creature’s life force for termination. As an action, you choose one creature you can see within 30 feet of you, cursing it until
-                           the end of your next turn. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends. 
-       
-    special-abilities:
-       - Proficiencies: Medicine, Insight, History, Gravekeeping and Embalming Tools
-       - Feats: N/A
-       
-    attacks: |
-      1 attacks with club or spell attack
-    combat-tactics: |
-      Tristeth will, more often than not, flee combat. Should that not be an option he will face-off with the weakest opponent possible.
-    special-equipment:
-    - Club
-    - Gravedigger's Tools
-    
+  - title: Attacks
+  - content: 1 attacks with club or spell attack
+  - title: Combat Tactics
+  - content: Tristeth will, more often than not, flee combat. Should that not be an option he will face-off with the weakest opponent possible.
+
     
   profile:
 

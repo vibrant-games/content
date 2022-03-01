@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -332,6 +332,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: golgari_guild
       name: Golgari Guild
     - id: devkarin_tribe
@@ -467,73 +468,126 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Constitution
+    - Intelligence
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed, Poison, Disease, Necrotic Damage
+    skills:
+    - Guiding/Scouting
+    proficiencies:
+    - Survival
+    - Stealth
+    - Perception    
+    - Animal Handling
+    - Nature
+    - Thieve's Tools
+  special-abilities: 
+  - title: Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
+    - title: Keen Senses
+    - content: You have proficiency in the Perception skill 
+    - title: Trance
+    - content: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
+               dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
+  - title: Devkarin Abilities
+  - abilities:
+    - title: Undercity Dweller
+    - content: Devkarin gain advantage on History and Survival checks made underground.
+    - title: Plagueborn
+    - content: Resistant to Poison and Disease. Advantage on Constitution Saving Throws
+    - title: Weapon Proficiency
+    - content: Devkarin are naturally proficient with the Longsword, Longbow, Composite longbow, shortbow, composite shortbow, and Razor bow       
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
+  - title: Scout Abilities
+  - abilities: 
+    - title: Skirmisher
+    - content: You can move half her speed as a reaction when an enemy ends a turn within 5 feet of her. this movement does not provoke an opportunity attack          
+    - title: Survivalist
+    - content: Double proficiency bonus on Nature and Survival checks
+  - title: Druid Abilities
+  - abilities:
+  - title: Druid Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 16
+    - title: Cantrips
+    - content: Infestation, Druidcraft, Produce Flame
+    - title: 1st Level
+    - content: Goodberry, Detect Poison and Disease, Entangle, Charm Person
+    - title: 2nd Level
+    - content: Pass Without Trace, Locate Animals or Plant, Locate Object
+    - title: 3rd Level
+    - content: Speak with Plants, Wall of Water, Meld to Stone
+    - title: Druidic
+    - content: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+               message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.
+    - title: Wild Shape
+    - content: You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+               determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+               flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+               You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+  - title: Circle of Spores Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 16
+    - title: 2nd Level
+    - content: Chill Touch
+    - title: 3rd Level
+    - content: Blindness/Deafness, Gentle Repose
+    - title: 5th Level
+    - content: Animate Dead, Gaseous Form
+    - title: Halo of Spores
+    - content: You are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn 
+               there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th 
+               level, 1d8 at 10th level, and 1d10 at 14th level.
+    - title: Symbiotic Entity
+    - content: You gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 
+               temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits;
+               When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.
+               Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit.
+               These benefits last for 10 minutes, until you lose all these temporary hit points. or until you use your Wild Shape again.
+    - title: Fungal Infestation
+    - content: Your spores gain the ability to infest a corpse and animate it. If a beast or a humanoid that is Small or Medium dies within 10 feet of you, you can use your reaction to animate it, causing it to 
+               stand up immediately with 1 hit point. The creature uses the Zombie stat block in the Monster Manual. It remains animate for 1 hour, after which time it collapses and dies. In combat, the zombie's 
+               turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack. You can use this feature a number of times equal to 
+               your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.
+ 
+  - title: Feats
+  - content: Sharpshooter
+       
+  - title: Attacks
+  - content: 1 attacks with Razor Bow or Scimitar
+  - title: Combat Tactics
+  - content: He'll always try to hide in the shadow and attack from a distance with his razor bow
 
-    - Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 120 in dim light as though it was bright light and in darkness as if it was dim light
-        - Keen Senses: You have proficiency in the Perception skill 
-        - Trance: Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such
-                  dreams are actually mental exercises that have become reflexive through years of practice. After Resting in this way, you gain the same benefit that a human does from 8 hours of sleep
-                  
-    - Devkarin Abilities:
-       - Undercity Dweller: Devkarin gain advantage on History and Survival checks made underground.
-       - Plagueborn: Resistant to Poison and Disease. Advantage on Constitution Saving Throws
-       - Weapon Proficiency: Devkarin are naturally proficient with the Longsword, Longbow, Composite longbow, shortbow, composite shortbow, and Razor bow       
-
-    - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-                            
-    - Scout Abilities:
-       - Skirmisher: you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks
-       - Survivalist:  you gain proficiency in the Nature and Survival skills if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
-       
-    - Druid Abilities:
-       - Druidic: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
-                  message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.  
-       - Spellcasting: Spell DC 16
-         Cantrips: Infestation, Druidcraft, Produce Flame
-         1st Level: Goodberry, Detect Poison and Disease, Entangle, Charm Person
-         2nd Level: Pass Without Trace, Locate Animals or Plant, Locate Object
-         3rd Level: Speak with Plants, Wall of Water, Meld to Stone
-       - Wild Shape: you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
-                     determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
-                     flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
-                     You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
-                     
-    - Circle of Spores Abilities:
-       - Halo of Spores: you are surrounded by invisible, necrotic spores that are harmless until you unleash them on a creature nearby. When a creature you can see moves into a space within 10 feet of you or starts its turn 
-                         there, you can use your reaction to deal 1d4 necrotic damage to that creature unless it succeeds on a Constitution saving throw against your spell save DC. The necrotic damage increases to 1d6 at 6th
-                         level, 1d8 at 10th level, and 1d10 at 14th level.
-       - Symbiotic Entity: you gain the ability to channel magic into your spores. As an action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 
-                           temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits 
-                           - When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total. 
-                           - Your melee weapon attacks deal an extra 1d6 necrotic damage to any target they hit. 
-                           These benefits last for 10 minutes, until you lose all these temporary hit points. or until you use your Wild Shape again.
-       - Fungal Infestation: your spores gain the ability to infest a corpse and animate it. If a beast or a humanoid that is Small or Medium dies within 10 feet of you, you can use your reaction to animate it, causing it to 
-                             stand up immediately with 1 hit point. The creature uses the Zombie stat block in the Monster Manual. It remains animate for 1 hour, after which time it collapses and dies. In combat, the zombie's 
-                             turn comes immediately after yours. It obeys your mental commands, and the only action it can take is the Attack action, making one melee attack. You can use this feature a number of times equal to 
-                             your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.     
-       - Spellcasting: Spell DC 16 
-         2nd Level: Chill Touch
-         3rd Level: Blindness/Deafness, Gentle Repose
-         5th Level: Animate Dead, Gaseous Form
-       
-    special-abilities:
-       - Proficiencies: Survival, Stealth, Perception, Animal Handling, Nature 
-       - Feats: Sharpshooter
-       
-    attacks: |
-      1 attacks with Razor Bow or Scimitar
-    combat-tactics: |
-      He'll always try to hide in the shadow and attack from a distance with his razor bow
-    special-equipment:
-    - Scimitar
-    - Razor Bow: This bow has 3 charges. You can use a bonus action to expend 1 charge. When you do, the bow forms an aura of razor sharp serrated blades that lasts for 1 minute. When you make a ranged attack roll with this 
-                 weapon while the aura is active, you do not get disadvantage on the attack roll if you are within 5 feet of a hostile creature. The bow regains 1d3 expended charges daily at dawn
+  - title: Special Equipment
+  - abilities:
+    - title: Scimitar +1
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Razor Bow
+    - content: This bow has 3 charges. You can use a bonus action to expend 1 charge. When you do, the bow forms an aura of razor sharp serrated blades that lasts for 1 minute. When you make a ranged attack roll with this 
+               weapon while the aura is active, you do not get disadvantage on the attack roll if you are within 5 feet of a hostile creature. The bow regains 1d3 expended charges daily at dawn
     
     
   profile:

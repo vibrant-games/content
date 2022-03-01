@@ -461,25 +461,36 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Frightened
+    skills:
+    - Leatherworking
+    proficiencies:
+    - Persuasion
+    - History
+  special-abilities:
+  - title: Halfling Abilities
+  - abilities: 
+    - title: Lucky
+    - content: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
+    - title: Brave
+    - content: Has advantage on Saving Throws against being Frightened 
+    - title: Halfling Nimbleness
+    - content: Can move through the space of any creature that is of a size larger than her
+    - title: Stout Resilience
+    - content: You have advantage on saving throws against poison, and you have resistance to poison damage
 
-    - Halfling Abilities:
-       - Lucky: When rolling a 1 on The D20 for an Attack roll, ability check, or saving throw, can reroll the die and must use the new roll           
-       - Brave: Has advantage on Saving Throws against being Frightened 
-       - Halfling Nimbleness: can move through the space of any creature that is of a size larger than her
-       - Stout Resilience: You have advantage on saving throws against poison, and you have resistance to poison damage
-       
-    special-abilities:
-       - Proficiencies: Persuasion, Intimidation, History
-       - Feats: N/A
-       
-    attacks: |
-      1 attacks with dirk or club
-    combat-tactics: |
-      Will rarely initiate combat and will often flee if engaged.
-    special-equipment:
-    - Dirk
-    - Club
+  - title: Attacks
+  - content: 1 attacks with dirk or club
+  - title: Combat Tactics
+  - content: Will rarely initiate combat and will often flee if engaged.
     
     
   profile:

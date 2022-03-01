@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle age adult
+    age: Middle Age Adult
 
     #
     # Races (case insensitive):
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: Half-Wood
+    sub-race: Wood
 
     #
     # Pronouns (case insensitive):
@@ -470,67 +470,167 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Intelligence
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
     skills:
-    - Half-Wood Elf Abilities:
-       - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-       - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-       - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon 
-       - Wood Elf Magic: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15
- 
-    - Artificer Abilities:
-       - Magical Tinkering: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-       - Spellcasting: Requires Tinker's Tools as Spellcasting focus, Spell DC 16
-         Cantrip: Fire Bolt, Mage Hand, Mending
-         1st Level: Disguise Self, Detect Magic, Faerie Fire, Catapult
-         2nd Level: Lesser Restoration, Heat Metal, Enlarge/Reduce
-         3rd Level: Flame Arrow, Haste 
-       - Infuse Item: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately, Can infuse 3 Items  
-       - The Right Tool for the Job: Can produce any set of artisan's tools with 1 hour work
-       - Tool Expertise: Smith's Tool proficiency bonus is doubled
-       - Flash of Genius: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws    
-      
-    - Arterialist Abilities:
-       - Tool Proficiency: Proficiency with Tinker's Tools, Thieve's Tools, and Smith's Tools
-       - Spellcasting: Requires Smith's Tools as Spellcasting focus, Spell DC 16
-         3rd Level: Shield, Thunderwave
-         5th Level: Scorching Ray, Shatter
-         9th Level: Fireball, Wind Wall
-       - Eldritch Cannon: Metalic Magic Cannon centered onihs chest plate with AC18 and 45HP, that he can alternate between a Flamethrower, Force Ballista or Protector Ray 
-       - Arcane Firearm: A metal rod carved with arcane ruins attached to his robotic arm that acts as a focus for Artificer Spells and add 1d8 to damage rolls for those spells  
-       - Explosive Cannon: Add 1d8 his cannon's damage rolls. Can detatch and and detonate his cannon within 60 feet causing 3d8 force damage to each creature within 20 feet on a failed Dex Save  
-
-    - Ranger Abilities:
-       - Favored Enemy: Giants, Monstrosities
-       - Natural Explorer: Favored Terrain - Forest, Swamp
-       - Spellcasting: Spell DC 15
-         1st Level: Animal Friendship, Hunter's Mark, Speak with Animals, Detect Magic
-         2nd Level: Locate Object, Silence
-       - Fighting Style: Archery  
-       - Primal Awareness: Can spend a spell slot to sense the following types of creatures within 1 mile (6 mile in favored terrain) - Aberrations, Celestials, Dragons, Elementals, Fey, Fiends and Undead
-       - Extra Attack: Can take a second attack action each turn
-
-    - Monster Hunter Abilities:
-       - Spellcasting: Spell DC 15
-         3rd Level: Protection from Evil and Good
-         5th Level: Zone of Truth
-       - Hunters Sense: Can look at a creature within 60 feet and know if the creature has any damage immunities, resistances or vulnerabilities
-       - Slayers Prey: Once per short rest can designate a creature as a bonus action and deal 1d6 extra damage to his first weapon attack each turn   
-       - Supernatural Defense: Whenever his Slayer's Prey forces him to make a saving throw or an ability check to escape it grapple, add 1d6 to that roll
-     
-    special-abilities:
-    - Proficiencies: Proficient in Survival, Animal Handling, Stealth, Nature, Insight and Pecerption     
-    - Feats: Alert, Fey Touched, Gunner, Heavy Armor Master, Sharpshooter, War Caster, Wood Elf Magic                    
+    - Biology
+    proficiencies:
+    - Arcana
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Tinker's Tools
+    - Thieve's Tools
+    - Smith's Tools
+  special-abilities:
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon 
+    - title: Wood Elf Magic
+    - content: Once per long rest can cast Guidance, Longstrider and Pass Without Trace without expending a spell slot. Spell DC 15
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 16  
+    - title: Cantrip
+    - content: Fire Bolt, Mage Hand, Mending
+    - title: 1st Level
+    - content: Disguise Self, Detect Magic, Faerie Fire, Catapult
+    - title: 2nd Level
+    - content: Lesser Restoration, Heat Metal, Enlarge/Reduce
+    - title: 3rd Level
+    - content: Flame Arrow, Haste 
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 6
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+    - title: Flash of Genius
+    - contents: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws   
+  - title: Artillerist Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Shield, Thunderwave
+    - title: 5th Level
+    - content: Scortching Ray, Shatter
+    - title: 9th Level
+    - content: Fireball, Wind Wall
+    - title: Tool Proficiency
+    - contnet: You gain proficiency with woodcarver's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice
+    - title: Eldritch Cannon
+    - content: You've learned how to create a magical cannon. Using woodcarver's tools or smith's tools, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a 
+               horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand. Once you create a cannon, you can't do so again until you finish a long rest
+               or until you expend a spell slot to create one. You can have only one cannon at a time and can't create one while your cannon is present. The cannon is a magical object. Regardless of size, the cannon 
+               has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage and psychic damage. If it is forced to make an ability check or a saving throw, treat 
+               all its ability scores as 10 (+0). If the mending spell is cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action. 
+               When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you 
+               can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space,
+               provided it has legs.
+               Flamethrower - The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage
+                              on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried.
+               Force Ballista-  Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature, 
+                                it is pushed up to 5 feet away from the cannon.
+               Protector - The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it a number of temporary hit points equal to 1d8 + your Intelligence 
+                           modifier (minimum of +1).           
+    - title: Arcane Firearm
+    - content: You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand, 
+               staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely. You can use your 
+               arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell's damage rolls equal to the 
+               number rolled.
+    - title: Explosive Cannon
+    - content: every eldritch cannon you create is more destructive
+               The cannon's damage rolls all increase by 1d8.
+               As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw 
+               against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one. 
+  - title: Ranger Abilities
+  - abilities:
+  - title: Ranger Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content: Animal Friendship, Hunter's Mark, Speak with Animals, Detect Magic
+    - title: 2nd Level
+    - content: Locate Object, Silence
+    - title: Favored Enemy - Giants, Monstrosities
+    - content: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
+    - title: Natural Explorer 
+    - content: Favored Terrain - Forest, Swamp
+               Difficult Terrain doesn't slow your group's Travel
+               Your group can't become lost except by magical means
+               Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+               If you are traveling alone, you can move stealthily at a normal pace
+               When you Forage, you find twice as much food as you normally would
+               While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+    - title: Fighting Style
+    - content: Archery - You gain a +2 bonus to attack rolls you make with ranged weapons
+    - title: Primeval Awareness
+    - content: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+               types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+               reveal the creatures' location or number.
+    - title: Extra Attack
+    - content: Can Attack twice, instead of once, whenever she takes the Attack action on her Turn
+  - title: Monster Slayer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 15
+    - title: 3rd Level
+    - content: Protection from Evil and Good 
+    - title: 5th Level
+    - content: Zone of Truth
+    - title: Hunters Sense
+    - content: You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has 
+               any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You 
+               can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest.
+    - title: Slayers Prey
+    - content: You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each 
+               turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different 
+               creature.
+    - title: Supernatural Defense
+    - content: You gain extra resilience against your prey’s assaults on your mind and body. Whenever the target of your Slayer’s Prey forces you to make a saving throw and whenever you make an ability check to 
+               escape that target's grapple, add 1d6 to your roll.
     
-    attacks: |
-      Has 2 attacks which can be any of range weapon attacks or a spell attack
-    combat-tactics: |
-      Won't go out of his way to pick fights, but will fight, preferably at range, if necessary
-    special-equipment:
-    - Half Plate Armor modified to be mobile
-    - Eldritch Cannon
-    - Arcane Firearm
-    - Mechanical Left Arm, Left Leg and Left Half of his Chest
-    - Smith's, Tinker's and Thieves Tools
+  - title: Feats
+  - content: Alert, Fey Touched, Gunner, Heavy Armor Master, Sharpshooter, War Caster, Wood Elf Magic                    
+    
+  - title: Attacks
+  - content: Has 2 attacks which can be any of range weapon attacks or a spell attack
+  - title: Combat Tactics
+  - content: Won't go out of his way to pick fights, but will fight, preferably at range, if necessary
+
+  - title: Special Equipment
+  - abilities:
+    - title: Half Plate Armor modified to be mobile
+    - content: He has a personally modified Plate Armor on the half of his body that has not been replaced with mechanical parts. This armor does not reduce his speed, dexterity or stealt
+    - title: Steambernetics
+    - content: Mechanical Left Arm, Left Leg and Left Half of his Chest that run on a combination of steam powered hydraulics and artificer magic
     
   profile:
 

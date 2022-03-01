@@ -332,6 +332,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: blue_seal_explorers
       name: Blue Seal Explorers
 
@@ -464,59 +465,109 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Constitution
+    - Dexterity
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Acid
+    skills:
+    - Archeology
+    proficiencies:
+    - Arcana
+    - Perception
+    - Insight    
+    - History
+    - Religion
+    - Stealth
+    - Cartography & Navigation Tools
+  special-abilities: 
+  - title: Water Genasi Abilities
+  - abilities: 
+    - title: Acid Resistance
+    - content: You have resistance to acid damage.
+    - title: Amphibious
+    - content: You can breathe air and water.
+    - title: Swim
+    - content: You have a swimming speed of 30 feet.
+    - title: Call to the Wave
+    - content: You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way 
+               when you finish a long rest. Constitution is your spellcasting ability for these spells.
+  - title: Monk Abilities
+  - abilities:
+    - title: Unarmored Defense 
+    - content: When not wearing armor Ac = 10 + Dexterity + Wisdom
+  - title: Martial Arts
+  - abilities:
+    - content: Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+               Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+               When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+  - title: Ki
+  - abilities:  
+    - title: Ki Points
+    - contents: 6
+    - title: Ki DC
+    - contents: 16
+    - title: Flurry of Blows
+    - content: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+    - title: Patient Defense
+    - content: Can spend 1 Ki point to take the Dodge action as a bonus action
+    - title: Step of the Wind
+    - content: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+    - title: Unarmored Movement
+    - content: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+    - title: Deflect Missles
+    - content: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+               free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+    - title: Slow Fall
+    - content: You can use your Reaction when you fall to reduce any Falling damage you take by an amount equal to five times your monk level.
+    - title: Extra Attack
+    - content: Can Attack twice per turn
+    - title: Stunning Strike
+    - content: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+    - title: Ki-Empowered Strike
+    - content: Your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+  - title: Way of Kensei Abilities
+  - abilities: 
+    - title: Path of the Kensei
+    - content: Your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits;
+               Kensei Weapons - Choose two types of weapons to be your kensei weapons; one melee weapon and one ranged weapon. Each of these weapons can be any simple or martial weapon that lacks the heavy and 
+                                special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don't already have it. Weapons of the chosen types are monk weapons for you. 
+                                Many of this tradition's features work only with your kensei weapons. When you reach 6th, 11th, and 17th level in this class, you can choose another type of weapon – either melee or
+                                ranged – to be a kensei weapon for you, following the criteria above. - Longbow, Spear and Javelin
+               Agile Parry - If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus
+                             to AC until the start of your next turn, while the weapon is in your hand and you aren’t incapacitated.
+               Kenseis Shot - You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon
+                              takes an extra 1d4 damage of the weapon’s type. You retain this benefit until the end of the current turn.
+               Way of the Brush - You gain proficiency with your choice of calligrapher's supplies or painter's supplies.
+    - title: One with the Blade
+    - content: You extend your ki into your kensei weapons, granting you the following benefits
+               Magic Kensei Weapons - Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+               Deft Strike - When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature 
+                             only once on each of your turns.
 
-    - Water Genasi Abilities:
-        - Acid Resistance: You have resistance to acid damage.
-        - Amphibious: You can breathe air and water.
-        - Swim: You have a swimming speed of 30 feet.
-        - Call to the Wave: You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way 
-                            when you finish a long rest. Constitution is your spellcasting ability for these spells.
-                            
-    - Monk Abilities:
-       - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-       - Martial Arts:
-          - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-          - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
-          - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-       - Ki: 6 Ki Points, Ki DC= 16
-       - Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-       - Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-          - Step of the Wind:Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
-       - Unarmored Movement: Speed is increased by 25. 
-       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 11. If damaged is reduced to 0, the missle is caught if he has one 
-                          free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-       - Slow Fall: Can us a Reaction to falling damage by by 30hp
-       - Extra Attack: Can Attack twice per turn
-       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-       - Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+  - title: Feats
+  - content: Defensive Duelist, Polearm Master
+  - title: Hidden from Djinns Eyes
+  - content: Thaerus is imperceptible to Djinns unless she directly interacts with them ie. attacks, touches, speaks to them
        
-    - Way of the Kensei Abilities:
-       - Path of the Kensei: your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits
-         Kensei Weapons: Longbow, Spear, Javilin
-         Agile Parry: If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus
-                      to AC until the start of your next turn, while the weapon is in your hand and you aren’t incapacitated.
-         Kenseis Shot: You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon
-                       takes an extra 1d4 damage of the weapon’s type. You retain this benefit until the end of the current turn.
-         Way of the Brush: You gain proficiency with your choice of calligrapher's supplies or painter's supplies.
-       - One with the Blade: you extend your ki into your kensei weapons, granting you the following benefits
-         Magic Kensei Weapons: Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
-         Deft Strike: When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature 
-                      only once on each of your turns.
-       
-    special-abilities:
-       - Proficiencies: Insight, Religion, Acrobatics, Stealth, Perception
-       - Feats: Defensive Duelist, Polearm Master
-       - Hidden from Djinns Eyes: Thaerus is imperceptible to Djinns unless she directly interacts with them ie. attacks, touches, speaks to them
-       
-    attacks: |
-      2 attacks with the piercing end of her spear, once with the blunt end, and twice with low kicks designed to trip humanoid opponent. She will also use her Ki on a flurry of blows attack against strong opponents.
-    combat-tactics: |
-      Although Thaerus tends to engage in melee combat when confronted, she will often opt to throw her javellins from an unseen position if she is initiating combat
-    special-equipment:
-    - Spear of the Stormy Sea: +3 Magic Weapon, 1d6 + 8 (Dex + magic bonus) + 3d4 lightning damage once per day
-    - 4x +3 Javelins
-    - Longbow
+  - title: Attacks
+  - content: 2 attacks with the piercing end of her spear, once with the blunt end, and twice with low kicks designed to trip humanoid opponent. She will also use her Ki on a flurry of blows attack against strong opponents.
+  - title: Combat Tactics
+  - content: Although Thaerus tends to engage in melee combat when confronted, she will often opt to throw her javellins from an unseen position if she is initiating combat
+
+  - title: Special Equipment
+  - abilities:
+    - title: Spear of the Stormy Sea
+    - content: +3 Magic Weapon, 1d6 + 8 (Dex + magic bonus) + 3d4 lightning damage once per day
+    - title: 4x +3 Javelins
+    - content: You have a +3 bonus to Attack and Damage Rolls made with this weapon.
+    - title: +1 Longbow
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
     
     
   profile:

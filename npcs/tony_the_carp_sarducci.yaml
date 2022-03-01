@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -333,6 +333,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: a_thieve_s_assassin_s_guild
       name: A Thieve's/Assassin's Guild
 
@@ -465,30 +466,61 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Constitution
+    - Intelligence
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Appraising
+    proficiencies:
+    - Survival
+    - Stealth
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Perception
+    - Insight
+    - Sleight-of-Hand
+    - Thieve's Tools
+  special-abilities:
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+  - title: Thief Abilities
+  - abilities: 
+    - title: Fast Hands
+    - content: You can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
+    - title: Second-Story Work
+    - content: When you choose this archetype at 3rd Level, you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you 
+               cover increases by a number of feet equal to your Dexterity modifier.
 
-    - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-                            
-    - Thief Abilities:
-       - Fast Hands: you can use the Bonus Action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to Disarm a trap or open a lock, or take the Use an Object action.
-       - Second-Story Work: you gain the ability to climb faster than normal; climbing no longer costs you extra Movement. In addition, when you make a running jump, the distance you cover increases by a number of feet equal to 
-                            your Dexterity modifier.
+  - title: Feats
+  - content: Crossbow Expert
        
-    special-abilities:
-       - Proficiencies: Survival, Stealth, Perception, Persuasion, Intimidation, Thieve's Tools 
-       - Feats: Crossbow Expert
-       
-    attacks: |
-      1 attacks with hand crossbow or club
-    combat-tactics: |
-      Keeps his hand crossbow and club behind the counter at all times. The crossbow is his go to, but hes handy with a club too if needed
-    special-equipment:
-    - Hand Crossbow
-    - Club
-    - His walk-in safe is locked with the Greater Arcane Lock spell which only he knows the password for and both his office and safe are guarded with Alarm spells
+  - title: Attacks
+  - content: 1 attacks with hand crossbow or club
+  - title: Combat Tactics
+  - content: Keeps his hand crossbow and club behind the counter at all times. The crossbow is his go to, but hes handy with a club too if needed
+
+  - title: Special Equipment
+  - abilities:
+    - title: Hand Crossbow +1
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Club +1
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Walk-In Safe
+    - content: His walk-in safe is locked with the Greater Arcane Lock spell which only he knows the password for and both his office and safe are guarded with Alarm spells
     
     
   profile:

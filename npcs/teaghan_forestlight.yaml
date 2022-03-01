@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -332,6 +332,7 @@ npc:
     #
     # Optional.  0 or more.
     #
+    factions:
     - id: local_militia
       name: Local Militia
 
@@ -465,24 +466,39 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Constitution
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Sleep Magic
+    resistances:
+    - Charmed
+    skills:
+    - Provisioner
+    proficiencies:
+    - Perception
+    - History   
+    - Survival
+  special-abilities: 
+  - title: Half-Elf Abilities
+  - abilities: 
+    - title: Fey Ancestry
+    - content: Advantage on saving throws againts charm and immune to sleep magic
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Mask of the Wild
+    - content: Can attempt to hide even when only lightly obscured by natural phenomenon    
 
-    - Half-Elf Abilities:
-        - Fey Ancestry: Advantage on saving throws againts charm and immune to sleep magic
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-        - Mask of the Wild: Can attempt to hide even when only lightly obscured by natural phenomenon     
+  - title: Feats
+  - content: Keen Mind
        
-    special-abilities:
-       - Proficiencies: Perception, History, Survival
-       - Feats: Keen Mind
-       
-    attacks: |
-      1 attacks with shortsword
-    combat-tactics: |
-      If faced with combat, Teaghan envisions it as her opportunity to be recognized as a valuable addition to an adventuring party and dives in headlong; usually to her detriment.
-    special-equipment:
-    - Shortsword
-    
+  - title: Attacks
+  - content: 1 attacks with shortsword
+  - title: Combat Tactics
+  - content: If faced with combat, Teaghan envisions it as her opportunity to be recognized as a valuable addition to an adventuring party and dives in headlong; usually to her detriment.
+
     
   profile:
 

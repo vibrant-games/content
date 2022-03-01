@@ -468,49 +468,131 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Frightened, Charmed, Poisoned, Stunned
+    resistances:
+    - Fire, Poison, Cold, Lightning
     skills:
-    - Fighter Abilities:
-       - Fighting Style: Two-Weapon Fighting
-       - Second Wind: Bonus Action to regain 1d10 + Fighter Level
-       - Action Surge: Once every short/long rest can take an extra action
-       - Extra Attack: Can attack twice each turn
-       - Indomitable: Can reroll 1 saving throw per long rest
+    - Leatherworking
+    proficiencies:
+    - Athletics
+    - Stealth
+    - Deception    
+    - Intimidation
+    - Sleight-of-Hand
+    - Firearms
+    - Thieve's Tools
+    - Disguise Kit
+    - Poisoner's Kit
+  special-abilities:
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content: Archery - You gain a +2 bonus to attack rolls you make with ranged weapons
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 10
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+    - title: Extra Attack
+    - content: Can attack twice each turn
+    - title: Indomitable
+    - content: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.
+  - title: Gunslinger Abilities
+  - abilities: 
+    - title: Firearm Proficiency
+    - content: You gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.
+    - title: Gunsmith
+    - content: You gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and 
+               intricate firearms are only available through crafting.
+               Firearm Properties - Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that 
+                                    property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.
+               Reload - The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.
+               Misfire - Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until 
+                         you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be 
+                         mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.
+               Explosive - Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, 
+                           the ammunition fails to detonate, or bounces away harmlessly before doing so.
+    - title: Adept Marksman
+    - content: You learn to perform powerful Trick Shots to disable or damage your opponents using your firearms. Trick Shots. You learn two trick shots of your choice. Many maneuvers enhance an attack in some way. 
+               Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level.
+               Each time you learn a new trick shot, you can also replace one trick shot you know with a different one.
+               Trick Shots
+               Bullying Shot - You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature. You can expend one grit point while making a Charisma (Intimidation) check to gain advantage on 
+                               the roll.
+               Dazing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw 
+                             or suffer disadvantage on attacks until the end of their next turn.
+               Deadeye Shot - When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.
+               Disarming Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a 
+                                Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you.
+               Forceful Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a 
+                               Strength saving throw or be pushed 15 feet away from you.
+               Piercing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, 
+                               the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment. Only the initial attack 
+                               can misfire.
+               Violent Shot - When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s 
+                              misfire score. If the attack hits, you can roll one additional weapon damage die per grit point spent when determining the damage.
+               Winging Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw 
+                              or be knocked prone.
+    - title: Grit 3
+    - content: You gain a number of grit points equal to your Wisdom modifier (minimum of 1).
+               You regain 1 expended grit point each time you roll a 20 on the d20 roll for an attack with a firearm, or deal a killing blow with a firearm to a creature of significant threat (DM’s discretion). You regain all 
+               expended grit points after a short or long rest. Saving Throws. Some of your trick shots require your targets to make a saving throw to resist the trick shot’s effects. The saving throw DC is calculated 
+               as follows; Trick shot save DC = 16
+    - title: Quickdraw
+    - content: You add your proficiency bonus to your initiative. You can also stow a firearm, then draw another firearm as a single object interaction on your turn.
+    - title: Rapid Repair
+    - content: You learn how to quickly attempt to fix a jammed gun. You can spend a grit point to attempt to repair a misfired (but not broken) firearm as a bonus action 
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+  - title: Assassin Abilities
+  - abilities: 
+    - title: Bonus Proficiencies
+    - content: When you choose this archetype at 3rd level, you gain proficiency with the disguise kit and the poisoner's kit.
+    - title: Assassinate
+    - content: You are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a 
+               creature that is surprised is a critical hit.
+    - title: Infiltration Expertise
+    - content: You can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an 
+               identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a 
+               trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you 
+               to be that person until given an obvious reason not to.       
  
-    - Gunslinger Traits:
-       - Firearm Proficiency: you gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.
-       - Gunsmith: you gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and 
-                   intricate firearms are only available through crafting.
-       - Adept Marksman: you learn to perform powerful trick shots to disable or damage your opponents using your firearms. Grit 3, Saving Throw DC 16
-       - Quickdraw: you add your proficiency bonus to your initiative. You can also stow a firearm, then draw another firearm as a single object interaction on your turn
-       - Rapid Repair: you learn how to quickly attempt to fix a jammed gun. You can spend a grit point to attempt to repair a misfired (but not broken) firearm as a bonus action
-       - Trick Shots: Deadeye Shot, Forceful Shot, Piercing Shot, Violent Shot  
-
-    - Rogue Abilities: 
-       - Sneak Attack: Once per turn she can deal an extra 5d6 damage if she hits an attack with advantage
-       - Cunning Action: Once per turn she can take a bonus action to Dash, Disengage or Hide
-       - Uncanny Dodge: Can use her reaction to halve an attack's damage
-       - Evasion: Dexterity saving throws to take half damage take no damage and failed throws take half damage
-       
-    - Assassin Abilities:
-       - Assassinate: You have advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit
-       - Infiltration: you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can't establish an identity that 
-                       belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and official- looking certification to establish yourself as a member of a trading house from a remote
-                       city so you can insinuate yourself into the company of other wealthy merchants. Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious
-                       reason not to.       
-
-    special-abilities: 
-       - Feats: Dual Weilder, Gunner, Sharpshooter, Shadow Touched - Invisibility and Darkness, Skulker
-       - Legendary Resistance: (1/Day), If Tzipporah Dumas fails a saving throw she can choose to succeed instead. She is Immune to fear
+  - title: Feats
+  - content: Dual Weilder, Gunner, Sharpshooter, Shadow Touched - Invisibility and Darkness, Skulker
+  - title: Legendary Resistance
+  - content: (1/Day), If Tzipporah Dumas fails a saving throw she can choose to succeed instead. She is Immune to fear
   
-    attacks: |
-      Two pistol attacks 
-    combat-tactics: |
-      She will duck for cover and fire from hidden
-    special-equipment:
-    - 2 6-Shot Pistols
-    - Single-Shot Holdout Palm Gun
-    - Cloak of Elvinkind
-    - Ring of Protection    
+  - title: Attacks
+  - content: Two pistol attacks 
+  - title: Combat Tactics
+  - content: She will duck for cover and sneak attack
+
+  - title: Special Equipment
+  - abilities:
+    - title: 2 6-Shot Pistols
+    - content: Damage - 1d10 piercing, Weight - 3 lb., Range - 60/240, Properties - Reload 4, misfire 1
+    - title: Single-Shot Holdout Palm Gun
+    - content: Damage - 1d8 piercing, Weight - 1 lb., Range - 40/160, Properties - Light, reload 1, misfire 1
+    - title: Cloak of Elvinkind
+    - content: While you wear this cloak with its hood up, Wisdom (Perception) checks made to see you have disadvantage. and you have advantage on Dexterity (Stealth) checks made to hide, as the cloak's color shifts to 
+               camouflage you. Pulling the hood up or down requires an action.
+    - title: Ring of Protection +2
+    - content: You gain a +2 bonus to AC and Saving Throws while wearing this ring.    
     
   profile:
 
