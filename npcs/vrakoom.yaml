@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -464,53 +464,109 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Constitution
+    - Strength
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - N/A
+    proficiencies:
+    - Arcana
+    - Perception
+    - Insight    
+    - Medicine
+    - Religion
+    - Survival - Smell
+    - Investigation - Smell
+    - Heavy Armor
+  special-abilities: 
+  - title: Loxodon Abilities
+  - abilities: 
+    - title: Loxodon Serenity
+    - content: You have advantage on saving throws against being charmed or frightened.
+    - title: Natural Armor
+    - content: You have thick, leathery skin. When you aren't wearing armor, your AC is 12 +your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a 
+               lower AC. A shield's benefits apply as normal while you use your natural armor.
+    - title: Trunk
+    - content: You can grasp things with your trunk, and you can use it as a snorkel. lt has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following 
+               simple tasks - lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to 
+               that list of options. Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.
+    - title: Keen Smell
+    - content: Thanks to your sensitive trunk, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 15
+    - title: Cantrips
+    - content: Decompose, Guidance, Light, Spare the Dying, 
+    - title: 1st Level
+    - content: Create/Destroy Water, Detect Evil and Good, Detect Magic, Purify Food and Drink 
+    - title: 2nd Level
+    - content: Calm Emotion, Gentle Repose, Prayer of Healing
+    - title: 3rd Level
+    - content: Mass Healing Word, Dispel Magic, Spirit Guardians
+    - title: 4th Level
+    - content: Arua of Life, Banishment
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.
+  - title: Life Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content: Bless, Cure Wounds
+    - title: 3rd Level
+    - content: Lesser Restoration, Spiritual Weapon
+    - title: 5th Level
+    - content: Beacon of Hope, Revivify
+    - title: 7th Level
+    - content: Death Ward, Guardian of Faith 
+    - title: Bonus Proficiency
+    - content: You gain proficiency with Heavy Armor.
+    - title: Disciple of Life
+    - content: Your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to Restore Hit Points to a creature, the creature regains additional Hit Points equal to 2 + the spell’s level.
+    - title: Channel Divinity - Preserve Life
+    - content: You can use your Channel Divinity to heal the badly injured. As an action, you present your holy Symbol and evoke Healing energy that can restore a number of Hit Points equal to five 
+               times your Cleric level. Choose any creatures within 30 feet of you, and divide those Hit Points among them. This feature can restore a creature to no more than half of its hit point 
+               maximum. You can’t use this feature on an Undead or a Construct.
+    - title: Blessed Healer
+    - content: The Healing Spells you cast on others heal you as well. When you Cast a Spell of 1st level or higher that restores Hit Points to a creature other than you, you regain Hit Points equal to 2 + the spell’s 
+               level.
+    - title: Divine Strike
+    - content: You gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon Attack, you can cause the Attack to deal an extra 1d8 radiant damage
+               to the target. When you reach 14th level, the extra damage increases to 2d8.
 
-    - Loxodon Abilities:
-        - Loxodon Serenity: You have advantage on saving throws against being charmed or frightened.
-        - Natural Armor: You have thick, leathery skin. When you aren't wearing armor, your AC is 12 +your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a 
-                         lower AC. A shield's benefits apply as normal while you use your natural armor.
-        - Trunk: You can grasp things with your trunk, and you can use it as a snorkel. lt has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following 
-                 simple tasks - lift, drop, hold, push, or pull an object or a creature; open or close a door or a container; grapple someone; or make an unarmed strike. Your DM might allow other simple tasks to be added to 
-                 that list of options. Your trunk can't wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.
-        - Keen Smell: Thanks to your sensitive trunk, you have advantage on Wisdom (Perception), Wisdom (Survival), and Intelligence (Investigation) checks that involve smell
+  - title: Feats
+  - content: Great Weapons Master, Healer, Durable, Sentinal, Shield Master
+       
+  - title: Attacks
+  - content: 1 attack with Siege Breaker Great Maul or spell attack
+  - title: Combat Tactics
+  - content: He will fight with his maul, shield and trunk, but he is much more focused on supporting and healing those around him
 
-    - Cleric Abilities:
-       - Spellcasting: Spell DC 15
-         Cantrips: Decompose, Guidance, Light, Spare the Dying, 
-         1st Level: Create/Destroy Water, Detect Evil and Good, Detect Magic, Purify Food and Drink 
-         2nd Level: Calm Emotion, Gentle Repose, Prayer of Healing
-         3rd Level: Mass Healing Word, Dispel Magic, Spirit Guardians
-         4th Level: Arua of Life, Banishment
-       - Channel Divinity: Turn Undead, Destroy Undead
-              
-    - Life Domain Abilities:
-       - Spellcasting: Spell DC 15 
-         1st Level: Bless, Cure Wounds
-         3rd Level: Lesser Restoration, Spiritual Weapon
-         5th Level: Beacon of Hope, Revivify
-         7th Level: Death Ward, Guardian of Faith
-       - Disciple of Life: your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to Restore Hit Points to a creature, the creature regains additional Hit Points equal to 2 + the spell’s level
-       - Channel Divinity: Preserve Life - you can use your Channel Divinity to heal the badly injured. As an action, you present your holy Symbol and evoke Healing energy that can restore a number of Hit Points equal to five 
-                                           times your Cleric level. Choose any creatures within 30 feet of you, and divide those Hit Points among them. This feature can restore a creature to no more than half of its hit point 
-                                           maximum. You can’t use this feature on an Undead or a Construct.
-       - Blessed Healer: the Healing Spells you cast on others heal you as well. When you Cast a Spell of 1st level or higher that restores Hit Points to a creature other than you, you regain Hit Points equal to 2 + the spell’s
-                         level.
-       - Divine Strike: you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon Attack, you can cause the Attack to deal an extra 1d8 radiant damage
-                        to the target. When you reach 14th level, the extra damage increases to 2d8.
-       
-    special-abilities:
-       - Proficiencies: Perception, Insight, Medicine, Arcana, Heavy Armor
-       - Feats: Great Weapons Master, Healer, Durable, Sentinal, Shield Master
-       
-    attacks: |
-      1 attack with Siege Breaker Great Maul or spell attack
-    combat-tactics: |
-      He will fight with his maul, shield and trunk, but he is much more focused on supporting and healing those around him
-    special-equipment:      
-    - Sentinel Shield: While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.
-    - Siege Breaker Maul: +1 bonus to attack and damage rolls made with this magic weapon. In addition, when you hit an object with a siege breaker, you deal an additional 2d4 bludgeoning damage. You also have advantage on 
-                          Strength checks made to break open doors while wielding this weapon    
+  - title: Special Equipment
+  - abilities:
+    - title: Sentinel Shield
+    - content: While holding this shield, you have advantage on initiative rolls and Wisdom (Perception) checks. The shield is emblazoned with a symbol of an eye.
+    - title: Siege Breaker Maul
+    - contnet: +1 bonus to attack and damage rolls made with this magic weapon. In addition, when you hit an object with a siege breaker, you deal an additional 2d4 bludgeoning damage. You also have advantage on 
+               Strength checks made to break open doors while wielding this weapon    
     
     
   profile:

@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -452,7 +452,7 @@ npc:
   stats:
     armour-class: 17
     hit-points: 84
-    speed: 30
+    speed: 30 and 30 Swimming
     str: 19
     dex: 16
     con: 15
@@ -468,59 +468,123 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
     skills:
-    - Hybrid Abilities:
-       - Truesight - Berbalang Eye: Can see in magical Darkness, can see Invisibe things, Automatically saves against Illusions, Can see shapeshifter's true form and can see the Ethereal Plane
-       - Darkvision - Owl Eye: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
-       - Manta Glide - Manta Wings: Subtract up to 100 feet when calculating fall damage. Can glide 2 feet horizontally for evey 1 foot of vertical drop  
-       - Nimble Climb - Spider Skin: Climbing speed of 30 feet
-       - Underwater Adaptaion - Shark Gills: Can breathe air and water. Swim speed
-       - Grappling Appendages - Squid Tentacles: 2 tentacles which can use an action to grapple a creature or can unarmed strike for 1d6+4 and can attempt to grapple immediately after hitting as a bonus action
-       - Carapace - Giant Crab Shell: +1 to AC
-       - Acid Spit - Ankheg Acid Pouches: Twice per long rest, Targets one creature within 30 feet, Target must make a Dex Saving Throw against DC15 or takes 3d10 Damage. 
-       - Poison Sting - Giant Scorpion Tail: A hit does 1d10+2 piercing damage. Then the target must make a DC15 Con Saving Throw or take 4d10 poison damage or half that on a successful save       
+    - Biology
+    proficiencies:
+    - Arcana
+    - Perception
+    - Survival    
+    - Animal Handling
+    - Expertise in Nature
+    - Expertise in Medicine
+    - Investigation
+  special-abilities:
+  - title: Simic Hybrid Abilities
+  - abilities: 
+    - title: Truesight - Berbalang Eye
+    - content: Can see in magical Darkness, can see Invisibe things, Automatically saves against Illusions, Can see shapeshifter's true form and can see the Ethereal Plane
+    - title: Darkvision - Owl Eye
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Manta Glide - Manta Wings
+    - content: Subtract up to 100 feet when calculating fall damage. Can glide 2 feet horizontally for evey 1 foot of vertical drop  
+    - title: Nimble Climb - Spider Skin
+    - content: Climbing speed of 30 feet
+    - title: Underwater Adaptaion - Shark Gills
+    - content: Can breathe air and water. Swim speed 30
+    - title: Grappling Appendages - Squid Tentacles
+    - content: 2 tentacles which can use an action to grapple a creature or can unarmed strike for 1d6+4 and can attempt to grapple immediately after hitting as a bonus action
+    - title: Carapace - Giant Crab Shell
+    - content: +1 to AC
+    - title: Acid Spit - Ankheg Acid Pouches
+    - content: Twice per long rest, Targets one creature within 30 feet, Target must make a Dex Saving Throw against DC15 or takes 3d10 Damage. 
+    - title: Poison Sting - Giant Scorpion Tail
+    - content: A hit does 1d10+2 piercing damage. Then the target must make a DC15 Con Saving Throw or take 4d10 poison damage or half that on a successful save       
  
-    - Wizard Abilities:
-       - Spellcasting: 
-         Cantrips: Chill Touch, Fire Bolt, Ray of Frost, Mage Hand, Minor Illusion
-         1st Level: Burning Hands, Disguise Self, Fog Cloud, Magic Missle
-         2nd Level: Acid Arrow, Alter Self, Web
-         3rd Level: Counterspell, Fireball, Gaseous Form
-         4th Level: Banishment, Black Tentacles, Polymorph
-         5th Level: Cloudkill, Conjure Elemental
-         6th Level: Flesh to Stone
-         7th Level: Reverse Gravity
-        
-    - Spellcasting Ability: 
-       - Ritual Casting: Can ritual cast and spell in spellbook with a ritual tag
-       - Arcane Recovery: After a short rest can recover combined spell slots up to 7
-
-    - School of Transmutation Abilities: 
-       - Transmutation Savant: Gold and Time required to copy Transmutation spells is halved
-       - Minor Alchemy: For each 10 minutes spent performaing procedure, can transform 1 cubic foot of wood, stone, iron, copper or silver into a different one of those materials for 1 hour or concentration
-       - Transmuters Stone: Can spend 8hrs to create a transmuter's Stone which gives a creature; Darkvision, Increase speed of 10 feet, Proficiency on Constitution Saving Throws, or Resistance to acid, cold, 
-                            fire, lightning or thunder damage. The effect can be changed any time a transmutation spell is cast
-       - Shapechanger: Once per short rest can cast Polymorph on themselves changing into a beast with challenge rating 1 or lower
-       - Master Transmuter: Can use all enregy in a Transmuter's Stone to chose; Major Transformation, Panacea, Restore Life or Restore Youth      
-
-    special-abilities:
-    - Proficiencies: Proficient in Survival, Arcana, Animal Handling and Pecerption with expertise in Nature and Medicine     
-    - Feats: Keen Mind, War Caster, Observant, Grappler, Spell Sniper 
-    - Legendary Resistance: (3/Day), If Ulther Hapwath fails a saving throw they can choose to succeed instead 
-    - Legendary Actions: Ulther Hapwath can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
-                         Ulther Hapwath regains spent Legendary Actions at the start of their turn
-      Scorpion Strike: Ulther Hapwath can make an attack with their scorpion sting
-      Spell Sniper: Ulther Hapwath can cast a cantrip
-      Slimy Hugs: Ulther Hapwath can use their squid tentacles to attempt to grapple a creature.                   
+  - title: Wizard Abilities
+  - abilities:
+    - title: Arcane Recovery
+    - content: After a short rest can recover a spell slot up to 7th level 
+  - title: Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 18   
+    - title: Cantrips
+    - content: Chill Touch, Fire Bolt, Ray of Frost, Mage Hand, Minor Illusion
+    - title: 1st Level
+    - content: Burning Hands, Disguise Self, Fog Cloud, Magic Missle
+    - title: 2nd Level
+    - content: Acid Arrow, Alter Self, Web
+    - title: 3rd Level
+    - content: Counterspell, Fireball, Gaseous Form
+    - title: 4th Level
+    - cotnent: Banishment, Black Tentacles, Polymorph
+    - title: 5th Level
+    - content: Cloudkill, Conjure Elemental
+    - title: 6th Level
+    - content: Flesh to Stone
+    - title: 7th Level
+    - content: Reverse Gravity
+    - title: Ritual Casting
+    - content: Can ritual cast and spell in spellbook with a ritual tag
+  - title: School of Transmutation Abilities
+  - abilities: 
+    - title: Transmutation Savant
+    - content: The gold and time you must spend to copy a Transmutation spell into your spellbook is halved.
+    - title: Minor Alchemy
+    - content: When you select this school, you can temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. You perform a special alchemical procedure on one 
+               object composed entirely of wood, stone (but not a gemstone), iron, copper, or silver, transforming it into a different one of those materials. For each 10 minutes you spend performing the procedure, you 
+               can transform up to 1 cubic foot of material. After 1 hour, or until you lose your concentration (as if you were concentrating on a spell), the material reverts to its original substance.
+    - title: Transmuters Stone
+    - content: You can spend 8 hours creating a transmuter's stone that stores transmutation magic. You can benefit from the stone yourself or give it to another creature. A creature gains a benefit of your choice 
+               as long as the stone is in the creature's possession. When you create the stone, choose the benefit from the following options;
+               Darkvision out to a range of 60 feet
+               An increase to speed of 10 feet while the creature is unencumbered
+               Proficiency in Constitution saving throws
+               Resistance to acid, cold, fire, lightning, or thunder damage (your choice whenever you choose this benefit)
+               Each time you cast a transmutation spell of 1st level or higher, you can change the effect of your stone if the stone is on your person. If you create a new transmuter's stone, the previous one ceases
+               to function.
+    - title: Shapechanger
+    - content: You add the Polymorph spell to your spellbook, if it is not there already. You can cast Polymorph without expending a spell slot. When you do so, you can target only yourself and transform into a beast 
+               whose challenge rating is 1 or lower. Once you cast Polymorph in this way, you can't do so again until you finish a short or long rest, though you can still cast it normally using an available spell slot
+    - title: Master Transmuter
+    - content: You can use your action to consume the reserve of transmutation magic stored within your transmuter's stone in a single burst. When you do so, choose one of the following effects. Your transmuter's 
+               stone is destroyed and can't be remade until you finish a long rest.
+               Major Transformation - You can transmute one nonmagical object – no larger than a 5-foot cube – into another nonmagical object of similar size and mass and of equal or lesser value. You must spend 
+                                      10 minutes handling the object to transform it.
+               Panacea - You remove all curses, diseases, and poisons affecting a creature that you touch with the transmuter's stone. The creature also regains all its hit points.
+               Restore Life - You cast the Raise Dead spell on a creature you touch with the transmuter's stone, without expending a spell slot or needing to have the spell in your spellbook.
+               Restore Youth - You touch the transmuter's stone to a willing creature, and that creature's apparent age is reduced by 3d10 years, to a minimum of 13 years. This effect doesn't extend the creature's lifespan.      
     
-    attacks: |
-      Has 3 attacks which can be any of their natural attacks or a spell attack
-    combat-tactics: |
-      Won't go out of their way to pick fights, but is easy to anger and happy to show off their martial and magical prowess.
-    special-equipment:
-    - Transmuters Stone
-    - Medical Kit
-    - Spellbook
+  - title: Feats
+  - content: Keen Mind, War Caster, Observant, Grappler, Spell Sniper 
+  - title: Legendary Resistance
+  - content: (3/Day), If Ulther Hapwath fails a saving throw they can choose to succeed instead 
+  - title: Legendary Actions
+  - content: Ulther Hapwath can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+             Ulther Hapwath regains spent Legendary Actions at the start of their turn
+  - abilities:
+    - title: Scorpion Strike
+    - content: Ulther Hapwath can make an attack with their scorpion sting
+    - title: Spell Sniper
+    - content: Ulther Hapwath can cast a cantrip
+    - title: Slimy Hugs
+    - contents: Ulther Hapwath can use their squid tentacles to attempt to grapple a creature.                   
+    
+  - title: Attacks
+  - content: Has 3 attacks which can be any of their natural attacks or a spell attack
+  - title: Combat Tactics
+  - content: Won't go out of their way to pick fights, but is easy to anger and happy to show off their martial and magical prowess.
+
     
   profile:
 

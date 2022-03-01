@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -463,34 +463,50 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
-
-    - Aarakocra Abilities:
-      - Flight: Flying speed is 50 feet
-      - Talons: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
-
-    - Fighter Abilities:
-         - Fighting Style: Protection
-         - Second Wind: Bonus Action to regain 1d10 + 5
-         - Action Surge: Once every short/long rest can take an extra action
-         - Extra Attack: Can attack twice each turn 
-       
-    - Champion Abilities:
-       - Improved Critical: your weapon attacks score a critical hit on a roll of 19 or 20.
-       
-    special-abilities:
-       - Proficiencies: Medicine, Insight, History, Gravekeeping and Embalming Tools
-       - Feats: N/A
-       
-    attacks: |
-      2 attacks with javelin or talons
-    combat-tactics: |
-      Urreeek is an expert fighter and will not turn away frmo combat
-    special-equipment:
-    - 5x Javelins
-    - Spear
-    - shiny bobbles
-    
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    - Wisdom
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - N/A
+    proficiencies:
+    - Athletics
+    - Acrobatics
+    - Stealth    
+    - Intimidation
+    - Survival
+  special-abilities: 
+  - title: Aarakocra Abilities
+  - abilities: 
+    - title: Flight
+    - content: Flying speed is 50 feet
+    - title: Talons
+    - content: Proficiency in Unarmed Strikes, doing 1d4 slashing damage
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content:
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+    - title: Extra Attack
+    - content: Can attack twice each turn 
+  - title: Champion Abilities
+  - abilities: 
+    - title: Improved Critical
+    - content: Your weapon attacks score a critical hit on a roll of 19 or 20
+  
+  - title: Attacks
+  - content: 2 attacks with javelin or talons
+  - title: Combat Tactics
+  - content: Urreeek is an expert fighter and will not turn away frmo combat
     
   profile:
 

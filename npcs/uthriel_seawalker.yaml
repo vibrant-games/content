@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -465,53 +465,124 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
+    saving-throws:
+    - Constitution
+    - Charisma
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Acid
+    skills:
+    - Sailing
+    proficiencies:
+    - Arcana
+    - History
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Navigation Tools
+  special-abilities:
+  - title: Water Genasi Abilities
+  - abilities: 
+    - title: Acid Resistance
+    - content: You have resistance to acid damage.
+    - title: Amphibious
+    - content: You can breathe air and water.
+    - title: Swim
+    - content: You have a swimming speed of 30 feet.
+    - title: Call to the Wave
+    - content: You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way 
+               when you finish a long rest. Constitution is your spellcasting ability for these spells.
+  - title: Sorcerer Abilities
+  - abilities:
+  - title: Sorcerer Spellcasting
+  - abilities: 
+    - title: Sorcery Points
+    - content: 7
+    - title: Spell DC
+    - content: 16
+    - title: Cantrips
+    - content: Thunderclap, Shape Water, Booming Blade, Ray of Frost, Lightning Lure
+    - title: 1st Level
+    - content: Fog Cloud, Shield, Thunderwave, Magic Missle
+    - title: 2nd Level
+    - content: Misty Step, Mind Thrust, Invisibility
+    - title: 3rd Level
+    - content: Counterspell, Lightning Bolt, Wall of Water
+  - title: MetaMagic
+  - content: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
+  - abilities:
+    - title: Careful Spell
+    - content: When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those 
+               creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.
+    - title: Distant Spell
+    - content: When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.
+               When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.
+    - title: Empowered Spell
+    - content: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.
+               You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.
+    - title: Extended Spell
+    - content: When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.
+    - title: Heightened Spell
+    - content: When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the 
+               spell.
+    - title: Quickened Spell
+    - content: When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.
+    - title: Seeking Spell
+    - content: If you make an attack roll for a spell and miss, you can spend 2 sorcerer points to reroll the d20, and you must use the new roll.
+               You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell.
+               Seeking Spell (UA). When you cast a spell that requires you to make a spell attack roll or that forces a target to make a Dexterity saving throw, you can spend 1 sorcery point to ignore the effects of half- and 
+               three-quarters cover against targets of the spell.
+    - title: Subtle Spell
+    - content: When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.
+    - title: Transmuted Spell
+    - content: When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types - acid, cold, fire, lightning, poison, thunder.
+    - title: Twinned Spell
+    - content: When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell 
+               (1 sorcery point if the spell is a cantrip). To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, Magic Missile and Scorching Ray aren't 
+               eligible, but Ray of Frost and Chromatic Orb are. 
+  - title: Storm Sorcery Abilities
+  - abilities: 
+    - title: Wind Speaker
+    - content: The arcane magic you command is infused with elemental air. You can speak, read, and write Primordial. Knowing this language allows you to understand and be understood by those who speak its dialects; 
+               Aquan, Auran, Ignan, and Terran.
+    - title: Tempestuous Magic
+    - content: You can use a bonus action on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to 
+               fly up to 10 feet without provoking opportunity attacks
+    - title: Heart of the Storm
+    - content: You gain resistance to lightning and thunder damage. In addition, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This 
+               eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to half your sorcerer level.
+    - title: Storm Guide
+    - content: You gain the ability to subtly control the weather around you. If it is raining, you can use an action to cause the rain to stop falling in a 20-foot-radius sphere centered on you. You can end this effect 
+               as a bonus action. If it is windy, you can use a bonus action each round to choose the direction that the wind blows in a 100-foot-radius sphere centered on you. The wind blows in that direction until the 
+               end of your next turn. This feature doesn't alter the speed of the wind.
 
-    - Water Genasi Abilities:
-        - Acid Resistance: You have resistance to acid damage.
-        - Amphibious: You can breathe air and water.
-        - Swim: You have a swimming speed of 30 feet.
-        - Call to the Wave: You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way 
-                            when you finish a long rest. Constitution is your spellcasting ability for these spells.
+  - title: Feats
+  - content: Inspiring Leader
+       
+  - title: Attacks
+  - content: 1 attack with cutlass or spell attack
+  - title: Combat Tactics
+  - content: is always happy to have a go
 
-    - Sorcerer Ability:
-       - Spellcasting: 7 Sorcery Points, Spell DC 16
-         Cantrips: Thunderclap, Shape Water, Booming Blade, Ray of Frost, Lightning Lure
-         1st Level: Fog Cloud, Shield, Thunderwave, Magic Missle
-         2nd Level: Misty Step, Mind Thrust, Invisibility
-         3rd Level: Counterspell, Lightning Bolt, Wall of Water
-       - MetaMagic: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
-         1: Empowered Spell
-         2: Heightened Spell 
-       
-    - Storm Sorcery Abilities:
-      - Wind Speaker: The arcane magic you command is infused with elemental air. You can speak, read, and write Primordial. Knowing this language allows you to understand and be understood by those who speak its dialects;                        Aquan, Auran, Ignan, and Terran.
-      - Tempestuous Magic: you can use a bonus action on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to 
-                           fly up to 10 feet without provoking opportunity attacks
-      - Heart of the Storm: you gain resistance to lightning and thunder damage. In addition, whenever you start casting a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This 
-                            eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to half your sorcerer level.
-      - Storm Guide: you gain the ability to subtly control the weather around you. If it is raining, you can use an action to cause the rain to stop falling in a 20-foot-radius sphere centered on you. You can end this effect 
-                     as a bonus action. If it is windy, you can use a bonus action each round to choose the direction that the wind blows in a 100-foot-radius sphere centered on you. The wind blows in that direction until the 
-                     end of your next turn. This feature doesn't alter the speed of the wind.
-       
-    special-abilities:
-       - Proficiencies: Medicine, Insight, History, Gravekeeping and Embalming Tools
-       - Feats: N/A
-       
-    attacks: |
-      1 attack with cutlass or spell attack
-    combat-tactics: |
-      is always happy to have a go
-    special-equipment:
-    - Cutlass
-    - The Djinn Rummy (Schooner)
-    - Tempest Sails: Wondrous item, very rare (requires attunement)During the day, these sails change color to resemble the current color of the sky. These sails, the mast, and their rigging can’t be damaged by wind of any 
-                     strength. As an action while you are aboard the ship, you can treat the wind in the sails as if it is one degree stronger than it is. Additionally, as an action while you are aboard the ship, you can treat 
-                     the wind in the sails as if it were blowing in the direction of your choice. (That is, you can change either the speed or the direction.)
-    - Ghost-Lantern Bowsprit: Wondrous item, very rare (requires attunement) An antique iron or brass lantern hangs at the end of this bowsprit. When you light the lantern at night, undead creatures that come within 200 feet of 
-                              the bowsprit seem to burn with spectral fire and give off bright light in a 10-foot radius. When your ship would take bludgeoning, piercing, or slashing damage from a nonmagical weapon, you can use 
-                              your reaction to grant the ship resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons until the beginning of your next turn. The ship and all of its crew momentarily seem 
-                              ghostly and translucent. Using this power extinguishes the ghost-lantern and prevents it from being relit until the next dusk.
+  - title: Special Equipment
+  - abilities:
+    - title: +1 Cutlass
+    - content: You have a +1 bonus to Attack and Damage Rolls made with this weapon.
+    - title: The Djinn Rummy
+    - content: Her Schooner which has standard Schooner attributes as per the PHB
+    - title: Tempest Sails
+    - content: Wondrous item, very rare (requires attunement)During the day, these sails change color to resemble the current color of the sky. These sails, the mast, and their rigging can’t be damaged by wind of any 
+               strength. As an action while you are aboard the ship, you can treat the wind in the sails as if it is one degree stronger than it is. Additionally, as an action while you are aboard the ship, you can treat 
+               the wind in the sails as if it were blowing in the direction of your choice. (That is, you can change either the speed or the direction.)
+    - title: Ghost-Lantern Bowsprit
+    - content: Wondrous item, very rare (requires attunement) An antique iron or brass lantern hangs at the end of this bowsprit. When you light the lantern at night, undead creatures that come within 200 feet of 
+               the bowsprit seem to burn with spectral fire and give off bright light in a 10-foot radius. When your ship would take bludgeoning, piercing, or slashing damage from a nonmagical weapon, you can use 
+               your reaction to grant the ship resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons until the beginning of your next turn. The ship and all of its crew momentarily seem 
+               ghostly and translucent. Using this power extinguishes the ghost-lantern and prevents it from being relit until the next dusk.
     
     
   profile:
