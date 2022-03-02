@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -454,8 +454,8 @@ npc:
     dex: 19
     con: 12
     int: 10
-    wis: 18
-    cha: 19
+    wis: 19
+    cha: 18
 
   #
   # Special characteristics.
@@ -465,86 +465,148 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Wisdom
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
+    - N/A
+    proficiencies:
+    - Arcana
+    - Insight
+    - History    
+    - Acrobatics
+    - Medicine
+  special-abilities:
+  - title: Githzerai Abilities
+  - abilities: 
+    - title: Mental Discipline
+    - content: You have advantage on saving throws against the charmed and frightened conditions. Under the tutelage of monastic masters, githzerai learn to govern their own minds
+    - title: Githzerai Psionics
+    - content: You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Shield spell once with this trait, and you regain the
+               ability to do so when you finish a long rest. When you reach 5th level, you can cast the Detect Thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.
+               Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.
+  - title: Cleric Abilities
+  - abilities:
+  - title: Cleric Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 15
+    - title: Cantrips
+    - content: Sacred Flame, Toll the Dead, Guidance, Word of Radiance
+    - title: 1st Level
+    - content: Detect Good and Evil, Detect Magic, Guiding Bolt, Healing Word
+    - title: 2nd Level
+    - content: Calm Emotions, Hold Person, Silence
+    - title: 3rd Level
+    - content: Dispel Magic, Speak with Dead
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.  
+  - title: Life Domain Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content: Bless, Cure Wounds
+    - title: 3rd Level
+    - content: Lesser Restoration, Spiritual Weapon
+    - title: Disciple of Life
+    - content: Your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to Restore Hit Points to a creature, the creature regains additional Hit Points equal to 2 + the spell’s level.
+    - title: Channel Divinity - Preserve Life
+    - content: You can use your Channel Divinity to heal the badly injured. As an action, you present your holy Symbol and evoke Healing energy that can restore a number of Hit Points equal to five 
+               times your Cleric level. Choose any creatures within 30 feet of you, and divide those Hit Points among them. This feature can restore a creature to no more than half of its hit point 
+               maximum. You can’t use this feature on an Undead or a Construct. 
+  - title: Monk Abilities
+  - abilities:
+    - title: Unarmored Defense 
+    - content: When not wearing armor Ac = 10 + Dexterity + Wisdom
+  - title: Martial Arts
+  - abilities:
+    - content: Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
+               Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
+               When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
+  - title: Ki
+  - abilities:  
+    - title: Ki Points
+    - contents: 5
+    - title: Ki DC
+    - contents: 15
+    - title: Flurry of Blows
+    - content: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
+    - title: Patient Defense
+    - content: Can spend 1 Ki point to take the Dodge action as a bonus action
+    - title: Step of the Wind
+    - content: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
+    - title: Unarmored Movement
+    - content: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
+    - title: Deflect Missles
+    - content: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
+               free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
+    - title: Slow Fall
+    - content: You can use your Reaction when you fall to reduce any Falling damage you take by an amount equal to five times your monk level.
+    - title: Extra Attack
+    - content: Can Attack twice per turn
+    - title: Stunning Strike
+    - content: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
+    - title: Ki-Empowered Strike
+    - content: Your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
+  - title: Way of the Astral Self Abilities
+  - abilities: 
+    - title: Arms of the Astral Self
+    - content: Your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of 
+               your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die. For 10 minutes, these spectral arms 
+               hover near your shoulders or surround your arms (your choice). You determine the arms' appearance, and they vanish early if you are incapacitated or die.
+               While the spectral arms are present, you gain the following benefits - 
+               You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws.
+               You can use the spectral arms to make unarmed strikes.
+               When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.
+               The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force.
+    - title: Visage of the Astral Self
+    - content: You can summon the visage of your astral self. As a bonus action, or as part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage 
+               for 10 minutes. It vanishes early if you are incapacitated or die. The spectral visage covers your face like a helmet or mask. You determine its appearance. While the spectral visage is 
+               present, you gain the following benefits.
+               Astral Sight - You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
+               Wisdom of the Spirit - You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
+               Word of the Spirit - When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively,
+                                    you can amplify your voice so that all creatures within 600 feet can hear you.
 
-    - Githzerai Abilities:
-       - Mental Discipline: You have advantage on saving throws against the charmed and frightened conditions. Under the tutelage of monastic masters, githzerai learn to govern their own minds
-       - Githzerai Psionics: You know the Mage Hand cantrip, and the hand is invisible when you cast the cantrip with this trait. When you reach 3rd level, you can cast the Shield spell once with this trait, and you regain the
-                             ability to do so when you finish a long rest. When you reach 5th level, you can cast the Detect Thoughts spell once with this trait, and you regain the ability to do so when you finish a long rest.
-                             Wisdom is your spellcasting ability for these spells. When you cast them with this trait, they don't require components.
-                             
-    - Cleric Abilities:
-       - Spellcasting: Spell DC 15
-         Cantrips: Sacred Flame, Toll the Dead, Guidance, Word of Radiance
-         1st Level: Detect Good and Evil, Detect Magic, Guiding Bolt, Healing Word
-         2nd Level: Calm Emotions, Hold Person, Silence
-         3rd Level: Dispel Magic, Speak with Dead
-       - Channel Divinity: Turn Undead, Destroy Undead 
+  - title: Feats
+  - content: Mobile, Keen Mind, Linguist
        
-    - Life Domain Abilities:
-       - Disciple of Life: your Healing Spells are more effective. Whenever you use a spell of 1st level or higher to Restore Hit Points to a creature, the creature regains additional Hit Points equal to 2 + the spell’s level.
-       - Spellcasting: Spell DC 15
-         1st Level: Bless, Cure Wounds 
-         3rd Level: Lesser Restoration, Spiritual Weapon
-       - Channel Divinity: Preserve Life - you can use your Channel Divinity to heal the badly injured. As an action, you present your holy Symbol and evoke Healing energy that can restore a number of Hit Points equal to five 
-                                           times your Cleric level. Choose any creatures within 30 feet of you, and divide those Hit Points among them. This feature can restore a creature to no more than half of its hit point 
-                                           maximum. You can’t use this feature on an Undead or a Construct 
-       
-    - Monk Abilities:
-       - Unarmored Defense: When not wearing armor Ac = 10 + Dexterity + Wisdom
-       - Martial Arts:
-          - Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-          - Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
-          - When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-       - Ki: 5 Ki Points, Ki DC= 15
-         Flurry of Blows: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-         Patient Defense: Can spend 1 Ki point to take the Dodge action as a bonus action
-         Step of the Wind: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
-       - Unarmored Movement: Speed is increased by 10. Can move along vertical surfaces and across liquids without falling during the move 
-       - Deflect Missles: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-                          free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon       
-       - Slow Fall: Can us a Reaction to falling damage by by 30 hp
-       - Extra Attack: Can Attack twice per turn
-       - Stunning Strike: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-       - Ki-Empowered Strike: your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
-       
-    - Way of the Astral Self Abilities:
-       - Arms of the Astral Self: your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of 
-                                  your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die. For 10 minutes, these spectral arms 
-                                  hover near your shoulders or surround your arms (your choice). You determine the arms' appearance, and they vanish early if you are incapacitated or die.
-                                  While the spectral arms are present, you gain the following benefits - 
-                                  - You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws.
-                                  - You can use the spectral arms to make unarmed strikes.
-                                  - When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.
-                                  - The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force.
-       - Visage of the Astral Self: you can summon the visage of your astral self. As a bonus action, or as part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage 
-                                    for 10 minutes. It vanishes early if you are incapacitated or die. The spectral visage covers your face like a helmet or mask. You determine its appearance. While the spectral visage is 
-                                    present, you gain the following benefits.
-         Astral Sight: You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
-         Wisdom of the Spirit: You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.
-         Word of the Spirit: When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only that creature can hear you. Alternatively,
-                             you can amplify your voice so that all creatures within 600 feet can hear you.
-                  
-       
-    special-abilities:
-       - Proficiencies: Arcana, History, Acrobatics, Medicine
-       - Feats: Mobile, Keen Mind, Linguist
-       
-    attacks: |
-      1 attack with tambos or unarmed strike
-    combat-tactics: |
-      Darts from one opponent to another like he's doing parkour
-    special-equipment:      
-    - 2x +2 Tambo
-    - Decanter of Endless Water: This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds. You can use an action to remove the stopper and speak one of three Command words, whereupon an 
-                                 amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options - 
-      Stream: produces 1 gallon of water.
-      Fountain: produces 5 gallons of water.
-      Geyser: produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a Bonus Action while holding the decanter, you can aim the geyser at a creature you can see 
-              within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't
-              being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you.  
-    - Quill of Acurate Writing: This magical quill never needs ink and allows you to write mistake-free messages simply by dictating. You can also provide an empty book or scroll and a book or scroll you wish to copy, and the 
-                                quill of accurate writing will copy it in 1 hour. The quill of accurate writing cannot copy spell scrolls or magical books such as a tome of understanding.                                           
+  - title: Attacks
+  - content: 1 attack with tambos or unarmed strike
+  - title: Combat Tactics
+  - content: Darts from one opponent to another like he's doing parkour
+
+  - title: Special Equipment
+  - abilities:
+    - title: 2x +2 Tambo
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Decanter of Endless Water
+    - content: This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds. You can use an action to remove the stopper and speak one of three Command words, whereupon an 
+               amount of fresh water or salt water (your choice) pours out of the flask. The water stops pouring out at the start of your next turn. Choose from the following options - 
+               Stream - produces 1 gallon of water.
+               Fountain - produces 5 gallons of water.
+               Geyser - produces 30 gallons of water that gushes forth in a geyser 30 feet long and 1 foot wide. As a Bonus Action while holding the decanter, you can aim the geyser at a creature you can see 
+               within 30 feet of you. The target must succeed on a DC 13 Strength saving throw or take 1d4 bludgeoning damage and fall prone. Instead of a creature, you can target an object that isn't
+               being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you.  
+    - title: Quill of Acurate Writing
+    - content: This magical quill never needs ink and allows you to write mistake-free messages simply by dictating. You can also provide an empty book or scroll and a book or scroll you wish to copy, and the 
+               quill of accurate writing will copy it in 1 hour. The quill of accurate writing cannot copy spell scrolls or magical books such as a tome of understanding.                                           
     
     
   profile:

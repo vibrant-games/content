@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -462,37 +462,62 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
+    - Writer
+    proficiencies:
+    - Arcana
+    - Stealth
+    - Sleight-of-Hand    
+    - Thieve's Tools
+  special-abilities:
+  - title: Half-Orc Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
+    - title: Menacin
+    - content: Gain proficiency in the Intimidation skill 
+    - title: Relentless Endurance
+    - content: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
+    - title: Savage Attack
+    - content: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit. 
+  - title: Sorcerer Abilities
+  - abilities:
+  - title: Sorcerer Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 13
+    - title: Cantrips
+    - content: Fire Bolt, Mage Hand, Thunderclap, Minor Illusion
+    - title: 1st Level
+    - content: Ice Knife, Magic Missle
+  - title: Wild Magic Abilities
+  - abilities: 
+    - title: Wild Magic Surge
+    - content: Your spellcasting can unleash surges of untamed magic. Immediately after you cast a sorcerer spell of 1st level or higher, the DM can have you roll a d20. If you roll a 1, roll on the Wild Magic Surge 
+               table to create a random magical effect. The Wild Magic Surge table can be found in the Player's Handbook 
+    - title: Tides of Chaos
+    - content: You can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again.
+               Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of 
+               this feature.
+       
+  - title: Attacks
+  - contnet: 1 attack with spell attack or quaterstaff
+  - title: Combat Tactics
+  - content: Yemik isn't much of a fighter, but he's willing to try fighting with the little magic he knows or with his quaterstaff
 
-    - Half-Orc Abilities:
-       - Darkvision: Can see in dim light within 60 feet as if it were bright light, and in Darkness as if it were dim light. Can’t discern color in Darkness, only Shades of Gray..           
-       - Menacing: gain proficiency in the Intimidation skill 
-       - Relentless Endurance: When reduced to 0 Hit Points but not killed outright, can drop to 1 hit point instead. Can’t use this feature again until you finish a Long Rest.
-       - Savage Attack: When he scores a critical hit with a melee weapon Attack, he can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.  
-                  
-    - Sorcerer Ability:
-       - Spellcasting:  Sorcery Points  Spell DC 13
-         Cantrips: Fire Bolt, Mage Hand, Thunderclap, Minor Illusion
-         1st Level: Ice Knife, Magic Missle
-            
-    - Wild Magic Abilities:
-       - Wild Magic Surge: your spellcasting can unleash surges of untamed magic. Immediately after you cast a sorcerer spell of 1st level or higher, the DM can have you roll a d20. If you roll a 1, roll on the Wild Magic Surge 
-                           table to create a random magical effect.
-       - Tides of Chaos: you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. 
-                         Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of 
-                         this feature.
-       
-    special-abilities:
-       - Proficiencies: Arcana, Stealth, Slieght-of-Hand, Theive's Tools
-       - Feats: N/A
-       
-    attacks: |
-      1 attack with spell attack or quaterstaff
-    combat-tactics: |
-      Yemik isn't much of a fighter, but he's willing to try fighting with the little magic he knows or with his quaterstaff
-    special-equipment:      
-    - Quaterstaff
-    - Scholars Gloves: enchanted to give rough summaries of any book he touches.                              
+  - title: Special Equipment
+  - abilities:
+    - title: Scholars Glove's
+    - content: These gloves are enchanted to give rough summaries of any book he touches.                              
     
     
   profile:

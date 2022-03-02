@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: civilian
+    class: Civilian
 
     #
     # D & D subclasses (case insensitive):
@@ -466,26 +466,48 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Intelligence
+    - Charisma
+    damage-immunities:
+    - Non-Magic or Non-Silver Bludgeoning, Piercing and Slashing Damage
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
     skills:
-    - Werewolf Abilities:
-      - Keen Hearing and Smell: Advantage on perception rolls that involve Hearing and Sight
-      - Tough Hide: +2 to AC and HP double in Wolf and Half-Wolf forms.
-      - Lycan Immunity: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all his forms. Resistance to poison 
-      - Heightened Prowess: +4 to Strength and Dexterity saving throws in Wolf or Half-Wolf
-      - Shapeshift: Walther has no control over his change and changes on the full moon and in situations of extreme stress. He also becomes completely feral upon changing and has no human intelligence and will act 
-                    under the sway of the pack alpha Basil Dumas 
-      - The Curse: Humanoid Creatures he bites must make a constitution saving throw against DC 15 or become cursed with Lycanthrope
+    - Politics and Drinking
+    proficiencies:
+    - Arcana
+    - Perception
+    - Deception
+    - Persuasion
+    - Insight
+  special-abilities:
+  - title: Werewolf Abilities
+  - abilities: 
+    - title: Keen Hearing and Smell
+    - content: Advantage on perception rolls that involve Hearing and Sight
+    - title: Tough Hide
+    - content: +2 to AC in Wolf and Half-Wolf forms. 
+    - title: Lycan Immunity
+    - content: Immune to non-magic or non-silver Bludgeoning, Piercing and Slashing damage in all its forms. Resistance to poison 
+    - title: Heightened Prowess
+    - content: +1 to Strength and Dexterity saving throws in Wolf or Half-Wolf
+    - title: Shapeshift
+    - content: Walther has no control over his change and changes on the full moon and in situations of extreme stress. He also becomes completely feral upon changing and has no human intelligence and will act 
+               under the sway of the pack alpha Basil Dumas 
+    - title: The Curse
+    - content: Humanoid Creatures you bite must make a constitution saving throw against DC 15 or become cursed with Lycanthrope	
  
+  - title: Feats
+  - content: Actor, Inspiring Leader
 
-    special-abilities: 
-    - Feats: Actor, Inspiring Leader
-
-    attacks: |
-      2 claws and a bite attack 
-    combat-tactics: |
-      he will absolutely not be fight in his human form. In wolf form he will fight as the creature in the Monster Manual
-    special-equipment:
-    - Ivory cane
+  - title: Attacks
+  - content: 2 claws and a bite attack 
+  - title: Combat Tactics
+  - content: he will absolutely not be fight in his human form. In wolf form he will fight as the creature in the Monster Manual
     
     
   profile:

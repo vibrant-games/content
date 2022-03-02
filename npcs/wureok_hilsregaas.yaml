@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -471,50 +471,122 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Poison
     skills:
-    - Dragonborn Abilities:
-       - Breathe Weapon: Can exhale poison in a 15 foot cone with a DC 13. A creature takes 3d6 damage on a failed save, and half as much damage on a successful one.           
-       - Damage Resistance: Resistance to Fire                      
-                                   
-    - Sorcerer Ability:
-       - Spellcasting:  Sorcery Points 10
-         Cantrips: Dancing Lights, Fire Bolt, Mage Hand, Minor Illusion, Ray of Frost, Chill Touch
-         1st Level: Burning Hands, Magic Missle, Mage Armor, Shield
-         2nd Level: Detect Thoughts, Shatter, Scorching Ray
-         3rd Level: Counterspell, Fireball, Tongues
-         4th Level: Banishment, Polymorph, Wall of Fire
-         5th Level: Cloudkill, Dominate Person
-       - MetaMagic: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
-         1: Empowered Spell
-         2: Heightened Spell
-         3: Twinned Spell
-       - Sorcerous Restoration: you regain 4 expended sorcery points whenever you finish a Short Rest
+    - N/A
+    proficiencies:
+    - Arcana
+    - History
+    - Deception    
+    - Insight
+    - Persuasion
+  special-abilities:
+  - title: Chromatic Dragonborn Abilities
+  - abilities: 
+    - title: Breath Weapon
+    - content: When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in a 30-foot line that is 5 feet wide. Each creature in that area must make a 
+               Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). On a failed save, the creature takes 1d10 Poison damage. On a 
+               successful save, it takes half as much damage. This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10). You can use your Breath Weapon a number of times 
+               equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+    - title: Draconic Resistance
+    - content: You have resistance to the Poison damage
+    - title: Chromatic Warding
+    - content: Starting at 5th level, as an action, you can channel your draconic energy to protect yourself. For 1 minute, you become immune to the damage type associated with your Chromatic Ancestry. Once you use
+               this trait, you can’t do so again until you finish a long rest.                      
+  - title: Sorcerer Abilities
+  - abilities:
+  - title: Sorcerer Spellcasting
+  - abilities: 
+    - title: Sorcery Points
+    - content: 15
+    - title: Spell DC
+    - content: 15
+    - title: Cantrips
+    - content: Dancing Lights, Fire Bolt, Mage Hand, Minor Illusion, Ray of Frost, Chill Touch
+    - title: 1st Level
+    - content: Burning Hands, Magic Missle, Mage Armor, Shield
+    - title: 2nd Level
+    - content: Detect Thoughts, Shatter, Scorching Ray
+    - title: 3rd Level
+    - content: Counterspell, Fireball, Tongues
+    - title: 4th Level
+    - content: Banishment, Polymorph, Wall of Fire
+    - title: 5th Level
+    - content: Cloudkill, Dominate Person
+  - title: MetaMagic
+  - content: You gain two of the following Metamagic Options of your choice. You gain another one at 10th and 17th level.
+  - abilities:
+    - title: Careful Spell
+    - content: When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those 
+               creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell.
+    - title: Distant Spell
+    - content: When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.
+               When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.
+    - title: Empowered Spell
+    - content: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.
+               You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.
+    - title: Extended Spell
+    - content: When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.
+    - title: Heightened Spell
+    - content: When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the 
+               spell.
+    - title: Quickened Spell
+    - content: When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting.
+    - title: Seeking Spell
+    - content: If you make an attack roll for a spell and miss, you can spend 2 sorcerer points to reroll the d20, and you must use the new roll.
+               You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell.
+               Seeking Spell (UA). When you cast a spell that requires you to make a spell attack roll or that forces a target to make a Dexterity saving throw, you can spend 1 sorcery point to ignore the effects of half- and 
+               three-quarters cover against targets of the spell.
+    - title: Subtle Spell
+    - content: When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components.
+    - title: Transmuted Spell
+    - content: When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types - acid, cold, fire, lightning, poison, thunder.
+    - title: Twinned Spell
+    - content: When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell 
+               (1 sorcery point if the spell is a cantrip). To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, Magic Missile and Scorching Ray aren't 
+               eligible, but Ray of Frost and Chromatic Orb are.
+    - title: Sorcerous Restoration
+    - content: you regain 4 expended sorcery points whenever you finish a Short Rest
+  - title: Shadow Magic Abilities
+  - abilities: 
+    - title: Eyes of the Dark
+    - content: You have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
+               can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
+    - title: Strength of the Grave
+    - content: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
+               reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
+    - title: Hound of Ill Omen
+    - content: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can 
+               see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes - 
+               The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
+               It appears with a number of temporary hit points equal to half your sorcerer level.
+               It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
+               At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
+               The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
+               can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
+               disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes. 
 
-    - Shadow Magic Abilities: 
-        - Eyes of the Dark: you have darkvision with a range of 120 feet. When you reach 3rd level in this class, you learn the Darkness spell, which doesn't count against your number of sorcerer spells known. In addition, you 
-                            can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the darkness created by the spell.
-        - Strength of the Grave: When damage reduces you to 0 hit points, you can make a Charisma saving throw (DC 5 + the damage taken). On a success, you instead drop to 1 hit point. You can't use this feature if you are 
-                                 reduced to 0 hit points by radiant damage or by a critical hit. After the saving throw succeeds, you can't use this feature again until you finish a long rest.
-        - Hound of Ill Omen: you gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can 
-                             see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes - 
-                             - The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
-                             - It appears with a number of temporary hit points equal to half your sorcerer level.
-                             - It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
-                             - At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
-                             The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
-                             can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
-                             disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
+  - title: Attacks
+  - content: 1 attacks with spell or staff
+  - title: Combat Tactics
+  - content: Wureok is not to be underestimated. He is a fierce combatant. He will almost exclusively slowly draw back from melee and allow his guards to fill in the ranks while he casts vicious spells from not far away
 
-
-    special-abilities:
-    - Proficiencies: Arcana, History, Deception, Insight, Persuasion   
-    attacks: |
-      1 attacks with spell or staff
-    combat-tactics: |
-      Gren is not to be underestimated. He is a fierce combatant. He will almost exclusively slowly draw back from melee and allow his guards to fill in the ranks while he casts vicious spells from not far away
-    special-equipment:
-    - +3 Cloak of Protection
-    - Staff of Defense
+  - title: Special Equipment
+  - abilities:
+    - title: +3 Cloak of Protection
+    - content: You gain a +3 bonus to AC and Saving Throws while you wear this cloak.
+    - title: Staff of Defense
+    - content: While holding the staff, you have a +1 bonus to your Armor Class. The staff has 10 charges, which are used to fuel the spells within it. With the staff in hand, you can use your action to cast one of the following
+               spells from the staff if the spell is on your class's spell list - Mage Armor (1 charge) or Shield (2 charges). No components are required. The staff regains 1d6 + 4 expended charges each day at dawn. If you expend
+               the staff's last charge, roll a d20. On a 1, the staff shatters and is destroyed.
                                                                    
   profile:
 
@@ -541,4 +613,4 @@ npc:
     # No length limit for now.
     #
     personality: |
-      A robed dragonborn, gnarled hound, and equipped militia stroll from the castle gates. "What business have ye here?"
+      Wureok is a coward and a cheat. He uses his position to amass as much personal wealth as possible. However, if he is confronted about his actions or threatened, he will collapse like a house of cards.

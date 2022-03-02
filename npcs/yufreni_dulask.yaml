@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -400,7 +400,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:    constantly in motion, exaggertaed hand motions
+    mannerisms: constantly in motion, exaggertaed hand motions
 
   acting:
     #
@@ -463,25 +463,42 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Necrotic
     skills:
+    - Entertainer
+    proficiencies:
+    - Acrobatics
+    - Performance
+    - Insight    
+    - Flute
+    - Intimidation
+  special-abilities:
+  - title: Aetherborn Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
+    - title: Born of Aether
+    - content: You have resistance to necrotic damage
+    - title: Menacing
+    - content: You gain proficiency in the Intimidation skill 
 
-    - Aetherborn Abilities:
-       - Darkvision: can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-       - Born of Aether: You have resistance to necrotic damage
-       - Menacing: You gain proficiency in the Intimidation skill 
-                  
+  - title: Feats
+  - content: Actor, Athlete, Mobile, Juggler
+  - title: Expetise
+  - content: Expert in Acrobatics, Singing and Flute
        
-    special-abilities:
-       - Proficiencies: Acrobatics, Performance, Insight, Flute
-       - Feats: Actor, Athlete, Mobile, Juggler
-       - Expert in Acrobatics, Singing and Flute
-       
-    attacks: |
-      1 attack with unarmed strike
-    combat-tactics: |
-      Yufreni will do whatever he possible can to escape from conflict
-    special-equipment:      
-    - Juggling pins, knives and balls   
+  - title: Attacks
+  - content: 1 attack with unarmed strike
+  - title: Combat Tactics
+  - content: Yufreni will do whatever he possible can to escape from conflict   
     
     
   profile:

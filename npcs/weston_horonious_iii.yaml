@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -465,18 +465,32 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
-       
-    special-abilities:
-       - Proficiencies: Insight, Performance, Deception
-       - Feats: Actor
-    attacks: |
-      1 attack with dagger or unarmed strike
-    combat-tactics: |
-      Weston will avoid combat as much as possible, but will fight with his dagger
-    special-equipment:      
-    - Dagger    
+    saving-throws:
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - Grifting
+    proficiencies:
+    - Perception
+    - Deception    
+    - Intimidation
+    - Persuasion
+    - Insight
+  special-abilities:
+  - title: Feats
+  - content: Actor
     
+  - title: Attacks
+  - content: 1 attack with dagger or unarmed strike
+  - title: Combat Tactics
+  - content: Weston will avoid combat as much as possible, but will fight with his dagger
+  
     
   profile:
 

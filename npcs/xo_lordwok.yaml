@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -461,29 +461,43 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Constitution
+    - Strength
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
-
-    - Tortle Abilities:
-       - Claws: Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an 
-                unarmed strike.
-       - Hold Breath: You can hold your breath for up to 1 hour at a time. Tortles aren't natural swimmers, but they can remain underwater for some time before needing to come up for air.
-       - Natural Armor: Due to your shell and the shape of your body, you are ill-suited to wearing armor. Your shell provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this 
-                        number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.
-       - Shell Defense: You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your 
-                        speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell.
-       - Survival Instinct: You gain proficiency in the Survival skill. Tortles have finely honed survival instincts.   
+    - Knife Sharpening
+    proficiencies:
+    - Survival
+    - Athletics
+    - Perception    
+    - Blade Sharpening Tools
+  special-abilities:
+  - title: Tortle Abilities
+  - abilities: 
+    - title: Claws
+    - content: Your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an 
+               unarmed strike.
+    - title: Hold Breath
+    - content: You can hold your breath for up to 1 hour at a time. Tortles aren't natural swimmers, but they can remain underwater for some time before needing to come up for air.
+    - title: Natural Armor
+    - content: Due to your shell and the shape of your body, you are ill-suited to wearing armor. Your shell provides ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this 
+               number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal.
+    - title: Shell Defense
+    - content: You can withdraw into your shell as an action. Until you emerge, you gain a +4 bonus to AC, and you have advantage on Strength and Constitution saving throws. While in your shell, you are prone, your 
+               speed is 0 and can't increase, you have disadvantage on Dexterity saving throws, you can't take reactions, and the only action you can take is a bonus action to emerge from your shell.
+    - title: Survival Instinct
+    - content: You gain proficiency in the Survival skill. Tortles have finely honed survival instincts.  
        
-    special-abilities:
-       - Proficiencies: Survival, Athletics, Perception, Knife Sharpening Tools
-       - Feats: N/A
-       
-    attacks: |
-      1 attack with hand axe or claws
-    combat-tactics: |
-      Xo is a pacifist and will avoid confrontation nearly at all costs.
-    special-equipment:      
-    - Hand Axe
-    - Knife Sharpening Tools    
+  - title: Attacks
+  - content: 1 attack with hand axe or claws
+  - title: Combat Tactics
+  - content: Xo is a pacifist and will avoid confrontation nearly at all costs.   
     
     
   profile:

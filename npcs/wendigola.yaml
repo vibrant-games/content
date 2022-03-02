@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: elderly
+    age: Elderly
 
     #
     # Races (case insensitive):
@@ -463,17 +463,28 @@ npc:
   # ???Max length???
   #
   specialties:
-    skills: 
-       
-    special-abilities:
-       - Proficiencies: Arcana, Intimidation, Insight, Alchemist's Kit
-       - Feats: N/A
-    attacks: |
-      1 attack with eggs or unarmed strike
-    combat-tactics: |
-      Wendigola will avoid combat at all costs due to her frail frame
-    special-equipment:      
-    - The egg is not cursed...  Or is it?    
+    saving-throws:
+    - Constitution
+    - Dexterity
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
+    skills:
+    - N/A
+    proficiencies:
+    - Arcana
+    - Insight    
+    - Intimidation
+    - Alchemist's Kit
+  special-abilities:
+
+  - title: Attacks
+  - content: 1 attack with eggs or unarmed strike
+  - title: Combat Tactics
+  - content: Wendigola will avoid combat at all costs due to her frail frame  
     
     
   profile:

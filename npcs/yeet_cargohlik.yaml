@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: young adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -468,50 +468,79 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - N/A
     skills:
+    - Pickpocketing
+    proficiencies:
+    - Arcana
+    - Stealth
+    - Slieght-of-Hand    
+    - Thieve's Tools
+  special-abilities:
+  - title: Goblin Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
+    - title: Fury of the Small
+    - content: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
+               your level.
+    - title: Nimble Escape
+    - content: You can take the Disengage or Hide action as a bonus action on each of your turns.  
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+  - title: Arcane Trickster Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 13
+    - title: Cantrips
+    - content: Mage Hand, Fire Bolt, Message
+    - title: 1st Level
+    - content: Charm Person, Disguise Self, Feather Fall
+    - title: Mage Hand Legerdemain
+    - content: When you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it;
+               You can stow one object the hand is holding in a container worn or carried by another creature.
+               You can retrieve an object in a container worn or carried by another creature.
+               You can use thieves' tools to pick locks and disarm traps at range.
+               You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you
+               can use the bonus action granted by your Cunning Action to control the hand.            
+       
+  - title: Attacks
+  - content: 1 attack with spell attack or dagger
+  - title: Combat Tactics
+  - content: Yeet prefers to fight with the element of surprise
 
-    - Goblin Abilities:
-        - Darkvision: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light           
-        - Fury of the Small: When you damage a creature with an attack or a spell and the creature's size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals 
-                             your level.
-        - Nimble Escape: You can take the Disengage or Hide action as a bonus action on each of your turns.  
-                  
-    - Rogue Abilities:
-       - Expertise: Double proficiency bonus with Thieve's Tools and Sleight of Hand
-       - Sneak Attack: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
-       - Cunning Action: Can tak a bonus action on each turn to Hide, Disengage or Dash
-       - Uncanny Dodge: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage
-            
-    - Arcane Trickster Abilities:
-       - Spellcasting: Spell DC 13 
-         Cantrips: Mage Hand, Fire Bolt, Message
-         1st Level: Charm Person, Disguise Self, Feather Fall
-       - Mage Hand Legerdemain: when you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it - 
-                                - You can stow one object the hand is holding in a container worn or carried by another creature.
-                                - You can retrieve an object in a container worn or carried by another creature.
-                                - You can use thieves' tools to pick locks and disarm traps at range.
-                                - You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check.
-                                In addition, you can use the bonus action granted by your Cunning Action to control the hand.
-       
-    special-abilities:
-       - Proficiencies: Arcana, Stealth, Slieght-of-Hand, Theive's Tools
-       - Feats: N/A
-       
-    attacks: |
-      1 attack with spell attack or dagger
-    combat-tactics: |
-      Yeet prefers to fight with the element of surprise
-    special-equipment:      
-    - Dagger
-    - A seemingly endless bag of apples, each of which acts as a standard healing potion. 
-    - Boots of the Mistwalker: These grey leather boots can enhance the Misty Step spell. The boots have three charges that can be used when the wearer uses Misty Step (via spell, item, or innate ability). If the wearer is not 
-                               attuned, they can only spend a single charge at a time. Using the 2 or 3 charge abilities requires the wearer to be attuned - 
-      1 charge: Double the range (from 30 feet to 60 feet) or May teleport to a point within range even if you cannot see it, by specifying a distance and direction. (If you end up within an object you are shunted to the nearest open space, taking 
-      2 charges: May cast Misty Step by expending 2 hit dice (and taking that much damage) instead of using a spell slot. This option will allow you to use Misty Step even if you cannot normally cast the spell.
-      3 charges: May bring a living creature of your size or smaller with you when you teleport. They appear in an unoccupied space within 5 feet you.
-                               The boots regain all charges at dawn. 
-    - Cloak of Displacement: While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If
-                             you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.                               
+  - title: Special Equipment
+  - abilities:
+    - title: Endless Apples
+    - content: A seemingly endless bag of apples, each of which acts as a berry from the Goodberry Spell 
+    - title: Boots of the Mistwalker
+    - content: These grey leather boots can enhance the Misty Step spell. The boots have three charges that can be used when the wearer uses Misty Step (via spell, item, or innate ability). If the wearer is not 
+               attuned, they can only spend a single charge at a time. Using the 2 or 3 charge abilities requires the wearer to be attuned - 
+               1 charge - Double the range (from 30 feet to 60 feet) or May teleport to a point within range even if you cannot see it, by specifying a distance and direction. (If you end up within an object you are shunted to the nearest open space, taking 
+               2 charges - May cast Misty Step by expending 2 hit dice (and taking that much damage) instead of using a spell slot. This option will allow you to use Misty Step even if you cannot normally cast the spell.
+               3 charges - May bring a living creature of your size or smaller with you when you teleport. They appear in an unoccupied space within 5 feet you.
+                           The boots regain all charges at dawn. 
+    - title: Cloak of Displacement
+    - content: While you wear this cloak, it projects an illusion that makes you appear to be standing in a place near your actual location, causing any creature to have disadvantage on attack rolls against you. If
+               you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are incapacitated, restrained, or otherwise unable to move.                               
     
     
   profile:

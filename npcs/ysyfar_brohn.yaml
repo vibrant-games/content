@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: middle aged adult
+    age: Middle Aged Adult
 
     #
     # Races (case insensitive):
@@ -467,56 +467,88 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Strength
+    - Charisma
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire
     skills:
+    - N/A
+    proficiencies:
+    - Perception
+    - Deception    
+    - Intimidation
+  special-abilities:
+  - title: Tiefling Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+    - title: Hellish Resistance
+    - content: You have Resistance to fire damage
+    - title: Asmodeal Legacy
+    - content: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
+               When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability x per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new 
+                            roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+    - title: Aura of Protection
+    - content: When he or friendly creatures within x feet must make a saving throw, they get a +x bonus to their roll       
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 15
+    - title: 1st Level
+    - content:  Searing Smite, Thunderous Smite, Wrathful Smite, Detect Good and Evil
+    - title: 2nd Level
+    - content: Branding Smite, Find Steed, Warding Bond
+  - title: Oath of Vengeance Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 15
+    - title: 3rd Level
+    - content: Bane, Hunter's Mark
+    - title: 5th Level
+    - content: Hold Person, Misty Step
+    - title: Channel Divinity - Abjure Enemy
+    - content: As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom 
+               saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
+               On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
+               On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
+    - title: Channel Divinity - Vow of Enmity
+    - content: As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute 
+               or until it drops to 0 hit points or falls unconscious.
+    - title: Relentless Avenger
+    - content: Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the 
+               same reaction. This movement doesn't provoke opportunity attacks.
 
-    - Tiefling Abilities:
-       - Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
-       - Hellish Resistance: You have Resistance to fire damage
-       - Asmodeal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest.
-                          When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting Ability for these Spells 
-                  
-    - Paladin Abilities:
-       - Divine Sense: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
-                       within the same radius. Can use this ability 5 per long rest
-       - Lay on Hands: Can touch another creature to heal up to 35HP per long rest. Or can 5HP to cure a disease or poison affecting it.
-       - Fighting Style: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an Attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The 
-                                                 weapon must have the Two-Handed or Versatile property for you to gain this benefit. 
-       - Divine Smite: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
-                       slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
-       - Divine Health: Immune to disease
-       - Extra Attack: Can take and extra attack action each turn
-       - Aura of Protection: When he or friendly creatures within 10 feet must make a saving throw, they get a +x bonus to their roll       
-       - Spellcasting: Spell DC 15
-         1st Level: Searing Smite, Thunderous Smite, Wrathful Smite, Detect Good and Evil
-         2nd Level: Branding Smite, Find Steed, Warding Bond
-            
-    - Oath of Vengeance Abilities:
-       - Channel Divinity:
-         - Abjure Enemy: As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom 
-                         saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
-                         - On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
-                         - On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
-         - Vow of Enmity: As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute 
-                          or until it drops to 0 hit points or falls unconscious.
-       - Relentless Avenger: your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the 
-                             same reaction. This movement doesn't provoke opportunity attacks.
-       - Spellcasting: Spell DC 15
-         1st Level: Bane, Hunter's Mark
-         2nd Level: Hold Person, Misty Step
+  - title: Feats
+  - content: Great Weapon Master
        
-    special-abilities:
-       - Proficiencies: Intimidation, Deceipt, Perception
-       - Feats: Great Weapon Master
-       
-    attacks: |
-      2 attack with great sword or spell attack
-    combat-tactics: |
-      Yasyfar is a brave and skilled opponent. He will dive headlong into combat with hid great sword and alternate between spells that buff his damage and those that manipulate the environment and opponents' capacity for battle.
-    special-equipment:      
-    - Great Sword
-    - Scalemail Armor
-    - Shield    
-    
+  - title: Attacks
+  - content: 2 attack with great sword or spell attack
+  - title: Combat Tactics
+  - content: Yasyfar is a brave and skilled opponent. He will dive headlong into combat with hid great sword and alternate between spells that buff his damage and those that manipulate the environment and opponents' capacity for
+             battle.
     
   profile:
 
