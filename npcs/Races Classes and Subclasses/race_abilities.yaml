@@ -207,9 +207,9 @@
     - content: Proficient in Stealth and Thieve's Tools
     - title: Integrated Protection
     - content: Each time he finishes a long rest, can choose one mode to adopt from the integrated protection table
-               Darkwood Core - AC= 11 + Dexterity + Proficiency Bonus
-               Composite Plating - AC = 13 + Dexterity (Max 2) + Proficiency Bonus
-               Heavy Plating - AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks	
+    - content: Darkwood Core - AC= 11 + Dexterity + Proficiency Bonus
+    - content: Composite Plating - AC = 13 + Dexterity (Max 2) + Proficiency Bonus
+    - content: Heavy Plating - AC = 16 + Proficiency Bonus, Disadvantage on Stealth checks	
 
 
   - title: Gremlin Abilities
@@ -266,9 +266,9 @@
     - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
     - title: Deathless Nature 
     - content: Advantage on saving throws against disease and being poisoned and resistance to poison damage
-               Advantage on Death saving throws     
-               Doesn't need to eat, drink or breathe
-               Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
+    - content: Advantage on Death saving throws     
+    - content: Doesn't need to eat, drink or breathe
+    - content: Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
     - title: Knowledge from a Past Life
     - content: When making a an ability check that uses a skill, roll a d6 and add it to the check roll. Can use this a number of times equal to proficiency bonus each long rest 
 
@@ -534,10 +534,10 @@
     - content: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
                after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
                to three such devices active at a time. When you create a device, choose one of the following options - 
-               Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+    - content: Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
                                a random direction. It makes noises as appropriate to the creature it represents.
-               Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-               Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
+    - content: Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+    - content: Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
 				  
 				  
   - title: Kobold Abilities
@@ -588,25 +588,25 @@
                the cone is active. The area works against the beholder's own eye rays.
     - title: Eye Rays
     - content: The beholder shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 ft. of it;
-               Charm Ray - The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature.
-               Paralyzing Ray - The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself
+    - content: Charm Ray - The targeted creature must succeed on a DC 16 Wisdom saving throw or be charmed by the beholder for 1 hour, or until the beholder harms the creature.
+    - content: Paralyzing Ray - The targeted creature must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself
                                 on a success.
-               Fear Ray - The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a
+    - content: Fear Ray - The targeted creature must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a
                           success.
-               Slowing Ray - The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an
+    - content: Slowing Ray - The targeted creature must succeed on a DC 16 Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an
                              action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-               Enervation Ray - The targeted creature must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.
-               Telekinetic Ray - If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of
+    - content: Enervation Ray - The targeted creature must make a DC 16 Constitution saving throw, taking 36 (8d8) necrotic damage on a failed save, or half as much damage on a successful one.
+    - content: Telekinetic Ray - If the target is a creature, it must succeed on a DC 16 Strength saving throw or the beholder moves it up to 30 ft. in any direction. It is restrained by the ray's telekinetic grip until the start of
                                  the beholder's next turn or until the beholder is incapacitated. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 ft. in any direction. The
                                  beholder can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.
-               Sleep Ray - The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it.
+    - content: Sleep Ray - The targeted creature must succeed on a DC 16 Wisdom saving throw or fall asleep and remain unconscious for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it.
                            This ray has no effect on constructs and undead.
-               Petrification Ray - The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn.
+    - content: Petrification Ray - The targeted creature must make a DC 16 Dexterity saving throw. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn.
                                    On a success, the effect ends. On a failure, the creature is petrified until freed by the greater restoration spell or other magic.
-               Disintegration Ray - If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine
+    - content: Disintegration Ray - If the target is a creature, it must succeed on a DC 16 Dexterity saving throw or take 45 (10d8) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine
                                     gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of
                                     magical force, this ray disintegrates a 10-foot cube of it.
-               Death Ray - The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.
+    - content: Death Ray - The targeted creature must succeed on a DC 16 Dexterity saving throw or take 55 (10d10) necrotic damage. The target dies if the ray reduces it to 0 hit points.
          
          
   - title: Weretiger Abilities
@@ -937,12 +937,12 @@
                get a different result
     - title: Abyssal Arcana Spells
     - content: d6  1st Level         3rd Level          5th Level
-               1   Dancing Lights    Burning Hands      Alter Self
-               2   True Strike       Charm Person       Darkness
-               3   Light             Magic Missile      Invisibility
-               4   Message           Cure Wounds        Levitate
-               5   Spare the Dying   Hideous Laughter   Mirror Image
-               6   Prestidigitation  Thunderwave        Spider Climb
+    - content: 1   Dancing Lights    Burning Hands      Alter Self
+    - content: 2   True Strike       Charm Person       Darkness
+    - content: 3   Light             Magic Missile      Invisibility
+    - content: 4   Message           Cure Wounds        Levitate
+    - content: 5   Spare the Dying   Hideous Laughter   Mirror Image
+    - content: 6   Prestidigitation  Thunderwave        Spider Climb
     - title: Abyssal Fortitude
     - content: Your hit point maximum increases by half your level (minimum 1).
        
@@ -1014,13 +1014,13 @@
     - content: You have a flying speed of 30 feet. You have resistance to falling damage
     - title: Miniscule Form
     - content: Due to your diminuitive size you are unabte to perform many of the same physical feats as larger creatures. This comes with some advantages and some drawbacks
-               Your AC lncreases by 2
-               You have disadvantage on any Strength-based saving throws or skill checks which you do not already have advantage or disadvantage on
-               You cannot attack with weapons that have the Heavy property and have disadvantage on any attacks with weapons that do not have the Light property
-               You cannot equip Heavy armor and your Dexterity modifier is reduced by 2 while wearing Medium armor
-               Your melee weapon attacks do 1d4 less damage, calculated before critical hits
-               You only require half a pound of food and half a gallon of water per day to be considered fully fed and watered
-               You may occupy the same space as a friendly creature without considering it difficult terrain. you may end you turn in a friendly creature's space
+    - content: Your AC lncreases by 2
+    - content: You have disadvantage on any Strength-based saving throws or skill checks which you do not already have advantage or disadvantage on
+    - content: You cannot attack with weapons that have the Heavy property and have disadvantage on any attacks with weapons that do not have the Light property
+    - content: You cannot equip Heavy armor and your Dexterity modifier is reduced by 2 while wearing Medium armor
+    - content: Your melee weapon attacks do 1d4 less damage, calculated before critical hits
+    - content: You only require half a pound of food and half a gallon of water per day to be considered fully fed and watered
+    - content: You may occupy the same space as a friendly creature without considering it difficult terrain. you may end you turn in a friendly creature's space
     - title: Luminous Body
     - content: As long as you are consciousyou emit a 30ft radius of dim light centered on yourself. You can reduce or restore the brightness or radius as a free action. As an action you can increase the brightness to 
                bright light or the radius to 60ft for up to one minute each short rest
@@ -1091,24 +1091,24 @@
     - content: Beastfolk have advantage on saving throws against charm effects.
     - title: All Creatures Under the Sun
     - content: Gain 2 breed traits
-               Adept Climber - Gain proficiency in your choice of Athletics or Acrobatics. You have a climb speed equivalent to your walking speed.
-               Beast of Burden - You are considered one size larger than you are for the purposes of determining carrying capacity and the amount you can push, drag, or lift.
-               Burrowing - While you have two free hands you have a burrowing speed of 25 feet.
-               Darkvision - you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.
-               Echolocation - As a bonus action on your turn you can emit a shriek inaudible to creatures without this trait. Until the end of your next turn you have blindsight up to 30 feet away while 
+    - content: Adept Climber - Gain proficiency in your choice of Athletics or Acrobatics. You have a climb speed equivalent to your walking speed.
+    - content: Beast of Burden - You are considered one size larger than you are for the purposes of determining carrying capacity and the amount you can push, drag, or lift.
+    - content: Burrowing - While you have two free hands you have a burrowing speed of 25 feet.
+    - content: Darkvision - you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.
+    - content: Echolocation - As a bonus action on your turn you can emit a shriek inaudible to creatures without this trait. Until the end of your next turn you have blindsight up to 30 feet away while 
                               you are not deafened.
-               High Flyer - You have a fly speed equivalent to your base walking speed. You cannot fly while you are carrying more than half of your maximum carrying capacity. While flying you make attack
+    - content: High Flyer - You have a fly speed equivalent to your base walking speed. You cannot fly while you are carrying more than half of your maximum carrying capacity. While flying you make attack
                             rolls and ability checks at disadvantage, cannot maintain concentration on spells, and cannot cast spells. Jumper. Gain proficiency in your choice of Athletics or Acrobatics. 
                             Your jump distance is doubled.
-               Keen Senses - Gain proficiency in the Perception skill and choose one sense. You gain advantage on Perception rolls that utilize that sense.
-               Kin to Beasts - Gain proficiency in Animal Handling. Your proficiency bonus is doubled when you make Animal Handling checks.
-               Longstrider - Your base walking speed increases to 35 feet.
-               Natural Armor - When you aren’t wearing armor, your AC equals 11 + your Constitution or Dexterity modifier.
-               Natural Talent - Beasts of the earth, sky, and sea have talents as varied as their shapes. You gain proficiency in a skill of your choice.
-               Natural Weapon - You have a natural weapon that you are proficient in. This could be a bite, claw, quill, club tail, or other bestial feature. You can choose to add your strength or 
+    - content: Keen Senses - Gain proficiency in the Perception skill and choose one sense. You gain advantage on Perception rolls that utilize that sense.
+    - content: Kin to Beasts - Gain proficiency in Animal Handling. Your proficiency bonus is doubled when you make Animal Handling checks.
+    - content: Longstrider - Your base walking speed increases to 35 feet.
+    - content: Natural Armor - When you aren’t wearing armor, your AC equals 11 + your Constitution or Dexterity modifier.
+    - content: Natural Talent - Beasts of the earth, sky, and sea have talents as varied as their shapes. You gain proficiency in a skill of your choice.
+    - content: Natural Weapon - You have a natural weapon that you are proficient in. This could be a bite, claw, quill, club tail, or other bestial feature. You can choose to add your strength or 
                                 dexterity modifier to the attack roll and deal 1d4 + strength or dexterity modifier damage. The damage type should be selected when you take this trait; bludgeoning, 
                                 piercing, poison, or slashing damage.
-               Scalekin - You have a swim speed equivalent to your walking speed and can breathe in air and water
+    - content: Scalekin - You have a swim speed equivalent to your walking speed and can breathe in air and water
                                       
                                       
   - title: Black Bearkin Abilities

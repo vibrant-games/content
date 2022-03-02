@@ -488,10 +488,10 @@
     - title: Blessings of the Earth
     - contnet: You are able to exert greater influence over the earth when casting spells. When you casts a transmutation spell that affects earth or stone during their turn, they can also choose from one of 
                the following abilities. That ability lasts until the end of your next turn.
-               You gains a burrowing speed of 30 feet.
-               You gains tremmorsense out to 40 feet.
-               You cannot be knocked prone
-               You speed increases by 10 feet
+    - content: You gains a burrowing speed of 30 feet.
+    - content: You gains tremmorsense out to 40 feet.
+    - content: You cannot be knocked prone
+    - content: You speed increases by 10 feet
     - title: Earthwielder
     - content: You add significant force to many of your spells. Whenever you hit a creature with an attack roll with a spelL roll ld12 and add that much bludgeoning damage.
     - title: Earthen King
@@ -583,13 +583,13 @@
                if it was casted at a higher level). You do not have to have a spell prepared in order to pick it. You gain a Scripture Scroll for each of the spells picked You may use a Scripture Scroll to 
                cast the spell associated with it, after which the Scripture Scroll is consumed If you have unconsumed Scripture Scrolls after you finish a long rest those Scripture Scrolls lose their magic 
                and are no longer usable.
-               SCRIPTURE SPELL TABLE
-               Wizard level      Spell Level
-                    6                1st
-                    8            2nd or lower
-                   11            3rd or lower
-                   13            4th or lower
-                   15            5th or lower
+    - content: SCRIPTURE SPELL TABLE
+    - content: Wizard level      Spell Level
+    - content:      6                1st
+    - content:      8            2nd or lower
+    - content:     11            3rd or lower
+    - content:     13            4th or lower
+    - content:     15            5th or lower
               After you finish a long rest, you may also spend spell slots to make Scripture Scrolls of spells in your spell book in equivalent level to the spell slot spent. However, you may not have two 
               Scripture Scrolls of the same spell at any time.
     - title: Spell Checking
@@ -599,10 +599,10 @@
     - content: You triple the duration of the spell up to a maximum of 24 hours.
     - title: Extended Literature
     - content: You double the range of the spell. Spells with the range of touch gain a range of lOft.
-               Laymans Terms - Anyone can use this Scripture Scroll. The spell uses your Spell save DC and Spell attack modifier reganlless of the user. The spell of this Scripture Scroll must be of a level according to
+    - content: Laymans Terms - Anyone can use this Scripture Scroll. The spell uses your Spell save DC and Spell attack modifier reganlless of the user. The spell of this Scripture Scroll must be of a level according to
                                the Scripture Spell Table.
-               Duplicate Wording - You may use this Scripture Scroll twice before it is consumed The spell of this Scripture Scroll must be of a level according to the Scripture Spell Table.
-               Descriptive Writing - You gain a +2 bonus to a cbcck which is part of the spell that is not an attack roll or saving throw.
+    - content: Duplicate Wording - You may use this Scripture Scroll twice before it is consumed The spell of this Scripture Scroll must be of a level according to the Scripture Spell Table.
+    - content: Descriptive Writing - You gain a +2 bonus to a cbcck which is part of the spell that is not an attack roll or saving throw.
     - title: Scripture Master
     - content: Choose five spells from any spell list and add them to your spell book. These spells are considered wizard spells for you for the purposes of spellcasting ability, spell attack modifier, and spell save
                DC. but you cannot prepare them like other wizand spells. Instead, you can only cast them through the use of the A Tool For Every Situation feature.
@@ -665,13 +665,13 @@
                spell's casting leveL You immediately cast that spell once for each spell slot expended
     - title: Epic Experiment
     - content: You may undertake an epic experiment as a bonus action once per long rest
-               Brainstorm Experiment - Roll d4-2 On a 2, all creatures within 10 feet of you take xd6 1ightning damage, where x is double your Intelligence modifier. On a 1, all creatures within 10 feet of you take xd6
+    - content: Brainstorm Experiment - Roll d4-2 On a 2, all creatures within 10 feet of you take xd6 1ightning damage, where x is double your Intelligence modifier. On a 1, all creatures within 10 feet of you take xd6
                                        lightning clamage, where x is your Intelligence modifier. On a 0, no damage is dealt. On a -1, you suffer xd6 lightning damage, where x is double your Intelligence modifier.
-               Dragonshift Experiment - Roll d4-2 On a 2, you transform into an adult red dragon for one minute. On a 1, you transform into a red dragon wyrmling for one minute. On a 0, you do not transform. On a -1, 
+    - content: Dragonshift Experiment - Roll d4-2 On a 2, you transform into an adult red dragon for one minute. On a 1, you transform into a red dragon wyrmling for one minute. On a 0, you do not transform. On a -1, 
                                         you transform into a lizard for one minute. When transformed, you maintain your personality and alignement, but your statistics are replaced by those of the creature you 
                                         transform into. You assume the hit points of the new form. If you are reduced to zero hit points when in the new form, you return to your normal form on zero hit points;
-               Temporal Experiment - Roll d4-2 After this turn, you immediately take that many additional turns. On a -1, do not take your next turn.
-               Thoughtflare Experiment - Roll d4-2 Raise your Intelligence modifier by double what you roll for one minute. On a -1, do not change your intelligence modifier, instead you are stunned for the duration.
+    - content: Temporal Experiment - Roll d4-2 After this turn, you immediately take that many additional turns. On a -1, do not take your next turn.
+    - content: Thoughtflare Experiment - Roll d4-2 Raise your Intelligence modifier by double what you roll for one minute. On a -1, do not change your intelligence modifier, instead you are stunned for the duration.
                           
                           
                           
@@ -761,8 +761,8 @@
                refine the trigger so the glyph activates only under certain circumstances or according to physical characteristics (such as height or weight), creature kind (for example, the ward could be set to affect 
                aberrations or drow), or alignment. You can also set conditions for creatures that don't trigger the glyph, such as those who say a certain password. When you inscribe a glyph, choose alerting glyph or
                cantrip glyph.
-               Alerting Glyph - When triggered, this glyph alerts you with a ping in your mind. The ping awakens you if you are sleeping.
-               Cantrip Glyph - You can store a cantrip that you know by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast
+    - content: Alerting Glyph - When triggered, this glyph alerts you with a ping in your mind. The ping awakens you if you are sleeping.
+    - content: Cantrip Glyph - You can store a cantrip that you know by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate effect when cast
                                in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, the area is 
                                centered on that creature. If the spell requires concentration, it lasts until the end of its full duration.
     - title: Expert Warding
@@ -770,7 +770,7 @@
                10 minutes.
     - title: Major Glyph
     - content: When you create a glyph using your minor glyph feature, you can use more powerful spell effects. When you inscribe a glyph, you can choose spell glyph.
-               Spell Glyph - You can store a prepared spell of 1st level in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate
+    - content: Spell Glyph - You can store a prepared spell of 1st level in the glyph by casting it as part of creating the glyph. The spell must target a single creature or an area. The spell being stored has no immediate
                              effect when cast in this way. When the glyph is triggered, the stored spell is cast. If the spell has a target, it targets the creature that triggered the glyph. If the spell affects an area, 
                              the area is centered on that creature. Ifthe spell summons hostile creatures or creates harmful objects or traps, they appear as close as possible to the intruder and attack it. If the spell 
                              requires concentration, it lasts until the end of its full duration. If you choose this option, the casting time of the ritual is increased to 10 minutes. You may not have multiple spell-glyphs
@@ -788,9 +788,9 @@
     - content: Your studies into arcane law magic have allowed you imbue your words with the essence of order. As a bonus action, you target one creature you can see within 60 feet of you. The target must make a Wisdom 
                saving throw against your spell save DC. The arcane essence of your words still affects a creature that can't understand you. On a successful save, you can’t use this feature on the target again until you 
                finish a long rest. On a failure, they are bound by your words. You can choose following edict options
-               Bind - A creature becomes restrained. They drop whatever they were holding.
-               Silence - A creature becomes mute. Any non-verbal communication the creature attempts fails.
-               Surrender - A creature becomes prone and is no longer hostile towards you or your allies. Creatures immune to the charmed condition remain hostile.
+    - content: Bind - A creature becomes restrained. They drop whatever they were holding.
+    - content: Silence - A creature becomes mute. Any non-verbal communication the creature attempts fails.
+    - content: Surrender - A creature becomes prone and is no longer hostile towards you or your allies. Creatures immune to the charmed condition remain hostile.
                            A creature under the effects of an arcane edict can use its action to make a Wisdom check against your spell save DC. On a failure, it cannot take this action for 10 minutes. On a success, it frees 
                            itself. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.
     - title: Bonus Proficiencies
@@ -802,8 +802,8 @@
     - content: When you use your arcane edict you can choose all three options to apply to a creature. Furthermore, creatures affected by your arcane edict have disadvantage on rolls made to break or escape your edict.
     - title: Suppression Bonds
     - content: You demand everyone act on an even playing field. As an action, choose one of following
-               Magic Suppression - In a 90-foot radius centered on you, creatures struggle cast spells successfully. Any creature attempting to cast a spell must make an ability check at disadvantage with their 
+    - content: Magic Suppression - In a 90-foot radius centered on you, creatures struggle cast spells successfully. Any creature attempting to cast a spell must make an ability check at disadvantage with their 
                                    spellcasting ability. The DC is 10 + the spell's level. On a failure, the spell fizzles out. This effect lasts until you finish a long rest.
-               Martial Suppression - In a 90-foot radius centered on you, creatures struggle to physically attack other creatures. Any creature attempting to attack something must make either a Strength or Dexterity 
+    - content: Martial Suppression - In a 90-foot radius centered on you, creatures struggle to physically attack other creatures. Any creature attempting to attack something must make either a Strength or Dexterity 
                                      check with disadvantage. The DC is your spell save DC. On a failure, the attack fails and the attack drops any weapons they're holding. This effect lasts until you finish a long 
                                      rest. Once you use this feature, you can’t use it again until you finish a long rest.   

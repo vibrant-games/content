@@ -21,13 +21,13 @@
                Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. 
                When you reach certain levels in this class, you can make more elixirs at the end of a long rest; two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir 
                requires its own flask.
-               d6     Effect
-                1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
-                2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
-                3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
-                4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
-                5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
-                6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
+    - content: d6     Effect
+    - content:  1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
+    - content:  2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
+    - content:  3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
+    - content:  4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
+    - content:  5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
+    - content:  6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
     - title: Alchemical Savant
     - content: You've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, 
                you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier 
@@ -75,26 +75,27 @@
                not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 
                feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel 
                defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die.                          
-               Steel Defender - Medium construct
-               Armor Class - 15 (natural armor)
-               Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
-               Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
-               Speed - 40 ft.     
-               Saving Throws - Dex +1 plus PB, Con +2 plus PB
-               Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
-               Damage Immunities - poison
-               Condition Immunities - charmed, exhaustion, poisoned
-               Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
-               Languages - understands the languages you speak
-               Challenge —
-               Proficiency Bonus (PB) - equals your bonus
-               Vigilant - The defender can't be surprised.
-               Actions -
-               Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
-               Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
-               Reactions -
-               Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
-               Intimidate - It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
+    - content: 
+    - content: Steel Defender - Medium construct
+    - content: Armor Class - 15 (natural armor)
+    - content: Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
+    - content: Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
+    - content: Speed - 40 ft.     
+    - content: Saving Throws - Dex +1 plus PB, Con +2 plus PB
+    - content: Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
+    - content: Damage Immunities - poison
+    - content: Condition Immunities - charmed, exhaustion, poisoned
+    - content: Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
+    - content: Languages - understands the languages you speak
+    - content: Challenge —
+    - content: Proficiency Bonus (PB) - equals your bonus
+    - content: Vigilant - The defender can't be surprised.
+    - content: Actions -
+    - content: Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
+    - content: Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
+    - content: Reactions -
+    - content: Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
+    - content: Intimidate - It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
     - title: Extra Attack
     - content: You can attack twice, rather than once, whenever you take the Attack action on your turn.
     - title: Arcane Jolt
@@ -200,11 +201,11 @@
                When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you 
                can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space,
                provided it has legs.
-               Flamethrower - The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage
+    - content: Flamethrower - The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage
                               on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried.
-               Force Ballista-  Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature, 
+    - content: Force Ballista-  Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature, 
                                 it is pushed up to 5 feet away from the cannon.
-               Protector - The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it a number of temporary hit points equal to 1d8 + your Intelligence 
+    - content: Protector - The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it a number of temporary hit points equal to 1d8 + your Intelligence 
                            modifier (minimum of +1).           
     - title: Arcane Firearm
     - content: You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand, 
@@ -213,13 +214,13 @@
                number rolled.
     - title: Explosive Cannon
     - content: every eldritch cannon you create is more destructive
-               The cannon's damage rolls all increase by 1d8.
-               As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw 
+    - content: The cannon's damage rolls all increase by 1d8.
+    - content: As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw 
                against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one.
     - title: Fortified Position
     - content: you’re a master at forming well-defended emplacements using Eldritch Cannon
-               You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.
-               You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine 
+    - content: You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.
+    - content: You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine 
                whether the cannons are identical to each other or different. You can't create a third cannon while you have two.
                                
                                
@@ -254,12 +255,12 @@
     - content: You further enhance your mantle's capabilities, allowing it to deflect incoming blows. When an attacker hits you with an attack, your cloak can intercept the blow. Once per turn you can reduce the damage of that
                attack by 1d10 + your intelligence modifier
     - title: Masterwork Mantle
-    - conent: You embroider a series of temporary designs on your mantle, allowing you to switch to various powerful effects. At the end of a Long Rest, you can choose one of the following properties to add to your Mystical
-              Mantle, which lasts until you choose a different effect with this feature.
-              Arcane Sigils - This item requires attunment and functions as a Mantle of Spell Resistance
-              Feathered Texture - This item requires attunment and functions as Wings of Flying
-              Minimalism - While wearing this item, your Armor Class increases by 1
-              Shadow Weave - This item requires attunment and functions as a Cloak of Displacement
+    - content: You embroider a series of temporary designs on your mantle, allowing you to switch to various powerful effects. At the end of a Long Rest, you can choose one of the following properties to add to your Mystical
+               Mantle, which lasts until you choose a different effect with this feature.
+    - content: Arcane Sigils - This item requires attunment and functions as a Mantle of Spell Resistance
+    - content: Feathered Texture - This item requires attunment and functions as Wings of Flying
+    - content: Minimalism - While wearing this item, your Armor Class increases by 1
+    - content: Shadow Weave - This item requires attunment and functions as a Cloak of Displacement
               
               
 
@@ -411,11 +412,11 @@
     - content: At 3rd level, you discover how to awaken a mind inside an object. Whenever you finish a long rest and your calligrapher’s supplies are with you, you can magically rouse a keen mind within a Tiny, nonmagical object
                on which you write mystical symbols. The object is a magic item while the mind is inside it, and you can use it as a spellcasting focus. If you already have an artificial mind from this feature, the first one 
                immediately dissipates.
-               The magic item has the following properties
-               Telepathic Advisor - The artificial mind telepathically supplies you with advice and information about certain topics - while the item is on your person, you have proficiency in two skills of your choice; the 
+    - content: The magic item has the following properties
+    - content: Telepathic Advisor - The artificial mind telepathically supplies you with advice and information about certain topics - while the item is on your person, you have proficiency in two skills of your choice; the 
                                     item’s main material determines which skills you can choose from, as shown on the Artificial Mind table in the Skill Proficiencies column, for the nature of the object affects the mind’s 
                                     knowledge.
-               Manifest Mind - As a bonus action while the item is on your person, you can cause the mind to manifest as a Tiny spectral presence, hovering in an unoccupied space of your choice within 60 feet of you. This 
+    - content: Manifest Mind - As a bonus action while the item is on your person, you can cause the mind to manifest as a Tiny spectral presence, hovering in an unoccupied space of your choice within 60 feet of you. This 
                                presence is intangible and invulnerable, and it sheds dim light in a 10-foot radius. You determine its appearance; the Artificial Mind table offers suggested appearances based on the object’s main 
                                material. While manifested, the spectral mind can hear and see, and it has darkvision with a range of 60 feet. As an action, you can hear and see using the mind’s senses, instead of your own, until
                                your concentration ends (as if concentrating on a spell).
@@ -423,27 +424,27 @@
                                manifesting if it is ever more than 300 feet away from its magic item or if you dismiss it as a bonus action.
                                When you cast an artificer spell on your turn,you can cast it as if you were in the spectral mind’s space, instead of your own, using its senses. You can do so a number of times per day equal to 
                                your Intelligence modifier (at least once), and you regain all expended uses when you finish a long rest.
-               Information Overload - As an action while the item is on your person, you can try to magically overload the thoughts of one creature you or the mind can see that is within 5 feet of the manifested mind, channeling
+    - content: Information Overload - As an action while the item is on your person, you can try to magically overload the thoughts of one creature you or the mind can see that is within 5 feet of the manifested mind, channeling
                                       a jumble of information from the artificial mind. Unless the target succeeds on an Intelligence saving throw against your spell save DC, the target takes 1d8 psychic damage, and the next 
                                       attack roll against it before the end of your next turn has advantage, since it is temporarily too distracted to defend itself well. The damage increases by 1d8 when you reach 5th level 
                                       (2d8), 11th level(3d8), and 17th level (4d8) in this class. Whenever you deal damage with this feature,you can expend a spell slot to deal extra damage to the target. The extra damage is 
                                       2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than first.
 
-               Artificial Mind
-               Main Material                        Skill Proficiencies                                         Suggested Appearance
-               Animal (parchment, leather, bone)    Animal Handling, Insight, Medicine, Perception, Survival    A beast or a humanoid visage with antlers
-               Mineral (glass, stone, metal)        Deception, Intimidation, Performance, Persuasion            A robotic or golem-like face
-               Plant (paper, wood)                   Arcana, History, Investigation, Nature, Religion           A bespectacled visage or a treant
+    - content: Artificial Mind
+    - content: Main Material                        Skill Proficiencies                                         Suggested Appearance
+    - content: Animal (parchment, leather, bone)    Animal Handling, Insight, Medicine, Perception, Survival    A beast or a humanoid visage with antlers
+    - content: Mineral (glass, stone, metal)        Deception, Intimidation, Performance, Persuasion            A robotic or golem-like face
+    - content: Plant (paper, wood)                  Arcana, History, Investigation, Nature, Religion            A bespectacled visage or a treant
                
     - title: Mind Network
     - content: At 6th level, you’ve learned how to use your artifices to access minds, both to communicate and to harm.
-               Magical Telephony - While you have your Artificial Mind item on your person, you can communicate telepathically with anyone carrying an item bearing one of your artificer infusions, as the mind transmits your 
+    - content: Magical Telephony - While you have your Artificial Mind item on your person, you can communicate telepathically with anyone carrying an item bearing one of your artificer infusions, as the mind transmits your 
                                    thoughts to each other. That person can also communicate telepathically with you as long as they have the item. This two-way communication can even cross planar boundaries.
-               Psychic Damage. When you make a psychic damage roll for an artificer spell or for Information Overload, you gain a bonus to the damage roll equal to your Intelligence modifier(minimum bonus of +1)
+    - content: Psychic Damage. When you make a psychic damage roll for an artificer spell or for Information Overload, you gain a bonus to the damage roll equal to your Intelligence modifier(minimum bonus of +1)
     - title: Pure Information
     - content: At 14th level, your Artificial Mind is able to receive and transmit more information than ever before.
-               Mind Overload - When you expend a spell slot to increase the damage of Information Overload, the target must succeed on an Intelligence saving throw against your spell save DC or be stunned until the end of your 
+    - content: Mind Overload - When you expend a spell slot to increase the damage of Information Overload, the target must succeed on an Intelligence saving throw against your spell save DC or be stunned until the end of your 
                                next turn.
-               Infoportation - As an action while your Artificial Mind magic item is on your person, you cause the mind to turn you into pure information, teleporting you to the unoccupied space nearest to the spectral mind or 
+    - content: Infoportation - As an action while your Artificial Mind magic item is on your person, you cause the mind to turn you into pure information, teleporting you to the unoccupied space nearest to the spectral mind or 
                                to an item bearing one of your artificer infusions, where you physically reappear.
-               You can teleport in this way once for free and must finish a long rest before doing so again. You can also use this special ability by expending a spell slot of 2nd level or higher.
+    - content: You can teleport in this way once for free and must finish a long rest before doing so again. You can also use this special ability by expending a spell slot of 2nd level or higher.
