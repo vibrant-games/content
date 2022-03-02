@@ -52,15 +52,15 @@
     - title: Collectors Vessel
     - content: Your patron gives you a magical vessel with which you can bind a creature to you and to your patron’s menagerie. The vessel is a Tiny object, and it is a spellcasting focus for you. You decide what 
                the object is, or you can determine what it is randomly by rolling on the Collector’s Vessel table.
-               Collector’s Vessel Table
-               d6   Vessel
-                1   Oil lamp
-                2   Urn
-                3   Ring with a compartment
-                4   Stoppered bottle
-                5   Hollow statuette
-                6   Ornate lantern
-               If you lose your vessel, you can perform a 1- hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous vessel. 
+    - content: Collector’s Vessel Table
+    - content: d6   Vessel
+    - content:  1   Oil Lamp
+    - content:  2   Urn
+    - content:  3   Ring with a Compartment
+    - content:  4   Stoppered Bottle
+    - content:  5   Hollow Statuette
+    - content:  6   Ornate Lantern
+    - content: If you lose your vessel, you can perform a 1- hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous vessel. 
                The vessel vanishes in a flare of elemental power when you die. As an action while you are holding the vessel, you target a willing creature you can see within 100 feet of you and create a tether of 
                wispy elemental material that links the target to you. The tether lasts for 1 hour, until you use this feature to create another tether, until the bound target is reduced to 0 hit points, or until 
                the target ends its turn more than 100 feet from you. While you are tethered to a creature, you gain the following benefits;
@@ -199,7 +199,7 @@
     - title: Awakened Mind
     - content: Your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with
                the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language
-    - title: Entropis Ward
+    - title: Entropic Ward
     - content: You learn to magically ward yourself against attack and to turn an enemy's failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to
                impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn. Once you use this feature, you can't
                use it again until you finish a short or long rest 
@@ -505,17 +505,17 @@
     - content: You have absorbed so many spells that you have magic pumping through your veins rather than blood. You do not need to sleep or breathe, though still can if you chose to, this allows you to gain the benefits
                of a long rest after completing a short rest once every 24 hours. If you have spell slots from a class that must prepare spells you must spend an additional hour to prepare those spells, after your 1 hour 
                long rest. You can add the spell Golemskin to your known warlock spells, if you know the Stoneskin spell, Golemskin replaces it and you may chose another spell.
-               Spell - Golemskin - 4th-level transmutation
-               Casting Time - 1 action
-               Range - Self
-               Components - V, S, M (Your Arm Transformed by embody the arcane)
-               Duration - Concentration, up to 1 hour Until the spell ends, you have resistance to nonmagical bludgeoning, piercing, and slashing damage, and automatically succeed on all saving throws to continue concentrating on 
+    - content: Spell - Golemskin - 4th-level transmutation
+    - content: Casting Time - 1 action
+    - content: Range - Self
+    - content: Components - V, S, M (Your Arm Transformed by embody the arcane)
+    - content: Duration - Concentration, up to 1 hour Until the spell ends, you have resistance to nonmagical bludgeoning, piercing, and slashing damage, and automatically succeed on all saving throws to continue concentrating on 
                           this spell. While under the effects of this spell your type changes to construct, so some spells including cure wounds spells will no longer affect you. You also become immune to any spell or effect that 
                           would alter your form. Depending on the material of your arm the spell has additional effects.
-                          Stone - You have advantage on saving throws against spells and other magical effects. You regain a number of hlt points equal to your warlock level when you successfully save against a spell and take no
+    - content:            Stone - You have advantage on saving throws against spells and other magical effects. You regain a number of hlt points equal to your warlock level when you successfully save against a spell and take no
                           damage.
-                          Copper - You gain immunity to lightning damage and whenever you are subjected to lightning damage, you take no damage and instead regain a nwnber of hit points equal to the damage dealt.
-                          Iron - You gain immunity to fire damage and whenever you are subjected to fire damage, you take no damage and instead regain a nwnber of hit points equal to the damage dealt
+    - content:            Copper - You gain immunity to lightning damage and whenever you are subjected to lightning damage, you take no damage and instead regain a nwnber of hit points equal to the damage dealt.
+    - content:            Iron - You gain immunity to fire damage and whenever you are subjected to fire damage, you take no damage and instead regain a nwnber of hit points equal to the damage dealt
            
            
   - title: The Archdruid Abilities
@@ -622,11 +622,11 @@
     - content: Animal Skin - You become any animal of a size from Tiny to Large whose skin you wear. You take on the appearance and physical statistics of the specific individual from which the skin came. You cannot cast 
                              spells or use hexes while in this form, but you maintain any other class feature you have. You can remain in this form for a number of minutes equal to your witch level. At 18th level you can 
                              can use hexes while in animal form, you can also stay in this form for a number of hours equal to your witch level.
-               Beckon - Prerequisites - 6th level - You target a creature within 30ft that is charmed by you with this hex. For the duration of the charm you can use your action to beckon the creature to follow you at a 
+    - content: Beckon - Prerequisites - 6th level - You target a creature within 30ft that is charmed by you with this hex. For the duration of the charm you can use your action to beckon the creature to follow you at a 
                         distance or make its way towards your current location. Regardless, the creature must use its movement to close the gap between you, the charmed creature always chooses the safest path that it can 
                         perceive, even if the route it must take is a long one. If the creature is unable to find a safe path it can act normally on its turn. At 18th level you can target a number of charmed creatures 
                         equal to your charisma modifier. In addition you can beckon them as a bonus action.
-               Blood Charm - You create a small amulet out of 1 ounce of blood and a strand of twine (or similar material), this amulet takes a form of your choice. Most witches choose the form of a collection of small 
+    - content: Blood Charm - You create a small amulet out of 1 ounce of blood and a strand of twine (or similar material), this amulet takes a form of your choice. Most witches choose the form of a collection of small 
                              bones strung together or blood-red ruby necklaces or something of a similar appearance. You may have one active blood charm at a time. A creature gains the ability to use one of following 
                              effects, your choice at the time of creation, as long as it wears the charm;
                              You regain xd6 + the witch's charisma modifier hitpoints, where x equals 1/4th (Minimum 1) the witch's level. Using this ability requires a reaction. You cannot use this ability when at 0 
@@ -636,98 +636,98 @@
                              You gain +4 AC against a ranged or spell attack, using this ability requires a reaction.
                              Once the charm is used it melts into a useless grey powder. At 18th level you can have a number of charms equal to your charisma modifier. In addition, as long as wear the charm you gain a +2 
                              to one of the following ability scores (witch's choice); Wisdom, Intelligence, or Charisma (This ability cannot raise your score above 20).
-               Corroding Charm - You gain the ability to break down even the most stalwart individuals with your words. You make a charisma (persuasion) check against a single target's intelligence (insight) within 30ft. 
+    - content: Corroding Charm - You gain the ability to break down even the most stalwart individuals with your words. You make a charisma (persuasion) check against a single target's intelligence (insight) within 30ft. 
                                  as part of this hex. If the creature fails its check it gains becomes enamored for 1 minute. For the duration you can use your bonus action to make a charisma (persuasion) check against 
                                  the same target. Each time the target fails a check add a stack of enamored to the target, to a maximum of 4. Successfully putting the target under the effect of a charm spell or effect 
                                  also adds a stack of enamored (up to the maximum). If the target succeeds its check it loses a stack of enamored. If the target reaches 0 stacks the hex ends. Effects that remove charms
                                  also remove one stack of enamored.
                                  Enamored Table
-                                 Stacks Effect
-                                   1    Target makes any saves against being charmed at disadvantage.
-                                   2    Reduce target's effective charisma by 2. Targets lose immunity to charm, but they still make saves against being charmed at advantage.
-                                   3    Reduce target's effective charisma by 4 (cumulative 6).
-                                   4    Reduce target's effective charisma by 2 (cumulative 8).Target no longer makes saving throws against being charmed at advantage.
-                                 Note - Reducing a creatures effective charisma only effects its checks, saves and charisma based abilities while it is interacting with you. At 18th level a creature whose C/R is less than 
+    - content:                   Stacks Effect
+    - content:                     1    Target makes any saves against being charmed at disadvantage.
+    - content:                     2    Reduce target's effective charisma by 2. Targets lose immunity to charm, but they still make saves against being charmed at advantage.
+    - content:                     3    Reduce target's effective charisma by 4 (cumulative 6).
+    - content:                     4    Reduce target's effective charisma by 2 (cumulative 8).Target no longer makes saving throws against being charmed at advantage.
+    - content:                   Note - Reducing a creatures effective charisma only effects its checks, saves and charisma based abilities while it is interacting with you. At 18th level a creature whose C/R is less than 
                                  half your level gain 2 stacks of enamored on a failed check.
-               Child Scent - You gain the ability to smell the presence of youthful creatures near you. You smell the air as a part of this hex, gaining knowledge of any young creature's location within 60ft. of you. You 
+    - content: Child Scent - You gain the ability to smell the presence of youthful creatures near you. You smell the air as a part of this hex, gaining knowledge of any young creature's location within 60ft. of you. You 
                              gain proficiency on preception checks when looking for creatures sensed this way and on survival checks when tracking such creatures for the next 24 hours. At 18th level your range of smell 
                              extends to 120ft and you gain blind sight out to 60ft for 1 minute, this only senses young creatures.
-               Cursed Wound - When a creature within 60ft. of you takes damage you can use your reaction to cast this hex. That creature must make a constitution saving throw. On a failed save that creature cannot heal 
+    - content: Cursed Wound - When a creature within 60ft. of you takes damage you can use your reaction to cast this hex. That creature must make a constitution saving throw. On a failed save that creature cannot heal 
                               themselves by any means for a number of turns equal to your charisma modifier(minimum 1). Undead and creatures resistant to necrotic damage have advantage on their saving throw. At 18th level
                               creatures that fail their saving throw take 2d12 necrotic damage at the start of each of their turns as long as the hex persists.
-               Discord - Prerequisites - 3rd level - You target a creature within 60ft and sow the seed of discord. If the target creature fails its saving throw you may target another creature that it can see within its 
+    - content: Discord - Prerequisites - 3rd level - You target a creature within 60ft and sow the seed of discord. If the target creature fails its saving throw you may target another creature that it can see within its 
                          line of sight. For the next minute the effected creature distrusts the second creature you have targeted, and cannot be persuaded or charmed by said creature. This distrust can remain after the 
                          hex ends depending on what happens over the course of the hex's duration. At 18th level you can cause the target to distrust all creatures. On a failed save the creature distrusts all creatures it
                          comes into contact with. In addition, this hex lasts for up to 8-hours.
-               Dispel Impurities - You dispell diseases, toxins, inhaled poisons, and noxious gaseous effects in a 10-foot aura around you. For the next minute you purify the air and any water around you, rendering it 
+    - content: Dispel Impurities - You dispell diseases, toxins, inhaled poisons, and noxious gaseous effects in a 10-foot aura around you. For the next minute you purify the air and any water around you, rendering it 
                                    safe to breathe and rendering it devoid of any toxins. At 18th level the aura increases to 30ft and you can purify any inhaled poisons within a creature, removing the poisoned condition 
                                    or one airborne disease that has yet to incubate.
-               Empathetic Link - Prerequisites - 3rd level - You create a mental bond with a willing creature. You can have a number of bonds equal to your charisma modifier, if you create a new bond while you are at your
+    - content: Empathetic Link - Prerequisites - 3rd level - You create a mental bond with a willing creature. You can have a number of bonds equal to your charisma modifier, if you create a new bond while you are at your
                                  maximum you must choose an active bond and end it. Any connected creature knows when this bond ends. As a bonus action a connected creature can send information to any number of bonded 
                                  creatures as long as they remain on the same plane of existence, the witch can also use her action to gain information of a connected creature. You can send or recieve the following 
                                  information with this hex;
-                                 Your physical state (HP) in the form of phantom pains, the greater your pain, the clearer the phantom pain sent. An unharmed creature can use this feature to send a feeling of calm to 
+    - content:                   Your physical state (HP) in the form of phantom pains, the greater your pain, the clearer the phantom pain sent. An unharmed creature can use this feature to send a feeling of calm to 
                                  let bonded creatures know they are ok. (example; a wounded barbarian has a bleeding gash in his leg that leaves him at 2 HP, the connected witch feels the same pain as if she had a great
                                  gash in her leg she knows he needs help, but is not harmed herself).
-                                 A still image of the surroundings you can perceive.
-                                 Any sounds you have heard in the last 30 seconds.
-                                 A plea for help in the form of an overwhelming sense of distress. In addition, the witch can use her action to sense the general direction, elevation, and distance of a bonded creature.
-                                 At 18th level you can also telepathically communicate with a bonded creature as long as they are on the same plane of existence.
-               Evil Eye - Target one creature within 60ft of you that you can see, if it fails a wisdom saving throw it has disadvantage on one of the following (witch’s choice); Ability checks, Attack rolls, Saving 
+    - content:                   A still image of the surroundings you can perceive.
+    - content:                   Any sounds you have heard in the last 30 seconds.
+    - content:                   A plea for help in the form of an overwhelming sense of distress. In addition, the witch can use her action to sense the general direction, elevation, and distance of a bonded creature.
+    - content:                   At 18th level you can also telepathically communicate with a bonded creature as long as they are on the same plane of existence.
+    - content: Evil Eye - Target one creature within 60ft of you that you can see, if it fails a wisdom saving throw it has disadvantage on one of the following (witch’s choice); Ability checks, Attack rolls, Saving 
                           throws, or Skill checks. This hex lasts for 1 minute, as long as the witch maintains a line of sight on the target, and for a number of rounds equal to the witch's charisma modifier if the target
                           leaves this line of sight. At 18th level you can choose two effects whenever you use this hex.
-               Forced Reincarnation - Prerequisites - 14th level - You touch a creature, killing it instantly and reincarnating it (as per the spell) if it fails a constitution saving throw against your warlock spell 
+    - content: Forced Reincarnation - Prerequisites - 14th level - You touch a creature, killing it instantly and reincarnating it (as per the spell) if it fails a constitution saving throw against your warlock spell 
                                       save. You do not need materials for this hex. A creature with C/R equal to or greater than 1/4th your witch level has advantage on its constitution save. At 18th level you can choose 
                                       the race that the target is reincarnated as.
-               Hags Eye - You can touch a detached eye, or glass orb of comparable size, and turn it into a magical sensor. For the next minute you mentally receive visual information from the eye. It has darkvision out 
+    - content: Hags Eye - You can touch a detached eye, or glass orb of comparable size, and turn it into a magical sensor. For the next minute you mentally receive visual information from the eye. It has darkvision out 
                           to 30 feet. The eye can look in every direction so long as it is unobstucted. You can also use your action to move the eye up to 30ft, the eye is considered to have the spiderclimb ability when 
                           moving vertically across any solid surface. If the eye or orb is placed into a creature's eye socket the duration of the hex lasts until it is removed, likewise the creature can percieve through 
                           the eye as if it where their own (you maintain the ability to recieve visual information from the eye if you so choose). At 18th level the eye gains darkvision to 60 feet and can percieve 
                           invisible creatures up to 30 feet. If the eye is within a creature it makes seperate perception checks, and can replace a perception roll of the creature with its own if the check relies on 
                           sight. In addition, you can use a bonus action to cause the eye to appear in your hand.
-               Hag Hand - Prerequisites - 3rd level -  You touch a creature, cursing it with hideous aging and other similarly nasty features. A creature that fails its Wisdom saving throw begins to appear as if they had 
+    - content: Hag Hand - Prerequisites - 3rd level -  You touch a creature, cursing it with hideous aging and other similarly nasty features. A creature that fails its Wisdom saving throw begins to appear as if they had 
                           aged 2x quicker, essentially doubling its current age. The creature gains any defining features of an aged member of its race, and it suffers disadvantage on all charisma checks until a remove 
                           curse spell is used on it or the witch ends the hex. At 18th level the aging is no longer in appearence only. A creature that has failed its save has its age doubled and it suffers any penalties
                           and gains any benefits from its older age, and if the creature would surpass the maximum age normal for its race it dies of old age.
-               Healing Charm - Prerequisites - 3rd level - You target a creature within 60ft. of you and heal it for 2d6 + your spellcaster modifier hitpoints. Any points that would go over the creature's hitpoint maximum
+    - content: Healing Charm - Prerequisites - 3rd level - You target a creature within 60ft. of you and heal it for 2d6 + your spellcaster modifier hitpoints. Any points that would go over the creature's hitpoint maximum
                                become temporary hitpoints that last until that creature takes a short or long rest. In addition, for the next minute a creature healed by this hex gains additional hitpoints from any source
                                of healing equal to your charisma modifier + half your witch level. At 18th level the healing increases to 10d6 + your spellcaster modifier.
-               Hedge Healer - Prerequisites - 6th level - You imbue a target a creature within 60 ft of you with vitality from nature itself. For the next minute the target heals for 1d4 + your proficiency bonus at the 
+    - content: Hedge Healer - Prerequisites - 6th level - You imbue a target a creature within 60 ft of you with vitality from nature itself. For the next minute the target heals for 1d4 + your proficiency bonus at the 
                               beginning of each of its turn as long as it remains in an area with vegitation or in direct sunlight. Leaving such an area ends this healing. At 18th level the healing from this hex increases
                               to 2d4 + your spellcasting modifier. In addition, his hex no longer requires the target to be standing in vegetation or sunlight, but if they do the healing increases to 4d4.
-               Life Giver - Prerequisites - 14th level - Once per day you can use your action to touch a dead creature and bring it back to life. 1 minute after a creature has this hex cast on them they are revived as if 
+    - content: Life Giver - Prerequisites - 14th level - Once per day you can use your action to touch a dead creature and bring it back to life. 1 minute after a creature has this hex cast on them they are revived as if 
                             the spell resurrection had been cast on them, but it does not require a material component. At 18th level you can use this hex a number of times equal to your charisma modifier a day.
-               Peacebond - A witch can use this hex on a creature to prevent it from drawing a weapon for a number of rounds equal to the witch’s charisma modifier. This hex has no effect on natural weapons or weapons 
+    - content: Peacebond - A witch can use this hex on a creature to prevent it from drawing a weapon for a number of rounds equal to the witch’s charisma modifier. This hex has no effect on natural weapons or weapons 
                            already in a creature’s hands, but does prevent an archer from drawing arrows. A wisdom save negates this effect against the warlock's spell save, and whether or not the save is successful, a 
                            creature cannot be the target of this hex again for 1-hour. Attacking a creature under this effect immediatley ends this hex. At 18th level this hex effects natural weapons, and a creature with 
                            a weapon in their hand drops the weapon if they fail their saving throw. In addition, a creature that takes any hostile actions while under the effect of this hex (threats, intimidation, or the 
                            casting of a damaging spell) takes 1d10 radiant damage. While in combat this damage can only occur once per turn.
-               Gheist Ward - You create a spiritual barrier to ward off spirits. This ward covers a 30ft radius centered on you and remains stationary for the duration of this hex. This barrier lasts for a number of 
+    - content: Gheist Ward - You create a spiritual barrier to ward off spirits. This ward covers a 30ft radius centered on you and remains stationary for the duration of this hex. This barrier lasts for a number of 
                              minutes equal to your charisma modifier. Creatures within the barrier cannot be charmed, frightened, or possessed by undead or incoporeal creatures, and are resistant to necrotic damage. 
                              Undead and incorporeal creatures that attempt to enter, or exit, the barrier must make a Wisdom saving throw against your warlock DC or take 6d6 force damage as they are junted 5 feet away 
                              from the barrier's edge (this damage ignores immunities and resistances if any). While within the confines of the barrier friendly creatures that are reduced to 0 hitpoints, but not killed 
                              outright, become stable. At 18th level spells cast by undead and incorporeal creatures cannot target or effect creatures within the barrier. Additionally, creatures within have advantage on 
                              saving throws to resist or stop any ongoing effect placed on them by an undead or incorporeal creature.
-               Potion Steep - You spend 1-minute steeping a fruit in one potion or poison of your choice within a cauldron. Doing so consumes the potion or poison. The fruit is imbued with the effect of the potion, any 
+    - content: Potion Steep - You spend 1-minute steeping a fruit in one potion or poison of your choice within a cauldron. Doing so consumes the potion or poison. The fruit is imbued with the effect of the potion, any 
                               creature that consumes the fruit is affected as if it consumed the potion. In order to detect the potion/poison imbued in the fruit a creature must make a DC 20 investigation check, otherwise
                               it appears mundane. The duration of any potion/poison with a duration of 1minute or more is doubled, up to a maximum of 24 hours. At 18th level you can choose to steep a hero's feast (Feeds 
                               roughly 13 creatures, refer to the spell of the same name) worth of food, spending 1 hour to do so. In addition, the DC of the food's saving throws are increased by +2.
-               Shadow Servant - Prerequisites - 3rd level - You animate your shadow to act independently of you. Your shadow springs to life as if you had cast the spell Unseen Servant. However, it can be seen (as your 
+    - content: Shadow Servant - Prerequisites - 3rd level - You animate your shadow to act independently of you. Your shadow springs to life as if you had cast the spell Unseen Servant. However, it can be seen (as your 
                                 shadow slinks around and interacts with objects), has AC 10, hit points equal to half your warlock level (rounded down, minimum 1), and a Strength of 10 + your charisma modifier, and it can
                                 take the attack action. If it drops to 0 hit points, your shadow reverts to its normal form. If you choose the attack action the shadow makes a melee attack against the target. This attack 
                                 deals 2d6 necrotic damage and has an attack bonus equal to your spellcasting modifier. Your shadow remains animated for 1 hour, or until you dismiss it as a bonus action. At 18th level your
                                 shadow has an AC of 15, hit points equal to 10 + half your warlock level (rounded down, minimum 1), and a Strength of 15 + your charisma modifier. Its attack damage also increases to 4d6 
                                 necrotic damage.
-               Soothsayer - Prerequisites - 6th level - You touch a creature and gain a glimpse of their near future. You gain a vague idea of one event in the creature's future in the form of a misty set of images and 
+    - content: Soothsayer - Prerequisites - 6th level - You touch a creature and gain a glimpse of their near future. You gain a vague idea of one event in the creature's future in the form of a misty set of images and 
                             hushed whispers (information given at your DM's discretion). You can share this information with the target in the form of a vague fortune. If the creature's near future contains a great 
                             tragedy you can turn the vision back on the creature, dealing 6d6 psychic damage if they fail a wisdom saving throw. If the vision contains a good event you can instill the target with great 
                             confidence in their future, it gains advantage on all charisma checks for the next hour (this ignores the ability check reduction of the first level of exhaustion). Regardless of the result of 
                             the vision, the target suffers one level of exhaustion. At 18th level your visions are clearer and you can see farther into the future. In addition, you can choose to have the target no longer 
                             suffer from exhaustion.
-               Subtle Charm - You gain the ability to weave your words past the most stalwart individual's basic mental blockades. You make a charisma (persuasion) check against a single target's intelligence (insight) 
+    - content: Subtle Charm - You gain the ability to weave your words past the most stalwart individual's basic mental blockades. You make a charisma (persuasion) check against a single target's intelligence (insight) 
                               within 30ft. as part of this hex. If you succeed the target becomes charmed by you for a number of minutes equal to your charisma modifier. In addition, a creature affected by this feature 
                               does not know it was charmed once it wears off. At 18th level you can target an additional number of creatures equal to your charisma modifier.
-               Magic Door - Prerequisites - 10th level - You must touch a door, or door-like opening large enough for a medium creature to enter (but no larger), as part of this hex and speak a command word of your 
+    - content: Magic Door - Prerequisites - 10th level - You must touch a door, or door-like opening large enough for a medium creature to enter (but no larger), as part of this hex and speak a command word of your 
                             choice. You link all doors or openings affected by this hex together with magic. The first door affected by this hex is known as the master door. Whenever near the master door you can use your 
                             action to speak the command word of any other connected door, doing so opens a magic portal between the two doors. When you open the master door after doing so it no longer opens to its normal
                             location, but the location on the other side of the linked door or opening. Stepping through the door teleports you to the other side of the linked door. You can speak the command word again to
@@ -735,7 +735,7 @@
                             You can have a number of linked doors equal to your charisma modifier (minimum 1, not counting the master door). If you use this hex while you have the maximum number of linked doors you must 
                             chose a door that is not the master door to unlink before linking the new door. You can also cast this hex to designate a new door as the master door. At 18th level you may now target any 
                             opening large enough for a creature of large or smaller to fit through. You can also now link a number of doors equal to 5 + your charisma modifier.
-               Wiccan Grotto - You spend 1 hour in a special ritual, when the ritual is complete you transform a 30ft cube area of vegitation at a target location within 30ft. The grotto flurishes, and any withered or 
+    - content: Wiccan Grotto - You spend 1 hour in a special ritual, when the ritual is complete you transform a 30ft cube area of vegitation at a target location within 30ft. The grotto flurishes, and any withered or 
                                dead vegitation in the area regrows rapidly. This hex removes any curses or hexes placed on the area by any creature or caster that has a CR lower than 1/2 your witch level. In addition, the
                                grotto contains enough fruits and edible plants to sustain up to five creatures for a day. If you cast this spell in an area with at least one adult tree you can designate it to become a 
                                wiccan tree. While you are within 30ft of a wiccan tree you can commune telepathically with any witch that is within your coven that is also near a wiccan tree, so long as you are both on 
@@ -744,7 +744,7 @@
                                wiccan tree can assist in the spellcasting to reduce the time by an appropriate amount (to a minimum if 1 action), so long as you are all on the same plane. (Example; Two witches cast a 
                                spell with a casting time of one hour two times as fast, reducing the casting time to thirty minutes. Likewise, a coven of ten witches could cast a spell with a casting time of one hour in 
                                six minutes.)
-               Witchs Brew - Prerequisites - 3rd level - Over the course of 10 minutes, you create a special potion. To use this invocation, you must have alchemist’s supplies or a cauldron with you. While brewing this 
+    - content: Witchs Brew - Prerequisites - 3rd level - Over the course of 10 minutes, you create a special potion. To use this invocation, you must have alchemist’s supplies or a cauldron with you. While brewing this 
                              potion you expend a spell slot of 1st level or higher to create a Witch's Brew. When you expend this spell slot, choose a spell that could be cast with that slot and has a casting time of one 
                              action or less, your brew becomes charged with that spell. Any creature that drinks this potion is affected by the spell as if it was cast on it, making any saving throws as appropriate. You 
                              can have only one witch brew at a time. If you create another witch's brew your previous brew loses its magic. The brew retains its magic for 24 hours before becomimg inert. In addition, once 
@@ -752,18 +752,18 @@
                              that hex until the potion is consumed or rendered inert. Only hexes that can target a creature other than the witch can be distilled in this way. The potion remains potent until consumed or 
                              rendered inert by the witch as a bonus action. The DC of any hex is increased by 2 when it is instilled in a potion form. These potions do not count against the total number of witch brews you
                              can have. At 18th level you can have a number of witch's brews equal to your charisma modifier.
-               Witch's Curse - Prerequisites - 10th level - You curse a creature with an aweful malady. Choose one of the following effects
-                               The target becomes sterile, or unable to concieve a particular gender of child (your choice).
-                               The target is doomed to a failed love life.
-                               The target becomes terribly disfigured in a way you choose.
-                               The target becomes addicted to something.
-                               The target is doomed to poverty.
-                               The target doubles the amount of negative character traits it gains over its lifetime.
-                               The target becomes afraid of one thing of your choice.
-                               You curse the target with a custom malady that is not any more powerful than the others on this list. This custom curse must be approved by your DM.
-                               At 18th level you can have this curse pass down to the target's children, affecting a number of generations up to your charisma modifier. You can also set restrictions upon the curse (such as
+    - content: Witch's Curse - Prerequisites - 10th level - You curse a creature with an aweful malady. Choose one of the following effects
+    - content:                 The target becomes sterile, or unable to concieve a particular gender of child (your choice).
+    - content:                 The target is doomed to a failed love life.
+    - content:                 The target becomes terribly disfigured in a way you choose.
+    - content:                 The target becomes addicted to something.
+    - content:                 The target is doomed to poverty.
+    - content:                 The target doubles the amount of negative character traits it gains over its lifetime.
+    - content:                 The target becomes afraid of one thing of your choice.
+    - content:                 You curse the target with a custom malady that is not any more powerful than the others on this list. This custom curse must be approved by your DM.
+    - content:                 At 18th level you can have this curse pass down to the target's children, affecting a number of generations up to your charisma modifier. You can also set restrictions upon the curse (such as
                                only the males of the cursed individual inherits the curse, or so on).
-               Witchfire - Prerequisites - 3rd level - You create a 15ft cone of green-black flame that gives off no light, each creature in the area of the cone must make a dexterity saving throw. A creature takes 1d6 
+    - content: Witchfire - Prerequisites - 3rd level - You create a 15ft cone of green-black flame that gives off no light, each creature in the area of the cone must make a dexterity saving throw. A creature takes 1d6 
                            fire damage and 1d6 necrotic damage on a failed save, and half as much damage on a successful one. The flame is particularly "sticky" and clings to surfaces and burns any unattended object 
                            within the cone for maximum damage, in addition the flame sticks on surfaces (including water), lingering for a number of rounds equal to your charisma modifier. A creature that fails its saving
                            throw by 5 or more takes an additional 1d6 fire and 1d6 necrotic damage at the beginning of each of its turns as the flame sticks to them. A creature can use its action to make a new a dexterity
@@ -771,15 +771,15 @@
                            new dexterity saving throw or be burned by the flame. The flame cannot be put out by non-magical means and can exist in oxygen deprived areas, even underwater. The damage of each type increases 
                            to 2d6 at 6th level, 3d6 at 11th level, and 4d6 at 16th level. At 18th level the cone increases to 30ft, or you can change it to a 5x60 line. In addition, all creatures effected by witchfire 
                            have disadvantage on any saving throws against your hexes or spells classified as curses.
-               Witch's Hut - Prerequisites - 10th level - You touch a hut or other abode that can fit within a 30x30x30ft cube. The hut becomes sentient, as if affected by the spell Awaken. The hut sprounts legs or other 
+    - content: Witch's Hut - Prerequisites - 10th level - You touch a hut or other abode that can fit within a 30x30x30ft cube. The hut becomes sentient, as if affected by the spell Awaken. The hut sprounts legs or other 
                             appropriate limbs and other senses as per the spell and obeys your commands. Your DM chooses a stat block appropriate for the newly awakened creature. You can only have one such sentient hut at
                             a time, using this hex on another abode renders the previous abode inert. In addition you can telepathically communicate with the hut so long as it remains on the same plane of existance. At 
                             18th level you can target a hut or abode that can fit within a 60x60x60 ft cube.
-               Witch's Luck - Prerequisites - 6th level - You grant an individual abounding luck or terrible misfortune. You grant a creature within 30ft an inspiration die that must be used within the next 1 minute. Or 
+    - content: Witch's Luck - Prerequisites - 6th level - You grant an individual abounding luck or terrible misfortune. You grant a creature within 30ft an inspiration die that must be used within the next 1 minute. Or 
                              you can choose to impose a misfortune upon a creature that fails its wisdom saving throw, allowing you to subtract 1d6 from one of the creature's rolls within the next minute before the 
                              results of the roll are resolved. At 18th level the duration of this hex increases to 1-hour and you can grant a friendly creature 1 reroll of a failed roll instead of the inspiration die, or 
                              you can cause a creature to immediately fail its next throw if it failed to resist this hex.
-               Witching Ward - You create a magical barrier around a target, shielding them from misfortune. The warded creature receives a +2 bonus to AC and has advantage on saving throws against witch hexes and curses.
+    - content: Witching Ward - You create a magical barrier around a target, shielding them from misfortune. The warded creature receives a +2 bonus to AC and has advantage on saving throws against witch hexes and curses.
                                This ward lasts until the warded creature is hit or fails a saving throw. A witch knows when a warded creature is no longer protected. A witch can have only one ward active at a time. If the
                                witch uses this ability again, the previous ward immediately ends. You can cast this hex as a reaction when you or a target within 60 ft of you is the target of a hex or a curse that you 
                                have successfully identified. At 18th level the AC provided by this ward increase to +4 and the target is immune to hexes and curses cast by creatures with CR lower than 1/4 of your level in
@@ -805,18 +805,18 @@
     - content: You gain an aura of misfortune. Strange and supernatural things tend to occur around you. Any creature that enters this 30ft. aura must make a Wisdom saving throw against your warlock spell save 
                or become jinxed. A creature that succeeds against this effect cannot be affected by it for 1-hour. A jinxed creature that takes any action within your aura must roll a d10 and choose the 
                corresponding effect. A creature can make a new saving throw against this effect whenever it takes damage or triggers a new misfortune. You can supress or reactivate this aura as a bonus action.
-               Herald of Misfortune Chart
-               d10  Result
-                1   The creature fumbles
-                2   The creature falls prone
-                3   The creature breaks a nearby unattended object
-                4   The creature hits a random nearby creature
-                5   The creature becomes frightened for 1 round
-                6   The creature fails its next charisma check
-                7   The creature fails its next saving throw
-                8   The creature is struck by a nearby falling object
-                9   The creature aggitates all nearby animals
-               10   The creature has disadvantage on its next check
+    - content: Herald of Misfortune Chart
+    - content: d10  Result
+    - content:  1   The creature fumbles
+    - content:  2   The creature falls prone
+    - content:  3   The creature breaks a nearby unattended object
+    - content:  4   The creature hits a random nearby creature
+    - content:  5   The creature becomes frightened for 1 round
+    - content:  6   The creature fails its next charisma check
+    - content:  7   The creature fails its next saving throw
+    - content:  8   The creature is struck by a nearby falling object
+    - content:  9   The creature aggitates all nearby animals
+    - content: 10   The creature has disadvantage on its next check
                                  
                                  
   - title: The Crimson Lord Abilities
@@ -889,40 +889,40 @@
                If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete. These creatures last until 
                they are killed or until the end of the next short or long rest, upon which they crumble into dust. If these creatures would expire due to a rest, you can instead gain one less warlock spell slot from
                the rest per each spell slot spent on this feature to keep them active.
-               
-               SKELETON ELITE - Medium undead, lawful evil
-               Armor Class - 15 (armor scraps)
-               Hit Points - 15 (2d8+6)
-               Speed - 30ft.
-               Stats - STR 14(+2) DEX 14(+2) CON 16(+3) INT 6(-2) WIS 8(-1) CHA 5(-3)
-               Damage Vulnerabilities - bludgeoning
-               Damage Immunities - poison
-               Condition Immunities - exhaustion, poisoned
-               Senses - darkvision 60ft., passive Perception 9
-               Languages - understands all languages it knew in life but can't speak
-               Challenge - 1/2 {1 00 XP)
-               Martial Advantage - Once per turn, the skeleton can deal an extra 2 {1d4) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the skeleton that isn't 
+    - content:  
+    - content: SKELETON ELITE - Medium undead, lawful evil
+    - content: Armor Class - 15 (armor scraps)
+    - content: Hit Points - 15 (2d8+6)
+    - content: Speed - 30ft.
+    - content: Stats - STR 14(+2) DEX 14(+2) CON 16(+3) INT 6(-2) WIS 8(-1) CHA 5(-3)
+    - content: Damage Vulnerabilities - bludgeoning
+    - content: Damage Immunities - poison
+    - content: Condition Immunities - exhaustion, poisoned
+    - content: Senses - darkvision 60ft., passive Perception 9
+    - content: Languages - understands all languages it knew in life but can't speak
+    - content: Challenge - 1/2 {1 00 XP)
+    - content: Martial Advantage - Once per turn, the skeleton can deal an extra 2 {1d4) damage to a creature it hits with a weapon attack if that creature is within 5 feet of an ally of the skeleton that isn't 
                                    incapacitated.
-               Actions 
-               Longsword - Melee Weapon Attack +4 to hit, reach 5 ft., one target. Hit 6 (1 d8+2) piercing damage.
-               Longbow - Ranged Weapon Attack +4 to hit, range 150/600 ft., one target. Hit 6 (1 d8+2) piercing damag         
-               
-               FLAME SKELETON - Medium undead, lawful evil
-               Armor Class - 12 (armor scraps)
-               Hit Points - 10 (2d8+2)
-               Speed - 30ft.
-               Stats - STR 10(+0) DEX 14(+2) CON 13(+1) INT 10(+0) WIS 8(-1) CHA 5(-3)
-               Damage Vulnerabilities - bludgeoning
-               Damage Immunities - poison, fire
-               Condition Immunities - exhaustion, poisoned
-               Senses - darkvision 60ft., passive Perception 9
-               Languages - understands all languages it knew in life but can't speak
-               Challenge - 1/2 {1 00 XP)
-               Ignited lllumination - The flame skeleton is constantly smouldering, and may fully ignite or extinguish itself as a bonus action. While ablaze, the skeleton sheds bright light in a 10-foot radius and 
+    - content: Actions 
+    - content: Longsword - Melee Weapon Attack +4 to hit, reach 5 ft., one target. Hit 6 (1 d8+2) piercing damage.
+    - content: Longbow - Ranged Weapon Attack +4 to hit, range 150/600 ft., one target. Hit 6 (1 d8+2) piercing damag         
+    - content:  
+    - content: FLAME SKELETON - Medium undead, lawful evil
+    - content: Armor Class - 12 (armor scraps)
+    - content: Hit Points - 10 (2d8+2)
+    - content: Speed - 30ft.
+    - content: Stats - STR 10(+0) DEX 14(+2) CON 13(+1) INT 10(+0) WIS 8(-1) CHA 5(-3)
+    - content: Damage Vulnerabilities - bludgeoning
+    - content: Damage Immunities - poison, fire
+    - content: Condition Immunities - exhaustion, poisoned
+    - content: Senses - darkvision 60ft., passive Perception 9
+    - content: Languages - understands all languages it knew in life but can't speak
+    - content: Challenge - 1/2 {1 00 XP)
+    - content: Ignited lllumination - The flame skeleton is constantly smouldering, and may fully ignite or extinguish itself as a bonus action. While ablaze, the skeleton sheds bright light in a 10-foot radius and 
                                       dim light for an additional1 0 feet. The skeleton ignites automatically without spending a bonus action whenever it takes the Firebolt action.
-               Actions
-               Touch - Melee Weapon Attack +4 to hit, reach 5 ft., one target. Hit 4 (1 d4+2) fire damage.
-               Firebolt - Ranged Spell Attack +4 to hit, range 120 ft., one target. Hit 8 (1 dl 0+2) fire damage.
+    - content: Actions
+    - content: Touch - Melee Weapon Attack +4 to hit, reach 5 ft., one target. Hit 4 (1 d4+2) fire damage.
+    - content: Firebolt - Ranged Spell Attack +4 to hit, range 120 ft., one target. Hit 8 (1 dl 0+2) fire damage.
     - title: Bone Armor
     - content: Your patron demonstrates to you the secret ways in which death can be used as a tool to preserve life. Whenever you take damage and have an undead creature you control from the Master of Death feature 
                within five feet of you, you may use your reaction to take half the triggering damage and have the undead creature you control take the same amount of damage, of the same type and from the same source. 
@@ -956,9 +956,9 @@
     - title: Soul Shards
     - content: The void within you allows you to pull power from others to fill the emptiness within yourself. You have a number of Soul Shards equal to your charisma modifier (minimum of 1) that can be used to amplify 
                your power and corrupt the spells of others.
-               Soulburn - Once per turn when casting a warlock spell of 1st level or higher that deals damage you may expend a Soul Shard to have the spell deal additional necrotic damage equal to your charisma modifier. 
+    - content: Soulburn - Once per turn when casting a warlock spell of 1st level or higher that deals damage you may expend a Soul Shard to have the spell deal additional necrotic damage equal to your charisma modifier. 
                           If you later gain the pact of the blade or chain boon you may use this feature on attacks made with your pact weapon or familiar.
-               Haunt - When you see an enemy within 30 feet of you regain hit points as a result of a spell you may use your reaction to expend as many Soul Shards as you have to reduce the amount healed equal to your 
+    - content: Haunt - When you see an enemy within 30 feet of you regain hit points as a result of a spell you may use your reaction to expend as many Soul Shards as you have to reduce the amount healed equal to your 
                        charisma modifier times the number of shards expended You can regain a soul shard as a reaction when killing a creature within 30 feet of you with a warlock spell of 1st level or higher, and 
                        additionally regain all expended Soul Shards at the end of a long rest
     - title: Ravenous Intent
@@ -992,9 +992,9 @@
     - content: Contagion, Hallow
     - title: Toil & Trouble
     - content: You can prepare an enchanted brew during a short or long rest. When you do select one of the following potions to create;
-               Everdream - When consumed as a bonus action this tonic puts its drinker under a heavy lethargy as if you had cast the spell sleep with your highest level Pact Magic spell slot.
-               Hale & Hearty - When consumed as a bonus action this tonic heals its drinker as if you had cast healing word equivalent to your highest level Pact Magic spell slot.
-               Love Potion - When created you make a number of these potions equal to the highest spell level Pact Magic spell slot you have. When consumed as a bonus action the drinker falls under the effect of a 
+    - content: Everdream - When consumed as a bonus action this tonic puts its drinker under a heavy lethargy as if you had cast the spell sleep with your highest level Pact Magic spell slot.
+    - content: Hale & Hearty - When consumed as a bonus action this tonic heals its drinker as if you had cast healing word equivalent to your highest level Pact Magic spell slot.
+    - content: Love Potion - When created you make a number of these potions equal to the highest spell level Pact Magic spell slot you have. When consumed as a bonus action the drinker falls under the effect of a 
                              charm person spell as if you had cast it.
                              Each of the brews smells delicious and sweet. When you offer a brew to a creature you make a Charisma (Deception) skill check against their Wisdom (Insight). If you succeed, they take and consume the 
                              potion. If you fail, they choose whether to take the potion and consume it or not. These brews only stay potent until your next short or long rest, whichever comes first. Mter that they turn putrid, 
@@ -1008,12 +1008,12 @@
     - content: You can touch an unconscious creature and turn it into any beast with a CR of 1 or lower. That beast then acts as your familiar as if you had cast the find familiar spell. As your familiar the creature
                fears your mystical power and cannot summon the courage to do anything to defy your will. This effect ends when someone casts remove curse on the target or you use this feature again. In addition, you 
                must name a condition that, if it comes to pass, functions as if a remove curse spell had been cast on the target. Choose one of the following conditions;
-               Devotion - If the target has a sincere change of heart and is repentant for his transgression against you, a loyal servant to you for a year and a day, and begs your forgiveness. The Familiar Curse 
+    - content: Devotion - If the target has a sincere change of heart and is repentant for his transgression against you, a loyal servant to you for a year and a day, and begs your forgiveness. The Familiar Curse 
                           returns if they transgress you again and you have not used the feature again. In this case you do not select a condition.
-               Sacrifice - If someone who cares for the target sheds tears over them and begs to serve their fate instead. The person who was pleading then takes over the Familiar Curse but you do not select a condition.
-               True Love - If the target is recognized for who they are and kissed by someone who sincerely loves them and who they sincerely love. The Familiar Curse returns if they betray that person romantically 
+    - content: Sacrifice - If someone who cares for the target sheds tears over them and begs to serve their fate instead. The person who was pleading then takes over the Familiar Curse but you do not select a condition.
+    - content: True Love - If the target is recognized for who they are and kissed by someone who sincerely loves them and who they sincerely love. The Familiar Curse returns if they betray that person romantically 
                            and you have not used the feature again. In this case you do not select a condition. 
-               If the effect ends due to a remove curse the creature reverts to its normal form and is conscious, if the effect ends due to you using this feature again the creature reverts to its normal form and 
+    - content: If the effect ends due to a remove curse the creature reverts to its normal form and is conscious, if the effect ends due to you using this feature again the creature reverts to its normal form and 
                remains unconscious until they are stirred awake or they have slept one hour for every month they lived as your familiar.
                            
                            
@@ -1117,16 +1117,16 @@
     - title: Apprentice Chemister
     - content: When you cast a spell that deals damage, you can randomly change the spell's damage to one of a different type. Once per casting of such a spell you can roll two d8s and choose one of them. The 
                number rolled on the die determines the spell's new damage type, as shown below.
-               d8    Damage Type
-                1    acid
-                2    cold
-                3    fire
-                4    force
-                5    lightning
-                6    poison
-                7    psychic
-                8    thunder
-               If you roll the same number on both d8s, you get to choose the spell's new damage type from the above options, and can add the d8s rolled to one of the spell's damage rolls.
+    - content: d8    Damage Type
+    - content:  1    acid
+    - content:  2    cold
+    - content:  3    fire
+    - content:  4    force
+    - content:  5    lightning
+    - content:  6    poison
+    - content:  7    psychic
+    - content:  8    thunder
+    - content: If you roll the same number on both d8s, you get to choose the spell's new damage type from the above options, and can add the d8s rolled to one of the spell's damage rolls.
     - title: Fireminds Foresight
     - content: You can momentarily merge your consciousness with Niv-Mizzet's in order to access the dragon wizard's arcane knowledge. As a bonus action, you can acquire the ability to cast one spell of your 
                choice from the wizard Spell list. The spell must be of a level for which you have spell slots, and you follow all the normal rules for casting it, including expending a spell slot. If the spell 
@@ -1157,13 +1157,13 @@
     - content: You acquire the training necessary to effectively arm yourself for battle. You gain proficiency with martial weapons.
     - title: Mantle of Flame
     - content: You can invoke the flames of the Phoenix called the Mantle of Flame, provided that you aren't wearing medium or heavy armor. Your body becomes a glorious flame and blazing wings sprout from your back.
-               You can use a bonus action to start the Mantle of Flame, which lasts for 1 minute. It ends early if you are incapacitated, or if you don medium or heavy armor. You can also dismiss the Mantle of Flame
+    - content: You can use a bonus action to start the Mantle of Flame, which lasts for 1 minute. It ends early if you are incapacitated, or if you don medium or heavy armor. You can also dismiss the Mantle of Flame
                at any time you choose (no action required) While your Mantle of Flame is active, you gain the following benefits
-               You shed bright light in a 30-foot radius and dim light for an additional 30 feet.
-               You have resistance to Fire Damage
-               You gain a bonus to your AC equal to your Charisma modifier (minimum of+ 1)
-               Once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell The extra fire damage equals your charisma modifier.
-               Once you use this feature, you can't use it again until you finish a short or long rest.
+    - content: You shed bright light in a 30-foot radius and dim light for an additional 30 feet.
+    - content: You have resistance to Fire Damage
+    - content: You gain a bonus to your AC equal to your Charisma modifier (minimum of+ 1)
+    - content: Once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell The extra fire damage equals your charisma modifier.
+    - content: Once you use this feature, you can't use it again until you finish a short or long rest.
     - title: Ashen Step
     - content: You become quick and nimble like your patron. When you take damage from an attack you may use your reaction to disappear into a cloud of ash teleporting up to 30 feet to an unoccupied space you can see. 
                You can use this feature a number of times equal to your proficiency bonus, and you regain all expenses uses of it when you finish a long rest.
@@ -1175,10 +1175,10 @@
                finish a long rest.
     - title: Form of the Phoenix
     - content: You finally master the spark of fire that dances within you. While under the effect of your Mantle of Flame feature, you gain additional benefits
-               You have a flying speed of 40 feet and can hover.
-               You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons
-               You are immune to fire damage
-               If you use your Phoenix Spark, that feature deals an extra 20 fire damage to each creature.
+    - content: You have a flying speed of 40 feet and can hover.
+    - content: You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons
+    - content: You are immune to fire damage
+    - content: If you use your Phoenix Spark, that feature deals an extra 20 fire damage to each creature.
                                 
                                 
   - title: The Saint Abilities
@@ -1211,10 +1211,10 @@
                damage to the target.
     - title: Hero of the Saint
     - content: You have mastered the blessings of your patron. You can spend an action to become an avatar for your patron. You gain the following benefits for 1 minute;
-               Your creature type becomes Celestial
-               You can transform any non-magical bludgeoning, piercing or slashing damage you deal into radiant damage.
-               You gain temporary hit points equal to half your maximum hit points.
-               Once you use this feature, you can' t use it again until you finish a long rest.
+    - content: Your creature type becomes Celestial
+    - content: You can transform any non-magical bludgeoning, piercing or slashing damage you deal into radiant damage.
+    - content: You gain temporary hit points equal to half your maximum hit points.
+    - content: Once you use this feature, you can' t use it again until you finish a long rest.
                               
                               
   - title: The Watchers Abilities

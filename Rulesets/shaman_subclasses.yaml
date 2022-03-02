@@ -68,14 +68,14 @@
     - content: Contagion. enervation
     - title: Primal Curse
     - content: You learn to twist the life essence of a creature, hindering their abilities. As an Action, you can choose to inflict one of the following Primal Curses on a crature you can see within 30 feet. The Primal 
-               Curse lasts for 1 minute unless you use an action to to end the effect or become uncoscious. Once you've cursed a creature, using this feature again causes the effect of the previous curse to end 
+    - content: Curse lasts for 1 minute unless you use an action to to end the effect or become uncoscious. Once you've cursed a creature, using this feature again causes the effect of the previous curse to end 
                immediately. Upon reaching 11th Level you can have up to 2 of your Primal Curses active at one time. At 17th Level you can have up to 3 Primal Curses active at one time. A single creature can onle be 
                effected by 1 Primal Curse at a time.
-               Curse of Blinding - You force a creature to makea Strength Saving Throw. On a failed save it's movement speed is reduced to five times your Wisdom modifier (minimum of 5 feet). The creature repeats the 
+    - content: Curse of Blinding - You force a creature to makea Strength Saving Throw. On a failed save it's movement speed is reduced to five times your Wisdom modifier (minimum of 5 feet). The creature repeats the 
                                    saving throw at the end of each turn, ending the effect on a success 
-               Curse of Draining - You force a creature to make a Constitution Saving Throw. On a failed save it takes 1d4 necrotic damage and cannot gain hit points. The creature repeats the saving throw at the end of 
+    - content: Curse of Draining - You force a creature to make a Constitution Saving Throw. On a failed save it takes 1d4 necrotic damage and cannot gain hit points. The creature repeats the saving throw at the end of 
                                    each turn taking and additional 1d4 necrotic damage on each failed save, ending the effect on a success
-               Curse of Lethargy - You force a creature to make a Wisdom Saving Throw. On a failed save the creature must subtract your Wisdom modifier (minimum of 1) from its attack rolls. The creature repeats the 
+    - content: Curse of Lethargy - You force a creature to make a Wisdom Saving Throw. On a failed save the creature must subtract your Wisdom modifier (minimum of 1) from its attack rolls. The creature repeats the 
                                    saving throw at the end of each turn, ending the effect on a success
     - title: Evil Eye
     - content: You learn to twist the life-esscnce of those around you in harmful ways. When a creature that you can see within 30 feet makes an ability check. attack roll or saving throw. you can use 
@@ -110,9 +110,9 @@
     - content: You learn to wield earth and fire. You learn the Magic Stone and Produce Flame cantrips and they count as shaman spells for you. In addition, you can use elemental power to hinder foes. You choose 
                to hurl either molten magma or viscous slag at a creature that you can see within 30 feet. The target must make a Dexterity saving throw. On a failed save the effect of the elemental attack you 
                selected takes place.
-               Magma - You temporarily weaken the defenses of a foe. Until the start of the next turn. the armor class of the target is reduced by an amount equal to your Wisdom modifier (minimum of 1) This effect
+    - content: Magma - You temporarily weaken the defenses of a foe. Until the start of the next turn. the armor class of the target is reduced by an amount equal to your Wisdom modifier (minimum of 1) This effect
                        ends early if a creature uses an action to scrape the magma off the target.
-               Slag - You reduce the mobility of a foe. Until the start of your next turn, the target's movement speed is halved and it has disadvantage on Dexterity ability chekcs and saving throws. This effect 
+    - content: Slag - You reduce the mobility of a foe. Until the start of your next turn, the target's movement speed is halved and it has disadvantage on Dexterity ability chekcs and saving throws. This effect 
                       ends early if a creature uses an action to scrape the slag off the target.
     - title: Elemental Body
     - content: Your connection to the elements deep within the earth has hardened your physical for. you are resistant to fire damage and you have advantage on saving throws to resist being grappled or moved against your will
@@ -125,12 +125,12 @@
     - title: Volcanic Form
     - content: You can allow the awesome power of the elements to flow through your body, overwhelming your physical form for a brief period of time. As an Action you can enter your Volcanic Form, gaining the following 
                benefits;
-               You are immune to fire damage and are resistant to bludgeoning, piercing and slashing damage
-               Any creature that hits you with a melee attack must make a Constitution saving throw or take 2d10 fire damage
-               As an Action, you can cause magma to burst forth from the ground at a point within 30 feet that you can see. Creatures within 5 feet of the point must make a Dexterity saving throw. On a failed save, 
+    - content: You are immune to fire damage and are resistant to bludgeoning, piercing and slashing damage
+    - content: Any creature that hits you with a melee attack must make a Constitution saving throw or take 2d10 fire damage
+    - content: As an Action, you can cause magma to burst forth from the ground at a point within 30 feet that you can see. Creatures within 5 feet of the point must make a Dexterity saving throw. On a failed save, 
                they take 4d8 fire damage and are knocked prone.
-               Your Volcanic Form lasts for 1 minute, unless you use an action to end it early or fall unconscious. ou can use this ability once per long rest without penalty. Each subsequent time you use your Volcanic 
-               Form you will gain one level of exhaustion at the end of your transformation
+    - content: Your Volcanic Form lasts for 1 minute, unless you use an action to end it early or fall unconscious. ou can use this ability once per long rest without penalty. Each subsequent time you use your Volcanic 
+    - content: Form you will gain one level of exhaustion at the end of your transformation
                         
                         
                         
@@ -155,11 +155,11 @@
     - content: You have learned the secret technique of the Spirit-Warrior, special glyphs, that when inscribed upon a weapon, grant it's weilder incredible power. When you finish a long rest, you touch one weapon of 
                your choice. inscribing it with one of the glyphs below. Only Spirit-Warriors know how to draw out the potential of these glyphs. For anyone else using the weapon it functions as a normal weapon. The 
                glyph you choose lasts until your next long rest.
-               Glyph of Binding - This glyph draws out the full potential of your physical strength. While weilding this weapon you have advantage on all Strength (Athltics) checks you make to grapple a creature and you 
+    - content: Glyph of Binding - This glyph draws out the full potential of your physical strength. While weilding this weapon you have advantage on all Strength (Athltics) checks you make to grapple a creature and you 
                                   have advantage on any attack rolls you make agianst a creature you have grappled
-               Glyph of Draining - This glyph can drain life force from others to restore your vitality. When you roll a critical hit on an attack with this weapon, the target takes and additional 2d6 necrotic damage. 
+    - content: Glyph of Draining - This glyph can drain life force from others to restore your vitality. When you roll a critical hit on an attack with this weapon, the target takes and additional 2d6 necrotic damage. 
                                    You regain hit points equal to the necrotic damage dealt. This ability has no effect on constructs or undead creatures.
-               Glyph of Wounding - This glyph allows the weapon to inlict deep, grevious, wounds upon your foes. When you deal damage to a creature with this weapon, the creature cannot regain hit point until the end of 
+    - content: Glyph of Wounding - This glyph allows the weapon to inlict deep, grevious, wounds upon your foes. When you deal damage to a creature with this weapon, the creature cannot regain hit point until the end of 
                                    your next turn
     - title: Extra Attack
     - content: You can attack twice instead of once whenever you take the Attack action
@@ -191,8 +191,8 @@
     - content: You learn to weild air and water. you learn the Ray of Frost and Thunderclap cantrips and they count as shaman spells for you. In addition, you can use elemental power to hinder foes. You choose 
                to hurl either powerful gusts or frigid icicles at a creature that you can see within 30 feet. The target must make a Strength saving throw. On a failed save the effect of the elemental attack you 
                selected takes place.
-               Gale - You blow a foe backwards with a burst of air. The target is knocked back a number of feet equal to 5 times your Wisdom modifier (minimum of 5 feet)
-               Icicle - You blast a foe with frigid ice. until the start of your next turn, the target has disadvantage on Strength-based attack rolls, ability checks, and saving throws. This effect ends early if a
+    - content: Gale - You blow a foe backwards with a burst of air. The target is knocked back a number of feet equal to 5 times your Wisdom modifier (minimum of 5 feet)
+    - content: Icicle - You blast a foe with frigid ice. until the start of your next turn, the target has disadvantage on Strength-based attack rolls, ability checks, and saving throws. This effect ends early if a
                         creature uses an action to remove the ice from the affected target's body.
     - title: Elemental Body
     - content: Your connection to the elemental ice and storm have inured your body against the elements. you are resistant to cold and thunder damage.
@@ -205,12 +205,12 @@
     - title: Tempest Form
     - content: You can allow the awesome power of the elements to flow through your body, overwhelming your physical form for a brief period of time. As an Action you can enter your Tempest Form, gaining the following 
                benefits;
-               You are immune to cold damage and thunder damage
-               You gain a flying speed of 60 feet
-               As an Action, you can cause freezing ice and wind forth to manifest at a point within 30 feet that you can see. Creatures within 5 feet of the point must make a Strength saving throw. On a failed save, 
+    - content: You are immune to cold damage and thunder damage
+    - content: You gain a flying speed of 60 feet
+    - content: As an Action, you can cause freezing ice and wind forth to manifest at a point within 30 feet that you can see. Creatures within 5 feet of the point must make a Strength saving throw. On a failed save, 
                they take 4d6 cold damage and are restrained until the start of your next turn. A creature may use an Action to scrape the Ice off of the target to end the effect early
-               Your Tempest Form lasts for 1 minute, unless you use an action to end it early or fall unconscious. ou can use this ability once per long rest without penalty. Each subsequent time you use your Volcanic 
-               Form you will gain one level of exhaustion at the end of your transformation
+    - content: Your Tempest Form lasts for 1 minute, unless you use an action to end it early or fall unconscious. ou can use this ability once per long rest without penalty. Each subsequent time you use your Volcanic 
+    - content: Form you will gain one level of exhaustion at the end of your transformation
                         
                         
                         
@@ -230,52 +230,52 @@
     - content: Hold Monster, Insect Plague
     - title: Bestial Adaptation
     - content: Your primal connection to the wilds enhances your physical abilities. Choose one of the following features of your choice that best reflect the beats you seem to emulate;
-               Agile Adaptation - your movement speed increases by 10 feet and you ignore the effects of non-magical difficult terrain
-               Alpine Adaptation - You gain a 30 foot climbing speed and you can use your reaction to reduce any falling damage you take by an amount equal to your shaman level
-               Aquatic Adaptation - You gain a 30 foot swimming speed and you can hold your breath underwater for up to 1 hour
+    - content: Agile Adaptation - your movement speed increases by 10 feet and you ignore the effects of non-magical difficult terrain
+    - content: Alpine Adaptation - You gain a 30 foot climbing speed and you can use your reaction to reduce any falling damage you take by an amount equal to your shaman level
+    - content: Aquatic Adaptation - You gain a 30 foot swimming speed and you can hold your breath underwater for up to 1 hour
     - title: Primal Wild Shape
     - content: Your kinship with the animals of the land allow you to take on the form of a Great Beast. You can expend one of your Primal Magic spell slots to transform into a great beast using the Great Beast stat
                block below. when you transform choose one bestial trait from the Bestial Trait list. You determine the appearance of your bestial form but its appearance has no effect on it's abilities. While 
                transformed, the following rules apply;
-               You use the Strength, Dexterity and Constitution scores of the Great Beast, but you retain your own Intelligence, Wisdom and Charisma scores as well as all of your skill and saving throw proficiencies
-               You assume the hit points and Hit Dice of the Great Beast. When you revert to your normal form, you return to the number of hit points that you had before you transformed. However if you revert to 
+    - content: You use the Strength, Dexterity and Constitution scores of the Great Beast, but you retain your own Intelligence, Wisdom and Charisma scores as well as all of your skill and saving throw proficiencies
+    - content: You assume the hit points and Hit Dice of the Great Beast. When you revert to your normal form, you return to the number of hit points that you had before you transformed. However if you revert to 
                your normal form because you dropped to 0 hit points, and addition damage carries over to your normal form
-               You can't cast spells and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming does not break your concentration on a spell 
+    - content: You can't cast spells and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming does not break your concentration on a spell 
                you've already cast, however it does prevent you from taking any actions that are part of that spell
-               You retain the ebnefit of any features from your class, race or any other source and can use them if the new form is capable of doing so. You can't use any of your special senses unless your new 
+    - content: You retain the ebnefit of any features from your class, race or any other source and can use them if the new form is capable of doing so. You can't use any of your special senses unless your new 
                form also has that sense
-               Any equipment you are wearing or carrying merges into your Great Beast form. Equipment that merges has no effects while it is transformed
-               Your Great Beast form lats for one hour. You then revert to your normal form unless you use another Primal Magic spell slots to maintain the form. You revert to your normal form if you use a bonus 
+    - content: Any equipment you are wearing or carrying merges into your Great Beast form. Equipment that merges has no effects while it is transformed
+    - content: Your Great Beast form lats for one hour. You then revert to your normal form unless you use another Primal Magic spell slots to maintain the form. You revert to your normal form if you use a bonus 
                action to do so, fall unconscious, drop to 0 hit points or die
-               
-               Beast Traits
-               Aggressive - as a bonus action, the great beast can move up to its speed towards a hostile creature that it can see
-               Amphibious - The Great Beast can breath air and water
-               Aquatic - The Great Beast gains a swim speed of 40 feet
-               Charge - If the Great Beast moves at least 20 feet in astraight line towards a target and then hits it with a maul attack on the same turn, the target takes an extra 1d6 slahing damage. If the target
+    - content: 
+    - content: Beast Traits
+    - content: Aggressive - as a bonus action, the great beast can move up to its speed towards a hostile creature that it can see
+    - content: Amphibious - The Great Beast can breath air and water
+    - content: Aquatic - The Great Beast gains a swim speed of 40 feet
+    - content: Charge - If the Great Beast moves at least 20 feet in astraight line towards a target and then hits it with a maul attack on the same turn, the target takes an extra 1d6 slahing damage. If the target
                         is a creature, it must make a Strength saving throw against your Shaman spell save DC or be knocked prone
-               Keen Sight - The Great Beast has advantage on Wisdom (Perception) checks that rely on sight
-               Pack Tactics - The Great Beast has advantage on attack rolls against a creature if at least one of it's allies are within 5 feet of the ally is not incapacitated
-               Large - The Great Beast counts as a Large creature
-               Powerful Build - The Great Beast counts as one size larger when determining the weight it can push, drag, lift or carrying
-               Savage Bite - If the Great Beast hits  creature that is the same size or smaller, with a bite attack, the creature is grappled (escape DC is your Shaman spell save DC) Until the grapple ends, the 
+    - content: Keen Sight - The Great Beast has advantage on Wisdom (Perception) checks that rely on sight
+    - content: Pack Tactics - The Great Beast has advantage on attack rolls against a creature if at least one of it's allies are within 5 feet of the ally is not incapacitated
+    - content: Large - The Great Beast counts as a Large creature
+    - content: Powerful Build - The Great Beast counts as one size larger when determining the weight it can push, drag, lift or carrying
+    - content: Savage Bite - If the Great Beast hits  creature that is the same size or smaller, with a bite attack, the creature is grappled (escape DC is your Shaman spell save DC) Until the grapple ends, the 
                              target is restrained and the Great Beast cannot bite another creature.
-               Standing Leap - The Great Beast's long jump is 15 feet and it's high jump is 10 feet. With or without a running start
-               Sure Footed - The Great Beast has advantage on saing throws against being forcibly moved or knocked prone.
-       
-               The Great Beast - Medium Beast, Unaligned
-               Armor Class - 13 + PB
-               Hit Points - 10 + 5 times your shaman level
-               Hit Dice - D10 times your shaman level
-               Speed - 40 
-               Stats - STR 16(+3) DEX 14(+2) CON 16(+3)
-               Senses - Darkvision 60ft
-               Languages - understands any languages you speak
-               Keen Smell - The Great Beast has advantage on Wisdom (Perception) checks that rely on it's smell or hearing
-               Primal Fury - Whenever The Great Beast makes Strength, Dexterity or Constitution check or saving throw, you add your proficiency bonus to the roll
-               Actions
-               Bite - Melee Weapon Attack +3 plus PB to hit, reach 5ft., one target, Hit 1d6 + 3 piercing damage
-               Maul - Melee Weapon Attack +3 plus PB to hit, reach 5ft., one target, Hit 2d6 + 3 slashing damage
+    - content: Standing Leap - The Great Beast's long jump is 15 feet and it's high jump is 10 feet. With or without a running start
+    - content: Sure Footed - The Great Beast has advantage on saing throws against being forcibly moved or knocked prone.
+    - content: 
+    - content: The Great Beast - Medium Beast, Unaligned
+    - content: Armor Class - 13 + PB
+    - content: Hit Points - 10 + 5 times your shaman level
+    - content: Hit Dice - D10 times your shaman level
+    - content: Speed - 40 
+    - content: Stats - STR 16(+3) DEX 14(+2) CON 16(+3)
+    - content: Senses - Darkvision 60ft
+    - content: Languages - understands any languages you speak
+    - content: Keen Smell - The Great Beast has advantage on Wisdom (Perception) checks that rely on it's smell or hearing
+    - content: Primal Fury - Whenever The Great Beast makes Strength, Dexterity or Constitution check or saving throw, you add your proficiency bonus to the roll
+    - content: Actions
+    - content: Bite - Melee Weapon Attack +3 plus PB to hit, reach 5ft., one target, Hit 1d6 + 3 piercing damage
+    - content: Maul - Melee Weapon Attack +3 plus PB to hit, reach 5ft., one target, Hit 2d6 + 3 slashing damage
     - title: Brutal Strikes
     - content: You attack with the speed and accuracy of an apex predator. When you are in Great Beast for and take a Bite or Maul attack, you can make an additional Bite or Maul attack as part of the same action. The 
                primal magic you draw upon to transform suffuses your bestial form. Your attacks in Great Beast form count as magical for the sake of overcoming resistances. In addition, when you Primal Wild Shape, you 
@@ -350,39 +350,39 @@
                by another of the same level.
     - title: First Level Totems
     - content: Fire Totem - Flames burn around your weapons. While within 60 ft of your totem you add 1d4 fire damage to your weapon attacks. This damage increases to 1d6 at 7th level, 1d8 at 11th and 1d10 at 15th level.
-               Earth Totem - Earth and rocks cling to your skin, like a new skin. You gain temporary hit points equal to your shaman level at the start of your turns while within 60 ft of your totem. After 11th level, 
+    - content: Earth Totem - Earth and rocks cling to your skin, like a new skin. You gain temporary hit points equal to your shaman level at the start of your turns while within 60 ft of your totem. After 11th level, 
                              you add your Wisdom modifier to the temporary hit points. These temporary hit points don't stack with each other, if your shaman is at 12th level and has a Wisdom score of 16, uses this 
                              feature, they would gain 15 hit points, if they lose 12 hit points, on their next turn they would only regain 12 more hit points, to go back to 15.
-               Water Totem - You body feels more fluid. You gain a +1 to your AC while within 60 ft of your totem.
-               Air Totem - The air around you picks up speed. While within 60 ft of your totem, ranged nonmagical attacks have disadvantage against you.
+    - content: Water Totem - You body feels more fluid. You gain a +1 to your AC while within 60 ft of your totem.
+    - content: Air Totem - The air around you picks up speed. While within 60 ft of your totem, ranged nonmagical attacks have disadvantage against you.
     - title: Second Level Totems
     - content: Ash Totem - Ash covers your enemies eyes. Choose a single target within 60 ft of your totem when you summon it. The target must make a Constitution saving throw against your spell DC. On a failure, they 
                            become blinded for the totem's duration. The target can make a save at the end of each of it's turns to end the effect. On a success, they have disadvantage on Perception checks that rely on 
                            sight.
-               Magma Totem - Your totem blasts your enemies with burning hot magma. The closest enemy to your totem, within 60 ft, must make a Dexterity saving throw at the start of your turns. On a failure, they take 
+    - content: Magma Totem - Your totem blasts your enemies with burning hot magma. The closest enemy to your totem, within 60 ft, must make a Dexterity saving throw at the start of your turns. On a failure, they take 
                              2d6 fire damage or half damage on a success.
-               Ooze Totem - As ectoplasm sprouts around your enemies armors, their defenses become open. Choose a target when you summon your totem, that's within 60 ft of it. This creature has their AC reduces by 1 
+    - content: Ooze Totem - As ectoplasm sprouts around your enemies armors, their defenses become open. Choose a target when you summon your totem, that's within 60 ft of it. This creature has their AC reduces by 1 
                             for the totem's duration.
-               Ice Totem - Icy cold winds run through a creature. Choose a target within 60 ft of your totem when you summon it. This creature must make a Constitution saving throw, on a failure they become stunned 
+    - content: Ice Totem - Icy cold winds run through a creature. Choose a target within 60 ft of your totem when you summon it. This creature must make a Constitution saving throw, on a failure they become stunned 
                            until the end of your next turn. A creature automatically succeeds in this save if it has immunity against cold damage, and has advantage in it if it has resistance.
     - title: Third Level Totems
     - content: Fiery Heart Totem - The fire burns in your heart, and the flames give you strength. You can’t be charmed or frightened while this totem is active and within 60 ft of you.
-               Stone Mind Totem - The stoic stubbornness of stone and earth fills your mind and body, strengthening your will. You can choose to have resistance to bludgeoning, piercing or slashing damage. As long as 
+    - content: Stone Mind Totem - The stoic stubbornness of stone and earth fills your mind and body, strengthening your will. You can choose to have resistance to bludgeoning, piercing or slashing damage. As long as 
                                   you are within 60 ft of this totem.
-               Aerial Spirit Totem - The spirits of the wind enters your mind, showing you the opportune times to strike and to move. You do not provoke opportunity attacks, and you can use your reaction to make an 
+    - content: Aerial Spirit Totem - The spirits of the wind enters your mind, showing you the opportune times to strike and to move. You do not provoke opportunity attacks, and you can use your reaction to make an 
                                      attack any time another creature makes an attack against a target other than you. You must be within 60 ft of this totem.
-               Fluid Body Totem - The spirits of water flow in waves across your body and make you fluid. You can't be grappled or restrained. And you have advantage against effects that paralyze or petrify creatures.
+    - content: Fluid Body Totem - The spirits of water flow in waves across your body and make you fluid. You can't be grappled or restrained. And you have advantage against effects that paralyze or petrify creatures.
                                   As long as you are within 60 ft of this totem.
     - title: Fourth Level Totems
     - content: Flame Totem - Flames sear the body of your enemies. Choose a target within 60 ft. The target must make a Dexterity saving throw. On a failed save, the target is set on fire. At the beginning of each of 
                              its turns, whilst it remains on fire, the target takes 2d8 fire damage. To put the flames out requires either an action of rolling on the floor for a whole round or other logical situation 
                              (DMs discretion). On a successful save, there is no effect. It requires a bonus action to re-cast this totem.
-               Rock Prison Totem - Rock form around your targets, imprisoning them. Choose a target within 60 ft. The target must make a Dexterity saving throw. On a failed save the target takes 1d8 bludgeoning damage 
+    - content: Rock Prison Totem - Rock form around your targets, imprisoning them. Choose a target within 60 ft. The target must make a Dexterity saving throw. On a failed save the target takes 1d8 bludgeoning damage 
                                    and is restrained. The target may attempt to break free, requiring Strength check against you spell DC. The target may attempt to slip out with a Dexterity check against your spell DC.
                                    On a successful save, there is no effect. It requires a bonus action to re-cast this totem.
-               Choking Air Totem - The air turns into poison around your targets. Choose a target within 60 ft. The target must make a Constitution saving throw against your spell DC. On a failed save, the target takes
+    - content: Choking Air Totem - The air turns into poison around your targets. Choose a target within 60 ft. The target must make a Constitution saving throw against your spell DC. On a failed save, the target takes
                                    2d6 poison damage. On a successful save the target takes no damage. The target makes the Constitution save at the start of each of its turns unless this totem is destroyed.
-               Drowning Totem - You trap your enemies in water to drown them. Choose a target within 60 ft. The target must make a Dexterity saving throw against your spell DC. On a failed save a bubble of water 
+    - content: Drowning Totem - You trap your enemies in water to drown them. Choose a target within 60 ft. The target must make a Dexterity saving throw against your spell DC. On a failed save a bubble of water 
                                 surrounds the target’s head. They are considered drowning; the target remains fine for a number of rounds equal to their Constitution modifier (minimum of 1 round) as they hold their 
                                 breath. After this point, if they have not removed the ball of water, the target takes 4d8 damage at the beginning of their turn and are considered stunned. They may attempt to remove 
                                 the ball of water on their turn. To remove the ball of water requires a whole turn spent attempting to remove it, making a Dexterity saving throw (DC 10 + the number of rounds they have 
@@ -481,22 +481,22 @@
     - title: Natural Rhythm
     - content: You can feel the rhythm of your surroundings from your head to your toes. You gain proficiency with warhammers and longswords. You also gain proficiency with a drum. For you, a drum also counts as a 
                shield and a spellcasting focus. Whenever you wield a shield in one hand and a weapon in the other, the shield can also be used as a drum.
-               Song of the Forest - you can use your drum to beat the rhythm of your surroundings to empower your allies. As an action while holding a drum, you may begin to make the spirits play a song on your drum, 
+    - content: Song of the Forest - you can use your drum to beat the rhythm of your surroundings to empower your allies. As an action while holding a drum, you may begin to make the spirits play a song on your drum, 
                                     granting a beneficial effect to yourself and all allies within 30 feet of you. You and your allies must be able to hear your drum to gain its benefits. You may choose one of the 
                                     following songs to play
-               Aria of the Lake - You can add an additional bonus of +1 to any saving throws you or an ally must roll.
-               Storm Chant - Whenever you or an ally attacks with a wielded weapon, the weapon’s damage type is thunder instead of the weapon’s normal damage type.
-               Hymn of the Wind - You and your allies’ movement speed gain a bonus of +10 feet. The ally’s bonus is maintained to end of their turn even if they move out of the song’s radius during their turn.
-               Earthen Anthem - When you or an ally roll a 1 on a damage die for a weapon attack, one can reroll the die and must use the new roll, even if the new roll is a 1.
+    - content: Aria of the Lake - You can add an additional bonus of +1 to any saving throws you or an ally must roll.
+    - content: Storm Chant - Whenever you or an ally attacks with a wielded weapon, the weapon’s damage type is thunder instead of the weapon’s normal damage type.
+    - content: Hymn of the Wind - You and your allies’ movement speed gain a bonus of +10 feet. The ally’s bonus is maintained to end of their turn even if they move out of the song’s radius during their turn.
+    - content: Earthen Anthem - When you or an ally roll a 1 on a damage die for a weapon attack, one can reroll the die and must use the new roll, even if the new roll is a 1.
                                 The song ends if you are no longer carrying or wielding the drum. You may end your song at any time as a bonus action. While playing a song, your drum is considered occupied, and you cannot attack
                                 an enemy with the drum.
     - title: Spiritual Beat
     - content: You can invigorate your song, granting additional bonuses to your allies. If you are currently playing a song, you may boost the sound of your song as an action for a minute, granting an additional 
                beneficial effect to yourself and all allies within 30 feet of you depending on the song currently playing
-               Aria of the Lake - When you or an ally must make a Wisdom or Constitution saving throw, you and your allies gain advantage on the saving throw instead of adding a flat +1 bonus.
-               Storm Chant - Whenever you or an ally is hit by a melee attack, the attacker takes 1d6 lightning damage.
-               Hymn of the Wind - You and your allies' movement does not provoke opportunity attacks while in range. You and your allies also gain advantage on the ability check when you take the Shove action.
-               Earthen Anthem - Whenever you or an ally roll the maximum number on any of their damage dice when making a weapon attack, you may roll an additional die and add it to the damage dealt. You can only add a 
+    - content: Aria of the Lake - When you or an ally must make a Wisdom or Constitution saving throw, you and your allies gain advantage on the saving throw instead of adding a flat +1 bonus.
+    - content: Storm Chant - Whenever you or an ally is hit by a melee attack, the attacker takes 1d6 lightning damage.
+    - content: Hymn of the Wind - You and your allies' movement does not provoke opportunity attacks while in range. You and your allies also gain advantage on the ability check when you take the Shove action.
+    - content: Earthen Anthem - Whenever you or an ally roll the maximum number on any of their damage dice when making a weapon attack, you may roll an additional die and add it to the damage dealt. You can only add a 
                                 single damage die to a damage roll in this manner.
                                 After using this feature, you can’t use it again until you finish a short or long rest.
     - title: Worldly Heart
@@ -504,10 +504,10 @@
                for an amount equal to your Shaman level + your Wisdom modifier. After using this feature, you can’t use it again until you finish a long rest.
     - title: Aura of Balance
     - content: Your drum playing abilities improves. While the Spiritual Beat feature is active, you and your allies also gain a resistance to a damage type depending on the song played
-               Aria of the Lake - You gain resistance to piercing damage.
-               Storm Chant - You gain resistance to lightning and thunder damage.
-               Hymn of the Wind - You gain resistance to slashing damage.
-               Earthen Anthem - You gain resistance to bludgeoning damage.
+    - content: Aria of the Lake - You gain resistance to piercing damage.
+    - content: Storm Chant - You gain resistance to lightning and thunder damage.
+    - content: Hymn of the Wind - You gain resistance to slashing damage.
+    - content: Earthen Anthem - You gain resistance to bludgeoning damage.
                           
                           
                           
@@ -568,13 +568,13 @@
     - content: Mass Cure Wounds, Skill Empowerment
     - title: Elemental Bending
     - content: You gain the limited ability to bend the elements through the spirits of nature. As a bonus action, you can invoke an element of your choice, gaining an effect based on the element invoked
-               Earth - You grant a creature within 30 feet of you temporary hit points equal to 1d8 + your Wisdom modifier until the start of your next turn, as a barrier of stone and rocks envelop the target. The 
+    - content: Earth - You grant a creature within 30 feet of you temporary hit points equal to 1d8 + your Wisdom modifier until the start of your next turn, as a barrier of stone and rocks envelop the target. The 
                        temporary hit points increases by 1d8 at 6th level (2d8), 10th level (3d8) and 14th level (4d8).
-               Water - Choose a creature within 30 feet of you. The creature must succeed in a Constitution saving throw against your spell DC or be dazed by a whip of water, becoming incapacitated until the end of 
+    - content: Water - Choose a creature within 30 feet of you. The creature must succeed in a Constitution saving throw against your spell DC or be dazed by a whip of water, becoming incapacitated until the end of 
                        its next turn.
-               Fire - You create a wave of lava that you send at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the attack deals 2d8 fire damage. The damage increases by 1d8 at 6th level (3d8)
+    - content: Fire - You create a wave of lava that you send at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the attack deals 2d8 fire damage. The damage increases by 1d8 at 6th level (3d8)
                       10th level (4d8) and 14th level (5d8).
-               Air - Choose a creature within 30 feet of you. The creature must succeed in a Strength saving throw against your spell DC or be restrained by a vortex of air. At the end of each of its turns, a 
+    - content: Air - Choose a creature within 30 feet of you. The creature must succeed in a Strength saving throw against your spell DC or be restrained by a vortex of air. At the end of each of its turns, a 
                      restrained target can repeat the saving throw, ending the effect on itself on a success.
                      You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.
     - title: Rune Tablet
@@ -590,12 +590,12 @@
     - title: Elemental Alignment
     - content: Choose one of the following elements to focus on; Fire, Water, Air or Earth. During a long rest, you can then create a sigil of that element using 1 hour of your time, which can be part of the long 
                rest. You can as an action activate the sigil and cast a spell according to the aligned element without expending a spell slot and without requiring concentration
-               Earth - You cast investiture of stone.
-               Water - You cast investiture of ice.
-               Fire - You cast investiture of flame.
-               Air - You cast investiture of wind.
-               When the spell ends, you gain a level of exhaustion.
-               To change your aligned element to one of the other three, you can spend a week and 100 gp worth of materials making rituals to realign yourself to the element of choice.
+    - content: Earth - You cast investiture of stone.
+    - content: Water - You cast investiture of ice.
+    - content: Fire - You cast investiture of flame.
+    - content: Air - You cast investiture of wind.
+    - content: When the spell ends, you gain a level of exhaustion.
+    - content: To change your aligned element to one of the other three, you can spend a week and 100 gp worth of materials making rituals to realign yourself to the element of choice.
                               
                               
                               

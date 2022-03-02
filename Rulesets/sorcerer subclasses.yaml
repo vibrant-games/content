@@ -5,21 +5,21 @@
                which is a d6.
     - title: Psionic Talent Options
     - content: You can use your Psionic Talent die in the following ways -
-               Psionic Discovery - You can unlock the ability to cast a mind-oriented sorcerer spell you don’t already know. After meditating for 10 minutes (which can be done during a rest), roll your Psionic 
+    - content: Psionic Discovery - You can unlock the ability to cast a mind-oriented sorcerer spell you don’t already know. After meditating for 10 minutes (which can be done during a rest), roll your Psionic 
                                    Talent die, and choose a sorcerer spell of a level for which you have spell slots and that is in the school of divination or enchantment. You know the chosen spell for a number of 
                                    hours equal to the number you rolled.
-               Psychic Sorcery - When you cast a spell, you can use your mind to form it, rather than relying on words, gestures, and materials. To do so, roll your Psionic Talent die. The spell then requires no 
+    - content: Psychic Sorcery - When you cast a spell, you can use your mind to form it, rather than relying on words, gestures, and materials. To do so, roll your Psionic Talent die. The spell then requires no 
                                  verbal component, and if you rolled the level of the spell or higher, the spell doesn’t require somatic or material components either
-               Telepathic Speech - You can form a telepathic connection between your mind and the mind of another. As a bonus action, choose one creature you can see, and roll your Psionic Talent die. For a number
+    - content: Telepathic Speech - You can form a telepathic connection between your mind and the mind of another. As a bonus action, choose one creature you can see, and roll your Psionic Talent die. For a number
                             of hours equal to the number you rolled, you and the chosen creature can speak telepathically with each other while the two of you are within a number of miles of each other 
                             equal to the number you rolled. To understand each other, you each must speak mentally in a language the other knows. The telepathic connection ends early if you use this ability
                             to form a connection with a different creature.
-               Changing the Die’s Size - If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example,
+    - content: Changing the Die’s Size - If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example,
                                          if the die is a d6 and you roll a 6, it becomes a d4. If it’s a d4 and you roll a 4, it becomes unusable until you finish a long rest. Conversely, if you roll a 1 on your 
                                          Psionic Talent die, it increases by one die size after the roll, up to its starting size. This represents you conserving psionic energy for later use. For example, if you 
                                          roll a 1 on a d4, the die then becomes a d6. Whenever you finish a long rest, your Psionic Talent die resets to its starting size. When you reach certain levels in this 
                                          class, the starting size of your Psionic Talent die increases - at 5th level (d8), 11th level (d10), and 17th level (d12).
-               Psi Replenishment - As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long rest.
+    - content: Psi Replenishment - As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long rest.
     - title: Psychic Strike
     - content: You have learned to channel additional psychic energy into your spells. Immediately after you deal damage to a creature with a sorcerer spell for which you expend a spell slot, you can roll your Psionic 
                Talent die and also deal psychic damage to that creature equal to the number rolled. You can deal this extra damage only once per turn.
@@ -134,10 +134,10 @@
     - title: Hound of Ill Omen
     - content: You gain the ability to call forth a howling creature of darkness to harass your foes. As a bonus action, you can spend 3 sorcery points to summon a hound of ill omen to target one creature you can 
                see within 120 feet of you. The hound uses the dire wolf’s statistics, with the following changes - 
-               The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
-               It appears with a number of temporary hit points equal to half your sorcerer level.
-               It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
-               At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
+    - content: The hound is size Medium, not Large, and it counts as a monstrosity, not a beast.
+    - content: It appears with a number of temporary hit points equal to half your sorcerer level.
+    - content: It can move through other creatures and objects as if they were difficult terrain. The hound takes 5 force damage if it ends its turn inside an object.
+    - content: At the start of its turn, the hound automatically knows its target’s location. If the target was hidden, it is no longer hidden from the hound.
                The hound appears in an unoccupied space of your choice within 30 feet of the target. Roll initiative for the hound. On its turn, it can move only toward its target by the most direct route, and it 
                can use its action only to attack its target. The hound can make opportunity attacks, but only against its target. Additionally, while the hound is within 5 feet of the target, the target has 
                disadvantage on saving throws against any spell you cast. The hound disappears if it is reduced to 0 hit points, if its target is reduced to 0 hit points, or after 5 minutes.
@@ -203,12 +203,12 @@
                you can choose the new spell from the cleric spell list or the sorcerer spell list. You must otherwise obey all the restrictions for selecting the spell, and it becomes a sorcerer spell for you. In 
                addition, choose an affinity for the source of your divine power; good, evil, law, chaos, or neutrality. You learn an additional spell based on that affinity, as shown below. It is a sorcerer spell for you
                but it doesn't count against your number of sorcerer spells known. If you later replace this spell, you must replace it with a spell from the cleric spell list.
-               Affinity    Spell
-               Good        Cure Wounds
-               Evil        Inflict Wounds
-               Law         Bless
-               Chaos       Bane
-               Neutrality  Protection from Evil and Good
+    - content: Affinity    Spell
+    - content: Good        Cure Wounds
+    - content: Evil        Inflict Wounds
+    - content: Law         Bless
+    - content: Chaos       Bane
+    - content: Neutrality  Protection from Evil and Good
     - title: Favored by the Gods
     - content: Divine power guards your destiny. If you fail a saving throw or miss with an attack roll, you can roll 2d4 and add it to the total, possibly changing the outcome. Once you use this feature, you 
                can’t use it again until you finish a short or long rest.
@@ -229,19 +229,19 @@
   - abilities: 
     - title: Dragon Ancestor
     - content: You choose one type of Dragon as your ancestor. The damage type associated with each Dragon is used by features you gain later. You can speak, read, and write Draconic. Additionally, whenever you make a
-               Charisma check when interacting with Dragons, your Proficiency Bonus is doubled if it applies to the check.
-               Draconic Ancestry Table
-               Dragon     Damage Type
-               Black      Acid
-               Blue       Lightning
-               Brass      Fire
-               Bronze     Lightning
-               Copper     Acid
-               Gold       Fire
-               Green      Poison
-               Red        Fire
-               Silver     Cold
-               White      Cold
+    - content: Charisma check when interacting with Dragons, your Proficiency Bonus is doubled if it applies to the check.
+    - content: Draconic Ancestry Table
+    - content: Dragon     Damage Type
+    - content: Black      Acid
+    - content: Blue       Lightning
+    - content: Brass      Fire
+    - content: Bronze     Lightning
+    - content: Copper     Acid
+    - content: Gold       Fire
+    - content: Green      Poison
+    - content: Red        Fire
+    - content: Silver     Cold
+    - content: White      Cold
     - title: Draconic Resilience
     - content: As magic flows through your body, it causes physical Traits of your Dragon ancestors to emerge. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.
                Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren’t wearing armor, your AC equals 13 + your Dexterity modifier.
@@ -265,11 +265,11 @@
     - title: Aspects of Divinity
     - content: Your angelic blood begins to manifest physically whenever you invoke its power. Whenever you cast a spell, spend a sorcery point, or use a sorcerer class feature other than this one, choose one of 
                the following effects to manifest
-               The Creators Eyes - You spawn 1d20 eyes that appear randomly on your body. You can see through all of these eyes. These eyes give you true sight with in 10 feet. Additionally, when you look at a 
+    - content: The Creators Eyes - You spawn 1d20 eyes that appear randomly on your body. You can see through all of these eyes. These eyes give you true sight with in 10 feet. Additionally, when you look at a 
                                    creature with these eyes, you can know when they are lying.
-               Flesh of Angels - Your skin turns into a precious metal, such as gold or silver, and begins to faintly glow. You gain resistance to either nonmagical bludgeoning, slashing, or piercing damage in 
+    - content: Flesh of Angels - Your skin turns into a precious metal, such as gold or silver, and begins to faintly glow. You gain resistance to either nonmagical bludgeoning, slashing, or piercing damage in 
                                  addition to radiant damage.
-               Shepards Feet - Your feet let off an intense light, become shrouded in small thunderclouds, grow wings, or gain some other divine feature. Your movement speed is doubled and nonmagical difficult 
+    - content: Shepards Feet - Your feet let off an intense light, become shrouded in small thunderclouds, grow wings, or gain some other divine feature. Your movement speed is doubled and nonmagical difficult 
                                terrain no longer hampers you. Once an effect manifests, another cannot be invoked until a long rest is completed, during which the previous effect fades away. Due to the power of 
                                these emanations, you cannot manifest the same one twice in a row.
     - title: Celestial Heritage
@@ -281,13 +281,13 @@
     - title: Divine Emanation
     - content: Your angelic blood manifests more violently when you tap into your power. Whenever you cast a spell, spend a sorcery point, or use a sorcerer class feature other than this one or aspect of the divine, 
                choose one of the following effects to manifest
-               Authority of the Infinite - A halo of light manifest above your or behind your head, radiating an intense light within 120 feet. Any hostile creature that stares into this light must make a Wisdom 
+    - content: Authority of the Infinite - A halo of light manifest above your or behind your head, radiating an intense light within 120 feet. Any hostile creature that stares into this light must make a Wisdom 
                                            saving throw versus your spell save DC or become frightened or charmed of you for 1 minute or until they take damage. Once a creature passes the saving throw, they are 
                                            immune to this effect for 24 hours. You may spend 1 sorcery point to suppress or reignite this aura.
-               The Lords Presence - A powerful aura of thunderclouds, fire, radiant light, or some other effect of your choice manifests, filling a 30 by 30 foot cube around you. This aura counts as difficult terrain 
+    - content: The Lords Presence - A powerful aura of thunderclouds, fire, radiant light, or some other effect of your choice manifests, filling a 30 by 30 foot cube around you. This aura counts as difficult terrain 
                                     for hostile creatures. Additionally, hostile creatures are overwhelmed by your presence and thus have disadvantage to hit you while within this aura. You may spend 1 sorcery point 
                                     to suppress or reignite this aura.
-               Celestial Voice - Your voice becomes that of a booming angel. The only language you can speak in is celestial. All hostile creatures within 60 feet that hear your voice must make a Wisdom saving throw 
+    - content: Celestial Voice - Your voice becomes that of a booming angel. The only language you can speak in is celestial. All hostile creatures within 60 feet that hear your voice must make a Wisdom saving throw 
                                  versus your spell save DC or follow a command no longer than 10 words that does not involve harming themselves. Once a creature succeeds or fails on this saving throw, they are immune
                                  to the effect for 24 hours. You may spend 1 sorcery point to suppress or reignite this aura. Once an effect manifests, another cannot be invoked until a long rest is completed, during
                                  which the previous effect fades away. Due to the power of these emanations, an effect cannot manifest again until two others have manifested.
@@ -316,13 +316,13 @@
                throw against one of your spells, you may teleport to a location within 5 feet of the affected target.
     - title: No Limitation
     - content: Your skill with the arcane surpasses all posibilites. You gain the following benefits
-               You no longer need to eat, drink, or sleep.
-               Your AC is now 13+ your spell casting ability modifier.
-               You gain blindsight out to 30 feet.
-               While unlocked you now gain the following benefits as well
-               Your fly speed is increased to 30 feet.
-               Whenever you hit with a spell attack, or a target fails their saving throw against a spell you cast, you may use your reaction to spend sorcery points and deal 5 force damage per point spent.
-               You gain temporary hit points equal to how many sorcery points you have when you unlock.
+    - content: You no longer need to eat, drink, or sleep.
+    - content: Your AC is now 13+ your spell casting ability modifier.
+    - content: You gain blindsight out to 30 feet.
+    - content: While unlocked you now gain the following benefits as well
+    - content: Your fly speed is increased to 30 feet.
+    - content: Whenever you hit with a spell attack, or a target fails their saving throw against a spell you cast, you may use your reaction to spend sorcery points and deal 5 force damage per point spent.
+    - content: You gain temporary hit points equal to how many sorcery points you have when you unlock.
                         
                         
                         
@@ -348,17 +348,17 @@
                30 feet of you, may use your action to command it. It has a fly speed of 30 feet, and you can command it to make one melee spell attack. The damage of this attack is equal to the weapon's damage dice +
                your Charisma modifier. This attack cannot benefit from the the reach, thrown, or versatile properties. In addition, when a creature leaves the weapon's range you may use your reaction to take one 
                opportunity attack with the weapon.
-               Level        Number of Damage Dice
-                 1                    1
-                 5                    2
-                11                    3   
-                17                    4
+    - content: Level        Number of Damage Dice
+    - content:   1                    1
+    - content:   5                    2
+    - content:  11                    3   
+    - content:  17                    4
     - title: Improved Command
     - content: You gain increased command over your telepathic powers and weapon. You may use your action and spend one sorcery point to use one of the following techniques.
-               Disarm - A target creature within 30 feet of you must make a Strength saving throw or drop one item it is holding. The object drops within 5 feet of the target, at a location of your choosing.
-               Slash - Your Telepathic Weapon moves 15 feet in a straight line, making a melee spell attack against each creature along the line. If it moves outside a range of 30 feet from you, it falls motionless to
+    - content: Disarm - A target creature within 30 feet of you must make a Strength saving throw or drop one item it is holding. The object drops within 5 feet of the target, at a location of your choosing.
+    - content: Slash - Your Telepathic Weapon moves 15 feet in a straight line, making a melee spell attack against each creature along the line. If it moves outside a range of 30 feet from you, it falls motionless to
                        the floor.
-               Whirlwind - Your Telepathic Weapon spins in place. All creatures in a 5 foot radius make a Dexterity saving throw against your spell save DC or take damage equal to your telepathic weapon's attack 
+    - content: Whirlwind - Your Telepathic Weapon spins in place. All creatures in a 5 foot radius make a Dexterity saving throw against your spell save DC or take damage equal to your telepathic weapon's attack 
                            damage.
     - title: Mass Disarm
     - content: You grow more adept at disarming the foes around you. You may use your action and spend 3 sorcery points to disarm any number of creatures within range. Each creature you choose within 60 feet of you must 
@@ -373,13 +373,13 @@
   - abilities: 
     - title: Primordial Ancestor
     - content: You choose one of the following Primordials as your ancestor. The damage associated with each of these deities is used by features you gain later.
-               Primordial Ancestry
-               Deity            Damage Type
-               Akadi              Lightning
-               Grumbar            Acid
-               Istishia           Cold
-               Kossuth            Fire
-               You can speak, read and write Primordial. Additionally, whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.
+    - content: Primordial Ancestry
+    - content: Deity            Damage Type
+    - content: Akadi              Lightning
+    - content: Grumbar            Acid
+    - content: Istishia           Cold
+    - content: Kossuth            Fire
+    - content: You can speak, read and write Primordial. Additionally, whenever you make a Charisma check when interacting with elementals, your proficiency bonus is doubled if it applies to the check.
     - title: Primordial Resilience
     - content: As magic flows through your body, it causes physical traits of your Primordial ancestor to emerge. Your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this 
                class. Additionally, parts of your skin are covered by a thin sheen of the elemental energy associated with your ancestor (lightning for Akadi, stone for Grumbar, ice for Istishia and fire for 
@@ -576,7 +576,7 @@
                against you but still have disadvantage on ability checks. This effect lasts for 1 minute. On a success, they are unaffected You can only have one person cursed at a time, if you place another one on a 
                person the certain one disappears. You can do this a number of times equal to your charisma modifier(minimum of 1), you regain all uses on a short or long rest.
     - title: Daymare
-    - contentL Your night hag nature lets you dominate the minds of your foes when they aren't expecting it. When you use a spell attack against a surprised creature you add an extra 1d10 necrotic to the damage roll At higher
+    - content: Your night hag nature lets you dominate the minds of your foes when they aren't expecting it. When you use a spell attack against a surprised creature you add an extra 1d10 necrotic to the damage roll At higher
                levels the damage increases to 2dl 0 at 6th leveL and 3dl0 at 14th level
     - title: Coven
     - content: You learn how to form a coven with your party members. At the end of a long rest you pick two humanoids of either equal or lower level. You gain temporary bit points equal to both of their charisma modifiers 
@@ -605,11 +605,11 @@
     - title: Spellbound Strikes
     - content: You begin to master magical combat. You learn two of the following Spell bound Strikes. You learn one more at 14th and 18th level When you take the Attack action, you can make one melee weapon attack
                as a bonus action. When you hit with this bonus attack, you can spend 1 sorcery point to apply one of your Spellbound Strikes, and up to 4 additional sorcery points to amplify the effect.
-               Heroic Strike - Add ld6 to the attack's damage roll, and ld6 for each additiona l point spent, to a maximum of 5d6.
-               Ethereal Strike - Choose a creature within 10 feet of you. It has disadvantage on attacks against you until the start of your next turn. You can target one more creature for each additional point 
+    - content: Heroic Strike - Add ld6 to the attack's damage roll, and ld6 for each additiona l point spent, to a maximum of 5d6.
+    - content: Ethereal Strike - Choose a creature within 10 feet of you. It has disadvantage on attacks against you until the start of your next turn. You can target one more creature for each additional point 
                                  spent.
-               Glorious Strike - Choose a creature within 10 feet of you. It regains hit points equal to your Charisma modifier. You can target one more creature for each additional point spent.
-               Resounding Strike - The creature you hit must succeed a Strength saving throw or be knocked prone. If it fails, it is also pushed 5 feet away from you for each additional point spent, to a maximum of 
+    - content: Glorious Strike - Choose a creature within 10 feet of you. It regains hit points equal to your Charisma modifier. You can target one more creature for each additional point spent.
+    - content: Resounding Strike - The creature you hit must succeed a Strength saving throw or be knocked prone. If it fails, it is also pushed 5 feet away from you for each additional point spent, to a maximum of 
                                    20 feet.
     - title: Arcane Will
     - content: You can harness the excess energy of your magic to amplify your fighting s kills. While you maintain concentration on a spell, you gain a bonus to your Constitution saving throws and weapon damage rolls. 
@@ -637,11 +637,11 @@
                create oozes from your own form as an action. Choose one option from the table shown. The summoned oozes are friendly to you and your companions. Roll initiative for the summoned oozes as a group. 
                which has its own turns. They obey any verbal commands that you issue to them (no action required by you). Jf you don't issue any commands to them, they defend themselves from hostile creatures. but 
                otherwise take no actions. The oozes become lifeless sludge when they drop to 0 hit points, or after one hour.
-               Spawn of Juiblex Options
-               One ooze of challenge rating 2 or lower
-               Two oozes of challenge rating 1 or lower
-               Four oozes of challenge rating 1/2 or lower
-               Eight oozes of challenge rating 1/ 4 or lower
+    - content: Spawn of Juiblex Options
+    - content: One ooze of challenge rating 2 or lower
+    - content: Two oozes of challenge rating 1 or lower
+    - content: Four oozes of challenge rating 1/2 or lower
+    - content: Eight oozes of challenge rating 1/ 4 or lower
                            
                            
                            
@@ -667,16 +667,16 @@
     - content: You can cast identify at wilL without expending a spell slot or material components.
     - title: Brand
     - content: You gain a magical brand granting you the ability to perform magic. Depending on the location of the brand on your body, you gain additional magical powers. Choose the location of your brand from the Brand 
-               Expanded Spells table. At 1st and 3rd level you learn the spells associated with your choice, as shown in the table. These spells count as sorcerer spells for you, but they don't count against the number of 
+    - content: Expanded Spells table. At 1st and 3rd level you learn the spells associated with your choice, as shown in the table. These spells count as sorcerer spells for you, but they don't count against the number of 
                sorcerer spells known. Your brand is magical in nature and can be detected as such. It can also be used as an Arcane focus for the purpose of spellcasting. Any attempt short of a Wish spells will fail to remove
                the brand
-               Brand Expanded Spells 
-               Location      Spells at 1st level                   Spell at 3rd level
-               Arm           Magic Missle, Shocking Grasp          Hold Person
-               Eye           Detect Magic, Light                   Darkness
-               Chest         Shield, Resistance                    Enlarge/Reduce
-               Leg           Jump, Blade Ward                      Spider Climb
-               Mouth         Comprehend Languages, Friends         Suggestion
+    - content: Brand Expanded Spells 
+    - content: Location      Spells at 1st level                   Spell at 3rd level
+    - content: Arm           Magic Missle, Shocking Grasp          Hold Person
+    - content: Eye           Detect Magic, Light                   Darkness
+    - content: Chest         Shield, Resistance                    Enlarge/Reduce
+    - content: Leg           Jump, Blade Ward                      Spider Climb
+    - content: Mouth         Comprehend Languages, Friends         Suggestion
     - title: Branding Metamagic
     - content: You gain the ability to create magical brands yourself, although not permanent. You gain the Brand Spell Metamagic option. This Metamagic option is detailed at the end of the subclass description.
     - title: Magical Affinity
@@ -801,30 +801,30 @@
                While the flesh golem is within 30 feet of you and you are dealt damage you may spend a sorcery point and use a reaction to redirect half of any damage you take (rounded up) to the flesh golem. You can 
                choose to release the flesh golem from your service at any time and it collapses and decays away immediately. Once you have used this feature you many not use it again until you have released the current 
                golem and taken a long rest.
-               
-               Flesh Golem - Medium construct, neutral
-               Armor Class - 9
-               Hit Points - 93 (11d8 + 44)
-               Speed - 30ft.
-               Stats - STR 19(+4) DEX 9(-1) CON 18(+4) INT 6(-2) WIS 10(+0) CHA 5(-3)    
-               Damage Immunities - lightning, poison, bludeoning, piercing, and slashing, from nonmagical weapons that aren't adamantine
-               Condtlton Immunities - charmed, exhausted, frightened, paralyzed, petrified, poisoned
-               Senses - darkvision 60ft., Passive Perception 10
-               Languages - understands the languagesof its creator but can't speak
-               Challenge - 5 (1,800 XP)
-               Berzerk - Whenever the golem starts its turn woth 40 hit point or fewer. roll a d6. On a 6, the Golem berserk. On each of its turns whtle berserk, the golem attacks the nearest creature it can see. If no 
+    - content:            
+    - content: Flesh Golem - Medium construct, neutral
+    - content: Armor Class - 9
+    - content: Hit Points - 93 (11d8 + 44)
+    - content: Speed - 30ft.
+    - content: Stats - STR 19(+4) DEX 9(-1) CON 18(+4) INT 6(-2) WIS 10(+0) CHA 5(-3)    
+    - content: Damage Immunities - lightning, poison, bludeoning, piercing, and slashing, from nonmagical weapons that aren't adamantine
+    - content: Condtlton Immunities - charmed, exhausted, frightened, paralyzed, petrified, poisoned
+    - content: Senses - darkvision 60ft., Passive Perception 10
+    - content: Languages - understands the languagesof its creator but can't speak
+    - content: Challenge - 5 (1,800 XP)
+    - content: Berzerk - Whenever the golem starts its turn woth 40 hit point or fewer. roll a d6. On a 6, the Golem berserk. On each of its turns whtle berserk, the golem attacks the nearest creature it can see. If no 
                          creature is near enough to move to and attack, the golem attacks an object, With preference for an object smaller than itself. Once the golem goes berserk, it continues to do so until it is 
                          destroyed or regains all its hit potnts The golem's creator, if wthin 60 feet of the berserk golem, can try to calm it by speaking firmly and persuasively. The golem must be able to hear Its 
                          creator, who must take an action to make a DC 15 Charisma (Persuason) check. If the check succeeds, the golem ceases being a berserk. If it takes damage while still at 40 hit points or fewer, the 
                          golem might go berserk again
-               Aversion to Fire - If the golem takes fire damage, it has disadvantage on attack rolls and ablility checks unltl the end of its next turn
-               Immutable Form - The golem is immune to any spell or effect that woold alter its form .
-               Lightning Absorption - Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt .
-               Magic Resistance - The golem has advantage on saving throws against spells and other magical effects.
-               Magic Weapons - The golem's weapon attacks are magical
-               Actions
-               Multiattack - The golem makes two slam attacks .
-               Slam - Melee Weapon Attack; +7 to hit, reach 5ft., one target. Hit 13 (2d8+4) bludgeoning damage
+    - content: Aversion to Fire - If the golem takes fire damage, it has disadvantage on attack rolls and ablility checks unltl the end of its next turn
+    - content: Immutable Form - The golem is immune to any spell or effect that woold alter its form .
+    - content: Lightning Absorption - Whenever the golem is subjected to lightning damage, it takes no damage and instead regains a number of hit points equal to the lightning damage dealt .
+    - content: Magic Resistance - The golem has advantage on saving throws against spells and other magical effects.
+    - content: Magic Weapons - The golem's weapon attacks are magical
+    - content: Actions
+    - content: Multiattack - The golem makes two slam attacks .
+    - content: Slam - Melee Weapon Attack; +7 to hit, reach 5ft., one target. Hit 13 (2d8+4) bludgeoning damage
     - title: Big Bad Hoodoo
     - content: Witch doctor may enact a dark ritual to evoke the most powerful form of Voodoo Curse. As a ritual that takes 24 hours the witch doctor can bond fibers of a tar gets essence to an effigy if she has a 
                piece of the target or something of the targets that was dear to them. The witch doctor creates a permanent spiritual link between both effigy and the target of big bad hoodoo. Regardless of distance the
@@ -882,61 +882,61 @@
     - content: When you level as a sorcerer you can choose one of the spells from the extended Void Spell list. The Void Sorcerer have immunity against these spells. In addition, you can spend one sorcery point to gain 
                60ft of darkvision for 24 hours
                
-               Void Bolt - Cantrip Evocation
+    - content: Void Bolt - Cantrip Evocation
                Casting Time - 1 action
                Range - 120 feet
                Components - V, S
                Duration - Instant
                A Glowing Purple Streak of enegry flashes towards a creature. Make a ranged spell attack, if the Void Bolt hits, the creature takes ldlO nectrotic damage.
                        
-              Plasma Burst -  1st Level Evocation
-              Casting Time - 1 action
-              Range - 90 feet
-              Components - V, S
-              Duration - Instant
-              The caster draws out energy from the void, forms it in to an orb and hurls it at the target. Make aranged spell attack, on hit the the target takes 3d8 necrotic damage. each creature orthogonal to the 
-              target must make a Dexterity saving throw or take 3d8.
+    - content: Plasma Burst -  1st Level Evocation
+               Casting Time - 1 action
+               Range - 90 feet
+               Components - V, S
+               Duration - Instant
+               The caster draws out energy from the void, forms it in to an orb and hurls it at the target. Make aranged spell attack, on hit the the target takes 3d8 necrotic damage. each creature orthogonal to the 
+               target must make a Dexterity saving throw or take 3d8.
                        
-             Null Magic Shield - 3rd Level Abjuration (Ritual)
-             Casting Time - 1 minute
-             Range - self
-             Components - V, S
-             Duration - 8 hours
-             For the duration of the spell you can add you r chari sma modifier to your AC. For the Duration you become Immune to all magical damage. Once the shield takes magical damage it is expended, you can use your
-             reaction to try to hold the shield together by expending a spellslot. To hold the sheild intact you must succeed on a spell check of a DC 10 + Incomming Spell level - your expended spellslot. The nature of 
-             this shield becomes known to any nearby spell casters, or a DC 15 Arcana check
+    - content: Null Magic Shield - 3rd Level Abjuration (Ritual)
+               Casting Time - 1 minute
+               Range - self
+               Components - V, S
+               Duration - 8 hours
+               For the duration of the spell you can add you r chari sma modifier to your AC. For the Duration you become Immune to all magical damage. Once the shield takes magical damage it is expended, you can use your
+               reaction to try to hold the shield together by expending a spellslot. To hold the sheild intact you must succeed on a spell check of a DC 10 + Incomming Spell level - your expended spellslot. The nature of 
+               this shield becomes known to any nearby spell casters, or a DC 15 Arcana check
                       
-            Void Rift - 3rd Level Evocation
-            Casting Time - 1 action
-            Range - Self
-            Components - V, S
-            Duration - 1 Round
-            You split the ground in two and open a temporary rift to the void, a 10x50 feet fissure opens from you , Creatures in the area must succeed on a Dexterity Saving throw or take 6d6 Necrotic Damage, at the 
-            End of your next turn the rift closes and creatures within must succeed on a dexterity saving throw or take 10d6 Necrotic Damage. Half damage on a successful save
+    - content: Void Rift - 3rd Level Evocation
+               Casting Time - 1 action
+               Range - Self
+               Components - V, S
+               Duration - 1 Round
+               You split the ground in two and open a temporary rift to the void, a 10x50 feet fissure opens from you , Creatures in the area must succeed on a Dexterity Saving throw or take 6d6 Necrotic Damage, at the 
+               End of your next turn the rift closes and creatures within must succeed on a dexterity saving throw or take 10d6 Necrotic Damage. Half damage on a successful save
                       
-            Void Erruption - 3rd Level Evocation
-            Casting Time - 1 action
-            Range - 50 fe et
-            Components - V, S
-            Duration - Instant
-            Choose a point within 50ft, every c r eature within a lOft radius must make a dexterity saving throw or be knocked back 5 feet and prone and take 6d6 Necrotic Damage, Crit fail and the target becomes 
-            stunned for 1 round Half damage of successful save.
+    - content: Void Erruption - 3rd Level Evocation
+               Casting Time - 1 action
+               Range - 50 fe et
+               Components - V, S
+               Duration - Instant
+               Choose a point within 50ft, every c r eature within a lOft radius must make a dexterity saving throw or be knocked back 5 feet and prone and take 6d6 Necrotic Damage, Crit fail and the target becomes 
+               stunned for 1 round Half damage of successful save.
                       
-            Call of the Void - 4th Level Illusion
-            Casting Time - 1 action
-            Range - 50 feet
-            Components - V, S
-            Duration - 1 minute
-            You Force a creature you can see within range to hear the voices of the void The target must make a wisdom saving throw or take 7d8 psycic damage and be unable to cast any spell for the duration. The 
-            Creature takes half damage on a succeesful save . The creature can repeate the saving throw at the end of its turn to end the effect early.
+    - content: Call of the Void - 4th Level Illusion
+               Casting Time - 1 action
+               Range - 50 feet
+               Components - V, S
+               Duration - 1 minute
+               You Force a creature you can see within range to hear the voices of the void The target must make a wisdom saving throw or take 7d8 psycic damage and be unable to cast any spell for the duration. The 
+               Creature takes half damage on a succeesful save . The creature can repeate the saving throw at the end of its turn to end the effect early.
                       
-            Mind Melt - 7th Level Illusion
-            Casting Time - 1 action
-            Range - 50 feet
-            Components - V, S
-            Duration - Concentration 1 minute
-            You target one creature within range that you can see, the target must succeed on a Wisdom Saving throw or take 4d8 + 15 necrotic Damage a t the begining of its turn and be stunned The creature can repeat 
-            the saving throw at the end of its turn to end the effect early.
+    - content: Mind Melt - 7th Level Illusion
+               Casting Time - 1 action
+               Range - 50 feet
+               Components - V, S
+               Duration - Concentration 1 minute
+               You target one creature within range that you can see, the target must succeed on a Wisdom Saving throw or take 4d8 + 15 necrotic Damage a t the begining of its turn and be stunned The creature can repeat 
+               the saving throw at the end of its turn to end the effect early.
     - title: Organic Research
     - content: You can spend 2 sorcery points to research a dead organic creature, doing so lets the Void sorcerer know all resistances, immunities and weaknesses. This destroys the body. You can use charisma to make
                an Arcana check against living creatures.
@@ -976,8 +976,8 @@
     - content: At 14th level, when casting a spell, the runechild can expend a number of charged runes equal to that spell's level to ignore any resistance or immunity to the spell's damage type.
     - title: Arcane Exemplar Form
     - content: At 18th level, once per long rest, the runechild may use a bonus action and expend at least 6 charged runes to gain the following benefits for three rounds (plus one round for each additional charged rune over 6)
-               Flying speed of 40 feet
-               Resistance to damage from spells
-               Spell save DC increased by 2
-               When you cast a spell of 1st level or higher, you regain hit points equal to the spell's level
-               When the Arcane Exemplar Form ends, the runechild cannot take actions or move until after their next turn.
+    - content: Flying speed of 40 feet
+    - content: Resistance to damage from spells
+    - content: Spell save DC increased by 2
+    - content: When you cast a spell of 1st level or higher, you regain hit points equal to the spell's level
+    - content: When the Arcane Exemplar Form ends, the runechild cannot take actions or move until after their next turn.

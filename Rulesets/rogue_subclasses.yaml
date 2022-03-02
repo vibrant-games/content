@@ -5,19 +5,19 @@
                which is a d6.
     - title: Psionic Talent Options
     - content: You can use your Psionic Talent die in the following ways -
-               Psi-Bolstered Knack - When your non-psionic training fails you, you can tap into your psionic power to help; if you fail an ability check using a skill or tool with which you have proficiency, you 
+    - content: Psi-Bolstered Knack - When your non-psionic training fails you, you can tap into your psionic power to help; if you fail an ability check using a skill or tool with which you have proficiency, you 
                                      can roll your Psionic Talent die and add the number rolled to the check, potentially turning failure into success.
-               Psychic Whispers - You can use your psychic abilities to establish telepathic communication between yourself and others—perfect for quiet infiltration. As an action, you give yourself and at least one
+    - content: Psychic Whispers - You can use your psychic abilities to establish telepathic communication between yourself and others—perfect for quiet infiltration. As an action, you give yourself and at least one
                                   other creature the ability to speak telepathically with each other. When you do so, roll your Psionic Talent die, and choose creatures you can see, up to a number of creatures equal
                                   to the number rolled. For 1 hour, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action 
                                   required), you and the other creature must be within 1 mile of each other. A creature can’t use this telepathy if it can’t speak any languages, and a creature can end the telepathic
                                   connection at any time (no action required). You and the creature don’t need to speak a common language to understand each other.
-               Changing the Die’s Size - If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example,
+    - content: Changing the Die’s Size - If you roll the highest number on your Psionic Talent die, it decreases by one die size after the roll. This represents you burning through your psionic energy. For example,
                                          if the die is a d6 and you roll a 6, it becomes a d4. If it’s a d4 and you roll a 4, it becomes unusable until you finish a long rest. Conversely, if you roll a 1 on your 
                                          Psionic Talent die, it increases by one die size after the roll, up to its starting size. This represents you conserving psionic energy for later use. For example, if you 
                                          roll a 1 on a d4, the die then becomes a d6. Whenever you finish a long rest, your Psionic Talent die resets to its starting size. When you reach certain levels in this 
                                          class, the starting size of your Psionic Talent die increases - at 5th level (d8), 11th level (d10), and 17th level (d12).
-               Psi Replenishment - As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long rest.
+    - content: Psi Replenishment - As a bonus action, you can calm your mind for a moment and restore your Psionic Talent die to its starting size. You then can’t use Psi Replenishment again until you finish a long rest.
     - title: Psychic Blades
     - content: You can manifest your psionic power as shimmering blades of psychic energy. When you are about to make a melee or ranged weapon attack against a creature, you can manifest a psychic blade from your free 
                hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals 
@@ -31,12 +31,12 @@
                Your hit point maximum and your current hit points increase by an amount equal to your Intelligence modifier plus your rogue level.
     - title: Soul Blades
     - content: Your Psychic Blades are now an expression of your psi-suffused soul, giving you finer control over them in the following ways - 
-               Homing Strikes - If you make an attack roll with your Psychic Blades and miss the target, you can roll your Psionic Talent die and add the number rolled to the attack roll. If this causes the attack to hit, 
+    - content: Homing Strikes - If you make an attack roll with your Psychic Blades and miss the target, you can roll your Psionic Talent die and add the number rolled to the attack roll. If this causes the attack to hit, 
                                 your Psionic Talent die decreases by one die size, regardless of the number rolled.
-               Psychic Teleportation - If your Psionic Talent die is available, you can hurl your Psychic Blades to magically transport yourself to another location. As a bonus action, you manifest one of your Psychic
+    - content: Psychic Teleportation - If your Psionic Talent die is available, you can hurl your Psychic Blades to magically transport yourself to another location. As a bonus action, you manifest one of your Psychic
                                        Blades and throw it at an unoccupied space you can see, up to a number of feet away equal to 5 times the highest number on your Psionic Talent die. You then teleport to that space,
                                        the blade vanishes, and your Psionic Talent die decreases by one die size.
-               Terrifying Blade - When you damage a creature with your Psychic Blade, you can force the target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Intelligence modifier). On a 
+    - content: Terrifying Blade - When you damage a creature with your Psychic Blade, you can force the target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Intelligence modifier). On a 
                                   failed save, the creature is frightened of you until the start of your next turn. On a successful save, the creature isn’t frightened and is immune to your Terrifying Blade for 24 hours.
     - title: Psionic Veil
     - content: You can weave a veil of psychic static to mask yourself. As an action, you can magically become invisible, along with anything you are wearing or carrying, for 10 minutes or until you dismiss this effect 
@@ -146,11 +146,11 @@
     - title: Gadget Box
     - content: Allows you to use specific spells of your choosing and can be used identically to Thieve's Tools or Tinker's Tools, Spellcasting is not intrinisc to the spy and that without the Gadget Box, the Spy may not 
                use Gadget Box spellcasting.
-               Gadget Box Spellcasting
-               Cantrip 
-               1st Level 
-               2nd Level 
-               Gadget Box Self Destruct Mode - You can set a delay between 1 second and 24hrs. During that time the gadget box cannot be open by any means and cannot be used. At the end of that duration all creatures within
+    - content: Gadget Box Spellcasting
+    - content: Cantrip 
+    - content: 1st Level 
+    - content: 2nd Level 
+    - content: Gadget Box Self Destruct Mode - You can set a delay between 1 second and 24hrs. During that time the gadget box cannot be open by any means and cannot be used. At the end of that duration all creatures within
                                                60ft must make a Constitution saving throw or take Xd6 force damage and be knocked prone, where X is your Rogue Level. Taking half damage on a successful save. It takes 1 weeks 
                                                using tinker's tools to build a new box
                                           
@@ -181,10 +181,10 @@
   - abilities: 
     - title: Firebug
     - content: You become exceptionally talented at setting things ablaze. You gain the following talents - 
-               Pyrotechnician - You may add your proficiency modifier to any ability check made to start or manipulate a fire, as well as determining the cause of one
-               Inflamable - You are considered proficient with improvised weapons when attacking with torches or any flaming object that can be held in one hand, as well as when throwing oil or similarly flamable compounds 
+    - content: Pyrotechnician - You may add your proficiency modifier to any ability check made to start or manipulate a fire, as well as determining the cause of one
+    - content: Inflamable - You are considered proficient with improvised weapons when attacking with torches or any flaming object that can be held in one hand, as well as when throwing oil or similarly flamable compounds 
                             and any type of fire-based explosive
-               Firestarter - Any creature or object covered in a combustable compound, such as oil, by you specifically, that takes any amount of fire damage will be set ablaze for a number of rounds equal to your
+    - content: Firestarter - Any creature or object covered in a combustable compound, such as oil, by you specifically, that takes any amount of fire damage will be set ablaze for a number of rounds equal to your
                              proficiency modifier. They will suffer 5hp of fire damage at the start of each of their turns for the duration or until it is extinguished 
     - title: Fleet Spark
     - content: You can use the bonus action granted by your Cunning Action to use a tinder box or other fire starting tool, or to throw a flask of oil or similiarly flamable compound at a target
@@ -218,10 +218,10 @@
     - content:
     - title: Mage Hand Legerdemain
     - content: When you cast Mage Hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it;
-               You can stow one object the hand is holding in a container worn or carried by another creature.
-               You can retrieve an object in a container worn or carried by another creature.
-               You can use thieves' tools to pick locks and disarm traps at range.
-               You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you
+    - content: You can stow one object the hand is holding in a container worn or carried by another creature.
+    - content: You can retrieve an object in a container worn or carried by another creature.
+    - content: You can use thieves' tools to pick locks and disarm traps at range.
+    - content: You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature's Wisdom (Perception) check. In addition, you
                can use the bonus action granted by your Cunning Action to control the hand.
     - title: Magical Ambush
     - content: If you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn.
@@ -271,10 +271,10 @@
     - title: Tokens of the Departed
     - content: When a life ends in your presence, you're able to snatch a token from the departing soul, a sliver of its life essence that takes physical form; as a reaction when a creature you can see dies 
                within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket's form or has you roll on the Trinkets table in the 
-               Player's Handbook to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum. You can use soul trinkets in the 
+    - content: Player's Handbook to generate it. You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can't create one while at your maximum. You can use soul trinkets in the 
                following ways;
-               While a soul trinket is on your person, you have advantage on death saving throws and Constitution saving throws, for your vitality is enhanced by the life essence within the object.
-               When you deal Sneak Attack damage on your turn, you can destroy one of your soul trinkets that's on your person and then immediately use Wails from the Grave, without expending a use of that 
+    - content: While a soul trinket is on your person, you have advantage on death saving throws and Constitution saving throws, for your vitality is enhanced by the life essence within the object.
+    - content: When you deal Sneak Attack damage on your turn, you can destroy one of your soul trinkets that's on your person and then immediately use Wails from the Grave, without expending a use of that 
                feature.
                As an action, you can destroy one of your soul trinkets, no matter where it's located. When you do so, you can ask the spirit associated with the trinket one question. The spirit appears to you
                and answers in a language it knew in life. It's under no obligation to be truthful, and it answers as concisely as possible, eager to be free. The spirit knows only what it knew in life, as 
@@ -295,9 +295,9 @@
     - content: You can take careful aim at a creature, ensuring a solid hit. As a bonus action, choose a creature or object you can see while wielding a ranged weapon. Until you move, stow or drop that weapon, the target
                becomes hidden to you, or you use this feature again, you have advantage on Perception(Wisdom) checks made against the target, and ranged attacks made against it with that weapon gain the following 
                benefits
-               You ignore non-total cover
-               You don't suffer disadvantage on attack rolls for attacking at long range, or from any effect that relies on sight.
-               You don't need advantage on attack rolls to use your Sneak Attack if your Deadeye Shot target hasn't changed this turn.
+    - content: You ignore non-total cover
+    - content: You don't suffer disadvantage on attack rolls for attacking at long range, or from any effect that relies on sight.
+    - content: You don't need advantage on attack rolls to use your Sneak Attack if your Deadeye Shot target hasn't changed this turn.
     - title: In My Sights
     - content: You've extensively trained yourself to pick up on any clues or minutae that might provide a target. You don't suffer disadvantage from lightly obscured areas when making Wisdom(Perception) checks that rely
                on sight and can use the Search action as a bonus action. You gain profiCiency in the Perception skill. If you are already proficient in this skill you double your proficiency bonus to checks you make with
@@ -353,7 +353,7 @@
                through a Planar Slip, your first attack that hits that turn may still gain the benefits of Slip Sneak and Dimensional Detention.
     - title: Slip Shroud
     - content: You become one with the plane around you, wearing it around yourself like an obscuring cloak. When you first move through a Planar Slip on your turn, you become invisible until the start of your next turn. 
-               You become visible after you attack or cast a spell
+    - content: You become visible after you attack or cast a spell
                       
                       
   - title: Shinobi Abilities
@@ -375,10 +375,10 @@
                up to 2 feet horizontally for every 1 foot you descend reducing any falling damage by £ive times your Rogue level. You Lose the benefits o£ this £eature while wearing medium or heavy armor.
     - title: Master Shinobi
     - content: You gain full mastery over your accumulated techniques, utilizing them to their utmost potential You now count yourself among the legendary practitioners or ninjutsu, and gain the following benefits
-               Shinobis Sense - You have advantage on initiative rolls while you are conscious. When you are surprised you can forgo this advantage to not be surprised.
-               Kunai Mastery - An attack made with your Kunai and Kodachi feature no longer halves its damage. On a hit, that attack grants advantage to attack rolls made against its target until the end or the current turn.
-               Ashi Sabaki - You now end the grappled and restrained conditions on yourself when you take the Disengage action.
-               Shi No Ichigeki - Sneak Attack damage dealt by an attack made with your Sudden Death £eature rolls d8s instead of d6s.
+    - content: Shinobis Sense - You have advantage on initiative rolls while you are conscious. When you are surprised you can forgo this advantage to not be surprised.
+    - content: Kunai Mastery - An attack made with your Kunai and Kodachi feature no longer halves its damage. On a hit, that attack grants advantage to attack rolls made against its target until the end or the current turn.
+    - content: Ashi Sabaki - You now end the grappled and restrained conditions on yourself when you take the Disengage action.
+    - content: Shi No Ichigeki - Sneak Attack damage dealt by an attack made with your Sudden Death £eature rolls d8s instead of d6s.
                          
                          
   - title: Sleepless Detective Abilities
@@ -390,11 +390,11 @@
                magical item.
     - title: Sample Analysis
     - content: You learn to extract information from blood and other bodily fluids through extensive alchemical analysis. Using any bodily fluids, blood, or body parts from a creature with a set of Alchemist's 
-               Supplies, you can take 1 hour to learn the following information about the creature, destroying the sample in the process.
-               The name by which the creature is most commonly known
-               The gender, race, and profession/role of the creature
-               Brief outline of the events that caused its wound
-               When the fluid was lost or when the creature died
+    - content: Supplies, you can take 1 hour to learn the following information about the creature, destroying the sample in the process.
+    - content: The name by which the creature is most commonly known
+    - content: The gender, race, and profession/role of the creature
+    - content: Brief outline of the events that caused its wound
+    - content: When the fluid was lost or when the creature died
     - title: Predective Riposte
     - content: Your insight into the nature of people allows you predict and counter opponents attacks. As a bonus action, you can designate a target within 30 feet of you. You gain a +4 bonus to your AC from 
                attacks from the target creature. Once per round, if the target makes a melee attack against you and misses, you can spend your reaction to make a single weapon attack against them . If you hit, you 
@@ -420,9 +420,9 @@
     - content: You've learned how to create a disposable, albeit unstable alchemical device for use in your performances. Whenever you finish a short or long rest, you can create an alchemical capsule that
                becomes inert after your next rest. As a bonus action, or as a reaction when you are attacked or are forced to make a saving throw, you can throw the capsule at a space within 30 feet of you
                that doesn't have total cover from you. The capsule disintegrates there, producing one of the following effects of your choice
-               Smoke - Smoke spreads from the capsule in a 20-foot-radius sphere that moves around comers. The area of the smoke is heavily obscured and persists until the end of your next turn, or until a 
+    - content: Smoke - Smoke spreads from the capsule in a 20-foot-radius sphere that moves around comers. The area of the smoke is heavily obscured and persists until the end of your next turn, or until a 
                        strong wind disperses it
-               Fireworks - Each creature in a 10-foot-radius s phere of the capsule must succeed on a Constitution saving throw against a DC equal to 8 + your proficiency bonus + your Charisma modifier or 
+    - content: Fireworks - Each creature in a 10-foot-radius s phere of the capsule must succeed on a Constitution saving throw against a DC equal to 8 + your proficiency bonus + your Charisma modifier or 
                            become blinded and deafened until the end of your next turn. 
                            You can then take the Hide action as part of the same bonus action or reaction.
     - title: Vanishing Act
@@ -443,11 +443,11 @@
     - title: Time Step
     - content: You gain the ability to leap back in time, undoing anything done against you but also undoing anything that you had done. At the start of each of your turns, you can use your action to leap back to the start 
                of your last turn. When you do so, the following effects occur
-               You return to the position where you started your last turn.
-               Any damage that was dealt to you since the start of your last turn is reverted.
-               Any damage that you dealt since the start of your last turn is reverted, and any effects or conditions that you caused are also reverted.
-               If you have already used this feature 1 or more times within the past minute, you gain one level of exhaustion (as described in appendix A).
-               If you use this ability outside of combat, it works the same way; you revert back to the position you were 6 seconds ago, with the same hit points you had at that time.
+    - content: You return to the position where you started your last turn.
+    - content: Any damage that was dealt to you since the start of your last turn is reverted.
+    - content: Any damage that you dealt since the start of your last turn is reverted, and any effects or conditions that you caused are also reverted.
+    - content: If you have already used this feature 1 or more times within the past minute, you gain one level of exhaustion (as described in appendix A).
+    - content: If you use this ability outside of combat, it works the same way; you revert back to the position you were 6 seconds ago, with the same hit points you had at that time.
     - title: Supreme Step
     - content: You can choose to use your Time Step feature without undoing the damage or effects that you had caused. Once you use this feature, you can't use it again until you finish a long rest.
     - title: Temporal Shift
@@ -551,9 +551,9 @@
     - title: Lucky Three
     - content: You have found three special cards that boost your abilities in battle. Using an action, you can choose one of the three cards to go beyond, your limits. for i hour, you can choose one of the following 
                benefits
-               You can add your proficiency bonus to your AC.
-               When you roll damage from a melee weapon attack, you can expend 1 lady luck coin to reroll a number of the. damage dice. up to your Dexterity modifier (minimum of one) You must use the new rolls.
-               You gain proficiency in all saving throws.
+    - content: You can add your proficiency bonus to your AC.
+    - content: When you roll damage from a melee weapon attack, you can expend 1 lady luck coin to reroll a number of the. damage dice. up to your Dexterity modifier (minimum of one) You must use the new rolls.
+    - content: You gain proficiency in all saving throws.
                       
                       
   - title: Acrobat Abilities
@@ -587,15 +587,15 @@
                You may cast the spells that you know from this feature once each per short or long rest, as if you had used a 1st level spell slot. If you choose to know the jump spell, it may only be cast with 
                yourself as a target when using this feature. Charisma is your spell casting ability for any spell you receive from this archetype, and you use your Charisma modifier when setting the saving throw DC 
                for a spell you cast with this archetype and when making an attack roll with a spell granted to you by this archetype.
-               Spell save DC= 8 +your proficiency b0nus + your Charisma modifier
-               Spell attack modifier= your proficiency bonus + your Charisma modifier
-               These spells may only be cast or channelled while wearing your Harlequin's Mask.
+    - content: Spell save DC= 8 +your proficiency b0nus + your Charisma modifier
+    - content: Spell attack modifier= your proficiency bonus + your Charisma modifier
+    - content: These spells may only be cast or channelled while wearing your Harlequin's Mask.
     - title: Cruel Comedy
     - content: Your aptitude with the art of jesting gains more refinement, and your comedic barbs become ever more brutal and merciless. Whenever an enemy fails its save against your vicious mockery, the first attack 
                you make against that enemy before the end of your next turn has advantage. In addition, while wearing your Harlequin's Mask you are immune to being charmed.
     - title: Jesting Magician
     - content: Your repertoire of inherent magical knowledge. expands to include several more misehevious tricks. You learn three of the following
-               Spells - cloud of daggers, calm emotions, misty step, enthrall, mirror image, crown of madness, spider climb, feign death, and rope trick.
+    - content: Spells - cloud of daggers, calm emotions, misty step, enthrall, mirror image, crown of madness, spider climb, feign death, and rope trick.
                        You may cast the spells that you know from this feature once each per short or long rest, as if you had used a 2nd level spell slot. If you choose to know feign death or spider climb, they may only be 
                        cast with yourself as a target when using this feature. In addition, the spells you have received from the Arcane Buffoonery feature may now be cast as if they were using 2nd level spell slots. Spells 
                        from either of these features may only be cast or channelled while wearing your Harlequin's Mask.
@@ -658,17 +658,17 @@
   - abilities: 
     - title: Spider Maneuvers
     - content: When you select this archetype, you gain access to a web of mystical energy connecting all spiders, allowing you to move and fight like an arachnid.
-               Spider Dice - You have 3 spider dice, which are d8s. A spider die is expended when you use it. You regain all of your expended spider dice when you finish a short or long rest. You gain another spider 
+    - content: Spider Dice - You have 3 spider dice, which are d8s. A spider die is expended when you use it. You regain all of your expended spider dice when you finish a short or long rest. You gain another spider 
                              die at 9th level, and another one at 13th level.
-               Saving Throws - Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows
+    - content: Saving Throws - Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows
                                Spider maneuver save DC = 8 + your proficiency bonus + your Dexterity modifier 
-               You can expend spider dice to gain a number of different benefits
-               Spider Leap - As a reaction when you make a Strength, Dexterity, or Constitution saving throw, you can expend a spider die and add it to the roll.
-               Web Ball - As a bonus action, you can spend a spider die to project a ball of webbing at creature you can see within 60 feet, knocking them back. Select a creature within 60 feet to make a Strength 
+    - content: You can expend spider dice to gain a number of different benefits
+    - content: Spider Leap - As a reaction when you make a Strength, Dexterity, or Constitution saving throw, you can expend a spider die and add it to the roll.
+    - content: Web Ball - As a bonus action, you can spend a spider die to project a ball of webbing at creature you can see within 60 feet, knocking them back. Select a creature within 60 feet to make a Strength 
                           saving throw. On a failed save, the creature is pushed 10 feet away from you.
-               Web Pull - As a bonus action, you can spend a spider die to snare an opponent with a web line and pull them closer. Select a creature within 60 feet to make a Strength saving throw. On a failed save, the
+    - content: Web Pull - As a bonus action, you can spend a spider die to snare an opponent with a web line and pull them closer. Select a creature within 60 feet to make a Strength saving throw. On a failed save, the
                           creature is pulled 10 feet toward you.
-               Web Trip - As a bonus action, you can spend a spider die to tangle an opponent's feet with your web. Select a creature within 60 feet to make a Dexterity saving throw. On a failed save, it falls prone.
+    - content: Web Trip - As a bonus action, you can spend a spider die to tangle an opponent's feet with your web. Select a creature within 60 feet to make a Dexterity saving throw. On a failed save, it falls prone.
     - title: Webbing
     - content: You gain the ability to generate a nearly unlimited amount of silken web. This web is central to many of your spider maneuvers, and usually dissipates within a minute of leaving your grasp. You can make 
                permanent silk when you take a rest, the exact amount of which is determined by the Dungeon Master. Additionally, you can project a line of web as a bonus action, allowing you to create a temporary rope, pull 
@@ -690,34 +690,34 @@
     - title: Gunsmith
     - content: You gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and 
                intricate firearms are only available through crafting.
-               Firearm Properties - Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that 
+    - content: Firearm Properties - Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that 
                                     property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.
-               Reload - The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.
-               Misfire - Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until 
+    - content: Reload - The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.
+    - content: Misfire - Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until 
                          you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be 
                          mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.
-               Explosive - Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, 
+    - content: Explosive - Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, 
                            the ammunition fails to detonate, or bounces away harmlessly before doing so.
     - title: Adept Marksman
     - content: You learn to perform powerful Trick Shots to disable or damage your opponents using your firearms. Trick Shots. You learn two trick shots of your choice. Many maneuvers enhance an attack in some way. 
                Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level.
                Each time you learn a new trick shot, you can also replace one trick shot you know with a different one.
-               Trick Shots
-               Bullying Shot - You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature. You can expend one grit point while making a Charisma (Intimidation) check to gain advantage on 
+    - content: Trick Shots
+    - content: Bullying Shot - You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature. You can expend one grit point while making a Charisma (Intimidation) check to gain advantage on 
                                the roll.
-               Dazing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw 
+    - content: Dazing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw 
                              or suffer disadvantage on attacks until the end of their next turn.
-               Deadeye Shot - When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.
-               Disarming Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a 
+    - content: Deadeye Shot - When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.
+    - content: Disarming Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a 
                                 Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you.
-               Forceful Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a 
+    - content: Forceful Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a 
                                Strength saving throw or be pushed 15 feet away from you.
-               Piercing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, 
+    - content: Piercing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, 
                                the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment. Only the initial attack 
                                can misfire.
-               Violent Shot - When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s 
+    - content: Violent Shot - When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s 
                               misfire score. If the attack hits, you can roll one additional weapon damage die per grit point spent when determining the damage.
-               Winging Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw 
+    - content: Winging Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw 
                               or be knocked prone.
     - title: Grit 
     - content: You gain a number of grit points equal to your Wisdom modifier (minimum of 1).
@@ -737,7 +737,7 @@
     - title: Sniper
     - content: If you are hidden while you shoot a creature with a firearm and hit, you force the target to make a wisdom saving throw or remain unaware of your position and your next attack against that creature has
                advantage. You may use this feature once per long rest.
-               Saving Throw DC = 8 + Proficiency + Dex Modifier
+    - content: Saving Throw DC = 8 + Proficiency + Dex Modifier
     - title: Legendary Outlaw
     - content: Your firearm attacks score a critical hit on a roll of 19-20. Your base misfire score is lowered by 1 for all weapons. 
     - title: Critically Injured
@@ -755,20 +755,20 @@
     - content: You can consume the remains of a nearby carcass to heal. You transform part of your body into a swarm of scavenging insects to feast on the body. As a bonus action, if the body of a recently slain creature is 
                within 10 ft., you can spend a hit die and regain as many hit points, plus a number of hit points equal to twice the level of the slain creature.
     - title: Become the Swarm
-    - contentt: You can use your action to assume the shape of a swarm of rodents or insects. After you use this feature, you can use it again after a short or long rest. Your rogue level determines the type of swarm 
-                you can transform into, as shown in the Swarm Shapes table. At 9th level, for example, you can transform into any swarm that has a challenge rating of 1/4 or lower.
-                Swarm Shapes
-                Level   Max CR   Example
-                9th	     1/4	 Swarm of bats, rats or ravens
-                12th     1/2     Swarm of insects
-                15th     1       Swarm of quippers
-                18th     2       Swarm of poisonous snakes
-                You can stay in a swarm shape for a number of hours equal to half your rogue level (rounded down). You then revert to your normal form. You can revert to your normal form earlier by using a bonus 
-                action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die. Your game statistics are replaced by the statistics of the beast, but you retain your alignment, 
-                personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. When you transform, you 
-                assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping 
-                to 0 hit points, any excess damage carries over to your normal form. You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. See the druid’s 
-                wild shape feature for additional rules that apply while you are transformed into a swarm of small critters.
+    - content: You can use your action to assume the shape of a swarm of rodents or insects. After you use this feature, you can use it again after a short or long rest. Your rogue level determines the type of swarm 
+               you can transform into, as shown in the Swarm Shapes table. At 9th level, for example, you can transform into any swarm that has a challenge rating of 1/4 or lower.
+    - content: Swarm Shapes
+    - content: Level   Max CR   Example
+    - content: 9th	    1/4	    Swarm of bats, rats or ravens
+    - content: 12th     1/2     Swarm of insects
+    - content: 15th     1       Swarm of quippers
+    - content: 18th     2       Swarm of poisonous snakes
+    - content: You can stay in a swarm shape for a number of hours equal to half your rogue level (rounded down). You then revert to your normal form. You can revert to your normal form earlier by using a bonus 
+               action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die. Your game statistics are replaced by the statistics of the beast, but you retain your alignment, 
+               personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. When you transform, you 
+               assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping 
+               to 0 hit points, any excess damage carries over to your normal form. You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. See the druid’s 
+               wild shape feature for additional rules that apply while you are transformed into a swarm of small critters.
     - title: Half-Rotting Carcass
     - content: Your body is now a half-dissolved mess of rotting flesh and the creatures that live within it. You have resistance to slashing and poison damage.
     - title: Walking Hive

@@ -4,15 +4,15 @@
     - abilities:
     - title: Spell DC
     - content:
-    - title: 1st Level
-    - content: Healing Word, Ray of Sickness
     - title: 3rd Level
-    - content: Flaming Sphere, Melf's Acid Arrow
+    - content: Healing Word, Ray of Sickness
     - title: 5th Level
-    - content: Gaseous Form, Mass Healing Word
-    - title: 7th Level
-    - content: Blight, Death Ward 
+    - content: Flaming Sphere, Melf's Acid Arrow
     - title: 9th Level
+    - content: Gaseous Form, Mass Healing Word
+    - title: 13th Level
+    - content: Blight, Death Ward 
+    - title: 17th Level
     - content: Cloudkill, Raise Dead
     - title: Experimental Elixir
     - content: whenever you finish a long rest, you can magically produce an experimental elixir in an empty flask you touch. Roll on the Experimental Elixir table for the elixir's effect, which is triggered when 
@@ -21,13 +21,13 @@
                Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. 
                When you reach certain levels in this class, you can make more elixirs at the end of a long rest; two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir 
                requires its own flask.
-               d6     Effect
-                1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
-                2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
-                3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
-                4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
-                5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
-                6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
+    - content: d6     Effect
+    - content:  1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
+    - content:  2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
+    - content:  3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
+    - content:  4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
+    - content:  5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
+    - content:  6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
     - title: Alchemical Savant
     - content: You've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, 
                you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier 
@@ -75,25 +75,27 @@
                not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 
                feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel 
                defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die.                          
-               Steel Defender - Medium construct
-               Armor Class - 15 (natural armor)
-               Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
-               Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
-               Speed - 40 ft.     
-               Saving Throws - Dex +1 plus PB, Con +2 plus PB
-               Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
-               Damage Immunities - poison
-               Condition Immunities - charmed, exhaustion, poisoned
-               Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
-               Languages - understands the languages you speak
-               Challenge —
-               Proficiency Bonus (PB) - equals your bonus
-               Vigilant - The defender can't be surprised.
-               Actions -
-               Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
-               Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
-               Reactions -
-               Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
+    - content: 
+    - content: Steel Defender - Medium construct
+    - content: Armor Class - 15 (natural armor)
+    - content: Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
+    - content: Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
+    - content: Speed - 40 ft.     
+    - content: Saving Throws - Dex +1 plus PB, Con +2 plus PB
+    - content: Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
+    - content: Damage Immunities - poison
+    - content: Condition Immunities - charmed, exhaustion, poisoned
+    - content: Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
+    - content: Languages - understands the languages you speak
+    - content: Challenge —
+    - content: Proficiency Bonus (PB) - equals your bonus
+    - content: Vigilant - The defender can't be surprised.
+    - content: Actions -
+    - content: Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
+    - content: Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
+    - content: Reactions -
+    - content: Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
+    - content: Intimidate - It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
     - title: Extra Attack
     - content: You can attack twice, rather than once, whenever you take the Attack action on your turn.
     - title: Arcane Jolt
@@ -199,11 +201,11 @@
                When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you 
                can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space,
                provided it has legs.
-               Flamethrower - The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage
+    - content: Flamethrower - The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage
                               on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren't being worn or carried.
-               Force Ballista-  Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature, 
+    - content: Force Ballista-  Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature, 
                                 it is pushed up to 5 feet away from the cannon.
-               Protector - The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it a number of temporary hit points equal to 1d8 + your Intelligence 
+    - content: Protector - The cannon emits a burst of positive energy that grants itself and each creature of your choice within 10 feet of it a number of temporary hit points equal to 1d8 + your Intelligence 
                            modifier (minimum of +1).           
     - title: Arcane Firearm
     - content: You know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver's tools to carve special sigils into a wand, 
@@ -212,14 +214,237 @@
                number rolled.
     - title: Explosive Cannon
     - content: every eldritch cannon you create is more destructive
-               The cannon's damage rolls all increase by 1d8.
-               As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw 
+    - content: The cannon's damage rolls all increase by 1d8.
+    - content: As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw 
                against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one.
     - title: Fortified Position
     - content: you’re a master at forming well-defended emplacements using Eldritch Cannon
-               You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.
-               You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine 
+    - content: You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.
+    - content: You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine 
                whether the cannons are identical to each other or different. You can't create a third cannon while you have two.
                                
                                
-                              
+  - title: Arcane Weaver Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Entangle, Shield of Faith
+    - title: 5th Level
+    - content: Enthrall, Gust of Wind
+    - title: 9th Level
+    - content: Hypnotic Pattern, Magic Circle
+    - title: 13th Level
+    - content: Charm Monster, Grasping Vine 
+    - title: 17th Level
+    - content: Dream, Control Wind
+    - title: Tool Proficiency
+    - content: You gain proficiency with Weaver's Tools
+    - title: Mystical Mantle
+    - content: You craft a signature garment, designed to become ever more elaborate as you learn new techniques. This cloak, robe, mantle, or some other cloth garment of your choice has the following properties;
+               Dramatic Flair - This item functions as a Cloak of Billowing
+               Protective Weave - While wearing this cloak you may cast Mage Armor at will
+               Resistant Embroidery - Choose Fire, Cold, Lightning, Necrotic or Radiant when you finish a short or long rest. You gain resistance to that damage type until you choose a new one with this feature
+               At the end of a long rest, you can create anew Mystical Mantle if you have weaver's tools on hand. If you already have a Mystical Mantle, the first one unravels and is destroyed
+    - title: Spellbinding Thread
+    - content: You learn to store threads of magic in your mantle's patterns. At the end of a long rest, you can weave a 1st Level Artificer Spell with a casting time of 1 Action or less into your mantle. You can cast this spell
+               without expending materials or spellslots a number of times equasl to your intelligence modifier. At 9th Level this increases to a 2nd Level spell and at 15th Level increases to a 3rd Level
+    - title: Intercepting Cloak
+    - content: You further enhance your mantle's capabilities, allowing it to deflect incoming blows. When an attacker hits you with an attack, your cloak can intercept the blow. Once per turn you can reduce the damage of that
+               attack by 1d10 + your intelligence modifier
+    - title: Masterwork Mantle
+    - content: You embroider a series of temporary designs on your mantle, allowing you to switch to various powerful effects. At the end of a Long Rest, you can choose one of the following properties to add to your Mystical
+               Mantle, which lasts until you choose a different effect with this feature.
+    - content: Arcane Sigils - This item requires attunment and functions as a Mantle of Spell Resistance
+    - content: Feathered Texture - This item requires attunment and functions as Wings of Flying
+    - content: Minimalism - While wearing this item, your Armor Class increases by 1
+    - content: Shadow Weave - This item requires attunment and functions as a Cloak of Displacement
+              
+              
+
+  - title: Forge Adept Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Armor of Agathys, Shield of Faith
+    - title: 5th Level
+    - content: Spiritual Weapon, Warding Bond
+    - title: 9th Level
+    - content: Beacon of Hope, Remove Curse
+    - title: 13th Level
+    - content: Death Ward, Fire Shield 
+    - title: 17th Level
+    - content: Banishing Smite, Wall of Force    
+    - title: Tool Proficiency
+    - content: When you adopt this specialization at 3rd level, you gain proficiency with smith’s tools. If you already have this proficiency, you gain proficiency with one other type of artisan’s tools of your choice.
+    - title: Battle Ready
+    - content: Beginning at 3rd level, you’re skilled in fighting side-by-side with your companions on the field of battle. You gain proficiency with martial weapons. Additionally, when you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity, for the attack and damage rolls.
+    - title: Ghall'Shaarat
+    - content: At 3rd level, you learn to imbue a weapon with a fraction of your spirit. The Dhakaani daashors called this weapon the ghaal’shaarat, Goblin for “mighty blade.” Imbuing your ghaal’shaarat works like infusing an 
+               item, but does not count toward your maximum number of infused items. When you finish a long rest, you can touch a magic or nonmagical simple or martial melee weapon, which becomes your ghaal’shaarat.
+               Once imbued, your ghaal’shaarat is a magic weapon that grants a +1 bonus to attack and damage rolls, unless the base weapon you imbued already grants a higher bonus. This bonus increases when you reach certain 
+               levels in this class, increasing to +2 at 8th level and +3 at 13th level. If the weapon you imbued has the thrown property, it returns to your hand immediately after it is used to make a ranged attack.
+               Your ghaal’shaarat’s benefits remain until the weapon is destroyed or until you use this ability to imbue a new item with this power. Other creatures can’t benefit from your ghaal’shaarat’s powers, and to them, it
+               functions as the unimbued weapon did.
+    - title: Extra Attack
+    - content: Starting at 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.
+    - title: Runes of War
+    - content: At 9th level, you gain the ability to enhance the weapons of your squad, targeting the damage to the weakness of your enemies. As an action, you can activate an aura that extends from you in a 30-foot radius. The 
+               aura moves with you, centered on you, and lasts for 1 minute or until your concentration ends (as if you were casting a spell).
+               When you activate this aura, choose one of the following damage types - acid, cold, fire, lightning, or thunder. Each creature of your choice in the aura deals an extra 1d4 damage of the chosen type when it hits 
+               with a weapon attack.
+               You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses after a long rest.
+    - title: Perfect Weapon
+    - content: At 15th level, you learn how to imbue your ghaal’shaarat with additional power, and how to draw on it in time of need. The first time you attack with your ghaal’shaarat on your turn, you can transfer some or all 
+               of its bonus to your armor class, instead of using the bonus on any attacks that turn. For every 1 you reduce your attack and damage rolls by, you gain +1 to your AC. As long as you continue holding your 
+               ghaal’shaarat, the AC bonus remains in effect until the start of your next turn.
+               Additionally, when you finish a long rest, you can select one of the following benefits. Until you finish your next long rest, you gain the selected benefit whenever you’re holding your ghaal’shaarat.
+               You have resistance to psychic damage, and you can’t be charmed or frightened.
+               You use your ghaal’shaarat to channel the elements. When you select this ability, select one of the following damage types - acid, cold, fire, lightning, or thunder. When you hit with your ghaal’shaarat, the 
+               target takes an extra 1d6 damage of the chosen type.
+               
+               
+  - title: Mastermaker Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Absorb Elements, Thunderous Smite
+    - title: 5th Level
+    - content: Enhance Ability, Lesser Restoration
+    - title: 9th Level
+    - content: Blinding Smite, Haste
+    - title: 13th Level
+    - content: Freedom of Movement, Stone Shape
+    - title: 17th Level
+    - content: Banishing Smite, Greater Restoration
+    - title: Tools of Integration
+    - content: At 3rd level, you gain proficiency with heavy armor and smith’s tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan’s tools of your choice.
+    - title: Prosthesis Expertise
+    - content: At 3rd level, whenever you finish a long rest, you can touch a nonmagical object and imbue it with your power, creating a permanent magical item that replaces a lost limb—a hand, arm, foot, leg, or similar body 
+               part. While the prosthetic is attached, it functions identically to the part it replaces. The wearer can detach or reattach it as an action, and it can’t be removed against the wearer’s will. It detaches if the 
+               wearer dies.
+    - title: Battlefist
+    - content: At 3rd level you replace one of your arms with a battlefist, a magical prosthetic you created. Your battlefist is a simple melee weapon, and you can use it as a spellcasting focus for your artificer spells. While 
+               your battlefist is a magical weapon, it can be infused as if it were a nonmagical weapon.
+               When you attack with your battlefist, you can use your Intelligence modifier instead of Strength for the attack roll. If you hit with it, you deal bludgeoning damage equal to 1d10 + your Strength or Intelligence 
+               modifier. At 9th level, the damage dealt by your battlefist increases to 2d10 + your Strength or Intelligence modifier.
+               Additionally, you can choose one of the following weapon properties to add to your battlefist - finesse, thrown (range 20/60), or reach. When you finish a long rest, you can replace this property with a different
+               weapon property from the list.
+    - title: Extra Attack
+    - content: At 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.
+    - title: Improved Battlefist
+    - content: At 9th level, you have modified your battlefist in both mundane and magical ways. It gains the following benefits
+               When you infuse your battlefist, you can apply two infusions to it at a time. If both infusions grant bonuses to your attack rolls or armor class, you gain only the greater bonus.
+               Your battlefist is also a shield, increasing your armor class by 2. You can wield it as a weapon even if you are using it as a shield. You can infuse it as if it were both a simple melee weapon and a shield.
+               The maximum number of items you can infuse at once increases by 1, but the extra infusion must be applied to your battlefist.
+    - title: Construct Apotheosis
+    - content: At 15th level you have modified your form, becoming nearly impervious to the weaknesses of flesh. You gain the following benefits
+               You gain resistance to poison damage and psychic damage, and you are immune to the poisoned condition.
+               If you are affected by a spell or magical effect, you can choose to consider yourself a construct instead of your other creature types.
+               You can cast the Antilife Shell and Investiture of Stone spells without expending a spell slot, without preparing the spell, and without material components, provided you use your battlefist as the spellcasting 
+               focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest.
+               
+               
+  - title: Maverick Abilities
+  - abilities: 
+    - title: Arcane Breakthroughs
+    - content: Starting at 3rd level, you gain amazing insights into spell effects beyond the reach of most artificers. Choose one of the following classes - bard, cleric, druid, paladin, ranger, sorcerer, warlock, or wizard. 
+               This class’s spells become part of your Breakthrough spell list. You can choose an additional class and add its spells to your Breakthrough spell list at 5th, 9th, 13th, and 17th levels.
+               When you change your list of prepared artificer spells after a long rest, you can prepare an additional 1st-level spell. This spell must be from your Breakthrough spell list. When you reach certain levels in this 
+               class, you increase the number of Breakthrough spells that you can prepare. You can prepare an additional 2nd-level spell at 5th level, an additional 3rd-level spell at 9th level, an additional 4th-level spell at 
+               13th level, and an additional 5th-level spell at 17th level. These prepared spells don’t count against the number of artificer spells you prepare.
+               When you cast a spell you’ve prepared using this feature, it’s considered to be an artificer spell for you, and Intelligence is your spellcasting ability for it. When you swap a prepared Breakthrough spell for a 
+               new spell, you lose any ongoing benefits from having cast it (such as a steed summoned by find steed).
+    - title: Cantrip Specialist
+    - content: You excel at producing minor magical effects—and at abandoning your current projects to pursue new ideas. Starting at 3rd level you gain the following benefits
+               You know one additional cantrip beyond what’s normally allowed for an artificer of your level.
+               When you finish a short rest (instead of when you gain a level in this class), you can replace one of the artificer cantrips you know with another cantrip from the artificer spell list or your Breakthrough spell 
+               list. This cantrip is considered an artificer cantrip for you.
+    - title: Cantrip Savant
+    - content: Starting at 5th level, you continue to develop your talent for the simplest spells. You gain the following benefits
+               When casting an artificer cantrip, you gain a +1 bonus to attack rolls and to your artificer spell save DC unless your spellcasting focus grants a higher bonus. This bonus increases when you reach certain levels 
+               in this class, increasing to +2 at 9th level and +3 at 15th level.
+               As an action, you can replace an artificer cantrip you know with a different cantrip from the artificer spell list or your Breakthrough spell list. Once you use this feature, you can’t use it again until you 
+               finish a long rest.
+    - title: Superior Breakthoughs
+    - content: Starting at 9th level, when you cast one of the spells you prepared with Arcane Breakthroughs, you can do so as if the spell was cast using a spell slot two levels higher than the spell slot you expend.
+               You can use this feature a number of times equal to your Intelligence modifier (minimum of 1). You regain all expended uses after you finish a long rest.
+    - title: Work in Progress
+    - content: Starting at 9th level, you can ready half-formed projects for easy completion when needed. As an action, you can replace any prepared artificer spell with any other spell from the artificer spell list, which then 
+               counts as a prepared spell for you.
+               Once you use this feature, you can’t use it again until you finish a short or a long rest.
+    - title: Final Breakthrough
+    - content: At 15th level, you gain one additional spell slot of each spell level you can prepare. These spell slots can only be used to cast the bonus spells granted by your Arcane Breakthroughs. As you gain levels in this 
+               class and are able to prepare 5th-level artificer spells, you gain an additional spell slot of that level.
+               
+               
+               
+  - title: Archivist Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Comprehend Languages, Dissonant Whispers
+    - title: 5th Level
+    - content: Detect Thoughts, Locate Object
+    - title: 9th Level
+    - content: Hypnotic Pattern, Tongues
+    - title: 13th Level
+    - content: Locate Creature ,Phantasmal Killer
+    - title: 17th Level
+    - content: Legend Lore, Modify Memory
+    - title: Tools of the Trade
+    - content: By the time you adopt this specialty at 3rd level,you’re deeply familiar with employing its tools.
+               Proficiencies - You gain proficiency with calligrapher’s supplies and the forgery kit, assuming you don’t already have them. You also gain calligrapher’s supplies and a forgery kit for free—the result of tinkering
+               you’ve done as you’ve prepared for this specialization.
+               Crafting - If you craft a magic item in the scroll category, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.
+    - title: Artificial Mind
+    - content: At 3rd level, you discover how to awaken a mind inside an object. Whenever you finish a long rest and your calligrapher’s supplies are with you, you can magically rouse a keen mind within a Tiny, nonmagical object
+               on which you write mystical symbols. The object is a magic item while the mind is inside it, and you can use it as a spellcasting focus. If you already have an artificial mind from this feature, the first one 
+               immediately dissipates.
+    - content: The magic item has the following properties
+    - content: Telepathic Advisor - The artificial mind telepathically supplies you with advice and information about certain topics - while the item is on your person, you have proficiency in two skills of your choice; the 
+                                    item’s main material determines which skills you can choose from, as shown on the Artificial Mind table in the Skill Proficiencies column, for the nature of the object affects the mind’s 
+                                    knowledge.
+    - content: Manifest Mind - As a bonus action while the item is on your person, you can cause the mind to manifest as a Tiny spectral presence, hovering in an unoccupied space of your choice within 60 feet of you. This 
+                               presence is intangible and invulnerable, and it sheds dim light in a 10-foot radius. You determine its appearance; the Artificial Mind table offers suggested appearances based on the object’s main 
+                               material. While manifested, the spectral mind can hear and see, and it has darkvision with a range of 60 feet. As an action, you can hear and see using the mind’s senses, instead of your own, until
+                               your concentration ends (as if concentrating on a spell).
+                               As a bonus action, you can cause the spectral mind to hover up to 30 feet to an unoccupied space that you or it can see. It can pass through creatures but not objects. The spectral mind stops 
+                               manifesting if it is ever more than 300 feet away from its magic item or if you dismiss it as a bonus action.
+                               When you cast an artificer spell on your turn,you can cast it as if you were in the spectral mind’s space, instead of your own, using its senses. You can do so a number of times per day equal to 
+                               your Intelligence modifier (at least once), and you regain all expended uses when you finish a long rest.
+    - content: Information Overload - As an action while the item is on your person, you can try to magically overload the thoughts of one creature you or the mind can see that is within 5 feet of the manifested mind, channeling
+                                      a jumble of information from the artificial mind. Unless the target succeeds on an Intelligence saving throw against your spell save DC, the target takes 1d8 psychic damage, and the next 
+                                      attack roll against it before the end of your next turn has advantage, since it is temporarily too distracted to defend itself well. The damage increases by 1d8 when you reach 5th level 
+                                      (2d8), 11th level(3d8), and 17th level (4d8) in this class. Whenever you deal damage with this feature,you can expend a spell slot to deal extra damage to the target. The extra damage is 
+                                      2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than first.
+
+    - content: Artificial Mind
+    - content: Main Material                        Skill Proficiencies                                         Suggested Appearance
+    - content: Animal (parchment, leather, bone)    Animal Handling, Insight, Medicine, Perception, Survival    A beast or a humanoid visage with antlers
+    - content: Mineral (glass, stone, metal)        Deception, Intimidation, Performance, Persuasion            A robotic or golem-like face
+    - content: Plant (paper, wood)                  Arcana, History, Investigation, Nature, Religion            A bespectacled visage or a treant
+               
+    - title: Mind Network
+    - content: At 6th level, you’ve learned how to use your artifices to access minds, both to communicate and to harm.
+    - content: Magical Telephony - While you have your Artificial Mind item on your person, you can communicate telepathically with anyone carrying an item bearing one of your artificer infusions, as the mind transmits your 
+                                   thoughts to each other. That person can also communicate telepathically with you as long as they have the item. This two-way communication can even cross planar boundaries.
+    - content: Psychic Damage. When you make a psychic damage roll for an artificer spell or for Information Overload, you gain a bonus to the damage roll equal to your Intelligence modifier(minimum bonus of +1)
+    - title: Pure Information
+    - content: At 14th level, your Artificial Mind is able to receive and transmit more information than ever before.
+    - content: Mind Overload - When you expend a spell slot to increase the damage of Information Overload, the target must succeed on an Intelligence saving throw against your spell save DC or be stunned until the end of your 
+                               next turn.
+    - content: Infoportation - As an action while your Artificial Mind magic item is on your person, you cause the mind to turn you into pure information, teleporting you to the unoccupied space nearest to the spectral mind or 
+                               to an item bearing one of your artificer infusions, where you physically reappear.
+    - content: You can teleport in this way once for free and must finish a long rest before doing so again. You can also use this special ability by expending a spell slot of 2nd level or higher.

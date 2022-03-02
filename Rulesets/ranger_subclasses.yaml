@@ -147,29 +147,29 @@
   - abilities: 
     - title: Hunters Prey
     - content: You gain one of the following features of your choice.
-               Colossus Slayer - Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal 
+    - content: Colossus Slayer - Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal 
                                  this extra damage only once per turn.
-               Giant Killer - When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can
+    - content: Giant Killer - When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can
                               see the creature.
-               Horde Breaker - Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and 
+    - content: Horde Breaker - Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and 
                                within range of your weapon.
     - title: Defensive Tactics
     - content: You gain one of the following features of your choice.
-               Escape the Horde - Opportunity attacks against you are made with disadvantage.
-               Multiattack Defense - When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
-               Steel Will - You have advantage on saving throws against being frightened.
+    - content: Escape the Horde - Opportunity attacks against you are made with disadvantage.
+    - content: Multiattack Defense - When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.
+    - content: Steel Will - You have advantage on saving throws against being frightened.
     - title: Multiattack
     - content: You gain one of the following features of your choice.
-               Volley - You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as 
+    - content: Volley - You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as 
                         normal, and you make a separate attack roll for each target
-               Whirlwind Attack - You can use your action to make melee attacks against any number of creatures within 5 feet of you, with a separate attack roll for each target.
+    - content: Whirlwind Attack - You can use your action to make melee attacks against any number of creatures within 5 feet of you, with a separate attack roll for each target.
     - title: Superior Hunters Defense
     - content: You gain one of the following features of your choice.
-               Evasion - When you are subjected to an effect, such as a red dragon’s fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you 
+    - content: Evasion - When you are subjected to an effect, such as a red dragon’s fiery breath or a lightning bolt spell, that allows you to make a Dexterity saving throw to take only half damage, you 
                          instead take no damage if you succeed on a saving throw, and only half damage if you fail
-               Stand Against the Tide - When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than
+    - content: Stand Against the Tide - When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than
                                         itself) of your choice.
-               Uncanny Dodge - When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.   
+    - content: Uncanny Dodge - When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.   
                                    
                                    
                                    
@@ -233,34 +233,34 @@
   - abilities:
     - title: Spirit Animal
     - content: You connect with a certain animal spirit. Choose one of the following animals to become your spirit animal; Bear, Eagle, Tiger, Wolf. You gain one feature for your spirit animal
-               Bear - After you finish a long rest, you gain temporary hit points equal to your Ranger level + your Wisdom modifier (mimimum of 1).
-               Eagle - You gain advantage on perception checks that rely on sight. Additionally, you can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more 
+    - content: Bear - After you finish a long rest, you gain temporary hit points equal to your Ranger level + your Wisdom modifier (mimimum of 1).
+    - content: Eagle - You gain advantage on perception checks that rely on sight. Additionally, you can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more 
                        than 1 00 feet away from you.
-               Tiger - Your speed increases by 10 feet. Additionally, opportunity attacks against you are made with disadvantage.
-               Wolf - When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.
+    - content: Tiger - Your speed increases by 10 feet. Additionally, opportunity attacks against you are made with disadvantage.
+    - content: Wolf - When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.
     - title: Spirit Animal Attack
     - content: You can use your spiritual bond to aid you in combat. As an action you can summon your spirit animal to make a single attack. You can make a melee spell attack against a creature within 30 feet of 
                you. On a hit, the target takes force damage equal to ldlO +your Wisdom modifier. The damage increases to 2d10 +your Wisdom modifier at 7th level
     - title: Spiritual Bond
     - content: Your bond with your spirit animal enhances your abilities even more. You gain one feature for the same spirit animal you have chosen at 3rd level
-               Bear - You have advantage on Strength (Athletics) checks in order to Shove or Grapple a target.
-               Eagle - Your ranged attacks ignore half cover and threequarters cover.
-               Tiger - If you move at least 10 feet straight toward a creature before attacking it with a melee weapon, you have advantage on the attack roll
-               Wolf - If one of your allies makes a melee weapon attack against a target within 5 feet of you, you can use your reaction to give the ally advantage on the roll
+    - content: Bear - You have advantage on Strength (Athletics) checks in order to Shove or Grapple a target.
+    - content: Eagle - Your ranged attacks ignore half cover and threequarters cover.
+    - content: Tiger - If you move at least 10 feet straight toward a creature before attacking it with a melee weapon, you have advantage on the attack roll
+    - content: Wolf - If one of your allies makes a melee weapon attack against a target within 5 feet of you, you can use your reaction to give the ally advantage on the roll
     - title: Unified Spirits
     - content: When you use your action for a spirit animal attack, you can make one weapon attack as a bonus action against the same enemy. Additionally you gain one feature for the same spirit animal you have chosen 
                at 3rd level
-               Bear - The damage of your spirit animal attack becomes 2d 12 + your Wisdom modifier.
-               Eagle - The range of your spirit animal attack becomes 120 feet.
-               Tiger - If you move at least 20 feet straight toward a creature before attacking it with a your spirit animal attack, that target must succeed on a Strength saving throw against your spell DC or be 
+    - content: Bear - The damage of your spirit animal attack becomes 2d 12 + your Wisdom modifier.
+    - content: Eagle - The range of your spirit animal attack becomes 120 feet.
+    - content: Tiger - If you move at least 20 feet straight toward a creature before attacking it with a your spirit animal attack, that target must succeed on a Strength saving throw against your spell DC or be 
                        knocked prone.
-               Wolf - If you are within 5 feet of the target, the spirit animal attack is made with advantage.
+    - content: Wolf - If you are within 5 feet of the target, the spirit animal attack is made with advantage.
     - title: Spiritual Fusion
     - content: You gain one ability for the same spirit animal you have chosen at 3rd level You can use this ability a number of times equal to your Wisdom modifier (minimum of 1) before you need to take a long rest.
-               Bear - You gain resistance to all damage until the start of your next turn.
-               Eagle - You gain the ability to fly for 1 minute. You have a flying speed equal to your current walking speed
-               Tiger - When you score a hit with a melee weapon attack on which you had advantage, you can make this attack a critical hit.
-               Wolf - As an action you can Howl Creatures of your choice that you can see within 30 feet and that can hear you must,succeed on a Wisdom saving throw against your spell DC or have disadvantage on the 
+    - content: Bear - You gain resistance to all damage until the start of your next turn.
+    - content: Eagle - You gain the ability to fly for 1 minute. You have a flying speed equal to your current walking speed
+    - content: Tiger - When you score a hit with a melee weapon attack on which you had advantage, you can make this attack a critical hit.
+    - content: Wolf - As an action you can Howl Creatures of your choice that you can see within 30 feet and that can hear you must,succeed on a Wisdom saving throw against your spell DC or have disadvantage on the 
                       next attack roll they make before the end of their next turn.
                                  
                                  
@@ -273,9 +273,9 @@
                as traps and spells. To gain this benefit, you can't be blinded, deafened , or incapacitated.
     - title: Swift Fingers
     - content: You can use your bonus action to perform one of the following
-               Reload a ranged weapon with the loading quality. Doing so allows you to fire the weapon once more that turn.
-               Draw or stow a weapon, shield , or item.
-               Take the Use an Object action.
+    - content: Reload a ranged weapon with the loading quality. Doing so allows you to fire the weapon once more that turn.
+    - content: Draw or stow a weapon, shield , or item.
+    - content: Take the Use an Object action.
     - title: Quick Work
     - content: Whenever you score a critical hit, reduce a creature to 0 hit points with a weapon attack, or knock a creature unconscious, you may immediately move up to half your speed and take a Hide action. This 
                movement does not provoke opportunity attacks. You can use this feature a number of times equal to your Dexterity modifier (mini mum 1). You regain all uses of this feature upon completion of a long or short rest.
@@ -335,20 +335,20 @@
     - title: The Ancient
     - content: A ranger embracing the aspect of the ancient taps into the fey reverie - a dream-like realm that hold s many of nature's deepest secrets, and the origin of most fey powers. As an avatar of the ancient, you 
                gain the following benefits.
-               Magic Resistance - You have advantage on saving throws against spells a nd magical effects. In additi on, whe never you resist a magical effect, you are healed for 1d8 hit points.
-               Natures Command - As an action, you issue a command against creatu res of nature. Every beast, fey, and plant that can see or hear you must make a Wisdom saving throw against your spell save DC. If it fails 
+    - content: Magic Resistance - You have advantage on saving throws against spells a nd magical effects. In additi on, whe never you resist a magical effect, you are healed for 1d8 hit points.
+    - content: Natures Command - As an action, you issue a command against creatu res of nature. Every beast, fey, and plant that can see or hear you must make a Wisdom saving throw against your spell save DC. If it fails 
                                  its saving throw, the creature is turned for 1 minute or until it takes damage. A turned creature spends its turns moving as far away from you as it can and cannot willingly move to any 
                                  space within 30 feet of you. It can also not take any reactions. It may only use the Dash action to try to escape from an effect which prevents it from moving. If it cannot move, the 
                                  creature may use the Dodge action.
     - title: The Destroyer
     - content: A ranger who embraces this aspect aligns herself with the Unseelie court bas at her command the destructive power of nature itself. As an avatar of the destroyer, you gain the following benefits
-               Elemental Might - You have resistance against fire, cold, and electricity damage. Additionally, foes lose any resistance they have against fire, cold, or electricity damage that originates from you.
-               Smite Defiler - Attacks against aberrations, constructs, monstrosities, oozes, and undead, your attacks and damage-dealing spells deal+ ld8 damage. You may expend a single ranger spell slot when you hit 
+    - content: Elemental Might - You have resistance against fire, cold, and electricity damage. Additionally, foes lose any resistance they have against fire, cold, or electricity damage that originates from you.
+    - content: Smite Defiler - Attacks against aberrations, constructs, monstrosities, oozes, and undead, your attacks and damage-dealing spells deal+ ld8 damage. You may expend a single ranger spell slot when you hit 
                                any of these types of creatures to deal another extra ld8 damage for every level of that spell slot.
     - title: The Stalker
     - content: A ranger embracing the aspect of the stalker embodies stealth and keen senses. None can hide from her.
-               Heightened Senses - You have advantage on Wisdom (Perception) checks. In addition, you can "see" without relying on sight out to 30 feet through instinct.
-               Twilight Cloak - You can draw upon the power of the Reverie to cloak yourself. As an action on your turn, you may hide anywhere as though heavily obscured. You become revealed after you make an attack with a
+    - content: Heightened Senses - You have advantage on Wisdom (Perception) checks. In addition, you can "see" without relying on sight out to 30 feet through instinct.
+    - content: Twilight Cloak - You can draw upon the power of the Reverie to cloak yourself. As an action on your turn, you may hide anywhere as though heavily obscured. You become revealed after you make an attack with a
                                 weapon or spell, otherwise you may choose to remain hidden until you are no longer embracing the Stalker.
     - title: Fey Step
     - content: Difficult terrain no longer impedes your movement. Additionally, your devotion to protecting nature gifts you with access to the Crossroads. You can cast dimension door once per short or long rest. You can 
@@ -519,7 +519,7 @@
                the spell slot you expended and be unable to use reactions until the start of the creature's next turn. You cannot use this feature if you are underground or indoors.
                       
                       
-  - title: Bladesinger Conclave Abilities
+  - title: Bladeslinger Conclave Abilities
   - abilities:
     - title: Thrown Weapon Fighting Style
     - content: You have chosen your ammunition to be anything that you can throw. Any weapon that has the Thrown property counts as a Ranged Weapon for the purpose of functioning with other class features
@@ -527,20 +527,20 @@
     - title: Thrown Weapon Trick
     - content: You choose three of the thrown weapon Tricks, detailed at the end of the class description, and you gain another of your choice at 7th, 11th, and 15th level Each time you learn a new Trick you may 
                replace one you know with a different one. You cannot choose the same Trick more than once and you may only use one Trick per attack.
-               TRICKS
-               Deadeye Shot - When you acquire this Trick, your thrown weapons deal triple the amount of damage on a critical hit instead of double.
-               Defensive Throw - You can choose to suffer a -4 to hit on an attack roll to gain a +2 to your AC until the beginning of your next turn.
-               Doubletoss - When you use this Trick, you can throw 2 thrown weapons at one or two targets within range as part of one attack. Normal penalties for Two Weapon Fighting still apply.
-               Palm Throw - When you use this Trick, you can throw two thrown weapons that fit in your palm with one attack roll but you do not add your ability modifier to the damage.
-               Sneaky Shot - When you use this Trick, you can make a Sleight of Hand check against a targets Perception. If you win, you gain advantage on the attack roll
-               Trip Shot - When you use this Trick, you attack as normal but the target must succeed on an Athletics or Acrobatics check (DC= 8 +your Dexterity modifier +your proficiency bonus) or be tripped and fall prone.
-               Tumbling Toss - When you use this Trick, you can attempt to tumble through a hostile creatures' space as an action or bonus action. Make a Dexterity (Acrobatics) check against the opposing creatures 
+    - content: TRICKS
+    - content: Deadeye Shot - When you acquire this Trick, your thrown weapons deal triple the amount of damage on a critical hit instead of double.
+    - content: Defensive Throw - You can choose to suffer a -4 to hit on an attack roll to gain a +2 to your AC until the beginning of your next turn.
+    - content: Doubletoss - When you use this Trick, you can throw 2 thrown weapons at one or two targets within range as part of one attack. Normal penalties for Two Weapon Fighting still apply.
+    - content: Palm Throw - When you use this Trick, you can throw two thrown weapons that fit in your palm with one attack roll but you do not add your ability modifier to the damage.
+    - content: Sneaky Shot - When you use this Trick, you can make a Sleight of Hand check against a targets Perception. If you win, you gain advantage on the attack roll
+    - content: Trip Shot - When you use this Trick, you attack as normal but the target must succeed on an Athletics or Acrobatics check (DC= 8 +your Dexterity modifier +your proficiency bonus) or be tripped and fall prone.
+    - content: Tumbling Toss - When you use this Trick, you can attempt to tumble through a hostile creatures' space as an action or bonus action. Make a Dexterity (Acrobatics) check against the opposing creatures 
                                Dexterity (Acrobatics) check. If you succeed, you can move through that creatures space for this movement only. If you succeed by 5 or more, you can continue your momentum to make a
                                single ranged attack against any target within range.
-               Two With One Blow - When you use this Trick, you can attack two opponents adjacent to each other in an attempt to hit them both, but the attack roll is at disadvantage. The attack may hit either, 
+    - content: Two With One Blow - When you use this Trick, you can attack two opponents adjacent to each other in an attempt to hit them both, but the attack roll is at disadvantage. The attack may hit either, 
                                    both, or neither opponent depending on the roll and the Armor Class of each opponent. Damage for each opponent is resolved separately. If the attack roll results in a critical hit,
                                    roll each critical hit separately.
-               Weak Spot - When you use this Trick, you can gain a + 5 to hit a target that is your size or larger, but you do not add your Strength modifier to the damage.
+    - content: Weak Spot - When you use this Trick, you can gain a + 5 to hit a target that is your size or larger, but you do not add your Strength modifier to the damage.
     - title: Evasion
     - content: You can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an Ice Storm spell When you are subjected to an effect that allows you to make a Dexterity saving throw to 
                take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
@@ -556,15 +556,15 @@
     - title: Predators Beginnings
     - content: You gain the ability to use Divine Bolts, and one use of the Channel Divinity feature (as described on page 85 of the PHB)
                You can expend Ranger spell slots to create Divine bolts (no action required) according to the chart below.
-               DIVINE BOLTS
-               NUMBER OF CHARGES GAINED PER SLOT
-               Spell Slot level     Divine Bolt Charges
-               lst                  2
-               2nd                  3
-               3rd                  4
-               4th                  5
-               5th                  6
-               Divine Bolts can be used instead of regular ammunition, and are created when the spell slot is expended, but onty come into physical form when you load your ranged weapon or as part of the attack 
+    - content: DIVINE BOLTS
+    - content: NUMBER OF CHARGES GAINED PER SLOT
+    - content: Spell Slot level     Divine Bolt Charges
+    - content: lst                  2
+    - content: 2nd                  3
+    - content: 3rd                  4
+    - content: 4th                  5
+    - content: 5th                  6
+    - content: Divine Bolts can be used instead of regular ammunition, and are created when the spell slot is expended, but onty come into physical form when you load your ranged weapon or as part of the attack 
                action. The damage die of a Divine Bolt is 1 d8 radiant. Once fired or otherwise unloaded, the Divine Bolt's energy will disappear at the end of your turn. Uses of Divine Bolt can be expended once
                per attack to enhance existing ammunition. When used to enhance existing ammunition, declare the enhancement before making the attack roll. On a hit, add 1 d8 radiant damage on top of the weapon's 
                regular damage. Hit or miss, the use of Divine Bolt is expended. Unspent uses of Divine Bolt are expended harmlessly at the end of a long rest.
@@ -700,12 +700,12 @@
                feature once per long rest.
     - title: Expect The Unexpected
     - content: You tend to have the upper hand even when things take a bad turn. You may use one of the following features by speaking a phrase.
-               Cleansing Shot - Before attacking with a crossbow or a firearm, you bless the ammunition. On a hit, the target takes an additional 4d6 radiant damage. For one round, the target can't be invisible,
+    - content: Cleansing Shot - Before attacking with a crossbow or a firearm, you bless the ammunition. On a hit, the target takes an additional 4d6 radiant damage. For one round, the target can't be invisible,
                                 and emits bright light from itself up to 30 feet.
-               Destabilizing Shot - Before attacking with a crossbow or a firearm, you curse the ammunition. On a hit, the target takes an additional 4d4 psychic damage, and the target will have disadvantage on 
+    - content: Destabilizing Shot - Before attacking with a crossbow or a firearm, you curse the ammunition. On a hit, the target takes an additional 4d4 psychic damage, and the target will have disadvantage on 
                                     their next saving throw.
-               Decline the Heresy - As a reaction when you or a creature within 60 feet gain a charmed or frightened condition, you remove that condition from yourself or the creature.
-               Stop the Devious - As a reaction when a creature moves within 60 feet of you, the creature must make a Wisdom saving throw against your spell save DC. If the creature fails, its movement speed is 
+    - content: Decline the Heresy - As a reaction when you or a creature within 60 feet gain a charmed or frightened condition, you remove that condition from yourself or the creature.
+    - content: Stop the Devious - As a reaction when a creature moves within 60 feet of you, the creature must make a Wisdom saving throw against your spell save DC. If the creature fails, its movement speed is 
                                   reduced to 0, and attacks against the creature can't suffer disadvantage, until its next turn. You can use this feature an amount equal to your Wisdom modifier (minimum of 1). 
                                   The uses reset after you finish a long rest.
     - title: Always Ready
@@ -756,30 +756,30 @@
     - title: Master of the Wilderness
     - content: Your connection to the wild has manifested itself as supernatural abilities drawn from nature and animals, allowing you to journey the wilderness with unmatched skill. You gain one of the 
                following features at 3rd level and an additional feature at both 7th and 11th level Your choices should represent the places you have travelled throughout your adventures.
-               Master of Climates - You gain resistance to either cold or fire damage. You may change your choice at the end of any long rest.
-               Master of Darkness - You gain darkvision to a range of 60 feet, and you cannot be blinded unless you are also simultaneously deafened If you already have darkvision from your race, its range 
+    - content: Master of Climates - You gain resistance to either cold or fire damage. You may change your choice at the end of any long rest.
+    - content: Master of Darkness - You gain darkvision to a range of 60 feet, and you cannot be blinded unless you are also simultaneously deafened If you already have darkvision from your race, its range 
                                     increases by 30 feet.
-               Master of Grasses - Your walking speed increases by 5 feet. It increases by 5 feet again at both 7th and 11th level even if you picked this feature after reaching those levels.
-               Master of Mires - Your long jump increases to up to 20 feet and your high jump increases to up to 10 feet, with or without a running start. You also gain advantage on saving throws against disease.
-               Master of Peaks - You gain a climbing speed equal to your walking speed, and you gain advantage on Strength and Dexterity saving throws against effects that would knock you prone.
-               Master of Waters - You gain a swimming speed equal to your walking speed, and you can hold your breath for up to 1 hour.
-               Master of Woods - You have advantage on Wisdom (Perception) checks that rely on one of the following senses of your choice; hearing, sight, or smelL You may choose another sense at 7th and 11th 
+    - content: Master of Grasses - Your walking speed increases by 5 feet. It increases by 5 feet again at both 7th and 11th level even if you picked this feature after reaching those levels.
+    - content: Master of Mires - Your long jump increases to up to 20 feet and your high jump increases to up to 10 feet, with or without a running start. You also gain advantage on saving throws against disease.
+    - content: Master of Peaks - You gain a climbing speed equal to your walking speed, and you gain advantage on Strength and Dexterity saving throws against effects that would knock you prone.
+    - content: Master of Waters - You gain a swimming speed equal to your walking speed, and you can hold your breath for up to 1 hour.
+    - content: Master of Woods - You have advantage on Wisdom (Perception) checks that rely on one of the following senses of your choice; hearing, sight, or smelL You may choose another sense at 7th and 11th 
                                  level even if you picked this feature after reaching those levels.
     - title: Wild Expertise
     - content: You gain proficiency in the Nature and Survival skills, and your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
     - title: Apex Hunter
     - content: You have mastered fighting your sworn foes. When fighting your favoured enemies, you gain an additional feature based on the Fighting Style you chose at 2nd level
-               Archery - You can use your action to make a ranged attack against any number of your favoured enemies you can see within your weapon's range, making a separate attack roll for each target.
-               Defence - You gain a bonus to your AC equal to your Wisdom modifier against attacks made by your favoured enemies.
-               Dueling - Your melee weapon attacks deal an additional die of damage against your favoured enemies.
-               Two-Weapon Fighting - When a favoured enemy within 5 feet of you misses an attack, you can use your reaction to make a melee attack against it.
+    - content: Archery - You can use your action to make a ranged attack against any number of your favoured enemies you can see within your weapon's range, making a separate attack roll for each target.
+    - content: Defence - You gain a bonus to your AC equal to your Wisdom modifier against attacks made by your favoured enemies.
+    - content: Dueling - Your melee weapon attacks deal an additional die of damage against your favoured enemies.
+    - content: Two-Weapon Fighting - When a favoured enemy within 5 feet of you misses an attack, you can use your reaction to make a melee attack against it.
     - title: Primal Instincts
     - content: You cannot be surprised, and you can give yourself a bonus to your initiative rolls equal to your Wisdom modifier.
     - title: Bestial Fury
     - content: You know how to fight like a wild beast, and gain one of the following features of your choice.
-               Blood Frenzy - Once per turn, you can gain advantage on an attack roll against a creature that doesn't have all its hit points.
-               Pack Tactics - You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and isn't incapacitated
-               Relentless - When you are reduced to 0 hit points but not kllled outright, you can make a Constitution saving throw, dropping to 1 hit point instead on a success. The DC for the saving throw is equal to 10 
+    - content: Blood Frenzy - Once per turn, you can gain advantage on an attack roll against a creature that doesn't have all its hit points.
+    - content: Pack Tactics - You have advantage on attack rolls against a creature if at least one of your allies is within 5 feet of the creature and isn't incapacitated
+    - content: Relentless - When you are reduced to 0 hit points but not kllled outright, you can make a Constitution saving throw, dropping to 1 hit point instead on a success. The DC for the saving throw is equal to 10 
                             or the amount of damage you take, whichever is higher.   
                                    
                                    
@@ -803,10 +803,10 @@
     - content: You gain proficiency in the intimidation skill, firearms, and 1 land vehicle of your choice.
     - title: Dead or Alive
     - content: As a bonus action, you can mark a creature as your bounty for the next hour. You gain the following benefits against the marked creatures;
-               You have advantage on Wisdom (Survival) check when attempting to track a marked creature.
-               Ranged weapon attacks deal an additional 1d4 damage.
-               If a marked creature misses a weapon attack against you, you can make a weapon attack as a reaction against that creature.
-               You can use this feature a number of times equal to your Wisdom modifier and regain all uses of this feature after finishing a long rest.
+    - content: You have advantage on Wisdom (Survival) check when attempting to track a marked creature.
+    - content: Ranged weapon attacks deal an additional 1d4 damage.
+    - content: If a marked creature misses a weapon attack against you, you can make a weapon attack as a reaction against that creature.
+    - content: You can use this feature a number of times equal to your Wisdom modifier and regain all uses of this feature after finishing a long rest.
     - title: 30 Paces at Noon
     - content: If you move at least 15 feet away from a hostile creature on your turn, you gain advantage on your next attack roll against that creature. If you move at least 30ft away you can add your proficiency 
                bonus to the damage of your next ranged weapon attack. Additionally, your movement no longer provokes attacks of opportunity.
@@ -841,7 +841,7 @@
     - title: On the Wing
     - content: Your companion's training has carried them far, making them more agile, intelligent and responsive to your needs. They are now capable of taking the Dash, Dodge, and Help actions as Bonus Actions. In 
                addition, they gain the following reaction
-               Harry - As a reaction, your companion may move half their movement speed and harass a foe that attempts to harm you or an ally. The target must make a Dexterity saving throw against your Spell Save DC. On a 
+    - content: Harry - As a reaction, your companion may move half their movement speed and harass a foe that attempts to harm you or an ally. The target must make a Dexterity saving throw against your Spell Save DC. On a 
                        failure, they have disadvantage on attacks on that turn against you and take 1d6 piercing damage. On a success, they only take the damage. Your companion may also Harry a spellcaster concentrating on
                        a spell, forcing them to make a DC 10 Concentration check. On a failure, their concentration ends and they take 1d6 piercing damage. On a success, they only take the damage.
     - title: Paired Hunters
@@ -954,9 +954,9 @@
     - content: You learn to invoke the ancient knowledge of the divine scriptures. As a bonus action, you can create a 30-foot-radius circle of holy runes centered on a point on the ground that you can see within 
                range, and place one effect in the area. Fey, Fiends, Aberrations, and Undead can't Teleport, use Portals, exit The Material Plane, or leave the circle while in the area. The holy scripture lasts for
                1 minute. Once you use this feature, you can't use it again until you finish a short or long rest. The effect of the area is based on the divine scripture you choose to invoke.
-               Scripture of Zeal - You and your allies gain a bonus to all saving throws equal to your Wisdom modifier.
-               Scripture of Fervour - Hostile creatures in the area have their speed reduced by an amount equal to your Wisdom modifier multiplied by 5.
-               Scripture of Faith - You and your allies gain temporary hit points equal to your level +your Wisdom modifier when you use this scripture.
+    - content: Scripture of Zeal - You and your allies gain a bonus to all saving throws equal to your Wisdom modifier.
+    - content: Scripture of Fervour - Hostile creatures in the area have their speed reduced by an amount equal to your Wisdom modifier multiplied by 5.
+    - content: Scripture of Faith - You and your allies gain temporary hit points equal to your level +your Wisdom modifier when you use this scripture.
     - title: Call To Grim
     - content: When you roll initiative and are not surprised, you can demand the last rites of your foes. Each hostile creature that you can see or hear you within 30 feet of you must make a Wisdom saving throw. If a 
                creature fails its saving throw, its speed is reduced to 0 and it is frightened until the end of its next turn.
@@ -978,23 +978,23 @@
                are incapacitated, the drake can take any action of its choice, not just Dodge. Once you summon the drake, you can’t do so again until you finish a long rest, unless you expend a spell slot of 1st level
                or higher to summon it. The drake remains for a number of hours equal to your proficiency bonus, until it is reduced to 0 hit points, until you use this feature to summon the drake again, or until you 
                die. Anything the drake was wearing or carrying is left behind when the drake vanishes.
-         
-               Drake - Small Dragon
-               Armor Class - 14 + PB (natural armor)
-               Hit Points - 5 + five times your ranger level (the drake has a number of hit dice [d10s] equal to your ranger level)
-               Speed - 40ft.
-               Stats - STR 16(+3) DEX 12(+1) CON 15(+2) INT 8(−1) WIS 14(+2) CHA 8(−1)    
-               Saving Throws - Dex +1 plus PB, Wis +2 plus PB
-               Damage Immunities - determined by the drake’s Draconic Essence trait
-               Senses - darkvision 60 ft., passive Perception 12
-               Languages - Draconic
-               Challenge - Proficiency Bonus (PB) equals your bonus
-               Draconic Essence - When you summon the drake, choose a damage type; acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity, the damage of its bite, and the damage 
+    - content: 
+    - content: Drake - Small Dragon
+    - content: Armor Class - 14 + PB (natural armor)
+    - content: Hit Points - 5 + five times your ranger level (the drake has a number of hit dice [d10s] equal to your ranger level)
+    - content: Speed - 40ft.
+    - content: Stats - STR 16(+3) DEX 12(+1) CON 15(+2) INT 8(−1) WIS 14(+2) CHA 8(−1)    
+    - content: Saving Throws - Dex +1 plus PB, Wis +2 plus PB
+    - content: Damage Immunities - determined by the drake’s Draconic Essence trait
+    - content: Senses - darkvision 60 ft., passive Perception 12
+    - content: Languages - Draconic
+    - content: Challenge - Proficiency Bonus (PB) equals your bonus
+    - content: Draconic Essence - When you summon the drake, choose a damage type; acid, cold, fire, lightning, or poison. The chosen type determines the drake’s damage immunity, the damage of its bite, and the damage 
                                   of its Infused Strikes trait.
-               Actions
-               Bite - Melee Weapon Attack; +3 plus PB to hit, reach 5ft., one target. Hit 1d6 piercing damage plus PB damage of a type determined by the drake’s Draconic Essence.
-               Reactions
-               Infused Strikes - When another creature within 30 feet of the drake that it can see hits with a weapon attack, the drake infuses the strike with its essence, causing the attack to deal an extra 1d6 
+    - content: Actions
+    - content: Bite - Melee Weapon Attack; +3 plus PB to hit, reach 5ft., one target. Hit 1d6 piercing damage plus PB damage of a type determined by the drake’s Draconic Essence.
+    - content: Reactions
+    - content: Infused Strikes - When another creature within 30 feet of the drake that it can see hits with a weapon attack, the drake infuses the strike with its essence, causing the attack to deal an extra 1d6 
                                  damage of the type determined by its Draconic Essence.
     - title: Bond of Fang and Scale
     - content: The bond you share with your drake intensifies, protecting you and stoking the drake’s fury. While your drake is summoned, you and the drake gain the following benefits
