@@ -502,9 +502,9 @@ npc:
     - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
     - title: Rage
     - content: Can enter a rage as a Bonus Action. 
-               have advantage on Strength Checks and Strength Saving Throws.
-               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
-               Resistance to bludgeoning, piercing, and slashing damage          
+    - content: You have advantage on Strength Checks and Strength Saving Throws.
+    - content: You make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+    - content: You have resistance to bludgeoning, piercing, and slashing damage          
     - title: Danger Sense
     - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
     - title: Reckless Attack
@@ -519,18 +519,18 @@ npc:
     - title: Form of the Beast
     - content: When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your 
                Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon’s form each time you rage;
-               Bite - Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you 
+    - content: Bite - Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you 
                       regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
-               Claws - Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the 
+    - content: Claws - Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the 
                        Attack action, you can make one additional claw attack as part of the same action.
-               Tail - You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use 
+    - content: Tail - You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use 
                       your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.
     - title: Bestial Soul
     - content: The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You 
                can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest;
-               You gain a swimming speed equal to your walking speed, and you can breathe underwater.
-               You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-               When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.
+    - content: You gain a swimming speed equal to your walking speed, and you can breathe underwater.
+    - content: You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+    - content: When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.
   - title: Feats
   - content: Great Weapons Master
 

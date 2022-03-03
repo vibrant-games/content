@@ -555,9 +555,9 @@ npc:
     - content: You gain proficiency with Weaver's Tools
     - title: Mystical Mantle
     - content: You craft a signature garment, designed to become ever more elaborate as you learn new techniques. This cloak, robe, mantle, or some other cloth garment of your choice has the following properties;
-               Dramatic Flair - This item functions as a Cloak of Billowing
-               Protective Weave - While wearing this cloak you may cast Mage Armor at will
-               Resistant Embroidery - Choose Fire, Cold, Lightning, Necrotic or Radiant when you finish a short or long rest. You gain resistance to that damage type until you choose a new one with this feature
+    - content: Dramatic Flair - This item functions as a Cloak of Billowing
+    - content: Protective Weave - While wearing this cloak you may cast Mage Armor at will
+    - content: Resistant Embroidery - Choose Fire, Cold, Lightning, Necrotic or Radiant when you finish a short or long rest. You gain resistance to that damage type until you choose a new one with this feature
                At the end of a long rest, you can create anew Mystical Mantle if you have weaver's tools on hand. If you already have a Mystical Mantle, the first one unravels and is destroyed
     - title: Spellbinding Thread
     - content: You learn to store threads of magic in your mantle's patterns. At the end of a long rest, you can weave a 1st Level Artificer Spell with a casting time of 1 Action or less into your mantle. You can cast this spell
@@ -566,12 +566,12 @@ npc:
     - content: You further enhance your mantle's capabilities, allowing it to deflect incoming blows. When an attacker hits you with an attack, your cloak can intercept the blow. Once per turn you can reduce the damage of that
                attack by 1d10 + your intelligence modifier
     - title: Masterwork Mantle
-    - conent: You embroider a series of temporary designs on your mantle, allowing you to switch to various powerful effects. At the end of a Long Rest, you can choose one of the following properties to add to your Mystical
-              Mantle, which lasts until you choose a different effect with this feature.
-              Arcane Sigils - This item requires attunment and functions as a Mantle of Spell Resistance
-              Feathered Texture - This item requires attunment and functions as Wings of Flying
-              Minimalism - While wearing this item, your Armor Class increases by 1
-              Shadow Weave - This item requires attunment and functions as a Cloak of Displacement
+    - content: You embroider a series of temporary designs on your mantle, allowing you to switch to various powerful effects. At the end of a Long Rest, you can choose one of the following properties to add to your Mystical
+               Mantle, which lasts until you choose a different effect with this feature.
+    - content: Arcane Sigils - This item requires attunment and functions as a Mantle of Spell Resistance
+    - content: Feathered Texture - This item requires attunment and functions as Wings of Flying
+    - content: Minimalism - While wearing this item, your Armor Class increases by 1
+    - content: Shadow Weave - This item requires attunment and functions as a Cloak of Displacement
     
   - title: Attacks
   - content: 1 attack with a spell attack

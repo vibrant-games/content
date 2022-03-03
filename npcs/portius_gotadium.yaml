@@ -510,10 +510,10 @@ npc:
     - content: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
                after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
                to three such devices active at a time. When you create a device, choose one of the following options - 
-               Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
+    - content: Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
                                a random direction. It makes noises as appropriate to the creature it represents.
-               Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-               Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
+    - content: Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
+    - content: Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.
   - title: Doctor Abilities
   - abilities:
     - title: Medical Training
@@ -567,41 +567,41 @@ npc:
     - title: Robe of Useful Items 
     - content: adventuring gear (wondrous item robe)This robe has cloth patches of various shapes and colors covering it. While wearing the robe. you can use an action to detach one of the patches causing it to
                become the object or creature it represents. Once the last patch is removed the robe becomes an ordinary garment. The robe has two of each of the following patches - 
-               Items
-               Dagger
-               Bullseye lantern (filled and lit)
-               Steel mirror
-               10-foot pole
-               Hempen rope (50 feet coiled)
-               Sack
-               Patches
-               In addition their robe has 10 patches as follows 
-               2 Iron doors
-               2 Riding Horses
-               2 Windows
-               2 Spell Scrolls of 1st to 3rd level
-               2 Superior Potions of Healing
+    - content: Items
+    - content: Dagger
+    - content: Bullseye lantern (filled and lit)
+    - content: Steel mirror
+    - content: 10-foot pole
+    - content: Hempen rope (50 feet coiled)
+    - content: Sack
+    - content: Patches
+    - content: In addition their robe has 10 patches as follows 
+    - content: 2 Iron doors
+    - content: 2 Riding Horses
+    - content: 2 Windows
+    - content: 2 Spell Scrolls of 1st to 3rd level
+    - content: 2 Superior Potions of Healing
     - title: Dr. Gotadiums Headband of De-Obfuscation 
     - content: This headband is made of flexible metals with various arms tucked and folded into themselves. It aids a surgeon and rectifier in their tasks. It's multiple folding arms can
                extend to - 
-               provide light
-               a magnification lens
-               a small beam of heat (to help with incisions or cauterization)
-               a surgeon's mask
-               a tiny hand that can grasp or hold a small tool (like a scalpel or needle or suture)
-               and a small vial of iodine
+    - content: Provide light
+    - content: A magnification lens
+    - content: A small beam of heat (to help with incisions or cauterization)
+    - content: A surgeon's mask
+    - content: A tiny hand that can grasp or hold a small tool (like a scalpel or needle or suture)
+    - content: And a small vial of iodine
     - title: Doctor's Bag
     - content: Doctor's tools come in a flat-bottomed black or brown leather bag with a metal-frame closing mouth. The bag contains a number of general steel tools of a highly polished and precision nature, as well as a couple 
                of additional tools unique to the doctor's specialty.
-               Proficiency with this kit lets you add your proficiency bonus to Wisdom (Medicine) checks when using it to stabilize a dying creature or diagnosing an illness. If you are already proficient with the medicine skill,
+    - content: Proficiency with this kit lets you add your proficiency bonus to Wisdom (Medicine) checks when using it to stabilize a dying creature or diagnosing an illness. If you are already proficient with the medicine skill,
                your proficiency bonus is doubled. The content of the bag includes
-               A needle and fine wire or thread
-               A hinged splint or brace
-               A small steel cone (Low-tech stethoscope)
-               A small mirror
-               Live leeches
-               Tools for clamping and binding open wounds to prevent blood loss
-               Two small tools relevant to the practitioner's specialty.
+    - content: A needle and fine wire or thread
+    - content: A hinged splint or brace
+    - content: A small steel cone (Low-tech stethoscope)
+    - content: A small mirror
+    - content: Live leeches
+    - content: Tools for clamping and binding open wounds to prevent blood loss
+    - content: Two small tools relevant to the practitioner's specialty.
 
   profile:
 

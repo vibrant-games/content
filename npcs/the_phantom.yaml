@@ -511,8 +511,8 @@ npc:
   - abilities: 
     - title: Relentless Nature 
     - content: Regains 1HP at the beginning of each turn if below half maximum HP
-               If he dies, he returns to life 24hrs after death. If his body is destroyed he will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
-               Knows the distance and direction between him and the creature involved in his goal unless they are on another plane       
+    - content: If he dies, he returns to life 24hrs after death. If his body is destroyed he will reform within 1 mile of where he was killed. Equipment destroyed is not regained     
+    - content: Knows the distance and direction between him and the creature involved in his goal unless they are on another plane       
   - title: Cleric Abilities
   - abilities:
   - title: Cleric Spellcasting
@@ -656,9 +656,9 @@ npc:
                aren’t incapacitated.
     - title: Emissary of Redemption
     - content: You become an avatar of peace, which gives you the following benefits;
-               You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).
-               Whenever a creature damages you, it takes radiant damage equal to half the amount it dealt to you.
-               If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest.
+    - content: You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).
+    - content: Whenever a creature damages you, it takes radiant damage equal to half the amount it dealt to you.
+    - content: If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest.
    
   - title: Feats
   - content: Alert, Crossbow Expert, Defensive Duelist, Dragon Fear, Dragon Hide, Healer, Heavy Armor Master, Inspiring Leader, Keen Mind, Mage Slayer, Mounted Combatant, Observant, Sentinel, Shield Master, War Caster, 
@@ -700,13 +700,13 @@ npc:
                vulnerable to radiant damage fails this saving throw, it is paralyzed until the end of its next turn.
     - title: Champion's Lance
     - content: The Champion's Lance resembles a very long lance of oak carved with spirals in such a way that the wood looks to almost have naturally grown this way. Upon attuning with it the lance is nearly weightless in hand. 
-               You have a +2 bonus to attack and damage rolls made with this magic weapon.
-               Long Reach - The champion's lance has an increased reach of 10 feet. But, due to its massive size, you can only attack with this lance once per turn. You have disadvantage when you use a lance to attack a target 
+    - content: You have a +2 bonus to attack and damage rolls made with this magic weapon.
+    - content: Long Reach - The champion's lance has an increased reach of 10 feet. But, due to its massive size, you can only attack with this lance once per turn. You have disadvantage when you use a lance to attack a target 
                             within 5 feet of you.
-               Champion's Flurry - If the attuned wielder of the champion lance has an extra attack feature, they add an additional 1d12 damage to the lance's damage rolls for each number of additional attacks they can make. So,
+    - content: Champion's Flurry - If the attuned wielder of the champion lance has an extra attack feature, they add an additional 1d12 damage to the lance's damage rolls for each number of additional attacks they can make. So,
                           a 5th level fighter can add a 1d12 to the champion lance's damage, whereas an 11th level fighter can add 2d12.
-               Single Striker - Once the lance makes a successful attack, the tip breaks off and all subsequent attacks made with the lance are at a disadvantage. The lance regrows its potency after the course of a long rest.  
-               Riding Shift - If you successfully hit a creature with the lance while mounted, you may use your bonus action to move on your mount a distance up to half your mount's speed in any direction without provoking 
+    - content: Single Striker - Once the lance makes a successful attack, the tip breaks off and all subsequent attacks made with the lance are at a disadvantage. The lance regrows its potency after the course of a long rest.  
+    - content: Riding Shift - If you successfully hit a creature with the lance while mounted, you may use your bonus action to move on your mount a distance up to half your mount's speed in any direction without provoking 
                               opportunity attacks.
     - title: 2x +2 Daggers
     - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.  
@@ -722,15 +722,15 @@ npc:
                disadvantage on saving throws.
     - title: Helm of Brilliance
     - content: This dazzling helm is set with 1d10 diamonds, 2d10 rubies, 3d10 fire opals, and 4d10 opals. Any gem pried from The Helm crumbles to dust. When all the gems are removed or destroyed, The Helm loses its magic.
-               You gain the following benefits while wearing it
-               You can use an action to cast one of the following Spells (save DC 18), using one of the helm's gems of the specified type as a component - Daylight (opal), Fireball (fire opal), Prismatic Spray (diamond), or Wall
+    - content: You gain the following benefits while wearing it
+    - content: You can use an action to cast one of the following Spells (save DC 18), using one of the helm's gems of the specified type as a component - Daylight (opal), Fireball (fire opal), Prismatic Spray (diamond), or Wall
                of Fire (ruby). The gem is destroyed when the spell is cast and disappears from The Helm.
-               As long as it has at least one Diamond, The Helm emits dim light in a 30-foot radius when at least one Undead is within that area. Any Undead that starts its turn in that area takes 1d6 radiant damage.
-               As long as The Helm has at least one ruby, you have Resistance to fire damage.
-               As long as The Helm has at least one fire opal, you can use an action and speak a Command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim 
+    - content: As long as it has at least one Diamond, The Helm emits dim light in a 30-foot radius when at least one Undead is within that area. Any Undead that starts its turn in that area takes 1d6 radiant damage.
+    - content: As long as The Helm has at least one ruby, you have Resistance to fire damage.
+    - content: As long as The Helm has at least one fire opal, you can use an action and speak a Command word to cause one weapon you are holding to burst into flames. The flames emit bright light in a 10-foot radius and dim 
                light for an additional 10 feet. The flames are harmless to you and the weapon. When you hit with an Attack using the blazing weapon, the target takes an extra 1d6 fire damage. The flames last until you use a 
-               Bonus Action to speak the Command word again or until you drop or stow the weapon.
-               Roll a d20 if you are wearing The Helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, The Helm emits beams of light from its remaining gems. Each creature within 60 
+    - content: Bonus Action to speak the Command word again or until you drop or stow the weapon.
+    - content: Roll a d20 if you are wearing The Helm and take fire damage as a result of failing a saving throw against a spell. On a roll of 1, The Helm emits beams of light from its remaining gems. Each creature within 60 
                feet of The Helm other than you must succeed on a DC 17 Dexterity saving throw or be struck by a beam, taking radiant damage equal to the number of gems in The Helm. The Helm and its gems are then destroyed.
     - title: Arthon, Noble Warhorse
     - content: see profile for Arthon, Noble Warhorse

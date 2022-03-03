@@ -501,7 +501,7 @@ npc:
     - content: Can touch another creature to heal up to xHP per long rest. Or can 5HP to cure a disease or poison affecting it.
     - title: Fighting Style
     - content: Great Weapon Fighting - When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new 
-                            roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
+                                       roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
     - title: Divine Smite
     - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
                slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
@@ -532,8 +532,8 @@ npc:
     - title: Channel Divinity - Abjure Enemy
     - content: As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom 
                saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
-               On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
-               On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
+    - content: On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
+    - content: On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
     - title: Channel Divinity - Vow of Enmity
     - content: As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute 
                or until it drops to 0 hit points or falls unconscious.

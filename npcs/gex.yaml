@@ -525,11 +525,11 @@ npc:
     - title: Gadget Box
     - content: Allows you to use specific spells of your choosing and can be used identically to Thieve's Tools or Tinker's Tools, Spellcasting is not intrinisc to the spy and that without the Gadget Box, the Spy may not 
                use Gadget Box spellcasting.
-               Gadget Box Spellcasting
-               Cantrip - Mage Hand, Message
-               1st Level - Knock, Invisibility
-               2nd Level - Find Traps
-               Gadget Box Self Destruct Mode - You can set a delay between 1 second and 24hrs. During that time the gadget box cannot be open by any means and cannot be used. At the end of that duration all creatures within
+    - content: Gadget Box Spellcasting
+    - content: Cantrip 
+    - content: 1st Level 
+    - content: 2nd Level 
+    - content: Gadget Box Self Destruct Mode - You can set a delay between 1 second and 24hrs. During that time the gadget box cannot be open by any means and cannot be used. At the end of that duration all creatures within
                                                60ft must make a Constitution saving throw or take Xd6 force damage and be knocked prone, where X is your Rogue Level. Taking half damage on a successful save. It takes 1 weeks 
                                                using tinker's tools to build a new box
 
@@ -545,7 +545,7 @@ npc:
     - title: Poison Dagger
     - content: This dagger contains a small reservoir in the handle to keep the blade coated in fluid, usually some form of poison, ideal for assassins who need to poison multiple targets in quick succession. The altered shape 
                of the dagger to make room for the fluid inside makes it impractical for throwing, however.
-               Poison Reserve - Thanks to the cavity inside this dagger, it can hold up to two doses of poison when poison is applied to it. For obvious reasons, you cannot store two poisons of different types within this weapon
+    - content: Poison Reserve - Thanks to the cavity inside this dagger, it can hold up to two doses of poison when poison is applied to it. For obvious reasons, you cannot store two poisons of different types within this weapon
                at the same time.
 
   profile:

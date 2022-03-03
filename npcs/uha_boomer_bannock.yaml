@@ -515,34 +515,34 @@ npc:
     - title: Gunsmith
     - content: You gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and 
                intricate firearms are only available through crafting.
-               Firearm Properties - Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that 
+    - content: Firearm Properties - Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that 
                                     property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.
-               Reload - The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.
-               Misfire - Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until 
+    - content: Reload - The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.
+    - content: Misfire - Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until 
                          you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be 
                          mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.
-               Explosive - Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, 
+    - content: Explosive - Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, 
                            the ammunition fails to detonate, or bounces away harmlessly before doing so.
     - title: Adept Marksman
     - content: You learn to perform powerful Trick Shots to disable or damage your opponents using your firearms. Trick Shots. You learn two trick shots of your choice. Many maneuvers enhance an attack in some way. 
                Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level.
                Each time you learn a new trick shot, you can also replace one trick shot you know with a different one.
                Trick Shots
-               Bullying Shot - You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature. You can expend one grit point while making a Charisma (Intimidation) check to gain advantage on 
+    - content: Bullying Shot - You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature. You can expend one grit point while making a Charisma (Intimidation) check to gain advantage on 
                                the roll.
-               Dazing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw 
+    - content: Dazing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw 
                              or suffer disadvantage on attacks until the end of their next turn.
-               Deadeye Shot - When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.
-               Disarming Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a 
+    - content: Deadeye Shot - When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.
+    - content: Disarming Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a 
                                 Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you.
-               Forceful Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a 
+    - content: Forceful Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a 
                                Strength saving throw or be pushed 15 feet away from you.
-               Piercing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, 
+    - content: Piercing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, 
                                the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment. Only the initial attack 
                                can misfire.
-               Violent Shot - When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s 
+    - content: Violent Shot - When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s 
                               misfire score. If the attack hits, you can roll one additional weapon damage die per grit point spent when determining the damage.
-               Winging Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw 
+    - content: Winging Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw 
                               or be knocked prone.
     - title: Grit 4
     - content: You gain a number of grit points equal to your Wisdom modifier (minimum of 1).
@@ -612,26 +612,26 @@ npc:
                Creating an experimental elixir requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. 
                When you reach certain levels in this class, you can make more elixirs at the end of a long rest; two at 6th level and three at 15th level. Roll for each elixir's effect separately. Each elixir 
                requires its own flask.
-               d6     Effect
-                1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
-                2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
-                3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
-                4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
-                5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
-                6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
+    - content: d6     Effect
+    - content:  1     Healing - The drinker regains a number of hit points equal to 2d4 + your Intelligence Modifier
+    - content:  2     Swiftness - The drinker's walking speed increases by 10 feet for 1 hour.
+    - content:  3     Resilience - The drinker gains a +1 bonus to AC for 10 minutes.
+    - content:  4     Boldness - The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.
+    - content:  5     Flight - The drinker gains a flying speed of 10 feet for 10 minutes.
+    - content:  6     Transformation - The drinker's body is transformed as if by the Alter Self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
     - title: Alchemical Savant
     - content: You've developed masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist's supplies as the spellcasting focus, 
                you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier 
                (minimum of +1). 
     - title: Restorative Reagents
     - content: You can incorporate restorative reagents into some of your works
-               Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).
-               You can cast Lesser Restoration without expending a spell slot and without preparing the spell, provided you use alchemist's supplies as the spellcasting focus. You can do so a number of times 
+    - content: Whenever a creature drinks an experimental elixir you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).
+    - content: You can cast Lesser Restoration without expending a spell slot and without preparing the spell, provided you use alchemist's supplies as the spellcasting focus. You can do so a number of times 
                equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.
     - title: Chemical Mastery
     - content: You have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments
-               You gain resistance to acid damage and poison damage, and you are now immune to the poisoned condition.
-               You can cast Greater Restoration and Heal without expending a spell slot, without preparing the spell, and without providing the material component, provided you use alchemist’s supplies as the 
+    - content: You gain resistance to acid damage and poison damage, and you are now immune to the poisoned condition.
+    - content: You can cast Greater Restoration and Heal without expending a spell slot, without preparing the spell, and without providing the material component, provided you use alchemist’s supplies as the 
                spellcasting focus. Once you cast either spell with this feature, you can't cast that spell with it again until you finish a long rest.
     
   - title: Feats

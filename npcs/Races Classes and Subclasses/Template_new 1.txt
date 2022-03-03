@@ -83,17 +83,17 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: hickle_frownbottom
+  id: template_mctemplateson
 
   #
   # The name of the submitter (your name).
   #
-  author: Mike Rigby
+  author: TEMPLATE
 
   #
   # Email address of the submitter.
   #
-  email: rigbyma@hotmail.com
+  email: TEMPLATE@example.com
 
   #
   # Date the NPC was created.
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-05-28"
+  date: "2021-02-15"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Hickle Frownbottom
+  name: TEMPLATE McTEMPLATESON
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Elderly
+    age: TEMPLATE
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Gnome
+    race: TEMPLATE
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: Rock
+    sub-race: TEMPLATE
 
     #
     # Pronouns (case insensitive):
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: he/him
+    pronouns: TEMPLATE/TEMPLATE
 
     #
     # Occupation(s).
@@ -215,7 +215,9 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Toy Maker
+    - TEMPLATE 1
+    - TEMPLATE 2
+    - TEMPLATE 3
 
     #
     # D & D classes (case insensitive):
@@ -223,7 +225,7 @@ npc:
     # - artificer
     # - barbarian
     # - bard
-    # - blood hunter
+    # - bloodhunter
     # - cleric
     # - druid
     # - fighter
@@ -238,7 +240,7 @@ npc:
     #
     # Required.
     #
-    class: Artificer
+    class: TEMPLATE
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +263,7 @@ npc:
     #
     # Required.
     #
-    subclass: Battle Smith
+    subclass: TEMPLATE
 
     #
     # Class level.
@@ -270,7 +272,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 3
+    level: TEMPLATE
 
     #
     # Alignments (case insensitive):
@@ -286,7 +288,7 @@ npc:
     #
     # Required.
     #
-    alignment: Lawful Good
+    alignment: TEMPLATE
 
     #
     # Alignment tendencies:
@@ -295,7 +297,9 @@ npc:
     # Optional.
     #
     tendencies:
-    - N/A
+    - TEMPLATE
+    - TEMPLATE
+    - TEMPLATE
 
     #
     # Languages the character speaks
@@ -309,9 +313,9 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - Common
-    - Gnomish
-    - Dwarvish
+    - TEMPLATE 1
+    - TEMPLATE 2
+    - TEMPLATE 3
 
     #
     # Factions:
@@ -324,18 +328,23 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
     factions:
-    - id: artificer_s_guild
-      name: Artificer's Guild
-    - id: local_business_associations
-      name: Local Business Associations
-      role: Clockmaster
+    - id: template_1
+      name: TEMPLATE 1
+      role: TEMPLATE ROLE 1
+    - id: template_2
+      name: TEMPLATE 2
+      role: TEMPLATE ROLE 2
+    - id: template_3
+      name: TEMPLATE 3
+      role: TEMPLATE ROLE 3
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -343,7 +352,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - N/A
+    - TEMPLATE 1
+    - TEMPLATE 2
+    - TEMPLATE 3
 
   improv:
 
@@ -358,7 +369,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  He can be found at a little toy shop off the beaten path or a stall in the town market selling his creations
+    introduction: TEMPLATE
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -369,7 +380,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Short and chubby with a bald head, large nose, a big bushy beard and thick multi-lens glasses
+    appearance:   TEMPLATE
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -385,9 +396,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:
-    - "Ah little one, what's your favorite animal"
-    - "Go, run ask your mother if she'll buy you one today"
+    expressions:  TEMPLATE
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -400,7 +409,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Constantly fiddling with and cleaning his glasses
+    mannerisms:   TEMPLATE
 
   acting:
     #
@@ -410,8 +419,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Improving his skill, making a living, the happiness of children
-
+      TEMPLATE
+      MORE TEMPLATE
     #
     # Passions:
     #
@@ -419,8 +428,8 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      He loves the delicacy of clockworks and has a large collection of clocks
-
+      TEMPLATE
+      MORE TEMPLATE
     #
     # Vulnerabilities:
     #
@@ -428,31 +437,31 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      He's vain when it comes to his clockwork toys. He thinks his are the best &amp; gets offended when someone says otherwise
-
+      TEMPLATE
+      MORE TEMPLATE
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: | 
-      He's been slowly secretly building a clockwork man/Warforged for the last few years
-
+    secrets: |
+      TEMPLATE
+      MORE TEMPLATE
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 11
-    hit-points: 34
-    speed: 25
-    str: 12
-    dex: 16
-    con: 12
-    int: 19
-    wis: 14
-    cha: 12
+    armour-class: TEMPLATE
+    hit-points: TEMPLATE
+    speed: TEMPLATE
+    str: TEMPLATE
+    dex: TEMPLATE
+    con: TEMPLATE
+    int: TEMPLATE
+    wis: TEMPLATE
+    cha: TEMPLATE
 
   #
   # Special characteristics.
@@ -462,112 +471,24 @@ npc:
   # ???Max length???
   #
   specialties:
-    saving-throws:
-    - Wisdom
-    - Intelligence
-    damage-immunities:
-    - N/A
-    condition-immunities:
-    - N/A
-    resistances:
-    - N/A
     skills:
-    - Toy Making
-    proficiencies:
-    - Arcana
-    - Perception
-    - Sleight-of-Hand
-    - Investigation
-    - Tinker's Tools
-  special-abilities:
-  - title: Rock Gnome Abilities
-  - abilities: 
-    - title: Gnome Cunning
-    - content: Advantage on all Intelligence, Wisdom and Charisma saving throws againts magic
-    - title: Darkvision
-    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray           
-    - title: Artificers Lore
-    - content: Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply
-    - title: Tinker
-    - content: You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function
-               after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up
-               to three such devices active at a time. When you create a device, choose one of the following options - 
-    - content: Clockwork Toy - This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in
-                               a random direction. It makes noises as appropriate to the creature it represents.
-    - content: Fire Starter - The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.
-    - content: Music Box - When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed.        
-  - title: Artificer Abilities
-  - abilities:
-    - title: Magical Tinkering
-    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
-    - title: Artificer Spellcasting 
-    - content: Requires Tinker's Tools as Spellcasting focus
-    - title: Spell DC
-    - content: 14   
-    - title: Cantrip
-    - content: Mage Hand, Mending
-    - title: 1st Level
-    - content: False Life, Grease, Detect Magic
-    - title: Infuse Item
-    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
-    - title: Infusions Known
-    - content: 4
-    - title: The Right Tool for the Job
-    - content: Can produce any set of artisan's tools with 1 hour work
-  - title: Battle Smith Abilities
-  - abilities: 
-    - title: Spellcasting
-    - abilities:
-    - title: Spell DC
-    - content:
-    - title: 3rd Level
-    - content: Heroism, Shield
-    - title: Tool Proficiency
-    - content: You gain proficiency with smith's tools. If you already have this proficiency, you gain proficiency with one other type of artisan's tools of your choice.
-    - title: Battle Ready
-    - content: Your combat training and your experiments with magic have paid off in two ways
-               You gain proficiency with martial weapons.
-               When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.
-    - title: Steel Defender
-    - content: Your tinkering has borne you a faithful companion, a steel defender. It's friendly to you and your companions, and it obeys your commands. See its game statistics in the Steel Defender stat block, which
-               uses your proficiency bonus (PB) in several places. You determine the creature's appearance and whether it has two legs or four; your choice has no effect on its game statistics. In combat, the defender
-               shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a 
-               bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, 
-               not just Dodge. If the Mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith's tools as an action to revive it, provided you are within 5 
-               feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. At the end of a long rest, you can create a new steel 
-               defender if you have smith's tools with you. If you already have a defender from this feature, the first one immediately perishes. The defender also perishes if you die.                          
-    - content: 
-    - content: Steel Defender - Medium construct
-    - content: Armor Class - 15 (natural armor)
-    - content: Stats - STR 14(+2) DEX 12(+1) CON 14(+2) INT 4(−3) WIS 10(+0) CHA 6(−2) 
-    - content: Hit Points - 2 + your Intelligence modifier + 5 times your artificer level (the defender has a number of Hit Dice [d8s] equal to your artificer level)
-    - content: Speed - 40 ft.     
-    - content: Saving Throws - Dex +1 plus PB, Con +2 plus PB
-    - content: Skills - Athletics +2 plus PB, Perception +0 plus PB x 2
-    - content: Damage Immunities - poison
-    - content: Condition Immunities - charmed, exhaustion, poisoned
-    - content: Senses - Darkvision 60 ft., Passive Perception 10 + (PB x 2)
-    - content: Languages - understands the languages you speak
-    - content: Challenge —
-    - content: Proficiency Bonus (PB) - equals your bonus
-    - content: Vigilant - The defender can't be surprised.
-    - content: Actions -
-    - content: Force-Empowered Rend. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target you can see. Hit 1d8 + PB force damage.
-    - content: Repair - (3/Day). The magical mechanisms inside the defender restore 2d8 + PB hit points to itself or to one construct or object within 5 feet of it.
-    - content: Reactions -
-    - content: Deflect Attack - The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.
-    - content: Intimidate - It is an imposing sight and all those seeing it for the first time must make a DC 12 Wisdom save or become firghtened for 1 round
-               
-  - title: Attacks
-  - content: 1 attack with unarmed strike or Steel Defender
-  - title: Combat Tactics
-  - content: Hickle largely avoids combat unless cornered
+    - TEMPLATE 1
+    - TEMPLATE 2
+    - TEMPLATE 3
+    special-abilities: |
+      TEMPLATE
+      MORE TEMPLATE
+    attacks: |
+      TEMPLATE
+      MORE TEMPLATE
+    combat-tactics: |
+      TEMPLATE
+      MORE TEMPLATE
+    special-equipment:
+    - TEMPLATE 1
+    - TEMPLATE 2
+    - TEMPLATE 3
 
-  - title: Special Equipment
-  - abilities:
-    - title: Magic Trinkets
-    - content: a selection of various small magical artifacts and toys
-                                                                   
   profile:
 
     #
@@ -578,10 +499,9 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Hickle has worked long and hard to build is skill and mastery at clockwork toy making and to build his business. He's a very lovely fellow and loves bringing a smile to children's faces. He tries to improve with each new
-      toy making his clockwork creatures more and more lifelike with every new design. When he's not building toys to sell in his store/shop he spends his time on his secret project, a clockwork man that he's been building and
-      upgrading for years. He dreams of one day unveiling his clockwork being to the world and receiving the renown he has longed for all his life.
-
+      TEMPLATE
+      MORE TEMPLATE
+      EVEN MORE TEMPLATE
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -591,4 +511,34 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Short and chubby with a bald head, large nose, a big bushy beard and thick multi-lens glasses
+      TEMPLATE
+      MORE TEMPLATE
+  #
+  # Content that does not get displayed, but could be useful
+  # to humans.  Includes review comments, notes about what to
+  # do for the NPC art, or whatever else we need.
+  #
+  # Optional.
+  #
+  uncategorized:
+  - uncategorized_template_1: TEMPLATE
+  - uncategorized_template_2: |
+    TEMPLATE
+    MORE TEMPLATE
+  - uncategorized_template_3: TEMPLATE
+---
+
+#
+# ...Multiple NPCs can be included in one file,
+# separated by --- dividers...
+#
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
