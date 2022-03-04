@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: nothuriel_oathbreaker
+  id: nothuriel_suns_glory
 
   #
   # The name of the submitter (your name).
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Nothuriel Oathbreaker
+  name: Nothuriel, Sun's Glory
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Middle Aged Adult
+    age: Young Adult
 
     #
     # Races (case insensitive):
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Dreadlord
+    - Knight/Captain
 
     #
     # D & D classes (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Oathbreaker
+    subclass: Oath of the Crown
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 20
+    level: 7
 
     #
     # Alignments (case insensitive):
@@ -286,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: Chaotic Evil
+    alignment: Lawful Good
 
     #
     # Alignment tendencies:
@@ -309,7 +309,6 @@ npc:
     #
     languages:
     - Common
-    - Undercommon
     - Celestial
     - Infernal
 
@@ -331,7 +330,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - N/A
+    - id: kings_guard
+      name: A King's Guard
+      role: Knight/Captain
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -339,9 +340,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Grim
-    - Angry
-    - Vengeful
+    - Enthusiastic
+    - Skilled
+    - Loving
 
   improv:
 
@@ -356,7 +357,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  She would only seek out a party to destroy them and all that is good in the world
+    introduction:  The bright, smiling young lady on horseback in her gleaming silver armor leads her sqaudron of soldiers into the square
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -367,7 +368,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   She is 7+' Tall and stunningly beautiful with long black hair, pupiless black eyes and silver skin. Dressed in full black plate with a flowing crimson cape and horned helmet
+    appearance:   She is 7+' Tall and stunningly beautiful with long black hair, pupiless golden eyes and silver skin. Dressed in full silver plate with a flowing golden cape and helmet
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -384,7 +385,9 @@ npc:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
     expressions:
-    - "You have chosen Death!"
+    - "Alright men, fall in!"
+    - "For The Lord and The Crown!"
+    - "Onward to victory , my love!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -397,7 +400,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   She carries herself with regal poise but with the weariness and swagger of an experience fighter
+    mannerisms:   She carries herself with regal poise and with the confidence and boldness of an experience fighter in her prime
 
   acting:
     #
@@ -407,7 +410,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      Pleasing her dark gods and extinguishing all that is good and light from the world
+      Law, Loyalty, Courage, Responsibility. Service to her god, her king and her love
     #
     # Passions:
     #
@@ -415,7 +418,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Fear and Destruction, that's it, that's all
+      Being a Knight, Warrior, Lover and Leader
     #
     # Vulnerabilities:
     #
@@ -423,7 +426,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      Lawful Good Holy Symbols, Certifiably Insane
+      Overconfidence, weak with her left hand
     #
     # Secrets:
     #
@@ -431,21 +434,21 @@ npc:
     # ???Maximum length???
     #
     secrets: | 
-      The secrets of life after death. The goals of the lords of chaos
+      Has started hearing voices
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 24
-    hit-points: 193
-    speed: 30
-    str: 22
-    dex: 19
-    con: 18
-    int: 21
-    wis: 16
-    cha: 25
+    armour-class: 22
+    hit-points: 71
+    speed: 40
+    str: 18
+    dex: 17
+    con: 15
+    int: 18
+    wis: 14
+    cha: 19
 
   #
   # Special characteristics.
@@ -460,20 +463,17 @@ npc:
     - Charisma
     - Intelligence
     damage-immunities:
-    - Necrotic and Radiant Damage
-    condition-immunities:
-    - Frightened, Charmed, Poisoned, Stunned, Disease
-    resistances:
     - N/A
+    condition-immunities:
+    - Disease
+    resistances:
+    - Necrotic and Radiant Damage
     skills:
     - N/A
     proficiencies:
-    - Arcana
-    - Perception
     - Athletics    
     - Intimidation
     - Persuasion
-    - Survival
     - Heavy Armor
   special-abilities:
   - title: Aasimar Abilities
@@ -482,16 +482,14 @@ npc:
     - content: Can see 60 in dim light as though it was bright light and in darkness as if it was dim light
     - title: Celestial Resistance
     - content: Resistance to Necrotic and Radiant Damage
-    - title: Hurting Hands
-    - content: Once per long rest, you can touch a creature and cause it to lose 5HP
-    - title: Dark Bearer
-    - content: Can cast the Darkness spell using Charisma as spellcasting abaility
-    - title: Necrotic Shroud 
-    - content: You can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant
-              you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 21) or become frightened of you until the end of your next turn.
-              Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with
-              an attack or a spell. The extra necrotic damage equals your level (20).
-              Once you use this trait, you can't use it again until you finish a long rest.
+    - title: Healing Hands
+    - content: Once per long rest, you can touch a creature and cause it to gain 5HP
+    - title: Light Bearer
+    - content: Can cast the Light cantrip using Charisma as spellcasting abaility
+    - title: Radiant Soul
+    - content: Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back. Your transformation lasts for
+               1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an 
+               attack or a spell. The extra radiant damage equals your level. Once you use this trait, you can't use it again until you finish a long rest
   - title: Paladin Abilities
   - abilities:
     - title: Divine Sense
@@ -510,90 +508,64 @@ npc:
     - title: Extra Attack
     - content: Can take and extra attack action each turn
     - title: Aura of Protection
-    - content: When he or friendly creatures within 30 feet must make a saving throw, they get a +x bonus to their roll
-    - title: Aura of Courage
-    - content: He and friendly creatures within 30 feet can't be frightened while he is conscious
-    - title: Cleansing Touch
-    - content: 7 times per long rest can use an action to touch a creature to end one spell on himself or a willing creature he touches       
+    - content: When he or friendly creatures within 30 feet must make a saving throw, they get a +x bonus to their roll       
   - title: Paladin Spellcasting
   - abilities:
     - title: Spell DC
-    - content: 21
+    - content: 15
     - title: 1st Level
-    - content: Command, Searing Smite, Thunderous Smite, Wrathful Smite
+    - content: Heroism, Searing Smite, Thunderous Smite, Bless
     - title: 2nd Level
-    - content: Branding Smite, Find Steed, Locate Object
-    - title: 3rd Level
-    - content: Blinding Smite, Dispel Magic, Elemental Weapon
-    - title: 4th Level
-    - content: Banishment, Staggering Smite, Locate Creature
-    - title: 5th Level
-    - content: Banishing Smite, Destructive Wave
-  - title: Oathbreaker Abilities
+    - content: Branding Smite, Find Steed, Prayer of Healing
+  - title: Oath of the Crown Abilities
   - abilities: 
     - title: Spellcasting
     - abilities: 
     - title: Spell DC
-    - content: 21
+    - content: 15
     - title: 3rd Level
-    - content: Hellish Rebuke, Inflict Wounds
+    - content: Command, Compelled Duel
     - title: 5th Level
-    - content: Crown of Madness, Darkness
-    - title: 9th Level
-    - content: Animate Dead, Bestow Curse
-    - title: 13th Level
-    - content: Blight, Confusion 
-    - title: 17th Level
-    - content: Contagion, Dominate Person
-    - title: Channel Divinity - Control Undead
-    - content: As an action, you target one undead creature you can see within 30 feet of you. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for the next 24 hours, 
-               or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than your paladin level is immune to this effect.
-    - title: Channel Divinity - Dreadful Aspect
-    - content: As an action, you channel the darkest emotions and focus them into a burst of magical menace. Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a
-               failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt another Wisdom saving throw to end the 
-               effect on it.
-    - title: Aura of Hate
-    - content: You as well any fiends and undead within 10 feet of you, gain a bonus to melee weapon damage rolls equal to your Charisma modifier (+7). A creature can benefit from this feature from only one
-               paladin at a time.
-    - title: Supernatural Resistance
-    - content: You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons 
-    - title: Dread Lord
-    - content: You can, as an action, surround yourself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around you to dim light. Whenever an enemy that is frightened by
-               you starts its turn in the aura, it takes 4d10 psychic damage. Additionally, you and any creatures of your choosing in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on
-               attack rolls against creatures draped in this shadow. While the aura lasts, you can use a bonus action on your turn to cause the shadows in the aura to attack one creature. Make a melee spell attack against
-               the target. If the attack hits, the target takes necrotic damage equal to 3d10 + your Charisma modifier. After activating the aura, you can't do so again until you finish a long rest.       
+    - content: Warding Bond, Zone of Truth
+    - title: Channel Divinity - Champion Challenge
+    - content: As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On 
+               a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is more than 30 feet away from you.
+    - title: Channel Divinity - Turn the Tide
+    - content: As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Charisma 
+               modifier (minimum of 1) if it has no more than half of its hit points.
+    - title: Channel Divinty - Sacred Weapon
+    - content: As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to Attack rolls made with that weapon (with a 
+               minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the Duration. You can end 
+               this Effect on Your Turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall Unconscious, this Effect ends.  
+    - title: Channel Divinity - Turn the Unholy
+    - content: As an action, you present your holy Symbol and speak a prayer censuring Fiends and Undead, using your Channel Divinity. Each fiend or Undead that can see or hear you within 30 feet of you must make a 
+               Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to move as far away from you as it can, 
+               and it can’t willingly move to a space within 30 feet of you. It also can’t take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving.
+               If there’s nowhere to move, the creature can use the Dodge action.
+    - title: Divine Allegiance
+    - content: When a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. 
+               Instead, you take the damage. This damage to you can't be reduced or prevented in any way.       
 
   - title: Feats
-  - content: Great Weapon Dual Weilder, Great Weapons Master, Heavy Armor Master, Mage Slayer, Savage Attacker, War Caster
-  - title: Truesight
-  - content: Within 60ft can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a
-             shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.
-  - title: Legendary Resistance
-  - content: (3/Day), If Nothuriel Oathbreaker fails a saving throw she can choose to succeed instead 
-  - title: Legendary Actions 
-  - content: Nothuriel Oathbreaker can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Nothuriel
-             Oathbreaker regains spent Legendary Actions at the start of her turn
-  - abilities:
-    - title: Legion of the Damned
-    - content: Nothuriel Oathbreaker can cast Summon Undead at 5th Level except she summons 1d12+3 undead instead of one
-    - title: Misty Step
-    - content: Nothuriel Oathbreaker can cast Misty Step
-    - title: Trade Life
-    - content: Nothuriel Oathbreaker can touch a creature to drain its life - Melee Spell Attack, +4 to hit, reach 5 ft., one creature. Hit - 10 (3d6) necrotic damage. The target must succeed on a DC 10 Constitution saving
-               throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum
-               to 0. Nothuriel gains HP equal to the damage done
+  - content: Great Weapons Master, Heavy Armor Master, War Caster
 
   - title: Attacks
-  - content: 3 attacks with Greatswords or 1 spell attack
+  - content: 2 attacks with Greatswords or 1 spell attack
   - title: Combat Tactics
-  - content: Nothuriel will march recklessly headlong into battle attacking with her greatsword and spell attacks while summoning her undead legions to fight along side her
+  - content: Nothuriel will march into battle at the head of her battalion with her love by her side attacking with her greatsword and spell attacks.
 
   - title: Special Equipment
   - abilities:
-    - title: Dual +3 Greatswords
-    - content: You have a +3 bonus to Attack and Damage Rolls made with this weapon.
-    - title: +3 Plate Armor
-    - content: While wearing it, you have an extra +3 bonus to your AC
+    - title: +2 Greatswords
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.
+    - title: +2 Dagger
+    - content: You have a +2 bonus to Attack and Damage Rolls made with this weapon.
+    - title: Golden Plate Male
+    - content: While wearing it, you have an extra +1 bonus to your AC, and your speed increases by 10 feet.
+    - content: This armor has 5 charges. It regains 1d4 + 1 charges daily at dawn.
+    - content: When you roll a Dexterity saving throw or you roll for initiative, you can expend 1 charge to gain advantage on that roll before you make it.
+    - content: When you are hit by an attack, you can use your reaction to expend 2 charges and halve the damage you take from that attack, unless the damage is necrotic.
+    - content: If you fail a saving throw, you can expend 4 charges to succeed instead.
 
   profile:
 
@@ -605,8 +577,9 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Once a shining beacon of light and justice, Nothuriel stuck a deal with dark gods to bring her betrayed love back from the dead. Her lover was returned to her as a lich, driving her mad and causing her to embrace the
-      darkness and do the bidding of the dark gods forever. Now she leads legions of the damned and undead against the light.
+      Nothuriel has begun to come into her own as a woman and as a captain of the King's Guard. She has gone from student to warrior and leader. Beside her love Gerrard Romkey, she regularly leads her battalion, whether it be 
+      to keep the peace, or into firce battle against her nation and her god's enemies. She is well on her way to become one of the greatest warriors the world has ever seen. Her troops are loyal to her command and she is
+      loyal to them and to her god, her king, her nation and her love
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -616,5 +589,5 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Nothuriel Oathbreaker was once a beautiful, loving and righteous woman, but those days are long gone. There is nothing left of that woman. What is left is a mad, angry, bloodthirsty beast. All she has left is her devotion
-      to her undead lover and the dark gods who revived him. She serves destruction and doesn't know the meaning of mercy.
+      Nothuriel is a beautiful, loving and righteous woman. She is bright, cheerful, pious, hard-working and full of light and love. She is filled with the confidence of youth, occasionally to her detriment, but she works hard
+      to keep it in check. She is devoted to her god, kin and nation, but even moreso to her soon to be husband Gerrard. She loves him passionately and deeply and he returns that love in spades.
