@@ -472,7 +472,7 @@ npc:
     condition-immunities:
     - Charmed, Frieghtened, Paralyzed, Diseased
     resistances:
-    - Bludgeoning, Piercing, Slashing damage from all weapons, Turn Undead
+    - Bludgeoning, Piercing, Slashing damage from all weapons, Turn Undead, Radiant Damage
     skills:
     - Lute
     proficiencies:
@@ -551,15 +551,15 @@ npc:
                level and again at 7th, 15th, and 20th lel.
     - content: Oath of Undying - Undying Presence - At 3rd level when you take this Oath, your blood churns with radiant fire. You gain resistance to Radiant damage. Additionally, the target of your Rejuvenating Strike has 
                                                     disadvantage on attacks against targets other than you until the end of its next turn.
-                                 Aura of the Undying - At 7th level, allies within 10 feet of you gain resistance to Radiant damage. Additionally, the power of your radiant blood can help prevent death. You and allies within 10 
+    - content:                   Aura of the Undying - At 7th level, allies within 10 feet of you gain resistance to Radiant damage. Additionally, the power of your radiant blood can help prevent death. You and allies within 10 
                                                        feet of you gain advantage on Death Saving Throws. The power of your will is so strong, the saving throw effect persists even if you are unconscious or incapacitated. At 
                                                        18th level, this Aura increases to 30 feet.
-                                 Radiant Blood - Upon reaching 9th level, the radiant fire of life infuses your soul. Your blood becomes radiant fire. If you are cut and bleeding, the radiance of your blood causes no damage, but
+    - content:                   Radiant Blood - Upon reaching 9th level, the radiant fire of life infuses your soul. Your blood becomes radiant fire. If you are cut and bleeding, the radiance of your blood causes no damage, but
                                                  you may use a bonus action to use your blood for lighting a candle, campfire, or another similar use. A fire lit in this manner is considered non-magical and burns a shade of 
                                                  radiant yellow instead of the normal color of fire
-                                 Improved Rejuvenating Strike - At 15th level, when you use Rejuvenating Strike, you may spend up to 3 additional Runes. For each additional Rune spent, the healing increases by an amount equal to
+    - content:                   Improved Rejuvenating Strike - At 15th level, when you use Rejuvenating Strike, you may spend up to 3 additional Runes. For each additional Rune spent, the healing increases by an amount equal to
                                                                 your Constitution modifier.
-                                 Purgatory - By 20th level, your radiant vitality allows you to refuse to die. When you are reduced to 0 or fewer hit points, but not killed outright, your soul may keep fighting in your stead. 
+    - content:                   Purgatory - By 20th level, your radiant vitality allows you to refuse to die. When you are reduced to 0 or fewer hit points, but not killed outright, your soul may keep fighting in your stead. 
                                              Your soul has the same speed, hit points, and ability scores as your body, AC 20, and deals magical slashing damage equal 1d10 + your strength modifier. Your soul cannot take any 
                                              action other than the attack, disengage, dodge, or help action, and cannot use any Rune Strikes. If your Soul is reduced to 0 hit points, or moves more than 100 feet from your body, 
                                              you die immediately and cannot be resurrected by any means. This effect lasts for 1 minute or until you succeed on 3 death saving throws, and you must finish a long rest before you 
