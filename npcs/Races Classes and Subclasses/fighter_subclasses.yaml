@@ -758,3 +758,303 @@
     - content: You can lead a unified assault. As an action you can command a number of friendly creatures up to your Wisdom modifier (a minimum of one) who can see or hear you to join you to make a weapon attack on a 
                target creature. Those friendly creatures can immediately use their reaction to make one weapon attack on the target creature. Additionally, you may make a single weapon attack on the target creature as 
                part of this action. You regain the use of this ability when you finish a short or long rest.
+               
+               
+  - title: Death Knight Abilities
+  - abilities:
+    - title: Deathly Awareness
+    - content: Your knowledge of Death gives you heightened awareness of other creatures of Death. You have advantage on Wisdom (Survival) checks to track Undead and Fiends, as well as on Intelligence checks to recall 
+               information about them.
+    - title: Fighting Style
+    - content:
+    - title: Rune Weapon
+    - content: At 2nd level, you can draw on the dread magic of the grave to inscribe your weapon with deathly Runes. These Runes may be used for additional effects described in this class description. You must spend one hour 
+               inscribing your weapon, which may be completed during a short rest. You may inscribe up to two weapons, and you cannot be disarmed of your Rune Weapons while you are conscious. If you inscribe a third weapon, you 
+               must choose one of your previous two weapons from which to remove the Runes.
+    - content: You have 4 total Runes, and you gain Runes as indicated in the Class Table. You recover all expended Runes when you finish a short or long rest. If an ability that uses a Rune requires a saving throw, the saving 
+               throw DC is equal to 8 + your proficiency bonus + your Wisdom modifier. No Rune features require a spell attack roll.
+    - title: Rune Strike
+    - content: Beginning at 2nd level, when you hit an enemy with a weapon attack, you may expend a Rune to add an additional effect to the attack, as listed below.
+    - content: Rejuvenating Strike - You channel what’s left of your divine blessing into your weapon strike. If your attack hits, you may expend 1 Rune to cause the attack to deal Radiant damage, and heal you for half the 
+                                     damage dealt (rounded down). You can only regain HP if the blow is struck in combat. At 5th level, you may add your Constitution modifier to the healing, twice your Constitution modifier at 
+                                     11th level, and 3 times your Constitution modifier at 17th level.
+    - content: Icy Blast - If your attack hits, the target takes the normal attack damage, and you may expend 1 Rune to deal 1d6 extra Cold damage and force the target to make a Constitution saving throw. On a failed save, the 
+                           target has its speed halved until the end of its next turn. On a successful save, the target does not have its speed reduced. The damage increases by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) level.
+    - content: Plague Strike - If your attack hits, the target takes the normal attack damage, and you may expend 1 Rune to deal 1d6 additional Necrotic damage and afflict the target with Plague for 1 minute. At the beginning of
+                               its next turn, and at the beginning of each of its turns thereafter, the target must make a Constitution saving throw. On a failed save, the target takes 1d6 Necrotic damage from the plague. On a 
+                               successful save, the effect ends. The Plague effect does not stack if applied more than once. The strike and plague damage increases by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) level.
+    - title: Grim Oath
+    - content: At 3rd level you mimic the Oath you took in your former life. Though you can choose to follow the same Tenets, you are not bound by your Paladin Oath any longer, and may do as you please. Choose a 
+               Grim Oath that you follow exclusively. You may choose the Oath of the Undying, Oath of the North, or Oath of the Plague, all detailed at the end of this class description. Your choice grants you features at 3rd 
+               level and again at 7th, 15th, and 20th lel.
+    - content: Oath of Undying - Undying Presence - At 3rd level when you take this Oath, your blood churns with radiant fire. You gain resistance to Radiant damage. Additionally, the target of your Rejuvenating Strike has 
+                                                    disadvantage on attacks against targets other than you until the end of its next turn.
+                                 Aura of the Undying - At 7th level, allies within 10 feet of you gain resistance to Radiant damage. Additionally, the power of your radiant blood can help prevent death. You and allies within 10 
+                                                       feet of you gain advantage on Death Saving Throws. The power of your will is so strong, the saving throw effect persists even if you are unconscious or incapacitated. At 
+                                                       18th level, this Aura increases to 30 feet.
+                                 Radiant Blood - Upon reaching 9th level, the radiant fire of life infuses your soul. Your blood becomes radiant fire. If you are cut and bleeding, the radiance of your blood causes no damage, but
+                                                 you may use a bonus action to use your blood for lighting a candle, campfire, or another similar use. A fire lit in this manner is considered non-magical and burns a shade of 
+                                                 radiant yellow instead of the normal color of fire
+                                 Improved Rejuvenating Strike - At 15th level, when you use Rejuvenating Strike, you may spend up to 3 additional Runes. For each additional Rune spent, the healing increases by an amount equal to
+                                                                your Constitution modifier.
+                                 Purgatory - By 20th level, your radiant vitality allows you to refuse to die. When you are reduced to 0 or fewer hit points, but not killed outright, your soul may keep fighting in your stead. 
+                                             Your soul has the same speed, hit points, and ability scores as your body, AC 20, and deals magical slashing damage equal 1d10 + your strength modifier. Your soul cannot take any 
+                                             action other than the attack, disengage, dodge, or help action, and cannot use any Rune Strikes. If your Soul is reduced to 0 hit points, or moves more than 100 feet from your body, 
+                                             you die immediately and cannot be resurrected by any means. This effect lasts for 1 minute or until you succeed on 3 death saving throws, and you must finish a long rest before you 
+                                             can benefit from it again. You make your death saving throws at the end of your turn during Purgatory.
+    - content: Oath of Plague - Dread Presence - At 3rd level when you take this Oath, you are empowered by the energy of Death itself. You have resistance to Necrotic damage. Additionally, targets of your Plague Strike are 
+                                                 considered Poisoned while affected by the Plague.
+                                Aura of the Plague - At 7th level, allies within 10 feet of you gain resistance to Necrotic damage. Additionally, enemies that enter the Aura or start their turn within its effect must make a 
+                                                     Constitution saving throw. On a failed save, they suffer from the Poisoned condition while within your Aura for the next 24 hours. On a successful save, they do not suffer the
+                                                     condition and cannot be affected by this aura for 24 hours. At 18th level, the Aura increases to 30 feet.
+                                Wilting Presence - At 9th level, your connection to and use of the Plague affects you. Your skin gains a faint greenish hue, and you may use a bonus action to cause all non-magical plants within 
+                                                   10 feet of you to wither. This effect lasts for 10 minutes or until you lose your concentration (as if concentrating on a spell). The effect moves with you, and you may cancel 
+                                                   the effect at any time (no action required). When the effect ends or you cancel it, the plants affected return to the state they were in before you caused the wilting
+                                Virulent Plague - At 15th level, your control of the Plague heightens. When you take the attack action against a target affected by your Plague, you may use a bonus action and spend up to 4 Runes.
+                                                  For each Rune spent, you cause the Plague to jump to 1 additional creature of your choice within 10 feet of the original target.
+                                Vile Blast - At 20th level, you command the vile power of the grave. As an action you may spend 1 Rune and swing your Rune Weapon in the direction of a creature you can see within 60 feet. The 
+                                             target must make a Dexterity saving throw. On a failed save the target suffers 5d8 Necrotic damage and is afflicted by a random Disease (DMG p.256). Roll a d4. On a 1, the target 
+                                             suffers Cackle Fever; on a 2, the target suffers Sewer Plague; on a 3, the target suffers Sight Rot; on a 4, you may choose which disease the target suffers. These symptoms manifest 
+                                             immediately upon application. On a successful save, the target takes half as much damage and is not afflicted by Disease.
+    - title: Lingering Radiance
+    - content: At 3rd level, the small spark of radiance from your former life manifests. You are immune to disease.
+    - title: Extra Attack
+    - content: Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+    - title: Aura of Dread
+    - content: At 6th level, your presence hangs heavily on your enemies. Whenever an enemy within 10 feet must make a saving throw, it takes a penalty on the throw equal to 1 + half your Wisdom modifier, rounded down. This Aura
+               does not stack with itself or similar effects (such as the Bane spell). At 18th level, this Aura increases to 30 feet.
+    - title: Dreadful Visage
+    - content: Upon reaching 6th level, your connection to Death allows you to temporarily alter your body slightly. As an action, choose one of the following options. The effect lasts for one hour, or until you use another 
+               action to end it.
+    - content: Visage of Fear - You may use the power of Death to temporarily twist your face and body into a horrific sight. You have advantage on Charisma (Intimidation) checks.
+    - content: Visage of Grace - You may use the power of Death to temporarily heal the scars of your previous death, making you more acceptable among those who have not experienced Death. You have advantage on Charisma 
+                                (Persuasion) checks.
+    - title: Relentless Advance
+    - content: At 9th level, you become as relentless as Death itself. Your speed increases by 10 feet. Additionally, non-magical difficult terrain does not reduce your speed.
+    - title: Pull of the Grave
+    - content: At 10th level, your power over the forces of Death increase. As an action, you may spend 1 Rune to cause a target within 30 feet of you that you can see to make a Strength saving throw. On a failed save, the 
+               target is pulled up to 30 feet towards you. If the target is pulled within melee range of you, you may make one weapon attack against it as a bonus action.
+    - title: Speak with Undead
+    - content: By 11th level, your knowledge of the inner workings of Death allows you to communicate with the dead. You may expend 1 Rune to cast the Speak with Dead spell. However, you may also target any undead creature using
+               this spell.
+    - title: Magic Barrier
+    - content: At 13th level, you can harness the power of death to protect yourself against offensive magic. As a reaction when a spell is cast that targets you or an area you’re in, you may spend 1 Rune to create a barrier 
+               around yourself, granting you resistance to the damage dealt by spells until the beginning of your next turn.
+    - title: Raise Dead
+    - content: At 14th level, your connection with death allows you to expend power to help others return from Death. You may spend 4 Runes to cast the Raise Dead spell without requiring material components. You may do this only
+              once per long rest.
+    - title: Death’s Endurance
+    - content: By 17th level, your connection to Death empowers you, giving you the ability to trudge onward when others would fall. You are immune to Exhaustion. Additionally, when you are the victim of a critical hit, you may 
+               use your reaction to turn it into a normal hit. You may use this feature a number of times equal to your wisdom modifier, and regain spent uses upon completing a long rest.
+
+
+
+  - title: Renegade Abilities
+  - abilities:
+    - title: Scoundrel’s Wit
+    - content: Starting at 3rd level, you gain proficiency with the two of the following skills - Deception, Persuasion, or Sleight of Hand.
+    - title: Gunfighter Form
+    - content: Additionally, when you choose this archetype at 3rd level, you begin constructing a custom firearm that suits your unique brand of renegade style. This process begins by selecting the form upon which to base your 
+               weapon. Each form grants you a new ability and unlocks certain upgrades you can add to your weapon at higher levels. Choose one of the following options
+    - content: Pistoleer - Favoring speed and style over raw power, a renegade who adopts the Pistoleer form wields a small flintlock handgun. As an action on your turn, you can target a creature within 30 feet and shoot. Make a
+                           ranged attack roll against the target. You are proficient with the attack, and on a hit, the attack deals piercing damage equal to 1d6 + your Dexterity modifier. The number of shots you can fire during
+                           a single action increases when you reach higher levels in this subclass - two shots at 5th level, three shots at 11th level, and four shots at 20th level. The shots can target the same creature or 
+                           different creatures. Make a separate attack roll for each shot.
+    - content: Sniper - Armed with a large two-handed firearm, a renegade who adopts the Sniper form can inflict massive damage in a single shot. As an action on your turn, you can target a creature within 120 feet and shoot. 
+                        Make a ranged attack roll against the target. You are proficient with the attack, and on a hit, the attack deals piercing damage equal to 1d10 + your Dexterity modifier. You deal extra damage while using 
+                        this form when you reach higher levels, dealing damage equal to 2d10 + your Dexterity modifier at 5th level, 4d10 at 11th level, and 6d10 at 20th level.
+    - title: Weapon of Choice
+    - content: Through a combination of salvaging stolen pieces of arcane technology and sheer rakish ingenuity, you can customize your firearm with various upgrades. When you choose this archetype at 3rd level, pick one minor 
+               upgrade and one major upgrade from the Firearm Upgrades list. If an upgrade has a prerequisite, you must meet that prerequisite in order to benefit from the upgrade.
+    - content: You gain one additional minor upgrade at 5th level, and one additional major upgrade at 10th level.
+    - title: Cunning Shot
+    - content: Starting at 7th level, you learn to exploit a foe’s weak spots, even if they appear to have none. The damage dealt by your firearm, including damage dealt via Firearm Upgrades, ignores resistances and immunities.
+    - title: Grin and Bear It
+    - content: At 10th level, you can brace yourself in the heat of battle, even when gravely wounded. When you use your Second Wind feature, your AC gains a +1 bonus and your movement speed increases by 10 feet until the start 
+               of your next turn.
+    - title: Right Gun for the Job
+    - content: At 15th level, your skill with your firearm can adapt to any situation. When you finish a long rest, you can replace any of your Firearm Upgrades with a different one, though you cannot have more than two major 
+               upgrades equipped at a time. You must still meet the prerequisite of an upgrade in order to benefit from it.
+    - title: Light ‘Em Up
+    - content: At 18th level, you learn to channel the volatile force of your firearm’s black powder into a single concussive blast. As a bonus action, you can either throw or set down a small explosive. If thrown, the explosive
+              has a range of 30 feet and detonates immediately on impact; if set down, the explosive can be detonated remotely from up to 60 feet away as another bonus action.
+    - content: When detonated, each creature within a 15-foot radius of the explosive must make a Dexterity saving throw, taking 12d6 force damage on a failure and half as much on a success. The DC for this saving throw is equal
+               to your Firearm Upgrade DC. Once you use this feature, you cannot use it again until you complete a short or long rest.
+               
+               
+  - title: Brute Abilities
+  - abilities:
+    - title: Brute Force
+    - content: Starting at 3rd level, you’re able to strike with your weapons with especially brutal force. Whenever you hit with a weapon that you’re proficient with and deal damage, the weapon’s damage increases by an amount 
+               based on your level in this class, as shown on the Brute Bonus Damage table.
+    - content: Brute Bonus Damage
+    - content: Fighter Level   Damage Increase
+    - content:     3rd             1d4
+    - content:     10th            1d6
+    - content:     16th            1d8
+    - content:     20th            1d10
+    - title: Brutish Durability
+    - content: Beginning at 7th level, your toughness allows you to shrug off assaults that would devastate others. Whenever you make a saving throw, roll 1d6 and add the die to your saving throw total. If applying this bonus 
+               to a death saving throw increases the total to 20 or higher, you gain the benefits of rolling a 20 on the d20.
+    - title: Additional Fighting Style
+    - content: At 10th level, you can choose a second option from the Fighting Style class feature.
+    - title: Devastating Critical
+    - content: Starting at 15th level, when you score a critical hit with a weapon attack, you gain a bonus to that weapon’s damage roll equal to your level in this class.
+    - title: Survivor
+    - content: At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns in combat, you regain hit points equal to 5 + your Constitution modifier (minimum of 1 hit point). You don’t gain 
+               this benefit if you have 0 hit points or if you have more than half of your hit points left.      
+               
+               
+  - title: Knight Abilities
+  - abilities:
+    - title: Born to the Saddle
+    - content: Starting at 3rd level, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed. In addition, you have advantage on saving throws made to avoid falling off your mount. If 
+               you fall off it, you can automatically land on your feet if you aren’t incapacitated and you fall less than 10 feet.
+    - title: Implacable Mark
+    - content: At 3rd level, you excel at foiling attacks and protecting your allies by menacing your foes. When you hit a creature with a melee weapon attack, the target is marked by you until the end of your next turn. A 
+               creature ignores this effect if the creature can’t be frightened.
+    - content: The marked target has disadvantage on any attack roll against a creature other than you or someone else who marked it.
+    - content: If a target marked by you is within 5 feet of you on its turn and it moves at least 1 foot or makes an attack that suffers disadvantage from this feature, you can make one melee weapon attack against it using your
+               reaction. This attack roll has advantage, and if it hits, the attack’s weapon deals extra damage to the target equal to your fighter level.
+    - content: You can make this special attack even if you have already expended your reaction this round, but not if you have already used your reaction this turn. You can make this attack three times, and you regain all 
+               expended uses of it when you finish a short or long rest.
+    - title: Noble Cavalry
+    - content: At 7th level, you gain proficiency in two of the following skills of your choice - Animal Handling, History, Insight, Persuasion, or Religion. Alternatively, you learn one language of your choice.
+    - title: Hold the Line
+    - content: At 10th level, you master the ability to harass and slow your enemies. As a reaction when a creature moves at least 1 foot within 5 feet of you, you can make one melee weapon attack against that creature. If you 
+               hit, the attack’s weapon deals extra damage to the target equal to half your fighter level, and the target’s speed is reduced to 0 until the end of this turn.
+    - title: Rapid Strike
+    - content: Starting at 15th level, you learn to trade accuracy for swift strikes. If you have advantage on a weapon attack against a target on your turn, you can forgo that advantage to immediately make an additional weapon 
+               attack against the same target as a bonus action.
+    - title: Defender's Blade
+    - content: At 18th level, you respond to danger with extraordinary vigilance. You can use your reaction for an opportunity attack even if you have already expended your reaction this round, but not if you have already used 
+               your reaction this turn. In addition, you gain a +1 bonus to AC while wearing heavy armor.
+               
+               
+  - title: Monster Hunter Abilities
+  - abilities:
+    - title: Bonus Proficiencies
+    - content: When you choose this archetype at 3rd level, you gain proficiency in two of the following skills of your choice - Arcana, History, Insight, Investigation, Nature, or Perception. You can gain proficiency with a 
+               tool of your choice in place of one skill choice.
+    - title: Combat Superiority
+    - content: When you choose this archetype at 3rd level, you gain a set of abilities that are fueled by special dice called superiority dice.
+    - content: Superiority Dice. You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest.
+    - content: You gain another superiority die at 7th level and one more at 15th level.
+    - content: Using Superiority Dice. You can expend superiority dice to gain a number of different benefits
+    - content: Precision Attack - When you make a weapon attack against a creature, you can expend one superiority die to add it to the attack roll. You can use this ability before or after making the attack roll, but before any
+                                  of the effects of the attack are applied.
+    - content: Sharpened Attack - When you damage a creature with a weapon attack, you can expend one superiority die to add it to the damage roll. You can use this ability after rolling damage. If the attack causes the target 
+                                  to make a Constitution saving throw to maintain concentration, it has disadvantage on that save.
+    - content: Sharpened Senses - When you make a Wisdom (Perception) check to detect a hidden creature or object, or a Wisdom (Insight) check to determine if someone is lying to you, you can expend one superiority die to add it
+                                  to the roll. You can use this feature after seeing the total but before learning if you succeeded or failed.
+    - content: Superior Willpower - When you make an Intelligence, a Wisdom, or a Charisma saving throw, you can expend one superiority die to add it to the roll. You can use this feature only before you learn if the save 
+                                    succeeded or failed.
+    - title: Hunter's Mysticism
+    - content: At 3rd level, your study of the supernatural gives you a limited ability to use magic. You can cast Detect Magic as a ritual. You can cast Protection from Evil and Good, but you cannot cast it again with this 
+               feature until you finish a long rest. Wisdom is your spellcasting ability for these spells.
+    - content: In addition, you gain the ability to speak one of the following languages of your choice - Abyssal, Celestial, or Infernal.
+    - title: Monster Slayer
+    - content: At 7th level, whenever you expend superiority dice to add to a damage roll, you can expend up to two dice instead of just one, adding both to the roll. Both dice are expended as normal. If the target of your 
+               attack is an aberration, a fey, a fiend, or an undead, you deal maximum damage with both dice, instead of rolling them.
+    - title: Improved Combat Superiority
+    - content: At 10th level, your superiority dice turn into d10s. At 18th level, they turn into d12s.
+    - title: Relentless
+    - content: Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain one superiority die.
+
+
+  - title: Psychic Warrior Abilities
+  - abilities:
+    - title: Telekinetic Hand
+    - content: At 3rd level, you learn the Mage Hand cantrip. You can cast it without components, and you can make the spectral hand invisible. Intelligence is your spellcasting ability for this spell.
+    - title: Psionic Armament
+    - content: Starting at 3rd level, you can channel your psychic power to magically augment your prowess. When you finish a long rest, choose whether to augment your defenses or your strikes. The chosen benefit lasts until you
+               finish a long rest.
+    - content: Augmented Defenses - When you or a creature you can see within 30 feet of you takes damage, you can use your reaction to roll a d10 and reduce the amount of damage taken by the number rolled. When you reach 10th 
+                                    level in this class, the die changes to a d12.
+    - content: Augmented Strikes - Once during each of your turns when you hit a creature with a weapon attack, you can also deal 1d4 psychic damage to that target. When you reach 10th level in this class, the psychic damage 
+                                   increases to 1d6.
+    - title: Strength of Mind
+    - content: At 7th level, as a bonus action, you can telekinetically lash out at a creature you can see within 20 feet of you. The target must make a Strength saving throw against a DC equal to 8 + your proficiency modifier 
+               + your Intelligence modifier. On a failed save, the target takes force damage equal to 2d6 plus your Intelligence modifier and is telekinetically moved 15 feet directly toward or away from you (your choice). On a 
+               successful save, it takes half as much damage and isn't moved. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a 
+               long rest.
+    - title: Telekinetic Bulwark
+    - content: At 10th level, when you take the Attack action, you can forgo one of your attacks to project a bastion of psionic power in a 10-foot radius around yourself. It lasts for 1 minute or until you're incapacitated. For
+               the duration, you and your allies in that area gain the benefits of half cover and have advantage on Strength saving throws. Once you use this feature, you can't do so again until you finish a long rest or until
+               after you use your Second Wind feature.
+    - title: Agonizing Strikes
+    - content: Starting at 15th level, your attacks can channel psychic agony. When you hit a creature with a weapon attack, you can also deal 2d10 psychic damage to that target and force it to make a Constitution saving throw 
+               against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. Unless the save succeeds, the target falls prone, and it suffers disadvantage on ability checks until the end of your next turn.
+    - content: You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.
+    - title: Psychic Dreadnought
+    - content: At 18th level, the power of your mind suffuses your entire being, making you a nigh-unstoppable force on the battlefield. Using your reaction when you take damage, you can give yourself the following benefits for 
+               1 minute or until you're incapacitated.
+    - content: At the start of each of your turns, you regain 10 hit points.
+    - content: Your walking speed increases by 10 feet
+    - content: If you're prone, you can stand up by spending 5 feet of movement.
+    - content: Once you activate this feature, you can't use it again until you finish a long rest.
+
+
+  - title: Scout Abilities
+  - abilities:
+    - title: Bonus Proficiencies
+    - content: When you choose this archetype at 3rd level, you gain proficiency in three of the following skills of your choice - Acrobatics, Athletics, Investigation, Medicine, Nature, Perception, Stealth, or Survival. You 
+               can choose to gain proficiency with thieves’ tools in place of one skill choice.
+    - title: Combat Superiority
+    - content: At 3rd level, you gain a set of abilities that are fueled by special dice called superiority dice.
+    - content: Superiority Dice. You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a long or short rest.
+    - content: You gain another superiority die at 7th level and one more at 15th level.
+    - content: Using Superiority Dice. You can expend superiority dice to gain a number of different benefits
+    - content: Survival Superiority - When you make a check that allows you to apply your proficiency in Athletics, Nature, Perception, Stealth, or Survival, you can expend one superiority die to bolster the check. Add half the
+                                      number rolled on the superiority die (rounding up) to your check. You apply this bonus after making the check but before learning if it was successful.
+    - content: Precision Attack - When you make a weapon attack against a creature, you can expend one superiority die to add it to the attack roll. You can use this ability before or after making the attack roll, but before 
+                                  any of the effects of the attack are applied.
+    - content: Scout’s Evasion - If you are hit by an attack while wearing light or medium armor, you can expend one superiority die as a reaction, adding the number rolled to your AC. If the attack still hits, you take half 
+                                 damage from it.
+    - title: Natural Explorer
+    - content: At 3rd level, you are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain - arctic, coast, desert, forest, 
+               grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.
+    - content: While traveling for an hour or more in your favored terrain, you gain the following benefits
+    - content: Difficult terrain doesn’t slow your group’s travel.
+    - content: Your group can’t become lost except by magical means.
+    - content: Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
+    - content: If you are traveling alone, you can move stealthily at a normal pace.
+    - content: When you forage, you find twice as much food as you normally would.
+    - content: While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
+    - content: You choose additional favored terrain types at 7th and 15th level.
+    - title: Improved Combat Superiority
+    - content: At 10th level, your superiority dice turn into d10s. At 18th level, they turn into d12s.
+    - title: Relentless
+    - content: Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die.
+    
+    
+  - title: Sharpshooter Abilities
+  - abilities:
+    - title: Steady Aim
+    - content: Beginning when you choose this archetype at 3rd level, your aim becomes deadly. As a bonus action on your turn, you can take careful aim at a creature you can see that is within range of a ranged weapon you’re 
+               wielding. Until the end of this turn, your ranged attacks with that weapon gain two benefits against the target
+    - content: The attacks ignore half and three-quarters cover.
+    - content: On each hit, the weapon deals additional damage to the target equal to 2 + half your fighter level.
+    - content: You can use this feature three times. You regain all expended uses of it when you finish a short or long rest.
+    - title: Careful Eyes
+    - content: Starting at 7th level, you excel at picking out hidden enemies and other threats. You can take the Search action as a bonus action.
+    - content: You also gain proficiency in the Perception, Investigation, or Survival skill (choose one).
+    - title: Close-Quarters Shooting
+    - content: At 10th level, you learn to handle yourself in close combat. Making a ranged attack roll while within 5 feet of an enemy doesn’t impose disadvantage on your roll.
+    - content: In addition, if you hit a creature within 5 feet of you with a ranged attack on your turn, that creature can’t take reactions until the end of this turn.
+    - title: Rapid Strike
+    - content: Starting at 15th level, you learn to trade accuracy for swift strikes. If you have advantage on a weapon attack against a target on your turn, you can forgo that advantage to immediately make an additional 
+               weapon attack against the same target as a bonus action.
+    - title: Snap Shot
+    - content: Starting at 18th level, you are ever ready to spring into action. If you take the Attack action on your first turn of a combat, you can make one additional ranged weapon attack as part of that action.
+
+
+
+
+
+
+
+
+
+
+

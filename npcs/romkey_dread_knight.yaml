@@ -1,0 +1,672 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: romkey_dread_knight
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-06-25"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Romkey, Dread Knight
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: N/A
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Human
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Reborn
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: he/him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - General Evilness
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Lich
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Death Knight
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 20
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Elvish
+    - Celestial
+    - Undercommon
+    - Abyssal
+    - Infernal
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: army_of_the_dead
+      name: Army of the Dead
+      role: Knight/General
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Cold
+    - Terrifying
+    - Evil
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  A tall figure in all black armor riding a Nightmare (see monster manual) crests the hill at the head of an army of the undead
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   A tall handsome man with deathly white skin in full black armor and a crowned helmet
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:  
+    - doesn't speak
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   Still cracks his knuckles.
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Death and destruction to all
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      N/A
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      His phylacteries
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: | 
+      He was once a brave knight who was slayed by his wife and had his soul eaten by the Blood-Sword
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 26
+    hit-points: 231
+    speed: 40
+    str: 22
+    dex: 19
+    con: 15
+    int: 21
+    wis: 14
+    cha: 18
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    saving-throws:
+    - Dexterity
+    - Strength
+    - Intelligence
+    damage-immunities:
+    - Necrotic
+    condition-immunities:
+    - Charmed, Frieghtened, Paralyzed, Diseased
+    resistances:
+    - Bludgeoning, Piercing, Slashing damage from all weapons, Turn Undead
+    skills:
+    - Lute
+    proficiencies:
+    - Survival
+    - Athletics
+    - Investigation    
+    - Intimidation
+    - Persuasion
+    - Survival
+    - History
+    - Performance
+    - Cartography Tools
+  special-abilities:
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content: Nightmare Duelist - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. When you make a disengage action, you can attack with a single weapon as a bonus 
+                                   action.
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 20
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+    - title: Extra Attack
+    - content: Can attack twice each turn
+    - title: Indomitable
+    - content: you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.    
+  - title: Death Knight Abilities
+  - abilities:
+  - title: Death Knight Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 20   
+    - title: Cantrip
+    - content: prestidigitation, acid splash, chill touch, eldritch blast, mage hand, ray of frost, true strike
+    - title: 1st Level
+    - content: alarm, bane, bodysnatch, chromatic orb detect evil and good, detect magic, entangle, lich armor, magic missile, magechain, net of shadows, protection from evil and good, shield, sleep, thunderwave, venomous ray
+    - title: 2nd Level
+    - content: acid arrow, blindness/deafness, detect thoughts, enhance ability, enlarge/reduce, enthrall, fiendish claws, flaming sphere, invisibility, mirror image, moonbeam, pulling shade, ray of enfeeblement, sonic implosion, 
+               create guardian, raise mount
+    - title: 3rd Level
+    - content: animate dead, bestow curse, bonesword, crushing despair, counterspell, dispel magic, fireball, glacial pass, phantom steed, protection from energy, frostball, speak with dead, unholy weapon, vampiric touch, 
+               conjure wraith
+    - title: 4th Level
+    - content: arcane eye, banishment, black tentacles, blight, blood rain, dimension door, ice storm, private sanctum, resilient sphere, death armor
+    - title: 5th Level
+    - content: animate objects, antilife shell, cloudkill, contagion, dimension door, dispel evil and good, hold monster, insect plague, iron flesh, mislead, raise dead, scrying, hold monster telekinesis, enlighten undead, 
+               imbuing ritual
+    - title: 6th Level
+    - content: create undead, circle of death, demonic visage, disintegrate, globe of invulnerability, harm, mass suggestion, wind walk, zone of power
+    - title: 7th Level
+    - content: etherealness, finger of death, plane shift, simulacrum, teleport, wall of souls
+    - title: Deathly Awareness
+    - content: Your knowledge of Death gives you heightened awareness of other creatures of Death. You have advantage on Wisdom (Survival) checks to track Undead and Fiends, as well as on Intelligence checks to recall 
+               information about them.
+    - title: Fighting Style
+    - content:
+    - title: Rune Weapon
+    - content: At 2nd level, you can draw on the dread magic of the grave to inscribe your weapon with deathly Runes. These Runes may be used for additional effects described in this class description. You must spend one hour 
+               inscribing your weapon, which may be completed during a short rest. You may inscribe up to two weapons, and you cannot be disarmed of your Rune Weapons while you are conscious. If you inscribe a third weapon, you 
+               must choose one of your previous two weapons from which to remove the Runes.
+    - content: You have 4 total Runes, and you gain Runes as indicated in the Class Table. You recover all expended Runes when you finish a short or long rest. If an ability that uses a Rune requires a saving throw, the saving 
+               throw DC is equal to 8 + your proficiency bonus + your Wisdom modifier. No Rune features require a spell attack roll.
+    - title: Rune Strike
+    - content: Beginning at 2nd level, when you hit an enemy with a weapon attack, you may expend a Rune to add an additional effect to the attack, as listed below.
+    - content: Rejuvenating Strike - You channel what’s left of your divine blessing into your weapon strike. If your attack hits, you may expend 1 Rune to cause the attack to deal Radiant damage, and heal you for half the 
+                                     damage dealt (rounded down). You can only regain HP if the blow is struck in combat. At 5th level, you may add your Constitution modifier to the healing, twice your Constitution modifier at 
+                                     11th level, and 3 times your Constitution modifier at 17th level.
+    - content: Icy Blast - If your attack hits, the target takes the normal attack damage, and you may expend 1 Rune to deal 1d6 extra Cold damage and force the target to make a Constitution saving throw. On a failed save, the 
+                           target has its speed halved until the end of its next turn. On a successful save, the target does not have its speed reduced. The damage increases by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) level.
+    - content: Plague Strike - If your attack hits, the target takes the normal attack damage, and you may expend 1 Rune to deal 1d6 additional Necrotic damage and afflict the target with Plague for 1 minute. At the beginning of
+                               its next turn, and at the beginning of each of its turns thereafter, the target must make a Constitution saving throw. On a failed save, the target takes 1d6 Necrotic damage from the plague. On a 
+                               successful save, the effect ends. The Plague effect does not stack if applied more than once. The strike and plague damage increases by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) level.
+    - title: Grim Oath
+    - content: At 3rd level you mimic the Oath you took in your former life. Though you can choose to follow the same Tenets, you are not bound by your Paladin Oath any longer, and may do as you please. Choose a 
+               Grim Oath that you follow exclusively. You may choose the Oath of the Undying, Oath of the North, or Oath of the Plague, all detailed at the end of this class description. Your choice grants you features at 3rd 
+               level and again at 7th, 15th, and 20th lel.
+    - content: Oath of Undying - Undying Presence - At 3rd level when you take this Oath, your blood churns with radiant fire. You gain resistance to Radiant damage. Additionally, the target of your Rejuvenating Strike has 
+                                                    disadvantage on attacks against targets other than you until the end of its next turn.
+                                 Aura of the Undying - At 7th level, allies within 10 feet of you gain resistance to Radiant damage. Additionally, the power of your radiant blood can help prevent death. You and allies within 10 
+                                                       feet of you gain advantage on Death Saving Throws. The power of your will is so strong, the saving throw effect persists even if you are unconscious or incapacitated. At 
+                                                       18th level, this Aura increases to 30 feet.
+                                 Radiant Blood - Upon reaching 9th level, the radiant fire of life infuses your soul. Your blood becomes radiant fire. If you are cut and bleeding, the radiance of your blood causes no damage, but
+                                                 you may use a bonus action to use your blood for lighting a candle, campfire, or another similar use. A fire lit in this manner is considered non-magical and burns a shade of 
+                                                 radiant yellow instead of the normal color of fire
+                                 Improved Rejuvenating Strike - At 15th level, when you use Rejuvenating Strike, you may spend up to 3 additional Runes. For each additional Rune spent, the healing increases by an amount equal to
+                                                                your Constitution modifier.
+                                 Purgatory - By 20th level, your radiant vitality allows you to refuse to die. When you are reduced to 0 or fewer hit points, but not killed outright, your soul may keep fighting in your stead. 
+                                             Your soul has the same speed, hit points, and ability scores as your body, AC 20, and deals magical slashing damage equal 1d10 + your strength modifier. Your soul cannot take any 
+                                             action other than the attack, disengage, dodge, or help action, and cannot use any Rune Strikes. If your Soul is reduced to 0 hit points, or moves more than 100 feet from your body, 
+                                             you die immediately and cannot be resurrected by any means. This effect lasts for 1 minute or until you succeed on 3 death saving throws, and you must finish a long rest before you 
+                                             can benefit from it again. You make your death saving throws at the end of your turn during Purgatory.
+    - title: Lingering Radiance
+    - content: At 3rd level, the small spark of radiance from your former life manifests. You are immune to disease.
+    - title: Extra Attack
+    - content: Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+    - title: Aura of Dread
+    - content: At 6th level, your presence hangs heavily on your enemies. Whenever an enemy within 10 feet must make a saving throw, it takes a penalty on the throw equal to 1 + half your Wisdom modifier, rounded down. This Aura
+               does not stack with itself or similar effects (such as the Bane spell). At 18th level, this Aura increases to 30 feet.
+    - title: Dreadful Visage
+    - content: Upon reaching 6th level, your connection to Death allows you to temporarily alter your body slightly. As an action, choose one of the following options. The effect lasts for one hour, or until you use another 
+               action to end it.
+    - content: Visage of Fear - You may use the power of Death to temporarily twist your face and body into a horrific sight. You have advantage on Charisma (Intimidation) checks.
+    - content: Visage of Grace - You may use the power of Death to temporarily heal the scars of your previous death, making you more acceptable among those who have not experienced Death. You have advantage on Charisma 
+                                (Persuasion) checks.
+    - title: Relentless Advance
+    - content: At 9th level, you become as relentless as Death itself. Your speed increases by 10 feet. Additionally, non-magical difficult terrain does not reduce your speed.
+    - title: Pull of the Grave
+    - content: At 10th level, your power over the forces of Death increase. As an action, you may spend 1 Rune to cause a target within 30 feet of you that you can see to make a Strength saving throw. On a failed save, the 
+               target is pulled up to 30 feet towards you. If the target is pulled within melee range of you, you may make one weapon attack against it as a bonus action.
+    - title: Speak with Undead
+    - content: By 11th level, your knowledge of the inner workings of Death allows you to communicate with the dead. You may expend 1 Rune to cast the Speak with Dead spell. However, you may also target any undead creature using
+               this spell.
+    - title: Magic Barrier
+    - content: At 13th level, you can harness the power of death to protect yourself against offensive magic. As a reaction when a spell is cast that targets you or an area you’re in, you may spend 1 Rune to create a barrier 
+               around yourself, granting you resistance to the damage dealt by spells until the beginning of your next turn.
+    - title: Raise Dead
+    - content: At 14th level, your connection with death allows you to expend power to help others return from Death. You may spend 4 Runes to cast the Raise Dead spell without requiring material components. You may do this only
+              once per long rest.
+    - title: Death’s Endurance
+    - content: By 17th level, your connection to Death empowers you, giving you the ability to trudge onward when others would fall. You are immune to Exhaustion. Additionally, when you are the victim of a critical hit, you may 
+               use your reaction to turn it into a normal hit. You may use this feature a number of times equal to your wisdom modifier, and regain spent uses upon completing a long rest.
+  - title: Truesight
+  - content: Within 60ft can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a
+             shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.
+  - title: Absence of Life
+  - content: You no longer age as well but your bones will start to become dull or stained depending on what you have done or will do in the future. Your pupils will now always have a small, red glow to them, giving you 
+             Blindsight up to 120 feet. Any creature that dies within 60 feet of you has their soul automatically absorbed into your phylactery. All hostile creatures within 10 feet of the Lich take 2d8 necrotic damage per round.
+             This damage is increased to 3d8 if the creature is below half health and is a living creature.
+  - title: Undead Domination
+  - content:you can make any Undead that you can see within 60 feet of you roll a Wisdom saving throw against your Spell Save DC or fall under your complete control permanently. You can use this feature a number of times equal 
+            to your Intelligence modifier. These features replenish after a long rest. 
+  - title: Phylactery 
+  - content: You craft a phylactery. Thanks to the phylactery, you can no longer die. If you die, you return to life in 1d10 days, regaining all your hit points. Your body appears within 5 feet of the phylactery, if both are in 
+             the same plane of existence.
+  - content: The only way to kill you is by destroying the phylactery. It has AC 18 and a number of hit points equal to your level multiplied by 5. It is immune to all conditions, it is resistant to cold, lighting and necrotic 
+             damage and it is immune to poison, bludgeoning, piercing and slashing from nonmagical attacks. When the phylactery is damaged, you receive the same amount of damage.
+  - title: 
+  - title: Legendary Resistance
+  - content: (3/Day), If Romkey, Dread Knight fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions 
+  - content: Romkey, Dread Knight can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Romkey
+             Dread Knight regains spent Legendary Actions at the start of her turn
+  - abilities:
+    - title: Slaughter
+    - content: Romkey can materialize necrotic energy in your weapon, and you can strike all foes within a cone with a single melee attack. The range of the cone is equal to your weapon's reach + 10 ft. If you are wielding a 
+               ranged weapon, this attack instead strikes one target within range and all targets within 5 ft of it. You can use this ability a number of times equal to your Constitution modifier, and you regain all uses after 
+               a long rest. You may expend one hit die to heal 1d8 for every enemy brought to 0 HP
+    - title: Paralyzing Touch
+    - content: Romkey can make a melee attack spell on a creature, doing 3d6 Necrotic damage on a successful hit. The target must make a Constitution saving throw against your DC or be Paralyzed for 1 minute, repeating its 
+               saving throw at the end of each of its turns, ending the effect on a success. You can use this feature up to a number of times equal to your Intelligence modifier. You regain this feature after a long rest.
+    - title: Disrupt Life
+    - content: Romkey can force any non-undead creature within 10 feet of you to make a Constitution saving throw against your DC, taking 8d6 necrotic damage on a failed save and half as much on a success.
+               
+  - title: Feats
+  - content: Sentinel, Mobile, Inspiring Leader, Shield Master, Savage Attacker, War Caster
+  - title: Attacks
+  - content: 3 attack with his Onyx Blades or Spell atatcks
+  - title: Combat Tactics
+  - content: Gerrard will fiercly attack head on in almost any situation
+
+  - title: Special Equipment
+  - abilities:
+    - title: 2x +4 Onxy Blades 
+    - content: The wielder of this blade gains +3 to attack and damage rolls with the weapon. This weapon holds 6 charges, 1d4+1 of which are restored at dawn. As a bonus action, by spending a charge, the wielder can enwreath 
+               the blade in a black flame that remains until the start of your next turn. Attacks with this weapon while it is on fire deal an additional 1d6 fire and 1d6 necrotic damage
+    - title: +3 Breast Plate
+    - content: While wearing it, you have an extra +3 bonus to your AC
+    - title: +3 Animated Shield
+    - content: While holding this Shield, you can speak its Command word as a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your 
+               hands free. The Shield remains animated for 1 minute, until you use a Bonus Action to end this Effect, or until you are Incapacitated or die, at which point the Shield falls to the ground or into your hand if you 
+               have one free.
+      
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Romkey was once a brave and valiant knight and bard named Gerrard Romkey. He was a brilliant strategist and leader until one fateful day when his beloved wife under the control of a cursed sword, The Blood-Sword, turned 
+      and impaled him, drinking his blood and his soul. His wife, broken and lost, embarked on a quest to find a way to bring him back. Lead by dark voices in her mind, she beseached the old gods to return him to her. 
+      Unfortunately for them both, they day. Gerrard was not brought back as himself, He returned as a Dread Knight Lich Lord, and placed in charge of an army of the dead to wreak havoc on the world of the living. 
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Romakey has very little in the way of personality. He is a harsh and cruel master, but his troops being mostly undead and completely in his thrall, don't really seem to mind. Chaos and destruction are the only things he
+      cares about. Though she has gone mad and joined in his destruction, he no longer even has affection for his beloved wife Nothuriel      
