@@ -1,0 +1,1629 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nanny</title>
+
+<link rel="stylesheet" href="file:///D|/Github/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github/docs-index/index.html"><img src="file:///D|/Github/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="./npc_imgs/Nanny.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+					
+						
+				<span class="npc-heading">
+		  			
+								<h1 >Nanny</h1>
+						
+								<h2>Older Adult <br> Tiefling <br> Abyssal <br>
+						
+									Chaotic Good<br>
+						
+									Level 14 <br> Witch <br>Covenant of Unity</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+					</span>
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>she/her</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Nanny/Confidant/Consigliari</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>20</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>84 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>30.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>11 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>16 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>12 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>14 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>18 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>21 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(11);
+											document.getElementById("strmodi").innerHTML = myModi(11);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(16);
+											document.getElementById("dexmodi").innerHTML = myModi(16);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(12);
+											document.getElementById("conmodi").innerHTML = myModi(12);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(14);
+											document.getElementById("intmodi").innerHTML = myModi(14);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(18);
+											document.getElementById("wismodi").innerHTML = myModi(18);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(21);
+											document.getElementById("chamodi").innerHTML = myModi(21);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+									<p>Charisma</p>
+									
+									<p>Wisdom</p>
+									
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										Herbalism<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+      								
+									
+										Insight, 
+        							
+									
+										Arcana, 
+        							
+									
+										Deception, 
+        							
+									
+										Medicine, 
+        							
+									
+										Nature, 
+        							
+									
+										Herbalism Kit, 
+        							
+      								
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(14);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+									<h4>Damage Immunities - </h4>
+					
+									<p>N/A</p>
+					
+								</span> 
+
+								<span class="top-property-line">
+						
+									
+									<h4>Condition Immunities - </h4>
+						
+									<p>N/A</p>
+					
+								</span> 
+					
+								
+								<span class="top-property-line">
+									<h4>Resistances - </h4>
+					
+									<p>Fire, Cold, Acid, Poison</p>
+					
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							Common
+							Undercommon
+							Infernal
+							Abyssal
+							Thieve&#39;s Cant
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Caring, 
+									Wise, 
+									Cunning, 
+	
+					
+				</span> 
+				</span>
+
+					
+
+					
+					</div>
+
+	</div>
+			
+				<div class="cell" id="cell6">
+						<span class="data">
+						
+							
+						
+						<span class="npc-heading">
+							
+							<h1>Special Abilities</h1>
+							
+				<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							</span>
+						<span class="right-line-columns">	
+																							
+								
+							<p><b><h4>Abyssal Tiefling Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Abyssal Arcana</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Each time you finish a long rest, you gain the ability to cast cantrips and spells randomly determined from a short list. At 1st level, you can cast a cantrip. When you reach 3rd level, you can also cast a 1st-level spell. At 5th level, you can cast a 2nd-level spell. You can cast a spell gained from this trait only once until you complete your next long rest. You can cast a cantrip gained from this trait at will, as normal. For 1st-level spells whose effect changes if cast using a spell slot of 2nd level or higher, you cast the spell as if using a 2nd-level slot. Spells of 2nd level are cast as if using a 2nd-level slot. At the end of each long rest, you lose the cantrips and spells previously granted by this feature, even if you did not cast them. You replace those cantrips and spells by rolling for new ones on the Abyssal Arcana Spells table. Roll separately for each cantrip and spell. If you roll the same spell or cantrip you gained at the end of your previous long rest, roll again until you get a different result</p2><br>
+							        
+											
+										
+							<p1><b>Abyssal Arcana Spells</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>d6  1st Level         3rd Level          5th Level</p2><br>
+							        
+											
+										
+							
+											
+									<p2>1   Dancing Lights    Burning Hands      Alter Self</p2><br>
+							        
+											
+										
+							
+											
+									<p2>2   True Strike       Charm Person       Darkness</p2><br>
+							        
+											
+										
+							
+											
+									<p2>3   Light             Magic Missile      Invisibility</p2><br>
+							        
+											
+										
+							
+											
+									<p2>4   Message           Cure Wounds        Levitate</p2><br>
+							        
+											
+										
+							
+											
+									<p2>5   Spare the Dying   Hideous Laughter   Mirror Image</p2><br>
+							        
+											
+										
+							
+											
+									<p2>6   Prestidigitation  Thunderwave        Spider Climb</p2><br>
+							        
+											
+										
+							<p1><b>Abyssal Fortitude</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Your hit point maximum increases by half your level (minimum 1).</p2><br>
+							        
+											
+										
+							<p1><b>Darkvision</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>you can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Witch Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Witch Spellcasting</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>20</p2><br>
+							        
+											
+										
+							<p1><b>Cantrips</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Guidance, Chill Touch, Mage Hand, Minor Illusion, Toll the Dead</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Animal Friendship, Find Familiar, Hex, Witch Bolt</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Enthrall, Hold Person, Locate Object</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Clairvoyance, Dispel Magic, Speak with Dead</p2><br>
+							        
+											
+										
+							<p1><b>4th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Banishment, Divination, Polymorph</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Scrying, Modify Memory</p2><br>
+							        
+											
+										
+							<p1><b>6th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Mass Suggestion</p2><br>
+							        
+											
+										
+							<p1><b>7th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Plane Shift</p2><br>
+							        
+											
+										
+							<p1><b>Quickening</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain the ability to enter a trance known as the witch’s quickening. Entering the trance is a bonus action and allows you to see into the Ethereal Plane up to 60 feet for up to one minute. You also gain insight into the emotional energy surrounding you, letting you know if and what spiritual creatures are within 60 feet, as well as granting you advantage to Wisdom (Insight) checks for the duration. Finally, while in your quickening, if you cast a spell that deals necrotic damage you can substitute that damage with psychic damage instead. You may use this ability a number of times equal to your Charisma modifier. You regain any expended uses when you finish a long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Witch Covenant</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You choose the Covenant of Blood, the Covenant of Charm, the Covenant of Ruin, the Covenant of Shadows, the Covenant of Silver, The Covenant of Steel or the Covenant of Unity, detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level. Additionally, you learn the find familiar spell and can cast it once without using a spell slot. You cannot do so again until you finish a long rest. As long as you have a familiar you gain access to spells regardless of the familiar&#39;s distance or occupied plane of existence.</p2><br>
+							        
+											
+										
+							<p1><b>Binding Rites</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can bind spirits to your service, taking 10 minutes of uninterrupted activity. During this time, the witch enacts the rite of binding depending on which philosophy the witch belongs to. A blood witch might utilize a bone fragment to bind the spirit, while a shadow witch might bargain with the summoned spirit, exchanging a secret for the spirit’s service. When you choose a spirit to bind from the list at the end of this class description, you fill one of your available spell slots with the spirit. The spell slot used is no longer available for casting spells, and it remains unavailable for as long as the spirit filling it remains bound to you. The spirit is said to be of a level equal to the spell slot filled to bind it. Thus, a Spirit of Passion occupying a 6th level spell slot is a level 6 spirit. You cannot have more than one spirit with the same name bound at one time. You can have a number of spirits bound equal to the number in the class table. Depending on the type of spirit, you gain certain benefits while the spirit remains bound and an additional effect when you release the spirit, as detailed in the Binding Rites section. Releasing a spirit is a bonus action, although some spirits allow release as a reaction. Once a spirit has been released, it no longer provides its passive effect and the spell slot it occupied is considered expended. A witch may exchange any spirit they have bound by performing the ritual as described above. Binding Rites - Agony - In the presence of a spirit of Agony, foes’ wounds continue to bleed and fires continue to burn. While Agony is bound, when you roll damage for an attack or spell you cast, for each 1 on a damage die, you can add the level of the spirit to the damage total. Release. You can release Agony as a reaction when you roll the highest possible number on a damage die. Roll a number of d6s equal to the spirit&#39;s level and add the total to the triggering damage as psychic damage.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Desire - Spirits of Desire impress your will onto others and enhance existing desires. Friendly and charmed creatures within 30 feet of you have disadvantage on Wisdom saving throws against your spells. Once a creature succeeds on a Wisdom saving throw against one of your spells, that creature is immune to this spirit’s passive effect for 24 hours. Release. When you release this spirit as a bonus action, you attempt to charm a creature you can see within 30 feet of you. The target must succeed on a Wisdom saving throw against your spell save DC or be charmed by you for 1 minute or until it takes damage. The spirit&#39;s level determines what kind of creature can be charmed. At 3rd level and below, only humanoids and beasts are affected. At 4th level and above, all creatures can be affected.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Empathy - Spirits of Empathy force your enemies to share your pain. While Empathy is bound, whenever a creature deals damage to you, you can use your reaction to retaliate. The creature takes psychic damage equal to the spirit&#39;s level. Release. You can release Empathy as a reaction whenever a creature deals damage to you or an ally within 30 feet of you. The creature takes psychic damage equal to the triggering damage + the spirit’s level.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Envy - Spirits of Envy take from others what they covet for themselves – life. Once on each of your turns, when you damage a creature with an attack or spell while Envy is bound, you regain a number of hit points equal to the level of the spirit. Release. When you deal damage to a creature with an attack or spell you can release Envy as a reaction. When you do so, you gain a number of temporary hit points equal to the triggering damage.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Fear - Spirits of Fear bring nightmares to life. While Fear is bound, you can add your proficiency bonus to Charisma (Intimidation) checks, or double it if you already do. Additionally, creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach. Release. When Fear is released from its bonds as a bonus action, a number of creatures equal to the spirit&#39;s level within 30 feet of you must succeed on Wisdom saving throw against your spell save DC or be frightened of you for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Generosity - Spirits of Generosity are always willing to make sacrifices for those who bind them with good intentions. Your spells that restore hit points restore additional hit points equal to the spirit&#39;s level. Release. You can release Generosity as a bonus action and gift the spirit to an ally within 30 feet of you. The spirit protects the ally, granting them a number of temporary hit points equal to 5 times the spirit&#39;s level. These temporary hit points last 10 minutes.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Guilt - Spirits of Guilt cause your enemies hesitation in acts that would wrong you. While Guilt is bound, when you are attacked you can use your reaction to gain a bonus to AC against that attack equal to the level of the spirit. You can use this feature a number of times equal to the spirit&#39;s level. You regain all expended uses when you finish a long rest. Release. When you release Guilt from your power as a bonus action, one creature you can see within 60 feet has disadvantage on attack rolls against you for 1 minute. At the end of each of its turn the target can make a Wisdom saving throw against your spell save DC, ending the effect on itself on a success.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Hate - Spirits of Hate inspire a ferocity in you. When you are damaged by a creature, you can choose to channel Hate and gain advantage on attack rolls against that creature until the end of your next turn. You can use this feature a number of times equal to the spirit&#39;s level. You regain all expended uses when you finish a long rest. Release. When you damage a creature with a spell or attack you can release Hate as a reaction. Roll a number of d6s equal to the spirit&#39;s level and add the total to the triggering damage as necrotic damage.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Humility - When you make an ability check with which you are not proficient at disadvantage, the result can not be lower than 8 + the level of this spirit.Release. As a reaction when a creature you can see makes a saving throw or ability check, you can release Humility from your power to bestow it upon the creature. Add the spirit’s level to the roll. You can do so after the roll, but must decide before the DM says whether the roll succeeds or fails.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Hunger - Spirits of Hunger sustain their binder and deprive their enemies of energy. While Hunger is bound you require no food or water. Release. You can release Hunger as a bonus action to exhaust a number of creatures within 30 feet of you equal to the spirit’s level. A target gains one level of exhaustion (as described in appendix A of the Player&#39;s Handbook), and cannot be affected by a Spirit of Hunger for 24 hours.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Passion - Spirits of Passion give those who bind them the power to push themselves and others to greater heights of success. While this spirit is bound you can channel Passion when you make an attack roll, ability check or saving throw, or when an ally within 30 feet of you does, you roll a d6 and add the number rolled to the total. You can use this feature a number of times equal to the spirit&#39;s level. You regain all expended uses when you finish a long rest. You lose all remaining dice when you release Passion. Release. You can release Passion as a reaction when you make an attack roll, ability check, or saving throw. You gain advantage on the roll. Additionally, you and each friendly creature within 30 feet of you gain a d6 that lasts until the end of your next turn. A creature can expend and roll the d6 when they make an attack roll or ability check, adding it to the total.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Pride - Creatures in your presence are more easily filled with a dangerous sense of pride, oversight, and overconfidence. When you make an ability check that is contested by a creature you can see, you gain a bonus to the ability check equal to the spirit&#39;s level. Release. When a creature you can see succeeds on an attack roll or ability check, you can release Pride as a reaction to curse that creature to a disgraceful fall. The next time the target makes an attack roll or ability check, it does so with disadvantage, and subtracts the spirit’s level from the total.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Serenity - Spirits of Serenity bring peace and clarity of thought to those who bind them. You don&#39;t need to sleep. Instead, you can meditate deeply, remaining semiconscious, for 4 hours a day. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep. Additionally, if you or any friendly creatures who can see you regain hit points at the end of a short rest by spending one or more Hit Dice, each of those creatures regains a number of additional hit points equal to the level of the spirit. Release. When you release Serenity from your power at the start of your turn (no action required), you are no longer blinded, deafened, frightened, paralysed, poisoned, or stunned.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Sloth - Spirits of Sloth inspire sluggishness and laziness of thought and action around you. While Sloth is bound, the ground within 15 feet of you is difficult terrain for your enemies. Release. When you release Sloth as a bonus action, you can slow a number of creatures up to the spirit&#39;s level that you can see. A target must make a Wisdom saving throw against your spell save DC. On a failed save a target is slowed until the end of their next turn, and can take either an action or bonus action on their turn, not both.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Sorrow - The failures of your enemies continue to haunt them in the presence of a spirit of Sorrow. While Sorrow is bound to you, when a creature fails a saving throw against one of your spells of 1st level or higher, it takes psychic damage equal to the spirit&#39;s level. Release. When Sorrow is released as a bonus action, choose a creature you can see within 30 feet of you. The target has disadvantage on the next attack roll or ability check it makes before the end of its next turn. If it misses that attack roll or fails the ability check, roll a number of d6s equal to the spirit&#39;s level. The target takes psychic damage equal to the total.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Trust - While emboldened by a spirit of trust, you can help your allies through cooperative spellcasting. While Trust is bound, when you finish a long rest you can choose a number of spells from the witch spell list equal to the spirit&#39;s level. You and friendly creatures within 30 feet of you of know these spells, and always have them prepared, and they don&#39;t count against the number of spells an affected creature can know or prepare. Release. You can release Trust when you take the Help action, as part of that action. When the target makes the attack roll or ability check that you aided, it can reroll one of the dice once.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Valor - Spirits of Valor give those who bind them the power to pull through with confidence against poor odds. While Valor is bound, you and friendly creatures within 10 feet of you have advantage on saves against being frightened. Release. When you release this spirit as a bonus action, you and a number of creatures equal to the spirit&#39;s level that you can see within 30 feet of you are no longer frightened.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Wonder - You radiate an aura of awe when a spirit of Wonder is bound to you. While Wonder is bound, creatures of your choice within 30 feet of you have disadvantage on Wisdom (Perception) checks made to perceive any creature other than you. Release. You can release Wonder from your power as an action to inspire awe in a number of creatures equal to the spirit&#39;s level that you can see within 30 feet of you. A target must succeed on a Wisdom saving throw against your spell save DC or be incapacitated and have a speed of 0 until the end of your next turn.</p2><br>
+							        
+											
+										
+							<p1><b>Spirit Ward</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You learn a rite that offers protection against spirits who wish you or your allies harm. As an action, you can create a spirit ward with a radius of 30 feet, centered on your location. The ward lasts 1 minute and is stationary for the duration. While inside the ward, friendly creatures (yourself included) cannot be charmed, frightened, or possessed by undead and have resistance to all damage from incorporeal undead sources. Additionally, if a friendly creature is reduced to 0 hit points within the ward but is not killed outright, the creature becomes stable. You can use this feature 3 times. You regain expended uses when you finish a long rest. When you reach 9th level, you regain expended uses when you finish a short or long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Spiritual Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You call upon the spirits you have bound to help you cast your spells. You can dismiss a spirit as a bonus action to recover a spell slot of a level equal to that of the spell slot used to bind the spirit. The release effect of the spirit you dismissed is not activated.</p2><br>
+							        
+											
+										
+							<p1><b>Channel Spell</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Damage you deal with spells of 1st level or higher ignore damage resistances of undead and creatures on the Ethereal Plane. In addition, any damage immunities of these creatures become resistances to your spells of 1st level or higher.</p2><br>
+							        
+											
+										
+							<p1><b>Strength of Spirit</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You learn to sap additional fortitude from the spirits you bind. When you finish a long rest, you gain temporary hit points equal to 5 times the highest level spirit you have bound.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Covenant of Unity Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>20</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Augury, Blur</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Phantom Steed, Spirit Guardians</p2><br>
+							        
+											
+										
+							<p1><b>7th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Death Ward, Conjure Woodland Beings</p2><br>
+							        
+											
+										
+							<p1><b>9th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Legend Lore, Telepathic Bond</p2><br>
+							        
+											
+										
+							<p1><b>Spirit Link</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can effortlessly link yourself to the souls around you. While in your quickening you can use your action to discern whether a creature you can see has greater or fewer hit points than yourself and any conditions it currently suffers from.</p2><br>
+							        
+											
+										
+							<p1><b>Forceful Presence</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>After you release a spirit you can choose to retain control over it, so that the spirit remains bound and ready to be released again. You can use this ability a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Powerful Bonds</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Your body and soul develop the ability to contain more powerful spirits. The passive and release effects of spirits you bind are considered one level higher than the spell slot you use to bind them.</p2><br>
+							        
+											
+										
+							<p1><b>Pale Host</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>If you are reduced to 0 hit points, but not killed outright, you are not knocked unconscious and your body becomes possessed by a spirit you control while you have 0 hit points. You remain conscious and possessed in this way for 1 round per level of the highest level spirit you have bound. You still must make death saving throws, and you suffer the normal effects of taking damage or regaining hit points while at 0 hit points. Onlookers notice a strangeness in your movements, eyes, and voice while you remain possessed. While possessed, you can use your action on your turn to activate the release effect of one of the spirits you have bound and have it remain bound. This does not expend any uses of the Forceful Presence ability.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Feats</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> War Caster, Barbed Hide, Keen Mind</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Attacks</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> 1 attacks with dagger or spell attack</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Combat Tactics</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> will do her best to avoid conflict, but is a powerful spellcaster if it comes to it</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Special Equipment</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Staff of the Magi</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While you hold it, you gain a +2 bonus to spell attack rolls. The staff has 50 charges for the following properties. It regains 4d6 + 2 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 20, the staff regains 1d12 + 1 charges.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Spell Absorption - While holding the staff, you have advantage on saving throws against spells. In addition, you can use your reaction when another creature casts a spell that targets only you. If you do, the staff absorbs the magic of the spell, canceling its effect and gaining a number of charges equal to the absorbed spell’s level. However, if doing so brings the staff’s total number of charges above 50, the staff explodes as if you activated its retributive strike (see below).</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Spells - While holding the staff, you can use an action to expend some of its charges to cast one of the following spells from it, using your spell save DC and spellcasting ability - conjure elemental (7 charges), dispel magic (3 charges), fireball (7th-level version, 7 charges), flaming sphere (2 charges), ice storm (4 charges), invisibility (2 charges), knock (2 charges), lightning bolt (7th-level version, 7 charges), passwall (5 charges), plane shift (7 charges), telekinesis (5 charges), wall of fire (4 charges), or web (2 charges).</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You can also use an action to cast one of the following spells from the staff without using any charges - arcane lock, detect magic, enlarge/reduce, light, mage hand, or protection from evil and good.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Retributive Strike - You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it. You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 × the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.</p2><br>
+							        
+											
+										
+							<p1><b>Dagger of Venom</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain a +1 bonus to Attack and Damage Rolls made with this Magic Weapon. You can use an action to cause thick, black poison to coat the blade. The poison remains for 1 minute or until an Attack using this weapon hits a creature. That creature must succeed on a DC 15 Constitution saving throw or take 2d10 poison damage and become Poisoned for 1 minute. The Dagger can&#39;t be used this way again until the next dawn.</p2><br>
+							        
+											
+									
+
+								
+
+
+
+
+								
+
+	
+							<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="./npc_imgs/Nanny.png" width="500" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>	
+	
+	
+	
+					<div class="cell" id="cell5">
+						<span class="data">
+						
+						
+						<span class="npc-heading-middle">
+										
+						<h1>5ecology</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>	
+										<span class="right-line">
+								
+										<p>	<h3>Introduction</h3>
+										</p>
+							<br>
+										
+											
+										<p>A Kindly looking older tiefling woman answers the door at the orphanage. &quot;How may I help you today? Are we looking to adopt?&quot;</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+											<br>
+											<p>A short tiefling woman with reddy-purple skin and long black hair, wearing lose fitting peasant clothes over some sort of leathers. She has very kind golden eyes</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3><br>
+										
+											
+											<p><i>"I thank you for your contributions, the orphans appreciate your help"</i></p><br>
+											
+											<p><i>"Children will be children, they just need a kind guiding hand"</i></p><br>
+											
+											<p><i>"Oh, the house mistress is out on business tonight"</i></p><br>
+											
+											
+											
+										</span> 
+		
+								</span>
+					
+						<span class="data">
+							
+										<span class="right-line-first">
+			
+										<h3>Mannerisms</h3>
+											<br>
+											<p>has a slight hunch and walks with an ornate staff</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+											<br>
+											<p>Helping children and helping her wife
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											<br>
+											<p>Children
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+											<br>
+											<p>She knows who the Carnelian Shroud is and is married to her
+ 
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+
+				
+							
+			
+				
+							<p><h4>Factions</h4><br></p>
+									
+									
+									
+						<p><b>The Red Carnelian&#39;s Gang</b><br></p>
+					
+							
+									<br><p>Role: <i></i><br></p><br>
+									
+									
+						<p><b>The Orphanage</b><br></p>
+					
+							
+									<br><p>Role: <i></i><br></p><br>
+									
+									
+								<br><br>
+								
+			<div class="container2">
+				
+					<span class="data2" id="bgcell">
+							<span class="npc-heading">
+
+					
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Argath Wilfred is the last remaining member of her coven who were hunted and killed by the King's Witch Hunterss. Escaping with the clothes on her back and little else, she fled the kingdom to start a new life and a new 
+coven. While travelling the land looking for a new home, she met the recently widowed actress Maria Estivan and they bacame fast friends and travelling companions.  Maria had long been a patron and benefactor of some of the
+local orphanges, having grown up as an orphan herself. Argath had always loved children even though she could never have any of her own. As their relationship grew and love blossomed, the pair came up with a plan to 
+continue supporting orphans and regrowing Argath's coven.  From this plan, The Carnelian Shroud and The Carnelian Gang were born. Maria became The Shroud and began leading a band of ruffians, robbing the rich dressed as
+a feared highwayman, and Argath became Nanny, running their orphanges, training children to succeed in life, join the gang, or for a very select few, to become her new coven. Nanny and Maria eventually got married and
+pledged their lives to each other and to their ever-growing number of children. Their plan has been a great success, the gang continues to grow, and Nanny continues to pour her heart and soul into raising the children right
+and protecting her wife on the roads, to the best of her abilities
+ 
+
+								
+  								<h1>Personality</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Nanny is a warm and wise woman. Belying her slightly demonic appearance, she is full of love and grace. But don't let her charisma fool you, she is also exceedingly cunning and compitent. She runs her orphanages with care
+and compassion, pouring her love into her children, but she also uses her power and intelligence to be the brains and the problem solver of the Carnelian Gang.
+								
+   
+								</span>
+</span>
+								
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Nanny is a warm and wise woman. Belying her slightly demonic appearance, she is full of love and grace. But don&#39;t let her charisma fool you, she is also exceedingly cunning and compitent. She runs her orphanages with care
+and compassion, pouring her love into her children, but she also uses her power and intelligence to be the brains and the problem solver of the Carnelian Gang.
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+				
+		</div>	
+	</div>
+-->
+
+						
+			  </body>
+
+</html>
