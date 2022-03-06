@@ -1,0 +1,1641 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gerrard Romkey, August General</title>
+
+<link rel="stylesheet" href="file:///D|/Github/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github/docs-index/index.html"><img src="file:///D|/Github/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="./npc_imgs/Gerrard Romkey, August General.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+					
+						
+				<span class="npc-heading">
+		  			
+								<h1 >Gerrard Romkey, August General</h1>
+						
+								<h2>Young Adult <br> Human <br> N/A <br>
+						
+									Lawful Good<br>
+						
+									Level 11/7 <br> Fighter/Bard <br>Battle Master/College of Swords</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+					</span>
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>he/him</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Knight/General</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>26</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>183 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>40.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>20 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>18 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>15 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>16 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>14 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>22 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(20);
+											document.getElementById("strmodi").innerHTML = myModi(20);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(18);
+											document.getElementById("dexmodi").innerHTML = myModi(18);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(15);
+											document.getElementById("conmodi").innerHTML = myModi(15);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(16);
+											document.getElementById("intmodi").innerHTML = myModi(16);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(14);
+											document.getElementById("wismodi").innerHTML = myModi(14);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(22);
+											document.getElementById("chamodi").innerHTML = myModi(22);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+									<p>Dexterity</p>
+									
+									<p>Strength</p>
+									
+									<p>Charisma</p>
+									
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										Lute<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+      								
+									
+										Survival, 
+        							
+									
+										Athletics, 
+        							
+									
+										Investigation, 
+        							
+									
+										Intimidation, 
+        							
+									
+										Persuasion, 
+        							
+									
+										Survival, 
+        							
+									
+										History, 
+        							
+									
+										Performance, 
+        							
+									
+										Cartography Tools, 
+        							
+      								
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(11/7);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+									<h4>Damage Immunities - </h4>
+					
+									<p>N/A</p>
+					
+								</span> 
+
+								<span class="top-property-line">
+						
+									
+									<h4>Condition Immunities - </h4>
+						
+									<p>N/A</p>
+					
+								</span> 
+					
+								
+								<span class="top-property-line">
+									<h4>Resistances - </h4>
+					
+									<p>N/A</p>
+					
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							Common
+							Elvish
+							Celestial
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Brave, 
+									Loving, 
+									Competent, 
+	
+					
+				</span> 
+				</span>
+
+					
+
+					
+					</div>
+
+	</div>
+			
+				<div class="cell" id="cell6">
+						<span class="data">
+						
+							
+						
+						<span class="npc-heading">
+							
+							<h1>Special Abilities</h1>
+							
+				<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							</span>
+						<span class="right-line-columns">	
+																							
+								
+							<p><b><h4>Fighter Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Fighting Style</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Dueling - When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.</p2><br>
+							        
+											
+										
+							<p1><b>Second Wind</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Bonus Action to regain 1d10 + 3</p2><br>
+							        
+											
+										
+							<p1><b>Action Surge</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Once every short/long rest can take an extra action</p2><br>
+							        
+											
+										
+							<p1><b>Extra Attack</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can attack twice each turn</p2><br>
+							        
+											
+										
+							<p1><b>Indomitable</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Battle Master Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Combat Superiority</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Maneuvers - You learn three maneuvers of your choice. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Ambush - When you make a Dexterity (Stealth) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren&#39;t incapacitated.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Bait and Switch - When you&#39;re within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn&#39;t incapacitated. This movement doesn&#39;t provoke opportunity attacks. Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Brace - When a creature you can see moves into the reach you have with the melee weapon you&#39;re wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon&#39;s damage roll.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Commander&#39;s Strike - When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack&#39;s damage roll.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Commanding Presence - When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check, you can expend one superiority die and add the superiority die to the ability check.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Disarming Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it&#39;s holding. You add the superiority die to the attack&#39;s damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Distracting Strike - When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack&#39;s damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Evasive Footwork - When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Feinting Attack - You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack&#39;s damage roll.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Goading Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack&#39;s damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Grappling Strike - Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player&#39;s Handbook for rules on grappling). Add the superiority die to your Strength (Athletics) check.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Lunging Attack - When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack&#39;s damage roll.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Maneuvering Attack - When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack&#39;s damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Menacing Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack&#39;s damage roll, and the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Parry - When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Precision Attack - When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll. You can use this maneuver before or after making the attack roll, but before any effects of the attack are applied.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Pushing Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack&#39;s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Quick Toss - As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon&#39;s damage roll.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Rally - On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Riposte - When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack&#39;s damage roll.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Sweeping Attack - When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Tactical Assessment - When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check, you can expend one superiority die and add the superiority die to the ability check.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Trip Attack - When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack&#39;s damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p2><br>
+							        
+											
+										
+							<p1><b>Superiority Dice 5</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.</p2><br>
+							        
+											
+										
+							<p1><b>Maneuver DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>17</p2><br>
+							        
+											
+										
+							<p1><b>Student of War</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain proficiency with one type of cartography tools of your choice</p2><br>
+							        
+											
+										
+							<p1><b>Know Your Enemy</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice; Strength score, Dexterity score, Constitution score, Armor Class, Current hit points, Total class levels, if any, Fighter class levels, if any</p2><br>
+							        
+											
+										
+							<p1><b>Improves Superiority</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Your superiority dice turn into d10s. At 18th level, they turn into d12s.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Bard Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Bard Spellcasting</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>18</p2><br>
+							        
+											
+										
+							<p1><b>Cantrip</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Vicious Mockery, Pretidigitation, Message, Thunderclap</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Silvery Barbs, Detect Magic, Command, Cure Wounds</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Enthrall, Heat Metal, Shatter</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Dispel Magic, Tiny Hut, Nondetection</p2><br>
+							        
+											
+										
+							<p1><b>4th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Dimension Door, Polymorph, Psychic Lance</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Dominate Person, Hold Monster</p2><br>
+							        
+											
+										
+							<p1><b>6th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Heroes&#39; Feast</p2><br>
+							        
+											
+										
+							<p1><b>Bardic Inspiration</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.</p2><br>
+							        
+											
+										
+							<p1><b>Jack of All Trades</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn&#39;t already include their Proficiency Bonus</p2><br>
+							        
+											
+										
+							<p1><b>Song of Rest</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.</p2><br>
+							        
+											
+										
+							<p1><b>Expertise</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>gets double proficiency bonus in Athletics</p2><br>
+							        
+											
+										
+							<p1><b>Font of Inspiration</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>they regain all of their expended uses of Bardic Inspiration when they finish a short or Long Rest</p2><br>
+							        
+											
+										
+							<p1><b>Countercharm</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>As an action, they can start a Performance that lasts until the end of their next turn. During that time, them and any friendly creatures within 30 feet of them have advantage on Saving Throws against being Frightened or Charmed</p2><br>
+							        
+											
+										
+							<p1><b>Magical Secrets</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Choose two Spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>College of Swords Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Bonus Proficiencies</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain proficiency with medium armor and the scimitar. If you’re proficient with a simple or martial melee weapon, you can use it as a spellcasting focus for your bard spells.</p2><br>
+							        
+											
+										
+							<p1><b>Fighting Style</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Two-Weapon Fighting - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack</p2><br>
+							        
+											
+										
+							<p1><b>Blade Flourish</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You learn to conduct impressive displays of martial prowess and speed. Whenever you take the Attack action on your turn, your walking speed increases by 10 feet until the end of the turn, and if a weapon attack that you make as part of this action hits a creature, you can use one of the following Blade Flourish options of your choice. You can use only one Blade Flourish option per turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Defensive Flourish - You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You also add the number rolled to your AC until the start of your next turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Slashing Flourish - You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit and to any other creature of your choice that you can see within 5 feet of you. The damage equals the number you roll on the Bardic Inspiration die.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Mobile Flourish - You can expend one use of your Bardic Inspiration to cause the weapon to deal extra damage to the target you hit. The damage equals the number you roll on the Bardic Inspiration die. You can also push the target up to 5 feet away from you, plus a number of feet equal to the number you roll on that die. You can then immediately use your reaction to move up to your walking speed to an unoccupied space within 5 feet of the target.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Extra Attack - You can attack twice, instead of once, whenever you take the Attack action on your turn.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Feats</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Sentinel, Mobile, Inspiring Leader, Shield Master, Savage Attacker</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Attacks</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> 3 attack with longsword</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Combat Tactics</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Gerrard will use his wits, his maneuvers and magic along with his sword to fight</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Special Equipment</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>2x +4 Longsword</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have a +4 bonus to Attack and Damage Rolls made with these weapon.</p2><br>
+							        
+											
+										
+							<p1><b>+3 Breast Plate</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>While wearing it, you have an extra +3 bonus to your AC</p2><br>
+							        
+											
+										
+							<p1><b>+3 Animated Shield</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>While holding this Shield, you can speak its Command word as a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The Shield remains animated for 1 minute, until you use a Bonus Action to end this Effect, or until you are Incapacitated or die, at which point the Shield falls to the ground or into your hand if you have one free.</p2><br>
+							        
+											
+									
+
+								
+
+
+
+
+								
+
+	
+							<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="./npc_imgs/Gerrard Romkey, August General.png" width="500" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>	
+	
+	
+	
+					<div class="cell" id="cell5">
+						<span class="data">
+						
+						
+						<span class="npc-heading-middle">
+										
+						<h1>5ecology</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>	
+										<span class="right-line">
+								
+										<p>	<h3>Introduction</h3>
+										</p>
+							<br>
+										
+											
+										<p>A tall, strong man holding the hand of a beautiful Assimar woman, approaches the table in the center of the war room &quot;Ok, gentlemen, let&#39;s get to the plan making, so Nothuriel and I can get to the war winning&quot;</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+											<br>
+											<p>A tall and strong, with a square jaw and thick goatee to match his thick unkempt brown hair. He is beginning to look a little grey and a bit older than his actual age</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3><br>
+										
+											
+											<p><i>"Gentlemen, can we get on with this"</i></p><br>
+											
+											<p><i>"Plans never survive first contact with the enemy, after that it comes down to the bravery of men"</i></p><br>
+											
+											<p><i>"The beauty of your face each morning, is all I need to inspire me each morning, my love."</i></p><br>
+											
+											
+											
+										</span> 
+		
+								</span>
+					
+						<span class="data">
+							
+										<span class="right-line-first">
+			
+										<h3>Mannerisms</h3>
+											<br>
+											<p>Still cracks his knuckles. Rubs his chin while he thinks</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+											<br>
+											<p>To continue to be the best. To retire with the love of his life
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											<br>
+											<p>Music and Nothuriel
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+											<br>
+											<p>He is tired and the years of constant combat have left him longing for peace
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+
+				
+							
+			
+				
+							<p><h4>Factions</h4><br></p>
+									
+									
+									
+						<p><b>A King&#39;s Guard</b><br></p>
+					
+							
+									<br><p>Role: <i>Knight/General</i><br></p><br>
+									
+									
+								<br><br>
+								
+			<div class="container2">
+				
+					<span class="data2" id="bgcell">
+							<span class="npc-heading">
+
+					
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Gerrard Romkey alongside his wife, has gained renown for his combat and leadership abilities. Attaining the rank of general in the King's Army, he has earned a reputation as a clever and stalwart commander. He cares enough
+about his troops to make sure they take as little risk as possible in combat. His troops know it and reward it with their loyalty and hard work. He and his wife, Nothuriel, are always at each other's side.
+
+								
+  								<h1>Personality</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Confident, experienced, competent and brave, Gerrard is a gifted and clever commander. He is wiley and charismatic man, who is devoutly devoted to his wife. He's also a talented musician, which he's recently been trying 
+to devote more time to. He is becoming weary of war and fighting and longs to hang up his sword and retire with the love of his life. 
+
+								
+   
+								</span>
+</span>
+								
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Confident, experienced, competent and brave, Gerrard is a gifted and clever commander. He is wiley and charismatic man, who is devoutly devoted to his wife. He&#39;s also a talented musician, which he&#39;s recently been trying 
+to devote more time to. He is becoming weary of war and fighting and longs to hang up his sword and retire with the love of his life. 
+
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+				
+		</div>	
+	</div>
+-->
+
+						
+			  </body>
+
+</html>

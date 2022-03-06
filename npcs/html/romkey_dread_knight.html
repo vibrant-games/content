@@ -1,0 +1,1634 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Romkey, Dread Knight</title>
+
+<link rel="stylesheet" href="file:///D|/Github/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github/docs-index/index.html"><img src="file:///D|/Github/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="./npc_imgs/Romkey, Dread Knight.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+					
+						
+				<span class="npc-heading">
+		  			
+								<h1 >Romkey, Dread Knight</h1>
+						
+								<h2>N/A <br> Human <br> Reborn <br>
+						
+									Chaotic Evil<br>
+						
+									Level 20 <br> Lich <br>Death Knight</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+					</span>
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>he/him</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>General Evilness</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>26</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>231 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>40.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>22 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>19 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>15 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>21 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>14 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>18 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(22);
+											document.getElementById("strmodi").innerHTML = myModi(22);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(19);
+											document.getElementById("dexmodi").innerHTML = myModi(19);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(15);
+											document.getElementById("conmodi").innerHTML = myModi(15);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(21);
+											document.getElementById("intmodi").innerHTML = myModi(21);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(14);
+											document.getElementById("wismodi").innerHTML = myModi(14);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(18);
+											document.getElementById("chamodi").innerHTML = myModi(18);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+									<p>Dexterity</p>
+									
+									<p>Strength</p>
+									
+									<p>Intelligence</p>
+									
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										Lute<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+      								
+									
+										Survival, 
+        							
+									
+										Athletics, 
+        							
+									
+										Investigation, 
+        							
+									
+										Intimidation, 
+        							
+									
+										Persuasion, 
+        							
+									
+										Survival, 
+        							
+									
+										History, 
+        							
+									
+										Performance, 
+        							
+									
+										Cartography Tools, 
+        							
+      								
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(20);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+									<h4>Damage Immunities - </h4>
+					
+									<p>Necrotic</p>
+					
+								</span> 
+
+								<span class="top-property-line">
+						
+									
+									<h4>Condition Immunities - </h4>
+						
+									<p>Charmed, Frieghtened, Paralyzed, Diseased</p>
+					
+								</span> 
+					
+								
+								<span class="top-property-line">
+									<h4>Resistances - </h4>
+					
+									<p>Bludgeoning, Piercing, Slashing damage from all weapons, Turn Undead</p>
+					
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							Common
+							Elvish
+							Celestial
+							Undercommon
+							Abyssal
+							Infernal
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Cold, 
+									Terrifying, 
+									Evil, 
+	
+					
+				</span> 
+				</span>
+
+					
+
+					
+					</div>
+
+	</div>
+			
+				<div class="cell" id="cell6">
+						<span class="data">
+						
+							
+						
+						<span class="npc-heading">
+							
+							<h1>Special Abilities</h1>
+							
+				<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							</span>
+						<span class="right-line-columns">	
+																							
+								
+							<p><b><h4>Fighter Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Fighting Style</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Nightmare Duelist - When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack. When you make a disengage action, you can attack with a single weapon as a bonus action.</p2><br>
+							        
+											
+										
+							<p1><b>Second Wind</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Bonus Action to regain 1d10 + 20</p2><br>
+							        
+											
+										
+							<p1><b>Action Surge</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Once every short/long rest can take an extra action</p2><br>
+							        
+											
+										
+							<p1><b>Extra Attack</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can attack twice each turn</p2><br>
+							        
+											
+										
+							<p1><b>Indomitable</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can use this feature 3 times per Long Rest.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Death Knight Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Death Knight Spellcasting</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>20</p2><br>
+							        
+											
+										
+							<p1><b>Cantrip</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>prestidigitation, acid splash, chill touch, eldritch blast, mage hand, ray of frost, true strike</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>alarm, bane, bodysnatch, chromatic orb detect evil and good, detect magic, entangle, lich armor, magic missile, magechain, net of shadows, protection from evil and good, shield, sleep, thunderwave, venomous ray</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>acid arrow, blindness/deafness, detect thoughts, enhance ability, enlarge/reduce, enthrall, fiendish claws, flaming sphere, invisibility, mirror image, moonbeam, pulling shade, ray of enfeeblement, sonic implosion, create guardian, raise mount</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>animate dead, bestow curse, bonesword, crushing despair, counterspell, dispel magic, fireball, glacial pass, phantom steed, protection from energy, frostball, speak with dead, unholy weapon, vampiric touch, conjure wraith</p2><br>
+							        
+											
+										
+							<p1><b>4th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>arcane eye, banishment, black tentacles, blight, blood rain, dimension door, ice storm, private sanctum, resilient sphere, death armor</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>animate objects, antilife shell, cloudkill, contagion, dimension door, dispel evil and good, hold monster, insect plague, iron flesh, mislead, raise dead, scrying, hold monster telekinesis, enlighten undead, imbuing ritual</p2><br>
+							        
+											
+										
+							<p1><b>6th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>create undead, circle of death, demonic visage, disintegrate, globe of invulnerability, harm, mass suggestion, wind walk, zone of power</p2><br>
+							        
+											
+										
+							<p1><b>7th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>etherealness, finger of death, plane shift, simulacrum, teleport, wall of souls</p2><br>
+							        
+											
+										
+							<p1><b>Deathly Awareness</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Your knowledge of Death gives you heightened awareness of other creatures of Death. You have advantage on Wisdom (Survival) checks to track Undead and Fiends, as well as on Intelligence checks to recall information about them.</p2><br>
+							        
+											
+										
+							<p1><b>Fighting Style</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Rune Weapon</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 2nd level, you can draw on the dread magic of the grave to inscribe your weapon with deathly Runes. These Runes may be used for additional effects described in this class description. You must spend one hour inscribing your weapon, which may be completed during a short rest. You may inscribe up to two weapons, and you cannot be disarmed of your Rune Weapons while you are conscious. If you inscribe a third weapon, you must choose one of your previous two weapons from which to remove the Runes.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You have 4 total Runes, and you gain Runes as indicated in the Class Table. You recover all expended Runes when you finish a short or long rest. If an ability that uses a Rune requires a saving throw, the saving throw DC is equal to 8 + your proficiency bonus + your Wisdom modifier. No Rune features require a spell attack roll.</p2><br>
+							        
+											
+										
+							<p1><b>Rune Strike</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Beginning at 2nd level, when you hit an enemy with a weapon attack, you may expend a Rune to add an additional effect to the attack, as listed below.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Rejuvenating Strike - You channel what’s left of your divine blessing into your weapon strike. If your attack hits, you may expend 1 Rune to cause the attack to deal Radiant damage, and heal you for half the damage dealt (rounded down). You can only regain HP if the blow is struck in combat. At 5th level, you may add your Constitution modifier to the healing, twice your Constitution modifier at 11th level, and 3 times your Constitution modifier at 17th level.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Icy Blast - If your attack hits, the target takes the normal attack damage, and you may expend 1 Rune to deal 1d6 extra Cold damage and force the target to make a Constitution saving throw. On a failed save, the target has its speed halved until the end of its next turn. On a successful save, the target does not have its speed reduced. The damage increases by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) level.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Plague Strike - If your attack hits, the target takes the normal attack damage, and you may expend 1 Rune to deal 1d6 additional Necrotic damage and afflict the target with Plague for 1 minute. At the beginning of its next turn, and at the beginning of each of its turns thereafter, the target must make a Constitution saving throw. On a failed save, the target takes 1d6 Necrotic damage from the plague. On a successful save, the effect ends. The Plague effect does not stack if applied more than once. The strike and plague damage increases by 1d6 at 5th (2d6), 11th (3d6), and 17th (4d6) level.</p2><br>
+							        
+											
+										
+							<p1><b>Grim Oath</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 3rd level you mimic the Oath you took in your former life. Though you can choose to follow the same Tenets, you are not bound by your Paladin Oath any longer, and may do as you please. Choose a Grim Oath that you follow exclusively. You may choose the Oath of the Undying, Oath of the North, or Oath of the Plague, all detailed at the end of this class description. Your choice grants you features at 3rd level and again at 7th, 15th, and 20th lel.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Oath of Undying - Undying Presence - At 3rd level when you take this Oath, your blood churns with radiant fire. You gain resistance to Radiant damage. Additionally, the target of your Rejuvenating Strike has disadvantage on attacks against targets other than you until the end of its next turn. Aura of the Undying - At 7th level, allies within 10 feet of you gain resistance to Radiant damage. Additionally, the power of your radiant blood can help prevent death. You and allies within 10 feet of you gain advantage on Death Saving Throws. The power of your will is so strong, the saving throw effect persists even if you are unconscious or incapacitated. At 18th level, this Aura increases to 30 feet. Radiant Blood - Upon reaching 9th level, the radiant fire of life infuses your soul. Your blood becomes radiant fire. If you are cut and bleeding, the radiance of your blood causes no damage, but you may use a bonus action to use your blood for lighting a candle, campfire, or another similar use. A fire lit in this manner is considered non-magical and burns a shade of radiant yellow instead of the normal color of fire Improved Rejuvenating Strike - At 15th level, when you use Rejuvenating Strike, you may spend up to 3 additional Runes. For each additional Rune spent, the healing increases by an amount equal to your Constitution modifier. Purgatory - By 20th level, your radiant vitality allows you to refuse to die. When you are reduced to 0 or fewer hit points, but not killed outright, your soul may keep fighting in your stead. Your soul has the same speed, hit points, and ability scores as your body, AC 20, and deals magical slashing damage equal 1d10 + your strength modifier. Your soul cannot take any action other than the attack, disengage, dodge, or help action, and cannot use any Rune Strikes. If your Soul is reduced to 0 hit points, or moves more than 100 feet from your body, you die immediately and cannot be resurrected by any means. This effect lasts for 1 minute or until you succeed on 3 death saving throws, and you must finish a long rest before you can benefit from it again. You make your death saving throws at the end of your turn during Purgatory.</p2><br>
+							        
+											
+										
+							<p1><b>Lingering Radiance</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 3rd level, the small spark of radiance from your former life manifests. You are immune to disease.</p2><br>
+							        
+											
+										
+							<p1><b>Extra Attack</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p2><br>
+							        
+											
+										
+							<p1><b>Aura of Dread</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 6th level, your presence hangs heavily on your enemies. Whenever an enemy within 10 feet must make a saving throw, it takes a penalty on the throw equal to 1 + half your Wisdom modifier, rounded down. This Aura does not stack with itself or similar effects (such as the Bane spell). At 18th level, this Aura increases to 30 feet.</p2><br>
+							        
+											
+										
+							<p1><b>Dreadful Visage</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Upon reaching 6th level, your connection to Death allows you to temporarily alter your body slightly. As an action, choose one of the following options. The effect lasts for one hour, or until you use another action to end it.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Visage of Fear - You may use the power of Death to temporarily twist your face and body into a horrific sight. You have advantage on Charisma (Intimidation) checks.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Visage of Grace - You may use the power of Death to temporarily heal the scars of your previous death, making you more acceptable among those who have not experienced Death. You have advantage on Charisma (Persuasion) checks.</p2><br>
+							        
+											
+										
+							<p1><b>Relentless Advance</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 9th level, you become as relentless as Death itself. Your speed increases by 10 feet. Additionally, non-magical difficult terrain does not reduce your speed.</p2><br>
+							        
+											
+										
+							<p1><b>Pull of the Grave</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 10th level, your power over the forces of Death increase. As an action, you may spend 1 Rune to cause a target within 30 feet of you that you can see to make a Strength saving throw. On a failed save, the target is pulled up to 30 feet towards you. If the target is pulled within melee range of you, you may make one weapon attack against it as a bonus action.</p2><br>
+							        
+											
+										
+							<p1><b>Speak with Undead</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>By 11th level, your knowledge of the inner workings of Death allows you to communicate with the dead. You may expend 1 Rune to cast the Speak with Dead spell. However, you may also target any undead creature using this spell.</p2><br>
+							        
+											
+										
+							<p1><b>Magic Barrier</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 13th level, you can harness the power of death to protect yourself against offensive magic. As a reaction when a spell is cast that targets you or an area you’re in, you may spend 1 Rune to create a barrier around yourself, granting you resistance to the damage dealt by spells until the beginning of your next turn.</p2><br>
+							        
+											
+										
+							<p1><b>Raise Dead</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 14th level, your connection with death allows you to expend power to help others return from Death. You may spend 4 Runes to cast the Raise Dead spell without requiring material components. You may do this only once per long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Death’s Endurance</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>By 17th level, your connection to Death empowers you, giving you the ability to trudge onward when others would fall. You are immune to Exhaustion. Additionally, when you are the victim of a critical hit, you may use your reaction to turn it into a normal hit. You may use this feature a number of times equal to your wisdom modifier, and regain spent uses upon completing a long rest.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Truesight</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Within 60ft can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic. Furthermore, the creature can see into the Ethereal Plane.</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Absence of Life</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> You no longer age as well but your bones will start to become dull or stained depending on what you have done or will do in the future. Your pupils will now always have a small, red glow to them, giving you Blindsight up to 120 feet. Any creature that dies within 60 feet of you has their soul automatically absorbed into your phylactery. All hostile creatures within 10 feet of the Lich take 2d8 necrotic damage per round. This damage is increased to 3d8 if the creature is below half health and is a living creature.</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Undead Domination</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Phylactery</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> You craft a phylactery. Thanks to the phylactery, you can no longer die. If you die, you return to life in 1d10 days, regaining all your hit points. Your body appears within 5 feet of the phylactery, if both are in the same plane of existence.</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> The only way to kill you is by destroying the phylactery. It has AC 18 and a number of hit points equal to your level multiplied by 5. It is immune to all conditions, it is resistant to cold, lighting and necrotic damage and it is immune to poison, bludgeoning, piercing and slashing from nonmagical attacks. When the phylactery is damaged, you receive the same amount of damage.</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Legendary Resistance</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> (3/Day), If Romkey, Dread Knight fails a saving throw she can choose to succeed instead</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Legendary Actions</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Romkey, Dread Knight can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature&#39;s turn. Romkey Dread Knight regains spent Legendary Actions at the start of her turn</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Slaughter</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Romkey can materialize necrotic energy in your weapon, and you can strike all foes within a cone with a single melee attack. The range of the cone is equal to your weapon&#39;s reach + 10 ft. If you are wielding a ranged weapon, this attack instead strikes one target within range and all targets within 5 ft of it. You can use this ability a number of times equal to your Constitution modifier, and you regain all uses after a long rest. You may expend one hit die to heal 1d8 for every enemy brought to 0 HP</p2><br>
+							        
+											
+										
+							<p1><b>Paralyzing Touch</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Romkey can make a melee attack spell on a creature, doing 3d6 Necrotic damage on a successful hit. The target must make a Constitution saving throw against your DC or be Paralyzed for 1 minute, repeating its saving throw at the end of each of its turns, ending the effect on a success. You can use this feature up to a number of times equal to your Intelligence modifier. You regain this feature after a long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Disrupt Life</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Romkey can force any non-undead creature within 10 feet of you to make a Constitution saving throw against your DC, taking 8d6 necrotic damage on a failed save and half as much on a success.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Feats</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Sentinel, Mobile, Inspiring Leader, Shield Master, Savage Attacker, War Caster</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Attacks</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> 3 attack with his Onyx Blades or Spell atatcks</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Combat Tactics</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Gerrard will fiercly attack head on in almost any situation</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Special Equipment</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>2x +4 Onxy Blades</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>The wielder of this blade gains +3 to attack and damage rolls with the weapon. This weapon holds 6 charges, 1d4+1 of which are restored at dawn. As a bonus action, by spending a charge, the wielder can enwreath the blade in a black flame that remains until the start of your next turn. Attacks with this weapon while it is on fire deal an additional 1d6 fire and 1d6 necrotic damage</p2><br>
+							        
+											
+										
+							<p1><b>+3 Breast Plate</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>While wearing it, you have an extra +3 bonus to your AC</p2><br>
+							        
+											
+										
+							<p1><b>+3 Animated Shield</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>While holding this Shield, you can speak its Command word as a Bonus Action to cause it to animate. The Shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The Shield remains animated for 1 minute, until you use a Bonus Action to end this Effect, or until you are Incapacitated or die, at which point the Shield falls to the ground or into your hand if you have one free.</p2><br>
+							        
+											
+									
+
+								
+
+
+
+
+								
+
+	
+							<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="./npc_imgs/Romkey, Dread Knight.png" width="500" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>	
+	
+	
+	
+					<div class="cell" id="cell5">
+						<span class="data">
+						
+						
+						<span class="npc-heading-middle">
+										
+						<h1>5ecology</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>	
+										<span class="right-line">
+								
+										<p>	<h3>Introduction</h3>
+										</p>
+							<br>
+										
+											
+										<p>A tall figure in all black armor riding a Nightmare (see monster manual) crests the hill at the head of an army of the undead</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+											<br>
+											<p>A tall handsome man with deathly white skin in full black armor and a crowned helmet</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3><br>
+										
+											
+											<p><i>"doesn&#39;t speak"</i></p><br>
+											
+											
+											
+										</span> 
+		
+								</span>
+					
+						<span class="data">
+							
+										<span class="right-line-first">
+			
+										<h3>Mannerisms</h3>
+											<br>
+											<p>Still cracks his knuckles.</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+											<br>
+											<p>Death and destruction to all
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											<br>
+											<p>N/A
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+											<br>
+											<p>He was once a brave knight who was slayed by his wife and had his soul eaten by the Blood-Sword
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+
+				
+							
+			
+				
+							<p><h4>Factions</h4><br></p>
+									
+									
+									
+						<p><b>Army of the Dead</b><br></p>
+					
+							
+									<br><p>Role: <i>Knight/General</i><br></p><br>
+									
+									
+								<br><br>
+								
+			<div class="container2">
+				
+					<span class="data2" id="bgcell">
+							<span class="npc-heading">
+
+					
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Romkey was once a brave and valiant knight and bard named Gerrard Romkey. He was a brilliant strategist and leader until one fateful day when his beloved wife under the control of a cursed sword, The Blood-Sword, turned 
+and impaled him, drinking his blood and his soul. His wife, broken and lost, embarked on a quest to find a way to bring him back. Lead by dark voices in her mind, she beseached the old gods to return him to her. 
+Unfortunately for them both, they day. Gerrard was not brought back as himself, He returned as a Dread Knight Lich Lord, and placed in charge of an army of the dead to wreak havoc on the world of the living. 
+
+								
+  								<h1>Personality</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Romakey has very little in the way of personality. He is a harsh and cruel master, but his troops being mostly undead and completely in his thrall, don't really seem to mind. Chaos and destruction are the only things he
+cares about. Though she has gone mad and joined in his destruction, he no longer even has affection for his beloved wife Nothuriel      
+
+								
+   
+								</span>
+</span>
+								
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Romakey has very little in the way of personality. He is a harsh and cruel master, but his troops being mostly undead and completely in his thrall, don&#39;t really seem to mind. Chaos and destruction are the only things he
+cares about. Though she has gone mad and joined in his destruction, he no longer even has affection for his beloved wife Nothuriel      
+
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+				
+		</div>	
+	</div>
+-->
+
+						
+			  </body>
+
+</html>
