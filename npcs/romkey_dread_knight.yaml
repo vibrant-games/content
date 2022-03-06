@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: N/A
+    age: Undead
 
     #
     # Races (case insensitive):
@@ -467,12 +467,13 @@ npc:
     - Dexterity
     - Strength
     - Intelligence
+    - Death
     damage-immunities:
     - Necrotic
     condition-immunities:
-    - Charmed, Frieghtened, Paralyzed, Diseased
+    - Charmed, Frieghtened, Paralyzed, Diseased, Sleep Magic
     resistances:
-    - Bludgeoning, Piercing, Slashing damage from all weapons, Turn Undead, Radiant Damage
+    - Bludgeoning, Piercing, Slashing damage from all weapons, Turn Undead, Radiant Damage, Poison, Exhaustion
     skills:
     - Lute
     proficiencies:
@@ -486,6 +487,19 @@ npc:
     - Performance
     - Cartography Tools
   special-abilities:
+  - title: Reborn Abilities
+  - abilities: 
+    - title: Faded Memories 
+    - content: Has no memory of their previous life other than random flashes
+    - title: Darkvision
+    - content: Can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray 
+    - title: Deathless Nature 
+    - content: Advantage on saving throws against disease and being poisoned and resistance to poison damage
+    - content: Advantage on Death saving throws     
+    - content: Doesn't need to eat, drink or breathe
+    - content: Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
+    - title: Knowledge from a Past Life
+    - content: When making a an ability check that uses a skill, roll a d6 and add it to the check roll. Can use this a number of times equal to proficiency bonus each long rest 
   - title: Fighter Abilities
   - abilities:
     - title: Fighting Style
