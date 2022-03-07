@@ -1,0 +1,1374 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yrtne Atad</title>
+
+<link rel="stylesheet" href="file:///D|/Github/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github/docs-index/index.html"><img src="file:///D|/Github/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="./npc_imgs/Yrtne Atad.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+					
+						
+				<span class="npc-heading">
+		  			
+								<h1 >Yrtne Atad</h1>
+						
+								<h2>Young Adult <br> Half-Troll <br> Huldrefolk <br>
+						
+									Lawful Neutral<br>
+						
+									Level 6 <br> Artificer <br>Archivist</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+					</span>
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>he/him</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Archivist of Collegium Imaginata</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>17</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>52 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>30.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>21 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>13 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>16 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>22 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>14 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>8 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(21);
+											document.getElementById("strmodi").innerHTML = myModi(21);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(13);
+											document.getElementById("dexmodi").innerHTML = myModi(13);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(16);
+											document.getElementById("conmodi").innerHTML = myModi(16);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(22);
+											document.getElementById("intmodi").innerHTML = myModi(22);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(14);
+											document.getElementById("wismodi").innerHTML = myModi(14);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(8);
+											document.getElementById("chamodi").innerHTML = myModi(8);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+									<p>Strength</p>
+									
+									<p>Intelligence</p>
+									
+									<p>Death</p>
+									
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										Archiving and Librian<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+      								
+									
+										Arcana, 
+        							
+									
+										Perception, 
+        							
+									
+										History, 
+        							
+									
+										Nature, 
+        							
+									
+										Tinker&#39;s Tools, 
+        							
+      								
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(6);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+									<h4>Damage Immunities - </h4>
+					
+									<p>N/A</p>
+					
+								</span> 
+
+								<span class="top-property-line">
+						
+									
+									<h4>Condition Immunities - </h4>
+						
+									<p>Poison</p>
+					
+								</span> 
+					
+								
+								<span class="top-property-line">
+									<h4>Resistances - </h4>
+					
+									<p>N/A</p>
+					
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							Common
+							Vedalken
+							Gnomish
+							Elvish
+							Giant
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Smart, 
+									Organized, 
+									Disgruntled, 
+	
+					
+				</span> 
+				</span>
+
+					
+
+					
+					</div>
+
+	</div>
+			
+				<div class="cell" id="cell6">
+						<span class="data">
+						
+							
+						
+						<span class="npc-heading">
+							
+							<h1>Special Abilities</h1>
+							
+				<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							</span>
+						<span class="right-line-columns">	
+																							
+								
+							<p><b><h4>Troll Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Troll Healing</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Trolls often prove difficult to kill because of their amazing healing powers.  You have advantage on death saving throws.  Additionally, when you spend hit dice to heal, you regain an extra 1d6 hit points for each hit die spent.</p2><br>
+							        
+											
+										
+							<p1><b>Powerful Build</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p2><br>
+							        
+											
+										
+							<p1><b>Troll Deformity</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>The physical shape of a troll is twisted and deformed. They often have multiple heads, warty stone like skin or extra arms. While often horrific in appearance these deformities rarely inconvenience the troll and are often a boon. Pick one from the list below.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Horns - you have grown larger than normal horns that may be used as a natural weapon to make unarmed strikes. The horns deal 1d6+strength on a hit.</p2><br>
+							        
+											
+										
+							<p1><b>Cast-Iron Gut</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have advantage on Constitution saving throws against diseases, ingested substances, and effects that rely on inhalation of gases. In addition, you can eat, and live off of more types of foods that most creatures cannot. Such as soft metals, bark, and stone.</p2><br>
+							        
+											
+										
+							<p1><b>Regeneration</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can tap into the trolls greatest ability to stave off damage. As a reaction, when you take damage you can expend a Hit Die to reduce the damage by the amount rolled. You cannot reduce the damage if it is acid or fire damage.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Artificer Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Magical Tinkering</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text</p2><br>
+							        
+											
+										
+							<p1><b>Artificer Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Requires Tinker&#39;s Tools as Spellcasting focus</p2><br>
+							        
+											
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>18</p2><br>
+							        
+											
+										
+							<p1><b>Cantrip</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Mage Hand, Message</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Detect Magic, Identify, Alarm, Sanctuary</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Arcane Lock, Enhance Ability</p2><br>
+							        
+											
+										
+							<p1><b>Infuse Item</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,</p2><br>
+							        
+											
+										
+							<p1><b>Infusions Known</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>6</p2><br>
+							        
+											
+										
+							<p1><b>The Right Tool for the Job</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can produce any set of artisan&#39;s tools with 1 hour work</p2><br>
+							        
+											
+										
+							<p1><b>Tool Expertise</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Smith&#39;s Tool proficiency bonus is doubled</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Archivist Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>18</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Comprehend Languages, Dissonant Whispers</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Detect Thoughts, Locate Objecty</p2><br>
+							        
+											
+										
+							<p1><b>Tools of the Trade</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>By the time you adopt this specialty at 3rd level,you’re deeply familiar with employing its tools. Proficiencies - You gain proficiency with calligrapher’s supplies and the forgery kit, assuming you don’t already have them. You also gain calligrapher’s supplies and a forgery kit for free—the result of tinkering you’ve done as you’ve prepared for this specialization. Crafting - If you craft a magic item in the scroll category, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.</p2><br>
+							        
+											
+										
+							<p1><b>Artificial Mind</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 3rd level, you discover how to awaken a mind inside an object. Whenever you finish a long rest and your calligrapher’s supplies are with you, you can magically rouse a keen mind within a Tiny, nonmagical object on which you write mystical symbols. The object is a magic item while the mind is inside it, and you can use it as a spellcasting focus. If you already have an artificial mind from this feature, the first one immediately dissipates.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>The magic item has the following properties</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Telepathic Advisor - The artificial mind telepathically supplies you with advice and information about certain topics - while the item is on your person, you have proficiency in two skills of your choice; the item’s main material determines which skills you can choose from, as shown on the Artificial Mind table in the Skill Proficiencies column, for the nature of the object affects the mind’s knowledge.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Manifest Mind - As a bonus action while the item is on your person, you can cause the mind to manifest as a Tiny spectral presence, hovering in an unoccupied space of your choice within 60 feet of you. This presence is intangible and invulnerable, and it sheds dim light in a 10-foot radius. You determine its appearance; the Artificial Mind table offers suggested appearances based on the object’s main material. While manifested, the spectral mind can hear and see, and it has darkvision with a range of 60 feet. As an action, you can hear and see using the mind’s senses, instead of your own, until your concentration ends (as if concentrating on a spell). As a bonus action, you can cause the spectral mind to hover up to 30 feet to an unoccupied space that you or it can see. It can pass through creatures but not objects. The spectral mind stops manifesting if it is ever more than 300 feet away from its magic item or if you dismiss it as a bonus action. When you cast an artificer spell on your turn,you can cast it as if you were in the spectral mind’s space, instead of your own, using its senses. You can do so a number of times per day equal to your Intelligence modifier (at least once), and you regain all expended uses when you finish a long rest.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Information Overload - As an action while the item is on your person, you can try to magically overload the thoughts of one creature you or the mind can see that is within 5 feet of the manifested mind, channeling a jumble of information from the artificial mind. Unless the target succeeds on an Intelligence saving throw against your spell save DC, the target takes 1d8 psychic damage, and the next attack roll against it before the end of your next turn has advantage, since it is temporarily too distracted to defend itself well. The damage increases by 1d8 when you reach 5th level (2d8), 11th level(3d8), and 17th level (4d8) in this class. Whenever you deal damage with this feature,you can expend a spell slot to deal extra damage to the target. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than first.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Artificial Mind</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Main Material                        Skill Proficiencies                                         Suggested Appearance</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Animal (parchment, leather, bone)    Animal Handling, Insight, Medicine, Perception, Survival    A beast or a humanoid visage with antlers</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Mineral (glass, stone, metal)        Deception, Intimidation, Performance, Persuasion            A robotic or golem-like face</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Plant (paper, wood)                  Arcana, History, Investigation, Nature, Religion            A bespectacled visage or a treant</p2><br>
+							        
+											
+										
+							<p1><b>Mind Network</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 6th level, you’ve learned how to use your artifices to access minds, both to communicate and to harm.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Magical Telephony - While you have your Artificial Mind item on your person, you can communicate telepathically with anyone carrying an item bearing one of your artificer infusions, as the mind transmits your thoughts to each other. That person can also communicate telepathically with you as long as they have the item. This two-way communication can even cross planar boundaries.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Feats</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Keen Mind</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Attacks</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Can make 1 attacks with unarmed stirike or spell attack</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Combat Tactics</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> He&#39;ll go out of his way to avoid a fight, though he is a large powerful being and can throw a pretty mean punch</p>
+									
+									
+									
+									
+
+								
+
+
+
+
+								
+
+	
+							<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="./npc_imgs/Yrtne Atad.png" width="500" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>	
+	
+	
+	
+					<div class="cell" id="cell5">
+						<span class="data">
+						
+						
+						<span class="npc-heading-middle">
+										
+						<h1>5ecology</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>	
+										<span class="right-line">
+								
+										<p>	<h3>Introduction</h3>
+										</p>
+							<br>
+										
+											
+										<p>the strange, orange, troll-like man in has gruff voice confirms &quot;Right, right, those blueprints are right over here in this cabinet&quot;</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+											<br>
+											<p>Short for a Troll, tall for a human, with orange, pocked skin, wild blonde hair, thick glasses and disheveled, dirty clothes</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3><br>
+										
+											
+											<p><i>"Of course I know where that is, I know where everything is"</i></p><br>
+											
+											<p><i>"Do I look like a disorganized idiot to you?"</i></p><br>
+											
+											<p><i>"F$@%&amp;K I hate this job"</i></p><br>
+											
+											
+											
+										</span> 
+		
+								</span>
+					
+						<span class="data">
+							
+										<span class="right-line-first">
+			
+										<h3>Mannerisms</h3>
+											<br>
+											<p>He walks with a hunch, almost dragging his knuckles on the ground. Constantly adjusting his glasses and fidgetting with his collar</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+											<br>
+											<p>It&#39;s what his family has always done for work. Efficient and logical data keeping and storage
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											<br>
+											<p>Paiinting
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+											<br>
+											<p>He hates his job and only does it because it&#39;s what expected of him by his family
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+
+				
+							
+			
+				
+							<p><h4>Factions</h4><br></p>
+									
+									
+									
+						<p><b>Collegium Imaginata</b><br></p>
+					
+							
+									<br><p>Role: <i>Archivist</i><br></p><br>
+									
+									
+								<br><br>
+								
+			<div class="container2">
+				
+					<span class="data2" id="bgcell">
+							<span class="npc-heading">
+
+					
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Yrtne us a half-troll who grew up in a long family line of archivist trolls. It's all he's ever been trained to do. He absolutely hates his job and would rather just spend his time painting. Just because he hates what he 
+does, doesn't mean he's not good at it. He is exceptionally organized and efficient and knows where all of the Collegium's files and records are located at all times. He is also working on a project of his own at the
+Collegium, he is working on an artificial intelligence system that will do his job for him so that he can just paint.
+
+								
+  								<h1>Personality</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Large, orange and disheveled, Yrtne is an intelligent and organized individual. He is efficent and optimal, but synical and sarcastic. He has little tolerance for chaos and likes his world to be neatly ordered. This
+makes his life difficult in a world full of mad scientists and scholars.
+
+								
+   
+								</span>
+</span>
+								
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Large, orange and disheveled, Yrtne is an intelligent and organized individual. He is efficent and optimal, but synical and sarcastic. He has little tolerance for chaos and likes his world to be neatly ordered. This
+makes his life difficult in a world full of mad scientists and scholars.
+
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+				
+		</div>	
+	</div>
+-->
+
+						
+			  </body>
+
+</html>
