@@ -329,7 +329,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - N/A
+    - id: the_djinn_rummy_s_crew
+      name: The Djinn Rummy's Crew
+      role: Occasional Crew
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -557,4 +559,4 @@ npc:
     #
     personality: |
       Nagata never really enjoyed his life in the orc clans. He was unhappy, listless and restless. He dreamed of a free life on the sea and one day made a break for it. He however, has yet to get a chance to live his dream. As
-      an orc, there aren't a whole lot of captains willing to take him on. So he mostly just aimlessly wanders the shoreline trying to survive
+      an orc, there aren't a whole lot of captains willing to take him on. So he mostly just aimlessly wanders the shoreline trying to survive. He may also help out crewing from time to time on the Djinn Rummy

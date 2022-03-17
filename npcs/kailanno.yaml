@@ -332,10 +332,10 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: adventurer_s_guild
-      name: Adventurer's Guild
-    - id: thieve_s_guild
-      name: Thieve's Guild
+    factions:
+    - id: the_djinn_rummy_s_crew
+      name: The Djinn Rummy's Crew
+      role: Occasional Crew
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -542,7 +542,7 @@ npc:
       Kailanno is an accomplished and well-traveled guide and adventurer. He knows the major rivers of Zendikar like the back of his hand. He was a follower of the Cosi Creed and followed the path of Cosi the Trickster God.
       Unfortunately, with the arrival of the Eldrazi and resulting war for the survival of Zendikar, it was revealed that Cosi was not a God, but one of the Eldrazi Titans; Kozilek.  This revelation has cause the bulk of
       Zendikar's merfolk to abandon their gods, but Kailanno still maintains many of his beliefs and habits, despite no longer believing in Cosi himself. Because of this, he enjoys playing sleight of hand tricks, card tricks
-      and even stealing small baubles and trinkets from the people he's guiding. This has gotten him in trouble more than once
+      and even stealing small baubles and trinkets from the people he's guiding. This has gotten him in trouble more than once. He has also been know to occasionally help out as crew on the Djinn Rummy
 
     #
     # Personality (or something like that):
