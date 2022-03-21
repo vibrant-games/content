@@ -448,3 +448,81 @@
     - content: Infoportation - As an action while your Artificial Mind magic item is on your person, you cause the mind to turn you into pure information, teleporting you to the unoccupied space nearest to the spectral mind or 
                                to an item bearing one of your artificer infusions, where you physically reappear.
     - content: You can teleport in this way once for free and must finish a long rest before doing so again. You can also use this special ability by expending a spell slot of 2nd level or higher.
+    
+    
+  - title: Stitcher Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Spare the Dying, Mending
+    - title: 5th Level
+    - content: Cure Wounds, Aid
+    - title: 9th Level
+    - content: Haste, Enlarge/Reduce, Enhance Ability
+    - title: 13th Level
+    - content: Private Sanctum, Blight
+    - title: 17th Level
+    - content: Antilife Shell, Reincarnate
+    - title: Tools of The Trade
+    - content: By the time you adopt this specialty at 3rd level, you're deeply familiar with employing it's tools.
+    - content: Proficiencies - You gain proficiency with alchemist's supplies and the healer's kit, assuming you don't already have them. You also gain alchemist's supplies and a healer's kit for free. The result of tinkering 
+                               you've done as you've prepared for this specialization. You also gain proficiency in wisdom (medicine) checks assuming you don't have it already.
+    - content: Improved Critical - You have extensive knowledge of anatomy, this knowledge means you know exactly where to hit someone if you want it to do some serious damage. Your attacks become critical if you role a 19 or a 
+                                   20
+    - title: Corpse Craft
+    - content: At 3rd level, you've learned to apply the principals of your craftmanship to a new canvas--- corpses. Your curiosity has lead you to the creation of a Skaab, a hybrid undead creature composed of many different 
+               bodies. Some way or another you've come into the possession of a dead body, but it didn't stay dead for long. Your new Skaab servant starts with the stats listed in the stat block at the end of this subclass 
+               description. When you come across a corpse that has been dead for less than two hours, you can use your alchemist's supplies to preserve parts of the body and carry them with you. When in a safe place, you can 
+               spend 1d6 minus your intelligence modifier (minimum of one) hours to attach any preserved body parts you have to the skaab as replacements for it's current body parts, for example, you can remove your skaab's left
+               arm and attach a preserved front leg of a bear in it's place, arms and legs can go in the legs spots, arms, legs, tails, wings, and any otherlimb, can go anywhere an arm can go. At level three it can only have one
+               head, two arms, two legs, and one torso. at sixth level this increases, allowing you to add a limb attached to the tailbone and one to each shoulder blade and at 14th level it increases again allowing you to add 
+               any number of arms, legs, heads, tails, wings, or other body parts as long as the skaab's number of body parts doesn't exceed 13, and that the skaab has a torso, a head, and a way to stand (usually but not 
+               necessarily two legs, e.g. a Naga tail). Should your skaab die, you can raise a new one with a corpse, your alchemist's supplies and healer's kit and 1d12 minus your intelligence modifier hours. When you take the 
+               ability score improvements at levels 4, 8, 12, and 16, you may increase your skaab's ability scores as well. the Skaab levels up with you and its hitpoints increase by 1d8 (or 5) plus your Con modifier each time 
+               it levels up. The skaab's size is the size of whatever it's largest body part for example, if you skaab has the torso, head, legs and right arm of a human but the left arm of a giant, its size would be huge 
+               instead of medium.
+               
+    - content: Skaab
+    - content: Medium, Lawful Evil
+    - content: Armor Class 13 (Natural Armor)
+    - content: Hit Points 22
+    - content: Speed 30 ft
+    - content: STR 16(+3) DEX 10(+0) CON 13(+1) INT 3(-4) WIS 6(-2) CHA 5(-3)
+    - content: Saving Throws Wis +0
+    - content: Damage Vulnerabilities - Radiant, Fire
+    - contetn: Damage Resistances - Cold
+    - content: Damage Immunities  - Poison, Necrotic
+    - content: Condition Immunities - Poisoned
+    - content: Senses Darkvision 60ft, Passive Perception 8
+    - content: Languages - understands any languages its creator knows but can't speak
+    - content: Actions
+    - content: Multiattack - Skab attacks once with each limb except it's legs, damage depends on limb
+    - contentL: Necrotic Relese AOE - on death, burst of necrotic energy, 6d12 necrotic damage to all enemies within 10 feet of dead skaab. It's body parts disintegrate and can't be salvaged
+    - title: Your Skaab in Combat
+    - content: Your skaab will have the same initiative as you but take its turn right after you, on your turn you can use either an action or a bonus action to command your skaab, if you do so, you have full control of the 
+               skaab on its turn. If the skaab did not recieve a command, it will only move to get out of harms way if necessary and will only attack an enemy it is currently engaged with. a skaab can use the abilities of the 
+               body parts it has, for example, if it has the head of a bear, it can use the bear's bite attack, if it has a bear's arm, it can use the bear's claw attack. a skaab gets certain abilities based on it's body parts 
+               for example, if it were to have two wings it would gain the ability to fly with its flight speed as the average of the flight speeds of the original owner of it's wings, for example, if it had an imp's wing which 
+               has a flight speed of 40ft and an aarakokra wing which has a flight speed of 50, the skaab's flight speed would be 45 feet. The same is true of its ground speed, based on the skaab's legs.
+    - title: Taboo Canvas
+    - content: For the purpose of magical tinkering, Infuse Item, and Spell-Storing Item, the skaab's body parts are targetable objects. (for infuse item, it's feet can be enchanted as boots, it's torso as armor, it's arms as 
+               weapons, etc.) If a part of the skaab's body is infused, the skaab is automatically attuned to it, but attunements in this way don't count against the alloted number of items that the skaab can be attuned to.
+    - title: Problems with the Locals
+    - content: Common folk may not understand the artful intricacies of your skaab, they may even mistake it for common necromancy. As such you often won't be able to have the skaab with you in public, but not to worry, the 
+               skaab gets a bonus of 8 plus your proficiency bonus, plus your int modifier, plus it's dex modifier to stealth roles when out of combat. The skaab can also fit itself into a bag of holding to hide if there is one 
+               available.
+    - title: Noxious aura
+    - content: Corpses tend to stink, and your skaab is no exception, at sixth level a powerful stench laced with your magic pours from your skaab. You are unaffected due to the amount of time you have spent around corpses but 
+               all other creatures must make a wisdom saving throw if they start or end their turn within 10 feet of the skaab. if they fail the saving throw, they take 1d4 necrotic damage and have disadvantage on all roles they
+               make for the next turn.
+    - title: Corpse Artisan
+    - content: At 14th level, you have perfected your craft, you can now have two skaabs, each with one torso, a way to stand, at least one head and 13 total body parts. In combat, issuing a command as an action or bonus action 
+               will command both skaabs, to command one separately you must use another action or bonus action to make another command. If you made two commands on your turn, the skaabs may act freely of each other if you made 
+               one command, they must do the same thing to the best of their ability, for example, if both your skaabs have a movement speed of 30 feet, and one skaab is 10 feet away from an enemy and the other one is seventy 
+               feet away, and you have the first one close the 10 foot distance and attack the enemy, then the second one must do its best to attack that enemy, which in this case would be using the dash action and ending its 
+               turn 10 feet away from the enemy. The same rules apply as before if no commands are given.
+
+                                   

@@ -1,0 +1,764 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: dr_andreas_stormhollow
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2021-04-02"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Dr. Andreas Stormhollow
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: Middle Aged Adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Tiefling
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Bloodline of Mephistopheles
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: he/him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Scientist/Inventor
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Artificer / Wizard / Doctor
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Mastermaker / School of Necromancy / Stitcher
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 15 / 14 / 17
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Neutral Evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Gnoll
+    - Draconic
+    - Sylvan
+    - Infernal
+    - DeepSpeech
+    - Giant
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: N/A
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Brilliant
+    - Creepy
+    - Reckless
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  /"OUT OF THE WAY!!!/" shouts the fat bald gnome as the steam contraption smashes it's way down the street
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   Short even by gnome standards, fat, bald and disheveled, wearing multi-lensed thick glasses and a tiny lab coat
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:
+    - "All science is magic to the untrained eye"
+    - "I'll replace all work beasts with artifice, no more need of horses or oxen"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:   gesticulates wildly when he speaks. Constantly fiddles with his multi-lense glasses
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      The pursuit of knowledge  
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Artifice!
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      Reckless in his pusuit of knowledge
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      The Collegium Imaginata is secretly an extraplanar extension of Ravnica's Izzet League
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 16
+    hit-points: 154
+    speed: 25
+    str: 14
+    dex: 17
+    con: 16
+    int: 26
+    wis: 20
+    cha: 19
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - N/A
+    resistances:
+    - Fire, Lightning, Magic
+    skills:
+    - Engineering
+    proficiencies:
+    - Arcana
+    - Investigation
+    - Perception    
+    - History
+    - Persuasion
+    - Insight
+    - Tinker's Tools
+    - Thieve's Tools
+    - Smith's Tools
+  special-abilities:
+  - title: Tiefling Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray
+    - title: Hellish Resistance
+    - content: You have Resistance to fire damage
+    - title: Legacy of Cania
+    - content: You know the Mage Hand cantrip. When you reach 3rd level, you can cast the Burning Hands spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 
+               5th level, you can cast the Flame Blade spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.
+  - title: Artificer Abilities
+  - abilities:
+    - title: Magical Tinkering
+    - content: Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text
+    - title: Artificer Spellcasting 
+    - content: Requires Tinker's Tools as Spellcasting focus
+    - title: Spell DC
+    - content: 22
+    - title: Cantrip
+    - content: Spare the Dying, Mage Hand, Ray of Frost, Fire Bolt
+    - title: 1st Level
+    - content: Caustic Brew, Detect Magic, Disguise Self, False Life
+    - title: 2nd Level
+    - content: Continual Flame, Heat Metal, Invisibility
+    - title: 3rd Level
+    - content: Dispel Magic, Fly, Intellect Fortress
+    - title: 4th Level
+    - content: Fabricate, Summon Construct, Stoneskin     
+    - title: Infuse Item
+    - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
+    - title: Infusions Known
+    - content: 10
+    - title: The Right Tool for the Job
+    - content: Can produce any set of artisan's tools with 1 hour work
+    - title: Tool Expertise
+    - content: Smith's Tool proficiency bonus is doubled
+    - title: Flash of Genius
+    - contents: Can use a reaction to add intelligence modifier to his or another creature within 30' to ability checks or saving throws
+    - title: Magic Item Adept
+    - content: Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost
+    - title: Spell Storing Item
+    - content: Can store a spell in and object once per long rest
+    - title: Magic Item Savant
+    - content: Can attune to any magic item regardless of class, race, spell and level requirements 
+    - title: Magic Item Master
+    - content: Can attune to 6 magic items      
+  - title: Wizard Abilities
+  - abilities:
+    - title: Arcane Recovery
+    - content: After a short rest can recover a spell slot up to 3rd level
+    - title: Spell Mastery
+    - content: Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. 
+               If you want to cast either spell at a higher level, you must expend a spell slot as normal
+    - title: Signature Spells
+    - content: Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don't count against the number of Spells you have prepared, and you can 
+               cast each of them once at 3rd Level without expending a spell slot.			  
+  - title: Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 22  
+    - title: Cantrips
+    - content: Chill Touch, Sapping Sting, Toll the Dead, Control Flames, Shape Water
+    - title: 1st Level
+    - content: Cause Fear, Ray of Sickness, Silvery Barbs, Magic Missle   
+    - title: 2nd Level
+    - content: Detect Thoughts, Gentle Repose, Wither and Bloom  
+    - title: 3rd Level
+    - content: Summon Undead, Speak with Dead, Animate Dead
+    - title: 4th Level
+    - content: Blight, Psychic Lance, Gravity Sinkhole
+    - title: 5th Level
+    - content: Negetive Energy Flood, Modify Memory
+    - title: 6th Level
+    - content: Create Undead
+    - title: 7th Level
+    - content: Finger of Death
+  - title: Doctor Abilities
+  - abilities:
+    - title: Medical Training
+    - content: Due to your meticulous study into the healing arts you can use your Intelligence modifier instead of your Wisdom modifier for Medicine checks. In addition your proficiency bonus is doubled for any
+               Medicine checks that you make. 
+    - title: Doctors Bag
+    - content: You gain access to a number of special supplies due to your medical training. These supplies include things like bandages, syringes, medicinal powders, and healing salves. You keep these in a storage
+               container of your choice such as a bag, a series of pouches, or even a trunk. As long as you have access to your Doctor's Bag you may use an action to stabilize a creature that has 0 hit points, without
+               needing to make a Medicine check.
+    - title: First Aid
+    - content: You can apply basic first aid to an adjacent creature you can touch. As a bonus action you heal the target for 1d4 hit points. This increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th
+               level (4d4). You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.
+    - title: Second Opinion
+    - content: You have become accustomed not only to combat, but to coordinating with other healers. Whenever an ally within 20ft of you uses a healing ability, spell, or item, you can use your reaction to increase
+               the amount healed to a single target by half, rounded up. Your ally must be able to see or hear you.
+    - title: Patch Up
+    - content: You have learned that there is always another fight around the corner, and it's best to be ready for it. Select up to 6 willing creatures that you can touch. You spend the next 10 minutes quickly stitching up
+               any open wounds and applying painkillers where needed, whatever it takes to get them to the next battle. This cures them of any non-magical ailments and restores a number of hit points equal to half of their
+               maximum rounded up. You can use this feature a number of times equal to your Intelligence modifier divided by two (a minimum of once). You regain any expended uses when you finish a Long Rest.
+    - title: Diagnosis
+    - content: You have learned to treat hostile scenarios as just another day at the office. As an action you study a living creature and gain vital insight towards its physical state. You learn one of the targets
+               following statistics - Damage Vulnerabilities, Damage Resistances, Damage Immunities, Highest Saving Throw, Lowest Saving Throw, or whether or not the creature is below half its health. You can use this
+               feature a number of times equal to your Intelligence modifier (a minimum of once). You regain expended uses when you finish a Short Rest.
+    - title: Paramedic
+    - content: You have become experienced at reaching the injured without taking damage. When you use your action to disengage you may also double your movement speed until the end of your turn
+    - title: Vaccination
+    - content: You have spent countless hours attempting to aid those suffering from disease and have developed a number of treatments. As an action you can cure a target of a single disease afflicting them. Alternatively,
+               you can inoculate a target against disease for the next 24 hours. In addition, due to exposure from numerous patients the doctor gains immunity to all disease.
+    - title: Vitality Boost
+    - content: You have become an expert at healing at a moment’s notice. As an bonus action you can heal an adjacent creature you can touch for 4d6 hit points. This increases by 2d6 when you reach 15th level (6d6).
+               You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.
+    - title: Reanimation
+    - content: You provide life saving aid to a creature that has died within the last 10 minutes and return them to life. The creature returns to life with 1 hit point. This procedure can't return to life a creature that
+               has died of old age, nor can it restore any missing body parts. You cannot use this feature again until you have completed a short rest.
+    - title: Experianced Healer
+    - content: You are unlikely to fail at common medical tasks. Whenever you make a Medicine check you can treat a d20 roll of 9 or lower as a 10.
+    - title: Sedate
+    - content: You have managed to create sedatives using standard supplies. As an action you can inject a willing creature with a sedative that will cause them to go unconscious for 1d4 hours. You can also attempt to inject
+               an unwilling creature for the same effect. An unwilling target must be below one quarter of its maximum hit points for this ability to take effect. They must then succeed a Constitution saving throw or
+               immediately fall unconscious for 1d4 hours.
+    - title: Practiced Hands
+    - content: You have performed the same procedures countless times. Whenenever you use a healing ability, item, or other effect that involves a die roll you can add an additional healing die of the same type to the
+               end result, even if the result would otherwise be maximized.
+  - title: Mastermaker Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 22
+    - title: 3rd Level
+    - content: Absorb Elements, Thunderous Smite
+    - title: 5th Level
+    - content: Enhance Ability, Lesser Restoration
+    - title: 9th Level
+    - content: Blinding Smite, Haste
+    - title: 13th Level
+    - content: Freedom of Movement, Stone Shape
+    - title: 17th Level
+    - content: Banishing Smite, Greater Restoration
+    - title: Tools of Integration
+    - content: At 3rd level, you gain proficiency with heavy armor and smith’s tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan’s tools of your choice.
+    - title: Prosthesis Expertise
+    - content: At 3rd level, whenever you finish a long rest, you can touch a nonmagical object and imbue it with your power, creating a permanent magical item that replaces a lost limb—a hand, arm, foot, leg, or similar body 
+               part. While the prosthetic is attached, it functions identically to the part it replaces. The wearer can detach or reattach it as an action, and it can’t be removed against the wearer’s will. It detaches if the 
+               wearer dies.
+    - title: Battlefist
+    - content: At 3rd level you replace one of your arms with a battlefist, a magical prosthetic you created. Your battlefist is a simple melee weapon, and you can use it as a spellcasting focus for your artificer spells. While 
+               your battlefist is a magical weapon, it can be infused as if it were a nonmagical weapon.
+               When you attack with your battlefist, you can use your Intelligence modifier instead of Strength for the attack roll. If you hit with it, you deal bludgeoning damage equal to 1d10 + your Strength or Intelligence 
+               modifier. At 9th level, the damage dealt by your battlefist increases to 2d10 + your Strength or Intelligence modifier.
+               Additionally, you can choose one of the following weapon properties to add to your battlefist - finesse, thrown (range 20/60), or reach. When you finish a long rest, you can replace this property with a different
+               weapon property from the list.
+    - title: Extra Attack
+    - content: At 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.
+    - title: Improved Battlefist
+    - content: At 9th level, you have modified your battlefist in both mundane and magical ways. It gains the following benefits
+               When you infuse your battlefist, you can apply two infusions to it at a time. If both infusions grant bonuses to your attack rolls or armor class, you gain only the greater bonus.
+               Your battlefist is also a shield, increasing your armor class by 2. You can wield it as a weapon even if you are using it as a shield. You can infuse it as if it were both a simple melee weapon and a shield.
+               The maximum number of items you can infuse at once increases by 1, but the extra infusion must be applied to your battlefist.
+    - title: Construct Apotheosis
+    - content: At 15th level you have modified your form, becoming nearly impervious to the weaknesses of flesh. You gain the following benefits
+               You gain resistance to poison damage and psychic damage, and you are immune to the poisoned condition.
+               If you are affected by a spell or magical effect, you can choose to consider yourself a construct instead of your other creature types.
+               You can cast the Antilife Shell and Investiture of Stone spells without expending a spell slot, without preparing the spell, and without material components, provided you use your battlefist as the spellcasting 
+               focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest.
+  - title: School of Necromancy Abilities
+  - abilities: 
+    - title: Necromancy Savant
+    - content: The gold and time you must spend to copy a Necromancy spell into your spellbook is halved.
+    - title: Grim Harvest
+    - content: You gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to 
+               twice the spell's level, or three times its level if the spell belongs to the School of Necromancy. You don't gain this benefit for killing constructs or undead.
+    - title: Undead Thralls
+    - content: You add the Animate Dead spell to your spellbook if it is not there already. When you cast Animate Dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as 
+               appropriate. Whenever you create an undead using a necromancy spell, it has additional benefits;
+               The creature's hit point maximum is increased by an amount equal to your wizard level.
+               The creature adds your proficiency bonus to its weapon damage rolls.
+    - title: Inured to Undeath
+    - content: You have resistance to necrotic damage, and your hit point maximum can't be reduced. You have spent so much time dealing with undead and the forces that animate them that you have become inured to 
+               some of their worst effects.
+    - title: Command Undead
+    - content: You can use magic to bring undead under your control, even those created by other wizards. As an action, you can choose one undead that you can see within 60 feet of you. That creature must make a 
+               Charisma saving throw against your wizard spell save DC. If it succeeds, you can't use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature
+               again. Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the saving throw. If it fails the saving throw and has an Intelligence 
+               of 12 or higher, it can repeat the saving throw at the end of every hour until it succeeds and breaks free.
+  - title: Stitcher Abilities
+  - abilities: 
+    - title: Dark Work
+    - content: Your work tends to take you to the underbelly of society, as a result, you gain the Cunning Action and Sneak Attack abilities from the Rogue Class as well as learning  Thieve's Cant
+    - title: First Aid
+    - content: You can use the bonus action granted by your Cunning Action to make a Wisdom (Medicine) check or use a Doctor's Bag.
+    - title: Patchwork
+    - content: You gain proficiency with the Doctor's Bag. You can spend 1 minute using your Doctor's Bag to treat a willing ally within 5 feet of you, causing it to regain hit points by spending a Hit Die. After a creature
+               has spent a Hit Die using this ability, it can't do so again until it finishes a long rest.
+    - title: Surgical Precision
+    - content: You can make attacks with astonishing precision. When you use your Sneak Attack feature on a creature, you can impose one of the following effects on that target
+    - content: Blind - It has disadvantage on the next attack roll it makes until the start of your next turn.
+    - content: Clot - It can't regain hit points until the start of your next turn.
+    - content: Cripple - Its speed is reduced by 10 feet until the start of your next turn.
+    - title: Bloodletting
+    - content: You can treat others of certain ailments using your Doctor's Bag. Doing so takes 10 minutes and causes the creature to lose a Hit Die. If it cannot, this process has no effect. Choose one disease or one 
+               condition afflicting the creature. The condition can be blinded, deafened, paralyzed, poisoned. Alternatively, you can end one effect reducing the target’s hit point maximum.
+    - title: Examine Corpse
+    - content: You can examine the bodies of fallen creatures. If you spend at least 10 minutes dissecting the corpse of a Large or smaller aberration, beast, celestial, dragon, fey, fiend, giant, humanoid, monstrosity,
+               or plant, you learn the anatomy of that creature inside and out. You gain the following benefits towards creatures that share a common creature type with the examined creature
+    - content: You have advantage on attacks made against examined creatures so long as you don't have disadvantage on the attack roll.
+    - content: You can use your Surgical Precision against examined creatures type anytime you hit.
+    - content: You have advantage on any Wisdom (Medicine) checks related to examined creatures.
+    - content: Examining the corpse of a humanoid only allows you to gain these benefits against humanoids that share a race with it (such as gnolls and orcs). You must spend at least 10 minutes of each long rest 
+               reviewing this information in order to maintain these benefits. This effect ends if you study a different creature.
+    - title: Miracle Worker
+    - content: You have mastered medicine's effects on the body, allowing you to wrench the fallen from the cold grasp of death. You can cast the Raise Dead without expending a spell slot using your Doctor's Bag. You       
+               must expend herbs and tonics worth at least 500 gp in order to do so.
+
+  - title: Feats
+  - content: Keen Mind, Sharpshooter, War Caster, Observant, Barbed Hide, Spell Sniper, Lucky, Linguist, Blood Magic
+  - title: Legendary Resistance
+  - content: (3/Day), If Dr. Andreas Stormhollow fails a saving throw he can choose to succeed instead 
+  - title: Legendary Actions 
+  - content: Dr. Andreas Stormhollow can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+             Dr. Andreas Stormhollow regains spent Legendary Actions at the start of his turn
+  - abilities:
+    - title: Rosies Swing
+    - content: Oswald Vardklemp can instruct his Steel Guardian to make an extra attack
+    - title: Gatling Burst
+    - content: Oswald Vardklemp can make an extra attack with his gatling gun
+    - title: Escape Velocity
+    - content: Oswald Vardklemp can summon his Iron Horse, mount it and dash up to 60 feet
+
+  - title: Attacks
+  - content: Can make 2 attacks with his firearms and his Steel Defender can attack twice 
+  - title: Combat Tactics
+  - content: He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run 
+
+  - title: Special Equipment
+  - abilities:
+    - title: Gatling Cannon
+    - cotnent: Fires multiple shots at a single target doing 5d12 damage on a failed Dex save with DC 18, or do a sweeping attack targetting each creature within 30 feet doing 1d12 on a failed Dex save with DC 18. 
+               Range 60/240, Heavy, Two-Handed. Can fire 5 bursts before needing to be reloaded. Reloading takes 1 round.
+    - title: Random Artifact Devices
+    - content: Can be carrying whatever he needs
+    - title: Artificer Glasses
+    - content: Glasses with interchangable lenses that include lenses from Glasses of Hidden Eyes, Eyes of Minute Seeing, Goggles of Indentifying, Eyes of the Eagle, Prismatic Lens and Goggles of Night
+    - title: Steel Defender
+    - content: See character sheet for Rosie 198 for details
+    - title: Iron Horse
+    - content: His Iron Horse is a clockwork motorcycle powered by his Artificer's Infusion. It can move on it's own and answers his call. It has a speed of 60 feet and can take 30HP damage before it stops running.
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Oswald Vardklemp is the founder, leader and head designer of the Collegium Imaginata, a group of loosley aligned artificers, mages and scientists dedicated to the technological advancement of society. Oswald had 
+      gradually made his name as an artificer, building his reputation throughout the land as great and dedicated, if slightly reckless, inventor. One day Oswald was visited in his labratory by a strange traveller. That 
+      visitor was Ral Zarek, Guildmaster of the Izzet League from the plane of Ravnica, and renouned Planeswalker. Master Zarek spoke to Oswald and regaled him with tales of the Izzet and their great world-altering scientific 
+      discoveries back on Ravnica and convinced Oswald of the merits of creating a consortium of ideas and opening a permanent channel of communication with the Izzet League. Oswald then set about, with some financial aid 
+      from the Izzet, bulding Collegium compounds in most major cities throughout the world and inviting prominent artificers, mages and scientists to join, learn, work and share. He continues to function as the leader and 
+      spokesman for the Collegium while continuing his own research and development.
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Oswald Vardklemp is short, even for a rock gnome. He is also quite overweight, about as wide as he is tall. He is bald with a big bushy beard. He wears rumpled clothing and a long (for him) lab coat and his 
+      Artificer's Glasses. Oswald is a brilliant mind and artificer as well as a competent and attention commanding leader. He is driven and devoted, but is known to be gruff and easily infuriated when his work is 
+      interupted. He is also known to be fairly reckless when testing his new devices and contraptions and now and again manages to do some significant damage to Collegium compounds and the surrounding cities with 
+      out of control inventions. He has kept the indentity of of the Collegium's benefactors and their exraplanar origins to himself, but meets quarterly at secret location with Ral Zarek to maintain communication 
+      channels.
