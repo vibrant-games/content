@@ -1,0 +1,2162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dr. Andreas Stormhollow</title>
+
+<link rel="stylesheet" href="file:///D|/Github/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github/docs-index/index.html"><img src="file:///D|/Github/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="./npc_imgs/Dr. Andreas Stormhollow.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+					
+						
+				<span class="npc-heading">
+		  			
+								<h1 >Dr. Andreas Stormhollow</h1>
+						
+								<h2>Middle Aged Adult <br> Tiefling <br> Bloodline of Mephistopheles <br>
+						
+									Neutral Evil<br>
+						
+									Level 15 / 14 / 17 <br> Artificer / Wizard / Doctor <br>Mastermaker / School of Necromancy / Stitcher</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+					</span>
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>he/him</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Scientist/Inventor</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>16</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>154 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>25.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>14 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>17 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>16 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>26 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>20 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>19 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(14);
+											document.getElementById("strmodi").innerHTML = myModi(14);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(17);
+											document.getElementById("dexmodi").innerHTML = myModi(17);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(16);
+											document.getElementById("conmodi").innerHTML = myModi(16);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(26);
+											document.getElementById("intmodi").innerHTML = myModi(26);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(20);
+											document.getElementById("wismodi").innerHTML = myModi(20);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(19);
+											document.getElementById("chamodi").innerHTML = myModi(19);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+									<p>Wisdom</p>
+									
+									<p>Charisma</p>
+									
+									<p>Intelligence</p>
+									
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										Engineering<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+      								
+									
+										Arcana, 
+        							
+									
+										Investigation, 
+        							
+									
+										Perception, 
+        							
+									
+										History, 
+        							
+									
+										Persuasion, 
+        							
+									
+										Insight, 
+        							
+									
+										Tinker&#39;s Tools, 
+        							
+									
+										Thieve&#39;s Tools, 
+        							
+									
+										Smith&#39;s Tools, 
+        							
+      								
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(15 / 14 / 17);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+									<h4>Damage Immunities - </h4>
+					
+									<p>N/A</p>
+					
+								</span> 
+
+								<span class="top-property-line">
+						
+									
+									<h4>Condition Immunities - </h4>
+						
+									<p>N/A</p>
+					
+								</span> 
+					
+								
+								<span class="top-property-line">
+									<h4>Resistances - </h4>
+					
+									<p>Fire, Lightning, Magic</p>
+					
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							Common
+							Gnoll
+							Draconic
+							Sylvan
+							Infernal
+							DeepSpeech
+							Giant
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Brilliant, 
+									Creepy, 
+									Reckless, 
+	
+					
+				</span> 
+				</span>
+
+					
+
+					
+					</div>
+
+	</div>
+			
+				<div class="cell" id="cell6">
+						<span class="data">
+						
+							
+						
+						<span class="npc-heading">
+							
+							<h1>Special Abilities</h1>
+							
+				<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							</span>
+						<span class="right-line-columns">	
+																							
+								
+							<p><b><h4>Tiefling Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Darkvision</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can see in dim light within 60 feet of you as if it were bright light, and in Darkness as if it were dim light. You can’t discern color in Darkness, only Shades of Gray</p2><br>
+							        
+											
+										
+							<p1><b>Hellish Resistance</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have Resistance to fire damage</p2><br>
+							        
+											
+										
+							<p1><b>Legacy of Cania</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You know the Mage Hand cantrip. When you reach 3rd level, you can cast the Burning Hands spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Flame Blade spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Artificer Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Magical Tinkering</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can invest a spark of magic into mundane objects with a touch - Bright Light, Record Message, Record Sound or Odor, Create Picture or Text</p2><br>
+							        
+											
+										
+							<p1><b>Artificer Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Requires Tinker&#39;s Tools as Spellcasting focus</p2><br>
+							        
+											
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>22</p2><br>
+							        
+											
+										
+							<p1><b>Cantrip</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Spare the Dying, Mage Hand, Ray of Frost, Fire Bolt</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Caustic Brew, Detect Magic, Disguise Self, False Life</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Continual Flame, Heat Metal, Invisibility</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Dispel Magic, Fly, Intellect Fortress</p2><br>
+							        
+											
+										
+							<p1><b>4th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Fabricate, Summon Construct, Stoneskin</p2><br>
+							        
+											
+										
+							<p1><b>Infuse Item</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,</p2><br>
+							        
+											
+										
+							<p1><b>Infusions Known</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>10</p2><br>
+							        
+											
+										
+							<p1><b>The Right Tool for the Job</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can produce any set of artisan&#39;s tools with 1 hour work</p2><br>
+							        
+											
+										
+							<p1><b>Tool Expertise</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Smith&#39;s Tool proficiency bonus is doubled</p2><br>
+							        
+											
+										
+							<p1><b>Flash of Genius</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Magic Item Adept</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Crafting items of common or uncommon takes a quarter of the normal time and half the normal cost</p2><br>
+							        
+											
+										
+							<p1><b>Spell Storing Item</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can store a spell in and object once per long rest</p2><br>
+							        
+											
+										
+							<p1><b>Magic Item Savant</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can attune to any magic item regardless of class, race, spell and level requirements</p2><br>
+							        
+											
+										
+							<p1><b>Magic Item Master</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can attune to 6 magic items</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Wizard Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Arcane Recovery</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>After a short rest can recover a spell slot up to 3rd level</p2><br>
+							        
+											
+										
+							<p1><b>Spell Mastery</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Choose a 1st-level Wizard spell and a 2nd-level Wizard spell that are in your Spellbook. You can cast those Spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal</p2><br>
+							        
+											
+										
+							<p1><b>Signature Spells</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Choose two 3rd-level Wizard Spells in your Spellbook as your Signature Spells. You always have these Spells prepared, they don&#39;t count against the number of Spells you have prepared, and you can cast each of them once at 3rd Level without expending a spell slot.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Spellcasting</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>22</p2><br>
+							        
+											
+										
+							<p1><b>Cantrips</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Chill Touch, Sapping Sting, Toll the Dead, Control Flames, Shape Water</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Cause Fear, Ray of Sickness, Silvery Barbs, Magic Missle</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Detect Thoughts, Gentle Repose, Wither and Bloom</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Summon Undead, Speak with Dead, Animate Dead</p2><br>
+							        
+											
+										
+							<p1><b>4th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Blight, Psychic Lance, Gravity Sinkhole</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Negetive Energy Flood, Modify Memory</p2><br>
+							        
+											
+										
+							<p1><b>6th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Create Undead</p2><br>
+							        
+											
+										
+							<p1><b>7th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Finger of Death</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Doctor Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Medical Training</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Due to your meticulous study into the healing arts you can use your Intelligence modifier instead of your Wisdom modifier for Medicine checks. In addition your proficiency bonus is doubled for any Medicine checks that you make.</p2><br>
+							        
+											
+										
+							<p1><b>Doctors Bag</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain access to a number of special supplies due to your medical training. These supplies include things like bandages, syringes, medicinal powders, and healing salves. You keep these in a storage container of your choice such as a bag, a series of pouches, or even a trunk. As long as you have access to your Doctor&#39;s Bag you may use an action to stabilize a creature that has 0 hit points, without needing to make a Medicine check.</p2><br>
+							        
+											
+										
+							<p1><b>First Aid</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can apply basic first aid to an adjacent creature you can touch. As a bonus action you heal the target for 1d4 hit points. This increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.</p2><br>
+							        
+											
+										
+							<p1><b>Second Opinion</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have become accustomed not only to combat, but to coordinating with other healers. Whenever an ally within 20ft of you uses a healing ability, spell, or item, you can use your reaction to increase the amount healed to a single target by half, rounded up. Your ally must be able to see or hear you.</p2><br>
+							        
+											
+										
+							<p1><b>Patch Up</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have learned that there is always another fight around the corner, and it&#39;s best to be ready for it. Select up to 6 willing creatures that you can touch. You spend the next 10 minutes quickly stitching up any open wounds and applying painkillers where needed, whatever it takes to get them to the next battle. This cures them of any non-magical ailments and restores a number of hit points equal to half of their maximum rounded up. You can use this feature a number of times equal to your Intelligence modifier divided by two (a minimum of once). You regain any expended uses when you finish a Long Rest.</p2><br>
+							        
+											
+										
+							<p1><b>Diagnosis</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have learned to treat hostile scenarios as just another day at the office. As an action you study a living creature and gain vital insight towards its physical state. You learn one of the targets following statistics - Damage Vulnerabilities, Damage Resistances, Damage Immunities, Highest Saving Throw, Lowest Saving Throw, or whether or not the creature is below half its health. You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain expended uses when you finish a Short Rest.</p2><br>
+							        
+											
+										
+							<p1><b>Paramedic</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have become experienced at reaching the injured without taking damage. When you use your action to disengage you may also double your movement speed until the end of your turn</p2><br>
+							        
+											
+										
+							<p1><b>Vaccination</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have spent countless hours attempting to aid those suffering from disease and have developed a number of treatments. As an action you can cure a target of a single disease afflicting them. Alternatively, you can inoculate a target against disease for the next 24 hours. In addition, due to exposure from numerous patients the doctor gains immunity to all disease.</p2><br>
+							        
+											
+										
+							<p1><b>Vitality Boost</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have become an expert at healing at a moment’s notice. As an bonus action you can heal an adjacent creature you can touch for 4d6 hit points. This increases by 2d6 when you reach 15th level (6d6). You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.</p2><br>
+							        
+											
+										
+							<p1><b>Reanimation</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You provide life saving aid to a creature that has died within the last 10 minutes and return them to life. The creature returns to life with 1 hit point. This procedure can&#39;t return to life a creature that has died of old age, nor can it restore any missing body parts. You cannot use this feature again until you have completed a short rest.</p2><br>
+							        
+											
+										
+							<p1><b>Experianced Healer</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You are unlikely to fail at common medical tasks. Whenever you make a Medicine check you can treat a d20 roll of 9 or lower as a 10.</p2><br>
+							        
+											
+										
+							<p1><b>Sedate</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have managed to create sedatives using standard supplies. As an action you can inject a willing creature with a sedative that will cause them to go unconscious for 1d4 hours. You can also attempt to inject an unwilling creature for the same effect. An unwilling target must be below one quarter of its maximum hit points for this ability to take effect. They must then succeed a Constitution saving throw or immediately fall unconscious for 1d4 hours.</p2><br>
+							        
+											
+										
+							<p1><b>Practiced Hands</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have performed the same procedures countless times. Whenenever you use a healing ability, item, or other effect that involves a die roll you can add an additional healing die of the same type to the end result, even if the result would otherwise be maximized.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Mastermaker Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>22</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Absorb Elements, Thunderous Smite</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Enhance Ability, Lesser Restoration</p2><br>
+							        
+											
+										
+							<p1><b>9th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Blinding Smite, Haste</p2><br>
+							        
+											
+										
+							<p1><b>13th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Freedom of Movement, Stone Shape</p2><br>
+							        
+											
+										
+							<p1><b>17th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Banishing Smite, Greater Restoration</p2><br>
+							        
+											
+										
+							<p1><b>Tools of Integration</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 3rd level, you gain proficiency with heavy armor and smith’s tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan’s tools of your choice.</p2><br>
+							        
+											
+										
+							<p1><b>Prosthesis Expertise</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 3rd level, whenever you finish a long rest, you can touch a nonmagical object and imbue it with your power, creating a permanent magical item that replaces a lost limb—a hand, arm, foot, leg, or similar body part. While the prosthetic is attached, it functions identically to the part it replaces. The wearer can detach or reattach it as an action, and it can’t be removed against the wearer’s will. It detaches if the wearer dies.</p2><br>
+							        
+											
+										
+							<p1><b>Battlefist</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 3rd level you replace one of your arms with a battlefist, a magical prosthetic you created. Your battlefist is a simple melee weapon, and you can use it as a spellcasting focus for your artificer spells. While your battlefist is a magical weapon, it can be infused as if it were a nonmagical weapon. When you attack with your battlefist, you can use your Intelligence modifier instead of Strength for the attack roll. If you hit with it, you deal bludgeoning damage equal to 1d10 + your Strength or Intelligence modifier. At 9th level, the damage dealt by your battlefist increases to 2d10 + your Strength or Intelligence modifier. Additionally, you can choose one of the following weapon properties to add to your battlefist - finesse, thrown (range 20/60), or reach. When you finish a long rest, you can replace this property with a different weapon property from the list.</p2><br>
+							        
+											
+										
+							<p1><b>Extra Attack</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.</p2><br>
+							        
+											
+										
+							<p1><b>Improved Battlefist</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 9th level, you have modified your battlefist in both mundane and magical ways. It gains the following benefits When you infuse your battlefist, you can apply two infusions to it at a time. If both infusions grant bonuses to your attack rolls or armor class, you gain only the greater bonus. Your battlefist is also a shield, increasing your armor class by 2. You can wield it as a weapon even if you are using it as a shield. You can infuse it as if it were both a simple melee weapon and a shield. The maximum number of items you can infuse at once increases by 1, but the extra infusion must be applied to your battlefist.</p2><br>
+							        
+											
+										
+							<p1><b>Construct Apotheosis</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 15th level you have modified your form, becoming nearly impervious to the weaknesses of flesh. You gain the following benefits You gain resistance to poison damage and psychic damage, and you are immune to the poisoned condition. If you are affected by a spell or magical effect, you can choose to consider yourself a construct instead of your other creature types. You can cast the Antilife Shell and Investiture of Stone spells without expending a spell slot, without preparing the spell, and without material components, provided you use your battlefist as the spellcasting focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>School of Necromancy Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Necromancy Savant</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>The gold and time you must spend to copy a Necromancy spell into your spellbook is halved.</p2><br>
+							        
+											
+										
+							<p1><b>Grim Harvest</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain the ability to reap life energy from creatures you kill with your spells. Once per turn when you kill one or more creatures with a spell of 1st level or higher, you regain hit points equal to twice the spell&#39;s level, or three times its level if the spell belongs to the School of Necromancy. You don&#39;t gain this benefit for killing constructs or undead.</p2><br>
+							        
+											
+										
+							<p1><b>Undead Thralls</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You add the Animate Dead spell to your spellbook if it is not there already. When you cast Animate Dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate. Whenever you create an undead using a necromancy spell, it has additional benefits; The creature&#39;s hit point maximum is increased by an amount equal to your wizard level. The creature adds your proficiency bonus to its weapon damage rolls.</p2><br>
+							        
+											
+										
+							<p1><b>Inured to Undeath</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have resistance to necrotic damage, and your hit point maximum can&#39;t be reduced. You have spent so much time dealing with undead and the forces that animate them that you have become inured to some of their worst effects.</p2><br>
+							        
+											
+										
+							<p1><b>Command Undead</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can use magic to bring undead under your control, even those created by other wizards. As an action, you can choose one undead that you can see within 60 feet of you. That creature must make a Charisma saving throw against your wizard spell save DC. If it succeeds, you can&#39;t use this feature on it again. If it fails, it becomes friendly to you and obeys your commands until you use this feature again. Intelligent undead are harder to control in this way. If the target has an Intelligence of 8 or higher, it has advantage on the saving throw. If it fails the saving throw and has an Intelligence of 12 or higher, it can repeat the saving throw at the end of every hour until it succeeds and breaks free.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Stitcher Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Dark Work</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Your work tends to take you to the underbelly of society, as a result, you gain the Cunning Action and Sneak Attack abilities from the Rogue Class as well as learning  Thieve&#39;s Cant</p2><br>
+							        
+											
+										
+							<p1><b>First Aid</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can use the bonus action granted by your Cunning Action to make a Wisdom (Medicine) check or use a Doctor&#39;s Bag.</p2><br>
+							        
+											
+										
+							<p1><b>Patchwork</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain proficiency with the Doctor&#39;s Bag. You can spend 1 minute using your Doctor&#39;s Bag to treat a willing ally within 5 feet of you, causing it to regain hit points by spending a Hit Die. After a creature has spent a Hit Die using this ability, it can&#39;t do so again until it finishes a long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Surgical Precision</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can make attacks with astonishing precision. When you use your Sneak Attack feature on a creature, you can impose one of the following effects on that target</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Blind - It has disadvantage on the next attack roll it makes until the start of your next turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Clot - It can&#39;t regain hit points until the start of your next turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Cripple - Its speed is reduced by 10 feet until the start of your next turn.</p2><br>
+							        
+											
+										
+							<p1><b>Bloodletting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can treat others of certain ailments using your Doctor&#39;s Bag. Doing so takes 10 minutes and causes the creature to lose a Hit Die. If it cannot, this process has no effect. Choose one disease or one condition afflicting the creature. The condition can be blinded, deafened, paralyzed, poisoned. Alternatively, you can end one effect reducing the target’s hit point maximum.</p2><br>
+							        
+											
+										
+							<p1><b>Examine Corpse</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can examine the bodies of fallen creatures. If you spend at least 10 minutes dissecting the corpse of a Large or smaller aberration, beast, celestial, dragon, fey, fiend, giant, humanoid, monstrosity, or plant, you learn the anatomy of that creature inside and out. You gain the following benefits towards creatures that share a common creature type with the examined creature</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You have advantage on attacks made against examined creatures so long as you don&#39;t have disadvantage on the attack roll.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You can use your Surgical Precision against examined creatures type anytime you hit.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You have advantage on any Wisdom (Medicine) checks related to examined creatures.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Examining the corpse of a humanoid only allows you to gain these benefits against humanoids that share a race with it (such as gnolls and orcs). You must spend at least 10 minutes of each long rest reviewing this information in order to maintain these benefits. This effect ends if you study a different creature.</p2><br>
+							        
+											
+										
+							<p1><b>Miracle Worker</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have mastered medicine&#39;s effects on the body, allowing you to wrench the fallen from the cold grasp of death. You can cast the Raise Dead without expending a spell slot using your Doctor&#39;s Bag. You must expend herbs and tonics worth at least 500 gp in order to do so.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Feats</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Keen Mind, Sharpshooter, War Caster, Observant, Barbed Hide, Spell Sniper, Lucky, Linguist, Blood Magic</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Legendary Resistance</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> (3/Day), If Dr. Andreas Stormhollow fails a saving throw he can choose to succeed instead</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Legendary Actions</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Dr. Andreas Stormhollow can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature&#39;s turn. Dr. Andreas Stormhollow regains spent Legendary Actions at the start of his turn</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Rosies Swing</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Oswald Vardklemp can instruct his Steel Guardian to make an extra attack</p2><br>
+							        
+											
+										
+							<p1><b>Gatling Burst</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Oswald Vardklemp can make an extra attack with his gatling gun</p2><br>
+							        
+											
+										
+							<p1><b>Escape Velocity</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Oswald Vardklemp can summon his Iron Horse, mount it and dash up to 60 feet</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Attacks</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Can make 2 attacks with his firearms and his Steel Defender can attack twice</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Combat Tactics</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> He&#39;ll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Special Equipment</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Gatling Cannon</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Random Artifact Devices</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Can be carrying whatever he needs</p2><br>
+							        
+											
+										
+							<p1><b>Artificer Glasses</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Glasses with interchangable lenses that include lenses from Glasses of Hidden Eyes, Eyes of Minute Seeing, Goggles of Indentifying, Eyes of the Eagle, Prismatic Lens and Goggles of Night</p2><br>
+							        
+											
+										
+							<p1><b>Steel Defender</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>See character sheet for Rosie 198 for details</p2><br>
+							        
+											
+										
+							<p1><b>Iron Horse</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>His Iron Horse is a clockwork motorcycle powered by his Artificer&#39;s Infusion. It can move on it&#39;s own and answers his call. It has a speed of 60 feet and can take 30HP damage before it stops running.</p2><br>
+							        
+											
+									
+
+								
+
+
+
+
+								
+
+	
+							<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="./npc_imgs/Dr. Andreas Stormhollow.png" width="500" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>	
+	
+	
+	
+					<div class="cell" id="cell5">
+						<span class="data">
+						
+						
+						<span class="npc-heading-middle">
+										
+						<h1>5ecology</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>	
+										<span class="right-line">
+								
+										<p>	<h3>Introduction</h3>
+										</p>
+							<br>
+										
+											
+										<p>/&quot;OUT OF THE WAY!!!/&quot; shouts the fat bald gnome as the steam contraption smashes it&#39;s way down the street</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+											<br>
+											<p>Short even by gnome standards, fat, bald and disheveled, wearing multi-lensed thick glasses and a tiny lab coat</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3><br>
+										
+											
+											<p><i>"All science is magic to the untrained eye"</i></p><br>
+											
+											<p><i>"I&#39;ll replace all work beasts with artifice, no more need of horses or oxen"</i></p><br>
+											
+											
+											
+										</span> 
+		
+								</span>
+					
+						<span class="data">
+							
+										<span class="right-line-first">
+			
+										<h3>Mannerisms</h3>
+											<br>
+											<p>gesticulates wildly when he speaks. Constantly fiddles with his multi-lense glasses</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+											<br>
+											<p>The pursuit of knowledge  
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											<br>
+											<p>Artifice!
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+											<br>
+											<p>The Collegium Imaginata is secretly an extraplanar extension of Ravnica&#39;s Izzet League
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+
+				
+							
+			
+				
+							<p><h4>Factions</h4><br></p>
+									
+									
+									
+						<p><b></b><br></p>
+					
+							
+									<br><p>Role: <i></i><br></p><br>
+									
+									
+								<br><br>
+								
+			<div class="container2">
+				
+					<span class="data2" id="bgcell">
+							<span class="npc-heading">
+
+					
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Oswald Vardklemp is the founder, leader and head designer of the Collegium Imaginata, a group of loosley aligned artificers, mages and scientists dedicated to the technological advancement of society. Oswald had 
+gradually made his name as an artificer, building his reputation throughout the land as great and dedicated, if slightly reckless, inventor. One day Oswald was visited in his labratory by a strange traveller. That 
+visitor was Ral Zarek, Guildmaster of the Izzet League from the plane of Ravnica, and renouned Planeswalker. Master Zarek spoke to Oswald and regaled him with tales of the Izzet and their great world-altering scientific 
+discoveries back on Ravnica and convinced Oswald of the merits of creating a consortium of ideas and opening a permanent channel of communication with the Izzet League. Oswald then set about, with some financial aid 
+from the Izzet, bulding Collegium compounds in most major cities throughout the world and inviting prominent artificers, mages and scientists to join, learn, work and share. He continues to function as the leader and 
+spokesman for the Collegium while continuing his own research and development.
+
+								
+  								<h1>Personality</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Oswald Vardklemp is short, even for a rock gnome. He is also quite overweight, about as wide as he is tall. He is bald with a big bushy beard. He wears rumpled clothing and a long (for him) lab coat and his 
+Artificer's Glasses. Oswald is a brilliant mind and artificer as well as a competent and attention commanding leader. He is driven and devoted, but is known to be gruff and easily infuriated when his work is 
+interupted. He is also known to be fairly reckless when testing his new devices and contraptions and now and again manages to do some significant damage to Collegium compounds and the surrounding cities with 
+out of control inventions. He has kept the indentity of of the Collegium's benefactors and their exraplanar origins to himself, but meets quarterly at secret location with Ral Zarek to maintain communication 
+channels.
+
+								
+   
+								</span>
+</span>
+								
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Oswald Vardklemp is short, even for a rock gnome. He is also quite overweight, about as wide as he is tall. He is bald with a big bushy beard. He wears rumpled clothing and a long (for him) lab coat and his 
+Artificer&#39;s Glasses. Oswald is a brilliant mind and artificer as well as a competent and attention commanding leader. He is driven and devoted, but is known to be gruff and easily infuriated when his work is 
+interupted. He is also known to be fairly reckless when testing his new devices and contraptions and now and again manages to do some significant damage to Collegium compounds and the surrounding cities with 
+out of control inventions. He has kept the indentity of of the Collegium&#39;s benefactors and their exraplanar origins to himself, but meets quarterly at secret location with Ral Zarek to maintain communication 
+channels.
+
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+				
+		</div>	
+	</div>
+-->
+
+						
+			  </body>
+
+</html>
