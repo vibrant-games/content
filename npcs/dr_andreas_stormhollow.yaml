@@ -336,7 +336,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: N/A
+    - id: stormhollow_prosthetic_industries
+      name: Stormhollow Prosthetic Industries
+      role: Founder and Leader
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -345,8 +347,8 @@ npc:
     #
     adjectives:
     - Brilliant
-    - Creepy
-    - Reckless
+    - Charismatic
+    - Sercetive
 
   improv:
 
@@ -361,7 +363,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  /"OUT OF THE WAY!!!/" shouts the fat bald gnome as the steam contraption smashes it's way down the street
+    introduction:  The exceedingly well dressed Tiefling in his lab coat appraises the missing limb, "Yes, yes, I think we can help you with that"
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -372,7 +374,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Short even by gnome standards, fat, bald and disheveled, wearing multi-lensed thick glasses and a tiny lab coat
+    appearance:   Tall and thin with reddish skin and black hair. Small pointed horns and always impeccably well dressed. He has golden eyes and and close cropped facial hair
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -389,8 +391,9 @@ npc:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
     expressions:
-    - "All science is magic to the untrained eye"
-    - "I'll replace all work beasts with artifice, no more need of horses or oxen"
+    - "All science and magic are two sides of the same coin"
+    - "The living body is soft, I can improve every part of it"
+    - "It's Alive! ALIVE!!!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -403,7 +406,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   gesticulates wildly when he speaks. Constantly fiddles with his multi-lense glasses
+    mannerisms:  Immaculate posture, always projects confidence and an air of stillness around him
 
   acting:
     #
@@ -413,7 +416,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      The pursuit of knowledge  
+      The pursuit of... knowledge  
 
     #
     # Passions:
@@ -422,7 +425,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Artifice!
+      Improving humanity (humanoids)
 
     #
     # Vulnerabilities:
@@ -431,7 +434,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      Reckless in his pusuit of knowledge
+      He has a lot of ego and a lot of secrets
 
     #
     # Secrets:
@@ -440,22 +443,22 @@ npc:
     # ???Maximum length???
     #
     secrets: |
-      The Collegium Imaginata is secretly an extraplanar extension of Ravnica's Izzet League
+      He is a powerful necromancer and a skilled stitcher and his true skill lies in meddling with the undead
 
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 16
-    hit-points: 154
-    speed: 25
-    str: 14
-    dex: 17
-    con: 16
-    int: 26
-    wis: 20
-    cha: 19
+    armour-class: 22
+    hit-points: 241
+    speed: 30
+    str: 13
+    dex: 19
+    con: 15
+    int: 27
+    wis: 18
+    cha: 24
 
   #
   # Special characteristics.
@@ -470,22 +473,22 @@ npc:
     - Charisma
     - Intelligence
     damage-immunities:
-    - N/A
+    - Fire, Psychic, Poison and Necrotic
     condition-immunities:
-    - N/A
+    - Exhaustion, Poisoned, Diseased
     resistances:
-    - Fire, Lightning, Magic
+    - Magic, Piercing, Slashing and Bludgeoning Damage, Acid
     skills:
-    - Engineering
+    - Life Sciences
     proficiencies:
     - Arcana
     - Investigation
     - Perception    
-    - History
+    - Medicine (Int instead of Wis)
     - Persuasion
     - Insight
     - Tinker's Tools
-    - Thieve's Tools
+    - Doctor's Bag
     - Smith's Tools
   special-abilities:
   - title: Tiefling Abilities
@@ -518,7 +521,7 @@ npc:
     - title: Infuse Item
     - content: Imbue mundane items with magical infusions, turnig them into magic items. Can attune to that item immediately,
     - title: Infusions Known
-    - content: 10
+    - content: 11
     - title: The Right Tool for the Job
     - content: Can produce any set of artisan's tools with 1 hour work
     - title: Tool Expertise
@@ -639,9 +642,9 @@ npc:
     - content: At 5th level, you can attack twice, rather than once, whenever you take the Attack action on your turn.
     - title: Improved Battlefist
     - content: At 9th level, you have modified your battlefist in both mundane and magical ways. It gains the following benefits
-               When you infuse your battlefist, you can apply two infusions to it at a time. If both infusions grant bonuses to your attack rolls or armor class, you gain only the greater bonus.
-               Your battlefist is also a shield, increasing your armor class by 2. You can wield it as a weapon even if you are using it as a shield. You can infuse it as if it were both a simple melee weapon and a shield.
-               The maximum number of items you can infuse at once increases by 1, but the extra infusion must be applied to your battlefist.
+    - content: When you infuse your battlefist, you can apply two infusions to it at a time. If both infusions grant bonuses to your attack rolls or armor class, you gain only the greater bonus.
+    - content: Your battlefist is also a shield, increasing your armor class by 2. You can wield it as a weapon even if you are using it as a shield. You can infuse it as if it were both a simple melee weapon and a shield.
+    - content: The maximum number of items you can infuse at once increases by 1, but the extra infusion must be applied to your battlefist.
     - title: Construct Apotheosis
     - content: At 15th level you have modified your form, becoming nearly impervious to the weaknesses of flesh. You gain the following benefits
                You gain resistance to poison damage and psychic damage, and you are immune to the poisoned condition.
@@ -698,38 +701,69 @@ npc:
                must expend herbs and tonics worth at least 500 gp in order to do so.
 
   - title: Feats
-  - content: Keen Mind, Sharpshooter, War Caster, Observant, Barbed Hide, Spell Sniper, Lucky, Linguist, Blood Magic
+  - content: Keen Mind, War Caster, Observant, Barbed Hide, Spell Sniper, Lucky, Linguist, Blood Magic, Slasher, Dual Weilder
   - title: Legendary Resistance
   - content: (3/Day), If Dr. Andreas Stormhollow fails a saving throw he can choose to succeed instead 
   - title: Legendary Actions 
   - content: Dr. Andreas Stormhollow can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
              Dr. Andreas Stormhollow regains spent Legendary Actions at the start of his turn
   - abilities:
-    - title: Rosies Swing
-    - content: Oswald Vardklemp can instruct his Steel Guardian to make an extra attack
-    - title: Gatling Burst
-    - content: Oswald Vardklemp can make an extra attack with his gatling gun
-    - title: Escape Velocity
-    - content: Oswald Vardklemp can summon his Iron Horse, mount it and dash up to 60 feet
+    - title: Drain Life
+    - content: Dr. Andreas Stormhollow targets a creature within 30', it must make a DC 18 Constitution saving throw at the start of each of its turns, taking 4d6 necrotic damage on a failed save, or half as much damage on a 
+               successful one. Dr. Andreas Stormhollow gain Hit Points equal to the damage done
+    - title: Call The Dead
+    - content: Dr. Andreas Stormhollow can cast the Summon Undead spell at 5th Level without using a spell slot or components. In addition when he does this it also has the effect of using his necromancer's Command Undead 
+               ability on any unintelligent (8 or lower) within 100 feet 
+    - title: Misty Escape
+    - content: Dr. Andreas Stormhollow can cast Misty Step without using a spell slot or components
 
   - title: Attacks
-  - content: Can make 2 attacks with his firearms and his Steel Defender can attack twice 
+  - content: Can make 2 martial or spell attacks 
   - title: Combat Tactics
-  - content: He'll go out of his way to avoid direct physical combat but will range attack with his firearms and send his Steel Defender in for close quarters combat. If his Steel Defender falls, he will run 
+  - content: He'll go out of his way to avoid direct physical combat but can handle himself if he has to. He prefers to summon his "servants" to do his fighting for him
 
   - title: Special Equipment
   - abilities:
-    - title: Gatling Cannon
-    - cotnent: Fires multiple shots at a single target doing 5d12 damage on a failed Dex save with DC 18, or do a sweeping attack targetting each creature within 30 feet doing 1d12 on a failed Dex save with DC 18. 
-               Range 60/240, Heavy, Two-Handed. Can fire 5 bursts before needing to be reloaded. Reloading takes 1 round.
-    - title: Random Artifact Devices
-    - content: Can be carrying whatever he needs
+    - title: Thirsting Scalpel
+    - cotnent: You gain a +1 bonus to attack and damage rolls with this magic weapon, which deals slashing damage instead of piercing damage. When you attack a creature with this weapon and roll a 20 on the attack roll, that 
+               target takes an extra 2d6 slashing damage. If the target is a creature other than an undead or construct, it must succeed on a DC 13 Constitution saving throw or lose 2d6 hit points at the start of each of its 
+               turns from a bleeding wound. Any creature can take an action to stanch the wound with a successful DC 11 Wisdom (Medicine) check. The wound also closes if the target receives magical healing. Curse. This scalpel 
+               is cursed and contains a bearded devil’s essence. Becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the scalpel, keeping it on your person at all times.
+    - content: While attuned to this weapon. In addition, once every 7 days while the scalpel is on your person, you must succeed on a DC 15 Charisma 
+               saving throw or become driven to feed blood to the scalpel. You have advantage on attack rolls with the scalpel until it is sated. The dagger is sated when you roll a 20 on an attack roll with it, after you deal 
+               14 slashing damage with it, or after 1 hour elapses. If the hour elapses and you haven’t sated its thirst for blood, the dagger deals 14 slashing damage to you. If the dagger deals damage to you as a result of the
+               curse, you can’t heal the damage for 24 hours. The remove curse spell removes your attunement to the item and frees you from the curse. Alternatively, casting the banishment spell on the dagger forces the bearded 
+               devil’s essence to leave it. The scalpel then becomes a +1 dagger with no other properties.
+    - title: High Surgeon's Scalpel
+    - content: Counts as a magic dagger that deals 2d4 slashing damage.
+    - content: Medical Mastery - The High Surgeon's Scalpel grants you advantage on all Medicine checks made during surgical operations.
+    - content: Cutting Edge - When you attack a creature with this scalpel and score a critical hit, that target takes an extra 14 slashing damage.
+    - content: Cauterize - While wielding this scalpel you can use a bonus action to superheat its blade for 1 minute or until you end the effect (no action required). While superheated, the scalpel deals an extra 1d8 fire 
+               damage and can be used to instantly cauterize any wound This property can't be used again until the next dawn.
     - title: Artificer Glasses
     - content: Glasses with interchangable lenses that include lenses from Glasses of Hidden Eyes, Eyes of Minute Seeing, Goggles of Indentifying, Eyes of the Eagle, Prismatic Lens and Goggles of Night
-    - title: Steel Defender
-    - content: See character sheet for Rosie 198 for details
-    - title: Iron Horse
-    - content: His Iron Horse is a clockwork motorcycle powered by his Artificer's Infusion. It can move on it's own and answers his call. It has a speed of 60 feet and can take 30HP damage before it stops running.
+    - title: Ring of Evasion
+    - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving 
+               throw instead.
+    - title: Ring of Mind Shielding
+    - content: While wearing this ring, you are immune to magic that allows other Creatures to read your thoughts, determine whether you are lying, know your Alignment, or know your Creature Type. Creatures can telepathically 
+               communicate with you only if you allow it.
+    - content: You can use an action to cause the ring to become Invisible until you use another action to make it visible, until you remove the ring, or until you die.
+    - content: If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for The Afterlife. As long as your soul is in the ring, you can telepathically 
+               communicate with any creature wearing it. A wearer can't prevent this Telepathic Communication.
+    - title: Steel Hide
+    - content: Over the years, the good doctor has replaced most of his body with metal, becoming more construct than man. More specifically, he has amassed various magical armors and metals that provide various benefits for 
+               attacks and defenses
+    - content: Anti-Mage Armor - when you are targeted by a spell of 5th level or lover, you can use your reaction to interrupt casting, the spell fails and has no effect. You can use this property twice, and regain ability to 
+                                 do so at dawn.
+    - content: Blade Breaker Armor - While you wear this armor, whenever a creature attacks you with a nonmagical melee weapon and rolls a 1 on its attack roll, the creature's weapon is destroyed. This does not apply to claws, 
+                                     bites and other natural weapons.
+    - content: Spider Plate - While you are wearing this armor, you can use an action to speak its command word. This causes your legs to vanish and be replaced with eight long, spindly legs for 1 hour or until you die or use a 
+                              bonus action to end the effect. While activated, your base walking speed becomes 40 feet, you do not gain disadvantage on Dexterity (Stealth) checks despite wearing plate, you gain a climbing speed 
+                              of 40 feet, and you are also not inconvenienced by difficult terrain. Once this property of the armor has been used, it cannot be used again until the next dawn.
+    - content: +3 Adamant Mithral Armor - a blend of mithral and adamantine giving it close to the hardness of adamantine yet the light weight and stealthiness of mithril. While you're wearing it, any critical hit against you 
+                                          becomes a normal hit. The mithral component negates the stealth disadvantage and strength requirement for this armor. While attached this gives him an extra +1 bonus to his AC.
+
 
   profile:
 
@@ -741,12 +775,15 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Oswald Vardklemp is the founder, leader and head designer of the Collegium Imaginata, a group of loosley aligned artificers, mages and scientists dedicated to the technological advancement of society. Oswald had 
-      gradually made his name as an artificer, building his reputation throughout the land as great and dedicated, if slightly reckless, inventor. One day Oswald was visited in his labratory by a strange traveller. That 
-      visitor was Ral Zarek, Guildmaster of the Izzet League from the plane of Ravnica, and renouned Planeswalker. Master Zarek spoke to Oswald and regaled him with tales of the Izzet and their great world-altering scientific 
-      discoveries back on Ravnica and convinced Oswald of the merits of creating a consortium of ideas and opening a permanent channel of communication with the Izzet League. Oswald then set about, with some financial aid 
-      from the Izzet, bulding Collegium compounds in most major cities throughout the world and inviting prominent artificers, mages and scientists to join, learn, work and share. He continues to function as the leader and 
-      spokesman for the Collegium while continuing his own research and development.
+      Dr. Andreas Stormhollow is a world renouned surgeon and a pioneer in both the science and magic of amputation and prosthetics. Starting his career as a young combat medic he quickly gained experience in and an affinity
+      for quick and skillful amputation. After the wars of his youth, he dedicated himself to helping veterans and developed important breakthroughs in the science and spellcraft of creating prosthetic limbs. His proclivity and 
+      renoun attracted the attention of Oswald Vardklemp, who invited him to become a founding member of the Collegium Imaginata, which he greatfully accepted. After joiningn the Collegium, he met and began a relationship 
+      with remouned chemist Robert Holmestar, they became lovers and research partners until Robert was kidnapped by a cult and sacrificed to their patron god. Arriving to late to save his love, Andreas collected his remains,
+      brought them back to his lab and with the help of Thadeus Periwinkle and Ulther Hapwath, they attempted to rebuild and revive Robert. Using a mix of chemistry, biology, mechanics, artificer's magic and a healthy dose of
+      forbidden Necromancy, they succeeded in form only, creating a mindless monster in a rough approximation of his former love. Andreas took all of the heat for the failed attempt and the use of necromancy, covering for Ulther
+      and Thadeus, and was excommunicated from the Collegium. Seperated from his friends, colleagues and lover, Andreas was left to his own devices, but still had his money, influence and renoun in the medical community. He struck
+      out in his own practice, began building his own collective to rival the Collegium and mass producing affordable prosthetic limbs. All the while, he still longed for the return of his love and delved deeper and deeper into 
+      the study of Necromancy and it's practical medical sibling; Stitching, trying to find a way to bring him back.
 
     #
     # Personality (or something like that):
@@ -757,8 +794,9 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Oswald Vardklemp is short, even for a rock gnome. He is also quite overweight, about as wide as he is tall. He is bald with a big bushy beard. He wears rumpled clothing and a long (for him) lab coat and his 
-      Artificer's Glasses. Oswald is a brilliant mind and artificer as well as a competent and attention commanding leader. He is driven and devoted, but is known to be gruff and easily infuriated when his work is 
-      interupted. He is also known to be fairly reckless when testing his new devices and contraptions and now and again manages to do some significant damage to Collegium compounds and the surrounding cities with 
-      out of control inventions. He has kept the indentity of of the Collegium's benefactors and their exraplanar origins to himself, but meets quarterly at secret location with Ral Zarek to maintain communication 
-      channels.
+      Dr. Andreas Stormhollow is a tall and lithe tiefling with small pointed horns. His skin is the reddish color of a bad sunburn, he has golden colored eyes and jet black hair with clight bits of salt and pepper at the edges.
+      He has short, well maintained facial hair and is always impeccably dressed under his lab coat. Andreas always maintains an exceptionally professional and stable demeanor while in public. He is a brilliant and well respected
+      doctor, scientist and buisiness ownder in the eyes of the public and his staff. In private however, Dr. Stormhollow has cracked. The loss of his love and station within the Collegium, and his foray into necromancy, has left
+      Andreas more than a little on the mad side. He has embraced his devil heritage and delved deep into the studies of necromancy and stitching. He has become obsessed with the undead and unlife. His private experiments have
+      gotten more and more extreme as he searches for a way to restore his love, Robert, to his former self. With the exception of Thadeus Periwinkle and Ulther Hapwath, who he is periodically in contact with, and helps their 
+      research when he can, he considers the rest of the Collegium and Oswald Vardklemp in particular to be his enemies and rivals for refusing to help him recover Robert and for keeping Robert's monsterous reborn form captive.
