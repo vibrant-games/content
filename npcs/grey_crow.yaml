@@ -1,0 +1,818 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: grey_crow
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2022-03-26"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Grey Crow
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: Elderly
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Changeling
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: N/A
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: She/her
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Agent of Chaos and Prophet of Doom
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Druid / Shaman
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Circle of the Blighted / Curse-Binder
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 20 / 20
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - All
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Sneaky
+    - Cunning
+    - Deceitful
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  A previously unseen old lady walks out of the darkness and sits down beside the party at their comp fire
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   She appears to look like anything she wants, usually something unsettling to the party. She however is almost always dressed in ragged leathers and bare foot
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:
+    - "Greetings children, may an old lady warm herself by your fire"
+    - "Your quest was doomed from the start, children"
+    - "There is only folly on the path you now take"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:  usually appears as a shrivelled old lady with a rye grin and deep empty eyes
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      To bring about the end  
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Sewing fear, mistrust and chaos
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      Insane
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      She is an ancient being that works for the Forbidden Gods attempting to sew enough fear and chaos for them to find their way back into the world
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 21
+    hit-points: 311
+    speed: 30
+    str: 17
+    dex: 15
+    con: 18
+    int: 20
+    wis: 29
+    cha: 23
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    saving-throws:
+    - Wisdom
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - Poison, Psychic, Poison and Necrotic
+    condition-immunities:
+    - Exhaustion, Poisoned, Diseased
+    resistances:
+    - Magic, Cold, Lightning
+    skills:
+    - Herbalism
+    proficiencies:
+    - Arcana
+    - Nature
+    - Survival
+    - Performance
+    - Intimidation
+    - Perception    
+    - Deception
+    - Persuasion
+    - Insight
+    - Herbalist's Kit
+  special-abilities:
+  - title: Changeling Abilities
+  - abilities: 
+    - title: Shapechanger
+    - content: As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight, but
+               not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of a creature you've never seen,
+               and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait. You stay in the new form until you use an action to revert to
+               your true form or until you die.
+    - title: Changeling Instincts
+    - content: You gain proficiency in Deception and Persuasion.
+  - title: Shaman Abilities
+  - abilities:
+  - title: Shaman Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 23
+    - title: Cantrips
+    - content: Chill Touch, Dancing Lights, Infestation, Poison Spray, Minor Illusion, Produce Flame  
+    - title: 1st Level
+    - content: Charm Person, Create of Destroy Water, Detect Magic, Thunderwave   
+    - title: 2nd Level
+    - content: Alter Self, Heat Metal, Phantasmal Force
+    - title: 3rd Level 
+    - content: Dispel Magic, Counterspell, Nondetaction  
+    - title: 4th Level
+    - content: Banishment, Polymorph, Confusion
+    - title: 5th Level 
+    - content: Antilife Shell, Dream, Scrying
+    - title: 6th Level
+    - content: Globe of Invulnerability, Wind Walk
+    - title: 7th Level
+    - content: Mirage Arcane, Reverse Gravity
+    - title: 8th Level
+    - content: Antimagic Field
+    - title: 9th Level
+    - content: True Polymorph
+    - title: Sixth Sense
+    - content: You can see and speak with spirits. You can see up to 60 ft into the Ethereal Plane while in the Material Plane, and vice versa. You can also gain some benefits after communing with nature for 1 minute.
+               When you forage alone, you find twice as much as you normally would.
+               You can move stealthily at a normal pace.
+               You are aware of recent events in the region, like storms, landslides, etc.
+    - title: Spiritual Animal
+    - content: You can cast the "Find Familiar" spell as a ritual. Your familiar is always an undead. Your familiar is a spirit, which means it can see 60 ft into the Ethereal Plane while in the Material Plane and 
+               vice versa, it can pass through other creatures and objects (it takes 1d10 force damage if it ends its turn on an occupied space), it doesn't have a walking speed, instead, it has a flight speed of 40ft 
+               and it can hover (familiars that already have flight speeds keep their value, but lose their walking speed like the others) and it can become invisible with an action.
+    - title: Spiritual Possession
+    - content: You can use your action to enter a trance and allow a beastly spirit to possess your body, giving you the abilities of the spirit. You can use this feature twice. You regain expended uses when you 
+               finish a short or long rest. (Optional Rule - the Shaman must have collected the spirit of the animal you wish to channel. to collect you must be aware of the spirit of a creature that meets the 
+               requirements and succeed on an animal handling check. When using this rule some monstrosities such as winter wolf may be allowed). Your shaman level determines the spirit that can possess you. 
+               You can be possessed by the spirit of a beast with a CR of no more than half your shaman level (rounded down). When you channel you do not gain lair actions or legendary resistances. You can maintain 
+               the possession by a number of hours equal to half your shaman level (rounded down). You then end the possession unless you expend another use of this feature.. You can also end the possession with a 
+               bonus action in your turn. You automatically end the possession if you fall to 0 hit points, or die. While you are possessed, the following rules apply 
+    - content: 1. Some of your game statistics are replaced by the statistics of the beast whose spirit is possessing you. Those being, its Strength, Dexterity and Constitution scores, its attacks, its senses and 
+                  any other personal features. You don't gain its hit points, AC, or any special types of movement (like flight). Changes in Dex or Con do not effect your AC or HP and only apply for the sake of 
+                  checks, saves, and attacks.
+    - content: 2. When you use your action to make an attack from your possessing spirit it appears as a spectral apparition of the attack, and while you deal the damage type and dice of the attack, you still use 
+                  your weapon on the attack, so, if you use a ranged weapon, like a bow, you can still make any attack from your spirit, like a bite attack. Also, any extra damage, or bonus to attack rolls you gain 
+                  from magical weapons still affect your spirit attacks.
+    - content: 3. Your spirit's senses overlap yours, so you lose any senses you possess that your spirit doesn't posses with exception to your ethereal sight.
+    - content: 4. At level 7 your spirit's attacks are considered magical for the purpose of overcoming resistance and immunity against nonmagical damage and attacks. When you reach 11th level, you gain temporary 
+                  hit points equal to your shaman level when you become possessed. These hit points last until the end of the possession.
+    - title: Shamanistic Ascension
+    - content: You choose a Shamanistic Ascension that show how to you use your connection with the spirits; Totem of Elements and Totem of Spirits. You gain additional features from your shamanistic ascension 
+               at levels 6, 10, and 14.
+    - content: Totem of Spirits
+    - content: When you choose the shamanistic ascension of the Totem of Spirits, you wish to deepen your connection to the spirits around you, surround yourself in their presence, and count on them to help you.
+    - content: Mortuary Totem - At 3rd Level, you have a totem that serves as a mortuary tablet, where your spirits can reside. You can use your Spirit Possession with a bonus action, rather than your action. Also, once per long
+                                rest you can swap your current spirit and be possessed by a different one. This change doesn't affect the duration of the possession (so, if there were only 3 minutes left, your new spirit stays 
+                                in you for only 3 minutes). A sudden change like that is vary taxing, you gain 1 level of exhaustion after your possession ends if you used this feature during it.
+    - content: Spiritual Medium - At 6th level you have learned a way to strengthen your bond with your spirits. If you have a medium that connects a spirit to its original existence (like bear claws for a bear spirit), you can 
+                                  use it to draw out more power from it. You spirit gains a more physical form, the aura around you becoming denser. Your spirit's attacks damage type becomes force damage. And you can spend spell
+                                  slots to increase this damage. You gain 1 more dice of damage per level of spell slot used this way (black bear's bite with a 4th level spell slot would deal 5d6 force damage, instead of the 
+                                  normal 1d6). This increase in damage lasts until the end of your current turn.
+    - content: Spirit Senses - At level 10 you are able to detect the presence of spirits even at great distances. As an action you allow your connection to the ethereal plane guide your senses to these creatures. For 10 minutes
+                               you know the location of any creature of the undead type within 100 ft of you. With another action you can increase your focus and learn 2 things
+    - content: The exact number of creatures you're sensing.
+    - content: You gain a glimpse of their power. The DM gives tells you if the creature is - weak (CR 0 to 1), average (CR 2 to 4), strong (CR 5 to 9), powerful (CR 10 to 15), fearsome (CR 15 to 20), terrifying (CR 21 to 26), 
+               monstrous (CR 27 to 30).
+    - content: You can use this feature once per short or long rest.
+    - content: Spiritual Armor - Starting at level 14 you are able to create a special totem, that is able to condense your possessing spirit into a much denser aura. With a bonus action you activate this form that lasts for 1 
+                                 minute. While in this form you gain a number of temporary hit points equal to your shaman level times your Wisdom modifier, to a maximum of 5 (if your modifier is higher than 5, treat it as a 5 
+                                 when calculating these hit points).
+    - content: This feature can be used once. To use it again you must finish a long rest.
+    - title: Bridge Between Worlds
+    - content: You can, once every long rest, with your strong spiritual power, create a number of totems equal to your wisdom Modifier + 2. These totems can be used by your allies, connecting them with the 
+               Ethereal Plane, allowing them to see what you see. The totems can be activated with a bonus action. For 1 hour your allies, who activated their totems, can see into the ethereal plane just like
+               you.
+    - title: Vengeful Spirits
+    - content: Then targeting a creature with a spell that forces them to make a Wisdom saving throw you can choose to loose angry spirits along with the spell. Once per short rest, you can use this feature to make 
+               the target make their initial Wisdom saving throw at disadvantage. On a failed saving throw the spirits torment the target's mind, causing the spell to deal double damage, or last twice as long, your 
+               choice if the spell has a duration and causes damage. On a success, nothing happens.
+    - title: Grand Shaman
+    - content: You can use your Spirit Possession an unlimited number of times. Additionally, you can ignore the verbal and somatic components of your shaman spells, as well as any material components that lack a cost and 
+               aren’t consumed by a spell.      
+  - title: Druid Abilities
+  - abilities:
+  - title: Druid Spellcasting
+  - abilities: 
+    - title: Spell DC
+    - content: 23
+    - title: Cantrips
+    - content: Druidcraft, Primal Savagery, Frostbite, Shape Water   
+    - title: 1st Level
+    - content: Entangle, Fog Cloud, Ice Knife, Speak with Animals
+    - title: 2nd Level
+    - content: Hold Person, Earthbind, Moonbeam
+    - title: 3rd Level
+    - content: Call Lightning, Speak with Plants, Plant Growth
+    - title: 4th Level
+    - content: Hallucinatory Terrain, Grasping Vine, Dominate Beast
+    - title: 5th Level
+    - content: Awaken, Insect Plague, Tree Stride
+    - title: 6th Level
+    - content: Investiture, Flesh to Stone
+    - title: 7th Level
+    - content: Fire Storm, Plane Shift
+    - title: 8th Level
+    - content: Feeblemind
+    - title: 9th Level
+    - content: Storm of Vengeance
+    - title: Druidic
+    - content: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
+               message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.
+    - title: Wild Shape
+    - content: You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
+               determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
+               flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
+               You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
+    - title: Timeless Body
+    - content: The primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year
+    - titles: Beast Spells
+    - content: You can cast many of your Druid Spells in any shape you assume using Wild Shape. You can perform the somatic and verbal Components of a druid spell while in a beast shape, but you aren't able to provide 
+               Material Components
+    - ttile: Archdruid
+    - content: You can use your Wild Shape an unlimited number of times. Additionally, you can ignore the verbal and somatic Components of your Druid Spells, as well as any Material Components that lack a cost and aren't 
+                    consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape.
+  - title: Curse-Binder Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities:
+    - title: Spell DC
+    - content: 23
+    - title: 3rd Level
+    - content: Blindness/Deafness, Ray of Enfeeblement
+    - title: 5th Level
+    - content: Bestow Curse, Vampiric Touch 
+    - title: 7th Level
+    - content: Blight, Phantasmal Killer
+    - title: 9th Level
+    - content: Contagion, Enervation
+    - title: Primal Curse
+    - content: You learn to twist the life essence of a creature, hindering their abilities. As an Action, you can choose to inflict one of the following Primal Curses on a crature you can see within 30 feet. The Primal 
+    - content: Curse lasts for 1 minute unless you use an action to to end the effect or become uncoscious. Once you've cursed a creature, using this feature again causes the effect of the previous curse to end 
+               immediately. Upon reaching 11th Level you can have up to 2 of your Primal Curses active at one time. At 17th Level you can have up to 3 Primal Curses active at one time. A single creature can onle be 
+               effected by 1 Primal Curse at a time.
+    - content: Curse of Blinding - You force a creature to makea Strength Saving Throw. On a failed save it's movement speed is reduced to five times your Wisdom modifier (minimum of 5 feet). The creature repeats the 
+                                   saving throw at the end of each turn, ending the effect on a success 
+    - content: Curse of Draining - You force a creature to make a Constitution Saving Throw. On a failed save it takes 1d4 necrotic damage and cannot gain hit points. The creature repeats the saving throw at the end of 
+                                   each turn taking and additional 1d4 necrotic damage on each failed save, ending the effect on a success
+    - content: Curse of Lethargy - You force a creature to make a Wisdom Saving Throw. On a failed save the creature must subtract your Wisdom modifier (minimum of 1) from its attack rolls. The creature repeats the 
+                                   saving throw at the end of each turn, ending the effect on a success
+    - title: Evil Eye
+    - content: You learn to twist the life-esscnce of those around you in harmful ways. When a creature that you can see within 30 feet makes an ability check. attack roll or saving throw. you can use 
+               your reaction to impose disadvantage on the roll You may use this ability a number of times equal to your Wisdom modifter (minimum of 1} and you regain all expended uses when you finish a long rest.
+    - title: Potent Spellcasting
+    - content: Your practice of twisted magic has made your abilities more powerful. When you damage a creature with a cantrip or Primal Curse you gain a bonus to the damage roll equal to your Wisdom modifier (minimum of 1)
+    - title: Shamanistic Ward
+    - content: You can ward yourself against specific magical effects. At the end of a long rest choose acid, cold, fire. lightning. necrotic, poison. psychic. radiant, or thunder damage. You gain resistance to that 
+               damage type untll the end of your next long rest. Attacks made with silver weapons ignore any damage resistance you gain from this ability.
+    - title: Foul Conjuration
+    - content: You have reached the plnnacle of foul shamanism and learn to conjure spirits of darkness. Upon reaching 14th level. you can cast Create Undead as a 6th level spell, without providing any of the 
+               material components or expending a spell slot. Spirits rise out of the ground in the shape of the undead you summon. They are under your control until the end of your next long rest, or unti1 they are 
+               destroyed Once you use this ability you must complete a long rest before you can cast Create Undeadd In this way again.
+  - title: Circle of the Blighted Abilities
+  - abilities: 
+    - title: Defile Ground
+    - content: Starting at 2nd level when you choose this circle, you can use a bonus action to corrupt a patch of land or an area of water in a 10-foot radius centered on a point within 60 feet of you. This corruption lasts for
+               1 minute. The corrupted area is difficult terrain for creatures that are hostile to you. Additionally, when a creature in the area takes damage from an attack or spell for the first time on a turn, it takes an 
+               extra 1d4 necrotic damage. You can move this patch of corruption up to 30 feet as a bonus action. Flying creatures are unaffected by the corruption.
+    - content: Starting at 10th level, the area of your defiled ground increases to a 20-foot radius. Additionally, the extra damage dealt by your defiled ground increases to 1d6 when you reach 10th level in this class, and 1d8 
+               at 14th level.
+    - content: Once you use this feature, you can’t use it again until you finish a short or long rest.
+    - title: Blighted Shape
+    - content: Also at 2nd level, your physical form begins to show effects of the corruption you wield, tracing blackened veins across your skin, producing gnarled, bony protrusions, or other eerie phenomena. You gain 
+               proficiency in the Charisma (Intimidation) skill.
+    - content: Additionally, while you are transformed by you Wild Shape feature, you gain a +2 bonus to AC as gnarled spines protrude from your body. Your beast form also gains darkvision with a radius of 60 feet, or an 
+               additional 60 feet of darkvision if it already has that sense.
+    - title: Call of the Shadowseeds
+    - content: At 6th level, you learn to summon the feral children of the forest from the life force of your enemies. When a creature that is not undead or a construct takes damage within the area of your Defile Ground feature,
+               you can use your reaction to summon a blighted sapling in an unoccupied space within 5 feet of the creature. You can direct the sapling to make an attack against any creature within 5 feet of it as a part of this 
+               reaction. The sapling then acts on your initiative, obeying your verbal commands.
+    - content: The blighted sapling remains in your service until it’s reduced to 0 hit points, until the end of your next long rest, or until you summon another sapling, at which point it crumbles into foul-smelling mulch. You 
+               can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.
+    - content: The sapling uses the statistics below. Its features scale based on your level and proficiency bonus (PB).
+    - content: Blighted Sapling
+    - content: Medium plant
+    - content: Armor Class - 10 + PB (natural armor)
+    - content: Hit Points - twice your druid level
+    - content: Speed: 30 ft.
+    - content: STR 8(-1) DEX 13(+1) CON 12(+1) INT 4(-3) WIS 8(-1) CHA 3(-4)
+    - content: Damage Vulnerabilities - fire
+    - content: Damage Resistances - necrotic, poison
+    - content: Condition Immunities - blinded, deafened, poisoned
+    - content: Senses - blindsight 60 ft. (blind beyond this radius), passive Perception 9
+    - content: Languages - understands the languages you speak
+    - content: Challenge —
+    - content: Proficiency Bonus (PB) - equals your bonus
+    - content: Actions
+    - content: Multiattack. When you reach 14th level in this class, the blighted sapling makes two claw attacks
+    - content: Claws. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target. Hit: 2d4 + PB piercing damage.
+    - title: Foul Conjuration
+    - content: Starting at 10th level, the creatures you conjure are malformed and bloated with toxins. Any beast, fey, or plant (including your blighted sapling) summoned or created by your spells or class features gains the 
+               following traits
+    - content: Blighted Resilience - The creature has immunity to necrotic and poison damage and to the poisoned condition.
+    - content: Toxic Demise - When the creature is reduced to 0 hit points, it explodes in a burst of toxic mulch or fetid viscera. Each creature within 5 feet of the exploding creature must succeed on a Constitution saving 
+               throw against your spell save DC or take necrotic damage based on the creature’s challenge rating (see the table below). As an action, you can also cause a summoned creature to explode, immediately killing it.
+    - content: Toxic Demise Damage
+    - content: Creature CR	             Damage
+    - content: 1/4 or lower	             1d4 necrotic damage
+    - content: 1/2	                     1d6 necrotic damage
+    - content: 1 or higher	             A number of d8s of necrotic damage equal to the creature's challenge rating
+    - content: No challenge rating	     A number of d6s of necrotic damage equal to your proficiency bonus
+    - title: Incarnation of Corruption
+    - content: At 14th level, your physical form begins to take on the tainted traits of the land you are bonded to. Your skin grows ashen, and your eyes darken or turn completely white. Spines and jagged spurs emerge from your 
+               body, granting you resistance to necrotic damage and a +2 bonus to AC.
+    - content: Additionally, whenever you start your turn within the radius of the corruption created by your Defile Ground feature, you can use a bonus action to gain temporary hit points equal to your proficiency bonus.
+
+  - title: Feats
+  - content: Keen Mind, War Caster, Observant, Wild Talent, Telekinetic, Telepathic, Ritual Caster, Metabolic Control, Blood Magic
+  - title: Legendary Resistance
+  - content: (3/Day), If Grey Crow fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions 
+  - content: Grey Crow can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+             Grey Crow regains spent Legendary Actions at the start of her turn
+  - abilities:
+    - title: Maddening Touch
+    - content: Melee Spell Attack +6 to hit, Range - Touch, Damage - 4d12 + 10 psychic damage. On a failed saving throw, the effected creature must role on the Short-Term Madness Table (DMG p. 259) and is afflicted with that 
+               symptom for 1d10 minutes
+    - title: Dominating Touch
+    - content: Melee Spell Attack +6 to hit, Range - Touch, Grey Crow can cast the Dominate Person spell without using a spell slot or components on any person she can touch  
+    - title: Murder of Crows
+    - content: Grey Crow reaches her hand out towards her target, her skin transitions to the darkest of black. With a snap of her fingers, crows erupt forth and surround her enemies. All creatures within a 10 foot cube of her 
+               chosen point within 30 feet become surrounded, hindering their sight and dealing 4D10 piercing damage per round to those inside. Creatures within the area of effect make a CON saving throw, on a successful save 
+               the creature takes only half damage. While inside of the spell's cube all creatures roll ranged attacks with disadvantage.
+
+  - title: Attacks
+  - content: Can make 2 martial or spell attacks 
+  - title: Combat Tactics
+  - content: He'll go out of his way to avoid direct physical combat but can handle himself if he has to. He prefers to summon his "servants" to do his fighting for him
+
+  - title: Special Equipment
+  - abilities:
+    - title: Silver Dagger
+    - content: This silver dagger is of the same familty as the Githyanki's sacred weapons, and are capable of cutting the cord that tethers a creature to their astral body. You gain a +3 bonus to attack and damage rolls made 
+               with this magic weapon. If you attack a creature's astral body (that is, the creature is under the effect of the astral projection spell or similar magic) and the attack was a critical hit, you sever that 
+               creature's astral cord.
+    - title: Twin Snake Belt
+    - cotnent: While wearing this belt it gives an extra +2 bonus to his AC. The belt can be grasped by the wearer and tossed to the ground (treating the wearer as proficient) with a range increment of 10 feet. Upon impact, the 
+               belt becomes two small vipers. If either of the snakes are killed or leave 100 feet from the wearer, they return to belt form upon the wearer instantly. Slain snakes cannot be re-summoned for 24 hours. They can be
+               recalled as a standard action but otherwise may be summoned at will. Poison taken from or injuring a creature vanishes if the inflicting snake returns to belt form (but otherwise not any damage the poison may have
+               already caused).
+    - title: Cloak of Displacement
+    - content: While you wear this cloak, it projects an Illusion that makes you appear to be standing in a place near your actual Location, causing any creature to have disadvantage on Attack rolls against you. If you take 
+               damage, the property ceases to function until the start of your next turn. This property is suppressed while you are Incapacitated, Restrained, or otherwise unable to move.
+    - title: Rod of Absorption
+    - content: While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell's effect is canceled, and the spell's energy, not the spell itself 
+               is stored in the rod. The energy has the same level as the spell when it was cast. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy,
+               it can't absorb more. If you are targeted by a spell that the rod can't store, the rod has no effect on that spell.
+    - content: When you become attuned to the rod, you know how many levels of energy the rod has absorbed over the course of its existence, and how many levels of spell energy it currently has stored.
+    - content: If you are a spellcaster holding the rod, you can convert energy stored in it into spell slots to cast spells you have prepared or know. You can create spell slots only of a level equal to or lower than your own 
+               spell slots, up to a maximum of 5th level. You use the stored levels in place of your slots, but otherwise cast the spell as normal. For example, you can use 3 levels stored in the rod as a 3rd-level spell slot
+    - title: Ring of Evasion
+    - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving 
+               throw instead.
+    - title: Ring of Mind Shielding
+    - content: While wearing this ring, you are immune to magic that allows other Creatures to read your thoughts, determine whether you are lying, know your Alignment, or know your Creature Type. Creatures can telepathically 
+               communicate with you only if you allow it.
+    - content: You can use an action to cause the ring to become Invisible until you use another action to make it visible, until you remove the ring, or until you die.
+    - content: If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for The Afterlife. As long as your soul is in the ring, you can telepathically 
+               communicate with any creature wearing it. A wearer can't prevent this Telepathic Communication.
+    - title: Staff of the Woodlands
+    - content: This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.
+    - content: The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical 
+               quarterstaff
+    - content: You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC
+    - content: Animal Friendship (1 charge)
+    - content: Awaken (5 charges)
+    - content: Barkskin (2 charges)
+    - content: Locate Animals or Plants (2 charges)
+    - content: Speak with Animals (1 charge)
+    - content: Speak with Plants (3 charges)
+    - content: Wall of Thorns (6 charges).
+    - content: You can also use an action to cast the pass without trace spell from the staff without using any charges
+    - content: Tree Form - You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its 
+                           branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another 
+                           action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
+    - title: Bag of Holding
+    - content: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. 
+               The bag weighs 15 pounds, regardless of its Contents. Retrieving an item from the bag requires an action.
+    - title: Crow's Coins
+    - content: A purse full of coins that curse anyone but her, who carries one of them with disadvantage on all ability checks. She often uses them to pay for things or slips them into unwary people's change pouches
+    - title: Ring of Misty Step
+    - content: The ring possesses 6 crystal stones holding some kind of magical shadowy substance inside. Each crystal stone provides one use of the misty step spell. Using a crystal stone allows you to cast the misty step spell,
+               the magical shadowy substance inside disappears. You can use this effect up to the total number of powered crystal stones located on the ring. Every Midnight, 1d6 crystals are replenished.
+
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Grey Crow was once the shaman of her primitive tribe. During one of her journey's into the astral plane to speak with the spirits, she was touched by the Forbidden Gods. Their touch corrupted her spirit and her mind, 
+      leaving her their emmisary, walking the earth and sewing chaos in her wake. She returned to her body a corrupted being, and immediately proceeded to slaughter her tribe. Since then, she has walked the earth, doing the
+      bidding of her masters, preparing the world for their return. Somewhere along the line, she came into posession of a silver dagger forged by the Githyanki and capale of severing astral cords.    
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Grey Crow is an exceedingly cunning liar and trickster. She is completely mad and derranged, but hides it well when it suits her needs. Her favorite game is to approach strangers out of the night, joining their campfire
+      as an elderly traveller on her own seeking shelter and companionship. She will then turn their secrets against them and use them to steer adventureres from their path. She likes to play tricks and jokes that cause as much 
+      choas as possible and uses her shapeshifting abilities to cause as much confusion and mistrust as possible with parties. She will rarely venture into large towns or cities, prefering to stick to the wilds. One of her
+      favorite tricks is convincing adventureres to travel with her to the Astral Plane with her, then using her silver dagger to sever their astral cord, leaving her victims dead and unrevivable.
