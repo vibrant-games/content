@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Revenant
 
     #
     # Pronouns (case insensitive):
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: She/her
+    pronouns: He/Him
 
     #
     # Occupation(s).
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Agent of Chaos and Prophet of Doom
+    - Preacher, Cult Leader
 
     #
     # D & D classes (case insensitive):
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Druid / Shaman
+    class: Cleric / Blood Hunter
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Circle of the Blighted / Curse-Binder
+    subclass: Blood Domain / Order of the Red Tome
 
     #
     # Class level.
@@ -309,7 +309,10 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - All
+    - Common
+    - Infernal
+    - Abyssal
+    - DeepSpeech
 
     #
     # Factions:
@@ -338,8 +341,8 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Sneaky
-    - Cunning
+    - Charismatic
+    - Cruel
     - Deceitful
 
   improv:
@@ -484,231 +487,178 @@ npc:
     - Insight
     - Herbalist's Kit
   special-abilities:
-  - title: Changeling Abilities
+  - title: Revenant Abilities
   - abilities: 
-    - title: Shapechanger
-    - content: As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight, but
-               not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of a creature you've never seen,
-               and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait. You stay in the new form until you use an action to revert to
-               your true form or until you die.
-    - title: Changeling Instincts
-    - content: You gain proficiency in Deception and Persuasion.
-  - title: Shaman Abilities
+    - title: Dead Immortality
+    - content: You do not age. Given time, the necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit dice function as normal.
+    - title: Undead
+    - content: Raised from the dead as a being of undeath, you count as an undead creature for all spells and abilities that affect the undead. You are immune to disease and treat exhaustion as if it was one level less. You do
+               not need to eat or breathe, but you can ingest food and drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your 
+               surroundings and notice approaching enemies and other events as normal.
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.
+    - title: Relentless Nature
+    - content: Regains 1HP at the beginning of each turn if below half maximum HP
+    - title: Unnatural Vitality
+    - content: If you die, you returns to life 24hrs after death. If your body is destroyed you will reform within 1 mile of where you was killed. Equipment destroyed is not regained     
+    - title: Eternal Vengeance
+    - content: At all times, you know the distance and direction between you and the creature involved in your goal unless they are on another plane 
+    - title: Poison Resilience
+    - content: You have advantage on saving throws against poison, and you have resistance against poison damage.
+  - title: Cleric Abilities
   - abilities:
-  - title: Shaman Spellcasting
+  - title: Cleric Spellcasting
   - abilities: 
     - title: Spell DC
-    - content: 23
+    - content:
     - title: Cantrips
-    - content: Chill Touch, Dancing Lights, Infestation, Poison Spray, Minor Illusion, Produce Flame  
+    - content:    
     - title: 1st Level
-    - content: Charm Person, Create of Destroy Water, Detect Magic, Thunderwave   
+    - content:    
     - title: 2nd Level
-    - content: Alter Self, Heat Metal, Phantasmal Force
-    - title: 3rd Level 
-    - content: Dispel Magic, Counterspell, Nondetaction  
-    - title: 4th Level
-    - content: Banishment, Polymorph, Confusion
-    - title: 5th Level 
-    - content: Antilife Shell, Dream, Scrying
-    - title: 6th Level
-    - content: Globe of Invulnerability, Wind Walk
-    - title: 7th Level
-    - content: Mirage Arcane, Reverse Gravity
-    - title: 8th Level
-    - content: Antimagic Field
-    - title: 9th Level
-    - content: True Polymorph
-    - title: Sixth Sense
-    - content: You can see and speak with spirits. You can see up to 60 ft into the Ethereal Plane while in the Material Plane, and vice versa. You can also gain some benefits after communing with nature for 1 minute.
-               When you forage alone, you find twice as much as you normally would.
-               You can move stealthily at a normal pace.
-               You are aware of recent events in the region, like storms, landslides, etc.
-    - title: Spiritual Animal
-    - content: You can cast the "Find Familiar" spell as a ritual. Your familiar is always an undead. Your familiar is a spirit, which means it can see 60 ft into the Ethereal Plane while in the Material Plane and 
-               vice versa, it can pass through other creatures and objects (it takes 1d10 force damage if it ends its turn on an occupied space), it doesn't have a walking speed, instead, it has a flight speed of 40ft 
-               and it can hover (familiars that already have flight speeds keep their value, but lose their walking speed like the others) and it can become invisible with an action.
-    - title: Spiritual Possession
-    - content: You can use your action to enter a trance and allow a beastly spirit to possess your body, giving you the abilities of the spirit. You can use this feature twice. You regain expended uses when you 
-               finish a short or long rest. (Optional Rule - the Shaman must have collected the spirit of the animal you wish to channel. to collect you must be aware of the spirit of a creature that meets the 
-               requirements and succeed on an animal handling check. When using this rule some monstrosities such as winter wolf may be allowed). Your shaman level determines the spirit that can possess you. 
-               You can be possessed by the spirit of a beast with a CR of no more than half your shaman level (rounded down). When you channel you do not gain lair actions or legendary resistances. You can maintain 
-               the possession by a number of hours equal to half your shaman level (rounded down). You then end the possession unless you expend another use of this feature.. You can also end the possession with a 
-               bonus action in your turn. You automatically end the possession if you fall to 0 hit points, or die. While you are possessed, the following rules apply 
-    - content: 1. Some of your game statistics are replaced by the statistics of the beast whose spirit is possessing you. Those being, its Strength, Dexterity and Constitution scores, its attacks, its senses and 
-                  any other personal features. You don't gain its hit points, AC, or any special types of movement (like flight). Changes in Dex or Con do not effect your AC or HP and only apply for the sake of 
-                  checks, saves, and attacks.
-    - content: 2. When you use your action to make an attack from your possessing spirit it appears as a spectral apparition of the attack, and while you deal the damage type and dice of the attack, you still use 
-                  your weapon on the attack, so, if you use a ranged weapon, like a bow, you can still make any attack from your spirit, like a bite attack. Also, any extra damage, or bonus to attack rolls you gain 
-                  from magical weapons still affect your spirit attacks.
-    - content: 3. Your spirit's senses overlap yours, so you lose any senses you possess that your spirit doesn't posses with exception to your ethereal sight.
-    - content: 4. At level 7 your spirit's attacks are considered magical for the purpose of overcoming resistance and immunity against nonmagical damage and attacks. When you reach 11th level, you gain temporary 
-                  hit points equal to your shaman level when you become possessed. These hit points last until the end of the possession.
-    - title: Shamanistic Ascension
-    - content: You choose a Shamanistic Ascension that show how to you use your connection with the spirits; Totem of Elements and Totem of Spirits. You gain additional features from your shamanistic ascension 
-               at levels 6, 10, and 14.
-    - content: Totem of Spirits
-    - content: When you choose the shamanistic ascension of the Totem of Spirits, you wish to deepen your connection to the spirits around you, surround yourself in their presence, and count on them to help you.
-    - content: Mortuary Totem - At 3rd Level, you have a totem that serves as a mortuary tablet, where your spirits can reside. You can use your Spirit Possession with a bonus action, rather than your action. Also, once per long
-                                rest you can swap your current spirit and be possessed by a different one. This change doesn't affect the duration of the possession (so, if there were only 3 minutes left, your new spirit stays 
-                                in you for only 3 minutes). A sudden change like that is vary taxing, you gain 1 level of exhaustion after your possession ends if you used this feature during it.
-    - content: Spiritual Medium - At 6th level you have learned a way to strengthen your bond with your spirits. If you have a medium that connects a spirit to its original existence (like bear claws for a bear spirit), you can 
-                                  use it to draw out more power from it. You spirit gains a more physical form, the aura around you becoming denser. Your spirit's attacks damage type becomes force damage. And you can spend spell
-                                  slots to increase this damage. You gain 1 more dice of damage per level of spell slot used this way (black bear's bite with a 4th level spell slot would deal 5d6 force damage, instead of the 
-                                  normal 1d6). This increase in damage lasts until the end of your current turn.
-    - content: Spirit Senses - At level 10 you are able to detect the presence of spirits even at great distances. As an action you allow your connection to the ethereal plane guide your senses to these creatures. For 10 minutes
-                               you know the location of any creature of the undead type within 100 ft of you. With another action you can increase your focus and learn 2 things
-    - content: The exact number of creatures you're sensing.
-    - content: You gain a glimpse of their power. The DM gives tells you if the creature is - weak (CR 0 to 1), average (CR 2 to 4), strong (CR 5 to 9), powerful (CR 10 to 15), fearsome (CR 15 to 20), terrifying (CR 21 to 26), 
-               monstrous (CR 27 to 30).
-    - content: You can use this feature once per short or long rest.
-    - content: Spiritual Armor - Starting at level 14 you are able to create a special totem, that is able to condense your possessing spirit into a much denser aura. With a bonus action you activate this form that lasts for 1 
-                                 minute. While in this form you gain a number of temporary hit points equal to your shaman level times your Wisdom modifier, to a maximum of 5 (if your modifier is higher than 5, treat it as a 5 
-                                 when calculating these hit points).
-    - content: This feature can be used once. To use it again you must finish a long rest.
-    - title: Bridge Between Worlds
-    - content: You can, once every long rest, with your strong spiritual power, create a number of totems equal to your wisdom Modifier + 2. These totems can be used by your allies, connecting them with the 
-               Ethereal Plane, allowing them to see what you see. The totems can be activated with a bonus action. For 1 hour your allies, who activated their totems, can see into the ethereal plane just like
-               you.
-    - title: Vengeful Spirits
-    - content: Then targeting a creature with a spell that forces them to make a Wisdom saving throw you can choose to loose angry spirits along with the spell. Once per short rest, you can use this feature to make 
-               the target make their initial Wisdom saving throw at disadvantage. On a failed saving throw the spirits torment the target's mind, causing the spell to deal double damage, or last twice as long, your 
-               choice if the spell has a duration and causes damage. On a success, nothing happens.
-    - title: Grand Shaman
-    - content: You can use your Spirit Possession an unlimited number of times. Additionally, you can ignore the verbal and somatic components of your shaman spells, as well as any material components that lack a cost and 
-               aren’t consumed by a spell.      
-  - title: Druid Abilities
-  - abilities:
-  - title: Druid Spellcasting
-  - abilities: 
-    - title: Spell DC
-    - content: 23
-    - title: Cantrips
-    - content: Druidcraft, Primal Savagery, Frostbite, Shape Water   
-    - title: 1st Level
-    - content: Entangle, Fog Cloud, Ice Knife, Speak with Animals
-    - title: 2nd Level
-    - content: Hold Person, Earthbind, Moonbeam
+    - content:    
     - title: 3rd Level
-    - content: Call Lightning, Speak with Plants, Plant Growth
+    - content:    
     - title: 4th Level
-    - content: Hallucinatory Terrain, Grasping Vine, Dominate Beast
+    - content:    
     - title: 5th Level
-    - content: Awaken, Insect Plague, Tree Stride
+    - content:    
     - title: 6th Level
-    - content: Investiture, Flesh to Stone
+    - content:    
     - title: 7th Level
-    - content: Fire Storm, Plane Shift
+    - content:    
     - title: 8th Level
-    - content: Feeblemind
+    - content:    
     - title: 9th Level
-    - content: Storm of Vengeance
-    - title: Druidic
-    - content: You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the 
-               message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.
-    - title: Wild Shape
-    - content: You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level 
-               determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn't have a 
-               flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. 
-               You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die
-    - title: Timeless Body
-    - content: The primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year
-    - titles: Beast Spells
-    - content: You can cast many of your Druid Spells in any shape you assume using Wild Shape. You can perform the somatic and verbal Components of a druid spell while in a beast shape, but you aren't able to provide 
-               Material Components
-    - ttile: Archdruid
-    - content: You can use your Wild Shape an unlimited number of times. Additionally, you can ignore the verbal and somatic Components of your Druid Spells, as well as any Material Components that lack a cost and aren't 
-                    consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape.
-  - title: Curse-Binder Abilities
+    - content: 
+  - title: Channel Divinity
+  - abilities:    
+    - title: Turn Undead
+    - content: As an action, you present your holy Symbol and speak a prayer censuring the Undead. Each Undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving 
+               throw, it is turned for 1 minute or until it takes any damage. A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. 
+               It also can't take Reactions. For its action, it can use only the Dash action or try to Escape from an Effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.    
+    - title: Destroy Undead
+    - content: Starting at 5th Level, when an Undead of CR 1/2 or lower fails its saving throw against Your Turn Undead feature, the creature is instantly destroyed.    
+    - title: Divine Intervention
+    - content: Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great. Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll 
+               percentile dice. If you roll a number equal to or lower than your Cleric level, your deity intervenes. The DM chooses the Nature of the intervention; the Effect of any Cleric spell or Cleric domain spell would be 
+               appropriate. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a Long Rest. At 20th level, your call for intervention succeeds automatically, 
+               no roll required.   
+  - title: Blood Hunter Abilities
+  - abilities:
+    - title: Hunters Bane
+    - content: You have advantage on Wisdom (Survival) checks to track fey, fiends, or undead, as well as on Intelligence ability checks to recall information about them. The Hunter’s Bane also empowers your body to 
+               control and shape hemocraft magic, using your own blood and life essence to fuel your abilities. Some of your features require your target to make a saving throw to resist the feature’s effects. 
+    - title: Hemocraft save DC
+    - content:
+    - title: Blood Maledict 
+    - content: you gain the ability to channel, and sometimes sacrifice, a part of your vital essence to curse and manipulate creatures through hemocraft magic. You gain one Blood Curse of your choice. You learn one 
+               additional blood curse of your choice, and you can choose one of the blood curses you know and replace it with another blood curse, at 6th, 10th, 14th, and 18th level. When you use your Blood Maledict, 
+               you choose which curse to invoke. While invoking a blood curse, but before it affects the target, you can choose to amplify the curse by losing a number of hit points equal to one roll of your hemocraft 
+               die, as shown in the Hemocraft Die column of the Blood Hunter table. An amplified curse gains an additional effect, noted in the curse’s description. Creatures that do not have blood in their bodies are 
+               immune to blood curses, unless you have amplified the curse. You can use this feature once. Beginning at 6th level, you can use your Blood Maledict feature twice, at 13th level you can use it three times 
+               between rests, and at 17th level, you can use it four times between rests. You regain all expended uses when you finish a short or long rest.
+    - title: Hemocraft Die
+    - content:    
+    - title: Blood Curses Known
+    - content:    
+    - title: Blood Curses
+    - content:    
+    - title: Figthing Style
+    - content:
+    - title: Crimson Rite
+    - content: You learn to invoke a rite of hemocraft within your weapon at the cost of your own vitality. Choose one rite from the Primal Rites list to learn. As a bonus action, you activate a crimson rite on a 
+               single weapon with the elemental energy of a known rite of your choice that lasts until you finish a short or long rest, or if you aren’t holding the weapon at the end of your turn. When you activate a rite,
+               you lose a number of hit points equal to one roll of your hemocraft die, as shown in the Hemocraft Die column of the Blood Hunter table. While active, attacks from this weapon deal an additional 1d4 damage 
+               of the chosen rite’s type. This damage is magical, and increases as you gain levels as a blood hunter, as shown in the Hemocraft Die column of the Blood Hunter table. A weapon can only hold a single active 
+               rite at a time. You learn an additional Primal Rite of your choice at 7th level, and choose an Esoteric Rite to learn at 14th level.
+    - title: Primal Rites Known
+    - content:    
+    - title: Extra Attack
+    - content: You can attack twice, instead of once, whenever you take the Attack action
+    - title: Brand of Castigation
+    - content: Whenever you damage a creature with your Crimson Rite feature, you can choose to sear an arcane brand of hemocraft magic into it (requires no action). You always know the direction to the branded 
+               creature, and each time the branded creature deals damage to you or a creature you can see within 5 feet of you, the branded creature suffers psychic damage equal to your Intelligence modifier 
+               (minimum of 1 damage). Your brand lasts until you dismiss it, or you apply a brand to another creature. Your brand counts as a spell for the purposes of dispel magic, and the spell level is equal to 
+               half of your blood hunter level (maximum of 9th level spell). Once you use this feature, you can’t use it again until you finish a short or long rest.
+    - title: Grim Psychometry
+    - content: You have a supernatural talent for discerning the history surrounding mysterious objects or places touched by evil. When making an Intelligence (History) check to recall information about a darker past 
+               surrounding an object you are touching, or a location you are present in, you have advantage on the roll. The information gleaned often leans towards the more sinister influences of the past, and
+               sometimes conveys visions of things previously unknown to the character on higher rolls.	
+    - title: Dark Augmentation
+    - content: Your speed increases by 5 feet, and whenever you make a Strength, Dexterity, or Constitution saving throw, you gain a bonus to the saving throw equal to your Intelligence modifier (minimum of one).
+    - title: Brand of Tethering
+    - content: The psychic damage from your Brand of Castigation feature increases to twice your Intelligence modifier (minimum of 2). In addition, a branded creature can’t take the Dash action, and if a creature 
+               branded by you attempts to teleport or leave their current plane via ability, spell, or portal, they take 4d6 psychic damage and must make a Wisdom saving throw. On a failure, the teleport or plane 
+               shift fails.
+    - title: Hardened Soul
+    - content: You have advantage on saving throws against being charmed and frightened.
+    - title: Sanguine Mastery
+    - content: Once per turn, whenever a blood hunter feature requires you to roll a hemocraft die, you can choose to reroll the die and choose which result to use. In addition, whenever you score a critical hit with 
+               a weapon attack empowered by your Crimson Rite, you regain one expended use of your Blood Maledict feature.
+  - title: Blood Domain Abilities
   - abilities: 
     - title: Spellcasting
-    - abilities:
+    - abilities: 
     - title: Spell DC
-    - content: 23
-    - title: 3rd Level
-    - content: Blindness/Deafness, Ray of Enfeeblement
-    - title: 5th Level
-    - content: Bestow Curse, Vampiric Touch 
-    - title: 7th Level
-    - content: Blight, Phantasmal Killer
-    - title: 9th Level
-    - content: Contagion, Enervation
-    - title: Primal Curse
-    - content: You learn to twist the life essence of a creature, hindering their abilities. As an Action, you can choose to inflict one of the following Primal Curses on a crature you can see within 30 feet. The Primal 
-    - content: Curse lasts for 1 minute unless you use an action to to end the effect or become uncoscious. Once you've cursed a creature, using this feature again causes the effect of the previous curse to end 
-               immediately. Upon reaching 11th Level you can have up to 2 of your Primal Curses active at one time. At 17th Level you can have up to 3 Primal Curses active at one time. A single creature can onle be 
-               effected by 1 Primal Curse at a time.
-    - content: Curse of Blinding - You force a creature to makea Strength Saving Throw. On a failed save it's movement speed is reduced to five times your Wisdom modifier (minimum of 5 feet). The creature repeats the 
-                                   saving throw at the end of each turn, ending the effect on a success 
-    - content: Curse of Draining - You force a creature to make a Constitution Saving Throw. On a failed save it takes 1d4 necrotic damage and cannot gain hit points. The creature repeats the saving throw at the end of 
-                                   each turn taking and additional 1d4 necrotic damage on each failed save, ending the effect on a success
-    - content: Curse of Lethargy - You force a creature to make a Wisdom Saving Throw. On a failed save the creature must subtract your Wisdom modifier (minimum of 1) from its attack rolls. The creature repeats the 
-                                   saving throw at the end of each turn, ending the effect on a success
-    - title: Evil Eye
-    - content: You learn to twist the life-esscnce of those around you in harmful ways. When a creature that you can see within 30 feet makes an ability check. attack roll or saving throw. you can use 
-               your reaction to impose disadvantage on the roll You may use this ability a number of times equal to your Wisdom modifter (minimum of 1} and you regain all expended uses when you finish a long rest.
-    - title: Potent Spellcasting
-    - content: Your practice of twisted magic has made your abilities more powerful. When you damage a creature with a cantrip or Primal Curse you gain a bonus to the damage roll equal to your Wisdom modifier (minimum of 1)
-    - title: Shamanistic Ward
-    - content: You can ward yourself against specific magical effects. At the end of a long rest choose acid, cold, fire. lightning. necrotic, poison. psychic. radiant, or thunder damage. You gain resistance to that 
-               damage type untll the end of your next long rest. Attacks made with silver weapons ignore any damage resistance you gain from this ability.
-    - title: Foul Conjuration
-    - content: You have reached the plnnacle of foul shamanism and learn to conjure spirits of darkness. Upon reaching 14th level. you can cast Create Undead as a 6th level spell, without providing any of the 
-               material components or expending a spell slot. Spirits rise out of the ground in the shape of the undead you summon. They are under your control until the end of your next long rest, or unti1 they are 
-               destroyed Once you use this ability you must complete a long rest before you can cast Create Undeadd In this way again.
-  - title: Circle of the Blighted Abilities
+    - content:
+    - title: 1st level
+    - content: Sleep, False Life
+    - title: 3rd level
+    - content: Ray of Enfeeblement, Hold Person
+    - title: 5th level
+    - content: Haste, Slow
+    - title: 7th level
+    - content: Blight, Stoneskin
+    - title: 9th level
+    - content: Dominate Person, Hold Monster
+    - title: Bloodletting Focus
+    - content: Whenever blood clerics deal damage to creatures with blood with any spell of 1st level or higher (including the weapon attacks of spiritual weapon[10]), they deal extra necrotic damage by drawing blood from the 
+               wounds.
+    - title: Channel Divinity - Crimson Bond
+    - content: As an action, blood clerics can focus on a sample of a creature's blood to learn that creature's approximate distance from the cleric and in which direction, and the creature's general state of health (based on 
+               percentage of hit points), as long as the creature is within 10 miles. The cleric can maintain concentration on this bond for up to one hour.
+               While the bond is maintained, the cleric can spend an action to force the target creature to make a Constitution saving throw. If they succeed, the bond ends. If the creature fails, the cleric can see through the 
+               target's eyes or hear through the target's ears instead of the cleric's own for a number of rounds equal to the cleric's Wisdom modifier (minimum of 1 round), after which the bond ends. Regardless of the outcome 
+               of the save, the cleric takes necrotic damage.
+    - title: Channel Divinity - Blood Puppet
+    - content: As an action, blood clerics can force a Large or smaller creature (at 17th level, Huge or smaller) to make a Wisdom saving throw. If they fail, they become charmed and physically controlled by the cleric. 
+               Unconscious and dead creatures automatically fail the save.
+    - title: Sanguine Recall
+    - content: Blood clerics can, as an action once per long rest, recover spell slots (up to 5th level) with a combined level of half the cleric's class level (rounded up), taking damage based on the levels of spell slots 
+               recovered.
+    - title: Divine Strike
+    - content: Blood clerics deal additional necrotic damage on weapon attacks.
+    - title: Vascular Corruption Aura
+    - content: As an action once per long rest, a blood cleric can emit an aura for 30 feet for one minute that causes enemy creatures with blood to bleed, suffering necrotic damage each turn they enter or start their turn in 
+               the aura. Enemies that would regain hit points while within the aura only regain half of the intended number, rounded up.
+  - title: Order of the Red Tome Abilities
   - abilities: 
-    - title: Defile Ground
-    - content: Starting at 2nd level when you choose this circle, you can use a bonus action to corrupt a patch of land or an area of water in a 10-foot radius centered on a point within 60 feet of you. This corruption lasts for
-               1 minute. The corrupted area is difficult terrain for creatures that are hostile to you. Additionally, when a creature in the area takes damage from an attack or spell for the first time on a turn, it takes an 
-               extra 1d4 necrotic damage. You can move this patch of corruption up to 30 feet as a bonus action. Flying creatures are unaffected by the corruption.
-    - content: Starting at 10th level, the area of your defiled ground increases to a 20-foot radius. Additionally, the extra damage dealt by your defiled ground increases to 1d6 when you reach 10th level in this class, and 1d8 
-               at 14th level.
-    - content: Once you use this feature, you can’t use it again until you finish a short or long rest.
-    - title: Blighted Shape
-    - content: Also at 2nd level, your physical form begins to show effects of the corruption you wield, tracing blackened veins across your skin, producing gnarled, bony protrusions, or other eerie phenomena. You gain 
-               proficiency in the Charisma (Intimidation) skill.
-    - content: Additionally, while you are transformed by you Wild Shape feature, you gain a +2 bonus to AC as gnarled spines protrude from your body. Your beast form also gains darkvision with a radius of 60 feet, or an 
-               additional 60 feet of darkvision if it already has that sense.
-    - title: Call of the Shadowseeds
-    - content: At 6th level, you learn to summon the feral children of the forest from the life force of your enemies. When a creature that is not undead or a construct takes damage within the area of your Defile Ground feature,
-               you can use your reaction to summon a blighted sapling in an unoccupied space within 5 feet of the creature. You can direct the sapling to make an attack against any creature within 5 feet of it as a part of this 
-               reaction. The sapling then acts on your initiative, obeying your verbal commands.
-    - content: The blighted sapling remains in your service until it’s reduced to 0 hit points, until the end of your next long rest, or until you summon another sapling, at which point it crumbles into foul-smelling mulch. You 
-               can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.
-    - content: The sapling uses the statistics below. Its features scale based on your level and proficiency bonus (PB).
-    - content: Blighted Sapling
-    - content: Medium plant
-    - content: Armor Class - 10 + PB (natural armor)
-    - content: Hit Points - twice your druid level
-    - content: Speed - 30 ft.
-    - content: STR 8(-1) DEX 13(+1) CON 12(+1) INT 4(-3) WIS 8(-1) CHA 3(-4)
-    - content: Damage Vulnerabilities - fire
-    - content: Damage Resistances - necrotic, poison
-    - content: Condition Immunities - blinded, deafened, poisoned
-    - content: Senses - blindsight 60 ft. (blind beyond this radius), passive Perception 9
-    - content: Languages - understands the languages you speak
-    - content: Challenge —
-    - content: Proficiency Bonus (PB) - equals your bonus
-    - content: Actions
-    - content: Multiattack. When you reach 14th level in this class, the blighted sapling makes two claw attacks
-    - content: Claws. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target. Hit - 2d4 + PB piercing damage.
-    - title: Foul Conjuration
-    - content: Starting at 10th level, the creatures you conjure are malformed and bloated with toxins. Any beast, fey, or plant (including your blighted sapling) summoned or created by your spells or class features gains the 
-               following traits
-    - content: Blighted Resilience - The creature has immunity to necrotic and poison damage and to the poisoned condition.
-    - content: Toxic Demise - When the creature is reduced to 0 hit points, it explodes in a burst of toxic mulch or fetid viscera. Each creature within 5 feet of the exploding creature must succeed on a Constitution saving 
-               throw against your spell save DC or take necrotic damage based on the creature’s challenge rating (see the table below). As an action, you can also cause a summoned creature to explode, immediately killing it.
-    - content: Toxic Demise Damage
-    - content: Creature CR	             Damage
-    - content: 1/4 or lower	             1d4 necrotic damage
-    - content: 1/2	                     1d6 necrotic damage
-    - content: 1 or higher	             A number of d8s of necrotic damage equal to the creature's challenge rating
-    - content: No challenge rating	     A number of d6s of necrotic damage equal to your proficiency bonus
-    - title: Incarnation of Corruption
-    - content: At 14th level, your physical form begins to take on the tainted traits of the land you are bonded to. Your skin grows ashen, and your eyes darken or turn completely white. Spines and jagged spurs emerge from your 
-               body, granting you resistance to necrotic damage and a +2 bonus to AC.
-    - content: Additionally, whenever you start your turn within the radius of the corruption created by your Defile Ground feature, you can use a bonus action to gain temporary hit points equal to your proficiency bonus.
+    - title: Sanguine Arcanum
+    - content: You have deeper knowledge of hemocraft magic. You learn one additional blood curse of your choice. Additionally, you can use a bonus action to regain one expended use of your Blood Maledict feature and
+               suffer damage equal to one roll of your hemocraft die.
+    - title: Blood Curse of Siphoning
+    - content: You are able to drain life essence from your opponents. You gain Blood Curse of Siphoning for your Blood Maledict feature. This does not count against your number of blood curses known.
+               As an action, target a creature within 30 feet of you that isn't a construct. The target takes necrotic damage equal to three rolls of your hemocraft die and you heal 
+               for the amount of hit points the targe t loses.
+               Amplify - The rolls of your hemocraft die a re maximized
+    - title: Blood Curse of Purgation
+    - content: Your advanced blood magic can cleanse a creature of a harmful effect. You gain Blood Curse of Purgation for your Blood Maledict feature. This does not count against your number of blood curses known.
+               As a bonus action, choose a creature withing 30 feet of you and end one poisoned condition affecting the creature.
+               Amplify - Ins tead of the poisoned condition you can choose to end one of the following conditions; blinded, deafened, or paralyzed
+    - title: Brand of Haemorrhage
+    - content: Your Brand of Castigation a llows you to conserve your vital force when empowering your blood curses. Whenever you target a branded creature by a blood curse, amplifying it does not cost you any 
+               hit points.
+    - title: Crimson Might
+    - content: Your Blood Curse of Siphoning overcomes resistance to necrotic damage. Additionally, whenever you invoke a blood curse on your turn you gain bonus to damage of your weapon attacks you make before end of 
+               your turn equal to your Intelligence modifier.
+    - title: Blood Curse of Mutual Suffering
+    - content: You can form a magical link between you and other creature ma king it share any injuries it makes you s uffe r. You gain Blood Curse of Mutual Suffering for your Blood Maledict feature. 
+    - content: This does not count against your number of blood curses known.
+    - content: As a bonus action, choose one creature within 30 feet of you. A magical link is created between you and the creature until start of your next turn. 
+    - content: Whenever the linked creature damages you by attack, spell or other effect, the damage is halved and the creature loses number of hit points equal to 
+               amount of damage you have taken.
+    - content: Amplify - You can link up to number of creatures equal to your Intelligence modifier (minimum of 2).
 
   - title: Feats
   - content: Keen Mind, War Caster, Observant, Wild Talent, Telekinetic, Telepathic, Ritual Caster, Metabolic Control, Blood Magic
