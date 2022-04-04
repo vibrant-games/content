@@ -1,0 +1,2316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grey Crow</title>
+
+<link rel="stylesheet" href="file:///D|/Github/content/npcs/html/stylesheet.css"/>
+	
+	
+	</head>
+
+
+	<body>
+		
+		<div class="banner"><a href="file:///D|/Github/docs-index/index.html"><img src="file:///D|/Github/content/npcs/html/images/LOGO_TWO_FINAL_ON_BLACK.png" alt:"" style="float:left;margin-left:5px;" /></a></div>
+		
+		
+
+		
+	
+		
+		<div class="container">
+			
+			<button onclick="previous();">Previous</button>
+
+			<button onclick="next();">Next</button>
+			
+			<script>
+				
+				
+				
+			</script>
+			
+  		
+			
+			<script>
+				
+				var path = window.location.pathname;
+
+					var page = path.split("/").pop();
+		
+					
+					
+					var page_n = page.replace(/_/g, " ");
+					
+					var pagename = page_n.replace(".html", "");
+			
+					
+					
+					
+					document.getElementById("demo1").innerHTML = pagename;
+					
+					
+					
+			</script>
+			
+		
+			<script>
+				
+					const npcs = [
+  {_id:1,name:"abrinet_of_dire_dawa_riley"},
+  {_id:2,name:"aeureek_potomach.html"},
+  {_id:3,name:"aezodel.html"},
+  {_id:4,name:"ahktoma.html"},
+  {_id:5,name:"ahshani_dondarion.html"},
+  {_id:6,name:"albrecht_mukht.html"},
+  {_id:7,name:"amera.html"},
+  {_id:8,name:"andrel_nightfoot.html"},
+  {_id:9,name:"aur_salleek.html"},
+  {_id:10,name:"babita_babs.html"},
+  {_id:11,name:"baruvo.html"},
+  {_id:12,name:"beach.html"},
+  {_id:13,name:"brygan_of_the_sunmane.html"},
+  {_id:14,name:"cador_mckendric.html"},
+  {_id:15,name:"captain_doomsmith_stumptooth.html"},
+  {_id:16,name:"captain_wheeler.html"},
+  {_id:17,name:"chloe_middleton.html"},
+  {_id:18,name:"claideighm_hot_pants_battleweave.html"},
+  {_id:19,name:"clyde_goodeye.html"},
+  {_id:20,name:"coalwater.html"},
+  {_id:21,name:"corbrin_thulebard.html"},
+  {_id:22,name:"corrora_lillithium.html"},
+  {_id:23,name:"cure.html"},
+  {_id:24,name:"dakeelek.html"},
+  {_id:25,name:"deonne_mattrieu_devaria.html"},
+  {_id:26,name:"dewarn_drumheller.html"},
+  {_id:27,name:"dharja.html"},
+  {_id:28,name:"dimri_clodhopper.html"},
+  {_id:29,name:"dorcan_twohills.html"},
+  {_id:30,name:"dr_enkephalin.html"},
+  {_id:31,name:"draake.html"},
+  {_id:32,name:"eikenziel_umbara.html"},
+  {_id:33,name:"eldaren_brightfoot.html"},
+  {_id:34,name:"eleanorious_murr.html"},
+  {_id:35,name:"elenda_broadtoe.html"},
+  {_id:36,name:"enid_hampstead.html"},
+  {_id:37,name:"eugenia_havares.html"},
+  {_id:38,name:"ezio_rzlathe.html"},
+  {_id:39,name:"fatoumata_of_ephrosinia.html"},
+  {_id:40,name:"favicon.png"},
+  {_id:41,name:"figus_figora.html"},
+  {_id:42,name:"filenames.txt"},
+  {_id:43,name:"fingers_dozen.html"},
+  {_id:44,name:"foreatha_leaffoot.html"},
+  {_id:45,name:"fot.html"},
+  {_id:46,name:"fuchsia.html"},
+  {_id:47,name:"gex.html"},
+  {_id:48,name:"giza_ter.html"},
+  {_id:49,name:"gleadric_to_cujulo.html"},
+  {_id:50,name:"glem_the_durable_shill.html"},
+  {_id:51,name:"glohrimoore_flintback.html"},
+  {_id:52,name:"glotys_thwamp.html"},
+  {_id:53,name:"golomir_craag.html"},
+  {_id:54,name:"goronk.html"},
+  {_id:55,name:"gothenni_vosk.html"},
+  {_id:56,name:"gren_hilsrega.html"},
+  {_id:57,name:"grien_saloven.html"},
+  {_id:58,name:"grim.html"},
+  {_id:59,name:"gruda_wheatsheaf_combfavor.html"},
+  {_id:60,name:"hadoovra_romaheller.html"},
+  {_id:61,name:"hamza.html"},
+  {_id:62,name:"hathunti.html"},
+  {_id:63,name:"hehliad_dys.html"},
+  {_id:64,name:"hercule_rivera.html"},
+  {_id:65,name:"hickle_frownbottom.html"},
+  {_id:66,name:"hobb_newton_jr.html"},
+  {_id:67,name:"hogarrk.html"},
+  {_id:68,name:"horatio_llowener_esq.html"},
+  {_id:69,name:"html.txt"},
+  {_id:70,name:"hugh_mann.html"},
+  {_id:71,name:"hurley.html"},
+  {_id:72,name:"hylinn_groveby.html"},
+  {_id:73,name:"illianith_mizzruiel.html"},
+  {_id:74,name:"image_conversion.html"},
+  {_id:75,name:"irtano_the_brawnkeep.html"},
+  {_id:76,name:"jean_pierre_lacroix.html"},
+  {_id:77,name:"johannes_leaflyer.html"},
+  {_id:78,name:"kablam.html"},
+  {_id:79,name:"kailanno.html"},
+  {_id:80,name:"karathor.html"},
+  {_id:81,name:"karin_nostradaad.html"},
+  {_id:82,name:"katerina_sacinite.html"},
+  {_id:83,name:"kaz_lamosatzi.html"},
+  {_id:84,name:"khamal_headrender_algolunaka.html"},
+  {_id:85,name:"khedoldosh_the_lost.html"},
+  {_id:86,name:"king_leon_goldmane.html"},
+  {_id:87,name:"klarion.html"},
+  {_id:88,name:"kraark_of_clan_zizzix.html"},
+  {_id:89,name:"krapp.html"},
+  {_id:90,name:"kraven_holtdmoore.html"},
+  {_id:91,name:"lasan_halfnight.html"},
+  {_id:92,name:"leejya.html"},
+  {_id:93,name:"leo_whetmoore.html"},
+  {_id:94,name:"libil_clemantia.html"},
+  {_id:95,name:"llewellyn_broadlore.html"},
+  {_id:96,name:"lord_cal_manterius.html"},
+  {_id:97,name:"lorne_stronghammer.html"},
+  {_id:98,name:"lovecarp.html"},
+  {_id:99,name:"lrryk_bolde.html"},
+  {_id:100,name:"lucatiel_sky_derosier.html"},
+  {_id:101,name:"lucretia_verada.html"},
+  {_id:102,name:"madam_stella.html"},
+  {_id:103,name:"mamoon_zhoul.html"},
+  {_id:104,name:"merrick_dunferman.html"},
+  {_id:105,name:"methuselah_cade.html"},
+  {_id:106,name:"moonglow.html"},
+  {_id:107,name:"morion_defaye.html"},
+  {_id:108,name:"moss.html"},
+  {_id:109,name:"nagata.html"},
+  {_id:110,name:"nahkirin.html"},
+  {_id:111,name:"narmanaleth.html"},
+  {_id:112,name:"noel.html"},
+  {_id:113,name:"nokumi.html"},
+  {_id:114,name:"nothuriel_oathbreaker.html"},
+  {_id:115,name:"odinson_ironbeard.html"},
+  {_id:116,name:"ook.html"},
+  {_id:117,name:"oorruk_the_seeker.html"},
+  {_id:118,name:"ordo_sureshot_shallowsmoke.html"},
+  {_id:119,name:"orfthall_hogden.html"},
+  {_id:120,name:"portius_gotadium.html"},
+  {_id:121,name:"praxius_polaria.html"},
+  {_id:122,name:"primo.html"},
+  {_id:123,name:"princess_ateh.html"},
+  {_id:124,name:"pyc_defeywilde.html"},
+  {_id:125,name:"quut.html"},
+  {_id:126,name:"rahim.html"},
+  {_id:127,name:"rainbow.html"},
+  {_id:128,name:"raskolnik.html"},
+  {_id:129,name:"reed_xionsyus.html"},
+  {_id:130,name:"reina.html"},
+  {_id:131,name:"rivan_the_hag_hunter.html"},
+  {_id:132,name:"roly_2.html"},
+  {_id:133,name:"ronn_carle.html"},
+  {_id:134,name:"rutgard_elderhut.html"},
+  {_id:135,name:"sami.html"},
+  {_id:136,name:"samuel_cohen.html"},
+  {_id:137,name:"scarback.html"},
+  {_id:138,name:"scheuchzeri.html"},
+  {_id:139,name:"slithkyrin.html"},
+  {_id:140,name:"slizznek.html"},
+  {_id:141,name:"stars_from_afar_billowing_clouds_afar.html"},
+  {_id:142,name:"stella_of_hilltop.html"},
+  {_id:143,name:"steve_patch_yarrow.html"},
+  {_id:144,name:"stylesheet - chaotic evil.css"},
+  {_id:145,name:"stylesheet - chaotic good.css"},
+  {_id:146,name:"stylesheet - chaotic neutral.css"},
+  {_id:147,name:"stylesheet - lawful evil.css"},
+  {_id:148,name:"stylesheet - lawful good.css"},
+  {_id:149,name:"stylesheet - lawful neutral.css"},
+  {_id:150,name:"stylesheet - neutral evil.css"},
+  {_id:151,name:"stylesheet - neutral good.css"},
+  {_id:152,name:"stylesheet - true neutral.css"},
+  {_id:153,name:"stylesheet_-.css"},
+  {_id:154,name:"stylesheet_experimental.css"},
+  {_id:155,name:"stylesheet_neutral_good.css"},
+  {_id:156,name:"stylesheet.css"},
+  {_id:157,name:"swarth.html"},
+  {_id:158,name:"symmetry_gonn.html"},
+  {_id:159,name:"tanarolf_lykosthemak.html"},
+  {_id:160,name:"teaghan_forestlight.html"},
+  {_id:161,name:"thaerus_lonithar.html"},
+  {_id:162,name:"thane_gravelfist.html"},
+  {_id:163,name:"the_carnelian_shroud.html"},
+  {_id:164,name:"the_drunken_coward.html"},
+  {_id:165,name:"the_pennymore_con.html"},
+  {_id:166,name:"thrassal_sol.html"},
+  {_id:167,name:"tony_the_carp_sarducci.html"},
+  {_id:168,name:"trileah_mcallistair.html"},
+  {_id:169,name:"tristeth_mulholland.html"},
+  {_id:170,name:"urreeek.html"},
+  {_id:171,name:"uthriel_seawalker.html"},
+  {_id:172,name:"varay_flamesworth.html"},
+  {_id:173,name:"varun_bakerfield.html"},
+  {_id:174,name:"vrakoom.html"},
+  {_id:175,name:"warsoc_thoron.html"},
+  {_id:176,name:"wendigola.html"},
+  {_id:177,name:"weston_horonious_iii.html"},
+  {_id:178,name:"xo_lordwok.html"},
+  {_id:179,name:"yasloh_brain.html"},
+  {_id:180,name:"yeet_cargohlik.html"},
+  {_id:181,name:"yemik_rothoar.html"},
+  {_id:182,name:"yoloff_denton.html"},
+  {_id:183,name:"ysyfar_brohn.html"},
+  {_id:184,name:"yufreni_dulask.html"},
+  {_id:185,name:"zirrashka_brrek_zer_rash_kah_burrek.html"},
+  {_id:186,name:"zirrashka_brrek.html"}
+]
+		
+			let fLen = npcs.length;
+			text = "<ul>";
+			for (let i = 0; i < fLen; i++) {
+  				text += "<li>" + npcs[i].name + "</li>";
+			}
+			text += "</ul>";
+					
+			document.getElementById("demo2").innerHTML = text;
+				
+			function identify (){
+				
+				var thisnpc_n = npcs.find(npc => npc.name === "hamza.html")
+			}
+				
+			const thisnpc = ;
+	
+				let currentIndex = 0;
+				
+				
+				
+				let current_Id = thisnpc._id;
+				
+				document.getElementById("demo3").innerHTML = current_Id;
+				
+				log();
+
+
+				function next(){
+  
+					move();
+
+				}
+
+
+				function previous()
+				
+				{
+  
+					move(false);
+
+				}
+
+
+				function move(advance = true){
+  
+					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+  
+					currentId = npcs[currentIndex]._id;
+  
+					log();
+
+				}
+
+
+				function log(){
+  					currentIndex = (currentIndex + (1) + npcs.length) % npcs.length;
+					currentId = npcs[currentIndex]._id;
+					console.log("Index: " + currentIndex, "Id: " + currentId);
+
+				}
+				
+				
+				</script>
+			
+			
+			
+			
+			
+		<script>	
+				
+		
+		
+		for(var i = 0; i < npcs.length; i++)
+{
+        npcs[i] = npcs[i].name.replace(/_/g, " ");
+}
+		
+		npcs.sort((a, b)=> {
+  
+			if (a._id === b._id){
+    
+				return a._id < b.name ? -1 : 1
+  
+			} else {
+    
+				return a._id < b.name ? -1 : 1
+  
+			}
+
+		}
+				 )
+					
+					
+					
+		
+					
+					
+		</script>
+			
+			
+			<div class="cell" id="cell4">
+			
+			<span class="pic">
+
+				<img id="logo" alt="" src="./npc_imgs/Grey Crow.png" width="600" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+				
+			  </span>
+			</div>
+			
+			
+			
+			<div class="cell" id="cell1">
+			
+
+
+				<span class="data">
+				
+				<hr class="steel-border" />
+					
+					
+						
+				<span class="npc-heading">
+		  			
+								<h1 >Grey Crow</h1>
+						
+								<h2>Elderly <br> Changeling <br> N/A <br>
+						
+									Chaotic Evil<br>
+						
+									Level 20 / 20 <br> Druid / Shaman <br>Circle of the Blighted / Curse-Binder</h2>
+		
+						
+							
+					
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 <polyline points="0,0 520,2.5 0,5"></polyline>
+	  </svg>
+				
+					</span>
+				
+							
+	 				
+								<span class="top-property-line first">
+						
+									<h4>Pronouns - </h4><p>She/her</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">		
+						
+									<h4>Occupations - </h4><p>Agent of Chaos and Prophet of Doom</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Armor Class - </h4><p>21</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Hit Points - </h4>	<p>311 (TODO Hitdice)</p><br>
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Speed - </h4><p>30.</p>
+			
+								</span> 
+					
+					
+					
+			
+								<svg height="5" width="100%" class="tapered-rule">
+	    						<polyline points="0,0 520,2.5 0,5"></polyline>
+	 							</svg>
+			
+					
+								<span class="abilities">
+						
+									<span class="ability-strength">
+							
+										<h4>STR</h4>
+							
+										<p>17 (<span id="strmodi"></span><span id="strmod"></span>)</p>
+						
+										
+									</span> 
+						
+									<span class="ability-dexterity">
+							
+										<h4>DEX</h4>
+							
+										<p>15 (<span id="dexmodi"></span><span id="dexmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-constitution">
+							
+										<h4>CON</h4>
+							
+										<p>18 (<span id="conmodi"></span><span id="conmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-intelligence">
+							
+										<h4>INT</h4>
+							
+										<p>20 (<span id="intmodi"></span><span id="intmod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-wisdom">
+							
+										<h4>WIS</h4>
+							
+										<p>29 (<span id="wismodi"></span><span id="wismod"></span>)</p>
+						
+									</span> 
+						
+									<span class="ability-charisma">
+							
+										<h4>CHA</h4>
+							
+										<p>23 (<span id="chamodi"></span><span id="chamod"></span>)</p>
+						
+									</span> 
+					<script>
+											
+											
+
+											document.getElementById("strmod").innerHTML = myMod(17);
+											document.getElementById("strmodi").innerHTML = myModi(17);
+											
+											
+						
+											document.getElementById("dexmod").innerHTML = myMod(15);
+											document.getElementById("dexmodi").innerHTML = myModi(15);
+						
+						
+											
+											document.getElementById("conmod").innerHTML = myMod(18);
+											document.getElementById("conmodi").innerHTML = myModi(18);
+						
+						
+						
+											document.getElementById("intmod").innerHTML = myMod(20);
+											document.getElementById("intmodi").innerHTML = myModi(20);
+						
+											
+											document.getElementById("wismod").innerHTML = myMod(29);
+											document.getElementById("wismodi").innerHTML = myModi(29);
+						
+						
+											
+											document.getElementById("chamod").innerHTML = myMod(23);
+											document.getElementById("chamodi").innerHTML = myModi(23);
+											
+											
+						
+						
+											
+											function myMod(modifier){
+												var num=(modifier-10)/2;		
+												var n=Math.round(num);
+												return n;
+												
+											}
+						
+											function myModi(score){
+											
+												if (score>9){
+												
+													modi="+";
+
+												}  else {
+													
+													modi="";
+												}
+												
+												return modi;
+											}
+											
+											
+											
+											
+	
+										</script>
+										
+								</span> 
+					
+								<svg height="5" width="100%" class="tapered-rule">
+	    							<polyline points="0,0 520,2.5 0,5"></polyline>
+	  							</svg>
+					
+								
+								
+								
+								
+								
+				
+								
+								<span class="top-property-line first">
+									<h4>Saving Throws - </h4>
+									<p>Wisdom</p>
+									
+									<p>Charisma</p>
+									
+									<p>Intelligence</p>
+									
+								</span> 
+					
+								<span class="top-property-line">
+					
+									<h4>Skills - </h4>
+									<p>
+      								
+									
+										Herbalism<br>
+        							
+      								
+									</p>
+     
+      
+					
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiencies - </h4>
+						
+								
+									
+      								
+									
+										Arcana, 
+        							
+									
+										Nature, 
+        							
+									
+										Survival, 
+        							
+									
+										Performance, 
+        							
+									
+										Intimidation, 
+        							
+									
+										Perception, 
+        							
+									
+										Deception, 
+        							
+									
+										Persuasion, 
+        							
+									
+										Insight, 
+        							
+									
+										Herbalist&#39;s Kit, 
+        							
+      								
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Proficiency Mod - </h4>
+									
+									<p id="profMod"></p>
+									
+								</span>
+									
+								
+								
+								
+								<script>
+									
+									
+									document.getElementById("profMod").innerHTML = profMod(20 / 20);
+									
+									function profMod(modifier) {
+									
+										
+										
+										if (modifier<5) {
+													
+													prof="+2";
+													
+												} else if (modifier<10) {
+													
+													prof="+3";
+													
+												} else if (modifier<13){
+													
+													prof="+4";
+													
+												} else if (modifier<17){
+													
+													prof="+5";
+												
+												} else if (modifier<20){
+													
+													prof="+6";
+												}
+												
+												return prof;					
+
+									}
+						
+								
+									
+									
+								</script>
+								
+								
+														
+								
+									
+								
+								
+								<span class="top-property-line">
+									
+									<h4>Damage Immunities - </h4>
+					
+									<p>Poison, Psychic, Poison and Necrotic</p>
+					
+								</span> 
+
+								<span class="top-property-line">
+						
+									
+									<h4>Condition Immunities - </h4>
+						
+									<p>Exhaustion, Poisoned, Diseased</p>
+					
+								</span> 
+					
+								
+								<span class="top-property-line">
+									<h4>Resistances - </h4>
+					
+									<p>Magic, Cold, Lightning</p>
+					
+									
+									
+									
+									
+								</span> 
+								
+								
+								<span class="top-property-line">
+					
+									
+								</span> 
+					
+								<span class="top-property-line">
+						
+									<h4>Languages - </h4>
+						<p>
+							All
+					</p>
+							
+								</span> 
+
+					
+								<span class="top-property-line">
+						
+									<h4>Adjectives - </h4>
+						
+									Sneaky, 
+									Cunning, 
+									Deceitful, 
+	
+					
+				</span> 
+				</span>
+
+					
+
+					
+					</div>
+
+	</div>
+			
+				<div class="cell" id="cell6">
+						<span class="data">
+						
+							
+						
+						<span class="npc-heading">
+							
+							<h1>Special Abilities</h1>
+							
+				<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+							</span>
+						<span class="right-line-columns">	
+																							
+								
+							<p><b><h4>Changeling Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Shapechanger</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight, but not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can&#39;t duplicate the appearance of a creature you&#39;ve never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren&#39;t changed by this trait. You stay in the new form until you use an action to revert to your true form or until you die.</p2><br>
+							        
+											
+										
+							<p1><b>Changeling Instincts</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You gain proficiency in Deception and Persuasion.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Shaman Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Shaman Spellcasting</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>23</p2><br>
+							        
+											
+										
+							<p1><b>Cantrips</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Chill Touch, Dancing Lights, Infestation, Poison Spray, Minor Illusion, Produce Flame</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Charm Person, Create of Destroy Water, Detect Magic, Thunderwave</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Alter Self, Heat Metal, Phantasmal Force</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Dispel Magic, Counterspell, Nondetaction</p2><br>
+							        
+											
+										
+							<p1><b>4th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Banishment, Polymorph, Confusion</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Antilife Shell, Dream, Scrying</p2><br>
+							        
+											
+										
+							<p1><b>6th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Globe of Invulnerability, Wind Walk</p2><br>
+							        
+											
+										
+							<p1><b>7th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Mirage Arcane, Reverse Gravity</p2><br>
+							        
+											
+										
+							<p1><b>8th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Antimagic Field</p2><br>
+							        
+											
+										
+							<p1><b>9th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>True Polymorph</p2><br>
+							        
+											
+										
+							<p1><b>Sixth Sense</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can see and speak with spirits. You can see up to 60 ft into the Ethereal Plane while in the Material Plane, and vice versa. You can also gain some benefits after communing with nature for 1 minute. When you forage alone, you find twice as much as you normally would. You can move stealthily at a normal pace. You are aware of recent events in the region, like storms, landslides, etc.</p2><br>
+							        
+											
+										
+							<p1><b>Spiritual Animal</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can cast the &quot;Find Familiar&quot; spell as a ritual. Your familiar is always an undead. Your familiar is a spirit, which means it can see 60 ft into the Ethereal Plane while in the Material Plane and vice versa, it can pass through other creatures and objects (it takes 1d10 force damage if it ends its turn on an occupied space), it doesn&#39;t have a walking speed, instead, it has a flight speed of 40ft and it can hover (familiars that already have flight speeds keep their value, but lose their walking speed like the others) and it can become invisible with an action.</p2><br>
+							        
+											
+										
+							<p1><b>Spiritual Possession</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can use your action to enter a trance and allow a beastly spirit to possess your body, giving you the abilities of the spirit. You can use this feature twice. You regain expended uses when you finish a short or long rest. (Optional Rule - the Shaman must have collected the spirit of the animal you wish to channel. to collect you must be aware of the spirit of a creature that meets the requirements and succeed on an animal handling check. When using this rule some monstrosities such as winter wolf may be allowed). Your shaman level determines the spirit that can possess you. You can be possessed by the spirit of a beast with a CR of no more than half your shaman level (rounded down). When you channel you do not gain lair actions or legendary resistances. You can maintain the possession by a number of hours equal to half your shaman level (rounded down). You then end the possession unless you expend another use of this feature.. You can also end the possession with a bonus action in your turn. You automatically end the possession if you fall to 0 hit points, or die. While you are possessed, the following rules apply</p2><br>
+							        
+											
+										
+							
+											
+									<p2>1. Some of your game statistics are replaced by the statistics of the beast whose spirit is possessing you. Those being, its Strength, Dexterity and Constitution scores, its attacks, its senses and any other personal features. You don&#39;t gain its hit points, AC, or any special types of movement (like flight). Changes in Dex or Con do not effect your AC or HP and only apply for the sake of checks, saves, and attacks.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>2. When you use your action to make an attack from your possessing spirit it appears as a spectral apparition of the attack, and while you deal the damage type and dice of the attack, you still use your weapon on the attack, so, if you use a ranged weapon, like a bow, you can still make any attack from your spirit, like a bite attack. Also, any extra damage, or bonus to attack rolls you gain from magical weapons still affect your spirit attacks.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>3. Your spirit&#39;s senses overlap yours, so you lose any senses you possess that your spirit doesn&#39;t posses with exception to your ethereal sight.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>4. At level 7 your spirit&#39;s attacks are considered magical for the purpose of overcoming resistance and immunity against nonmagical damage and attacks. When you reach 11th level, you gain temporary hit points equal to your shaman level when you become possessed. These hit points last until the end of the possession.</p2><br>
+							        
+											
+										
+							<p1><b>Shamanistic Ascension</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You choose a Shamanistic Ascension that show how to you use your connection with the spirits; Totem of Elements and Totem of Spirits. You gain additional features from your shamanistic ascension at levels 6, 10, and 14.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Totem of Spirits</p2><br>
+							        
+											
+										
+							
+											
+									<p2>When you choose the shamanistic ascension of the Totem of Spirits, you wish to deepen your connection to the spirits around you, surround yourself in their presence, and count on them to help you.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Mortuary Totem - At 3rd Level, you have a totem that serves as a mortuary tablet, where your spirits can reside. You can use your Spirit Possession with a bonus action, rather than your action. Also, once per long rest you can swap your current spirit and be possessed by a different one. This change doesn&#39;t affect the duration of the possession (so, if there were only 3 minutes left, your new spirit stays in you for only 3 minutes). A sudden change like that is vary taxing, you gain 1 level of exhaustion after your possession ends if you used this feature during it.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Spiritual Medium - At 6th level you have learned a way to strengthen your bond with your spirits. If you have a medium that connects a spirit to its original existence (like bear claws for a bear spirit), you can use it to draw out more power from it. You spirit gains a more physical form, the aura around you becoming denser. Your spirit&#39;s attacks damage type becomes force damage. And you can spend spell slots to increase this damage. You gain 1 more dice of damage per level of spell slot used this way (black bear&#39;s bite with a 4th level spell slot would deal 5d6 force damage, instead of the normal 1d6). This increase in damage lasts until the end of your current turn.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Spirit Senses - At level 10 you are able to detect the presence of spirits even at great distances. As an action you allow your connection to the ethereal plane guide your senses to these creatures. For 10 minutes you know the location of any creature of the undead type within 100 ft of you. With another action you can increase your focus and learn 2 things</p2><br>
+							        
+											
+										
+							
+											
+									<p2>The exact number of creatures you&#39;re sensing.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You gain a glimpse of their power. The DM gives tells you if the creature is - weak (CR 0 to 1), average (CR 2 to 4), strong (CR 5 to 9), powerful (CR 10 to 15), fearsome (CR 15 to 20), terrifying (CR 21 to 26), monstrous (CR 27 to 30).</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You can use this feature once per short or long rest.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Spiritual Armor - Starting at level 14 you are able to create a special totem, that is able to condense your possessing spirit into a much denser aura. With a bonus action you activate this form that lasts for 1 minute. While in this form you gain a number of temporary hit points equal to your shaman level times your Wisdom modifier, to a maximum of 5 (if your modifier is higher than 5, treat it as a 5 when calculating these hit points).</p2><br>
+							        
+											
+										
+							
+											
+									<p2>This feature can be used once. To use it again you must finish a long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Bridge Between Worlds</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can, once every long rest, with your strong spiritual power, create a number of totems equal to your wisdom Modifier + 2. These totems can be used by your allies, connecting them with the Ethereal Plane, allowing them to see what you see. The totems can be activated with a bonus action. For 1 hour your allies, who activated their totems, can see into the ethereal plane just like you.</p2><br>
+							        
+											
+										
+							<p1><b>Vengeful Spirits</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Then targeting a creature with a spell that forces them to make a Wisdom saving throw you can choose to loose angry spirits along with the spell. Once per short rest, you can use this feature to make the target make their initial Wisdom saving throw at disadvantage. On a failed saving throw the spirits torment the target&#39;s mind, causing the spell to deal double damage, or last twice as long, your choice if the spell has a duration and causes damage. On a success, nothing happens.</p2><br>
+							        
+											
+										
+							<p1><b>Grand Shaman</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can use your Spirit Possession an unlimited number of times. Additionally, you can ignore the verbal and somatic components of your shaman spells, as well as any material components that lack a cost and aren’t consumed by a spell.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Druid Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Druid Spellcasting</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>23</p2><br>
+							        
+											
+										
+							<p1><b>Cantrips</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Druidcraft, Primal Savagery, Frostbite, Shape Water</p2><br>
+							        
+											
+										
+							<p1><b>1st Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Entangle, Fog Cloud, Ice Knife, Speak with Animals</p2><br>
+							        
+											
+										
+							<p1><b>2nd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Hold Person, Earthbind, Moonbeam</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Call Lightning, Speak with Plants, Plant Growth</p2><br>
+							        
+											
+										
+							<p1><b>4th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Hallucinatory Terrain, Grasping Vine, Dominate Beast</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Awaken, Insect Plague, Tree Stride</p2><br>
+							        
+											
+										
+							<p1><b>6th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Investiture, Flesh to Stone</p2><br>
+							        
+											
+										
+							<p1><b>7th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Fire Storm, Plane Shift</p2><br>
+							        
+											
+										
+							<p1><b>8th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Feeblemind</p2><br>
+							        
+											
+										
+							<p1><b>9th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Storm of Vengeance</p2><br>
+							        
+											
+										
+							<p1><b>Druidic</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You know Druidic, the Secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a Message. Others spot the message&#39;s presence with a successful DC 15 Wisdom (Perception) check but can&#39;t decipher it without magic.</p2><br>
+							        
+											
+										
+							<p1><b>Wild Shape</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or Long Rest. Your druid level determines the Beasts you can transform into, as shown in the Beast Shapes table. At 2nd Level, for example, you can transform into any beast that has a Challenge Rating of 1/4 or lower that doesn&#39;t have a flying or Swimming speed. You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a Bonus Action on Your Turn. You automatically revert if you fall Unconscious, drop to 0 Hit Points, or die</p2><br>
+							        
+											
+										
+							<p1><b>Timeless Body</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>The primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year</p2><br>
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can cast many of your Druid Spells in any shape you assume using Wild Shape. You can perform the somatic and verbal Components of a druid spell while in a beast shape, but you aren&#39;t able to provide Material Components</p2><br>
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can use your Wild Shape an unlimited number of times. Additionally, you can ignore the verbal and somatic Components of your Druid Spells, as well as any Material Components that lack a cost and aren&#39;t consumed by a spell. You gain this benefit in both your normal shape and your beast shape from Wild Shape.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Curse-Binder Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Spell DC</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>23</p2><br>
+							        
+											
+										
+							<p1><b>3rd Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Blindness/Deafness, Ray of Enfeeblement</p2><br>
+							        
+											
+										
+							<p1><b>5th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Bestow Curse, Vampiric Touch</p2><br>
+							        
+											
+										
+							<p1><b>7th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Blight, Phantasmal Killer</p2><br>
+							        
+											
+										
+							<p1><b>9th Level</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Contagion, Enervation</p2><br>
+							        
+											
+										
+							<p1><b>Primal Curse</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You learn to twist the life essence of a creature, hindering their abilities. As an Action, you can choose to inflict one of the following Primal Curses on a crature you can see within 30 feet. The Primal</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Curse lasts for 1 minute unless you use an action to to end the effect or become uncoscious. Once you&#39;ve cursed a creature, using this feature again causes the effect of the previous curse to end immediately. Upon reaching 11th Level you can have up to 2 of your Primal Curses active at one time. At 17th Level you can have up to 3 Primal Curses active at one time. A single creature can onle be effected by 1 Primal Curse at a time.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Curse of Blinding - You force a creature to makea Strength Saving Throw. On a failed save it&#39;s movement speed is reduced to five times your Wisdom modifier (minimum of 5 feet). The creature repeats the saving throw at the end of each turn, ending the effect on a success</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Curse of Draining - You force a creature to make a Constitution Saving Throw. On a failed save it takes 1d4 necrotic damage and cannot gain hit points. The creature repeats the saving throw at the end of each turn taking and additional 1d4 necrotic damage on each failed save, ending the effect on a success</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Curse of Lethargy - You force a creature to make a Wisdom Saving Throw. On a failed save the creature must subtract your Wisdom modifier (minimum of 1) from its attack rolls. The creature repeats the saving throw at the end of each turn, ending the effect on a success</p2><br>
+							        
+											
+										
+							<p1><b>Evil Eye</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You learn to twist the life-esscnce of those around you in harmful ways. When a creature that you can see within 30 feet makes an ability check. attack roll or saving throw. you can use your reaction to impose disadvantage on the roll You may use this ability a number of times equal to your Wisdom modifter (minimum of 1} and you regain all expended uses when you finish a long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Potent Spellcasting</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Your practice of twisted magic has made your abilities more powerful. When you damage a creature with a cantrip or Primal Curse you gain a bonus to the damage roll equal to your Wisdom modifier (minimum of 1)</p2><br>
+							        
+											
+										
+							<p1><b>Shamanistic Ward</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You can ward yourself against specific magical effects. At the end of a long rest choose acid, cold, fire. lightning. necrotic, poison. psychic. radiant, or thunder damage. You gain resistance to that damage type untll the end of your next long rest. Attacks made with silver weapons ignore any damage resistance you gain from this ability.</p2><br>
+							        
+											
+										
+							<p1><b>Foul Conjuration</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>You have reached the plnnacle of foul shamanism and learn to conjure spirits of darkness. Upon reaching 14th level. you can cast Create Undead as a 6th level spell, without providing any of the material components or expending a spell slot. Spirits rise out of the ground in the shape of the undead you summon. They are under your control until the end of your next long rest, or unti1 they are destroyed Once you use this ability you must complete a long rest before you can cast Create Undeadd In this way again.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Circle of the Blighted Abilities</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Defile Ground</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Starting at 2nd level when you choose this circle, you can use a bonus action to corrupt a patch of land or an area of water in a 10-foot radius centered on a point within 60 feet of you. This corruption lasts for 1 minute. The corrupted area is difficult terrain for creatures that are hostile to you. Additionally, when a creature in the area takes damage from an attack or spell for the first time on a turn, it takes an extra 1d4 necrotic damage. You can move this patch of corruption up to 30 feet as a bonus action. Flying creatures are unaffected by the corruption.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Starting at 10th level, the area of your defiled ground increases to a 20-foot radius. Additionally, the extra damage dealt by your defiled ground increases to 1d6 when you reach 10th level in this class, and 1d8 at 14th level.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Once you use this feature, you can’t use it again until you finish a short or long rest.</p2><br>
+							        
+											
+										
+							<p1><b>Blighted Shape</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Also at 2nd level, your physical form begins to show effects of the corruption you wield, tracing blackened veins across your skin, producing gnarled, bony protrusions, or other eerie phenomena. You gain proficiency in the Charisma (Intimidation) skill.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Additionally, while you are transformed by you Wild Shape feature, you gain a +2 bonus to AC as gnarled spines protrude from your body. Your beast form also gains darkvision with a radius of 60 feet, or an additional 60 feet of darkvision if it already has that sense.</p2><br>
+							        
+											
+										
+							<p1><b>Call of the Shadowseeds</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 6th level, you learn to summon the feral children of the forest from the life force of your enemies. When a creature that is not undead or a construct takes damage within the area of your Defile Ground feature, you can use your reaction to summon a blighted sapling in an unoccupied space within 5 feet of the creature. You can direct the sapling to make an attack against any creature within 5 feet of it as a part of this reaction. The sapling then acts on your initiative, obeying your verbal commands.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>The blighted sapling remains in your service until it’s reduced to 0 hit points, until the end of your next long rest, or until you summon another sapling, at which point it crumbles into foul-smelling mulch. You can use this feature a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>The sapling uses the statistics below. Its features scale based on your level and proficiency bonus (PB).</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Blighted Sapling</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Medium plant</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Armor Class - 10 + PB (natural armor)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Hit Points - twice your druid level</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Speed - 30 ft.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>STR 8(-1) DEX 13(+1) CON 12(+1) INT 4(-3) WIS 8(-1) CHA 3(-4)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Damage Vulnerabilities - fire</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Damage Resistances - necrotic, poison</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Condition Immunities - blinded, deafened, poisoned</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Senses - blindsight 60 ft. (blind beyond this radius), passive Perception 9</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Languages - understands the languages you speak</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Challenge —</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Proficiency Bonus (PB) - equals your bonus</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Actions</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Multiattack. When you reach 14th level in this class, the blighted sapling makes two claw attacks</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Claws. Melee Weapon Attack - your spell attack modifier to hit, reach 5 ft., one target. Hit - 2d4 + PB piercing damage.</p2><br>
+							        
+											
+										
+							<p1><b>Foul Conjuration</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Starting at 10th level, the creatures you conjure are malformed and bloated with toxins. Any beast, fey, or plant (including your blighted sapling) summoned or created by your spells or class features gains the following traits</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Blighted Resilience - The creature has immunity to necrotic and poison damage and to the poisoned condition.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Toxic Demise - When the creature is reduced to 0 hit points, it explodes in a burst of toxic mulch or fetid viscera. Each creature within 5 feet of the exploding creature must succeed on a Constitution saving throw against your spell save DC or take necrotic damage based on the creature’s challenge rating (see the table below). As an action, you can also cause a summoned creature to explode, immediately killing it.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Toxic Demise Damage</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Creature CR	             Damage</p2><br>
+							        
+											
+										
+							
+											
+									<p2>1/4 or lower	             1d4 necrotic damage</p2><br>
+							        
+											
+										
+							
+											
+									<p2>1/2	                     1d6 necrotic damage</p2><br>
+							        
+											
+										
+							
+											
+									<p2>1 or higher	             A number of d8s of necrotic damage equal to the creature&#39;s challenge rating</p2><br>
+							        
+											
+										
+							
+											
+									<p2>No challenge rating	     A number of d6s of necrotic damage equal to your proficiency bonus</p2><br>
+							        
+											
+										
+							<p1><b>Incarnation of Corruption</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>At 14th level, your physical form begins to take on the tainted traits of the land you are bonded to. Your skin grows ashen, and your eyes darken or turn completely white. Spines and jagged spurs emerge from your body, granting you resistance to necrotic damage and a +2 bonus to AC.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Additionally, whenever you start your turn within the radius of the corruption created by your Defile Ground feature, you can use a bonus action to gain temporary hit points equal to your proficiency bonus.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Feats</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Keen Mind, War Caster, Observant, Wild Talent, Telekinetic, Telepathic, Ritual Caster, Metabolic Control, Blood Magic</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Legendary Resistance</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> (3/Day), If Grey Crow fails a saving throw she can choose to succeed instead</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Legendary Actions</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Grey Crow can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature&#39;s turn. Grey Crow regains spent Legendary Actions at the start of her turn</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Maddening Touch</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Melee Spell Attack +6 to hit, Range - Touch, Damage - 4d12 + 10 psychic damage. On a failed saving throw, the effected creature must role on the Short-Term Madness Table (DMG p. 259) and is afflicted with that symptom for 1d10 minutes</p2><br>
+							        
+											
+										
+							<p1><b>Dominating Touch</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Melee Spell Attack +6 to hit, Range - Touch, Grey Crow can cast the Dominate Person spell without using a spell slot or components on any person she can touch</p2><br>
+							        
+											
+										
+							<p1><b>Murder of Crows</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>Grey Crow reaches her hand out towards her target, her skin transitions to the darkest of black. With a snap of her fingers, crows erupt forth and surround her enemies. All creatures within a 10 foot cube of her chosen point within 30 feet become surrounded, hindering their sight and dealing 4D10 piercing damage per round to those inside. Creatures within the area of effect make a CON saving throw, on a successful save the creature takes only half damage. While inside of the spell&#39;s cube all creatures roll ranged attacks with disadvantage.</p2><br>
+							        
+											
+									
+
+								
+							<p><b><h4>Attacks</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> Can make 2 martial or spell attacks</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Combat Tactics</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> He&#39;ll go out of his way to avoid direct physical combat but can handle himself if he has to. He prefers to summon his &quot;servants&quot; to do his fighting for him</p>
+									
+									
+									
+									
+
+								
+							<p><b><h4>Special Equipment</h4></b></p><p> </p>
+									
+									
+									
+									
+
+								
+							<p><b><h4></h4></b></p><p> </p>
+									
+									
+									
+										
+							<p1><b>Silver Dagger</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>This silver dagger is of the same familty as the Githyanki&#39;s sacred weapons, and are capable of cutting the cord that tethers a creature to their astral body. You gain a +3 bonus to attack and damage rolls made with this magic weapon. If you attack a creature&#39;s astral body (that is, the creature is under the effect of the astral projection spell or similar magic) and the attack was a critical hit, you sever that creature&#39;s astral cord.</p2><br>
+							        
+											
+										
+							<p1><b>Twin Snake Belt</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									
+							        
+											
+										
+							<p1><b>Cloak of Displacement</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>While you wear this cloak, it projects an Illusion that makes you appear to be standing in a place near your actual Location, causing any creature to have disadvantage on Attack rolls against you. If you take damage, the property ceases to function until the start of your next turn. This property is suppressed while you are Incapacitated, Restrained, or otherwise unable to move.</p2><br>
+							        
+											
+										
+							<p1><b>Rod of Absorption</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>While holding this rod, you can use your reaction to absorb a spell that is targeting only you and not with an area of effect. The absorbed spell&#39;s effect is canceled, and the spell&#39;s energy, not the spell itself is stored in the rod. The energy has the same level as the spell when it was cast. The rod can absorb and store up to 50 levels of energy over the course of its existence. Once the rod absorbs 50 levels of energy, it can&#39;t absorb more. If you are targeted by a spell that the rod can&#39;t store, the rod has no effect on that spell.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>When you become attuned to the rod, you know how many levels of energy the rod has absorbed over the course of its existence, and how many levels of spell energy it currently has stored.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>If you are a spellcaster holding the rod, you can convert energy stored in it into spell slots to cast spells you have prepared or know. You can create spell slots only of a level equal to or lower than your own spell slots, up to a maximum of 5th level. You use the stored levels in place of your slots, but otherwise cast the spell as normal. For example, you can use 3 levels stored in the rod as a 3rd-level spell slot</p2><br>
+							        
+											
+										
+							<p1><b>Ring of Evasion</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving throw instead.</p2><br>
+							        
+											
+										
+							<p1><b>Ring of Mind Shielding</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>While wearing this ring, you are immune to magic that allows other Creatures to read your thoughts, determine whether you are lying, know your Alignment, or know your Creature Type. Creatures can telepathically communicate with you only if you allow it.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You can use an action to cause the ring to become Invisible until you use another action to make it visible, until you remove the ring, or until you die.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for The Afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can&#39;t prevent this Telepathic Communication.</p2><br>
+							        
+											
+										
+							<p1><b>Staff of the Woodlands</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.</p2><br>
+							        
+											
+										
+							
+											
+									<p2>The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical quarterstaff</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You can use an action to expend 1 or more of the staff&#39;s charges to cast one of the following spells from it, using your spell save DC</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Animal Friendship (1 charge)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Awaken (5 charges)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Barkskin (2 charges)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Locate Animals or Plants (2 charges)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Speak with Animals (1 charge)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Speak with Plants (3 charges)</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Wall of Thorns (6 charges).</p2><br>
+							        
+											
+										
+							
+											
+									<p2>You can also use an action to cast the pass without trace spell from the staff without using any charges</p2><br>
+							        
+											
+										
+							
+											
+									<p2>Tree Form - You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.</p2><br>
+							        
+											
+										
+							<p1><b>Bag of Holding</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its Contents. Retrieving an item from the bag requires an action.</p2><br>
+							        
+											
+										
+							<p1><b>Crow&#39;s Coins</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>A purse full of coins that curse anyone but her, who carries one of them with disadvantage on all ability checks. She often uses them to pay for things or slips them into unwary people&#39;s change pouches</p2><br>
+							        
+											
+										
+							<p1><b>Ring of Misty Step</b></p1><br>
+											
+									
+							        
+											
+										
+							
+											
+									<p2>The ring possesses 6 crystal stones holding some kind of magical shadowy substance inside. Each crystal stone provides one use of the misty step spell. Using a crystal stone allows you to cast the misty step spell, the magical shadowy substance inside disappears. You can use this effect up to the total number of powered crystal stones located on the ring. Every Midnight, 1d6 crystals are replenished.</p2><br>
+							        
+											
+									
+
+								
+
+
+
+
+								
+
+	
+							<span class="pic">
+						<p></p>
+						
+						<img id="pic2" alt="" src="./npc_imgs/Grey Crow.png" width="500" height="auto" onerror="this.onerror=null;this.src='./npc_imgs/DUMMY.png';" />
+					</span>	
+	
+	
+	
+					<div class="cell" id="cell5">
+						<span class="data">
+						
+						
+						<span class="npc-heading-middle">
+										
+						<h1>5ecology</h1>
+						
+
+							<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 520,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>	
+										<span class="right-line">
+								
+										<p>	<h3>Introduction</h3>
+										</p>
+							<br>
+										
+											
+										<p>A previously unseen old lady walks out of the darkness and sits down beside the party at their comp fire</p>
+		
+						
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Appearance</h3>
+											<br>
+											<p>She appears to look like anything she wants, usually something unsettling to the party. She however is almost always dressed in ragged leathers and bare foot</p>
+		
+										</span>
+		
+		
+										<span class="right-line">
+			
+											<h3>Expressions</h3><br>
+										
+											
+											<p><i>"Greetings children, may an old lady warm herself by your fire"</i></p><br>
+											
+											<p><i>"Your quest was doomed from the start, children"</i></p><br>
+											
+											<p><i>"There is only folly on the path you now take"</i></p><br>
+											
+											
+											
+										</span> 
+		
+								</span>
+					
+						<span class="data">
+							
+										<span class="right-line-first">
+			
+										<h3>Mannerisms</h3>
+											<br>
+											<p>usually appears as a shrivelled old lady with a rye grin and deep empty eyes</p>
+		
+										</span> 
+		
+		
+										<span class="right-line">
+			
+											<h3>Motivations</h3>
+											<br>
+											<p>To bring about the end  
+</p>
+										</span>
+		
+		
+			
+			
+										<span class="right-line">
+			
+											<h3>Passions</h3>
+											<br>
+											<p>Sewing fear, mistrust and chaos
+</p>
+		
+										</span> 
+		
+										<span class="right-line">
+			
+											<h3>Secrets</h3>
+											<br>
+											<p>She is an ancient being that works for the Forbidden Gods attempting to sew enough fear and chaos for them to find their way back into the world
+</p>	
+		
+										</span> 
+						
+						</span>
+			 
+
+				
+							
+			
+				
+							<p><h4>Factions</h4><br></p>
+									
+									
+									
+								<br><br>
+								
+			<div class="container2">
+				
+					<span class="data2" id="bgcell">
+							<span class="npc-heading">
+
+					
+							
+								<h1>Background Story</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Grey Crow was once the shaman of her primitive tribe. During one of her journey's into the astral plane to speak with the spirits, she was touched by the Forbidden Gods. Their touch corrupted her spirit and her mind, 
+leaving her their emmisary, walking the earth and sewing chaos in her wake. She returned to her body a corrupted being, and immediately proceeded to slaughter her tribe. Since then, she has walked the earth, doing the
+bidding of her masters, preparing the world for their return. Somewhere along the line, she came into posession of a silver dagger forged by the Githyanki and capale of severing astral cords.    
+
+								
+  								<h1>Personality</h1>
+
+									<svg height="5" width="100%" class="tapered-rule">
+	   				 
+								<polyline points="0,0 900,2.5 0,5"></polyline>
+	  
+							</svg>
+						</span>
+							
+								<span class="property-line bg">	
+		
+								
+									Grey Crow is an exceedingly cunning liar and trickster. She is completely mad and derranged, but hides it well when it suits her needs. Her favorite game is to approach strangers out of the night, joining their campfire
+as an elderly traveller on her own seeking shelter and companionship. She will then turn their secrets against them and use them to steer adventureres from their path. She likes to play tricks and jokes that cause as much 
+choas as possible and uses her shapeshifting abilities to cause as much confusion and mistrust as possible with parties. She will rarely venture into large towns or cities, prefering to stick to the wilds. One of her
+favorite tricks is convincing adventureres to travel with her to the Astral Plane with her, then using her silver dagger to sever their astral cord, leaving her victims dead and unrevivable.
+
+								
+   
+								</span>
+</span>
+								
+					
+				
+				
+				
+				</div>
+	<!--		
+				<div class="cell" id="pers-cell">
+					<span class="data">
+						
+						<span class="stat-block single">
+					
+							<span class="npc-heading">
+					
+								<h1>Personality</h1>
+								
+								<hr class="divider">
+	
+								<span class="property-line">	
+		
+									Grey Crow is an exceedingly cunning liar and trickster. She is completely mad and derranged, but hides it well when it suits her needs. Her favorite game is to approach strangers out of the night, joining their campfire
+as an elderly traveller on her own seeking shelter and companionship. She will then turn their secrets against them and use them to steer adventureres from their path. She likes to play tricks and jokes that cause as much 
+choas as possible and uses her shapeshifting abilities to cause as much confusion and mistrust as possible with parties. She will rarely venture into large towns or cities, prefering to stick to the wilds. One of her
+favorite tricks is convincing adventureres to travel with her to the Astral Plane with her, then using her silver dagger to sever their astral cord, leaving her victims dead and unrevivable.
+
+    
+								</span>
+
+  						
+							</span>	
+					
+						</span>
+					
+					</span>
+				
+			</div>
+				
+		</div>	
+	</div>
+-->
+
+						
+			  </body>
+
+</html>
