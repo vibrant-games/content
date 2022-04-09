@@ -355,7 +355,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A previously unseen old lady walks out of the darkness and sits down beside the party at their comp fire
+    introduction:  A previously unseen old lady walks out of the darkness and sits down beside the party at their camp fire
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -465,7 +465,7 @@ npc:
     - Charisma
     - Intelligence
     damage-immunities:
-    - Poison, Psychic, Poison and Necrotic
+    - Poison, Psychic and Necrotic
     condition-immunities:
     - Exhaustion, Poisoned, Diseased
     resistances:
