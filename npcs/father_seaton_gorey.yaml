@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Elderly
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -333,7 +333,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-
+    - id: church_of_the_mercantile_god
+      name: Church of the Mercantile God
+      role: Ruling Council
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -343,7 +345,7 @@ npc:
     adjectives:
     - Charismatic
     - Cruel
-    - Deceitful
+    - Hungry
 
   improv:
 
@@ -358,7 +360,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A previously unseen old lady walks out of the darkness and sits down beside the party at their comp fire
+    introduction:  A gaunt, older gentleman with a whispy comb-over of grey hair dressed in gold edged robes stands at the pulpit preaching the exaltations of free commerce
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -369,7 +371,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   She appears to look like anything she wants, usually something unsettling to the party. She however is almost always dressed in ragged leathers and bare foot
+    appearance:   A rail thin older man with whispy grey hair. Always oppulently dressed in the gold lined linens of his office 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -386,9 +388,9 @@ npc:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
     expressions:
-    - "Greetings children, may an old lady warm herself by your fire"
-    - "Your quest was doomed from the start, children"
-    - "There is only folly on the path you now take"
+    - "All Praise the Freedom brought by Lord of Commerce!"
+    - "Individual freedom is paramount and the only true way to address the needs of the many"
+    - "It's time to eat!"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -401,7 +403,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:  usually appears as a shrivelled old lady with a rye grin and deep empty eyes
+    mannerisms:  Gesticulates wildly and spits and froths as he preaches. There is something dark and malevolent behind his eyes
 
   acting:
     #
@@ -411,7 +413,7 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      To bring about the end  
+      Personal gain, bringing about the end of the world  
 
     #
     # Passions:
@@ -420,7 +422,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Sewing fear, mistrust and chaos
+      Sewing fear, mistrust, chaos and commerce
 
     #
     # Vulnerabilities:
@@ -429,7 +431,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      Insane
+      He has a very big secret
 
     #
     # Secrets:
@@ -438,22 +440,22 @@ npc:
     # ???Maximum length???
     #
     secrets: |
-      She is an ancient being that works for the Forbidden Gods attempting to sew enough fear and chaos for them to find their way back into the world
+      He is dead. He survives by eating humanoid flesh. He secretly works for the Forbidden Gods and not the Mercantile God
 
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 21
-    hit-points: 263
-    speed: 35
-    str: 13
-    dex: 17
-    con: 18
-    int: 23
-    wis: 29
-    cha: 20
+    armour-class: 19
+    hit-points: 219
+    speed: 40
+    str: 19
+    dex: 16
+    con: 22
+    int: 18
+    wis: 27
+    cha: 21
 
   #
   # Special characteristics.
@@ -468,13 +470,13 @@ npc:
     - Charisma
     - Intelligence
     damage-immunities:
-    - Poison and Necrotic
+    - Cold, Poison and Necrotic
     condition-immunities:
     - Exhaustion, Poisoned, Diseased, Death
     resistances:
-    - Magic, Cold, Radiant
+    - Magic, Fire, Radiant
     skills:
-    - Oration
+    - Oration, Finance
     proficiencies:
     - Arcana
     - Performance
@@ -483,6 +485,7 @@ npc:
     - Deception
     - Persuasion
     - Insight
+    - Heavy Armour
   special-abilities:
   - title: Revenant Abilities
   - abilities: 
@@ -658,39 +661,36 @@ npc:
     - content: Amplify - You can link up to number of creatures equal to your Intelligence modifier (minimum of 2).
 
   - title: Feats
-  - content: Keen Mind, War Caster, Observant, Ritual Caster, Blood Magic, Actor, Spell Sniper
+  - content: War Caster, Observant, Ritual Caster, Blood Magic, Actor, Inspiring Leader, 
   - title: Legendary Resistance
-  - content: (3/Day), If Father Seaton Gorey fails a saving throw she can choose to succeed instead 
+  - content: (3/Day), If Father Seaton Gorey fails a saving throw he can choose to succeed instead 
   - title: Legendary Actions 
   - content: Father Seaton Gorey can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
              Father Seaton Gorey regains spent Legendary Actions at the start of her turn
   - abilities:
-    - title: Maddening Touch
-    - content: Melee Spell Attack +6 to hit, Range - Touch, Damage - 4d12 + 10 psychic damage. On a failed saving throw, the effected creature must role on the Short-Term Madness Table (DMG p. 259) and is afflicted with that 
-               symptom for 1d10 minutes
-    - title: Dominating Touch
-    - content: Melee Spell Attack +6 to hit, Range - Touch, Grey Crow can cast the Dominate Person spell without using a spell slot or components on any person she can touch  
-    - title: Murder of Crows
-    - content: Grey Crow reaches her hand out towards her target, her skin transitions to the darkest of black. With a snap of her fingers, crows erupt forth and surround her enemies. All creatures within a 10 foot cube of her 
-               chosen point within 30 feet become surrounded, hindering their sight and dealing 4D10 piercing damage per round to those inside. Creatures within the area of effect make a CON saving throw, on a successful save 
-               the creature takes only half damage. While inside of the spell's cube all creatures roll ranged attacks with disadvantage.
+    - title: Aura of Starvation
+    - content: A creature that starts its turn or enters within 10 feet of the Father Seaton Gorey this round must succeed on a DC 15 Constitution saving throw or be paralyzed by gnawing cold and crippling hunger for 1 minute. 
+               A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the
+               Aura of Starvation for the next 24 hours
+    - title: Frozen Breath
+    - content: Ranged Spell Attack +7 to hit, range 100 ft., one target. Hit 28 (8d6) cold damage, and the target must succeed on a DC 16 Dexterity saving throw or be restrained until the end of its next turn  
+    - title: Contaminating Bite
+    - content: Melee Weapon Attack +9 to hit, reach 5 ft., one target. Hit 14 (2d8 + 5) piercing damage. The recipient of a bite must make a DC 10 Constitution save or be immediately transformed into a Wendigo (see Monster 
+               Manual) under the complete control of Father Seaton Gorey for 1d6 rounds. At the end of the 1d6 rounds the target turns back to their normal state taking one point of exhaustion. Each time a target fails its
+               saving throw, the next time it is bitten the saves DC increases by 5.
 
   - title: Attacks
-  - content: Can make 2 martial or spell attacks 
+  - content: Can make 2 martial or spell attacks
+  - content: Bite. Melee Weapon Attack +5 to hit, reach 5 ft., one target. Hit 12 (2d8 + 3) piercing damage. On a hit, the target must succeed on a DC 10 Constitution saving throw or take an additional 9 (2d8) necrotic damage.
+             Father Seaton Gorey gains that many hit points
+  - content: Claws. Melee Weapon Attack +5 to hit, reach 5 ft., one target. Hit 10 (2d6 + 3) slashing damage.  
   - title: Combat Tactics
-  - content: He'll go out of his way to avoid direct physical combat but can handle himself if he has to. He prefers to summon his "servants" to do his fighting for him
+  - content: He'll go out of his way to avoid direct physical combat but can handle himself if he needs to eat. Will generally let the martial members of his church do the fighting for him
 
   - title: Special Equipment
   - abilities:
-    - title: Silver Dagger
-    - content: This silver dagger is of the same familty as the Githyanki's sacred weapons, and are capable of cutting the cord that tethers a creature to their astral body. You gain a +3 bonus to attack and damage rolls made 
-               with this magic weapon. If you attack a creature's astral body (that is, the creature is under the effect of the astral projection spell or similar magic) and the attack was a critical hit, you sever that 
-               creature's astral cord.
-    - title: Twin Snake Belt
-    - cotnent: While wearing this belt it gives an extra +2 bonus to his AC. The belt can be grasped by the wearer and tossed to the ground (treating the wearer as proficient) with a range increment of 10 feet. Upon impact, the 
-               belt becomes two small vipers. If either of the snakes are killed or leave 100 feet from the wearer, they return to belt form upon the wearer instantly. Slain snakes cannot be re-summoned for 24 hours. They can be
-               recalled as a standard action but otherwise may be summoned at will. Poison taken from or injuring a creature vanishes if the inflicting snake returns to belt form (but otherwise not any damage the poison may have
-               already caused).
+    - title: +3 Golden Plate
+    - content: Crafted of solid gold. You have a bonus to +3 AC while wearing this armor
     - title: Cloak of Displacement
     - content: While you wear this cloak, it projects an Illusion that makes you appear to be standing in a place near your actual Location, causing any creature to have disadvantage on Attack rolls against you. If you take 
                damage, the property ceases to function until the start of your next turn. This property is suppressed while you are Incapacitated, Restrained, or otherwise unable to move.
@@ -710,30 +710,15 @@ npc:
     - content: You can use an action to cause the ring to become Invisible until you use another action to make it visible, until you remove the ring, or until you die.
     - content: If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for The Afterlife. As long as your soul is in the ring, you can telepathically 
                communicate with any creature wearing it. A wearer can't prevent this Telepathic Communication.
-    - title: Staff of the Woodlands
-    - content: This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you have a +2 bonus to spell attack rolls.
-    - content: The staff has 10 charges for the following properties. It regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff loses its properties and becomes a nonmagical 
-               quarterstaff
-    - content: You can use an action to expend 1 or more of the staff's charges to cast one of the following spells from it, using your spell save DC
-    - content: Animal Friendship (1 charge)
-    - content: Awaken (5 charges)
-    - content: Barkskin (2 charges)
-    - content: Locate Animals or Plants (2 charges)
-    - content: Speak with Animals (1 charge)
-    - content: Speak with Plants (3 charges)
-    - content: Wall of Thorns (6 charges).
-    - content: You can also use an action to cast the pass without trace spell from the staff without using any charges
-    - content: Tree Form - You can use an action to plant one end of the staff in fertile earth and expend 1 charge to transform the staff into a healthy tree. The tree is 60 feet tall and has a 5-foot-diameter trunk, and its 
-                           branches at the top spread out in a 20-foot radius. The tree appears ordinary but radiates a faint aura of transmutation magic if targeted by detect magic. While touching the tree and using another 
-                           action to speak its command word, you return the staff to its normal form. Any creature in the tree falls when it reverts to a staff.
+    - title: Mace of Dread Hunger
+    - content: This magic weapon has 3 charges. While holding it, you can use an action and expend 1 charge to release a wave of terror. Each creature of your choice in a 30-foot radius extending from you must succeed on a DC 15
+               Wisdom saving throw or become frightened of you for 1 minute. The mace regains 1d3 expended charges daily at dawn.
+    - content: The mace regains 1d3 expended charges daily at dawn.
+    - content: This weapon gives +2 on attack roles. On a successful attack the mace does and extra 3d8 necrotic damage and its weilder gains that many hit points
+    - content: Cursed Weapon. This weapon, once attuned, gradually creates a dependence and then addiction to the hit points gained from its use.   
     - title: Bag of Holding
     - content: This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. 
                The bag weighs 15 pounds, regardless of its Contents. Retrieving an item from the bag requires an action.
-    - title: Crow's Coins
-    - content: A purse full of coins that curse anyone but her, who carries one of them with disadvantage on all ability checks. She often uses them to pay for things or slips them into unwary people's change pouches
-    - title: Ring of Misty Step
-    - content: The ring possesses 6 crystal stones holding some kind of magical shadowy substance inside. Each crystal stone provides one use of the misty step spell. Using a crystal stone allows you to cast the misty step spell,
-               the magical shadowy substance inside disappears. You can use this effect up to the total number of powered crystal stones located on the ring. Every Midnight, 1d6 crystals are replenished.
 
 
   profile:
@@ -746,9 +731,14 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Grey Crow was once the shaman of her primitive tribe. During one of her journey's into the astral plane to speak with the spirits, she was touched by the Forbidden Gods. Their touch corrupted her spirit and her mind, 
-      leaving her their emmisary, walking the earth and sewing chaos in her wake. She returned to her body a corrupted being, and immediately proceeded to slaughter her tribe. Since then, she has walked the earth, doing the
-      bidding of her masters, preparing the world for their return. Somewhere along the line, she came into posession of a silver dagger forged by the Githyanki and capale of severing astral cords.    
+      Father Seaton Gorey was once a very pious and devout follower of the Church of the Mercantile God. His charisma and devotion combined with a ruthless determination and a keen eye for investment allowed him to work his 
+      onto the ruling council of the church. Father Gorey was zealous in his devotion and was well known for his missionary work in the name of the church. On one such missionary excursion, Father Gorey's missionary caravan
+      became trapped in a cave on a mountain pass as an unexpected winter storm blew in cutting off all possibility of escape. As days turned into weeks, the provisions ran out and the caravan turned to cannibalism. Gorey, being
+      the most powerful of those present, was the sole survivor of the disaster, returning to the church 6 months later in rough shape but twice as zealous as he'd ever been. Unbeknownst to his colleagues, Father Gorey was not
+      a sole survivor. In fact, he hadn't survived at all. After eating the rest of his caravan, Father Gorey had died slowly and painfully of starvation and exposure. His prayers to the Mercantile God fell on deaf ears, but
+      someone else had been listening. The Forbidden Gods reached out to Gorey in his dying moments, promising him eternal life if he promised to serve them. He promised. They did not save him though. They allowed him to die
+      and then brought him back as something different. Father Gorey returned as a revenant, unable to die, but required to feast on humanoid flesh to maintain his undeath. Gorey has since returned to his church and his position
+      on its ruling council, but instead he only pays lip service to the Mercantile God, while using his wealth, power an influence to further the goals of his true lords and to feed his unending hunger.       
 
     #
     # Personality (or something like that):
@@ -759,7 +749,5 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Grey Crow is an exceedingly cunning liar and trickster. She is completely mad and derranged, but hides it well when it suits her needs. Her favorite game is to approach strangers out of the night, joining their campfire
-      as an elderly traveller on her own seeking shelter and companionship. She will then turn their secrets against them and use them to steer adventureres from their path. She likes to play tricks and jokes that cause as much 
-      choas as possible and uses her shapeshifting abilities to cause as much confusion and mistrust as possible with parties. She will rarely venture into large towns or cities, prefering to stick to the wilds. One of her
-      favorite tricks is convincing adventureres to travel with her to the Astral Plane with her, then using her silver dagger to sever their astral cord, leaving her victims dead and unrevivable.
+      Father Seaton Gorey is a dark and evil beast in shape of a pious zealot. He is devious, cunning and cruel, but is exsceptionally adept at hiding his unnatural hunger and hatred behind a veneer of devotion and charisma.
+      His public face is that of a rigid and pious devotee but with an engaging softness and cheerfulness about him. But underneath he is a vicious self-serving monster capable of devouring the souls of the unwary. 
