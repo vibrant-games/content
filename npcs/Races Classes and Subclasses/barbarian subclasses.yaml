@@ -223,7 +223,7 @@
                can only deal bonus damage in this way once per turn.
     - title: Brutal Harvest
     - content: You gain the ability to harvest the life from the blood of enemies you slay. When you kill a creature with blood that is not Tiny using a melee weapon attack while you are raging, you can choose to 
-               regain a number of hit points equal to your Constitution modifier+ your barbarian level (minimum 1 hit point~ This feature cannot bring your current hit point total above half your maximum hit points. 
+               regain a number of hit points equal to your Constitution modifier + your barbarian level (minimum 1 hit point~ This feature cannot bring your current hit point total above half your maximum hit points.) 
                You can only use this feature up to a number of times equal to the number of rage uses you have each day as a barbarian. You regain all uses of this feature when you finish a long rest.
     - title: The Blood Hunt
     - content: You learn how to taste a soul through the smell of blood. When a creature that has blood within 15 feet of you takes damage, you can pick up the finer details of the smell and you learn things about 
@@ -265,7 +265,7 @@
     - content: You have two true loves in life, alcohol and a good fight. No matter the circumstance those take priority over all. At 6th level, gain the following benefits
     - content: Pub Crawl - Any village, town, or city worth its weight in ale has a good pub or tavern. Your ears are accustomed to the clamorous din and hearghty laughter of a good pub. So long as there is a pub or
                            taven in a settlement, you can take a a few moments to focus and without fail, you can find it. You will always remember where it is, and how to get back to it.
-    - content: Connaisseur de Ia Grog - You know your true love through and through. You've had many brews from all across the land; Ales, beers, wines, liquors, and your stomach knows a good brew from a bad one. 
+    - content: Connaisseur de La Grog - You know your true love through and through. You've had many brews from all across the land; Ales, beers, wines, liquors, and your stomach knows a good brew from a bad one. 
                                         You gain proficieny with the brewers kit, and you're able to tell the quality and estimated price of a alcoholic drink with a few tastes.
     - content: Mithril Liver - You've consumed enough alcohol to kill a dragon, it's no surprise your liver is the strongest part of your body. You gain advantage on all hangover, poison, and holding your liquor 
                                checks.
@@ -421,7 +421,7 @@
     - content: 13                         True Form - Only a tiny string of your persona holds you to being able to be called mortal. Your size increases to large and your rage damage bonus is tripled. You also gain 
                                                       immunity to cold, fire, or lightning damage, which you choose when you gain this benefit.
     - title: Impenetrable Fury
-    - content: If you are forced to make a wisdom, intelligence, or charisma saving throw, you can use your reaction to gain advantage on the roll You can reroll one of the dice once if you have the demonic fury 
+    - content: If you are forced to make a wisdom, intelligence, or charisma saving throw, you can use your reaction to gain advantage on the roll. You can reroll one of the dice once if you have the demonic fury 
                benefit.
     - title: Scattering Charge
     - content: You can use a bonus action on your turn move up to your move speed to a point you can see. As you move, any creature that is within 10 feet of that point must make a wisdom saving throw equal to 8 + 
@@ -462,18 +462,17 @@
     - title: Horrifying Assault
     - content: When you hit a creature with a melee attack while raging, you can use a bonus action to cause the spirit within you to momentarily reveal itself in a terrifying manner. When you do, you make a 
                Charisma (Intimidation) check, and force the creature to make a Wisdom saving throw. The DC for the saving throw is equal to 10 or the result of the check, whichever is higher. On a failed save, 
-               the creature takes ld6 psychic damage and becomes frightened of you until the start of your next tum. The damage increases when you reach certain levels in this class, increasing to 2d6 at lOth
+               the creature takes ld6 psychic damage and becomes frightened of you until the start of your next turn. The damage increases when you reach certain levels in this class, increasing to 2d6 at lOth
                level 3d6 at 15th level and 4d6 at 20th level
-    - title: Indomitable Rage
-    - content: The warrior spirit within you grants you its supernatural willpower while you are possessed You can't be charmed or frightened while raging, and if you are charmed or frightened when you enter your 
-               rage, the effect is suspended for the duration of the rage.
+    - title: Blood Frenzy Rage
+    - content: Any time you kill a creature with a melee attack, you can move up to half your speed and make another attack on that turn.
     - title: Spiritual Medium
     - content: Your experience communicating with spirits has taught you how to cast the spell speak with dead without requiring material components. With this feature, the spell can also target a corpse even if it
                lacks a mouth or it has been the target of the same spell within the last 10 days. When you cast the spell this way, you allow the spirit of the target you choose to temporarily possess you, giving 
                it the ability to speak to others around you using your body. The spirit can speak in any languages it knew in life, even if you do not know that language. Until the spell ends, you are incapacitated
-               and have no control over your body, however you are not deprived of awareness. Additionally, with this feature the spell can also target an undead creature you can see within raoge so long as it knew
+               and have no control over your body, however you are not deprived of awareness. Additionally, with this feature the spell can also target an undead creature you can see within range so long as it knew
                at least one language in life. If the creature is hostile towards you, it must make a Wisdom saving throw (DC equal to 8 + your Constitution modifier+ your proficiency bonus). On a failed save, it is
-               forced to possess you. When an undead creature possesses you this way, it disappears for the duration. of the spell and reappears in its previous space or the nearest unoccupied space when the spell
+               banished to a pocket realm for one minute and it disappears for the duration. It and reappears in its previous space or the nearest unoccupied space when the spell
                ends. Once you use this feature, you can't use it again until you finish a short or long rest, and you can't use it on the same target for the next 24 hours.
     - title: Protective Possession
     - content: You can command the warrior spirit within you to invade the body of anyone who threatens yours. After a creature reduces you to 0 hit points while you're raging and you fail the saving throw of
@@ -529,15 +528,28 @@
   - title: Path of the Juggernaut Abilities
   - abilities: 
     - title: Thunderous Blows
-    - content: Beggining at level 3, rage instills a juggernaut with the strength to batter around their foes. Once per turn while raging, when they damage a creature with a melee attack, you can force the target to make a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier). On a failure, juggernaut push the target 5 feet away and can choose to immediately move 5 feet into the target’s previous position.
+    - content: Upon choosing this path at 3rd level, rage instills a juggernaut with the strength to batter though their foes. When barbain hits a creature with a melee attack while raging, they can push that creature up to 5 
+               feet away in any direction. Huge or larger target must make a Strength saving throw (DC 8 + juggernaut's proficiency bonus + juggernaut's Strength modifier). On a failure, a juggernaut pushes the target 5 feet in 
+               a direction of their choice. On a success, the target holds their ground
+               Starting at 10th level, the push distance increases up to 10 feet.
     - title: Stance of the Mountain/Spirit of the Mountain
-    - content: In addition, upon choosing this path at 3rd level, juggernaut harnesses the fury to anchor their feet to the earth, shrugging off the blows of those who wish to topple you, making it impossible to be knocked prone while raging unless juggernaut becomes unconscious.
+    - content: At the 3rd level, juggernaut harnesses the fury to anchor their feet to the earth. While ragging they can't be knocked prone or moved against their will unless become unconscious
     - title: Demolishing Might
-    - content: Beginning at level 6, juggernaut can muster destructive force with their assault, dealing double damage to objects and structures. Also, melee attacks against creatures of the construct type deal an additional 1d8 weapon damage.
+    - content: At level 6, juggernaut can muster destructive force with their assault, dealing double damage to objects and structures. Also, melee attacks against creatures of the construct type deal an additional 1d8 weapon 
+               damage.
+    - title: Resolute Stance
+    - content: At 6th level, juggernaut can temporarily refocus thier combat ability to make yourself a bulwark of defense. At the start of their turn (no action required), juggernaut can assume a defensive stance that lasts 
+               until the start of their next turn. While in this stance, juggernaut can't be grappled, their weapon attacks and attacks against them are made with disadvantage.
+    - title: Hurricane Strike
+    - content: At 10th level, when juggernaut pushes a creature at least 5 feet, they are able to use their reaction to leap into an unoccupied space next to this creature. Pushed target must succeed on a Strength saving throw 
+              (DC 8 + juggernaut's proficiency bonus + juggernaut's Strength modifier) or be knocked prone. This leap costs no movement and does not provoke attacks of opportunity. Additionally, whenever a juggernaut pushes a 
+              creature into a space within 5 feet of one of their ally, the ally can use their reaction to make a melee weapon attack against the pushed creature.
     - title: Overwhelming Cleave
-    - content: Upon reaching level 10, as juggernaut made a weapon attack while raging, they can make another attack as a bonus action with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.
-    - title: Unstoppable
-    - content: Starting at 14th level, juggernaut can choose to become unstoppable when you enter a rage - the speed cannot be reduced, and they are immune to the frightened, paralyzed, and stunned conditions. If juggernaut is frightened, paralyzed, or stunned, they can still take your bonus action to enter your rage and suspend the effects for the duration of the rage. When the rage ends, you suffer one level of exhaustion.
+    - content: At 10th level, when juggernaut makes a weapon attack while raging, they can make another attack as a bonus action with the same weapon against a different creature that is within 5 feet of the original 
+               target and within range of your weapon.
+    - title: Unstoppable Rage
+    - content: At 14th level, juggernaut becomes unstoppable while raging: their speed cannot be reduced, and they are immune to the frightened, paralyzed, and stunned conditions. If juggernaut is frightened, paralyzed, or 
+               stunned, they can still use a bonus action to rage and void all the effects mentioned above
          
          
          

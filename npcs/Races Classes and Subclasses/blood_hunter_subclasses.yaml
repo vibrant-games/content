@@ -1,6 +1,7 @@
   - title: Order of the Profane Soul Abilities
   - abilities: 
     - title: Otherworldly Patron
+    - content:
     - content: You strike a bargain with an otherworldly being of your choice; the Archfey, the Fiend, or the Great Old One, each detailed in the Player’s Handbook, the Undying within the Sword Coast Adventurer’s 
                Guide, and the Celestial or Hexblade in Xanathar’s Guide to Everything. Your choice augments some of your order features.
     - title: Pact Magic
@@ -11,11 +12,17 @@
                you must spend one of those slots, and you cast it as a 2nd-level spell. Spells Known of 1st Level and Higher. At 3rd level, you know two 1st-level spells of your choice from the warlock spell list. The 
                Spells Known column of the Profane Soul table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table’s
                Slot Level column for your level. When you reach 11th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level. Additionally, when you gain a level in this class and order, you 
-               can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots. Spellcasting Ability. Intelligence 
-               is your spellcasting ability for your warlock spells, so you use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the 
-               saving throw DC for a warlock spell you cast and when making an attack roll with one.
-               Spell save DC = 8 + your proficiency bonus + your Intelligence modifier.
-               Spell attack modifier = your proficiency bonus + your Intelligence modifier.
+               can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots. 
+    - content: Spellcasting Ability. Your chosen Hemocraft ability (Intelligence or Wisdom) is your spellcasting ability for your warlock spells, so you use your Hemocraft ability whenever a spell refers to your spellcasting 
+               ability. In addition, you use your Hemocraft modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.
+    - content: Spell save DC = 8 + your proficiency bonus + your Hemocraft modifier.
+    - content: Spell attack modifier = your proficiency bonus + your Hemocraft modifier
+    - title: Hemocraft Modifier
+    - content:     
+    - title: Cantrips
+    - content:
+    - title: 1st Level
+    - content:     
     - title: Rite Focus
     - content: Your weapon becomes a core to your pact with your chosen dark patron. While you have an active Crimson Rite, you can use your weapon as a spellcasting focus (found in chapter 5 of the Player’s Handbook) for 
                your warlock spells, and you gain a specific benefit based on your chosen pact (outlined below).

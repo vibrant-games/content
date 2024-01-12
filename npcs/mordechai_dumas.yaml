@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Human
+    race: Changeling
 
     #
     # The sub-race can be anything.
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: N/A
+    sub-race: Eberron
 
     #
     # Pronouns (case insensitive):
@@ -486,6 +486,22 @@ npc:
     - Perception
     - Religion
   special-abilities:
+  - title: Changeling (Eberron) Abilities
+  - abilities: 
+    - title: Change Appearance
+    - content: As an action, you can transform your appearance or revert to your natural form. You can’t duplicate the appearance of a creature you’ve never seen, and you revert to your natural form if you die.
+               You decide what you look like, including your height, weight, facial features, the sound of your voice, coloration, hair length, sex, and any other distinguishing characteristics. You can make
+               yourself appear as a member of another race, though none of your game statistics change. You also can’t appear as a creature of a different size than you, and your basic shape stays the same; if
+               you’re bipedal, you can’t use this trait to become quadrupedal, for instance. Your clothing and other equipment don’t change in appearance, size, or shape to match your new form, requiring you to
+               keep a few extra outfits on hand to make the most compelling disguise possible.
+               Even to the most astute observers, your ruse is usually indiscernible. If you rouse suspicion, or if a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) 
+               check you make to avoid detection.
+    - title: Unsettling Visage
+    - content: When a creature you can see makes an attack roll against you, you can use your reaction to impose disadvantage on the roll. You must use this feature before knowing whether the attack hits or misses.
+               Using this trait reveals your shapeshifting nature to any creature within 30 feet that can see you. Once you use this trait, you can’t use it again until you finish a short or long rest
+    - title: Divergent Persona
+    - content: You gain proficiency with one tool of your choice. Define a unique identity associated with that proficiency; establish the name, race, gender, age, and other details. While you are in the form of
+               this persona, the related proficiency bonus is doubled for any ability check you make that uses that proficiency  
   - title: Wizard Abilities
   - abilities:
     - title: Arcane Recovery
@@ -606,7 +622,8 @@ npc:
       He has uncovered and recorded many secrets unknown to the rest of the family. While most of the family believes that their power comes from Anastasias pact with their patron to gain vengeance on her husbands murderers, 
       Mordechai knows that their parton has been manipulating the two families for centuries, and had in fact, engineered the marriage between Saul Dumas and Anastasia Lavaux. The devil has been steering the clans to this 
       point in history to help with his attempt to ascend to power in the nine hells. Mordechai has not passed along this information to the rest of the family and is unsure how he feels about he and his family being 
-      the unwitting instuments of a devil or what to do about it.
+      the unwitting instuments of a devil or what to do about it. 
+      
 
     #
     # Personality (or something like that):
@@ -619,4 +636,6 @@ npc:
     personality: |
       Mordechai Dumas is abonormally tall and thin. Whispy red hair brushes across his mostly bald head. His thick glasses sit on top of his large, angular nose obsucring his familial violet eyes. He wears finely tailored robes 
       and is never without a book in his hands. He is quiet and scholarly and mostly keeps to himself. He spends most of his time travelling and researching in libraries throughout the realm, gathering knowledge and power. 
-      Hes not a very social individual, but can definitely be engaged in scholarly conversations and debates    
+      Hes not a very social individual, but can definitely be engaged in scholarly conversations and debates. Like many other members of this inbred family, Mordechai would be considered an abomination by normal standards. 
+      Mordechai was born a Changeling, something extremely rare for someone who's parents aren't changelings themselves. Since he was old enough to know better, he has maintained a human form as to not stand out, but his natural
+      appearance is monsterous and ooze-like.   

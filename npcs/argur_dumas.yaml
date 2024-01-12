@@ -1,0 +1,654 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: argur_dumas
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2023-06-09"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Argur Dumas
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: Middle Aged Adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Gnoll
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: N/A
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: He/Him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Commander of Gnoll Forces
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Rogue / Barbarian
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Scout / Path of the Blood Drinker
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 17/10
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Infernal
+    - Gnoll
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: dumas_family
+      name: The Dumas Family
+      role: Troop Commander
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Agressive
+    - Tactical
+    - Cowardly
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  The green blob silently pulls its self into a roughly humanoid shape. Humanoid, but with points.
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:  An amorphous light green blob of ooze that occasionally takes on a humanoid shape when they feel like it adds effect. 
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:
+    - "I will always be the last man standing"
+    - "No plan ever survives first contact with the enemy"
+    - "Always be prepared to adapt, Cousin"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:  almost obsessively keeps one hand on his weapon at all times. Even while sleeping.
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Power, rising in the ranks of the family  
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Martial tactics and cruelty
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      He's a coward
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      He's more loyal to his pack than his family but sees he family as a means to increase his power
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 20
+    hit-points: 211
+    speed: 50
+    str: 17
+    dex: 14
+    con: 12
+    int: 21
+    wis: 19
+    cha: 18
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    saving-throws:
+    - Wisdom
+    - Dexterity
+    - Constitution
+    damage-immunities:
+    - N/A
+    damage-vulnerabilities:
+    - N/A
+    condition-immunities:
+    - Poisoned, Diseased, Prone, Frightened
+    resistances:
+    - Acid and Poison
+    skills:
+    - Killing
+    proficiencies:
+    - Stealth
+    - Acrobatics
+    - Sleight of Hand
+    - Disguise Kit
+    - Poisoner's Kit
+    - Finess Weapons
+    - Theive's Tools    
+  special-abilities:
+  - title: Gnoll Abilities
+  - abilities: 
+    - title: Keen Hearing and Smell
+    - content: You have advantage on Wisdom (Perception) checks that rely on hearing or smell.
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.
+    - title: Natural Equipped
+    - content: You are never unarmed. You are proficient with your bite, which is a melee weapon that deals ldlO piercing damage.
+    - title: Rampage
+    - content: When you reduce a creature to 0 hit points with a melee attack on your turn, you can take a bonus action to move up half your speed and make a bite attack.
+    - title: Howl of the Pack
+    - content: Choose a friendly creature who can see or hear you within 30 feet. It can use its reaction to make a one weapon attack. After you use this feature, you can't use it again until you complete a short or 
+               long rest.
+    - title: Pack Tactics
+    - content: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
+    
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
+    - title: Evasion
+    - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
+    - title: Reliable Talent
+    - content: Whenever you make an ability check that lets you add your Proficiency Bonus, you can treat a d20 roll of 9 or lower as a 10.
+    - title: Blindsense
+    - content: if you are able to hear, you are aware of the Location of any hidden or Invisible creature within 10 feet of you
+    
+  - title: Scout Abilities
+  - abilities: 
+    - title: Skirmisher
+    - content: You can move half her speed as a reaction when an enemy ends a turn within 5 feet of her. this movement does not provoke an opportunity attack          
+    - title: Survivalist
+    - content: Double proficiency bonus on Nature and Survival checks
+    - title: Superior Mobility
+    - content: Your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.
+    - title: Ambush Master
+    - content: You excel at leading ambushes and acting first in a fight. You have advantage on initiative rolls. In addition, the first creature you hit during the first round of a combat becomes easier for you and 
+               others to strike; attack rolls against that target have advantage until the start of your next turn.
+    - title: Sudden Strike
+    - content: You can strike with deadly speed. If you take the Attack action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already 
+               used it this turn, but you can't use your Sneak Attack against the same target more than once in a turn.
+               
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+    - title: Extra Attack
+    - content: Can attack twice each turn	
+    - title: Fast Movement
+    - content: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+    - title: Feral Instinct
+    - content: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+               before doing anything else on that turn.		
+    - title: Brutal Critical
+    - content: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.
+               
+  - title: Path of the Blood Drinker Abilities
+  - abilities: 
+    - title: Blood Fury
+    - content: If you make a melee weapon attack on your turn while you're raging and you have no more than half of your hit points left, you add ld8 +half your barbarian level to the attack's damage roll on a hit. You 
+               can only deal bonus damage in this way once per turn.
+    - title: Brutal Harvest
+    - content: You gain the ability to harvest the life from the blood of enemies you slay. When you kill a creature with blood that is not Tiny using a melee weapon attack while you are raging, you can choose to 
+               regain a number of hit points equal to your Constitution modifier + your barbarian level (minimum 1 hit point~ This feature cannot bring your current hit point total above half your maximum hit points.) 
+               You can only use this feature up to a number of times equal to the number of rage uses you have each day as a barbarian. You regain all uses of this feature when you finish a long rest.
+    - title: The Blood Hunt
+    - content: You learn how to taste a soul through the smell of blood. When a creature that has blood within 15 feet of you takes damage, you can pick up the finer details of the smell and you learn things about 
+               the creature. You instantly learn its hit points, maximum hit points, and Constitution score. If its maximum hit points have been reduced, you learn that too. You can also choose to remember the scent.
+               If you do, for the next 30 days, you gain advantage on Wisdom (Insight) and (Perception) checks to discern something about the creature or to track that creature, and on Charisma (Intimidation) or 
+               (Persuasion) checks against that creature. You know if the creature is within 10 miles of you, and if it is within 1 mile of you, you know how far away it is as well You can only remember a number of 
+               blood scents equal to twice your Wisdom modifier (minimum one} You can forget a scent at any time.
+    - title: Demonic Aspect
+    - content: Your body takes on a demonic change as your blood power grows stronger with each consumption. Choose one of the following benefits to gain permanently
+    - content: Claws - You grow huge knife-like talons on your fingers and toes. These claws are retractable. You can use a bonus action on your turn to hide or reveal them. While they are revealed, you gain a base 
+                       climbing speed of 30 feet that you must have at least one free hand to use, and your unarmed strikes are a special melee weapon that you are proficient with which deals slashing dallUige equal 
+                       to 1d10 +your Strength modifier.
+    - content: Fangs - Your teeth lengthen into huge ghoulish fangs that struggle to fit into your closed mouth. You can survive on meals made of rotting meat, blood, or old bones and suffer no ill effects, including
+                       diseases or poisons. You have advantage on Charisma (Intimidation) ability checks made against creatures that have seen your teeth, and your bite is a natural weapon, which you can use to make 
+                       unarmed strikes. You have proficiency with this bite, and it deals piercing damage equal to ldl0 + your Strength modifier.
+    - content: Wings - You grow a pair of gigantic, leathery, batlike wings from your back. You have a base flying speed of 30 feet.
+    
+  - title: Feats
+  - content: Inspiring Leader, Magic Initiate - Booming Blade, Eldritch Blast, Magnify Gravity
+  - title: Legendary Resistance
+  - content: (3/Day), If Argur Dumas fails a saving throw she can choose to succeed instead 
+  - title: Legendary Actions
+  - content: Argur Dumas can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. Argur Dumas regains spent Legendary 
+             Actions at the start of her turn.
+  - abilities:
+    - title: Rallying Cry
+    - content: Argur Dumas can let out a loud roar which gives all friendly creatures who are able to hear it (up to 30ft.) advantage on all attack roles until the beginning of his next turn
+    - title: Hyena's Howl
+    - content: Argur Dumas can let out a loud howl causing all unfriendly creatures who are able to hear it (up to 60ft.) to beat a DC 18 wisdom saving throw or become afraid
+    - title: Family Reserve
+    - content: Argur Dumas can cast Gate, opening up to 5 portals to summon his gnoll soldiers to join the fight
+
+  - title: Attacks
+  - content: Flail, Whip, Claw and Teeth attacks
+  - title: Combat Tactics
+  - content: Prefers to lead his forces from the back, but if he's absolutely forced to, he is a vicous fighter 
+
+  - title: Special Equipment
+  - abilities:
+    - title: Flail of The Hyena 
+    - content: This four-headed flail counts as a +3 magic weapon. On a successful hit, roll a d4, the result is the number of heads that make contact with the target. This flail does 1d8+3 damage per head that makes contact
+               with the target
+    - content: This Flail contains 6 charges and regains 1d4 charges each day at sundown. The flail's weilder may expend one charge to cast one of the following spells - Vicious Mockery, Hideous Laughter or Shatter. DC 15
+    - title: Mind Whip
+    - content: This Cat O'Nine Tails style whip has a reach of 15ft. and is made of long braided leather with ceramic dipped end. On a successful attack role this whip has the same effect as the spell Mind Whip
+    - content: The target must make an DC 15 Intelligence saving throw. On a failed save, the target takes 3d6 psychic damage, and it can’t take a reaction until the end of its next turn. Moreover, on its next turn, it must 
+               choose whether it gets a move, an action, or a bonus action; it gets only one of the three. On a successful save, the target takes half as much damage and suffers none of the other effects.
+    - content: This whip can also be used to grapple and and pull and enemy 5ft. closer to its weilder. On a successful contested grapple attack, the target takes 1d8 slashing damage, is pulled 5ft. and is considered grappled 
+               until the end of it's next turn
+    - title: Ring of Evasion
+    - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving 
+               throw instead.
+    - title: Helm of Domination
+    - content: This helm has 10 charges. While wearing it, as an action, you can expend 1 or more of its charges to cast one of the following spells from it with a DC 14 spell save - command (1 charge per spell level, up to 4th)
+               hold person (2 charges base and 2 additional charges per spell level over 2nd, up to 5th), or dominate person (5 charges and 5 charges per spell level over 5th, up to 6th).
+    - content: The helm regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the helm vanishes in a flash of light, lost forever.
+
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Argur Dumas is one of the more prominent and revered of the Dumas family's seemingly endless pool of "cousins". Like most of the "cousins", no one in nor outside of the family (excepy maybe the family patron)
+      really seems to know what his lineage nor his parentage are, but they are a cousin all the same. Argur spent his time growing up splitting his time between studies and book learning with the Dumas family and martial
+      combat and tactic training with a clan of gnolls that have long been closely linked to the Dumas Family. With the help of his family connections, Argur has managed to rise through the ranks and is currently the ranking
+      chief and battle commander of the gnoll clan, binding their loyatly to to the Dumas Family tighter than ever before.      
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Argur Dumas is a brilliant and agressive military tactician. He is a smart, cunning opportunist, but also a coward. He has worked his way up through both the family and his pack with treachery and politicing more than
+      bravery. He insures that his men will fight until their dying breath, but will cut and run before putting himself in any real harms way. He will, however, fight viciously with weapons, tooth and claw if left with no other
+      choice. He is a remarkable tactician and capable of rethinking and executing plans as the fly to gain advantage in any situation.      

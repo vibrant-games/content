@@ -239,7 +239,7 @@ npc:
     #
     # Required.
     #
-    class: Fighter
+    class: Fighter / Barbarian
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +262,7 @@ npc:
     #
     # Required.
     #
-    subclass: Battle Master
+    subclass: Battle Master / Path of the Juggernaut
 
     #
     # Class level.
@@ -271,7 +271,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 15
+    level: 15 / 14
 
     #
     # Alignments (case insensitive):
@@ -496,6 +496,32 @@ npc:
                Doesn't need to sleep and uneffected by sleep magic. Long rest only takes 4 hours as long as inactive. Retains consciousness during long rest
     - title: Knowledge from a Past Life
     - content: When making a an ability check that uses a skill, roll a d6 and add it to the check roll. Can use this a number of times equal to proficiency bonus each long rest 
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+    - title: Extra Attack
+    - content: Can attack twice each turn	
+    - title: Fast Movement
+    - content: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+    - title: Feral Instinct
+    - content: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+               before doing anything else on that turn.		
+    - title: Brutal Critical
+    - content: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack.
+    - title: Relentless Rage
+    - content: you Fighting despite grievous wounds. If you drop to 0 Hit Points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point 
+               instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or Long Rest, the DC resets to 10.
   - title: Fighter Abilities
   - abilities:
     - title: Fighting Style
@@ -506,6 +532,23 @@ npc:
     - content: Once every short/long rest can take an extra action
     - title: Extra Attack
     - content: Can attack twice each turn
+  - title: Path of the Juggernaut Abilities
+  - abilities: 
+    - title: Thunderous Blows
+    - content: Beggining at level 3, rage instills a juggernaut with the strength to batter around their foes. Once per turn while raging, when they damage a creature with a melee attack, you can force the target to make a 
+               Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier). On a failure, juggernaut push the target 5 feet away and can choose to immediately move 5 feet into the target’s previous position.
+    - title: Stance of the Mountain/Spirit of the Mountain
+    - content: In addition, upon choosing this path at 3rd level, juggernaut harnesses the fury to anchor their feet to the earth, shrugging off the blows of those who wish to topple you, making it impossible to be knocked prone
+               while raging unless juggernaut becomes unconscious.
+    - title: Demolishing Might
+    - content: Beginning at level 6, juggernaut can muster destructive force with their assault, dealing double damage to objects and structures. Also, melee attacks against creatures of the construct type deal an additional 1d8
+               weapon damage.
+    - title: Overwhelming Cleave
+    - content: Upon reaching level 10, as juggernaut made a weapon attack while raging, they can make another attack as a bonus action with the same weapon against a different creature that is within 5 feet of the original 
+               target and within range of your weapon.
+    - title: Unstoppable
+    - content: Starting at 14th level, juggernaut can choose to become unstoppable when you enter a rage - the speed cannot be reduced, and they are immune to the frightened, paralyzed, and stunned conditions. If juggernaut is 
+               frightened, paralyzed, or stunned, they can still take your bonus action to enter your rage and suspend the effects for the duration of the rage. When the rage ends, you suffer one level of exhaustion.
   - title: Battle Master Abilities
   - abilities: 
     - title: Combat Superiority
@@ -588,7 +631,7 @@ npc:
     - title: Hood's Rage
     - content: The Hooded Man can reroll one damage die and take the highest roll  
   - title: Attacks
-  - content: He will attack with both blades and use his maneuvers
+  - content: He will rage and attack with both blades and use his maneuvers
   - title: Combat Tactics
   - content: He will try to take his quarry by surprise and uses his Misty Step ability to remain hidden and move behind opponenets
 
@@ -620,7 +663,7 @@ npc:
     #
     background-story: |
       The Hooded Man is actually the long thought dead patriach of the Dumas Family. Only his former wife Anastasia knows who he is. Saul is only a fraction of the man he once was. He was murdered by backstabbing business 
-      partners, an event that sent Anastasia into her downward spiral. But that was all part of the family's patrons plan. In order to protect his investment while she learned to control her newfound powers, the patron returned 
+      partners, an event that sent Anastasia into her downward spiral. But that was all part of the family patron's plan. In order to protect his investment while she learned to control her newfound powers, the patron returned 
       Anastasia's husband from the dead. Saul returned as a mostly blank slate filled only with lust for revenge and the overwhelming desire to protect his former wife. Even in life, Saul was a hulk of a man, but since his 
       return, infused with the patron's power he has become an absolute beast. 
       

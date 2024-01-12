@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: gleadric_or_cujulo
+  id: pally_dumas
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2021-05-25"
+  date: "2023-07-21"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Gleadric or Cujulo
+  name: Pally Dumas
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: older adult
+    age: Unknown
 
     #
     # Races (case insensitive):
@@ -187,7 +187,7 @@ npc:
     # Required.
     # Max length: ...
     #
-    race: Firbolg
+    race: Nezumi
 
     #
     # The sub-race can be anything.
@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: they/them
+    pronouns: He/Him
 
     #
     # Occupation(s).
@@ -215,8 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Fur and Skins Trader
-    
+    - Mischief
 
     #
     # D & D classes (case insensitive):
@@ -239,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Shaman
+    class: Rogue
 
     #
     # D & D subclasses (case insensitive):
@@ -262,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Witch-Doctor
+    subclass: Rift Cutter
 
     #
     # Class level.
@@ -271,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 5
+    level: 3
 
     #
     # Alignments (case insensitive):
@@ -287,7 +286,7 @@ npc:
     #
     # Required.
     #
-    alignment: Neutral Good
+    alignment: Chaotic Evil
 
     #
     # Alignment tendencies:
@@ -297,7 +296,6 @@ npc:
     #
     tendencies:
     - N/A
-
 
     #
     # Languages the character speaks
@@ -311,10 +309,9 @@ npc:
     # 0 o more.  (I.e. optional, but most characters speak at least 1.)
     #
     languages:
-    - Infernal
     - Common
-    - Undercommon
-
+    - Infernal
+    - Thieve's Cant
 
     #
     # Factions:
@@ -327,14 +324,17 @@ npc:
     #   role: Associate Professor of Lockpicking
     # - id: union_of_seamstresses
     #   name: Union of Seamstresses
-    #   role: Window dressing    # - id: cult_of_sky_anthologies
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
     #   name: Cult of Sky Anthologies
     #   role: Going Clear Sky pastor
     #
     # Optional.  0 or more.
     #
     factions:
-    - N/A
+    - id: dumas_family
+      name: The Dumas Family
+      role: The Triplets
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -342,10 +342,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Firbolg
-    - Common
-    - Elvish
-    - Giant
+    - Subservient
+    - Cunning
+    - Devious
 
   improv:
 
@@ -360,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A stall displays numerous quality tanned hides and furs from iron racks. "Lovely, huh?" A Firbolg asks, chewing on jerky
+    introduction:  A small red-headed boy appears behind you "Got yer nose Mister!" he exclaims and it appears... he does!
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -371,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:   Tall and stocky. Grey fur. Long wild deep blue hair and beard. Patched hides and leathers. Tiny bones and flora tied to hair
+    appearance:  A small red-headed boy with a bowl cut and wearing his sunday best with an ever-present devious grin 
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -387,7 +386,10 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    expressions:  "Eek. Da dreamers be frownin"; "Long days make good pay"; "Right, right, right. Think it through"
+    expressions:
+    - "Got yer nose"
+    - "No one likes a tattletale"
+    - "My sister did it, not me"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -400,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:   Taps head and body in various places in various sequences. Points out overly formal things. Refers to self in 3rd person
+    mannerisms:  walks with a skip in his step
 
   acting:
     #
@@ -410,8 +412,8 @@ npc:
     # ???Maximum length???
     #
     motivations: |
-      To resist the industrial and technological innovations and cultural change and thus rebel against political structures
-      
+      Mischief and havoc  
+
     #
     # Passions:
     #
@@ -419,8 +421,8 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      Nature. Protecting Lycanthropes. Equality. Socialism
-      
+      chaos
+
     #
     # Vulnerabilities:
     #
@@ -428,31 +430,30 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      N/A
-      
+      he's a child?
+
     #
     # Secrets:
     #
     # Required.
     # ???Maximum length???
     #
-    secrets: | 
-      His Shamanic Calling of Dreams attacks his psyche with demands to tear down royal lineages
-       
-      
+    secrets: |
+      the Triplets aren't actual Triplets
+
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
     armour-class: 15
-    hit-points: 54
-    speed: 30
-    str: 13
-    dex: 15
+    hit-points: 45
+    speed: 40
+    str: 7
+    dex: 18
     con: 9
-    int: 9
-    wis: 18
+    int: 19
+    wis: 10
     cha: 15
 
   #
@@ -463,45 +464,94 @@ npc:
   # ???Max length???
   #
   specialties:
+    saving-throws:
+    - Charisma
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    damage-vulnerabilities:
+    - N/A
+    condition-immunities:
+    - Charmed
+    resistances:
+    - N/A
     skills:
-   - - Firbolg Abilities:
-       - Firbolg Magic: You can cast Detect Magic and Disguise Self with this trait, using Wisdom as your spellcasting ability for them. Once you cast either spell, you can't cast it again with this trait until you finish a
-                        short or long rest. When you use this version of disguise self, you can seem up to 3 feet shorter than normal, allowing you to more easily blend in with humans and elves.           
-       - Hidden Step: As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't
-                      use it again until you finish a short or long rest.
-       - Powerful Build: You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift
-       - Speech of Beast and Leaf: You have the ability to communicate in a limited manner with beasts and plants. They can understand the meaning of your words, though you have no special ability to understand them in return.
-                                   You have advantage on all Charisma checks you make to influence them
-                                   
-   - - Shaman Abilities:
-       - Spellcasting: DC 14
-         Cantrips: Toll the Dead, Guidance, Primal Savagery
-         1st Level: Bane, Cammand
-         2nd Level: Earthbind, Pass Without Trace
-         3rd Level: Life Transference
-       - Sacred Technique: This focus grants you innate bonuses depending on your choice of focus
-                           - Soul: When wearing no armor your AC = 10 + your Dexterity + your Wisdom.
-       - Totemic Magic: You Learn the Art of making Totems through which you channel shamanistic power. Totems Known 4						   
-         1: Totem of the Earthquake
-         2: Totem of the Eruption
-         3: Totem of the Avalanche
-         
-   - - Witch-Doctor Abilities:
-       - Life Bearer: as a bonus action you can touch one creature and heal it 1d10+ Wisdom Modifier
-       - Primal Blessing: Can bestow up to half your Totems upon other willing creatures until your next long rest
-       - Spellcasting: DC 14
-         3rd Level: Enhance Ability, Lesser Restoration
-         5th Level: Beacon of Hope, Revivify                          
-           
-    special-abilities:
-    - Proficiencies: Survival, Nature, Athletics, Perception, Insight, Tanning, Skinning, Fabrics and Textiles, Stealth   
-    attacks: |
-      1 attack with Quaterstaff
-    combat-tactics: |
-      Gleadric will retract from conflict. Cujoloa will ferciously use his magicks and invocations to down combatants
-    special-equipment:
-    - Quaterstaff
-                                                                   
+    - Chaos
+    - Infiltration
+    proficiencies:
+    - Arcana
+    - Deception
+    - Intimidation
+    - Performance
+    - Stealth
+    - Slight-of-Hand
+    - Thieve's Tools
+    - Rapier and Shortsword
+    - Light Armor
+    - Simple Weapons
+    - Dagger    
+  special-abilities:
+  - title: Nezumi Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+    - title: Nezumi Resilience
+    - content: You have advantage on saving throws against poison, and you have resistance against poison damage.
+    - title: Shadow Skulker
+    - content: You can attempt to hide even when you are only lightly obscured by dim lighting.
+    - title: Contorting Frame
+    - content: You can move at your base walk speed when squeezing through a space that is large enough for a creature one size smaller than you. You can only use this feature when you are in your normal form.
+    - title: Scavenger
+    - content: You cannot contract diseases from food you eat. Add your proficiency bonus to saving throws against disease.
+    - title: Survival Instinct
+    - content: Whenever you make a Dexterity saving throw against a trap or natural hazard, add your proficiency to the saving throw, if you are already proficient in Dexterity saving throws you may add double your
+               proficiency to the saving throw, instead of you normal proficiency.
+    
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker he can see hits her with an attack, he can use his Reaction to halve the damage
+               
+  - title: Rift Cutter Abilities
+  - abilities: 
+    - title: Cutting A Rift
+    - content: Rather than moving on your turn you can teleport a distance no greater than your movement speed to an unoccupied space that you can see. If the space is next to a creature you gain advantage on any 
+               attack rolls against that creature this turn. You may use this feature a number of times equal to your rogue level+ your intelligence modifier per long rest.
+    - title: Reading The Weave
+    - content: You gain proficiency in Arcana if you don't already have it. Your proficiency bonus is doubled for any ability check you make that uses this proficiency.
+    - title: Jagged Portal
+    - content: When you cut a rift you may choose to leave behind a portal allowing creatures and objects to move between them. The portals function as if you had cast the Arcane Gate spell with the first opening where 
+               you started cutting the rift, and the second where you finished The portals last for one minute before disappearing back into the weave.
+
+  - title: Attacks
+  - content: Knife or Spell
+  - title: Combat Tactics
+  - content: He will hit and run if she needs to martial attack, mostly trying to cause mischief and small wound. 
+
+  - title: Special Equipment
+  - abilities:
+    - title: Crown of Madness 
+    - content: A light-weight, blackened, metal circlet of a crown. Once attuned, the crown allows its wearer to cast the following spells once per day with a spell DC of 15: 
+    - content: Crown of Madness, Puppet, Charm Person, Friends, Hideous Laughter, Irresistable Dance, Fear and Vicious Mockery 
+    - title: Void Knife
+    - content: This dagger’s blade is composed of black, bone-like material. When you hit with an attack using this magic weapon, the target takes an extra 1d6 necrotic damage. If you are in dim light or darkness, you regain a 
+               number of hit points equal to the necrotic damage dealt to the target.
+    - content: Wounds from this blade never truly heal and leave behind a deep black scar where the target was struck. If more than 30HP damage is cause by the Void Knife, the scar causes constant throbbing pain and gives the 
+               recipient disadvantage on all attack rolls and ability checks until cured. The scar fades if the blade is destroyed. Alternatively, the scar can be cured with a Lesser Restoration or Remove Curse spell.
+    - title: Ring of Evasion
+    - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving 
+               throw instead.
+    - title: Ring of Alteration
+    - content: While wearing this ring, the wearer is permanently under the effects of an Alter Self spell allowing the wearer to take on any appearance for as long as they are wearing the ring.
+
+
   profile:
 
     #
@@ -512,17 +562,11 @@ npc:
     # No length limit for now.
     #
     background-story: |
-      Gleadric was raised in a Firbolg stronghold in the remote forests of Yyl on the outskirts of known civilization. The pivoting day in his youth, when his shamanic calling took control of his dreams and appended them to his
-      woken life, was nearly crippling at first; changing him from the day-to-day gentle tenderer to flora into a seemingly secretive tanner and collector of furs. "You've changed." One of his closest friends imparted, "but...
-      change is life." He patted Gleandric on the back while Cujuloa continued stripping a large Bison of it's hide. Gleadric became two spirits inhabiting one physical body. Cujuloa was largely in charge of his daily productive
-      activities - invoking dreams in his waking life and providing soft, warm dreams to his peoples - while Gleadric remained in control of his interactions with his community. However, Cujuloa demanded that they take their
-      firm beliefs in equality and profound spirituality to the civilized communities and that they find new means and ways to bring peoples back to the basic love of for flora and fauna. They believe that by building room in
-      the market for impressive hide and fur trade - a return to more primitive and anarchic ways - while impressing the importance of adhering to dreams over the purported reality of the waking world; that this will bring
-      peoples back to their essential being. Their goals, along with their split psyche, make social appearances, well, a challenge in situations relying on a finely detailed social contract. They come across to most as
-      wild or 'crazy', but upon closer inspection and interactions, their distilled spirituality leaves a mark of genuine good. Depending on which spirit is taking charge, they refer to themselves in 3rd person - either
-      Gleadric or Cujulo.
+      Pally Dumas is one of the three Dumas Triplets, two girls and a boy that look to be about 7 years old. The girls are identical twins and the boy also bears a remarkable resemblance. However, in reality, the Triplets are 
+      not even related. Sally is a Hexblood while while Allie is a changeling who has bonded with and taken on the appearence of Sally full time, and Pally is a Nezumi rat-folk that wears an almost permanent glamour that 
+      makes him resemble his "siblings". The Triplets are counted among the many mysterious "cousins" of the Dumas Family and they seem to mostly thrive on creating chaos and discord for everyone around them. They each use their
+      many mgical talents to torment their prey du jour. They rarely kill their victims, but prefer to leave them terrified, paranoid and sometimes delusional.      
 
-      
     #
     # Personality (or something like that):
     # Expand on the introduction, appearance, expressions, mannerisms, etc.
@@ -532,33 +576,5 @@ npc:
     # No length limit for now.
     #
     personality: |
-      Tall and stocky. Grey fur. Long wild deep blue hair and beard. Patched hides and leathers. Tiny bones and flora tied to hair
-  #
-  # Content that does not get displayed, but could be useful
-  # to humans.  Includes review comments, notes about what to
-  # do for the NPC art, or whatever else we need.
-  #
-  # Optional.
-  #
-  uncategorized:
-  - uncategorized_template_1: TEMPLATE
-  - uncategorized_template_2: |
-    TEMPLATE
-    MORE TEMPLATE
-  - uncategorized_template_3: TEMPLATE
----
-
-#
-# ...Multiple NPCs can be included in one file,
-# separated by --- dividers...
-#
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
+      Pally Dumas, unless required for a good prank, at all times looks and acts like a male version of his twin "sisters". Pally defers to his "sisters" in all thing, at least until it's time to fight, at which point he becaomes
+      vicious and animalistic.

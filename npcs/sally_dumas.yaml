@@ -1,0 +1,614 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: sally_dumas
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2023-06-09"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Sally Dumas
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: Child
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Hexblood
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: N/A
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: She/Her
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Mischief
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Blood Hunter
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Order of Profane Soul
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 3
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Evil
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Infernal
+    - Sylvan
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: dumas_family
+      name: The Dumas Family
+      role: The Triplets
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Bold
+    - Brash
+    - Devious
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  A small red-headed girl runs passed you from behind "Got yer nose Mister!" she exclaims and it appears... she does!
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:  A small red-headed girl with her hair in pigtails and wearing her sunday best with an ever-present devious grin 
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:
+    - "Got yer nose"
+    - "No one likes a tattletale"
+    - "My sister did it, not me"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:  walks with a skip in her step
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Mischief and havoc  
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      chaos
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      she's a child
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      the sisters aren't actual sisters, they're abominations that just look that way
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 12
+    hit-points: 32
+    speed: 20
+    str: 8
+    dex: 16
+    con: 10
+    int: 19
+    wis: 9
+    cha: 13
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    saving-throws:
+    - Wisdom
+    - Dexterity
+    - Intelligence
+    damage-immunities:
+    - N/A
+    damage-vulnerabilities:
+    - Radiant
+    condition-immunities:
+    - Poisoned
+    resistances:
+    - Poison and Cold
+    skills:
+    - Chaos
+    proficiencies:
+    - Arcana
+    - Insight
+    - Investigation
+    - Alchemist Supplies
+    - Medium Armor
+    - Simple Weapons
+    - Shields    
+  special-abilities:
+  - title: Hexblood Abilities
+  - abilities: 
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light.
+    - title: Fey Resilience
+    - content: You have advantage on saving throws you make to avoid or end the charmed condition on yourself.
+    - title: Hex Magic
+    - content: You can cast the Disguise Self and Hex spells with this trait. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you gain this lineage). Once you cast either of these
+               spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spells slots you have.
+    - title: Magic Token
+    - content: As an action, you can harmlessly pull out one of your nails, a tooth, or a lock of hair. This token is imbued with magic until you finish a long rest. While the token is imbued in this way, you can use an
+               action to send a telepathic message to the creature holding or carrying the token, as long as you are on the same plane of existence and are within 10 miles of it. The message can contain up to twenty-five
+               words. In addition, while you are within 10 miles of the token, you can use an action to enter a trance for 1 minute, during which you can see and hear from the token as if you were located where it is.
+               While you are using your senses at the token’s location, you are blinded and deafened in regard to your own surroundings. Afterward, the token is harmlessly destroyed. Once you create a token using this
+               feature, you can’t do so again until you finish a long rest, at which point your missing part regrows
+    
+  - title: Blood Hunter Abilities
+  - abilities:
+    - title: Hunters Bane
+    - content: You have advantage on Wisdom (Survival) checks to track fey, fiends, or undead, as well as on Intelligence ability checks to recall information about them. The Hunter’s Bane also empowers your body to 
+               control and shape hemocraft magic, using your own blood and life essence to fuel your abilities. Some of your features require your target to make a saving throw to resist the feature’s effects. 
+    - title: Hemocraft save DC
+    - content: 14
+    - title: Blood Maledict 
+    - content: you gain the ability to channel, and sometimes sacrifice, a part of your vital essence to curse and manipulate creatures through hemocraft magic. You gain one Blood Curse of your choice. You learn one 
+               additional blood curse of your choice, and you can choose one of the blood curses you know and replace it with another blood curse, at 6th, 10th, 14th, and 18th level. When you use your Blood Maledict, 
+               you choose which curse to invoke. While invoking a blood curse, but before it affects the target, you can choose to amplify the curse by losing a number of hit points equal to one roll of your hemocraft 
+               die, as shown in the Hemocraft Die column of the Blood Hunter table. An amplified curse gains an additional effect, noted in the curse’s description. Creatures that do not have blood in their bodies are 
+               immune to blood curses, unless you have amplified the curse. You can use this feature once. Beginning at 6th level, you can use your Blood Maledict feature twice, at 13th level you can use it three times 
+               between rests, and at 17th level, you can use it four times between rests. You regain all expended uses when you finish a short or long rest.
+    - title: Hemocraft Die
+    - content: 1d4
+    - title: Blood Curses Known
+    - content: 2  
+    - title: Blood Curses
+    - content: Blod Curse of the Eyeless, Blood Curse of Bloated Agony 
+    - title: Figthing Style
+    - content: Dueling
+    - title: Crimson Rite
+    - content: You learn to invoke a rite of hemocraft within your weapon at the cost of your own vitality. Choose one rite from the Primal Rites list to learn. As a bonus action, you activate a crimson rite on a 
+               single weapon with the elemental energy of a known rite of your choice that lasts until you finish a short or long rest, or if you aren’t holding the weapon at the end of your turn. When you activate a rite,
+               you lose a number of hit points equal to one roll of your hemocraft die, as shown in the Hemocraft Die column of the Blood Hunter table. While active, attacks from this weapon deal an additional 1d4 damage 
+               of the chosen rite’s type. This damage is magical, and increases as you gain levels as a blood hunter, as shown in the Hemocraft Die column of the Blood Hunter table. A weapon can only hold a single active 
+               rite at a time. You learn an additional Primal Rite of your choice at 7th level, and choose an Esoteric Rite to learn at 14th level.
+               
+  - title: Order of the Profane Soul Abilities
+  - abilities: 
+    - title: Otherworldly Patron
+    - content: The Fiend
+    - content: You strike a bargain with an otherworldly being of your choice; the Archfey, the Fiend, or the Great Old One, each detailed in the Player’s Handbook, the Undying within the Sword Coast Adventurer’s 
+               Guide, and the Celestial or Hexblade in Xanathar’s Guide to Everything. Your choice augments some of your order features.
+    - title: Pact Magic
+    - contnet: You can augment your combat techniques with the ability to cast spells. See chapter 10 of the Player’s Handbook for the general rules of spellcasting and chapter 11 of the Player’s Handbook for the Warlock 
+               spell list. Cantrips. You learn two cantrips of your choice from the warlock spell list. You learn an additional warlock cantrip of your choice at 10th level. Spell Slots. The Profane Soul Spellcasting table
+               shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must 
+               expend a spell slot. You regain all expended spell slots when you finish a short or long rest. For example, when you are 8th level, you have two 2nd-level spell slots. To cast the 1st-level spell witch bolt,
+               you must spend one of those slots, and you cast it as a 2nd-level spell. Spells Known of 1st Level and Higher. At 3rd level, you know two 1st-level spells of your choice from the warlock spell list. The 
+               Spells Known column of the Profane Soul table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table’s
+               Slot Level column for your level. When you reach 11th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level. Additionally, when you gain a level in this class and order, you 
+               can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots. 
+    - content: Spellcasting Ability. Your chosen Hemocraft ability (Intelligence or Wisdom) is your spellcasting ability for your warlock spells, so you use your Hemocraft ability whenever a spell refers to your spellcasting 
+               ability. In addition, you use your Hemocraft modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.
+    - content: Spell save DC = 14
+    - content: Spell attack modifier = +6
+    - title: Hemocraft Modifier
+    - content: Intelligence    
+    - title: Cantrips
+    - content: Eldritch Blast, Minor Illusion
+    - title: 1st Level
+    - content: Id Insinuation, Cause Fear, Puppet, Hex    
+    - title: Rite Focus
+    - content: Your weapon becomes a core to your pact with your chosen dark patron. While you have an active Crimson Rite, you can use your weapon as a spellcasting focus (found in chapter 5 of the Player’s Handbook) for 
+               your warlock spells, and you gain a specific benefit based on your chosen pact (outlined below).
+    - content: The Fiend - When you hit a creature with your Rite of the Flame, if you roll a 1 or 2 on your hemocraft die, you can reroll the die and choose which roll to use.
+
+  - title: Attacks
+  - content: Knife or Spell
+  - title: Combat Tactics
+  - content: She will hit and run if she needs to martial attack, mostly trying to cause mischief and small wound. Prefers to cast spells 
+
+  - title: Special Equipment
+  - abilities:
+    - title: Pocket Knife 
+    - content: This elegant knife has a blade edged on one side with gold and the other with platinum. As an action, the gold edge Pocket Knife can be drawn along a line no longer than 6 feet in the fabric of reality, creating a
+               tear that can be widened up to 4 ft using a bonus action.
+    - content: Inside the tear is a pocket dimension or void measuring up to 10ftx10ftx10ft. The void and tear in reality remain until the platinum edge of the blade is traced along the rift, which seals the void.
+    - content: Any creature inside the void has breathable air for up to eight hours and may attempt a DC 20 Strength check on its turn to reopen the entrance. If another void is opened using the gold edge of the knife while 
+               another void is already active, the original void disappears.
+    - content: Any mundane items or equipment are destroyed. Any living creatures or magical items must make a DC 15 Wisdom saving throw or take 3d10 psychic damage and be instantly transported to a random plane of existence 
+               determined by the DM on a failed save. On a successful save, the creature reappears at the point at which they entered the void.
+    - title: Ring of Evasion
+    - content: This ring has 3 Charges, and it regains 1d3 expended Charges daily at dawn. When you fail a Dexterity saving throw while wearing it, you can use your Reaction to expend 1 of its Charges to succeed on that saving 
+               throw instead.
+    - title: Ring of Invisibility
+    - content: While wearing this ring, you can turn invisible as an action. Anything you are wearing or carrying is invisible with you. You remain invisible until the ring is removed, until you attack or cast a spell, or until 
+               you use a bonus action to become visible again.
+
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Sally Dumas is one of the three Dumas Triplets, two girls and a boy that look to be about 7 years old. The girls are identical twins and the boy also bears a remarkable resemblance. However, in reality, the Triplets are 
+      not even related. One Sally is a Hexblood while while Allie is a changeling who has bonded with and taken on the appearence of Sally full time and Pally is a Nezumi rat-folk that wears an almost permanent glamour that 
+      makes him resemble his "siblings". The Triplets are counted among the many mysterious "cousins" of the Dumas Family and they seem to mostly thrive on creating chaos and discord for everyone around them. They each use their
+      many magical talents to torment their prey du jour. They rarely kill their victims, but prefer to leave them terrified, paranoid and sometimes delusional.      
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Sally Dumas presents herself as a sweet and well-mannered child, but is in reality, petty, vindictive, mischevious and downright evil. She thrives on sewing chaos and torment and loves nothing more than terrorizing her 
+      victims. She shares a strong bond with her "siblings" and is rarely seen without them in tow. She is the defacto leader of the Triplets, as the main planner, she bosses around her sibling like a drill sargeant and 
+      doesn't respond well to being challenged.     

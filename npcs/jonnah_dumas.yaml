@@ -1,0 +1,580 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: jonnah_dumas
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2023-03-09"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Dr. Jonnah Dumas
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: Young Adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Human
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race:
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: He/Him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Doctor, Surgeon
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Doctor
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Surgeon
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 14
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Neutral
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Infernal
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: dumas_family
+      name: The Dumas Family
+      role: Cousin, Family Doctor
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Quiet
+    - Confident
+    - Humorless
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  Without a word, the young man draws a scalpel from his bag and deftlty begins to surgically remove the eyes from the recently dead creature
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:   mid-twenties, ruggedly handsome. short-cropped sandy brown hair and 5 o'clock shadow. two different colored eyes, one gold, one violet  
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:
+    - "If I work fast, I can probably still salvage some of these parts for use later"
+    - "The fresher the better, but sometimes I can make preserved bits work"
+    - "Time to cut"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:  Quick sharp movements, constantly smiling while he's cutting
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      To serve the family and master his crafts  
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Surgery, especially the cutting part
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      His ego can get the best of him and feels like he should always be in charge
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      He is trying to learn how to make his own monsters
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 13
+    hit-points: 76
+    speed: 30
+    str: 12
+    dex: 19
+    con: 14
+    int: 20
+    wis: 11
+    cha: 17
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    saving-throws:
+    - Dexterity
+    - Charisma
+    - Intelligence
+    damage-immunities:
+    - N/A
+    condition-immunities:
+    - Exhaustion
+    resistances:
+    - Magic, Disease
+    skills:
+    - Surgery
+    proficiencies:
+    - Medicine
+    - Insight
+    - Perception    
+  special-abilities:
+  - title: Doctor Abilities
+  - abilities:
+    - title: Medical Training
+    - content: Due to your meticulous study into the healing arts you can use your Intelligence modifier instead of your Wisdom modifier for Medicine checks. In addition your proficiency bonus is doubled for any
+               Medicine checks that you make. 
+    - title: First Aid
+    - content: You can apply basic first aid to an adjacent creature you can touch. As a bonus action you heal the target for 1d4 hit points. This increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th
+               level (4d4). You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.
+    - title: Second Opinion
+    - content: You have become accustomed not only to combat, but to coordinating with other healers. Whenever an ally within 20ft of you uses a healing ability, spell, or item, you can use your reaction to increase
+               the amount healed to a single target by half, rounded up. Your ally must be able to see or hear you.
+    - title: Patch Up
+    - content: You have learned that there is always another fight around the corner, and it's best to be ready for it. Select up to 6 willing creatures that you can touch. You spend the next 10 minutes quickly stitching up
+               any open wounds and applying painkillers where needed, whatever it takes to get them to the next battle. This cures them of any non-magical ailments and restores a number of hit points equal to half of their
+               maximum rounded up. You can use this feature a number of times equal to your Intelligence modifier divided by two (a minimum of once). You regain any expended uses when you finish a Long Rest.
+    - title: Diagnosis
+    - content: You have learned to treat hostile scenarios as just another day at the office. As an action you study a living creature and gain vital insight towards its physical state. You learn one of the targets
+               following statistics - Damage Vulnerabilities, Damage Resistances, Damage Immunities, Highest Saving Throw, Lowest Saving Throw, or whether or not the creature is below half its health. You can use this
+               feature a number of times equal to your Intelligence modifier (a minimum of once). You regain expended uses when you finish a Short Rest.
+    - title: Paramedic
+    - content: You have become experienced at reaching the injured without taking damage. When you use your action to disengage you may also double your movement speed until the end of your turn
+    - title: Vaccination
+    - content: You have spent countless hours attempting to aid those suffering from disease and have developed a number of treatments. As an action you can cure a target of a single disease afflicting them. Alternatively,
+               you can inoculate a target against disease for the next 24 hours. In addition, due to exposure from numerous patients the doctor gains immunity to all disease.
+    - title: Vitality Boost
+    - content: You have become an expert at healing at a moment’s notice. As an bonus action you can heal an adjacent creature you can touch for 4d6 hit points. This increases by 2d6 when you reach 15th level (6d6).
+               You can use this feature a number of times equal to your Intelligence modifier + 1. You regain any expended uses when you finish a Short Rest.
+    - title: Reanimation
+    - content: You provide life saving aid to a creature that has died within the last 10 minutes and return them to life. The creature returns to life with 1 hit point. This procedure can't return to life a creature that
+               has died of old age, nor can it restore any missing body parts. You cannot use this feature again until you have completed a short rest.
+    - title: Experianced Healer
+    - content: You are unlikely to fail at common medical tasks. Whenever you make a Medicine check you can treat a d20 roll of 9 or lower as a 10.
+    - title: Sedate
+    - content: You have managed to create sedatives using standard supplies. As an action you can inject a willing creature with a sedative that will cause them to go unconscious for 1d4 hours. You can also attempt to inject
+               an unwilling creature for the same effect. An unwilling target must be below one quarter of its maximum hit points for this ability to take effect. They must then succeed a Constitution saving throw or
+               immediately fall unconscious for 1d4 hours.
+  - title: Surgeon Domain Abilities
+  - abilities: 
+    - title: Expert Practice
+    - content: You can now add your intelligence modifier to the result of any healing ability you perform.
+    - title: Surgery
+    - content: You have gained the confidence to delve deeper into the bodies of your patients. You operate on an injured subject, curing them of any ailments, both mundane and magical. The target regains a number of hit points
+               equal to their maximum. Any hit points the target gains over their maximum become temporary hit points. This takes 2 full hours from start to finish. 
+    - title: Transplant
+    - content: You have begun experimenting with new methods to improve life. you may attempt to transplant an organ from one creature to another. The organ must be from a living creature or one that has died in the last 
+               24 hours. Examples are eyes from a creature with darkvision, stomach from a creature inmmune to poison, or replace a limb with one from a smiilar creature. the process takes 2 hours to complete and takes 2 
+               days to recover from. This requres a Medicine check from the chart below, The DM determines the difficulty level;
+    - content: Difficulty   DC     Example
+    - content: Simple       DC15   Human Leg
+    - content: Moderate     DC20   Elf Eyes
+    - content: Difficult    DC25   Dragon Stomach
+    - content: Complex      DC30   Beholder Eye Stalk
+
+  - title: Special Equipment
+  - abilities:
+    - title: Doctors Bag
+    - content: You gain access to a number of special supplies due to your medical training. These supplies include things like bandages, syringes, medicinal powders, and healing salves. You keep these in a storage
+               container of your choice such as a bag, a series of pouches, or even a trunk. As long as you have access to your Doctor's Bag you may use an action to stabilize a creature that has 0 hit points, without
+               needing to make a Medicine check.
+    - title: High Surgeon's Scalpel
+    - content: When used as a weapon it counts as a magical dagger and deals 2d4 slashing damage
+    - content: Medical Mastery - Grants advantage on all medicine checks made during surgical operations
+    - content: Cutting Edge - When attacking with this weapon, if you score a critical hit, the target takes and extra 14 slashing damage
+    - content: Cauterize- You may use a bonus action to super-heat its blade for 1 minute or until you end the effect. this causes the scalpel to deal and additional 1d8 fire damage and can immediately cauterize any wound.
+                          This ability can only be used once per long rest
+    - title: Amulet of Winter's Sleep
+    - content: This amulet allows its wearer to expend one charge to cast a variation of the sleep spell on 1 target creature per charge. Target creatures must make a DC10 Constitution Saving Throw or fall into a deep sleep.
+               This sleep lasts for 1 hour and can only be ended early by the caster or by dispelling the magic. If the original saving throw is failed, the wearer can use an additional charge to extend the sleep for an extra
+               hour without another saving throw. The sleep state can also be entered willingly by a target without a saving throw. The target of this sleep spell also takes an additional 1d6 cold damage per hour of sleep. This
+               amulet has 1d6 charges and regains 1d6 charges every day at dawn. 
+
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      As a family of oddities and abominations, it's not always a good idea for Dumas family members to visit standard medical professionals. Not to mention that most doctors wouldn't even know where to begin.  To this end,
+      when a young Cousin Jonnah showed high intelligenct and an early predaliction towards dissection at a very young age, it was decided that he would be sent off to school to apprentice to be a doctor and a surgeon. Jonnah
+      took to his calling with fuvor and became exceedingly adept in medicine and surgery. Of his own accord, he also delved deeply into the discipline of transplanting body parts, changing normal people into abominations by 
+      grafting parts and organs from various non-humanoid species into them. When he completed his official studies, he returned home to his clan and continues to teach himself new and taboo techniques.      
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+      Jonah Dumas is a ruggedly handsome young man with well-kept hair and manicured hands. The only visible sign that he is anything other than normal is his two different colored eyes. He is calm, intelligent, confident,
+      well-spoken and deft. He has very little in the way of bedside manner, but can still be very charming when he needs to be.      

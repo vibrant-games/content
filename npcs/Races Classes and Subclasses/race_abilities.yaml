@@ -992,17 +992,19 @@
     - title: Howl of the Pack
     - content: Choose a friendly creature who can see or hear you within 30 feet. It can use its reaction to make a one weapon attack. After you use this feature, you can't use it again until you complete a short or 
                long rest.
+    - title: Pack Tactics
+    - content: You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.
 
 
   - title: Fetchling Abilities
   - abilities: 
     - title: Fell Magic
     - content: You know the Chill Touch can trip. When you reach 3rd level, you can cast the Disguise Self spell. When you reach 5th level, you can also cast the Darkness spell . Once you have cast these spells you must 
-               complete a long rest before you can use the m again. Charisma is your spellcasting ability for these spells.
+               complete a long rest before you can use them again. Charisma is your spellcasting ability for these spells.
     - Title: Dark Adaptation
     - content: You have resistance to Cold damage and vulnerability to Radiant damage.
     - title: Shadowmeld
-    - content: You can attempt to hide even when you are only lightly obscure d in the faintest shadow, smallest dark corner, or other shadow or darkness related phenomena. Additionally you gain advantage on Dexterity
+    - content: You can attempt to hide even when you are only lightly obscured in the faintest shadow, smallest dark corner, or other shadow or darkness related phenomena. Additionally you gain advantage on Dexterity
                (Stealth) checks when in Darkness.
     - title: Superior Darkvision
     - content: You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light.
@@ -1274,6 +1276,31 @@
     - content: You can move through other creatures and objects other than physical barriers (such as walls or ceilings) as if they were difficult terrain. Once per short rest, you may pass through up to 10 feet of
                physical barriers (treating them as difficult terrain) as a part of your movement. You take 1d10 force damage if you end your turn inside an object or barrier, and are immediately ejected to the 
                closest available space if within a barrier.
+               
+  - title: Awakened Undead - Ghast Abilities
+  - abilities: 
+    - title: Dead Immortality
+    - content: You do not age. Given time, the necromantic energies that sustain you will heal most wounds you take at approximately the same rate as a mortal, and your hit dice function as normal.
+    - title: Past Life
+    - content: Choose another living race besides this one. Before your death, you were a member of this race and appear as an undead version of it. Your size, height, and movement speed are the same as a typical member of 
+               that race. You do not retain special movement speeds from this race (such as swimming or flying), and, though you may choose to have formerly been a member of a subrace of a particular race, you derive no 
+               benefits from doing so.
+    - title: Undead
+    - content: Raised from the dead as a being of undeath, you count as an undead creature for all spells and abilities that affect the undead. You are immune to disease and treat exhaustion as if it was one level less. You do
+               not need to eat or breathe, but you can ingest food and drink if you wish. Instead of sleeping, you enter an inactive state for 4 hours each day. You do not dream in this state; you are fully aware of your 
+               surroundings and notice approaching enemies and other events as normal.
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.
+    - title: Bloodless
+    - content: You are immune to poison damage and the poisoned condition.
+    - title: Stench
+    - content: Any creature that starts its turn within 5 ft. of the ghast must succeed on a DC 10 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune 
+               to the ghast's Stench for 24 hours.
+    - title: Turn Defiance
+    - content: The ghast and any ghouls within 30 ft. of it have advantage on Saving Throws against Effects that turn Undead.
+    - title: Claw Attack
+    - content: Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed 
+               for 1 minute. The target can repeat the saving throw at the end of each of its turns, Ending the Effect on itself on a success.
                              
                              
   - title: Deva Abilities
@@ -1340,16 +1367,18 @@
   - title: Rhoxodon Abilities
   - abilities: 
     - title: Tough Hide
-    - content: Your hide is thick and coarse that can take a serious beating before even showing wear. You have resistance to Slashing damage.
+    - content: Your hide is thick and coarse that can take a serious beating before even showing wear. You have resistance to Slashing, Piercing, Fire and Cold damage.
     - title: Threatening Presence
-    - content: The Rhoxodon are renowned for their intimidating personas. You have proficency in Intimidation and haveadvantage on checks with it against creatures smaller than you.
+    - content: The Rhoxodon are renowned for their intimidating personas. You have proficency in Intimidation and have advantage on checks with it against creatures smaller than you.
     - title: Natural Craftsman
     - content: Due to your history with the Rhoxodon people you have experience with building weapons of war. You have proficiency with Blacksmithing tools
     - title: Weapon Warlords
-    - content: Rhoxodon train their young in the weapons of war from a young age.You have proficiency with Warhammers, Greatclubs, Halberds and Mauls.
+    - content: Rhoxodon train their young in the weapons of war from a young age. You have proficiency with Warhammers, Greatclubs, Halberds and Mauls.
     - title: Charger
-    - content: Rhoxodon are masters of momentum. AB a bonus action on each of your turn you may charge as your movement. When you charge you may move in a straight line up to your remaining movement speed and ram any number 
-               of enemiea in that line. Each enemy hit makes a Dexterity saving throw DC is IO +your Strength modfier. On a failed save they are knocked prone.
+    - content: Rhoxodon are masters of momentum. As a bonus action on each of your turn you may charge as your movement. When you charge you may move in a straight line up to your remaining movement speed and ram any number 
+               of enemies in that line. Each enemy hit makes a Dexterity saving throw DC is 1O + your Strength modfier. On a failed save they are knocked prone.
+    - title: Nearsighted
+    - content: Rhoxodon are incredibly nearsighted and can really only see clearly out to around 15ft. Because of this they recieve disadvantage on sight-based Insight, Perception and Investigation checks
                   
                   
   - title: Simani Abilities
@@ -1746,7 +1775,7 @@
     - title: Hammerspace
     - content: Due to their less than hardy natures, Toonkind have access to a small personal pocket dimension in which they can store personal objects no more than three cubic feet in size. This is a fickle magic, 
                however, and may not always grant the return of the object they desire. Players must roll a percentile dice whenever pulling an object from hammerspace, with a 10 percent chance they pull out the wrong 
-               item. Repeated attempts will increase to a 50 percent difficulty until the original item is found See the Hammerspaee Fumble table for options.
+               item. Repeated attempts will increase to a 50 percent difficulty until the original item is found See the Hammerspace Fumble table for options.
     - title: Paper-Thin Disguise
     - content: As Toonkind have increased their interest in other cultures, they have adapted impressive methods of going incognito. just a wig or a false moustache can do wonders in obscuring their outlandish 
                appearances. Toonkind are proficient with the Disguise kit
