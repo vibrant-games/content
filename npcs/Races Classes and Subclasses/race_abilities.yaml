@@ -1040,7 +1040,7 @@
     - content: Due to being part flame, you suffer 2d6 cold damage when you come into contact with water, and at the start of each of your turns when you are in water.
     - title: Heart of Fire
     - content: The fire that burns within you produces bright light for a range of 20 feet, and dim light for an additional 20 feet. Whenever a creature touches you or hits you with a melee attack while within 5 feet of
-               you, you may choose for it to immediately suffer 1 d4 fire damage, then suffer an additionalld4 fire damage at the start of each of its turns while it is touching you. You can also choose for an unattended
+               you, you may choose for it to immediately suffer 1 d4 fire damage, then suffer an additional ld4 fire damage at the start of each of its turns while it is touching you. You can also choose for an unattended
                item you touch to catch fire.
     - title: The Great Aurora
     - content: If you are present on Lorwyn during its transformation into shadowmoor, your race changes to Cinder.
@@ -1120,7 +1120,7 @@
     - title: Animal Instincts
     - content: You have proficiency in the Survival skill.
     - title: Claws
-    - content: Using your bear claws to attack, your unarmed strikes deal 1d4 slashing damage.
+    - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
     - title: Darkvision
     - content: You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.
     - title: Stealthy
@@ -1134,7 +1134,7 @@
     - title: Animal Instincts
     - content: You have proficiency in the Survival skill.
     - title: Claws
-    - content: Using your bear claws to attack, your unarmed strikes deal 1d4 slashing damage.
+    - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
     - title: Ability Score Improvement
     - content: Your Charisma score increases by 1.
     - title: Protector
@@ -1148,12 +1148,26 @@
     - title: Animal Instincts
     - content: You have proficiency in the Survival skill.
     - title: Claws
-    - content: Using your bear claws to attack, your unarmed strikes deal 1d4 slashing damage.
+    - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
     - title: Ability Score Improvement
     - content: Your Constitution score increases by 1.
     - title: Winter Hide
     - content: You have resistance to Cold damage. You are also able to weather much colder climates than most other races, as described in chapter 5 of the Dungeon Master's Guide.
-       
+ 
+  - title: Sun Bearkin Abilities
+  - abilities: 
+    - title: Keen Smell
+    - content: You gain advantage on Wisdom (Perception) checks that rely on smell.
+    - title: Animal Instincts
+    - content: You have proficiency in the Survival skill.
+    - title: Claws
+    - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
+    - title: Ability Score Improvement
+    - content: Your Intelligence score increases by 1.
+    - title: Nimble Climber
+    - content: You have a climbing speed of 40 feet.
+    - title: Mimicry
+    - content: Can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check 
        
   - title: Panda Bearkin Abilities
   - abilities: 
@@ -1162,7 +1176,7 @@
     - title: Animal Instincts
     - content: You have proficiency in the Survival skill.
     - title: Claws
-    - content: Using your bear claws to attack, your unarmed strikes deal 1d4 slashing damage.
+    - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
     - title: Ability Score Improvement
     - content: Your Wisdom score increases by 1.
     - title: Folk Healer
@@ -1179,9 +1193,9 @@
     - title: Animal Instincts
     - content: You have proficiency in the Survival skill.
     - title: Claws
-    - content: Using your bear claws to attack, your unarmed strikes deal 1d4 slashing damage.
+    - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
     - title: Nimble Climber
-    - content: You have a climbing speed of 30 feet.
+    - content: You have a climbing speed of 40 feet.
     - title: Bear Drop
     - content: When falling onto another creature, you only take half falling damage and gain advantage on that attack roll, if attacking.
     - title: Expert Survivalist
