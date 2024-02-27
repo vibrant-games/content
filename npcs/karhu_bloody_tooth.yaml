@@ -83,7 +83,7 @@ metadata:
   # For now, I suggest: convert the character name to lower case,
   # and replace all spaces and punctuation with underscores (_)
   #
-  id: ursin_storm_for_eyes
+  id: karhu_bloody_tooth
 
   #
   # The name of the submitter (your name).
@@ -103,7 +103,7 @@ metadata:
   # E.g. "2021-12-31"
   #      "2021-12-31 23:59:59"
   #
-  date: "2024-01-12"
+  date: "2024-02-22"
 
   #
   # Arbitrary labels that are opaque to the system, only
@@ -134,7 +134,7 @@ npc:
   # Required.
   # Max length: ...
   #
-  name: Ursin Storm-For-Eyes
+  name: Karhu Bloody-Tooth
 
   #
   # The NPC artwork.
@@ -165,7 +165,7 @@ npc:
     #
     # Required.
     #
-    age: Elderly
+    age: Older Adult
 
     #
     # Races (case insensitive):
@@ -196,7 +196,7 @@ npc:
     # Optional.  Can be commented out.
     # Max length: ...
     #
-    sub-race: Panda
+    sub-race: Grizzly
 
     #
     # Pronouns (case insensitive):
@@ -215,7 +215,7 @@ npc:
     # Max length per occupation: ...
     #
     occupation:
-    - Spiritual Leader of the Bearkin Nation
+    - War Leader of the Bearkin Nation
 
     #
     # D & D classes (case insensitive):
@@ -238,7 +238,7 @@ npc:
     #
     # Required.
     #
-    class: Shaman
+    class: Barbarian / Fighter / Ranger / Pugilist
 
     #
     # D & D subclasses (case insensitive):
@@ -261,7 +261,7 @@ npc:
     #
     # Required.
     #
-    subclass: Calling of the Spirit
+    subclass: Path of the Zealot / Champion / Monster Slayers Conclave / The Sweet Science Fight Club
 
     #
     # Class level.
@@ -270,7 +270,7 @@ npc:
     # Required.
     # Integer.
     #
-    level: 20
+    level: 14 / 3 / 3 / 3
 
     #
     # Alignments (case insensitive):
@@ -311,7 +311,7 @@ npc:
     languages:
     - Common
     - Bear
-    - Elvish
+    - Infernal
 
     #
     # Factions:
@@ -334,7 +334,7 @@ npc:
     factions:
     - id: bearkin_nation
       name: The Bearkin Nation
-      role: Spiritual Leader
+      role: War Leader
 
     #
     # Adjectives or other tags that can be used for searching.
@@ -342,9 +342,9 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Wise
-    - Thoughtful
-    - Patient
+    - Cunning
+    - Fearless
+    - Battle-Hardened
 
   improv:
 
@@ -359,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  The tent flap parts to reveal a wizened old bear with a mix of greying black and white fur
+    introduction:  Striding across the battlefield, an absolutely massive Grizzly Bearkin with a broad scar across one missing eye, lets out a bellowing warcry
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -370,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:  Small for a Panda Bearkin, his black and white fur is greying, his eyes are a milky white and he wears sparse cracked leathers
+    appearance:  Huge and broad with thick black fur and a wide facial scar across a missing left eye.
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -387,7 +387,7 @@ npc:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
     expressions:
-    - "I see disaster on the horizon"
+    - "The time for talk is over old man"
     - "The ancestors tell me that we must wait until the time is right"
     - "Calm yourself, we will know when the time is right to intercede"
 
@@ -446,15 +446,15 @@ npc:
   # All integers.
   #
   stats:
-    armour-class: 18
-    hit-points: 147
-    speed: 20
-    str: 7
-    dex: 11
-    con: 13
-    int: 19
-    wis: 24
-    cha: 19
+    armour-class: 24
+    hit-points: 312
+    speed: 40
+    str: 22
+    dex: 18
+    con: 20
+    int: 14
+    wis: 17
+    cha: 20
 
   #
   # Special characteristics.
@@ -468,9 +468,8 @@ npc:
     - Charisma
     - Dexterity
     - Wisdom
-    - Intelligence
     damage-immunities:
-    - Psychic, Thunder and Lightning
+    - Piercing, Bludgeoning, Slashing, Fire, Cold
     damage-vulnerabilities:
     - N/A
     condition-immunities:
@@ -478,25 +477,27 @@ npc:
     - Firghtened
     - Poisoned
     - Disease
+    - Stunned
     resistances:
-    - Necrotic and Radiant Damage, Magic 
+    - Necrotic and Force Damage, Magic 
     skills:
-    - Blindsight
-    - Seeing and Divination
+    - Combat Leadership and Strategy
+    - War
     proficiencies:
-    - Arcana
+    - Acrobatics
     - History
     - Nature
-    - Religion
-    - Investigation
+    - Athletics
+    - Intimidation
     - Insight
-    - Medicine
+    - Survival
     - Perception
     - Persuasion
-    - Animal Handling - Owls
-    - Dagger    
+    - Animal Handling
+    - Throwing Axe
+    - Long Bow    
   special-abilities:
-  - title: Panda Bearkin Abilities
+  - title: Grizzly Bearkin Abilities
   - abilities: 
     - title: Keen Smell
     - content: You gain advantage on Wisdom (Perception) checks that rely on smell.
@@ -505,96 +506,152 @@ npc:
     - title: Claws
     - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
     - title: Ability Score Improvement
-    - content: Your Wisdom score increases by 1.
-    - title: Folk Healer
-    - content: You gain proficiency in the Medicine skill.
-    - title: Spiritual Communication
-    - content: You have the ability to cast the spell Speak With Plants using Wisdom as your spellcasting modifier. Using this feature, you are only able to communicate with the plants, not command, move or 
-               control them. Once you use this feature, you cannot use it again until the end of a long rest.
+    - content: Your Charisma score increases by 1.
+    - title: Protector
+    - content: When an ally within 1Oft of you must make a Strength saving throw, you may choose to have the effect target you in their place. This feature can only be used twice every short rest.
     
-  - title: Shaman Abilities
+  - title: Barbarian Abilities
   - abilities:
-  - title: Shaman Spellcasting
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+    - title: Extra Attack
+    - content: Can attack twice each turn	
+    - title: Fast Movement
+    - content: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+    - title: Feral Instinct
+    - content: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+               before doing anything else on that turn.		
+    - title: Brutal Critical
+    - content: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack. 
+               
+  - title: Fighter Abilities
+  - abilities:
+    - title: Fighting Style
+    - content: Two-Weapon Fighting
+    - title: Second Wind
+    - content: Bonus Action to regain 1d10 + 3
+    - title: Action Surge
+    - content: Once every short/long rest can take an extra action
+               
+  - title: Ranger Abilities
+  - abilities:
+  - title: Ranger Spellcasting
   - abilities: 
     - title: Spell DC
-    - content: 20
-    - title: Cantrips
-    - content: Guidance, Mending, Produce Flame, Resistence, Shillelagh   
+    - content:
     - title: 1st Level
-    - content:  Cure Wounds, Detect Magic, Create or Destroy Water, Healing Word, Purify Food and Drink, Thunderwave, Speak with Animals, Gift of Alacrity, Identify  
-    - title: 2nd Level
-    - content:  Heat Metal, Hold Person, Lesser Restoration, Pass Without Trace, Silence, Locate Plant or Animal, Augury, Fortune's Favor, Borrowed Knowledge, Detect Thoughts, Warp Sense
-    - title: 3rd Level
-    - content:  Call Lightning, Conjure Animals, Dispel Magic, Nandetection, Speak with Plants, Counterspell, Clairvoyance, Tongues, Speak with Dead
-    - title: 4th Level
-    - content:  Arcane Eye, Divination, Blight, Conjure Woodland Beings, Conjure Minor Elemental, Dominate Beast, Polymorph, Wall of Fire 
-    - title: 5th Level
-    - content:  Awaken, Commune with Nature, Geas, Greater Restoration, Mass Cure Wounds, Planar Binding, Reincarnate, Scrying, Commune with Spirits, Tree Stride, Legend Lore, Telepathic Bond, Contact Other Plane  
-    - title: 6th Level
-    - content:  True Seeing, Transport via Plantsm Wind Walk, Heal, Move Earth   
-    - title: 7th Level
-    - content:  Mirage Arcane, Plane Shift, Fire Storm   
-    - title: 8th Level
-    - content:  Control Weather, Earthquake, Feeblemind  
-    - title: 9th Level
-    - content: Foresight, Shapechange, Storm of Vengeance
-    - title: Totem Spirit
-    - content: Owl
-    - title: Ironwood Skin
-    - content: While you are not wearing any armor, your Armor Class equals 10 + your Wisdom modifier + your Constitution modifier. You can use a shield and still gain this benefit
+    - content: Hunter's Mark, Ensnaring Strike, Zephyr Strike       
+    - title: Favored Enemy
+    - content: Has advantage on Wisdom (Survival) checks to track her Favored enemies, as well as on Intelligence Checks to recall information about them
     - title: Natural Explorer 
-    - content: Favored Terrain - You can choose one type of terrain; arctic, coast, desert, forest, grassland, mountain, or swamp. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency 
-                                 bonus is doubled if you are using a skill that you are proficient.
-    - content: While traveling for an hour or more in your favored terrain, you gain the following benefits - 
-    - content: Difficult terrain doesn’t slow your group’s travel.
-    - content: Your group can’t become lost except by magical means.
-    - content: Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.
-    - content: If you are traveling alone, you can move stealthily at a normal pace.
-    - content: When you forage, you find twice as much food as you normally would.
-    - content: While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
-    - title: Spirit Sight
-    - content: You gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see,
-               such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated
-    - title: Primal Protector
-    - content: You can connect with animal spirits and improve the demeanor of a creature with the beast type that you can see. Using your totem, you can use your action to attempt to make a target creature
-               indifferent about creatures of your choice that it is hostile toward. Each beast creature that can see you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw,
-               it is charmed by you for 1 minute or until it takes damage. While it is charmed by you, it is friendly to you and other creatures you designate. You are able to perform this twice per short or long rest
-    - title: Spiritual Connection
-    - content: Your spiritual connection with your Spirit World grows and it blesses you with mental fortitude. A spiritual aura surrounds you, and grants you and any allies within 10 feet advantage on
-               Constitution and Wisdom saving throws 
-    - title: Bounty of Life
-    - content: You can choose to drain the life force from a creature. When you hit a creature with a melee attack, the target must succeed on a Constitution saving throw versus your spell save DC; on a failed save, you
-               gain temporary hit points equal to the damage caused to the creature. You can use this ability once per round
-    - title: Spiritual Whisper
-    - contnet: You are bestowed a magical secret as if it were a whisper into your mind. Choose one 6th- level spell from the Druid spell list as this whisper. You can cast your secret spell once without expending a
-               spell slot. You must finish a long rest before you can do so again. At higher levels, you gain more druid spells of your choice that can be cast in this way; one 7th- level spell at 13th level, one 8th-level
-               spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Spiritual whisper when you finish a long rest.
-    = content: Druid Spells - Heroe's Feast, Reverse Gravity, Animal Shapes, True Ressurection               
-    - title: Eternal Favor
-    - content: The primal magic that you wield requires you to age very slowly. In order to complete tasks in the natural world, every 10 years that pass, your body ages only 1 year
-    - title: Spiritual Warrior
-    - content: You embody the spiritual power of the world and it infuses you with vigor and insight. Your Wisdom score increases by 4. Your maximum for this score is now 24 
+    - content: Favored Terrain - Plains
+    - content: Difficult Terrain doesn't slow your group's Travel
+    - content: Your group can't become lost except by magical means
+    - content: Even when you are engaged in another Activity While Traveling (such as Foraging, navigating, or tracking), you remain alert to danger
+    - content: If you are traveling alone, you can move stealthily at a normal pace
+    - content: When you Forage, you find twice as much food as you normally would
+    - content: While Tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area
+    - title: Fighting Style
+    - content: Archery
+    - title: Primeval Awareness
+    - content: can use her action and expend one Ranger spell slot to focus her awareness on the region around her. For 1 minute per level of the spell slot she expends, she can sense whether the following 
+               types of creatures are present within 1 mile of her (or within up to 6 miles in Favored terrain)- Aberrations, Celestials, Dragons, Elementals, fey, Fiends, and Undead. This feature doesn't 
+               reveal the creatures' location or number.
                
-  - title: Calling of the Spirit Abilities
+  - title: Pugilist Abilities
   - abilities:
-    - title: Spiritual Guide
-    - content: You are bestowed a spirit guide to help you progress further. The spirit guide takes on the incorporeal form of your totem spirit. Starting when you choose this path at 3rd level, your Spirit Guide
-               appears by your side. The Spirit Guide is the embodiment of the Spirit World for you. It cannot be seen by anyone else by non-magical means, but it can see and hear others as you would. The Spirit
-               guide communicates and interacts with the shaman as a conscious being. The spirit guide grants the shaman advantage to initiative rolls, can’t be surprised while conscious, and other creatures don’t
-               gain advantage on attack rolls against you as a result of being hidden from you.
-    - title: Ghost Touch
-    - content: Any weapon that you touch deals damage normally against any incorporeal creature regardless of its resistance to that damage type. This feature lasts as long as the shaman holds the weapon. The shaman also
-               gains resistance to melee attacks from incorporeal creatures e.g. ghosts, shadows, wraiths, will-o’-wisp, specters
-    - title: Spiritual Focus
-    - content: You can give the spirit guide the task of concentrating on a spell or spell-like ability that is maintained through concentration. The shaman can act normally while his spirit guide concentrates on the
-               spell. If the shaman casts another spell that requires concentration, then the first spell effect ends and the second spell begins. The shaman can choose the spirit guide to concentrate on any
-               subsequent spells cast. A spirit guide can concentrate on only one spell at a time. A spirit guide does not have to make Concentration checks for circumstances such as the shaman taking damage. The
-               spirit guide is not present for anyone to interrupt or otherwise interact. If the shaman falls unconscious or dies, then the spirit guide stops concentrating on the spell, and the spell’s effect ends.
-    - title: Spirit Journey
-    - content: A spirit shaman knows how to vanish bodily into the Spirit World. As an Action, a shaman can become incorporeal and move through other creatures and objects as if they were difficult terrain. He takes
-               1d10 force damage if he ends his turn inside an object. While incorporeal, the shaman does not invoke attacks of opportunity. Outside of combat, the shaman can spend time in prayer and meditation to
-               commune directly with other spirits in the Spirit World to attempt receive information concerning their current quest. The shaman can ask three questions that can be answers with a yes or no. While in
-               meditation, the shaman’s soul is in the Spirit World, and cannot communicate with others in the Natural world
+    - title: Fisticuffs
+    - content: Your years of fighting in back alleys and taverns have given you mastery over combat styles that use unarmed strikes and pugilist weapons, which are simple melee weapons without the two-handed property, whips,
+               and improvised weapons. You may not use the finesse property of a weapon while using it as a pugilist weapon. You gain the following benefits while you are unarmed or using only pugilist weapons and you are 
+               wearing light or no armor and not using a shield 
+               You can roll a d6 in place of the normal damage of your unarmed strike or pugilist weapon. This die changes as you gain pugilist levels, as shown in the Fisticuffs column on the Pugilist table.
+               When you use the Attack action with an unarmed strike or a pugilist weapon on your turn, you can make one unarmed strike or grapple as a bonus action.
+    - title: Iron Chin
+    - content: You can use Constitution instead of Dexterity to determine your armor class when you are wearing light or no armor and are not using a shield.
+  - title: Moxie
+  - abilities:
+    - content: Your experience laying the beatdown on others has given you a moxie you can channel in the midst of battle. This swagger is represented by a number of moxie points. Your pugilist level determines the maximum 
+               number of points you have, as shown in the Moxie Points column of the Pugilist table. You can spend these points to fuel various moxie features. You start knowing three such features -  Brace Up, The Old One-Two, 
+               and Stick and Move. You learn more moxie features as you gain levels in this class. You regain all expended moxie points when you complete a short or long rest.
+    - title: Moxie Points
+    - content: 3
+    - title: Brace Up
+    - content: You can use a bonus action and spend 1 moxie point to brace for attacks. Roll your fisticuffs die + your pugilist level + your Constitution modifier and gain that many temporary hit points.
+    - title: The Old One-Two
+    - content: Immediately after you take the Attack action on your turn, you can spend 1 moxie point to make two unarmed strikes as a bonus action.
+    - title: Stick and Move
+    - content: You can use a bonus action and expend 1 moxie point to make a shove attack or take the Dash action.
+    - title: Street Smart
+    - content: Carousing, shadowboxing, and sparring all count as light activity for the purposes of resting for you. Additionally, once you have caroused in a settlement for 8 hours or more, you know all public locations 
+               in the city as if you were born and raised there and you cannot be lost by non-magical means while within the city.
+    - title: Bloodied But Unbowed
+    - content: When you take damage that reduces you to half your maximum hit points or less, you can use your reaction to gain temporary hit points equal to your pugilist level + your Constitution modifier and you
+               regain all expended moxie points. You cannot use this feature again until you finish a short or long rest.
+    - title: Fight Club
+    - content: You choose a fight club that best exemplifies your style; Arena Royale, Bloodhound Bruisers, Dog & Hound, Piss & Vinegar, the Squared Circle, or the Sweet Science, all detailed at the end of the class 
+               description. Your fight club grants you features at 3rd level and again at 6th, 11th, and 17th level.
+               
+  - title: Path of the Zealot Abilities
+  - abilities: 
+    - title: Divine Fury
+    - content: You can channel divine fury into your weapon strikes. While you're raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your Barbarian level.
+               The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature.
+    - title: Warrior of the Gods
+    - content: Your soul is marked for endless battle. If a spell, such as Raise Dead, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the 
+               spell on you.
+    - title: Fanatical Focus
+    - content: The divine power that fuels your rage can protect you. If you fail a saving throw while raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage.
+    - title: Zealous Presence
+    - content: You learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you
+               that can hear you gain advantage on attack rolls and saving throws until the start of your next turn. Once you use this feature, you can’t use it again until you finish a long rest.
+    - title: Rage Beyond Death
+    - content: The divine power that fuels your rage allows you to shrug off fatal blows. While you're raging, having 0 hit points doesn’t knock you unconscious. You still must make death saving throws, and you 
+               suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don’t die until your rage ends, and you die then only if you still
+               have 0 hit points.
+               
+  - title: Champion Abilities
+  - abilities: 
+    - title: Improved Critical
+    - content: Your weapon attacks score a critical hit on a roll of 19 or 20 
+    - title: Remarkable Athlete
+    
+  - title: Monster Slayer Conclave Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content:
+    - title: 3rd Level
+    - content: Protection from Evil and Good 
+    - content: Hold Monster
+    - title: Hunters Sense
+    - content: You gain the ability to peer at a creature and magically discern how best to hurt it. As an action, choose one creature you can see within 60 feet of you. You immediately learn whether the creature has 
+               any damage immunities, resistances, or vulnerabilities and what they are. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities. You 
+               can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses of it when you finish a long rest.
+    - title: Slayers Prey
+    - content: You can focus your ire on one foe, increasing the harm you inflict on it. As a bonus action, you designate one creature you can see within 60 feet of you as the target of this feature. The first time each 
+               turn that you hit that target with a weapon attack, it takes an extra 1d6 damage from the weapon. This benefit lasts until you finish a short or long rest. It ends early if you designate a different 
+               creature.
+               
+  - title: The Sweet Science Fight Club Abilities
+  - abilities: 
+    - title: Cross Counter
+    - content: You can block the brunt of an attack and launch one of your own in the same fluid motion. You can use your reaction and spend 2 moxie points to reduce the damage of a melee weapon attack made against you 
+               by 1d10 + your Strength modifier + your pugilist level. If you reduce the damage to 0, you can make an unarmed strike, or pugilist weapon attack, against a creature within range as part of the same 
+               reaction.
+    - title: One, Two, Three, Floor
+    - content: When you use your bonus action to use the Old One-Two and hit the same creature with both attacks, you can spend 1 moxie to make an additional unarmed strike against that creature as part of the 
+               same bonus action. If you hit, the creature is knocked prone in addition to taking damage as normal for your unarmed strike.
 
   - title: Attacks
   - content: Knife or Spell
