@@ -1,0 +1,679 @@
+﻿#
+# Vibrant Games NPC file format.
+#
+# For long fields, we should be able to embed <html-tag>...</html-tag>s,
+# if everyone is cool with that approach.  OR we could use markdown instead.
+#
+# HTML requires more discipline -- we need to come up with a CSS stylesheet,
+# and stick to using the styles defined in our stylesheet.  Markdown is
+# simpler, because we can convert and automagically apply the stylesheet.
+#
+# Long fields are of the form:
+#
+#     field: |
+#       TEMPLATE
+#       MORE TEMPLATE
+#
+# For example, with HTML tags:
+#
+#     field: |
+#       <p> Gorbonzonger the goblin is a very bad goblin.
+#       He likes to beat up kobolds. </p>
+#       <p class="small"> Kobolds deserve it, anyway. </p>
+#       <p> Gorbonzonger has an amulet made of camphor
+#       and a very long shopping list that contains many
+#       items, some very few of which include: </p>
+#       <ul>
+#       <li> toilet paper </li>
+#       <li> broccoli </li>
+#       </ul>
+#
+# Or with Markdown:
+#
+#     field: |
+#       Gorbonzonger the goblin is a very bad goblin.  He likes to beat up kobolds.
+#       Kobolds deserve it, anyway.
+#       Gorbonzonger has an amulet made of camphor and a very long shopping list that contains many items, some very few of which include:
+#       - toilet paper
+#       - broccoli
+#
+# (There might be other formatting systems worth considering, too!)
+#
+
+#
+# Currently there is no schema for this template.
+# It will take some time to create a validating schema, so that,
+# for example, many fields are optional, but some fields are
+# required; enumerated fields are only allowed to have certain
+# values; and so on.
+#
+# Once the validating schema is created (probably using
+# Open API syntax, unless anyone has any preferences), we'll
+# be able to validate submissions and accept / reject if we choose.
+#
+# Also the validating file format is the ONLY place we do
+# content validation.  The database and user interface remain
+# agnostic to the validation rules (although the submission
+# UI will be set up to make it easy to e.g. pull down enumerated
+# values).  This allows us to change the schema in ONE PLACE
+# ONLY, not have to modify multiple components (UI, database,
+# future mobile apps, etc).  The file format validator is
+# the arbiter of what's allowed and what isn't.
+#
+
+#
+# Template NPC:
+#
+
+---
+
+#
+# Preliminary fields that describe this overall file:
+#
+kind: vibrantgames.ca/npc
+version: 0.0.2
+
+#
+# Information about who submitted the data, when, how, etc.:
+#
+metadata:
+  #
+  # A unique identified for this submission.
+  # Eventually auto-generated.
+  # For now, I suggest: convert the character name to lower case,
+  # and replace all spaces and punctuation with underscores (_)
+  #
+  id: tomison_silk_fur
+
+  #
+  # The name of the submitter (your name).
+  #
+  author: Mike Rigby
+
+  #
+  # Email address of the submitter.
+  #
+  email: rigbyma@hotmail.com
+
+  #
+  # Date the NPC was created.
+  # Must be in ISO 8601 format.
+  # You can include the time if you want.
+  #
+  # E.g. "2021-12-31"
+  #      "2021-12-31 23:59:59"
+  #
+  date: "2024-03-07"
+
+  #
+  # Arbitrary labels that are opaque to the system, only
+  # potentially useful to humans.  For example, the original
+  # WordPress id of a character (1234 etc).
+  #
+  # Optional.
+  #
+  labels:
+  - label_template_1: TEMPLATE
+  - label_template_2: TEMPLATE
+  - label_template_3: TEMPLATE
+
+  #
+  # In future more metadata will likely be needed.
+  # How the data was submitted, some kind of digital
+  # signature giving Vibrant Games license to basically
+  # use the content however it chooses, etc...
+  #
+
+#
+# The content:
+#
+npc:
+  #
+  # Full name of the NPC.
+  #
+  # Required.
+  # Max length: ...
+  #
+  name: Tomison Silk-Fur
+
+  #
+  # The NPC artwork.
+  # Comment out this field if it does not yet exist.
+  # The filename can include a RELATIVE path:
+  #     path/to/my/image.jpg
+  # But it CANNOT be an absolute path:
+  #     C:\path\to\my\image.jpg
+  # For now let us keep all images in one directory,
+  # at least until that becomes a scaling nightmare.
+  #
+  image: TEMPLATE_McTEMPLATESON.jpg
+
+  #
+  # Race, class, etc.
+  # The taupe block on the left of the page.
+  #
+  traits:
+
+    #
+    # Ages (case insensitive):
+    #   - child
+    #   - adolescent
+    #   - young adult
+    #   - middle aged adult
+    #   - older adult
+    #   - elderly
+    #
+    # Required.
+    #
+    age: Middle Aged Adult
+
+    #
+    # Races (case insensitive):
+    #   - dragonborn
+    #   - drow
+    #   - dwarf
+    #   - duergar
+    #   - elf
+    #   - gnome
+    #   - half-elf
+    #   - halfling
+    #   - half-orc
+    #   - human
+    #   - orc
+    #   - tiefling
+    #
+    # Any other race is allowed, too.
+    #
+    # Required.
+    # Max length: ...
+    #
+    race: Bearkin
+
+    #
+    # The sub-race can be anything.
+    # For example, swamp gnome or red elf etc.
+    #
+    # Optional.  Can be commented out.
+    # Max length: ...
+    #
+    sub-race: Sun
+
+    #
+    # Pronouns (case insensitive):
+    # - he/him
+    # - she/her
+    # - they/them
+    #
+    # Required.
+    #
+    pronouns: He/Him
+
+    #
+    # Occupation(s).
+    #
+    # Required.
+    # Max length per occupation: ...
+    #
+    occupation:
+    - Diplomat / Spy
+
+    #
+    # D & D classes (case insensitive):
+    # - civilian
+    # - artificer
+    # - barbarian
+    # - bard
+    # - blood hunter
+    # - cleric
+    # - druid
+    # - fighter
+    # - monk
+    # - paladin
+    # - ranger
+    # - rogue
+    # - shaman
+    # - sorcerer
+    # - warlock
+    # - wizard
+    #
+    # Required.
+    #
+    class: Rogue / Artificer
+
+    #
+    # D & D subclasses (case insensitive):
+    # - civilian
+    # - alchemist
+    # - Path of the Berserker
+    # - College of Lore
+    # - Order of the Profane Soul
+    # - Grave Domain
+    # - Cirlce of the Moon
+    # - Battle Master
+    # - Way of Shadow
+    # - Oath of Redemption
+    # - Gloom Stalker
+    # - Thief
+    # - Path of the Spirit
+    # - Aberrant Mind
+    # - Hexblade
+    # - School of Abjuration
+    #
+    # Required.
+    #
+    subclass: Spy / Alchemist
+
+    #
+    # Class level.
+    # 0 for civilian.
+    #
+    # Required.
+    # Integer.
+    #
+    level: 17 / 5
+
+    #
+    # Alignments (case insensitive):
+    # - lawful good
+    # - lawful neutral
+    # - lawful evil
+    # - neutral good
+    # - neutral
+    # - neutral evil
+    # - chaotic good
+    # - chaotic neutral
+    # - chaotic evil
+    #
+    # Required.
+    #
+    alignment: Chaotic Good
+
+    #
+    # Alignment tendencies:
+    # same as alignment, can be 0 or more.
+    #
+    # Optional.
+    #
+    tendencies:
+    - N/A
+
+    #
+    # Languages the character speaks
+    # (human, dwarvish, etc).
+    #
+    # We should use whatever the D & D language names
+    # are (dwarvish / dwarven / dwarfish / whatever).
+    #
+    # Anybody want to list the D & D languages here as examples?
+    #
+    # 0 o more.  (I.e. optional, but most characters speak at least 1.)
+    #
+    languages:
+    - Common
+    - Bear
+    - Infernal
+
+    #
+    # Factions:
+    # These should be ids of factions (similar YAML file format, eventually).
+    # For example:
+    #
+    # factions:
+    # - id: thieves_guild_of_poliwood
+    #   name: Thieves Guild of Poliwood
+    #   role: Associate Professor of Lockpicking
+    # - id: union_of_seamstresses
+    #   name: Union of Seamstresses
+    #   role: Window dressing
+    # - id: cult_of_sky_anthologies
+    #   name: Cult of Sky Anthologies
+    #   role: Going Clear Sky pastor
+    #
+    # Optional.  0 or more.
+    #
+    factions:
+    - id: bearkin_nation
+      name: The Bearkin Nation
+      role: Champion
+
+    #
+    # Adjectives or other tags that can be used for searching.
+    #
+    # Optional.  0 or more.
+    #
+    adjectives:
+    - Stalwart
+    - Reverant
+    - Ferocious
+
+  improv:
+
+    #
+    # Introduction:
+    # A block of text the DM can read out to the party.
+    # A hooded dwarf darts in front of your party and blows a loud, shrill whistle, splitting your ears, before he runs away laughing.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    introduction:  A massive Grizzly Bearkin in full dragon scale plate with a tower shield across his back and a huge two-handed maul in one hand, steps forward from the waiting army
+
+    #
+    # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    appearance:  Massive with grey spotted dark brown fur peaking out from under his full dragon scale plate armor
+
+    #
+    # Expressions: things the character says all the time, making their speech distinctive.
+    # Like, oh my gods!
+    # Detritus!
+    # Whoah
+    # Silly goose
+    # etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    expressions:
+    - "My ancestors demand retribution"
+    - "Heed well the call of war"
+    - "Follow me in battle and bask in the glory"
+
+    #
+    # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
+    # Do they tap their feet incessantly?  sniff their own underarms to figure out where the odour
+    # is coming from?  Etc.
+    #
+    # Required.
+    # Max 120 characters.
+    #
+    # Use this as a template:
+    #             |----------------------------------------------------------------------------------------------------------------------|
+    #
+    mannerisms:  stand unnervingly still.
+
+  acting:
+    #
+    # Motivations:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    motivations: |
+      Protect his people and serve his ancestors  
+
+    #
+    # Passions:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    passions: |
+      Revenge
+
+    #
+    # Vulnerabilities:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    vulnerabilities: |
+      brilliant in batlle, not so much outside of it
+
+    #
+    # Secrets:
+    #
+    # Required.
+    # ???Maximum length???
+    #
+    secrets: |
+      fully intends to scrifice himself to revenge his family upon Grey Crow
+
+  #
+  # The D & D stats block:
+  # All integers.
+  #
+  stats:
+    armour-class: 26
+    hit-points: 286
+    speed: 40
+    str: 26
+    dex: 17
+    con: 19
+    int: 11
+    wis: 13
+    cha: 22
+
+  #
+  # Special characteristics.
+  #
+  # Each is:
+  # ???Optional???
+  # ???Max length???
+  #
+  specialties:
+    saving-throws:
+    - Charisma
+    - Intelligence
+    - Wisdom
+    damage-immunities:
+    - Non-Magical Piercing, Bludgeoning, Slashing, Fire and Cold
+    damage-vulnerabilities:
+    - N/A
+    condition-immunities:
+    - Charmed
+    - Firghtened
+    - Poisoned
+    - Stunned
+    resistances:
+    - Magical Fire and Cold 
+    skills:
+    - Combat Leadership and Strategy
+    - War
+    proficiencies:
+    - Acrobatics
+    - History
+    - Athletics
+    - Intimidation
+    - Insight
+    - Survival
+    - Perception
+    - Persuasion
+    - Animal Handling
+    - Heavy Armor
+    - Two-Handed Weapons
+    - Disadvantage on Stealth    
+  special-abilities:
+  - title: Grizzly Bearkin Abilities
+  - abilities: 
+    - title: Keen Smell
+    - content: You gain advantage on Wisdom (Perception) checks that rely on smell.
+    - title: Animal Instincts
+    - content: You have proficiency in the Survival skill.
+    - title: Claws
+    - content: Using your bear claws to attack, your unarmed strikes deal 1d6 slashing damage.
+    - title: Ability Score Improvement
+    - content: Your Charisma score increases by 1.
+    - title: Protector
+    - content: When an ally within 1Oft of you must make a Strength saving throw, you may choose to have the effect target you in their place. This feature can only be used twice every short rest.
+    
+  - title: Barbarian Abilities
+  - abilities:
+    - title: Unarmored Defense
+    - content: While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.
+    - title: Rage
+    - content: Can enter a rage as a Bonus Action. 
+               have advantage on Strength Checks and Strength Saving Throws.
+               make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll
+               Resistance to bludgeoning, piercing, and slashing damage          
+    - title: Danger Sense
+    - content: has advantage on Dexterity Saving Throws against Effects that he can see, such as traps and Spells
+    - title: Reckless Attack
+    - content: When making his first Attack on his Turn, he can decide to Attack recklessly. Doing so gives him advantage on melee weapon Attack Rolls using Strength during this turn, 
+               but Attack Rolls against him have advantage until his next turn
+    - title: Extra Attack
+    - content: Can attack twice each turn	
+    - title: Fast Movement
+    - content: your speed increases by 10 feet while you aren't wearing Heavy Armor.
+    - title: Feral Instinct
+    - content: you have advantage on Initiative rolls. Additionally, if you are surprised at the Beginning of Combat and aren't Incapacitated, you can act normally on your first turn, but only if you enter your rage 
+               before doing anything else on that turn.		
+    - title: Brutal Critical
+    - content: you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee Attack. 
+    
+  - title: Paladin Abilities
+  - abilities:
+    - title: Divine Sense
+    - content: Can focus awareness to know the location and type of any celestial, fiend or undead within 200 feet not behind total cover. Can detect any place of object that has been consecrated or desicrated 
+               within the same radius. Can use this ability 7 per long rest
+    - title: Lay on Hands
+    - content: Can touch another creature to heal up to 35HP per long rest. Or can 5HP to cure a disease or poison affecting it.
+    - title: Fighting Style
+    - content: Great Weapon Fighting, Shield Bashing
+    - title: Divine Smite
+    - content: when you hit a creature with a melee weapon Attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell
+               slot, plus 1d8 for each Spell Level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an Undead or a fiend. 
+    - title: Divine Health
+    - content: Immune to disease
+    - title: Extra Attack
+    - content: Can take and extra attack action each turn
+    - title: Aura of Protection
+    - content: When he or friendly creatures within 10 feet must make a saving throw, they get a +6 bonus to their roll       
+  - title: Paladin Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 17
+    - title: 1st Level
+    - content: Compelled Duel, Shield of Faith, Searing Smite, Thunderous Smite, Wrathful Smite  
+    - title: 2nd Level
+    - content: Branding Smite, Lesser Restoration, Banishing Smite, Find Steed
+               
+  - title: Path of the Zealot Abilities
+  - abilities: 
+    - title: Divine Fury
+    - content: You can channel divine fury into your weapon strikes. While you're raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your Barbarian level.
+               The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature.
+    - title: Warrior of the Gods
+    - content: Your soul is marked for endless battle. If a spell, such as Raise Dead, has the sole effect of restoring you to life (but not undeath), the caster doesn't need material components to cast the 
+               spell on you.
+    - title: Fanatical Focus
+    - content: The divine power that fuels your rage can protect you. If you fail a saving throw while raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage.
+    - title: Zealous Presence
+    - content: You learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you
+               that can hear you gain advantage on attack rolls and saving throws until the start of your next turn. Once you use this feature, you can’t use it again until you finish a long rest.
+    - title: Rage Beyond Death
+    - content: The divine power that fuels your rage allows you to shrug off fatal blows. While you're raging, having 0 hit points doesn’t knock you unconscious. You still must make death saving throws, and you 
+               suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don’t die until your rage ends, and you die then only if you still
+               have 0 hit points.
+
+  - title: Oath of Vengeance Abilities
+  - abilities: 
+    - title: Spellcasting
+    - abilities: 
+    - title: Spell DC
+    - content: 17
+    - title: 3rd Level
+    - content: Bane, Hunter's Mark
+    - title: 5th Level
+    - content: Hold Person, Misty Step
+    - title: Channel Divinity - Abjure Enemy
+    - content: As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom 
+               saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
+               On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature's speed is 0, and it can't benefit from any bonus to its speed.
+               On a successful save, the creature's speed is halved for 1 minute or until the creature takes any damage.
+    - title: Channel Divinity - Vow of Enmity
+    - content: As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute 
+               or until it drops to 0 hit points or falls unconscious.
+    - title: Relentless Avenger
+    - content: Your supernatural focus helps you close off a foe's retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the 
+               same reaction. This movement doesn't provoke opportunity attacks.
+    - title: Soul of Vengeance
+    - content: The authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a
+               melee weapon attack against that creature if it is within range.               
+
+
+  - title: Attacks
+  - content: Two-Handed Maul plus smites
+  - title: Combat Tactics
+  - content: strategic but unyeilding wall of force. He may use his two-handed maul with one hand without penalty 
+
+  - title: Special Equipment
+  - abilities:
+    - title: Maul of Glory 
+    - content: This weapon boosts itself forwards with a stream of fire upon swinging it.
+    - content: You gain a +2 bonus to attack and damage rolls made with this magic weapon. On a hit, the weapon deals an extra 1d6 bludgeoning damage, for a total of 3d6 bludgeoning damage.
+    - content: As an action, you can slam the maul into the ground and shatter the ground in a 30-foot cone in front of you. Each grounded creature in that area must make a DC 16 Dexterity saving throw, taking 3d6 thunder 
+               damage and 3d6 bludgeoning damage and being knocked prone on a failed save, or half as much damage and remain standing on a successful one. Small or smaller creatures automatically fail this save. All land 
+               affected by this action becomes difficult terrain. Once this action is used, it can't be used again until the next dawn.  
+    - content: While you hold the drawn maul, it creates an aura in a 10-foot radius around you. Creatures of your choice in that aura that score a critical hit deal an additional 1d12 damage               
+    - title: Spellguard Sheild
+    - content: While holding this +3 shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you
+    - content: The shield has 3 charges, and it regains 1d4 expended Charges daily at dawn.  if a spell attack would allow you to take half damage on a successful saving throw, you can use your Reaction to expend 1 of its 
+               Charges take no damage instead.
+    - title: Brass Dragon Scale Plate Mail
+    - content: While wearing this armor, you gain a +2 bonus to AC, you have advantage on saving throws against the Frightful Presence and breath weapons of dragons, and you have resistance to one damage type that is determined
+               by the kind of dragon that provided the scales (Brass).
+    - content: Additionally, you can focus your senses as an action to magically discern the distance direction to the closest dragon within 30 miles of you that is of the same type as the armor.  This special action can't be 
+               used again until the next dawn..
+    - title: Helm of Mind Sheilding
+    - content: While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically 
+               communicate with you only if you allow it.
+    - content: You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.
+
+ 
+    - title: Feats
+    - content: Tavern Brawler, Athlete, Sheild Master, Combat Reflexes, Bulwark, Grappler, Mage Slayer, Menacing, Savage Attacker, Slasher, Heavy Armor Master, Tough, Great Weapon Master
+    - title: Legendary Resistance
+    - content: (3/Day), If Milne Bloody-Tooth fails a saving throw he can choose to succeed instead 
+    - title: Legendary Actions 
+    - content: Milne Bloody-Tooth can take 3 Legendary Actions. Choosing from the options from below, Only one Legendary Action can be used at a time and only at the end of another creature's turn. 
+               Milne Bloody-Tooth regains spent Legendary Actions at the start of his turn
+    - abilities:
+      - title: Shield Bash
+      - content: Milne Bloody-Tooth can make a melee attack with his shield. A successful attack deals 1d12 radiant damage and requires its target to make a DC 20 strength save or be pushed back 15ft and knocked prone.
+                 On a successful save the target is only pushed back 5ft and is not knocked prone.
+      - title: Smite of Fury
+      - content: Milne Bloody-Tooth attacks with righteous rage, allowing him to make a melee attack with his Divine Smite ability at 3rd level, without using a spell slot  
+      - title: Ancestors Protection
+      - content: Milne Bloody-Tooth can cast the Spirit Guardians spell at 5th Level without using a spell slot or components. The spell's duration is 1 minute and does not require concentrarion to maintain. 
+
+
+  profile:
+
+    #
+    # Background story:
+    # The long form character development.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    background-story: |
+      Milne Bloody-Tooth is the adult son of the war leader of the Bearkin Nation. The apple doesn't fall far from the tree. Milne is a massive Bearkin, even larger than his father. Though he was still just a teen when their
+      tribe was wiped out by Grey Crow, he swore an oath to get vengeance for the deaths of his mother and the rest of the tribe. Since that day, he has ever been the good soldier, devoting his life to honing his craft and
+      preparing for what he believes will be his and the entire Bearkin Nation's final battle. Only then will he be able to know peace.      
+
+    #
+    # Personality (or something like that):
+    # Expand on the introduction, appearance, expressions, mannerisms, etc.
+    # without any length limits.
+    #
+    # Required.
+    # No length limit for now.
+    #
+    personality: |
+     Milne Bloody-Tooth is a giant, even for a Bearkin. In his brass dragon scale armor, he looks like a golden, gleaming wall. Milne is quiet, reserved and studious when he is not in battle, He mostly keeps to himself
+     and focuses on perfecting his craft. In contrast, when he steps onto a battlefield at the head of his troops, he is a champion, a ferocious combatant and a bulwark for his people. He knows that it is his destiny to 
+     sacrifice himself to win the final battle, and will do so without hesitation as long as he gets vengeance for his people.     
+      
