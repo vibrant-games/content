@@ -206,7 +206,7 @@ npc:
     #
     # Required.
     #
-    pronouns: He/Him
+    pronouns: She/Her
 
     #
     # Occupation(s).
@@ -342,8 +342,8 @@ npc:
     # Optional.  0 or more.
     #
     adjectives:
-    - Earnest
-    - Loyal
+    - Fun-Loving
+    - Optimistic
     - Quick
 
   improv:
@@ -359,7 +359,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    introduction:  A small tan-furred rabbit-folk draws her hand crossbows with unnerving speed "stay where you are" she says "I don't wanna have to hurt anyone"
+    introduction:  "Wanna bet on who's the faster draw" smiles the tall, thin orange furred cat lady
 
     #
     # Appearance: a brief description of the character skin, clothes, hair, eyes, etc.
@@ -370,7 +370,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    appearance:  A small tan-furred Harengon with one ear clipped shorter then the other, dressed in the uniform of the Town Guard with a hand crossbow holster on each hip
+    appearance:  Tall and thin with wild orange fur. Dressed in tight leathers with twin gun holsters on her hips and a bandolier full of sharp-looking knives
 
     #
     # Expressions: things the character says all the time, making their speech distinctive.
@@ -387,9 +387,9 @@ npc:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
     expressions:
-    - "We're the law and you're surrounded"
-    - "I've got two bows, one for each of you"
-    - "My dad taught me to always give folks the benefit of the doubt"
+    - "Well you look like you might be some fun"
+    - "ain't nobody a faster draw than me"
+    - "No fun, No fun at all"
 
     #
     # Mannerisms: what does the character do with their hands?  And eyes, mouth, etc.
@@ -402,7 +402,7 @@ npc:
     # Use this as a template:
     #             |----------------------------------------------------------------------------------------------------------------------|
     #
-    mannerisms:  talks and moves with an obvious ease and comfort with herself
+    mannerisms: moves with quick feline grace
 
   acting:
     #
@@ -421,7 +421,7 @@ npc:
     # ???Maximum length???
     #
     passions: |
-      family and friends
+      family, friends and fun
 
     #
     # Vulnerabilities:
@@ -430,7 +430,7 @@ npc:
     # ???Maximum length???
     #
     vulnerabilities: |
-      has a bit of a hare trigger
+      Acts faster than she thinks
 
     #
     # Secrets:
@@ -439,22 +439,22 @@ npc:
     # ???Maximum length???
     #
     secrets: |
-      not nearly as confident as she pretends to be
+      Used to ba an outlaw
 
   #
   # The D & D stats block:
   # All integers.
   #
   stats:
-    armour-class: 20
-    hit-points: 122
+    armour-class: 17
+    hit-points: 129
     speed: 40
     str: 11
-    dex: 19
+    dex: 21
     con: 13
     int: 12
-    wis: 18
-    cha: 14
+    wis: 16
+    cha: 18
 
   #
   # Special characteristics.
@@ -466,7 +466,7 @@ npc:
   specialties:
     saving-throws:
     - Strength
-    - Dexterity
+    - Intelligence
     - Constitution
     damage-immunities:
     - N/A
@@ -477,33 +477,36 @@ npc:
     resistances:
     - Cold 
     skills:
-    - Police Work
-    - Martial Arts
+    - Quickdraw
+    - Theive's Skills
     proficiencies:
-    - Acrobatics
-    - Stealth
-    - Insight
+    - Acrobatics (Double Expertise)
+    - Stealth (Double Expertise)
+    - Slight-of-Hands (Expertise)
+    - Persuasion
     - Perception
-    - Performance
-    - Crossbow
-    - Firearms    
+    - Performance (Double Expertise)
+    - Thrown Weapons (Expertise)
+    - Firearms (Expertise)  
+    - Thieve's Tools    
   special-abilities:
-  - title: Harengon Abilities
+  - title: Tabaxi Abilities
   - abilities: 
-    - title: Hare-Trigger
-    - content: You add your proficiency bonus to your initiative rolls.
-    - title: Leporine Senses
-    - content: You have proficiency in the Perception skill.
-    - title: Lucky Footwork
-    - content: When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the result, potentially turning the failure into a success.
-    - title: Rabbit Hop
-    - content: Using your bonus action, you can jump a number of feet equal to 5 times your proficiency bonus. When you jump in this way you do not provoke attacks of opportunity. You can use this a number of times equal 
-               to your proficiency bonus unless your speed has been reduced to zero. While great in combat, this has a variety of uses, especially as you level
+    - title: Darkvision
+    - content: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
+    - title: Feline Agility
+    - content: Your reflexes and agility allow you to move with a burst of speed. When you move on your tum in combat, you can double your speed until the end of the tum. Once you use this trait, you can't use it again
+               until you move 0 feet on one of your turns.
+    - title: Cat's Claws
+    - content: Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 
+               1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+    - title: Cat's Talent
+    - content: You have proficiency in the Perception and Stealth skills
     
   - title: Fighter Abilities
   - abilities:
     - title: Fighting Style
-    - content: Two Weapon Fighting
+    - content: Thrown Weapon Fighting
     - title: Second Wind
     - content: Bonus Action to regain 1d10 + 7
     - title: Action Surge
@@ -511,85 +514,116 @@ npc:
     - title: Extra Attack
     - content: Can attack twice each turn 
     
-  - title: Monk Abilities
-  - abilities:
-    - title: Unarmored Defense 
-    - content: When not wearing armor Ac = 10 + Dexterity + Wisdom
-  - title: Martial Arts
-  - abilities:
-    - content: Can use Dexterity instead of Strength for the attack and damage rolls for unarmed strikes and monk weapons
-               Can roll a d6 in place of normal damage for unarmed strikes and monk weapons
-               When using an attack action with an unarmed strike or monk weapon, can make an unarmed strike as a bonus action
-  - title: Ki
-  - abilities:  
-    - title: Ki Points
-    - contents: 7
-    - title: Ki DC
-    - contents: 17
-    - content: Flurry of Blows
-    - content: Immediately after and attack action, can spend 1 Ki point to make 2 unarmed strikes as a bonus action
-    - content: Patient Defense
-    - content: Can spend 1 Ki point to take the Dodge action as a bonus action
-    - content: Step of the Wind
-    - content: Can spend 1 Ki point to take the Disengage or Dash action as a bonus action. Jump distance is doubled for the turn
-    - title: Unarmored Movement
-    - content: Speed is increased by 25. Can move along vertical surfaces and across liquids without falling during the move 
-    - title: Dedicated Weapon
-    - content: You train yourself to use a variety of weapons as monk weapons, not just simple melee weapons and shortswords. Whenever you finish a short or long rest, you can touch one weapon, focus your ki on it, and then 
-               count that weapon as a monk weapon until you use this feature again.
-    - title: Deflect Missles
-    - content: Can use Reaction to deflect or catch the missle when hit by a ranged weapon attack. Damage from the attack is reduced by 1d12 + 24. If damaged is reduced to 0, the missle is caught if he has one 
-               free hand. Can spend 1 Ki point to make a ranged attack with the ammunition or weapon just caught. The attack is made with proficiency and counts as a monk weapon
-    - title: Ki-Fueled attack
-    - content: If you spend 1 ki point or more as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action before the end of the turn.    
-    - title: Slow Fall
-    - content: You can use your Reaction when you fall to reduce any Falling damage you take by an amount equal to five times your monk level.
-    - title: Quickened Healing
-    - content: As an action, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled plus your proficiency bonus.
-    - title: Extra Attack
-    - content: Can Attack twice per turn
-    - title: Stunning Strike
-    - content: When hits a creature with a melee weapon attack, can spend 1 Ki point and that creature must make a constitution saving throw or be stunned until the end of his next turn
-    - title: Focused Aim
-    - content: When you miss with an attack roll, you can spend 1 to 3 ki points to increase your attack roll by 2 for each of these ki points you spend, potentially turning the miss into a hit.
-    - title: Ki-Empowered Strike
-    - content: Your unarmed strikes count as magical for the Purpose of overcoming Resistance and immunity to nonmagical attacks and damage.
-    - title: Stillness of Mind
-    - content: You can use your action to end one Effect on yourself that is causing you to be Charmed or Frightened
+  - title: Rogue Abilities
+  - abilities: 
+    - title: Expertise
+    - content: Double proficiency bonus with Thieve's Tools and Sleight of Hand
+    - title: Sneak Attack
+    - content: Once per turn can add 3d6 to one creature she hits with a ranged or finesse attack if she has advantage on the attack or if the target is engaged with another creater
+    - title: Cunning Action
+    - content: Can take a bonus action on each turn to Hide, Disengage or Dash
+    - title: Uncanny Dodge
+    - content: When an attacker she can see hits her with an attack, she can use her Reaction to halve the damage 
     - title: Evasion
     - content: When you are subjected to an Effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail
                
-  - title: Sharpshooter Abilities
+  - title: Bard Abilities
   - abilities:
-    - title: Steady Aim
-    - content: Beginning when you choose this archetype at 3rd level, your aim becomes deadly. As a bonus action on your turn, you can take careful aim at a creature you can see that is within range of a ranged weapon you’re 
-               wielding. Until the end of this turn, your ranged attacks with that weapon gain two benefits against the target
-    - content: The attacks ignore half and three-quarters cover.
-    - content: On each hit, the weapon deals additional damage to the target equal to 2 + half your fighter level.
-    - content: You can use this feature three times. You regain all expended uses of it when you finish a short or long rest.
-    - title: Careful Eyes
-    - content: Starting at 7th level, you excel at picking out hidden enemies and other threats. You can take the Search action as a bonus action.
-    - content: You also gain proficiency in the Perception, Investigation, or Survival skill (choose one).
+  - title: Bard Spellcasting
+  - abilities:
+    - title: Spell DC
+    - content: 16    
+    - title: Cantrip
+    - content: Mage Hand, Vicious Mockery   
+    - title: 1st Level
+    - content: Bane, Detect Magic, Silvery Barbs, Fairie Fire  
+    - title: 2nd Level
+    - content: Heat Metal, Detect Thoughts       
+    - title: Bardic Inspiration
+    - content: Can use a Bonus Action on their Turn to choose one creature other than themself within 60 feet of, who can hear them. That creature gains one Bardic Inspiration die, a d6. Once within the next 
+               10 minutes, the creature can roll the die and add the number rolled to one ability check, Attack roll, or saving throw it makes.
+    - title: Jack of All Trades
+    - content: can add half their Proficiency Bonus, rounded down, to any ability check they make that doesn't already include their Proficiency Bonus
+    - title: Song of Rest
+    - content: If they or any friendly creatures who can hear their Performance regain Hit Points by spending Hit Dice at the end of the Short Rest, each of those creatures regains an extra 1d6 Hit Points.
+    - title: Expertise
+    - content: gets double proficiency bonus in Thrown Weapons
 
-  - title: Way of the Yielding Fury Abilities
+  - title: Gunslinger Abilities
   - abilities: 
-    - title: Gentle Retribution
-    - content: You gain the ability to use your opponent's strength against them. Immediately after you take damage from an attack or a failed Dexterity saving throw. you can use your reaction to spend 1 ki point 
-               and gain temporary hit points equal to half that damage. These temporary hit points last for 1 minute, or until you are incapacitated. While you have these temporary hit points, you gain a +2 bonus 
-               to attack rolls you make with monk weapons and unarmed strikes.
-    - title: Yield And Overcome
-    - content: You learn to use your enemies' blows to replenish your own energy. Whenever a hostile creature misses you with an attack, you can cause that attack to hit instead after which you regain 1 ki point 
-               (no reaction required) You can use this feature a number of times equal to your proficiency bonus, and you regain all uses when you finish a long rest.
-    - title: Enduring Focus
-    - content: Your temporary hit points from your Gentle Retribution no longer end after one minute. Instead, they last until you finish a short or long test, or until you are incapacitated
-    - title: Harmonious Defense
-    - content: While you have temporary hit points due to your Gentle Retribution, you gain a +1 bonus to AC. This bonus increases to +2 at 11th level               
+    - title: Firearm Proficiency
+    - content: You gain proficiency with firearms, allowing you to add your proficiency bonus to attacks made with firearms.
+    - title: Gunsmith
+    - content: You gain proficiency with Tinker’s Tools. You may use them to craft ammunition at half the cost, repair damaged firearms, or even draft and create new ones (DM’s discretion). Some extremely experimental and 
+               intricate firearms are only available through crafting.
+    - content: Firearm Properties - Firearms are a new and volatile technology, and as such bring their own unique set of weapon properties. Some properties are followed by a number, and this number signifies an element of that 
+                                    property (outlined below). These properties replace the optional ones presented in the Dungeon Master’s Guide. Firearms are ranged weapons.
+    - content: Reload - The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm.
+    - content: Misfire - Whenever you make an attack roll with a firearm, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires. The attack misses, and the weapon cannot be used again until 
+                         you spend an action to try and repair it. To repair your firearm, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score). If your check fails, the weapon is broken and must be 
+                         mended out of combat at a quarter of the cost of the firearm. Creatures who use a firearm without being proficient increase the weapon’s misfire score by 1.
+    - content: Explosive - Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage. If the weapon misses, 
+                           the ammunition fails to detonate, or bounces away harmlessly before doing so.
+    - title: Adept Marksman
+    - content: You learn to perform powerful Trick Shots to disable or damage your opponents using your firearms. Trick Shots. You learn two trick shots of your choice. Many maneuvers enhance an attack in some way. 
+               Each use of a trick shot must be declared before the attack roll is made. You can use only one trick shot per attack. You learn an additional trick shot of your choice at 7th, 10th, 15th, and 18th level.
+               Each time you learn a new trick shot, you can also replace one trick shot you know with a different one.
+               Trick Shots
+    - content: Bullying Shot - You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature. You can expend one grit point while making a Charisma (Intimidation) check to gain advantage on 
+                               the roll.
+    - content: Dazing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw 
+                             or suffer disadvantage on attacks until the end of their next turn.
+    - content: Deadeye Shot - When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll.
+    - content: Disarming Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a 
+                                Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you.
+    - content: Forceful Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a 
+                               Strength saving throw or be pushed 15 feet away from you.
+    - content: Piercing Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. The initial attack gains a +1 to the firearm’s misfire score. On a hit, 
+                               the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment. Only the initial attack 
+                               can misfire.
+    - content: Violent Shot - When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. For each grit point expended, the attack gains a +2 to the firearm’s 
+                              misfire score. If the attack hits, you can roll one additional weapon damage die per grit point spent when determining the damage.
+    - content: Winging Shot - When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw 
+                              or be knocked prone.
+    - title: Grit 3
+    - content: You gain a number of grit points equal to your Wisdom modifier (minimum of 1).
+               You regain 1 expended grit point each time you roll a 20 on the d20 roll for an attack with a firearm, or deal a killing blow with a firearm to a creature of significant threat (DM’s discretion). You regain all 
+               expended grit points after a short or long rest. Saving Throws. Some of your trick shots require your targets to make a saving throw to resist the trick shot’s effects. The saving throw DC is calculated 
+               as follows; Trick shot save DC = 8 + your proficiency bonus + your Dexterity modifier
+    - title: Quickdraw
+    - content: You add your proficiency bonus to your initiative. You can also stow a firearm, then draw another firearm as a single object interaction on your turn.               
 
+  - title: Acrobat Abilities
+  - abilities: 
+    - title: Natural Acrobat
+    - content: You have proficiency in the Dexterity (Acrobatics) skill if you did not already have it, and you have advantage on ability checks made using this skill on your turn. Additionally, you can stand from 
+               being prone without using any movement.
+    - title: Advanced Tumbling
+    - content: You can move through the space of any creature. Once you have moved through a creature's space, that creature has disadvantage on Opportunity Attacks against you until the end of your turn. At 13th 
+               level, you can move though the space of any other creature without using any movement, up to a maximum of 30 feet on each of your turns.
+    - title: Parting Toss
+    - content: Once on each of your turns, immediately after you move out of a creature's reach, you can make a ranged weapon attack with a thrown weapon targeting that creature.
+    - title: Freerunning
+    - content: You ignore difficult terrain and climbing no longer halves your movement. Additionally, you can spend up to half your movement speed on your turn climbing even difficult surfaces (such as vertical walls) 
+               without making an ability check.
+               
+  - title: College of Spectacle Abilities
+  - abilities: 
+    - title: Circus Education
+    - content: You gain proficiency in Acrobatics and Performance. If you are already proficient in one of those skills, you may choose another ski1l to gain proficiency in instead. If you are proficient with a 
+               simple or martial weapon, you can use it as a spcllcasting focus for your bard spells.
+    - title: Juggling
+    - content: You gain the ability to jugg1e weapons that have the light and thrown property. As an action. you may add weapons to your band to start juggling, up to the maximum amount you can juggle (2 + dexterity 
+               modifier, minimum of 3). As a bonus action, you can roll a Bardic Inspiration die, and magically recover weapons you have thrown within the last minute back into your inventory equal to the number rolled. 
+               Whenever you take damage which juggling, get moved against your will or are negatively affected by a spell (at the DM's discretion) you must succeed on a dexterity saving throw to continue juggling. The DC 
+               equals 10 or half the damage you take, whichever number is higher. If you fail the saving throw, you drop all the weapons you are currently juggling to the ground. You automatically fail the saving throw if 
+               you are grappled, incapacitated, or incapacitated. For each weapon that is being juggled, the damage of throwing weapons increases by +2. This bonus increases to +3 at 6th level. and +4 at 14th level. You may
+               also use dexterity instead of srength when determining the hit and damage roll of weapons thrown this way.               
 
   - title: Attacks
-  - content: Hand Crossbows or Martial Arts Attacks
+  - content: Guns or Thrown Knives
   - title: Combat Tactics
-  - content: will try to get the drop on people with her hand crossbows but will also fight hand to hand with her martial arts skills
+  - content: will try to maintain distance and attack with surprise
 
   - title: Special Equipment
   - abilities:
