@@ -332,11 +332,9 @@ npc:
     # Optional.  0 or more.
     #
     factions:
-    - id: military_watch
-      name: Military/Watch
-    - id: adventurer_s_guild
-      name: Adventurer's Guild
-      role: Sergeant
+    - id: town_guard
+      name: The Town Guard
+      role: Lieutenant
 
     #
     # Adjectives or other tags that can be used for searching.
